@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="behaviorManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="memoEdit1.EditValue" xml:space="preserve">
+    <value>In the small town of Eldridge, the old railway station stood like a forgotten relic, its wooden platform creaking under the weight of years. The last train had rolled through over a decade ago, but every Saturday night, Henry would sit on the bench, a faded newspaper in hand, waiting for a train that would never arrive.
+
+Henry had lived in Eldridge all his life, his family roots entwined with the land like the gnarled roots of the oak tree that marked the edge of town. Each Saturday, he made his way to the station, not because he expected a train, but because it was a ritual—a moment of solace amid the chaos of his thoughts. It was a reminder of a past filled with laughter, friends, and dreams that had long since derailed.
+
+As dusk fell, the air turned crisp, and the soft whistle of the wind danced through the trees. Henry took a deep breath, inhaling the familiar scent of pine and earth. He glanced down at his newspaper, its headlines fading like memories, and then turned his gaze to the tracks. They stretched into the distance, parallel lines that seemed to whisper secrets of journeys taken and paths forsaken.
+
+On this particular night, as the last sliver of sun dipped below the horizon, a flicker of light caught his eye. Henry squinted, unsure if he was imagining things. The light flickered again, closer this time, illuminating a figure approaching down the tracks. It was a woman, her silhouette framed by the glow of an old-fashioned lantern swinging at her side.
+
+“Excuse me,” she called out, her voice breaking the stillness of the evening. “Is this the way to Eldridge?”
+
+Henry stood, surprised but intrigued. “Yes, it is. But there hasn’t been a train here in years.”
+
+She smiled, a warmth spreading across her face that contrasted with the cool night air. “I know. I just... felt drawn to this place.”
+
+They exchanged names—Henry and Clara—and as they talked, the night wrapped around them like a cozy blanket. Clara spoke of her travels, the cities she had seen, and the adventures that had shaped her. Henry listened, entranced, sharing stories of Eldridge, of childhood days spent exploring the woods and the rivers that flowed like veins through the town.
+
+“Sometimes I feel like I’m stuck,” Henry admitted, looking down at his hands. “Like the world has moved on without me.”
+
+Clara placed a reassuring hand on his arm. “Maybe it’s time for you to find your own adventure. You’re not bound to this station, you know.”
+
+As the hours slipped by, they shared laughter and dreams, the weight of solitude lifting from Henry’s shoulders. Clara spoke of the beauty in stepping off the beaten path, of taking risks and embracing the unknown.
+
+Eventually, the lantern’s light began to dim. Clara glanced at her watch, a hint of sadness in her eyes. “I have to go,” she said, her voice soft. “But promise me you’ll think about what we talked about. Life is waiting for you, Henry.”
+
+He nodded, a lump forming in his throat. “Will I see you again?”
+
+She hesitated, her gaze lingering on the darkening horizon. “You never know where life might take you.”
+
+As she walked away, the light of her lantern faded into the night. Henry stood alone at the station, the echoes of their conversation swirling around him like leaves caught in a gentle breeze. The silence that had once felt heavy now held a glimmer of possibility.
+
+Weeks turned into months, and with each passing Saturday, Henry returned to the station, but not for the sake of waiting for a train. Instead, he began to dream—about traveling to distant cities, exploring landscapes he had only seen in books. Clara had ignited a spark within him, and he was determined to fan it into a flame.
+
+One crisp morning, he packed a small bag, filled with essentials and a few cherished items: a photo of his family, a worn-out journal, and a compass that had belonged to his grandfather. Standing on the platform, he took one last look at the station that had held him captive for so long. He smiled, knowing that his journey was just beginning.
+
+With a deep breath, he set off down the tracks, the sun rising before him, illuminating a world full of possibilities. The last train to Eldridge may have left years ago, but Henry was ready to find his own path, one step at a time.</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>&lt;size=+4&gt;&lt;b&gt;Leverage AI-powered Text Processing Extensions&lt;/b&gt;&lt;/size&gt;&lt;br&gt;
+Introduce real-time context-aware text suggestions in your next DevExpress-powered WinForms app. With our AI Extensions, you’ll minimize manual text entry and help users avoid spelling/grammar mistakes.&lt;br&gt;
+&lt;b&gt;To evaluate our AI-powered Text Processing Extensions simply select a text block, invoke the context menu, and select AI Assistant. &lt;/b&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>vGridControl1</name>
+				<windowcaption>Unbound rows</windowcaption>
+				<description>Two unbound rows (Total and Total Amount) are created and customized at design time.</description>
+        <memberlist>RowProperties.UnboundType, RowProperties.UnboundExpression, RowProperties.ShowUnboundExpressionMenu</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>addNewRow</name>
+        <windowcaption>Adding unbound rows</windowcaption>
+        <description>This code appends an unbound row and invokes the Unbound Expression Editor that allows you to specify an expression for this row. You can invoke the Unbound Expression Editor via a context menu to edit assigned expressions.</description>
+        <memberlist>RowProperties.UnboundType, VGridControl.ShowUnboundExpressionEditor</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>		
+	</controls>
+</totalinfo>

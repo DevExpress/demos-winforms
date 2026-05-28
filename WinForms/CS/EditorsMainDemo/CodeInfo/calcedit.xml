@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+		<controlentry>
+			<control>
+				<name>sePrecision</name>
+				<windowcaption>Precision</windowcaption>
+				<description>This spin editor is used to specify the maximum number of digits which are displayed to the right of the decimal point when the dropdown calculator is open.</description>
+				<memberlist>RepositoryItemCalcEdit.Precision</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceShowCloseButton</name>
+				<windowcaption>Show Close Button</windowcaption>
+				<description>This check box shows or hides the close button which is displayed in the bottom left corner of the dropdown window.</description>
+				<memberlist>RepositoryItemCalcEdit.ShowCloseButton</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceShowCustomButtons</name>
+				<windowcaption>Show Custom Buttons</windowcaption>
+				<description>This check box shows or hides the '^2' and 'Clear' buttons.</description>
+				<memberlist>EditorButton.Visible</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>calcEditSample</name>
+				<windowcaption>CalcEdit</windowcaption>
+				<description>The ButtonClick event is raised when the editor's button is clicked. In this tutorial, the ButtonClick event is handled to implement functionality for the '^2' and 'Clear' buttons. If the '^2' button is clicked, the editor value of the calculator is squared. If the 'Clear' button is clicked, the editor's value is set to 0.</description>
+				<memberlist>CalcEdit.Value, ButtonClick event</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>calcEditSample</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown calculator<newline></newline>UP, DOWN to scroll the value<newline></newline>#Mouse Wheel<newline></newline>Supported</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

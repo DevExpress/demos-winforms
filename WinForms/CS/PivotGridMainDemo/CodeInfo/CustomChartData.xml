@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>cbRowFieldValuesExportRule</name>
+        <windowcaption>Row Field Values Export Rule</windowcaption>
+        <description>Specifies the type to which the row field values are converted before they are exported to a ChartControl.</description>
+        <memberlist>PivotGridOptionsChartDataSourceBase.ProvideRowFieldValuesAsType</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>seCellZeroValueThreshold</name>
+        <windowcaption>Threshold</windowcaption>
+        <description>Specifies the minimum data cell value passed to a chart. The PivotGridControl.CustomChartDataSourceData event is handled to prepare data to be displayed in a ChartControl.</description>
+        <memberlist>PivotGridControl.CustomChartDataSourceData</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>comboChartType</name>
+        <windowcaption>Chart Type</windowcaption>
+        <description>Sets the type of a chart.</description>
+        <memberlist>SeriesBase.ChangeView</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>checkShowPointLabels</name>
+        <windowcaption>Show Point Labels</windowcaption>
+        <description>Specifies whether to show labels for a series.</description>
+        <memberlist>SeriesBase.LabelsVisibility</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    
+  </controls>
+</totalinfo>

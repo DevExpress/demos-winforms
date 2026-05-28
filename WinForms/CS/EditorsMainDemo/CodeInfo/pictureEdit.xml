@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/TutorialsWhatsThis/XmlSchemas/module-new.xsd">
+	<controls>
+    <controlentry>
+      <control>
+        <name>cbAllowMenu</name>
+        <windowcaption>Allow Built-in Context Menu check box</windowcaption>
+        <description>This check box allows or prohibits the picture editor's built-in context menu.</description>
+        <memberlist>RepositoryItemPictureEdit.ShowMenu</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+		<controlentry>
+      <control>
+        <name>ceAllowFocused</name>
+        <windowcaption>Allow focused</windowcaption>
+        <description>The AllowFocused property specifies whether a selection rectangle is drawn around the focused Picture Edit.</description>
+        <memberlist>RepositoryItemPictureEdit.AllowFocused</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceAllowScroll</name>
+        <windowcaption>Allow drag scrolling</windowcaption>
+        <description>Gets or sets whether end-users can scroll a displayed image via mouse drag. This feature requires the ShowScrollBars property set to 'true'.</description>
+        <memberlist>RepositoryItemPictureEdit.AllowScrollViaMouseDrag</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

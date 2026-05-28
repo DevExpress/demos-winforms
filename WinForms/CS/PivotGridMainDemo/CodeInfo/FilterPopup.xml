@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>chkShowToolbar</name>
+        <windowcaption>Show Toolbar</windowcaption>
+        <description>Sets whether toolbars should be displayed in filter popup windows.</description>
+        <memberlist>PivotGridOptionsFilterPopup.ShowToolbar</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>chkAllowContextMenu</name>
+        <windowcaption>Allow Context Menu</windowcaption>
+        <description>Sets whether right-clicking a filter popup window invokes a context menu.</description>
+        <memberlist>PivotGridOptionsFilterPopup.AllowContextMenu</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>chkAllowTree</name>
+        <windowcaption>Allow Tree</windowcaption>
+        <description>Sets filtering mode used for the field owner group.</description>
+        <memberlist>PivotGridFieldOptions.GroupFilterMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>chkShowOnlyAvailableItems</name>
+        <windowcaption>Show Only Available Items</windowcaption>
+        <description>The Show Only Available Items button controls the visibility of filter items that cannot be displayed because of filtering applied to other fields.</description>
+        <memberlist>PivotGridOptionsFilterBase.ShowOnlyAvailableItems, PivotGridOptionsFilterPopup.ToolbarButtons</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>chkIncrementalSearch</name>
+        <windowcaption>Incremental Search</windowcaption>
+        <description>The Incremental Search button controls whether the incremental searching feature is enabled or not. This feature allows end-users to locate an item in the drop-down by typing the item's initial characters.</description>
+        <memberlist>PivotGridOptionsFilterPopup.AllowIncrementalSearch, PivotGridOptionsFilterPopup.ToolbarButtons</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>chkRadioMode</name>
+        <windowcaption>Radio Mode</windowcaption>
+        <description>The Radio Mode button that controls whether end-users are allowed to check only a single item or multiple items.</description>
+        <memberlist>PivotGridOptionsFilterPopup.IsRadioMode, PivotGridOptionsFilterPopup.ToolbarButtons</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>chkShowNewValues</name>
+        <windowcaption>Show New Field Values</windowcaption>
+        <description>The Show New Field Values button controls the visibility of field values that have appeared in the datasource after the field's filtering was configured.</description>
+        <memberlist>PivotGridFieldBase.ShowNewValues, PivotGridOptionsFilterPopup.ToolbarButtons</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>chkMultiSelection</name>
+        <windowcaption>Multi-Selection</windowcaption>
+        <description>The Multi-Selection button controls whether end-users are allowed to select only a single item or multiple items.</description>
+        <memberlist>PivotGridOptionsFilterPopup.AllowMultiSelect, PivotGridOptionsFilterPopup.ToolbarButtons</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>chkInvertFilter</name>
+        <windowcaption>Invert Filter</windowcaption>
+        <description>The Invert Filter button inverts the checked state for all filter items.</description>
+        <memberlist>PivotGridOptionsFilterPopup.ToolbarButtons</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

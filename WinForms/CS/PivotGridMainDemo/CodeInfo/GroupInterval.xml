@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>icbGroupInterval</name>
+				<windowcaption>Group Interval</windowcaption>
+				<description>Specifies how values of the OrderDate field are combined into groups.</description>
+        <memberlist>PivotGridFieldBase.GroupInterval</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    
+    <controlentry>
+      <control>
+        <name>ceProductInterval</name>
+        <windowcaption>Show Product Alphabetically</windowcaption>
+        <description>Sets whether Product field values are combined into a single category if they start with the same letter.</description>
+        <memberlist>PivotGridFieldBase.GroupInterval</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

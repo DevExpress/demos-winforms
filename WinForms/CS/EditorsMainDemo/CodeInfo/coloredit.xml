@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+		<controlentry>
+			<control>
+				<name>icbColorAlignment</name>
+				<windowcaption>Color Alignment</windowcaption>
+				<description>This combo box allows the alignment of the preview color box to be specified.</description>
+				<memberlist>RepositoryItemColorEdit.ColorAlignment</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>icbColorText</name>
+				<windowcaption>Color Text</windowcaption>
+				<description>This combo box allows you to specify the manner in which the selected color is displayed within the edit box.</description>
+				<memberlist>RepositoryItemColorEdit.ColorText</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceShowColorDialog</name>
+				<windowcaption>Show Color Dialog</windowcaption>
+				<description>This check box allows or prohibits displaying the color dialog when a custom color box is right-clicked.</description>
+				<memberlist>RepositoryItemColorEdit.ShowColorDialog</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceAsInteger</name>
+				<windowcaption>Store Color As Integer</windowcaption>
+				<description>This check box allows you to specify whether the editor stores the selected color as integer or as a System.Drawing.Color structure.</description>
+				<memberlist>RepositoryItemColorEdit.StoreColorAsInteger</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>seAdd</name>
+				<windowcaption>Fill User-Defined Colors</windowcaption>
+				<description>Click this button to fill the user-defined colors in the Custom panel of the dropdown window with random colors.</description>
+				<memberlist>RepositoryItemColorEdit.CustomColors</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>seClear</name>
+				<windowcaption>Clear User-Defined Colors</windowcaption>
+				<description>Click this button to clear the user-defined colors in the Custom panel of the dropdown window.</description>
+				<memberlist>RepositoryItemColorEdit.CustomColors</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>colorEditSample</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown color picker</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

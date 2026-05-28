@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <PropertyGroup>
+    <ProjectGuid>{259CA668-4E7F-44D6-BD86-B77CC8EBB08E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>SpreadsheetMainDemo</AssemblyName>
+    <RootNamespace>DevExpress.XtraSpreadsheet.Demos</RootNamespace>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+</PropertyGroup>
+  <!--ONLY NETCORE3 
+  <PropertyGroup>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+    ONLY NETCORE3-->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <Name>DevExpress.BonusSkins.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <Name>DevExpress.Data.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1.UI">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Spreadsheet.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Docs.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <Name>DevExpress.Tutorials.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <Name>DevExpress.Utils.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <Name>DevExpress.XtraBars.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <Name>DevExpress.XtraEditors.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <Name>DevExpress.XtraNavBar.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataVisualization.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.TreeMap.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraDialogs.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="Microsoft.Build"><Private>False</Private></Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Configuration"><Private>False</Private></Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Web"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    <Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Modules\SortAndFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SortAndFilter.Designer.cs">
+      <DependentUpon>SortAndFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sparklines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sparklines.Designer.cs">
+      <DependentUpon>Sparklines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\nwindOrdersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nwindOrdersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataEntryForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataEntryForm.designer.cs">
+      <DependentUpon>DataEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BindingToDataSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\BindingToDataSource.Designer.cs">
+      <DependentUpon>BindingToDataSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Encryption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Encryption.Designer.cs">
+      <DependentUpon>Encryption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FirstLook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FirstLook.Designer.cs">
+      <DependentUpon>FirstLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PrintTitles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PrintTitles.Designer.cs">
+      <DependentUpon>PrintTitles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PivotTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PivotTable.Designer.cs">
+      <DependentUpon>PivotTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Charting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Charting.Designer.cs">
+      <DependentUpon>Charting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Comments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Comments.Designer.cs">
+      <DependentUpon>Comments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ConditionalFormatting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ConditionalFormatting.Designer.cs">
+      <DependentUpon>ConditionalFormatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ConditionalFormatting\TopTradingPartners.cs" />
+    <Compile Include="Modules\CustomInplaceEditors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomInplaceEditors.Designer.cs">
+      <DependentUpon>CustomInplaceEditors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataValidation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataValidation.Designer.cs">
+      <DependentUpon>DataValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentProperties.Designer.cs">
+      <DependentUpon>DocumentProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HeaderFooter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\HeaderFooter.Designer.cs">
+      <DependentUpon>HeaderFooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMergeDataSets\FallCatalogDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FallCatalogDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMergeDataSets\InvoiceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMergeFallCatalog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MailMergeInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OperationRestrictions\BehaviorOptionsProvider.cs" />
+    <Compile Include="Modules\Outline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorksheetProtection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorksheetProtection.designer.cs">
+      <DependentUpon>WorksheetProtection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RangeAsDataSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RotatedText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RotatedText.Designer.cs">
+      <DependentUpon>RotatedText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TrendAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TrendAnalysis.Designer.cs">
+      <DependentUpon>TrendAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TwoWayBinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomDraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomDraw.Designer.cs">
+      <DependentUpon>CustomDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomTooltip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomTooltip.Designer.cs">
+      <DependentUpon>CustomTooltip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemosRegistration.cs" />
+    <Compile Include="DemoUtils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMergeDataSets\MasterDetailDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterDetailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMergeDataSets\TableDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMergeMasterDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MailMergeModuleBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MailMergeModuleBase.Designer.cs">
+      <DependentUpon>MailMergeModuleBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMergeSimpleReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Minesweeper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Minesweeper.Designer.cs">
+      <DependentUpon>Minesweeper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Hyperlinks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Hyperlinks.designer.cs">
+      <DependentUpon>Hyperlinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LoanAmortizationSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LoanAmortizationSchedule.Designer.cs">
+      <DependentUpon>LoanAmortizationSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomFunction.Designer.cs">
+      <DependentUpon>CustomFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OperationRestrictions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OperationRestrictions.Designer.cs">
+      <DependentUpon>OperationRestrictions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nwindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Outline.Designer.cs">
+      <DependentUpon>Outline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SpreadsheetPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpreadsheetPreview.designer.cs">
+      <DependentUpon>SpreadsheetPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpreadsheetRibbonTutorialControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpreadsheetRibbonTutorialControlBase.Designer.cs">
+      <DependentUpon>SpreadsheetRibbonTutorialControlBase.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\CustomInplaceEditors.resx">
+      <DependentUpon>CustomInplaceEditors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataEntryForm.resx">
+      <DependentUpon>DataEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\BindingToDataSource.resx">
+      <DependentUpon>BindingToDataSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Encryption.resx">
+      <DependentUpon>Encryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FirstLook.resx">
+      <DependentUpon>FirstLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PrintTitles.resx">
+      <DependentUpon>PrintTitles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PivotTable.resx">
+      <DependentUpon>PivotTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Charting.resx">
+      <DependentUpon>Charting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Comments.resx">
+      <DependentUpon>Comments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ConditionalFormatting.resx">
+      <DependentUpon>ConditionalFormatting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataValidation.resx">
+      <DependentUpon>DataValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\HeaderFooter.resx">
+      <DependentUpon>HeaderFooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Outline.resx">
+      <DependentUpon>Outline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WorksheetProtection.resx">
+      <DependentUpon>WorksheetProtection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RangeAsDataSource.resx">
+      <DependentUpon>RangeAsDataSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TwoWayBinding.resx">
+      <DependentUpon>TwoWayBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomDraw.resx">
+      <DependentUpon>CustomDraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomTooltip.resx">
+      <DependentUpon>CustomTooltip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Hyperlinks.resx">
+      <DependentUpon>Hyperlinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LoanAmortizationSchedule.resx">
+      <DependentUpon>LoanAmortizationSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomFunction.resx">
+      <DependentUpon>CustomFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MailMergeModuleBase.resx">
+      <DependentUpon>MailMergeModuleBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MailMergeSimpleReport.resx">
+      <DependentUpon>MailMergeSimpleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Minesweeper.resx">
+      <DependentUpon>Minesweeper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OperationRestrictions.resx">
+      <DependentUpon>OperationRestrictions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Flag.png" />
+    <EmbeddedResource Include="Resources\Mine.png" />
+    <EmbeddedResource Include="Resources\Save.svg" />
+    <EmbeddedResource Include="Resources\ManyPages.svg" />
+    <EmbeddedResource Include="Resources\WholePage.svg" />
+    <EmbeddedResource Include="Resources\SaveXLSX.svg" />
+    <EmbeddedResource Include="Resources\SaveXLS.svg" />
+    <None Include="app.config" />
+    <None Include="connectionStrings.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    
+    <Content Include="Modules\DataBinding\nwindOrdersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nwindOrdersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    
+    
+    <Content Include="Modules\MailMergeDataSets\FallCatalogDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FallCatalogDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    
+    
+    <Content Include="Modules\MailMergeDataSets\InvoiceDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    
+    
+    <Content Include="Modules\MailMergeDataSets\MasterDetailDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MasterDetailDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    
+    
+    <Content Include="Modules\MailMergeDataSets\TableDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TableDataSet.Designer.cs</LastGenOutput>
+    </Content>
+    
+    
+    <Content Include="nwindDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nwindDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SpreadsheetPreview.resx">
+      <DependentUpon>SpreadsheetPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpreadsheetRibbonTutorialControlBase.resx">
+      <DependentUpon>SpreadsheetRibbonTutorialControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraSpreadsheet.png" />
+    <EmbeddedResource Include="XtraSpreadsheet_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="System.Data.OleDb" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+</Project>

@@ -1,0 +1,34 @@
+﻿.visibility1 {
+	visibility: visible;
+}
+
+.visibility2 {
+	visibility: hidden;
+}
+
+body {
+	color: @ControlText;
+}
+
+h3 {
+	margin: 0px;
+}
+
+.container {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: @Window;
+}
+
+.element {
+	margin-top: 5px;
+	padding: 5px;
+	background-color: @Control;
+}
+
+.child-element {
+	margin: 5px;
+	padding: 5px;
+	background-color: @Blue/0.2;
+	display: inline-block;
+}

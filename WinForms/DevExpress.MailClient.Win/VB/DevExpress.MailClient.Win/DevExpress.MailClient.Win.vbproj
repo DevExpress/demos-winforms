@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C2E33FD-0D9D-423E-A02A-F457A94C97D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>DevExpress.MailClient.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DevAV.v26.1.Data">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Images.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Docs.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.SpellChecker.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Reporting.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Extensions"><HintPath></HintPath><Private>False</Private></Reference>   
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>   
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Deployment"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>
+	<PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonControls.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls.vb" />
+    <Compile Include="Controls\BackstageViewLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ExportControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ExportControl.Designer.vb">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HelpControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HelpControl.Designer.vb">
+      <DependentUpon>HelpControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PrintControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PrintControl.Designer.vb">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RibbonApplicationUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RibbonApplicationUserControl.Designer.vb">
+      <DependentUpon>RibbonApplicationUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMessageInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMessageInfo.Designer.vb">
+      <DependentUpon>ucMessageInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditTask.Designer.vb">
+      <DependentUpon>frmEditTask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditContact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditContact.Designer.vb">
+      <DependentUpon>frmEditContact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditMail.Designer.vb">
+      <DependentUpon>frmEditMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCalendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCalendar.Designer.vb">
+      <DependentUpon>ucCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucContactInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucContactInfo.Designer.vb">
+      <DependentUpon>ucContactInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucContacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucContacts.Designer.vb">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMailTree.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMailTree.Designer.vb">
+      <DependentUpon>ucMailTree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMailViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMailViewer.Designer.vb">
+      <DependentUpon>ucMailViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data.vb"></Compile>
+    <Compile Include="Forms\frmCustomDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomDate.Designer.vb">
+      <DependentUpon>frmCustomDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFeed.Designer.vb">
+      <DependentUpon>frmFeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReminders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReminders.Designer.vb">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ssMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ssMain.Designer.vb">
+      <DependentUpon>ssMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\wfMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfMain.Designer.vb">
+      <DependentUpon>wfMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LanguageSelectorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanguageSelectorForm.Designer.vb">
+      <DependentUpon>LanguageSelectorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Localizer\BarLocalizer.vb" />
+    <Compile Include="Localizer\EditorLocalizer.vb" />
+    <Compile Include="Localizer\GridLocalizer.vb" />
+    <Compile Include="Localizer\NavBarLocalizer.vb" />
+    <Compile Include="Localizer\SchedulerLocalizer.vb" />
+    <Compile Include="Modules\Calendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Calendar.Designer.vb">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Contacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Contacts.Designer.vb">
+      <DependentUpon>Contacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Mail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Mail.Designer.vb">
+      <DependentUpon>Mail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tasks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Tasks.Designer.vb">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="UnpackHelper.vb" />
+    <EmbeddedResource Include="Controls\ExportControl.ar.resx">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ExportControl.fa.resx">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ExportControl.he.resx">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ExportControl.resx">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HelpControl.ar.resx">
+      <DependentUpon>HelpControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HelpControl.fa.resx">
+      <DependentUpon>HelpControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HelpControl.he.resx">
+      <DependentUpon>HelpControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HelpControl.resx">
+      <DependentUpon>HelpControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PrintControl.ar.resx">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PrintControl.fa.resx">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PrintControl.he.resx">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PrintControl.resx">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RibbonApplicationUserControl.resx">
+      <DependentUpon>RibbonApplicationUserControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContactInfo.ar.resx">
+      <DependentUpon>ucContactInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContactInfo.fa.resx">
+      <DependentUpon>ucContactInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContactInfo.he.resx">
+      <DependentUpon>ucContactInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContacts.ar.resx">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContacts.fa.resx">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContacts.he.resx">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMailTree.ar.resx">
+      <DependentUpon>ucMailTree.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMailTree.fa.resx">
+      <DependentUpon>ucMailTree.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMailTree.he.resx">
+      <DependentUpon>ucMailTree.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMailViewer.ar.resx">
+      <DependentUpon>ucMailViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMailViewer.fa.resx">
+      <DependentUpon>ucMailViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMailViewer.he.resx">
+      <DependentUpon>ucMailViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMessageInfo.ar.resx">
+      <DependentUpon>ucMessageInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMessageInfo.fa.resx">
+      <DependentUpon>ucMessageInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMessageInfo.he.resx">
+      <DependentUpon>ucMessageInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMessageInfo.resx">
+      <DependentUpon>ucMessageInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomDate.ar.resx">
+      <DependentUpon>frmCustomDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomDate.fa.resx">
+      <DependentUpon>frmCustomDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomDate.he.resx">
+      <DependentUpon>frmCustomDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditContact.ar.resx">
+      <DependentUpon>frmEditContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditContact.fa.resx">
+      <DependentUpon>frmEditContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditContact.he.resx">
+      <DependentUpon>frmEditContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditMail.ar.resx">
+      <DependentUpon>frmEditMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditMail.fa.resx">
+      <DependentUpon>frmEditMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditMail.he.resx">
+      <DependentUpon>frmEditMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditTask.ar.resx">
+      <DependentUpon>frmEditTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditTask.fa.resx">
+      <DependentUpon>frmEditTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditTask.he.resx">
+      <DependentUpon>frmEditTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditTask.resx">
+      <DependentUpon>frmEditTask.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditContact.resx">
+      <DependentUpon>frmEditContact.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditMail.resx">
+      <DependentUpon>frmEditMail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCalendar.resx">
+      <DependentUpon>ucCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContactInfo.resx">
+      <DependentUpon>ucContactInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContacts.resx">
+      <DependentUpon>ucContacts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMailTree.resx">
+      <DependentUpon>ucMailTree.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMailViewer.resx">
+      <DependentUpon>ucMailViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomDate.resx">
+      <DependentUpon>frmCustomDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeed.ar.resx">
+      <DependentUpon>frmFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeed.fa.resx">
+      <DependentUpon>frmFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeed.he.resx">
+      <DependentUpon>frmFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFeed.resx">
+      <DependentUpon>frmFeed.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReminders.ar.resx">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReminders.fa.resx">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReminders.he.resx">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReminders.resx">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ssMain.ar.resx">
+      <DependentUpon>ssMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ssMain.fa.resx">
+      <DependentUpon>ssMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ssMain.he.resx">
+      <DependentUpon>ssMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ssMain.resx">
+      <DependentUpon>ssMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\wfMain.resx">
+      <DependentUpon>wfMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.ar.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.fa.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.he.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanguageSelectorForm.resx">
+      <DependentUpon>LanguageSelectorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Calendar.resx">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Contacts.ar.resx">
+      <DependentUpon>Contacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Contacts.fa.resx">
+      <DependentUpon>Contacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Contacts.he.resx">
+      <DependentUpon>Contacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Contacts.resx">
+      <DependentUpon>Contacts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Mail.ar.resx">
+      <DependentUpon>Mail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Mail.fa.resx">
+      <DependentUpon>Mail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Mail.he.resx">
+      <DependentUpon>Mail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Mail.resx">
+      <DependentUpon>Mail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks.ar.resx">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks.fa.resx">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks.he.resx">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks.resx">
+      <DependentUpon>Tasks.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.fa.resx" />
+    <EmbeddedResource Include="My Project\Resources.he.resx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.ar.resx" />
+    <None Include="App.config" />
+    
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.MailClient.Win.Properties</CustomToolNamespace>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources.vb" />
+    <Compile Include="Resources.ja.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\DevExpress.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Universal.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Win.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ColorMixer_16x16.png" />
+    <Content Include="Resources\ColorMixer_32x32.png" />
+    <Content Include="Resources\Mail_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Mail_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\reminder.png" />
+    <Content Include="Resources\Today_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Today_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BO_Task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BO_Task_Large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BO_Feeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BO_Feeds_Large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LayoutRotate_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LayoutRotate_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LayoutFlip_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LayoutFlip_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ReplyAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Priority_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NavigationBar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NavigationBar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AttachmentObject_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SaveAll_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Unknown-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SortAsc_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\reading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Owner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Miss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Mr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Mrs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Ms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Professor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PrintDirectLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MultiplePagesLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageOrientationLandscape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageOrientationPortrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsModerate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsNarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsWide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Executive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Legal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Tabloid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Online_Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Code_Central.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_Us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\TableStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MemoStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToPDF_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToHTML_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToMHT_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToRTF_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToXLS_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToXLSX_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToCSV_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToText_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToImage_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ByState_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Card_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\List_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Completed_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewContact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewContact_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditContact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditContact_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ResetToDefault_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewFeed_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewFeed_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditFeed_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditFeed_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Completed_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewTask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewTask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditTask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditTask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ListByDate_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ToDoList_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Prioritized_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Overdue_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Deferred_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewMail_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Important_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Today_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Tomorrow_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ThisWeek_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NextWeek_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NoDate_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Custom_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewMail_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\OpenClendar_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Low16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\High16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dictionaries\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

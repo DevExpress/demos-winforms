@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <ProjectGuid>{4927F064-B574-0FD8-28DB-7FCC51371861}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.XtraDialogs.Demos</RootNamespace>
+    <AssemblyName>DialogsMainDemo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeExamples.Modules\FileExplorerExtensionsAPIExamples.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\FileExplorerExtensionsAPIExamples.Designer.cs">
+      <DependentUpon>FileExplorerExtensionsAPIExamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeExamples\SvgPreviewHandler.cs" />
+    <Compile Include="CodeExamples\DialogAPIExamples.cs" />
+    <Compile Include="CodeExamples\FileExplorerExtensionsAPIExamples.cs" />
+    <Compile Include="Helpers\CodeExamples\CodeTutorialControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\Data\VehiclesData.cs" />
+    <Compile Include="Helpers\DemosInfo.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\DialogAPIExamples.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\DialogAPIExamples.Designer.cs">
+      <DependentUpon>DialogAPIExamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomDialogLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomDialogLayout.Designer.cs">
+      <DependentUpon>CustomDialogLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Overview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CarRentalCatalogue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CarRentalCatalogue.Designer.cs">
+      <DependentUpon>CarRentalCatalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TwoPanelFileBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TwoPanelFileBrowser.Designer.cs">
+      <DependentUpon>TwoPanelFileBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\TutorialControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Modules\CustomDialogLayout.resx">
+      <DependentUpon>CustomDialogLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CarRentalCatalogue.resx">
+      <DependentUpon>CarRentalCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TwoPanelFileBrowser.resx">
+      <DependentUpon>TwoPanelFileBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="Resources\open.svg" />
+    <EmbeddedResource Include="Resources\save.svg" />
+    <EmbeddedResource Include="Resources\f3.svg" />
+    <EmbeddedResource Include="Resources\f4.svg" />
+    <EmbeddedResource Include="Resources\f5.svg" />
+    <EmbeddedResource Include="Resources\f6.svg" />
+    <EmbeddedResource Include="Resources\f7.svg" />
+    <EmbeddedResource Include="Resources\f8.svg" />
+    <EmbeddedResource Include="Resources\car.svg" />
+    <EmbeddedResource Include="Resources\category.svg" />
+    <EmbeddedResource Include="Resources\folder.svg" />
+    <EmbeddedResource Include="Resources\navigateBack.svg" />
+    <EmbeddedResource Include="Resources\navigateForward.svg" />
+    <EmbeddedResource Include="Resources\navigateUp.svg" />
+    <EmbeddedResource Include="Resources\database.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Overview.xml" />
+    <EmbeddedResource Include="CodeInfo\CustomDialogLayout.xml" />
+    <EmbeddedResource Include="CodeInfo\CarRentalCatalogue.xml" />
+    <EmbeddedResource Include="CodeInfo\TwoPanelFileBrowser.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+  </PropertyGroup>
+</Project>

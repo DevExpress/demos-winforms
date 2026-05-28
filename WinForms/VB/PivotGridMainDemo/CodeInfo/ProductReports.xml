@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>rgReport</name>
+				<windowcaption>Reports</windowcaption>
+				<description>Sets the report type.</description>
+        <memberlist>PivotGridFieldBase.SortOrder, PivotGridFieldBase.TopValueCount, PivotGridFieldBase.SortBySummaryInfo</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+
+    <controlentry>
+      <control>
+        <name>cbeDate</name>
+        <windowcaption>Grouping Layout</windowcaption>
+        <description>Specifies how the current column field values are combined into groups.</description>
+        <memberlist>PivotGridFieldBase.GroupInterval</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>ceDrillDown</name>
+        <windowcaption>Show Drill Down Form</windowcaption>
+        <description>Specifies whether or not to show the Drill Down Form on a cell double click. The PivotGridControl.CreateDrillDownDataSource method is called to obtain a list of records used to calculate summary values for the specified cell.</description>
+        <memberlist>PivotGridControl.CreateDrillDownDataSource</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

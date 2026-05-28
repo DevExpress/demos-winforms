@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <controls>
+        <controlentry>
+            <control>
+                <name>icbTickStyle</name>
+                <windowcaption>Tick Style</windowcaption>
+                <description>This combo box allows you to select the location of tick marks within a track bar.</description>
+                <memberlist>TickStyle</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>checkEditVertical</name>
+                <windowcaption>Orientation</windowcaption>
+                <description>If checked, the track bar is vertically oriented. In this instance, the scroll box moves from bottom to top as the track bar's value increases.</description>
+                <memberlist>Orientation</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>seMinimum</name>
+                <windowcaption>Minimum</windowcaption>
+                <description>Specifies the track bar's minimum value.</description>
+                <memberlist>Minimum</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>seMaximum</name>
+                <windowcaption>Maximum</windowcaption>
+                <description>Specifies the track bar's maximum value.</description>
+                <memberlist>Maximum</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>seSmallChange</name>
+                <windowcaption>Small Change</windowcaption>
+                <description>Specifies the small change. This value is added to or subtracted from the Value property when the scroll box is moved a small distance.</description>
+                <memberlist>SmallChange</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>seLargeChange</name>
+                <windowcaption>Large Change</windowcaption>
+                <description>Specifies the large change. This value is added to or subtracted from the Value property when the scroll box is moved a large distance.</description>
+                <memberlist>LargeChange</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>ceShowValue</name>
+                <windowcaption>Show Thumb Tooltips</windowcaption>
+                <description>Specifies whether to show tooltips when hovering over the thumbs.</description>
+                <memberlist>ShowValueToolTip</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>ceShowCustomValue</name>
+                <windowcaption>Thumb Custom Tooltips</windowcaption>
+                <description>Allows you to provide custom tooltips for the thumbs.</description>
+                <memberlist>BeforeShowValueToolTip event</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+    </controls>
+</totalinfo>

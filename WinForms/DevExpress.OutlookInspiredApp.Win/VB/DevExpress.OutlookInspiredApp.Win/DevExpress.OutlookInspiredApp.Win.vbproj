@@ -1,0 +1,1764 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0" DefaultTargets="Build">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1672BB6E-0C43-4AB2-9C43-3BD064D669E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>DevExpress.OutlookInspiredApp.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8WindowsRazor />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1.UI">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DevAV.v26.1.Data">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1.UI">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Extensions">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Wizard">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGantt.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1.Extensions">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DevAV.v26.1.Reports">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1.DataModel">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1.DataModel.EF6">
+      <netcore3ignore />
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1.ViewModel">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Drawing">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utils\AIExceptionHandler.vb" />
+    <Compile Include="Common\Utils\DataAnnotationHelper.vb" />
+    <Compile Include="Common\Utils\DbExtensions.vb" />
+    <Compile Include="Common\Utils\ExpressionHelper.vb" />
+    <Compile Include="Common\Utils\FluentIconHelper.vb" />
+    <Compile Include="Common\Utils\ProcessTracker.vb" />
+    <Compile Include="Common\Utils\StartUpProcess.vb" />
+    <Compile Include="Common\ViewModel\CollectionViewModel.vb" />
+    <Compile Include="Common\ViewModel\CollectionViewModel.partial.vb" />
+    <Compile Include="Common\ViewModel\DocumentContentViewModelBase.vb" />
+    <Compile Include="Common\ViewModel\EntitiesViewModel.vb" />
+    <Compile Include="Common\ViewModel\Messages.partial.vb" />
+    <Compile Include="Common\ViewModel\ReadOnlyCollectionViewModel.vb" />
+    <Compile Include="Common\ViewModel\SingleObjectChildViewModel.vb" />
+    <Compile Include="Common\ViewModel\SingleObjectViewModel.vb" />
+    <Compile Include="Common\ViewModel\SingleObjectViewModel.partial.vb" />
+    <Compile Include="Controls\FilterAccordionHelper.vb" />
+    <Compile Include="Controls\Helpers.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\ContactsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\ContactsControl.Designer.vb">
+      <DependentUpon>ContactsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\EvaluationsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\EvaluationsControl.Designer.vb">
+      <DependentUpon>EvaluationsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\ImagesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\ImagesControl.Designer.vb">
+      <DependentUpon>ImagesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\InvoiceSettingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\InvoiceSettingsControl.Designer.vb">
+      <DependentUpon>InvoiceSettingsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\SortFilterControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\SortFilterControl.Designer.vb">
+      <DependentUpon>SortFilterControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\SortOrderControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\SortOrderControl.Designer.vb">
+      <DependentUpon>SortOrderControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\TasksSortControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\TasksSortControl.Designer.vb">
+      <DependentUpon>TasksSortControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\YearsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\SettingsControls\YearsControl.Designer.vb">
+      <DependentUpon>YearsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewSettingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ViewSettingsControl.Designer.vb">
+      <DependentUpon>ViewSettingsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DevAVDbDataModel\DevAVDbUnitOfWork.vb" />
+    <Compile Include="DevAVDbDataModel\IDevAVDbUnitOfWork.vb" />
+    <Compile Include="DevAVDbDataModel\UnitOfWorkSource.vb" />
+    <Compile Include="Common\Utils\MappedSvgImageCollection.vb" />
+    <Compile Include="Modules\BaseModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomerMapView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomerMapView.Designer.vb">
+      <DependentUpon>CustomerMapView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersCustomFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersCustomFilter.Designer.vb">
+      <DependentUpon>CustomersCustomFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersExport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersExport.Designer.vb">
+      <DependentUpon>CustomersExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersFilterPaneCollapsed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersFilterPaneCollapsed.Designer.vb">
+      <DependentUpon>CustomersFilterPaneCollapsed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersGroupFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersGroupFilter.Designer.vb">
+      <DependentUpon>CustomersGroupFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersPrint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersPrint.Designer.vb">
+      <DependentUpon>CustomersPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomerView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomerView.Designer.vb">
+      <DependentUpon>CustomerView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeeMailMerge.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeeMailMerge.Designer.vb">
+      <DependentUpon>EmployeeMailMerge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesExport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesExport.Designer.vb">
+      <DependentUpon>EmployeesExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesFilterPaneCollapsed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesFilterPaneCollapsed.Designer.vb">
+      <DependentUpon>EmployeesFilterPaneCollapsed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesCustomFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesCustomFilter.Designer.vb">
+      <DependentUpon>EmployeesCustomFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeeMapView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeeMapView.Designer.vb">
+      <DependentUpon>EmployeeMapView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesGroupFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesGroupFilter.Designer.vb">
+      <DependentUpon>EmployeesGroupFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesPrint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesPrint.Designer.vb">
+      <DependentUpon>EmployeesPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Helpers\FilterPaneHelper.vb" />
+    <Compile Include="Modules\Tasks\TaskEditView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Tasks\TaskEditView.Designer.vb">
+      <DependentUpon>TaskEditView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tasks\TasksFilterPane.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Tasks\TasksFilterPane.Designer.vb">
+      <DependentUpon>TasksFilterPane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tasks\TasksFilterPaneCollapsed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Tasks\TasksFilterPaneCollapsed.Designer.vb">
+      <DependentUpon>TasksFilterPaneCollapsed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tasks\TasksCustomFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Tasks\TasksCustomFilter.Designer.vb">
+      <DependentUpon>TasksCustomFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tasks\Tasks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Tasks\Tasks.Designer.vb">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tasks\TaskView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Tasks\TaskView.Designer.vb">
+      <DependentUpon>TaskView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuotesCustomFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuotesCustomFilter.Designer.vb">
+      <DependentUpon>QuotesCustomFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuotesMapView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuotesMapView.Designer.vb">
+      <DependentUpon>QuotesMapView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductAnalysis.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductAnalysis.Designer.vb">
+      <DependentUpon>ProductAnalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsCustomFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsCustomFilter.Designer.vb">
+      <DependentUpon>ProductsCustomFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsGroupFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsGroupFilter.Designer.vb">
+      <DependentUpon>ProductsGroupFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderRevenueView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderRevenueView.Designer.vb">
+      <DependentUpon>OrderRevenueView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\QuickReportView\OrderDocQuickReportView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\QuickReportView\OrderDocQuickReportView.Designer.vb">
+      <DependentUpon>OrderDocQuickReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderMailMerge.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderMailMerge.Designer.vb">
+      <DependentUpon>OrderMailMerge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderMapView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderMapView.Designer.vb">
+      <DependentUpon>OrderMapView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomerAnalysis.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomerAnalysis.Designer.vb">
+      <DependentUpon>CustomerAnalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\QuickReportView\OrderPdfQuickReportView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\QuickReportView\OrderPdfQuickReportView.Designer.vb">
+      <DependentUpon>OrderPdfQuickReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersCustomFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersCustomFilter.Designer.vb">
+      <DependentUpon>OrdersCustomFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersExport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersExport.Designer.vb">
+      <DependentUpon>OrdersExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersPrint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersPrint.Designer.vb">
+      <DependentUpon>OrdersPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderEditView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderEditView.Designer.vb">
+      <DependentUpon>OrderEditView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\QuickReportView\OrderXlsQuickReportView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\QuickReportView\OrderXlsQuickReportView.Designer.vb">
+      <DependentUpon>OrderXlsQuickReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presenters\BasePresenter.vb" />
+    <Compile Include="Presenters\CollectionPresenter\CollectionPresenter.vb" />
+    <Compile Include="Presenters\CollectionPresenter\Presenters.vb" />
+    <Compile Include="Presenters\FilterAccordionPresenter\FilterAccordionPresenter.vb" />
+    <Compile Include="Presenters\FilterAccordionPresenter\Presenters.vb" />
+    <Compile Include="Presenters\FilterPanePresenter\FilterPanePresenter.vb" />
+    <Compile Include="Presenters\FilterPanePresenter\Presenters.vb" />
+    <Compile Include="Presenters\GroupFilterPresenter\GroupFilterPresenter.vb" />
+    <Compile Include="Presenters\GroupFilterPresenter\Presenters.vb" />
+    <Compile Include="Presenters\MapPresenter\Presenters.vb" />
+    <Compile Include="Presenters\MapPresenter\RouteMapPresenter.vb" />
+    <Compile Include="Presenters\MapPresenter\SalesMapPresenter.vb" />
+    <Compile Include="Presenters\PeekListPresenter\PeekPanePresenter.vb" />
+    <Compile Include="Presenters\PeekListPresenter\Presenters.vb" />
+    <Compile Include="Services\DocumentManagerServiceBase.vb" />
+    <Compile Include="Services\WaitingService.vb" />
+    <Compile Include="ViewModels\Analysis.vb" />
+    <Compile Include="ViewModels\AnalysysTemplatesHelper.vb" />
+    <Compile Include="ViewModels\CollectionViewFiltersVisibility.vb" />
+    <Compile Include="ViewModels\CollectionViewKind.vb" />
+    <Compile Include="ViewModels\CollectionViewMasterDetailLayout.vb" />
+    <Compile Include="ViewModels\CustomerReportType.vb" />
+    <Compile Include="ViewModels\Customer\CustomerAnalysisViewModel.vb" />
+    <Compile Include="ViewModels\Customer\CustomerCollectionViewModel.vb" />
+    <Compile Include="ViewModels\Customer\CustomerCollectionViewModel.partial.vb" />
+    <Compile Include="ViewModels\Customer\CustomerMapViewModel.vb" />
+    <Compile Include="ViewModels\Customer\CustomersFilterTreeViewModel.vb" />
+    <Compile Include="ViewModels\Customer\CustomersReportViewModel.vb" />
+    <Compile Include="ViewModels\Customer\CustomerViewModel.vb" />
+    <Compile Include="ViewModels\Customer\CustomerViewModel.partial.vb" />
+    <Compile Include="ViewModels\EmployeeMailTemplate.vb" />
+    <Compile Include="ViewModels\EmployeeReportType.vb" />
+    <Compile Include="ViewModels\Employee\EmployeeCollectionViewModel.vb" />
+    <Compile Include="ViewModels\Employee\EmployeeCollectionViewModel.partial.vb" />
+    <Compile Include="ViewModels\Employee\EmployeeContactsViewModel.vb" />
+    <Compile Include="ViewModels\Employee\EmployeeMailMergeViewModel.vb" />
+    <Compile Include="ViewModels\Employee\EmployeeMapViewModel.vb" />
+    <Compile Include="ViewModels\Employee\EmployeesFilterTreeViewModel.vb" />
+    <Compile Include="ViewModels\Employee\EmployeesReportViewModel.vb" />
+    <Compile Include="ViewModels\Employee\EmployeeViewModel.vb" />
+    <Compile Include="ViewModels\Employee\EmployeeViewModel.partial.vb" />
+    <Compile Include="ViewModels\FilterTreeViewModelBase.vb" />
+    <Compile Include="ViewModels\Task\TaskCollectionViewModel.vb" />
+    <Compile Include="ViewModels\Task\TaskCollectionViewModel.partial.vb" />
+    <Compile Include="ViewModels\Task\TasksFilterTreeViewModel.vb" />
+    <Compile Include="ViewModels\Task\TaskViewModel.vb" />
+    <Compile Include="ViewModels\Task\TaskViewModel.partial.vb" />
+    <Compile Include="ViewModels\Helpers.vb" />
+    <Compile Include="Controls\ColumnViewHelper.vb" />
+    <Compile Include="Modules\Customers\Customers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\Customers.Designer.vb">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersFilterPane.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersFilterPane.Designer.vb">
+      <DependentUpon>CustomersFilterPane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersPeek.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers\CustomersPeek.Designer.vb">
+      <DependentUpon>CustomersPeek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeeEditView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeeEditView.Designer.vb">
+      <DependentUpon>EmployeeEditView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\Employees.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\Employees.Designer.vb">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeeView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeeView.Designer.vb">
+      <DependentUpon>EmployeeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interfaces.vb" />
+    <Compile Include="Modules\Opportunities\Quotes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Opportunities\Quotes.Designer.vb">
+      <DependentUpon>Quotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuotesFilterPane.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuotesFilterPane.Designer.vb">
+      <DependentUpon>QuotesFilterPane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuotesFilterPaneCollapsed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuotesFilterPaneCollapsed.Designer.vb">
+      <DependentUpon>QuotesFilterPaneCollapsed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuoteView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Opportunities\QuoteView.Designer.vb">
+      <DependentUpon>QuoteView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OverviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OverviewControl.Designer.vb">
+      <DependentUpon>OverviewControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductMapView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductMapView.Designer.vb">
+      <DependentUpon>ProductMapView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\Products.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\Products.Designer.vb">
+      <DependentUpon>Products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsExport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsExport.Designer.vb">
+      <DependentUpon>ProductsExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsFilterPane.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsFilterPane.Designer.vb">
+      <DependentUpon>ProductsFilterPane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsFilterPaneCollapsed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsFilterPaneCollapsed.Designer.vb">
+      <DependentUpon>ProductsFilterPaneCollapsed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsPeek.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsPeek.Designer.vb">
+      <DependentUpon>ProductsPeek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsPrint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductsPrint.Designer.vb">
+      <DependentUpon>ProductsPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Products\ProductView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Products\ProductView.Designer.vb">
+      <DependentUpon>ProductView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\Orders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\Orders.Designer.vb">
+      <DependentUpon>Orders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersFilterPane.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersFilterPane.Designer.vb">
+      <DependentUpon>OrdersFilterPane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersFilterPaneCollapsed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrdersFilterPaneCollapsed.Designer.vb">
+      <DependentUpon>OrdersFilterPaneCollapsed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\OrderView.Designer.vb">
+      <DependentUpon>OrderView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Services\DetailFormDocumentManagerService.vb" />
+    <Compile Include="Services\FilterFormDocumentManagerService.vb" />
+    <Compile Include="Services\Forms\DetailForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\Forms\DetailForm.Designer.vb">
+      <DependentUpon>DetailForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Forms\FilterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\Forms\FilterForm.Designer.vb">
+      <DependentUpon>FilterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ModuleActivator.vb" />
+    <Compile Include="Services\ModuleLocator.vb" />
+    <Compile Include="Services\ModuleResourceProvider.vb" />
+    <Compile Include="Services\ModulesHostingService.vb" />
+    <Compile Include="Services\ModuleTypesResolver.vb" />
+    <Compile Include="Controls\Reports\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\PreviewControl.Designer.vb">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\PrintControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\PrintControl.Designer.vb">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reports\ExportControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Reports\ExportControl.Designer.vb">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Services\TransitionService.vb" />
+    <Compile Include="Services\WorkspaceService.vb" />
+    <Compile Include="ViewModels\CollectionUIViewModel.vb" />
+    <Compile Include="ViewModels\FilterTreeViewModel.vb" />
+    <Compile Include="ViewModels\Interfaces.vb" />
+    <Compile Include="ViewModels\MailMergeTemplatesHelper.vb" />
+    <Compile Include="ViewModels\MailMergeViewModelBase.vb" />
+    <Compile Include="ViewModels\MainViewModel.vb" />
+    <Compile Include="ViewModels\MapViewModelBase.vb" />
+    <Compile Include="ViewModels\Order\OrderCollectionViewModel.vb" />
+    <Compile Include="ViewModels\Order\OrderCollectionViewModel.partial.vb" />
+    <Compile Include="ViewModels\Order\OrderQuickReportsViewModel.vb" />
+    <Compile Include="ViewModels\Order\OrderMailMergeViewModel.vb" />
+    <Compile Include="ViewModels\Order\OrderMapViewModel.vb" />
+    <Compile Include="ViewModels\Order\OrderRevenueViewModel.vb" />
+    <Compile Include="ViewModels\Order\OrdersFilterTreeViewModel.vb" />
+    <Compile Include="ViewModels\Order\OrdersReportViewModel.vb" />
+    <Compile Include="ViewModels\Order\OrderViewModel.vb" />
+    <Compile Include="ViewModels\Order\OrderViewModel.partial.vb" />
+    <Compile Include="ViewModels\ProductReportType.vb" />
+    <Compile Include="ViewModels\Product\ProductAnalysisViewModel.vb" />
+    <Compile Include="ViewModels\Product\ProductCollectionViewModel.vb" />
+    <Compile Include="ViewModels\Product\ProductCollectionViewModel.partial.vb" />
+    <Compile Include="ViewModels\Product\ProductMapViewModel.vb" />
+    <Compile Include="ViewModels\Product\ProductsFilterTreeViewModel.vb" />
+    <Compile Include="ViewModels\Product\ProductsReportViewModel.vb" />
+    <Compile Include="ViewModels\Product\ProductViewModel.vb" />
+    <Compile Include="ViewModels\Product\ProductViewModel.partial.vb" />
+    <Compile Include="ViewModels\Quote\QuoteCollectionViewModel.vb" />
+    <Compile Include="ViewModels\Quote\QuoteCollectionViewModel.partial.vb" />
+    <Compile Include="ViewModels\Quote\QuoteMapViewModel.vb" />
+    <Compile Include="ViewModels\Quote\QuotesFilterTreeViewModel.vb" />
+    <Compile Include="ViewModels\Quote\QuoteViewModel.vb" />
+    <Compile Include="ViewModels\Quote\QuoteViewModel.partial.vb" />
+    <Compile Include="ViewModels\ReportViewModelBase.vb" />
+    <Compile Include="ViewModels\SalesReportType.vb" />
+    <EmbeddedResource Include="Common\CommonResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.DevAV.Common</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\SettingsControls\ContactsControl.resx">
+      <DependentUpon>ContactsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\SettingsControls\EvaluationsControl.resx">
+      <DependentUpon>EvaluationsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\SettingsControls\ImagesControl.resx">
+      <DependentUpon>ImagesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\SettingsControls\InvoiceSettingsControl.resx">
+      <DependentUpon>InvoiceSettingsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\SettingsControls\SortFilterControl.resx">
+      <DependentUpon>SortFilterControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\SettingsControls\SortOrderControl.resx">
+      <DependentUpon>SortOrderControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\SettingsControls\TasksSortControl.resx">
+      <DependentUpon>TasksSortControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\SettingsControls\YearsControl.resx">
+      <DependentUpon>YearsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ViewSettingsControl.resx">
+      <DependentUpon>ViewSettingsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\BaseModule.resx">
+      <DependentUpon>BaseModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomerMapView.resx">
+      <DependentUpon>CustomerMapView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\Customers.resx">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomersCustomFilter.resx">
+      <DependentUpon>CustomersCustomFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomersFilterPane.resx">
+      <DependentUpon>CustomersFilterPane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomersFilterPaneCollapsed.resx">
+      <DependentUpon>CustomersFilterPaneCollapsed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomersGroupFilter.resx">
+      <DependentUpon>CustomersGroupFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomersPrint.resx">
+      <DependentUpon>CustomersPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomerView.resx">
+      <DependentUpon>CustomerView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeeMailMerge.resx">
+      <DependentUpon>EmployeeMailMerge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeeMapView.resx">
+      <DependentUpon>EmployeeMapView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeeEditView.resx">
+      <DependentUpon>EmployeeEditView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeesCustomFilter.resx">
+      <DependentUpon>EmployeesCustomFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeesExport.resx">
+      <DependentUpon>EmployeesExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeesFilterPaneCollapsed.resx">
+      <DependentUpon>EmployeesFilterPaneCollapsed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeesGroupFilter.resx">
+      <DependentUpon>EmployeesGroupFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeesPrint.resx">
+      <DependentUpon>EmployeesPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeeView.resx">
+      <DependentUpon>EmployeeView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks\TaskEditView.resx">
+      <DependentUpon>TaskEditView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks\TasksFilterPane.resx">
+      <DependentUpon>TasksFilterPane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks\TasksFilterPaneCollapsed.resx">
+      <DependentUpon>TasksFilterPaneCollapsed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks\TasksCustomFilter.resx">
+      <DependentUpon>TasksCustomFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks\Tasks.resx">
+      <DependentUpon>Tasks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tasks\TaskView.resx">
+      <DependentUpon>TaskView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Opportunities\Quotes.resx">
+      <DependentUpon>Quotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Opportunities\QuotesCustomFilter.resx">
+      <DependentUpon>QuotesCustomFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Opportunities\QuotesFilterPane.resx">
+      <DependentUpon>QuotesFilterPane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Opportunities\QuotesFilterPaneCollapsed.resx">
+      <DependentUpon>QuotesFilterPaneCollapsed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Opportunities\QuotesMapView.resx">
+      <DependentUpon>QuotesMapView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Opportunities\QuoteView.resx">
+      <DependentUpon>QuoteView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OverviewControl.resx">
+      <DependentUpon>OverviewControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\ProductAnalysis.resx">
+      <DependentUpon>ProductAnalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\ProductMapView.resx">
+      <DependentUpon>ProductMapView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\Products.resx">
+      <DependentUpon>Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\ProductsCustomFilter.resx">
+      <DependentUpon>ProductsCustomFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\ProductsFilterPane.resx">
+      <DependentUpon>ProductsFilterPane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\ProductsFilterPaneCollapsed.resx">
+      <DependentUpon>ProductsFilterPaneCollapsed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\ProductsGroupFilter.resx">
+      <DependentUpon>ProductsGroupFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\ProductsPeek.resx">
+      <DependentUpon>ProductsPeek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Products\ProductView.resx">
+      <DependentUpon>ProductView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrderRevenueView.resx">
+      <DependentUpon>OrderRevenueView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\QuickReportView\OrderDocQuickReportView.resx">
+      <DependentUpon>OrderDocQuickReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrderMailMerge.resx">
+      <DependentUpon>OrderMailMerge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrderMapView.resx">
+      <DependentUpon>OrderMapView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\QuickReportView\OrderPdfQuickReportView.resx">
+      <DependentUpon>OrderPdfQuickReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\Orders.resx">
+      <DependentUpon>Orders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomerAnalysis.resx">
+      <DependentUpon>CustomerAnalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrdersCustomFilter.resx">
+      <DependentUpon>OrdersCustomFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrdersExport.resx">
+      <DependentUpon>OrdersExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrdersFilterPane.resx">
+      <DependentUpon>OrdersFilterPane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrdersFilterPaneCollapsed.resx">
+      <DependentUpon>OrdersFilterPaneCollapsed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrdersPrint.resx">
+      <DependentUpon>OrdersPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrderView.resx">
+      <DependentUpon>OrderView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\OrderEditView.resx">
+      <DependentUpon>OrderEditView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\QuickReportView\OrderXlsQuickReportView.resx">
+      <DependentUpon>OrderXlsQuickReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\Forms\DetailForm.resx">
+      <DependentUpon>DetailForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\PrintControl.resx">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Reports\ExportControl.resx">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\Forms\FilterForm.resx">
+      <DependentUpon>FilterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesFilterPane.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesFilterPane.Designer.vb">
+      <DependentUpon>EmployeesFilterPane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesPeek.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees\EmployeesPeek.Designer.vb">
+      <DependentUpon>EmployeesPeek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers\CustomersPeek.resx">
+      <DependentUpon>CustomersPeek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\Employees.resx">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeesFilterPane.resx">
+      <DependentUpon>EmployeesFilterPane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees\EmployeesPeek.resx">
+      <DependentUpon>EmployeesPeek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>DevExpress.DevAV.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\MailMerge\SalesOrderFollowUp.docx" />
+    <EmbeddedResource Include="Resources\MailMerge\Order.docx" />
+    <EmbeddedResource Include="Resources\MailMerge\OrderItemsTemplate.docx" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee of the Month.docx" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Probation Notice.docx" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Service Excellence.docx" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Thank You Note.docx" />
+    <EmbeddedResource Include="Resources\MailMerge\Welcome to DevAV.docx" />
+    <Resource Include="Resources\Icons.res" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Images\Overview-Buy-Normal.png" />
+    <EmbeddedResource Include="Images\Overview-Getting-Started-Normal.png" />
+    <EmbeddedResource Include="Images\Overview-Logo.png" />
+    <EmbeddedResource Include="Images\Overview-Support-Normal.png" />
+    <EmbeddedResource Include="Images\UISuperHero.png" />
+    <EmbeddedResource Include="Images\devAV-Logo.png" />
+    <EmbeddedResource Include="Resources\Analysis\CustomerAnalysis.xlsx" />
+    <EmbeddedResource Include="Resources\Analysis\ProductAnalysis.xlsx" />
+    <EmbeddedResource Include="Resources\AppIcon.ico" />
+    <EmbeddedResource Include="Resources\DX.ico" />
+    <EmbeddedResource Include="Resources\Employee.ico" />
+    <EmbeddedResource Include="Resources\MapIt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Buttons\glyph-backg-hover.png" />
+    <Resource Include="Resources\Buttons\glyph-backg-normal.png" />
+    <Resource Include="Resources\Buttons\glyph-backg-pressed.png" />
+    <Resource Include="Resources\Buttons\glyph-mail-16.png" />
+    <Resource Include="Resources\Buttons\glyph-message-16.png" />
+    <Resource Include="Resources\Buttons\glyph-phone-16.png" />
+    <Resource Include="Resources\Buttons\glyph-video-16.png" />
+    <Resource Include="Resources\Doctor.png" />
+    <Resource Include="Resources\Employees\All.png" />
+    <Resource Include="Resources\Employees\Commission.png" />
+    <Resource Include="Resources\Employees\OnLeave.png" />
+    <Resource Include="Resources\Employees\Probation.png" />
+    <Resource Include="Resources\Employees\Salaried.png" />
+    <Resource Include="Resources\Employees\Terminated.png" />
+    <Resource Include="Resources\HighPriority.png" />
+    <Resource Include="Resources\Jolt-Logo.png" />
+    <Resource Include="Resources\LowPriority.png" />
+    <EmbeddedResource Include="Resources\MapItems\icon-A-24.png" />
+    <Resource Include="Resources\MapItems\icon-A-32.png" />
+    <EmbeddedResource Include="Resources\MapItems\icon-B-24.png" />
+    <Resource Include="Resources\MapItems\icon-B-32.png" />
+    <Resource Include="Resources\MapItems\icon-arrow-bear-left-32.png" />
+    <Resource Include="Resources\MapItems\icon-arrow-bear-right-32.png" />
+    <Resource Include="Resources\MapItems\icon-arrow-forward-32.png" />
+    <Resource Include="Resources\MapItems\icon-arrow-left-32.png" />
+    <Resource Include="Resources\MapItems\icon-arrow-right-32.png" />
+    <Resource Include="Resources\MapItems\icon-arrow-turn-left-32.png" />
+    <Resource Include="Resources\MapItems\icon-arrow-turn-right-32.png" />
+    <Resource Include="Resources\MapItems\icon-driving-14.png" />
+    <Resource Include="Resources\MapItems\icon-revert-direction-14.png" />
+    <Resource Include="Resources\MapItems\icon-walking-14.png" />
+    <Resource Include="Resources\MediumPriority.png" />
+    <Resource Include="Resources\Miss.png" />
+    <Resource Include="Resources\Modules\icon-nav-customers-16.png" />
+    <Resource Include="Resources\Modules\icon-nav-customers-32.png" />
+    <Resource Include="Resources\Modules\icon-nav-employees-16.png" />
+    <Resource Include="Resources\Modules\icon-nav-employees-32.png" />
+    <Resource Include="Resources\Modules\icon-nav-opportunities-16.png" />
+    <Resource Include="Resources\Modules\icon-nav-opportunities-32.png" />
+    <Resource Include="Resources\Modules\icon-nav-products-16.png" />
+    <Resource Include="Resources\Modules\icon-nav-products-32.png" />
+    <Resource Include="Resources\Modules\icon-nav-sales-16.png" />
+    <Resource Include="Resources\Modules\icon-nav-sales-32.png" />
+    <Resource Include="Resources\Mr.png" />
+    <Resource Include="Resources\Mrs.png" />
+    <Resource Include="Resources\Ms.png" />
+    <Resource Include="Resources\NormalPriority.png" />
+    <Resource Include="Resources\PrintItems\icon-cusomer-profile-report-32.png" />
+    <Resource Include="Resources\PrintItems\icon-customer-contact-directory-16.png" />
+    <Resource Include="Resources\PrintItems\icon-customer-contact-directory-32.png" />
+    <Resource Include="Resources\PrintItems\icon-customer-profile-report-16.png" />
+    <Resource Include="Resources\PrintItems\icon-customer-sale-detalis-16.png" />
+    <Resource Include="Resources\PrintItems\icon-customer-sale-detalis-32.png" />
+    <Resource Include="Resources\PrintItems\icon-customer-sales-summary-16.png" />
+    <Resource Include="Resources\PrintItems\icon-customer-sales-summary-32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-employee-directory-16.png" />
+    <Resource Include="Resources\PrintItems\icon-employee-directory-32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-employee-profile-16.png" />
+    <Resource Include="Resources\PrintItems\icon-employee-profile-32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-employee-summary-16.png" />
+    <Resource Include="Resources\PrintItems\icon-employee-summary-32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-employee-task-list-16.png" />
+    <Resource Include="Resources\PrintItems\icon-employee-task-list-32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-product-order-detail-16.png" />
+    <Resource Include="Resources\PrintItems\icon-product-order-detail-32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-product-sales-summary-16.png" />
+    <Resource Include="Resources\PrintItems\icon-product-sales-summary-32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-product-specification-summary-16.png" />
+    <Resource Include="Resources\PrintItems\icon-product-specification-summary-32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-sales-by-store-16.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-sales-invoice-16.png" />
+    <EmbeddedResource Include="Resources\PrintItems\icon-sales-report-16.png" />
+    <Resource Include="Resources\Products\All.png" />
+    <Resource Include="Resources\Products\Automation.png" />
+    <Resource Include="Resources\Products\Monitors.png" />
+    <Resource Include="Resources\Products\Projectors.png" />
+    <Resource Include="Resources\Products\TVs.png" />
+    <Resource Include="Resources\Products\VideoPlayers.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-customer-quick-employees-16.png" />
+    <Resource Include="Resources\QuickItems\icon-customer-quick-locations-16.png" />
+    <Resource Include="Resources\QuickItems\icon-customer-quick-sales-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-employee-quick-award-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-employee-quick-exellece-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-employee-quick-probation-notice-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-employee-quick-thank-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-employee-quick-welcome-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-product-quick-comparisons-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-product-quick-sales-report-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-product-quick-shippments-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-product-quick-top-salesperson-16.png" />
+    <Resource Include="Resources\QuickItems\icon-sales-quick-invoice-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-sales-quick-report-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-sales-quick-summary-16.png" />
+    <EmbeddedResource Include="Resources\QuickItems\icon-sales-quick-thankyou-16.png" />
+    <Resource Include="Resources\Search.png" />
+    <Resource Include="Resources\Tasks\AllTasks.png" />
+    <Resource Include="Resources\Tasks\Completed.png" />
+    <Resource Include="Resources\Tasks\Deferred.png" />
+    <Resource Include="Resources\Tasks\HighPriority.png" />
+    <Resource Include="Resources\Tasks\InProgress.png" />
+    <Resource Include="Resources\Tasks\NotStarted.png" />
+    <Resource Include="Resources\Tasks\Urgent.png" />
+    <Resource Include="Resources\icon-Hide-product-img-16.png" />
+    <Resource Include="Resources\icon-Hide-product-img-32.png" />
+    <Resource Include="Resources\icon-Sort-by-Invoice-16.png" />
+    <Resource Include="Resources\icon-Sort-by-Invoice-32.png" />
+    <Resource Include="Resources\icon-Sort-by-OrderDate-16.png" />
+    <Resource Include="Resources\icon-Sort-by-OrderDate-32.png" />
+    <EmbeddedResource Include="Resources\icon-about-16.png" />
+    <Resource Include="Resources\icon-about-32.png" />
+    <Resource Include="Resources\icon-add-column-16.png" />
+    <EmbeddedResource Include="Resources\icon-brand-16.png" />
+    <Resource Include="Resources\icon-buy-16.png" />
+    <Resource Include="Resources\icon-buy-32.png" />
+    <EmbeddedResource Include="Resources\icon-card-16.png" />
+    <Resource Include="Resources\icon-card-32.png" />
+    <EmbeddedResource Include="Resources\icon-carousel-16.png" />
+    <EmbeddedResource Include="Resources\icon-carousel-32.png" />
+    <Resource Include="Resources\icon-change-view-16.png" />
+    <Resource Include="Resources\icon-change-view-32.png" />
+    <Resource Include="Resources\icon-close-16.png" />
+    <Resource Include="Resources\icon-close-32.png" />
+    <Resource Include="Resources\icon-cost-analysis-16.png" />
+    <Resource Include="Resources\icon-cost-analysis-32.png" />
+    <EmbeddedResource Include="Resources\icon-data-panel-16.png" />
+    <Resource Include="Resources\icon-data-panel-32.png" />
+    <Resource Include="Resources\icon-delete-16.png" />
+    <Resource Include="Resources\icon-delete-32.png" />
+    <Resource Include="Resources\icon-docking-16.png" />
+    <Resource Include="Resources\icon-driving-16.png" />
+    <Resource Include="Resources\icon-driving-32.png" />
+    <Resource Include="Resources\icon-edit-16.png" />
+    <Resource Include="Resources\icon-edit-32.png" />
+    <Resource Include="Resources\icon-email-16.png" />
+    <Resource Include="Resources\icon-expand-collapse-16.png" />
+    <Resource Include="Resources\icon-expand-collapse-32.png" />
+    <Resource Include="Resources\icon-export-16.png" />
+    <Resource Include="Resources\icon-export-32.png" />
+    <EmbeddedResource Include="Resources\icon-export-40.png" />
+    <Resource Include="Resources\icon-filter-16.png" />
+    <Resource Include="Resources\icon-filter-32.png" />
+    <Resource Include="Resources\icon-fittopage-16.png" />
+    <Resource Include="Resources\icon-folder-panel-16.png" />
+    <Resource Include="Resources\icon-folder-panel-32.png" />
+    <Resource Include="Resources\icon-getting-started-16.png" />
+    <Resource Include="Resources\icon-getting-started-32.png" />
+    <Resource Include="Resources\icon-home-phone-16.png" />
+    <EmbeddedResource Include="Resources\icon-list-16.png" />
+    <Resource Include="Resources\icon-list-32.png" />
+    <Resource Include="Resources\icon-mail-merge-16.png" />
+    <Resource Include="Resources\icon-mail-merge-32.png" />
+    <Resource Include="Resources\icon-mapit-16.png" />
+    <Resource Include="Resources\icon-mapit-32.png" />
+    <Resource Include="Resources\icon-meeting-16.png" />
+    <Resource Include="Resources\icon-meeting-32.png" />
+    <Resource Include="Resources\icon-mobile-phone-16.png" />
+    <Resource Include="Resources\icon-navigate-16.png" />
+    <Resource Include="Resources\icon-navigate-32.png" />
+    <Resource Include="Resources\icon-new-customers-16.png" />
+    <Resource Include="Resources\icon-new-customers-32.png" />
+    <Resource Include="Resources\icon-new-doc-16.png" />
+    <Resource Include="Resources\icon-new-doc-32.png" />
+    <Resource Include="Resources\icon-new-employee-16.png" />
+    <Resource Include="Resources\icon-new-employee-32.png" />
+    <EmbeddedResource Include="Resources\icon-new-group-16.png" />
+    <Resource Include="Resources\icon-new-group-32.png" />
+    <Resource Include="Resources\icon-new-item-16.png" />
+    <Resource Include="Resources\icon-new-item-32.png" />
+    <Resource Include="Resources\icon-new-opportunities-16.png" />
+    <Resource Include="Resources\icon-new-opportunities-32.png" />
+    <EmbeddedResource Include="Resources\icon-new-products-16.png" />
+    <Resource Include="Resources\icon-new-products-32.png" />
+    <Resource Include="Resources\icon-new-sales-16.png" />
+    <Resource Include="Resources\icon-new-sales-32.png" />
+    <EmbeddedResource Include="Resources\icon-normal-bottom-16.png" />
+    <Resource Include="Resources\icon-open-doc-16.png" />
+    <Resource Include="Resources\icon-open-doc-32.png" />
+    <Resource Include="Resources\icon-opportunities-hight-16.png" />
+    <Resource Include="Resources\icon-opportunities-hight-32.png" />
+    <Resource Include="Resources\icon-opportunities-low-16.png" />
+    <Resource Include="Resources\icon-opportunities-low-32.png" />
+    <Resource Include="Resources\icon-opportunities-medium-16.png" />
+    <Resource Include="Resources\icon-opportunities-medium-32.png" />
+    <Resource Include="Resources\icon-opportunities-unlike-16.png" />
+    <Resource Include="Resources\icon-opportunities-unlike-32.png" />
+    <Resource Include="Resources\icon-page-next-16.png" />
+    <Resource Include="Resources\icon-page-prev-16.png" />
+    <Resource Include="Resources\icon-pages-16.png" />
+    <Resource Include="Resources\icon-panel-bottom-16.png" />
+    <Resource Include="Resources\icon-panel-bottom-32.png" />
+    <Resource Include="Resources\icon-panel-off-16.png" />
+    <Resource Include="Resources\icon-panel-off-32.png" />
+    <Resource Include="Resources\icon-panel-right-16.png" />
+    <Resource Include="Resources\icon-panel-right-32.png" />
+    <EmbeddedResource Include="Resources\icon-prefix-16.png" />
+    <Resource Include="Resources\icon-print-16.png" />
+    <Resource Include="Resources\icon-print-32.png" />
+    <EmbeddedResource Include="Resources\icon-print-42x40.png" />
+    <Resource Include="Resources\icon-print-due-date-16.png" />
+    <Resource Include="Resources\icon-print-due-date-32.png" />
+    <Resource Include="Resources\icon-print-exclude-evaluations-32.png" />
+    <Resource Include="Resources\icon-print-include-evaluations-32.png" />
+    <Resource Include="Resources\icon-print-preview-16.png" />
+    <Resource Include="Resources\icon-print-preview-32.png" />
+    <Resource Include="Resources\icon-print-quick-16.png" />
+    <Resource Include="Resources\icon-print-quick-32.png" />
+    <Resource Include="Resources\icon-print-sort-ascending-16.png" />
+    <Resource Include="Resources\icon-print-sort-ascending-32.png" />
+    <Resource Include="Resources\icon-print-sort-descinding-16.png" />
+    <Resource Include="Resources\icon-print-sort-descinding-32.png" />
+    <Resource Include="Resources\icon-print-start-date-16.png" />
+    <Resource Include="Resources\icon-print-start-date-32.png" />
+    <EmbeddedResource Include="Resources\icon-reading-bottom-16.png" />
+    <Resource Include="Resources\icon-redo-16.png" />
+    <Resource Include="Resources\icon-redo-32.png" />
+    <EmbeddedResource Include="Resources\icon-reset-changes-16.png" />
+    <Resource Include="Resources\icon-reset-changes-32.png" />
+    <Resource Include="Resources\icon-revers-sort-16.png" />
+    <Resource Include="Resources\icon-revers-sort-32.png" />
+    <Resource Include="Resources\icon-sales-analysis-16.png" />
+    <Resource Include="Resources\icon-sales-analysis-32.png" />
+    <Resource Include="Resources\icon-sales-period-lifetime-16.png" />
+    <Resource Include="Resources\icon-sales-period-lifetime-32.png" />
+    <Resource Include="Resources\icon-sales-period-month-16.png" />
+    <Resource Include="Resources\icon-sales-period-month-32.png" />
+    <Resource Include="Resources\icon-sales-period-year-16.png" />
+    <Resource Include="Resources\icon-sales-period-year-32.png" />
+    <Resource Include="Resources\icon-save-16.png" />
+    <Resource Include="Resources\icon-save-32.png" />
+    <Resource Include="Resources\icon-save-as-16.png" />
+    <Resource Include="Resources\icon-save-as-32.png" />
+    <Resource Include="Resources\icon-save-close-16.png" />
+    <Resource Include="Resources\icon-save-close-32.png" />
+    <Resource Include="Resources\icon-show-product-img-16.png" />
+    <Resource Include="Resources\icon-show-product-img-32.png" />
+    <Resource Include="Resources\icon-skype-16.png" />
+    <Resource Include="Resources\icon-support-16.png" />
+    <Resource Include="Resources\icon-support-32.png" />
+    <Resource Include="Resources\icon-task-16.png" />
+    <Resource Include="Resources\icon-task-32.png" />
+    <Resource Include="Resources\icon-undo-16.png" />
+    <Resource Include="Resources\icon-undo-32.png" />
+    <Resource Include="Resources\icon-view-reset-16.png" />
+    <Resource Include="Resources\icon-view-reset-32.png" />
+    <Resource Include="Resources\icon-view-setting-16.png" />
+    <Resource Include="Resources\icon-view-setting-32.png" />
+    <Resource Include="Resources\icon-walking-16.png" />
+    <Resource Include="Resources\icon-walking-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\DevExpress.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Employee.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Map.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Opportunities.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Universal.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Win.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Resources\Fluent\Controls\arrow-sort-down-invoice-fluent-light-blue-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\arrow-sort-down-lines-fluent-light-blue-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\arrow-sort-up-lines-fluent-light-blue-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\calendar-due-date-fluent-light-red-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\calendar-sort-arrow-down-fluent-light-mixed_color-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\calendar-timer-fluent-light-red-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\document-page-lines-columns-fluent-light-blue-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\document-page-lines-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\expand-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\list-items-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\list-items-fluent-light-blue-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\page-multiple-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\print-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\save-export-fluent-light-green-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Controls\scale-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Customers\star-circle-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Opportunities\arrow-tranding-up-more-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Opportunities\group-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\box-more-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\box-multiple-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\group-dx_desktop-regular-green-16.svg" />
+    <EmbeddedResource Include="Resources\arrow-tranding-up-more-dx_desktop-regular-green-16.svg" />
+    <EmbeddedResource Include="Resources\box-more-dx_desktop-regular-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\box-multiple-dx_desktop-regular-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\compass-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\signal-bar-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\signal-bar-1-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\signal-bar-2-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\signal-bar-3-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\signal-bar-1-dx_desktop-regular-blue-16.svg" />
+    <EmbeddedResource Include="Resources\signal-bar-2-dx_desktop-regular-blue-16.svg" />
+    <EmbeddedResource Include="Resources\signal-bar-3-dx_desktop-regular-blue-16.svg" />
+    <EmbeddedResource Include="Resources\signal-bar-dx_desktop-regular-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\PrintItems\document-lines-box-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\PrintItems\page-multiple-lines-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Customers\PrintItems\data-cart-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Customers\PrintItems\document-cart-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Customers\PrintItems\document-lines-case-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Customers\PrintItems\people-community-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PrintItems\folder-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\flag-fluent-light-black-20.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\flag-fluent-light-green-20.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\flag-fluent-light-mixed_color-20.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\flag-fluent-light-red-20.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Priority\flag-fluent-light-yellow-20.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Accordion\people-community-fluent-light-blue-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Accordion\person-case-fluent-light-green-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\logo-skype-fluent-light-static_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\panel-left-eye-off-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\panel-left-minimized-fill-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\panel-left-eye-off-dx_desktop-regular-black-16.svg" />
+    <EmbeddedResource Include="Resources\panel-left-fill-dx_desktop-regular-blue-16.svg" />
+    <EmbeddedResource Include="Resources\panel-left-minimized-fill-dx_desktop-regular-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PrintItems\document-page-lines-person-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\Shipment\box-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\panel-left-fill-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\carousel-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\carousel-fluent-light-blue-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Accordion\arrow-tranding-up-fluent-light-green-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Accordion\box-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Accordion\cart-coins-fluent-light-yellow-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\QuickLetters\award-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\QuickLetters\handshake-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\QuickLetters\thumb-like-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\QuickLetters\timer-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\QuickLetters\trophy-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PrintItems\document-data-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PrintItems\task-list-square-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PersonPrefix\man-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PersonPrefix\man-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PersonPrefix\woman-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PersonPrefix\woman-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\PersonPrefix\woman-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Buttons\call-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Buttons\chat-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Buttons\mail-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\Buttons\video-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\Home\cart-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\Home\info-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\Home\numbers-circle-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\Home\person-support-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\panel-bottom-fill-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\panel-branch-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\panel-data-text-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\panel-right-eye-off-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Common\View\panel-right-fill-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-forward-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-turn-left-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-turn-right-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-turn-up-left-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-turn-up-right-fluent-light-black-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\letter-a-circle-fluent-light-green-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\letter-b-circle-fluent-light-red-32.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-tranding-down-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-tranding-up-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-tranding-up-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\arrow-tranding-up-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\calendar-cart-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\calendar-timer-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\double-calendar-cart-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\letter-a-circle-fluent-regular-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\letter-b-circle-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\person-walking-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\save-export-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Map\vehicle-car-front-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\QuickReports\document-data-cart-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\QuickReports\arrow-swap-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\QuickReports\person-star-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\PrintItems\document-sale-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\PrintItems\store-cart-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\QuickReports\coin-arrow-up-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\QuickReports\data-coins-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\document-page-lines-search-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Detailed.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\wallet-arrow-left-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\Payment\arrow-undo-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\truck-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\Payment\circle-off-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\Payment\wallet-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\Shipment\clock-all-day-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\document-data-lightning-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\document-doc-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\document-pdf-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\document-xls-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Products\box-add-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Opportunities\trand-add-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Sales\cart-add-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Customers\diagram-sale-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Customers\person-add-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\arrow-reset-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\phone-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\save-dismiss-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\save-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\dismiss-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\clipboard-task-list-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\arrow-counterclockwise-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\arrow-sort-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\arrow-sync-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\circle-minus-plus-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\settings-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\table-column-insert-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\calendar-person-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\contact-card-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\dismiss-circle-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\edit-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\filter-funnel-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\list-items-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\location-fluent-light-red-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\mail-merge-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\people-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\person-add-fluent-light-mixed_color-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\person-more-fluent-light-yellow-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\Employees\print-fluent-light-black-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\checkmark-fluent-light-green-16.svg" />
+    <EmbeddedResource Include="Resources\Fluent\panel-left-eye-fluent-light-blue-16.svg" />
+    <EmbeddedResource Include="Resources\AppIcon.svg" />
+    <EmbeddedResource Include="Resources\Mail.svg" />
+    <EmbeddedResource Include="Resources\MobilePhone.svg" />
+    <EmbeddedResource Include="Resources\Skype.svg" />
+    <EmbeddedResource Include="Resources\NewTask.svg" />
+    <EmbeddedResource Include="Resources\DevExpress-Logo.svg" />
+    <EmbeddedResource Include="Resources\AllowResize.svg" />
+    <EmbeddedResource Include="Resources\FixedPanel.svg" />
+    <EmbeddedResource Include="Resources\PanelVisibility.svg" />
+    <EmbeddedResource Include="Resources\Modules\Tasks.svg" />
+    <EmbeddedResource Include="Resources\reports_360x664.png" />
+    <EmbeddedResource Include="Resources\reports_96x96.png" />
+    <EmbeddedResource Include="Resources\pdf_360x664.png" />
+    <EmbeddedResource Include="Resources\pdf_96x96.png" />
+    <EmbeddedResource Include="Resources\Spreadsheet_360x664.png" />
+    <EmbeddedResource Include="Resources\Spreadsheet_96x96.png" />
+    <Resource Include="Resources\Map96x96.png" />
+    <Resource Include="Resources\map_360x664.png" />
+    <Resource Include="Resources\mapInline.png" />
+    <Resource Include="Resources\mapAppLogo.png" />
+    <EmbeddedResource Include="Resources\Orders\Shipment.svg" />
+    <EmbeddedResource Include="Resources\Orders\ShipmentAwaiting.svg" />
+    <EmbeddedResource Include="Resources\Orders\ShipmentReceived.svg" />
+    <EmbeddedResource Include="Resources\Orders\ShipmentTransit.svg" />
+    <EmbeddedResource Include="Resources\Tasks\PriorityHigh.svg" />
+    <EmbeddedResource Include="Resources\Tasks\PriorityLow.svg" />
+    <EmbeddedResource Include="Resources\Tasks\PriorityNormal.svg" />
+    <EmbeddedResource Include="Resources\Tasks\PriorityUrgent.svg" />
+    <EmbeddedResource Include="Resources\Orders\Payment.svg" />
+    <EmbeddedResource Include="Resources\Orders\PaymentUnpaid.svg" />
+    <EmbeddedResource Include="Resources\Orders\PaymentRefund.svg" />
+    <EmbeddedResource Include="Resources\Orders\PaymentPaid.svg" />
+    <EmbeddedResource Include="Resources\Orders\PaymentOther.svg" />
+    <EmbeddedResource Include="Resources\EvaluationNo.svg" />
+    <EmbeddedResource Include="Resources\EvaluationYes.svg" />
+    <EmbeddedResource Include="Resources\PrintIncludeEvaluations.svg" />
+    <EmbeddedResource Include="Resources\PrintExcludeEvaluations.svg" />
+    <EmbeddedResource Include="Resources\HideProduct.svg" />
+    <EmbeddedResource Include="Resources\ShowProduct.svg" />
+    <EmbeddedResource Include="Resources\SortByInvoice.svg" />
+    <EmbeddedResource Include="Resources\SortByOrderDate.svg" />
+    <EmbeddedResource Include="Resources\ShowDueDate.svg" />
+    <EmbeddedResource Include="Resources\ShowStartDate.svg" />
+    <EmbeddedResource Include="Resources\SortAsc.svg" />
+    <EmbeddedResource Include="Resources\SortDesc.svg" />
+    <EmbeddedResource Include="Resources\Modules\Sales.svg" />
+    <EmbeddedResource Include="Resources\Modules\Customers.svg" />
+    <EmbeddedResource Include="Resources\Modules\Employees.svg" />
+    <EmbeddedResource Include="Resources\Modules\Opportunities.svg" />
+    <EmbeddedResource Include="Resources\Modules\Products.svg" />
+    <EmbeddedResource Include="Resources\Summary.svg" />
+    <EmbeddedResource Include="Resources\EmployeeDirectory.svg" />
+    <EmbeddedResource Include="Resources\TaskList.svg" />
+    <EmbeddedResource Include="Resources\ProfileReport.svg" />
+    <EmbeddedResource Include="Resources\EmployeeCard.svg" />
+    <EmbeddedResource Include="Resources\SalesInvoise2.svg" />
+    <EmbeddedResource Include="Resources\SalesSummary2.svg" />
+    <EmbeddedResource Include="Resources\NewOpportunities.svg" />
+    <EmbeddedResource Include="Resources\NewOrder.svg" />
+    <EmbeddedResource Include="Resources\PanelBottom.svg" />
+    <EmbeddedResource Include="Resources\PanelOff.svg" />
+    <EmbeddedResource Include="Resources\PanelRight.svg" />
+    <EmbeddedResource Include="Resources\SalesByStore.svg" />
+    <EmbeddedResource Include="Resources\SalesInvoice.svg" />
+    <EmbeddedResource Include="Resources\SalesSummary.svg" />
+    <EmbeddedResource Include="Resources\ThankYou.svg" />
+    <EmbeddedResource Include="Resources\Meeting.svg" />
+    <EmbeddedResource Include="Resources\New.svg" />
+    <EmbeddedResource Include="Resources\Open.svg" />
+    <EmbeddedResource Include="Resources\PrintQuick.svg" />
+    <EmbeddedResource Include="Resources\Redo.svg" />
+    <EmbeddedResource Include="Resources\Undo.svg" />
+    <EmbeddedResource Include="Resources\AddColumn.svg" />
+    <EmbeddedResource Include="Resources\DataPanel.svg" />
+    <EmbeddedResource Include="Resources\ExpandCollapse.svg" />
+    <EmbeddedResource Include="Resources\ReversSort.svg" />
+    <EmbeddedResource Include="Resources\Walking.svg" />
+    <EmbeddedResource Include="Resources\Carousel.svg" />
+    <EmbeddedResource Include="Resources\FolderPanel2.svg" />
+    <EmbeddedResource Include="Resources\Navigation.svg" />
+    <EmbeddedResource Include="Resources\NewProduct.svg" />
+    <EmbeddedResource Include="Resources\High.svg" />
+    <EmbeddedResource Include="Resources\Low.svg" />
+    <EmbeddedResource Include="Resources\Medium.svg" />
+    <EmbeddedResource Include="Resources\Unlike.svg" />
+    <EmbeddedResource Include="Resources\About.svg" />
+    <EmbeddedResource Include="Resources\Buy.svg" />
+    <EmbeddedResource Include="Resources\GettingStarted.svg" />
+    <EmbeddedResource Include="Resources\Support.svg" />
+    <EmbeddedResource Include="Resources\Driving.svg" />
+    <EmbeddedResource Include="Resources\ResetChanges.svg" />
+    <EmbeddedResource Include="Resources\Close.svg" />
+    <EmbeddedResource Include="Resources\SalesPeriodLifetime.svg" />
+    <EmbeddedResource Include="Resources\Export.svg" />
+    <EmbeddedResource Include="Resources\PrintPreview.svg" />
+    <EmbeddedResource Include="Resources\SalesPeriodMonth.svg" />
+    <EmbeddedResource Include="Resources\SalesPeriodYear.svg" />
+    <EmbeddedResource Include="Resources\Save.svg" />
+    <EmbeddedResource Include="Resources\SaveAndClose.svg" />
+    <EmbeddedResource Include="Resources\SaveAs.svg" />
+    <EmbeddedResource Include="Resources\SalesAnalysis.svg" />
+    <EmbeddedResource Include="Resources\NewCustomer.svg" />
+    <EmbeddedResource Include="Resources\ChangeView.svg" />
+    <EmbeddedResource Include="Resources\ResetView.svg" />
+    <EmbeddedResource Include="Resources\ViewSetting.svg" />
+    <EmbeddedResource Include="Resources\Card.svg" />
+    <EmbeddedResource Include="Resources\Filter.svg" />
+    <EmbeddedResource Include="Resources\List.svg" />
+    <EmbeddedResource Include="Resources\Mapit.svg" />
+    <EmbeddedResource Include="Resources\MailMerge.svg" />
+    <EmbeddedResource Include="Resources\Task.svg" />
+    <EmbeddedResource Include="Resources\Print.svg" />
+    <EmbeddedResource Include="Resources\Edit.svg" />
+    <EmbeddedResource Include="Resources\Delete.svg" />
+    <EmbeddedResource Include="Resources\NewItem.svg" />
+    <EmbeddedResource Include="Resources\NewEmploye.svg" />
+    <EmbeddedResource Include="Resources\NewGroup.svg" />
+  </ItemGroup>
+  <!--ONLY NETCORE3 
+  <ItemGroup>
+    <Compile Include="AITools\GridControlAITools.vb" />
+  </ItemGroup>
+  ONLY NETCORE3-->
+  <!--ONLY NETCORE3 
+	<ItemGroup>
+  <Reference Include="DevExpress.Mvvm.v26.1.DataModel.EFCore">
+    <HintPath>..\..\..\Bin\NETCore\DevExpress.Mvvm.v26.1.DataModel.EFCore.dll</HintPath>
+  </Reference>
+  <Reference Include="DevExpress.AIIntegration.Blazor.Chat.v26.1">
+  <HintPath>..\..\..\Bin\NETCore\DevExpress.AIIntegration.Blazor.Chat.v26.1.dll</HintPath>
+  </Reference>
+  <Reference Include="DevExpress.AIIntegration.Blazor.Chat.WebView.v26.1">
+    <HintPath>..\..\..\Bin\NETCore\DevExpress.AIIntegration.Blazor.Chat.WebView.v26.1.dll</HintPath>
+  </Reference>
+  <Reference Include="DevExpress.AIIntegration.Desktop.v26.1">
+    <HintPath>..\..\..\Bin\NETCore\DevExpress.AIIntegration.Desktop.v26.1.dll</HintPath>
+  </Reference>
+  <Reference Include="DevExpress.AIIntegration.v26.1">
+    <HintPath>..\..\..\Bin\NETCore\DevExpress.AIIntegration.v26.1.dll</HintPath>
+  </Reference>
+  <Reference Include="DevExpress.AIIntegration.WinForms.v26.1">
+    <HintPath>..\..\..\Bin\NETCore\DevExpress.AIIntegration.WinForms.v26.1.dll</HintPath>
+  </Reference>
+  <Reference Include="DevExpress.AIIntegration.WinForms.Chat.v26.1">
+    <HintPath>..\..\..\Bin\NETCore\DevExpress.AIIntegration.WinForms.Chat.v26.1.dll</HintPath>
+  </Reference>
+  <PackageReference Include="Microsoft.AspNetCore.Components.Web"/>
+  <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms"/>
+  </ItemGroup>
+  ONLY NETCORE3-->
+  <!--ONLY NETCORE3
+    <Target Name="wwwrootPublish" BeforeTargets="Build" Condition="$(DEMO_REMOVE)==''">
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\Blazor\DevExpress.Blazor\wwwroot\* wwwroot\_content\DevExpress.Blazor\" ContinueOnError="true" />
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\Blazor\DevExpress.Blazor.Themes.Fluent\wwwroot\* wwwroot\_content\DevExpress.Blazor.Themes.Fluent\" ContinueOnError="true" />
+    
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\Blazor\DevExpress.Blazor\wwwroot\* bin\DebugNetCoreDesktop\wwwroot\_content\DevExpress.Blazor\" ContinueOnError="true" />
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\Blazor\DevExpress.Blazor.Themes.Fluent\wwwroot\* bin\DebugNetCoreDesktop\wwwroot\_content\DevExpress.Blazor.Themes.Fluent\" ContinueOnError="true" />
+  </Target>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  <PackageReference Include="Azure.AI.OpenAI" />
+  <PackageReference Include="Microsoft.Extensions.AI" />
+  <PackageReference Include="Microsoft.Extensions.AI.OpenAI" />
+  <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

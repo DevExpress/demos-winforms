@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>icbImageLocation</name>
+			<windowcaption>Image Location</windowcaption>
+			<description>This combo box allows you specify the alignment of the button's image relative to its text.  </description>
+			<memberlist>SimpleButton.ImageLocation</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbImage</name>
+			<windowcaption>Image</windowcaption>
+			<description>This combo box allows you to select an image to be displayed in the button.</description>
+			<memberlist>SimpleButton.ImageList, SimpleButton.ImageIndex</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbDropDownControl</name>
+			<windowcaption>Drop-Down Control</windowcaption>
+			<description>Use this check box to associate a drop-down control with the button.</description>
+			<memberlist>DropDownButton.DropDownControl</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>meFiringEvents</name>
+			<windowcaption>DropDownButton's Events </windowcaption>
+			<description>This memo displays events fired for the DropDownButton.</description>
+			<memberlist>DropDownButton.ShowDropDownControl</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>	
+	</controls>	
+</totalinfo>

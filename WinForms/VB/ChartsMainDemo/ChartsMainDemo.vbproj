@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <ProjectGuid>{112185B9-69CC-48E1-A538-23BE403568D2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>ChartsMainDemo</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <!--ONLY NETCORE3 
+  <PropertyGroup>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+    ONLY NETCORE3-->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <Name>DevExpress.Data.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.TreeMap.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <Name>DevExpress.Tutorials.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <Name>DevExpress.Utils.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <Name>DevExpress.XtraLayout.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <Name>DevExpress.XtraBars.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <Name>DevExpress.XtraCharts.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Wizard">
+      <Name>DevExpress.XtraCharts.v26.1.Wizard</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <Name>DevExpress.Charts.v26.1.Core</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <Name>DevExpress.XtraCharts.v26.1.UI</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <Name>DevExpress.XtraEditors.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <Name>DevExpress.XtraGrid.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <Name>DevExpress.XtraNavBar.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <Name>DevExpress.XtraTreeList.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v26.1.UI">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChartDemoModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartDemoModule.Designer.vb">
+      <DependentUpon>ChartDemoModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChartDemoModuleWithOptions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartDemoModuleWithOptions.Designer.vb">
+      <DependentUpon>ChartDemoModuleWithOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChartRibbonMenuManager.vb" />
+    <Compile Include="Modules\ChartElements\Annotations.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\Annotations.Designer.vb">
+      <DependentUpon>Annotations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\AxesAndSeriesLabels.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\AxesAndSeriesLabels.Designer.vb">
+      <DependentUpon>AxesAndSeriesLabels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\ConstantLinesAndStrips.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\ConstantLinesAndStrips.Designer.vb">
+      <DependentUpon>ConstantLinesAndStrips.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\DateTimeScale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\DateTimeScale.Designer.vb">
+      <DependentUpon>DateTimeScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\LogarithmicScale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\LogarithmicScale.Designer.vb">
+      <DependentUpon>LogarithmicScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\Panes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\Panes.Designer.vb">
+      <DependentUpon>Panes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\ScaleBreaks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\ScaleBreaks.Designer.vb">
+      <DependentUpon>ScaleBreaks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\SecondaryAxes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\SecondaryAxes.Designer.vb">
+      <DependentUpon>SecondaryAxes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataAggregation\TimeSpanDataAggregation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataAggregation\TimeSpanDataAggregation.Designer.vb">
+      <DependentUpon>TimeSpanDataAggregation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\Histogram.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\Histogram.Designer.vb">
+      <DependentUpon>Histogram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\SwiftPoint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\SwiftPoint.Designer.vb">
+      <DependentUpon>SwiftPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\SeriesPointMoving.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\SeriesPointMoving.Designer.vb">
+      <DependentUpon>SeriesPointMoving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\Tornado.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\Tornado.Designer.vb">
+      <DependentUpon>Tornado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\Waterfall.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\Waterfall.Designer.vb">
+      <DependentUpon>Waterfall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\BoxPlot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\BoxPlot.Designer.vb">
+      <DependentUpon>BoxPlot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\SegmentColorizer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\SegmentColorizer.Designer.vb">
+      <DependentUpon>SegmentColorizer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\Titles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\Titles.Designer.vb">
+      <DependentUpon>Titles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\Area3DViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\Area3DViews.Designer.vb">
+      <DependentUpon>Area3DViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\Bar3DViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\Bar3DViews.Designer.vb">
+      <DependentUpon>Bar3DViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\ChartDemoModule3DViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\FinancialViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\FinancialViews.Designer.vb">
+      <DependentUpon>FinancialViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\AreaViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\AreaViews.Designer.vb">
+      <DependentUpon>AreaViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartElements\Legends.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartElements\Legends.Designer.vb">
+      <DependentUpon>Legends.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\BarViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\BarViews.Designer.vb">
+      <DependentUpon>BarViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\ChartDemoModuleLabelViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\ChartDemoModuleMarkerViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\GanttViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\GanttViews.Designer.vb">
+      <DependentUpon>GanttViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\Line3DViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\Line3DViews.Designer.vb">
+      <DependentUpon>Line3DViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\LineViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\LineViews.Designer.vb">
+      <DependentUpon>LineViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\Pie3DDoughnut3DFunnel3DViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\Pie3DDoughnut3DFunnel3DViews.Designer.vb">
+      <DependentUpon>Pie3DDoughnut3DFunnel3DViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\PointViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\PointViews.Designer.vb">
+      <DependentUpon>PointViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\PolarViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\PolarViews.Designer.vb">
+      <DependentUpon>PolarViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\RadarViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\RadarViews.Designer.vb">
+      <DependentUpon>RadarViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartViews\PieDoughnutFunnelViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartViews\PieDoughnutFunnelViews.Designer.vb">
+      <DependentUpon>PieDoughnutFunnelViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AdvancedCustomization\CustomPaint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AdvancedCustomization\CustomPaint.Designer.vb">
+      <DependentUpon>CustomPaint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AdvancedCustomization\CustomDraw.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AdvancedCustomization\CustomDraw.Designer.vb">
+      <DependentUpon>CustomDraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataAnalysis\ErrorBars.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataAnalysis\ErrorBars.Designer.vb">
+      <DependentUpon>ErrorBars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataAnalysis\FinancialIndicators.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataAnalysis\FinancialIndicators.Designer.vb">
+      <DependentUpon>FinancialIndicators.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataAnalysis\MovingAverageAndRegressionLine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataAnalysis\MovingAverageAndRegressionLine.Designer.vb">
+      <DependentUpon>MovingAverageAndRegressionLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\SeriesPointBatchUpdates.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\SeriesPointBatchUpdates.Designer.vb">
+      <DependentUpon>SeriesPointBatchUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interaction\Animation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Interaction\Animation.Designer.vb">
+      <DependentUpon>Animation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interaction\DrillDown.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Interaction\DrillDown.Designer.vb">
+      <DependentUpon>DrillDown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interaction\RangeControlIntegration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Interaction\RangeControlIntegration.Designer.vb">
+      <DependentUpon>RangeControlIntegration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataAggregation\DateTimeDataAggregation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataAggregation\DateTimeDataAggregation.Designer.vb">
+      <DependentUpon>DateTimeDataAggregation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataAggregation\NumericDataAggregation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataAggregation\NumericDataAggregation.Designer.vb">
+      <DependentUpon>NumericDataAggregation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataAggregation\QualitativeDataAggregation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataAggregation\QualitativeDataAggregation.Designer.vb">
+      <DependentUpon>QualitativeDataAggregation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\PivotGridCharting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataBinding\PivotGridCharting.Designer.vb">
+      <DependentUpon>PivotGridCharting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\LargeSeriesNumber.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\LargeSeriesNumber.Designer.vb">
+      <DependentUpon>LargeSeriesNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\BindingIndividualSeries.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataBinding\BindingIndividualSeries.Designer.vb">
+      <DependentUpon>BindingIndividualSeries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\DataFiltering.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataBinding\DataFiltering.Designer.vb">
+      <DependentUpon>DataFiltering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\DataGridCharting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataBinding\DataGridCharting.Designer.vb">
+      <DependentUpon>DataGridCharting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\Colorizer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataBinding\Colorizer.Designer.vb">
+      <DependentUpon>Colorizer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\UsingSeriesTemplates.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataBinding\UsingSeriesTemplates.Designer.vb">
+      <DependentUpon>UsingSeriesTemplates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\LargeDataSource.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\LargeDataSource.Designer.vb">
+      <DependentUpon>LargeDataSource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\RealTimeChart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\RealTimeChart.Designer.vb">
+      <DependentUpon>RealTimeChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Highlighted\FinancialCharting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Highlighted\FinancialCharting.Designer.vb">
+      <DependentUpon>FinancialCharting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\EmptyPoints.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataBinding\EmptyPoints.Designer.vb">
+      <DependentUpon>EmptyPoints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interaction\HitTesting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Interaction\HitTesting.Designer.vb">
+      <DependentUpon>HitTesting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interaction\Selection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Interaction\Selection.Designer.vb">
+      <DependentUpon>Selection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interaction\TooltipAndCrosshair.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Interaction\TooltipAndCrosshair.Designer.vb">
+      <DependentUpon>TooltipAndCrosshair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DataBinding\TopNAndOthers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DataBinding\TopNAndOthers.Designer.vb">
+      <DependentUpon>TopNAndOthers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DemosRegistration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DS2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DS5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Data\EmptyPointDemoData.vb" />
+    <Compile Include="Utils\Data\DataBindingDemoData.vb" />
+    <Compile Include="Utils\Data\DataGenerators.vb" />
+    <Compile Include="Utils\Data\DataStores.vb" />
+    <Compile Include="Utils\Data\DataPointClasses.vb" />
+    <Compile Include="Utils\Data\DataReaders.vb" />
+    <Compile Include="Utils\Data\SeriesPointMovingDataGenerator.vb" />
+    <Compile Include="Utils\Data\SalesOverviewDemoData.vb" />
+    <Compile Include="Utils\Markers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Data\DataCollections.vb" />
+    <Compile Include="Utils\ScatterCalculator.vb" />
+    <Compile Include="Utils\Data\SeriesGenerator.vb" />
+    <Compile Include="Utils\Utils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <EmbeddedResource Include="Modules\DataAggregation\TimeSpanDataAggregation.resx">
+      <DependentUpon>TimeSpanDataAggregation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\SwiftPoint.resx">
+      <DependentUpon>SwiftPoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\SeriesPointMoving.resx">
+      <DependentUpon>SeriesPointMoving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\Tornado.resx">
+      <DependentUpon>Tornado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\Waterfall.resx">
+      <DependentUpon>Waterfall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\BoxPlot.resx">
+      <DependentUpon>BoxPlot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Palette.svg" />
+    <EmbeddedResource Include="Resources\Designer.svg" />
+    <EmbeddedResource Include="Data\Top10LargestCountriesInfo.xml" />
+    <EmbeddedResource Include="Data\HeadphoneComparison.dat" />
+    <EmbeddedResource Include="Data\nsidc_global_nt_final_and_nrt.dat" />
+    <EmbeddedResource Include="ChartDemoModuleWithOptions.resx">
+      <DependentUpon>ChartDemoModuleWithOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\GoogleStock.xml" />
+    <EmbeddedResource Include="Data\Population.xml" />
+    <EmbeddedResource Include="Data\HPI.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\Annotations.resx">
+      <DependentUpon>Annotations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\AxesAndSeriesLabels.resx">
+      <DependentUpon>AxesAndSeriesLabels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\ConstantLinesAndStrips.resx">
+      <DependentUpon>ConstantLinesAndStrips.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\DateTimeScale.resx">
+      <DependentUpon>DateTimeScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\LogarithmicScale.resx">
+      <DependentUpon>LogarithmicScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\Panes.resx">
+      <DependentUpon>Panes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\ScaleBreaks.resx">
+      <DependentUpon>ScaleBreaks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\SecondaryAxes.resx">
+      <DependentUpon>SecondaryAxes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\Histogram.resx">
+      <DependentUpon>Histogram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\SegmentColorizer.resx">
+      <DependentUpon>SegmentColorizer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\Titles.resx">
+      <DependentUpon>Titles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\Area3DViews.resx">
+      <DependentUpon>Area3DViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\Bar3DViews.resx">
+      <DependentUpon>Bar3DViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\ChartDemoModuleLabelViews.resx">
+      <DependentUpon>ChartDemoModuleLabelViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\FinancialViews.resx">
+      <DependentUpon>FinancialViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\AreaViews.resx">
+      <DependentUpon>AreaViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\GanttViews.resx">
+      <DependentUpon>GanttViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartElements\Legends.resx">
+      <DependentUpon>Legends.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\BarViews.resx">
+      <DependentUpon>BarViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\Line3DViews.resx">
+      <DependentUpon>Line3DViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\LineViews.resx">
+      <DependentUpon>LineViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\Pie3DDoughnut3DFunnel3DViews.resx">
+      <DependentUpon>Pie3DDoughnut3DFunnel3DViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\PointViews.resx">
+      <DependentUpon>PointViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\PolarViews.resx">
+      <DependentUpon>PolarViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\RadarViews.resx">
+      <DependentUpon>RadarViews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartViews\PieDoughnutFunnelViews.resx">
+      <DependentUpon>PieDoughnutFunnelViews.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AdvancedCustomization\CustomPaint.resx">
+      <DependentUpon>CustomPaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AdvancedCustomization\CustomDraw.resx">
+      <DependentUpon>CustomDraw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataAnalysis\ErrorBars.resx">
+      <DependentUpon>ErrorBars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataAnalysis\FinancialIndicators.resx">
+      <DependentUpon>FinancialIndicators.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataAnalysis\MovingAverageAndRegressionLine.resx">
+      <DependentUpon>MovingAverageAndRegressionLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\SeriesPointBatchUpdates.resx">
+      <DependentUpon>SeriesPointBatchUpdates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Interaction\Animation.resx">
+      <DependentUpon>Animation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Interaction\DrillDown.resx">
+      <DependentUpon>DrillDown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Interaction\RangeControlIntegration.resx">
+      <DependentUpon>RangeControlIntegration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataAggregation\DateTimeDataAggregation.resx">
+      <DependentUpon>DateTimeDataAggregation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataAggregation\NumericDataAggregation.resx">
+      <DependentUpon>NumericDataAggregation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataAggregation\QualitativeDataAggregation.resx">
+      <DependentUpon>QualitativeDataAggregation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataBinding\PivotGridCharting.resx">
+      <DependentUpon>PivotGridCharting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\LargeSeriesNumber.resx">
+      <DependentUpon>LargeSeriesNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataBinding\BindingIndividualSeries.resx">
+      <DependentUpon>BindingIndividualSeries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataBinding\DataFiltering.resx">
+      <DependentUpon>DataFiltering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataBinding\DataGridCharting.resx">
+      <DependentUpon>DataGridCharting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataBinding\Colorizer.resx">
+      <DependentUpon>Colorizer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataBinding\UsingSeriesTemplates.resx">
+      <DependentUpon>UsingSeriesTemplates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\LargeDataSource.resx">
+      <DependentUpon>LargeDataSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\RealTimeChart.resx">
+      <DependentUpon>RealTimeChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Highlighted\FinancialCharting.resx">
+      <DependentUpon>FinancialCharting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataBinding\EmptyPoints.resx">
+      <DependentUpon>EmptyPoints.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Interaction\HitTesting.resx">
+      <DependentUpon>HitTesting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Interaction\Selection.resx">
+      <DependentUpon>Selection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Interaction\TooltipAndCrosshair.resx">
+      <DependentUpon>TooltipAndCrosshair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DataBinding\TopNAndOthers.resx">
+      <DependentUpon>TopNAndOthers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\menu.bmp" />
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="Data\AppleStock.xml" />
+    <EmbeddedResource Include="Data\CityWeather.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\DS2.xsc">
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </Content>
+    <Content Include="Data\DS2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\DS2.xss">
+      <DependentUpon>DS2.xsd</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Mars.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.XtraCharts.Demos.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\AnnotationMaximum.png" />
+    <EmbeddedResource Include="Images\AnnotationMinimum.png" />
+    <EmbeddedResource Include="Images\Bug.png" />
+    <EmbeddedResource Include="Images\NoBug.png" />
+    <EmbeddedResource Include="Images\CrossCursor.cur" />
+    <EmbeddedResource Include="Images\Palette_16x16.png" />
+    <EmbeddedResource Include="Images\Palette_32x32.png" />
+    <EmbeddedResource Include="Images\Wizard_16x16.png" />
+    <EmbeddedResource Include="Images\Wizard_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EmbeddedResource Include="Data\carbon.csv" />
+    <Content Include="Data\DS5.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS5.Designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Data\USDJPYDaily.csv" />
+    <EmbeddedResource Include="Data\EURUSDDaily.csv" />
+    <EmbeddedResource Include="Data\GBPUSDDaily.csv" />
+    <EmbeddedResource Include="Data\sound.bin" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="System.Data.OleDb" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

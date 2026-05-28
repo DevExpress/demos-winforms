@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>radioGroupHourFormat</name>
+			<windowcaption>Group Hour Format</windowcaption>
+			<description>This radio group editor allows the hour format to be specified.</description>
+			<memberlist>RepositoryItemTimeEdit</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboBoxTimeFormat</name>
+			<windowcaption>Time Format</windowcaption>
+			<description>This combo box allows the time format to be specified.</description>
+			<memberlist>RepositoryItemTimeEdit</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+    
+    <controlentry>
+      <control>
+        <name>comboBoxTimeEditStyle</name>
+        <windowcaption>Time Edit Style</windowcaption>
+        <description>Changes the edit style of the sample TimeEdit. You can choose either the calendar or spin button editors. In both cases you can select desired value and use the mouse scroll to modify this value.</description>
+        <memberlist>RepositoryItemTimeEdit.TimeEditStyle</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    
+    <controlentry>
+      <control>
+        <name>teMask</name>
+        <windowcaption>Mask</windowcaption>
+        <description>Indicates the currently applied Edit Mask according on the "Hour format" and "Time format" values.</description>
+        <memberlist>RepositoryItemTimeEdit.EditMask</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>timeEditSample</name>
+			<hinttext>#Keyboard<newline></newline>UP, DOWN keys<newline></newline>#Mouse Wheel<newline></newline>Supported</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

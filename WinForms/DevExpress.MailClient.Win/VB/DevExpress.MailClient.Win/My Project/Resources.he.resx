@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>הוסף</value>
+  </data>
+  <data name="CalendarName" xml:space="preserve">
+    <value>לוח שנה</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>הסתיים</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>איש קשר</value>
+  </data>
+  <data name="ContactsName" xml:space="preserve">
+    <value>אנשי קשר</value>
+  </data>
+  <data name="ContactTitleMiss" xml:space="preserve">
+    <value>גברת</value>
+  </data>
+  <data name="ContactTitleMr" xml:space="preserve">
+    <value>מר</value>
+  </data>
+  <data name="ContactTitleMrs" xml:space="preserve">
+    <value>גב'</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>מותאם אישית</value>
+  </data>
+  <data name="DateInbox" xml:space="preserve">
+    <value>התקבל</value>
+  </data>
+  <data name="DateOutbox" xml:space="preserve">
+    <value>נשלח</value>
+  </data>
+  <data name="DeletedItems" xml:space="preserve">
+    <value>פריטים שנמחקו</value>
+  </data>
+  <data name="Drafts" xml:space="preserve">
+    <value>טיוטות</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>שגיאה</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>ייצוא</value>
+  </data>
+  <data name="FeedsName" xml:space="preserve">
+    <value>הזנות</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>נקבה</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>מאת</value>
+  </data>
+  <data name="FromInbox" xml:space="preserve">
+    <value>מאת</value>
+  </data>
+  <data name="FromOutbox" xml:space="preserve">
+    <value>אל</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>תיבת דואר נכנס</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>דואר</value>
+  </data>
+  <data name="MailName" xml:space="preserve">
+    <value>דואר</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>זכר</value>
+  </data>
+  <data name="MarginsNormal" xml:space="preserve">
+    <value>רגיל</value>
+  </data>
+  <data name="MemoStyleString" xml:space="preserve">
+    <value>סגנון תזכיר</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>הודעה</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>הודעות</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>בשבוע הבא</value>
+  </data>
+  <data name="NoDate" xml:space="preserve">
+    <value>ללא תאריך</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>ללא</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>אישור</value>
+  </data>
+  <data name="PaperKindLetter" xml:space="preserve">
+    <value>מכתב</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>אישי</value>
+  </data>
+  <data name="PriorityHigh" xml:space="preserve">
+    <value>גבוהה</value>
+  </data>
+  <data name="PriorityLow" xml:space="preserve">
+    <value>נמוכה</value>
+  </data>
+  <data name="SentItems" xml:space="preserve">
+    <value>פריטים שנשלחו</value>
+  </data>
+  <data name="TableStyleString" xml:space="preserve">
+    <value>סגנון טבלה</value>
+  </data>
+  <data name="TaskCategoryOffice" xml:space="preserve">
+    <value>עבודה</value>
+  </data>
+  <data name="TasksName" xml:space="preserve">
+    <value>משימות</value>
+  </data>
+  <data name="TaskStatusCompleted" xml:space="preserve">
+    <value>הסתיים</value>
+  </data>
+  <data name="TaskStatusDeferred" xml:space="preserve">
+    <value>נדחתה</value>
+  </data>
+  <data name="TaskStatusInProgress" xml:space="preserve">
+    <value>מתבצע</value>
+  </data>
+  <data name="TaskStatusNotStarted" xml:space="preserve">
+    <value>לא התחיל</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>השבוע</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>היום</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>מחר</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>עבודה</value>
+  </data>
+  <data name="AboutFrom" xml:space="preserve">
+    <value>סטיב ברוד</value>
+  </data>
+  <data name="AboutSubj" xml:space="preserve">
+    <value>הדגמת לקוח דואר - אודות</value>
+  </data>
+  <data name="AddressHtml" xml:space="preserve">
+    <value>&lt;br&gt;&lt;br&gt; כתובת: &lt;b&gt; {0} &lt;/b&gt;</value>
+  </data>
+  <data name="AllFilesFilter" xml:space="preserve">
+    <value>כל הקבצים</value>
+  </data>
+  <data name="Announcements" xml:space="preserve">
+    <value>הודעות</value>
+  </data>
+  <data name="AppointmentError" xml:space="preserve">
+    <value>שגיאה: אי אפשר ליצא פגישות</value>
+  </data>
+  <data name="ASP" xml:space="preserve">
+    <value>ASP</value>
+  </data>
+  <data name="BirthDateHtml" xml:space="preserve">
+    <value>&lt;br&gt;תאריך לידה: &lt;b&gt;{0:d}&lt;/b&gt;   </value>
+  </data>
+  <data name="CloseSearchDescription" xml:space="preserve">
+    <value>סגור את החיפוש הנוכחי</value>
+  </data>
+  <data name="Collated" xml:space="preserve">
+    <value>מאוגד</value>
+  </data>
+  <data name="ContactAlphabeticalDescription" xml:space="preserve">
+    <value>מיין אנשי קשר בסדר אלפאביתי</value>
+  </data>
+  <data name="ContactByStateDescription" xml:space="preserve">
+    <value>קבץ אנשי קשר לפי מדינות</value>
+  </data>
+  <data name="ContactCardDescription" xml:space="preserve">
+    <value>התצוגת כרטיסיות</value>
+  </data>
+  <data name="ContactListDescription" xml:space="preserve">
+    <value>הצג אנשי קשר לפי סדר הקמה</value>
+  </data>
+  <data name="ContactTitleDr" xml:space="preserve">
+    <value>דר.</value>
+  </data>
+  <data name="ContactTitleMs" xml:space="preserve">
+    <value>גברת</value>
+  </data>
+  <data name="ContactTitleProf" xml:space="preserve">
+    <value>פרופ.</value>
+  </data>
+  <data name="CSVFilter" xml:space="preserve">
+    <value>קובץ CSV</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>תאריך</value>
+  </data>
+  <data name="DateDeleted" xml:space="preserve">
+    <value>תאריך</value>
+  </data>
+  <data name="DeleteContactDescription" xml:space="preserve">
+    <value>מחק איש קשר</value>
+  </data>
+  <data name="DeleteFeedDescription" xml:space="preserve">
+    <value>מחק את זרם הנתונים</value>
+  </data>
+  <data name="DeleteItemDescription" xml:space="preserve">
+    <value>מחק מטלה זו</value>
+  </data>
+  <data name="DeleteTaskDescription" xml:space="preserve">
+    <value>מחק מטלה זו</value>
+  </data>
+  <data name="DueDateError" xml:space="preserve">
+    <value>תאריך יעד לא יכול להיות קטן מתאריך התחלה</value>
+  </data>
+  <data name="DueDateWarning" xml:space="preserve">
+    <value>אנא בחר תאריך יעד</value>
+  </data>
+  <data name="EditContactDescription" xml:space="preserve">
+    <value>ערוך איש קשר</value>
+  </data>
+  <data name="EditFeedDescription" xml:space="preserve">
+    <value>ערוך את הגדרות זרם הנתונים</value>
+  </data>
+  <data name="EditTaskDescription" xml:space="preserve">
+    <value>ערוך מטלה</value>
+  </data>
+  <data name="EmailHtml" xml:space="preserve">
+    <value>&lt;br&gt; דוא"ל : &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="ExportErrorText" xml:space="preserve">
+    <value>קרתה תקלה במהלך היצוא</value>
+  </data>
+  <data name="FeedBBCNews" xml:space="preserve">
+    <value>חדשות BBC</value>
+  </data>
+  <data name="FeedBlogs" xml:space="preserve">
+    <value>בלוגים</value>
+  </data>
+  <data name="FeedEngadget" xml:space="preserve">
+    <value>Engadget</value>
+  </data>
+  <data name="FeedError" xml:space="preserve">
+    <value>אנא אקבל את התנצלותינו על אי הנוחות.  זרם הנתונים כרגע לא זמין</value>
+  </data>
+  <data name="FeedGroupMisc" xml:space="preserve">
+    <value>שונות</value>
+  </data>
+  <data name="FeedNews" xml:space="preserve">
+    <value>חדשות</value>
+  </data>
+  <data name="FeedNote" xml:space="preserve">
+    <value>&lt;b&gt; &lt;/ b&gt; תוכן נלקח מהציבור &lt;הצבע = {1}&gt; {0} &lt;/ צבע&gt; הזנה</value>
+  </data>
+  <data name="FeedVideos" xml:space="preserve">
+    <value>וידאו</value>
+  </data>
+  <data name="FeedWebinars" xml:space="preserve">
+    <value>וובינר</value>
+  </data>
+  <data name="FlagCustomDescription" xml:space="preserve">
+    <value>סמן הודעה זו כמטלה עם תאריך יעד יחודי</value>
+  </data>
+  <data name="FlagNextWeekDescription" xml:space="preserve">
+    <value>סמן פריט זה כמטלה לשבוע הבא</value>
+  </data>
+  <data name="FlagNoDatekDescription" xml:space="preserve">
+    <value>סמן כמטלה ללא תאריך יעד</value>
+  </data>
+  <data name="FlagThisWeekDescription" xml:space="preserve">
+    <value>סמן כמטלה לביצוע עד סוף שבוע העבודה</value>
+  </data>
+  <data name="FlagTodayDescription" xml:space="preserve">
+    <value>סמן פריט זה כמטלה עם תאריך יעד להיום</value>
+  </data>
+  <data name="FlagTomorrowDescription" xml:space="preserve">
+    <value>סמן כמטלה לביצוע עד מחר</value>
+  </data>
+  <data name="FlipLayoutDescription" xml:space="preserve">
+    <value>הפוך תצוגת פקדים בציר האנכי</value>
+  </data>
+  <data name="ForwardDescription" xml:space="preserve">
+    <value>העבר למישהו אחר</value>
+  </data>
+  <data name="ForwardTextEnd" xml:space="preserve">
+    <value>סוף הודעה מקורית</value>
+  </data>
+  <data name="ForwardTextStart" xml:space="preserve">
+    <value>זוהי הודעה שהועברה. ==============תוכן הודעה מקורי===============</value>
+  </data>
+  <data name="Frameworks" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="FromDeleted" xml:space="preserve">
+    <value>ל/אל</value>
+  </data>
+  <data name="HighPriority" xml:space="preserve">
+    <value>דחיפות גבוהה</value>
+  </data>
+  <data name="HTMLFilter" xml:space="preserve">
+    <value>קובץ HTML</value>
+  </data>
+  <data name="IDETools" xml:space="preserve">
+    <value>כלי IDE</value>
+  </data>
+  <data name="ImageFilter" xml:space="preserve">
+    <value>קובץ BMP, GIF...</value>
+  </data>
+  <data name="InfoText" xml:space="preserve">
+    <value>פריטים: {0}</value>
+  </data>
+  <data name="IsEarlierThisMonth" xml:space="preserve">
+    <value>מוקדם יותר החודש</value>
+  </data>
+  <data name="IsEarlierThisWeek" xml:space="preserve">
+    <value>מוקדם יותר השבוע</value>
+  </data>
+  <data name="IsEarlierThisYear" xml:space="preserve">
+    <value>מוקדם יותר השנה</value>
+  </data>
+  <data name="IsLastWeek" xml:space="preserve">
+    <value>בשבוע שעבר</value>
+  </data>
+  <data name="IsToday" xml:space="preserve">
+    <value>היום</value>
+  </data>
+  <data name="IsYesterday" xml:space="preserve">
+    <value>אתמול</value>
+  </data>
+  <data name="LandscapeOrientation" xml:space="preserve">
+    <value>תצוגה אופקית</value>
+  </data>
+  <data name="LowPriority" xml:space="preserve">
+    <value>עדיפות נמוכה</value>
+  </data>
+  <data name="MarginsModerate" xml:space="preserve">
+    <value>מתון</value>
+  </data>
+  <data name="MarginsNarrow" xml:space="preserve">
+    <value>צר</value>
+  </data>
+  <data name="MarginsWide" xml:space="preserve">
+    <value>רחב</value>
+  </data>
+  <data name="MediumPriority" xml:space="preserve">
+    <value>דחיפות בינונית</value>
+  </data>
+  <data name="MHTFilter" xml:space="preserve">
+    <value>קובץ MHT</value>
+  </data>
+  <data name="NavigationDescription" xml:space="preserve">
+    <value>החלף בין מודלולים</value>
+  </data>
+  <data name="NewContactDescription" xml:space="preserve">
+    <value>צור איש קשר חדש</value>
+  </data>
+  <data name="NewFeedDescription" xml:space="preserve">
+    <value>צור זרם נתונים חדש</value>
+  </data>
+  <data name="NewFirstName" xml:space="preserve">
+    <value>ראשון</value>
+  </data>
+  <data name="NewItemDescription" xml:space="preserve">
+    <value>צור הודעת דואל חדשה</value>
+  </data>
+  <data name="NewLastName" xml:space="preserve">
+    <value>אחרון</value>
+  </data>
+  <data name="NewTaskDescription" xml:space="preserve">
+    <value>צור מטלה חדשה</value>
+  </data>
+  <data name="NewTaskName" xml:space="preserve">
+    <value>מטלה חדשה</value>
+  </data>
+  <data name="OneSide" xml:space="preserve">
+    <value>הדפסה חד צדדית</value>
+  </data>
+  <data name="OneSideDescription" xml:space="preserve">
+    <value>הדבפס על צד אחד של הדף בלבד</value>
+  </data>
+  <data name="PageInfo" xml:space="preserve">
+    <value>עמוד {0} מתוך</value>
+  </data>
+  <data name="PaperKindA3Description" xml:space="preserve">
+    <value>296ממ  X 420ממ</value>
+  </data>
+  <data name="PaperKindA4Description" xml:space="preserve">
+    <value>210ממ  X 296ממ</value>
+  </data>
+  <data name="PaperKindA5Description" xml:space="preserve">
+    <value>148ממ X210ממ</value>
+  </data>
+  <data name="PaperKindA6Description" xml:space="preserve">
+    <value>105ממ X 148ממ</value>
+  </data>
+  <data name="PaperKindExecutive" xml:space="preserve">
+    <value>מנהל</value>
+  </data>
+  <data name="PaperKindExecutiveDescription" xml:space="preserve">
+    <value>184ממ X 266 ממ</value>
+  </data>
+  <data name="PaperKindLegal" xml:space="preserve">
+    <value>חוקי</value>
+  </data>
+  <data name="PaperKindLegalDescription" xml:space="preserve">
+    <value>215ממ X 355ממ</value>
+  </data>
+  <data name="PaperKindLetterDescription" xml:space="preserve">
+    <value>215מ"מ X279מ"מ  </value>
+  </data>
+  <data name="PaperKindTabloid" xml:space="preserve">
+    <value>צהובון</value>
+  </data>
+  <data name="PaperKindTabloidDescription" xml:space="preserve">
+    <value>279ממ X 431ממ</value>
+  </data>
+  <data name="PDFFilter" xml:space="preserve">
+    <value>קובץ PDF</value>
+  </data>
+  <data name="PhoneHtml" xml:space="preserve">
+    <value>&lt;br&gt; טלפון: &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="Picture100Zoom" xml:space="preserve">
+    <value>התאם תמונה</value>
+  </data>
+  <data name="PortraitOrientation" xml:space="preserve">
+    <value>תצוגה אנכית</value>
+  </data>
+  <data name="PriorityDescription" xml:space="preserve">
+    <value>קבע עדיפות לפריט זה</value>
+  </data>
+  <data name="PriorityMedium" xml:space="preserve">
+    <value>בינוני</value>
+  </data>
+  <data name="ProgressPanelCaption" xml:space="preserve">
+    <value>אנא המתן</value>
+  </data>
+  <data name="ProgressPanelDescription" xml:space="preserve">
+    <value>טוען...</value>
+  </data>
+  <data name="RefreshFeedDescription" xml:space="preserve">
+    <value>טען מחדש זרם נתונים מהשרת</value>
+  </data>
+  <data name="ReminderText" xml:space="preserve">
+    <value>תזכורות{0}</value>
+  </data>
+  <data name="ReplyAllDescription" xml:space="preserve">
+    <value>השב לשולח ולכל הנמענים של הודעה זו</value>
+  </data>
+  <data name="ReplyDescription" xml:space="preserve">
+    <value>השב לשולח</value>
+  </data>
+  <data name="ReplyText" xml:space="preserve">
+    <value>נכבד {0}, כתבת {1}</value>
+  </data>
+  <data name="RotateLayoutDescription" xml:space="preserve">
+    <value>סובב את תצוגת הפקדים</value>
+  </data>
+  <data name="RuleIsNotBlankWarning" xml:space="preserve">
+    <value>ערך זה לא יכול להשאר ריק</value>
+  </data>
+  <data name="RuleUniqueNamesWarning" xml:space="preserve">
+    <value>ערך חייב להיות יחודי ולא ריק</value>
+  </data>
+  <data name="SaveQuestion" xml:space="preserve">
+    <value>האם לשמור שינוים?</value>
+  </data>
+  <data name="SearchClearDescription" xml:space="preserve">
+    <value>נקה מסנן</value>
+  </data>
+  <data name="SearchCloseDescription" xml:space="preserve">
+    <value>סגור את לשונית החיפוש</value>
+  </data>
+  <data name="SearchColumnsDescription" xml:space="preserve">
+    <value>בחר עמודות לחיפוש</value>
+  </data>
+  <data name="SearchHasAttachmentDescription" xml:space="preserve">
+    <value>הצג הודעות דואל עם מסמכים מצורפים</value>
+  </data>
+  <data name="SearchImportantDescription" xml:space="preserve">
+    <value>הצג הודעות דואל לפי דחיפות</value>
+  </data>
+  <data name="SearchReceivedDescription" xml:space="preserve">
+    <value>סנן הודעות דוא"ל לפי תאריך</value>
+  </data>
+  <data name="SearchResetDescription" xml:space="preserve">
+    <value>אפס לעמודות מחדליות</value>
+  </data>
+  <data name="SearchString" xml:space="preserve">
+    <value>חיפוש {0} (Ctrl + E)</value>
+  </data>
+  <data name="SearchUnreadDescription" xml:space="preserve">
+    <value>הצג הודעות דואר שלא נקראו</value>
+  </data>
+  <data name="ShowPreviewDescription" xml:space="preserve">
+    <value>תצוגה מקדמת להודעות</value>
+  </data>
+  <data name="Starting" xml:space="preserve">
+    <value>החל</value>
+  </data>
+  <data name="TaskCategoryHouseChores" xml:space="preserve">
+    <value>מטלות בית</value>
+  </data>
+  <data name="TaskCategoryShopping" xml:space="preserve">
+    <value>קניות</value>
+  </data>
+  <data name="TaskCompletedDescription" xml:space="preserve">
+    <value>הצג מטלות ממושלמות לפי תאריך</value>
+  </data>
+  <data name="TaskDeferredDescription" xml:space="preserve">
+    <value>הצג משימות שנדחו</value>
+  </data>
+  <data name="TaskListDescription" xml:space="preserve">
+    <value>הצג את כל המשימות וקבץ לפי תאריך</value>
+  </data>
+  <data name="TaskOverdueDescription" xml:space="preserve">
+    <value>הצג מטלות שתאריל היעד שלהם עבר</value>
+  </data>
+  <data name="TaskPrioritizedDescription" xml:space="preserve">
+    <value>קבץ מטלות לפי דחיפות</value>
+  </data>
+  <data name="TaskSimpleListDescription" xml:space="preserve">
+    <value>הצג את כל המטלות</value>
+  </data>
+  <data name="TaskStatusWaitingOnSomeoneElse" xml:space="preserve">
+    <value>בהמתנה לצג ג</value>
+  </data>
+  <data name="TaskTodayDescription" xml:space="preserve">
+    <value>הצג מטלות היום</value>
+  </data>
+  <data name="TaskToDoListDescription" xml:space="preserve">
+    <value>הצג מטלות לא גמורות ומייל לפי תאריך</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>קובץ טקסט</value>
+  </data>
+  <data name="TwoSide" xml:space="preserve">
+    <value>הדפס ידנית בשתי הצדדים</value>
+  </data>
+  <data name="TwoSideDescription" xml:space="preserve">
+    <value>טען נייר כשתתבקש</value>
+  </data>
+  <data name="Uncollated" xml:space="preserve">
+    <value>לא מאוגד</value>
+  </data>
+  <data name="UnreadReadDescription" xml:space="preserve">
+    <value>אם פריט זה מסומן כלא נקרא סמן כנקרא. אם פריט זה מסומן כנקרא סמן כלא נקרא</value>
+  </data>
+  <data name="XLSFilter" xml:space="preserve">
+    <value>קוב. XKS</value>
+  </data>
+  <data name="XLSXFilter" xml:space="preserve">
+    <value>קובץ XLSX</value>
+  </data>
+  <data name="NewFolder" xml:space="preserve">
+    <value>תיקייה חדשה</value>
+  </data>
+  <data name="OpentFileQuestion" xml:space="preserve">
+    <value>האם אתה רוצה לפתוח קובץ זה?</value>
+  </data>
+  <data name="Engineering" xml:space="preserve">
+    <value>הַנדָסָה</value>
+  </data>
+  <data name="IT" xml:space="preserve">
+    <value>טכנולוגית מידע</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>הַנהָלָה</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>מכירות</value>
+  </data>
+</root>

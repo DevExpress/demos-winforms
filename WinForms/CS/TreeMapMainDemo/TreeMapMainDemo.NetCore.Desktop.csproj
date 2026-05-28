@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{A0870D00-FF0C-0C96-0A41-4E50CDE92908}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.XtraTreeMap.Demos</RootNamespace>
+    <AssemblyName>TreeMapMainDemo</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\Heatmap\HeatmapEmptyCells.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapEmptyCells.Designer.cs">
+      <DependentUpon>HeatmapEmptyCells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapDataSourceAdapterDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapDataSourceAdapterDemo.Designer.cs">
+      <DependentUpon>HeatmapDataSourceAdapterDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapHeightmap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapHeightmap.Designer.cs">
+      <DependentUpon>HeatmapHeightmap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapKeyColorProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapKeyColorProvider.Designer.cs">
+      <DependentUpon>HeatmapKeyColorProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapLargeDataSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapLargeDataSource.Designer.cs">
+      <DependentUpon>HeatmapLargeDataSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapSelection.Designer.cs">
+      <DependentUpon>HeatmapSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstGrouping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstGrouping.Designer.cs">
+      <DependentUpon>SunburstGrouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeMapDemoModuleWithOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeMapDemoModuleWithOptions.designer.cs">
+      <DependentUpon>TreeMapDemoModuleWithOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HierarchicalData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\HierarchicalData.designer.cs">
+      <DependentUpon>HierarchicalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Colorizer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Colorizer.Designer.cs">
+      <DependentUpon>Colorizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Grouping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Grouping.Designer.cs">
+      <DependentUpon>Grouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Selection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Selection.Designer.cs">
+      <DependentUpon>Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstHierarchicalData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstHierarchicalData.Designer.cs">
+      <DependentUpon>SunburstHierarchicalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstInteraction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstInteraction.Designer.cs">
+      <DependentUpon>SunburstInteraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TutorialControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemosRegistration.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapEmptyCells.resx">
+      <DependentUpon>HeatmapEmptyCells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapDataSourceAdapterDemo.resx">
+      <DependentUpon>HeatmapDataSourceAdapterDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapHeightmap.resx">
+      <DependentUpon>HeatmapHeightmap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapKeyColorProvider.resx">
+      <DependentUpon>HeatmapKeyColorProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapLargeDataSource.resx">
+      <DependentUpon>HeatmapLargeDataSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapSelection.resx">
+      <DependentUpon>HeatmapSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sunburst\SunburstGrouping.resx">
+      <DependentUpon>SunburstGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeMapDemoModuleWithOptions.resx">
+      <DependentUpon>TreeMapDemoModuleWithOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\HierarchicalData.resx">
+      <DependentUpon>HierarchicalData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Colorizer.resx">
+      <DependentUpon>Colorizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Grouping.resx">
+      <DependentUpon>Grouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Selection.resx">
+      <DependentUpon>Selection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sunburst\SunburstHierarchicalData.resx">
+      <DependentUpon>SunburstHierarchicalData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sunburst\SunburstInteraction.resx">
+      <DependentUpon>SunburstInteraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorialControl.resx">
+      <DependentUpon>TutorialControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+  </PropertyGroup>
+</Project>

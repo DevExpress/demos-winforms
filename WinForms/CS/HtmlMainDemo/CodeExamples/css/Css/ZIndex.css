@@ -1,0 +1,71 @@
+﻿.static {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: @White;
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: @Gray;
+}
+
+    .static:hover {
+        background-color: @Black/0.5;
+    }
+
+.absItem {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: @Blue;
+    color: White;
+    border-style: solid;
+    border-width: 2px;
+    border-color: White;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px @HighlightAlternate/0.5;
+    text-align: center;
+}
+
+#item1 {
+    background-color: @Red;
+    z-index: -1;
+}
+
+#item2 {
+    background-color: @Yellow;
+    z-index: 3;
+}
+
+#item6 {
+    background-color: @Green;
+    z-index: 0;
+}
+
+#item1:hover {
+    background-color: @Black/0.5;
+}
+
+#item2:hover {
+    background-color: @Black/0.5;
+}
+
+#item3:hover {
+    background-color: @Black/0.5;
+}
+
+#item4:hover {
+    background-color: @Black/0.5;
+}
+
+#item5:hover {
+    background-color: @Black/0.5;
+}
+
+#item6:hover {
+    background-color: @Black/0.5;
+}

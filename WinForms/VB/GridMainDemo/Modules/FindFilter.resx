@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="colCustomerID.Caption" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="colCustomerID.Width" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="colCompanyName.Caption" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="colCompanyName.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Count</value>
+  </data>
+  <data name="colCompanyName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCompanyName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="colCompanyName.Width" type="System.Int32, mscorlib">
+    <value>229</value>
+  </data>
+  <data name="colContactName.Caption" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="colContactName.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="colContactName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colContactName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="colContactName.Width" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="colContactTitle.Caption" xml:space="preserve">
+    <value>Contact Title</value>
+  </data>
+  <data name="colContactTitle.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colContactTitle.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colContactTitle.Width" type="System.Int32, mscorlib">
+    <value>157</value>
+  </data>
+  <data name="colAddress.Caption" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="colAddress.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colAddress.Width" type="System.Int32, mscorlib">
+    <value>264</value>
+  </data>
+  <data name="colCity.Caption" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="colCity.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCity.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="colCity.Width" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="colRegion.Caption" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="repositoryItemComboBox1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v26.1" name="DevExpress.Utils.v26.1, Culture=neutral"></assembly>
+  <data name="repositoryItemComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items" xml:space="preserve">
+    <value>AK</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items1" xml:space="preserve">
+    <value>BC</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items2" xml:space="preserve">
+    <value>CA</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items3" xml:space="preserve">
+    <value>Co. Cork</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items4" xml:space="preserve">
+    <value>DF</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items5" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items6" xml:space="preserve">
+    <value>Isle of Wight</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items7" xml:space="preserve">
+    <value>Lara</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items8" xml:space="preserve">
+    <value>MT</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items9" xml:space="preserve">
+    <value>NM</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items10" xml:space="preserve">
+    <value>Nueva Esparta</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items11" xml:space="preserve">
+    <value>OR</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items12" xml:space="preserve">
+    <value>Quebec</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items13" xml:space="preserve">
+    <value>RJ</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items14" xml:space="preserve">
+    <value>SP</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items15" xml:space="preserve">
+    <value>Tachira</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items16" xml:space="preserve">
+    <value>WA</value>
+  </data>
+  <data name="repositoryItemComboBox1.Items17" xml:space="preserve">
+    <value>WY</value>
+  </data>
+  <data name="colRegion.Width" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="colPostalCode.Caption" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="colPostalCode.Width" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="colCountry.Caption" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="repositoryItemComboBox2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemComboBox2.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items" xml:space="preserve">
+    <value>Argentina</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items1" xml:space="preserve">
+    <value>Austria</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items2" xml:space="preserve">
+    <value>Belgium</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items3" xml:space="preserve">
+    <value>Brazil</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items4" xml:space="preserve">
+    <value>Canada</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items5" xml:space="preserve">
+    <value>Denmark</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items6" xml:space="preserve">
+    <value>Finland</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items7" xml:space="preserve">
+    <value>France</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items8" xml:space="preserve">
+    <value>Germany</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items9" xml:space="preserve">
+    <value>Ireland</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items10" xml:space="preserve">
+    <value>Italy</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items11" xml:space="preserve">
+    <value>Mexico</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items12" xml:space="preserve">
+    <value>Norway</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items13" xml:space="preserve">
+    <value>Poland</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items14" xml:space="preserve">
+    <value>Portugal</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items15" xml:space="preserve">
+    <value>Spain</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items16" xml:space="preserve">
+    <value>Sweden</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items17" xml:space="preserve">
+    <value>Switzerland</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items18" xml:space="preserve">
+    <value>UK</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items19" xml:space="preserve">
+    <value>USA</value>
+  </data>
+  <data name="repositoryItemComboBox2.Items20" xml:space="preserve">
+    <value>Venezuela</value>
+  </data>
+  <data name="colCountry.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCountry.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="colCountry.Width" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="colPhone.Caption" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="colPhone.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="colFax.Caption" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="colFax.Width" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 624</value>
+  </data>
+  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ucFindOptions1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ucFindOptions1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 591</value>
+  </data>
+  <data name="ucFindOptions1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ucFindOptions1.Name" xml:space="preserve">
+    <value>ucFindOptions1</value>
+  </data>
+  <data name="&gt;&gt;ucFindOptions1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Demos.ucFindOptions, GridMainDemo, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ucFindOptions1.Parent" xml:space="preserve">
+    <value>layoutControl2</value>
+  </data>
+  <data name="&gt;&gt;ucFindOptions1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="navigationPage1.Caption" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="layoutControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="layoutControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 591</value>
+  </data>
+  <data name="layoutControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="layoutControl2.Text" xml:space="preserve">
+    <value>layoutControl2</value>
+  </data>
+  <data name="&gt;&gt;layoutControl2.Name" xml:space="preserve">
+    <value>layoutControl2</value>
+  </data>
+  <data name="&gt;&gt;layoutControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControl2.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navigationPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 591</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Name" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.TabNavigationPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Parent" xml:space="preserve">
+    <value>navigationPane1</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navigationPane1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="navigationPane1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 0</value>
+  </data>
+  <data name="navigationPane1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 624</value>
+  </data>
+  <data name="navigationPane1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="navigationPane1.Text" xml:space="preserve">
+    <value>navigationPane1</value>
+  </data>
+  <data name="&gt;&gt;navigationPane1.Name" xml:space="preserve">
+    <value>navigationPane1</value>
+  </data>
+  <data name="&gt;&gt;navigationPane1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.TabPane, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navigationPane1.Parent" xml:space="preserve">
+    <value>sidePanel1</value>
+  </data>
+  <data name="&gt;&gt;navigationPane1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 624</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="sidePanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="sidePanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 0</value>
+  </data>
+  <data name="sidePanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 624</value>
+  </data>
+  <data name="sidePanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="sidePanel1.Text" xml:space="preserve">
+    <value>sidePanel1</value>
+  </data>
+  <data name="&gt;&gt;sidePanel1.Name" xml:space="preserve">
+    <value>sidePanel1</value>
+  </data>
+  <data name="&gt;&gt;sidePanel1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SidePanel, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;sidePanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sidePanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>811, 624</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCustomerID.Name" xml:space="preserve">
+    <value>colCustomerID</value>
+  </data>
+  <data name="&gt;&gt;colCustomerID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCompanyName.Name" xml:space="preserve">
+    <value>colCompanyName</value>
+  </data>
+  <data name="&gt;&gt;colCompanyName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colContactName.Name" xml:space="preserve">
+    <value>colContactName</value>
+  </data>
+  <data name="&gt;&gt;colContactName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colContactTitle.Name" xml:space="preserve">
+    <value>colContactTitle</value>
+  </data>
+  <data name="&gt;&gt;colContactTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colAddress.Name" xml:space="preserve">
+    <value>colAddress</value>
+  </data>
+  <data name="&gt;&gt;colAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCity.Name" xml:space="preserve">
+    <value>colCity</value>
+  </data>
+  <data name="&gt;&gt;colCity.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colRegion.Name" xml:space="preserve">
+    <value>colRegion</value>
+  </data>
+  <data name="&gt;&gt;colRegion.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemComboBox1.Name" xml:space="preserve">
+    <value>repositoryItemComboBox1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colPostalCode.Name" xml:space="preserve">
+    <value>colPostalCode</value>
+  </data>
+  <data name="&gt;&gt;colPostalCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCountry.Name" xml:space="preserve">
+    <value>colCountry</value>
+  </data>
+  <data name="&gt;&gt;colCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemComboBox2.Name" xml:space="preserve">
+    <value>repositoryItemComboBox2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemComboBox2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colPhone.Name" xml:space="preserve">
+    <value>colPhone</value>
+  </data>
+  <data name="&gt;&gt;colPhone.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colFax.Name" xml:space="preserve">
+    <value>colFax</value>
+  </data>
+  <data name="&gt;&gt;colFax.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Name" xml:space="preserve">
+    <value>layoutControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FindFilter</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Demos.TutorialControl, GridMainDemo, Culture=neutral</value>
+  </data>
+</root>

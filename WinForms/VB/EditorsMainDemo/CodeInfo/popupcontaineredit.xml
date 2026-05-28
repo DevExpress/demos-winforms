@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>ceCloseOnOuterMouseClick</name>
+			<windowcaption>Close On Outer Mouse Click</windowcaption>
+			<description>This check box controls whether the popup window should be closed when clicking a non-focusable control within the form.</description>
+			<memberlist>RepositoryItemPopupContainerEdit.CloseOnOuterMouseClick</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbShowDropDown</name>
+			<windowcaption>Show Drop Down</windowcaption>
+			<description>This combo box allows you to select how the popup control behaves when an end-user clicks within its text region.</description>
+			<memberlist>RepositoryItemPopupBase.ShowDropDown</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>cePopupSizeable</name>
+			<windowcaption>Popup Sizeable</windowcaption>
+			<description>This check box controls whether an end-user can resize  the dropdown window by dragging its bottom right corner.</description>
+			<memberlist>RepositoryItemPopupContainerEdit.PopupSizeable</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowPopupCloseButton</name>
+			<windowcaption>Show Popup Close Button</windowcaption>
+			<description>This check box shows or hides the popup window's close button.</description>
+			<memberlist>RepositoryItemPopupContainerEdit.ShowPopupCloseButton</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowPopupShadow</name>
+			<windowcaption>Show Popup Shadow</windowcaption>
+			<description>This check box shows or hides the popup window's shadow.</description>
+			<memberlist>RepositoryItemPopupBase.ShowPopupShadow</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>popupContainerEditSample</name>
+			<windowcaption>Popup container editor</windowcaption>
+			<description>The QueryPopUp and QueryResultValue events are raised when the editor's popup window is about to be opened and closed, respectively. The first event is handled to initialize the controls contained within the popup window. The second event is handled to update the editor's value based on the state of the controls that reside within the popup.</description>
+			<memberlist>QueryPopUp, QueryResultValue events</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>popupContainerEditSample</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown window<newline></newline>#Other End-User Actions<newline></newline>Use the controls on the right pane to learn which additional end-user customization methods are available</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

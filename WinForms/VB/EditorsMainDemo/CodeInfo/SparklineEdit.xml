@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>cbeView</name>
+        <windowcaption>Sparkline view</windowcaption>
+        <description>Specifies how the Sparkline editor displays its data.</description>
+        <memberlist>RepositoryItemSparklineEdit.View</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceColor</name>
+        <windowcaption>Sparkline color</windowcaption>
+        <description>Specifies the color of a sparkline.</description>
+        <memberlist>SparklineViewBase.Color</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>trbArea</name>
+        <windowcaption>Sparkline opacity</windowcaption>
+        <description>Specifies the opacity of a sparkline, when its current view is Area.</description>
+        <memberlist>AreaSparklineView.AreaOpacity</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceStart</name>
+        <windowcaption>Start point color</windowcaption>
+        <description>Specifies the start point color.</description>
+        <memberlist>SparklineViewBase.StartPointColor</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceEnd</name>
+        <windowcaption>End point color</windowcaption>
+        <description>Specifies the end point color.</description>
+        <memberlist>SparklineViewBase.EndPointColor</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceMin</name>
+        <windowcaption>Minimum point color</windowcaption>
+        <description>Specifies the minimum point color.</description>
+        <memberlist>SparklineViewBase.MinPointColor</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceMax</name>
+        <windowcaption>Maximum point color</windowcaption>
+        <description>Specifies the maximum point color.</description>
+        <memberlist>SparklineViewBase.MaxPointColor</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceNegative</name>
+        <windowcaption>Negative point color</windowcaption>
+        <description>Specifies the negative point color.</description>
+        <memberlist>SparklineViewBase.NegativePointColor</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceMarkers</name>
+        <windowcaption>Marker color</windowcaption>
+        <description>Specifies the color of markers.</description>
+        <memberlist>LineSparklineView.MarkerColor</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cheShowMarkers</name>
+        <windowcaption>Show markers</windowcaption>
+        <description>Specifies the visibility of markers.</description>
+        <memberlist>LineSparklineView.ShowMarkers</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cheHighlightStartPoint</name>
+        <windowcaption>Highlight start point</windowcaption>
+        <description>Indicates whether or not it is necesary to highlight the start point of a sparkline.</description>
+        <memberlist>SparklineViewBase.HighlightStartPoint</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cheHighlightEndPoint</name>
+        <windowcaption>Highlight end point</windowcaption>
+        <description>Indicates whether or not it is necesary to highlight the end point of a sparkline.</description>
+        <memberlist>SparklineViewBase.HighlightEndPoint</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cheHighlightMinPoint</name>
+        <windowcaption>Highlight minimum points</windowcaption>
+        <description>Indicates whether or not it is necesary to highlight the minimum point(s) of a sparkline.</description>
+        <memberlist>SparklineViewBase.HighlightMinPoint</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cheHighlightMaxPoint</name>
+        <windowcaption>Highlight maximum points</windowcaption>
+        <description>Indicates whether or not it is necesary to highlight the maximum point(s) of a sparkline.</description>
+        <memberlist>SparklineViewBase.HighlightMaxPoint</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cheHighlightNegativePoints</name>
+        <windowcaption>Highlight negative points</windowcaption>
+        <description>Indicates whether or not it is necesary to highlight negative points.</description>
+        <memberlist>LineSparklineView.HighlightNegativePoints, BarSparklineView.HighlightNegativePoints</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

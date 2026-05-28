@@ -1,0 +1,55 @@
+﻿body {
+	text-align: center;
+	color: @ControlText;
+}
+
+td, th {
+	padding: 10px;
+	text-align: left;
+}
+
+td {
+	text-align: left;
+}
+
+.header {
+	font-size: 10pt;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.container {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.shadow {
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+table {
+	border-spacing: 0;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tr0 {
+	background-color: @Blue;
+	color: @White;
+}
+
+.tr1 {
+	background-color: @Control;
+}
+
+.tr2 {
+	background-color: @Window;
+}
+
+.tr3 {
+	background-color: @Control;
+}
+
+.tr4 {
+	background-color: @Window;
+}

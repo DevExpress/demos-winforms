@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>icbScrollThumbStyle</name>
+        <windowcaption>Scroll Thumb Style</windowcaption>
+        <description>Use this combo box to select the editor's thumb style.</description>
+        <memberlist>RepositoryItemZoomTrackBar.ScrollThumbStyle</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkEditVertical</name>
+        <windowcaption>Vertical</windowcaption>
+        <description>If checked, the editor is verticaly oriented. In this instance, the scroll box moves from bottom to top as the track bar's value increases.</description>
+        <memberlist>RepositoryItemZoomTrackBar.ScrollThumbStyle</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seMinimum</name>
+        <windowcaption>Minimum</windowcaption>
+        <description>Specifies the editor's minimum value.</description>
+        <memberlist>RepositoryItemTrackBar.Minimum</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seMaximum</name>
+        <windowcaption>Minimum</windowcaption>
+        <description>Specifies the editor's maximum value.</description>
+        <memberlist>RepositoryItemTrackBar.Maximum</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seSmallChange</name>
+        <windowcaption>Small Change</windowcaption>
+        <description>Specifies the small change. This value is added to or subtracted from the Value property when the scroll thumb is moved a small distance.</description>
+        <memberlist>RepositoryItemTrackBar.SmallChange</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seLargeChange</name>
+        <windowcaption>Large Change</windowcaption>
+        <description>Specifies the large change. This value is added to or subtracted from the Value property when the scroll thumb is moved a large distance.</description>
+        <memberlist>RepositoryItemTrackBar.LargeChange</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkEditUseMiddleValue</name>
+        <windowcaption>Enable Custom Middle</windowcaption>
+        <description>Enables a custom middle value (the number of ticks to proceed from the first tick to the middle tick).</description>
+        <memberlist>RepositoryItemZoomTrackBar.AllowUseMiddleValue</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seMiddle</name>
+        <windowcaption>Custom Middle</windowcaption>
+        <description>Specifies a custom middle value (the number of ticks to proceed from the first tick to the middle tick).</description>
+        <memberlist>RepositoryItemZoomTrackBar.Middle</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

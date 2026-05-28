@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+      <!--<controlentry>
+      <control>
+        <name>treeList1</name>
+        <windowcaption>Filtering setup</windowcaption>
+        <description>The following code adds filters to the MRUFilters collection and applies one of these filters to the TreeList.</description>
+        <memberlist>TreeList.MRUFilters, TreeList.ActiveFilterCriteria </memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>-->
+    <controlentry>
+      <control>
+        <name>layoutControl.customizationLayoutGroup</name>
+        <windowcaption>Find Panel availability and its elements</windowcaption>
+        <description>The TreeListOptionsFind.AllowFindPanel property specifies the Find Panel's availability. Multiple options included in the TreeList.OptionsFind object allow you to control the visibility of Find Panel buttons. The TreeListOptionsFind.ExpandNodesOnSearch option allows Tree List to search within collapsed nodes and expand them to show results.</description>
+        <memberlist>TreeListOptionsFind.AllowFindPanel,TreeListOptionsFind.HighlightFindResults,TreeListOptionsFind.ShowCloseButton,TreeListOptionsFind.ShowClearButton,TreeListOptionsFind.ShowFindButton,TreeListOptionsFind.,TreeListOptionsFind.ShowSearchNavButtons, TreeListOptionsFind.ExpandNodesOnSearch</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>layoutControl.actionLayoutGroup</name>
+        <windowcaption>Options</windowcaption>
+        <description>Find Panel options.</description>
+        <memberlist>TreeListOptionsFind.AlwaysVisible,TreeListOptionsFind.ClearFindOnClose,TreeListOptionsFind.FindDelay,TreeListOptionsFind.FindFilterColumns,TreeListOptionsFind.FindMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>layoutControl.lgBehavior</name>
+        <windowcaption>Behavior, ParserKind, and Filter Condition</windowcaption>
+        <description>The Behavior, ParserKind, and Condition options specify how Tree List searches for text entered in the Find Panel.</description>
+        <memberlist>TreeListOptionsFind.Behavior,TreeListOptionsFind.ParserKind,TreeListOptionsFind.Condition</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

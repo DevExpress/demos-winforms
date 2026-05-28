@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="icbeDrawMode.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="icbeDrawMode.EditValue" xml:space="preserve">
+    <value>icbeDrawMode</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="icbeDrawMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 172</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v26.1" name="DevExpress.Utils.v26.1, Culture=neutral"></assembly>
+  <data name="icbeDrawMode.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="icbeDrawMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 20</value>
+  </data>
+  <data name="cbeInterval.EditValue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="cbeInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 50</value>
+  </data>
+  <data name="cbeInterval.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="cbeInterval.Properties.Items" xml:space="preserve">
+    <value>Alphabetical</value>
+  </data>
+  <data name="cbeInterval.Properties.Items1" xml:space="preserve">
+    <value>Date: Month</value>
+  </data>
+  <data name="cbeInterval.Properties.Items2" xml:space="preserve">
+    <value>Date: Year</value>
+  </data>
+  <data name="cbeInterval.Properties.Items3" xml:space="preserve">
+    <value>Date: Range</value>
+  </data>
+  <data name="cbeInterval.Properties.Items4" xml:space="preserve">
+    <value>Custom Interval</value>
+  </data>
+  <data name="cbeInterval.Properties.Items5" xml:space="preserve">
+    <value>------------------------------------------------------</value>
+  </data>
+  <data name="cbeInterval.Properties.Items6" xml:space="preserve">
+    <value>Group by Category (images in group rows)</value>
+  </data>
+  <data name="cbeInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="cbeInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbeInterval.Name" xml:space="preserve">
+    <value>cbeInterval</value>
+  </data>
+  <data name="&gt;&gt;cbeInterval.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbeInterval.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;cbeInterval.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="icbeAllowFixedGroups.EditValue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="icbeAllowFixedGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 90</value>
+  </data>
+  <data name="icbeAllowFixedGroups.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="icbeAllowFixedGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 20</value>
+  </data>
+  <data name="icbeAllowFixedGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;icbeAllowFixedGroups.Name" xml:space="preserve">
+    <value>icbeAllowFixedGroups</value>
+  </data>
+  <data name="&gt;&gt;icbeAllowFixedGroups.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;icbeAllowFixedGroups.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;icbeAllowFixedGroups.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="layoutControlItem1.Text" xml:space="preserve">
+    <value>Grouping Mode:</value>
+  </data>
+  <data name="layoutControlItem2.Text" xml:space="preserve">
+    <value>Allow Fixed Groups:</value>
+  </data>
+  <data name="layoutControlGroup2.Text" xml:space="preserve">
+    <value>Behavior</value>
+  </data>
+  <data name="layoutControlItem3.Text" xml:space="preserve">
+    <value>Group Draw Mode:</value>
+  </data>
+  <data name="layoutControlGroup3.Text" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 467</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="icbeDrawMode.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;icbeDrawMode.Name" xml:space="preserve">
+    <value>icbeDrawMode</value>
+  </data>
+  <data name="&gt;&gt;icbeDrawMode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;icbeDrawMode.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;icbeDrawMode.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridColumn1.Caption" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="gridColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn1.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumn1.Width" type="System.Int32, mscorlib">
+    <value>273</value>
+  </data>
+  <data name="gridColumn2.Caption" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items" xml:space="preserve">
+    <value>Beverages</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items1" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items3" xml:space="preserve">
+    <value>Condiments</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items4" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items5" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items6" xml:space="preserve">
+    <value>Confections</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items7" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items8" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items9" xml:space="preserve">
+    <value>Dairy Products</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items10" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items11" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items12" xml:space="preserve">
+    <value>Grains/Cereals</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items13" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items14" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items15" xml:space="preserve">
+    <value>Meat/Poultry</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items16" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items17" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items18" xml:space="preserve">
+    <value>Produce</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items19" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items20" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items21" xml:space="preserve">
+    <value>Seafood</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items22" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="repositoryItemImageComboBox1.Items23" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gridColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn2.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumn2.Width" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="gridColumn3.Caption" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemSpinEdit1.Mask.EditMask" xml:space="preserve">
+    <value>c</value>
+  </data>
+  <data name="gridColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn3.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumn3.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="gridColumn4.AppearanceCell.BackColor2" type="System.Drawing.Color, System.Drawing">
+    <value>LightYellow</value>
+  </data>
+  <data name="gridColumn4.AppearanceCell.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>ForwardDiagonal</value>
+  </data>
+  <data name="gridColumn4.Caption" xml:space="preserve">
+    <value>Order Sum</value>
+  </data>
+  <data name="gridColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn4.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gridColumn4.Width" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="gridColumn5.Caption" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="gridColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn5.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gridColumn5.Width" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="gridColumn6.Caption" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemSpinEdit2.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="gridColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumn6.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumn6.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="gridView1.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Count</value>
+  </data>
+  <data name="gridView1.GroupSummary1" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="gridView1.GroupSummary2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="gridView1.GroupSummary3" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>735, 500</value>
+  </data>
+  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navigationPage1.Caption" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="navigationPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 467</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Name" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.TabNavigationPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Parent" xml:space="preserve">
+    <value>navigationPane1</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navigationPane1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="navigationPane1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 0</value>
+  </data>
+  <data name="navigationPane1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 500</value>
+  </data>
+  <data name="navigationPane1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="navigationPane1.Text" xml:space="preserve">
+    <value>navigationPane1</value>
+  </data>
+  <data name="&gt;&gt;navigationPane1.Name" xml:space="preserve">
+    <value>navigationPane1</value>
+  </data>
+  <data name="&gt;&gt;navigationPane1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.TabPane, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navigationPane1.Parent" xml:space="preserve">
+    <value>sidePanel1</value>
+  </data>
+  <data name="&gt;&gt;navigationPane1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>735, 500</value>
+  </data>
+  <data name="panelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Name" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="sidePanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="sidePanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>735, 0</value>
+  </data>
+  <data name="sidePanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 500</value>
+  </data>
+  <data name="sidePanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="sidePanel1.Text" xml:space="preserve">
+    <value>sidePanel1</value>
+  </data>
+  <data name="&gt;&gt;sidePanel1.Name" xml:space="preserve">
+    <value>sidePanel1</value>
+  </data>
+  <data name="&gt;&gt;sidePanel1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SidePanel, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;sidePanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sidePanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>985, 500</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Name" xml:space="preserve">
+    <value>layoutControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Name" xml:space="preserve">
+    <value>gridColumn1</value>
+  </data>
+  <data name="&gt;&gt;gridColumn1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Name" xml:space="preserve">
+    <value>gridColumn2</value>
+  </data>
+  <data name="&gt;&gt;gridColumn2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemImageComboBox1.Name" xml:space="preserve">
+    <value>repositoryItemImageComboBox1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemImageComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Name" xml:space="preserve">
+    <value>gridColumn3</value>
+  </data>
+  <data name="&gt;&gt;gridColumn3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Name" xml:space="preserve">
+    <value>gridColumn4</value>
+  </data>
+  <data name="&gt;&gt;gridColumn4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Name" xml:space="preserve">
+    <value>gridColumn5</value>
+  </data>
+  <data name="&gt;&gt;gridColumn5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Name" xml:space="preserve">
+    <value>gridColumn6</value>
+  </data>
+  <data name="&gt;&gt;gridColumn6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit2.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GroupInterval</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Demos.TutorialControl, GridMainDemo, Culture=neutral</value>
+  </data>
+</root>

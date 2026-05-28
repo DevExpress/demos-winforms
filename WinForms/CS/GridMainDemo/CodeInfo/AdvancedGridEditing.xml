@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>cbMasterTablePosition</name>
+				<windowcaption>Drag controller</windowcaption>
+				<description>A LayoutItemDragController object moves the Master Table. This object contains methods to move a layout item to a position next to another layout item. In this demo the Move method is used.
+When Master Table is docked to the bottom or top, it arranges its cards in a single row; when docked to the left or right edge - in a single column. This feature is performed by assigning different values to the ViewMode property.</description>
+        <memberlist>BaseLayoutItem.Move, LayoutViewOptionsView.ViewMode, LayoutItemDragController class</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>allowEditOnDoubleClick</name>
+        <windowcaption>Double click edit</windowcaption>
+        <description>When double-click editing is enabled, the DoubleClick event is handled. The CalcHitInfo method is used to obtain information about elements located at a specific point. See the 'Edit Order...' button code for more details.</description>
+        <memberlist>BaseView.DoubleClick, GridView.CalcHitInfo, GridControl.MainView</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>detailShowHideBtn</name>
+        <windowcaption>Show details</windowcaption>
+        <description>Clicking this button retrieves the index of the data source record to which the specified row handle corresponds and assigns the detail view to the grid control's MainView property.</description>
+        <memberlist>ColumnView.GetDataSourceRowIndex, ColumnView.FocusedRowHandle, GridControl.MainView</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>masterGrid</name>
+        <windowcaption>Master grid</windowcaption>
+        <description>Create an expression via the GridColumn.UnboundExpression property or handle the CustomUnboundColumnData event to provide data for unbound columns.</description>
+        <memberlist>ColumnView.CustomUnboundColumnData</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>detailGrid</name>
+        <windowcaption>Main view</windowcaption>
+        <description>To switch from a general view to a details view, use the MainView property. Two separate views are assigned to this property depending on data that needs to be displayed.</description>
+        <memberlist>GridControl.MainView</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\Modules\Navigation\*.vb" Exclude="$(MSBuildProjectDirectory)\Modules\Navigation\*.*.vb" />
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\Modules\Views\*.vb" Exclude="$(MSBuildProjectDirectory)\Modules\Views\*.*.vb" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C636C3EB-8BBB-44CA-A14D-8329B1AD8851}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>MVVMMainDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Map.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Wizard"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraMap.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="PresentationCore"><Private>False</Private></Reference>
+    <Reference Include="PresentationFramework"><Private>False</Private></Reference>
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+    <Reference Include="System.Core"><Private>False</Private></Reference>
+    <Reference Include="System.Data.Entity"><Private>False</Private></Reference>
+    <Reference Include="System.Xml.Linq"><Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Deployment"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>  
+    <Reference Include="WindowsBase"><Private>False</Private></Reference>
+	<PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeExamples.Modules\Navigation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\SimpleApp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples\Bindings.vb" />
+    <Compile Include="CodeExamples\Commanding.vb" />
+    <Compile Include="CodeExamples\Navigation.vb" />
+    <Compile Include="CodeExamples\Services.vb" />
+    <Compile Include="CodeExamples\Behaviors.vb" />
+    <Compile Include="CodeExamples\Messenger.vb" />
+    <Compile Include="CodeExamples.Modules\Bindings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Commanding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Services.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Behaviors.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Messenger.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeExamples\SimpleApp.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\DocumentManagerServiceExtensions.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\LayoutSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>LayoutSettings.settings</DependentUpon>
+    </Compile>
+    <None Include="Modules\Expenses\Common\ViewModel\LayoutSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>LayoutSettings.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.MVVM.Demos.Properties</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Modules\Expenses\Common\ViewModel\PersistentLayoutHelper.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\ViewModelLogicalLayoutHelper.vb" />
+    <Compile Include="Modules\Expenses\DataBase\DataDirectoryHelper.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Account\AccountViewModel.partial.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\AmountMessage.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Category\CategoryViewModel.partial.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\ExpensesDbContextViewModel.partial.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Transaction\TransactionCollectionViewModel.partial.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Transaction\TransactionViewModel.partial.vb" />
+    <Compile Include="Modules\Expenses\Views\Account\AccountEditForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Account\AccountEditForm.Designer.vb">
+      <DependentUpon>AccountEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Account\Accounts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Account\Accounts.Designer.vb">
+      <DependentUpon>Accounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Category\Categories.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Category\Categories.Designer.vb">
+      <DependentUpon>Categories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Category\CategoryEditForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Category\CategoryEditForm.Designer.vb">
+      <DependentUpon>CategoryEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Transaction\TransactionEditForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Transaction\TransactionEditForm.Designer.vb">
+      <DependentUpon>TransactionEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Transaction\Transactions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Transaction\Transactions.Designer.vb">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Common\CommonResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Common\DataModel\DbExceptions.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbExceptionsConverter.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbReadOnlyRepository.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbRepository.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbUnitOfWork.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbUnitOfWorkFactory.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\InstantFeedbackSource.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityState.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\IReadOnlyRepository.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\IRepository.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\IUnitOfWork.vb" />
+    <Compile Include="Modules\Expenses\Common\DataModel\UnitOfWorkBase.vb" />
+    <Compile Include="Modules\Expenses\Common\Utils\DbExtensions.vb" />
+    <Compile Include="Modules\Expenses\Common\Utils\ExpressionHelper.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\CollectionViewModel.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\DocumentsViewModel.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\EntitiesViewModel.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\ISingleObjectViewModel.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\LookUpEntitiesViewModel.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\Messages.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\PeekCollectionViewModel.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\ReadOnlyCollectionViewModel.vb" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\SingleObjectViewModel.vb" />
+    <Compile Include="Controls.vb" />
+    <Compile Include="Modules\Expenses\DataBase\DbContext.vb" />
+    <Compile Include="Modules\Expenses\ExpensesDbContextDataModel\ExpensesDbContextUnitOfWork.vb" />
+    <Compile Include="Modules\Expenses\ExpensesDbContextDataModel\IExpensesDbContextUnitOfWork.vb" />
+    <Compile Include="Modules\Expenses\ExpensesDbContextDataModel\UnitOfWorkSource.vb" />
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Model\Account.vb" />
+    <Compile Include="Modules\Expenses\Model\Category.vb" />
+    <Compile Include="Modules\Expenses\Model\Transaction.vb" />
+    <Compile Include="Modules\About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Modules\Expenses\Common\CommonResources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.MVVM.Demos.Properties</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppIcon.ico" />
+    <Compile Include="Modules\Navigation\DocumentManagerModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\DocumentManagerModule.Designer.vb">
+      <DependentUpon>DocumentManagerModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\ViewModels\Account\AccountCollectionViewModel.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Account\AccountViewModel.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Category\CategoryCollectionViewModel.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Category\CategoryViewModel.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\ExpensesDbContextViewModel.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Transaction\TransactionCollectionViewModel.vb" />
+    <Compile Include="Modules\Expenses\ViewModels\Transaction\TransactionViewModel.vb" />
+    <Compile Include="Modules\Navigation\NavigationFrameModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\NavigationFrameModule.Designer.vb">
+      <DependentUpon>NavigationFrameModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Navigation\TabbedFormModule.Designer.vb">
+      <DependentUpon>TabbedFormModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Navigation\TabbedFormModule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\TabControlModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\TabControlModule.Designer.vb">
+      <DependentUpon>TabControlModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Navigation\WindowedModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\WindowedModule.Designer.vb">
+      <DependentUpon>WindowedModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Data\InMemory.vb" />
+    <Compile Include="Modules\TodoApp\Data\IRepository.vb" />
+    <Compile Include="Modules\TodoApp\Messages\ReloadRequired.vb" />
+    <Compile Include="Modules\TodoApp\Model\AppModel.vb" />
+    <Compile Include="Modules\TodoApp\Model\TodoItem.vb" />
+    <Compile Include="Modules\TodoApp\TodoAppModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\ViewModels\AppLogoViewModel.vb" />
+    <Compile Include="Modules\TodoApp\ViewModels\AppViewModel.vb" />
+    <Compile Include="Modules\TodoApp\ViewModels\ItemsViewModel.vb" />
+    <Compile Include="Modules\TodoApp\ViewModels\ItemViewModel.vb" />
+    <Compile Include="Modules\TodoApp\Views\AppLogo.Designer.vb">
+      <DependentUpon>AppLogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\AppLogo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\ItemsView.Designer.vb">
+      <DependentUpon>ItemsView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\ItemsView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\ItemView.Designer.vb">
+      <DependentUpon>ItemView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\ItemView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\MainView.Designer.vb">
+      <DependentUpon>MainView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\MainView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\CardCollectionViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\CardCollectionViewModule.Designer.vb">
+      <DependentUpon>CardCollectionViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\DataLayoutDetailCollectionViewModule.Designer.vb">
+      <DependentUpon>DataLayoutDetailCollectionViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\DataLayoutDetailCollectionViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\DataLayoutViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\DataLayoutViewModule.Designer.vb">
+      <DependentUpon>DataLayoutViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\TableCollectionViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\TableCollectionViewModule.Designer.vb">
+      <DependentUpon>TableCollectionViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\TileCollectionViewModule.Designer.vb">
+      <DependentUpon>TileCollectionViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\TileCollectionViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <EmbeddedResource Include="Modules\Expenses\Views\Account\AccountEditForm.resx">
+      <DependentUpon>AccountEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Account\Accounts.resx">
+      <DependentUpon>Accounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Category\Categories.resx">
+      <DependentUpon>Categories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Category\CategoryEditForm.resx">
+      <DependentUpon>CategoryEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Transaction\TransactionEditForm.resx">
+      <DependentUpon>TransactionEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Transaction\Transactions.resx">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </EmbeddedResource>
+    
+    
+    
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Modules\Navigation\DocumentManagerModule.resx">
+      <DependentUpon>DocumentManagerModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation\NavigationFrameModule.resx">
+      <DependentUpon>NavigationFrameModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation\TabbedFormModule.resx">
+      <DependentUpon>TabbedFormModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation\TabControlModule.resx">
+      <DependentUpon>TabControlModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation\WindowedModule.resx">
+      <DependentUpon>WindowedModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TodoApp\Views\AppLogo.resx">
+      <DependentUpon>AppLogo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TodoApp\Views\ItemsView.resx">
+      <DependentUpon>ItemsView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TodoApp\Views\ItemView.resx">
+      <DependentUpon>ItemView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TodoApp\Views\MainView.resx">
+      <DependentUpon>MainView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\CardCollectionViewModule.resx">
+      <DependentUpon>CardCollectionViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\DataLayoutDetailCollectionViewModule.resx">
+      <DependentUpon>DataLayoutDetailCollectionViewModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\TableCollectionViewModule.resx">
+      <DependentUpon>TableCollectionViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\TileCollectionViewModule.resx">
+      <DependentUpon>TileCollectionViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAndBindAppLogoViewModel.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAndBindItemsViewModel.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAndBindItemViewModel.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAppLogo.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAppMainView.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAppViewModelAndBindTheTitle.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateItemsView.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateItemView.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\DataModel.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\RegisteringMessageRecipient.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\RegisteringNavigationService.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\SendingMessages.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Delete.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Edit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Printing_PageSetup.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\clearheaderandfooter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\currency.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\new.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\pieseries.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PrintingPreview.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Refresh.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ResetView.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Save.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\saveandclose.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\saveas.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Transactions.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

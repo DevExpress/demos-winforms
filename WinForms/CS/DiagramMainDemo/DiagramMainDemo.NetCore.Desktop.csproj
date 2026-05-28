@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{1E470944-17FA-0A02-39EE-D23F26297CE8}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DiagramMainDemo</RootNamespace>
+    <AssemblyName>DiagramMainDemo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>DemoIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\NWindContextNetCore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeExamples\GenericExamples.cs" />
+    <Compile Include="CodeExamples\EventsExamples.cs" />
+    <Compile Include="Data\DatabaseDiagramData.cs" />
+    <Compile Include="Data\EmployeeData.cs" />
+    <Compile Include="Data\OrderDataGenerator.cs" />
+    <Compile Include="Data\TournamentData.cs" />
+    <Compile Include="DemoHelper.cs" />
+    <Compile Include="DiagramTutorialControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiagramTutorialControlBase.Designer.cs">
+      <DependentUpon>DiagramTutorialControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiagramDemoFileHelper.cs" />
+    <Compile Include="DiagramTutorialControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiagramTutorialControl.Designer.cs">
+      <DependentUpon>DiagramTutorialControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\MindMapHelpers.cs" />
+    <Compile Include="Helpers\OptionsPanelHelpers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\OrgChartHelpers.cs" />
+    <Compile Include="Modules\DatabaseDiagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DatabaseDiagram.Designer.cs">
+      <DependentUpon>DatabaseDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EventsExamplesModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ConnectorsModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ConnectorsModule.Designer.cs">
+      <DependentUpon>ConnectorsModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ContainersAndListsModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ContainersAndListsModule.Designer.cs">
+      <DependentUpon>ContainersAndListsModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CircularLayoutModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CircularLayoutModule.Designer.cs">
+      <DependentUpon>CircularLayoutModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomShapesModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomShapesModule.Designer.cs">
+      <DependentUpon>CustomShapesModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FloorPlanModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FloorPlanModule.Designer.cs">
+      <DependentUpon>FloorPlanModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentModuleBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentModuleBase.Designer.cs">
+      <DependentUpon>DocumentModuleBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EventsModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EventsModule.Designer.cs">
+      <DependentUpon>EventsModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ImagesModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ImagesModule.Designer.cs">
+      <DependentUpon>ImagesModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ExpandAndCollapseOrgChartModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ExpandAndCollapseOrgChartModule.Designer.cs">
+      <DependentUpon>ExpandAndCollapseOrgChartModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MindMapTreeLayoutModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MindMapTreeLayoutModule.Designer.cs">
+      <DependentUpon>MindMapTreeLayoutModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductFlowDiagramModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductFlowDiagramModule.Designer.cs">
+      <DependentUpon>ProductFlowDiagramModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LayeredLayoutModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LayeredLayoutModule.Designer.cs">
+      <DependentUpon>LayeredLayoutModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OrgChartModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OrgChartModule.Designer.cs">
+      <DependentUpon>OrgChartModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TournamentModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TournamentModule.Designer.cs">
+      <DependentUpon>TournamentModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RelationshipDiagramModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RelationshipDiagramModule.Designer.cs">
+      <DependentUpon>RelationshipDiagramModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RelationshipsData.cs" />
+    <Compile Include="Modules\ShapesModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ShapesModule.Designer.cs">
+      <DependentUpon>ShapesModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TipOverTreeLayoutModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TipOverTreeLayoutModule.Designer.cs">
+      <DependentUpon>TipOverTreeLayoutModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TreeLayoutModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TreeLayoutModule.Designer.cs">
+      <DependentUpon>TreeLayoutModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LayoutModuleBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LayoutModuleBase.Designer.cs">
+      <DependentUpon>LayoutModuleBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FlowChartModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FlowChartModule.Designer.cs">
+      <DependentUpon>FlowChartModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CycleDiagramModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CycleDiagramModule.Designer.cs">
+      <DependentUpon>CycleDiagramModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OrgChartLayoutModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OrgChartLayoutModule.Designer.cs">
+      <DependentUpon>OrgChartLayoutModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Modules\ConnectorsModule.resx">
+      <DependentUpon>ConnectorsModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ContainersAndListsModule.resx">
+      <DependentUpon>ContainersAndListsModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CircularLayoutModule.resx">
+      <DependentUpon>CircularLayoutModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomShapesModule.resx">
+      <DependentUpon>CustomShapesModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DatabaseDiagram.resx">
+      <DependentUpon>DatabaseDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FloorPlanModule.resx">
+      <DependentUpon>FloorPlanModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentModuleBase.resx">
+      <DependentUpon>DocumentModuleBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FlowChartModule.resx">
+      <DependentUpon>FlowChartModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EventsModule.resx">
+      <DependentUpon>EventsModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ImagesModule.resx">
+      <DependentUpon>ImagesModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LayeredLayoutModule.resx">
+      <DependentUpon>LayeredLayoutModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ExpandAndCollapseOrgChartModule.resx">
+      <DependentUpon>ExpandAndCollapseOrgChartModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MindMapTreeLayoutModule.resx">
+      <DependentUpon>MindMapTreeLayoutModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ProductFlowDiagramModule.resx">
+      <DependentUpon>ProductFlowDiagramModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OrgChartModule.resx">
+      <DependentUpon>OrgChartModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TournamentModule.resx">
+      <DependentUpon>TournamentModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RelationshipDiagramModule.resx">
+      <DependentUpon>RelationshipDiagramModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ShapesModule.resx">
+      <DependentUpon>ShapesModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TipOverTreeLayoutModule.resx">
+      <DependentUpon>TipOverTreeLayoutModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TreeLayoutModule.resx">
+      <DependentUpon>TreeLayoutModule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LayoutModuleBase.resx">
+      <DependentUpon>LayoutModuleBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OrgChartLayoutModule.resx">
+      <DependentUpon>OrgChartLayoutModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    
+    
+    
+    
+    
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DemosRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CodeFirstModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="DemoIcon.ico" />
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <Resource Include="Images\OfficePlan\Armchair.svg" />
+    <Resource Include="Images\OfficePlan\Chair 1.svg" />
+    <Resource Include="Images\OfficePlan\Chair 2.svg" />
+    <Resource Include="Images\OfficePlan\Chair.svg" />
+    <Resource Include="Images\OfficePlan\Check.svg" />
+    <Resource Include="Images\OfficePlan\Couch.svg" />
+    <Resource Include="Images\OfficePlan\Cup 1.svg" />
+    <Resource Include="Images\OfficePlan\Cup.svg" />
+    <Resource Include="Images\OfficePlan\Cupboard.svg" />
+    <Resource Include="Images\OfficePlan\Floor.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 1.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 2.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 3.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 4.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 5.svg" />
+    <Resource Include="Images\OfficePlan\Keyboard 1.svg" />
+    <Resource Include="Images\OfficePlan\Keyboard 2.svg" />
+    <Resource Include="Images\OfficePlan\Keyboard.svg" />
+    <Resource Include="Images\OfficePlan\Laptop.svg" />
+    <Resource Include="Images\OfficePlan\Monitor 1.svg" />
+    <Resource Include="Images\OfficePlan\Monitor.svg" />
+    <Resource Include="Images\OfficePlan\Nightstand.svg" />
+    <Resource Include="Images\OfficePlan\Notebook 1.svg" />
+    <Resource Include="Images\OfficePlan\Notebook 2.svg" />
+    <Resource Include="Images\OfficePlan\Notebook.svg" />
+    <Resource Include="Images\OfficePlan\Table.svg" />
+    <Resource Include="Images\OfficePlan\Window.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OrgChart\CollapsibleTemplate.png" />
+    <Resource Include="Images\DatabaseDiagram\id.svg" />
+    <Resource Include="Images\DatabaseDiagram\property.svg" />
+    <Resource Include="Images\Backgrounds\floor.svg" />
+    <Resource Include="Images\OrgChart\BottomTextTemplate.png" />
+    <Resource Include="Images\OrgChart\RightTextTemplate1.png" />
+    <Resource Include="Images\OrgChart\BeltTemplate.png" />
+    <Resource Include="Images\OrgChart\RightTextTemplate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    <EmbeddedResourceUseDependentUponConvention>false</EmbeddedResourceUseDependentUponConvention>
+  </PropertyGroup>
+  <Target Name="EmbedLocal" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="@(Compile)" Condition="'%(RelativeDir)' == 'CodeExamples\'">
+        <Link>CodeExamples.Resources\%(Filename)%(Extension)</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

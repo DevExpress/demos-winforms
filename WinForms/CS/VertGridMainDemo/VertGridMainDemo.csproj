@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ProjectGuid>{E6D3B858-BFEC-4493-8CA9-06E7803D27EF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>VertGridMainDemo</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DevExpress.XtraVerticalGrid.Demos</RootNamespace>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+</PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Diagram.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Images.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraDiagram.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    <Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="CodeExamples.Resources\SampleData.cs" />
+    <Compile Include="CodeExamples\ConditionalFormatting.cs" />
+    <Compile Include="CodeExamples\FilterAndSearch.cs" />
+    <Compile Include="CodeExamples\FocusAndNavigation.cs" />
+    <Compile Include="CodeExamples\HtmlText.cs" />
+    <Compile Include="CodeExamples\ImageHelper.cs" />
+    <Compile Include="CodeExamples\Layout.cs" />
+    <Compile Include="CodeExamples\Selection.cs" />
+    <Compile Include="CodeExamples\Sorting.cs" />
+    <Compile Include="CodeExamples\UnboundColumns.cs" />
+    <Compile Include="DemoControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemosRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dsNWindProducts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNWindProducts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\CodeExamples.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CodeExamples.Designer.cs">
+      <DependentUpon>CodeExamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ComputersData.cs" />
+    <Compile Include="Modules\Contacts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\PCMarket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PCMarket.Designer.cs">
+      <DependentUpon>PCMarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VerticalGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\VerticalGrid.Designer.cs">
+      <DependentUpon>VerticalGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PropertyGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PropertyGrid.Designer.cs">
+      <DependentUpon>PropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RowsCreator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\VehiclesData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PCMarket.resx">
+      <DependentUpon>PCMarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VerticalGrid.resx">
+      <DependentUpon>VerticalGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PropertyGrid.resx">
+      <DependentUpon>PropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    
+    <Content Include="dsNWindProducts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNWindProducts.Designer.cs</LastGenOutput>
+    </Content>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\JustifyCenter.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\JustifyJustify.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\JustifyLeft.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\JustifyRight.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\VertAlignBottom.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\VertAlignMiddle.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\VertAlignTop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\UnboundField.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Customize.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\FixedRows.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Formats.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Options.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\PropertyGrid.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\UnboundExpressions.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+  <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+  <PackageReference Include="System.Data.OleDb" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

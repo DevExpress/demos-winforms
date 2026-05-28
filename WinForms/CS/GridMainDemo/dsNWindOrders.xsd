@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsNWindOrders" targetNamespace="http://www.tempuri.org/dsNWind.xsd" xmlns:mstns="http://www.tempuri.org/dsNWind.xsd" xmlns="http://www.tempuri.org/dsNWind.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsNWindOrders" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Order_x0020_Details">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Discount" type="xs:float" minOccurs="0" />
+							<xs:element name="OrderID" type="xs:int" />
+							<xs:element name="ProductID" type="xs:int" />
+							<xs:element name="Quantity" type="xs:short" minOccurs="0" />
+							<xs:element name="UnitPrice" type="xs:decimal" minOccurs="0" />
+							<xs:element name="SubTotal" type="xs:decimal" minOccurs="0" msdata:Expression="Quantity*UnitPrice*(1-Discount)" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

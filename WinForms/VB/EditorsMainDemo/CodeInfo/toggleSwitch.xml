@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+		<controlentry>
+			<control>
+				<name>btnToggleState</name>
+				<windowcaption>Toggle State button</windowcaption>
+				<description>This button toggles the  editor's state.</description>
+				<memberlist>ToggleSwitch.Properties.IsOn</memberlist>
+				<dtimage><?xm-replace_text {dtimage}?></dtimage>
+			</control>
+		</controlentry>				
+		<controlentry>
+			<control>
+				<name>comboAlign</name>
+				<windowcaption>Toggle Switch Alignment combo box</windowcaption>
+				<description>This combo box lets you change the toggle switch alignment within the editor.</description>
+				<memberlist>ToggleSwitch.Properties.GlyphAlign</memberlist>
+				<dtimage><?xm-replace_text {dtimage}?></dtimage>
+			</control>
+		</controlentry>	
+		<controlentry>
+			<control>
+				<name>tsTextOff</name>
+				<windowcaption>Toggle Switch TextOff text edit</windowcaption>
+				<description>This text edit lets you change the caption for the state off within the editor.</description>
+				<memberlist>ToggleSwitch.Properties.TextOff</memberlist>
+				<dtimage><?xm-replace_text {dtimage}?></dtimage>
+			</control>
+		</controlentry>	
+		<controlentry>
+			<control>
+				<name>tsTextOn</name>
+				<windowcaption>Toggle Switch TextOn text edit</windowcaption>
+				<description>This text edit lets you change the caption for the state on within the editor.</description>
+				<memberlist>ToggleSwitch.Properties.TextOn</memberlist>
+				<dtimage><?xm-replace_text {dtimage}?></dtimage>
+			</control>
+		</controlentry>	
+		<controlentry>
+			<control>
+				<name>tsAllowMnemonics</name>
+				<windowcaption>Allow mnemonics</windowcaption>
+				<description>Mnemonics allow your end-users to switch a Toggle Switch state via keyboard hot-keys. In this demo you can press 'S' to toggle Toggle Switch state.</description>
+				<memberlist>ToggleSwitch.Properties.TextOff, ToggleSwitch.Properties.TextOn</memberlist>
+				<dtimage><?xm-replace_text {dtimage}?></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>tsAllowHTMLString</name>
+				<windowcaption>Allow HTML formatting</windowcaption>
+				<description>Toggle Switch controls allow you to format their display text using the Hyper Text Markup Language (HTML). HTML formatted text contains markup tags, which define text appearance.</description>
+				<memberlist>RepositoryItem.AllowHtmlDraw, HTML Text Formatting</memberlist>
+				<dtimage><?xm-replace_text {dtimage}?></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>tsAllowThumbAnimation</name>
+				<windowcaption>Allow Thumb Animation</windowcaption>
+				<description>This options allow you to animate a Thumb moving.</description>
+				<memberlist>ToggleSwitch.Properties.AllowThumbAnimation</memberlist>
+				<dtimage><?xm-replace_text {dtimage}?></dtimage>
+			</control>
+		</controlentry>
+	</controls>				
+	<hints>
+		<hint>
+			<name>toggleSwitch</name>
+			<hinttext>#Mouse Operations<newline></newline>Click caption or toggle switch<newline></newline>#Keyboard<newline></newline>Press SPACE or use mnemonics</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

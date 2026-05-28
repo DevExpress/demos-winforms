@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0">
+  <PropertyGroup>
+    <ProjectGuid>{B3BF8299-0691-4DB9-B208-F81D0E8C2034}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <AssemblyName>XpoTutorials</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>DevExpress.Xpo.Demos</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <Name>DevExpress.Data.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <Name>DevExpress.Tutorials.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <Name>DevExpress.Utils.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <Name>DevExpress.Xpo.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <Name>DevExpress.XtraBars.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <Name>DevExpress.XtraEditors.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <Name>DevExpress.XtraGrid.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <Name>DevExpress.XtraNavBar.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Core"><Private>False</Private></Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data.Services.Client"><Private>False</Private></Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.ServiceModel"><Private>False</Private></Reference>
+    <Reference Include="System.Web"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    <Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AsyncLoadingTaskBased\AsyncLoadingTaskBased.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsyncLoadingTaskBased\AsyncLoadingTaskBased.Designer.cs">
+      <DependentUpon>AsyncLoadingTaskBased.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncLoading\AsyncLoading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsyncLoading\AsyncLoading.Designer.cs">
+      <DependentUpon>AsyncLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncLoading\DelayedDataLayer.cs" />
+    <Compile Include="BusinessObjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataCaching\DataCaching.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataCaching\DataCaching.designer.cs">
+      <DependentUpon>DataCaching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCaching\DataStoreCounter.cs" />
+    <Compile Include="DataStoreService\DataService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataStoreService\DataService.designer.cs">
+      <DependentUpon>DataService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletingPersistentObjects\DeletingPersistentObjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeletingPersistentObjects\DeletingPersistentObjects.Designer.cs">
+      <DependentUpon>DeletingPersistentObjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletingPersistentObjects\ImmediateDeletionProjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FreeJoin\FreeJoin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FreeJoin\FreeJoin.designer.cs">
+      <DependentUpon>FreeJoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\Functions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Functions\Functions.Designer.cs">
+      <DependentUpon>Functions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratingPersistentClasses\GeneratingPersistentClasses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneratingPersistentClasses\GeneratingPersistentClasses.Designer.cs">
+      <DependentUpon>GeneratingPersistentClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratingPersistentClasses\PersistentClassGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneratingPersistentClasses\ViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneratingPersistentClasses\ViewForm.Designer.cs">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Images\Cars.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Images\Images.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Images\Images.Designer.cs">
+      <DependentUpon>Images.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstantFeedback\Console.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstantFeedback\Data.cs" />
+    <Compile Include="InstantFeedback\frmSQLConnector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstantFeedback\frmSQLConnector.Designer.cs">
+      <DependentUpon>frmSQLConnector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstantFeedback\GridServerMode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InstantFeedback\GridServerMode.Designer.cs">
+      <DependentUpon>GridServerMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstantFeedback\Objects.cs" />
+    <Compile Include="InTransactionMode\InTransaction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InTransactionMode\InTransaction.designer.cs">
+      <DependentUpon>InTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifiedProperties\ModifiedProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModifiedProperties\ModifiedProperties.designer.cs">
+      <DependentUpon>ModifiedProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NestedUnitsOfWork\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NestedUnitsOfWork\EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NestedUnitsOfWork\NestedUnitsOfWork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NestedUnitsOfWork\NestedUnitsOfWork.Designer.cs">
+      <DependentUpon>NestedUnitsOfWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectLayerService\ObjectLayerService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjectLayerService\ObjectLayerService.designer.cs">
+      <DependentUpon>ObjectLayerService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectsInAlias\ObjectsInAlias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjectsInAlias\ObjectsInAlias.Designer.cs">
+      <DependentUpon>ObjectsInAlias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OneToManyRelations\OneToManyRelations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OneToManyRelations\OneToManyRelations.Designer.cs">
+      <DependentUpon>OneToManyRelations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagination\Pagination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pagination\Pagination.Designer.cs">
+      <DependentUpon>Pagination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Projects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryingData\QueryingData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryingData\QueryingData.Designer.cs">
+      <DependentUpon>QueryingData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleDataAwareApplication\SimpleDataAwareApplication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleDataAwareApplication\SimpleDataAwareApplication.Designer.cs">
+      <DependentUpon>SimpleDataAwareApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Single\Single.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Single\Single.designer.cs">
+      <DependentUpon>Single.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecifiedTypeObject\Persons.cs" />
+    <Compile Include="SpecifiedTypeObject\SpecifiedTypeObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpecifiedTypeObject\SpecifiedTypeObject.Designer.cs">
+      <DependentUpon>SpecifiedTypeObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedures\PersistentClassGenerator.cs" />
+    <Compile Include="StoredProcedures\StoredProcedures.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StoredProcedures\StoredProcedures.designer.cs">
+      <DependentUpon>StoredProcedures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedures\ViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoredProcedures\ViewForm.designer.cs">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialsInfo.cs" />
+    <Compile Include="UnitsOfWork\UnitsOfWork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitsOfWork\UnitsOfWork.Designer.cs">
+      <DependentUpon>UnitsOfWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Contacts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\NewContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validation\NewContactForm.Designer.cs">
+      <DependentUpon>NewContactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Validation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\Validation.Designer.cs">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhatsThis.cs" />
+    <Compile Include="XPBindingSourceDemo\XPBindingSourceDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XPBindingSourceDemo\XPBindingSourceDemo.Designer.cs">
+      <DependentUpon>XPBindingSourceDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPViewDemo\nwind.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XPViewDemo\XPViewDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XPViewDemo\XPViewDemo.Designer.cs">
+      <DependentUpon>XPViewDemo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncLoadingTaskBased\AsyncLoadingTaskBased.resx">
+      <DependentUpon>AsyncLoadingTaskBased.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncLoading\AsyncLoading.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsyncLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCaching\DataCaching.resx">
+      <DependentUpon>DataCaching.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataStoreService\DataService.resx">
+      <DependentUpon>DataService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletingPersistentObjects\DeletingPersistentObjects.resx">
+      <DependentUpon>DeletingPersistentObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FreeJoin\FreeJoin.resx">
+      <DependentUpon>FreeJoin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Functions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Functions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneratingPersistentClasses\GeneratingPersistentClasses.resx">
+      <DependentUpon>GeneratingPersistentClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneratingPersistentClasses\ViewForm.resx">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Images.resx">
+      <DependentUpon>Images.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InTransactionMode\InTransaction.resx">
+      <DependentUpon>InTransaction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NestedUnitsOfWork\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NestedUnitsOfWork\NestedUnitsOfWork.resx">
+      <DependentUpon>NestedUnitsOfWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectLayerService\ObjectLayerService.resx">
+      <DependentUpon>ObjectLayerService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OneToManyRelations\OneToManyRelations.resx">
+      <DependentUpon>OneToManyRelations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagination\Pagination.resx">
+      <DependentUpon>Pagination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryingData\QueryingData.resx">
+      <DependentUpon>QueryingData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleDataAwareApplication\SimpleDataAwareApplication.resx">
+      <DependentUpon>SimpleDataAwareApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoredProcedures\StoredProcedures.resx">
+      <DependentUpon>StoredProcedures.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoredProcedures\ViewForm.resx">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitsOfWork\UnitsOfWork.resx">
+      <DependentUpon>UnitsOfWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\NewContactForm.resx">
+      <DependentUpon>NewContactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\Validation.resx">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls.resx">
+      <DependentUpon>Controls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPBindingSourceDemo\XPBindingSourceDemo.resx">
+      <DependentUpon>XPBindingSourceDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPViewDemo\XPViewDemo.resx">
+      <DependentUpon>XPViewDemo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\Wizard_16x16.png" />
+    <EmbeddedResource Include="Icons\Wizard_32x32.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\Xpo.LargeIcon.png" />
+    <EmbeddedResource Include="InstantFeedback\frmSQLConnector.resx">
+      <DependentUpon>frmSQLConnector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstantFeedback\GridServerMode.resx">
+      <DependentUpon>GridServerMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecifiedTypeObject\SpecifiedTypeObject.resx">
+      <DependentUpon>SpecifiedTypeObject.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModifiedProperties\ModifiedProperties.resx">
+      <DependentUpon>ModifiedProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectsInAlias\ObjectsInAlias.resx">
+      <DependentUpon>ObjectsInAlias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ShowCode_32x32.png" />
+    <EmbeddedResource Include="Single\Single.resx">
+      <DependentUpon>Single.cs</DependentUpon>
+    </EmbeddedResource>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

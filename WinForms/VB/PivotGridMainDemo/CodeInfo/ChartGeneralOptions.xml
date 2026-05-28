@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>comboChartType</name>
+				<windowcaption>Chart Type</windowcaption>
+				<description>Sets the type of a chart.</description>
+        <memberlist>SeriesBase.ChangeView, SeriesBase.View</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    
+    <controlentry>
+      <control>
+        <name>checkShowPointLabels</name>
+        <windowcaption>Show Point Labels</windowcaption>
+        <description>Sets whether to show labels for a series.</description>
+        <memberlist>SeriesBase.LabelsVisibility</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    
+    <controlentry>
+      <control>
+        <name>ceShowRowGrandTotals</name>
+        <windowcaption>Show Row Grand Totals</windowcaption>
+        <description>Sets whether row grand totals are passed to a chart control.</description>
+        <memberlist>PivotGridOptionsChartDataSourceBase.ProvideRowGrandTotals, PivotGridOptionsChartDataSourceBase.ProvideColumnGrandTotals</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    
+    <controlentry>
+      <control>
+        <name>ceShowColumnGrandTotals</name>
+        <windowcaption>Show Column Grand Totals</windowcaption>
+        <description>Sets whether column grand totals are passed to a chart control.</description>
+        <memberlist>PivotGridOptionsChartDataSourceBase.ProvideColumnGrandTotals, PivotGridOptionsChartDataSourceBase.ProvideRowGrandTotals</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>ceSelectionOnly</name>
+        <windowcaption>Selection Only</windowcaption>
+        <description>Sets whether a chart control must display selected cells or the entire PivotGrid control data.</description>
+        <memberlist>PivotGridOptionsChartDataSource.SelectionOnly</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>seUpdateDelay</name>
+        <windowcaption>Update Delay</windowcaption>
+        <description>Specifies the delay between changing the cell focus or selection, and updating the bound Chart control.</description>
+        <memberlist>PivotGridOptionsChartDataSource.UpdateDelay, PivotGridOptionsChartDataSource.SelectionOnly</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>ceChartDataVertical</name>
+        <windowcaption>Generate Series from Columns</windowcaption>
+        <description>Sets whether series on a chart control are created for PivotGrid columns or rows.</description>
+        <memberlist>PivotGridOptionsChartDataSourceBase.ProvideDataByColumns</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

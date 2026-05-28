@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\Modules\Navigation\*.cs" Exclude="$(MSBuildProjectDirectory)\Modules\Navigation\*.*.cs" />
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\Modules\Views\*.cs" Exclude="$(MSBuildProjectDirectory)\Modules\Views\*.*.cs" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <ProjectGuid>{E976F9EB-574C-06D1-1A1B-35A2A8B9E069}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.MVVM.Demos</RootNamespace>
+    <AssemblyName>MVVMMainDemo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeExamples.Modules\Navigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\SimpleApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples\Bindings.cs" />
+    <Compile Include="CodeExamples\Commanding.cs" />
+    <Compile Include="CodeExamples\Navigation.cs" />
+    <Compile Include="CodeExamples\SimpleApp.cs" />
+    <Compile Include="CodeExamples\Services.cs" />
+    <Compile Include="CodeExamples\Behaviors.cs" />
+    <Compile Include="CodeExamples\Messenger.cs" />
+    <Compile Include="CodeExamples.Modules\Bindings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Commanding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Behaviors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Messenger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\Expenses\Common\ViewModel\DocumentManagerServiceExtensions.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\LayoutSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>LayoutSettings.settings</DependentUpon>
+    </Compile>
+    <None Include="Modules\Expenses\Common\ViewModel\LayoutSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>LayoutSettings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Modules\Expenses\Common\ViewModel\PersistentLayoutHelper.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\ViewModelLogicalLayoutHelper.cs" />
+    <Compile Include="Modules\Expenses\DataBase\DataDirectoryHelper.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Account\AccountViewModel.partial.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\AmountMessage.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Category\CategoryCollectionViewModel.partial.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Category\CategoryViewModel.partial.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\ExpensesDbContextViewModel.partial.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\AddNewMessage.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Transaction\TransactionCollectionViewModel.partial.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Transaction\TransactionViewModel.partial.cs" />
+    <Compile Include="Modules\Expenses\Views\Account\AccountEditForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Account\AccountEditForm.Designer.cs">
+      <DependentUpon>AccountEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Account\Accounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Account\Accounts.Designer.cs">
+      <DependentUpon>Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Category\Categories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Category\Categories.Designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Category\CategoryEditForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Category\CategoryEditForm.Designer.cs">
+      <DependentUpon>CategoryEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Transaction\TransactionEditForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Transaction\TransactionEditForm.Designer.cs">
+      <DependentUpon>TransactionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Transaction\Transactions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Expenses\Views\Transaction\Transactions.Designer.cs">
+      <DependentUpon>Transactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Common\CommonResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Common\DataModel\DbExceptions.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbExceptionsConverter.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbReadOnlyRepository.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbRepository.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbUnitOfWork.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityFramework\DbUnitOfWorkFactory.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\EntityState.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\IReadOnlyRepository.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\IRepository.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\IUnitOfWork.cs" />
+    <Compile Include="Modules\Expenses\Common\DataModel\UnitOfWorkBase.cs" />
+    <Compile Include="Modules\Expenses\Common\Utils\DbExtensions.cs" />
+    <Compile Include="Modules\Expenses\Common\Utils\ExpressionHelper.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\CollectionViewModel.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\DocumentsViewModel.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\EntitiesViewModel.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\ISingleObjectViewModel.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\LookUpEntitiesViewModel.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\Messages.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\PeekCollectionViewModel.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\ReadOnlyCollectionViewModel.cs" />
+    <Compile Include="Modules\Expenses\Common\ViewModel\SingleObjectViewModel.cs" />
+    <Compile Include="Controls.cs" />
+    <Compile Include="Modules\Expenses\DataBase\DbContext.cs" />
+    <Compile Include="Modules\Expenses\ExpensesDbContextDataModel\ExpensesDbContextUnitOfWork.cs" />
+    <Compile Include="Modules\Expenses\ExpensesDbContextDataModel\IExpensesDbContextUnitOfWork.cs" />
+    <Compile Include="Modules\Expenses\ExpensesDbContextDataModel\UnitOfWorkSource.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\Model\Account.cs" />
+    <Compile Include="Modules\Expenses\Model\Category.cs" />
+    <Compile Include="Modules\Expenses\Model\Transaction.cs" />
+    <Compile Include="Modules\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Modules\Expenses\Common\CommonResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppIcon.ico" />
+    <Compile Include="Modules\Navigation\DocumentManagerModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\DocumentManagerModule.Designer.cs">
+      <DependentUpon>DocumentManagerModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Expenses\ViewModels\Account\AccountCollectionViewModel.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Account\AccountViewModel.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Category\CategoryCollectionViewModel.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Category\CategoryViewModel.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\ExpensesDbContextViewModel.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Transaction\TransactionCollectionViewModel.cs" />
+    <Compile Include="Modules\Expenses\ViewModels\Transaction\TransactionViewModel.cs" />
+    <Compile Include="Modules\Navigation\NavigationFrameModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\NavigationFrameModule.Designer.cs">
+      <DependentUpon>NavigationFrameModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Navigation\TabbedFormModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\TabbedFormModule.Designer.cs">
+      <DependentUpon>TabbedFormModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Navigation\TabControlModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\TabControlModule.Designer.cs">
+      <DependentUpon>TabControlModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Navigation\WindowedModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation\WindowedModule.Designer.cs">
+      <DependentUpon>WindowedModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Data\InMemory.cs" />
+    <Compile Include="Modules\TodoApp\Data\IRepository.cs" />
+    <Compile Include="Modules\TodoApp\Messages\ReloadRequired.cs" />
+    <Compile Include="Modules\TodoApp\Model\AppModel.cs" />
+    <Compile Include="Modules\TodoApp\Model\TodoItem.cs" />
+    <Compile Include="Modules\TodoApp\TodoAppModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\ViewModels\AppLogoViewModel.cs" />
+    <Compile Include="Modules\TodoApp\ViewModels\AppViewModel.cs" />
+    <Compile Include="Modules\TodoApp\ViewModels\ItemsViewModel.cs" />
+    <Compile Include="Modules\TodoApp\ViewModels\ItemViewModel.cs" />
+    <Compile Include="Modules\TodoApp\Views\AppLogo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\AppLogo.Designer.cs">
+      <DependentUpon>AppLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\ItemsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\ItemsView.Designer.cs">
+      <DependentUpon>ItemsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\ItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\ItemView.Designer.cs">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\TodoApp\Views\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\CardCollectionViewModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\CardCollectionViewModule.Designer.cs">
+      <DependentUpon>CardCollectionViewModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\DataLayoutDetailCollectionViewModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\DataLayoutDetailCollectionViewModule.Designer.cs">
+      <DependentUpon>DataLayoutDetailCollectionViewModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\DataLayoutViewModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\DataLayoutViewModule.Designer.cs">
+      <DependentUpon>DataLayoutViewModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\TableCollectionViewModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\TableCollectionViewModule.Designer.cs">
+      <DependentUpon>TableCollectionViewModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Views\TileCollectionViewModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Views\TileCollectionViewModule.Designer.cs">
+      <DependentUpon>TileCollectionViewModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Modules\Expenses\Views\Account\AccountEditForm.resx">
+      <DependentUpon>AccountEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Account\Accounts.resx">
+      <DependentUpon>Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Category\Categories.resx">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Category\CategoryEditForm.resx">
+      <DependentUpon>CategoryEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Transaction\TransactionEditForm.resx">
+      <DependentUpon>TransactionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Expenses\Views\Transaction\Transactions.resx">
+      <DependentUpon>Transactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Modules\Expenses\ViewModels\Account\AccountCollectionViewModel.partial.cs" />
+    
+    
+    
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Modules\Navigation\DocumentManagerModule.resx">
+      <DependentUpon>DocumentManagerModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation\NavigationFrameModule.resx">
+      <DependentUpon>NavigationFrameModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation\TabbedFormModule.resx">
+      <DependentUpon>TabbedFormModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation\TabControlModule.resx">
+      <DependentUpon>TabControlModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation\WindowedModule.resx">
+      <DependentUpon>WindowedModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TodoApp\Views\AppLogo.resx">
+      <DependentUpon>AppLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TodoApp\Views\ItemsView.resx">
+      <DependentUpon>ItemsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TodoApp\Views\ItemView.resx">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TodoApp\Views\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\CardCollectionViewModule.resx">
+      <DependentUpon>CardCollectionViewModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\DataLayoutDetailCollectionViewModule.resx">
+      <DependentUpon>DataLayoutDetailCollectionViewModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\DataLayoutViewModule.resx">
+      <DependentUpon>DataLayoutViewModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\TableCollectionViewModule.resx">
+      <DependentUpon>TableCollectionViewModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Views\TileCollectionViewModule.resx">
+      <DependentUpon>TileCollectionViewModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\pieseries.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\currency.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Transactions.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PrintingPreview.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Refresh.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Delete.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Edit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\new.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Save.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ResetView.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\saveandclose.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\clearheaderandfooter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\saveas.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Printing_PageSetup.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\TodoApp\Assets\Back.svg" />
+    <EmbeddedResource Include="Resources\TodoApp\Assets\Checked.svg" />
+    <EmbeddedResource Include="Resources\TodoApp\Assets\Delete.svg" />
+    <EmbeddedResource Include="Resources\TodoApp\Assets\New.svg" />
+    <EmbeddedResource Include="Resources\TodoApp\Assets\Save.svg" />
+    <EmbeddedResource Include="Resources\TodoApp\Assets\Unchecked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\DataModel.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAppMainView.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAppViewModelAndBindTheTitle.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAppLogo.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAndBindAppLogoViewModel.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\RegisteringNavigationService.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateItemsView.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAndBindItemsViewModel.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateItemView.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\CreateAndBindItemViewModel.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\RegisteringMessageRecipient.md" />
+    <EmbeddedResource Include="Resources\TodoApp\Descriptions\SendingMessages.md" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

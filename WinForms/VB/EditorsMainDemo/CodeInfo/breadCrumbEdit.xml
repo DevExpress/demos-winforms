@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>cbeMode</name>
+        <windowcaption>BreadCrumb Mode</windowcaption>
+        <description>Specifies the current BreadCrumbEditMode.</description>
+        <memberlist>RepositoryItemBreadCrumbEdit.BreadCrumbMode</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seDropDownRowCount</name>
+        <windowcaption>Node DropDown Row Count</windowcaption>
+        <description>Specifies the maximum row number a node's drop-down list can occupy.</description>
+        <memberlist>RepositoryItemBreadCrumbEdit.NodeDropDownRowCount</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowRootGlyph</name>
+        <windowcaption>Show Root Glyph</windowcaption>
+        <description>Specifies whether the root glyph should be displayed.</description>
+        <memberlist>RepositoryItemBreadCrumbEdit.ShowRootGlyph</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cbeImages</name>
+        <windowcaption>Root Image Index</windowcaption>
+        <description>Specifies the index of an image within the Images collection that should be used as a root node glyph.</description>
+        <memberlist>RepositoryItemBreadCrumbEdit.RootImageIndex</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>btnGoUp</name>
+        <windowcaption>Go Up</windowcaption>
+        <description>Navigates to the currently selected node's parent node.</description>
+        <memberlist>RepositoryItemBreadCrumbEdit.GoUp</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>btnGoBack</name>
+        <windowcaption>Go Back</windowcaption>
+        <description>Navigates to the previous BreadCrumbHistoryItem within the BreadCrumbHistory collection.</description>
+        <memberlist>RepositoryItemBreadCrumbEdit.GoBack</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>btnGoForward</name>
+        <windowcaption>Go Forward</windowcaption>
+        <description>Navigates to the next BreadCrumbHistoryItem object within the BreadCrumbHistory collection.</description>
+        <memberlist>RepositoryItemBreadCrumbEdit.GoForward</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

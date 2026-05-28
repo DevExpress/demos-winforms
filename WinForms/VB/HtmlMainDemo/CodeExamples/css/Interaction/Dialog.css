@@ -1,0 +1,51 @@
+﻿.dialog {
+	background-color: @Window;
+	color: @WindowText;
+	width: 260px;
+	height: 140px;
+	margin: 4px 8px 12px 8px;
+	padding: 24px;
+	box-shadow: 0px 4px 8px @WindowText/0.2;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	align-self: stretch;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content {
+	margin: 24px 0;
+}
+
+.button {
+	width: 16px;
+	height: 16px;
+	min-width: 16px;
+	min-height: 16px;
+	padding: 8px;
+	opacity: 0.5;
+}
+
+	.button:hover {
+		border-radius: 4px;
+		background-color: @Control;
+	}
+
+.accept-button {
+	color: @Window;
+	background-color: @Green;
+	border-radius: 8px;
+	padding: 8px 32px;
+}
+
+	.accept-button:hover {
+		background-color: @Green/0.8;
+		border-radius: 8px;
+	}

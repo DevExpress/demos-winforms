@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>cardsCount</name>
+				<windowcaption>Cards count</windowcaption>
+				<description>Use the CardCount property to specify the number of cards constituting the ellipse.</description>
+        <memberlist>LayoutViewOptionsCarouselMode.CardCount</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>flatFactor</name>
+        <windowcaption>Pitch angle</windowcaption>
+        <description>You can set the carousel view's pitch angle, in radians, ranging from 0 to Pi.</description>
+        <memberlist>LayoutViewOptionsCarouselMode.PitchAngle</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>rollAngle</name>
+        <windowcaption>Roll angle</windowcaption>
+        <description>The roll angle rotates the cards within a View ranging from 0 to 2Pi.</description>
+        <memberlist>LayoutViewOptionsCarouselMode.RollAngle</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>endSizeScale</name>
+        <windowcaption>Bottom card scale</windowcaption>
+        <description>This property specifies the scaling factor for background cards.</description>
+        <memberlist>LayoutViewOptionsCarouselMode.BottomCardScale</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>endAlpha</name>
+        <windowcaption>Bottom card alpha level</windowcaption>
+        <description>The BottomCardAlphaLevel property specifies the transparency level for background cards.</description>
+        <memberlist>LayoutViewOptionsCarouselMode.BottomCardAlphaLevel</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>bottomCardFading</name>
+        <windowcaption>Botton card fading</windowcaption>
+        <description>The BottomCardFading property specifies the fading factor, ranging between 0(no fading out) to 1(the bottommost card is invisible).</description>
+        <memberlist>LayoutViewOptionsCarouselMode.BottomCardFading</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>comboBoxEdit1</name>
+        <windowcaption>Interpolation mode</windowcaption>
+        <description>This property specifies the interpolation mode used to render background cards.</description>
+        <memberlist>LayoutViewOptionsCarouselMode.InterpolationMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>gridControl1</name>
+        <windowcaption>Cards move</windowcaption>
+        <description>The MoveBy method is used to move row focus by the specified number of rows (cards) at the demo start-up.</description>
+        <memberlist>ColumnView.MoveBy</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

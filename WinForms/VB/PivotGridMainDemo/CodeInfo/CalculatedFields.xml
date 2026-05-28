@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>checkDataSourceValue</name>
+				<windowcaption>Display Data Source Values</windowcaption>
+				<description>The "Data Source Value" option binds Sales Person to the EmployeeID data sorce field. If you click any cell to view the drill-down data source. you will notice that the First Name and Last Name fields are also available.</description>
+        <memberlist>PivotGridField.FieldName</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+
+    <controlentry>
+      <control>
+        <name>checkDisplayText</name>
+        <windowcaption>Use a Custom Display Text Event</windowcaption>
+        <description>While you need to use IDs for groupping, since the are the only unique identifier for a sales person, you also want to display employee in the UI. This radio group option - Display Text Event - does exactly that. Although field headers display full names, underlying values are still IDs, as you might notice from sorting order.</description>
+        <memberlist>PivotGridControl.FieldValueDisplayText</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>checkExpression</name>
+        <windowcaption>Use Unbound Expressions</windowcaption>
+        <description>This option doesn't require an event handler and can be set up at design time without any code. You create an Unbound / Calculated field and set up an Expression that defines how to calculate values for each record. You can allow end-users to modify the expression using a built-in Expression Editor dialog. Notice that field values are sorted alphabetically when this option is enabled. This illustrates that the specified expression modifies not only display text, but the underlying values too.</description>
+        <memberlist>PivotGridControl.FieldValueDisplayText</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>checkYearEndBonus</name>
+        <windowcaption>Unbound Expressions based on Summary Values</windowcaption>
+        <description>The Year-End Bonus field uses an unbound expression that pays $600 in fourth quarter if that quarter's sales exceeded $40,000. If the sales were lower than the threshold, the bonus is $400. Sales for a quarter are defied as the sum of Extended Price from all orders - meaning that calculations are based on summary values.</description>
+        <memberlist>PivotGridFieldBase.UnboundType, PivotGridField.UnboundExpression, PivotGridField.UnboundExpressionMode, PivotGridFieldOptionsEx.ShowUnboundExpressionMenu</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>checkQuantityBonus</name>
+        <windowcaption>Unbound Expressions based on Data Source Values</windowcaption>
+        <description>The Quantity Bonus unbound field accumulate a 10% bonus on each individual order that exceeded 100 units. In this case, calculaions are based on values from underlying data source records, as you can inspect using Drill Down Data Source window.</description>
+        <memberlist>PivotGridFieldBase.UnboundType, PivotGridField.UnboundExpression, PivotGridField.UnboundExpressionMode, PivotGridFieldOptionsEx.ShowUnboundExpressionMenu</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>btnAddBonus</name>
+        <windowcaption>Add Bonus</windowcaption>
+        <description>Creates a new field, specifies its data type binding mode using the PivotGridFieldBase.UnboundType property, and provides data for this field using the PivotGridFieldBase.UnboundExpression property.</description>
+        <memberlist>PivotGridFieldBase.UnboundType, PivotGridField.UnboundExpression, PivotGridFieldOptionsEx.ShowUnboundExpressionMenu</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>pivotGridControl</name>
+        <windowcaption>Pivot Grid Control</windowcaption>
+        <description>Contains customization for showing drill down form.</description>
+        <memberlist>PivotDrillDownDataSource</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>ceColumns</name>
+				<windowcaption>Collapse Column Area Groups</windowcaption>
+				<description>Specifies the collapsed state of the field groups.</description>
+        <memberlist>PivotGridFieldBase.ExpandedInFieldsGroup</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>ceRows</name>
+        <windowcaption>Collapse Row Area Groups</windowcaption>
+        <description>Specifies the collapsed state of the field groups.</description>
+        <memberlist>PivotGridFieldBase.ExpandedInFieldsGroup</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceData</name>
+        <windowcaption>Collapse Data Area Groups</windowcaption>
+        <description>Specifies the collapsed state of the field groups.</description>
+        <memberlist>PivotGridFieldBase.ExpandedInFieldsGroup</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>pivotGridControl1</name>
+        <windowcaption>Groups</windowcaption>
+        <description>In this demo, fields are joined into groups at design time. Use the PivotGridGroup.Add method to do this in code.</description>
+        <memberlist>PivotGridGroup.Add, PivotGridGroupCollection.AddRange</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

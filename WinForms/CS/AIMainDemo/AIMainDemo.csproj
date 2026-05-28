@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3A09D9F-6690-402D-923F-FF828A794C84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DevExpress.AI.Demos</RootNamespace>
+    <AssemblyName>AIMainDemo</AssemblyName>
+    <LangVersion>12.0</LangVersion>
+    <NoWarn>OPENAI001;MEAI001;$(NoWarn)</NoWarn>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8WindowsRazor />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.AIIntegration.WinForms.Reporting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.Reporting.Common.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.Reporting.Common.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.Printing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataVisualization.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Images.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Spreadsheet.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+    <Reference Include="Microsoft.CSharp"><Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Design"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.SemanticSearch.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.WinForms.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.WinForms.SemanticSearch.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DevAV.v26.1.Data"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DevAV.v26.1.Data"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGantt.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoReports.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agents\Publishing\PublishingAgentTools.cs" />
+    <Compile Include="Agents\Publishing\PublishingGroupChatManager.cs" />
+    <Compile Include="AITools\SimpleTools.cs" />
+    <Compile Include="CodeExamples\AttachBehaviors.cs" />
+    <Compile Include="CodeExamples\CustomInvocation.cs" />
+    <Compile Include="CodeExamples\DependencyInjection.cs" />
+    <Compile Include="CodeExamples\Extensions.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers\AIExceptionHandler.cs" />
+    <Compile Include="Helpers\DemosInfo.cs" />
+    <Compile Include="CodeExamples.Modules\CodeExamples.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\CodeExamples.Designer.cs">
+      <DependentUpon>CodeExamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\AGUIIntegrationModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\AGUIIntegrationModule.Designer.cs">
+      <DependentUpon>AGUIIntegrationModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\GroupChatWorkflowModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\GroupChatWorkflowModule.Designer.cs">
+      <DependentUpon>GroupChatWorkflowModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\ToolCallingAgentModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\ToolCallingAgentModule.Designer.cs">
+      <DependentUpon>ToolCallingAgentModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\WorkflowAsAgentModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\WorkflowAsAgentModule.Designer.cs">
+      <DependentUpon>WorkflowAsAgentModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\WorkflowResponseStreamingModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\WorkflowResponseStreamingModule.Designer.cs">
+      <DependentUpon>WorkflowResponseStreamingModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\WorkflowWithExecutorsModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\WorkflowWithExecutorsModule.Designer.cs">
+      <DependentUpon>WorkflowWithExecutorsModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatCustomizeAppearanceModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatCustomizeAppearanceModule.Designer.cs">
+      <DependentUpon>AIChatCustomizeAppearanceModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatFileAttachmentsMessageTemplate.razor.cs" />
+    <Compile Include="Modules\AIChatDemos\AIChatFileAttachmentsModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatFileAttachmentsModule.Designer.cs">
+      <DependentUpon>AIChatFileAttachmentsModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatModuleBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatModuleBase.Designer.cs">
+      <DependentUpon>AIChatModuleBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatPromptSuggestionsModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatPromptSuggestionsModule.Designer.cs">
+      <DependentUpon>AIChatPromptSuggestionsModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatResourcesDataProvider.cs" />
+    <Compile Include="Modules\AIChatDemos\AIChatResourcesModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\AIChatResourcesModule.Designer.cs">
+      <DependentUpon>AIChatResourcesModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\MessageTemplate.razor.cs" />
+    <Compile Include="Modules\Base\AITutorialControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Base\ucDisclaimerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Base\ucDisclaimerPanel.Designer.cs">
+      <DependentUpon>ucDisclaimerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PromptToExpressionAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PromptToExpressionAIModule.Designer.cs">
+      <DependentUpon>PromptToExpressionAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PdfViewerAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PdfViewerAIModule.Designer.cs">
+      <DependentUpon>PdfViewerAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MemoEditAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MemoEditAIModule.Designer.cs">
+      <DependentUpon>MemoEditAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ReportDesigner\ReportDesignerAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ReportDesigner\ReportDesignerAIModule.Designer.cs">
+      <DependentUpon>ReportDesignerAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ReportDesigner\ReportDesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ReportDesigner\ReportDesignerForm.Designer.cs">
+      <DependentUpon>ReportDesignerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ReportViewerAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ReportViewerAIModule.Designer.cs">
+      <DependentUpon>ReportViewerAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RichEditAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RichEditAIModule.Designer.cs">
+      <DependentUpon>RichEditAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SemanticSearch\CachingEmbeddingGenerator.cs" />
+    <Compile Include="Modules\SemanticSearch\SemanticSearchWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\SemanticSearch\SemanticSearchWaitForm.Designer.cs">
+      <DependentUpon>SemanticSearchWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SemanticSearch\Data.cs" />
+    <Compile Include="Modules\SemanticSearch\SemanticSearchModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SemanticSearch\SemanticSearchModule.Designer.cs">
+      <DependentUpon>SemanticSearchModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SmartAutoCompleteModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SmartAutoCompleteModule.Designer.cs">
+      <DependentUpon>SmartAutoCompleteModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SmartPasteAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SmartPasteAIModule.Designer.cs">
+      <DependentUpon>SmartPasteAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SmartSearchAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SmartSearchAIModule.Designer.cs">
+      <DependentUpon>SmartSearchAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SpreadsheetAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SpreadsheetAIModule.Designer.cs">
+      <DependentUpon>SpreadsheetAIModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CodeExamples.Modules\CodeExamples.resx">
+      <DependentUpon>CodeExamples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AIChatDemos\AIChatCustomizeAppearanceModule.resx">
+      <DependentUpon>AIChatCustomizeAppearanceModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AIChatDemos\AIChatFileAttachmentsModule.resx">
+      <DependentUpon>AIChatFileAttachmentsModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AIChatDemos\AIChatModuleBase.resx">
+      <DependentUpon>AIChatModuleBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AIChatDemos\AIChatPromptSuggestionsModule.resx">
+      <DependentUpon>AIChatPromptSuggestionsModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AIChatDemos\AIChatResourcesModule.resx">
+      <DependentUpon>AIChatResourcesModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Base\ucDisclaimerPanel.resx">
+      <DependentUpon>ucDisclaimerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PromptToExpressionAIModule.resx">
+      <DependentUpon>PromptToExpressionAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PdfViewerAIModule.resx">
+      <DependentUpon>PdfViewerAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MemoEditAIModule.resx">
+      <DependentUpon>MemoEditAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ReportDesigner\ReportDesignerAIModule.resx">
+      <DependentUpon>ReportDesignerAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ReportDesigner\ReportDesignerForm.resx">
+      <DependentUpon>ReportDesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ReportViewerAIModule.resx">
+      <DependentUpon>ReportViewerAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RichEditAIModule.resx">
+      <DependentUpon>RichEditAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SemanticSearch\SemanticSearchWaitForm.resx">
+      <DependentUpon>SemanticSearchWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SemanticSearch\SemanticSearchModule.resx">
+      <DependentUpon>SemanticSearchModule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SmartAutoCompleteModule.resx">
+      <DependentUpon>SmartAutoCompleteModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SmartPasteAIModule.resx">
+      <DependentUpon>SmartPasteAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SmartSearchAIModule.resx">
+      <DependentUpon>SmartSearchAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SpreadsheetAIModule.resx">
+      <DependentUpon>SpreadsheetAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Data\FirstLook.docx" />
+    <EmbeddedResource Include="Data\LoanAmortizationSchedule.xlsx" />
+    <EmbeddedResource Include="Data\TableReport.prnx" />
+    <EmbeddedResource Include="Data\PageContent.pdf" />
+    <Content Include="Modules\AIChatDemos\MessageTemplate.razor" />
+    <Content Include="Modules\AIChatDemos\AIChatFileAttachmentsMessageTemplate.razor" />
+    <Content Include="Modules\AgentsAPI\EmptyMessageAreaTemplate.razor" />
+    <Content Include="Modules\AgentsAPI\WeatherWidgetComponent.razor" />
+    <Content Include="Modules\AgentsAPI\WeatherMessageContentTemplate.razor" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\AIChat\dxaichat.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agents\AgentFactory.cs" />
+    <Compile Include="Agents\Shakespearean\ShakespeareanTools.cs" />
+    <Compile Include="Agents\TextProcessing\TextProcessingExecutors.cs" />
+    <Compile Include="Agents\WorkflowInfra\WorkflowResponseProvider.cs" />
+    <Compile Include="Agents\WorkflowInfra\WorkflowEventContent.cs" />
+    <Compile Include="Modules\AgentsAPI\AgentModuleBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\AgentModuleBase.Designer.cs">
+      <DependentUpon>AgentModuleBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\ReasoningModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgentsAPI\ReasoningModule.Designer.cs">
+      <DependentUpon>ReasoningModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agents\Weather\WeatherAgentTools.cs" />
+    <Compile Include="Models\WeatherModels.cs" />
+    <Compile Include="Services\WeatherService.cs" />
+    <Compile Include="Services\AGUIHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.AI.OpenAI" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" />
+    <PackageReference Include="Microsoft.Extensions.AI" />
+    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" />
+    <PackageReference Include="System.Numerics.Tensors" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AIChat\access.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AIChat\dashboard.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AIChat\Eiffel-Tower.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AIChat\file.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ai_assistant_menu.png" />
+    <Content Include="Resources\ai_assistant_menu_dark.png" />
+    <Content Include="Resources\ai_smart_search.png" />
+    <Content Include="Resources\Reports\AIExpressionGuide.png" />
+    <Content Include="Resources\Reports\ChatGuide.png" />
+    <Content Include="Resources\Reports\ChatThumb.png" />
+    <Content Include="Resources\Reports\ExpressionsThumb.png" />
+    <Content Include="Resources\Reports\FakeDataThumb.png" />
+    <Content Include="Resources\Reports\LocalizationGuide.png" />
+    <Content Include="Resources\Reports\LocalizationThumb.png" />
+    <Content Include="Resources\Reports\TestDataGuide.png" />
+    <Content Include="Resources\Reports\WizardGuide.png" />
+    <Content Include="Resources\Reports\WizardThumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AITools\GridControlAITools.cs" />
+    <Compile Include="AITools\LayoutControlAITools.cs" />
+    <Compile Include="Modules\AIChatDemos\RuntimeToolsAIModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AIChatDemos\RuntimeToolsAIModule.Designer.cs">
+      <DependentUpon>RuntimeToolsAIModule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Modules\AIChatDemos\RuntimeToolsAIModule.resx">
+      <DependentUpon>RuntimeToolsAIModule.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <!--ONLY NETCORE3
+  <ItemGroup>
+	<Reference Include="DevExpress.AIIntegration.Agents.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.AIIntegration.Agents.v26.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.AIIntegration.WinForms.Chat.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.AIIntegration.WinForms.Chat.v26.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.AIIntegration.Blazor.Chat.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.AIIntegration.Blazor.Chat.v26.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.AIIntegration.Blazor.Chat.WebView.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.AIIntegration.Blazor.Chat.WebView.v26.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Blazor.Resources.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.Blazor.Resources.v26.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Blazor.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.Blazor.v26.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web"/>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms"/>
+  </ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3
+  <Target Name="wwwrootPublish" BeforeTargets="Build" Condition="$(DEMO_REMOVE)==''">
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\..\Blazor\DevExpress.Blazor\wwwroot\* wwwroot\_content\DevExpress.Blazor\" ContinueOnError="true" />
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\..\Blazor\DevExpress.Blazor.Themes.Fluent\wwwroot\* wwwroot\_content\DevExpress.Blazor.Themes.Fluent\" ContinueOnError="true" />
+    
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\..\Blazor\DevExpress.Blazor\wwwroot\* bin\DebugNetCoreDesktop\wwwroot\_content\DevExpress.Blazor\" ContinueOnError="true" />
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\..\Blazor\DevExpress.Blazor.Themes.Fluent\wwwroot\* bin\DebugNetCoreDesktop\wwwroot\_content\DevExpress.Blazor.Themes.Fluent\" ContinueOnError="true" />
+  </Target>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="DevExtreme.AspNet.Data" Condition="$(DEMO_REMOVE)==''"  />
+  <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  <PackageReference Include="Microsoft.CodeAnalysis" />
+  <PackageReference Include="System.Data.SqlClient" />
+  <PackageReference Include="Markdig" /> 
+  <PackageReference Include="Microsoft.Agents.AI" />
+  <PackageReference Include="Microsoft.Agents.AI.AGUI" />
+  <PackageReference Include="Microsoft.Agents.AI.Hosting" />
+  <PackageReference Include="Microsoft.Agents.AI.Hosting.AGUI.AspNetCore" />
+  <PackageReference Include="Microsoft.Agents.AI.Workflows" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+	<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterResolveReferences">
+    <ItemGroup>
+      <netcore3ignore />
+      <EmbeddedResource Include="@(ReferenceCopyLocalPaths)" Condition="'%(ReferenceCopyLocalPaths.Extension)' == '.dll'">
+        <LogicalName>%(ReferenceCopyLocalPaths.Filename)%(ReferenceCopyLocalPaths.Extension)</LogicalName>
+      </EmbeddedResource>
+    </ItemGroup>
+  </Target>
+</Project>

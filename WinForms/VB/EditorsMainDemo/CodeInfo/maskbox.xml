@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>NumericMaskManager</name>
+        <windowcaption>Numeric Mask</windowcaption>
+        <description>The Numeric mask type allows users to enter numeric values (integer, float, currency, percentage, etc.). The code below shows how to specify a sample mask and customize the mask settings.</description>
+        <memberlist>RepositoryItemTextEdit.MaskSettings</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>DateTimeMaskManager</name>
+        <windowcaption>DateTime Mask</windowcaption>
+        <description>The DateTime mask type allows users to enter a date and/or time. DateTime masks support the Gregorian, Korean, Taiwanese, and Thai Buddhist calendars. The code below shows how to specify a sample mask and customize the mask settings.</description>
+        <memberlist>RepositoryItemTextEdit.MaskSettings</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>DateTimeOffsetMaskManager</name>
+        <windowcaption>DateTimeOffset Mask</windowcaption>
+        <description>The DateTimeOffset mask allows users to enter a date and time value, together with an offset that indicates how much that value differs from UTC. The code below shows how to specify a sample mask and customize the mask settings.</description>
+        <memberlist>RepositoryItemTextEdit.MaskSettings</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>TimeSpanMaskManager</name>
+        <windowcaption>TimeSpan Mask</windowcaption>
+        <description>The TimeSpan mask type allows users to enter time intervals. The code below shows how to specify a sample mask and customize the mask settings.</description>
+        <memberlist>RepositoryItemTextEdit.MaskSettings</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>SimpleMaskManager</name>
+        <windowcaption>Simple Mask</windowcaption>
+        <description>The Simple mask type allows users to enter alphabetic, numeric or alphanumeric characters at specific positions. For example, phone numbers, zip codes, and social security numbers. The code below shows how to specify a sample mask and customize the mask settings.</description>
+        <memberlist>RepositoryItemTextEdit.MaskSettings</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>RegularMaskManager</name>
+        <windowcaption>Regular Expression (Simplified)</windowcaption>
+        <description>Simplified regular expressions allow you to specify a simple pattern to restrict user input. For instance, you can  specify a custom or variable range of characters. Simplified regular expressions don't support as many features as Extended Regular Expressions.</description>
+        <memberlist>RepositoryItemTextEdit.MaskSettings</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>RegExpMaskManager</name>
+        <windowcaption>Regular Expression (Extended)</windowcaption>
+        <description>Extended regular expressions allow you to specify a pattern that the entered text should match. The syntax is similar to the POSIX ERE specification. The code below shows how to specify a sample mask and customize the mask settings.</description>
+        <memberlist>RepositoryItemTextEdit.MaskSettings</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>DateRangeMaskManager</name>
+        <windowcaption>Date Ranges (Custom Mask)</windowcaption>
+        <description>This example shows how to create a custom mask that allows users to enter date ranges.</description>
+        <memberlist>RepositoryItemTextEdit.MaskSettings</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>SpecificCaseMaskManager</name>
+        <windowcaption>Specific Case (Custom Mask)</windowcaption>
+        <description>This example shows how to create a custom mask that allows users to process text input in custom manner.</description>
+        <memberlist>RepositoryItemTextEdit.EnableCustomMaskTextInput</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0" DefaultTargets="Build">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31073344-CB0D-4819-82B8-64B43F3D14D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>DiagramMainDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>DemoIcon.ico</ApplicationIcon>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <!--ONLY NETCORE3 
+  <ItemGroup>
+    <Compile Include="Data\NWindContextNetCore.vb" />
+  </ItemGroup>
+ONLY NETCORE3-->
+  <ItemGroup>
+    <Compile Include="CodeExamples\GenericExamples.vb" />
+    <Compile Include="CodeExamples\EventsExamples.vb" />
+    <Compile Include="Data\DatabaseDiagramData.vb" />
+    <Compile Include="Data\EmployeeData.vb" />
+    <Compile Include="Data\NWindContext.vb">
+      <netcore3ignore />
+    </Compile>
+    <Compile Include="Data\OrderDataGenerator.vb" />
+    <Compile Include="Data\TournamentData.vb" />
+    <Compile Include="DemoHelper.vb" />
+    <Compile Include="DiagramTutorialControlBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiagramTutorialControlBase.Designer.vb">
+      <DependentUpon>DiagramTutorialControlBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiagramDemoFileHelper.vb" />
+    <Compile Include="DiagramTutorialControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiagramTutorialControl.Designer.vb">
+      <DependentUpon>DiagramTutorialControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\MindMapHelpers.vb" />
+    <Compile Include="Helpers\OptionsPanelHelpers.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\OrgChartHelpers.vb" />
+    <Compile Include="Modules\DatabaseDiagram.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DatabaseDiagram.Designer.vb">
+      <DependentUpon>DatabaseDiagram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EventsExamplesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ConnectorsModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ConnectorsModule.Designer.vb">
+      <DependentUpon>ConnectorsModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ContainersAndListsModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ContainersAndListsModule.Designer.vb">
+      <DependentUpon>ContainersAndListsModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CircularLayoutModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CircularLayoutModule.Designer.vb">
+      <DependentUpon>CircularLayoutModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomShapesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomShapesModule.Designer.vb">
+      <DependentUpon>CustomShapesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FloorPlanModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FloorPlanModule.Designer.vb">
+      <DependentUpon>FloorPlanModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentModuleBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentModuleBase.Designer.vb">
+      <DependentUpon>DocumentModuleBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EventsModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EventsModule.Designer.vb">
+      <DependentUpon>EventsModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ImagesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ImagesModule.Designer.vb">
+      <DependentUpon>ImagesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ExpandAndCollapseOrgChartModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ExpandAndCollapseOrgChartModule.Designer.vb">
+      <DependentUpon>ExpandAndCollapseOrgChartModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MindMapTreeLayoutModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MindMapTreeLayoutModule.Designer.vb">
+      <DependentUpon>MindMapTreeLayoutModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductFlowDiagramModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductFlowDiagramModule.Designer.vb">
+      <DependentUpon>ProductFlowDiagramModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LayeredLayoutModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LayeredLayoutModule.Designer.vb">
+      <DependentUpon>LayeredLayoutModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OrgChartModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OrgChartModule.Designer.vb">
+      <DependentUpon>OrgChartModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TournamentModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TournamentModule.Designer.vb">
+      <DependentUpon>TournamentModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RelationshipDiagramModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RelationshipDiagramModule.Designer.vb">
+      <DependentUpon>RelationshipDiagramModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RelationshipsData.vb" />
+    <Compile Include="Modules\ShapesModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ShapesModule.Designer.vb">
+      <DependentUpon>ShapesModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TipOverTreeLayoutModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TipOverTreeLayoutModule.Designer.vb">
+      <DependentUpon>TipOverTreeLayoutModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TreeLayoutModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TreeLayoutModule.Designer.vb">
+      <DependentUpon>TreeLayoutModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LayoutModuleBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LayoutModuleBase.Designer.vb">
+      <DependentUpon>LayoutModuleBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FlowChartModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FlowChartModule.Designer.vb">
+      <DependentUpon>FlowChartModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CycleDiagramModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CycleDiagramModule.Designer.vb">
+      <DependentUpon>CycleDiagramModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OrgChartLayoutModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OrgChartLayoutModule.Designer.vb">
+      <DependentUpon>OrgChartLayoutModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <EmbeddedResource Include="Modules\ConnectorsModule.resx">
+      <DependentUpon>ConnectorsModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ContainersAndListsModule.resx">
+      <DependentUpon>ContainersAndListsModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CircularLayoutModule.resx">
+      <DependentUpon>CircularLayoutModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomShapesModule.resx">
+      <DependentUpon>CustomShapesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DatabaseDiagram.resx">
+      <DependentUpon>DatabaseDiagram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FloorPlanModule.resx">
+      <DependentUpon>FloorPlanModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentModuleBase.resx">
+      <DependentUpon>DocumentModuleBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FlowChartModule.resx">
+      <DependentUpon>FlowChartModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EventsModule.resx">
+      <DependentUpon>EventsModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ImagesModule.resx">
+      <DependentUpon>ImagesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LayeredLayoutModule.resx">
+      <DependentUpon>LayeredLayoutModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ExpandAndCollapseOrgChartModule.resx">
+      <DependentUpon>ExpandAndCollapseOrgChartModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MindMapTreeLayoutModule.resx">
+      <DependentUpon>MindMapTreeLayoutModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ProductFlowDiagramModule.resx">
+      <DependentUpon>ProductFlowDiagramModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OrgChartModule.resx">
+      <DependentUpon>OrgChartModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TournamentModule.resx">
+      <DependentUpon>TournamentModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RelationshipDiagramModule.resx">
+      <DependentUpon>RelationshipDiagramModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ShapesModule.resx">
+      <DependentUpon>ShapesModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TipOverTreeLayoutModule.resx">
+      <DependentUpon>TipOverTreeLayoutModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TreeLayoutModule.resx">
+      <DependentUpon>TreeLayoutModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LayoutModuleBase.resx">
+      <DependentUpon>LayoutModuleBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OrgChartLayoutModule.resx">
+      <DependentUpon>OrgChartLayoutModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>DiagramMainDemo.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <netcore3ignore />
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DemosRegistration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CodeFirstModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="DemoIcon.ico" />
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <Resource Include="Images\OfficePlan\Armchair.svg" />
+    <Resource Include="Images\OfficePlan\Chair 1.svg" />
+    <Resource Include="Images\OfficePlan\Chair 2.svg" />
+    <Resource Include="Images\OfficePlan\Chair.svg" />
+    <Resource Include="Images\OfficePlan\Check.svg" />
+    <Resource Include="Images\OfficePlan\Couch.svg" />
+    <Resource Include="Images\OfficePlan\Cup 1.svg" />
+    <Resource Include="Images\OfficePlan\Cup.svg" />
+    <Resource Include="Images\OfficePlan\Cupboard.svg" />
+    <Resource Include="Images\OfficePlan\Floor.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 1.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 2.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 3.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 4.svg" />
+    <Resource Include="Images\OfficePlan\Flowers 5.svg" />
+    <Resource Include="Images\OfficePlan\Keyboard 1.svg" />
+    <Resource Include="Images\OfficePlan\Keyboard 2.svg" />
+    <Resource Include="Images\OfficePlan\Keyboard.svg" />
+    <Resource Include="Images\OfficePlan\Laptop.svg" />
+    <Resource Include="Images\OfficePlan\Monitor 1.svg" />
+    <Resource Include="Images\OfficePlan\Monitor.svg" />
+    <Resource Include="Images\OfficePlan\Nightstand.svg" />
+    <Resource Include="Images\OfficePlan\Notebook 1.svg" />
+    <Resource Include="Images\OfficePlan\Notebook 2.svg" />
+    <Resource Include="Images\OfficePlan\Notebook.svg" />
+    <Resource Include="Images\OfficePlan\Table.svg" />
+    <Resource Include="Images\OfficePlan\Window.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OrgChart\CollapsibleTemplate.png" />
+    <Resource Include="Images\DatabaseDiagram\id.svg" />
+    <Resource Include="Images\DatabaseDiagram\property.svg" />
+    <Resource Include="Images\Backgrounds\floor.svg" />
+    <Resource Include="Images\OrgChart\BottomTextTemplate.png" />
+    <Resource Include="Images\OrgChart\RightTextTemplate1.png" />
+    <Resource Include="Images\OrgChart\BeltTemplate.png" />
+    <Resource Include="Images\OrgChart\RightTextTemplate.png" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+  <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+		<GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+        <EmbeddedResourceUseDependentUponConvention>false</EmbeddedResourceUseDependentUponConvention>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EmbedLocal" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="@(Compile)" Condition="'%(RelativeDir)' == 'CodeExamples\'">
+        <Link>CodeExamples.Resources\%(Filename)%(Extension)</Link>
+      </EmbeddedResource>
+    </ItemGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

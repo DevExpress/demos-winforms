@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>sbCustomizationForm</name>
+				<windowcaption>Customization Form</windowcaption>
+				<description>Invokes/closes the customization form using PivotGridControl.FieldsCustomization and PivotGridControl.DestroyCustomization methods respectively.</description>
+        <memberlist>PivotGridControl.FieldsCustomization, PivotGridControl.DestroyCustomization</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+
+    <controlentry>
+      <control>
+        <name>icbCustomizationStyle</name>
+        <windowcaption>Customization Style</windowcaption>
+        <description>Specifies the customization form style.</description>
+        <memberlist>PivotGridOptionsCustomization.CustomizationFormStyle</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>ceSearchBox</name>
+        <windowcaption>Search Box</windowcaption>
+        <description>Shows/hides the customization form Search Box.</description>
+        <memberlist>PivotGridOptionsCustomization.CustomizationFormSearchBoxVisible</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    
+    <controlentry>
+      <control>
+        <name>ceAllowFilter</name>
+        <windowcaption>Allow Filter</windowcaption>
+        <description>Enables or disables filtering in the Customization Form.</description>
+        <memberlist>PivotGridOptionsCustomization.AllowFilterInCustomizationForm</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    
+    <controlentry>
+      <control>
+        <name>ceAllowSort</name>
+        <windowcaption>Allow Sort</windowcaption>
+        <description>Enables or disables sorting in the Customization Form.</description>
+        <memberlist>PivotGridOptionsCustomization.AllowSortInCustomizationForm</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

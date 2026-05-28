@@ -1,0 +1,59 @@
+﻿body {
+	color: @ControlText;
+}
+
+h3 {
+	margin: 0px;
+}
+
+.container {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: @Window;
+}
+
+.element {
+	margin-top: 5px;
+	padding: 5px;
+	background-color: @Control;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.child-element {
+	margin: 5px;
+	padding: 5px;
+	background-color: @Blue/0.2;
+}
+
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+
+.custom-order1 {
+	order: 3;
+	background-color: @Red/0.2;
+}
+
+.custom-order2 {
+	order: -1;
+	background-color: @Red/0.2;
+}
+
+.custom-order3 {
+	order: 2;
+	background-color: @Red/0.2;
+}
+
+.custom-order4 {
+	order: 4;
+	background-color: @Red/0.2;
+}

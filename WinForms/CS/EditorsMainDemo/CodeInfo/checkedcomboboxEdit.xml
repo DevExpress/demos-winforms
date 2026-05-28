@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+           
+        <controlentry>
+            <control>
+                <name>icbHighlightedItemStyle</name>
+                <windowcaption>Highlighted Item Style</windowcaption>
+                <description>This editor allows you to specify whether hot-tracked items are painted skinned or using the default system color.</description>
+                <memberlist>RepositoryItemCheckedComboBoxEdit.HighlightedItemStyle</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        
+	<controlentry>
+		<control>
+			<name>cmbSeparatorChar</name>
+			<windowcaption>Separator Char</windowcaption>
+			<description>This editor allows you to specify the separator delimiting items in the edit box. The setting is not supported when displaying bit fields (flags).</description>
+			<memberlist>RepositoryItemCheckedComboBoxEdit.SeparatorChar</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+
+        <controlentry>
+            <control>
+                <name>teSelectAllItemCaption</name>
+                <windowcaption>'(Select All)' Item Caption</windowcaption>
+                <description>This editor allows you to rename the '(Select All)' item used to select/unselect all items in the popup. </description>
+                <memberlist>RepositoryItemCheckedComboBoxEdit.SelectAllItemCaption</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+
+
+        <controlentry>
+		<control>
+			<name>ceSelectAllItem</name>
+			<windowcaption>Display the '(Select All)' item.</windowcaption>
+			<description>This editor allows you to control the visibility of the '(Select All)' item.</description>
+			<memberlist>RepositoryItemCheckedComboBoxEdit.SelectAllItemVisible</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+        
+	
+        
+	<controlentry>
+		<control>
+			<name>checkedComboBoxEdit1</name>
+			<windowcaption>Sample CheckedComboBoxEdit Control</windowcaption>
+			<description>The CheckedComboBoxEdit editor supports bit fields (flags). This editor displays a set of bit fields with a named zero value.</description>
+			<memberlist>RepositoryItemCheckedComboBoxEdit.SetFlags, CheckedComboBoxEdit.SetEditValue</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+
+        <controlentry>
+            <control>
+                <name>checkedComboBoxEdit2</name>
+                <windowcaption>Sample CheckedComboBoxEdit Control</windowcaption>
+                <description>The CheckedComboBoxEdit editor supports bit fields (flags). This editor displays a set of bit fields without a named zero value.</description>
+                <memberlist>RepositoryItemCheckedComboBoxEdit.SetFlags, CheckedComboBoxEdit.SetEditValue</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        
+	</controls>
+	<hints>
+		<hint>
+			<name>checkedComboBoxEditSample</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown list<newline></newline>UP, DOWN keys to select the previous or next item<newline></newline>#Mouse Wheel<newline></newline>Supported<newline></newline>#Other End-User Actions<newline></newline>Use the controls on the right pane to learn which additional end-user customization methods are available</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

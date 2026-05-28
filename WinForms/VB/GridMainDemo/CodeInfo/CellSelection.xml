@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>ceMultiSelect</name>
+        <windowcaption>Multi selection</windowcaption>
+        <description>Specifies whether multiple cells (rows) can be selected simultaneously.</description>
+        <memberlist>ColumnViewOptionsSelection.MultiSelect</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbSelectMode</name>
+        <windowcaption>Multi select mode</windowcaption>
+        <description>Specifies whether multiple cells or rows can be selected.</description>
+        <memberlist>GridOptionsSelection.MultiSelectMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbRecords</name>
+        <windowcaption>Selected records</windowcaption>
+        <description>Gets selected rows (cells) and displays their content.</description>
+        <memberlist>ColumnView.GetSelectedRows, ColumnView.GetDataRow, GridView.GetSelectedCells, ColumnView.GetRowCellDisplayText</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbTranslucentColors</name>
+        <windowcaption>Translucent colors</windowcaption>
+        <description>Enables or disables translucent colors for selected records.</description>
+        <memberlist>GridViewAppearance.SelectedRows, GridViewAppearance.FocusedRow</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

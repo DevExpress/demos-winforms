@@ -1,0 +1,75 @@
+﻿.none {
+	display: none;
+}
+
+.block {
+	display: block;
+}
+
+.table {
+	display: table;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	padding: 5px;
+	background-color: @Blue/0.2;
+	display: table-cell;
+}
+
+.flex {
+	display: flex;
+}
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline-flex {
+	display: inline-flex;
+}
+
+.inline-table {
+	display: inline-table;
+}
+
+.list-item {
+	display: list-item;
+}
+
+body {
+	color: @ControlText;
+}
+
+h3 {
+	margin: 0px;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+.container {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: @Window;
+}
+
+.element {
+	margin-top: 5px;
+	padding: 5px;
+	background-color: @Control;
+}
+
+.child-element {
+	margin: 5px;
+	padding: 5px;
+	background-color: @Blue/0.2;
+}

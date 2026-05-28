@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="Export1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Export.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler_Properties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_Properties.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="small_weeklefttorightonepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_weeklefttorightonepage.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="LowImportance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LowImportance.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="small_weekonepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_weekonepage.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ResetChanges" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResetChanges.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Overview_Support_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Overview-Support-Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_monthonepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_monthonepage.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="SaveAndClose2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveAndClose2.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="icon_page_prev_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-page-prev-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calendar.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler_Print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_Print.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="HighImportance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HighImportance.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler_Next7Days" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_Next7Days.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Overview_Getting_Started_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Overview-Getting-Started-Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_monthtwopage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_monthtwopage.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="icon_pages_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-pages-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scheduler_Import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_Import.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="icon_fittopage_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-fittopage-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Up.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Export.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ViewSetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViewSetting.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="small_weektwopage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_weektwopage.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="icon_page_next_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-page-next-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recurrence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Recurrence.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Overview_Buy_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Overview-Buy-Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler_OutlookImport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_OutlookImport.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="small_trifold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_trifold.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="UISuperHero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\UISuperHero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scheduler_Forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_Forward.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler_TimeZones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_TimeZones.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="small_calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_calendar.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Down.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Private" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Private.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler_ViewSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_ViewSettings.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Overview_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Overview-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_dayonepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_dayonepage.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="small_weeklefttorightwopage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_weeklefttorightwopage.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler_Categorize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_Categorize.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler_ResetView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler_ResetView.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="small_memo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_memo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="icon_print_42x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-print-42x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>  
+</root>

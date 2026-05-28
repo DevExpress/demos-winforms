@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>ceMain</name>
+				<windowcaption>Master detail</windowcaption>
+				<description>The EnableMasterViewMode property specifies whether or not View details can be displayed. To specify whether or not a View group panel should act as a joined group panel use the ShowChildrenInGroupPanel property.</description>
+        <memberlist>GridOptionsDetail.EnableMasterViewMode, GridOptionsView.ShowChildrenInGroupPanel</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>ceTabs</name>
+        <windowcaption>Detail tabs</windowcaption>
+        <description>The ShowDetailTabs property specifies whether detail tabs are displayed in detail sections when master rows of the current master View are expanded.</description>
+        <memberlist>GridOptionsDetail.ShowDetailTabs, Detail Tabs</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceAllowFindInExpandedDetails</name>
+        <windowcaption>Find In Expanded Details</windowcaption>
+        <description>The AllowFindInExpandedDetails property specifies whether to search in detail views. When this setting is enabled, the grid highlights rows in expanded detail views that match the search criteria.</description>
+        <memberlist>GridOptionsFind.AllowFindInExpandedDetails</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceToolTips</name>
+        <windowcaption>Detail tool-tips</windowcaption>
+        <description>Specifies whether detail tooltips are enabled for detail Views that are opened via the current master View.</description>
+        <memberlist>GridOptionsDetail.EnableDetailToolTip, Detail ToolTip</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>imageComboBoxEdit1</name>
+        <windowcaption>Zoom</windowcaption>
+        <description>Zooming allows you to maximize immediate View details to fit the entire grid control area. This can be performed automatically (if the AutoZoomDetail property equals true) or by an end-user clicking the zoom button at runtime.</description>
+        <memberlist>GridOptionsDetail.AllowZoomDetail, GridOptionsDetail.AutoZoomDetail</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seVertIndent</name>
+        <windowcaption>Detail vertical indent</windowcaption>
+        <description>The DetailVerticalIndent property gets or sets the distance between master rows and Detail Sections, in pixels.</description>
+        <memberlist>GridView.DetailVerticalIndent</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbDetailMode</name>
+        <windowcaption>Detail View Mode</windowcaption>
+        <description>The DetailMode property specifies whether detail Views are painted in Classic mode (master and detail Views have their own scrollbars) or Embedded (inline) mode (a single scrollbar is used throughout the grid control).</description>
+        <memberlist>GridOptionsDetail.DetailMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowEmbeddedDetailIndent</name>
+        <windowcaption>Detail Indent</windowcaption>
+        <description>The ShowEmbeddedDetailIndent property allows you to show and hide an indent for detail Views in Embedded detail mode.</description>
+        <memberlist>GridOptionsDetail.ShowEmbeddedDetailIndent</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceDetailTabStyle</name>
+        <windowcaption>Detail Tab Style</windowcaption>
+        <description>The DetailTabStyle event allows you to display images in detail tabs and customize tab appearance settings.</description>
+        <memberlist>DetailTabStyle</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

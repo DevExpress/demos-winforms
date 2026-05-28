@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsContacts" targetNamespace="http://www.tempuri.org/dsContacts.xsd" xmlns:mstns="http://www.tempuri.org/dsContacts.xsd" xmlns="http://www.tempuri.org/dsContacts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsContacts" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="CustomersPayment">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Customer_x0020_Name" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Year" type="xs:short" minOccurs="0" />
+							<xs:element name="January" type="xs:double" minOccurs="0" />
+							<xs:element name="February" type="xs:double" minOccurs="0" />
+							<xs:element name="March" type="xs:double" minOccurs="0" />
+							<xs:element name="April" type="xs:double" minOccurs="0" />
+							<xs:element name="May" type="xs:double" minOccurs="0" />
+							<xs:element name="June" type="xs:double" minOccurs="0" />
+							<xs:element name="July" type="xs:double" minOccurs="0" />
+							<xs:element name="August" type="xs:double" minOccurs="0" />
+							<xs:element name="September" type="xs:double" minOccurs="0" />
+							<xs:element name="October" type="xs:double" minOccurs="0" />
+							<xs:element name="November" type="xs:double" minOccurs="0" />
+							<xs:element name="December" type="xs:double" minOccurs="0" />
+							<xs:element name="RowSum" type="xs:decimal" minOccurs="0" msdata:Expression="January + February + March + April + May + June + July + August + September + October + November + December" />
+							<xs:element name="RowAvr" type="xs:decimal" minOccurs="0" msdata:Expression="RowSum / 12" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

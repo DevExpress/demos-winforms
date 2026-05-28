@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <ProjectGuid>{5434F67C-572F-483F-B87F-6D9BDA51E1D6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>LayoutMainDemo</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <Name>DevExpress.Data.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <Name>DevExpress.Tutorials.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <Name>DevExpress.Utils.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <Name>DevExpress.Xpo.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <Name>DevExpress.XtraBars.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <Name>DevExpress.XtraEditors.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <Name>DevExpress.XtraLayout.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <Name>DevExpress.XtraNavBar.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\EmployeeSales\EmployeeEdit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EmployeeSales\EmployeeEdit.Designer.vb">
+      <DependentUpon>EmployeeEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EmployeeSales\EmployeeSales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EmployeeSales\EmployeeSales.Designer.vb">
+      <DependentUpon>EmployeeSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GroupStyle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GroupStyle.Designer.vb">
+      <DependentUpon>GroupStyle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NewCars\NewCars.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\NewCars\NewCars.Designer.vb">
+      <DependentUpon>NewCars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\Controls.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\Extensions.vb" />
+    <Compile Include="Modules\XtraLayoutPanel\StackLayout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\StackLayout.Designer.vb">
+      <DependentUpon>StackLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\TableLayout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\TableLayout.Designer.vb">
+      <DependentUpon>TableLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\TutorialControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\TutorialControl.Designer.vb">
+      <DependentUpon>TutorialControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\Table\DetailView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\Table\DetailView.Designer.vb">
+      <DependentUpon>DetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\Stack\LoginView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\Stack\LoginView.Designer.vb">
+      <DependentUpon>LoginView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\DemoViewBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\XtraLayoutPanel\Helpers.vb" />
+    <Compile Include="VehiclesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehiclesDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources\Logo.svg" />
+    <EmbeddedResource Include="Modules\XtraLayoutPanel\StackLayout.resx">
+      <DependentUpon>StackLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\XtraLayoutPanel\TableLayout.resx">
+      <DependentUpon>TableLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\XtraLayoutPanel\TutorialControl.resx">
+      <DependentUpon>TutorialControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\XtraLayoutPanel\Table\DetailView.resx">
+      <DependentUpon>DetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\XtraLayoutPanel\Stack\LoginView.resx">
+      <DependentUpon>LoginView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\6.jpg" />
+    <EmbeddedResource Include="Resources\5.jpg" />
+    <EmbeddedResource Include="Resources\4.jpg" />
+    <EmbeddedResource Include="Resources\3.jpg" />
+    <EmbeddedResource Include="Resources\2.jpg" />
+    <EmbeddedResource Include="Resources\1.jpg" />
+    <EmbeddedResource Include="Resources\print.svg" />
+    <Compile Include="CodeExamples\SimpleClass.vb" />
+    <Compile Include="CodeExamples\TableLayout.vb" />
+    <Compile Include="dsOrder.Designer.vb">
+      <DependentUpon>dsOrder.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Modules\Browser.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Browser.Designer.vb">
+      <DependentUpon>Browser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DemoControls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemosRegistration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dsCategories.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCategories.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEmployees.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\BaseControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\BaseControl.Designer.vb">
+      <DependentUpon>BaseControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Cars.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Cars.Designer.vb">
+      <DependentUpon>Cars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CodeFirstDemo\CodeFirstModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ContentImagesInLayoutGroups.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DragDropLayoutControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DragDropLayoutControl.Designer.vb">
+      <DependentUpon>DragDropLayoutControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employees.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employees.Designer.vb">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\frmPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\frmPassword.Designer.vb">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\imageLayout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\imageLayout.Designer.vb">
+      <DependentUpon>imageLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ItemsVisibility.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Layout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Layout.Designer.vb">
+      <DependentUpon>Layout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LayoutInteractivePrinting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LayoutInteractivePrinting.Designer.vb">
+      <DependentUpon>LayoutInteractivePrinting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LayoutPrinting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LayoutPrinting.Designer.vb">
+      <DependentUpon>LayoutPrinting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LayoutWaybill.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LayoutWaybill.Designer.vb">
+      <DependentUpon>LayoutWaybill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MasterDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MasterDetail.Designer.vb">
+      <DependentUpon>MasterDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NwindXpoGeneratedClasses.vb" />
+    <Compile Include="Modules\OneNote.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OneNote.Designer.vb">
+      <DependentUpon>OneNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TechnoLayout\FacesUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TechnoLayout\FacesUserControl.Designer.vb">
+      <DependentUpon>FacesUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TechnoLayout\TechnoLayout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TechnoLayout\TechnoLayout.Designer.vb">
+      <DependentUpon>TechnoLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UserDetailsEditViewForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\UserDetailsEditViewForm.Designer.vb">
+      <DependentUpon>UserDetailsEditViewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Validating.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Validating.Designer.vb">
+      <DependentUpon>Validating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Modules\EmployeeSales\EmployeeEdit.resx">
+      <DependentUpon>EmployeeEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EmployeeSales\EmployeeSales.resx">
+      <DependentUpon>EmployeeSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GroupStyle.resx">
+      <DependentUpon>GroupStyle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\NewCars\NewCars.resx">
+      <DependentUpon>NewCars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TechnoLayout\FacesUserControl.resx">
+      <DependentUpon>FacesUserControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Striper28%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper27%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper26%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper25%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper24%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper22%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper21%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper20%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper19%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper18%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper16%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper15%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper14%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper13%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper12%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper10%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper9%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper8%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper7%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper6%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper5%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper4%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper3%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper2%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper1%281%29.jpg" />
+    <EmbeddedResource Include="Resources\Striper0%281%29.jpg" />
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="CodeInfo\EmployeeSales.xml" />
+    <EmbeddedResource Include="CodeInfo\BaseControl.xml" />
+    <EmbeddedResource Include="CodeInfo\Validating.xml" />
+    <EmbeddedResource Include="CodeInfo\ItemsVisibility.xml" />
+    <EmbeddedResource Include="CodeInfo\TechnoLayout.xml" />
+    <EmbeddedResource Include="CodeInfo\ImageLayout.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="dsCategories.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCategories.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="dsEmployees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployees.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Images\contentImages_Background1.PNG" />
+    <EmbeddedResource Include="Images\contentImages_Monitor.png" />
+    <EmbeddedResource Include="Images\contentImages_smallPic.png" />
+    <EmbeddedResource Include="Images\contentImages_Welcome.png" />
+    <EmbeddedResource Include="Images\move.ico" />
+    <EmbeddedResource Include="Images\copy.ico" />
+    <EmbeddedResource Include="Images\delete.ico" />
+    <EmbeddedResource Include="Images\bc11.jpg" />
+    <EmbeddedResource Include="Images\bc12.jpg" />
+    <EmbeddedResource Include="Images\film1-de.png" />
+    <EmbeddedResource Include="Images\film1-en.png" />
+    <EmbeddedResource Include="Images\film2-de.png" />
+    <EmbeddedResource Include="Images\film2-en.png" />
+    <EmbeddedResource Include="Images\film3-de.png" />
+    <EmbeddedResource Include="Images\film3-en.png" />
+    <EmbeddedResource Include="Modules\BaseControl.resx">
+      <DependentUpon>BaseControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Browser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Browser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Cars.resx">
+      <DependentUpon>Cars.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ContentImagesInLayoutGroups.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContentImagesInLayoutGroups.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DragDropLayoutControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DragDropLayoutControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employees.resx">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\frmPassword.resx">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\imageLayout.resx">
+      <DependentUpon>imageLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ItemsVisibility.resx">
+      <DependentUpon>ItemsVisibility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Layout.resx">
+      <DependentUpon>Layout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LayoutInteractivePrinting.resx">
+      <DependentUpon>LayoutInteractivePrinting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LayoutPrinting.resx">
+      <DependentUpon>LayoutPrinting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LayoutWaybill.resx">
+      <DependentUpon>LayoutWaybill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MasterDetail.resx">
+      <DependentUpon>MasterDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OneNote.resx">
+      <DependentUpon>OneNote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TechnoLayout\TechnoLayout.resx">
+      <DependentUpon>TechnoLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\UserDetailsEditViewForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserDetailsEditViewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Validating.resx">
+      <DependentUpon>Validating.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.XtraLayout.Demos.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="dsOrder.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrder.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="VehiclesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VehiclesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+  <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+  <PackageReference Include="System.Data.OleDb" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

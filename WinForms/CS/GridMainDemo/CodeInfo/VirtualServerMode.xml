@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>gridControl1</name>
+        <windowcaption>Load Data</windowcaption>
+        <description>The ConfigurationChanged event handler prepares the initial data for the grid. It fires when the grid reloads the data source, or when the grid's data shaping settings (filtering, sorting, etc.) change.
+        The MoreRows event handler creates a Task that provides a new batch of rows.
+        </description>
+        <memberlist>VirtualServerModeSource.ConfigurationChanged, VirtualServerModeSource.MoreRows</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbRefresh</name>
+        <windowcaption>Reload Data Source</windowcaption>
+        <description>Updates the data source configuration - the total and batch record counts.</description>
+        <memberlist>GridControl.RefreshDataSource</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

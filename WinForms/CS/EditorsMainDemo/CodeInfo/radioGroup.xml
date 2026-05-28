@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+		<controlentry>
+			<control>
+				<name>spinColumns</name>
+				<windowcaption>Column Count spin editor</windowcaption>
+				<description>This spin editor shows how to arrange radio group items into several columns. Note that the control is resized along with the column count changing.</description>
+				<memberlist>RepositoryItemRadioGroup.Columns</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>comboGlyphAlign</name>
+				<windowcaption>Glyph Alignment combo box</windowcaption>
+				<description>This combo box demonstrates various glyph alignments that are allowed by the radio group control. Note that the text is aligned together with the glyphs in this sample.</description>
+				<memberlist>RepositoryItemRadioGroup.GlyphAlignment</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditAllowMnemonics</name>
+				<windowcaption>Allow Mnemonics check editor</windowcaption>
+				<description>This check box demonstrates how to apply mnemonics to radio group items. This involves adding the ampersand character to item captions. Once mnemonics have been applied, you can press the ALT key along with the underlined letters to change the radio group's selected item.</description>
+				<memberlist>RadioGroupItem.Description</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>spinSelectedIndex</name>
+				<windowcaption>Selected Index spin edit</windowcaption>
+				<description>This spin editor demonstrates how to change the selected item using item indexes.</description>
+				<memberlist>RadioGroup.SelectedIndex</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>comboSetEditValue</name>
+				<windowcaption>Set Edit Value combo box</windowcaption>
+				<description>This combo box demonstrates how to change the selected item by direct assignment of the currently edited value.</description>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>txtSelectedIndexValue</name>
+				<windowcaption>Selected Index and Edit Value text box</windowcaption>
+				<description>This text box displays the radio group's current edit value and selected item index.</description>
+				<memberlist>RadioGroup.SelectedIndexChanged, RadioGroup.SelectedIndex</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>btnClearItems</name>
+				<windowcaption>Clear Item button</windowcaption>
+				<description>This button clears the radio group's item collection.</description>
+				<memberlist>RadioGroupItemCollection Clear</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>btnPopulateItems</name>
+				<windowcaption>Populate Items button</windowcaption>
+				<description>This button fills the radio group's item collection with five items. At the same time, it fills the Set Edit Value combo box with the corresponding values plus a value that doesn't exist in the radio group.</description>
+				<memberlist>RadioGroupItemCollection Add</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>radioGroupPager</name>
+        <windowcaption>Radio Group Customization</windowcaption>
+        <description>This code customizes the Radio Group to be used as a page navigator for the Tile Bar's contents.</description>
+        <memberlist>RepositoryItemRadioGroup.ItemsLayout, RepositoryItemRadioGroup.BorderStyle, BaseEdit.BackColor</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>comboItemAlign</name>
+        <windowcaption>Radio Group Customization</windowcaption>
+        <description>Specify the radio button alignment.</description>
+        <memberlist>RepositoryItemRadioGroup.ItemHorzAlignment</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>radioGroupSample</name>
+			<hinttext>#Mouse Operations<newline></newline>Click an item's text or glyph<newline></newline>#Keyboard<newline></newline>UP, DOWN, LEFT, RIGHT keys or mnemonics<newline></newline>#Mouse Wheel<newline></newline>Supported</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

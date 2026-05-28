@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <ProjectGuid>{A5AC469E-2C49-4D40-9348-673D1656341A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>ReportMainDemo</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>XtraReportsDemos</RootNamespace>
+    <StartupObject>XtraReportsDemos.frmMain</StartupObject>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <ConvertToNet8WindowsRazor />
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.AIIntegration.Desktop.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.Reporting.Common.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.WinForms.Reporting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.AIIntegration.WinForms.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <Name>DevExpress.Data.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <Name>DevExpress.Drawing.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <Name>DevExpress.Tutorials.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <Name>DevExpress.Utils.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <Name>DevExpress.XtraBars.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <Name>DevExpress.Charts.v26.1.Core</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <Name>DevExpress.XtraCharts.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <Name>DevExpress.XtraEditors.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <Name>DevExpress.XtraLayout.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <Name>DevExpress.XtraNavBar.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <Name>DevExpress.XtraPrinting.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1">
+      <Name>DevExpress.XtraReports.v26.1</Name>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1.Extensions">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <Name>DevExpress.Office.v26.1.Core</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <Name>DevExpress.RichEdit.v26.1.Core</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1">
+      <Name>DevExpress.XtraRichEdit.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoReports.v26.1">
+      <Name>DevExpress.DemoReports.v26.1</Name>
+    <HintPath>..\..\Bin\DevExpress.DemoReports.v26.1.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <Name>DevExpress.XtraTreeList.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration"><Private>False</Private></Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>
+    <Reference Include="System.Design"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+	  <PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+	  <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+       <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="BouncyCastle.Cryptography">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AIOperations\AIDemoException.cs" />
+    <Compile Include="AIOperations\AIExceptionHandler.cs" />
+    <Compile Include="AIOperations\AIServicesRegistration.cs" />
+    <Compile Include="AIOperations\PromoteHttpStatusErrorsPipelineTransport.cs" />
+    <Compile Include="AIOperations\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AIOperations\ReportDesignerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AIOperations\ucDisclaimerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AIOperations\ucDisclaimerPanel.Designer.cs">
+      <DependentUpon>ucDisclaimerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\AIReportDesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\ReportDesignerModuleBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarryoverSummaryReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrillThroughReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmbeddedPDFContent\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportMergingWithPdf\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BalanceSheetReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PdfVisualSignature\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseForms\IDesignForm.cs" />
+    <Compile Include="BaseForms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\RibbonFormWrapper.cs" />
+    <Compile Include="BaseForms\RibbonReportDesigner\MainFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\RibbonReportDesigner\OfficeInspiredMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\RibbonReportDesigner\OfficeInspiredMainForm.Designer.cs">
+      <DependentUpon>OfficeInspiredMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\RibbonReportDesigner\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\RibbonReportDesigner\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\RibbonReportDesigner\SkinGalleryHelper.cs" />
+    <Compile Include="BaseForms\StandardFormWrapper.cs" />
+    <Compile Include="EmployeePerformanceReview\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HierarchicalReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RestaurantMenu\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RollPaper\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalesSummary\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SwissQRCode\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CharacterComb\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrillDownReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HugeAmountRecords\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnchorDemo\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BarCodes\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseForms\MainFeaturesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseForms\ModuleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseForms\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalculatedFields\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Charts\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CrossBandControls\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomDraw\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormattingRules\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IListDataSource\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabelReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MailMerge\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MasterDetailReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PivotGridAndChart\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiColumnReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NorthwindTraders\CatalogPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NorthwindTraders\InvoicePreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NorthwindTraders\ProductListPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InteractiveSorting\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PollingReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProfitAndLossReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMerging\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shape\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShrinkGrow\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SideBySideReports\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sparkline\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subreports\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TableReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CrossBandContent\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VehicleInspectionReport\PreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="AIOperations\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AIOperations\ReportDesignerControl.resx">
+      <DependentUpon>ReportDesignerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AIOperations\ucDisclaimerPanel.resx">
+      <DependentUpon>ucDisclaimerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCodes\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\AIReportDesignerForm.resx">
+      <DependentUpon>AIReportDesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\MainFeaturesControl.resx">
+      <DependentUpon>MainFeaturesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\ModuleControl.resx">
+      <DependentUpon>ModuleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\ReportDesignerModuleBase.resx">
+      <DependentUpon>ReportDesignerModuleBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\RibbonReportDesigner\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\RibbonReportDesigner\OfficeInspiredMainForm.resx">
+      <DependentUpon>OfficeInspiredMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrossBandControls\PreviewControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomDraw\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrillDownReport\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePerformanceReview\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IListDataSource\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetailReport\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiColumnReport\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InteractiveSorting\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PollingReport\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesSummary\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShrinkGrow\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SideBySideReports\PreviewControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subreports\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableReport\PreviewControl.resx">
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AI\ChatGuide.png" />
+    <EmbeddedResource Include="Resources\AI\ChatThumb.png" />
+    <EmbeddedResource Include="Resources\AI\ExpressionsThumb.png" />
+    <EmbeddedResource Include="Resources\AI\FakeDataThumb.png" />
+    <EmbeddedResource Include="Resources\AI\LocalizationGuide.png" />
+    <EmbeddedResource Include="Resources\AI\LocalizationThumb.png" />
+    <EmbeddedResource Include="Resources\AI\WizardGuide.png" />
+    <EmbeddedResource Include="Resources\AI\WizardThumb.png" />
+    <EmbeddedResource Include="Resources\AI\AIExpressionGuide.png" />
+    <EmbeddedResource Include="Resources\AI\TestDataGuide.png" />
+    <Content Include="Resources\AppIcon.ico" />
+    <Content Include="Resources\continent.bmp" />
+    <None Include="app.config" />
+    <EmbeddedResource Include="BaseForms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HugeAmountRecords\PreviewControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatedFields\PreviewControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormattingRules\PreviewControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="AppIcon.ico" />
+    <Content Include="license.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    
+    <None Include="connectionStrings.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Resources\Designer.svg" />
+    <EmbeddedResource Include="Resources\Flags\China.png" />
+    <EmbeddedResource Include="Resources\Flags\France.png" />
+    <EmbeddedResource Include="Resources\Flags\Germany.png" />
+    <EmbeddedResource Include="Resources\Flags\India.png" />
+    <EmbeddedResource Include="Resources\Flags\Italy.png" />
+    <EmbeddedResource Include="Resources\Flags\Russia.png" />
+    <EmbeddedResource Include="Resources\Flags\United_Kingdom.png" />
+    <EmbeddedResource Include="Resources\Flags\United_States_of_America.png" />
+    <EmbeddedResource Include="Resources\Flags\Australia.png" />
+    <EmbeddedResource Include="Resources\Flags\Japan.png" />
+    <Content Include="Resources\ReportsAbout.rtf" />
+    <None Include="NOTICE">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <PackageReference Include="Azure.AI.OpenAI" />
+	<PackageReference Include="Microsoft.Agents.AI.Workflows" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" />
+	<PackageReference Include="Microsoft.Extensions.AI" />
+  </ItemGroup>
+  <Target Name="AfterResolveReferences">
+    <ItemGroup>
+      <netcore3ignore />
+      <EmbeddedResource Include="@(ReferenceCopyLocalPaths)" Condition="'%(ReferenceCopyLocalPaths.Extension)' == '.dll'">
+        <LogicalName>%(ReferenceCopyLocalPaths.Filename)%(ReferenceCopyLocalPaths.Extension)</LogicalName>
+      </EmbeddedResource>
+    </ItemGroup>
+  </Target>
+  <!--ONLY NETCORE3
+  <ItemGroup>
+    <Reference Include="DevExpress.AIIntegration.WinForms.Chat.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.AIIntegration.WinForms.Chat.v26.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.AIIntegration.Blazor.Chat.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.AIIntegration.Blazor.Chat.v26.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.AIIntegration.Blazor.Chat.WebView.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.AIIntegration.Blazor.Chat.WebView.v26.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Blazor.Resources.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.Blazor.Resources.v26.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Blazor.v26.1">
+      <HintPath>..\..\..\..\Bin\NETCore\DevExpress.Blazor.v26.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web"/>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms"/>
+  </ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3
+    <Target Name="wwwrootPublish" BeforeTargets="Build" Condition="$(DEMO_REMOVE)==''">
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\..\Blazor\DevExpress.Blazor\wwwroot\* wwwroot\_content\DevExpress.Blazor\" ContinueOnError="true" />
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\..\Blazor\DevExpress.Blazor.Themes.Fluent\wwwroot\* wwwroot\_content\DevExpress.Blazor.Themes.Fluent\" ContinueOnError="true" />
+    
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\..\Blazor\DevExpress.Blazor\wwwroot\* bin\DebugNetCoreDesktop\wwwroot\_content\DevExpress.Blazor\" ContinueOnError="true" />
+    <Exec Command="xcopy /E /I /Y /R ..\..\..\..\Blazor\DevExpress.Blazor.Themes.Fluent\wwwroot\* bin\DebugNetCoreDesktop\wwwroot\_content\DevExpress.Blazor.Themes.Fluent\" ContinueOnError="true" />
+  </Target>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3
+<ItemGroup>
+    <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+    <PackageReference Include="System.Data.SqlClient" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="Microsoft.CodeAnalysis" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" />
+    <PackageReference Include="System.Data.SQLite.Core" />
+</ItemGroup>
+ONLY NETCORE3-->
+<!--ONLY NETCORE3
+<PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+</PropertyGroup>
+  ONLY NETCORE3-->
+</Project>

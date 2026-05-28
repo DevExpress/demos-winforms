@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>allowRuntimeCustomization</name>
+				<windowcaption>Allow customization</windowcaption>
+				<description>Specifies whether an end-user can customize the card layout at runtime via the Customization Form.</description>
+        <memberlist>LayoutViewOptionsBehavior.AllowRuntimeCustomization</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>customizationOptions</name>
+        <windowcaption>Customization options</windowcaption>
+        <description>You can specify which elements will be displayed within Customization Form. For example, the ShowGroupCardIndents property specifies whether an end-user will be able to change inner and outer card margins.</description>
+        <memberlist>
+          LayoutViewOptionsCustomization.ShowGroupLayoutTreeView,
+          LayoutViewOptionsCustomization.ShowGroupHiddenItems,
+          LayoutViewOptionsCustomization.ShowResetShrinkButtons,
+          LayoutViewOptionsCustomization.ShowGroupCardIndents,
+          LayoutViewOptionsCustomization.ShowGroupCardCaptions,
+          LayoutViewOptionsCustomization.ShowSaveLoadLayoutButtons,
+          LayoutViewOptionsCustomization.ShowGroupView,
+          LayoutViewOptionsCustomization.ShowGroupLayout,
+          LayoutViewOptionsCustomization.ShowGroupCards,
+          LayoutViewOptionsCustomization.ShowGroupFields
+        </memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>customizeBtn</name>
+        <windowcaption>Advanced customization form</windowcaption>
+        <description>Invokes the Customization Form. Use the properties listed in the nearby drop-down list to specify which UI elements an end-user will be able to customize.</description>
+        <memberlist>LayoutView.ShowCustomizationForm, LayoutView.HideCustomizationForm</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>stretchWidth</name>
+        <windowcaption>Stretch width</windowcaption>
+        <description>Use the StretchCardToViewWidth property to specify whether the currently visible card is stretched horizontally to fully fill the View width. This option is in effect in Single Record view mode.</description>
+        <memberlist>LayoutViewOptionsSingleRecordMode.StretchCardToViewWidth</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>stretchHeight</name>
+        <windowcaption>Stretch height</windowcaption>
+        <description>Use the StretchCardToViewHeight property to specify whether the currently visible card is stretched vertically to fully fill the View height. This option is in effect in Single Record view mode.</description>
+        <memberlist>LayoutViewOptionsSingleRecordMode.StretchCardToViewHeight</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cardAlignment</name>
+        <windowcaption>Card alignment</windowcaption>
+        <description>The CardAlignment property specifies card alignment within the View when the card is stretched to fully fill the View's width or height. This option is in effect when the StretchCardToViewHeight or StretchCardToViewWidth property is enabled (but not both of them).</description>
+        <memberlist>LayoutViewOptionsSingleRecordMode.CardAlignment</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>stretchWidthM</name>
+        <windowcaption>Stretch width</windowcaption>
+        <description>Use the StretchCardToViewWidth property to specify whether the currently visible card is stretched horizontally to fully fill the View width. This option is in effect in Multi Record view mode.</description>
+        <memberlist>LayoutViewOptionsMultiRecordMode.StretchCardToViewWidth</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>stretchHeightM</name>
+        <windowcaption>Stretch height</windowcaption>
+        <description>Use the StretchCardToViewHeight property to specify whether the currently visible card is stretched vertically to fully fill the View's height. This option is in effect in Multi Record view mode.</description>
+        <memberlist>LayoutViewOptionsMultiRecordMode.StretchCardToViewHeight</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>multiSelect</name>
+        <windowcaption>Multi select</windowcaption>
+        <description>You can specify whether single or multiple cards can be selected simultaneously. The PrintSelectedCardsOnly property additionally specifies whether only selected cards should be printed (exported).</description>
+        <memberlist>ColumnViewOptionsSelection.MultiSelect, LayoutViewOptionsPrint.PrintSelectedCardsOnly</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinEdit1</name>
+        <windowcaption>Maximum columns number</windowcaption>
+        <description>Specifies the maximum number of columns displayed within the View.</description>
+        <memberlist>LayoutViewOptionsMultiRecordMode.MaxCardColumns</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinEdit2</name>
+        <windowcaption>Maximum rows number</windowcaption>
+        <description>Specifies the maximum number of rows displayed within the View.</description>
+        <memberlist>LayoutViewOptionsMultiRecordMode.MaxCardRows</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>imagesInFields</name>
+        <windowcaption>Field images</windowcaption>
+        <description>Allows you to dynamically display images in field captions.</description>
+        <memberlist>LayoutView.CustomFieldCaptionImage</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>imagesInCaptions</name>
+        <windowcaption>Card caption images</windowcaption>
+        <description>The CustomCardCaptionImage event allows you to display custom images in card captions.</description>
+        <memberlist>LayoutView.CustomCardCaptionImage</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>imagesOnlyForFocused</name>
+        <windowcaption>Images for focused cards</windowcaption>
+        <description>Every time the check edit value changes, the LayoutView.Refresh() method is called. This raises the CustomFieldCaptionImage and CustomCardCaptionImage events. The custom showImagesInFocusedCardOnly property value displays images either within all cards or within a selected card only.</description>
+        <memberlist>LayoutView.CustomCardCaptionImage, LayoutView.CustomFieldCaptionImage</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>notesVisibility</name>
+        <windowcaption>Notes visibility</windowcaption>
+        <description>The CustomCardLayout event allows you to dynamically customize the layout of fields within specific cards.</description>
+        <memberlist>LayoutView.CustomCardLayout, LayoutViewCardDifferences.CardDifferences</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>photoVisibility</name>
+        <windowcaption>Photo visibility</windowcaption>
+        <description>The CustomCardLayout event allows you to dynamically customize the layout of fields within specific cards.</description>
+        <memberlist>LayoutView.CustomCardLayout, LayoutViewCardDifferences.CardDifferences</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>visibilityOnlyForFocused</name>
+        <windowcaption>Info visibility</windowcaption>
+        <description>The CustomCardLayout event allows you to dynamically customize the layout of fields within specific cards.</description>
+        <memberlist>LayoutView.CustomCardLayout, LayoutViewCardDifferences.CardDifferences</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

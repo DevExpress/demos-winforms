@@ -1,0 +1,1850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="helpControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="helpControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="helpControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 494</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="helpControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;helpControl1.Name" xml:space="preserve">
+    <value>helpControl1</value>
+  </data>
+  <data name="&gt;&gt;helpControl1.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.Controls.HelpControl, DevExpress.MailClient.Win, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;helpControl1.Parent" xml:space="preserve">
+    <value>backstageViewClientControl1</value>
+  </data>
+  <data name="&gt;&gt;helpControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="backstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 63</value>
+  </data>
+  <data name="backstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 494</value>
+  </data>
+  <data name="backstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl1.Name" xml:space="preserve">
+    <value>backstageViewClientControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl1.Parent" xml:space="preserve">
+    <value>backstageViewControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="galleryControlClient1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="galleryControlClient1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;galleryControlClient1.Name" xml:space="preserve">
+    <value>galleryControlClient1</value>
+  </data>
+  <data name="&gt;&gt;galleryControlClient1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.GalleryControlClient, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;galleryControlClient1.Parent" xml:space="preserve">
+    <value>galleryControl1</value>
+  </data>
+  <data name="&gt;&gt;galleryControlClient1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="galleryControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="galleryControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="galleryControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>822, 276</value>
+  </data>
+  <data name="galleryControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="galleryControl1.Text" xml:space="preserve">
+    <value>galleryControl1</value>
+  </data>
+  <data name="&gt;&gt;galleryControl1.Name" xml:space="preserve">
+    <value>galleryControl1</value>
+  </data>
+  <data name="&gt;&gt;galleryControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.GalleryControl, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;galleryControl1.Parent" xml:space="preserve">
+    <value>backstageViewClientControl2</value>
+  </data>
+  <data name="&gt;&gt;galleryControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="backstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 62</value>
+  </data>
+  <data name="backstageViewClientControl2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 20, 20, 200</value>
+  </data>
+  <data name="backstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 496</value>
+  </data>
+  <data name="backstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl2.Name" xml:space="preserve">
+    <value>backstageViewClientControl2</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl2.Parent" xml:space="preserve">
+    <value>backstageViewControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="printControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="printControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="printControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 496</value>
+  </data>
+  <data name="printControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;printControl1.Name" xml:space="preserve">
+    <value>printControl1</value>
+  </data>
+  <data name="&gt;&gt;printControl1.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.Controls.PrintControl, DevExpress.MailClient.Win, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;printControl1.Parent" xml:space="preserve">
+    <value>backstageViewClientControl3</value>
+  </data>
+  <data name="&gt;&gt;printControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="backstageViewClientControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 62</value>
+  </data>
+  <data name="backstageViewClientControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 496</value>
+  </data>
+  <data name="backstageViewClientControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl3.Name" xml:space="preserve">
+    <value>backstageViewClientControl3</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl3.Parent" xml:space="preserve">
+    <value>backstageViewControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="exportControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="exportControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="exportControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 496</value>
+  </data>
+  <data name="exportControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;exportControl1.Name" xml:space="preserve">
+    <value>exportControl1</value>
+  </data>
+  <data name="&gt;&gt;exportControl1.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.Controls.ExportControl, DevExpress.MailClient.Win, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;exportControl1.Parent" xml:space="preserve">
+    <value>backstageViewClientControl4</value>
+  </data>
+  <data name="&gt;&gt;exportControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="backstageViewClientControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 62</value>
+  </data>
+  <data name="backstageViewClientControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 496</value>
+  </data>
+  <data name="backstageViewClientControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl4.Name" xml:space="preserve">
+    <value>backstageViewClientControl4</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl4.Parent" xml:space="preserve">
+    <value>backstageViewControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bvbiSaveAs.Caption" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="bvbiSaveAttachment.Caption" xml:space="preserve">
+    <value>Save Attachment</value>
+  </data>
+  <data name="bvbiSaveCalendar.Caption" xml:space="preserve">
+    <value>Save Calendar</value>
+  </data>
+  <data name="bvtiInfo.Caption" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="bvtiOpen.Caption" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="bvtiPrint.Caption" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="bvtiExport.Caption" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="bvbiExit.Caption" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="backstageViewControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="backstageViewControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1016, 558</value>
+  </data>
+  <data name="backstageViewControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="backstageViewControl1.Text" xml:space="preserve">
+    <value>backstageViewControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewControl1.Name" xml:space="preserve">
+    <value>backstageViewControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewControl, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;backstageViewControl1.Parent" xml:space="preserve">
+    <value>pcMain</value>
+  </data>
+  <data name="&gt;&gt;backstageViewControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="DevExpress.XtraBars.v26.1" name="DevExpress.XtraBars.v26.1, Culture=neutral"></assembly>
+  <data name="ribbonControl1.Categories" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYyMi4yLCBWZXJzaW9uPTIy
+        LjIuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
+        ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
+        bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABE1haWwE/P///wtTeXN0ZW0uR3VpZAsAAAACX2ECX2IC
+        X2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwICAgICAgICyARzqzFCa0y3OaaM
+        ABnJ9QEL
+</value>
+  </data>
+  <data name="ribbonControl1.Categories1" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYyMi4yLCBWZXJzaW9uPTIy
+        LjIuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
+        ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
+        bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAACENhbGVuZGFyBPz///8LU3lzdGVtLkd1aWQLAAAAAl9h
+        Al9iAl9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICArpZ2VChFu5M
+        oYHqWPPMCZsBCw==
+</value>
+  </data>
+  <data name="ribbonControl1.Categories2" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYyMi4yLCBWZXJzaW9uPTIy
+        LjIuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
+        ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
+        bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAACENvbnRhY3RzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9h
+        Al9iAl9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAi82Vy4fCZtF
+        kC71Tp6Rd1UBCw==
+</value>
+  </data>
+  <data name="ribbonControl1.Categories3" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYyMi4yLCBWZXJzaW9uPTIy
+        LjIuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
+        ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
+        bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABUZlZWRzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9hAl9i
+        Al9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAoOPBvwaUAdFp5b6
+        PisEmOMBCw==
+</value>
+  </data>
+  <data name="ribbonControl1.Categories4" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYyMi4yLCBWZXJzaW9uPTIy
+        LjIuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAA
+        ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
+        bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABVRhc2tzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9hAl9i
+        Al9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAksjBPoPzB1LuTKJ
+        X0pWjM8BCw==
+</value>
+  </data>
+  <data name="bbiRotateLayout.Caption" xml:space="preserve">
+    <value>Rotate Layout</value>
+  </data>
+  <data name="bbiFlipLayout.Caption" xml:space="preserve">
+    <value>Flip Layout</value>
+  </data>
+  <data name="bciShowUnreadMessageCount.Caption" xml:space="preserve">
+    <value>Show Unread Message Count</value>
+  </data>
+  <data name="bciShowAllMessageCount.Caption" xml:space="preserve">
+    <value>Show All Message Count</value>
+  </data>
+  <data name="bbiDelete.Caption" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="bbiNew.Caption" xml:space="preserve">
+    <value>New Mail</value>
+  </data>
+  <data name="bbiReply.Caption" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="bbiForward.Caption" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="bbiReplyAll.Caption" xml:space="preserve">
+    <value>Reply All</value>
+  </data>
+  <data name="bbiUnreadRead.Caption" xml:space="preserve">
+    <value>Unread/Read</value>
+  </data>
+  <data name="bbiPriority.Caption" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="bsiNavigation.Caption" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="bbiCloseSearch.Caption" xml:space="preserve">
+    <value>Close Search</value>
+  </data>
+  <data name="bbiShowUnread.Caption" xml:space="preserve">
+    <value>Unread</value>
+  </data>
+  <data name="bbiImportant.Caption" xml:space="preserve">
+    <value>Important</value>
+  </data>
+  <data name="bbiHasAttachment.Caption" xml:space="preserve">
+    <value>Has Attachment</value>
+  </data>
+  <data name="bbiResetColumnsToDefault.Caption" xml:space="preserve">
+    <value>Reset to Default</value>
+  </data>
+  <data name="bsiColumns.Caption" xml:space="preserve">
+    <value>Filter Columns</value>
+  </data>
+  <data name="bbiSubjectColumn.Caption" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="bbiFromColumn.Caption" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="bbiDateColumn.Caption" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="bbiPriorityColumn.Caption" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="bbiAttachmentColumn.Caption" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="bbiDate.Caption" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="bbiClearFilter.Caption" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="bbiNewFeed.Caption" xml:space="preserve">
+    <value>New Feed</value>
+  </data>
+  <data name="bbiEditFeed.Caption" xml:space="preserve">
+    <value>Edit Feed</value>
+  </data>
+  <data name="bbiDeleteFeed.Caption" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="bbiRefreshFeed.Caption" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="rgbiCurrentView.Caption" xml:space="preserve">
+    <value>Current Contacts View</value>
+  </data>
+  <data name="beiZoom.EditWidth" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="bbiNormal.Hint" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="bbiReading.Hint" xml:space="preserve">
+    <value>Reading</value>
+  </data>
+  <data name="bbiManageView.Caption" xml:space="preserve">
+    <value>&amp;Manage Views...</value>
+  </data>
+  <data name="bbiSaveCurrentView.Caption" xml:space="preserve">
+    <value>&amp;Save Current View As a New View... </value>
+  </data>
+  <data name="rgbiCurrentViewTasks.Caption" xml:space="preserve">
+    <value>Current View</value>
+  </data>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="resource.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjIsIFZlcnNpb249MjIuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHICAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5Z
+        ZWxsb3d7ZmlsbDojRkZCMTE1O30KCS5CbGFja3tmaWxsOiM3MjcyNzI7fQoJLkdyZWVue2ZpbGw6IzAz
+        OUMyMzt9CgkuUmVke2ZpbGw6I0QxMUMxQzt9Cgkuc3Qwe29wYWNpdHk6MC43NTt9Cgkuc3Qxe29wYWNp
+        dHk6MC41O30KPC9zdHlsZT4NCiAgPGcgaWQ9IkNoZWNrQ2lyY2xlZCI+DQogICAgPHBhdGggZD0iTTE2
+        LDRDOS40LDQsNCw5LjQsNCwxNmMwLDYuNiw1LjQsMTIsMTIsMTJzMTItNS40LDEyLTEyQzI4LDkuNCwy
+        Mi42LDQsMTYsNHogTTE0LDIybC02LTZsMi0ybDQsNGw4LThsMiwyICAgTDE0LDIyeiIgY2xhc3M9Ikdy
+        ZWVuIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="resource.SvgImage1" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjIsIFZlcnNpb249MjIuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAB4DAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQoJ
+        LlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5HcmVlbntmaWxsOiMwMzlD
+        MjM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3Bh
+        Y2l0eTowLjU7fQoJLnN0MXtkaXNwbGF5Om5vbmU7fQoJLnN0MntkaXNwbGF5OmlubGluZTtmaWxsOiMw
+        MzlDMjM7fQoJLnN0M3tkaXNwbGF5OmlubGluZTtmaWxsOiNEMTFDMUM7fQoJLnN0NHtkaXNwbGF5Omlu
+        bGluZTtmaWxsOiM3MjcyNzI7fQo8L3N0eWxlPg0KICA8ZyBpZD0iUHJpb3JpdGl6ZWQiPg0KICAgIDxw
+        YXRoIGQ9Ik0xNiwzMGMtMi4yLDAtNC0xLjgtNC00czEuOC00LDQtNHM0LDEuOCw0LDRTMTguMiwzMCwx
+        NiwzMHogTTE2LDJjLTIuMiwwLTQsMS44LTQsNGwyLDEyLjNoMCAgIGMwLjEsMSwxLDEuOCwyLDEuOGMx
+        LDAsMS45LTAuOCwyLTEuOGgwTDIwLDZDMjAsMy44LDE4LjIsMiwxNiwyeiIgY2xhc3M9IlJlZCIgLz4N
+        CiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="resource.SvgImage2" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjIsIFZlcnNpb249MjIuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAD8DAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MzIgMzIiPg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQoJ
+        LlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuQmx1ZXtmaWxsOiMxMTc3
+        RDc7fQoJLldoaXRle2ZpbGw6I0ZGRkZGRjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5zdDB7b3Bh
+        Y2l0eTowLjc1O30KCS5zdDF7b3BhY2l0eTowLjU7fQoJLnN0MntvcGFjaXR5OjAuMjU7fQoJLnN0M3tm
+        aWxsOiNGRkIxMTU7fQo8L3N0eWxlPg0KICA8ZyAvPg0KICA8ZyBpZD0iQ29udmVydFRvIj4NCiAgICA8
+        cGF0aCBkPSJNMjIsNmwtNi02djRDOS40LDQsNCw5LjQsNCwxNmMwLDMuNiwxLjYsNi44LDQuMSw5bDIu
+        OC0yLjhjLTEuOC0xLjUtMy0zLjctMy02LjJjMC00LjQsMy42LTgsOC04djRMMjIsNnoiIGNsYXNzPSJH
+        cmVlbiIgLz4NCiAgICA8cGF0aCBkPSJNMjMuOSw3TDIxLDkuOGMxLjgsMS41LDMsMy43LDMsNi4yYzAs
+        NC40LTMuNiw4LTgsOHYtNGwtNiw2bDYsNnYtNGM2LjYsMCwxMi01LjQsMTItMTIgICBDMjgsMTIuNCwy
+        Ni40LDkuMiwyMy45LDd6IiBjbGFzcz0iQmx1ZSIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="bbiTodayFlag.Caption" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="bbiTomorrowFlag.Caption" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="bbiThisWeekFlag.Caption" xml:space="preserve">
+    <value>This Week</value>
+  </data>
+  <data name="bbiNextWeekFlag.Caption" xml:space="preserve">
+    <value>Next Week</value>
+  </data>
+  <data name="bbiNoDateFlag.Caption" xml:space="preserve">
+    <value>No Date</value>
+  </data>
+  <data name="bbiCustomFlag.Caption" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="bbiNewContact.Caption" xml:space="preserve">
+    <value>New Contact</value>
+  </data>
+  <data name="bbiEditContact.Caption" xml:space="preserve">
+    <value>Edit Contact</value>
+  </data>
+  <data name="bbiDeleteContact.Caption" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="bbiNewTask.Caption" xml:space="preserve">
+    <value>New Task</value>
+  </data>
+  <data name="bbiEditTask.Caption" xml:space="preserve">
+    <value>Edit Task</value>
+  </data>
+  <data name="bbiDeleteTask.Caption" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="repositoryItemDuration1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v26.1" name="DevExpress.Utils.v26.1, Culture=neutral"></assembly>
+  <data name="repositoryItemDuration1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="bbiShowPreview.Caption" xml:space="preserve">
+    <value>Message Preview</value>
+  </data>
+  <data name="bsiConnected.Caption" xml:space="preserve">
+    <value>CONNECTED TO: MAIL SERVER        </value>
+  </data>
+  <data name="biRename.Caption" xml:space="preserve">
+    <value>Rename Folder</value>
+  </data>
+  <data name="biCreateFolder.Caption" xml:space="preserve">
+    <value>Create New Folder</value>
+  </data>
+  <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="rpgFind.Text" xml:space="preserve">
+    <value>Filter Actions</value>
+  </data>
+  <data name="rpgFilterColumns.Text" xml:space="preserve">
+    <value>Filter Columns</value>
+  </data>
+  <data name="rbgClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="rpSearch.Text" xml:space="preserve">
+    <value>SEARCH</value>
+  </data>
+  <data name="rpcSearch.Text" xml:space="preserve">
+    <value>Search Tools</value>
+  </data>
+  <data name="rpcSearch.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="appointmentRibbonPage1.Text" xml:space="preserve">
+    <value>APPOINTMENT</value>
+  </data>
+  <data name="calendarToolsRibbonPageCategory1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rpgNew.Text" xml:space="preserve">
+    <value>New / Respond</value>
+  </data>
+  <data name="rpgDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="rpgTags.Text" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="rpgLayoutMail.Text" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="rpMail.Text" xml:space="preserve">
+    <value>MAIL</value>
+  </data>
+  <data name="rpCalendar.Text" xml:space="preserve">
+    <value>CALENDAR</value>
+  </data>
+  <data name="rpgContacts.Text" xml:space="preserve">
+    <value>New / Edit</value>
+  </data>
+  <data name="rpgCurrentView.Text" xml:space="preserve">
+    <value>Current View</value>
+  </data>
+  <data name="rpgLayoutContacts.Text" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="rpContacts.Text" xml:space="preserve">
+    <value>CONTACTS</value>
+  </data>
+  <data name="rpgFeeds.Text" xml:space="preserve">
+    <value>New / Edit</value>
+  </data>
+  <data name="rpgActionsFeeds.Text" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="rpgLayoutFeeds.Text" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="rpFeeds.Text" xml:space="preserve">
+    <value>FEEDS</value>
+  </data>
+  <data name="rpgTasks.Text" xml:space="preserve">
+    <value>New / Edit</value>
+  </data>
+  <data name="rpgFollowUp.Text" xml:space="preserve">
+    <value>Follow Up</value>
+  </data>
+  <data name="rpdCurrentViewTasks.Text" xml:space="preserve">
+    <value>Current View</value>
+  </data>
+  <data name="rpTasks.Text" xml:space="preserve">
+    <value>TASKS</value>
+  </data>
+  <data name="rpgNavigation.Text" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="prgAppearance.Text" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="rpView.Text" xml:space="preserve">
+    <value>VIEW</value>
+  </data>
+  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ribbonControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1270, 160</value>
+  </data>
+  <data name="ribbonStatusBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 837</value>
+  </data>
+  <data name="ribbonStatusBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1270, 22</value>
+  </data>
+  <data name="&gt;&gt;ribbonStatusBar1.Name" xml:space="preserve">
+    <value>ribbonStatusBar1</value>
+  </data>
+  <data name="&gt;&gt;ribbonStatusBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ribbonStatusBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ribbonStatusBar1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Name" xml:space="preserve">
+    <value>ribbonControl1</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="nbgMail.Caption" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="ucMailTree1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ucMailTree1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ucMailTree1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 408</value>
+  </data>
+  <data name="ucMailTree1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ucMailTree1.Name" xml:space="preserve">
+    <value>ucMailTree1</value>
+  </data>
+  <data name="&gt;&gt;ucMailTree1.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.ucMailTree, DevExpress.MailClient.Win, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ucMailTree1.Parent" xml:space="preserve">
+    <value>navBarGroupControlContainer1</value>
+  </data>
+  <data name="&gt;&gt;ucMailTree1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navBarGroupControlContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 408</value>
+  </data>
+  <data name="navBarGroupControlContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer1.Name" xml:space="preserve">
+    <value>navBarGroupControlContainer1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer1.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer1.Parent" xml:space="preserve">
+    <value>navBarControl1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ucCalendar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ucCalendar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ucCalendar1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 1, 0</value>
+  </data>
+  <data name="ucCalendar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 342</value>
+  </data>
+  <data name="ucCalendar1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ucCalendar1.Name" xml:space="preserve">
+    <value>ucCalendar1</value>
+  </data>
+  <data name="&gt;&gt;ucCalendar1.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.Controls.ucCalendar, DevExpress.MailClient.Win, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ucCalendar1.Parent" xml:space="preserve">
+    <value>navBarGroupControlContainer2</value>
+  </data>
+  <data name="&gt;&gt;ucCalendar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navBarGroupControlContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 342</value>
+  </data>
+  <data name="navBarGroupControlContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer2.Name" xml:space="preserve">
+    <value>navBarGroupControlContainer2</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer2.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer2.Parent" xml:space="preserve">
+    <value>navBarControl1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ucContacts1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ucContacts1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ucContacts1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 342</value>
+  </data>
+  <data name="ucContacts1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ucContacts1.Name" xml:space="preserve">
+    <value>ucContacts1</value>
+  </data>
+  <data name="&gt;&gt;ucContacts1.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.Controls.ucContacts, DevExpress.MailClient.Win, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ucContacts1.Parent" xml:space="preserve">
+    <value>navBarGroupControlContainer3</value>
+  </data>
+  <data name="&gt;&gt;ucContacts1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navBarGroupControlContainer3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 342</value>
+  </data>
+  <data name="navBarGroupControlContainer3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer3.Name" xml:space="preserve">
+    <value>navBarGroupControlContainer3</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer3.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer3.Parent" xml:space="preserve">
+    <value>navBarControl1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="navBarControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="nbgTasks.Caption" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="nbgCalendar.Caption" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="nbgContacts.Caption" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="navBarControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 160</value>
+  </data>
+  <data name="resource.ExpandedWidth" type="System.Int32, mscorlib">
+    <value>251</value>
+  </data>
+  <data name="navBarControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 677</value>
+  </data>
+  <data name="navBarControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="navBarControl1.Text" xml:space="preserve">
+    <value>navBarControl1</value>
+  </data>
+  <data name="&gt;&gt;navBarControl1.Name" xml:space="preserve">
+    <value>navBarControl1</value>
+  </data>
+  <data name="&gt;&gt;navBarControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarControl, DevExpress.XtraNavBar.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navBarControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;navBarControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pcMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pcMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 160</value>
+  </data>
+  <data name="pcMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1019, 677</value>
+  </data>
+  <data name="pcMain.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pcMain.Name" xml:space="preserve">
+    <value>pcMain</value>
+  </data>
+  <data name="&gt;&gt;pcMain.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;pcMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pcMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="pmTreeView.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="pmMessage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>136, 17</value>
+  </metadata>
+  <metadata name="pmFlagStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>253, 17</value>
+  </metadata>
+  <metadata name="schedulerBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>378, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>78</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1270, 859</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>600, 400</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Mail Client</value>
+  </data>
+  <data name="&gt;&gt;bvbiSaveAs.Name" xml:space="preserve">
+    <value>bvbiSaveAs</value>
+  </data>
+  <data name="&gt;&gt;bvbiSaveAs.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bvbiSaveAttachment.Name" xml:space="preserve">
+    <value>bvbiSaveAttachment</value>
+  </data>
+  <data name="&gt;&gt;bvbiSaveAttachment.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bvbiSaveCalendar.Name" xml:space="preserve">
+    <value>bvbiSaveCalendar</value>
+  </data>
+  <data name="&gt;&gt;bvbiSaveCalendar.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bvtiInfo.Name" xml:space="preserve">
+    <value>bvtiInfo</value>
+  </data>
+  <data name="&gt;&gt;bvtiInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bvtiOpen.Name" xml:space="preserve">
+    <value>bvtiOpen</value>
+  </data>
+  <data name="&gt;&gt;bvtiOpen.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bvtiPrint.Name" xml:space="preserve">
+    <value>bvtiPrint</value>
+  </data>
+  <data name="&gt;&gt;bvtiPrint.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bvtiExport.Name" xml:space="preserve">
+    <value>bvtiExport</value>
+  </data>
+  <data name="&gt;&gt;bvtiExport.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bvbiExit.Name" xml:space="preserve">
+    <value>bvbiExit</value>
+  </data>
+  <data name="&gt;&gt;bvbiExit.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiRotateLayout.Name" xml:space="preserve">
+    <value>bbiRotateLayout</value>
+  </data>
+  <data name="&gt;&gt;bbiRotateLayout.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiFlipLayout.Name" xml:space="preserve">
+    <value>bbiFlipLayout</value>
+  </data>
+  <data name="&gt;&gt;bbiFlipLayout.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bciShowUnreadMessageCount.Name" xml:space="preserve">
+    <value>bciShowUnreadMessageCount</value>
+  </data>
+  <data name="&gt;&gt;bciShowUnreadMessageCount.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bciShowAllMessageCount.Name" xml:space="preserve">
+    <value>bciShowAllMessageCount</value>
+  </data>
+  <data name="&gt;&gt;bciShowAllMessageCount.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiDelete.Name" xml:space="preserve">
+    <value>bbiDelete</value>
+  </data>
+  <data name="&gt;&gt;bbiDelete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiNew.Name" xml:space="preserve">
+    <value>bbiNew</value>
+  </data>
+  <data name="&gt;&gt;bbiNew.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiReply.Name" xml:space="preserve">
+    <value>bbiReply</value>
+  </data>
+  <data name="&gt;&gt;bbiReply.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiForward.Name" xml:space="preserve">
+    <value>bbiForward</value>
+  </data>
+  <data name="&gt;&gt;bbiForward.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiReplyAll.Name" xml:space="preserve">
+    <value>bbiReplyAll</value>
+  </data>
+  <data name="&gt;&gt;bbiReplyAll.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiUnreadRead.Name" xml:space="preserve">
+    <value>bbiUnreadRead</value>
+  </data>
+  <data name="&gt;&gt;bbiUnreadRead.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiPriority.Name" xml:space="preserve">
+    <value>bbiPriority</value>
+  </data>
+  <data name="&gt;&gt;bbiPriority.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bsiNavigation.Name" xml:space="preserve">
+    <value>bsiNavigation</value>
+  </data>
+  <data name="&gt;&gt;bsiNavigation.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiCloseSearch.Name" xml:space="preserve">
+    <value>bbiCloseSearch</value>
+  </data>
+  <data name="&gt;&gt;bbiCloseSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiShowUnread.Name" xml:space="preserve">
+    <value>bbiShowUnread</value>
+  </data>
+  <data name="&gt;&gt;bbiShowUnread.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiImportant.Name" xml:space="preserve">
+    <value>bbiImportant</value>
+  </data>
+  <data name="&gt;&gt;bbiImportant.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiHasAttachment.Name" xml:space="preserve">
+    <value>bbiHasAttachment</value>
+  </data>
+  <data name="&gt;&gt;bbiHasAttachment.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiResetColumnsToDefault.Name" xml:space="preserve">
+    <value>bbiResetColumnsToDefault</value>
+  </data>
+  <data name="&gt;&gt;bbiResetColumnsToDefault.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bsiColumns.Name" xml:space="preserve">
+    <value>bsiColumns</value>
+  </data>
+  <data name="&gt;&gt;bsiColumns.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiSubjectColumn.Name" xml:space="preserve">
+    <value>bbiSubjectColumn</value>
+  </data>
+  <data name="&gt;&gt;bbiSubjectColumn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiFromColumn.Name" xml:space="preserve">
+    <value>bbiFromColumn</value>
+  </data>
+  <data name="&gt;&gt;bbiFromColumn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiDateColumn.Name" xml:space="preserve">
+    <value>bbiDateColumn</value>
+  </data>
+  <data name="&gt;&gt;bbiDateColumn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiPriorityColumn.Name" xml:space="preserve">
+    <value>bbiPriorityColumn</value>
+  </data>
+  <data name="&gt;&gt;bbiPriorityColumn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiAttachmentColumn.Name" xml:space="preserve">
+    <value>bbiAttachmentColumn</value>
+  </data>
+  <data name="&gt;&gt;bbiAttachmentColumn.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiDate.Name" xml:space="preserve">
+    <value>bbiDate</value>
+  </data>
+  <data name="&gt;&gt;bbiDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiClearFilter.Name" xml:space="preserve">
+    <value>bbiClearFilter</value>
+  </data>
+  <data name="&gt;&gt;bbiClearFilter.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiNewFeed.Name" xml:space="preserve">
+    <value>bbiNewFeed</value>
+  </data>
+  <data name="&gt;&gt;bbiNewFeed.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiEditFeed.Name" xml:space="preserve">
+    <value>bbiEditFeed</value>
+  </data>
+  <data name="&gt;&gt;bbiEditFeed.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteFeed.Name" xml:space="preserve">
+    <value>bbiDeleteFeed</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteFeed.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiRefreshFeed.Name" xml:space="preserve">
+    <value>bbiRefreshFeed</value>
+  </data>
+  <data name="&gt;&gt;bbiRefreshFeed.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgbiCurrentView.Name" xml:space="preserve">
+    <value>rgbiCurrentView</value>
+  </data>
+  <data name="&gt;&gt;rgbiCurrentView.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bsiInfo.Name" xml:space="preserve">
+    <value>bsiInfo</value>
+  </data>
+  <data name="&gt;&gt;bsiInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;beiZoom.Name" xml:space="preserve">
+    <value>beiZoom</value>
+  </data>
+  <data name="&gt;&gt;beiZoom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemZoomTrackBar1.Name" xml:space="preserve">
+    <value>repositoryItemZoomTrackBar1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemZoomTrackBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiNormal.Name" xml:space="preserve">
+    <value>bbiNormal</value>
+  </data>
+  <data name="&gt;&gt;bbiNormal.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiReading.Name" xml:space="preserve">
+    <value>bbiReading</value>
+  </data>
+  <data name="&gt;&gt;bbiReading.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bsiTemp.Name" xml:space="preserve">
+    <value>bsiTemp</value>
+  </data>
+  <data name="&gt;&gt;bsiTemp.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiManageView.Name" xml:space="preserve">
+    <value>bbiManageView</value>
+  </data>
+  <data name="&gt;&gt;bbiManageView.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiSaveCurrentView.Name" xml:space="preserve">
+    <value>bbiSaveCurrentView</value>
+  </data>
+  <data name="&gt;&gt;bbiSaveCurrentView.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgbiCurrentViewTasks.Name" xml:space="preserve">
+    <value>rgbiCurrentViewTasks</value>
+  </data>
+  <data name="&gt;&gt;rgbiCurrentViewTasks.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiTodayFlag.Name" xml:space="preserve">
+    <value>bbiTodayFlag</value>
+  </data>
+  <data name="&gt;&gt;bbiTodayFlag.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiTomorrowFlag.Name" xml:space="preserve">
+    <value>bbiTomorrowFlag</value>
+  </data>
+  <data name="&gt;&gt;bbiTomorrowFlag.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiThisWeekFlag.Name" xml:space="preserve">
+    <value>bbiThisWeekFlag</value>
+  </data>
+  <data name="&gt;&gt;bbiThisWeekFlag.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiNextWeekFlag.Name" xml:space="preserve">
+    <value>bbiNextWeekFlag</value>
+  </data>
+  <data name="&gt;&gt;bbiNextWeekFlag.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiNoDateFlag.Name" xml:space="preserve">
+    <value>bbiNoDateFlag</value>
+  </data>
+  <data name="&gt;&gt;bbiNoDateFlag.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiCustomFlag.Name" xml:space="preserve">
+    <value>bbiCustomFlag</value>
+  </data>
+  <data name="&gt;&gt;bbiCustomFlag.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiNewContact.Name" xml:space="preserve">
+    <value>bbiNewContact</value>
+  </data>
+  <data name="&gt;&gt;bbiNewContact.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiEditContact.Name" xml:space="preserve">
+    <value>bbiEditContact</value>
+  </data>
+  <data name="&gt;&gt;bbiEditContact.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteContact.Name" xml:space="preserve">
+    <value>bbiDeleteContact</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteContact.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiNewTask.Name" xml:space="preserve">
+    <value>bbiNewTask</value>
+  </data>
+  <data name="&gt;&gt;bbiNewTask.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiEditTask.Name" xml:space="preserve">
+    <value>bbiEditTask</value>
+  </data>
+  <data name="&gt;&gt;bbiEditTask.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteTask.Name" xml:space="preserve">
+    <value>bbiDeleteTask</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteTask.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;newAppointmentItem1.Name" xml:space="preserve">
+    <value>newAppointmentItem1</value>
+  </data>
+  <data name="&gt;&gt;newAppointmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.NewAppointmentItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;newRecurringAppointmentItem1.Name" xml:space="preserve">
+    <value>newRecurringAppointmentItem1</value>
+  </data>
+  <data name="&gt;&gt;newRecurringAppointmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.NewRecurringAppointmentItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navigateViewBackwardItem1.Name" xml:space="preserve">
+    <value>navigateViewBackwardItem1</value>
+  </data>
+  <data name="&gt;&gt;navigateViewBackwardItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.NavigateViewBackwardItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navigateViewForwardItem1.Name" xml:space="preserve">
+    <value>navigateViewForwardItem1</value>
+  </data>
+  <data name="&gt;&gt;navigateViewForwardItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.NavigateViewForwardItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gotoTodayItem1.Name" xml:space="preserve">
+    <value>gotoTodayItem1</value>
+  </data>
+  <data name="&gt;&gt;gotoTodayItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.GotoTodayItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;viewZoomInItem1.Name" xml:space="preserve">
+    <value>viewZoomInItem1</value>
+  </data>
+  <data name="&gt;&gt;viewZoomInItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.ViewZoomInItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;viewZoomOutItem1.Name" xml:space="preserve">
+    <value>viewZoomOutItem1</value>
+  </data>
+  <data name="&gt;&gt;viewZoomOutItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.ViewZoomOutItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;switchToDayViewItem1.Name" xml:space="preserve">
+    <value>switchToDayViewItem1</value>
+  </data>
+  <data name="&gt;&gt;switchToDayViewItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SwitchToDayViewItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;switchToWorkWeekViewItem1.Name" xml:space="preserve">
+    <value>switchToWorkWeekViewItem1</value>
+  </data>
+  <data name="&gt;&gt;switchToWorkWeekViewItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SwitchToWorkWeekViewItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;switchToWeekViewItem1.Name" xml:space="preserve">
+    <value>switchToWeekViewItem1</value>
+  </data>
+  <data name="&gt;&gt;switchToWeekViewItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SwitchToWeekViewItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;switchToMonthViewItem1.Name" xml:space="preserve">
+    <value>switchToMonthViewItem1</value>
+  </data>
+  <data name="&gt;&gt;switchToMonthViewItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SwitchToMonthViewItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;switchToTimelineViewItem1.Name" xml:space="preserve">
+    <value>switchToTimelineViewItem1</value>
+  </data>
+  <data name="&gt;&gt;switchToTimelineViewItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SwitchToTimelineViewItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;groupByNoneItem1.Name" xml:space="preserve">
+    <value>groupByNoneItem1</value>
+  </data>
+  <data name="&gt;&gt;groupByNoneItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.GroupByNoneItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;groupByDateItem1.Name" xml:space="preserve">
+    <value>groupByDateItem1</value>
+  </data>
+  <data name="&gt;&gt;groupByDateItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.GroupByDateItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;groupByResourceItem1.Name" xml:space="preserve">
+    <value>groupByResourceItem1</value>
+  </data>
+  <data name="&gt;&gt;groupByResourceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.GroupByResourceItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;switchTimeScalesItem1.Name" xml:space="preserve">
+    <value>switchTimeScalesItem1</value>
+  </data>
+  <data name="&gt;&gt;switchTimeScalesItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SwitchTimeScalesItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;switchCompressWeekendItem1.Name" xml:space="preserve">
+    <value>switchCompressWeekendItem1</value>
+  </data>
+  <data name="&gt;&gt;switchCompressWeekendItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SwitchCompressWeekendItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;switchShowWorkTimeOnlyItem1.Name" xml:space="preserve">
+    <value>switchShowWorkTimeOnlyItem1</value>
+  </data>
+  <data name="&gt;&gt;switchShowWorkTimeOnlyItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SwitchShowWorkTimeOnlyItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;editAppointmentQueryItem1.Name" xml:space="preserve">
+    <value>editAppointmentQueryItem1</value>
+  </data>
+  <data name="&gt;&gt;editAppointmentQueryItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.EditAppointmentQueryItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;editOccurrenceUICommandItem1.Name" xml:space="preserve">
+    <value>editOccurrenceUICommandItem1</value>
+  </data>
+  <data name="&gt;&gt;editOccurrenceUICommandItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.EditOccurrenceUICommandItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;editSeriesUICommandItem1.Name" xml:space="preserve">
+    <value>editSeriesUICommandItem1</value>
+  </data>
+  <data name="&gt;&gt;editSeriesUICommandItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.EditSeriesUICommandItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;deleteAppointmentsItem1.Name" xml:space="preserve">
+    <value>deleteAppointmentsItem1</value>
+  </data>
+  <data name="&gt;&gt;deleteAppointmentsItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.DeleteAppointmentsItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;deleteOccurrenceItem1.Name" xml:space="preserve">
+    <value>deleteOccurrenceItem1</value>
+  </data>
+  <data name="&gt;&gt;deleteOccurrenceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.DeleteOccurrenceItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;deleteSeriesItem1.Name" xml:space="preserve">
+    <value>deleteSeriesItem1</value>
+  </data>
+  <data name="&gt;&gt;deleteSeriesItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.DeleteSeriesItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;splitAppointmentItem1.Name" xml:space="preserve">
+    <value>splitAppointmentItem1</value>
+  </data>
+  <data name="&gt;&gt;splitAppointmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SplitAppointmentItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeAppointmentStatusItem1.Name" xml:space="preserve">
+    <value>changeAppointmentStatusItem1</value>
+  </data>
+  <data name="&gt;&gt;changeAppointmentStatusItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentStatusItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeAppointmentLabelItem1.Name" xml:space="preserve">
+    <value>changeAppointmentLabelItem1</value>
+  </data>
+  <data name="&gt;&gt;changeAppointmentLabelItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentLabelItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleRecurrenceItem1.Name" xml:space="preserve">
+    <value>toggleRecurrenceItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleRecurrenceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.ToggleRecurrenceItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeAppointmentReminderItem1.Name" xml:space="preserve">
+    <value>changeAppointmentReminderItem1</value>
+  </data>
+  <data name="&gt;&gt;changeAppointmentReminderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentReminderItem, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemDuration1.Name" xml:space="preserve">
+    <value>repositoryItemDuration1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemDuration1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.RepositoryItemDuration, DevExpress.XtraScheduler.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiShowPreview.Name" xml:space="preserve">
+    <value>bbiShowPreview</value>
+  </data>
+  <data name="&gt;&gt;bbiShowPreview.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bsiConnected.Name" xml:space="preserve">
+    <value>bsiConnected</value>
+  </data>
+  <data name="&gt;&gt;bsiConnected.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;biRename.Name" xml:space="preserve">
+    <value>biRename</value>
+  </data>
+  <data name="&gt;&gt;biRename.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;biCreateFolder.Name" xml:space="preserve">
+    <value>biCreateFolder</value>
+  </data>
+  <data name="&gt;&gt;biCreateFolder.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bbiReminder.Name" xml:space="preserve">
+    <value>bbiReminder</value>
+  </data>
+  <data name="&gt;&gt;bbiReminder.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;skinDropDownButtonItem1.Name" xml:space="preserve">
+    <value>skinDropDownButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;skinDropDownButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.SkinDropDownButtonItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;skinPaletteRibbonGalleryBarItem1.Name" xml:space="preserve">
+    <value>skinPaletteRibbonGalleryBarItem1</value>
+  </data>
+  <data name="&gt;&gt;skinPaletteRibbonGalleryBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpcSearch.Name" xml:space="preserve">
+    <value>rpcSearch</value>
+  </data>
+  <data name="&gt;&gt;rpcSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageCategory, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpSearch.Name" xml:space="preserve">
+    <value>rpSearch</value>
+  </data>
+  <data name="&gt;&gt;rpSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgFind.Name" xml:space="preserve">
+    <value>rpgFind</value>
+  </data>
+  <data name="&gt;&gt;rpgFind.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgFilterColumns.Name" xml:space="preserve">
+    <value>rpgFilterColumns</value>
+  </data>
+  <data name="&gt;&gt;rpgFilterColumns.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rbgClose.Name" xml:space="preserve">
+    <value>rbgClose</value>
+  </data>
+  <data name="&gt;&gt;rbgClose.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;calendarToolsRibbonPageCategory1.Name" xml:space="preserve">
+    <value>calendarToolsRibbonPageCategory1</value>
+  </data>
+  <data name="&gt;&gt;calendarToolsRibbonPageCategory1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.CalendarToolsRibbonPageCategory, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;appointmentRibbonPage1.Name" xml:space="preserve">
+    <value>appointmentRibbonPage1</value>
+  </data>
+  <data name="&gt;&gt;appointmentRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.AppointmentRibbonPage, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;actionsRibbonPageGroup1.Name" xml:space="preserve">
+    <value>actionsRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;actionsRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.ActionsRibbonPageGroup, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;optionsRibbonPageGroup1.Name" xml:space="preserve">
+    <value>optionsRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;optionsRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.OptionsRibbonPageGroup, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpMail.Name" xml:space="preserve">
+    <value>rpMail</value>
+  </data>
+  <data name="&gt;&gt;rpMail.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgNew.Name" xml:space="preserve">
+    <value>rpgNew</value>
+  </data>
+  <data name="&gt;&gt;rpgNew.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgDelete.Name" xml:space="preserve">
+    <value>rpgDelete</value>
+  </data>
+  <data name="&gt;&gt;rpgDelete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgTags.Name" xml:space="preserve">
+    <value>rpgTags</value>
+  </data>
+  <data name="&gt;&gt;rpgTags.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgLayoutMail.Name" xml:space="preserve">
+    <value>rpgLayoutMail</value>
+  </data>
+  <data name="&gt;&gt;rpgLayoutMail.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpCalendar.Name" xml:space="preserve">
+    <value>rpCalendar</value>
+  </data>
+  <data name="&gt;&gt;rpCalendar.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;appointmentRibbonPageGroup1.Name" xml:space="preserve">
+    <value>appointmentRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;appointmentRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navigatorRibbonPageGroup1.Name" xml:space="preserve">
+    <value>navigatorRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;navigatorRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;arrangeRibbonPageGroup1.Name" xml:space="preserve">
+    <value>arrangeRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;arrangeRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.ArrangeRibbonPageGroup, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;groupByRibbonPageGroup1.Name" xml:space="preserve">
+    <value>groupByRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;groupByRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.GroupByRibbonPageGroup, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutRibbonPageGroup1.Name" xml:space="preserve">
+    <value>layoutRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpContacts.Name" xml:space="preserve">
+    <value>rpContacts</value>
+  </data>
+  <data name="&gt;&gt;rpContacts.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgContacts.Name" xml:space="preserve">
+    <value>rpgContacts</value>
+  </data>
+  <data name="&gt;&gt;rpgContacts.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgCurrentView.Name" xml:space="preserve">
+    <value>rpgCurrentView</value>
+  </data>
+  <data name="&gt;&gt;rpgCurrentView.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgLayoutContacts.Name" xml:space="preserve">
+    <value>rpgLayoutContacts</value>
+  </data>
+  <data name="&gt;&gt;rpgLayoutContacts.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpFeeds.Name" xml:space="preserve">
+    <value>rpFeeds</value>
+  </data>
+  <data name="&gt;&gt;rpFeeds.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgFeeds.Name" xml:space="preserve">
+    <value>rpgFeeds</value>
+  </data>
+  <data name="&gt;&gt;rpgFeeds.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgActionsFeeds.Name" xml:space="preserve">
+    <value>rpgActionsFeeds</value>
+  </data>
+  <data name="&gt;&gt;rpgActionsFeeds.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgLayoutFeeds.Name" xml:space="preserve">
+    <value>rpgLayoutFeeds</value>
+  </data>
+  <data name="&gt;&gt;rpgLayoutFeeds.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpTasks.Name" xml:space="preserve">
+    <value>rpTasks</value>
+  </data>
+  <data name="&gt;&gt;rpTasks.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgTasks.Name" xml:space="preserve">
+    <value>rpgTasks</value>
+  </data>
+  <data name="&gt;&gt;rpgTasks.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgFollowUp.Name" xml:space="preserve">
+    <value>rpgFollowUp</value>
+  </data>
+  <data name="&gt;&gt;rpgFollowUp.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpdCurrentViewTasks.Name" xml:space="preserve">
+    <value>rpdCurrentViewTasks</value>
+  </data>
+  <data name="&gt;&gt;rpdCurrentViewTasks.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpView.Name" xml:space="preserve">
+    <value>rpView</value>
+  </data>
+  <data name="&gt;&gt;rpView.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rpgNavigation.Name" xml:space="preserve">
+    <value>rpgNavigation</value>
+  </data>
+  <data name="&gt;&gt;rpgNavigation.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;prgAppearance.Name" xml:space="preserve">
+    <value>prgAppearance</value>
+  </data>
+  <data name="&gt;&gt;prgAppearance.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;nbgMail.Name" xml:space="preserve">
+    <value>nbgMail</value>
+  </data>
+  <data name="&gt;&gt;nbgMail.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;nbgTasks.Name" xml:space="preserve">
+    <value>nbgTasks</value>
+  </data>
+  <data name="&gt;&gt;nbgTasks.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;nbgCalendar.Name" xml:space="preserve">
+    <value>nbgCalendar</value>
+  </data>
+  <data name="&gt;&gt;nbgCalendar.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;nbgContacts.Name" xml:space="preserve">
+    <value>nbgContacts</value>
+  </data>
+  <data name="&gt;&gt;nbgContacts.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;pmTreeView.Name" xml:space="preserve">
+    <value>pmTreeView</value>
+  </data>
+  <data name="&gt;&gt;pmTreeView.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;pmMessage.Name" xml:space="preserve">
+    <value>pmMessage</value>
+  </data>
+  <data name="&gt;&gt;pmMessage.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;pmFlagStatus.Name" xml:space="preserve">
+    <value>pmFlagStatus</value>
+  </data>
+  <data name="&gt;&gt;pmFlagStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;schedulerBarController1.Name" xml:space="preserve">
+    <value>schedulerBarController1</value>
+  </data>
+  <data name="&gt;&gt;schedulerBarController1.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SchedulerBarController, DevExpress.XtraScheduler.v26.1.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v26.1, Culture=neutral</value>
+  </data>
+</root>

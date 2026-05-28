@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A426FBCC-0D41-4FD0-ABC8-7C5EF4519DFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.StockMarketTrader</RootNamespace>
+    <AssemblyName>DevExpress.StockMarketTrader</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>Images\DX.ico</ApplicationIcon>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+</PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Wizard"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>
+    <Reference Include="Microsoft.CSharp"><Private>False</Private></Reference>
+    <Reference Include="System.Core"><Private>False</Private></Reference>
+    <Reference Include="System.Xml.Linq"><Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\BusinessObjects.cs" />
+    <Compile Include="Model\Executor.cs" />
+    <Compile Include="Model\NetWorkMonitor.cs" />
+    <Compile Include="Model\RealTimeDataModel.cs" />
+    <Compile Include="Model\StockDataOfflineProvider.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Service References\StockDataServiceReference\Reference.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockMarketView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockMarketView.Designer.cs">
+      <DependentUpon>StockMarketView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockWorkspacesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockWorkspacesUC.Designer.cs">
+      <DependentUpon>StockWorkspacesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockChart\StockChartUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockChart\StockChartUC.Designer.cs">
+      <DependentUpon>StockChartUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\TileChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tiles\TileChart.Designer.cs">
+      <DependentUpon>TileChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\TileChartMedium.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tiles\TileChartMedium.Designer.cs">
+      <DependentUpon>TileChartMedium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\TileTop3Companies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tiles\TileTop3Companies.Designer.cs">
+      <DependentUpon>TileTop3Companies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\TileTop3CompaniesMedium.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tiles\TileTop3CompaniesMedium.Designer.cs">
+      <DependentUpon>TileTop3CompaniesMedium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\ucPinButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tiles\ucPinButton.Designer.cs">
+      <DependentUpon>ucPinButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\BusinessObjectsViewModel.cs" />
+    <Compile Include="ViewModel\RealTimeDataViewModel.cs" />
+    <Compile Include="ViewModel\TileViewModels.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockMarketView.resx">
+      <DependentUpon>StockMarketView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockWorkspacesUC.resx">
+      <DependentUpon>StockWorkspacesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockChart\StockChartUC.resx">
+      <DependentUpon>StockChartUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\DX.ico" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\TileChart.resx">
+      <DependentUpon>TileChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\TileChartMedium.resx">
+      <DependentUpon>TileChartMedium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\TileTop3Companies.resx">
+      <DependentUpon>TileTop3Companies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\TileTop3CompaniesMedium.resx">
+      <DependentUpon>TileTop3CompaniesMedium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\ucPinButton.resx">
+      <DependentUpon>ucPinButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\Companies.xml" />
+    <EmbeddedResource Include="Data\StockData.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagesSvg\1-5y.svg" />
+    <EmbeddedResource Include="ImagesSvg\1y.svg" />
+    <EmbeddedResource Include="ImagesSvg\2y.svg" />
+    <EmbeddedResource Include="ImagesSvg\4y.svg" />
+    <EmbeddedResource Include="ImagesSvg\6m.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagesSvg\App Logo.svg" />
+    <EmbeddedResource Include="ImagesSvg\Down.svg" />
+    <EmbeddedResource Include="ImagesSvg\DX Logo.svg" />
+    <EmbeddedResource Include="ImagesSvg\Up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImagesSvg\Connected.svg" />
+    <EmbeddedResource Include="ImagesSvg\Help.svg" />
+    <EmbeddedResource Include="ImagesSvg\Swatches.svg" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

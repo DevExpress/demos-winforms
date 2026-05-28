@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98431A0A-982C-410D-B1FB-06AD13D4ACFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.DevAV</RootNamespace>
+    <AssemblyName>DevExpress.HybridApp.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8WindowsRazor />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DevAV.v26.1.Data"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DevAV.v26.1.Reports"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Images.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Map.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Drawing"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Wizard"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraMap.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+    <Reference Include="System.Core"><Private>False</Private></Reference>
+    <Reference Include="System.Management"><Private>False</Private></Reference>
+    <Reference Include="System.Xml.Linq"><Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>
+    <Reference Include="Microsoft.CSharp"><Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>
+    <Reference Include="WindowsBase"><Private>False</Private></Reference>
+    <Reference Include="PresentationCore"><Private>False</Private></Reference>
+    <Reference Include="PresentationFramework"><Private>False</Private></Reference>
+    <PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+	<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+       <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DataModel\DbExceptions.cs" />
+    <Compile Include="Common\DataModel\EntityFramework\DbExceptionsConverter.cs" />
+    <Compile Include="Common\DataModel\EntityFramework\DbReadOnlyRepository.cs" />
+    <Compile Include="Common\DataModel\EntityFramework\DbRepository.cs" />
+    <Compile Include="Common\DataModel\EntityFramework\DbUnitOfWork.cs" />
+    <Compile Include="Common\DataModel\EntityFramework\DbUnitOfWorkFactory.cs" />
+    <Compile Include="Common\DataModel\EntityFramework\InstantFeedbackSource.cs" />
+    <Compile Include="Common\DataModel\EntityState.cs" />
+    <Compile Include="Common\DataModel\IReadOnlyRepository.cs" />
+    <Compile Include="Common\DataModel\IRepository.cs" />
+    <Compile Include="Common\DataModel\IUnitOfWork.cs" />
+    <Compile Include="Common\DataModel\UnitOfWorkBase.cs" />
+    <Compile Include="Common\LayoutSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>LayoutSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utils\DbExtensions.cs" />
+    <Compile Include="Common\Utils\DeviceDetector.cs" />
+    <Compile Include="Common\Utils\ExpressionHelper.cs" />
+    <Compile Include="Common\ViewModel\EntitiesViewModel.partial.cs" />
+    <Compile Include="Common\ViewModel\CollectionViewModel.cs" />
+    <Compile Include="Common\ViewModel\DocumentManagerServiceExtensions.cs" />
+    <Compile Include="Common\ViewModel\DocumentsViewModel.cs" />
+    <Compile Include="Common\ViewModel\EntitiesViewModel.cs" />
+    <Compile Include="Common\ViewModel\InstantFeedbackCollectionViewModel.cs" />
+    <Compile Include="Common\ViewModel\ISingleObjectViewModel.cs" />
+    <Compile Include="Common\ViewModel\LookUpEntitiesViewModel.cs" />
+    <Compile Include="Common\ViewModel\Messages.cs" />
+    <Compile Include="Common\ViewModel\PeekCollectionViewModel.cs" />
+    <Compile Include="Common\ViewModel\PersistentLayoutHelper.cs" />
+    <Compile Include="Common\ViewModel\ReadOnlyCollectionViewModel.cs" />
+    <Compile Include="Common\ViewModel\SingleObjectViewModel.cs" />
+    <Compile Include="Controls\ButtonsPanel.cs" />
+    <Compile Include="Controls\GridViewWithButtons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevAVDbDataModel\DevAVDbUnitOfWork.cs" />
+    <Compile Include="DevAVDbDataModel\IDevAVDbUnitOfWork.cs" />
+    <Compile Include="DevAVDbDataModel\UnitOfWorkSource.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ReportService.cs" />
+    <Compile Include="ViewModels\Common\CommonClasses.cs" />
+    <Compile Include="ViewModels\Common\CustomFilterViewModel.cs" />
+    <Compile Include="ViewModels\Common\FiltersSettings.cs" />
+    <Compile Include="ViewModels\DashboardViewModel.cs" />
+    <Compile Include="ViewModels\Employee\EmployeeViewModel.partial.cs" />
+    <Compile Include="ViewModels\Employee\EmployeeMailMergeViewModel.cs" />
+    <Compile Include="ViewModels\MailMergeTemplatesHelper.cs" />
+    <Compile Include="ViewModels\Customer\CustomerViewModel.partial.cs" />
+    <Compile Include="ViewModels\EmployeeReportType.cs" />
+    <Compile Include="ViewModels\Common\FilterModelSettings.cs" />
+    <Compile Include="ViewModels\Common\FilterViewModel.cs" />
+    <Compile Include="ViewModels\Common\FilterViewModelBase.cs" />
+    <Compile Include="ViewModels\Crest\CrestCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Crest\CrestViewModel.cs" />
+    <Compile Include="ViewModels\CustomerCommunication\CustomerCommunicationCollectionViewModel.cs" />
+    <Compile Include="ViewModels\CustomerCommunication\CustomerCommunicationViewModel.cs" />
+    <Compile Include="ViewModels\CustomerEmployee\CustomerEmployeeCollectionViewModel.cs" />
+    <Compile Include="ViewModels\CustomerEmployee\CustomerEmployeeViewModel.cs" />
+    <Compile Include="ViewModels\CustomerStore\CustomerStoreCollectionViewModel.cs" />
+    <Compile Include="ViewModels\CustomerStore\CustomerStoreViewModel.cs" />
+    <Compile Include="ViewModels\Customer\CustomerCollectionViewModel.partial.cs" />
+    <Compile Include="ViewModels\Customer\CustomerCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Customer\CustomerFilterViewModel.cs" />
+    <Compile Include="ViewModels\Customer\CustomerViewModel.cs" />
+    <Compile Include="ViewModels\DatabaseVersion\DatabaseVersionCollectionViewModel.cs" />
+    <Compile Include="ViewModels\DatabaseVersion\DatabaseVersionViewModel.cs" />
+    <Compile Include="ViewModels\DevAVDbViewModel.cs" />
+    <Compile Include="ViewModels\DevAVDbViewModel.partial.cs" />
+    <Compile Include="ViewModels\EmployeeTask\EmployeeTaskViewModel.partial.cs" />
+    <Compile Include="ViewModels\EmployeeTask\EmployeeTaskCollectionViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeTask\EmployeeTaskCollectionViewModel.partial.cs" />
+    <Compile Include="ViewModels\EmployeeTask\EmployeeTaskFilterViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeTask\EmployeeTaskViewModel.cs" />
+    <Compile Include="ViewModels\Employee\EmployeeCollectionViewModel.partial.cs" />
+    <Compile Include="ViewModels\Employee\EmployeeCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Employee\EmployeesFilterViewModel.cs" />
+    <Compile Include="ViewModels\Employee\EmployeeViewModel.cs" />
+    <Compile Include="ViewModels\Evaluation\EvaluationCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Evaluation\EvaluationViewModel.cs" />
+    <Compile Include="ViewModels\Evaluation\EvaluationViewModel.partial.cs" />
+    <Compile Include="ViewModels\MailMergeViewModel.cs" />
+    <Compile Include="ViewModels\OrderItem\OrderItemCollectionViewModel.cs" />
+    <Compile Include="ViewModels\OrderItem\OrderItemViewModel.cs" />
+    <Compile Include="ViewModels\Order\OrderCollectionViewModel.partial.cs" />
+    <Compile Include="ViewModels\Order\OrderViewModel.partial.cs" />
+    <Compile Include="ViewModels\Order\OrderCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Order\OrderViewModel.cs" />
+    <Compile Include="ViewModels\Picture\PictureCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Picture\PictureViewModel.cs" />
+    <Compile Include="ViewModels\PrintableControlPreviewViewModel.cs" />
+    <Compile Include="ViewModels\Probation\ProbationCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Probation\ProbationViewModel.cs" />
+    <Compile Include="ViewModels\ProductCatalog\ProductCatalogCollectionViewModel.cs" />
+    <Compile Include="ViewModels\ProductCatalog\ProductCatalogViewModel.cs" />
+    <Compile Include="ViewModels\ProductImage\ProductImageCollectionViewModel.cs" />
+    <Compile Include="ViewModels\ProductImage\ProductImageViewModel.cs" />
+    <Compile Include="ViewModels\Product\ProductCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Product\ProductCollectionViewModel.partial.cs" />
+    <Compile Include="ViewModels\Product\ProductFilterViewModel.cs" />
+    <Compile Include="ViewModels\Product\ProductViewModel.partial.cs" />
+    <Compile Include="ViewModels\Product\ProductViewModel.cs" />
+    <Compile Include="ViewModels\QuoteItem\QuoteItemCollectionViewModel.cs" />
+    <Compile Include="ViewModels\QuoteItem\QuoteItemViewModel.cs" />
+    <Compile Include="ViewModels\Quote\QuoteCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Quote\QuoteCollectionViewModel.partial.cs" />
+    <Compile Include="ViewModels\Quote\QuoteViewModel.cs" />
+    <Compile Include="ViewModels\ReportInfoFactory.cs" />
+    <Compile Include="ViewModels\ReportPreviewViewModel.cs" />
+    <Compile Include="ViewModels\State\StateCollectionViewModel.cs" />
+    <Compile Include="ViewModels\State\StateViewModel.cs" />
+    <Compile Include="ViewModels\MapViewModel.cs" />
+    <Compile Include="Views\Common\BaseCustomFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Common\BaseCustomFilterView.Designer.cs">
+      <DependentUpon>BaseCustomFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\BaseFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Common\BaseFilterView.Designer.cs">
+      <DependentUpon>BaseFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\BaseViewWithWinUIButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Common\BaseViewWithWinUIButtons.Designer.cs">
+      <DependentUpon>BaseViewWithWinUIButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\Extensions.cs" />
+    <Compile Include="Views\Common\FilterCollectionViewBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Common\FilterCollectionViewBase.Designer.cs">
+      <DependentUpon>FilterCollectionViewBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customer\CustomerCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Customer\CustomerCollectionView.Designer.cs">
+      <DependentUpon>CustomerCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customer\CustomerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Customer\CustomerView.Designer.cs">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CustomFilterView.Designer.cs">
+      <DependentUpon>CustomFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeTask\EmployeeTaskCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeeTask\EmployeeTaskCollectionView.Designer.cs">
+      <DependentUpon>EmployeeTaskCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeTask\EmployeeTaskFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeeTask\EmployeeTaskFilterView.Designer.cs">
+      <DependentUpon>EmployeeTaskFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeTask\EmployeeTaskView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeeTask\EmployeeTaskView.Designer.cs">
+      <DependentUpon>EmployeeTaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeCollectionView.Designer.cs">
+      <DependentUpon>EmployeeCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeMailMergeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeMailMergeView.Designer.cs">
+      <DependentUpon>EmployeeMailMergeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeReportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeReportView.Designer.cs">
+      <DependentUpon>EmployeeReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeesFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeesFilterView.Designer.cs">
+      <DependentUpon>EmployeesFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeView.Designer.cs">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MapView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MapView.Designer.cs">
+      <DependentUpon>MapView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Note\NoteView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Note\NoteView.Designer.cs">
+      <DependentUpon>NoteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Order\OrderCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Order\OrderCollectionView.Designer.cs">
+      <DependentUpon>OrderCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Order\OrderView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Order\OrderView.Designer.cs">
+      <DependentUpon>OrderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrintableControlPrintPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PrintableControlPrintPreview.Designer.cs">
+      <DependentUpon>PrintableControlPrintPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Product\ProductCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Product\ProductCollectionView.Designer.cs">
+      <DependentUpon>ProductCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Product\ProductFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Product\ProductFilterView.Designer.cs">
+      <DependentUpon>ProductFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Product\ProductView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Product\ProductView.Designer.cs">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Quote\QuoteCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Quote\QuoteCollectionView.Designer.cs">
+      <DependentUpon>QuoteCollectionView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Common\CommonResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Common\BaseCustomFilterView.resx">
+      <DependentUpon>BaseCustomFilterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\BaseFilterView.resx">
+      <DependentUpon>BaseFilterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\BaseViewWithWinUIButtons.resx">
+      <DependentUpon>BaseViewWithWinUIButtons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Common\FilterCollectionViewBase.resx">
+      <DependentUpon>FilterCollectionViewBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Customer\CustomerCollectionView.resx">
+      <DependentUpon>CustomerCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Customer\CustomerView.resx">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomFilterView.resx">
+      <DependentUpon>CustomFilterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboard\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeTask\EmployeeTaskCollectionView.resx">
+      <DependentUpon>EmployeeTaskCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeTask\EmployeeTaskFilterView.resx">
+      <DependentUpon>EmployeeTaskFilterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeTask\EmployeeTaskView.resx">
+      <DependentUpon>EmployeeTaskView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\EmployeeCollectionView.resx">
+      <DependentUpon>EmployeeCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\EmployeeMailMergeView.resx">
+      <DependentUpon>EmployeeMailMergeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\EmployeeReportView.resx">
+      <DependentUpon>EmployeeReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\EmployeesFilterView.resx">
+      <DependentUpon>EmployeesFilterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\EmployeeView.resx">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MapView.resx">
+      <DependentUpon>MapView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Note\NoteView.resx">
+      <DependentUpon>NoteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Order\OrderCollectionView.resx">
+      <DependentUpon>OrderCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Order\OrderView.resx">
+      <DependentUpon>OrderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrintableControlPrintPreview.resx">
+      <DependentUpon>PrintableControlPrintPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Product\ProductCollectionView.resx">
+      <DependentUpon>ProductCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Product\ProductFilterView.resx">
+      <DependentUpon>ProductFilterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Product\ProductView.resx">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Quote\QuoteCollectionView.resx">
+      <DependentUpon>QuoteCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Common\LayoutSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>LayoutSettings.Designer.cs</LastGenOutput>
+    </None>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Resources\Map\NorthAmerica.dbf" />
+    <EmbeddedResource Include="Resources\Map\NorthAmerica.shp" />
+    <Resource Include="Resources\Analysis\CustomerAnalysis.xlsx" />
+    <Resource Include="Resources\Analysis\ProductAnalysis.xlsx" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee of the Month.rtf" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee of the Month.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Probation Notice.rtf" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Probation Notice.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Service Excellence.rtf" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Service Excellence.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Thank You Note.rtf" />
+    <EmbeddedResource Include="Resources\MailMerge\Employee Thank You Note.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Order.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Sales Analysys Report.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Sales Invoice.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Sales Order Summary Report.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Sales Thank You.rtf" />
+    <EmbeddedResource Include="Resources\MailMerge\Sales Thank You.snx" />
+    <EmbeddedResource Include="Resources\MailMerge\Welcome to DevAV.rtf" />
+    <EmbeddedResource Include="Resources\MailMerge\Welcome to DevAV.snx" />
+    <Resource Include="Resources\NorthAmerica.dbf" />
+    <Resource Include="Resources\NorthAmerica.shp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpress-Logo.svg" />
+    <EmbeddedResource Include="Resources\Window\navButtonInfo.Glyph.png" />
+    <EmbeddedResource Include="Resources\AppIcon.ico" />
+    <Resource Include="Resources\ArrowLeft.png" />
+    <Resource Include="Resources\ArrowRight.png" />
+    <Resource Include="Resources\DevExpress.ico" />
+    <Resource Include="Resources\PrintItems\Preview\DefaultPrinter_32x32.png" />
+    <Resource Include="Resources\PrintItems\Preview\Fax_32x32.png" />
+    <Resource Include="Resources\PrintItems\Preview\Printer_32x32.png" />
+    <EmbeddedResource Include="Resources\PrintItems\Print.png" />
+    <Resource Include="Resources\Universal.ico" />
+    <EmbeddedResource Include="Resources\Window\navButtonClose.Glyph.png" />
+    <EmbeddedResource Include="Resources\Window\navButtonHelp.Glyph.png" />
+    <EmbeddedResource Include="Resources\Window\navButtonHome.Glyph.png" />
+    <EmbeddedResource Include="Resources\Window\navButtonSettings.Glyph.png" />
+    <Resource Include="Resources\WPF.ico" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

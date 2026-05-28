@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6BFBFFD-032A-45C9-A874-C074EC1B7EE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DevExpress.ChatClient</RootNamespace>
+    <AssemblyName>DevExpress.ChatClient</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+</PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.DevAV.v26.1.Data"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+    <Reference Include="System.Core"><Private>False</Private></Reference>
+    <Reference Include="Microsoft.CSharp"><Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>
+    <PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+	<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+       <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\AppSettigns.cs" />
+    <Compile Include="Services\ISettingsService.cs" />
+    <Compile Include="ViewModels\Base\ChannelViewModel.cs" />
+    <Compile Include="ViewModels\ContactsViewModel.cs" />
+    <Compile Include="ViewModels\ContactViewModel.cs" />
+    <Compile Include="ViewModels\Base\UserInfoViewModel.cs" />
+    <Compile Include="ViewModels\SignInViewModel.cs" />
+    <Compile Include="ViewModels\MessagesViewModel.cs" />
+    <Compile Include="ViewModels\MessengerViewModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="Views\ContactsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ContactsView.Designer.cs">
+      <DependentUpon>ContactsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SignInView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SignInView.Designer.cs">
+      <DependentUpon>SignInView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MessagesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MessagesView.Designer.cs">
+      <DependentUpon>MessagesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatClient.Designer.cs">
+      <DependentUpon>ChatClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Style.cs" />
+    <EmbeddedResource Include="Views\ContactsView.resx">
+      <DependentUpon>ContactsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SignInView.resx">
+      <DependentUpon>SignInView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MessagesView.resx">
+      <DependentUpon>MessagesView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatClient.resx">
+      <DependentUpon>ChatClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Css\Contact.Css" />
+    <EmbeddedResource Include="Resources\Css\ContactInfo.Css" />
+    <EmbeddedResource Include="Resources\Css\ContactTooltip.Css" />
+    <EmbeddedResource Include="Resources\Css\Menu.Css" />
+    <EmbeddedResource Include="Resources\Css\Message.Css" />
+    <EmbeddedResource Include="Resources\Css\MyMessage.Css" />
+    <EmbeddedResource Include="Resources\Css\NoMessages.Css" />
+    <EmbeddedResource Include="Resources\Css\SearchPanel.Css" />
+    <EmbeddedResource Include="Resources\Css\SignIn.Css" />
+    <EmbeddedResource Include="Resources\Css\Toolbar.Css" />
+    <EmbeddedResource Include="Resources\Css\TypingBox.Css" />
+    <EmbeddedResource Include="Resources\Css\UserInfo.Css" />
+    <EmbeddedResource Include="Resources\Html\ContactTooltip.Html" />
+    <EmbeddedResource Include="Resources\Html\Contact.Html" />
+    <EmbeddedResource Include="Resources\Html\ContactInfo.Html" />
+    <EmbeddedResource Include="Resources\Html\ContactMenu.Html" />
+    <EmbeddedResource Include="Resources\Html\Menu.Html" />
+    <EmbeddedResource Include="Resources\Html\MyMenu.Html" />
+    <EmbeddedResource Include="Resources\Html\Message.Html" />
+    <EmbeddedResource Include="Resources\Html\MyMessage.Html" />
+    <EmbeddedResource Include="Resources\Html\NoMessages.Html" />
+    <EmbeddedResource Include="Resources\Html\SearchPanel.Html" />
+    <EmbeddedResource Include="Resources\Html\SignIn.Html" />
+    <EmbeddedResource Include="Resources\Html\Toolbar.Html" />
+    <EmbeddedResource Include="Resources\Html\TypingBox.Html" />
+    <EmbeddedResource Include="Resources\Html\UserInfo.Html" />
+    <EmbeddedResource Include="Resources\Svg\Like.svg" />
+    <EmbeddedResource Include="Resources\Svg\AppIcon.svg" />
+    <EmbeddedResource Include="Resources\Svg\Beak.Bottom.svg" />
+    <EmbeddedResource Include="Resources\Svg\Beak.Left.svg" />
+    <EmbeddedResource Include="Resources\Svg\Close.svg" />
+    <EmbeddedResource Include="Resources\Svg\Contact.svg" />
+    <EmbeddedResource Include="Resources\Svg\Facebook.svg" />
+    <EmbeddedResource Include="Resources\Svg\Google.svg" />
+    <EmbeddedResource Include="Resources\Svg\LinkedIn.svg" />
+    <EmbeddedResource Include="Resources\Svg\Menu.svg" />
+    <EmbeddedResource Include="Resources\Svg\Message.svg" />
+    <EmbeddedResource Include="Resources\Svg\PhoneCall.svg" />
+    <EmbeddedResource Include="Resources\Svg\Search.svg" />
+    <EmbeddedResource Include="Resources\Svg\Send.svg" />
+    <EmbeddedResource Include="Resources\Svg\User.svg" />
+    <EmbeddedResource Include="Resources\Svg\VideoCall.svg" />
+    <EmbeddedResource Include="Resources\AppIcon.ico" />
+    <EmbeddedResource Include="Resources\Svg\DarkTheme.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Css\ContextMenu.Css" />
+    <EmbeddedResource Include="Resources\Html\ContextMenu.Html" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>comboMaxMin</name>
+			<windowcaption>Min / max</windowcaption>
+			<description>This combo box allows you to specify  the spin editor's range of allowed values.</description>
+			<memberlist>RepositoryItemSpinEdit.MinValue, RepositoryItemSpinEdit.MaxValue</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboIncrementValue</name>
+			<windowcaption>Increment</windowcaption>
+			<description>This spin editor allows you to specify the amount by which  the spin buttons or the keyboard UP and DOWN keys increment/decrement the value.</description>
+			<memberlist>RepositoryItemSpinEdit.Increment</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>checkEditFloatValue</name>
+			<windowcaption>Is Float Value</windowcaption>
+			<description>This check box allows you to specify whether the editor's value is a float or integer.</description>
+			<memberlist>RepositoryItemSpinEdit.IsFloatValue</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>checkEditAdditionalButtons</name>
+			<windowcaption>Show Additional buttons</windowcaption>
+			<description>This check box adds or removes additional buttons from the editor's button collection.</description>
+			<memberlist>RepositoryItemButtonEdit.Buttons</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>spinEditButtonPos</name>
+			<windowcaption>Spin Button Position</windowcaption>
+			<description>This spin editor allows the position of the spin button within the button collection to be specified.</description>
+			<memberlist>RepositoryItemBaseSpinEdit.SpinButtonIndex</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboSpinStyle</name>
+			<windowcaption>Spin Style</windowcaption>
+			<description>This combo box allows the orientation of the spin button to be specified.</description>
+			<memberlist>RepositoryItemBaseSpinEdit.SpinStyle</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboFiringMode</name>
+			<windowcaption>Edit Value Changed Firing Mode</windowcaption>
+			<description>This combo box allows you to specify when the spin editor's EditValueChanged event should be raised. If the 'Default' item is selected, the EditValueChanged event is raised immediately after the editor's value has been changed by an end-user. If the 'Buffered' item is selected, the EditValueChanged event is only raised after an end-user has stopped editing and the specified amount of time has passed.</description>
+			<memberlist>EditValueChangedFiringMode property, EditValueChangedFiringDelay property</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>checkEditValidate</name>
+			<windowcaption>Validate On Enter Key</windowcaption>
+			<description>This check box controls whether the Validating event is raised when the ENTER key is pressed or when focus is moved to another control.</description>
+			<memberlist>ValidateOnEnterKey property</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>spinEditSample2</name>
+			<windowcaption>Spin Editor</windowcaption>
+			<description>In this tutorial, the spin editor's EditValueChanged event is handled to display its edit value within the 'Events Firing' memo editor.</description>
+			<memberlist>EditValueChanged event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>spinEditSample1</name>
+			<hinttext>#Keyboard<newline></newline>UP, DOWN keys<newline></newline>#Mouse Wheel<newline></newline>Supported</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

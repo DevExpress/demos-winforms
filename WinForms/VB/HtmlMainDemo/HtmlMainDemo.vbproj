@@ -1,0 +1,955 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\html\*.*" />
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\html\*\*.*" />
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\css\*.*" />
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\css\*\*.*" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF943EB9-6EC6-443F-85E5-6D15E65C048A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>HtmlMainDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.DevAV.v26.1.Data">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGantt.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UIAutomationClient">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeExamples.Modules\Css.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Css.Designer.vb">
+      <DependentUpon>Css.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\CustomDraw.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\CustomDraw.Designer.vb">
+      <DependentUpon>CustomDraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Html.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Html.Designer.vb">
+      <DependentUpon>Html.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Layout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Layout.Designer.vb">
+      <DependentUpon>Layout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\TemplateGallery.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\TemplateGallery.Designer.vb">
+      <DependentUpon>TemplateGallery.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CodeExamples.Resources\SampleData.vb" />
+    <EmbeddedResource Include="CodeExamples.Resources\SpaceObject.vb" />
+    <Compile Include="CodeExamples\Css.vb" />
+    <Compile Include="CodeExamples\CustomDraw.vb" />
+    <Compile Include="CodeExamples\Html.vb" />
+    <Compile Include="CodeExamples\Interaction.vb" />
+    <Compile Include="CodeExamples\TemplateGallery.vb" />
+    <Compile Include="Helpers\CodeExamples\CodeTutorialControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\CodeExamples\CssFile.vb" />
+    <Compile Include="Helpers\CodeExamples\HtmlFile.vb" />
+    <Compile Include="Helpers\Data\GanttData.vb" />
+    <Compile Include="Helpers\Data\LoremIpsum.vb" />
+    <Compile Include="Helpers\Data\Messages.vb" />
+    <Compile Include="Helpers\Data\SchedulerData.vb" />
+    <Compile Include="Helpers\Data\TreeListData.vb" />
+    <Compile Include="Helpers\Data\VehiclesData.vb" />
+    <Compile Include="Helpers\DemosInfo.vb" />
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Interaction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\Interaction.Designer.vb">
+      <DependentUpon>Interaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\DeliveryControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\DeliveryControl.Designer.vb">
+      <DependentUpon>DeliveryControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\HtmlButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\HtmlButton.Designer.vb">
+      <DependentUpon>HtmlButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\HtmlComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\HtmlComboBox.Designer.vb">
+      <DependentUpon>HtmlComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\InformationControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\InformationControl.Designer.vb">
+      <DependentUpon>InformationControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\OrderSummaryControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\OrderSummaryControl.Designer.vb">
+      <DependentUpon>OrderSummaryControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\PaymentControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\PaymentControl.Designer.vb">
+      <DependentUpon>PaymentControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\ShippingControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\ShippingControl.Designer.vb">
+      <DependentUpon>ShippingControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\HtmlButtonPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\HtmlButtonPanel.Designer.vb">
+      <DependentUpon>HtmlButtonPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\HamburgerMenuModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\HamburgerMenuModule.Designer.vb">
+      <DependentUpon>HamburgerMenuModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\AccordionControlModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\AccordionControlModule.Designer.vb">
+      <DependentUpon>AccordionControlModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AccordionControl\Controls\HtmlComboBoxEdit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlProperties.Designer.vb">
+      <DependentUpon>AlertControlProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertInfoProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertInfoProperties.Designer.vb">
+      <DependentUpon>AlertInfoProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlTemplateViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ComboBox\ComboBoxModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ComboBox\ComboBoxModule.Designer.vb">
+      <DependentUpon>ComboBoxModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ComboBox\ComboBoxTemplateViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ComboBox\ComboBoxTemplateViewer.Designer.vb">
+      <DependentUpon>ComboBoxTemplateViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Form\DemoDirectXForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\DemoDirectXForm.Designer.vb">
+      <DependentUpon>DemoDirectXForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Form\FormModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Form\FormModule.Designer.vb">
+      <DependentUpon>FormModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Form\FormTemplateViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GanttControl\GanttControlModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GanttControl\GanttControlModule.Designer.vb">
+      <DependentUpon>GanttControlModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Lab.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Lab.Designer.vb">
+      <DependentUpon>Lab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ListBox\ListBoxModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ListBox\ListBoxModule.Designer.vb">
+      <DependentUpon>ListBoxModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Messages\Dialog\DialogBoxTemplateViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Messages\Dialog\DialogBoxView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Messages\Dialog\DialogBoxView.Designer.vb">
+      <DependentUpon>DialogBoxView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Messages\Dialog\DialogBoxContents.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageBox\MessageBoxProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageBox\MessageBoxProperties.Designer.vb">
+      <DependentUpon>MessageBoxProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageBox\MessageBoxView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageBox\MessageBoxView.Designer.vb">
+      <DependentUpon>MessageBoxView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageViewModule.Designer.vb">
+      <DependentUpon>MessageViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageBox\MessageBoxResult.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageBox\MessageBoxResult.Designer.vb">
+      <DependentUpon>MessageBoxResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Messages\MessageBox\MessageBoxTemplateViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Overview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Overview.Designer.vb">
+      <DependentUpon>Overview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GanttControl\TemplateCodeViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GanttControl\TemplateCodeViewer.Designer.vb">
+      <DependentUpon>TemplateCodeViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RepositoryItems.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RepositoryItems.Designer.vb">
+      <DependentUpon>RepositoryItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SchedulerControl\SchedulerControlModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SchedulerControl\SchedulerControlModule.Designer.vb">
+      <DependentUpon>SchedulerControlModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SchedulerControl\SchedulerTemplateCodeViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TileView\TileViewAutoHeightModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TileView\TileViewAutoHeightModule.Designer.vb">
+      <DependentUpon>TileViewAutoHeightModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TileView\TileViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TileView\TileViewModule.Designer.vb">
+      <DependentUpon>TileViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlModule.Designer.vb">
+      <DependentUpon>AlertControlModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewCore.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewCore.Designer.vb">
+      <DependentUpon>PreviewCore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewCoreContentProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewCoreContentProperties.Designer.vb">
+      <DependentUpon>PreviewCoreContentProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewCoreControllerProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewCoreControllerProperties.Designer.vb">
+      <DependentUpon>PreviewCoreControllerProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewSuperTip.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewSuperTip.Designer.vb">
+      <DependentUpon>PreviewSuperTip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ToolTip\ToolTipViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ToolTip\ToolTipViewModule.Designer.vb">
+      <DependentUpon>ToolTipViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ToolTip\ToolTipTemplateViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewToolTip.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ToolTip\PreviewToolTip.Designer.vb">
+      <DependentUpon>PreviewToolTip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TreeList\EditingComment.vb" />
+    <Compile Include="Modules\TreeList\TreeListModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TreeList\TreeListModule.Designer.vb">
+      <DependentUpon>TreeListModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WinExplorerView\WinExplorerViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WinExplorerView\WinExplorerViewModule.Designer.vb">
+      <DependentUpon>WinExplorerViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="Helpers\TutorialControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CodeExamples.Modules\Css.resx">
+      <DependentUpon>Css.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeExamples.Modules\Layout.resx">
+      <DependentUpon>Layout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\AccordionControlModule.resx">
+      <DependentUpon>AccordionControlModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\Controls\DeliveryControl.resx">
+      <DependentUpon>DeliveryControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\Controls\HtmlButton.resx">
+      <DependentUpon>HtmlButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\Controls\HtmlComboBox.resx">
+      <DependentUpon>HtmlComboBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\Controls\HtmlButtonPanel.resx">
+      <DependentUpon>HtmlButtonPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\Controls\InformationControl.resx">
+      <DependentUpon>InformationControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\Controls\OrderSummaryControl.resx">
+      <DependentUpon>OrderSummaryControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\Controls\PaymentControl.resx">
+      <DependentUpon>PaymentControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\Controls\ShippingControl.resx">
+      <DependentUpon>ShippingControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AccordionControl\HamburgerMenuModule.resx">
+      <DependentUpon>HamburgerMenuModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AlertControl\AlertControlProperties.resx">
+      <DependentUpon>AlertControlProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AlertControl\AlertInfoProperties.resx">
+      <DependentUpon>AlertInfoProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ComboBox\ComboBoxModule.resx">
+      <DependentUpon>ComboBoxModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\DemoDirectXForm.resx">
+      <DependentUpon>DemoDirectXForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Form\FormModule.resx">
+      <DependentUpon>FormModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GanttControl\GanttControlModule.resx">
+      <DependentUpon>GanttControlModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Lab.resx">
+      <DependentUpon>Lab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ListBox\ListBoxModule.resx">
+      <DependentUpon>ListBoxModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Messages\Dialog\DialogBoxTemplateViewer.resx">
+      <DependentUpon>DialogBoxTemplateViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Messages\Dialog\DialogBoxView.resx">
+      <DependentUpon>DialogBoxView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Messages\MessageBox\MessageBoxProperties.resx">
+      <DependentUpon>MessageBoxProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Messages\MessageBox\MessageBoxView.resx">
+      <DependentUpon>MessageBoxView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Messages\MessageViewModule.resx">
+      <DependentUpon>MessageViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Messages\MessageBox\MessageBoxResult.resx">
+      <DependentUpon>MessageBoxResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Messages\MessageBox\MessageBoxTemplateViewer.resx">
+      <DependentUpon>MessageBoxTemplateViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Overview.resx">
+      <DependentUpon>Overview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GanttControl\TemplateCodeViewer.resx">
+      <DependentUpon>TemplateCodeViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RepositoryItems.resx">
+      <DependentUpon>RepositoryItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SchedulerControl\SchedulerControlModule.resx">
+      <DependentUpon>SchedulerControlModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TileView\TileViewAutoHeightModule.resx">
+      <DependentUpon>TileViewAutoHeightModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TileView\TileViewModule.resx">
+      <DependentUpon>TileViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AlertControl\AlertControlModule.resx">
+      <DependentUpon>AlertControlModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ToolTip\PreviewCore.resx">
+      <DependentUpon>PreviewCore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ToolTip\PreviewCoreContentProperties.resx">
+      <DependentUpon>PreviewCoreContentProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ToolTip\PreviewCoreControllerProperties.resx">
+      <DependentUpon>PreviewCoreControllerProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ToolTip\PreviewSuperTip.resx">
+      <DependentUpon>PreviewSuperTip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ToolTip\ToolTipViewModule.resx">
+      <DependentUpon>ToolTipViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ToolTip\ToolTipTemplateViewer.resx">
+      <DependentUpon>ToolTipTemplateViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ToolTip\PreviewToolTip.resx">
+      <DependentUpon>PreviewToolTip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TreeList\TreeListModule.resx">
+      <DependentUpon>TreeListModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WinExplorerView\WinExplorerViewModule.resx">
+      <DependentUpon>WinExplorerViewModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.HTML.Demos.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeExamples\css\Css\AlignContent.css" />
+    <Content Include="CodeExamples\css\Css\AlignItems.css" />
+    <Content Include="CodeExamples\css\Css\AlignSelf.css" />
+    <Content Include="CodeExamples\css\Css\BackgroundColor.css" />
+    <Content Include="CodeExamples\css\Css\BackgroundImage.css" />
+    <Content Include="CodeExamples\css\Css\BackgroundPosition.css" />
+    <Content Include="CodeExamples\css\Css\BackgroundRepeat.css" />
+    <Content Include="CodeExamples\css\Css\BackgroundSize.css" />
+    <Content Include="CodeExamples\css\Css\BorderBottom.css" />
+    <Content Include="CodeExamples\css\Css\BorderBottomColor.css" />
+    <Content Include="CodeExamples\css\Css\BorderBottomLeftRadius.css" />
+    <Content Include="CodeExamples\css\Css\BorderBottomRightRadius.css" />
+    <Content Include="CodeExamples\css\Css\BorderBottomStyle.css" />
+    <Content Include="CodeExamples\css\Css\BorderBottomWidth.css" />
+    <Content Include="CodeExamples\css\Css\BorderColor.css" />
+    <Content Include="CodeExamples\css\Css\BorderLeft.css" />
+    <Content Include="CodeExamples\css\Css\BorderLeftColor.css" />
+    <Content Include="CodeExamples\css\Css\BorderLeftStyle.css" />
+    <Content Include="CodeExamples\css\Css\BorderLeftWidth.css" />
+    <Content Include="CodeExamples\css\Css\BorderRadius.css" />
+    <Content Include="CodeExamples\css\Css\BorderRight.css" />
+    <Content Include="CodeExamples\css\Css\BorderRightColor.css" />
+    <Content Include="CodeExamples\css\Css\BorderRightStyle.css" />
+    <Content Include="CodeExamples\css\Css\BorderRightWidth.css" />
+    <Content Include="CodeExamples\css\Css\Borders.css" />
+    <Content Include="CodeExamples\css\Css\BorderSpacing.css" />
+    <Content Include="CodeExamples\css\Css\BorderStyle.css" />
+    <Content Include="CodeExamples\css\Css\BorderTop.css" />
+    <Content Include="CodeExamples\css\Css\BorderTopColor.css" />
+    <Content Include="CodeExamples\css\Css\BorderTopLeftRadius.css" />
+    <Content Include="CodeExamples\css\Css\BorderTopRightRadius.css" />
+    <Content Include="CodeExamples\css\Css\BorderTopStyle.css" />
+    <Content Include="CodeExamples\css\Css\BorderTopWidth.css" />
+    <Content Include="CodeExamples\css\Css\BorderWidth.css" />
+    <Content Include="CodeExamples\css\Css\BoxShadow.css" />
+    <Content Include="CodeExamples\css\Css\Color.css" />
+    <Content Include="CodeExamples\css\Css\Display.css" />
+    <Content Include="CodeExamples\css\Css\Fill.css" />
+    <Content Include="CodeExamples\css\Css\Flex.css" />
+    <Content Include="CodeExamples\css\Css\FlexBasis.css" />
+    <Content Include="CodeExamples\css\Css\FlexDirection.css" />
+    <Content Include="CodeExamples\css\Css\FlexGrow.css" />
+    <Content Include="CodeExamples\css\Css\FlexShrink.css" />
+    <Content Include="CodeExamples\css\Css\FlexWrap.css" />
+    <Content Include="CodeExamples\css\Css\Font.css" />
+    <Content Include="CodeExamples\css\Css\FontFamily.css" />
+    <Content Include="CodeExamples\css\Css\FontSize.css" />
+    <Content Include="CodeExamples\css\Css\FontStyle.css" />
+    <Content Include="CodeExamples\css\Css\FontWeight.css" />
+    <Content Include="CodeExamples\css\Css\Height.css" />
+    <Content Include="CodeExamples\css\Css\JustifyContent.css" />
+    <Content Include="CodeExamples\css\Css\ListStylePosition.css" />
+    <Content Include="CodeExamples\css\Css\ListStyleType.css" />
+    <Content Include="CodeExamples\css\Css\Margin.css" />
+    <Content Include="CodeExamples\css\Css\MarginBottom.css" />
+    <Content Include="CodeExamples\css\Css\MarginLeft.css" />
+    <Content Include="CodeExamples\css\Css\MarginRight.css" />
+    <Content Include="CodeExamples\css\Css\MarginTop.css" />
+    <Content Include="CodeExamples\css\Css\MaxHeight.css" />
+    <Content Include="CodeExamples\css\Css\MaxWidth.css" />
+    <Content Include="CodeExamples\css\Css\MinHeight.css" />
+    <Content Include="CodeExamples\css\Css\MinWidth.css" />
+    <Content Include="CodeExamples\css\Css\ObjectFit.css" />
+    <Content Include="CodeExamples\css\Css\Opacity.css" />
+    <Content Include="CodeExamples\css\Css\Order.css" />
+    <Content Include="CodeExamples\css\Css\Overflow.css" />
+    <Content Include="CodeExamples\css\Css\OverflowWrap.css" />
+    <Content Include="CodeExamples\css\Css\PaddingBottom.css" />
+    <Content Include="CodeExamples\css\Css\PaddingLeft.css" />
+    <Content Include="CodeExamples\css\Css\PaddingRight.css" />
+    <Content Include="CodeExamples\css\Css\Paddings.css" />
+    <Content Include="CodeExamples\css\Css\PaddingTop.css" />
+    <Content Include="CodeExamples\css\Css\Position.css" />
+    <Content Include="CodeExamples\css\Css\PositionMargins.css" />
+    <Content Include="CodeExamples\css\Css\Selection.css" />
+    <Content Include="CodeExamples\css\Css\TextAlign.css" />
+    <Content Include="CodeExamples\css\Css\TextDecorationLine.css" />
+    <Content Include="CodeExamples\css\Css\TextOverflow.css" />
+    <Content Include="CodeExamples\css\Css\UserSelect.css" />
+    <Content Include="CodeExamples\css\Css\Visibility.css" />
+    <Content Include="CodeExamples\css\Css\WhiteSpace.css" />
+    <Content Include="CodeExamples\css\Css\Width.css" />
+    <Content Include="CodeExamples\css\Css\ZIndex.css" />
+    <Content Include="CodeExamples\css\CustomDraw\TileViewItem.css" />
+    <Content Include="CodeExamples\css\CustomDraw\GridViewRowPreview.css" />
+    <Content Include="CodeExamples\css\CustomDraw\TreeListRowPreview.css" />
+    <Content Include="CodeExamples\css\CustomDraw\ListBoxEmptyForeground.css" />
+    <Content Include="CodeExamples\css\Html\ListMarkers.css" />
+    <Content Include="CodeExamples\css\Html\Headings.css" />
+    <Content Include="CodeExamples\css\Html\NewLine.css" />
+    <Content Include="CodeExamples\css\Html\NumberedList.css" />
+    <Content Include="CodeExamples\css\Html\Semantics.css" />
+    <Content Include="CodeExamples\css\Html\UnorderedList.css" />
+    <Content Include="CodeExamples\css\TemplateGallery\ButtonGroup.css" />
+    <Content Include="CodeExamples\css\TemplateGallery\Buttons.css" />
+    <Content Include="CodeExamples\css\TemplateGallery\Notifications.css" />
+    <Content Include="CodeExamples\css\TemplateGallery\ProgressBar.css" />
+    <Content Include="CodeExamples\html\Css\AlignContent.html" />
+    <Content Include="CodeExamples\html\Css\AlignItems.html" />
+    <Content Include="CodeExamples\html\Css\AlignSelf.html" />
+    <Content Include="CodeExamples\html\Css\BackgroundColor.html" />
+    <Content Include="CodeExamples\html\Css\BackgroundImage.html" />
+    <Content Include="CodeExamples\html\Css\BackgroundPosition.html" />
+    <Content Include="CodeExamples\html\Css\BackgroundRepeat.html" />
+    <Content Include="CodeExamples\html\Css\BackgroundSize.html" />
+    <Content Include="CodeExamples\html\Css\BorderBottom.html" />
+    <Content Include="CodeExamples\html\Css\BorderBottomColor.html" />
+    <Content Include="CodeExamples\html\Css\BorderBottomLeftRadius.html" />
+    <Content Include="CodeExamples\html\Css\BorderBottomRightRadius.html" />
+    <Content Include="CodeExamples\html\Css\BorderBottomStyle.html" />
+    <Content Include="CodeExamples\html\Css\BorderBottomWidth.html" />
+    <Content Include="CodeExamples\html\Css\BorderColor.html" />
+    <Content Include="CodeExamples\html\Css\BorderLeft.html" />
+    <Content Include="CodeExamples\html\Css\BorderLeftColor.html" />
+    <Content Include="CodeExamples\html\Css\BorderLeftStyle.html" />
+    <Content Include="CodeExamples\html\Css\BorderLeftWidth.html" />
+    <Content Include="CodeExamples\html\Css\BorderRadius.html" />
+    <Content Include="CodeExamples\html\Css\BorderRight.html" />
+    <Content Include="CodeExamples\html\Css\BorderRightColor.html" />
+    <Content Include="CodeExamples\html\Css\BorderRightStyle.html" />
+    <Content Include="CodeExamples\html\Css\BorderRightWidth.html" />
+    <Content Include="CodeExamples\html\Css\Borders.html" />
+    <Content Include="CodeExamples\html\Css\BorderSpacing.html" />
+    <Content Include="CodeExamples\html\Css\BorderStyle.html" />
+    <Content Include="CodeExamples\html\Css\BorderTop.html" />
+    <Content Include="CodeExamples\html\Css\BorderTopColor.html" />
+    <Content Include="CodeExamples\html\Css\BorderTopLeftRadius.html" />
+    <Content Include="CodeExamples\html\Css\BorderTopRightRadius.html" />
+    <Content Include="CodeExamples\html\Css\BorderTopStyle.html" />
+    <Content Include="CodeExamples\html\Css\BorderTopWidth.html" />
+    <Content Include="CodeExamples\html\Css\BorderWidth.html" />
+    <Content Include="CodeExamples\html\Css\BoxShadow.html" />
+    <Content Include="CodeExamples\html\Css\Color.html" />
+    <Content Include="CodeExamples\html\Css\Display.html" />
+    <Content Include="CodeExamples\html\Css\Fill.html" />
+    <Content Include="CodeExamples\html\Css\Flex.html" />
+    <Content Include="CodeExamples\html\Css\FlexBasis.html" />
+    <Content Include="CodeExamples\html\Css\FlexDirection.html" />
+    <Content Include="CodeExamples\html\Css\FlexGrow.html" />
+    <Content Include="CodeExamples\html\Css\FlexShrink.html" />
+    <Content Include="CodeExamples\html\Css\FlexWrap.html" />
+    <Content Include="CodeExamples\html\Css\Font.html" />
+    <Content Include="CodeExamples\html\Css\FontFamily.html" />
+    <Content Include="CodeExamples\html\Css\FontSize.html" />
+    <Content Include="CodeExamples\html\Css\FontStyle.html" />
+    <Content Include="CodeExamples\html\Css\FontWeight.html" />
+    <Content Include="CodeExamples\html\Css\Height.html" />
+    <Content Include="CodeExamples\html\Css\JustifyContent.html" />
+    <Content Include="CodeExamples\html\Css\ListStylePosition.html" />
+    <Content Include="CodeExamples\html\Css\ListStyleType.html" />
+    <Content Include="CodeExamples\html\Css\Margin.html" />
+    <Content Include="CodeExamples\html\Css\MarginBottom.html" />
+    <Content Include="CodeExamples\html\Css\MarginLeft.html" />
+    <Content Include="CodeExamples\html\Css\MarginRight.html" />
+    <Content Include="CodeExamples\html\Css\MarginTop.html" />
+    <Content Include="CodeExamples\html\Css\MaxHeight.html" />
+    <Content Include="CodeExamples\html\Css\MaxWidth.html" />
+    <Content Include="CodeExamples\html\Css\MinHeight.html" />
+    <Content Include="CodeExamples\html\Css\MinWidth.html" />
+    <Content Include="CodeExamples\html\Css\ObjectFit.html" />
+    <Content Include="CodeExamples\html\Css\Opacity.html" />
+    <Content Include="CodeExamples\html\Css\Order.html" />
+    <Content Include="CodeExamples\html\Css\Overflow.html" />
+    <Content Include="CodeExamples\html\Css\OverflowWrap.html" />
+    <Content Include="CodeExamples\html\Css\Padding.html" />
+    <Content Include="CodeExamples\html\Css\PaddingBottom.html" />
+    <Content Include="CodeExamples\html\Css\PaddingLeft.html" />
+    <Content Include="CodeExamples\html\Css\PaddingRight.html" />
+    <Content Include="CodeExamples\html\Css\PaddingTop.html" />
+    <Content Include="CodeExamples\html\Css\Position.html" />
+    <Content Include="CodeExamples\html\Css\PositionMargins.html" />
+    <Content Include="CodeExamples\html\Css\Selection.html" />
+    <Content Include="CodeExamples\html\Css\TextAlign.html" />
+    <Content Include="CodeExamples\html\Css\TextDecorationLine.html" />
+    <Content Include="CodeExamples\html\Css\TextOverflow.html" />
+    <Content Include="CodeExamples\html\Css\UserSelect.html" />
+    <Content Include="CodeExamples\html\Css\Visibility.html" />
+    <Content Include="CodeExamples\html\Css\WhiteSpace.html" />
+    <Content Include="CodeExamples\html\Css\Width.html" />
+    <Content Include="CodeExamples\css\Interaction\ElementMouseClick.css" />
+    <Content Include="CodeExamples\css\Interaction\FileMenu.css" />
+    <Content Include="CodeExamples\css\Interaction\MenuBar.css" />
+    <Content Include="CodeExamples\css\Interaction\Popup.css" />
+    <Content Include="CodeExamples\css\Interaction\Tooltip.css" />
+    <Content Include="CodeExamples\css\Interaction\Dialog.css" />
+    <Content Include="CodeExamples\html\Css\ZIndex.html" />
+    <Content Include="CodeExamples\html\CustomDraw\TileViewItem.html" />
+    <Content Include="CodeExamples\html\CustomDraw\GridViewRowPreview.html" />
+    <Content Include="CodeExamples\html\CustomDraw\TreeListRowPreview.html" />
+    <Content Include="CodeExamples\html\CustomDraw\ListBoxEmptyForeground.html" />
+    <Content Include="CodeExamples\html\TemplateGallery\ButtonGroup.html" />
+    <Content Include="CodeExamples\html\TemplateGallery\Buttons.html" />
+    <Content Include="CodeExamples\html\TemplateGallery\Notifications.html" />
+    <Content Include="CodeExamples\html\TemplateGallery\ProgressBar.html" />
+    <Content Include="Images\Add.svg" />
+    <Content Include="Images\Back.svg" />
+    <Content Include="Images\Close.svg" />
+    <Content Include="Images\Forward.svg" />
+    <Content Include="Images\Info.svg" />
+    <Content Include="Images\Logo.svg" />
+    <Content Include="Images\Search.svg" />
+    <Content Include="Images\User.svg" />
+    <Content Include="Resources\customerquicklocations.svg" />
+    <Content Include="Resources\meeting.svg" />
+    <Content Include="Resources\SignUp.Html" />
+    <Content Include="Resources\unchecked.svg" />
+    <Content Include="Resources\checked.svg" />
+    <Content Include="Resources\Location.png" />
+    <EmbeddedResource Include="Resources\auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeExamples\html\Html\ListMarkers.html" />
+    <Content Include="CodeExamples\html\Html\Headings.html" />
+    <Content Include="CodeExamples\html\Html\NewLine.html" />
+    <Content Include="CodeExamples\html\Html\NumberedList.html" />
+    <Content Include="CodeExamples\html\Html\Semantics.html" />
+    <Content Include="CodeExamples\html\Html\UnorderedList.html" />
+    <Content Include="CodeExamples\html\Interaction\ElementMouseClick.html" />
+    <Content Include="CodeExamples\html\Interaction\ElementMouseClick2.html" />
+    <Content Include="CodeExamples\html\Interaction\FileMenu.html" />
+    <Content Include="CodeExamples\html\Interaction\MenuBar.html" />
+    <Content Include="CodeExamples\html\Interaction\MVVMDialog.html" />
+    <Content Include="CodeExamples\html\Interaction\MVVMMenuBar.html" />
+    <Content Include="CodeExamples\html\Interaction\MVVMPopup.html" />
+    <Content Include="CodeExamples\html\Interaction\Tooltip.html" />
+    <Content Include="CodeExamples\html\Interaction\Dialog.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CodeExamples\css\Layout\" />
+    <Folder Include="CodeExamples\html\Layout\" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+  <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  <PackageReference Include="System.Data.OleDb" />
+  <PackageReference Include="System.Data.SqlClient" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

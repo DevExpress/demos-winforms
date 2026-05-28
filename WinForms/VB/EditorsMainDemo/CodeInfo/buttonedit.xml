@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="H:\Work\XML Schemes\module-new.xsd">
+	<controls>
+		<controlentry>
+			<control>
+				<name>comboBoxTextEditStyle</name>
+				<windowcaption>Text Edit Style dropdown</windowcaption>
+				<description>This combo box allows you to change the manner in which text is displayed and edited in a button editor.</description>
+				<memberlist>RepositoryItemButtonEdit.TextEditStyle</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>teCaption</name>
+				<windowcaption>Editor Button Caption</windowcaption>
+				<description>This text editor allows the editor button's caption to be specified.</description>
+				<memberlist>EditorButton.Caption</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>buttonEdit1</name>
+				<windowcaption>Button Edit</windowcaption>
+				<description>The ButtonClick and ButtonPressed event are raised when an end user clicks or presses the editor's button. In this tutorial, the ButtonClick event is handled to display information on the button clicked within the 'Button events log' memo editor. The ButtonPressed event is handled to change the editor's value.</description>
+				<memberlist>ButtonClick, ButtonPressed events</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>teToolTip</name>
+				<windowcaption>ToolTip</windowcaption>
+				<description>This text editor allows the text content of the tool tip to be specified.</description>
+				<memberlist>EditorButton.ToolTip</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>icbKind</name>
+				<windowcaption>Kind</windowcaption>
+				<description>This combo box allows you to select the type of image to display within the button.</description>
+				<memberlist>EditorButton.Kind</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>seWidth</name>
+				<windowcaption>Width</windowcaption>
+				<description>This spin editor allows the button's width to be specified.</description>
+				<memberlist>EditorButton.Width</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceEnabled</name>
+				<windowcaption>Enabled</windowcaption>
+				<description>This check box enables or disables the button.</description>
+				<memberlist>EditorButton.Enabled</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceVisible</name>
+				<windowcaption>Visible</windowcaption>
+				<description>This check box shows or hides the button.</description>
+				<memberlist>EditorButton.Visible</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>sbImageLoad</name>
+				<windowcaption>Load Image</windowcaption>
+				<description>Click this button to invoke the 'Open' dialog and select the desired image to display on the button. The custom image is displayed if the button's kind is 'Glyph'. Otherwise, a predefined image is displayed.</description>
+				<memberlist>EditorButton.Image, EditorButton.Kind</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>sbImageClear</name>
+				<windowcaption>Clear Image</windowcaption>
+				<description>Click this button to clear the custom image which is displayed on the button.</description>
+				<memberlist>EditorButton.Image, EditorButton.Kind</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>icbAlignment</name>
+				<windowcaption>Image Location</windowcaption>
+				<description>This combo box allows you to change the location of the image displayed within the buttons that support captions (Glyph, Ellipsis, Delete, OK, Plus, Minus, Redo and Undo). If the image is centered, the button's caption isn't displayed.</description>
+				<memberlist>EditorButton.ImageLocation</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>checkEditAllowButtonsNavigation</name>
+        <windowcaption>Allow Keyboard Navigation</windowcaption>
+        <description>This check box allows you to enable keyboard navigation between buttons in the button editor.</description>
+        <memberlist>RepositoryItemButtonEdit.AllowButtonNavigation</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

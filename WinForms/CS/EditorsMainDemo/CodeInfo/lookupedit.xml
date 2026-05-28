@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>dataNavigator1</name>
+			<windowcaption>Data Navigator</windowcaption>
+			<description>This controls is used to navigate through the records in a data source and perform operations against the data.</description>
+			<memberlist>DataNavigator.DataSource</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>lookUpEdit1</name>
+			<windowcaption>Data Binding</windowcaption>
+			<description>This LookUp editor is bound to an external data source. The data is retrieved from the 'nwind.mdb' database which is shipped with the installation.</description>
+			<memberlist>RepositoryItemLookUpEditBase.DataSource</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>lookUpEdit2</name>
+			<windowcaption>Simple Binding</windowcaption>
+			<description>This LookUp editor is bound to the 'ContactList' class inherited from Collection Base.</description>
+			<memberlist>RepositoryItemLookUpEditBase.DataSource</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>lookUpEdit3</name>
+			<windowcaption>Array Binding</windowcaption>
+			<description>This LookUp editor is bound to an array of Record objects.</description>
+			<memberlist>RepositoryItemLookUpEditBase.DataSource, RepositoryItemLookUpEditBase.DisplayMember, RepositoryItemLookUpEditBase.ValueMember, RepositoryItemLookUpEdit.PopulateColumns</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>lookUpEdit4</name>
+			<windowcaption>Not In List</windowcaption> 
+			<description>This LookUp editor is bound to an array of Record objects. It conains the '# (Not In List Column)' column whose field name ('NotInList') doesn't coincide with any fields from the data source. The GetNotInListValue event is handled to populate this unbound column.</description>
+			<memberlist>RepositoryItemLookUpEditBase.DataSource, GetNotInListValue event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>seColumnIndex</name>
+			<windowcaption>Auto Search Column Index</windowcaption>
+			<description>This spin editor allows you to specify the index of a column against which the incremental search is performed when the 'Auto Complete" or 'OnlyInPopup' item is selected in the 'Search Mode' combo box.</description>
+			<memberlist>RepositoryItemLookUpEdit.AutoSearchColumnIndex, RepositoryItemLookUpEdit.SearchMode</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbHeaderClickMode</name>
+			<windowcaption>Header Click Mode</windowcaption>
+			<description>This combo box allows you to specify which functionality is invoked as a result of clicking a column header within the lookup editor's dropdown.</description>
+			<memberlist>RepositoryItemLookUpEdit.HeaderClickMode</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbSearchMode</name>
+			<windowcaption>Search Mode</windowcaption>
+			<description>This combo box allows you to specify how end-users can search for specific rows by typing within the editor. </description>
+			<memberlist>RepositoryItemLookUpEdit.SearchMode, RepositoryItemLookUpEdit.AutoSearchColumnIndex</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceCaseSensitiveSearch</name>
+			<windowcaption>Case Sensitive Search</windowcaption>
+			<description>This check box controls whether an incremental search is case sensitive.</description>
+			<memberlist>RepositoryItemLookUpEdit.CaseSensitiveSearch, RepositoryItemLookUpEdit.SearchMode</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>seItemHeight</name>
+			<windowcaption>DropDown Item Height</windowcaption>
+			<description>This spin editor allows the height of rows in the dropdown to be specified, in pixels.</description>
+			<memberlist>RepositoryItemLookUpEdit.DropDownItemHeight</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>teNullText</name>
+			<windowcaption>Null Text</windowcaption>
+			<description>This text editor allows you to enter a string which will be displayed in the edit box when the edit value is null.</description>
+			<memberlist>RepositoryItem.NullText</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceHotTrack</name>
+			<windowcaption>Hot Track</windowcaption>
+			<description>This check box controls whether the items in the popup window are hot-tracked when the mouse pointer passes over them.</description>
+			<memberlist>RepositoryItemLookUpEdit.HotTrackItems</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowFooter</name>
+			<windowcaption>Show Footer</windowcaption>
+			<description>This check box shows or hides the footer region in the dropdown window.</description>
+			<memberlist>RepositoryItemLookUpEditBase.ShowFooter, RepositoryItemLookUpEdit.ShowHeader</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowHeader</name>
+			<windowcaption>Show Header</windowcaption>
+			<description>This check box shows or hides the column headers.</description>
+			<memberlist>RepositoryItemLookUpEdit.ShowHeader, RepositoryItemLookUpEditBase.ShowFooter</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowLines</name>
+			<windowcaption>Show Lines</windowcaption>
+			<description>This check box shows or hides vertical lines that separate columns in the dropdown.</description>
+			<memberlist>RepositoryItemLookUpEdit.ShowLines</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>lookUpEdit1</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown list<newline></newline>UP, DOWN keys to select the previous or next item<newline></newline>#Other End-User Actions<newline></newline>Use the controls on the right pane to learn which additional end-user customization methods are available</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="H:\Work\XML Schemes\module-new.xsd">
+	<controls>
+	<controlentry>
+		<control>
+			<name>buttonsSelection</name>
+			<windowcaption>Text Selection buttons</windowcaption>
+			<description>The 'All' button selects the entire editor's content. The 'Random' button selects text at random. The 'Clear' button clears the current selection.</description>
+			<memberlist>TextEdit.SelectAll, TextEdit.Select, TextEdit.SelectionLength</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>checkEditHideSelection</name>
+			<windowcaption>Hide Selection</windowcaption>
+			<description>This check box allows you to specify whether the selection is hidden when focus is moved to another control.</description>
+			<memberlist>RepositoryItemTextEdit.HideSelection</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboBoxSelectCase</name>
+			<windowcaption>Case mode</windowcaption>
+			<description>This combo box allows you to select the case for characters and apply it to the editor's content.</description>
+			<memberlist>RepositoryItemTextEdit.CharacterCasing</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboBoxPasswordChar</name>
+			<windowcaption>Password Char</windowcaption>
+			<description>This combo box allows you to select the password character. This character will be displayed instead of actual characters.</description>
+			<memberlist>RepositoryItemTextEdit.PasswordChar</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboNumericFormat</name>
+			<windowcaption>Format Type</windowcaption>
+			<description>This combo box allows you to select the numeric format.</description>
+			<memberlist>RepositoryItem.DisplayFormat FormatType, RepositoryItem.DisplayFormat FormatString</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>spinEditDecimalPlaces</name>
+			<windowcaption>Decimal Places</windowcaption>
+			<description>This spin edit allows the number of decimal places to be specified.</description>
+			<memberlist>RepositoryItem.DisplayFormat FormatType, RepositoryItem.DisplayFormat FormatString</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboNumericEditValue</name>
+			<windowcaption>Edit Value</windowcaption>
+			<description>This combo box allows you to select a value and assign it to the sample text editor.</description>
+			<memberlist>BaseEdit.EditValue</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboDateFormat</name>
+			<windowcaption>Format Type</windowcaption>
+			<description>This combo box allows you to select the date format.</description>
+			<memberlist>RepositoryItem.DisplayFormat FormatType, RepositoryItem.DisplayFormat FormatString</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>dateEdit</name>
+			<windowcaption>Edit Value</windowcaption>
+			<description>This date editor allows you to select the desired date and assign it to the sample text editor.</description>
+			<memberlist>BaseEdit.EditValue</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+</totalinfo>

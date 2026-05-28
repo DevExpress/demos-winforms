@@ -1,0 +1,22 @@
+﻿::selection {
+    color:white;
+    background-color:@Red/0.3;
+}
+
+.container {
+    color: @ControlText;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: @Window;
+}
+
+    .container > div {
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: @Control;
+    }
+
+h3 {
+    margin: 0px;
+}

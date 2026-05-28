@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <ProjectGuid>{C9938258-631B-0688-37FF-B06C99294FD7}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.XtraVerticalGrid.Demos</RootNamespace>
+    <AssemblyName>VertGridMainDemo</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="CodeExamples.Resources\SampleData.cs" />
+    <Compile Include="CodeExamples\ConditionalFormatting.cs" />
+    <Compile Include="CodeExamples\FilterAndSearch.cs" />
+    <Compile Include="CodeExamples\FocusAndNavigation.cs" />
+    <Compile Include="CodeExamples\HtmlText.cs" />
+    <Compile Include="CodeExamples\ImageHelper.cs" />
+    <Compile Include="CodeExamples\Layout.cs" />
+    <Compile Include="CodeExamples\Selection.cs" />
+    <Compile Include="CodeExamples\Sorting.cs" />
+    <Compile Include="CodeExamples\UnboundColumns.cs" />
+    <Compile Include="DemoControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemosRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dsNWindProducts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNWindProducts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\CodeExamples.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CodeExamples.Designer.cs">
+      <DependentUpon>CodeExamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ComputersData.cs" />
+    <Compile Include="Modules\Contacts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\PCMarket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PCMarket.Designer.cs">
+      <DependentUpon>PCMarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VerticalGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\VerticalGrid.Designer.cs">
+      <DependentUpon>VerticalGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PropertyGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PropertyGrid.Designer.cs">
+      <DependentUpon>PropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RowsCreator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\VehiclesData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PCMarket.resx">
+      <DependentUpon>PCMarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VerticalGrid.resx">
+      <DependentUpon>VerticalGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PropertyGrid.resx">
+      <DependentUpon>PropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    
+    <Content Include="dsNWindProducts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNWindProducts.Designer.cs</LastGenOutput>
+    </Content>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\JustifyCenter.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\JustifyJustify.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\JustifyLeft.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\JustifyRight.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\VertAlignBottom.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\VertAlignMiddle.svg" />
+    <EmbeddedResource Include="Images\OfficeView\TextAlignmentRow\VertAlignTop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\UnboundField.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Customize.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\FixedRows.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Formats.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\Options.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\PropertyGrid.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\UnboundExpressions.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+    <PackageReference Include="System.Data.OleDb" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+  </PropertyGroup>
+</Project>

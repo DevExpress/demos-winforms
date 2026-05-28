@@ -1,0 +1,21 @@
+﻿
+.buttonPanel {
+	display: flex;
+	align-items: center;
+	padding: 4px;
+	border-bottom: solid 1px @WindowText/0.1;
+}
+
+.button {
+	width: 20px;
+	min-width: 20px;
+	height: 20px;
+	margin-right: 4px;
+	padding: 8px;
+	opacity: 0.5;
+}
+
+	.button:hover {
+		border-radius: 4px;
+		background-color: @WindowText/0.1;
+	}

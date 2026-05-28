@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>ceAllowFindFilter</name>
+				<windowcaption>Find panel</windowcaption>
+				<description>Displays or hides the find panel.</description>
+        <memberlist>ColumnViewOptionsFind.AllowFindPanel</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>ceAllowMRUItems</name>
+        <windowcaption>Find Panel's MRU Items</windowcaption>
+        <description>The Find Panel can keep the history of recently used search items. Users can access and re-apply these items from a drop-down list.</description>
+        <memberlist>ColumnViewOptionsFind.AllowMruItems</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceAlwaysVisible</name>
+        <windowcaption>Always visible</windowcaption>
+        <description>Specifies whether the find panel is permanently visible. Note that if the AlwaysVisible property equals true, the 'Show Close Button' check item is disabled.</description>
+        <memberlist>ColumnViewOptionsFind.AlwaysVisible</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceClearFind</name>
+        <windowcaption>Clear on close</windowcaption>
+        <description>The ClearFindOnClose property specifies whether the Find Panel's search (filter) string is cleared when the Find Panel is hidden.</description>
+        <memberlist>ColumnViewOptionsFind.ClearFindOnClose</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceHighlightFindResults</name>
+        <windowcaption>Highlight find results</windowcaption>
+        <description>Enables or disables highlighting of the search string within located records.</description>
+        <memberlist>ColumnViewOptionsFind.HighlightFindResults</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowCloseButton</name>
+        <windowcaption>Show close button</windowcaption>
+        <description>Gets or sets whether the close button is visible. Note that the close button can't be displayed if the AlwaysVisible property equals true.</description>
+        <memberlist>ColumnViewOptionsFind.ShowCloseButton</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowClearButton</name>
+        <windowcaption>Show clear button</windowcaption>
+        <description>Specifies the clear button's visibility.</description>
+        <memberlist>ColumnViewOptionsFind.ShowClearButton</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowFindButton</name>
+        <windowcaption>Show find button</windowcaption>
+        <description>Specifies the find button's visibility.</description>
+        <memberlist>ColumnViewOptionsFind.ShowFindButton</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceSearchInPreview</name>
+        <windowcaption>Search in preview</windowcaption>
+        <description>The SearchInPreview property specifies whether Preview Sections should be included in search. Preview Section can be displayed via the ShowPreview property.</description>
+        <memberlist>GridOptionsView.ShowPreview, GridViewOptionsFind.SearchInPreview</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seFindDelay</name>
+        <windowcaption>Find delay</windowcaption>
+        <description>Specifies the delay (in milliseconds), after which data search is initiated (if automatic search mode is active). To activate the automatic search mode use the 'Find Mode' editor.</description>
+        <memberlist>ColumnViewOptionsFind.FindDelay</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbFindMode</name>
+        <windowcaption>Find mode</windowcaption>
+        <description>The FindMode property specifies whether data searching starts automatically, or must be started manually.</description>
+        <memberlist>ColumnViewOptionsFind.FindMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cbFindFilterColumns</name>
+        <windowcaption>Find filter columns</windowcaption>
+        <description>The FindFilterColumns property allows you to specify the field names against which searches are performed by the Find Panel. The default value is "*", which means the Find Panel performs searches against all visible columns.</description>
+        <memberlist>ColumnViewOptionsFind.FindFilterColumns</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbFindPanelBehavior</name>
+        <windowcaption>Find Panel behavior</windowcaption>
+        <description>The Behavior property specifies whether data searching starts automatically, or must be started manually.</description>
+        <memberlist>ColumnViewOptionsFind.Behavior</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowNavButtons</name>
+        <windowcaption>Show search navigation buttons</windowcaption>
+        <description>Specifies the Prev/Next buttons visibility.</description>
+        <memberlist>ColumnViewOptionsFind.ShowSearchNavButtons</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbParserKind</name>
+        <windowcaption>Parser Kind</windowcaption>
+        <description>Specifies the logical operator used to build the search query. This operator combines individual terms separated by whitespace characters.</description>
+        <memberlist>ColumnViewOptionsFind.ParserKind</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbFilterCondition</name>
+        <windowcaption>Filter Condition</windowcaption>
+        <description>Specifies the condition that the Data Grid uses to search text entered in the Find Panel.</description>
+        <memberlist>ColumnViewOptionsFind.Condition</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowCustomButton</name>
+        <windowcaption>Custom Panel Items</windowcaption>
+        <description>You can add predefined and/or custom UI controls to the Find Panel. To accomplish that, call methods available via the FindPanelItems property.</description>
+        <memberlist>ColumnView.FindPanelItems</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

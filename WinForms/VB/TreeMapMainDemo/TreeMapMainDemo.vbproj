@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <ProjectGuid>{8FC73700-23FB-4E8D-B117-F8DBD4FD4130}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>TreeMapMainDemo</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.TreeMap.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Wizard">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v26.1.UI">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\Heatmap\HeatmapEmptyCells.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapEmptyCells.Designer.vb">
+      <DependentUpon>HeatmapEmptyCells.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapDataSourceAdapterDemo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapDataSourceAdapterDemo.Designer.vb">
+      <DependentUpon>HeatmapDataSourceAdapterDemo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapHeightmap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapHeightmap.Designer.vb">
+      <DependentUpon>HeatmapHeightmap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapKeyColorProvider.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapKeyColorProvider.Designer.vb">
+      <DependentUpon>HeatmapKeyColorProvider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapLargeDataSource.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapLargeDataSource.Designer.vb">
+      <DependentUpon>HeatmapLargeDataSource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapSelection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Heatmap\HeatmapSelection.Designer.vb">
+      <DependentUpon>HeatmapSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstGrouping.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstGrouping.Designer.vb">
+      <DependentUpon>SunburstGrouping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeMapDemoModuleWithOptions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeMapDemoModuleWithOptions.designer.vb">
+      <DependentUpon>TreeMapDemoModuleWithOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HierarchicalData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\HierarchicalData.designer.vb">
+      <DependentUpon>HierarchicalData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Colorizer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Colorizer.Designer.vb">
+      <DependentUpon>Colorizer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Grouping.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Grouping.Designer.vb">
+      <DependentUpon>Grouping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Selection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Selection.Designer.vb">
+      <DependentUpon>Selection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstHierarchicalData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstHierarchicalData.Designer.vb">
+      <DependentUpon>SunburstHierarchicalData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstInteraction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sunburst\SunburstInteraction.Designer.vb">
+      <DependentUpon>SunburstInteraction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="TutorialControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemosRegistration.vb" />
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapEmptyCells.resx">
+      <DependentUpon>HeatmapEmptyCells.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapDataSourceAdapterDemo.resx">
+      <DependentUpon>HeatmapDataSourceAdapterDemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapHeightmap.resx">
+      <DependentUpon>HeatmapHeightmap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapKeyColorProvider.resx">
+      <DependentUpon>HeatmapKeyColorProvider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapLargeDataSource.resx">
+      <DependentUpon>HeatmapLargeDataSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Heatmap\HeatmapSelection.resx">
+      <DependentUpon>HeatmapSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sunburst\SunburstGrouping.resx">
+      <DependentUpon>SunburstGrouping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeMapDemoModuleWithOptions.resx">
+      <DependentUpon>TreeMapDemoModuleWithOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\HierarchicalData.resx">
+      <DependentUpon>HierarchicalData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Colorizer.resx">
+      <DependentUpon>Colorizer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Grouping.resx">
+      <DependentUpon>Grouping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Selection.resx">
+      <DependentUpon>Selection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sunburst\SunburstHierarchicalData.resx">
+      <DependentUpon>SunburstHierarchicalData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sunburst\SunburstInteraction.resx">
+      <DependentUpon>SunburstInteraction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorialControl.resx">
+      <DependentUpon>TutorialControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.XtraTreeMap.Demos.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,27 @@
+﻿.background-size1 {
+	background-image: url('ellipse-1');
+	background-size: contain;
+}
+
+.background-size2 {
+	background-image: url('ellipse-2');
+	background-size: 10% 20px;
+}
+
+.background-size3 {
+	background-image: url('ellipse-3');
+	background-size: 32px;
+}
+
+.container {
+	padding: 10px;
+	margin-bottom: 10px;
+	height: 60px;
+	background-color: @Window;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+body {
+	color: @ControlText;
+}

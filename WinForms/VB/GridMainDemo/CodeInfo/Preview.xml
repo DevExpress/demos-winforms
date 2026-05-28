@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>ceAuto</name>
+				<windowcaption>Automatic height calculation</windowcaption>
+				<description>Specifies whether the height of preview sections is calculated automatically depending on content.</description>
+        <memberlist>GridOptionsView.AutoCalcPreviewLineCount</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>ceCustom</name>
+        <windowcaption>Custom draw preview sections</windowcaption>
+        <description>The CustomDrawRowPreview event is used to manually paint preview sections.</description>
+        <memberlist>GridView.CustomDrawRowPreview</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cbName</name>
+        <windowcaption>Preview text</windowcaption>
+        <description>The PreviewFieldName property and CalcPreviewText event are used to specify text to be displayed in preview sections.</description>
+        <memberlist>GridView.PreviewFieldName, GridView.CalcPreviewText</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceUseMeasurePreviewHeight</name>
+        <windowcaption>Custom preview section height</windowcaption>
+        <description>The MeasurePreviewHeight event allows you to specify a custom height for individual preview sections.</description>
+        <memberlist>GridView.MeasurePreviewHeight </memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

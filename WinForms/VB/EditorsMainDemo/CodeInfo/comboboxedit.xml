@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>icbTextEditStyle</name>
+			<windowcaption>TextEditStyle</windowcaption>
+			<description>This editor allows you to specify the manner in which text and buttons are displayed within the text editor.</description>
+			<memberlist>RepositoryItemButtonEdit.TextEditStyle</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbShowDropDown</name>
+			<windowcaption>Show DropDown</windowcaption>
+			<description>This editor allows you to specify whether the popup window can be opened by clicking the edit box when the text editor is disabled (the 'DisableTextEditor' item is selected in the 'Text Edit Style').</description>
+			<memberlist>RepositoryItemPopupBase.ShowDropDown, RepositoryItemButtonEdit.TextEditStyle</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+        
+        <controlentry>
+            <control>
+                <name>icbHighlightedItemStyle</name>
+                <windowcaption>Highlighted Item Style</windowcaption>
+                <description>This editor allows you to specify whether hot-tracked combobox items are painted skinned or using the default system color.</description>
+                <memberlist>RepositoryItemComboBox.HighlightedItemStyle</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        
+	<controlentry>
+		<control>
+			<name>seItemHeight</name>
+			<windowcaption>DropDown Item Height</windowcaption>
+			<description>This spin editor allows the height of the items in the dropdown list to be specified.</description>
+			<memberlist>RepositoryItemComboBox.DropDownItemHeight</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>seDropDownRows</name>
+			<windowcaption>DropDown Rows</windowcaption>
+			<description>This spin editor allows the number of visible items in the dropdown window to be specified. Note that this spin editor is disabled if the 'Popup Sizeable' check box is checked.</description>
+			<memberlist>RepositoryItemComboBox.DropDownRows, RepositoryItemPopupBaseAutoSearchEdit.PopupSizeable</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceAutoComplete</name>
+			<windowcaption>Auto Complete</windowcaption>
+			<description>This check box enables or disables the auto completion feature. This feature enables an end-user to select items from the dropdown by typing their first characters in the edit box. </description>
+			<memberlist>RepositoryItemComboBox.AutoComplete</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceCycleOnDblClick</name>
+			<windowcaption>Cycle On DblClick</windowcaption>
+			<description>This check box controls whether an end-user can loop through items by double-clicking the edit box. Note this is allowed if the combobox editor's ShowDropDown property is set to the ShowDropDown.Never value (the 'Never' item is selected in the 'Show DropDown').</description>
+			<memberlist>RepositoryItemComboBox.CycleOnDblClick, RepositoryItemPopupBase.ShowDropDown</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceHotTrackItems</name>
+			<windowcaption>Hot Track Items</windowcaption>
+			<description>This check box controls whether the items in the dropdown are hot-tracked when the mouse pointer moves over them.</description>
+			<memberlist>RepositoryItemComboBox.HotTrackItems, ComboBoxEdit.SelectedIndex</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceImmediatePopup</name>
+			<windowcaption>Immediate Popup</windowcaption>
+			<description>This check box controls whether the popup window is displayed immediately after an end-user has typed a character in the edit box.</description>
+			<memberlist>RepositoryItemPopupBaseAutoSearchEdit.ImmediatePopup, PopupBaseEdit.ShowPopup</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>cePopupSizeable</name>
+			<windowcaption>Popup Sizeable</windowcaption>
+			<description>This check box allows you to specify whether end users can change the size of the editor's popup window by dragging the resize grip at the window's right bottom corner.</description>
+			<memberlist>RepositoryItemPopupBaseAutoSearchEdit.PopupSizeable, RepositoryItemComboBox.DropDownRows</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceCTRLScroll</name>
+			<windowcaption>Use CTRL Scroll</windowcaption>
+			<description>This check box controls whether end-users should hold down the CTRL key when traversing through the items in the edit box by pressing the Up and Down arrow keys.</description>
+			<memberlist>RepositoryItemComboBox.UseCtrlScroll, RepositoryItemComboBox.CycleOnDblClick</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>comboBoxEditSample</name>
+			<windowcaption>ComboBoxEdit</windowcaption>
+			<description>The SelectedIndexChanged event is raised after the selected item has been changed. In this tutorial, this event is handled to display the index of the currently selected item and its value within the 'Selected index / Edit value' text editor.</description>
+			<memberlist>SelectedIndexChanged, EditValueChanged events</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>comboBoxEditSample</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown list<newline></newline>UP, DOWN keys to select the previous or next item<newline></newline>#Mouse Wheel<newline></newline>Supported<newline></newline>#Other End-User Actions<newline></newline>Use the controls on the right pane to learn which additional end-user customization methods are available</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

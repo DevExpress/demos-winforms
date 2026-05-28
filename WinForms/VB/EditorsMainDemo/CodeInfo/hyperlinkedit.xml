@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="H:\Work\XML Schemes\module-new.xsd">
+	<controls>
+	<controlentry>
+		<control>
+			<name>icbWindowStyle</name>
+			<windowcaption>Browser Window Style</windowcaption>
+			<description>This combo box allows you to select the manner in which the window for the process executed by the hyperlink editor should appear onscreen.</description>
+			<memberlist>RepositoryItemHyperLinkEdit.BrowserWindowStyle</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceSingleClick</name>
+			<windowcaption>Single Click</windowcaption>
+			<description>This check box controls how an end-user activates the hyperlink: with a single or double click.</description>
+			<memberlist>RepositoryItemHyperLinkEdit.SingleClick</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>teCaption</name>
+			<windowcaption>Caption</windowcaption>
+			<description>Use this text editor to specify the hyperlink editor's caption.</description>
+			<memberlist>RepositoryItemHyperLinkEdit.Caption</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>sbImageSet</name>
+			<windowcaption>Set Image</windowcaption>
+			<description>Click this button to assign an image to the hyperlink editor.</description>
+			<memberlist>RepositoryItemHyperLinkEdit.Image</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>sbImageClear</name>
+			<windowcaption>Clear Image</windowcaption>
+			<description>Click this button to clear the hyperlink editor's image.</description>
+			<memberlist>RepositoryItemHyperLinkEdit.Image</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbAlignment</name>
+			<windowcaption>Image Alignment</windowcaption>
+			<description>This combo box allows the alignment of the hyperlink editor's image to be specified. If the image is centered within the edit box, the link's caption is hidden.</description>
+			<memberlist>RepositoryItemHyperLinkEdit.ImageAlignment</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>colorEditLinkColor</name>
+			<windowcaption>Link Color</windowcaption>
+			<description></description>
+			<memberlist>RepositoryItemHyperLinkEdit.LinkColor</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>hyperLinkEdit1</name>
+			<windowcaption>Mail Message To Support</windowcaption>
+			<description>The OpenLink event is raised after an end-user has activated the hyperlink. This event allows you to modify the command which will be executed, perform additional action(s) and cancel the default processing (if necessary).</description>
+			<memberlist>HyperLinkEdit.ShowBrowser, OpenLink event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>hyperLinkEdit2</name>
+			<windowcaption>Online Order</windowcaption>
+			<description>The editor's ButtonClick event is handled to execute the specified command as a new process. This event is raised each time an end user clicks the hyperlink editor's 'Online Order' button.</description>
+			<memberlist>HyperLinkEdit.ShowBrowser, ButtonClick event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+</totalinfo>

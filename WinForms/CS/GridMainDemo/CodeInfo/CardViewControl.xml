@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>ceCustomize</name>
+        <windowcaption>Quick customize button</windowcaption>
+        <description>Hides or displays the Quick Customize Button.</description>
+        <memberlist>CardOptionsView.ShowQuickCustomizeButton</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceSorting</name>
+        <windowcaption>Sorting</windowcaption>
+        <description>Specifies whether end-users can sort data by column values.</description>
+        <memberlist>OptionsColumn.AllowSort</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceFiltering</name>
+        <windowcaption>Filtering</windowcaption>
+        <description>Displays the Filter button within the column header. Click the 'Customize' button to filter data using the filter dropdowns.</description>
+        <memberlist>OptionsColumnFilter.AllowFilter</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceImage</name>
+        <windowcaption>Caption images</windowcaption>
+        <description>Specifies whether images are displayed within card captions.</description>
+        <memberlist>CardView.CustomCardCaptionImage</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceButtons</name>
+        <windowcaption>Expand buttons</windowcaption>
+        <description>Specifies whether cards should display their expand buttons.</description>
+        <memberlist>CardOptionsView.ShowCardExpandButton</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbFormat</name>
+        <windowcaption>Caption format</windowcaption>
+        <description>Specifies card caption text patterns</description>
+        <memberlist>CardView.CardCaptionFormat</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seMaxColumns</name>
+        <windowcaption>Maximum columns number</windowcaption>
+        <description>Sets the maximum number of card columns which can be displayed simultaneously within a View.</description>
+        <memberlist>CardView.MaximumCardColumns</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seMaxRows</name>
+        <windowcaption>Maximum rows number</windowcaption>
+        <description>Sets the maximum number of card rows.</description>
+        <memberlist>CardView.MaximumCardRows</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceAutoHorzWidth</name>
+        <windowcaption>AutoHorzWidth</windowcaption>
+        <description>When enabled, end-users cannot change the card width using the card separator no matter whether or not the Sizeable option is enabled.</description>
+        <memberlist>CardOptionsBehavior.AutoHorzWidth</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceMultiSelect</name>
+        <windowcaption>Multiple cards selection</windowcaption>
+        <description>Specifies whether multiple card selection is enabled and selects specific cards.</description>
+        <memberlist>ColumnViewOptionsSelection.MultiSelect, ColumnView.SelectRange</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbRecords</name>
+        <windowcaption>Selected records</windowcaption>
+        <description>Returns the handles of selected rows or cards.</description>
+        <memberlist>ColumnView.GetSelectedRows, ColumnView.GetDataRow</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

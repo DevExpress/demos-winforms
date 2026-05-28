@@ -1,0 +1,39 @@
+﻿.text1 {
+    overflow-wrap: normal;
+}
+
+.text2 {
+    overflow-wrap: anywhere;
+}
+
+.text3 {
+    overflow-wrap: break-word;
+}
+
+body {
+    color: @ControlText;
+}
+
+h3 {
+    margin: 0px;
+}
+
+span {
+    color: @Yellow;
+
+}
+
+.container {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: @Window;
+    width: 220px;
+}
+
+.text-container {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: @Control;
+    overflow: hidden;
+}

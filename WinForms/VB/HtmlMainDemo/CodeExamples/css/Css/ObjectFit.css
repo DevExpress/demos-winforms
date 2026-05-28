@@ -1,0 +1,46 @@
+﻿.image1 {
+	object-fit: contain;
+}
+
+.image2 {
+	object-fit: none;
+}
+
+.image3 {
+	object-fit: scale-down;
+}
+
+.image4 {
+	object-fit: cover;
+}
+
+.image5 {
+	object-fit: fill;
+}
+
+body {
+	color: @ControlText;
+}
+
+h3 {
+	margin: 0px;
+}
+
+.container {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	background-color: @Window;
+	width: 160px;
+}
+
+img {
+	margin: 10px 0px;
+	color: @Blue;
+	border: solid 1px;
+	width: 120px;
+	height: 100px;
+	background-color: @Black/0.2;
+}

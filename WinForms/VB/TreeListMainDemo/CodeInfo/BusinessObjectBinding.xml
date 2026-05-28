@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>treeList1</name>
+        <windowcaption>Binding to a business object</windowcaption>
+        <description>In this example, the TreeList control is bound to a data source representing a tree structure. The information on the data hierarchy is provided via the IVirtualTreeListData interface. The TreeList dynamically creates nodes, retrieves node values and post them back based on the data provided by the interface methods.</description>
+        <memberlist>Binding to a Business Object</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>propertyGridControl1</name>
+        <windowcaption>Property grid</windowcaption>
+        <description>The PropertyGridControl displays the focused node's values.</description>
+        <memberlist>TreeList.FocusedNodeChanged ,PropertyGridControl</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

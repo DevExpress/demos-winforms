@@ -1,0 +1,33 @@
+﻿.text1 {
+	text-decoration-line: none;
+}
+
+.text2 {
+	text-decoration-line: underline;
+}
+
+.text3 {
+	text-decoration-line: line-through;
+}
+
+body {
+	color: @ControlText;
+}
+
+h3 {
+	margin: 0px;
+}
+
+.container {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: @Window;
+}
+
+.text-container {
+	margin-top: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: @Control;
+	overflow: hidden;
+}

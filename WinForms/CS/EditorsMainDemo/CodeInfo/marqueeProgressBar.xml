@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>icbProgressViewStyle</name>
+				<windowcaption>Bar Style</windowcaption>
+				<description>This combo box allows you to toggle the filling kind of the progress bar between broken and solid. Note that the progress bar has a single theme-defined style when XP themes are applied.</description>
+				<memberlist>ProgressViewStyle</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditVertical</name>
+				<windowcaption>Vertical</windowcaption>
+				<description>If checked the marquee progress bar is vertically oriented. Otherwise, it's oriented horizontally. Note that changing the progress bar's orientation usually implies changing it's bounds as well.</description>
+				<memberlist>ProgressKind</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditShowTitle</name>
+				<windowcaption>Show Title</windowcaption>
+				<description>This check box toggles the visibility of the text within the marquee progress bar. The text can be specified within the 'Title' text box.</description>
+				<memberlist>ShowTitle, Text</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>spinEditAnimationSpeed</name>
+				<windowcaption>Animation Speed</windowcaption>
+				<description>Specifies the time period that it takes the progress block to scroll across the progress bar</description>
+				<memberlist>MarqueeAnimationSpeed</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>teTitle</name>
+				<windowcaption>Title</windowcaption>
+				<description>Specifies the text that represents the progress bar's current position. This text is displayed if the 'Show Title' check box is checked.</description>
+				<memberlist>Text, ShowTitle</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		</controls>
+</totalinfo>

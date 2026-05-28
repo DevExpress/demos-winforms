@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>checkedListBoxControlSample</name>
+			<windowcaption>CheckedListBoxControl</windowcaption>
+			<description>The CheckedListBoxControl can function in bound and unbound modes. In this tutorial, it's bound to a data source. The data is obtained from the 'nwind.mdb' database which is shipped with the installation.</description>
+			<memberlist>CheckedListBoxControl.DataSource, CheckedListBoxControl.DisplayMember, CheckedListBoxControl.ValueMember</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceCustomDraw</name>
+			<windowcaption>Custom Draw Item</windowcaption>
+			<description>Each time the 'Custom Draw' check editor's checked state is changed the CheckedListBox's Refresh method is called to invalidate its client region. If this check box is checked, the unchecked items in the CheckedListBox are custom painted. The DrawItem event is handled for this purpose.</description>
+			<memberlist>CheckedListBoxControl.Refresh, DrawItem event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>seInvert</name>
+			<windowcaption>Invert Checked Items</windowcaption>
+			<description>Click this button to invert the checked items.</description>
+			<memberlist>CheckedListBoxControl.SetItemCheckState, CheckedListBoxControl.GetItemChecked</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>imageListBoxControlSample</name>
+			<windowcaption>ImageListBoxControl</windowcaption>
+			<description>The SelectedIndexChanged event is raised after the selected item in the image list box has been changed. In this tutorial, the SelectedIndexChanged event is handled to preview the font currently selected.</description>
+			<memberlist>SelectedIndexChanged event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbSelectionMode</name>
+			<windowcaption>Selection Mode</windowcaption>
+			<description>This combo box allows you to determine how many items a user can select at once and the way the user can perform multiple selections. Note that the CheckedListBoxControl doesn't support multiple selection.</description>
+			<memberlist>BaseListBoxControl.SelectionMode</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbSortOrder</name>
+			<windowcaption>Sort Order</windowcaption>
+			<description>This combo box allows you to change the order in which items are sorted. If the list box is bound to a data source, setting its SortOrder property will have no effect. In this tutorial, the 'Sort Order' combo box is disabled for the ListBoxControl and CheckedListBoxControl because they function is bound mode.</description>
+			<memberlist>BaseListBoxControl.SortOrder</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+
+
+        <controlentry>
+            <control>
+                <name>icbHighlightedItemStyle</name>
+                <windowcaption>Highlighted Item Style</windowcaption>
+                <description>This editor allows you to specify whether hot-tracked and selected items are painted skinned or using the default system color.</description>
+                <memberlist>BaseListBoxControl.HighlightedItemStyle</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+
+
+
+        <controlentry>
+            <control>
+                <name>icbHotTrackSelectMode</name>
+                <windowcaption>Select Items in Hot-Track Mode</windowcaption>
+                <description>This combo box allows you to specify  how items are selected when item hot-tracking is enabled. The setting is not in effect when the Default or Standard highlighted item style is applied.</description>
+                <memberlist>BaseListBoxControl.HotTrackSelectMode</memberlist>
+                <dtimage></dtimage>
+            </control>
+        </controlentry>
+        
+        
+        <controlentry>
+		<control>
+			<name>icbAlignment</name>
+			<windowcaption>Glyph Alignment</windowcaption>
+			<description>This combo box allows you to change the alignment of the item images.</description>
+			<memberlist>BaseImageListBoxControl.GlyphAlignment</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>seColumnWidth</name>
+			<windowcaption>Column Width</windowcaption>
+			<description>This spin editor allows the column width to be specified. Items are displayed across columns if the 'Multi Column' check box is checked (the control's MultiColumn property is set to true).</description>
+			<memberlist>BaseListBoxControl.ColumnWidth, BaseListBoxControl.MultiColumn</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceHotTrack</name>
+			<windowcaption>Hot Track Items</windowcaption>
+			<description>This check box controls whether the items are hot-tracked when the mouse pointer moves over them.</description>
+			<memberlist>BaseListBoxControl.HotTrackItems, BaseListBoxControl.SelectedIndex</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceMultiColumn</name>
+			<windowcaption>Multi Column</windowcaption>
+			<description>This check box controls whether the items are displayed in columns. To change thecolumn width use the 'Column Width' spin editor.</description>
+			<memberlist>BaseListBoxControl.MultiColumn, BaseListBoxControl.ColumnWidth</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceCheckOnClick</name>
+			<windowcaption>Check On Click</windowcaption>
+			<description>By default, end users need two clicks to change the check state of an unfocused item. The first click moves focus to the item and the second toggles its check state. If the 'Check On Click' check box is checked (the control's CheckOnClick property is set to true), these two actions are performed by a single click.</description>
+			<memberlist>CheckedListBoxControl.CheckOnClick, CheckedListBoxControl.CheckedItems, CheckedListBoxControl.ItemCheck</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+  <controlentry>
+    <control>
+      <name>ceAllowAutoApply</name>
+      <windowcaption>Allow Auto Apply</windowcaption>
+      <description>This option allows you to disable the automatic search.</description>
+      <memberlist>SearchControl.Properties.AllowAutoApply</memberlist>
+      <dtimage></dtimage>
+    </control>
+  </controlentry>
+  <controlentry>
+    <control>
+      <name>ceShowSearchButton</name>
+      <windowcaption>Show Search Button</windowcaption>
+      <description>This check box shows or hides the default button. Pressing this button starts the search process.</description>
+      <memberlist>SearchControl.Properties.ShowSearchButton</memberlist>
+      <dtimage></dtimage>
+    </control>
+  </controlentry>
+  <controlentry>
+    <control>
+      <name>ceShowClearButton</name>
+      <windowcaption>Show Clear Button</windowcaption>
+      <description>This check box shows or hides the default button. Pressing this button clears search text.</description>
+      <memberlist>SearchControl.Properties.ShowClearButton</memberlist>
+      <dtimage></dtimage>
+    </control>
+  </controlentry>
+  <controlentry>
+    <control>
+      <name>ceShowMRUButton</name>
+      <windowcaption>Show MRU Button</windowcaption>
+      <description>This check box shows or hides the default button. Pressing this button displays a list of the last entered values ​​for the search.</description>
+      <memberlist>SearchControl.Properties.ShowMRUButton</memberlist>
+      <dtimage></dtimage>
+    </control>
+  </controlentry>
+  <controlentry>
+    <control>
+      <name>tbFindDelay</name>
+      <windowcaption>Find Delay</windowcaption>
+      <description>This option allows you to specify the start time of the automatic search.</description>
+      <memberlist>SearchControl.Properties.FindDelay</memberlist>
+      <dtimage></dtimage>
+    </control>
+  </controlentry>
+  <controlentry>
+    <control>
+      <name>cbFilterCondition</name>
+      <windowcaption>Filter Condition</windowcaption>
+      <description>This option allows you to select the search mode (Contains, StartsWith, Like, Default, Equals).</description>
+      <memberlist>SearchControl.Properties.FilterCondition</memberlist>
+      <dtimage></dtimage>
+    </control>
+  </controlentry>
+  <controlentry>
+    <control>
+      <name>searchControlSample</name>
+      <windowcaption>Search Control</windowcaption>
+      <description>The SearchControl can function with XtraTreeList, GridControl, ListBoxControl, XtraVerticalGrid, and PropertyGridControl. In this tutorial, it's bound to ListBoxControl.</description>
+      <memberlist>SearchControl</memberlist>
+      <dtimage></dtimage>
+    </control>
+  </controlentry>
+  <controlentry>
+    <control>
+      <name>cbShowDefaultButtonsMode</name>
+      <windowcaption>Show Default Buttons Mode</windowcaption>
+      <description>
+        This option sets display mode of default buttons:
+        AutoShowClear - hide the Clear button if there is no search text;
+        AutoChangeSearchToClear - hide the Search button and show the Clear button with entered search text, and vice versa without search text;
+        Always - all the buttons are always displayed.
+      </description>
+      <memberlist>SearchControl.Properties.ShowDefaultButtonsMode</memberlist>
+      <dtimage></dtimage>
+    </control>
+  </controlentry>        
+	</controls>
+</totalinfo>

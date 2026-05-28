@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>sbApply</name>
+        <windowcaption>Apply filter</windowcaption>
+        <description>The ApplyFilter method applies the filter criteria to the source control.</description>
+        <memberlist>FilterControl.ApplyFilter</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbViewMode</name>
+        <windowcaption>View mode</windowcaption>
+        <description>Specifies whether filters can be edited in a Tree-Like or text-based form, or using both forms.</description>
+        <memberlist>FilterEditorControl.ViewMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbDisplayStyle</name>
+        <windowcaption>Display style</windowcaption>
+        <description>Specifies a style according to which filter node elements are shown.</description>
+        <memberlist>ColumnViewOptionsView.FilterCriteriaDisplayStyle</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seLevelIndent</name>
+        <windowcaption>Level indent</windowcaption>
+        <description>The LevelIndent property specifies the width of level indents (horizontal tree lines).</description>
+        <memberlist>FilterControl.LevelIndent</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seSeparatorHeight</name>
+        <windowcaption>Node separator height</windowcaption>
+        <description>This property specifies the distance between logical expressions.</description>
+        <memberlist>FilterControl.NodeSeparatorHeight</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceGroupCommandsIcon</name>
+        <windowcaption>Group commands icon</windowcaption>
+        <description>Enables or disables the group commands icon. Clicking this icon invokes the context menu that allows end-users to create new logical groups, conditions or remove all conditions.</description>
+        <memberlist>FilterControl.ShowGroupCommandsIcon</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceOperandTypeIcon</name>
+        <windowcaption>Show operand type icon</windowcaption>
+        <description>If the ShowOperandTypeIcon property is set to true, end-users can compare the values of one filter column with the values of another column.</description>
+        <memberlist>FilterControl.ShowOperandTypeIcon</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceToolTips</name>
+        <windowcaption>Show tool tips</windowcaption>
+        <description>Enables or disables tooltips for the filter control.</description>
+        <memberlist>BaseControl.ShowToolTips</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceEmptyValue</name>
+        <windowcaption>Emptly value color</windowcaption>
+        <description>The color of empty values.</description>
+        <memberlist>FilterControl.AppearanceEmptyValueColor</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceFieldName</name>
+        <windowcaption>Field name color</windowcaption>
+        <description>The color of field names.</description>
+        <memberlist>FilterControl.AppearanceFieldNameColor</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceGroupOperator</name>
+        <windowcaption>Group operator color</windowcaption>
+        <description>The color for group operators.</description>
+        <memberlist>FilterControl.AppearanceGroupOperatorColor</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceOperator</name>
+        <windowcaption>Operator color</windowcaption>
+        <description>The color of logical operators.</description>
+        <memberlist>FilterControl.AppearanceOperatorColor</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceValue</name>
+        <windowcaption>Value color</windowcaption>
+        <description>The color of values.</description>
+        <memberlist>FilterControl.AppearanceValueColor</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>filterControl1</name>
+        <windowcaption>Source control</windowcaption>
+        <description>You can bind a Grid Control to a Filter Control via the SourceControl property.</description>
+        <memberlist>FilterControl.SourceControl</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbApplyFilter2</name>
+        <windowcaption>Active filter string</windowcaption>
+        <description>In this demo module, Grid Control is not bound to the Filter Control via the FilterControl.SourceControl property. To filter the Grid Control's data filtering expression is manually assigned to the ActiveFilterString property.</description>
+        <memberlist>ColumnView.ActiveFilterString</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbReset</name>
+        <windowcaption>Filter string</windowcaption>
+        <description>Assignes the current Grid Control's filtering expression to the FilterControl.FilterString property.</description>
+        <memberlist>FilterControl.FilterString</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

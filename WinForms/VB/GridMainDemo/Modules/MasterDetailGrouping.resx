@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="colOrderID.Caption" xml:space="preserve">
+    <value>OrderID</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="colOrderID.Width" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="colCustomer.Caption" xml:space="preserve">
+    <value>CustomerID</value>
+  </data>
+  <data name="colCustomer.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="colOrderDate.Caption" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="colOrderDate.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="colRequiredDate.Caption" xml:space="preserve">
+    <value>Required Date</value>
+  </data>
+  <data name="colRequiredDate.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="colShippedDate.Caption" xml:space="preserve">
+    <value>Shipped Date</value>
+  </data>
+  <data name="colShippedDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colShippedDate.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colShippedDate.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colShipVia.Caption" xml:space="preserve">
+    <value>Ship Via</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v26.1" name="DevExpress.Utils.v26.1, Culture=neutral"></assembly>
+  <data name="repositoryItemImageComboBox3.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items" xml:space="preserve">
+    <value>Speedy Express</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items1" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items3" xml:space="preserve">
+    <value>United Package</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items4" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items5" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items6" xml:space="preserve">
+    <value>Federal Shipping</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items7" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="repositoryItemImageComboBox3.Items8" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="colShipVia.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="colShipVia.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="colFreight.Caption" xml:space="preserve">
+    <value>Freight</value>
+  </data>
+  <data name="repositoryItemSpinEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colFreight.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colFreight.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="colFreight.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="colShipName.Caption" xml:space="preserve">
+    <value>Ship Name</value>
+  </data>
+  <data name="colShipName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colShipName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="colShipName.Width" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="colShipAddress.Caption" xml:space="preserve">
+    <value>Ship Address</value>
+  </data>
+  <data name="colShipAddress.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colShipAddress.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="colShipAddress.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="colShipCity.Caption" xml:space="preserve">
+    <value>Ship City</value>
+  </data>
+  <data name="colShipCity.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colShipCity.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="colShipCity.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="colShipRegion.Caption" xml:space="preserve">
+    <value>Ship Region</value>
+  </data>
+  <data name="colShipRegion.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="colShipPostalCode.Caption" xml:space="preserve">
+    <value>Ship Postal Code</value>
+  </data>
+  <data name="colShipPostalCode.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="colShipCountry.Caption" xml:space="preserve">
+    <value>Ship Country</value>
+  </data>
+  <data name="colShipCountry.Width" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="gridControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 57</value>
+  </data>
+  <data name="gridView1.ChildGridLevelName" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="colCustomerID.Caption" xml:space="preserve">
+    <value>CustomerID</value>
+  </data>
+  <data name="colCustomerID.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="colCompanyName.Caption" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="colCompanyName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCompanyName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="colCompanyName.Width" type="System.Int32, mscorlib">
+    <value>192</value>
+  </data>
+  <data name="colContactName.Caption" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="colContactName.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="colContactName.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI2LjEsIFZlcnNpb249MjYuMS4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAABwFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5ZZWxsb3d7
+        ZmlsbDojRkZCMTE1O30KCS5SZWR7ZmlsbDojRDExQzFDO30KCS5HcmVlbntmaWxsOiMwMzlDMjM7fQoJ
+        LkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuV2hpdGV7ZmlsbDojRkZGRkZGO30KCS5zdDB7b3BhY2l0eTow
+        LjU7fQoJLnN0MXtvcGFjaXR5OjAuNzU7fQoJLnN0MntkaXNwbGF5Om5vbmU7fQoJLnN0M3tkaXNwbGF5
+        OmlubGluZTtmaWxsOiNGRkIxMTU7fQoJLnN0NHtkaXNwbGF5OmlubGluZTt9Cgkuc3Q1e2Rpc3BsYXk6
+        aW5saW5lO29wYWNpdHk6MC43NTt9Cgkuc3Q2e2Rpc3BsYXk6aW5saW5lO29wYWNpdHk6MC41O30KCS5z
+        dDd7ZGlzcGxheTppbmxpbmU7ZmlsbDojMDM5QzIzO30KCS5zdDh7ZGlzcGxheTppbmxpbmU7ZmlsbDoj
+        RDExQzFDO30KCS5zdDl7ZGlzcGxheTppbmxpbmU7ZmlsbDojMTE3N0Q3O30KCS5zdDEwe2Rpc3BsYXk6
+        aW5saW5lO2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+DQogIDxnIGlkPSJBZGRyZXNzXzFfIj4NCiAgICA8
+        ZyBvcGFjaXR5PSIwLjc1IiBjbGFzcz0ic3QxIj4NCiAgICAgIDxwYXRoIGQ9Ik0yNiwxMkgxNnYtMmgx
+        MFYxMnogTTI2LDE0SDE2djJoMTBWMTR6IE0yNiwxOEgxNnYyaDEwVjE4eiIgZmlsbD0iIzcyNzI3MiIg
+        b3BhY2l0eT0iMC43NSIgY2xhc3M9IkJsYWNrIiAvPg0KICAgIDwvZz4NCiAgICA8cGF0aCBkPSJNMjks
+        NEgxQzAuNCw0LDAsNC41LDAsNXYyMGMwLDAuNSwwLjQsMSwxLDFoMjhjMC42LDAsMS0wLjUsMS0xVjVD
+        MzAsNC41LDI5LjYsNCwyOSw0eiBNMjgsMjRIMlY2aDI2VjI0eiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9
+        IkJsYWNrIiAvPg0KICAgIDxwYXRoIGQ9Ik05LDhjMS43LDAsMywxLjMsMywzcy0xLjMsMy0zLDNzLTMt
+        MS4zLTMtM1M3LjMsOCw5LDh6IE0xMi4yLDE0LjhjLTAuOSwwLjctMiwxLjItMy4yLDEuMnMtMi4zLTAu
+        NS0zLjItMS4yICAgQzQsMTYuNSw0LDIyLDQsMjJoMTBDMTQsMjIsMTQsMTYuNSwxMi4yLDE0Ljh6IiBm
+        aWxsPSIjMTE3N0Q3IiBjbGFzcz0iQmx1ZSIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="colContactName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colContactName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colContactName.Width" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="colContactTitle.Caption" xml:space="preserve">
+    <value>Contact Title</value>
+  </data>
+  <data name="colContactTitle.Width" type="System.Int32, mscorlib">
+    <value>162</value>
+  </data>
+  <data name="colAddress.Caption" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="colAddress.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colAddress.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="colAddress.Width" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="colCity.Caption" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="colCity.Width" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="colRegion.Caption" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="colRegion.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="colPostalCode.Caption" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="colPostalCode.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="colCountry.Caption" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="colCountry.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCountry.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="colCountry.Width" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="colPhone.Caption" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="colPhone.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI2LjEsIFZlcnNpb249MjYuMS4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAACcDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9CgkuWWVsbG93
+        e2ZpbGw6I0ZGQjExNTt9CgkuQmx1ZXtmaWxsOiMxMTc3RDc7fQoJLlJlZHtmaWxsOiNEMTFDMUM7fQoJ
+        LldoaXRle2ZpbGw6I0ZGRkZGRjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5zdDB7ZmlsbDojNzI3
+        MjcyO30KCS5zdDF7b3BhY2l0eTowLjU7fQoJLnN0MntvcGFjaXR5OjAuNzU7fQo8L3N0eWxlPg0KICA8
+        ZyBpZD0iUGhvbmUiPg0KICAgIDxwYXRoIGQ9Ik0yNy43LDIzLjZsLTUuMy01LjNjLTAuNC0wLjQtMS0w
+        LjQtMS40LDBsLTIuOCwyLjhjLTMuMi0xLjUtNS44LTQuMS03LjMtNy4zbDIuOC0yLjhjMC40LTAuNCww
+        LjQtMSwwLTEuNCAgIEw4LjQsNC4zYy0wLjQtMC40LTEtMC40LTEuNSwwTDQuMyw2LjlDNC4xLDcuMiw0
+        LDcuNCw0LDcuN0M0LDE4LjksMTMuMSwyOCwyNC4zLDI4YzAuMywwLDAuNS0wLjEsMC43LTAuM2wyLjYt
+        Mi42ICAgQzI4LjEsMjQuNiwyOC4xLDI0LDI3LjcsMjMuNnoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJC
+        bGFjayIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="colPhone.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colPhone.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="colPhone.Width" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="colFax.Caption" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="colFax.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="gridView1.ViewCaption" xml:space="preserve">
+    <value>Main View</value>
+  </data>
+  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>780, 396</value>
+  </data>
+  <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
+    <value>gridControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chJoined.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chJoined.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI2LjEsIFZlcnNpb249MjYuMS4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAALQFAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5zdDB7b3Bh
+        Y2l0eTowLjU7fQo8L3N0eWxlPg0KICA8cGF0aCBkPSJNMjksMEgzQzIuNCwwLDIsMC40LDIsMXY5aDI4
+        VjFDMzAsMC40LDI5LjYsMCwyOSwweiBNMTIsOEg0VjZoOFY4eiBNMTIsNEg0VjJoOFY0eiBNMjIsNGgt
+        OFYyaDhWNHoiIGZpbGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICA8ZyBvcGFjaXR5PSIwLjUi
+        IGNsYXNzPSJzdDAiPg0KICAgIDxyZWN0IHg9IjIiIHk9IjExLjkiIHdpZHRoPSI4IiBoZWlnaHQ9IjQu
+        MSIgZmlsbD0iIzExNzdENyIgb3BhY2l0eT0iMC41IiBjbGFzcz0iQmx1ZSIgLz4NCiAgICA8cG9seWxp
+        bmUgcG9pbnRzPSIxMiwxMS45IDIwLDExLjkgMjAsMTYgMTIsMTYgICIgZmlsbD0iIzExNzdENyIgb3Bh
+        Y2l0eT0iMC41IiBjbGFzcz0iQmx1ZSIgLz4NCiAgICA8cG9seWxpbmUgcG9pbnRzPSIyMiwxMS45IDMw
+        LDExLjkgMzAsMTYgMjIsMTYgICIgZmlsbD0iIzExNzdENyIgb3BhY2l0eT0iMC41IiBjbGFzcz0iQmx1
+        ZSIgLz4NCiAgICA8cG9seWdvbiBwb2ludHM9IjMwLDE4IDIsMTggMiwxOCAyLDIyIDIsMzIgNiwzMiA2
+        LDIyIDMwLDIyICAiIGZpbGw9IiMxMTc3RDciIG9wYWNpdHk9IjAuNSIgY2xhc3M9IkJsdWUiIC8+DQog
+        ICAgPHJlY3QgeD0iOCIgeT0iMjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjQiIGZpbGw9IiMxMTc3RDciIG9w
+        YWNpdHk9IjAuNSIgY2xhc3M9IkJsdWUiIC8+DQogICAgPHJlY3QgeD0iMTYiIHk9IjI0IiB3aWR0aD0i
+        NiIgaGVpZ2h0PSI0IiBmaWxsPSIjMTE3N0Q3IiBvcGFjaXR5PSIwLjUiIGNsYXNzPSJCbHVlIiAvPg0K
+        ICAgIDxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjYiIGhlaWdodD0iNCIgZmlsbD0iIzExNzdENyIg
+        b3BhY2l0eT0iMC41IiBjbGFzcz0iQmx1ZSIgLz4NCiAgICA8cmVjdCB4PSI4IiB5PSIzMCIgd2lkdGg9
+        IjYiIGhlaWdodD0iMiIgZmlsbD0iIzExNzdENyIgb3BhY2l0eT0iMC41IiBjbGFzcz0iQmx1ZSIgLz4N
+        CiAgICA8cmVjdCB4PSIxNiIgeT0iMzAiIHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9IiMxMTc3RDci
+        IG9wYWNpdHk9IjAuNSIgY2xhc3M9IkJsdWUiIC8+DQogICAgPHJlY3QgeD0iMjQiIHk9IjMwIiB3aWR0
+        aD0iNiIgaGVpZ2h0PSIyIiBmaWxsPSIjMTE3N0Q3IiBvcGFjaXR5PSIwLjUiIGNsYXNzPSJCbHVlIiAv
+        Pg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="chJoined.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 9</value>
+  </data>
+  <data name="chJoined.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 40</value>
+  </data>
+  <data name="chJoined.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chJoined.Text" xml:space="preserve">
+    <value>Merged Group Panel</value>
+  </data>
+  <data name="&gt;&gt;chJoined.Name" xml:space="preserve">
+    <value>chJoined</value>
+  </data>
+  <data name="&gt;&gt;chJoined.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chJoined.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;chJoined.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chOwner.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="chOwner.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI2LjEsIFZlcnNpb249MjYuMS4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAPgEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KCS5zdDB7b3Bh
+        Y2l0eTowLjU7fQo8L3N0eWxlPg0KICA8cGF0aCBkPSJNMjksMEgzQzIuNCwwLDIsMC40LDIsMXY1aDI4
+        VjFDMzAsMC40LDI5LjYsMCwyOSwweiBNMTIsNEg0VjJoOFY0eiIgZmlsbD0iIzExNzdENyIgY2xhc3M9
+        IkJsdWUiIC8+DQogIDxwYXRoIGQ9Ik0yOSwyMEg5Yy0wLjYsMC0xLDAuNC0xLDF2NWgyMnYtNUMzMCwy
+        MC40LDI5LjYsMjAsMjksMjB6IE0xOCwyNGgtOHYtMmg4VjI0eiIgZmlsbD0iIzExNzdENyIgY2xhc3M9
+        IkJsdWUiIC8+DQogIDxnIG9wYWNpdHk9IjAuNSIgY2xhc3M9InN0MCI+DQogICAgPHJlY3QgeD0iMiIg
+        eT0iNy45IiB3aWR0aD0iOCIgaGVpZ2h0PSI0LjEiIGZpbGw9IiMxMTc3RDciIG9wYWNpdHk9IjAuNSIg
+        Y2xhc3M9IkJsdWUiIC8+DQogICAgPHBvbHlsaW5lIHBvaW50cz0iMTIsNy45IDIwLDcuOSAyMCwxMiAx
+        MiwxMiAgIiBmaWxsPSIjMTE3N0Q3IiBvcGFjaXR5PSIwLjUiIGNsYXNzPSJCbHVlIiAvPg0KICAgIDxw
+        b2x5bGluZSBwb2ludHM9IjIyLDcuOSAzMCw3LjkgMzAsMTIgMjIsMTIgICIgZmlsbD0iIzExNzdENyIg
+        b3BhY2l0eT0iMC41IiBjbGFzcz0iQmx1ZSIgLz4NCiAgICA8cG9seWdvbiBwb2ludHM9IjMwLDE0IDIs
+        MTQgMiwxNCAyLDE4IDIsMzIgNiwzMiA2LDE4IDMwLDE4ICAiIGZpbGw9IiMxMTc3RDciIG9wYWNpdHk9
+        IjAuNSIgY2xhc3M9IkJsdWUiIC8+DQogICAgPHJlY3QgeD0iOCIgeT0iMjgiIHdpZHRoPSI2IiBoZWln
+        aHQ9IjQiIGZpbGw9IiMxMTc3RDciIG9wYWNpdHk9IjAuNSIgY2xhc3M9IkJsdWUiIC8+DQogICAgPHJl
+        Y3QgeD0iMTYiIHk9IjI4IiB3aWR0aD0iNiIgaGVpZ2h0PSI0IiBmaWxsPSIjMTE3N0Q3IiBvcGFjaXR5
+        PSIwLjUiIGNsYXNzPSJCbHVlIiAvPg0KICAgIDxyZWN0IHg9IjI0IiB5PSIyOCIgd2lkdGg9IjYiIGhl
+        aWdodD0iNCIgZmlsbD0iIzExNzdENyIgb3BhY2l0eT0iMC41IiBjbGFzcz0iQmx1ZSIgLz4NCiAgPC9n
+        Pg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="chOwner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 9</value>
+  </data>
+  <data name="chOwner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 40</value>
+  </data>
+  <data name="chOwner.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chOwner.Text" xml:space="preserve">
+    <value>Separate Group Panels</value>
+  </data>
+  <data name="&gt;&gt;chOwner.Name" xml:space="preserve">
+    <value>chOwner</value>
+  </data>
+  <data name="&gt;&gt;chOwner.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chOwner.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;chOwner.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>780, 57</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>780, 453</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
+    <value>gridView2</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colOrderID.Name" xml:space="preserve">
+    <value>colOrderID</value>
+  </data>
+  <data name="&gt;&gt;colOrderID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCustomer.Name" xml:space="preserve">
+    <value>colCustomer</value>
+  </data>
+  <data name="&gt;&gt;colCustomer.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colOrderDate.Name" xml:space="preserve">
+    <value>colOrderDate</value>
+  </data>
+  <data name="&gt;&gt;colOrderDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colRequiredDate.Name" xml:space="preserve">
+    <value>colRequiredDate</value>
+  </data>
+  <data name="&gt;&gt;colRequiredDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colShippedDate.Name" xml:space="preserve">
+    <value>colShippedDate</value>
+  </data>
+  <data name="&gt;&gt;colShippedDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colShipVia.Name" xml:space="preserve">
+    <value>colShipVia</value>
+  </data>
+  <data name="&gt;&gt;colShipVia.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemImageComboBox3.Name" xml:space="preserve">
+    <value>repositoryItemImageComboBox3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemImageComboBox3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colFreight.Name" xml:space="preserve">
+    <value>colFreight</value>
+  </data>
+  <data name="&gt;&gt;colFreight.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit3.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colShipName.Name" xml:space="preserve">
+    <value>colShipName</value>
+  </data>
+  <data name="&gt;&gt;colShipName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colShipAddress.Name" xml:space="preserve">
+    <value>colShipAddress</value>
+  </data>
+  <data name="&gt;&gt;colShipAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colShipCity.Name" xml:space="preserve">
+    <value>colShipCity</value>
+  </data>
+  <data name="&gt;&gt;colShipCity.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colShipRegion.Name" xml:space="preserve">
+    <value>colShipRegion</value>
+  </data>
+  <data name="&gt;&gt;colShipRegion.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colShipPostalCode.Name" xml:space="preserve">
+    <value>colShipPostalCode</value>
+  </data>
+  <data name="&gt;&gt;colShipPostalCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colShipCountry.Name" xml:space="preserve">
+    <value>colShipCountry</value>
+  </data>
+  <data name="&gt;&gt;colShipCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCustomerID.Name" xml:space="preserve">
+    <value>colCustomerID</value>
+  </data>
+  <data name="&gt;&gt;colCustomerID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCompanyName.Name" xml:space="preserve">
+    <value>colCompanyName</value>
+  </data>
+  <data name="&gt;&gt;colCompanyName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colContactName.Name" xml:space="preserve">
+    <value>colContactName</value>
+  </data>
+  <data name="&gt;&gt;colContactName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colContactTitle.Name" xml:space="preserve">
+    <value>colContactTitle</value>
+  </data>
+  <data name="&gt;&gt;colContactTitle.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colAddress.Name" xml:space="preserve">
+    <value>colAddress</value>
+  </data>
+  <data name="&gt;&gt;colAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCity.Name" xml:space="preserve">
+    <value>colCity</value>
+  </data>
+  <data name="&gt;&gt;colCity.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colRegion.Name" xml:space="preserve">
+    <value>colRegion</value>
+  </data>
+  <data name="&gt;&gt;colRegion.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colPostalCode.Name" xml:space="preserve">
+    <value>colPostalCode</value>
+  </data>
+  <data name="&gt;&gt;colPostalCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCountry.Name" xml:space="preserve">
+    <value>colCountry</value>
+  </data>
+  <data name="&gt;&gt;colCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colPhone.Name" xml:space="preserve">
+    <value>colPhone</value>
+  </data>
+  <data name="&gt;&gt;colPhone.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colFax.Name" xml:space="preserve">
+    <value>colFax</value>
+  </data>
+  <data name="&gt;&gt;colFax.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MasterDetailGrouping</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Demos.TutorialControl, GridMainDemo, Culture=neutral</value>
+  </data>
+</root>

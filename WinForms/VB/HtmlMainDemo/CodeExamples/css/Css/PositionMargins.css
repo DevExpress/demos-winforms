@@ -1,0 +1,64 @@
+﻿.item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: @Blue;
+    color: White;
+    border-style: solid;
+    border-width: 2px;
+    border-color: White;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px @HighlightAlternate/0.5;
+}
+
+#item1 {
+    background-color: @Red;
+    z-index: -1;
+}
+
+    #item1:hover {
+        background-color: @Black/0.5;
+    }
+
+#item2 {
+    background-color: @Yellow;
+    z-index: 3;
+}
+
+    #item2:hover {
+        background-color: @Black/0.5;
+    }
+
+#item3:hover {
+    background-color: @Black/0.5;
+}
+
+#item4 {
+    background-color: @Black;
+    z-index: 3;
+}
+
+    #item4:hover {
+        background-color: @Black/0.5;
+    }
+
+#item5 {
+    color: @ControlText;
+    background-color: @HotTrackedColor;
+    z-index: 0;
+}
+
+    #item5:hover {
+        background-color: @Black/0.5;
+        color: @White;
+    }
+
+#item6 {
+    background-color: @Green;
+    z-index: 0;
+}
+
+    #item6:hover {
+        background-color: @Black/0.5;
+    }

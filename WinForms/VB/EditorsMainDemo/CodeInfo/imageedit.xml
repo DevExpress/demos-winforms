@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+		<controlentry>
+		<control>
+			<name>icbSizeMode</name>
+			<windowcaption>Size Mode</windowcaption>
+			<description>This combo box allows you to select how the image is displayed within the image editor.</description>
+			<memberlist>RepositoryItemImageEdit.SizeMode</memberlist>
+			<dtimage></dtimage>
+		</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceIcon</name>
+				<windowcaption>ShowIcon</windowcaption>
+				<description>This check box shows or hides an identification icon which is displayed within the editor's edit region.</description>
+				<memberlist>RepositoryItemBlobBaseEdit.ShowIcon</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceMenu</name>
+				<windowcaption>Show Menu</windowcaption>
+				<description>This check box controls whether the context menu is displayed when an end user right clicks the editor's dropdown window.</description>
+				<memberlist>RepositoryItemImageEdit.ShowMenu</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>cePopupSizeable</name>
+				<windowcaption>Popup Sizeable</windowcaption>
+				<description>This check box controls whether end-users can resize the dropdown window by dragging its bottom right corner.</description>
+				<memberlist>RepositoryItemBlobBaseEdit.PopupSizeable</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>ceCustomIcons</name>
+				<windowcaption>Custom Icons</windowcaption>
+				<description>This check box controls whether the default or custom images are used to indicate whether the editor contains data.</description>
+				<memberlist>RepositoryItemBlobBaseEdit.Images</memberlist>
+				<dtimage></dtimage>
+			</control>
+		</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>imageEditSample</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown image editor</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

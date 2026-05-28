@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>radioGroupView</name>
+        <windowcaption>Client template view</windowcaption>
+        <description>Specifies the template view for a data provider. This view is used to generate series.</description>
+        <memberlist>ChartRangeControlClientDataProvider.TemplateView</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>comboBoxPalette</name>
+        <windowcaption>Client color palette</windowcaption>
+        <description>Specifies a palette name  that is used to color series provided by the data provider.</description>
+        <memberlist>ChartRangeControlClientBase.PaletteName</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkEditNumericAuto</name>
+        <windowcaption>Automatic numeric grid</windowcaption>
+        <description>Enables automatic numeric grid calculation.</description>
+        <memberlist>ChartRangeControlClientGridOptions.Auto</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkEditDateTimeAuto</name>
+        <windowcaption>Automatic date-time grid</windowcaption>
+        <description>Enables automatic date-time grid calculation.</description>
+        <memberlist>ChartRangeControlClientGridOptions.Auto</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>trackBarNumericGridSpacing</name>
+        <windowcaption>Numeric grid spacing</windowcaption>
+        <description>Specifies the numeric grid step.</description>
+        <memberlist>ChartRangeControlClientGridOptions.GridSpacing</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>trackBarNumericSnapSpacing</name>
+        <windowcaption>Numeric snap spacing</windowcaption>
+        <description>Specifies the numeric snap step.</description>
+        <memberlist>ChartRangeControlClientGridOptions.SnapSpacing</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>trackBarDateTimeGridSpacing</name>
+        <windowcaption>Date-time grid spacing</windowcaption>
+        <description>Specifies the date-time grid step in grid alignment units.</description>
+        <memberlist>ChartRangeControlClientGridOptions.GridSpacing</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>trackBarDateTimeSnapSpacing</name>
+        <windowcaption>Date-time snap spacing</windowcaption>
+        <description>Specifies the date-time snap step in snap alignment units.</description>
+        <memberlist>ChartRangeControlClientGridOptions.SnapSpacing</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>comboBoxDateTimeGridAlignment</name>
+        <windowcaption>Date-time grid alignment unit</windowcaption>
+        <description>Specifies the date-time grid alignment unit.</description>
+        <memberlist>DateTimeChartRangeControlClientGridOptions.GridAlignment</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>comboBoxDateTimeSnapAlignment</name>
+        <windowcaption>Date-time snap alignment unit</windowcaption>
+        <description>Specifies the date-time snap alignment unit.</description>
+        <memberlist>DateTimeChartRangeControlClientGridOptions.GridAlignment</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

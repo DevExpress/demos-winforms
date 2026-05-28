@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>gridControl1</name>
+				<windowcaption>Multiple value grouping</windowcaption>
+				<description>The grid control when grouped is bound to one data source, and when ungrouped - to another data source.</description>
+        <memberlist/>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+			<control>
+				<name>sbGroup</name>
+				<windowcaption>Grouping by Category column</windowcaption>
+				<description>Data is grouped/ungrouped via dedicated methods.</description>
+        <memberlist>GridColumn.Group, GridColumn.UnGroup, GridColumn.GroupIndex</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+	</controls>
+</totalinfo>

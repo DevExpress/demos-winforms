@@ -1,0 +1,1604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 36</value>
+  </data>
+  <data name="gbManufacture.Caption" xml:space="preserve">
+    <value>Manufacturer</value>
+  </data>
+  <data name="grColumnMaker.Caption" xml:space="preserve">
+    <value>Make</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="grColumnMaker.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnMaker.Width" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <assembly alias="DevExpress.XtraGrid.v26.1" name="DevExpress.XtraGrid.v26.1, Culture=neutral"></assembly>
+  <data name="gbManufacture.Fixed" type="DevExpress.XtraGrid.Columns.FixedStyle, DevExpress.XtraGrid.v26.1">
+    <value>Left</value>
+  </data>
+  <data name="gbManufacture.Name" xml:space="preserve">
+    <value>gbManufacture</value>
+  </data>
+  <data name="gbManufacture.Width" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="gbYear.Caption" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="grColumnYear1992.Caption" xml:space="preserve">
+    <value>1992</value>
+  </data>
+  <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemSpinEdit1.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="grColumnYear1992.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear1992.Summary1" xml:space="preserve">
+    <value>Year1992</value>
+  </data>
+  <data name="grColumnYear1992.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear1992.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear1992.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="grColumnYear1993.Caption" xml:space="preserve">
+    <value>1993</value>
+  </data>
+  <data name="grColumnYear1993.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear1993.Summary1" xml:space="preserve">
+    <value>Year1993</value>
+  </data>
+  <data name="grColumnYear1993.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear1993.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear1993.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="grColumnYear1994.Caption" xml:space="preserve">
+    <value>1994</value>
+  </data>
+  <data name="grColumnYear1994.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear1994.Summary1" xml:space="preserve">
+    <value>Year1994</value>
+  </data>
+  <data name="grColumnYear1994.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear1994.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear1994.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="grColumnYear1995.Caption" xml:space="preserve">
+    <value>1995</value>
+  </data>
+  <data name="grColumnYear1995.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear1995.Summary1" xml:space="preserve">
+    <value>Year1995</value>
+  </data>
+  <data name="grColumnYear1995.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear1995.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear1995.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="grColumnYear1996.Caption" xml:space="preserve">
+    <value>1996</value>
+  </data>
+  <data name="grColumnYear1996.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear1996.Summary1" xml:space="preserve">
+    <value>Year1996</value>
+  </data>
+  <data name="grColumnYear1996.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear1996.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear1996.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="grColumnYear1997.Caption" xml:space="preserve">
+    <value>1997</value>
+  </data>
+  <data name="grColumnYear1997.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear1997.Summary1" xml:space="preserve">
+    <value>Year1997</value>
+  </data>
+  <data name="grColumnYear1997.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear1997.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear1997.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="grColumnYear1998.Caption" xml:space="preserve">
+    <value>1998</value>
+  </data>
+  <data name="grColumnYear1998.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear1998.Summary1" xml:space="preserve">
+    <value>Year1998</value>
+  </data>
+  <data name="grColumnYear1998.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear1998.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear1998.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="grColumnYear1999.Caption" xml:space="preserve">
+    <value>1999</value>
+  </data>
+  <data name="grColumnYear1999.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear1999.Summary1" xml:space="preserve">
+    <value>Year1999</value>
+  </data>
+  <data name="grColumnYear1999.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear1999.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear1999.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="grColumnYear2000.Caption" xml:space="preserve">
+    <value>2000</value>
+  </data>
+  <data name="grColumnYear2000.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnYear2000.Summary1" xml:space="preserve">
+    <value>Year2000</value>
+  </data>
+  <data name="grColumnYear2000.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnYear2000.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnYear2000.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="gbYear.Name" xml:space="preserve">
+    <value>gbYear</value>
+  </data>
+  <data name="gbYear.Width" type="System.Int32, mscorlib">
+    <value>1080</value>
+  </data>
+  <data name="gbTotals.Caption" xml:space="preserve">
+    <value>Totals</value>
+  </data>
+  <data name="grColumnUnitSold.Caption" xml:space="preserve">
+    <value>Unit Sold</value>
+  </data>
+  <data name="grColumnUnitSold.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="grColumnUnitSold.Summary1" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="grColumnUnitSold.Summary2" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="grColumnUnitSold.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="grColumnUnitSold.Width" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="gbTotals.Fixed" type="DevExpress.XtraGrid.Columns.FixedStyle, DevExpress.XtraGrid.v26.1">
+    <value>Right</value>
+  </data>
+  <data name="gbTotals.ImageOptions.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gbTotals.Name" xml:space="preserve">
+    <value>gbTotals</value>
+  </data>
+  <data name="gbTotals.Width" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <metadata name="imageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>228, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Utils.v26.1" name="DevExpress.Utils.v26.1, Culture=neutral"></assembly>
+  <data name="imageCollection1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYyNi4xLCBWZXJzaW9uPTI2LjEu
+        MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQMAwAAAFFT
+        eXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRv
+        a2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAChEZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0
+        cmVhbWVyAgAAAAlJbWFnZVNpemUERGF0YQQHE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAAAgIAAAAF/P//
+        /xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAABAAAAAQAAAACQUAAAAP
+        BQAAAJwCAAACmAIAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAARnQU1BAACxjwv8
+        YQUAAAJPSURBVDhPpZLbThNhFIV/RKPxgIreW0nqAxl5Bm9MRKC09EBbWjqdKXQKchQEoYfgAxi9QRMj
+        Hh9AaafFC3uATtvpQW+X2fsfI1wad/JlpsmstXb33iKRyok/CCH6TnDGpt/mrM05G3rvI+FeIpWDpmcZ
+        NZlFfC4DZTaNWGIbM9o2ouozRJQthGObCM08RTC6AW9w+S0bkfhfy2r34A+vQQhxQWi6NNBSObTav9Cy
+        fqJp9dBs9dBo9WA2ezAbXdQJs4sP8QSKhzV4Q6tkcFGoepYNVD13WtzsMiZxQpx23EaxVIU3yAaXhJrM
+        SINk9lSy8eYdzIadbnZYvONwYD+iwChV4Aksk8Floc6l2UCZzdjJPXyZ1fHc6cRndU6KlQR2bklx7biN
+        QrEKt2+JDK4ImjZVLLFji5PYdd7By7vDyA4N4cW9YaRZHGNx9aiNglGBy8sGA4KEVFFtm5N3nU58UjRO
+        fj8Tt5OluHZEBhbyRhnjk4/J4JqgPVNF4lvc9kdFw7HZkdQ7+Ppqj4Usrlmo1CwcGGWMeRbI4LqgI6Ga
+        VjaluPFXfFTvyLbt1tmgauGgUMaoe54MBgVdGFUouoGpyDoC4TX4gquYDKzA41/CxOQixj0LGHPPY9SV
+        wsi4joN8GY8mUmRwQ0zHNvmySt9rKB0SVd6zUazytAvFCvJGhVOJb3niB0ZcujTwhVZeB6PrCETW4Q8/
+        kelTq7xnt38JLt8iD4z+M7VNyQ9dOu4/iO7zGoUQ5/kg5I8Bm6s8YRqSZJDTJDftJ33fLwD8F78BxDuf
+        Jly8nDoAAAAASUVORK5CYIIL
+</value>
+  </data>
+  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 439</value>
+  </data>
+  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
+    <value>gridControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="dataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>135, 17</value>
+  </metadata>
+  <data name="xtraTabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="icbFixedStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 8</value>
+  </data>
+  <data name="icbFixedStyle.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="icbFixedStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 20</value>
+  </data>
+  <data name="icbFixedStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;icbFixedStyle.Name" xml:space="preserve">
+    <value>icbFixedStyle</value>
+  </data>
+  <data name="&gt;&gt;icbFixedStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;icbFixedStyle.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;icbFixedStyle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="icbBand.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 8</value>
+  </data>
+  <data name="icbBand.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="icbBand.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="icbBand.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;icbBand.Name" xml:space="preserve">
+    <value>icbBand</value>
+  </data>
+  <data name="&gt;&gt;icbBand.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;icbBand.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;icbBand.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 11</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Band / Fixed Style:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>282, 11</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v26.1" name="DevExpress.XtraEditors.v26.1, Culture=neutral"></assembly>
+  <data name="labelControl1.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v26.1">
+    <value>None</value>
+  </data>
+  <data name="labelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 33</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 3</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 36</value>
+  </data>
+  <data name="panelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Name" xml:space="preserve">
+    <value>panelControl2</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;panelControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 475</value>
+  </data>
+  <data name="xtraTabPage1.Text" xml:space="preserve">
+    <value>Simple Fixed Bands</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 500</value>
+  </data>
+  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="dsContacts1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="gridControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 36</value>
+  </data>
+  <data name="gridBand4.Caption" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="colCustomerName.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Italic</value>
+  </data>
+  <data name="colCustomerName.Caption" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="colCustomerName.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Count</value>
+  </data>
+  <data name="colCustomerName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCustomerName.Width" type="System.Int32, mscorlib">
+    <value>167</value>
+  </data>
+  <data name="colYear.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Italic</value>
+  </data>
+  <data name="colYear.Caption" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="colYear.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="gridBand4.Fixed" type="DevExpress.XtraGrid.Columns.FixedStyle, DevExpress.XtraGrid.v26.1">
+    <value>Left</value>
+  </data>
+  <data name="gridBand4.Name" xml:space="preserve">
+    <value>gridBand4</value>
+  </data>
+  <data name="gridBand4.Width" type="System.Int32, mscorlib">
+    <value>167</value>
+  </data>
+  <data name="gridBand5.Caption" xml:space="preserve">
+    <value>Payments</value>
+  </data>
+  <data name="colID.Caption" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="colID.Width" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="colJanuary.Caption" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="repositoryItemSpinEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colJanuary.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colJanuary.Summary1" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="colJanuary.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colJanuary.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colJanuary.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colFebruary.Caption" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="colFebruary.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colFebruary.Summary1" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="colFebruary.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colFebruary.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colFebruary.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colMarch.Caption" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="colMarch.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colMarch.Summary1" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="colMarch.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colMarch.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colMarch.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colApril.Caption" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="colApril.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colApril.Summary1" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="colApril.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colApril.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colApril.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colMay.Caption" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="colMay.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colMay.Summary1" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="colMay.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colMay.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colMay.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colJune.Caption" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="colJune.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colJune.Summary1" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="colJune.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colJune.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colJune.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colJuly.Caption" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="colJuly.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colJuly.Summary1" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="colJuly.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colJuly.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colJuly.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colAugust.Caption" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="colAugust.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colAugust.Summary1" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="colAugust.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colAugust.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colAugust.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colSeptember.Caption" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="colSeptember.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colSeptember.Summary1" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="colSeptember.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colSeptember.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colSeptember.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colOctober.Caption" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="colOctober.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colOctober.Summary1" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="colOctober.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colOctober.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colOctober.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colNovember.Caption" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="colNovember.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colNovember.Summary1" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="colNovember.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colNovember.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colNovember.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colDecember.Caption" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="colDecember.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colDecember.Summary1" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="colDecember.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colDecember.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colDecember.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="gridBand5.Name" xml:space="preserve">
+    <value>gridBand5</value>
+  </data>
+  <data name="gridBand5.Width" type="System.Int32, mscorlib">
+    <value>1080</value>
+  </data>
+  <data name="gridBand6.Caption" xml:space="preserve">
+    <value>Row Total</value>
+  </data>
+  <data name="colRowSum.Caption" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="colRowSum.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="colRowSum.Summary1" xml:space="preserve">
+    <value>RowSum</value>
+  </data>
+  <data name="colRowSum.Summary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="colRowSum.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colRowSum.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="colRowAvr.Caption" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="colRowAvr.Summary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Average</value>
+  </data>
+  <data name="colRowAvr.Summary1" xml:space="preserve">
+    <value>RowAvr</value>
+  </data>
+  <data name="colRowAvr.Summary2" xml:space="preserve">
+    <value>AVG={0:c}</value>
+  </data>
+  <data name="colRowAvr.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colRowAvr.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="gridBand6.Fixed" type="DevExpress.XtraGrid.Columns.FixedStyle, DevExpress.XtraGrid.v26.1">
+    <value>Right</value>
+  </data>
+  <data name="gridBand6.Name" xml:space="preserve">
+    <value>gridBand6</value>
+  </data>
+  <data name="gridBand6.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary1" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary2" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary3" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary4" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary5" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary6" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary7" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary8" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary9" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary10" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary11" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary12" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary13" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary14" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary15" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary16" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary17" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary18" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary19" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary20" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary21" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary22" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary23" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary24" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary25" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary26" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary27" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary28" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary29" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary30" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary31" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary32" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary33" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary34" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary35" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary36" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Sum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary37" xml:space="preserve">
+    <value>RowSum</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary38" xml:space="preserve">
+    <value>{0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary39" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Average</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary40" xml:space="preserve">
+    <value>RowAvr</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary41" xml:space="preserve">
+    <value>AVG={0:c}</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary42" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v26.1">
+    <value>Count</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary43" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="bandedGridView2.GroupSummary44" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="bandedGridView2.GroupSummary45" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="gridControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 439</value>
+  </data>
+  <data name="gridControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Name" xml:space="preserve">
+    <value>gridControl2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.Parent" xml:space="preserve">
+    <value>xtraTabPage2</value>
+  </data>
+  <data name="&gt;&gt;gridControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl2.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v26.1">
+    <value>None</value>
+  </data>
+  <data name="labelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 33</value>
+  </data>
+  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 3</value>
+  </data>
+  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
+    <value>labelControl2</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbShowMode.EditValue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="cbShowMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 8</value>
+  </data>
+  <data name="cbShowMode.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="cbShowMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 20</value>
+  </data>
+  <data name="cbShowMode.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbShowMode.Name" xml:space="preserve">
+    <value>cbShowMode</value>
+  </data>
+  <data name="&gt;&gt;cbShowMode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbShowMode.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;cbShowMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numFixedLineWidth.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="numFixedLineWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 8</value>
+  </data>
+  <data name="numFixedLineWidth.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="numFixedLineWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 20</value>
+  </data>
+  <data name="numFixedLineWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;numFixedLineWidth.Name" xml:space="preserve">
+    <value>numFixedLineWidth</value>
+  </data>
+  <data name="&gt;&gt;numFixedLineWidth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;numFixedLineWidth.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;numFixedLineWidth.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 11</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Fixed Line Width:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 11</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Group Footer Display Mode:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 36</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>xtraTabPage2</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xtraTabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 475</value>
+  </data>
+  <data name="xtraTabPage2.Text" xml:space="preserve">
+    <value>Fixed Bands And Grouping</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Name" xml:space="preserve">
+    <value>xtraTabPage2</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 500</value>
+  </data>
+  <data name="&gt;&gt;dataTable.Name" xml:space="preserve">
+    <value>dataTable</value>
+  </data>
+  <data name="&gt;&gt;dataTable.Type" xml:space="preserve">
+    <value>System.Data.DataTable, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcMaker.Name" xml:space="preserve">
+    <value>dcMaker</value>
+  </data>
+  <data name="&gt;&gt;dcMaker.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear1992.Name" xml:space="preserve">
+    <value>dcYear1992</value>
+  </data>
+  <data name="&gt;&gt;dcYear1992.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear1993.Name" xml:space="preserve">
+    <value>dcYear1993</value>
+  </data>
+  <data name="&gt;&gt;dcYear1993.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear1994.Name" xml:space="preserve">
+    <value>dcYear1994</value>
+  </data>
+  <data name="&gt;&gt;dcYear1994.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear1995.Name" xml:space="preserve">
+    <value>dcYear1995</value>
+  </data>
+  <data name="&gt;&gt;dcYear1995.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear1996.Name" xml:space="preserve">
+    <value>dcYear1996</value>
+  </data>
+  <data name="&gt;&gt;dcYear1996.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear1997.Name" xml:space="preserve">
+    <value>dcYear1997</value>
+  </data>
+  <data name="&gt;&gt;dcYear1997.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear1998.Name" xml:space="preserve">
+    <value>dcYear1998</value>
+  </data>
+  <data name="&gt;&gt;dcYear1998.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear1999.Name" xml:space="preserve">
+    <value>dcYear1999</value>
+  </data>
+  <data name="&gt;&gt;dcYear1999.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dcYear2000.Name" xml:space="preserve">
+    <value>dcYear2000</value>
+  </data>
+  <data name="&gt;&gt;dcYear2000.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gcTotal.Name" xml:space="preserve">
+    <value>gcTotal</value>
+  </data>
+  <data name="&gt;&gt;gcTotal.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bandedGridView1.Name" xml:space="preserve">
+    <value>bandedGridView1</value>
+  </data>
+  <data name="&gt;&gt;bandedGridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridView, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gbManufacture.Name" xml:space="preserve">
+    <value>gbManufacture</value>
+  </data>
+  <data name="&gt;&gt;gbManufacture.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnMaker.Name" xml:space="preserve">
+    <value>grColumnMaker</value>
+  </data>
+  <data name="&gt;&gt;grColumnMaker.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gbYear.Name" xml:space="preserve">
+    <value>gbYear</value>
+  </data>
+  <data name="&gt;&gt;gbYear.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1992.Name" xml:space="preserve">
+    <value>grColumnYear1992</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1992.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1993.Name" xml:space="preserve">
+    <value>grColumnYear1993</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1993.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1994.Name" xml:space="preserve">
+    <value>grColumnYear1994</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1994.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1995.Name" xml:space="preserve">
+    <value>grColumnYear1995</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1995.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1996.Name" xml:space="preserve">
+    <value>grColumnYear1996</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1996.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1997.Name" xml:space="preserve">
+    <value>grColumnYear1997</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1997.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1998.Name" xml:space="preserve">
+    <value>grColumnYear1998</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1998.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1999.Name" xml:space="preserve">
+    <value>grColumnYear1999</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear1999.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear2000.Name" xml:space="preserve">
+    <value>grColumnYear2000</value>
+  </data>
+  <data name="&gt;&gt;grColumnYear2000.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gbTotals.Name" xml:space="preserve">
+    <value>gbTotals</value>
+  </data>
+  <data name="&gt;&gt;gbTotals.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grColumnUnitSold.Name" xml:space="preserve">
+    <value>grColumnUnitSold</value>
+  </data>
+  <data name="&gt;&gt;grColumnUnitSold.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;imageCollection1.Name" xml:space="preserve">
+    <value>imageCollection1</value>
+  </data>
+  <data name="&gt;&gt;imageCollection1.Type" xml:space="preserve">
+    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;dataSet.Name" xml:space="preserve">
+    <value>dataSet</value>
+  </data>
+  <data name="&gt;&gt;dataSet.Type" xml:space="preserve">
+    <value>System.Data.DataSet, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dsContacts1.Name" xml:space="preserve">
+    <value>dsContacts1</value>
+  </data>
+  <data name="&gt;&gt;dsContacts1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Demos.dsContacts, dsContacts.Designer.cs.dll, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bandedGridView2.Name" xml:space="preserve">
+    <value>bandedGridView2</value>
+  </data>
+  <data name="&gt;&gt;bandedGridView2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridView, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridBand4.Name" xml:space="preserve">
+    <value>gridBand4</value>
+  </data>
+  <data name="&gt;&gt;gridBand4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colCustomerName.Name" xml:space="preserve">
+    <value>colCustomerName</value>
+  </data>
+  <data name="&gt;&gt;colCustomerName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colYear.Name" xml:space="preserve">
+    <value>colYear</value>
+  </data>
+  <data name="&gt;&gt;colYear.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridBand5.Name" xml:space="preserve">
+    <value>gridBand5</value>
+  </data>
+  <data name="&gt;&gt;gridBand5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colID.Name" xml:space="preserve">
+    <value>colID</value>
+  </data>
+  <data name="&gt;&gt;colID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colJanuary.Name" xml:space="preserve">
+    <value>colJanuary</value>
+  </data>
+  <data name="&gt;&gt;colJanuary.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit2.Name" xml:space="preserve">
+    <value>repositoryItemSpinEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpinEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colFebruary.Name" xml:space="preserve">
+    <value>colFebruary</value>
+  </data>
+  <data name="&gt;&gt;colFebruary.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colMarch.Name" xml:space="preserve">
+    <value>colMarch</value>
+  </data>
+  <data name="&gt;&gt;colMarch.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colApril.Name" xml:space="preserve">
+    <value>colApril</value>
+  </data>
+  <data name="&gt;&gt;colApril.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colMay.Name" xml:space="preserve">
+    <value>colMay</value>
+  </data>
+  <data name="&gt;&gt;colMay.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colJune.Name" xml:space="preserve">
+    <value>colJune</value>
+  </data>
+  <data name="&gt;&gt;colJune.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colJuly.Name" xml:space="preserve">
+    <value>colJuly</value>
+  </data>
+  <data name="&gt;&gt;colJuly.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colAugust.Name" xml:space="preserve">
+    <value>colAugust</value>
+  </data>
+  <data name="&gt;&gt;colAugust.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colSeptember.Name" xml:space="preserve">
+    <value>colSeptember</value>
+  </data>
+  <data name="&gt;&gt;colSeptember.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colOctober.Name" xml:space="preserve">
+    <value>colOctober</value>
+  </data>
+  <data name="&gt;&gt;colOctober.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colNovember.Name" xml:space="preserve">
+    <value>colNovember</value>
+  </data>
+  <data name="&gt;&gt;colNovember.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colDecember.Name" xml:space="preserve">
+    <value>colDecember</value>
+  </data>
+  <data name="&gt;&gt;colDecember.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridBand6.Name" xml:space="preserve">
+    <value>gridBand6</value>
+  </data>
+  <data name="&gt;&gt;gridBand6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.GridBand, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colRowSum.Name" xml:space="preserve">
+    <value>colRowSum</value>
+  </data>
+  <data name="&gt;&gt;colRowSum.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colRowAvr.Name" xml:space="preserve">
+    <value>colRowAvr</value>
+  </data>
+  <data name="&gt;&gt;colRowAvr.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn, DevExpress.XtraGrid.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FixedBands</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Demos.TutorialControl, GridMainDemo, Culture=neutral</value>
+  </data>
+</root>

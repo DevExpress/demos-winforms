@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>accordionControl</name>
+        <windowcaption>Automatic Filtering UI</windowcaption>
+        <description>Editors for this region are generated automatically in accordance with public properties within the 'FilteringModel' filtering Model. The simplest editors (e.g., the editors for the 'InStock' and 'Category' properties) work out-of-the-box. Numeric editors (the 'Price' property) receive their minimum and maximum values in the QueryRangeData event handler. The QueryLookupData event allows you to populate complex lookup editors (the 'Trademark' property).</description>
+        <memberlist>FilteringUIContext.ModelType, FilteringUIContext.QueryRangeData, FilteringUIContext.QueryLookupData</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>filterPanel</name>
+        <windowcaption>Bind FilterPanelControl to a filter criteria provider</windowcaption>
+        <description>The FilterPanelControl's items are generated from the filter criteria you apply to another control/object (in this example, the LayoutView). Use the FilterCriteriaSource property to bind the FilterPanelControl to a filter criteria provider.</description>
+        <memberlist>FilterPanelControl.FilterCriteria, FilterPanelControl.FilterCriteriaChanged, FilterPanelControl.SetFilterCriteriaBinding</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

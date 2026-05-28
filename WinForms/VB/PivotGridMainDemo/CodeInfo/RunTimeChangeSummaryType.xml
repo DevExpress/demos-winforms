@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>checkEdit1</name>
+				<windowcaption>Extended Layout with Multiple Data Fields</windowcaption>
+				<description>Sets the summary type explicitly for all data fields using the PivotGridFieldBase.SummaryType property.</description>
+        <memberlist>PivotGridFieldBase.SummaryType, ShowSummaryTypeName</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+
+    <controlentry>
+      <control>
+        <name>checkEdit2</name>
+        <windowcaption>Compact Layout with One Data Field</windowcaption>
+        <description>Allows end-users to change the data field summary type.</description>
+        <memberlist>PivotGridFieldOptions.AllowRunTimeSummaryChange</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

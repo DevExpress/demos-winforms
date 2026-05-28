@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>ceMerging</name>
+				<windowcaption>Merging</windowcaption>
+				<description>Specifies whether cell merging is enabled.</description>
+				<memberlist>GridOptionsView.AllowCellMerge</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>icbEditMode</name>
+        <windowcaption>Merged Cell Edit Mode</windowcaption>
+        <description>The MergedCellEditMode property specifies how users edit merged cells. An editor always appears for an individual row. The new value updates only this row or all rows corresponding to the merged cell.</description>
+        <memberlist>GridOptionsView.MergedCellEditMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>simpleButton1</name>
+        <windowcaption>Print preview</windowcaption>
+        <description>The ShowRibbonPrintPreview method shows a print preview of the data displayed by the Grid Control's DefaultView (the MainView or the currently maximized detail View). The opened print preview window is built using a Ribbon UI. To display the Print Preview window with a Bars UI, use the GridControl.ShowPrintPreview method instead.</description>
+        <memberlist>GridControl.ShowRibbonPrintPreview</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

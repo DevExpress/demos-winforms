@@ -1,0 +1,995 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2D95262-8DB6-479C-ABBA-F41B03DB9F99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AssemblyName>DevExpress.VideoRent.Win</AssemblyName>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Presets">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1">
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1.Extensions">
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Reporting.Extensions">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Extensions">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.SpellChecker.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    <HintPath></HintPath></Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls.vb" />
+    <Compile Include="Controls\ucControlAbout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucControlAbout.Designer.vb">
+      <DependentUpon>ucControlAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMovieInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMovieInfo.Designer.vb">
+      <DependentUpon>ucMovieInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPeriod.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPeriod.Designer.vb">
+      <DependentUpon>ucPeriod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBase\frmDetailBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBase\frmDetailBase.Designer.vb">
+      <DependentUpon>frmDetailBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPeriod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPeriod.Designer.vb">
+      <DependentUpon>frmPeriod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditAppointment.Designer.vb">
+      <DependentUpon>frmEditAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmArtistDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmArtistDetail.Designer.vb">
+      <DependentUpon>frmArtistDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNewMovieCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNewMovieCategory.Designer.vb">
+      <DependentUpon>frmNewMovieCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMovieCategoriesList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMovieCategoriesList.Designer.vb">
+      <DependentUpon>frmMovieCategoriesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProgress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProgress.Designer.vb">
+      <DependentUpon>frmProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainModules.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesBase\BaseModules.vb" />
+    <Compile Include="FormsBase\frmMainBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBase\frmMainBase.Designer.vb">
+      <DependentUpon>frmMainBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucBarTwoButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBarTwoButtons.Designer.vb">
+      <DependentUpon>ucBarTwoButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCustomerInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCustomerInfo.Designer.vb">
+      <DependentUpon>ucCustomerInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPictureEditBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPictureEditBar.Designer.vb">
+      <DependentUpon>ucPictureEditBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucGridEditBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucGridEditBar.Designer.vb">
+      <DependentUpon>ucGridEditBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucBarOneCheckedButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBarOneCheckedButton.Designer.vb">
+      <DependentUpon>ucBarOneCheckedButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMovieCategoryPriceDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMovieCategoryPriceDetail.Designer.vb">
+      <DependentUpon>ucMovieCategoryPriceDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMovieItemsInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMovieItemsInfo.Designer.vb">
+      <DependentUpon>ucMovieItemsInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPictureCollection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPictureCollection.Designer.vb">
+      <DependentUpon>ucPictureCollection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucRentalSalesInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucRentalSalesInfo.Designer.vb">
+      <DependentUpon>ucRentalSalesInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucRents.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucRents.Designer.vb">
+      <DependentUpon>ucRents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucScreens.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucScreens.Designer.vb">
+      <DependentUpon>ucScreens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DemosRegistration.vb">
+    </Compile>
+    <Compile Include="ElementHelper.vb">
+    </Compile>
+    <Compile Include="FormsBase\frmAddBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBase\frmAddBase.Designer.vb">
+      <DependentUpon>frmAddBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompanyAddMovie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompanyAddMovie.Designer.vb">
+      <DependentUpon>frmCompanyAddMovie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesDetail\CompanyDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesDetail\CompanyDetail.Designer.vb">
+      <DependentUpon>CompanyDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCreateInitialDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCreateInitialDB.Designer.vb">
+      <DependentUpon>frmCreateInitialDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReceiptGridOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReceiptGridOptions.Designer.vb">
+      <DependentUpon>frmReceiptGridOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmArtistAddMovie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmArtistAddMovie.Designer.vb">
+      <DependentUpon>frmArtistAddMovie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesDetail\ArtistDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesDetail\ArtistDetail.Designer.vb">
+      <DependentUpon>ArtistDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmArtistGridOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmArtistGridOptions.Designer.vb">
+      <DependentUpon>frmArtistGridOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBase\frmGridOptionsBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBase\frmGridOptionsBase.Designer.vb">
+      <DependentUpon>frmGridOptionsBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesBase\DetailBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesBase\DetailBase.Designer.vb">
+      <DependentUpon>DetailBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesDetail\CustomerDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesDetail\CustomerDetail.Designer.vb">
+      <DependentUpon>CustomerDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFindCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFindCustomer.Designer.vb">
+      <DependentUpon>frmFindCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLayoutOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLayoutOptions.Designer.vb">
+      <DependentUpon>frmLayoutOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMovieAddArtist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMovieAddArtist.Designer.vb">
+      <DependentUpon>frmMovieAddArtist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMovieAddItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMovieAddItems.Designer.vb">
+      <DependentUpon>frmMovieAddItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMovieCategoryDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMovieCategoryDetail.Designer.vb">
+      <DependentUpon>ucMovieCategoryDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesDetail\MovieDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesDetail\MovieDetail.Designer.vb">
+      <DependentUpon>MovieDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMovieAddCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMovieAddCompany.Designer.vb">
+      <DependentUpon>frmMovieAddCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMovieItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMovieItems.Designer.vb">
+      <DependentUpon>frmMovieItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOpenImageDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOpenImageDialog.Designer.vb">
+      <DependentUpon>frmOpenImageDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutManager.vb" />
+    <Compile Include="ModulesKPI\CustomersByDatesKPI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesKPI\CustomersByDatesKPI.Designer.vb">
+      <DependentUpon>CustomersByDatesKPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesKPI\CustomersKPI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesKPI\CustomersKPI.Designer.vb">
+      <DependentUpon>CustomersKPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesKPI\MoviesKPI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesKPI\MoviesKPI.Designer.vb">
+      <DependentUpon>MoviesKPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\ActiveCustomersList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesReports\ActiveCustomersList.Designer.vb">
+      <DependentUpon>ActiveCustomersList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\CustomerFilmRentsList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesReports\CustomerFilmRentsList.Designer.vb">
+      <DependentUpon>CustomerFilmRentsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\CustomerInfoCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesReports\CustomerInfoCard.Designer.vb">
+      <DependentUpon>CustomerInfoCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\FilmInfoCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesReports\FilmInfoCard.Designer.vb">
+      <DependentUpon>FilmInfoCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\ReportModuleBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesReports\ReportModuleBase.Designer.vb">
+      <DependentUpon>ReportModuleBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\RibbonReportDesigner\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModulesReports\RibbonReportDesigner\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\RibbonReportDesigner\PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\RibbonReportDesigner\SkinGalleryHelper.vb" />
+    <Compile Include="ModulesReports\RibbonReportDesigner\XRDesignRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\TheMostProfitableGenresList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesReports\TheMostProfitableGenresList.Designer.vb">
+      <DependentUpon>TheMostProfitableGenresList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesReports\TopNFilms.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesReports\TopNFilms.Designer.vb">
+      <DependentUpon>TopNFilms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesScheduler\RentSchedule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesScheduler\RentSchedule.Designer.vb">
+      <DependentUpon>RentSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesStatistics\MediaPerformanceStatistics.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesStatistics\MediaPerformanceStatistics.Designer.vb">
+      <DependentUpon>MediaPerformanceStatistics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesStatistics\CustomerRevenuesStatistics.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesStatistics\CustomerRevenuesStatistics.Designer.vb">
+      <DependentUpon>CustomerRevenuesStatistics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesStatistics\TopCustomers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesStatistics\TopCustomers.Designer.vb">
+      <DependentUpon>TopCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesStatistics\RevenueSplitStatistics.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesStatistics\RevenueSplitStatistics.Designer.vb">
+      <DependentUpon>RevenueSplitStatistics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesStatistics\NetIncomeStatistics.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesStatistics\NetIncomeStatistics.Designer.vb">
+      <DependentUpon>NetIncomeStatistics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Artists.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Artists.Designer.vb">
+      <DependentUpon>Artists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Companies.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Companies.Designer.vb">
+      <DependentUpon>Companies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Customers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Customers.Designer.vb">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Employee.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Employee.Designer.vb">
+      <DependentUpon>Employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Movies.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Movies.Designer.vb">
+      <DependentUpon>Movies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Rent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Rent.Designer.vb">
+      <DependentUpon>Rent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Registration.vb" />
+    <Compile Include="Reports\LatefeeReceipt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LatefeeReceipt.Designer.vb">
+      <DependentUpon>LatefeeReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StringConstants.vb" />
+    <Compile Include="VisualBackgroundWorker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModulesDetail\MovieDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MovieDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Employee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Movies.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Movies.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevExpress.VideoRent.Reports\DevExpress.VideoRent.Reports.vbproj">
+      <Project>{E0DB9E8D-06BF-48C5-9D94-67324E4BA6D5}</Project>
+      <Name>DevExpress.VideoRent.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevExpress.VideoRent.Resources\DevExpress.VideoRent.Resources.vbproj">
+      <Project>{30E7937A-0651-4865-B8AE-97C2A8D405F8}</Project>
+      <Name>DevExpress.VideoRent.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevExpress.VideoRent\DevExpress.VideoRent.vbproj">
+      <Project>{64358044-1010-4E3D-A18D-ACB7755C40FA}</Project>
+      <Name>DevExpress.VideoRent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModulesBase\DetailBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Artists.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Artists.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ucGridEditBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucGridEditBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesDetail\ArtistDetail.resx">
+      <DependentUpon>ArtistDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmArtistGridOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmArtistGridOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBase\frmGridOptionsBase.resx">
+      <DependentUpon>frmGridOptionsBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ucPictureCollection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPictureCollection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBase\frmAddBase.resx">
+      <DependentUpon>frmAddBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLayoutOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLayoutOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMovieAddArtist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovieAddArtist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMovieAddCompany.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovieAddCompany.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ucBarTwoButtons.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBarTwoButtons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCustomerInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCustomerInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPictureEditBar.resx">
+      <DependentUpon>ucPictureEditBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucBarOneCheckedButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBarOneCheckedButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMovieCategoryPriceDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMovieCategoryPriceDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMovieItemsInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMovieItemsInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucRentalSalesInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucRentalSalesInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucRents.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucRents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucScreens.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucScreens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmArtistAddMovie.resx">
+      <DependentUpon>frmArtistAddMovie.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesDetail\CustomerDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomerDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFindCustomer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFindCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMovieAddItems.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovieAddItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMovieCategoryDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMovieCategoryDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMovieItems.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMovieItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOpenImageDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOpenImageDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Customers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Customers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Rent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rent.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmReceiptGridOptions.resx">
+      <DependentUpon>frmReceiptGridOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ucMovieInfo.resx">
+      <DependentUpon>ucMovieInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPeriod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPeriod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBase\frmDetailBase.resx">
+      <DependentUpon>frmDetailBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBase\frmMainBase.resx">
+      <DependentUpon>frmMainBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPeriod.resx">
+      <DependentUpon>frmPeriod.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCompanyAddMovie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCompanyAddMovie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditAppointment.resx">
+      <DependentUpon>frmEditAppointment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNewMovieCategory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNewMovieCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMovieCategoriesList.resx">
+      <DependentUpon>frmMovieCategoriesList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProgress.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesDetail\CompanyDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CompanyDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCreateInitialDB.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCreateInitialDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesKPI\CustomersByDatesKPI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomersByDatesKPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesKPI\CustomersKPI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomersKPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesKPI\MoviesKPI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MoviesKPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\ActiveCustomersList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ActiveCustomersList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\CustomerFilmRentsList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomerFilmRentsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\CustomerInfoCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomerInfoCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\FilmInfoCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilmInfoCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\ReportModuleBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportModuleBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\TheMostProfitableGenresList.resx">
+      <DependentUpon>TheMostProfitableGenresList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\TopNFilms.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TopNFilms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesScheduler\RentSchedule.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RentSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesStatistics\MediaPerformanceStatistics.resx">
+      <DependentUpon>MediaPerformanceStatistics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesStatistics\CustomerRevenuesStatistics.resx">
+      <DependentUpon>CustomerRevenuesStatistics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesStatistics\TopCustomers.resx">
+      <DependentUpon>TopCustomers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesStatistics\RevenueSplitStatistics.resx">
+      <DependentUpon>RevenueSplitStatistics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesStatistics\NetIncomeStatistics.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NetIncomeStatistics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Companies.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Companies.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModulesReports\RibbonReportDesigner\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\RibbonReportDesigner\PrintRibbonControllerResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>RibbonReportDesigner</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModulesReports\RibbonReportDesigner\XRDesignRibbonControllerResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>RibbonReportDesigner</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ColorMixer_32x32.png" />
+    <Content Include="Resources\ColorMixer_16x16.png" />
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="Controls\ucControlAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucControlAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LatefeeReceipt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LatefeeReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="ModulesReports\RibbonReportDesigner\RibbonReportDesignerIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

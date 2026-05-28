@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>icbScrollBars</name>
+        <windowcaption>Scroll Bars</windowcaption>
+        <description>This combo box allows the visibility of scroll bars to be specified. If the WordWrap check box is checked, the horizontal scroll bar isn't displayed.</description>
+        <memberlist>RepositoryItemMemoEdit.ScrollBars</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceAutoHideScrollBars</name>
+        <windowcaption>Auto Hide Scroll Bars</windowcaption>
+        <description>This check box allows you to specify whether the scroll bars are automatically hidden when content is fit within the editor.</description>
+        <memberlist>RepositoryItemMemoEdit.AutoHideScrollBars</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceWordWrap</name>
+        <windowcaption>Word Wrap</windowcaption>
+        <description>This check box switches automatic word wrapping on or off.</description>
+        <memberlist>RepositoryItemMemoEdit.WordWrap</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceIcon</name>
+        <windowcaption>Show Icon</windowcaption>
+        <description>This check box allows you to specify whether an identification icon is displayed. This icon is used to identify the type of data stored within the editor and to inform end users as to whether or not the editor contains data.</description>
+        <memberlist>RepositoryItemBlobBaseEdit.ShowIcon</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cePopupSizeable</name>
+        <windowcaption>Popup Sizeable</windowcaption>
+        <description>This check box allows you to specify whether end users can change the size of the editor's popup window by dragging the resize grip at the window's right bottom corner.</description>
+        <memberlist>RepositoryItemBlobBaseEdit.PopupSizeable</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceCustomIcons</name>
+        <windowcaption>Use Custom Icons</windowcaption>
+        <description>This check box controls whether default or custom images are used to indicate whether the edior contains data.</description>
+        <memberlist>RepositoryItemBlobBaseEdit.Images</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+  <hints>
+    <hint>
+      <name>memoExEditSample</name>
+      <hinttext>
+        #Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown memo editor
+      </hinttext>
+    </hint>
+  </hints>
+</totalinfo>

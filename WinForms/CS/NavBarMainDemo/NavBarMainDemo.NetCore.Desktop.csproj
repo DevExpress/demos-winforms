@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{1FE6C07B-4306-0114-2630-69CA98471F6A}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>NavBarMainDemo</RootNamespace>
+    <AssemblyName>NavBarMainDemo</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddGroups\AddGroups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddGroups\AddGroups.Designer.cs">
+      <DependentUpon>AddGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddItemLinks\AddItemLinks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddItemLinks\AddItemLinks.Designer.cs">
+      <DependentUpon>AddItemLinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupContainer\GroupContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroupContainer\GroupContainer.Designer.cs">
+      <DependentUpon>GroupContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupStyles\GroupStyles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroupStyles\GroupStyles.Designer.cs">
+      <DependentUpon>GroupStyles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HitInfo\HitInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HitInfo\HitInfo.Designer.cs">
+      <DependentUpon>HitInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BusinessModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\BusinessModule.Designer.cs">
+      <DependentUpon>BusinessModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomCheckedListBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Data.cs" />
+    <Compile Include="Modules\frmLinkProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\frmLinkProperties.Designer.cs">
+      <DependentUpon>frmLinkProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\frmNavBarNavigationPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\frmNavBarNavigationPane.Designer.cs">
+      <DependentUpon>frmNavBarNavigationPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\frmNavBarProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\frmNavBarProperties.Designer.cs">
+      <DependentUpon>frmNavBarProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HamburgerModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\HamburgerModule.Designer.cs">
+      <DependentUpon>HamburgerModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MultimediaModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MultimediaModule.Designer.cs">
+      <DependentUpon>MultimediaModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Office365MailViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Office365MailViewer.Designer.cs">
+      <DependentUpon>Office365MailViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OutlookStyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OutlookStyle.Designer.cs">
+      <DependentUpon>OutlookStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavBarHints\NavBarHints.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavBarHints\NavBarHints.Designer.cs">
+      <DependentUpon>NavBarHints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavBarInfo\NavBarInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavBarInfo\NavBarInfo.Designer.cs">
+      <DependentUpon>NavBarInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="AddGroups\AddGroups.resx">
+      <DependentUpon>AddGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItemLinks\AddItemLinks.resx">
+      <DependentUpon>AddItemLinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupContainer\GroupContainer.resx">
+      <DependentUpon>GroupContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupStyles\GroupStyles.resx">
+      <DependentUpon>GroupStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HitInfo\HitInfo.resx">
+      <DependentUpon>HitInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\BusinessModule.resx">
+      <DependentUpon>BusinessModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Description.rtf" />
+    <EmbeddedResource Include="Modules\frmLinkProperties.resx">
+      <DependentUpon>frmLinkProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\frmNavBarNavigationPane.resx">
+      <DependentUpon>frmNavBarNavigationPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\frmNavBarProperties.resx">
+      <DependentUpon>frmNavBarProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\HamburgerModule.resx">
+      <DependentUpon>HamburgerModule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MultimediaModule.resx">
+      <DependentUpon>MultimediaModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Office365MailViewer.resx">
+      <DependentUpon>Office365MailViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OutlookStyle.resx">
+      <DependentUpon>OutlookStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavBarHints\NavBarHints.resx">
+      <DependentUpon>NavBarHints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavBarInfo\NavBarInfo.resx">
+      <DependentUpon>NavBarInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="System.Data.OleDb" />
+    <PackageReference Include="System.Data.SqlClient" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+  </PropertyGroup>
+</Project>

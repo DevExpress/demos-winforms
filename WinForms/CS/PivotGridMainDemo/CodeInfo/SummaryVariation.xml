@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>icbSummaryDisplayType</name>
+				<windowcaption>Summary Display Type</windowcaption>
+				<description>Sets the type of the summary function that is calculated against the current data field.</description>
+        <memberlist>PivotGridFieldBase.SummaryType, PivotSummaryDisplayType</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+
+    <controlentry>
+      <control>
+        <name>checkShowOriginalDataField</name>
+        <windowcaption>Show Raw Values</windowcaption>
+        <description>Sets whether to display raw summary values.</description>
+        <memberlist>PivotGridFieldBase.Visible</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>checkHideEmptyVariationItems</name>
+        <windowcaption>Hide Empty Variation Items</windowcaption>
+        <description>Sets whether the first (empty) column/row that displays variation data for the current data field must be hidden.</description>
+        <memberlist>PivotGridFieldOptions.HideEmptyVariationItems</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>rgSummaryDisplayTypeGroup</name>
+        <windowcaption>Summary Display Modes</windowcaption>
+        <description>Specifies a summary display mode.</description>
+        <memberlist>PivotGridFieldBase.SummaryDisplayType, Summary Display Modes</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    
+    <controlentry>
+      <control>
+        <name>checkAllowCrossGroupVariation</name>
+        <windowcaption>Allow Cross-Group Variation</windowcaption>
+        <description>Sets whether summary variations and running totals are calculated independently within individual groups or throughout the Pivot Grid.</description>
+        <memberlist>PivotGridOptionsData.AllowCrossGroupVariation</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

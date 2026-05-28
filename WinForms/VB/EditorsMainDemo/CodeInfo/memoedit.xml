@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="H:\Work\XML Schemes\module-new.xsd">
+	<controls>
+<controlentry>
+	<control>
+		<name>icbScrollBars</name>
+		<windowcaption>Scroll Bars</windowcaption>
+		<description>This check box specifies whether a scrollbar is hidden when the content fits the editor height/width.</description>
+		<memberlist>RepositoryItemMemoEdit.ScrollBars</memberlist>
+		<dtimage></dtimage>
+	</control>
+</controlentry>
+<controlentry>
+	<control>
+		<name>ceWordWrap</name>
+		<windowcaption>Word Wrap</windowcaption>
+		<description>This check box switches automatic word wrapping on or off.</description>
+		<memberlist>RepositoryItemMemoEdit.WordWrap</memberlist>
+		<dtimage></dtimage>
+	</control>
+</controlentry>
+<controlentry>
+	<control>
+		<name>ceReturn</name>
+		<windowcaption>Accepts Return</windowcaption>
+		<description>This check box allows you to specify whether return characters are accepted and processed by the memo editor or form.</description>
+		<memberlist>RepositoryItemMemoEdit.AcceptsReturn</memberlist>
+		<dtimage></dtimage>
+	</control>
+</controlentry>
+<controlentry>
+	<control>
+		<name>ceTab</name>
+		<windowcaption>Accepts Tab</windowcaption>
+		<description>This check box allows you to specify whether TAB characters can be inserted into text.</description>
+		<memberlist>RepositoryItemMemoEdit.AcceptsTab</memberlist>
+		<dtimage></dtimage>
+	</control>
+</controlentry>
+<controlentry>
+	<control>
+		<name>seMaxLength</name>
+		<windowcaption>Max Length</windowcaption>
+		<description>This spin editor allows the maximum number of characters an end-user can enter to be specified.</description>
+		<memberlist>RepositoryItemTextEdit.MaxLength</memberlist>
+		<dtimage></dtimage>
+	</control>
+</controlentry>
+<controlentry>
+  <control>
+    <name>memoEdit1</name>
+    <windowcaption>Custom Highlight</windowcaption>
+    <description>The CustomHighlightText event allows you to highlight or custom paint strings within the control's text. This event is supported in Advanced mode.</description>
+    <memberlist>TextEdit.CustomHighlightText, RepositoryItemTextEdit.UseAdvancedMode</memberlist>
+    <dtimage></dtimage>
+  </control>
+</controlentry>
+	</controls>
+</totalinfo>

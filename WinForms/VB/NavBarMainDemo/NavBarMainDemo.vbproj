@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ProjectGuid>{30A6FA7B-9FF1-430F-9D66-DF4181537752}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>NavBarMainDemo</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DevAV.v26.1.Data">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddGroups\AddGroups.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddGroups\AddGroups.Designer.vb">
+      <DependentUpon>AddGroups.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddItemLinks\AddItemLinks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddItemLinks\AddItemLinks.Designer.vb">
+      <DependentUpon>AddItemLinks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GroupContainer\GroupContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroupContainer\GroupContainer.Designer.vb">
+      <DependentUpon>GroupContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GroupStyles\GroupStyles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroupStyles\GroupStyles.Designer.vb">
+      <DependentUpon>GroupStyles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HitInfo\HitInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HitInfo\HitInfo.Designer.vb">
+      <DependentUpon>HitInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BusinessModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\BusinessModule.Designer.vb">
+      <DependentUpon>BusinessModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomCheckedListBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Data.vb" />
+    <Compile Include="Modules\frmLinkProperties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\frmLinkProperties.Designer.vb">
+      <DependentUpon>frmLinkProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\frmNavBarNavigationPane.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\frmNavBarNavigationPane.Designer.vb">
+      <DependentUpon>frmNavBarNavigationPane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\frmNavBarProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\frmNavBarProperties.Designer.vb">
+      <DependentUpon>frmNavBarProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HamburgerModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\HamburgerModule.Designer.vb">
+      <DependentUpon>HamburgerModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MultimediaModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MultimediaModule.Designer.vb">
+      <DependentUpon>MultimediaModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Office365MailViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Office365MailViewer.Designer.vb">
+      <DependentUpon>Office365MailViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OutlookStyle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OutlookStyle.Designer.vb">
+      <DependentUpon>OutlookStyle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NavBarHints\NavBarHints.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavBarHints\NavBarHints.Designer.vb">
+      <DependentUpon>NavBarHints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NavBarInfo\NavBarInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavBarInfo\NavBarInfo.Designer.vb">
+      <DependentUpon>NavBarInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="AddGroups\AddGroups.resx">
+      <DependentUpon>AddGroups.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItemLinks\AddItemLinks.resx">
+      <DependentUpon>AddItemLinks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupContainer\GroupContainer.resx">
+      <DependentUpon>GroupContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupStyles\GroupStyles.resx">
+      <DependentUpon>GroupStyles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HitInfo\HitInfo.resx">
+      <DependentUpon>HitInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\BusinessModule.resx">
+      <DependentUpon>BusinessModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Description.rtf" />
+    <EmbeddedResource Include="Modules\frmLinkProperties.resx">
+      <DependentUpon>frmLinkProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\frmNavBarNavigationPane.resx">
+      <DependentUpon>frmNavBarNavigationPane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\frmNavBarProperties.resx">
+      <DependentUpon>frmNavBarProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\HamburgerModule.resx">
+      <DependentUpon>HamburgerModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MultimediaModule.resx">
+      <DependentUpon>MultimediaModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Office365MailViewer.resx">
+      <DependentUpon>Office365MailViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OutlookStyle.resx">
+      <DependentUpon>OutlookStyle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavBarHints\NavBarHints.resx">
+      <DependentUpon>NavBarHints.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavBarInfo\NavBarInfo.resx">
+      <DependentUpon>NavBarInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>NavBarMainDemo.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  <PackageReference Include="System.Data.OleDb" />
+  <PackageReference Include="System.Data.SqlClient" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

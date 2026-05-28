@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<!--<controlentry>
+			<control>
+				<name>gridControl1</name>
+				<windowcaption>XtraGrid Control</windowcaption>
+				<description></description>
+				<memberlist/>
+				<dtimage/>
+			</control>
+		</controlentry>-->
+		<controlentry>
+			<control>
+				<name>icbNewItemRow</name>
+				<windowcaption>New Item Row Position</windowcaption>
+				<description>The NewItemRowPosition enumeration represents different locations to display a new item row. Values listed in this enumeration are used to set the GridOptionsView.NewItemRowPosition property.</description>
+				<memberlist>NewItemRowPosition</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>sbStart</name>
+        <windowcaption>Emulate incremental search</windowcaption>
+        <description>This button starts incremental search emulation, i.e. locating records by typing initial characters of the desired display value.</description>
+        <memberlist></memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>chEdit</name>
+        <windowcaption>Cell editors edit permissions</windowcaption>
+        <description>Specifies whether end-users are allowed to invoke cell editors.</description>
+        <memberlist>ColumnViewOptionsBehavior.Editable</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbButtons</name>
+        <windowcaption>Show button mode</windowcaption>
+        <description>Specifies the editor button display mode.</description>
+        <memberlist>ColumnViewOptionsView.ShowButtonMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceMultiSelect</name>
+        <windowcaption>Multiple items selection</windowcaption>
+        <description>Specifies whether multiple rows (cells) can be selected simultaneously.</description>
+        <memberlist>ColumnViewOptionsSelection.MultiSelect</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceHotTrackRow</name>
+        <windowcaption>Enable the hot-track effect for grid rows</windowcaption>
+        <description>Allows you to highlight grid rows when the mouse passes over them. Use the View.Appearance.HotTrackedRow property to specify custom appearance settings to paint hot-tracked rows.</description>
+        <memberlist>ColumnViewOptionsSelection.EnableAppearanceHotTrackedRow</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbSelectMode</name>
+        <windowcaption>Multiple items selection</windowcaption>
+        <description>Specifies whether multiple individual cells or entire rows only can be selected.</description>
+        <memberlist>GridOptionsSelection.MultiSelectMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbRecords</name>
+        <windowcaption>Show selected items</windowcaption>
+        <description>Displays selected records in accordance to whether individual cells or entire rows are selected.</description>
+        <memberlist>ColumnView.GetSelectedRows, GridView.GetSelectedCells, ColumnView.GetRowCellDisplayText</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

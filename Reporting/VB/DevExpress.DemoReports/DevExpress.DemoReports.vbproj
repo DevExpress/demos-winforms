@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3B67523-6402-43EC-81B4-803E03250F44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>DevExpress.DemoReports.v26.1</AssemblyName>
+    <AssemblyOriginatorKeyFile>DemoReports.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <LangVersion>Latest</LangVersion>
+    <DXDisableCentral>true</DXDisableCentral>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\Bin\Framework4\</OutputPath>
+    <DefineConstants>TRACE,DEBUG,DEBUGTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\Framework4\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DX_SKIP_CODE_ANALYSIS>true</DX_SKIP_CODE_ANALYSIS>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="EntityFramework" Version="6.5.1">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite" Version="2.0.2">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6" Version="2.0.2">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnchorVertical\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnchorVertical\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceSheetReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BalanceSheetReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceSheetReport\BalanceSheetData.vb" />
+    <Compile Include="BarCodes\BarCodeTypesReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BarCodes\BarCodeTypesReport.Designer.vb">
+      <DependentUpon>BarCodeTypesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BarCodes\ProductLabelsReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BarCodes\ProductLabelsReport.Designer.vb">
+      <DependentUpon>ProductLabelsReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarryoverSummaryReport\Adjustment.vb" />
+    <Compile Include="CarryoverSummaryReport\DataItem.vb" />
+    <Compile Include="CarryoverSummaryReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CarryoverSummaryReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarryoverSummaryReport\Transaction.vb" />
+    <Compile Include="DrillThroughReport\DetailReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrillThroughReport\DetailReport.Designer.vb">
+      <DependentUpon>DetailReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DrillThroughReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrillThroughReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmbeddedPDFContent\Invoice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmbeddedPDFContent\Invoice.Designer.vb">
+      <DependentUpon>Invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmbeddedPDFContent\Specification.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmbeddedPDFContent\Specification.Designer.vb">
+      <DependentUpon>Specification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HierarchicalReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HierarchicalReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HierarchicalReport\DataSource.vb" />
+    <Compile Include="LabelReport\ProductLabelsReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabelReport\ProductLabelsReport.Designer.vb">
+      <DependentUpon>ProductLabelsReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CachedDocumentSource\Adjustment.vb" />
+    <Compile Include="CachedDocumentSource\Customer.vb" />
+    <Compile Include="CachedDocumentSource\DataItemList.vb" />
+    <Compile Include="CachedDocumentSource\DeterministicRandom.vb" />
+    <Compile Include="CachedDocumentSource\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedDocumentSource\ReportWeb.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CachedDocumentSource\Term.vb" />
+    <Compile Include="CalculatedFields\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CalculatedFields\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterComb\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CharacterComb\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Charts\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionHelper.vb" />
+    <Compile Include="CrossBandControls\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrossBandControls\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomDraw\CustomControl.vb" />
+    <Compile Include="CustomDraw\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomDraw\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DrillDownReport\DrillDownReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrillDownReport\DrillDownReport.designer.vb">
+      <DependentUpon>DrillDownReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePerformanceReview\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeePerformanceReview\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormattingRules\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormattingRules\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CachedDocumentSource\DataItem.vb" />
+    <Compile Include="IListDataSource\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IListDataSource\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MailMerge\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MailMerge\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetailReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MasterDetailReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectDataSourceTypesRegistrator.vb" />
+    <Compile Include="PdfVisualSignature\PdfVisualSignatureReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportMerging\ChartReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportMerging\ChartReport.Designer.vb">
+      <DependentUpon>ChartReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMerging\MergedReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiColumnReport\DataSource.vb" />
+    <Compile Include="MultiColumnReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiColumnReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindTraders\CatalogReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NorthwindTraders\CatalogReport.Designer.vb">
+      <DependentUpon>CatalogReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindTraders\InvoiceReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NorthwindTraders\InvoiceReport.Designer.vb">
+      <DependentUpon>InvoiceReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindTraders\ProductListReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NorthwindTraders\ProductListReport.Designer.vb">
+      <DependentUpon>ProductListReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindTraders\SortGroupsType.vb" />
+    <Compile Include="InteractiveSorting\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InteractiveSorting\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PivotGridAndChart\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PivotGridAndChart\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PivotGridAndChart\ViewTypeFiltered.vb" />
+    <Compile Include="PollingReport\PollingReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PollingReport\PollingReport.Designer.vb">
+      <DependentUpon>PollingReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PollingReport\ResultingData.vb" />
+    <Compile Include="PollingReport\ResultingTableReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PollingReport\ResultingReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProfitAndLossReport\Data.vb" />
+    <Compile Include="ProfitAndLossReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProfitAndLossReport\Report.designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReportNames.vb" />
+    <Compile Include="RestaurantMenu\DataSource.vb" />
+    <Compile Include="RestaurantMenu\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RestaurantMenu\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RollPaper\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RollPaper\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMergingWithPdf\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SalesSummary\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SalesSummary\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shape\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShrinkGrow\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShrinkGrow\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SideBySideReports\EmployeeComparisonReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SideBySideReports\EmployeeComparisonReport.Designer.vb">
+      <DependentUpon>EmployeeComparisonReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SideBySideReports\EmployeeOrdersReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SideBySideReports\EmployeeOrdersReport.Designer.vb">
+      <DependentUpon>EmployeeOrdersReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sparkline\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Subreports\DetailReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Subreports\DetailReport.Designer.vb">
+      <DependentUpon>DetailReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Subreports\MasterReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Subreports\MasterReport.Designer.vb">
+      <DependentUpon>MasterReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SvgResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SvgResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SwissQRCode\SwissQRBill.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SwissQRCode\SwissQRBill.Designer.vb">
+      <DependentUpon>SwissQRBill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SwissQRCode\SwissQRReportDataSource.vb" />
+    <Compile Include="TableReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TableReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrossBandContent\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrossBandContent\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleInspectionReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VehicleInspectionReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnchorVertical\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalanceSheetReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCodes\BarCodeTypesReport.resx">
+      <DependentUpon>BarCodeTypesReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCodes\ProductLabelsReport.resx">
+      <DependentUpon>ProductLabelsReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarryoverSummaryReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrillThroughReport\DetailReport.resx">
+      <DependentUpon>DetailReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrillThroughReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmbeddedPDFContent\Invoice.resx">
+      <DependentUpon>Invoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmbeddedPDFContent\Specification.resx">
+      <DependentUpon>Specification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HierarchicalReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelReport\ProductLabelsReport.resx">
+      <DependentUpon>ProductLabelsReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CachedDocumentSource\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatedFields\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharacterComb\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrossBandControls\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomDraw\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePerformanceReview\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormattingRules\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IListDataSource\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailMerge\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetailReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfVisualSignature\PdfVisualSignatureReport.resx">
+      <DependentUpon>PdfVisualSignatureReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMerging\ChartReport.resx">
+      <DependentUpon>ChartReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiColumnReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NorthwindTraders\CatalogReport.resx">
+      <DependentUpon>CatalogReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NorthwindTraders\InvoiceReport.resx">
+      <DependentUpon>InvoiceReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NorthwindTraders\ProductListReport.resx">
+      <DependentUpon>ProductListReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InteractiveSorting\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PollingReport\PollingReport.resx">
+      <DependentUpon>PollingReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PollingReport\ResultingTableReport.resx">
+      <DependentUpon>ResultingTableReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PollingReport\ResultingReport.resx">
+      <DependentUpon>ResultingReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfitAndLossReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.DemoReports.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestaurantMenu\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMergingWithPdf\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesSummary\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SvgResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SvgResources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.DemoReports</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrossBandContent\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleInspectionReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RollPaper\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shape\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShrinkGrow\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SideBySideReports\EmployeeComparisonReport.resx">
+      <DependentUpon>EmployeeComparisonReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SideBySideReports\EmployeeOrdersReport.resx">
+      <DependentUpon>EmployeeOrdersReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sparkline\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subreports\DetailReport.resx">
+      <DependentUpon>DetailReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subreports\MasterReport.resx">
+      <DependentUpon>MasterReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwissQRCode\SwissQRBill.resx">
+      <DependentUpon>SwissQRBill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DrillDownReport\DrillDownReport.resx">
+      <DependentUpon>DrillDownReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PivotGridAndChart\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DemoReports.snk" />
+    <None Include="connectionStrings.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Contacts.db" />
+    <Content Include="Countries.db" />
+    <Content Include="nwind.db" />
+    <Content Include="homes.db" />
+    <Content Include="Questions.xlsx" />
+    <Content Include="Resources\DXLogo.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Check_Green.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Check_Grey.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Check_Off.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Check_On.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Cross_Grey.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Cross_Red.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Neutral_Grey.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Neutral_Yellow.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Sad_Grey.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Sad_Red.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Smile_Green.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Smile_Grey.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Warning_Grey.svg" />
+    <Content Include="VehicleInspectionReport\SvgImages\Warning_Yellow.svg" />
+    <Content Include="vehicles.db" />
+    <Content Include="devav.sqlite3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!--ONLY NETCORE3  
+  <PropertyGroup Condition=" '$(DebugType)' == 'full' ">
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+	ONLY NETCORE3-->
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

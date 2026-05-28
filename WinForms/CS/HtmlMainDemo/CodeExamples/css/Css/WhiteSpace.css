@@ -1,0 +1,41 @@
+﻿.text1 {
+	white-space: normal;
+}
+
+.text2 {
+	white-space: nowrap;
+}
+
+.text3 {
+	white-space: pre;
+}
+
+.text4 {
+	white-space: pre-line;
+}
+
+.text5 {
+	white-space: pre-wrap;
+}
+
+body {
+	color: @ControlText;
+}
+
+h3 {
+	margin: 0px;
+}
+
+.container {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: @Window;
+}
+
+.text-container {
+	margin-top: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: @Control;
+	overflow:hidden;
+}

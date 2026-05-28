@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>gridControl1</name>
+				<windowcaption>Column unbound expressions</windowcaption>
+				<description>In this example, the GridColumn.UnboundExpression property is used to create calculated Discount Amount and Total columns.</description>
+        <memberlist>GridColumn.UnboundDataType, GridColumn.UnboundExpression</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>simpleButton1</name>
+        <windowcaption>Invoke Unbound Expression Editor</windowcaption>
+        <description>The Expression Editor allows you to edit an unbound expression for a specified unbound column. To open it, call the dedicated method provided by a View object.</description>
+        <memberlist>ColumnView.ShowUnboundExpressionEditor</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

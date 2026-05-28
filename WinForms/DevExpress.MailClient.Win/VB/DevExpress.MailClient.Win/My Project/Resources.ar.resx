@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="CalendarName" xml:space="preserve">
+    <value>التقويم</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>المكتملة</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>جهة اتصال</value>
+  </data>
+  <data name="ContactsName" xml:space="preserve">
+    <value>جهات اتصال</value>
+  </data>
+  <data name="ContactTitleMiss" xml:space="preserve">
+    <value>الآنسة</value>
+  </data>
+  <data name="ContactTitleMr" xml:space="preserve">
+    <value>السيد</value>
+  </data>
+  <data name="ContactTitleMrs" xml:space="preserve">
+    <value>السيدة</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>مخصص</value>
+  </data>
+  <data name="DateInbox" xml:space="preserve">
+    <value>تاريخ التلقي</value>
+  </data>
+  <data name="DateOutbox" xml:space="preserve">
+    <value>تاريخ الإرسال</value>
+  </data>
+  <data name="DeletedItems" xml:space="preserve">
+    <value>العناصر المحذوفة</value>
+  </data>
+  <data name="Drafts" xml:space="preserve">
+    <value>مسودات</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>تصدير</value>
+  </data>
+  <data name="FeedsName" xml:space="preserve">
+    <value>موجز ويب</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="FromInbox" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="FromOutbox" xml:space="preserve">
+    <value>إلى</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>علبة الوارد</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>بريد</value>
+  </data>
+  <data name="MailName" xml:space="preserve">
+    <value>بريد</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+  <data name="MarginsNormal" xml:space="preserve">
+    <value>عادي</value>
+  </data>
+  <data name="MemoStyleString" xml:space="preserve">
+    <value>نمط المذكرة</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>رسالة</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>رسائل</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>الأسبوع القادم</value>
+  </data>
+  <data name="NoDate" xml:space="preserve">
+    <value>بدون تاريخ</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>بلا</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>موافق</value>
+  </data>
+  <data name="PaperKindLetter" xml:space="preserve">
+    <value>رسالة</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>شخصية</value>
+  </data>
+  <data name="PriorityHigh" xml:space="preserve">
+    <value>عالية</value>
+  </data>
+  <data name="PriorityLow" xml:space="preserve">
+    <value>منخفضة</value>
+  </data>
+  <data name="SentItems" xml:space="preserve">
+    <value>العناصر المرسلة</value>
+  </data>
+  <data name="TableStyleString" xml:space="preserve">
+    <value>نمط الجدول</value>
+  </data>
+  <data name="TaskCategoryOffice" xml:space="preserve">
+    <value>العمل</value>
+  </data>
+  <data name="TasksName" xml:space="preserve">
+    <value>المهام</value>
+  </data>
+  <data name="TaskStatusCompleted" xml:space="preserve">
+    <value>المكتملة</value>
+  </data>
+  <data name="TaskStatusDeferred" xml:space="preserve">
+    <value>مؤجلة</value>
+  </data>
+  <data name="TaskStatusInProgress" xml:space="preserve">
+    <value>قيد التقدم</value>
+  </data>
+  <data name="TaskStatusNotStarted" xml:space="preserve">
+    <value>لم يتم البدء</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>هذا الأسبوع</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>اليوم</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>الغد</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>العمل</value>
+  </data>
+  <data name="AboutFrom" xml:space="preserve">
+    <value>ستيف برود</value>
+  </data>
+  <data name="AboutSubj" xml:space="preserve">
+    <value>بريد إلكتروني عميل عرض -معلومات</value>
+  </data>
+  <data name="AddressHtml" xml:space="preserve">
+    <value>&lt;/br&gt;{0}&lt;b&gt;: العنوان &lt;br&gt;&lt;br&gt;</value>
+  </data>
+  <data name="AllFilesFilter" xml:space="preserve">
+    <value>جميع الملفات (* . *) | *. *</value>
+  </data>
+  <data name="Announcements" xml:space="preserve">
+    <value>الإعلانات</value>
+  </data>
+  <data name="AppointmentError" xml:space="preserve">
+    <value>خطأ : لا يمكن تصدير المواعيد</value>
+  </data>
+  <data name="ASP" xml:space="preserve">
+    <value>ASP</value>
+  </data>
+  <data name="BirthDateHtml" xml:space="preserve">
+    <value>&lt;/br&gt;{0:d}&lt;b&gt;:تاريخ الميلاد &lt;br&gt;</value>
+  </data>
+  <data name="CloseSearchDescription" xml:space="preserve">
+    <value>إغلاق البحث الحالي.</value>
+  </data>
+  <data name="Collated" xml:space="preserve">
+    <value>جمعتها</value>
+  </data>
+  <data name="ContactAlphabeticalDescription" xml:space="preserve">
+    <value>الاتصالات قائمة مرتبة ترتيبا أبجديا .</value>
+  </data>
+  <data name="ContactByStateDescription" xml:space="preserve">
+    <value>جمع الاتصالات بالدول .</value>
+  </data>
+  <data name="ContactCardDescription" xml:space="preserve">
+    <value>إظهار بطاقة العرض .</value>
+  </data>
+  <data name="ContactListDescription" xml:space="preserve">
+    <value>الاتصالات القائمة في نظام الخلق .</value>
+  </data>
+  <data name="ContactTitleDr" xml:space="preserve">
+    <value>د.</value>
+  </data>
+  <data name="ContactTitleMs" xml:space="preserve">
+    <value>السيدة.</value>
+  </data>
+  <data name="ContactTitleProf" xml:space="preserve">
+    <value>البروفيسور</value>
+  </data>
+  <data name="CSVFilter" xml:space="preserve">
+    <value>ملفات csv (* . csv ) | * . CSV</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>تاريخ</value>
+  </data>
+  <data name="DateDeleted" xml:space="preserve">
+    <value>تاريخ</value>
+  </data>
+  <data name="DeleteContactDescription" xml:space="preserve">
+    <value>حذف جهة الاتصال هذه.</value>
+  </data>
+  <data name="DeleteFeedDescription" xml:space="preserve">
+    <value>حذف هذه ال feed.</value>
+  </data>
+  <data name="DeleteItemDescription" xml:space="preserve">
+    <value>حذف هذا البند.</value>
+  </data>
+  <data name="DeleteTaskDescription" xml:space="preserve">
+    <value>حذف هذه المهمة.</value>
+  </data>
+  <data name="DueDateError" xml:space="preserve">
+    <value>لا يمكن أن يكون تاريخ الاستحقاق قل من تاريخ البدء</value>
+  </data>
+  <data name="DueDateWarning" xml:space="preserve">
+    <value>يرجى إدخال تاريخ الاستحقاق</value>
+  </data>
+  <data name="EditContactDescription" xml:space="preserve">
+    <value>تعديل هذا الاتصال .</value>
+  </data>
+  <data name="EditFeedDescription" xml:space="preserve">
+    <value>تعديل إعدادات هذه اfeed  .</value>
+  </data>
+  <data name="EditTaskDescription" xml:space="preserve">
+    <value>تعديل هذه المهمة .</value>
+  </data>
+  <data name="EmailHtml" xml:space="preserve">
+    <value>&lt;br&gt;بريد إلكتروني &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="ExportErrorText" xml:space="preserve">
+    <value>حدث خطأ أثناء تصدير</value>
+  </data>
+  <data name="FeedBBCNews" xml:space="preserve">
+    <value>بي بي سي نيوز</value>
+  </data>
+  <data name="FeedBlogs" xml:space="preserve">
+    <value>بلوق</value>
+  </data>
+  <data name="FeedEngadget" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="FeedError" xml:space="preserve">
+    <value>أرجو أن تتقبلوا اعتذارنا عن أي إزعاج . و URL feed غير متوفر حاليا : &lt;BR&gt; &lt; ب &gt; {0}</value>
+  </data>
+  <data name="FeedGroupMisc" xml:space="preserve">
+    <value>متفرقات</value>
+  </data>
+  <data name="FeedNews" xml:space="preserve">
+    <value>أخبار</value>
+  </data>
+  <data name="FeedNote" xml:space="preserve">
+    <value>&lt; b&gt; &lt; /b&gt; يؤخذ المحتوى من &lt;color={1}&gt;{0}&lt;/color&gt; feed</value>
+  </data>
+  <data name="FeedStackOverflow" xml:space="preserve">
+    <value>تجاوز المكدس</value>
+  </data>
+  <data name="FeedVideos" xml:space="preserve">
+    <value>فيديو</value>
+  </data>
+  <data name="FeedWebinars" xml:space="preserve">
+    <value>ندوات عبر الإنترنت</value>
+  </data>
+  <data name="FlagCustomDescription" xml:space="preserve">
+    <value>علم هذا البند كمهمة مع العرف تاريخ الاستحقاق.</value>
+  </data>
+  <data name="FlagNextWeekDescription" xml:space="preserve">
+    <value>علم هذا البند كمهمة للأسبوع القادم .</value>
+  </data>
+  <data name="FlagNoDatekDescription" xml:space="preserve">
+    <value>علم هذا البند كمهمة مع عدم وجود تاريخ الاستحقاق.</value>
+  </data>
+  <data name="FlagThisWeekDescription" xml:space="preserve">
+    <value>علم هذا البند كمهمة لل المستحقة في نهاية أسبوع العمل .</value>
+  </data>
+  <data name="FlagTodayDescription" xml:space="preserve">
+    <value>علم هذا البند كمهمة مع تاريخ استحقاق اليوم .</value>
+  </data>
+  <data name="FlagTomorrowDescription" xml:space="preserve">
+    <value>علم هذا البند كمهمة ليوم غد.</value>
+  </data>
+  <data name="FlipLayoutDescription" xml:space="preserve">
+    <value>الوجه تخطيط ضوابط حول محور عمودي .</value>
+  </data>
+  <data name="ForwardDescription" xml:space="preserve">
+    <value>إحالة هذا البند إلى شخص آخر.</value>
+  </data>
+  <data name="ForwardTextEnd" xml:space="preserve">
+    <value>================= نهاية نص الرسالة الأصلية ===============</value>
+  </data>
+  <data name="ForwardTextStart" xml:space="preserve">
+    <value> هذا نقل رسالة: ================= نص الرسالة الأصليه ===============</value>
+  </data>
+  <data name="Frameworks" xml:space="preserve">
+    <value>الأطر</value>
+  </data>
+  <data name="FromDeleted" xml:space="preserve">
+    <value>من / إلى </value>
+  </data>
+  <data name="HighPriority" xml:space="preserve">
+    <value>أولوية عالية</value>
+  </data>
+  <data name="HTMLFilter" xml:space="preserve">
+    <value>ملفات html (*.html) HTML</value>
+  </data>
+  <data name="IDETools" xml:space="preserve">
+    <value>أدوات IDE</value>
+  </data>
+  <data name="ImageFilter" xml:space="preserve">
+    <value>ملفات BMP (* . BMP ) | * . BMP | ملفات GIF (* .GIF ) | * . GIF | ملفات JPEG (* .JPEG ) | * .JPEG | ملفات PNG (* بابوا نيو غينيا ) | * بابوا نيو غينيا | ملفات المشاجرة (* .tiff ) | * .tiff | ملفات EMF (* .emf ) | .emf | ملفات WMF (* .wmf ) | * .wmf</value>
+  </data>
+  <data name="InfoText" xml:space="preserve">
+    <value>البنود: {0}</value>
+  </data>
+  <data name="IsEarlierThisMonth" xml:space="preserve">
+    <value>وقت سابق من هذا الشهر</value>
+  </data>
+  <data name="IsEarlierThisWeek" xml:space="preserve">
+    <value>هو وقت سابق من هذا الأسبوع</value>
+  </data>
+  <data name="IsEarlierThisYear" xml:space="preserve">
+    <value>وقت سابق من هذا العام</value>
+  </data>
+  <data name="IsLastWeek" xml:space="preserve">
+    <value>الأسبوع الماضي</value>
+  </data>
+  <data name="IsToday" xml:space="preserve">
+    <value>هو اليوم</value>
+  </data>
+  <data name="IsYesterday" xml:space="preserve">
+    <value>أمس</value>
+  </data>
+  <data name="LandscapeOrientation" xml:space="preserve">
+    <value>اتجاه أفقي</value>
+  </data>
+  <data name="LowPriority" xml:space="preserve">
+    <value>أولوية منخفضة</value>
+  </data>
+  <data name="MarginsModerate" xml:space="preserve">
+    <value>معتدل</value>
+  </data>
+  <data name="MarginsNarrow" xml:space="preserve">
+    <value>ضيق</value>
+  </data>
+  <data name="MarginsNormalDescription" xml:space="preserve">
+    <value> الأعلى : x0009 x0009 25 مم أسفل: x0009 25 مم اليسار: x0009 25 مم x0009 اليمين: x0009 25 مم </value>
+  </data>
+  <data name="MarginsWide" xml:space="preserve">
+    <value>واسع</value>
+  </data>
+  <data name="MediumPriority" xml:space="preserve">
+    <value>أولوية متوسطة</value>
+  </data>
+  <data name="MHTFilter" xml:space="preserve">
+    <value>* . MHT | (* . MHT )  MHT الملفات</value>
+  </data>
+  <data name="NavigationDescription" xml:space="preserve">
+    <value>التبديل بين الوحدات.</value>
+  </data>
+  <data name="NewContactDescription" xml:space="preserve">
+    <value>إنشاء اتصال جديدة .</value>
+  </data>
+  <data name="NewFeedDescription" xml:space="preserve">
+    <value>إنشاء feed جديدة .</value>
+  </data>
+  <data name="NewFirstName" xml:space="preserve">
+    <value>أولا</value>
+  </data>
+  <data name="NewItemDescription" xml:space="preserve">
+    <value>إنشاء بريد جديد.</value>
+  </data>
+  <data name="NewLastName" xml:space="preserve">
+    <value>آخر</value>
+  </data>
+  <data name="NewTaskDescription" xml:space="preserve">
+    <value>إنشاء مهمة جديدة .</value>
+  </data>
+  <data name="NewTaskName" xml:space="preserve">
+    <value>مهمة جديدة</value>
+  </data>
+  <data name="OneSide" xml:space="preserve">
+    <value>طباعة من جانب واحد</value>
+  </data>
+  <data name="OneSideDescription" xml:space="preserve">
+    <value>طباعة فقط على جانب واحد من الصفحة</value>
+  </data>
+  <data name="OpentFileQuestion" xml:space="preserve">
+    <value>هل تريد فتح هذا الملف؟</value>
+  </data>
+  <data name="OwnerName" xml:space="preserve">
+    <value>س. بروكس</value>
+  </data>
+  <data name="PageInfo" xml:space="preserve">
+    <value>الصفحة {0} ل</value>
+  </data>
+  <data name="PaperKindA3Description" xml:space="preserve">
+    <value>296 مم × 420 مم</value>
+  </data>
+  <data name="PaperKindA4Description" xml:space="preserve">
+    <value>210 مم x 296 مم</value>
+  </data>
+  <data name="PaperKindA5Description" xml:space="preserve">
+    <value>148 مم × 210 مم</value>
+  </data>
+  <data name="PaperKindA6Description" xml:space="preserve">
+    <value>105 مم × 148 مم</value>
+  </data>
+  <data name="PaperKindExecutive" xml:space="preserve">
+    <value>تنفيذي</value>
+  </data>
+  <data name="PaperKindExecutiveDescription" xml:space="preserve">
+    <value>184 مم × 266 مم</value>
+  </data>
+  <data name="PaperKindLegal" xml:space="preserve">
+    <value>قانوني</value>
+  </data>
+  <data name="PaperKindLegalDescription" xml:space="preserve">
+    <value>215 مم × 355 مم</value>
+  </data>
+  <data name="PaperKindLetterDescription" xml:space="preserve">
+    <value>215 مم × 279 مم</value>
+  </data>
+  <data name="PaperKindTabloid" xml:space="preserve">
+    <value>صحيفة شعبية</value>
+  </data>
+  <data name="PaperKindTabloidDescription" xml:space="preserve">
+    <value>279 مم × 431 مم</value>
+  </data>
+  <data name="PDFFilter" xml:space="preserve">
+    <value>ملفات PDF (*.pdf)|*.pdf</value>
+  </data>
+  <data name="PhoneHtml" xml:space="preserve">
+    <value>&lt;/br&gt;{0}:  الهاتف &gt; &lt;br&gt;</value>
+  </data>
+  <data name="Picture100Zoom" xml:space="preserve">
+    <value>تناسب صورة</value>
+  </data>
+  <data name="PortraitOrientation" xml:space="preserve">
+    <value>توجيه الصورة </value>
+  </data>
+  <data name="PriorityDescription" xml:space="preserve">
+    <value>تعيين الأولوية لهذا البند .</value>
+  </data>
+  <data name="PriorityMedium" xml:space="preserve">
+    <value>متوسط</value>
+  </data>
+  <data name="ProgressPanelCaption" xml:space="preserve">
+    <value>يرجى الانتظار</value>
+  </data>
+  <data name="ProgressPanelDescription" xml:space="preserve">
+    <value>تحميل ...</value>
+  </data>
+  <data name="RefreshFeedDescription" xml:space="preserve">
+    <value>تحديث هذه التدفق من الخادم.</value>
+  </data>
+  <data name="ReminderText" xml:space="preserve">
+    <value>تذكير: {0}</value>
+  </data>
+  <data name="ReplyAllDescription" xml:space="preserve">
+    <value>الرد على المرسل وجميع المستلمين الآخرين من هذه الرسالة .</value>
+  </data>
+  <data name="ReplyDescription" xml:space="preserve">
+    <value>رد على مرسل هذه الرسالة.</value>
+  </data>
+  <data name="ReplyText" xml:space="preserve">
+    <value>عزيزي ، {0} {1} ، كتبت :</value>
+  </data>
+  <data name="RotateLayoutDescription" xml:space="preserve">
+    <value>تدوير تخطيط ضوابط .</value>
+  </data>
+  <data name="RTFFilter" xml:space="preserve">
+    <value>ملفات RTF (* . RTF ) | * . RTF</value>
+  </data>
+  <data name="RuleIsNotBlankWarning" xml:space="preserve">
+    <value>هذه القيمة لا يمكن أن يكون فارغا</value>
+  </data>
+  <data name="RuleUniqueNamesWarning" xml:space="preserve">
+    <value>يجب أن تكون هذه القيمة فريدة من نوعها و لا يساوي فارغة .</value>
+  </data>
+  <data name="SaveQuestion" xml:space="preserve">
+    <value>هل تريد حفظ التغييرات ؟</value>
+  </data>
+  <data name="SearchClearDescription" xml:space="preserve">
+    <value>مسح تطبيق المرشح.</value>
+  </data>
+  <data name="SearchCloseDescription" xml:space="preserve">
+    <value>إغلاق علامة التبويب بحث .</value>
+  </data>
+  <data name="SearchColumnsDescription" xml:space="preserve">
+    <value>اختر الأعمدة التي يتم عليها البحث.</value>
+  </data>
+  <data name="SearchHasAttachmentDescription" xml:space="preserve">
+    <value>عرض رسائل البريد الإلكتروني التي تحتوي على مرفقات .</value>
+  </data>
+  <data name="SearchImportantDescription" xml:space="preserve">
+    <value>عرض رسائل البريد الإلكتروني ذات الأولوية.</value>
+  </data>
+  <data name="SearchReceivedDescription" xml:space="preserve">
+    <value>تصفية رسائل البريد الإلكتروني من قبل التاريخ.</value>
+  </data>
+  <data name="SearchResetDescription" xml:space="preserve">
+    <value>إعادة تعيين إلى قائمة العمود التصفية الافتراضي .</value>
+  </data>
+  <data name="SearchString" xml:space="preserve">
+    <value>السيطرة {0} (Ctrl + E)</value>
+  </data>
+  <data name="SearchUnreadDescription" xml:space="preserve">
+    <value>عرض رسائل البريد الإلكتروني غير المقروءة .</value>
+  </data>
+  <data name="ShowPreviewDescription" xml:space="preserve">
+    <value>عرضرمسبقة السالة  </value>
+  </data>
+  <data name="Starting" xml:space="preserve">
+    <value>بداية</value>
+  </data>
+  <data name="TaskCategoryHouseChores" xml:space="preserve">
+    <value>الأعمال المنزلية</value>
+  </data>
+  <data name="TaskCategoryShopping" xml:space="preserve">
+    <value>التسوق</value>
+  </data>
+  <data name="TaskCompletedDescription" xml:space="preserve">
+    <value>أكمل قائمة المهام و تجميعها حسب التاريخ .</value>
+  </data>
+  <data name="TaskDeferredDescription" xml:space="preserve">
+    <value>قائمة المهام المؤجلة .</value>
+  </data>
+  <data name="TaskListDescription" xml:space="preserve">
+    <value>قائمة جميع المهام و تجميعها حسب التاريخ.</value>
+  </data>
+  <data name="TaskOverdueDescription" xml:space="preserve">
+    <value>قائمة المهام المتأخرة.</value>
+  </data>
+  <data name="TaskPrioritizedDescription" xml:space="preserve">
+    <value>جمع المهام حسب الأولوية.</value>
+  </data>
+  <data name="TaskSimpleListDescription" xml:space="preserve">
+    <value>قائمة بجميع المهام.</value>
+  </data>
+  <data name="TaskStatusWaitingOnSomeoneElse" xml:space="preserve">
+    <value>الانتظار على شخص آخر</value>
+  </data>
+  <data name="TaskTodayDescription" xml:space="preserve">
+    <value>قائمة مهام اليوم .</value>
+  </data>
+  <data name="TaskToDoListDescription" xml:space="preserve">
+    <value>المهام و تجميعها حسب تاريخ قائمة غير اكتمل .</value>
+  </data>
+  <data name="TempFeedName" xml:space="preserve">
+    <value>تدفقي</value>
+  </data>
+  <data name="TempGroupName" xml:space="preserve">
+    <value>MyGroup</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>ملفات نصية (* . TXT ) | * . TXT</value>
+  </data>
+  <data name="TwoSide" xml:space="preserve">
+    <value>طباعة يدويا على كلا الجانبين</value>
+  </data>
+  <data name="TwoSideDescription" xml:space="preserve">
+    <value>تحديث الصفحة ورقة عند المطالبة لطباعة الوجه الثاني</value>
+  </data>
+  <data name="Uncollated" xml:space="preserve">
+    <value>غير مرتبة</value>
+  </data>
+  <data name="UnreadReadDescription" xml:space="preserve">
+    <value>إذا وضعت هذا البند بعلامة غير مقروء, وضع عليه علامة مقروء.</value>
+  </data>
+  <data name="WinForms" xml:space="preserve">
+    <value>WinForms</value>
+  </data>
+  <data name="XLSFilter" xml:space="preserve">
+    <value>ملفات xls | (*.xls )  XLS.*</value>
+  </data>
+  <data name="XLSXFilter" xml:space="preserve">
+    <value>XLSX الملفات (* . XLS ) | * . XLS</value>
+  </data>
+  <data name="Engineering" xml:space="preserve">
+    <value>هندسة</value>
+  </data>
+  <data name="IT" xml:space="preserve">
+    <value>تكنولوجيا المعلومات</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>إدارة</value>
+  </data>
+  <data name="Sales" xml:space="preserve">
+    <value>مبيعات</value>
+  </data>
+</root>

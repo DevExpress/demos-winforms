@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>seRowHeight</name>
+        <windowcaption>Row height</windowcaption>
+        <description>Allows you to manually change the row height.</description>
+        <memberlist>GridView.RowHeight</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceRowAutoHeight</name>
+        <windowcaption>Auto row height</windowcaption>
+        <description>This check box enables or disables the auto row height feature, which automatically adjusts the height of each data row to completely display the contents of its cells.</description>
+        <memberlist>GridOptionsView.RowAutoHeight</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbBestFit</name>
+        <windowcaption>Columns best fit</windowcaption>
+        <description>Adjusts the columns width so that columns fit their contents in an optimal way.</description>
+        <memberlist>GridView.BestFitColumns</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceEnabledMasterViewMode</name>
+        <windowcaption>Enable master view</windowcaption>
+        <description>Initially, all master row within a View are collapsed. They can be expanded either by end-users or via code in order to make their detail Views visible. This functionality is not available when the EnableMasterViewMode property is set to false.</description>
+        <memberlist>GridOptionsDetail.EnableMasterViewMode, GridView.SetMasterRowExpanded</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbExpandDetails</name>
+        <windowcaption>Expand details</windowcaption>
+        <description>The ExpandAllGroups method expands all group rows within the current View. All data rows become visible as a result. End-users can also do this by using the group panel context menu.</description>
+        <memberlist>GridView.ExpandAllGroups</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbDetailMode</name>
+        <windowcaption>Detail View Mode</windowcaption>
+        <description>The DetailMode property specifies whether detail Views are painted in Classic mode (master and detail Views have their own scrollbars) or Embedded (inline) mode (a single scrollbar is used throughout the grid control).</description>
+        <memberlist>GridOptionsDetail.DetailMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowEmbeddedDetailIndent</name>
+        <windowcaption>Detail Indent</windowcaption>
+        <description>The ShowEmbeddedDetailIndent property allows you to show and hide an indent for detail Views in Embedded detail mode.</description>
+        <memberlist>GridOptionsDetail.ShowEmbeddedDetailIndent</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

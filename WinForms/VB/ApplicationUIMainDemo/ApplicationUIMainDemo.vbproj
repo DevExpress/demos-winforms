@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0" DefaultTargets="Build">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{5A695CB9-B600-48AB-B2BA-FF1FBC3BEDD7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>ApplicationUIMainDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE,DEBUG,</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE,</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.DevAV.v26.1.Data">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Wizard">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Reporting.Extensions">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeExamples\CommonConcepts.vb" />
+    <Compile Include="CodeExamples\TabbedView.vb" />
+    <Compile Include="CodeExamples\UtilityControls.vb" />
+    <Compile Include="CodeExamples\WidgetView.vb" />
+    <Compile Include="CodeExamples\WindowsUIView.vb" />
+    <Compile Include="CodeExamples.Modules\DocumentManagerModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeExamples.Modules\UtilityControlsModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls.vb" />
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlProperties.Designer.vb">
+      <DependentUpon>AlertControlProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlTutorial.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertControlTutorial.Designer.vb">
+      <DependentUpon>AlertControlTutorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertInfoProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AlertControl\AlertInfoProperties.Designer.vb">
+      <DependentUpon>AlertInfoProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DockPanels\BaseControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DockPanels\BaseControl.Designer.vb">
+      <DependentUpon>BaseControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DockPanels\CentralContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DockPanels\CentralContainer.Designer.vb">
+      <DependentUpon>CentralContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DockPanels\DockPanels.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DockPanels\DockPanels.Designer.vb">
+      <DependentUpon>DockPanels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DockPanels\HorizontalContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DockPanels\HorizontalContainer.Designer.vb">
+      <DependentUpon>HorizontalContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DockPanels\SimpleDockPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DockPanels\SimpleDockPanel.Designer.vb">
+      <DependentUpon>SimpleDockPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DockPanels\TabContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DockPanels\TabContainer.Designer.vb">
+      <DependentUpon>TabContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DockPanels\VerticalContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DockPanels\VerticalContainer.Designer.vb">
+      <DependentUpon>VerticalContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerTabbedDocumentsFreeLayout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerWidgetViewFreeLayout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerWindowsUISearchPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerWindowsUISearchPanel.Designer.vb">
+      <DependentUpon>DocumentManagerWindowsUISearchPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerTabbedDocuments.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerTabbedDocuments.Designer.vb">
+      <DependentUpon>DocumentManagerTabbedDocuments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerNative.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerNative.Designer.vb">
+      <DependentUpon>DocumentManagerNative.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerDeferredLoadDocuments.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerDeferredLoadDocuments.Designer.vb">
+      <DependentUpon>DocumentManagerDeferredLoadDocuments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerDocking.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerDocking.Designer.vb">
+      <DependentUpon>DocumentManagerDocking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerNonMdiMode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\DocumentManagerNonMdiMode.Designer.vb">
+      <DependentUpon>DocumentManagerNonMdiMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\ucDocumentManagerWindowsUISearchPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentManager\ucDocumentManagerWindowsUISearchPanel.Designer.vb">
+      <DependentUpon>ucDocumentManagerWindowsUISearchPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ModuleFlyoutPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ModuleFlyoutPanel.Designer.vb">
+      <DependentUpon>ModuleFlyoutPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ModuleTaskbarAssistant.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ModuleTaskbarAssistant.Designer.vb">
+      <DependentUpon>ModuleTaskbarAssistant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ModuleTileNavPane.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ModuleTileNavPane.Designer.vb">
+      <DependentUpon>ModuleTileNavPane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PopupControlContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PopupControlContainer.Designer.vb">
+      <DependentUpon>PopupControlContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RadialMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RadialMenu.Designer.vb">
+      <DependentUpon>RadialMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\StartupMDIDemos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\StartupMDIDemos.Designer.vb">
+      <DependentUpon>StartupMDIDemos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TabbedMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\TabbedMDI.Designer.vb">
+      <DependentUpon>TabbedMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VisualEffects\GuideFlyoutPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\VisualEffects\GuideFlyoutPanel.Designer.vb">
+      <DependentUpon>GuideFlyoutPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VisualEffects\ModuleBadges.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\VisualEffects\ModuleBadges.Designer.vb">
+      <DependentUpon>ModuleBadges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VisualEffects\ModuleGuides.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\VisualEffects\ModuleGuides.Designer.vb">
+      <DependentUpon>ModuleGuides.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VisualEffects\ModuleValidationHints.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\VisualEffects\ModuleValidationHints.Designer.vb">
+      <DependentUpon>ModuleValidationHints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\Calendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\Calendar.Designer.vb">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\Clock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\Clock.Designer.vb">
+      <DependentUpon>Clock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\DashboardWidgets.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\DashboardWidgets.Designer.vb">
+      <DependentUpon>DashboardWidgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\Mail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\Mail.Designer.vb">
+      <DependentUpon>Mail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\MaximizedWidgetControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\MaximizedWidgetControl.Designer.vb">
+      <DependentUpon>MaximizedWidgetControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\News.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\News.Designer.vb">
+      <DependentUpon>News.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\SalesPerformanceWidgets.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\SalesPerformanceWidgets.Designer.vb">
+      <DependentUpon>SalesPerformanceWidgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\StockData.vb" />
+    <Compile Include="Modules\WidgetView\Controls\ToDoList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\ToDoList.Designer.vb">
+      <DependentUpon>ToDoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\Weather.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\Weather.Designer.vb">
+      <DependentUpon>Weather.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\WeatherItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\Controls\WeatherItem.Designer.vb">
+      <DependentUpon>WeatherItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\SalesPerformanceDataGenerator.vb" />
+    <Compile Include="Modules\WidgetView\TableLayout\ucCardWidget.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucCardWidget.Designer.vb">
+      <DependentUpon>ucCardWidget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucCategorySales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucCategorySales.Designer.vb">
+      <DependentUpon>ucCategorySales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucChartProductItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucChartProductItem.Designer.vb">
+      <DependentUpon>ucChartProductItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucChoroplethMapItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucChoroplethMapItem.Designer.vb">
+      <DependentUpon>ucChoroplethMapItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucProductsGrid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\TableLayout\ucProductsGrid.Designer.vb">
+      <DependentUpon>ucProductsGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\WidgetControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\WidgetControl.Designer.vb">
+      <DependentUpon>WidgetControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WidgetView\WidgetView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WidgetView\WidgetView.Designer.vb">
+      <DependentUpon>WidgetView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\IDEWorkspaces.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\IDEWorkspaces.Designer.vb">
+      <DependentUpon>IDEWorkspaces.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ModuleTransitionManager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ModuleTransitionManager.Designer.vb">
+      <DependentUpon>ModuleTransitionManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\ucCodeEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\ucCodeEditor.Designer.vb">
+      <DependentUpon>ucCodeEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\ucOutput.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\ucOutput.Designer.vb">
+      <DependentUpon>ucOutput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\ucPerfomanceGrid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\ucPerfomanceGrid.Designer.vb">
+      <DependentUpon>ucPerfomanceGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\ucSolutionExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorkspaceManager\ucSolutionExplorer.Designer.vb">
+      <DependentUpon>ucSolutionExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <EmbeddedResource Include="Modules\AlertControl\AlertControlProperties.resx">
+      <DependentUpon>AlertControlProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AlertControl\AlertControlTutorial.resx">
+      <DependentUpon>AlertControlTutorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AlertControl\AlertInfoProperties.resx">
+      <DependentUpon>AlertInfoProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DockPanels\BaseControl.resx">
+      <DependentUpon>BaseControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DockPanels\CentralContainer.resx">
+      <DependentUpon>CentralContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DockPanels\DockPanels.resx">
+      <DependentUpon>DockPanels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DockPanels\HorizontalContainer.resx">
+      <DependentUpon>HorizontalContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DockPanels\SimpleDockPanel.resx">
+      <DependentUpon>SimpleDockPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DockPanels\TabContainer.resx">
+      <DependentUpon>TabContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DockPanels\VerticalContainer.resx">
+      <DependentUpon>VerticalContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentManager\DocumentManagerWidgetViewFreeLayout.resx">
+      <DependentUpon>DocumentManagerWidgetViewFreeLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentManager\DocumentManagerWindowsUISearchPanel.resx">
+      <DependentUpon>DocumentManagerWindowsUISearchPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentManager\DocumentManagerTabbedDocuments.resx">
+      <DependentUpon>DocumentManagerTabbedDocuments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentManager\DocumentManagerDeferredLoadDocuments.resx">
+      <DependentUpon>DocumentManagerDeferredLoadDocuments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentManager\DocumentManagerDocking.resx">
+      <DependentUpon>DocumentManagerDocking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentManager\DocumentManagerNative.resx">
+      <DependentUpon>DocumentManagerNative.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentManager\DocumentManagerNonMdiMode.resx">
+      <DependentUpon>DocumentManagerNonMdiMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentManager\ucDocumentManagerWindowsUISearchPanel.resx">
+      <DependentUpon>ucDocumentManagerWindowsUISearchPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ModuleFlyoutPanel.resx">
+      <DependentUpon>ModuleFlyoutPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ModuleTaskbarAssistant.resx">
+      <DependentUpon>ModuleTaskbarAssistant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ModuleTileNavPane.resx">
+      <DependentUpon>ModuleTileNavPane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PopupControlContainer.resx">
+      <DependentUpon>PopupControlContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RadialMenu.resx">
+      <DependentUpon>RadialMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StartupMDIDemos.resx">
+      <DependentUpon>StartupMDIDemos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TabbedMDI.resx">
+      <DependentUpon>TabbedMDI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VisualEffects\GuideFlyoutPanel.resx">
+      <DependentUpon>GuideFlyoutPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VisualEffects\ModuleBadges.resx">
+      <DependentUpon>ModuleBadges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VisualEffects\ModuleGuides.resx">
+      <DependentUpon>ModuleGuides.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VisualEffects\ModuleValidationHints.resx">
+      <DependentUpon>ModuleValidationHints.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\Controls\Calendar.resx">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\Controls\Clock.resx">
+      <DependentUpon>Clock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\DashboardWidgets.resx">
+      <DependentUpon>DashboardWidgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\Controls\Mail.resx">
+      <DependentUpon>Mail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\MaximizedWidgetControl.resx">
+      <DependentUpon>MaximizedWidgetControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\Controls\News.resx">
+      <DependentUpon>News.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\Controls\ToDoList.resx">
+      <DependentUpon>ToDoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\Controls\Weather.resx">
+      <DependentUpon>Weather.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\Controls\WeatherItem.resx">
+      <DependentUpon>WeatherItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\SalesPerformanceWidgets.resx">
+      <DependentUpon>SalesPerformanceWidgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\TableLayout\ucCategorySales.resx">
+      <DependentUpon>ucCategorySales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\TableLayout\ucChartProductItem.resx">
+      <DependentUpon>ucChartProductItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\TableLayout\ucChoroplethMapItem.resx">
+      <DependentUpon>ucChoroplethMapItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\TableLayout\ucProductsGrid.resx">
+      <DependentUpon>ucProductsGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\WidgetControl.resx">
+      <DependentUpon>WidgetControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WidgetView\WidgetView.resx">
+      <DependentUpon>WidgetView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WorkspaceManager\IDEWorkspaces.resx">
+      <DependentUpon>IDEWorkspaces.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ModuleTransitionManager.resx">
+      <DependentUpon>ModuleTransitionManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WorkspaceManager\ucCodeEditor.resx">
+      <DependentUpon>ucCodeEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WorkspaceManager\ucOutput.resx">
+      <DependentUpon>ucOutput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WorkspaceManager\ucPerfomanceGrid.resx">
+      <DependentUpon>ucPerfomanceGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WorkspaceManager\ucSolutionExplorer.resx">
+      <DependentUpon>ucSolutionExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>DevExpress.ApplicationUI.Demos.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <EmbeddedResource Include="Resources\ucCodeEditor.rtf" />
+    <EmbeddedResource Include="Resources\ucSolutionExplorer.rtf" />
+    <EmbeddedResource Include="Resources\ucToolbox.rtf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Resources\ProgramText.rtf" />
+    <EmbeddedResource Include="Resources\ProgramText2.rtf" />
+    <EmbeddedResource Include="Resources\ProgramText3.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Alarm-Clock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Home.png" />
+    <EmbeddedResource Include="Resources\Settings.svg" />
+    <EmbeddedResource Include="Resources\Document4.svg" />
+    <EmbeddedResource Include="Resources\redo.svg" />
+    <EmbeddedResource Include="Resources\undo.svg" />
+    <EmbeddedResource Include="Resources\pastespecial.svg" />
+    <EmbeddedResource Include="Resources\copy.svg" />
+    <EmbeddedResource Include="Resources\cut.svg" />
+    <EmbeddedResource Include="Resources\print.svg" />
+    <EmbeddedResource Include="Resources\save.svg" />
+    <EmbeddedResource Include="Resources\open.svg" />
+    <EmbeddedResource Include="Resources\new.svg" />
+    <EmbeddedResource Include="Images\navigationButton.png" />
+    <EmbeddedResource Include="Images\salesInCalifornia.png" />
+    <EmbeddedResource Include="Images\salesInCaliforniaTile.png" />
+    <EmbeddedResource Include="Images\salesInMontana.png" />
+    <EmbeddedResource Include="Images\salesInMontanaTile.png" />
+    <EmbeddedResource Include="Images\salesByState.png" />
+    <EmbeddedResource Include="Images\salesByStateTile.png" />
+    <EmbeddedResource Include="Images\salesInTexas.png" />
+    <EmbeddedResource Include="Images\salesInTexasTile.png" />
+    <EmbeddedResource Include="Images\ucCategorySales.png" />
+    <EmbeddedResource Include="Images\ucChartProductItem.png" />
+    <EmbeddedResource Include="Images\ucChoroplethMapItem.png" />
+    <EmbeddedResource Include="Images\ucProductsGrid.png" />
+    <EmbeddedResource Include="Resources\Workspace 1.xml" />
+    <EmbeddedResource Include="Resources\Workspace 2.xml" />
+    <EmbeddedResource Include="Resources\Workspace 3.xml" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+  <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

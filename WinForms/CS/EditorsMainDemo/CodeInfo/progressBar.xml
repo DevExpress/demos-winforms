@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/TutorialsWhatsThis/XmlSchemas/module-new.xsd">
+	<controls>
+		<controlentry>
+			<control>
+				<name>btnApplyColors</name>
+				<windowcaption>Apply Colors button</windowcaption>
+				<description>This button illustrates how to apply gradient filling to a progress bar control.</description>
+				<memberlist>RepositoryItemBaseProgressBar.StartColor, RepositoryItemBaseProgressBar.EndColor</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>comboBoxProgressStyle</name>
+				<windowcaption>Progress Style combo box</windowcaption>
+				<description>This combo box demonstrates how to toggle the filling kind of the progress bar between broken and solid. Note that the progress bar has a single theme-defined style when XP themes are applied.</description>
+				<memberlist>ProgressViewStyle property</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditVertical</name>
+				<windowcaption>Vertical check box</windowcaption>
+				<description>This check box illustrates the horizontal and vertical styles of progress bars. Note that changing the progress bar's orientation usually implies changing the control's bounds as well.</description>
+				<memberlist>ProgressKind property</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditShowText</name>
+				<windowcaption>Show Text check box</windowcaption>
+				<description>This check box toggles the visibility of the text within the progress bar.</description>
+				<memberlist>ShowTitle property</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditShowPercent</name>
+				<windowcaption>Show Percents check box</windowcaption>
+				<description>With this check box you can control whether the percentage or the current position information is displayed within the progress bar.</description>
+				<memberlist>RepositoryItemProgressBar.PercentView</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>colorEditTextColor</name>
+				<windowcaption>Text Color color edit</windowcaption>
+				<description>This control lets you choose the color of the progress bar's text.</description>
+				<memberlist>RepositoryItemProgressBar.Appearance</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>comboBoxMaxMin</name>
+				<windowcaption>Maximum and Minimum Values combo box</windowcaption>
+				<description>This combo box lets you choose the range of values for the progress bar control. After a range has been selected, the progress bar is reset to its minimum value.</description>
+				<memberlist>RepositoryItemProgressBar.Minimum, RepositoryItemProgressBar.Maximum, ProgressBarControl.Position</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>buttonsMaxMin</name>
+				<windowcaption>Maximum and Minimum button editor</windowcaption>
+				<description>These buttons set the progress bar to its maximum and minimum positions.</description>
+				<memberlist>RepositoryItemProgressBar.Minimum, RepositoryItemProgressBar.Maximum, ProgressBarControl.Position</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>spinEditStep</name>
+				<windowcaption>Step spin editor</windowcaption>
+				<description>This editor lets you set the step value that is used when the progress bar's PerformStep() method is called. This method is called when clicking the editor's Step! button.  Note that the step value can be negative.</description>
+				<memberlist>RepositoryItemProgressBar.Step</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>buttonsUpDown</name>
+				<windowcaption>Variable Increment and Decrement button editor</windowcaption>
+				<description>These buttons demonstrate how to change the position of the progress bar by custom values. Additionally, they also show how to update the progress bar manually so that it always reflects its current position.</description>
+				<memberlist>ProgressBarControl.Increment, ProgressBarControl.Decrement,
+ RepositoryItemProgressBar.Maximum, RepositoryItemProgressBar.Minimum</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>textEditCurrentValue</name>
+				<windowcaption>Current Value text box</windowcaption>
+				<description>This text editor's content is updated each time the progress bar's position changes.</description>
+				<memberlist>ProgressBarControl.Position</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditAnimation</name>
+				<windowcaption>Enable Animation check box</windowcaption>
+				<description>When checked, this check box enables the timer that continuously changes the progress bar's position.</description>
+				<memberlist>RepositoryItemProgressBar.Minimum, RepositoryItemProgressBar.Maximum, ProgressBarControl.Position</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>comboBoxProgressStyle</name>
+			<hinttext>This setting is in effect in the Flat, UltraFlat and Style3D paint styles</hinttext>
+		</hint>
+		<hint>
+			<name>colorEditStartColor</name>
+			<hinttext>This setting is in effect in the Flat, UltraFlat and Style3D paint styles</hinttext>
+		</hint>
+		<hint>
+			<name>colorEditEndColor</name>
+			<hinttext>This setting is in effect in the Flat, UltraFlat and Style3D paint styles</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

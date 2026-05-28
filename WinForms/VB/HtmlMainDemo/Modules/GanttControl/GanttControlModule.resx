@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TaskTemplate.Styles" xml:space="preserve">
+    <value>.task {
+    display: flex;
+    text-overflow: ellipsis;
+    height: 95%;
+    width: 100%;
+    text-align: left;
+    opacity: 1;
+    margin-top: 2px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+body:disabled {
+	background-color: transparent;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    height: 92%;
+    width: 100%;
+    margin-top: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @ControlText;
+}
+body:disabled .task{
+	display:none;
+}
+.task-wrapper {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 8px;
+    align-items : center;
+    justify-content: center;
+}
+.photo {
+    width: 48px;
+    height: 84.25%;
+    margin: 8px 0px 8px 8px;
+    object-fit: scale-down;
+    background-color: #fff;
+    overflow: hidden;
+}
+.task-row {
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.task-title {
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Primary { 
+	background-color: @Primary;
+ }
+.Success {
+	background-color: @Success;
+}
+.Question {
+	background-color: @Question;
+}
+.Warning {
+	background-color: @Warning;
+ }
+.Danger { 
+	background-color: @Danger;
+ }</value>
+  </data>
+  <data name="TaskTemplate.Template" xml:space="preserve">
+    <value>&lt;div id="task" class="task" dx-class="{ColorName}"&gt;
+    &lt;div class="task-img-wrapper"&gt;
+        &lt;img class='photo' src='${EmployeePhoto}' /&gt;
+    &lt;/div&gt;
+    &lt;div class="task-wrapper"&gt;
+        &lt;div class="task-row"&gt;${Employee}&lt;/div&gt;
+        &lt;div class="task-title"&gt;${Name}&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="TaskProgressTemplate.Styles" xml:space="preserve">
+    <value>.task-progress-container{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    height: 97%;
+}
+.task-progress {
+    display: flex;
+    margin: 0px 1px 0 1px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 0px 0px 3px 3px;
+    opacity: 1;
+}
+body:disabled .task-progress{
+	display:none;
+}</value>
+  </data>
+  <data name="TaskTextLabelTemplate.Styles" xml:space="preserve">
+    <value>.task-text-label {
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    background-color: @Window;
+    border-radius: 1000px;
+    text-overflow: ellipsis;
+    margin: 29% auto;
+    border-width: 2px;
+    border-style: solid;
+    padding: 8px 16px;
+}
+.task-text-label-text {
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    white-space: nowrap;
+}
+.Primary { 
+	color: @Primary;
+	border-color: @Primary;
+ }
+.Success {
+	color: @Success;
+	border-color: @Success;
+}
+.Question {
+	color: @Question;
+	border-color: @Question;
+}
+.Warning {
+	color: @Warning;
+	border-color: @Warning;
+ }
+.Danger { 
+	color: @Danger;
+	border-color: @Danger;
+ }</value>
+  </data>
+</root>

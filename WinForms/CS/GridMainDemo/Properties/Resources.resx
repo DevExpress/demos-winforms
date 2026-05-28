@@ -1,0 +1,1234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Discontinued" xml:space="preserve">
+    <value>Discontinued</value>
+  </data>
+  <data name="ValueNotEqual" xml:space="preserve">
+    <value>The value must not equal {0}</value>
+  </data>
+  <data name="TableView_AutoSearch" xml:space="preserve">
+    <value>Press ESC to stop the automatic incremental search.</value>
+  </data>
+  <data name="RTFFilter" xml:space="preserve">
+    <value>RTF document (*.rtf)|*.rtf</value>
+  </data>
+  <data name="DOCXFilter" xml:space="preserve">
+    <value>DOCX document (*.docx)|*.docx</value>
+  </data>
+  <data name="ReadMark" xml:space="preserve">
+    <value>&amp;Mark as Read</value>
+  </data>
+  <data name="FindModeAlways" xml:space="preserve">
+    <value>Always</value>
+  </data>
+  <data name="ShowGroupPanel" xml:space="preserve">
+    <value>Show Group Panel</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="Reply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="AutoCalcPreviewLineCount" xml:space="preserve">
+    <value>Auto Calc Preview Line Count</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="AllowCellMerge" xml:space="preserve">
+    <value>Allow Cell Merge</value>
+  </data>
+  <data name="Bottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="InterpolationModeNearestNeighbor" xml:space="preserve">
+    <value>Nearest Neighbor</value>
+  </data>
+  <data name="GridMultiSelectModeCellSelect" xml:space="preserve">
+    <value>Cell Select</value>
+  </data>
+  <data name="MarkAsRead" xml:space="preserve">
+    <value>Mark as Read</value>
+  </data>
+  <data name="LoadingCaption" xml:space="preserve">
+    <value>Loading {0}... </value>
+  </data>
+  <data name="DemoName" xml:space="preserve">
+    <value>WinForms Data Grid</value>
+  </data>
+  <data name="SpinEdit" xml:space="preserve">
+    <value>Spin Edit</value>
+  </data>
+  <data name="LoadingOrders" xml:space="preserve">
+    <value>Loading Orders...</value>
+  </data>
+  <data name="InvertSelection" xml:space="preserve">
+    <value>Invert Selection</value>
+  </data>
+  <data name="GridMultiSelectModeRowSelect" xml:space="preserve">
+    <value>Row Select</value>
+  </data>
+  <data name="SelectedAllSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectedAllSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InterpolationModeHighQualityBilinear" xml:space="preserve">
+    <value>High Quality Bilinear</value>
+  </data>
+  <data name="FormatConditionEnumBetween" xml:space="preserve">
+    <value>Between</value>
+  </data>
+  <data name="Calculator" xml:space="preserve">
+    <value>Calculator</value>
+  </data>
+  <data name="MasterTablePositionTop" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="ActiveGrid_Folder_Sorting" xml:space="preserve">
+    <value>When sorting is applied to a view, first the Folders and then the Files are sorted.
+This custom sorting algorithm is implemented via a single event.</value>
+  </data>
+  <data name="FixedLeft" xml:space="preserve">
+    <value>Fixed Left</value>
+  </data>
+  <data name="ActiveGrid_JoinedGroupPanel" xml:space="preserve">
+    <value>Grouping columns can be optionally displayed
+within the current detail's group panel...</value>
+  </data>
+  <data name="ColumnAutoWidth" xml:space="preserve">
+    <value>Column Auto Width</value>
+  </data>
+  <data name="TableView_IncrementalSearch" xml:space="preserve">
+    <value>Use Ctrl+Down to find the next match. Use Ctrl+Up to find the previous match.</value>
+  </data>
+  <data name="ButtonEdit" xml:space="preserve">
+    <value>Button Edit</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Holiday" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="CategoriesTable" xml:space="preserve">
+    <value>Categories of Northwind products.</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="DefaultBooleanTrue" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>items</value>
+  </data>
+  <data name="ForColumn" xml:space="preserve">
+    <value> for the [{0}] column</value>
+  </data>
+  <data name="ReplyAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReplyAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShowColumnHeaders" xml:space="preserve">
+    <value>Show Column Headers</value>
+  </data>
+  <data name="DefaultBooleanFalse" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="ShowCardExpandButton" xml:space="preserve">
+    <value>Show Card Expand Button</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="Ideas" xml:space="preserve">
+    <value>Ideas</value>
+  </data>
+  <data name="LoadingSuppliers" xml:space="preserve">
+    <value>Loading Suppliers...</value>
+  </data>
+  <data name="ActiveGrid_Warning" xml:space="preserve">
+    <value>This operation might take a few minutes.
+Are you sure you want to continue?</value>
+  </data>
+  <data name="FormatConditionEnumLessOrEqual" xml:space="preserve">
+    <value>Less Or Equal</value>
+  </data>
+  <data name="ShowPreview" xml:space="preserve">
+    <value>Show Preview</value>
+  </data>
+  <data name="YourMonthlyPayment" xml:space="preserve">
+    <value>Your Monthly Payment</value>
+  </data>
+  <data name="ActiveGrid_EmbeddedNavigator" xml:space="preserve">
+    <value>The Embedded Navigator helps end-users
+to navigate through the grid.
+You can display or hide any button.</value>
+  </data>
+  <data name="ActiveGrid_JoinedGroupPanel2" xml:space="preserve">
+    <value>...or within the main view's group panel.</value>
+  </data>
+  <data name="ActiveDemoCanceled" xml:space="preserve">
+    <value>User has canceled the active demo</value>
+  </data>
+  <data name="GroupFooterShowModeVisibleIfExpanded" xml:space="preserve">
+    <value>Visible If Expanded</value>
+  </data>
+  <data name="FormatConditionEnumEqual" xml:space="preserve">
+    <value>Equal</value>
+  </data>
+  <data name="AllowHtmlDrawHeaders" xml:space="preserve">
+    <value>Allow Html Draw Headers</value>
+  </data>
+  <data name="ShowSelectedValues" xml:space="preserve">
+    <value>Show Selected Values</value>
+  </data>
+  <data name="ShippersTable" xml:space="preserve">
+    <value>Shippers (Shippers' names and phone numbers.)</value>
+  </data>
+  <data name="PopupFilterModeContains" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="ActiveDemoWarning" xml:space="preserve">
+    <value>There is unknown window above the demo. Please hide or close all tops windows to run active demo</value>
+  </data>
+  <data name="WaitAnimationOptionsDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="ShowCardCaption" xml:space="preserve">
+    <value>Show Card Caption</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="ShowFooter" xml:space="preserve">
+    <value>Show Footer</value>
+  </data>
+  <data name="CreationTime" xml:space="preserve">
+    <value>Creation Time</value>
+  </data>
+  <data name="DefaultString" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="InterpolationModeHigh" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="ShowFieldCaptions" xml:space="preserve">
+    <value>Show Field Captions</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="FormatConditionEnumGreater" xml:space="preserve">
+    <value>Greater</value>
+  </data>
+  <data name="CardView" xml:space="preserve">
+    <value>Card View</value>
+  </data>
+  <data name="FlagItem" xml:space="preserve">
+    <value>Flag Item</value>
+  </data>
+  <data name="ShowFieldHints" xml:space="preserve">
+    <value>Show Field Hints</value>
+  </data>
+  <data name="AllowHtmlDrawGroups" xml:space="preserve">
+    <value>Allow Html Draw Groups</value>
+  </data>
+  <data name="Playing" xml:space="preserve">
+    <value>Playing</value>
+  </data>
+  <data name="ValueGreater" xml:space="preserve">
+    <value>The value must be greater than {0}</value>
+  </data>
+  <data name="Kilobytes" xml:space="preserve">
+    <value>KB</value>
+  </data>
+  <data name="ActiveDemoResult" xml:space="preserve">
+    <value>Active demo result</value>
+  </data>
+  <data name="TimeEdit" xml:space="preserve">
+    <value>Time Edit</value>
+  </data>
+  <data name="GroupFooterShowModeVisibleAlways" xml:space="preserve">
+    <value>Visible Always</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Pause...</value>
+  </data>
+  <data name="HTMLFilter" xml:space="preserve">
+    <value>HTML document (*.html)|*.html</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="ShowIndicator" xml:space="preserve">
+    <value>Show Indicator</value>
+  </data>
+  <data name="TextEditStylesHideTextEditor" xml:space="preserve">
+    <value>Hide Text Editor</value>
+  </data>
+  <data name="CheckBoxRowSelect" xml:space="preserve">
+    <value>Check Box Row Select</value>
+  </data>
+  <data name="MRUEdit" xml:space="preserve">
+    <value>MRU Edit</value>
+  </data>
+  <data name="ShowGroupExpandCollapseButtons" xml:space="preserve">
+    <value>Show Group Expand and Collapse Buttons</value>
+  </data>
+  <data name="ClickMe" xml:space="preserve">
+    <value>Click me...</value>
+  </data>
+  <data name="Bytes" xml:space="preserve">
+    <value>Bytes</value>
+  </data>
+  <data name="ShowDetailButtons" xml:space="preserve">
+    <value>Show Detail Buttons</value>
+  </data>
+  <data name="NewFolderSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewFolderSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="SumFormat" xml:space="preserve">
+    <value>SUM={0}</value>
+  </data>
+  <data name="LoadingEmployees" xml:space="preserve">
+    <value>Loading Employees...</value>
+  </data>
+  <data name="SuppliersTable" xml:space="preserve">
+    <value>Suppliers (Suppliers' names, addresses, phone numbers, and hyperlinks to home pages.)</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="ActiveGrid_ViewUnzoom" xml:space="preserve">
+    <value>To display the master view again just click the Zoom Out button.</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ActiveGrid_Folder_IncrementalSearch" xml:space="preserve">
+    <value>The incremental search feature 
+can be enabled by setting a single property.
+Experiment with the search 
+by typing directly within the cells.</value>
+  </data>
+  <data name="LoadingOrderDetails" xml:space="preserve">
+    <value>Loading Order Details...</value>
+  </data>
+  <data name="ConditionItemCaption" xml:space="preserve">
+    <value>Format Rule Item - Index {0}</value>
+  </data>
+  <data name="CustomOrderCountCaption" xml:space="preserve">
+    <value>(Order Count [WHERE Freight &gt;= {0} ]</value>
+  </data>
+  <data name="GroupFooterShowModeHidden" xml:space="preserve">
+    <value>Hidden</value>
+  </data>
+  <data name="XLSFilter" xml:space="preserve">
+    <value>XLS document (*.xls)|*.xls</value>
+  </data>
+  <data name="DateEdit" xml:space="preserve">
+    <value>Date Edit</value>
+  </data>
+  <data name="InterpolationModeBicubic" xml:space="preserve">
+    <value>Bicubic</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="FormatConditionEnumGreaterOrEqual" xml:space="preserve">
+    <value>Greater Or Equal</value>
+  </data>
+  <data name="LoadingUsers" xml:space="preserve">
+    <value>Loading Users...</value>
+  </data>
+  <data name="PopupFilterModeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ReadingFolders" xml:space="preserve">
+    <value>Reading the folders...</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>item</value>
+  </data>
+  <data name="ShowEmptyFields" xml:space="preserve">
+    <value>Show Empty Fields</value>
+  </data>
+  <data name="GroupDrawModeStandard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="ActiveGrid_100kRecords_DataReloading" xml:space="preserve">
+    <value>Data reloading: {0} sec.</value>
+  </data>
+  <data name="RecentPlacesSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RecentPlacesSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomTextName" xml:space="preserve">
+    <value>Full Name (custom text)</value>
+  </data>
+  <data name="MemoExEdit" xml:space="preserve">
+    <value>MemoEx Edit</value>
+  </data>
+  <data name="CardsAlignmentCenter" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="DefaultBooleanDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="MemoText" xml:space="preserve">
+    <value>Robbins studied drama at UCLA where he graduated with honors in 1981. That same year, he formed the Actors' Gang, an experimental ensemble that expressed radical political observations through the European avant-garde form of theater.</value>
+  </data>
+  <data name="ShowBands" xml:space="preserve">
+    <value>Show Bands</value>
+  </data>
+  <data name="PDFFilter" xml:space="preserve">
+    <value>PDF document (*.pdf)|*.pdf</value>
+  </data>
+  <data name="GroupDrawModeOffice2003" xml:space="preserve">
+    <value>Office2003</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="RowAutoHeight" xml:space="preserve">
+    <value>Row Auto Height</value>
+  </data>
+  <data name="PopupContainer" xml:space="preserve">
+    <value>Popup Container</value>
+  </data>
+  <data name="ValueLess" xml:space="preserve">
+    <value>The value must be less than {0}</value>
+  </data>
+  <data name="Hyperlink" xml:space="preserve">
+    <value>Hyper link</value>
+  </data>
+  <data name="ShowAlways" xml:space="preserve">
+    <value>Show Always</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="FormatConditionEnumNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="SelectedCells" xml:space="preserve">
+    <value>Selected Cells</value>
+  </data>
+  <data name="MultiSelect" xml:space="preserve">
+    <value>Multi Select</value>
+  </data>
+  <data name="DesktopSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesktopSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LowPriority" xml:space="preserve">
+    <value>Low priority</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="ShowAutoFilterRow" xml:space="preserve">
+    <value>Show Auto Filter Row</value>
+  </data>
+  <data name="GridAnimationTypeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ShowForFocusedCell" xml:space="preserve">
+    <value>Show For Focused Cell</value>
+  </data>
+  <data name="Adjustment" xml:space="preserve">
+    <value>Adjustment...</value>
+  </data>
+  <data name="MRUQuestion" xml:space="preserve">
+    <value>What's your favorite color?</value>
+  </data>
+  <data name="InterpolationModeBilinear" xml:space="preserve">
+    <value>Bilinear</value>
+  </data>
+  <data name="International" xml:space="preserve">
+    <value>International</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>Attributes</value>
+  </data>
+  <data name="ShowGroupedColumns" xml:space="preserve">
+    <value>Show Grouped Columns</value>
+  </data>
+  <data name="QuantityPerUnit" xml:space="preserve">
+    <value>Quantity Per Unit</value>
+  </data>
+  <data name="LoadingCars" xml:space="preserve">
+    <value>Loading Cars...</value>
+  </data>
+  <data name="CardsAlignmentNear" xml:space="preserve">
+    <value>Near</value>
+  </data>
+  <data name="CardsAlignmentFar" xml:space="preserve">
+    <value>Far</value>
+  </data>
+  <data name="ActiveGrid_100kRecords_ClearGrouping" xml:space="preserve">
+    <value>Clear grouping: {0} sec.</value>
+  </data>
+  <data name="MinFormat" xml:space="preserve">
+    <value>MIN={0}</value>
+  </data>
+  <data name="ChildDirCount" xml:space="preserve">
+    <value>ChildDir Count</value>
+  </data>
+  <data name="SubTotalGreaterEqual" xml:space="preserve">
+    <value>The SubTotal value must be greater than or equal to 0.</value>
+  </data>
+  <data name="ShowCardView" xml:space="preserve">
+    <value>Show Card View</value>
+  </data>
+  <data name="MoveToLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoveToLarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectionOptions" xml:space="preserve">
+    <value>Selection Options</value>
+  </data>
+  <data name="ShowGridView" xml:space="preserve">
+    <value>Show Grid View</value>
+  </data>
+  <data name="LoadingTables" xml:space="preserve">
+    <value>Loading Tables...</value>
+  </data>
+  <data name="MaxFormat" xml:space="preserve">
+    <value>MAX={0}</value>
+  </data>
+  <data name="UsingString" xml:space="preserve">
+    <value>Using</value>
+  </data>
+  <data name="ActiveDemoStop" xml:space="preserve">
+    <value>
+To stop Active Demo 
+press any key.
+</value>
+  </data>
+  <data name="LoadingCustomOrders" xml:space="preserve">
+    <value>Loading Custom Orders...</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Marketing</value>
+  </data>
+  <data name="DeleteItem" xml:space="preserve">
+    <value>Delete Item</value>
+  </data>
+  <data name="OpenAttachment" xml:space="preserve">
+    <value>Open Attachment</value>
+  </data>
+  <data name="ImageComboBox" xml:space="preserve">
+    <value>ImageComboBox</value>
+  </data>
+  <data name="ActiveGrid_SynhronizedViews" xml:space="preserve">
+    <value>By default the XtraGrid synchronizes the layout of the columns in detail views.
+The SynhronizeClones property can be used to change the default behavior.</value>
+  </data>
+  <data name="MasterTablePositionLeft" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="ValueGreaterEqual" xml:space="preserve">
+    <value>The value must be greater than or equal to {0}</value>
+  </data>
+  <data name="EmployeesTable" xml:space="preserve">
+    <value>Employees (Employees' names, titles, and personal information.)</value>
+  </data>
+  <data name="ProgressBar" xml:space="preserve">
+    <value>Progress Bar</value>
+  </data>
+  <data name="DataAdding" xml:space="preserve">
+    <value>Adding next portion of data...</value>
+  </data>
+  <data name="TextEditStylesDisableTextEditor" xml:space="preserve">
+    <value>Disable Text Editor</value>
+  </data>
+  <data name="EnableAppearanceHideSelection" xml:space="preserve">
+    <value>Enable Appearance Hide Selection</value>
+  </data>
+  <data name="AboutString" xml:space="preserve">
+    <value>Accept No Limitations – the most complete data grid and editors library for WinForms is only available from DevExpress. From cards and carousels to master-detail support...from our shared data editors library to ultra fast data loading...The XtraGrid Suite remains unrivaled in its capabilities and features.
+    
+Grids and editors are at the heart of most major applications and choosing the best available library is critical to the success of any such project - both in terms of time to market and end user experience. Give the XtraGrid Suite a try and see for yourself - if it is not the best and most comprehensive product library of its kind, return it to us within the first 60 days from purchase for an UNCONDITIONAL no questions asked refund!</value>
+  </data>
+  <data name="InterpolationModeLow" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="OptionsLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OptionsLarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitsInStock" xml:space="preserve">
+    <value>Units in Stock</value>
+  </data>
+  <data name="MHTFilter" xml:space="preserve">
+    <value>MHT document (*.mht)|*.mht</value>
+  </data>
+  <data name="OrdersTable" xml:space="preserve">
+    <value>Orders (WHERE Freight &gt; $500)</value>
+  </data>
+  <data name="Documentation" xml:space="preserve">
+    <value>Documentation</value>
+  </data>
+  <data name="LoadingItems" xml:space="preserve">
+    <value>Loading Items...</value>
+  </data>
+  <data name="NoneString" xml:space="preserve">
+    <value>&lt;None&gt;</value>
+  </data>
+  <data name="Years" xml:space="preserve">
+    <value>years</value>
+  </data>
+  <data name="EnableAppearanceFocusedCell" xml:space="preserve">
+    <value>Enable Appearance Focused Cell</value>
+  </data>
+  <data name="ValueLessEqual" xml:space="preserve">
+    <value>The value must be less than or equal to {0}</value>
+  </data>
+  <data name="Gifts" xml:space="preserve">
+    <value>Gifts</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="FormatConditionEnumLess" xml:space="preserve">
+    <value>Less</value>
+  </data>
+  <data name="ActiveGrid_100kRecords_CurrencySorting" xml:space="preserve">
+    <value>Sorting by the Currency column: {0} sec.</value>
+  </data>
+  <data name="SelectedRows" xml:space="preserve">
+    <value>Selected Rows</value>
+  </data>
+  <data name="CurrentRecordCount" xml:space="preserve">
+    <value>Current record count = {0}</value>
+  </data>
+  <data name="ImageEdit" xml:space="preserve">
+    <value>Image Edit</value>
+  </data>
+  <data name="TextEditStylesStandard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="WaitAnimationOptionsIndicator" xml:space="preserve">
+    <value>Indicator</value>
+  </data>
+  <data name="ShowSelectedRecords" xml:space="preserve">
+    <value>Show Selected Records</value>
+  </data>
+  <data name="Competitor" xml:space="preserve">
+    <value>Competitor</value>
+  </data>
+  <data name="SubTotalFormatCurrency" xml:space="preserve">
+    <value>(Sub Total={0:c})</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>Text document (*.txt)|*.txt</value>
+  </data>
+  <data name="LastOrder" xml:space="preserve">
+    <value>Last Order</value>
+  </data>
+  <data name="ActiveGrid_BestFit" xml:space="preserve">
+    <value>To apply Best Fit to a column
+ double-click its right edge.</value>
+  </data>
+  <data name="ShowViewCaption" xml:space="preserve">
+    <value>Show View Caption</value>
+  </data>
+  <data name="ActiveGrid_100kRecords_DateGrouping" xml:space="preserve">
+    <value>Grouping by the Text and Date columns: {0} sec.</value>
+  </data>
+  <data name="GridAnimationTypeNeverAnimate" xml:space="preserve">
+    <value>Never Animate</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Interest" xml:space="preserve">
+    <value>Interest</value>
+  </data>
+  <data name="TextEditText" xml:space="preserve">
+    <value>The simplest Edit</value>
+  </data>
+  <data name="EditStyle" xml:space="preserve">
+    <value>Edit style</value>
+  </data>
+  <data name="GridView" xml:space="preserve">
+    <value>Grid View</value>
+  </data>
+  <data name="UseIndicatorForSelection" xml:space="preserve">
+    <value>Use Indicator for Selection</value>
+  </data>
+  <data name="LoadingCategoryProducts" xml:space="preserve">
+    <value>Loading CategoryProducts...</value>
+  </data>
+  <data name="EnableAppearanceFocusedRow" xml:space="preserve">
+    <value>Enable Appearance Focused Row</value>
+  </data>
+  <data name="DescriptionSQLConnection" xml:space="preserve">
+    <value>This demo shows a grid control's capabilities when it's bound to a large amount of data. In this example, the grid control needs to be connected to a data table on an MS SQL server. Please use this Configuration Window to configure data and connection settings.
+On the first run:
+1) Specify the name of an existing SQL Server which will contain the target database;
+2) Specify the amount of records in the target table and click the Generate Table and Start Demo button. A new table will be generated and the demo will start with the grid control bound to the generated recordset.
+On subsequent runs, you can add more records to the database or just start the demo without generating additional data.</value>
+  </data>
+  <data name="GridAnimationTypeAnimateFocusedItem" xml:space="preserve">
+    <value>Animate Focused Item</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>&amp;Back</value>
+  </data>
+  <data name="GameOver" xml:space="preserve">
+    <value>Game Over</value>
+  </data>
+  <data name="FontEdit" xml:space="preserve">
+    <value>Font Edit</value>
+  </data>
+  <data name="LoadingProducts" xml:space="preserve">
+    <value>Loading Products...</value>
+  </data>
+  <data name="HideSelectedItemsLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HideSelectedItemsLarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="ConditionsName" xml:space="preserve">
+    <value>(Format Rules)</value>
+  </data>
+  <data name="CreatingData" xml:space="preserve">
+    <value>Creating Data...</value>
+  </data>
+  <data name="LibrarySmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LibrarySmall.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EmptyConditionCaption" xml:space="preserve">
+    <value>Empty format rule {0}</value>
+  </data>
+  <data name="ShowOnlyInEditor" xml:space="preserve">
+    <value>Show Only In Editor</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="GroupDrawModeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="NewItemSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewItemSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CopyLarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileAttributes" xml:space="preserve">
+    <value>File Attributes</value>
+  </data>
+  <data name="FindModeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="InterpolationModeHighQualityBicubic" xml:space="preserve">
+    <value>High Quality Bicubic</value>
+  </data>
+  <data name="CustomersTable" xml:space="preserve">
+    <value>Customers (Customers' names, addresses, and phone numbers.)</value>
+  </data>
+  <data name="ShowQuickCustomizeButton" xml:space="preserve">
+    <value>Show Quick Customize Button</value>
+  </data>
+  <data name="GroupCategory" xml:space="preserve">
+    <value>Group by 'Category'</value>
+  </data>
+  <data name="FindModeFindClick" xml:space="preserve">
+    <value>Find Click</value>
+  </data>
+  <data name="MasterTablePositionRight" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="LoadingDepartments" xml:space="preserve">
+    <value>Loading Departments...</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="InterpolationModeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ActiveGrid_ViewZoomSubDetail" xml:space="preserve">
+    <value>Click this button 
+to zoom in on the current detail view.</value>
+  </data>
+  <data name="TrackBar" xml:space="preserve">
+    <value>Track Bar</value>
+  </data>
+  <data name="PasteLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PasteLarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadingCustomers" xml:space="preserve">
+    <value>Loading Customers...</value>
+  </data>
+  <data name="NotFixed" xml:space="preserve">
+    <value>Not Fixed</value>
+  </data>
+  <data name="FilesCount" xml:space="preserve">
+    <value>Files Count</value>
+  </data>
+  <data name="UnreadMark" xml:space="preserve">
+    <value>&amp;Mark as Unread</value>
+  </data>
+  <data name="PopupFilterModeStartsWith" xml:space="preserve">
+    <value>Starts With</value>
+  </data>
+  <data name="ShowChildrenInGroupPanel" xml:space="preserve">
+    <value>Show Children in Group Panel</value>
+  </data>
+  <data name="ComboBox" xml:space="preserve">
+    <value>Combo Box</value>
+  </data>
+  <data name="ShowLines" xml:space="preserve">
+    <value>Show Lines</value>
+  </data>
+  <data name="AlphaBlending" xml:space="preserve">
+    <value>Alpha Blending</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="RadioGroup" xml:space="preserve">
+    <value>Radio Group</value>
+  </data>
+  <data name="RD" xml:space="preserve">
+    <value>R&amp;D</value>
+  </data>
+  <data name="StartDemo" xml:space="preserve">
+    <value>Start Demo</value>
+  </data>
+  <data name="LoadingCustomerPayment" xml:space="preserve">
+    <value>Loading Customers Payment...</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>Row</value>
+  </data>
+  <data name="DownloadsSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DownloadsSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewOptions" xml:space="preserve">
+    <value>View Options</value>
+  </data>
+  <data name="GridAnimationTypeAnimateAllContent" xml:space="preserve">
+    <value>Animate All Content</value>
+  </data>
+  <data name="LoadingDXProducts" xml:space="preserve">
+    <value>Loading DXProducts.xml...</value>
+  </data>
+  <data name="WaitAnimationOptionsPanel" xml:space="preserve">
+    <value>Panel</value>
+  </data>
+  <data name="LastWriteTime" xml:space="preserve">
+    <value>Last Write Time</value>
+  </data>
+  <data name="RecordDescription" xml:space="preserve">
+    <value>This is a description for the {0} record.</value>
+  </data>
+  <data name="DescriptionFor" xml:space="preserve">
+    <value>This is a description for the</value>
+  </data>
+  <data name="HideColumnsSelector" xml:space="preserve">
+    <value>Hide Columns &amp;Selector</value>
+  </data>
+  <data name="FromString" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="AvgFormatCurrency" xml:space="preserve">
+    <value>AVG={0:c}</value>
+  </data>
+  <data name="LastAccessTime" xml:space="preserve">
+    <value>Last Access Time</value>
+  </data>
+  <data name="LookUpEdit" xml:space="preserve">
+    <value>LookUp Edit</value>
+  </data>
+  <data name="ColorEdit" xml:space="preserve">
+    <value>Color Edit</value>
+  </data>
+  <data name="FormatConditionEnumNotEqual" xml:space="preserve">
+    <value>Not Equal</value>
+  </data>
+  <data name="ButtonMessage" xml:space="preserve">
+    <value>You've clicked the button!</value>
+  </data>
+  <data name="CheckedComboBox" xml:space="preserve">
+    <value>Checked Combo Box</value>
+  </data>
+  <data name="Forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShowColumnsSelector" xml:space="preserve">
+    <value>Show Columns &amp;Selector</value>
+  </data>
+  <data name="ShowForFocusedRow" xml:space="preserve">
+    <value>Show For Focused Row</value>
+  </data>
+  <data name="OrderSum" xml:space="preserve">
+    <value>Order Sum</value>
+  </data>
+  <data name="Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="FixedRight" xml:space="preserve">
+    <value>Fixed Right</value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Goals</value>
+  </data>
+  <data name="CopyToLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CopyToLarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomSummaryCaption" xml:space="preserve">
+    <value>count records WHERE Freight &gt;= {0}</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>Business</value>
+  </data>
+  <data name="NoFilter" xml:space="preserve">
+    <value>No filter...</value>
+  </data>
+  <data name="ActiveGrid_ViewZoom" xml:space="preserve">
+    <value>You can zoom in on any grid view
+by clicking the Zoom button.</value>
+  </data>
+  <data name="CheckEdit" xml:space="preserve">
+    <value>Check Edit</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Length (bytes)</value>
+  </data>
+  <data name="SumFormatCurrency" xml:space="preserve">
+    <value>SUM={0:c}</value>
+  </data>
+  <data name="HighPriority" xml:space="preserve">
+    <value>High priority</value>
+  </data>
+  <data name="AvgByPriceFormatCurrency" xml:space="preserve">
+    <value>(AVG by Unit Price={0:c})</value>
+  </data>
+  <data name="FormatConditionEnumNotBetween" xml:space="preserve">
+    <value>Not Between</value>
+  </data>
+  <data name="LoadingProjects" xml:space="preserve">
+    <value>Loading Projects...</value>
+  </data>
+  <data name="Directories" xml:space="preserve">
+    <value>Directories</value>
+  </data>
+  <data name="CellSelect" xml:space="preserve">
+    <value>Cell Select</value>
+  </data>
+  <data name="DocumentsSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocumentsSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QA" xml:space="preserve">
+    <value>QA</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="MasterTablePositionBottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="EditOrder" xml:space="preserve">
+    <value>&amp;Edit order...</value>
+  </data>
+  <data name="MemoEdit" xml:space="preserve">
+    <value>Memo Edit</value>
+  </data>
+  <data name="EnableAppearanceEvenRow" xml:space="preserve">
+    <value>Enable Appearance Even Row</value>
+  </data>
+  <data name="ActiveGrid_100kRecords_TextGrouping" xml:space="preserve">
+    <value>Grouping by Text column: {0} sec.</value>
+  </data>
+  <data name="UngroupCategory" xml:space="preserve">
+    <value>Ungroup by 'Category'</value>
+  </data>
+  <data name="Relevance" xml:space="preserve">
+    <value>Relevance</value>
+  </data>
+  <data name="TextEdit" xml:space="preserve">
+    <value>Text Edit</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="EnableAppearanceOddRow" xml:space="preserve">
+    <value>Enable Appearance Odd Row</value>
+  </data>
+  <data name="RowSelect" xml:space="preserve">
+    <value>Row Select</value>
+  </data>
+  <data name="XLSXFilter" xml:space="preserve">
+    <value>XLSX document (*.xlsx)|*.xlsx</value>
+  </data>
+  <data name="ShowHorzScrollBar" xml:space="preserve">
+    <value>Show Horz Scroll Bar</value>
+  </data>
+  <data name="FilterPopupMaxRecord" xml:space="preserve">
+    <value>Filter Popup Max Records:</value>
+  </data>
+  <data name="FilterPopupRowCount" xml:space="preserve">
+    <value>Filter Popup Row Count:</value>
+  </data>
+  <data name="MRUColumnFilterListCount" xml:space="preserve">
+    <value>MRU Column Filter List Count:</value>
+  </data>
+  <data name="MRUFilterListCount" xml:space="preserve">
+    <value>MRU Filter List Count:</value>
+  </data>
+  <data name="MRUFilterListPopupCount" xml:space="preserve">
+    <value>MRU Filter List Popup Count:</value>
+  </data>
+  <data name="RowCount" xml:space="preserve">
+    <value>Row Count:</value>
+  </data>
+  <data name="RowFilter" xml:space="preserve">
+    <value>Row Filter:</value>
+  </data>
+  <data name="ClipboardActiveDemoGridDataToCopy" xml:space="preserve">
+    <value>The grid displays data we're going to copy</value>
+  </data>
+  <data name="ClipboardActiveDemoCopyWithButton" xml:space="preserve">
+    <value>Let's press this button to copy the selection and paste it to the external controls</value>
+  </data>
+  <data name="ClipboardActiveDemoCopyWithShortcut" xml:space="preserve">
+    <value>Now the selection can be copied to the clipboard using the CTRL+C shortcut</value>
+  </data>
+  <data name="ClipboardActiveDemoCustomizeOptions" xml:space="preserve">
+    <value>First, let's customize the clipboard options</value>
+  </data>
+  <data name="ClipboardActiveDemoExpandedRows" xml:space="preserve">
+    <value>Expanded rows: {0}, {1}, {2}</value>
+  </data>
+  <data name="ClipboardActiveDemoGroupBy" xml:space="preserve">
+    <value>Group by: {0}</value>
+  </data>
+  <data name="ClipboardActiveDemoModifyLayout" xml:space="preserve">
+    <value>Modify the grid layout</value>
+  </data>
+  <data name="ClipboardActiveDemoSelectCells" xml:space="preserve">
+    <value>Select a cell range</value>
+  </data>
+  <data name="ClipboardActiveDemoSelectionPasted" xml:space="preserve">
+    <value>The selection has been pasted in Excel(Biff8), RTF and HTML formats</value>
+  </data>
+  <data name="Mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mail.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="MailWithAttach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MailWithAttach.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="starCheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starCheck.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="starUncheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starUncheck.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="uncheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uncheck.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="MessageTile" xml:space="preserve">
+    <value>&lt;!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\"&gt;&lt;html&gt;&lt;body&gt;&lt;style type=\"text/css\"&gt;.style1{font-size: x-small;font-family: \"Segoe UI\";}.style2{font-family: \"Segoe UI\";color: #666666;}.style3{font-family: \"Segoe UI\";}&lt;/style&gt;</value>
+  </data>
+  <data name="MessageTileEnd" xml:space="preserve">
+    <value>&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="MessageTileEx" xml:space="preserve">
+    <value>&lt;span class=\"style3\"&gt;{0} (&lt;/span&gt;&lt;span class=\"style1\"&gt;{1}&lt;/span&gt;&lt;span class=\"style3\"&gt;)&lt;/span&gt;&lt;span class=\"style2\"&gt;&lt;br /&gt;{2}&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="isBlackFridayDiscount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isBlackFridayDiscount.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Actions_Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Actions_Calendar.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ShowForHotTrackedRow" xml:space="preserve">
+    <value>Show For Hot Tracked Row</value>
+  </data>
+  <data name="MiddleLeft" xml:space="preserve">
+    <value>Fixed Left (Dynamic)</value>
+  </data>
+  <data name="FilterModeDisabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="FilterModeTextFilter" xml:space="preserve">
+    <value>Text Filter</value>
+  </data>
+  <data name="FilterModeTextSearch" xml:space="preserve">
+    <value>Text Search</value>
+  </data>
+  <data name="ShowResultsModeNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ShowResultsModeText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ShowResultsModeTextAndPosition" xml:space="preserve">
+    <value>Text And Position</value>
+  </data>
+  <data name="AllowHtmlDrawDetailTabs" xml:space="preserve">
+    <value>Allow Html Draw Detail Tabs</value>
+  </data>
+  <data name="MergedCellEditModeVisibleCells" xml:space="preserve">
+    <value>Visible Cells</value>
+  </data>
+  <data name="MergedCellEditModeFocusedCell" xml:space="preserve">
+    <value>Focused Cell</value>
+  </data>
+  <data name="MergedCellEditModeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="MergedCellEditModeDisabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+</root>

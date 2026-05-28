@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>seCustomHeight</name>
+				<windowcaption>RepositoryItemRichTextEdit height</windowcaption>
+				<description>The CustomHeight property specifies the editor's height. By default, this property is set to -1, and the editor's height is calculated automatically to fit the editor's content.</description>
+        <memberlist>RepositoryItemRichTextEdit.CustomHeight</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>seHIndent</name>
+        <windowcaption>RepositoryItemRichTextEdit horizontal indent</windowcaption>
+        <description>The HorizontalIndent property specifies a horizontal margin between the border and text.</description>
+        <memberlist>RepositoryItemRichTextEdit.HorizontalIndent</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seVIndent</name>
+        <windowcaption>RepositoryItemRichTextEdit vertical indent</windowcaption>
+        <description>A vertical margin between the border and text.</description>
+        <memberlist>RepositoryItemRichTextEdit.VerticalIndent</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>gridControl1</name>
+        <windowcaption>RTF text editor</windowcaption>
+        <description>To display RTF data assign the RepositoryItemRichTextEdit object to the ColumnEdit property</description>
+        <memberlist>GridColumn.ColumnEdit</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>gridControl2</name>
+        <windowcaption>Custom preview draw</windowcaption>
+        <description>Handle the CustomDrawRowPreview event to manually paint preview sections or customize individual preview sections before painting them using the default mechanism.</description>
+        <memberlist>GridView.CustomDrawRowPreview</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

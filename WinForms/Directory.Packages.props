@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup Condition="'$(DXDisableCentral)' != 'true'">
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <NoWarn>NU1507;NU1506;$(NoWarn)</NoWarn>
+    <WarningsNotAsErrors>NU1301;NU1801;NU1901;NU1902;NU1903;NU1904;NU1604;NU1103;NU1510;DX1000;DX1001;DX1002;$(WarningsNotAsErrors)</WarningsNotAsErrors>
+  </PropertyGroup>
+  <!-- Common (.NET/.NET Framework) PackageReferences -->
+  <ItemGroup>
+    <PackageVersion Include="Azure.AI.OpenAI" Version="2.9.0-beta.1" />
+    <PackageVersion Include="Microsoft.Agents.AI" Version="1.5.0" />
+    <PackageVersion Include="Microsoft.Agents.AI.AGUI" Version="1.5.0-preview.260507.1" />
+    <PackageVersion Include="Microsoft.Agents.AI.Hosting" Version="1.5.0-preview.260507.1" />
+    <PackageVersion Include="Microsoft.Agents.AI.Hosting.AGUI.AspNetCore" Version="1.5.0-preview.260507.1" />
+    <PackageVersion Include="Microsoft.Agents.AI.Workflows" Version="1.5.0" />
+    <PackageVersion Include="Microsoft.Extensions.AI" Version="10.5.1" />
+    <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="10.5.1" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.VectorData.Abstractions" Version="9.7.0" />
+    <PackageVersion Include="System.Data.SQLite" Version="2.0.2" />
+    <PackageVersion Include="EntityFramework" Version="6.5.1" />
+    <PackageVersion Include="System.Numerics.Tensors" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.62.0-preview" />
+    <PackageVersion Include="Markdig" Version="0.41.3" />
+    <PackageVersion Include="DevExtreme.AspNet.Data" Version="5.1.0" />
+  </ItemGroup>
+  <!-- .NET Framework PackageReferences -->
+  <ItemGroup Condition="'$(TargetFrameworkVersion)' == 'v4.7.2'">
+    <PackageVersion Include="System.Text.Json" Version="8.0.6" />
+    <PackageVersion Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.1" />
+    <PackageVersion Include="System.Data.SQLite.EF6" Version="2.0.2" />
+    <PackageVersion Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.1" />
+    <PackageVersion Include="BouncyCastle.Cryptography" Version="2.6.2" />
+  </ItemGroup>
+  <!-- .NET PackageReferences -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0' Or '$(TargetFramework)' == 'net8.0-windows'">
+    <PackageVersion Include="DevExpress.Design.Nuget" Version="26.1.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis" Version="4.10.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.VisualBasic" Version="4.10.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="8.0.18" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.18" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.18" />
+    <PackageVersion Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
+    <PackageVersion Include="System.Data.OleDb" Version="8.0.1" />
+    <PackageVersion Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageVersion Include="System.Data.SQLite.Core" Version="1.0.119" />
+    <PackageVersion Include="System.Management" Version="6.0.0" />
+    <PackageVersion Include="System.ServiceModel.Syndication" Version="6.0.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="8.0.15" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="8.0.100" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿body {
+	text-align: center;
+	color: @ControlText;
+}
+
+p {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.header {
+	font-size: 10pt;
+	margin-bottom: 10px;
+}
+
+.highlight {
+	background-color: @Window;
+}
+
+.list-container {
+	text-align: left;
+	margin-bottom: 16px;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 25px;
+	display: inline-block;
+	background-color: @Window;
+	border-radius: 8px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.list-title {
+	color: @Yellow;
+	margin-left: 25px;
+	font-size: 10pt;
+}

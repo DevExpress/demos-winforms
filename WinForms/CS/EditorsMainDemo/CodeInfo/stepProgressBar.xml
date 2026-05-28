@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/TutorialsWhatsThis/XmlSchemas/module-new.xsd">
+  <controls>
+    <controlentry>
+      <control>
+        <name>tbcSelectStep</name>
+        <windowcaption>Select a step</windowcaption>
+        <description>Specifies the current process step. All steps that precede it are also painted as active (selected).</description>
+        <memberlist>StepProgressBar.SelectedItemIndex</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbOrientation</name>
+        <windowcaption>Orientation</windowcaption>
+        <description>Allows you to choose between vertical and horizontal control orientation.</description>
+        <memberlist>StepProgressBar.Orientation</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceInversedProgressDirection</name>
+        <windowcaption>Inversed progress direction</windowcaption>
+        <description>Specifies whether the control is flipped horizontally (or vertically, if its StepProgressBar.Orientation is Vertical).</description>
+        <memberlist>StepProgressBar.InversedProgressDirection</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceDrawConnectors</name>
+        <windowcaption>Draw connectors</windowcaption>
+        <description>Specifies whether the control should draw connectors between neighboring items.</description>
+        <memberlist>StepProgressBar.DrawConnectors</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceFillIndicators</name>
+        <windowcaption>Fill indicators</windowcaption>
+        <description>Allows you to fill central indicator area when the item is in the Inactive state.</description>
+        <memberlist>StepProgressBarIndicatorOptions.InactiveStateDrawMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowStepIcons</name>
+        <windowcaption>Show step icons</windowcaption>
+        <description>Allows you to show or hide images in the items content block.</description>
+        <memberlist>StepProgressBarItemContentBlock.ActiveStateImageOptions, StepProgressBarItemContentBlock.InactiveStateImageOptions</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceShowIndicatorIcons</name>
+        <windowcaption>Show indicator icons</windowcaption>
+        <description>Allows you to show or hide images in the items indicators.</description>
+        <memberlist>StepProgressBarIndicatorOptions.ActiveStateImageOptions</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	<controlentry>
+		<control>
+			<name>ceDrawShadows</name>
+			<windowcaption>Draw shadows</windowcaption>
+			<description>Specifies whether to add a glow effect to the indicators and connectors.</description>
+			<memberlist>StepProgressBar.ShadowDrawMode</memberlist>
+			<dtimage/>
+		</control>
+	</controlentry>
+    <controlentry>
+      <control>
+        <name>ceAllowUserInteraction</name>
+        <windowcaption>Allow interactive step selection</windowcaption>
+        <description>Specifies whether users can select steps using the mouse or keyboard.</description>
+        <memberlist>StepProgressBar.AllowUserInteraction</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

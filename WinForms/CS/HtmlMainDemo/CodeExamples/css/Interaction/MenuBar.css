@@ -1,0 +1,22 @@
+﻿.menuBar {
+    font-size: 14px;
+    line-height: 21px;
+    background-color: @Window;
+    color: @WindowText;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-bottom: solid 1px @WindowText/0.1;
+}
+
+.mainBarItem {
+    padding: 4px;
+    padding: 4px 8px;
+    opacity: 0.5;
+}
+
+    .mainBarItem:hover {
+        border-radius: 4px;
+        background-color: @WindowText/0.1;
+        opacity: 1;
+    }

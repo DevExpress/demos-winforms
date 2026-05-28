@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>pivotGridControl</name>
+				<windowcaption>Asynchronous Mode</windowcaption>
+				<description>In this demo, the CreateDrillDownDataSourceAsync method is called to obtain a list of records that is used to calculate a summary value for the specified cell asynchronously.</description>
+        <memberlist>PivotGridControl.CreateDrillDownDataSourceAsync, AsyncOperationResult.Value</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+
+    <controlentry>
+      <control>
+        <name>rgDataSources</name>
+        <windowcaption>Data Source</windowcaption>
+        <description>Sets whether the data source is an OLAP cube or a randomly generated table data source.</description>
+        <memberlist></memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>btnGenerateDataSource</name>
+        <windowcaption>Generate Database</windowcaption>
+        <description>Generates a database and establishes a connection to it.</description>
+        <memberlist></memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

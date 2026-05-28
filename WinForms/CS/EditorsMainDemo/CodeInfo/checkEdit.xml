@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+		<controlentry>
+			<control>
+				<name>comboAlign</name>
+				<windowcaption>Check Box Alignment</windowcaption>
+				<description>Lets you change the check box's alignment in the editor.</description>
+				<memberlist>RepositoryItemCheckEdit.GlyphAlign</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditAllowGrayed</name>
+				<windowcaption>Allow indeterminate state</windowcaption>
+				<description>Allows or prohibits the indeterminate state in the sample check box.</description>
+				<memberlist>RepositoryItemCheckEdit.AllowGrayed</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+
+		<controlentry>
+			<control>
+        <name>ceCheckedColor</name>
+        <windowcaption>Checked state color</windowcaption>
+        <description>Specifies the checked state color for SVG-based check boxes</description>
+        <memberlist>CheckBoxOptions.SvgColorChecked</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>ceUncheckedColor</name>
+        <windowcaption>Unchecked state color</windowcaption>
+        <description>Specifies the unchecked state color for SVG-based check boxes</description>
+        <memberlist>CheckBoxOptions.SvgColorUnchecked</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceIndeterminateColor</name>
+        <windowcaption>Indeterminate state color</windowcaption>
+        <description>Specifies the indeterminate state color for SVG-based check boxes</description>
+        <memberlist>CheckBoxOptions.SvgColorGrayed</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>lbStyle</name>
+        <windowcaption>Check box style</windowcaption>
+        <description>Specifies the check box display style</description>
+        <memberlist>CheckBoxOptions.Style</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditRadioGroup</name>
+				<windowcaption>Radio mode</windowcaption>
+				<description>Enables radio mode for check boxes</description>
+				<memberlist>RepositoryItemCheckEdit.RadioGroupIndex, RepositoryItemCheckEdit.CheckStyle</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+		<controlentry>
+			<control>
+				<name>checkEditApplyRadioStyle</name>
+				<windowcaption>Radio display style</windowcaption>
+				<description>Switches check editors between the standard and radio display styles</description>
+				<memberlist>RepositoryItemCheckEdit.CheckStyle</memberlist>
+				<dtimage>
+					<?xm-replace_text {dtimage}?>
+				</dtimage>
+			</control>
+		</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>checkEditSample</name>
+			<hinttext>#Mouse Operations<newline></newline>Click caption or check box<newline></newline>#Keyboard<newline></newline>Press SPACE or use mnemonics</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

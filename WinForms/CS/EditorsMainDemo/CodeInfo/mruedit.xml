@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>seMaxItemCount</name>
+			<windowcaption>Maximum Item Count</windowcaption>
+			<description>This spin editor allows the maximum number of items contained in the MRU editor to be specified.</description>
+			<memberlist>RepositoryItemMruEdit.MaxItemCount</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowCustomButtons</name>
+			<windowcaption>Show Custom Buttons</windowcaption>
+			<description>This check box shows or hides the 'Open file' button.</description>
+			<memberlist>EditorButton.Visible</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceAllowAdding</name>
+			<windowcaption>Allow adding item to a mru list?</windowcaption>
+			<description>This check box allows or prohibits adding a new item to the MRU editor.</description>
+			<memberlist>AddingMRUItem</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>mruEditSample</name>
+			<windowcaption>Open File button</windowcaption>
+			<description>Each time an end user clicks the 'Open file' button, the editor's ButtonClick event is raised. In this tutorial, the ButtonClick event is handled to invoke the 'Open' dialog. Once a file has been selected and the 'Open' button has been pressed, the name of the selected file is added to the MRU editor.</description>
+			<memberlist>ButtonClick event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>mruEditSample</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown list<newline></newline>UP, DOWN keys to select the previous or next item<newline></newline>#Mouse Wheel<newline></newline>Supported</hinttext>
+		</hint>
+	</hints>
+</totalinfo>

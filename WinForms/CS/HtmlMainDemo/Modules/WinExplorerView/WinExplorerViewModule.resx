@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="svgImageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>140, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="svgImageCollection1.close" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI2LjEsIFZlcnNpb249MjYuMS4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAHwBAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjE2cHgiIGhl
+        aWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cGF0aCBkPSJNOC43NTAwMiA4LjA0OTlMMTUuMzUgMTQuNjQ5
+        OUwxNC42NSAxNS4zNDk5TDguMDUwMDIgOC43NDk5TDEuNDUwMDIgMTUuMzQ5OUwwLjY1MDAyNCAxNC42
+        NDk5TDcuMjUwMDIgOC4wNDk5TDAuNjUwMDI0IDEuMzQ5OUwxLjM1MDAyIDAuNjQ5OTAyTDcuOTUwMDIg
+        Ny4yNDk5TDE0LjY1IDAuNjQ5OTAyTDE1LjM1IDEuMzQ5OUw4Ljc1MDAyIDguMDQ5OVoiIGZpbGw9IiMz
+        QzNDM0MiIC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="popupDetails.Styles" xml:space="preserve">
+    <value>.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 16px 24px 16px;
+	background-color: @WindowText/0.1;
+}
+
+.popup {
+	max-width: 720px;
+	background-color: @Window;
+	color: @ControlText;
+	border-radius: 8px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	color: @ControlText;
+	padding: 24px 32px 32px 32px;
+	background-color: @WindowText/0.1;
+	border-radius: 8px 8px 0px 0px;
+}
+
+.title-bar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header {
+	font-family: 'Segoe UI';
+	font-weight: bold;
+	font-size: 32px;
+	color: @WindowText;
+}
+
+.close-button {
+	width: 16px;
+	height: 16px;
+	padding: 8px;
+	border-radius: 4px;
+}
+
+.close-button:hover {
+	background-color: @WindowText/0.1;	
+}
+
+.close-button:active {
+	background-color: @ControlText/0.05;		
+}
+
+.close-button-img {
+	color: @WindowText/0.5;	
+	width: 16px;
+	height: 16px;
+	opacity: 0.55;
+}
+
+.close-button:hover .close-button-img {
+	opacity: 1.0;	
+}
+
+.desc {
+	margin-top: 16px;
+	font-family: 'Segoe UI';
+	font-size: 12px;
+	color: @WindowText;
+}
+
+.image-container {
+	padding: 48px 32px 48px 32px;
+}
+
+.image {
+	width: 100%;
+	height: 244px;
+	object-fit: contain;
+}
+</value>
+  </data>
+  <data name="popupDetails.Template" xml:space="preserve">
+    <value>&lt;div class="container"&gt;
+	&lt;div class="popup"&gt;
+		&lt;div class="content"&gt;
+			&lt;div class="title-bar"&gt;
+				&lt;div class="header"&gt;${TrademarkName} {Name}&lt;/div&gt;
+				&lt;div id="close" class="close-button"&gt;
+					&lt;img id="close" class="close-button-img" src="close"&gt;
+				&lt;/div&gt;
+			&lt;/div&gt; 
+			&lt;div class="desc"&gt;${Description}&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="image-container"&gt;
+			&lt;img class="image" src="${Photo}"&gt;
+		&lt;/div&gt;
+		&lt;div class="content"&gt;
+			&lt;div class="desc"&gt;
+				&lt;b&gt;Image licensed under: &lt;/b&gt;${LicenseName}&lt;br&gt;
+				&lt;b&gt;Author: &lt;/b&gt;${Author}&lt;br&gt;
+				&lt;b&gt;Source link: &lt;/b&gt;
+				&lt;a class="info" id="sourceLink" href="${Source}"&gt;${Source}&lt;/a&gt;&lt;br&gt;
+				&lt;b&gt;Edits: &lt;/b&gt;${Edits}
+			&lt;/div&gt;	
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="winExplorerView1.OptionsViewStyles.ExtraLarge.HtmlTemplate.Styles" xml:space="preserve">
+    <value>.container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+}
+
+.item {
+    width: 328px;
+    height: auto;
+    background-color: @Window;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+	.item:hover {
+		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);		
+	}
+	
+	body:select .item {
+		border-width: 2px;
+		border-style: solid;
+		border-color: @HighlightAlternate;
+	}
+
+.price-label-container {
+	height: 32px;
+	width: 308px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.price-label {
+	font-family: 'Segoe UI';
+	font-weight: bold;
+	font-size: 18px;
+	padding: 4px 12px;
+	background-color: @HighlightAlternate;
+	border-radius: 3px;
+	color: White;
+}
+
+.image_container {
+    display: flex;
+	flex-direction: column;
+	width: 280px;
+    height: 172px;
+	padding: 16px 24px 24px;    
+	
+	align-items: flex-start;
+	border-radius: 8px 8px 0px 0px;
+	background-color: white;
+}
+
+.car-image {
+    width: 280px;
+    height: 124px;
+    margin-top: 16px;
+    object-fit: contain;
+}
+
+.item_block {
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.item_info_outer {
+	display: flex;
+	flex-direction: column;
+	padding: 16px 24px 24px;
+	border-radius: 0px 0px 8px 8px;
+	background-color: @WindowText/0.05;
+	justify-content: space-between;
+}
+
+	:root:select .item_info_outer {
+		background-color: @HighlightAlternate/0.1;
+	}
+	
+	:root:focus .item_info_outer {
+		background-color: @HighlightAlternate/0.1;
+	}	
+
+.item_info {
+	width: 100%;
+    display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.empty-space {
+	height: auto;
+}
+
+.name {
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: bold;
+    color: @WindowText;
+    margin-bottom: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.category {
+	font-size: 10px;
+	font-weight: bold;
+	background-color: @WindowText/0.1;
+	color: @WindowText;
+	padding: 6px 8px 6px 8px;
+	border-radius: 2px;
+	margin-top: 11px;
+}
+
+.specs {
+    font-family: 'Segoe UI';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: @WindowText;
+	margin: 1px 0;
+}
+
+
+.center-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button {
+    width: 100%;
+    height: auto;
+    padding: 12px 0 12px 0;
+    margin: 24px 0 0 0;
+    border-radius: 6px;
+    color: @WindowText;
+    background-color: @Window;
+            
+    text-align: center;
+    
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 18px;
+    
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	user-select:none;
+}
+
+	.button:hover {
+		background-color: @HighlightAlternate;
+		box-shadow: 0px 8px 16px @HighlightAlternate/0.5;
+		color: White;
+	}
+	.button:active {
+		color: rgba(255, 255, 255, 0.35);
+		box-shadow: initial;
+	}
+
+.item-container {
+	display: flex;
+	width: 320px;
+	height: 420px;
+}
+</value>
+  </data>
+  <data name="winExplorerView1.OptionsViewStyles.ExtraLarge.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="container"&gt;
+	&lt;div class="item" id="item"&gt;
+		&lt;div class="image_container" id="image-container"&gt;
+			&lt;div class="price-label-container"&gt;
+				&lt;div id="price-label" class="price-label"&gt;${Price}&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;img class="car-image" src="${Photo}" id="car-image"&gt; 
+		&lt;/div&gt;
+		&lt;div class="item_info_outer"&gt;
+			&lt;div class="item_info" id="item_info"&gt;
+				&lt;div class="name" id="name-brand"&gt;${TrademarkName} {Name}&lt;/div&gt;
+				&lt;div class="specs" id="specs"&gt;${Modification}&lt;/div&gt;
+				&lt;div class="specs" id="specs"&gt;${BodyStyleName}, {Torque}, {Horsepower} h.p.&lt;/div&gt;
+				&lt;div class="category" id="name-category"&gt;${CategoryNameCaps}&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="item_info"&gt;
+				&lt;div id="detailButton" class="button" onclick="onDetailButtonClick"&gt;
+					Read More
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="htmlTemplate1.Styles" xml:space="preserve">
+    <value>.container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: @Window;
+	align-items: center;
+	justify-content: center;
+}
+
+.toast-notification {
+	display: flex;
+	box-shadow: 8px 8px 8px @green/0.05;
+	border-radius: 6px;
+	background-color: @green/0.05;
+	border-style: solid;
+	border-color: @green/0.5;
+	border-width: 1px;
+	border-left-width: 0;
+}
+
+.stripe {
+	background-color: @green/0.8;
+	border-radius: 6px 0px 0px 6px;
+	width: 3px;
+	height: 80px;
+}
+
+.icon {
+	margin: 8px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 8px 0
+}
+
+.header {
+	margin: 4px;
+	font-family: 'Segoe UI';
+	font-size: 15px;
+	font-weight: bold;
+	color: #606060;
+}
+
+.text {
+	margin: 4px;
+	font-family: 'Segoe UI';	
+	font-size: 14px;
+	color: #808080;
+}</value>
+  </data>
+  <data name="htmlTemplate1.Template" xml:space="preserve">
+    <value>&lt;div class="container"&gt;
+	&lt;div class="toast-notification"&gt;
+		&lt;div class="stripe"&gt;&lt;/div&gt;
+		&lt;div class="icon"&gt;&lt;img src="bo_employee.svg"&gt;&lt;/div&gt;
+		&lt;div class="content"&gt;
+			&lt;div class="header"&gt;Success&lt;/div&gt;
+			&lt;div class="text"&gt;Anyone with access can view your invited visitors.&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="close-button"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <metadata name="alertControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="alertControl1.HtmlTemplate.Styles" xml:space="preserve">
+    <value>body {
+	text-align: center;
+}
+.container {
+	display: inline-block;
+	width: 250px;
+	padding: 18px 16px 24px 16px;
+}
+
+.shadow {
+	border-radius: 8px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	font-family: 'Segoe UI';
+	font-size:14px;
+	background-color: @HighlightAlternate;
+	color: @White;
+	padding:10px;
+}
+</value>
+  </data>
+</root>

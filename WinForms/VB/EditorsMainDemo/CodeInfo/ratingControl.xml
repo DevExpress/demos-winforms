@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>spEditRating</name>
+        <windowcaption>Rating</windowcaption>
+        <description>Specifies the current editor rating.</description>
+        <memberlist>RatingControl.Rating</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spEditItemCount</name>
+        <windowcaption>Item count</windowcaption>
+        <description>Sets the number of rating items within the editor and thus, the editor maximum rating.</description>
+        <memberlist>RepositoryItemRatingControl.ItemCount</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cmbEditRatingOrientation</name>
+        <windowcaption>Rating orientation</windowcaption>
+        <description>Allows you to arrange rating items either horizontally or vertically.</description>
+        <memberlist>RepositoryItemRatingControl.RatingOrientation</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cmbEditFillPrecision</name>
+        <windowcaption>Fill precision</windowcaption>
+        <description>Specifies an available fill degree for rating items within this RatingControl. Depending on this value, the editor can have fractional ratings.</description>
+        <memberlist>RepositoryItemRatingControl.FillPrecision</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>popupContainerEditImages</name>
+        <windowcaption>Custom images</windowcaption>
+        <description> Allows you to replace the built-in images for regular, hovered and checked rating items with your own custom glyphs.</description>
+        <memberlist>RepositoryItemRatingControl.Glyph, RepositoryItemRatingControl.CheckedGlyph, RepositoryItemRatingControl.HoverGlyph</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>chEditShowText</name>
+        <windowcaption>Text</windowcaption>
+        <description> Displays or hides the editor text.</description>
+        <memberlist>RepositoryItemRatingControl.ShowText</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cmbEditTextLocation</name>
+        <windowcaption>Text location</windowcaption>
+        <description>Aligns rating items within the editor.</description>
+        <memberlist>RepositoryItemRatingControl.TextLocation</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spEditIndent</name>
+        <windowcaption>Indent</windowcaption>
+        <description>Specifies the distance between the RatingControl rating items and this control text.</description>
+        <memberlist>RepositoryItemRatingControl.TextToRatingIndent</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>chEditHtmlDraw</name>
+        <windowcaption>Draw HTML</windowcaption>
+        <description>Enables or disables formatting of the editor text via HTML tags.</description>
+        <memberlist>RepositoryItemRatingControl.AllowHtmlDraw</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cmbEditRatingDirection</name>
+        <windowcaption>Rating direction</windowcaption>
+        <description> By default ratings are arranged from left to right (horizontal orientation) and from bottom to top (vertical orientation). This combo allows you to reverse this default alignment.</description>
+        <memberlist>RepositoryItemRatingControl.IsDirectionReversed</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

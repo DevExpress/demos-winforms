@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3BF8299-0691-4DB9-B208-F81D0E8C2034}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <AssemblyName>XpoTutorials</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Data.Services.Client"><Private>False</Private></Reference>
+    <Reference Include="System.Design"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.ServiceModel"><Private>False</Private></Reference>
+    <Reference Include="System.Web"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AsyncLoadingTaskBased\AsyncLoadingTaskBased.designer.vb">
+      <DependentUpon>AsyncLoadingTaskBased.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncLoadingTaskBased\AsyncLoadingTaskBased.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsyncLoading\AsyncLoading.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AsyncLoading\AsyncLoading.Designer.vb">
+      <DependentUpon>AsyncLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncLoading\DelayedDataLayer.vb" />
+    <Compile Include="BusinessObjects.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataCaching\DataCaching.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataCaching\DataCaching.designer.vb">
+      <DependentUpon>DataCaching.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataCaching\DataStoreCounter.vb" />
+    <Compile Include="DataStoreService\DataService.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataStoreService\DataService.designer.vb">
+      <DependentUpon>DataService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeletingPersistentObjects\DeletingPersistentObjects.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeletingPersistentObjects\DeletingPersistentObjects.Designer.vb">
+      <DependentUpon>DeletingPersistentObjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeletingPersistentObjects\ImmediateDeletionProjects.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FreeJoin\FreeJoin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FreeJoin\FreeJoin.designer.vb">
+      <DependentUpon>FreeJoin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\Functions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Function\Functions.Designer.vb">
+      <DependentUpon>Functions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Images\Cars.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Images\Images.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Images\Images.Designer.vb">
+      <DependentUpon>Images.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InstantFeedback\Console.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstantFeedback\Data.vb" />
+    <Compile Include="InstantFeedback\frmSQLConnector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstantFeedback\frmSQLConnector.Designer.vb">
+      <DependentUpon>frmSQLConnector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InstantFeedback\GridServerMode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InstantFeedback\GridServerMode.Designer.vb">
+      <DependentUpon>GridServerMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InstantFeedback\Objects.vb" />
+    <Compile Include="InTransactionMode\InTransaction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InTransactionMode\InTransaction.designer.vb">
+      <DependentUpon>InTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifiedProperties\ModifiedProperties.designer.vb">
+      <DependentUpon>ModifiedProperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifiedProperties\ModifiedProperties.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NestedUnitsOfWork\EditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NestedUnitsOfWork\EditForm.Designer.vb">
+      <DependentUpon>EditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NestedUnitsOfWork\NestedUnitsOfWork.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NestedUnitsOfWork\NestedUnitsOfWork.Designer.vb">
+      <DependentUpon>NestedUnitsOfWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectLayerService\ObjectLayerService.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjectLayerService\ObjectLayerService.designer.vb">
+      <DependentUpon>ObjectLayerService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectsInAlias\ObjectsInAlias.Designer.vb">
+      <DependentUpon>ObjectsInAlias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectsInAlias\ObjectsInAlias.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OneToManyRelations\OneToManyRelations.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OneToManyRelations\OneToManyRelations.Designer.vb">
+      <DependentUpon>OneToManyRelations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pagination\Pagination.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pagination\Pagination.Designer.vb">
+      <DependentUpon>Pagination.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Projects.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryingData\QueryingData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryingData\QueryingData.Designer.vb">
+      <DependentUpon>QueryingData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleDataAwareApplication\SimpleDataAwareApplication.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleDataAwareApplication\SimpleDataAwareApplication.Designer.vb">
+      <DependentUpon>SimpleDataAwareApplication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Single\Single.designer.vb">
+      <DependentUpon>Single.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Single\Single.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpecifiedTypeObject\Persons.vb" />
+    <Compile Include="SpecifiedTypeObject\SpecifiedTypeObject.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpecifiedTypeObject\SpecifiedTypeObject.Designer.vb">
+      <DependentUpon>SpecifiedTypeObject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialRegistration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialsInfo.vb" />
+    <Compile Include="UnitsOfWork\UnitsOfWork.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnitsOfWork\UnitsOfWork.Designer.vb">
+      <DependentUpon>UnitsOfWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Contacts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\NewContactForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validation\NewContactForm.Designer.vb">
+      <DependentUpon>NewContactForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Validation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\Validation.Designer.vb">
+      <DependentUpon>Validation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WhatsThis.vb" />
+    <Compile Include="XPBindingSourceDemo\XPBindingSourceDemo.Designer.vb">
+      <DependentUpon>XPBindingSourceDemo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XPBindingSourceDemo\XPBindingSourceDemo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XPViewDemo\nwind.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XPViewDemo\XPViewDemo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XPViewDemo\XPViewDemo.Designer.vb">
+      <DependentUpon>XPViewDemo.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncLoadingTaskBased\AsyncLoadingTaskBased.resx">
+      <DependentUpon>AsyncLoadingTaskBased.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncLoading\AsyncLoading.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AsyncLoading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCaching\DataCaching.resx">
+      <DependentUpon>DataCaching.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataStoreService\DataService.resx">
+      <DependentUpon>DataService.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletingPersistentObjects\DeletingPersistentObjects.resx">
+      <DependentUpon>DeletingPersistentObjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FreeJoin\FreeJoin.resx">
+      <DependentUpon>FreeJoin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\Functions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Functions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Images.resx">
+      <DependentUpon>Images.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InTransactionMode\InTransaction.resx">
+      <DependentUpon>InTransaction.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NestedUnitsOfWork\EditForm.resx">
+      <DependentUpon>EditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NestedUnitsOfWork\NestedUnitsOfWork.resx">
+      <DependentUpon>NestedUnitsOfWork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectLayerService\ObjectLayerService.resx">
+      <DependentUpon>ObjectLayerService.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OneToManyRelations\OneToManyRelations.resx">
+      <DependentUpon>OneToManyRelations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagination\Pagination.resx">
+      <DependentUpon>Pagination.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryingData\QueryingData.resx">
+      <DependentUpon>QueryingData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleDataAwareApplication\SimpleDataAwareApplication.resx">
+      <DependentUpon>SimpleDataAwareApplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitsOfWork\UnitsOfWork.resx">
+      <DependentUpon>UnitsOfWork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\NewContactForm.resx">
+      <DependentUpon>NewContactForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\Validation.resx">
+      <DependentUpon>Validation.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls.resx">
+      <DependentUpon>Controls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPBindingSourceDemo\XPBindingSourceDemo.resx">
+      <DependentUpon>XPBindingSourceDemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPViewDemo\XPViewDemo.resx">
+      <DependentUpon>XPViewDemo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\Wizard_16x16.png" />
+    <EmbeddedResource Include="Icons\Wizard_32x32.png" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\Xpo.LargeIcon.png" />
+    <EmbeddedResource Include="InstantFeedback\frmSQLConnector.resx">
+      <DependentUpon>frmSQLConnector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstantFeedback\GridServerMode.resx">
+      <DependentUpon>GridServerMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecifiedTypeObject\SpecifiedTypeObject.resx">
+      <DependentUpon>SpecifiedTypeObject.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\ShowCode_32x32.png" />
+    <EmbeddedResource Include="ModifiedProperties\ModifiedProperties.resx">
+      <DependentUpon>ModifiedProperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectsInAlias\ObjectsInAlias.resx">
+      <DependentUpon>ObjectsInAlias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Single\Single.resx">
+      <DependentUpon>Single.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

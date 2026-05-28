@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>cheAutoHeight</name>
+        <windowcaption>Auto height</windowcaption>
+        <description>Enables or disables the auto height feature for the current View.</description>
+        <memberlist>GridOptionsView.RowAutoHeight, CardOptionsBehavior.FieldAutoHeight</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cheMemo</name>
+        <windowcaption>Auto height</windowcaption>
+        <description>Specifies the auto height feature availability for RepositoryItemMemoEdit items. Depending on the LinesCount property these items can either occupy as much space as it's needed to display their entire content, or display only a certain number of lines.</description>
+        <memberlist>RepositoryItemMemoEdit.LinesCount</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>chePicture</name>
+        <windowcaption>Auto height</windowcaption>
+        <description>Sets the inplace RepositoryItemPictureEdit editors' height either to 40 or 0 pixels. If the CustomHeight property equals 0, the height of the picture editor is  adjusted to the height of the displayed image. Setting the TopRowIndex property to 0 scrolls the View to the first row.</description>
+        <memberlist>RepositoryItemPictureEdit.CustomHeight, GridView.TopRowIndex</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbSwitching</name>
+        <windowcaption>Current View</windowcaption>
+        <description>Switches the View from CardView to GridView and vice versa.</description>
+        <memberlist>GridControl.MainView</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

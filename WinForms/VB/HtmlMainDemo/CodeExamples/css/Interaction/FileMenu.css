@@ -1,0 +1,46 @@
+﻿.shadow {
+    width: 120px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 4px 8px 12px 8px;
+}
+
+.menu {
+    background-color: @Window;
+    color: @WindowText;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+    .menuItem:hover {
+        border-radius: 4px;
+        background-color: @Control;
+    }
+
+    .menuItem:disabled {
+        color: @DisabledText;
+        opacity: 0.25;
+    }
+
+.separator {
+    border-bottom: solid 1px @WindowText/0.2;
+    margin: 8px 0px;
+    display: flex;
+    align-self: stretch;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    padding-right: 8px;
+}

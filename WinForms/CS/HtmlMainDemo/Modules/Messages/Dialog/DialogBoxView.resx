@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="svgImages.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>458, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="svgImages.close" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI2LjEsIFZlcnNpb249MjYuMS4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAIMBAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAg
+        MjQgMjQiPg0KICA8cG9seWdvbiBwb2ludHM9IjIxLjksMi45IDIxLjEsMi4xIDEyLDExLjMgMi45LDIu
+        MSAyLjEsMi45IDExLjMsMTIgMi4xLDIxLjEgMi45LDIxLjkgMTIsMTIuNyAyMS4xLDIxLjkgMjEuOSwy
+        MS4xIDEyLjcsMTIgIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <metadata name="htmlDialogTemplateCollection.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="loginFormTemplate.Styles" xml:space="preserve">
+    <value>body {
+	padding: 20px 20px 95px 20px;
+	margin-top: 70px;
+}
+.shadow {	
+	border-radius: 14px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.logo {
+	position: absolute;
+	top: 10px;
+	left:50%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	margin: auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 90px;
+	background-color: @Control;
+	box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-left: -75px;
+}
+.logo-mask {
+	width: 140px;
+	height: 140px;
+ 	border-radius: 70px;
+ 	background-image: url("logo");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 105%;
+}
+.close {
+	width: 22px;
+	height: 22px;
+	border-radius: 5px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	margin: 8px;
+}
+.close:hover {
+	background-color: @Black/0.2;	
+}
+.close-img {
+	fill: @Black/0.4;
+	width: 16px;
+	height: 16px;
+}
+.frame{
+	
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	border-radius: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: @Control;
+
+}
+.content {
+	margin-top: 60px;
+	flex-grow: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.footerbar{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	background-color: @ControlText/0.05;
+	border-radius: 0px 0px 13px 13px;
+}
+.button {
+	height: 50px;
+	width: 100%;	
+	font-family: 'Segoe UI Light';
+	font-weight: bold;
+	font-size: 18px;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	border-radius: 0px 0px 13px 13px;		
+}
+.button:hover{
+	background-color: @Primary;
+	color: @Text;
+}</value>
+  </data>
+  <data name="loginFormTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="shadow"&gt;
+	&lt;div class="frame"&gt;
+		&lt;div class="logo" id="frame"&gt;
+			&lt;div class="logo-mask"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="close" id="closebutton"&gt;
+			&lt;img class="close-img" src="close"&gt;
+		&lt;/div&gt;
+		&lt;div class="content" id="content"&gt;&lt;/div&gt;
+		&lt;div class="footerbar"&gt;
+			&lt;div class="button" id="dialogresult-ok"&gt;Login&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="feedbackFormTemplate.Styles" xml:space="preserve">
+    <value>body {
+	padding: 35px;
+}
+.shadow {
+	border-radius: 14px;
+	
+}
+.frame {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: @White;
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.header{
+	padding: 11px 12px 11px 11px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	height: 25px;
+}
+.header-text{
+	display: flex;
+	flex-direction: row;
+	font-size: 11pt;
+	font-family: 'Segoe UI';
+	margin-left: 5px;
+}
+.close-button {
+	width: 16px;
+	height: 16px;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: @Danger/0.7;
+  fill:@White;
+}
+.close-button:hover {
+	background-color: @Danger;
+}
+.content {
+	flex-grow: 1;
+}
+.buttons {
+	border-top: 1px solid @Black/0.1;
+	border-radius: 0px 0px 14px 14px;
+	background-color: @Control;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.button{
+	width: 150px;
+	margin: 25px 5px 25px 5px;
+	padding: 5px;
+	border-radius: 4px;
+    background-color: @White;
+    color: @WindowText;
+    font-size: 10pt;
+    font-family: 'Segoe UI';
+    border: 1px solid @Black/0.15;
+    text-align: center;
+}
+.button:hover{
+	background-color: @Black/0.1;
+}
+.button:focus{
+	background-color: @HighlightAlternate;
+	border: 1px solid @HighlightAlternate;
+	color: @White;
+}</value>
+  </data>
+  <data name="feedbackFormTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="shadow"&gt;
+	&lt;div class="frame" id="frame"&gt;
+		&lt;div class="header"&gt;
+			&lt;div class="header-text"&gt;${Caption}&lt;/div&gt;
+			&lt;img class="close-button" src="close" id="closebutton"/&gt;
+		&lt;/div&gt;
+		&lt;div class="content" id="content"&gt;&lt;/div&gt;
+		&lt;div class="buttons" id="footerbar"&gt;
+			&lt;div class="button" id="dialogresult-ok"&gt;Send Feedback&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <metadata name="htmlContentTemplateCollection.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>233, 17</value>
+  </metadata>
+  <data name="loginTemplate.Styles" xml:space="preserve">
+    <value>.content {
+	padding: 30px 30px 10px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.input-box {
+	display: flex;
+	align-items: center;
+	padding: 6px;
+	margin: 4px;
+	background-color: @Window;
+	border: 1px solid rgba(80, 80, 80, 0.25);
+	border-radius: 6px;
+}
+.img { 
+	width: 16px;
+	height: 16px;
+	margin: 2px 4px;
+}
+.input {
+	color: @DisabledText;
+	flex-grow: 1;
+	background-color: @Window;
+	height: 22px;
+	cursor: text;
+}
+.link {	
+	margin-right: 5px;
+	margin-bottom: 3px;
+	font-family: "Segoe UI Light";
+	font-size: 9pt;
+}</value>
+  </data>
+  <data name="loginTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="content"&gt;
+	&lt;div class="input-box"&gt;
+		&lt;img class="img" src="login"&gt;
+		&lt;input class="input" name="emailEdit" value="${Email}"/&gt;
+	&lt;/div&gt;
+	&lt;div class="input-box"&gt; 
+		&lt;img class="img" src="pass"&gt;
+		&lt;input class="input" name="passEdit" value="${Password}"/&gt;
+		&lt;a class="link" href="https://devexpress.com/"&gt;Forgot password&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="feedbackTemplate.Styles" xml:space="preserve">
+    <value>.content {
+	padding: 10px 20px;
+	text-align: center;
+}
+.logo {
+	margin: 5px;
+	width: 100px;
+	height: 100px;
+}
+.rating-box {
+	padding: 10px 0px;
+}
+.rating { 
+	background-color: @Control;
+}
+.input-box { 
+	display: flex;
+	margin: 8px 0px;
+	padding: 10px 14px;
+	background-color: @Window;
+	border: 1px solid rgba(80, 80, 80, 0.25);
+	border-radius: 6px;
+}
+.feedback {
+	flex-grow: 1;
+	height: 60px;
+	color: @DisabledText;
+	background-color: @Window;
+	cursor: text;
+}</value>
+  </data>
+  <data name="feedbackTemplate.Template" xml:space="preserve">
+    <value>&lt;div class="content"&gt;
+	&lt;img class="logo" src="logo"&gt;
+	&lt;div class="rating-box"&gt;
+		&lt;input class="rating" name="ratingEdit" value="${Rating}" /&gt;
+	&lt;/div&gt;
+	&lt;div class="input-box"&gt;
+		&lt;input class="feedback" name="feedbackEdit" value="${Feedback}"/&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+</root>

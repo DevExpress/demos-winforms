@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>tokenEditProducers</name>
+        <windowcaption>Token Edit DataSource</windowcaption>
+        <description>Use the DataSource property to bind the control to a data source.</description>
+        <memberlist>RepositoryItemTokenEdit.DataSource, RepositoryItemTokenEdit.DisplayMember, RepositoryItemTokenEdit.ValueMember</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>tokenEditGenres</name>
+        <windowcaption>Token Edit with Enumeration</windowcaption>
+        <description>Use the AddEnum method to populate the Tokens collection.</description>
+        <memberlist>RepositoryItemTokenEdit.AddEnum</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>tokenEditCountries</name>
+        <windowcaption>Token Edit AddToken</windowcaption>
+        <description>To add unbound tokens in code, call the Tokens collection methods.</description>
+        <memberlist>RepositoryItemTokenEdit.Tokens</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

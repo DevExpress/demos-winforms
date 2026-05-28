@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D6B96B7-883B-4F8D-8B28-AB854D0264BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>DevExpress.ProductsDemo.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.CodeParser.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DataAccess.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Map.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Drawing"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Docs.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Snap.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Snap.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Snap.v26.1.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.SpellChecker.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.Wizard"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraMap.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Spreadsheet.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Reporting.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.Configuration"><Private>False</Private></Reference>
+    <Reference Include="System.Core"><Private>False</Private></Reference>
+    <Reference Include="System.Design"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing.Design"><Private>False</Private></Reference>
+    <Reference Include="System.Xml.Linq"><Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonControls.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls.vb" />
+    <Compile Include="Controls\ExportControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ExportControl.Designer.vb">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HelpControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HelpControl.Designer.vb">
+      <DependentUpon>HelpControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PrintControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PrintControl.Designer.vb">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RibbonApplicationUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RibbonApplicationUserControl.Designer.vb">
+      <DependentUpon>RibbonApplicationUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucContactInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucContactInfo.Designer.vb">
+      <DependentUpon>ucContactInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCalendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCalendar.Designer.vb">
+      <DependentUpon>ucCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCustomDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCustomDate.Designer.vb">
+      <DependentUpon>frmCustomDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditContact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditContact.Designer.vb">
+      <DependentUpon>frmEditContact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditTask.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditTask.Designer.vb">
+      <DependentUpon>frmEditTask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data.vb">
+    </Compile>
+    <Compile Include="Forms\frmReminders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReminders.Designer.vb">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ssMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ssMain.Designer.vb">
+      <DependentUpon>ssMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\wfMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\wfMain.Designer.vb">
+      <DependentUpon>wfMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers.vb" />
+    <Compile Include="MasterDetailReport\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetailReport\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Analytics.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Analytics.Designer.vb">
+      <DependentUpon>Analytics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Contacts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Contacts.Designer.vb">
+      <DependentUpon>Contacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DemoUtils.vb" />
+    <Compile Include="Modules\PdfViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PdfViewer.Designer.vb">
+      <DependentUpon>PdfViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\BaseModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\Models.vb" />
+    <Compile Include="Modules\Sales\SalesDBGenerator.vb" />
+    <Compile Include="Modules\Sales\SQLHelper.vb" />
+    <Compile Include="Modules\Sales\ucSalesByRange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\ucSalesByRange.Designer.vb">
+      <DependentUpon>ucSalesByRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\ucSalesPerformance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\ucSalesPerformance.Designer.vb">
+      <DependentUpon>ucSalesPerformance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\ucValuePresenter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\ucValuePresenter.Designer.vb">
+      <DependentUpon>ucValuePresenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Scheduler.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Scheduler.Designer.vb">
+      <DependentUpon>Scheduler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Pivot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Pivot.Designer.vb">
+      <DependentUpon>Pivot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Snap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Snap.Designer.vb">
+      <DependentUpon>Snap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Maps.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Maps.Designer.vb">
+      <DependentUpon>Maps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Word.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Word.Designer.vb">
+      <DependentUpon>Word.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Grid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Grid.Designer.vb">
+      <DependentUpon>Grid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Spreadsheet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Spreadsheet.Designer.vb">
+      <DependentUpon>Spreadsheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nwindDataSet.vb">
+      <DependentUpon>nwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="nwindDataSet.Designer.vb">
+      <DependentUpon>nwindDataSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="nwindDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PivotHelpers.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.Model\BusinessObjects.vb" />
+    <Compile Include="Sales.Model\Interfaces.vb" />
+    <Compile Include="Sales.Model\OleDataProvider.vb" />
+    <Compile Include="Sales.Model\SalesForecastMaker.vb" />
+    <Compile Include="Sales.Model\Utils.vb" />
+    <Compile Include="XRDesignRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\ExportControl.resx">
+      <DependentUpon>ExportControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HelpControl.resx">
+      <DependentUpon>HelpControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PrintControl.resx">
+      <DependentUpon>PrintControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RibbonApplicationUserControl.resx">
+      <DependentUpon>RibbonApplicationUserControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucContactInfo.resx">
+      <DependentUpon>ucContactInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCalendar.resx">
+      <DependentUpon>ucCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCustomDate.resx">
+      <DependentUpon>frmCustomDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditContact.resx">
+      <DependentUpon>frmEditContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditTask.resx">
+      <DependentUpon>frmEditTask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReminders.resx">
+      <DependentUpon>frmReminders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ssMain.resx">
+      <DependentUpon>ssMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetailReport\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Analytics.resx">
+      <DependentUpon>Analytics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Contacts.resx">
+      <DependentUpon>Contacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Grid.resx">
+      <DependentUpon>Grid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Maps.resx">
+      <DependentUpon>Maps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PdfViewer.resx">
+      <DependentUpon>PdfViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Pivot.resx">
+      <DependentUpon>Pivot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\ucSalesByRange.resx">
+      <DependentUpon>ucSalesByRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\ucSalesPerformance.resx">
+      <DependentUpon>ucSalesPerformance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sales\ucValuePresenter.resx">
+      <DependentUpon>ucValuePresenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Scheduler.resx">
+      <DependentUpon>Scheduler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Snap.resx">
+      <DependentUpon>Snap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Spreadsheet.resx">
+      <DependentUpon>Spreadsheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Word.resx">
+      <DependentUpon>Word.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.ProductsDemo.Win.Properties</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.ProductsDemo.Win.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    
+    
+    
+    
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My</CustomToolNamespace>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Plane.svg" />
+    <Content Include="Resources\WYSIWYGReports.svg" />
+    <Content Include="Icons\DevExpress.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Universal.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Win.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Action_Export_ToPDF.svg" />
+    <Content Include="Resources\Action_Export_ToHTML.svg" />
+    <Content Include="Resources\Action_Export_ToMHT.svg" />
+    <Content Include="Resources\Action_Export_ToRTF.svg" />
+    <Content Include="Resources\Action_Export_ToXls.svg" />
+    <Content Include="Resources\Action_Export_ToXLSX.svg" />
+    <Content Include="Resources\Action_Export_ToCSV.svg" />
+    <Content Include="Resources\Action_Export_ToText.svg" />
+    <Content Include="Resources\Action_Export_ToImage.svg" />
+    <Content Include="Resources\Analytics.svg" />
+    <Content Include="Resources\ArrowLeft.png" />
+    <Content Include="Resources\ArrowLeft.svg" />
+    <Content Include="Resources\ArrowRight.png" />
+    <Content Include="Resources\Code_Central.svg" />
+    <Content Include="Resources\BO_Task_Large.svg" />
+    <Content Include="Resources\BandedReports.svg" />
+    <Content Include="Resources\BO_Cart.svg" />
+    <Content Include="Resources\BO_Organization.svg" />
+    <Content Include="Resources\Close.svg" />
+    <Content Include="Resources\ByState.svg" />
+    <Content Include="Resources\Card.svg" />
+    <Content Include="Resources\ArrowRight.svg" />
+    <Content Include="Resources\BringRoad.svg" />
+    <Content Include="Resources\BringArea.svg" />
+    <Content Include="Resources\BringRoadDark.svg" />
+    <Content Include="Resources\Celsius.svg" />
+    <Content Include="Resources\ColorMixer_32x32.png" />
+    <Content Include="Resources\Online_Help.svg" />
+    <Content Include="Resources\Contact_Us.svg" />
+    <Content Include="Resources\Print.svg" />
+    <Content Include="Resources\PaperKind_Tabloid.svg" />
+    <Content Include="Resources\PaperKind_Legal.svg" />
+    <Content Include="Resources\PaperKind_Executive.svg" />
+    <Content Include="Resources\PaperKind_Letter.svg" />
+    <Content Include="Resources\PaperKind_A5.svg" />
+    <Content Include="Resources\PaperKind_A6.svg" />
+    <Content Include="Resources\PaperKind_A4.svg" />
+    <Content Include="Resources\PaperKind_A3.svg" />
+    <Content Include="Resources\PageMarginsModerate.svg" />
+    <Content Include="Resources\PageMarginsNarrow.svg" />
+    <Content Include="Resources\PageMarginsNormal.svg" />
+    <Content Include="Resources\PageMarginsWide.svg" />
+    <Content Include="Resources\PageOrientationPortrait.svg" />
+    <Content Include="Resources\PageOrientationLandscape.svg" />
+    <Content Include="Resources\MultiplePagesLarge.svg" />
+    <Content Include="Resources\MemoStyle.svg" />
+    <Content Include="Resources\low.svg" />
+    <Content Include="Resources\important.svg" />
+    <Content Include="Resources\Home.svg" />
+    <Content Include="Resources\NewTask.svg" />
+    <Content Include="Resources\EditTask.svg" />
+    <Content Include="Resources\Delete.svg" />
+    <Content Include="Resources\NextWeek_Flag.svg" />
+    <Content Include="Resources\NoDate_Flag.svg" />
+    <Content Include="Resources\Custom_Flag.svg" />
+    <Content Include="Resources\ListByDate.svg" />
+    <Content Include="Resources\Completed %282%29.svg" />
+    <Content Include="Resources\GridTasks.svg" />
+    <Content Include="Resources\GridContacts.svg" />
+    <Content Include="Resources\Pivot.svg" />
+    <Content Include="Resources\NavigationBar.svg" />
+    <Content Include="Resources\PDFViewer_Preview.svg" />
+    <Content Include="Resources\NewContact.svg" />
+    <Content Include="Resources\EditContact.svg" />
+    <Content Include="Resources\List.svg" />
+    <Content Include="Resources\LayoutFlip.svg" />
+    <Content Include="Resources\Professor.svg" />
+    <Content Include="Resources\Doctor.svg" />
+    <Content Include="Resources\Mrs.svg" />
+    <Content Include="Resources\Miss.svg" />
+    <Content Include="Resources\Mr.svg" />
+    <Content Include="Resources\Ms.svg" />
+    <Content Include="Resources\normal.svg" />
+    <Content Include="Resources\reading.svg" />
+    <Content Include="Resources\Contact.svg" />
+    <Content Include="Resources\Owner.svg" />
+    <Content Include="Resources\Overdue.svg" />
+    <Content Include="Resources\Deferred.svg" />
+    <Content Include="Resources\Fahrenheit.svg" />
+    <Content Include="Resources\reminder.png" />
+    <Content Include="Resources\TableStyle.svg" />
+    <Content Include="Resources\Today_Flag.svg" />
+    <Content Include="Resources\Tomorrow_Flag.svg" />
+    <Content Include="Resources\ThisWeek_Flag.svg" />
+    <Content Include="Resources\ToDoList.svg" />
+    <Content Include="Resources\Today.svg" />
+    <Content Include="Resources\Spreadsheet.svg" />
+    <Content Include="Resources\Scheduler.svg" />
+    <Content Include="Resources\SortAsc.svg" />
+    <Content Include="Resources\Reminder.svg" />
+    <Content Include="Resources\Search.svg" />
+    <Content Include="Resources\WeatherMap.png" />
+    <Content Include="Resources\WordProcessing.svg" />
+    <Content Include="Resources\WeatherMap.svg" />
+    <Content Include="Resources\WYSIWYGReports.png" />
+    <Content Include="Resources\WordProcessing.png" />
+    <Content Include="Resources\NewContact_32x32.png" />
+    <Content Include="Resources\NewContact_16x16.png" />
+    <Content Include="Resources\EditContact_16x16.png" />
+    <Content Include="Resources\EditContact_32x32.png" />
+    <Content Include="Resources\LayoutFlip_16x16.png" />
+    <Content Include="Resources\LayoutFlip_32x32.png" />
+    <Content Include="Resources\SortAsc_32x32.png" />
+    <Content Include="Resources\Card_32x32.png" />
+    <Content Include="Resources\ByState_32x32.png" />
+    <Content Include="Resources\GridTasks.png" />
+    <Content Include="Resources\GridContacts.png" />
+    <Content Include="Resources\Spreadsheet.png" />
+    <Content Include="Resources\BandedReports.png" />
+    <Content Include="Resources\Pivot.png" />
+    <Content Include="Resources\Analytics.png" />
+    <Content Include="Resources\Scheduler.png" />
+    <Content Include="Resources\PDFViewer.png" />
+    <Content Include="Resources\Today_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Today_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BO_Task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BO_Task_Large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Priority_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NavigationBar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NavigationBar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SaveAll_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Unknown-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\reading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Owner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Miss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Mr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Mrs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Ms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Professor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PrintDirectLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MultiplePagesLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageOrientationLandscape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageOrientationPortrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsModerate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsNarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsWide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Executive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Legal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Tabloid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Online_Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Code_Central.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_Us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\TableStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MemoStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToPDF_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToHTML_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToMHT_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToRTF_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToXLS_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToXLSX_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToCSV_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToText_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToImage_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\List_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Completed_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Completed_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewTask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewTask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditTask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditTask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ListByDate_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ToDoList_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Prioritized_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Overdue_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Deferred_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Important_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Today_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Tomorrow_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ThisWeek_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NextWeek_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NoDate_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Custom_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Low16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\High16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

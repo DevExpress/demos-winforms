@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{37B089F6-850A-0133-2A3A-1708F4C7D0C1}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.XtraBars.Demos.RibbonSimplePad</RootNamespace>
+    <AssemblyName>RibbonSimplePad</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BackstageViewLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFind.Designer.cs">
+      <DependentUpon>frmFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPad.Designer.cs">
+      <DependentUpon>frmPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReplace.Designer.cs">
+      <DependentUpon>frmReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRUArrayList.cs" />
+    <Compile Include="Office.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Scheme.png" />
+    <EmbeddedResource Include="frmFind.resx">
+      <DependentUpon>frmFind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPad.resx">
+      <DependentUpon>frmPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReplace.resx">
+      <DependentUpon>frmReplace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="online.gif" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="Resources\ColorMixer_16x16.png" />
+    <EmbeddedResource Include="Resources\ColorMixer_32x32.png" />
+    <EmbeddedResource Include="Resources\NarrowMargins.svg" />
+    <EmbeddedResource Include="Resources\NormalMargins.svg" />
+    <EmbeddedResource Include="Resources\Landscape.svg" />
+    <EmbeddedResource Include="Resources\Online_Help.png" />
+    <EmbeddedResource Include="Resources\Code_Central.png" />
+    <EmbeddedResource Include="Resources\Contact_Us.png" />
+    <EmbeddedResource Include="Resources\PageMarginsModerate.svg" />
+    <EmbeddedResource Include="Resources\PageMarginsNarrow.svg" />
+    <EmbeddedResource Include="Resources\PageMarginsNormal.svg" />
+    <EmbeddedResource Include="Resources\PageMarginsWide.svg" />
+    <EmbeddedResource Include="Resources\PageOrientationLandscape.svg" />
+    <EmbeddedResource Include="Resources\Orientation.svg" />
+    <EmbeddedResource Include="Resources\PageOrientationPortrait.png" />
+    <EmbeddedResource Include="Resources\PageOrientationLandscape.png" />
+    <EmbeddedResource Include="Resources\PageMarginsModerate.png" />
+    <EmbeddedResource Include="Resources\PageMarginsNarrow.png" />
+    <EmbeddedResource Include="Resources\PageMarginsNormal.png" />
+    <EmbeddedResource Include="Resources\PageMarginsWide.png" />
+    <EmbeddedResource Include="Resources\PageOrientationPortrait.svg" />
+    <EmbeddedResource Include="Resources\PaperKind_A3.svg" />
+    <EmbeddedResource Include="Resources\PaperKind_A4.svg" />
+    <EmbeddedResource Include="Resources\PaperKind_A5.svg" />
+    <EmbeddedResource Include="Resources\PaperKind_A6.svg" />
+    <EmbeddedResource Include="Resources\PaperKind_Executive.svg" />
+    <EmbeddedResource Include="Resources\PaperKind_Legal.svg" />
+    <EmbeddedResource Include="Resources\PaperKind_Letter.svg" />
+    <EmbeddedResource Include="Resources\PaperKind_Tabloid.svg" />
+    <EmbeddedResource Include="Resources\Page_.svg" />
+    <EmbeddedResource Include="Resources\PaperSizeLarge.png" />
+    <EmbeddedResource Include="Resources\PaperKind_A3.png" />
+    <EmbeddedResource Include="Resources\PaperKind_A4.png" />
+    <EmbeddedResource Include="Resources\PaperKind_A5.png" />
+    <EmbeddedResource Include="Resources\PaperKind_A6.png" />
+    <EmbeddedResource Include="Resources\PaperKind_Executive.png" />
+    <EmbeddedResource Include="Resources\PaperKind_Legal.png" />
+    <EmbeddedResource Include="Resources\PaperKind_Letter.png" />
+    <EmbeddedResource Include="Resources\PaperKind_Tabloid.png" />
+    <EmbeddedResource Include="Resources\PaperSize.png" />
+    <EmbeddedResource Include="Resources\MultiplePagesLarge.png" />
+    <EmbeddedResource Include="Resources\Portrait.svg" />
+    <EmbeddedResource Include="Resources\PrintDirectLarge.png" />
+    <EmbeddedResource Include="Resources\ExportPdfLarge.png" />
+    <EmbeddedResource Include="Resources\ExportHtmLarge.png" />
+    <EmbeddedResource Include="Resources\ExportMhtLarge.png" />
+    <EmbeddedResource Include="Resources\ExportRtfLarge.png" />
+    <EmbeddedResource Include="Resources\ExportXlsLarge.png" />
+    <EmbeddedResource Include="Resources\ExportXlsxLarge.png" />
+    <EmbeddedResource Include="Resources\ExportCsvLarge.png" />
+    <EmbeddedResource Include="Resources\ExportGraphicLarge.png" />
+    <EmbeddedResource Include="Resources\ExportTxtLarge.png" />
+    <EmbeddedResource Include="Resources\WideMargins.svg" />
+    <EmbeddedResource Include="Resources\XtraBars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ContactUs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpressOnlineHelp.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Electronics_DesktopMac.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ExportTo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\GettingStarted.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Page_1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Print.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Recent Documents.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scheduler.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Export_ToCSV.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Export_ToText.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Export_ToXls.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Export_ToXLSX.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ExportToExcel.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ExportToMHT.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ExportToPDF.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ExportToRTF.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Export_ToHTML.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\open.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\save.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\saveas.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\actions_question.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\private.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\security_unlock.svg" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+  </PropertyGroup>
+</Project>

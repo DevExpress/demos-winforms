@@ -1,0 +1,115 @@
+﻿<?xml version="1.0"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="D:/TutorialsWhatsThis/XmlSchemas/module-new.xsd">
+  <controls>
+    <controlentry>
+      <control>
+        <name>comboBoxAnimationType</name>
+        <windowcaption>Animation Type combo box</windowcaption>
+        <description>This editor allows you to choose the animation type. Depending on the selected type, the animation image can either be taken from the currently applied DevExpress skin, or consist of simple elements (dots, squares, triangles) moving according to the selected pattern (in circles or along a horizontal axis).</description>
+        <memberlist>WaitAnimationType property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinElementCount</name>
+        <windowcaption>Element Count spin editor</windowcaption>
+        <description>Specifies the total amount of animation elements (dots).</description>
+        <memberlist>AnimationElementCount property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinAcceleration</name>
+        <windowcaption>Acceleration spin editor</windowcaption>
+        <description>Specifies the animation acceleration (7.0 by default).</description>
+        <memberlist>AnimationAcceleration property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinSpeed</name>
+        <windowcaption>Speed spin editor</windowcaption>
+        <description>Use this editor to set the animation speed (5.5 by default).</description>
+        <memberlist>AnimationSpeed property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinLineHeight</name>
+        <windowcaption>Line Height spin editor</windowcaption>
+        <description>This editor allows you to specify the height of line animation elements.</description>
+        <memberlist>LineAnimationElementHeight property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>comboBoxLineElementType</name>
+        <windowcaption>Line Element Type combo box</windowcaption>
+        <description>Use this combo box to choose the desired animation elements' shape.</description>
+        <memberlist>LineAnimationElementType property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinRingDiameter</name>
+        <windowcaption>Ring Diameter spin editor</windowcaption>
+        <description>Specifies the diameter of the circle in which animation elements move (40 by default).</description>
+        <memberlist>RingAnimationDiameter property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinFrameCount</name>
+        <windowcaption>Frame Count spin editor</windowcaption>
+        <description>This editor specifies the amount of frames, used for the current animation. Together with the frame interval setting, this affects the animation quality (high values may affect the performance but make the animation look smoother).</description>
+        <memberlist>FrameCount property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>spinFrameInterval</name>
+        <windowcaption>Frame Interval spin editor</windowcaption>
+        <description>This editor specifies the time interval required to change one animation frame with the following one. Together with the frame count setting, this affects the animation quality (high values may affect the performance but make the animation look smoother).</description>
+        <memberlist>FrameInterval property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>colorEditElementColor</name>
+        <windowcaption>Animation Element Color color edit</windowcaption>
+        <description>Sets the color of animation elements.</description>
+        <memberlist>Appearance.ForeColor property</memberlist>
+        <dtimage>
+          <?xm-replace_text {dtimage}?>
+        </dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

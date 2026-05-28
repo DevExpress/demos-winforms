@@ -1,0 +1,49 @@
+﻿.align-content1 {
+	align-content: flex-start;
+}
+
+.align-content2 {
+	align-content: center;
+}
+
+.align-content3 {
+	align-content: flex-end;
+}
+
+.align-content4 {
+	align-content: space-between;
+}
+
+.align-content5 {
+	align-content: space-around;
+}
+
+body {
+	color: @ControlText;
+}
+
+h3 {
+	margin: 0px;
+}
+
+.container {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: @Window;
+}
+
+.element {
+	margin-top: 5px;
+	padding: 5px;
+	background-color: @Control;
+	display: flex;
+	flex-wrap: wrap;
+	height: 200px;
+}
+
+.child-element {
+	width:200px;
+	margin: 5px;
+	padding: 5px;
+	background-color: @Blue/0.2;
+}

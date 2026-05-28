@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="PageMarginsNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsNormal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportCsvLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportCsvLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageOrientationLandscape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageOrientationLandscape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_Executive1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Executive.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperKind_A5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MultiplePagesLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MultiplePagesLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Page_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Page_.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PageOrientationPortrait1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageOrientationPortrait.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PageMarginsNarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsNarrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColorMixer_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColorMixer_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_A4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_Executive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Executive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportTxtLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportTxtLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Code_Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Code_Central.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Online_Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Online_Help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contact_Us" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contact_Us.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintDirectLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrintDirectLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageMarginsModerate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsModerate.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ColorMixer_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColorMixer_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportPdfLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportPdfLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_A61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A6.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PageMarginsNarrow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsNarrow.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperKind_A31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A3.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ExportXlsLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportXlsLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_Letter1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Letter.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ExportHtmLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportHtmLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageMarginsModerate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsModerate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageOrientationLandscape1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageOrientationLandscape.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperKind_Tabloid1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Tabloid.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperKind_Tabloid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Tabloid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportMhtLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportMhtLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Landscape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Landscape.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="NarrowMargins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NarrowMargins.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperSizeLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperSizeLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageMarginsWide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsWide.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportXlsxLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportXlsxLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_A6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A6.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NormalMargins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NormalMargins.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperKind_A3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperSize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperSize.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageMarginsNormal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsNormal.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PageOrientationPortrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageOrientationPortrait.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_Legal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Legal.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ExportRtfLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportRtfLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportGraphicLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportGraphicLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageMarginsWide1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsWide.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="WideMargins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WideMargins.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Scheme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_Legal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Legal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Portrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Portrait.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperKind_A51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A5.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Orientation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Orientation.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperKind_A41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A4.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="PaperKind_Letter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Letter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XtraBars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XtraBars.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContactUs.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="DevExpressOnlineHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DevExpressOnlineHelp.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Electronics_DesktopMac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Electronics_DesktopMac.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ExportTo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportTo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="GettingStarted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GettingStarted.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Page_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Page_1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Recent Documents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Recent Documents.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Scheduler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Action_Export_ToCSV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Action_Export_ToCSV.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Action_Export_ToText" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Action_Export_ToText.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Action_Export_ToXls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Action_Export_ToXls.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Action_Export_ToXLSX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Action_Export_ToXLSX.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ExportToExcel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToExcel.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ExportToMHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToMHT.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ExportToPDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToPDF.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="ExportToRTF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToRTF.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="Action_Export_ToHTML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Action_Export_ToHTML.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="actions_question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_question.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="saveas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saveas.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="private" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\private.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+  <data name="security_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\security_unlock.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1, Culture=neutral</value>
+  </data>
+</root>

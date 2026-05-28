@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>cbTransitionType</name>
+        <windowcaption>Transition Type</windowcaption>
+        <description>Allows selection of the current transition animation type.</description>
+        <memberlist>Transition.TransitionType</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cbEasingMode</name>
+        <windowcaption>Easing Mode</windowcaption>
+        <description>This option allows you to select a value that specifies how animation interpolates. Specifies the animation segment starting from which the EasingFunction is applied.</description>
+        <memberlist>Transition.EasingMode</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cbEasingFunction</name>
+        <windowcaption>Easing Function</windowcaption>
+        <description>Specifies a function used to calculate the currently selected transition animation type. Affects the transition animation smoothness and speed.</description>
+        <memberlist>DevExpress.Data.Utils.IEasingFunction</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cbShowWaitIndicator</name>
+        <windowcaption>Show Wait Indicator</windowcaption>
+        <description>Specifies whether the wait indicator should be visible during the layout re-arrangement before animation starts.</description>
+        <memberlist>Transition.ShowWaitIndicator, TransitionManager.ShowWaitIndicator</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seFrameInterval</name>
+        <windowcaption>Frame Interval</windowcaption>
+        <description>Sets the overall animation duration.</description>
+        <memberlist>Transition.TransitionType.FrameInterval, TransitionManager.FrameInterval</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seFrameCount</name>
+        <windowcaption>Frame Count</windowcaption>
+        <description>Allows you to manually select the number of frames used within the current transition animation. High frames amount improves the animation quality but can affect the performance.</description>
+        <memberlist>Transition.TransitionType.FrameCount, TransitionManager.FrameCount</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>cbEffectOptions</name>
+        <windowcaption>Effect Options</windowcaption>
+        <description>Stores additional options for the currently selected animation type (e.g. the animation direction). </description>
+        <memberlist>Transition.TransitionType.EffectOptions</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceBackground</name>
+        <windowcaption>Background</windowcaption>
+        <description>Sets the background color used only for the SlideFade transition type.</description>
+        <memberlist>Transition.TransitionType.Background</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>seStripeCount</name>
+        <windowcaption>Stripe Count</windowcaption>
+        <description>Allows you to specify the number of stripes the Comb transition type animation will use.</description>
+        <memberlist>Transition.TransitionType.StripeCount</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkVertical</name>
+        <windowcaption>Vertical</windowcaption>
+        <description>Specifies whether the Comb transition animation should use vertical or horizontal stripes.</description>
+        <memberlist>Transition.TransitionType.Vertical</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkInward</name>
+        <windowcaption>Inward</windowcaption>
+        <description>Specifies whether the current or subsequent content should be divided into stripes when the Comb transition type animation is played.</description>
+        <memberlist>Transition.TransitionType.Inward</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkUnCover</name>
+        <windowcaption>UnCover</windowcaption>
+        <description>Specifies whether the current or subsequent content should be used as an upper layer in the Cover transition type animation.</description>
+        <memberlist>Transition.TransitionType.UnCover</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

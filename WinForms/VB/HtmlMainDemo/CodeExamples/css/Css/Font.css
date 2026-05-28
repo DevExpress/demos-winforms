@@ -1,0 +1,34 @@
+﻿.text1 {
+	font: 10px "Arial";
+}
+
+.text2 {
+	font: bold 10pt "Segoe UI";
+}
+
+.text3 {
+	font: bold italic 8pt "sans-serif";
+}
+
+.text4 {
+	font: italic 1em "Tahoma";
+}
+
+body {
+	color: @ControlText;
+}
+h3{
+	margin:0px;
+}
+.container {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: @Window;
+}
+.text-container {
+	margin-top:5px;
+	padding:5px;
+	border-radius:5px;
+	background-color: @Control;
+}
+

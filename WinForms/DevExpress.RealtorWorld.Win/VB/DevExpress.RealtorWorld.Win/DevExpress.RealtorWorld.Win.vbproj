@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0" DefaultTargets="Build">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BDE9D61-1133-42FB-A6EC-A7F92B4CCAB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>DevExpress.RealtorWorld.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DemoData.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Controls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data.vb" />
+    <Compile Include="frmMain.DocumentManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.DocumentManager.Designer.vb">
+      <DependentUpon>frmMain.DocumentManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucAgents.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucAgents.Designer.vb">
+      <DependentUpon>ucAgents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucBanks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucBanks.Designer.vb">
+      <DependentUpon>ucBanks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucBrowser.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucBrowser.Designer.vb">
+      <DependentUpon>ucBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucDraft.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucDraft.Designer.vb">
+      <DependentUpon>ucDraft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucHomeDetail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucHomeDetail.Designer.vb">
+      <DependentUpon>ucHomeDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucListing.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucListing.Designer.vb">
+      <DependentUpon>ucListing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucLoanCalculator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucLoanCalculator.Designer.vb">
+      <DependentUpon>ucLoanCalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucResearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucResearch.Designer.vb">
+      <DependentUpon>ucResearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucSettings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucSettings.Designer.vb">
+      <DependentUpon>ucSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucStatistics.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucStatistics.Designer.vb">
+      <DependentUpon>ucStatistics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucStats.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucStats.Designer.vb">
+      <DependentUpon>ucStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucSysInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucSysInfo.Designer.vb">
+      <DependentUpon>ucSysInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <EmbeddedResource Include="frmMain.DocumentManager.resx">
+      <DependentUpon>frmMain.DocumentManager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>DevExpress.RealtorWorld.Win.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="AppIcon.ico" />
+    <Content Include="MetroBlackBlob.skinblob" />
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="SkinData\metroblack.blob" />
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\ucAgents.resx">
+      <DependentUpon>ucAgents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucBanks.resx">
+      <DependentUpon>ucBanks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucBrowser.resx">
+      <DependentUpon>ucBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucDraft.resx">
+      <DependentUpon>ucDraft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucHomeDetail.resx">
+      <DependentUpon>ucHomeDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucListing.resx">
+      <DependentUpon>ucListing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucLoanCalculator.resx">
+      <DependentUpon>ucLoanCalculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucResearch.resx">
+      <DependentUpon>ucResearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucStatistics.resx">
+      <DependentUpon>ucStatistics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucStats.resx">
+      <DependentUpon>ucStats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucSysInfo.resx">
+      <DependentUpon>ucSysInfo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\ucSettings.resx">
+      <DependentUpon>ucSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkinData\metroblack.skin.xml" />
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="System.Management" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

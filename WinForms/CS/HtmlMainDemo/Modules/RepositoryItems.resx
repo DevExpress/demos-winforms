@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="htmlContentControl.HtmlTemplate.Styles" xml:space="preserve">
+    <value>.page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.form {
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	border-radius: 8px;
+	background-color: @ReadOnly;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+.caption {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 32px;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 8px 8px 8px 16px;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 16px 48px 48px 48px;
+}
+.default-avatar-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px;
+	background-color: @Window;
+	border: 1px solid rgba(80, 80, 80, 0.25);
+	border-radius: 4px;
+}
+.avatar-container {
+	padding: 20px;
+}
+.default-avatar {
+	width: 54px;
+	height: 54px;
+	background-color: @Window;
+}
+.avatar {
+	width: 128px;
+	height: 128px;
+	background-color: @Window;
+}
+.choose-photo {
+	margin-top: 8px;
+}
+.input-box {
+	display: flex;
+	padding: 12px 16px;
+	background-color: @Window;
+	border: 1px solid rgba(80, 80, 80, 0.25);
+	border-radius: 4px;
+	margin-top: 8px;
+}
+.input {
+	flex-grow: 1;
+	background-color: @Window;
+}
+.tab-bar {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 11px 16px;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 10px;
+}
+.tab-button {
+	width: 38%;
+}
+.check-container {
+	display: flex;
+	margin-top: 16px;
+	font-size: 12px;
+	align-items: center;
+}
+.check-box {
+	margin-right: 5px;
+	background-color: @ReadOnly;
+}
+.link:hover {
+	text-decoration: underline;
+}
+.login-button {
+	padding: 12px 24px;
+	background-color: @Window;
+	color: @WindowText;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	margin-top: 24px;
+	font-size: 18px;
+}
+.login-button:hover {
+	background-color: @HighlightAlternate;
+	box-shadow: 0px 8px 16px @HighlightAlternate/0.5;
+	color: White;
+}
+.login-button:active {
+	box-shadow: initial;
+	color: rgba(255, 255, 255, 0.35);
+}
+.normal {
+	background-color: rgba(80, 80, 80, 0.05);
+}
+.normal:hover {
+	background-color: @Highlight;
+}
+.highlight {
+	background-color: @HighlightAlternate;
+	color: white;
+}</value>
+  </data>
+  <data name="htmlContentControl.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class='page theme'&gt;
+	&lt;div class='form'&gt;
+		&lt;div class='caption'&gt;
+			Login Form
+		&lt;/div&gt;
+		&lt;div class='content'&gt;
+			&lt;div class='tab-bar'&gt;
+				&lt;div class='button tab-button highlight'&gt;
+					LOGIN
+				&lt;/div&gt;
+				&lt;div class='button tab-button normal' id='signup'&gt;
+					SIGN UP
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class='input-box'&gt;
+				&lt;input class='input' name='emailEdit' value='${Email}'/&gt;
+			&lt;/div&gt;
+			&lt;div class='input-box'&gt;
+				&lt;input class='input' name='passEdit' value='${Password}'/&gt;
+			&lt;/div&gt;
+			&lt;div class='check-container'&gt;
+				&lt;input class='check-box' name='checkEdit' value='${RememberMe}' /&gt;
+				Remember me
+			&lt;/div&gt;
+			&lt;div class='button login-button'&gt;
+				Login
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <metadata name="svgImageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>148, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="svgImageCollection1.default_photo" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI1LjIsIFZlcnNpb249MjUuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAEMEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgd2lkdGg9IjU0cHgiIGhl
+        aWdodD0iNTRweCIgdmlld0JveD0iMCAwIDU0IDU0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAw
+        MC9zdmciIGZpbGw9Im5vbmUiPg0KICA8cGF0aCBkPSJNMjcgMjkuNjY2NkMzNC40NjY3IDI5LjY2NjYg
+        NDAuMzMzMyAyMS40IDQwLjMzMzMgMTMuOTMzM0M0MC4zMzMzIDEwLjQ2NjYgMzkgNy4yNjY2NSAzNi44
+        NjY3IDQuODY2NjVMMzUgNS42NjY2NUwzNi42IDQuMzMzMzFDMzQuMiAxLjkzMzMxIDMwLjczMzMgMC4z
+        MzMzMTMgMjcgMC4zMzMzMTNDMTkuNTMzMyAwLjMzMzMxMyAxMy42NjY3IDYuNDY2NjUgMTMuNjY2NyAx
+        My45MzMzQzEzLjY2NjcgMjEuNCAxOS41MzMzIDI5LjY2NjYgMjcgMjkuNjY2NlpNMjcgMi45OTk5OEMy
+        OC44NjY3IDIuOTk5OTggMzAuNzMzMyAzLjUzMzMxIDMyLjMzMzMgNC4zMzMzMUwyMS4xMzMzIDEzLjY2
+        NjZMMzUuOCA4LjA2NjY1QzM3LjEzMzMgOS45MzMzMSAzNy42NjY3IDExLjggMzcuNjY2NyAxMy45MzMz
+        QzM3LjY2NjcgMTkuOCAzMi44NjY3IDI3IDI3IDI3QzIxLjEzMzMgMjcgMTYuMzMzMyAxOS44IDE2LjMz
+        MzMgMTMuOTMzM0MxNi4zMzMzIDcuNzk5OTggMjEuMTMzMyAyLjk5OTk4IDI3IDIuOTk5OThaTTQ4Ljg2
+        NjcgNDQuMDY2NkM0Ni43MzMzIDQwLjA2NjYgNDMuMjY2NyAzNi44NjY2IDM5IDM1TDMyLjMzMzMgMzIu
+        MzMzM1Y0MC4zMzMzTDIxLjY2NjcgMzIuMzMzM0wxNC40NjY3IDM0LjczMzNDOC44NjY2NiAzNi42IDQu
+        NiA0MC44NjY2IDIuNzMzMzMgNDYuNDY2NkwwLjMzMzMyOCA1My42NjY2SDUzLjY2NjdMNDguODY2NyA0
+        NC4wNjY2Wk01LjEzMzMzIDQ3LjI2NjZDNi43MzMzMyA0Mi40NjY2IDEwLjQ2NjcgMzguNzMzMyAxNS4y
+        NjY3IDM3LjEzMzNMMjEuMTMzMyAzNS4yNjY2TDMwLjczMzMgNDIuNDY2NkwzNSA0NS42NjY2VjQwLjMz
+        MzNWMzYuMzMzM0wzOC4yIDM3LjY2NjZDNDEuOTMzMyAzOSA0NC44NjY3IDQxLjkzMzMgNDYuNDY2NyA0
+        NS40TDQ5LjQgNTEuMjY2Nkg0LjA2NjY2TDUuMTMzMzMgNDcuMjY2NloiIGZpbGw9IiMzQzNDM0MiIC8+
+        DQo8L3N2Zz4L
+</value>
+  </data>
+  <metadata name="bindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

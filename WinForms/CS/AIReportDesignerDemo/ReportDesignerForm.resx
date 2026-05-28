@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="xrDesignRibbonController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>267, 17</value>
+  </metadata>
+  <metadata name="applicationMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>632, 17</value>
+  </metadata>
+  <metadata name="xrDesignDockManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>902, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Utils.v26.1" name="DevExpress.Utils.v26.1, Culture=neutral"></assembly>
+  <data name="xrDesignDockManager1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYyNS4xLCBWZXJzaW9uPTI1LjEu
+        MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTc5ODY4YjgxNDdiNWVhZTQFAQAAAChE
+        ZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0cmVhbWVyAAAAAAIAAAAL
+</value>
+  </data>
+  <metadata name="reportDesigner1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="behaviorManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1234, 17</value>
+  </metadata>
+  <data name="aiReportPrompt1.Text" xml:space="preserve">
+    <value>1. General Information
+Report Title:
+(e.g., “Monthly Sales Report”)
+
+Page Settings:
+
+Format: (e.g., A4 / A3 / others)
+
+Orientation: (Portrait / Landscape)
+
+Margins: (e.g., 2 cm on all sides)
+
+2. Report Header
+Left Section:
+(e.g., company logo image, date, report number)
+
+Center Section:
+(e.g., report title in large font)
+
+Right Section:
+(e.g., contact information, page number)
+
+Header Text Style:
+(e.g., Font: Arial, Size: 16 pt, Bold, Center-aligned)
+
+Image Placeholder (if needed):
+(Describe the image and its placement — if required)
+
+3. Main Content Area (Body)
+Description of Main Area:
+(Brief description — e.g., table, text blocks, charts)
+
+Table Section:
+
+Number of Columns: (e.g., 5)
+
+Column Titles:
+
+Date
+
+Item Name
+
+Quantity
+
+Unit Price
+
+Total Amount
+
+Table Header Style:
+(e.g., Font: Calibri, Size: 12 pt, Bold, Light gray background)
+
+Row Style:
+(e.g., Font: Calibri, Size: 11 pt, alternate row shading)
+
+Table Rows (if predefined):
+
+Date	Item Name	Quantity	Unit Price	Total Amount
+01.05.2025	Product A	10	$10.00	$100.00
+…	…	…	…	…
+
+4. Footer
+Left Section:
+(e.g., report creation date)
+
+Center Section:
+(e.g., signature)
+
+Right Section:
+(e.g., full name and position)
+
+Additional Information:
+(e.g., “This document was automatically generated using AI”, “Confidential”, etc.)
+</value>
+  </data>
+  <data name="aiReportPrompt2.Text" xml:space="preserve">
+    <value>Create Sales Summary Report
+ 
+**Page Setup**:
+ 
+* Paper size: A4
+* Margins:
+	* Top &amp; Bottom: 40
+	* Left &amp; Right: 60
+ 
+* All controls should fit within printable width
+* Report control paddings
+	* Left: 2
+	* Top: 2
+**Font Settings**:
+ 
+* Page Header: Segoe UI, 18pt, Bold
+* Table Column Headers: Segoe UI, 10pt, Bold, White
+* Data Table Cells: Segoe UI, 9pt
+* Summary Cells: Arial, 9pt, Bold, Light Gray
+ 
+**Report Sections**:
+ 
+* Page Header:
+ 
+	* Add the title “Quarterly Sales Report” with a dark gray background and white text.
+	* Center-align and span full page width.
+ 
+* Group Header:
+ 
+	* Group data by Region
+	* Add a table with a light gray background and the following columns:
+		* Region
+		* Sales Rep
+		* Product
+		* Units Sold
+		* Total Sales ($)
+ 
+* Details Section:
+ 
+	* Bind fields from data source to above columns.
+ 
+* Group Footer:
+ 
+	* Add totals per Region:
+		* Total Units Sold — Summary
+		* Regional Sales Total — Summary
+		* Average Sale per Unit — Average
+ 
+* Page Footer:
+ 
+   * Add Report Generated Date and Page Number (centered).</value>
+  </data>
+  <data name="aiReportPrompt3.Text" xml:space="preserve">
+    <value>Create Employee Payroll Report:
+ 
+Page Setup:
+ 
+- Paper size: Letter
+- Margins:
+	- Top &amp; Bottom: 50
+	- Left &amp; Right: 100
+- Report controls should fit within the available page width (excluding left and right margins).
+- Font Settings:
+	- Report Title: Arial, 16pt, Bold
+	- Column Headers: Arial, 11pt, Bold
+	- Data-bound controls: Arial, 9pt
+ 
+Report Sections:
+ 
+Page Header:
+ 
+- Add a report title ""Payroll Details"" with a light blue background. Stretch it to fit the full page width.
+ 
+Group Header:
+ 
+- Create a group header containing a table with the following columns:
+	- Employee Name
+	- Department
+	- Hours Worked
+	- Rate ($)
+	- Gross Salary ($)
+ 
+Detail Table:
+ 
+- Include a detail table with the same data-bound fields as in the group header.
+ 
+Group Footer:
+ 
+- Add a table with a light blue background containing the following columns:
+	- Total Employees
+	- Total Payroll Expense
+	- Average Salary
+Include a data-bound table with calculations:
+	- Total Employees: Count of Employee Names.
+	- Total Payroll Expense: Sum of Gross Salary.
+	- Average Salary: Average of Gross Salary.
+ 
+Page Footer:
+ 
+- Add a table with four columns:
+	- Contact Us
+	- Website Address
+	- Phone
+	- Email"
+</value>
+  </data>
+  <data name="aiReportPrompt4.Text" xml:space="preserve">
+    <value>Create a Commercial Invoice Report
+ 
+Page Setup:
+ 
+- Paper Size: Letter
+- Margins:
+	- Top &amp; Bottom: 100
+	- Left &amp; Right: 50
+- Report controls should fit within the available page width (excluding left and right margins).
+ 
+Font Settings:
+	- Static text labels and column headers:
+		- Background: Light grey
+		- Text Color: White
+		- Font: Arial, 10pt, Bold, Uppercase
+		- Text Alignment: Top left
+	- Data-bound report controls:
+		- Font: Arial, 9pt
+		- Text Color: Black
+		- Text Alignment: Middle left
+ 
+Report Sections:
+ 
+Report Header:
+ 
+- Add a logo/image aligned to the right, sized 200x50.
+- Include a full-width label with the static text ""Commercial Invoice"".
+ 
+Group Header:
+ 
+ 
+Create a 4-column table with the following column headers:
+- Shipper/Exporter of Record
+- (Empty Column for Spacing)
+- Shipment/Order
+- (Empty Column for Spacing)
+ 
+Add the following rows under each respective column:
+- Shipper/Exporter of Record | (empty) | Shipment/Order | (empty)
+- Company Name | (empty) | Invoice # | (data-bound field)
+- Address | (empty) | Date | (data-bound field)
+- VAT Reg No | (empty) | Order ID | (data-bound field)
+- Shipper Address | (empty) | Number of Parcels | (data-bound field)
+- (empty) | (empty) | Total Actual Weight: | (data-bound field)
+- (empty) | (empty) | Total Dimensional Weight: | (data-bound field)
+ 
+Create a 2-column table with the following column headers:
+- Ship To/Consignee
+- Sold To Party
+- Add a single row displaying the corresponding data-bound fields.
+ 
+Create a table with the following column headers:
+- Description
+- Item Code
+- Country of Origin
+- Units
+- Unit Value
+- Total Value
+ 
+Detail Table:
+ 
+- Include a detail table displaying the same data-bound fields as in the Itemized Table from the Group Header.
+ 
+Report Footer:
+ 
+Create a 2-column table, aligned to the right and occupying half of the page width.
+- First Row:
+	- Column 1: ""Total"" (Header)
+	- Column 2: (Empty Cell)
+- Second Row:
+	- Column 1: ""Goods Value""
+	- Column 2: (Data-bound to ""Total"" field)
+ 
+- Add a label with the text ""Value For Customs"".
+- Add a data-bound label linked to the ""Value For Customs"" field.</value>
+  </data>
+  <data name="aiReportPrompt5.Text" xml:space="preserve">
+    <value>Create a Shipping Label Report
+ 
+Page Setup:
+ 
+- Paper Size: Letter
+- Margins:
+	- Top &amp; Bottom: 50
+	- Left &amp; Right: 100
+- Report controls should fit within the available page width (excluding left and right margins).
+- Font settings:
+	- Static text labels and column headers: light grey background, Arial 10pt font, bold
+	- Data-bound report controls: Arial 9pt font
+ 
+Report Sections:
+ 
+Report Header:
+ 
+- Company Name Report Title: Display in the top-middle of the page. Add smaller text aligned to the right side, stating ""Thank you for your order.""
+- Add Shipping Information Labels:
+	- ""Ship To"" label on the left side, above the company name. Below it, add two more labels to display the customer name and the address.
+	- ""Shipment Information"" label on the right side. Below it, add two more labels to display the order number and the date.
+ 
+Group Header:
+ 
+- Create a table with the following column headers:
+	- # (Item Number)
+	- Item
+	- Color
+	- Size
+	- EAN 
+	- Quantity
+	- Unit Price
+ 
+Detail Table:
+ 
+- Include a detail table displaying the same data-bound fields as in the group header.
+ 
+Report Footer:
+ 
+- Add a ""Returns Policy"" label. Below it, include an empty label for future content.
+- Add a ""Returns Instructions"" label. Below it, include another empty label for additional details.</value>
+  </data>
+</root>

@@ -1,0 +1,1060 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <ProjectGuid>{8C1FC63E-04BF-4BE3-8CF2-CD3B67855F8F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <RootNamespace />
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>SchedulerMainDemo</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <Prefer32Bit>true</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <!--ONLY NETCORE3  
+  <PropertyGroup>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+    ONLY NETCORE3-->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.DemoData.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraReports.v26.1.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Reporting"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Reporting.Extensions"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.SpellChecker.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1"><HintPath></HintPath><Private>False</Private></Reference>   
+    <Reference Include="System"><Private>False</Private></Reference>
+    <Reference Include="System.Data"><Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>   
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms"><Private>False</Private></Reference>
+    <Reference Include="System.Xml"><Private>False</Private></Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations"><Private>False</Private></Reference>
+	<PackageReference Include="EntityFramework">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <netcore3ignore />
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <netcore3ignore />
+    </PackageReference>
+	<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+       <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarsData\Car.vb" />
+    <Compile Include="CarsData\CarScheduling.vb" />
+    <Compile Include="CarsData\CarsDataHelper.vb" />
+    <Compile Include="CarsDBDataSet.vb">
+      <DependentUpon>CarsDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CarsDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarsDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MedicData\HospitalDepartment.vb" />
+    <Compile Include="MedicData\Medic.vb" />
+    <Compile Include="MedicData\MedicalAppointment.vb" />
+    <Compile Include="MedicData\MedicScheduleContext.vb" />
+    <Compile Include="MedicData\MedicScheduleDataHelper.vb" />
+    <Compile Include="MedicData\Patient.vb" />
+    <Compile Include="Data\XPObjects.vb" />
+    <Compile Include="DemosRegistration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DemoUtils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\AppearancesEdit.Designer.vb">
+      <DependentUpon>AppearancesEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ColorSchemasEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ColorSchemasEdit.Designer.vb">
+      <DependentUpon>ColorSchemasEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MyAppointmentEditForm.Designer.vb">
+      <DependentUpon>MyAppointmentEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MyInplaceEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MyInplaceEditor.Designer.vb">
+      <DependentUpon>MyInplaceEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TimeScalesEdit.Designer.vb">
+      <DependentUpon>TimeScalesEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserDefinedFilterAppointmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserDefinedFilterAppointmentForm.Designer.vb">
+      <DependentUpon>UserDefinedFilterAppointmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportTemplateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AppearancesEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AgendaView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AgendaView.Designer.vb">
+      <DependentUpon>AgendaView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AppointmentFiltering.Designer.vb">
+      <DependentUpon>AppointmentFiltering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BoundMode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\BoundMode.Designer.vb">
+      <DependentUpon>BoundMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AppointmentFormStyles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AppointmentFormStyles.Designer.vb">
+      <DependentUpon>AppointmentFormStyles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomAppearance.Designer.vb">
+      <DependentUpon>CustomAppearance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomAppointments.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomAppointments.Designer.vb">
+      <DependentUpon>CustomAppointments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomDraw.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomDraw.Designer.vb">
+      <DependentUpon>CustomDraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomEditAppointmentForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomEditAppointmentForm.Designer.vb">
+      <DependentUpon>CustomEditAppointmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomInplaceEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomInplaceEditor.Designer.vb">
+      <DependentUpon>CustomInplaceEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomWorkTime.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomWorkTime.Designer.vb">
+      <DependentUpon>CustomWorkTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DateNavigator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DateNavigator.Designer.vb">
+      <DependentUpon>DateNavigator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ContextButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ContextButtons.Designer.vb">
+      <DependentUpon>ContextButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DayView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DayView.Designer.vb">
+      <DependentUpon>DayView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DragDropData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DragDropData.Designer.vb">
+      <DependentUpon>DragDropData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MedicalAppointmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MedicalAppointmentForm.Designer.vb">
+      <DependentUpon>MedicalAppointmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\iCalendarExchange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\iCalendarExchange.Designer.vb">
+      <DependentUpon>iCalendarExchange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Overview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Overview.Designer.vb">
+      <DependentUpon>Overview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EntityBoundMode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\EntityBoundMode.Designer.vb">
+      <DependentUpon>EntityBoundMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FullWeekView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FullWeekView.Designer.vb">
+      <DependentUpon>FullWeekView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GanttView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GanttView.Designer.vb">
+      <DependentUpon>GanttView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GroupByDate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GroupByDate.Designer.vb">
+      <DependentUpon>GroupByDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GroupByResource.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GroupByResource.Designer.vb">
+      <DependentUpon>GroupByResource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Holidays.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Holidays.Designer.vb">
+      <DependentUpon>Holidays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ListBoundMode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ListBoundMode.Designer.vb">
+      <DependentUpon>ListBoundMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MonthView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MyAppointmentEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\MonthView.Designer.vb">
+      <DependentUpon>MonthView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OutlookImport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OutlookImport.Designer.vb">
+      <DependentUpon>OutlookImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OutlookSynchronization.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OutlookSynchronization.Designer.vb">
+      <DependentUpon>OutlookSynchronization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PerformanceTest.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PerformanceTest.Designer.vb">
+      <DependentUpon>PerformanceTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RangeControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RangeControl.Designer.vb">
+      <DependentUpon>RangeControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\Appearance\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\Appearance\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\Appearance\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\AutoHeight\MonthReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\AutoHeight\MonthReport.Designer.vb">
+      <DependentUpon>MonthReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\AutoHeight\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\AutoHeight\TimelineReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\AutoHeight\TimelineReport.Designer.vb">
+      <DependentUpon>TimelineReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\BaseModules\BarLookAndFeelItem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\BaseModules\CustomDesignForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\BaseModules\PreviewControlBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\BaseModules\SingleReportPreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\BaseModules\SingleReportPreviewControl.Designer.vb">
+      <DependentUpon>SingleReportPreviewControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\CustomDraw\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\CustomDraw\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\CustomDraw\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\AppointmentCustomization\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\AppointmentCustomization\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\AppointmentCustomization\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\DateFormatting\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\DateFormatting\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\DateFormatting\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\ReportTemplates\ReportTemplates.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\ReportTemplates\ReportTemplates.Designer.vb">
+      <DependentUpon>ReportTemplates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\DataValidation\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\DataValidation\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\DataValidation\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\DailyStyle\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\DailyStyle\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\DailyStyle\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\GroupType\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\GroupType\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\GroupType\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\MonthlyStyle\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\MonthlyStyle\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\MonthlyStyle\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\MultiColumn\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\MultiColumn\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\MultiColumn\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\SmartSyncPrinting\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\SmartSyncPrinting\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\SmartSyncPrinting\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\TimelineStyle\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\TimelineStyle\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\TimelineStyle\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\VisibleWeekDays\DayReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\VisibleWeekDays\DayReport.Designer.vb">
+      <DependentUpon>DayReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\VisibleWeekDays\MonthReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\VisibleWeekDays\MonthReport.Designer.vb">
+      <DependentUpon>MonthReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\WeeklyStyle\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\WeeklyStyle\Report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\Reporting\WeeklyStyle\Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reporting\VisibleWeekDays\PreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reminders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Reminders.Designer.vb">
+      <DependentUpon>Reminders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ResourceHeaders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ResourceHeaders.Designer.vb">
+      <DependentUpon>ResourceHeaders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ResourceSharing.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ResourceSharing.Designer.vb">
+      <DependentUpon>ResourceSharing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ResourcesTree.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ResourcesTree.Designer.vb">
+      <DependentUpon>ResourcesTree.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Restrictions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AppointmentFiltering.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data\CustomEvents.vb" />
+    <Compile Include="Modules\Restrictions.Designer.vb">
+      <DependentUpon>Restrictions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SchedulerBars.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SchedulerBars.Designer.vb">
+      <DependentUpon>SchedulerBars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SchedulerRibbonBars.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SchedulerRibbonBars.Designer.vb">
+      <DependentUpon>SchedulerRibbonBars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SplitAppointmentTool.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SplitAppointmentTool.Designer.vb">
+      <DependentUpon>SplitAppointmentTool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TimelineView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\TimeScalesEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\TimelineView.Designer.vb">
+      <DependentUpon>TimelineView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TimeZones.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TimeZones.Designer.vb">
+      <DependentUpon>TimeZones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UnboundMode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomAppearance.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\UnboundMode.Designer.vb">
+      <DependentUpon>UnboundMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UserDefinedFilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\UserDefinedFilter.Designer.vb">
+      <DependentUpon>UserDefinedFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WeekView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WeekView.Designer.vb">
+      <DependentUpon>WeekView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WorkDaysView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorkDaysView.Designer.vb">
+      <DependentUpon>WorkDaysView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\XPOBoundMode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\XPOBoundMode.Designer.vb">
+      <DependentUpon>XPOBoundMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TasksDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TasksDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls.resx">
+      <DependentUpon>Controls.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\appointments.xml" />
+    <EmbeddedResource Include="Data\resources.xml" />
+    <EmbeddedResource Include="Forms\ColorSchemasEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorSchemasEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MyInplaceEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyInplaceEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserDefinedFilterAppointmentForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserDefinedFilterAppointmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportTemplateForm.resx">
+      <DependentUpon>ReportTemplateForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\appointment_icons.png" />
+    <EmbeddedResource Include="Images\Menu.bmp" />
+    <EmbeddedResource Include="Images\sports.png" />
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AppearancesEdit.resx">
+      <DependentUpon>AppearancesEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AgendaView.resx">
+      <DependentUpon>AgendaView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AppointmentFormStyles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppointmentFormStyles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\BoundMode.resx">
+      <DependentUpon>BoundMode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomAppointments.resx">
+      <DependentUpon>CustomAppointments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomDraw.resx">
+      <DependentUpon>CustomDraw.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomEditAppointmentForm.resx">
+      <DependentUpon>CustomEditAppointmentForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomInplaceEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomInplaceEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomWorkTime.resx">
+      <DependentUpon>CustomWorkTime.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DateNavigator.resx">
+      <DependentUpon>DateNavigator.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ContextButtons.resx">
+      <DependentUpon>ContextButtons.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DayView.resx">
+      <DependentUpon>DayView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DragDropData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DragDropData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MedicalAppointmentForm.resx">
+      <DependentUpon>MedicalAppointmentForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\iCalendarExchange.resx">
+      <DependentUpon>iCalendarExchange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Overview.resx">
+      <DependentUpon>Overview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\EntityBoundMode.resx">
+      <DependentUpon>EntityBoundMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FullWeekView.resx">
+      <DependentUpon>FullWeekView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GanttView.resx">
+      <DependentUpon>GanttView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GroupByDate.resx">
+      <DependentUpon>GroupByDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GroupByResource.resx">
+      <DependentUpon>GroupByResource.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Holidays.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Holidays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ListBoundMode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListBoundMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MonthView.resx">
+      <DependentUpon>MonthView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MyAppointmentEditForm.resx">
+      <DependentUpon>MyAppointmentEditForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OutlookImport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutlookImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OutlookSynchronization.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutlookSynchronization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PerformanceTest.resx">
+      <DependentUpon>PerformanceTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\Appearance\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\Appearance\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\AutoHeight\MonthReport.resx">
+      <DependentUpon>MonthReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\AutoHeight\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\AutoHeight\TimelineReport.resx">
+      <DependentUpon>TimelineReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\BaseModules\CustomDesignForm.resx">
+      <DependentUpon>CustomDesignForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\BaseModules\PreviewControlBase.resx">
+      <DependentUpon>PreviewControlBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\BaseModules\SingleReportPreviewControl.resx">
+      <DependentUpon>SingleReportPreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\CustomDraw\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\CustomDraw\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\AppointmentCustomization\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\AppointmentCustomization\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\DateFormatting\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\DateFormatting\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\ReportTemplates\ReportTemplates.resx">
+      <DependentUpon>ReportTemplates.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\DataValidation\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\DataValidation\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\DailyStyle\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\DailyStyle\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\GroupType\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\GroupType\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\MonthlyStyle\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\MonthlyStyle\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\MultiColumn\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\MultiColumn\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\TimelineStyle\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\TimelineStyle\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\WeeklyStyle\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\WeeklyStyle\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\VisibleWeekDays\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reminders.resx">
+      <DependentUpon>Reminders.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ResourceHeaders.resx">
+      <DependentUpon>ResourceHeaders.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ResourceSharing.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResourceSharing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ResourcesTree.resx">
+      <DependentUpon>ResourcesTree.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Restrictions.resx">
+      <DependentUpon>Restrictions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AppointmentFiltering.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppointmentFiltering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SchedulerBars.resx">
+      <DependentUpon>SchedulerBars.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SchedulerRibbonBars.resx">
+      <DependentUpon>SchedulerRibbonBars.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SplitAppointmentTool.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplitAppointmentTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TimelineView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimelineView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TimeScalesEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimeScalesEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TimeZones.resx">
+      <DependentUpon>TimeZones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\UnboundMode.resx">
+      <DependentUpon>UnboundMode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomAppearance.resx">
+      <DependentUpon>CustomAppearance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\UserDefinedFilter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserDefinedFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WeekView.resx">
+      <DependentUpon>WeekView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WorkDaysView.resx">
+      <DependentUpon>WorkDaysView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\XPOBoundMode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XPOBoundMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\sportevents.xml" />
+    <EmbeddedResource Include="Images\channels.png" />
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="CarsData\Images\2.jpg" />
+    <EmbeddedResource Include="CarsData\Images\3.jpg" />
+    <EmbeddedResource Include="CarsData\Images\7.jpg" />
+    <EmbeddedResource Include="CarsData\Images\4.jpg" />
+    <EmbeddedResource Include="CarsData\Images\1.jpg" />
+    <EmbeddedResource Include="CarsData\Images\6.jpg" />
+    <EmbeddedResource Include="CarsData\Images\5.jpg" />
+    <Content Include="Images\AppointmentExport.png" />
+    <Content Include="Images\AppointmentImport.png" />
+    <Content Include="Images\recurrence.bmp" />
+    <Content Include="Images\recurrence_except.bmp" />
+    <Content Include="Images\ring.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <netcore3ignore />
+    </None>
+    <Content Include="CarsDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CarsDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    
+    <EmbeddedResource Include="Data\ReportAppointments.xml" />
+    <EmbeddedResource Include="Data\ReportResources.xml" />
+    <EmbeddedResource Include="Modules\RangeControl.resx">
+      <DependentUpon>RangeControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\SmartSyncPrinting\PreviewControl.resx">
+      <DependentUpon>PreviewControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\SmartSyncPrinting\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\car_usage_types.png" />
+    <EmbeddedResource Include="Modules\Reporting\VisibleWeekDays\DayReport.resx">
+      <DependentUpon>DayReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Reporting\VisibleWeekDays\MonthReport.resx">
+      <DependentUpon>MonthReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\XtraScheduler.png" />
+    <EmbeddedResource Include="Images\XtraScheduler_light.png" />
+    <EmbeddedResource Include="MedicData\Images\AmeliaHarper.png" />
+    <EmbeddedResource Include="MedicData\Images\ClarkMorgan.png" />
+    <EmbeddedResource Include="MedicData\Images\DaveyJones.png" />
+    <EmbeddedResource Include="MedicData\Images\LeahSimpson.png" />
+    <EmbeddedResource Include="MedicData\Images\LincolnBartlett.png" />
+    <EmbeddedResource Include="MedicData\Images\LucyBall.png" />
+    <EmbeddedResource Include="MedicData\Images\SamanthaBright.png" />
+    <EmbeddedResource Include="MedicData\Images\SandraJohnson.png" />
+    <EmbeddedResource Include="MedicData\Images\StuPizaro.png" />
+    <EmbeddedResource Include="MedicData\Images\VictorNorris.png" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </Content>
+    
+    <Content Include="TasksDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TasksDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    
+  </ItemGroup>
+  <!--ONLY NETCORE3  
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+ </PropertyGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  <PackageReference Include="System.Data.OleDb" />
+  <PackageReference Include="System.Data.SqlClient" />
+  <PackageReference Include="System.Data.SQLite.Core" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

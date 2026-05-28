@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>treeList1</name>
+        <windowcaption>TreeList Bound to Hierarchical Data Source</windowcaption>
+        <description>TreeList's node hierarchy is created from the bound business object's collection property (ChildListFieldName). The TreeList.BeforeExpand event is handled to implement the delayed child node load.
+        </description>
+        <memberlist>TreeList.DataSource, TreeList.ChildListFieldName</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>treeList2</name>
+        <windowcaption>Setting Data Source</windowcaption>
+        <description>The second treelist's data source is changed when you select a node in the first treelist.</description>
+        <memberlist>TreeList.FocusedNodeChanged, TreeList.DataSource</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

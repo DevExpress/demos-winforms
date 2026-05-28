@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lbDisplay.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lbDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 12</value>
+  </data>
+  <data name="lbDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="ceEnableAppearanceOddRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 529</value>
+  </data>
+  <data name="ceEnableAppearanceOddRow.Properties.Caption" xml:space="preserve">
+    <value>Enable Appearance Odd Row</value>
+  </data>
+  <data name="ceEnableAppearanceOddRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="ceEnableAppearanceOddRow.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;ceEnableAppearanceOddRow.Name" xml:space="preserve">
+    <value>ceEnableAppearanceOddRow</value>
+  </data>
+  <data name="&gt;&gt;ceEnableAppearanceOddRow.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceEnableAppearanceOddRow.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceEnableAppearanceOddRow.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ceEnableAppearanceEvenRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 505</value>
+  </data>
+  <data name="ceEnableAppearanceEvenRow.Properties.Caption" xml:space="preserve">
+    <value>Enable Appearance Even Row</value>
+  </data>
+  <data name="ceEnableAppearanceEvenRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceEnableAppearanceEvenRow.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;ceEnableAppearanceEvenRow.Name" xml:space="preserve">
+    <value>ceEnableAppearanceEvenRow</value>
+  </data>
+  <data name="&gt;&gt;ceEnableAppearanceEvenRow.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceEnableAppearanceEvenRow.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceEnableAppearanceEvenRow.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ceShowVerticalLines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 481</value>
+  </data>
+  <data name="ceShowVerticalLines.Properties.Caption" xml:space="preserve">
+    <value>Show Vertical Lines</value>
+  </data>
+  <data name="ceShowVerticalLines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceShowVerticalLines.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;ceShowVerticalLines.Name" xml:space="preserve">
+    <value>ceShowVerticalLines</value>
+  </data>
+  <data name="&gt;&gt;ceShowVerticalLines.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceShowVerticalLines.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowVerticalLines.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ceListLayout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 316</value>
+  </data>
+  <data name="ceListLayout.Properties.Caption" xml:space="preserve">
+    <value>Enable List Layout Mode</value>
+  </data>
+  <data name="ceListLayout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceListLayout.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ceListLayout.Name" xml:space="preserve">
+    <value>ceListLayout</value>
+  </data>
+  <data name="&gt;&gt;ceListLayout.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceListLayout.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceListLayout.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ceShowHorzLines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 457</value>
+  </data>
+  <data name="ceShowHorzLines.Properties.Caption" xml:space="preserve">
+    <value>Show Horizontal Lines</value>
+  </data>
+  <data name="ceShowHorzLines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceShowHorzLines.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;ceShowHorzLines.Name" xml:space="preserve">
+    <value>ceShowHorzLines</value>
+  </data>
+  <data name="&gt;&gt;ceShowHorzLines.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceShowHorzLines.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowHorzLines.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ceHighlightFocused.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 292</value>
+  </data>
+  <data name="ceHighlightFocused.Properties.Caption" xml:space="preserve">
+    <value>Highlight Focused Item</value>
+  </data>
+  <data name="ceHighlightFocused.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceHighlightFocused.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ceHighlightFocused.Name" xml:space="preserve">
+    <value>ceHighlightFocused</value>
+  </data>
+  <data name="&gt;&gt;ceHighlightFocused.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceHighlightFocused.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceHighlightFocused.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ceShowIndicator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 433</value>
+  </data>
+  <data name="ceShowIndicator.Properties.Caption" xml:space="preserve">
+    <value>Show Indicator</value>
+  </data>
+  <data name="ceShowIndicator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceShowIndicator.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;ceShowIndicator.Name" xml:space="preserve">
+    <value>ceShowIndicator</value>
+  </data>
+  <data name="&gt;&gt;ceShowIndicator.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceShowIndicator.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowIndicator.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ceShowContextButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 268</value>
+  </data>
+  <data name="ceShowContextButton.Properties.Caption" xml:space="preserve">
+    <value>Show Context Buttons</value>
+  </data>
+  <data name="ceShowContextButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceShowContextButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ceShowContextButton.Name" xml:space="preserve">
+    <value>ceShowContextButton</value>
+  </data>
+  <data name="&gt;&gt;ceShowContextButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceShowContextButton.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowContextButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ceShowColumnHeaders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 409</value>
+  </data>
+  <data name="ceShowColumnHeaders.Properties.Caption" xml:space="preserve">
+    <value>Show Column Headers</value>
+  </data>
+  <data name="ceShowColumnHeaders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceShowColumnHeaders.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;ceShowColumnHeaders.Name" xml:space="preserve">
+    <value>ceShowColumnHeaders</value>
+  </data>
+  <data name="&gt;&gt;ceShowColumnHeaders.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceShowColumnHeaders.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowColumnHeaders.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ceShowPopupFooter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 175</value>
+  </data>
+  <data name="ceShowPopupFooter.Properties.Caption" xml:space="preserve">
+    <value>Show Popup Footer</value>
+  </data>
+  <data name="ceShowPopupFooter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceShowPopupFooter.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;ceShowPopupFooter.Name" xml:space="preserve">
+    <value>ceShowPopupFooter</value>
+  </data>
+  <data name="&gt;&gt;ceShowPopupFooter.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceShowPopupFooter.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowPopupFooter.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ceShowAutoFilterRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 385</value>
+  </data>
+  <data name="ceShowAutoFilterRow.Properties.Caption" xml:space="preserve">
+    <value>Show Auto Filter Row</value>
+  </data>
+  <data name="ceShowAutoFilterRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceShowAutoFilterRow.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;ceShowAutoFilterRow.Name" xml:space="preserve">
+    <value>ceShowAutoFilterRow</value>
+  </data>
+  <data name="&gt;&gt;ceShowAutoFilterRow.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceShowAutoFilterRow.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowAutoFilterRow.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ceAutoComplete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 103</value>
+  </data>
+  <data name="ceAutoComplete.Properties.Caption" xml:space="preserve">
+    <value>Auto Complete</value>
+  </data>
+  <data name="ceAutoComplete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceAutoComplete.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;ceAutoComplete.Name" xml:space="preserve">
+    <value>ceAutoComplete</value>
+  </data>
+  <data name="&gt;&gt;ceAutoComplete.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceAutoComplete.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceAutoComplete.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="cePopupSizeable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 151</value>
+  </data>
+  <data name="cePopupSizeable.Properties.Caption" xml:space="preserve">
+    <value>Popup Sizeable</value>
+  </data>
+  <data name="cePopupSizeable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="cePopupSizeable.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cePopupSizeable.Name" xml:space="preserve">
+    <value>cePopupSizeable</value>
+  </data>
+  <data name="&gt;&gt;cePopupSizeable.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cePopupSizeable.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;cePopupSizeable.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ceShowSeparators.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 244</value>
+  </data>
+  <data name="ceShowSeparators.Properties.Caption" xml:space="preserve">
+    <value>Show Separators</value>
+  </data>
+  <data name="ceShowSeparators.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceShowSeparators.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ceShowSeparators.Name" xml:space="preserve">
+    <value>ceShowSeparators</value>
+  </data>
+  <data name="&gt;&gt;ceShowSeparators.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceShowSeparators.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowSeparators.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ceImmediatePopup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 127</value>
+  </data>
+  <data name="ceImmediatePopup.Properties.Caption" xml:space="preserve">
+    <value>Immediate Popup</value>
+  </data>
+  <data name="ceImmediatePopup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ceImmediatePopup.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;ceImmediatePopup.Name" xml:space="preserve">
+    <value>ceImmediatePopup</value>
+  </data>
+  <data name="&gt;&gt;ceImmediatePopup.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceImmediatePopup.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceImmediatePopup.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="icbTextEditStyle.EditValue" xml:space="preserve">
+    <value>imageComboBoxEdit1</value>
+  </data>
+  <data name="icbTextEditStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 79</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v26.1" name="DevExpress.Utils.v26.1, Culture=neutral"></assembly>
+  <data name="icbTextEditStyle.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="icbTextEditStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 20</value>
+  </data>
+  <data name="icbTextEditStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;icbTextEditStyle.Name" xml:space="preserve">
+    <value>icbTextEditStyle</value>
+  </data>
+  <data name="&gt;&gt;icbTextEditStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;icbTextEditStyle.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;icbTextEditStyle.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lbValue.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lbValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 29</value>
+  </data>
+  <data name="lbValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lbValue.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lbValue.Text" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="&gt;&gt;lbValue.Name" xml:space="preserve">
+    <value>lbValue</value>
+  </data>
+  <data name="&gt;&gt;lbValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbValue.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lbValue.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 82</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Text Edit Style:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lciLbDisplay.Text" xml:space="preserve">
+    <value>Display Member:</value>
+  </data>
+  <data name="lciLbValue.Text" xml:space="preserve">
+    <value>Value Member:</value>
+  </data>
+  <data name="layoutControlGroup1.Text" xml:space="preserve">
+    <value>Editor and Popup Options</value>
+  </data>
+  <data name="groupControlTiles.Text" xml:space="preserve">
+    <value>Embedded Tiles Options</value>
+  </data>
+  <data name="groupControlGridView.Text" xml:space="preserve">
+    <value>Embedded Grid Options</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 600</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbDisplay.Text" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="&gt;&gt;lbDisplay.Name" xml:space="preserve">
+    <value>lbDisplay</value>
+  </data>
+  <data name="&gt;&gt;lbDisplay.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbDisplay.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lbDisplay.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 600</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciLbDisplay.Name" xml:space="preserve">
+    <value>lciLbDisplay</value>
+  </data>
+  <data name="&gt;&gt;lciLbDisplay.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciLbValue.Name" xml:space="preserve">
+    <value>lciLbValue</value>
+  </data>
+  <data name="&gt;&gt;lciLbValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciLabel2.Name" xml:space="preserve">
+    <value>lciLabel2</value>
+  </data>
+  <data name="&gt;&gt;lciLabel2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciIcbTextEditStyle.Name" xml:space="preserve">
+    <value>lciIcbTextEditStyle</value>
+  </data>
+  <data name="&gt;&gt;lciIcbTextEditStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeAutoComplete.Name" xml:space="preserve">
+    <value>lciCeAutoComplete</value>
+  </data>
+  <data name="&gt;&gt;lciCeAutoComplete.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeImmediatePopup.Name" xml:space="preserve">
+    <value>lciCeImmediatePopup</value>
+  </data>
+  <data name="&gt;&gt;lciCeImmediatePopup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCePopupSizeable.Name" xml:space="preserve">
+    <value>lciCePopupSizeable</value>
+  </data>
+  <data name="&gt;&gt;lciCePopupSizeable.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowPopupFooter.Name" xml:space="preserve">
+    <value>lciCeShowPopupFooter</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowPopupFooter.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;groupControlTiles.Name" xml:space="preserve">
+    <value>groupControlTiles</value>
+  </data>
+  <data name="&gt;&gt;groupControlTiles.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowSeparators.Name" xml:space="preserve">
+    <value>lciCeShowSeparators</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowSeparators.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowContextButton.Name" xml:space="preserve">
+    <value>lciCeShowContextButton</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowContextButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeHighlightFocused.Name" xml:space="preserve">
+    <value>lciCeHighlightFocused</value>
+  </data>
+  <data name="&gt;&gt;lciCeHighlightFocused.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeListLayout.Name" xml:space="preserve">
+    <value>lciCeListLayout</value>
+  </data>
+  <data name="&gt;&gt;lciCeListLayout.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;groupControlGridView.Name" xml:space="preserve">
+    <value>groupControlGridView</value>
+  </data>
+  <data name="&gt;&gt;groupControlGridView.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowAutoFilterRow.Name" xml:space="preserve">
+    <value>lciCeShowAutoFilterRow</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowAutoFilterRow.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowColumnHeaders.Name" xml:space="preserve">
+    <value>lciCeShowColumnHeaders</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowColumnHeaders.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowIndicator.Name" xml:space="preserve">
+    <value>lciCeShowIndicator</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowIndicator.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowHorzLines.Name" xml:space="preserve">
+    <value>lciCeShowHorzLines</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowHorzLines.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowVerticalLines.Name" xml:space="preserve">
+    <value>lciCeShowVerticalLines</value>
+  </data>
+  <data name="&gt;&gt;lciCeShowVerticalLines.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeEnableAppearanceEvenRow.Name" xml:space="preserve">
+    <value>lciCeEnableAppearanceEvenRow</value>
+  </data>
+  <data name="&gt;&gt;lciCeEnableAppearanceEvenRow.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCeEnableAppearanceOddRow.Name" xml:space="preserve">
+    <value>lciCeEnableAppearanceOddRow</value>
+  </data>
+  <data name="&gt;&gt;lciCeEnableAppearanceOddRow.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LookUpProperties</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+</root>

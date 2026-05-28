@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+    <controls>
+        <controlentry>
+            <control>
+                <name>treeList1</name>
+                <windowcaption>Copy data from TreeList</windowcaption>
+                <description>Copies rows you selected in Tree List and pastes it in different formats.</description>
+                <memberlist>TreeListOptionsClipboard.AllowCopy,TreeList.OptionsClipboard</memberlist>
+                <dtimage/>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>richEditControl</name>
+                <windowcaption>RTF format</windowcaption>
+                <description>Paste data in RTF format.</description>
+                <memberlist>TreeList.OptionsClipboard,ClipboardOptions.AllowRtfFormat</memberlist>
+                <dtimage/>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>spreadsheetControl1</name>
+                <windowcaption>MS Excel format</windowcaption>
+                <description>Paste data in Microsoft Excel format.</description>
+                <memberlist>TreeList.OptionsClipboard,ClipboardOptions.AllowExcelFormat</memberlist>
+                <dtimage/>
+            </control>
+        </controlentry>
+        <controlentry>
+            <control>
+                <name>webBrowser1</name>
+                <windowcaption>HTML format</windowcaption>
+                <description>Paste data in HTML format.</description>
+                <memberlist>TreeList.OptionsClipboard,ClipboardOptions.AllowHtmlFormat</memberlist>
+                <dtimage/>
+            </control>
+        </controlentry>
+    </controls>
+</totalinfo>

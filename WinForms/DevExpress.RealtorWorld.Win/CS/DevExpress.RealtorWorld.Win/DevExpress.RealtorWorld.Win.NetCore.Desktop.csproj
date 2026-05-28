@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{749EA761-CDC4-00E0-1DBA-11723258A28F}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.RealtorWorld.Win</RootNamespace>
+    <AssemblyName>DevExpress.RealtorWorld.Win</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Demos.Core" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Controls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="frmMain.DocumentManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.DocumentManager.Designer.cs">
+      <DependentUpon>frmMain.DocumentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucAgents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucAgents.Designer.cs">
+      <DependentUpon>ucAgents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucBanks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucBanks.Designer.cs">
+      <DependentUpon>ucBanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucBrowser.Designer.cs">
+      <DependentUpon>ucBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucDraft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucDraft.Designer.cs">
+      <DependentUpon>ucDraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucHomeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucHomeDetail.Designer.cs">
+      <DependentUpon>ucHomeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucListing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucListing.Designer.cs">
+      <DependentUpon>ucListing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucLoanCalculator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucLoanCalculator.Designer.cs">
+      <DependentUpon>ucLoanCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucResearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucResearch.Designer.cs">
+      <DependentUpon>ucResearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucSettings.Designer.cs">
+      <DependentUpon>ucSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucStatistics.Designer.cs">
+      <DependentUpon>ucStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucStats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucStats.Designer.cs">
+      <DependentUpon>ucStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ucSysInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucSysInfo.Designer.cs">
+      <DependentUpon>ucSysInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMain.DocumentManager.resx">
+      <DependentUpon>frmMain.DocumentManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="AppIcon.ico" />
+    <Content Include="MetroBlackBlob.skinblob" />
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="SkinData\metroblack.blob" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\ucAgents.resx">
+      <DependentUpon>ucAgents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucBanks.resx">
+      <DependentUpon>ucBanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucBrowser.resx">
+      <DependentUpon>ucBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucDraft.resx">
+      <DependentUpon>ucDraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucHomeDetail.resx">
+      <DependentUpon>ucHomeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucListing.resx">
+      <DependentUpon>ucListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucLoanCalculator.resx">
+      <DependentUpon>ucLoanCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucResearch.resx">
+      <DependentUpon>ucResearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucStatistics.resx">
+      <DependentUpon>ucStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucStats.resx">
+      <DependentUpon>ucStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucSysInfo.resx">
+      <DependentUpon>ucSysInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\ucSettings.resx">
+      <DependentUpon>ucSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkinData\metroblack.skin.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="System.Management" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+  </PropertyGroup>
+</Project>

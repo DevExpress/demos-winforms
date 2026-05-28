@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{B43AE6C4-8E38-00EE-3CD7-E5D34147F8C6}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.WindowsMailClient.Win</RootNamespace>
+    <AssemblyName>DevExpress.WindowsMailClient.Win</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Demos.Core" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+    <Compile Include="Controls\MailClientPanelAccordionControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\VerticalTopFlyoutPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data\Data.cs" />
+    <Compile Include="Forms\EmailSignatureEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmailSignatureEditForm.Designer.cs">
+      <DependentUpon>EmailSignatureEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignatureEditFormControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SignatureEditFormControl.Designer.cs">
+      <DependentUpon>SignatureEditFormControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MailClientDataModel.cs" />
+    <Compile Include="Modules\BaseModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Folders\MailViewControl\MailPresenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Folders\MailViewControl\MailPresenter.Designer.cs">
+      <DependentUpon>MailPresenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Folders\MailViewControl\MailViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Folders\MailViewControl\MailViewer.Designer.cs">
+      <DependentUpon>MailViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interfaces.cs" />
+    <Compile Include="Modules\Mail\MailModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Mail\MailModule.Designer.cs">
+      <DependentUpon>MailModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ModuleType.cs" />
+    <Compile Include="Modules\Scheduler\Data\Calendar.cs" />
+    <Compile Include="Modules\Scheduler\Data\CalendarBindingList.cs" />
+    <Compile Include="Modules\Scheduler\Data\EventBindingList.cs" />
+    <Compile Include="Modules\Scheduler\Data\EventData.cs" />
+    <Compile Include="Modules\Scheduler\Data\EventGenerator.cs" />
+    <Compile Include="Modules\Scheduler\Data\LocationData.cs" />
+    <Compile Include="Modules\Scheduler\Data\LocationDataBindingList.cs" />
+    <Compile Include="Modules\Scheduler\Data\SchedulerDataHelper.cs" />
+    <Compile Include="Modules\Scheduler\SchedulerModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Scheduler\SchedulerModule.Designer.cs">
+      <DependentUpon>SchedulerModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ModuleActivator.cs" />
+    <Compile Include="Services\ModuleLocator.cs" />
+    <Compile Include="Services\ModuleResourceProvider.cs" />
+    <Compile Include="Services\ModuleTypesResolver.cs" />
+    <Compile Include="Services\PanelProviderService.cs" />
+    <Compile Include="Services\ProcessExecutionService.cs" />
+    <Compile Include="Utils\ProcessTracker.cs" />
+    <Compile Include="Utils\StartupProcess.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Utils\ViewModelUtils.cs" />
+    <Compile Include="ViewModels\MailViewerViewModel.cs" />
+    <Compile Include="ViewModels\MailViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Utils\AppProvider.cs" />
+    <Compile Include="ViewModels\SchedulerModuleViewModel.cs" />
+    <EmbeddedResource Include="Data\StartMhtText.txt" />
+    <EmbeddedResource Include="Forms\EmailSignatureEditForm.resx">
+      <DependentUpon>EmailSignatureEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignatureEditFormControl.resx">
+      <DependentUpon>SignatureEditFormControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Folders\MailViewControl\MailPresenter.resx">
+      <DependentUpon>MailPresenter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Folders\MailViewControl\MailViewer.resx">
+      <DependentUpon>MailViewer.cs</DependentUpon>
+      <LogicalName>DevExpress.WindowsMailClient.Win.Modules.MailViewer.resources</LogicalName>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Mail\MailModule.resx">
+      <DependentUpon>MailModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Scheduler\SchedulerModule.resx">
+      <DependentUpon>SchedulerModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    
+    <EmbeddedResource Include="SkinData\fluentmailclient\fluentmailclient\SkinData\fluentmailclient.blob" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\add.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\newemployee.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\open.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\open1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\open2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\mail1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\new group.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\viewsetting.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\startdate.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CopyLink.svg" />
+    <EmbeddedResource Include="Resources\mail11.svg" />
+    <EmbeddedResource Include="Resources\merge.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Unknown-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SkinData\fluentmailclient\fluentmailclient\SkinData\fluentmailclient.skin.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SkinData\fluentmailclient\fluentmailclient\ImageResource\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpress-Logo-Mono.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="System.Data.OleDb" />
+    <PackageReference Include="System.Data.SqlClient" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>cbFiles</name>
+        <windowcaption>Restore layout</windowcaption>
+        <description>Loads a previously saved layout from a JSON file</description>
+        <memberlist>LayoutControl.RestoreLayoutFromJSON</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>highlightGroupBordersCheckEdit</name>
+        <windowcaption>Group Appearance</windowcaption>
+        <description>Sets a group's border color.</description>
+        <memberlist>LayoutItemContainer.AppearanceGroup</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>highlightTabHeadersCheckEdit</name>
+        <windowcaption>Tab Group Appearance</windowcaption>
+        <description>Sets a tab's background color.</description>
+        <memberlist>LayoutItemContainer.AppearanceTabPage</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>highlightFocusedItemCheckEdit</name>
+        <windowcaption>Focused Item Highlight</windowcaption>
+        <description>Enables focused item highlighting</description>
+        <memberlist>OptionsView.HighlightFocusedItem</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>showAdornerLayerCheckEdit</name>
+        <windowcaption>Customization Guides</windowcaption>
+        <description>Enables visual guides in customization mode.</description>
+        <memberlist>OptionsView.DrawAdornerLayer</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>allowExpandAnimationCheckEdit</name>
+        <windowcaption>Group Expanding Animation</windowcaption>
+        <description>Enables animation effects when layout groups are collapsed/expanded.</description>
+        <memberlist>OptionsView.AllowExpandAnimation</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>tabTransitionAnimationCheckEdit</name>
+        <windowcaption>Tab Switch Animation</windowcaption>
+        <description>Enables animation effects when switching between tabs</description>
+        <memberlist>TabbedGroup.Transition</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>quickCustomizationCheckEdit</name>
+        <windowcaption>Layout Customization Mode</windowcaption>
+        <description>Allows you to switch between the default and quick customization modes.</description>
+        <memberlist>LayoutControl.CustomizationMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>showPropertyGridCheckEdit</name>
+        <windowcaption>Property Grid in Customization Form</windowcaption>
+        <description>Enables the Property Grid in the Customization Form. </description>
+        <memberlist>OptionsCustomizationForm.ShowPropertyGrid</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>snapModeCheckEdit</name>
+        <windowcaption>Customization Form Snap</windowcaption>
+        <description>Specifies the objects to which the Customization Form is allowed to snap.</description>
+        <memberlist>OptionsCustomizationForm.SnapMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sbCustomize</name>
+        <windowcaption>Show/Hide Customization Form</windowcaption>
+        <description>Displays and hides the Customization Form</description>
+        <memberlist>LayoutControl.ShowCustomizationForm, LayoutControl.HideCustomizationForm</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>    
+  </controls>
+</totalinfo>

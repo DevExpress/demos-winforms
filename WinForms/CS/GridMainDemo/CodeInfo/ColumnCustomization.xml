@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+  <controls>
+    <controlentry>
+      <control>
+        <name>simpleButton1</name>
+        <windowcaption>Customization form</windowcaption>
+        <description>Invokes or closes the Customization Form.</description>
+        <memberlist>GridView.ColumnsCustomization, GridView.DestroyCustomization</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkEdit1</name>
+        <windowcaption>Column parent</windowcaption>
+        <description>Specifies whether end-users can move columns between bands.</description>
+        <memberlist>BandedGridOptionsCustomization.AllowChangeColumnParent</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkEdit2</name>
+        <windowcaption>Band parent</windowcaption>
+        <description>Specifies whether end-users can move bands between parents.</description>
+        <memberlist>BandedGridOptionsCustomization.AllowChangeBandParent</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>checkEdit3</name>
+        <windowcaption>Show bands in Customization Form</windowcaption>
+        <description>Specifies whether hidden bands can be shown within the customization form.</description>
+        <memberlist>BandedGridOptionsCustomization.ShowBandsInCustomizationForm</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

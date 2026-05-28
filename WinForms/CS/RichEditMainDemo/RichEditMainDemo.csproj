@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <PropertyGroup>
+    <ProjectGuid>{E9FE105B-AE2C-40F7-827F-34B9475A77D0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>RichEditMainDemo</AssemblyName>
+    <RootNamespace>DevExpress.XtraRichEdit.Demos</RootNamespace>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <!--ONLY NETCORE3 
+  <PropertyGroup>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+    ONLY NETCORE3-->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+    <!--ONLY NETCORE3 
+    <PropertyGroup>
+    <NoWarn>$(NoWarn);SYSLIB0051</NoWarn>
+  </PropertyGroup>  
+    ONLY NETCORE3-->  
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <Name>DevExpress.BonusSkins.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Images.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <Name>DevExpress.Data.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Drawing.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Pdf.v26.1.Drawing"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <Name>DevExpress.Tutorials.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <Name>DevExpress.Utils.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <Name>DevExpress.Xpo.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <Name>DevExpress.XtraBars.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <Name>DevExpress.XtraEditors.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <Name>DevExpress.XtraGrid.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <Name>DevExpress.XtraNavBar.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.CodeParser.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Office.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Docs.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.RichEdit.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Spreadsheet.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraScheduler.v26.1.Core.Desktop"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.SpellChecker.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v26.1">
+      <Name>DevExpress.XtraVerticalGrid.v26.1</Name>
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data.DataSetExtensions"><Private>False</Private></Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.ServiceModel"><Private>False</Private></Reference>
+    <Reference Include="System.Web"><Private>False</Private></Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    <Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomDraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomDraw.Designer.cs">
+      <DependentUpon>CustomDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomDraw\CustomDrawHighlightInfo.cs" />
+    <Compile Include="Modules\CustomDraw\CustomsRichEditCommandFactoryService.cs" />
+    <Compile Include="Modules\CustomDraw\LayoutPageExtensions.cs" />
+    <Compile Include="Modules\DocumentProtection\UserService.cs" />
+    <Compile Include="Modules\HitTesting\ScopeType.cs" />
+    <Compile Include="Modules\MailMergeMasterDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MailMergeMasterDetail.Designer.cs">
+      <DependentUpon>MailMergeMasterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMerge\DBUriStreamProvider.cs" />
+    <Compile Include="Modules\MailMerge\MailMergeModuleBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SyntaxHighlighting\CustomRichEditCommandFactoryService.cs" />
+    <Compile Include="Modules\SyntaxHighlighting\SourceCodeDocumentFormat.cs" />
+    <Compile Include="Modules\SyntaxHighlighting\SourcesCodeDocumentExporter.cs" />
+    <Compile Include="Modules\SyntaxHighlighting\SourcesCodeDocumentImporter.cs" />
+    <Compile Include="RichEditDemoExceptionsHandler.cs" />
+    <Compile Include="SpellCheckerHelper.cs" />
+    <Compile Include="TutorialControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemosInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DemoUtils.cs" />
+    <Compile Include="Forms\DocumentStatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DocumentStatisticsForm.Designer.cs">
+      <DependentUpon>DocumentStatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MergeResultingDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MergeResultingDocumentForm.Designer.cs">
+      <DependentUpon>MergeResultingDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MergeDatabaseRecordsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MergeDatabaseRecordsForm.Designer.cs">
+      <DependentUpon>MergeDatabaseRecordsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AutoCorrect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AutoCorrect.Designer.cs">
+      <DependentUpon>AutoCorrect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OperationRestrictions\RichEditOptionsProvider.cs" />
+    <Compile Include="Modules\CustomDraw\CustomDrawPagePainter.cs" />
+    <Compile Include="Modules\DocumentProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentProperties.Designer.cs">
+      <DependentUpon>DocumentProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DynamicContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DynamicContent.Designer.cs">
+      <DependentUpon>DynamicContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FirstLook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FirstLook.Designer.cs">
+      <DependentUpon>FirstLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HitTesting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\HitTesting.Designer.cs">
+      <DependentUpon>HitTesting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HitTesting\HitTestPagePainter.cs" />
+    <Compile Include="Modules\Comments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Comments.Designer.cs">
+      <DependentUpon>Comments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentProtection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DocumentProtection.Designer.cs">
+      <DependentUpon>DocumentProtection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MailMerge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MailMerge.Designer.cs">
+      <DependentUpon>MailMerge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Navigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Navigation.Designer.cs">
+      <DependentUpon>Navigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OperationRestrictions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OperationRestrictions.Designer.cs">
+      <DependentUpon>OperationRestrictions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SpellChecking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SpellChecking.Designer.cs">
+      <DependentUpon>SpellChecking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SyntaxHighlighting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SyntaxHighlighting.Designer.cs">
+      <DependentUpon>SyntaxHighlighting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SyntaxHighlighting\SyntaxHighlightService.cs" />
+    <Compile Include="nwindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Modules\CustomDraw.resx">
+      <DependentUpon>CustomDraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MailMergeMasterDetail.resx">
+      <DependentUpon>MailMergeMasterDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MailMerge\MailMergeModuleBase.resx">
+      <DependentUpon>MailMergeModuleBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorialControl.resx">
+      <DependentUpon>TutorialControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DocumentStatisticsForm.resx">
+      <DependentUpon>DocumentStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\MergeResultingDocumentForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MergeResultingDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MergeDatabaseRecordsForm.resx">
+      <DependentUpon>MergeDatabaseRecordsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AutoCorrect.resx">
+      <DependentUpon>AutoCorrect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentProperties.resx">
+      <DependentUpon>DocumentProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DynamicContent.resx">
+      <DependentUpon>DynamicContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FirstLook.resx">
+      <DependentUpon>FirstLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\HitTesting.resx">
+      <DependentUpon>HitTesting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Comments.resx">
+      <DependentUpon>Comments.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocumentProtection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocumentProtection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MailMerge.resx">
+      <DependentUpon>MailMerge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Navigation.resx">
+      <DependentUpon>Navigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OperationRestrictions.resx">
+      <DependentUpon>OperationRestrictions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SpellChecking.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellChecking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\InsertDocumentProperty.svg" />
+    <None Include="app.config" />
+    
+    <EmbeddedResource Include="AppIcon.ico" />
+    <Content Include="nwindDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nwindDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\SyntaxHighlighting.resx">
+      <DependentUpon>SyntaxHighlighting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="smile.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="System.Data.OleDb" />
+  <PackageReference Include="System.ServiceModel.Syndication" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+</Project>

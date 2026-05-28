@@ -1,0 +1,22 @@
+﻿.border1 {
+	border-right: solid;
+}
+
+.border2 {
+	border-right: solid 1px;
+}
+
+.border3 {
+	border-right: solid 1px @Critical;
+}
+
+div {
+	margin-bottom: 10px;
+	padding: 10px;
+	color: @Question;
+	background-color: @Window;
+}
+
+span {
+	color: @Black;
+}

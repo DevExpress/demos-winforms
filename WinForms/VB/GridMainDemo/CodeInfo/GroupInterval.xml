@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>cbeInterval</name>
+				<windowcaption>Group mode</windowcaption>
+				<description>When you select values from this combobox, the grid's data is grouped and/or sorted in a specific manner.</description>
+        <memberlist>GridColumn.SortMode, GridColumn.GroupInterval, GridView.CustomColumnGroup, Grouping Modes and Custom Grouping</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>icbeAllowFixedGroups</name>
+        <windowcaption>Fixed groups</windowcaption>
+        <description>Specifies whether the top visible group row is always displayed when scrolling through grouped data.</description>
+        <memberlist>GridOptionsBehavior.AllowFixedGroups</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>icbeDrawMode</name>
+        <windowcaption>Group row paint mode</windowcaption>
+        <description>Specifies how group rows are painted.</description>
+        <memberlist>GridOptionsView.GroupDrawMode</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

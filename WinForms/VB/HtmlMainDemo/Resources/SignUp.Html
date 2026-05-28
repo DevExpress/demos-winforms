@@ -1,0 +1,40 @@
+﻿<div class='page theme'>
+    <div class='form'>
+        <div class='caption'>
+            Login Form
+        </div>
+        <div class='content'>
+            <div class='tab-bar'>
+                <div class='button tab-button normal' id='login'>
+                    LOGIN
+                </div>
+                <div class='button tab-button highlight'>
+                    SIGN UP
+                </div>
+            </div>
+            <div class='default-avatar-container' hidden='${HasPhoto}'>
+                <input class='default-avatar' name='pictureEdit' value='${Photo}' />
+                <a class='choose-photo' id='choose_Photo'>Choose a photo</a>
+            </div>
+            <div class='default-avatar-container avatar-container' hidden='${IsDefaultPhoto}'>
+                <input class='avatar' name='pictureEdit' value='${Photo}' />
+            </div>
+            <div class='input-box'>
+                <input class='input' name='emailEdit' value='${Email}' />
+            </div>
+            <div class='input-box'>
+                <input class='input' name='passEdit' value='${Password}' />
+            </div>
+            <div class='input-box'>
+                <input class='input' name='cPassEdit' value='${Confirm}' />
+            </div>
+            <div class='check-container'>
+                <input class='check-box' name='checkEdit' value='${Agreement}' />
+                <div>I agree to the <a class='link'>terms of service</a></div>
+            </div>
+            <div class='button login-button'>
+                Sign Up
+            </div>
+        </div>
+    </div>
+</div>

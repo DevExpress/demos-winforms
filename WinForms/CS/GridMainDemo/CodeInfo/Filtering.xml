@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>sbInfo</name>
+				<windowcaption>Filter info</windowcaption>
+				<description>Displays the form containing information about current filter settings.</description>
+        <memberlist>ColumnViewOptionsFilter.ColumnFilterPopupMaxRecordsCount, ColumnViewOptionsFilter.ColumnFilterPopupRowCount, ColumnViewOptionsFilter.MRUColumnFilterListCount, ColumnViewOptionsFilter.MRUFilterListCount, ColumnViewOptionsFilter.MRUFilterListPopupCount, GridView.RowCount</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    <controlentry>
+      <control>
+        <name>ceAllowFilter</name>
+        <windowcaption>Allow demo filter</windowcaption>
+        <description>Enables data filtering and applies a demo filter criteria, set via the FilterInfoProperty. Unchecking this item calls the ClearColumnsFilter that resets all applied filter conditions.</description>
+        <memberlist>GridOptionsCustomization.AllowFilter, GridColumn.FilterInfo, ColumnView.ClearColumnsFilter</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceFilterEditor</name>
+        <windowcaption>Filter editor</windowcaption>
+        <description>Specifies whether Filter Editor is enabled. The Filter Editor allows end-users to build complex filter criteria with an unlimited number of filter conditions, combined by logical operators.</description>
+        <memberlist>ColumnViewOptionsFilter.AllowFilterEditor</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceAdvDialog</name>
+        <windowcaption>Advanced filter dialog</windowcaption>
+        <description>The UseNewCustomFilterDialog property specifies whether the advanced custom filter dialog is used instead of the standard one. Advanced filter dialog filter dialog allows you to compare column values with other column values.</description>
+        <memberlist>ColumnViewOptionsFilter.UseNewCustomFilterDialog</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceFilterList</name>
+        <windowcaption>MRU filter list</windowcaption>
+        <description>Enables or disables the View's MRU filter dropdown list that displays the most recently used filters.</description>
+        <memberlist>ColumnViewOptionsFilter.AllowMRUFilterList</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>ceColumnFilterList</name>
+        <windowcaption>Column MRU filter list</windowcaption>
+        <description>The AllowColumnMRUFilterList property specifies whether recently used filter items are displayed in the Filter dropdowns for columns.</description>
+        <memberlist>ColumnViewOptionsFilter.AllowColumnMRUFilterList</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

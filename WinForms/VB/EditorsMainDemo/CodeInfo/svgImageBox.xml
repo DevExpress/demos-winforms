@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <controls>
+    <controlentry>
+      <control>
+        <name>svgImageBox</name>
+        <windowcaption>SvgImage Box</windowcaption>
+        <description>The SvgImageBox control provides the QueryHoveredItem, ItemEnter, ItemLeave, ItemClick and PopupMenuShowing events to interact with the SVG image's items.<newline></newline><newline></newline>The QueryHoveredItem event allows you to specify a custom item as "hovered" when you move the mouse cursor over items. For instance, you can specify a group as "hovered" when you hover over the group's item.</description>
+        <memberlist>SvgImageBox.QueryHoveredItem, SvgImageBox.ItemEnter, SvgImageBox.ItemLeave, SvgImageBox.ItemClick, SvgImageBox.PopupMenuShowing</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>sizeModeComboBox</name>
+        <windowcaption>Size Mode</windowcaption>
+        <description>The SizeMode property specifies whether and how the image is stretched.</description>
+        <memberlist>SvgImageBox.SizeMode</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>hitTestTypeComboBox</name>
+        <windowcaption>Item HitTest Type</windowcaption>
+        <description>The ItemHitTestType property specifies the item hit-test type.<newline></newline><newline></newline>Precise - An item is detected when a point is within the item's graphical path. Group items do not have visible contours, and, thus, they are not hit-tested in this mode.<newline></newline><newline></newline>BoundingBox - An item is detected when a point is within the item's bounding rectangle. Groups are hit-tested in this mode when a point is within a rectangle within which all child items lie.</description>
+        <memberlist>SvgImageBox.ItemHitTestType</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>selectionModeComboBox</name>
+        <windowcaption>Selection Mode</windowcaption>
+        <description>A user can select items by clicking on them with the mouse. Use the SelectionMode property to choose between Single and Multiple item selection modes.</description>
+        <memberlist>SvgImageBox.SelectionMode</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>useCtrlToMultiSelectToggleSwitch</name>
+        <windowcaption>Use Ctrl Key in Multiple Selection Mode</windowcaption>
+        <description>The UseCtrlToMultiSelect property specifies whether a user needs to press the CTRL key to select image items by clicking them with the mouse cursor. This property is in effect in Multiple selection mode.</description>
+        <memberlist>SvgImageBox.UseCtrlToMultiSelect</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+    <controlentry>
+      <control>
+        <name>selectedItemsListBox</name>
+        <windowcaption>Selection</windowcaption>
+        <description>The SvgImageBox control provides properties and events to manipulate item selection. For instance, the SelectionChanging event can be handled to prevent the selection from being cleared on a mouse click. The Selection property allows you to access currently selected items and modify the selection in code.</description>
+        <memberlist>SvgImageBox.Selection, SvgImageBox.SelectionChanging, SvgImageBox.SelectionChanged</memberlist>
+        <dtimage></dtimage>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

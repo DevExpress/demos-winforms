@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <ProjectGuid>{AE0294CD-61E0-4207-A834-82841AA64CED}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>GaugesMainDemo</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <Name>DevExpress.Data.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <Name>DevExpress.Tutorials.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <Name>DevExpress.Utils.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v26.1">
+      <Name>DevExpress.Xpo.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <Name>DevExpress.XtraBars.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <Name>DevExpress.XtraEditors.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Presets">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <Name>DevExpress.XtraNavBar.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DemoControls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemosRegistration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dsCategories.vb">
+      <DependentUpon>dsCategories.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsCategories.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCategories.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEmployees.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModulesAnyControl\GaugeEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModulesAnyControl\GaugeEditor.Designer.vb">
+      <DependentUpon>GaugeEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesAnyControl\Tasks.vb" />
+    <Compile Include="Modules\AnalogClock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AnalogClock.Designer.vb">
+      <DependentUpon>AnalogClock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AnimationScale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AnimationScale.Designer.vb">
+      <DependentUpon>AnimationScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AutoLayout.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AutoLayout.Designer.vb">
+      <DependentUpon>AutoLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BaseControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\BaseControl.Designer.vb">
+      <DependentUpon>BaseControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CircularGaugeFeatures.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CircularGaugeFeatures.Designer.vb">
+      <DependentUpon>CircularGaugeFeatures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ColorPickerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ColorPickerControl.Designer.vb">
+      <DependentUpon>ColorPickerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ColorSchemeGauges.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ColorSchemeGauges.Designer.vb">
+      <DependentUpon>ColorSchemeGauges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomDraw.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomDraw.Designer.vb">
+      <DependentUpon>CustomDraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Databinding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Databinding.Designer.vb">
+      <DependentUpon>Databinding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DigitalClock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DigitalClock.Designer.vb">
+      <DependentUpon>DigitalClock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DigitalGaugeFeatures.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DigitalGaugeFeatures.Designer.vb">
+      <DependentUpon>DigitalGaugeFeatures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DigitalGauges.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DigitalGauges.Designer.vb">
+      <DependentUpon>DigitalGauges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GaugesDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GaugesDashboard.Designer.vb">
+      <DependentUpon>GaugesDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Interaction.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Interaction.Designer.vb">
+      <DependentUpon>Interaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LinearGaugeFeatures.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LinearGaugeFeatures.Designer.vb">
+      <DependentUpon>LinearGaugeFeatures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GaugeStylesXPF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GaugeStylesXPF.Designer.vb">
+      <DependentUpon>GaugeStylesXPF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LogarithmicScaleGaugeFeatures.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\LogarithmicScaleGaugeFeatures.Designer.vb">
+      <DependentUpon>LogarithmicScaleGaugeFeatures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NewPresets.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\NewPresets.Designer.vb">
+      <DependentUpon>NewPresets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NewStyles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\NewStyles.Designer.vb">
+      <DependentUpon>NewStyles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\StateImageIndicatorWeatherStation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\StateImageIndicatorWeatherStation.Designer.vb">
+      <DependentUpon>StateImageIndicatorWeatherStation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\StateIndicatorGaugeFeatures.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\StateIndicatorGaugeFeatures.Designer.vb">
+      <DependentUpon>StateIndicatorGaugeFeatures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\StyleManager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\StyleManager.Designer.vb">
+      <DependentUpon>StyleManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Styles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Styles.Designer.vb">
+      <DependentUpon>Styles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SysInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SysInfo.Designer.vb">
+      <DependentUpon>SysInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TravelingLine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TravelingLine.Designer.vb">
+      <DependentUpon>TravelingLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WeatherStation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WeatherStation.Designer.vb">
+      <DependentUpon>WeatherStation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GaugeContent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GaugeContent.Designer.vb">
+      <DependentUpon>GaugeContent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WorldTime.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WorldTime.Designer.vb">
+      <DependentUpon>WorldTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Zoom.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Zoom.Designer.vb">
+      <DependentUpon>Zoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\net.webservicex.www\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ModulesAnyControl\GaugeEditor.resx">
+      <DependentUpon>GaugeEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AnalogClock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalogClock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AutoLayout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AutoLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\BaseControl.resx">
+      <DependentUpon>BaseControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CircularGaugeFeatures.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CircularGaugeFeatures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ColorPickerControl.resx">
+      <DependentUpon>ColorPickerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ColorSchemeGauges.resx">
+      <DependentUpon>ColorSchemeGauges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DigitalClock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DigitalClock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DigitalGaugeFeatures.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DigitalGaugeFeatures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GaugesDashboard.resx">
+      <DependentUpon>GaugesDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StateImageIndicatorWeatherStation.resx">
+      <DependentUpon>StateImageIndicatorWeatherStation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WeatherStation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WeatherStation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GaugeContent.resx">
+      <DependentUpon>GaugeContent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Zoom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Zoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>DevExpress.XtraGauges.Demos.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Content Include="dsCategories.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCategories.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="dsEmployees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployees.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.webservicex.net/WeatherForecast.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\net.webservicex.www\</RelPath>
+      <UpdateFromURL>http://www.webservicex.net/WeatherForecast.asmx%3fWSDL</UpdateFromURL>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>GaugesMainDemo_net_webservicex_www_WeatherForecast</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\weather.xml" />
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Databinding.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Databinding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Interaction.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Interaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LinearGaugeFeatures.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinearGaugeFeatures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StateIndicatorGaugeFeatures.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StateIndicatorGaugeFeatures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Styles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Styles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TravelingLine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TravelingLine.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\CustomDraw.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDraw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DigitalGauges.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DigitalGauges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GaugeStylesXPF.resx">
+      <DependentUpon>GaugeStylesXPF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\NewPresets.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewPresets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\NewStyles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewStyles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StyleManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StyleManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SysInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SysInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WorldTime.resx">
+      <DependentUpon>WorldTime.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\XtraGauges.png" />
+    <EmbeddedResource Include="Images\XtraGauges_light.png" />
+    <EmbeddedResource Include="Modules\AnimationScale.resx">
+      <DependentUpon>AnimationScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\LogarithmicScaleGaugeFeatures.resx">
+      <DependentUpon>LogarithmicScaleGaugeFeatures.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodeInfo\GaugeEditor.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.DevAV.v26.1.Data">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+  <PackageReference Include="System.Management" />
+  <PackageReference Include="System.Data.OleDb" />
+  <PackageReference Include="System.Data.SqlClient" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+		<GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

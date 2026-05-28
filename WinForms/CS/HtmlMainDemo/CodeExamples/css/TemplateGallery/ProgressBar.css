@@ -1,0 +1,95 @@
+﻿.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 8px 16px 24px 16px;
+}
+
+.header {
+	margin: 8px 0px;
+	font-weight: bold;
+	font-size: 14px;
+	color: @WindowText;
+}
+
+.label {
+	margin: 8px 0px;
+	font-weight: bold;
+	font-size: 12px;
+	color: @WindowText;
+}
+
+.label-description {
+	color: @DisabledText;
+	font-style: italic;
+	font-size: 10px;
+}
+
+.shadow {
+	border-color: lightgray;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 8px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.popup {
+	background-color: @Window;
+	color: @WindowText;
+	border-radius: 8px;
+	padding: 16px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+}
+
+.w120 {
+	width: 120px;
+}
+
+.w150 {
+	width: 150px;
+}
+
+.w220 {
+	width: 220px;
+}
+
+.w200 {
+	width: 200px;
+}
+
+.progress {
+	height: 2px;
+	border-radius: 2px;
+	margin: 6px 0px;
+}
+
+.green {
+	background-color: @green/0.6;
+	box-shadow: 0px 0px 6px @green/0.4;
+}
+
+.blue {
+	background-color: @blue/0.6;
+	box-shadow: 0px 0px 6px @blue/0.4;
+}
+
+.blue {
+	background-color: @blue/0.6;
+	box-shadow: 0px 0px 6px @blue/0.4;
+}
+
+.red {
+	background-color: @red/0.6;
+	box-shadow: 0px 0px 6px @red/0.4;
+}
+
+.orange {
+	background-color: @orange/0.6;
+	box-shadow: 0px 0px 6px @orange/0.4;
+}

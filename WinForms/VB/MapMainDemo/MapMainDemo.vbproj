@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="16.0">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <ProjectGuid>{8FC73700-23FB-4E8D-B117-F8DBD4FD4130}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <AssemblyName>MapMainDemo</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <BaseIntermediateOutputPath>obj_netFW</BaseIntermediateOutputPath>
+    <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <ConvertToNet8Windows />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <!--ONLY NETCORE3
+<ItemGroup>
+  <PackageReference Include="DevExpress.Design.Nuget" Condition="$(DEMO_REMOVE)==''" />
+</ItemGroup>
+ONLY NETCORE3-->
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v26.1.Core">
+      <Name>DevExpress.Charts.v26.1.Core</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v26.1">
+      <Name>DevExpress.CodeParser.v26.1</Name>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+      <Name>DevExpress.BonusSkins.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v26.1">
+      <Name>DevExpress.Data.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1">
+      <Name>DevExpress.XtraCharts.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v26.1.UI">
+      <Name>DevExpress.XtraCharts.v26.1.UI</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v26.1">
+      <Name>DevExpress.XtraDialogs.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Core">
+      <Name>DevExpress.XtraGauges.v26.1.Core</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v26.1.Win">
+      <Name>DevExpress.XtraGauges.v26.1.Win</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v26.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v26.1">
+      <Name>DevExpress.XtraMap.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <Name>DevExpress.Tutorials.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v26.1">
+      <Name>DevExpress.Utils.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v26.1">
+      <Name>DevExpress.XtraBars.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v26.1">
+      <Name>DevExpress.XtraEditors.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v26.1">
+      <Name>DevExpress.XtraNavBar.v26.1</Name>
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Name>System.Data.DataSetExtensions</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Name>System.XML.Linq</Name>
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="System.Text.Json">
+      <netcore3ignore />
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="DayAndNightLineCalculator.vb" />
+    <Compile Include="FlagsGameCore.vb" />
+    <Compile Include="MapPixelColorWheel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\AzureMapsProvider.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AzureMapsProvider.Designer.vb">
+      <DependentUpon>AzureMapsProvider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ClusterCustomization.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ClusterCustomization.Designer.vb">
+      <DependentUpon>ClusterCustomization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RouteIsochrones.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RouteIsochrones.Designer.vb">
+      <DependentUpon>RouteIsochrones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TrafficAndIncidents.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TrafficAndIncidents.Designer.vb">
+      <DependentUpon>TrafficAndIncidents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FooteredMapTutorialControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FooteredMapTutorialControl.Designer.vb">
+      <DependentUpon>FooteredMapTutorialControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MapArrows.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MapArrows.Designer.vb">
+      <DependentUpon>MapArrows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ShapeImage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ShapeImage.Designer.vb">
+      <DependentUpon>ShapeImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HeatMap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\HeatMap.Designer.vb">
+      <DependentUpon>HeatMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GpxDataAdapter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GpxDataAdapter.Designer.vb">
+      <DependentUpon>GpxDataAdapter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ShapeSimplifier.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ShapeSimplifier.Designer.vb">
+      <DependentUpon>ShapeSimplifier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DirectionsNavigation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DirectionsNavigation.Designer.vb">
+      <DependentUpon>DirectionsNavigation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Clustering.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Clustering.Designer.vb">
+      <DependentUpon>Clustering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MapEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MapEditor.Designer.vb">
+      <DependentUpon>MapEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ItemsMoving.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ItemsMoving.Designer.vb">
+      <DependentUpon>ItemsMoving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MapOverlays.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MapOverlays.Designer.vb">
+      <DependentUpon>MapOverlays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CoordinateSystems.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CoordinateSystems.Designer.vb">
+      <DependentUpon>CoordinateSystems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Controls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemosRegistration.vb" />
+    <Compile Include="DemoUtils.vb" />
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\About.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BubbleCharts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\BubbleCharts.Designer.vb">
+      <DependentUpon>BubbleCharts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MapElements.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MapElements.Designer.vb">
+      <DependentUpon>MapElements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PieCharts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PieCharts.Designer.vb">
+      <DependentUpon>PieCharts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PixelMap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PixelMap.Designer.vb">
+      <DependentUpon>PixelMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PhotoGallery.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\PhotoGallery.Designer.vb">
+      <DependentUpon>PhotoGallery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SalesDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SalesDashboard.Designer.vb">
+      <DependentUpon>SalesDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OpenStreetMapProvider.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OpenStreetMapProvider.Designer.vb">
+      <DependentUpon>OpenStreetMapProvider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VectorItemDataSource.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\VectorItemDataSource.Designer.vb">
+      <DependentUpon>VectorItemDataSource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ImportExport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ImportExport.Designer.vb">
+      <DependentUpon>ImportExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MapProjections.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MapProjections.Designer.vb">
+      <DependentUpon>MapProjections.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WebMapService.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\WebMapService.Designer.vb">
+      <DependentUpon>WebMapService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayUtils.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\AzureMapsProvider.resx">
+      <DependentUpon>AzureMapsProvider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ClusterCustomization.resx">
+      <DependentUpon>ClusterCustomization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RouteIsochrones.resx">
+      <DependentUpon>RouteIsochrones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TrafficAndIncidents.resx">
+      <DependentUpon>TrafficAndIncidents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FooteredMapTutorialControl.resx">
+      <DependentUpon>FooteredMapTutorialControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MapArrows.resx">
+      <DependentUpon>MapArrows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ShapeImage.resx">
+      <DependentUpon>ShapeImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\HeatMap.resx">
+      <DependentUpon>HeatMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GpxDataAdapter.resx">
+      <DependentUpon>GpxDataAdapter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ShapeSimplifier.resx">
+      <DependentUpon>ShapeSimplifier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DirectionsNavigation.resx">
+      <DependentUpon>DirectionsNavigation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Clustering.resx">
+      <DependentUpon>Clustering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MapEditor.resx">
+      <DependentUpon>MapEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ItemsMoving.resx">
+      <DependentUpon>ItemsMoving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MapOverlays.resx">
+      <DependentUpon>MapOverlays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CoordinateSystems.resx">
+      <DependentUpon>CoordinateSystems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Controls.resx">
+      <DependentUpon>Controls.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\BubbleCharts.resx">
+      <DependentUpon>BubbleCharts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MapElements.resx">
+      <DependentUpon>MapElements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PieCharts.resx">
+      <DependentUpon>PieCharts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PixelMap.resx">
+      <DependentUpon>PixelMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PhotoGallery.resx">
+      <DependentUpon>PhotoGallery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SalesDashboard.resx">
+      <DependentUpon>SalesDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OpenStreetMapProvider.resx">
+      <DependentUpon>OpenStreetMapProvider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VectorItemDataSource.resx">
+      <DependentUpon>VectorItemDataSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ImportExport.resx">
+      <DependentUpon>ImportExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MapProjections.resx">
+      <DependentUpon>MapProjections.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WebMapService.resx">
+      <DependentUpon>WebMapService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>DevExpress.XtraMap.Demos.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\XtraMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\weather_degreefahrenheit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ShapeImage\CentralPark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_NavigationBar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Backward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CurrentTime.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Forward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\InitialView.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LockNavigation.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Time.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Travel_Map.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomIn.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomOut.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\weather_degreecelsius.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Clear.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Action_Debug_Start.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Stop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Details.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Color.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\f3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\f4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\f6.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\f8.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Attribute.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Custom callout.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Default.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Distance-based.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Export.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\GDP.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\InlineSizeLegend.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LegendAlignment.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Marker.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\NestedSizeLegend.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\None.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Political.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Population.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alignment1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alignment2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alignment3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alignment4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alignment5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alignment6.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alignment7.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alignment8.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FormatKML.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FormatSHP.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FormatSVG.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ShowGrid.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <!--ONLY NETCORE3  
+    <PropertyGroup>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    </PropertyGroup>
+ONLY NETCORE3-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

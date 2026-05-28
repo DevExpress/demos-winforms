@@ -1,0 +1,139 @@
+{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red43\green145\blue175;\red163\green21\blue21;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sl276\slmult1\cf1\lang9\f0\fs19 using\cf0  System.Collections.Generic;\par
+\cf1 using\cf0  System.IO;\par
+\cf1 using\cf0  System.Windows.Forms;\par
+\cf1 using\cf0  DevExpress.XtraBars.Docking2010.Views;\par
+\cf1 using\cf0  DevExpress.XtraBars.Helpers;\par
+\cf1 using\cf0  DevExpress.XtraSplashScreen;\par
+\par
+\cf1 namespace\cf0  DevExpress.XtraBars.Demos.DockingDemo \{\par
+    \cf1 public\cf0  \cf1 partial\cf0  \cf1 class\cf0  \cf3 frmMain\cf0  : DevExpress.XtraEditors.\cf3 XtraForm\cf0  \{\par
+        \cf3 List\cf0 <\cf3 Stream\cf0 > fileStreams;\par
+        \cf1 public\cf0  frmMain() \{\par
+            InitializeComponent();\par
+        \}\par
+        \cf1 void\cf0  frmMain_Load(\cf1 object\cf0  sender, System.\cf3 EventArgs\cf0  e) \{\par
+            \cf1 this\cf0 .fileStreams = \cf3 Program\cf0 .CreateResourceStreams();\par
+            \cf3 ucSolutionExplorer\cf0 .InitTreeView(treeView1);\par
+            \cf3 SkinHelper\cf0 .InitSkinPopupMenu(iPaintStyle);\par
+            BeginInvoke(\cf1 new\cf0  \cf3 MethodInvoker\cf0 (InitDemo));\par
+        \}\par
+        \cf1 void\cf0  barManager1_Merge(\cf1 object\cf0  sender, \cf3 BarManagerMergeEventArgs\cf0  e) \{\par
+            barManager.Bars[\cf4 "Edit"\cf0 ].Merge(e.ChildManager.Bars[\cf4 "Edit"\cf0 ]);\par
+        \}\par
+        \cf1 void\cf0  barManager1_UnMerge(\cf1 object\cf0  sender, \cf3 BarManagerMergeEventArgs\cf0  e) \{\par
+            barManager.Bars[\cf4 "Edit"\cf0 ].UnMerge();\par
+        \}\par
+        \cf1 void\cf0  InitDemo() \{\par
+            AddNewDocument(\cf4 "File.cs"\cf0 );\par
+            DevExpress.Demos.\cf3 ClassViewer\cf0 .AddClassInfo(treeView1, \cf1 this\cf0 .GetType(), \cf1 new\cf0  \cf1 object\cf0 [] \{ \cf1 this\cf0 , \cf1 new\cf0  \cf3 ucSolutionExplorer\cf0 () \});\par
+            \cf3 SplashScreenManager\cf0 .HideImage();\par
+        \}\par
+        \cf1 int\cf0  fileIndex = 0;\par
+        \cf1 void\cf0  AddNewDocument(\cf1 string\cf0  fileName) \{\par
+            fileStreams[fileIndex].Seek(0, \cf3 SeekOrigin\cf0 .Begin);\par
+            AddNewDocument(fileName, fileStreams[fileIndex]);\par
+            fileIndex = (fileIndex++) % 3;\par
+        \}\par
+        \cf1 void\cf0  AddNewDocument(\cf1 string\cf0  fileName, \cf3 Stream\cf0  content) \{\par
+            tabbedView.BeginUpdate();\par
+            \cf3 ucCodeEditor\cf0  control = \cf1 new\cf0  \cf3 ucCodeEditor\cf0 ();\par
+            control.Name = fileName;\par
+            control.Text = fileName + \cf4 ".cs"\cf0 ;\par
+            \cf3 BaseDocument\cf0  document = tabbedView.Controller.AddDocument(control);\par
+            document.Image = fileTypeImages.Images[10];\par
+            document.Footer = \cf3 Directory\cf0 .GetCurrentDirectory();\par
+            control.LoadCode(content);\par
+            tabbedView.EndUpdate();\par
+            tabbedView.Controller.Activate(document);\par
+        \}\par
+        \cf1 void\cf0  repositoryItemComboBox1_KeyDown(\cf1 object\cf0  sender, System.Windows.Forms.\cf3 KeyEventArgs\cf0  e) \{\par
+            \cf1 if\cf0 (e.KeyCode == \cf3 Keys\cf0 .Enter && eFind.EditValue != \cf1 null\cf0 )\par
+                repositoryItemComboBox1.Items.Add(eFind.EditValue.ToString());\par
+        \}\par
+        \cf1 int\cf0  projectIndex = 0;\par
+        \cf1 void\cf0  iNewItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            AddNewDocument(\cf1 string\cf0 .Format(\cf4 "File\{0\}.cs"\cf0 , ++projectIndex));\par
+        \}\par
+        \cf1 void\cf0  iAbout_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            DevExpress.Utils.About.\cf3 AboutForm\cf0 .Show(\cf1 new\cf0  DevExpress.Utils.About.\cf3 ProductInfo\cf0 (\cf1 string\cf0 .Empty, \cf1 typeof\cf0 (\cf3 frmMain\cf0 ),\par
+                DevExpress.Utils.About.\cf3 ProductKind\cf0 .DXperienceWin, DevExpress.Utils.About.\cf3 ProductInfoStage\cf0 .Registered));\par
+        \}\par
+        \cf1 void\cf0  iSolutionExplorer_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            dockPanel1.Show();\par
+        \}\par
+        \cf1 void\cf0  iProperties_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            dockPanel2.Show();\par
+        \}\par
+        \cf1 void\cf0  iTaskList_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            dockPanel3.Show();\par
+        \}\par
+        \cf1 void\cf0  iFindResults_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            dockPanel4.Show();\par
+        \}\par
+        \cf1 void\cf0  iOutput_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            dockPanel5.Show();\par
+        \}\par
+        \cf1 void\cf0  iToolbox_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            dockPanel6.Show();\par
+        \}\par
+        \cf1 void\cf0  solutionExplorer_PropertiesItemClick(\cf1 object\cf0  sender, System.\cf3 EventArgs\cf0  e) \{\par
+            dockPanel2.Show();\par
+        \}\par
+        \cf1 void\cf0  solutionExplorer_TreeViewItemClick(\cf1 object\cf0  sender, System.\cf3 EventArgs\cf0  e) \{\par
+            DevExpress.XtraTreeList.\cf3 TreeList\cf0  treeView = sender \cf1 as\cf0  DevExpress.XtraTreeList.\cf3 TreeList\cf0 ;\par
+            \cf1 string\cf0  fileName = treeView.FocusedNode.GetDisplayText(0).Replace(\cf4 ".cs"\cf0 , \cf1 string\cf0 .Empty);\par
+            \cf1 foreach\cf0 (\cf3 BaseDocument\cf0  document \cf1 in\cf0  tabbedView.Documents) \{\par
+                \cf1 if\cf0 (document.Caption == (fileName + \cf4 ".cs"\cf0 )) \{\par
+                    tabbedView.Controller.Activate(document);\par
+                    \cf1 return\cf0 ;\par
+                \}\par
+            \}\par
+            \cf1 using\cf0 (\cf3 Stream\cf0  stream = \cf3 Program\cf0 .GetDocumentStream(fileName)) \{\par
+                \cf1 if\cf0 (stream != \cf1 null\cf0 )\par
+                    AddNewDocument(fileName + \cf4 ".cs"\cf0 , stream);\par
+            \}\par
+        \}\par
+        \cf1 void\cf0  iSaveLayout_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            \cf1 using\cf0 (\cf3 SaveFileDialog\cf0  dlg = \cf1 new\cf0  \cf3 SaveFileDialog\cf0 ()) \{\par
+                dlg.Filter = \cf4 "XML files (*.xml)|*.xml"\cf0 ;\par
+                dlg.Title = \cf4 "Save Layout"\cf0 ;\par
+                \cf1 if\cf0 (dlg.ShowDialog() == \cf3 DialogResult\cf0 .OK) \{\par
+                    Refresh(\cf1 true\cf0 );\par
+                    barManager.SaveToXml(dlg.FileName);\par
+                    Refresh(\cf1 false\cf0 );\par
+                \}\par
+            \}\par
+        \}\par
+        \cf1 void\cf0  iLoadLayout_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            \cf1 using\cf0 (\cf3 OpenFileDialog\cf0  dlg = \cf1 new\cf0  \cf3 OpenFileDialog\cf0 ()) \{\par
+                dlg.Filter = \cf4 "XML files (*.xml)|*.xml|All files|*.*"\cf0 ;\par
+                dlg.Title = \cf4 "Restore Layout"\cf0 ;\par
+                \cf1 if\cf0 (dlg.ShowDialog() == \cf3 DialogResult\cf0 .OK) \{\par
+                    Refresh(\cf1 true\cf0 );\par
+                    \cf1 try\cf0  \{\par
+                        barManager.RestoreFromXml(dlg.FileName);\par
+                        \cf3 SkinHelper\cf0 .InitSkinPopupMenu(iPaintStyle);\par
+                    \}\par
+                    \cf1 catch\cf0  \{ \}\par
+                    Refresh(\cf1 false\cf0 );\par
+                \}\par
+            \}\par
+        \}\par
+        \cf3 Cursor\cf0  currentCursor;\par
+        \cf1 void\cf0  Refresh(\cf1 bool\cf0  isWait) \{\par
+            \cf1 if\cf0 (isWait) \{\par
+                currentCursor = \cf3 Cursor\cf0 .Current;\par
+                \cf3 Cursor\cf0 .Current = \cf3 Cursors\cf0 .WaitCursor;\par
+            \}\par
+            \cf1 else\cf0  \cf3 Cursor\cf0 .Current = currentCursor;\par
+            \cf1 this\cf0 .Refresh();\par
+        \}\par
+        \cf1 void\cf0  iExit_ItemClick(\cf1 object\cf0  sender, DevExpress.XtraBars.\cf3 ItemClickEventArgs\cf0  e) \{\par
+            \cf1 this\cf0 .Close();\par
+        \}\par
+    \}\par
+\}\cf0\f1\fs22\par
+}
+ 

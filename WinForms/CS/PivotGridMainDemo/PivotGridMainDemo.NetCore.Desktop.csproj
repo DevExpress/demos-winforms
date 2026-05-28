@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <Target Name="EmbedCodeExampleResources" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <EmbeddedResource Include="$(MSBuildProjectDirectory)\CodeExamples\*.*" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <ProjectGuid>{3013E2D8-3563-0391-0A4C-E4466A7C6C42}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.XtraPivotGrid.Demos</RootNamespace>
+    <AssemblyName>PivotGridMainDemo</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <FileAlignment>4096</FileAlignment>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>PivotGridDemoDbEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>PivotGridDemoDbEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\OLAPConnectionHelper.cs" />
+    <Compile Include="Modules\FixedColumns.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FixedColumns.Designer.cs">
+      <DependentUpon>FixedColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>PivotGridDemoDbEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PivotGridDemoDbEntityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PivotGridDemoDbEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>PivotGridDemoDbEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sale.cs">
+      <DependentUpon>PivotGridDemoDbEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesPeople.cs">
+      <DependentUpon>PivotGridDemoDbEntityModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CodeInfo\FixedColumns.xml" />
+    <Content Include="PivotGridDemoDbEntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PivotGridDemoDbEntityModel.Context.cs</LastGenOutput>
+      <DependentUpon>PivotGridDemoDbEntityModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="PivotGridDemoDbEntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PivotGridDemoDbEntityModel.edmx</DependentUpon>
+      <LastGenOutput>PivotGridDemoDbEntityModel.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Modules\FixedColumns.resx">
+      <DependentUpon>FixedColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\isBlackFridayDiscount.svg" />
+    <EmbeddedResource Include="Resources\Actions_Calendar.svg" />
+    <EmbeddedResource Include="Resources\user.svg" />
+    <EmbeddedResource Include="Resources\productSales.svg" />
+    <EmbeddedResource Include="Resources\personalID.svg" />
+    <EmbeddedResource Include="Resources\order_id.svg" />
+    <EmbeddedResource Include="Resources\sum.svg" />
+    <EmbeddedResource Include="Resources\seafood.svg" />
+    <EmbeddedResource Include="Resources\produce.svg" />
+    <EmbeddedResource Include="Resources\meatPoultry.svg" />
+    <EmbeddedResource Include="Resources\grainsCereals.svg" />
+    <EmbeddedResource Include="Resources\dairyProduct.svg" />
+    <EmbeddedResource Include="Resources\confections.svg" />
+    <EmbeddedResource Include="Resources\condiments.svg" />
+    <EmbeddedResource Include="Resources\beverages.svg" />
+    <Compile Include="DemoControls.cs" />
+    <Compile Include="CodeExamples\Aggr.cs" />
+    <Compile Include="CodeExamples\Appearances.cs" />
+    <Compile Include="CodeExamples\ChartIntegration.cs" />
+    <Compile Include="CodeExamples\Layout.cs" />
+    <Compile Include="CodeExamples\OLAPIntegration.cs" />
+    <Compile Include="CodeExamples\OptimizedModeCalculations.cs" />
+    <Compile Include="CodeExamples\Sorting.cs" />
+    <Compile Include="CodeExamples\Grouping.cs" />
+    <Compile Include="CodeExamples\DataProcessing.cs" />
+    <Compile Include="CodeExamples\Editing.cs" />
+    <Compile Include="CodeExamples\Filtering.cs" />
+    <Compile Include="DemosRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dsReports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalesPerson.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalesPerson.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers\OLAPConfigurator.cs" />
+    <Compile Include="Helpers\VehiclesData.cs" />
+    <Compile Include="Modules\CustomFunctions.cs" />
+    <Compile Include="Modules\Data.cs" />
+    <Compile Include="Modules\DrillDownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\DrillDownForm.Designer.cs">
+      <DependentUpon>DrillDownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CodeExamples.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CodeExamples.Designer.cs">
+      <DependentUpon>CodeExamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChartGeneralOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ChartGeneralOptions.Designer.cs">
+      <DependentUpon>ChartGeneralOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddNewBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\AddNewBonus.Designer.cs">
+      <DependentUpon>AddNewBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomChartData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomChartData.Designer.cs">
+      <DependentUpon>CustomChartData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ConditionalSortBySummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ConditionalSortBySummary.Designer.cs">
+      <DependentUpon>ConditionalSortBySummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ConditionItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ConditionItem.Designer.cs">
+      <DependentUpon>ConditionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CompactLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CompactLayout.Designer.cs">
+      <DependentUpon>CompactLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomCellValue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomCellValue.Designer.cs">
+      <DependentUpon>CustomCellValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DatabaseHelper.cs" />
+    <Compile Include="Modules\ExcelStyleFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ExcelStyleFilter.Designer.cs">
+      <DependentUpon>ExcelStyleFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FilterPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FilterPopup.Designer.cs">
+      <DependentUpon>FilterPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FormatRules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FormatRules.Designer.cs">
+      <DependentUpon>FormatRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\frmSQLConnector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\frmSQLConnector.Designer.cs">
+      <DependentUpon>frmSQLConnector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ServerMode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ServerMode.Designer.cs">
+      <DependentUpon>ServerMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CalculatedFields.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CalculatedFields.Designer.cs">
+      <DependentUpon>CalculatedFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomDrawEvents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomDrawEvents.Designer.cs">
+      <DependentUpon>CustomDrawEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomerReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomerReports.Designer.cs">
+      <DependentUpon>CustomerReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\InplaceEditors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\InplaceEditors.Designer.cs">
+      <DependentUpon>InplaceEditors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OLAPDrillDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OLAPDrillDown.Designer.cs">
+      <DependentUpon>OLAPDrillDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FieldsCustomization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\FieldsCustomization.Designer.cs">
+      <DependentUpon>FieldsCustomization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\frmStyleConditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\frmStyleConditions.Designer.cs">
+      <DependentUpon>frmStyleConditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GroupInterval.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\GroupInterval.Designer.cs">
+      <DependentUpon>GroupInterval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Groups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Groups.Designer.cs">
+      <DependentUpon>Groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HitInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\HitInfo.Designer.cs">
+      <DependentUpon>HitInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MultipleTotals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\MultipleTotals.Designer.cs">
+      <DependentUpon>MultipleTotals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OLAP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OLAP.Designer.cs">
+      <DependentUpon>OLAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OLAPCustomTotals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OLAPCustomTotals.Designer.cs">
+      <DependentUpon>OLAPCustomTotals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OLAPKPI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OLAPKPI.Designer.cs">
+      <DependentUpon>OLAPKPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OrderReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\OrderReports.Designer.cs">
+      <DependentUpon>OrderReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Filtering.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Filtering.Designer.cs">
+      <DependentUpon>Filtering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductReports.Designer.cs">
+      <DependentUpon>ProductReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RunTimeChangeSummaryType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RunTimeChangeSummaryType.Designer.cs">
+      <DependentUpon>RunTimeChangeSummaryType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AutomaticTotals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AutomaticTotals.Designer.cs">
+      <DependentUpon>AutomaticTotals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SortBySummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\SortBySummary.Designer.cs">
+      <DependentUpon>SortBySummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TopValues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TopValues.Designer.cs">
+      <DependentUpon>TopValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TotalsLocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\TotalsLocation.Designer.cs">
+      <DependentUpon>TotalsLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Validation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Validation.Designer.cs">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OLAPConnectionDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\OLAPConnectionDesigner.Designer.cs">
+      <DependentUpon>OLAPConnectionDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PivotGridDemoDbEntityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PivotGridDemoDbEntityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PivotGridDemoDbEntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PivotGridDemoDbEntityModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsDescriptions.cs" />
+    <EmbeddedResource Include="CodeInfo\AsyncMode.xml" />
+    <EmbeddedResource Include="CodeInfo\ChartGeneralOptions.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeInfo\CompactLayout.xml" />
+    <EmbeddedResource Include="CodeInfo\CustomCellValue.xml" />
+    <EmbeddedResource Include="CodeInfo\CustomChartData.xml" />
+    <EmbeddedResource Include="CodeInfo\CustomDrawEvents.xml" />
+    <EmbeddedResource Include="CodeInfo\CustomerReports.xml" />
+    <EmbeddedResource Include="CodeInfo\FieldsCustomization.xml" />
+    <EmbeddedResource Include="CodeInfo\FilterPopup.xml" />
+    <EmbeddedResource Include="CodeInfo\GroupInterval.xml" />
+    <EmbeddedResource Include="CodeInfo\Groups.xml" />
+    <EmbeddedResource Include="CodeInfo\HitInfo.xml" />
+    <EmbeddedResource Include="CodeInfo\InplaceEditors.xml" />
+    <EmbeddedResource Include="CodeInfo\MultipleTotals.xml" />
+    <EmbeddedResource Include="CodeInfo\OLAP.xml" />
+    <EmbeddedResource Include="CodeInfo\OlapCustomTotals.xml" />
+    <EmbeddedResource Include="CodeInfo\OLAPDrillDown.xml" />
+    <EmbeddedResource Include="CodeInfo\OLAPKPI.xml" />
+    <EmbeddedResource Include="CodeInfo\OrderReports.xml" />
+    <EmbeddedResource Include="CodeInfo\ProductReports.xml" />
+    <EmbeddedResource Include="CodeInfo\RunTimeChangeSummaryType.xml" />
+    <EmbeddedResource Include="CodeInfo\AutomaticTotals.xml" />
+    <EmbeddedResource Include="CodeInfo\SortBySummary.xml" />
+    <EmbeddedResource Include="CodeInfo\SummaryVariation.xml" />
+    <EmbeddedResource Include="CodeInfo\TopValues.xml" />
+    <EmbeddedResource Include="CodeInfo\TotalsLocation.xml" />
+    <EmbeddedResource Include="CodeInfo\Validation.xml" />
+    <EmbeddedResource Include="AppIcon.ico" />
+    <EmbeddedResource Include="CodeInfo\ServerMode.xml" />
+    <EmbeddedResource Include="CodeInfo\FormatRules.xml" />
+    <EmbeddedResource Include="CodeInfo\CalculatedFields.xml" />
+    <EmbeddedResource Include="CodeInfo\Filtering.xml" />
+    <EmbeddedResource Include="CodeInfo\ExcelStyleFilter.xml" />
+    <Content Include="dsReports.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReports.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="dsSalesPerson.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalesPerson.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Images\XtraPivotGrid.png" />
+    <EmbeddedResource Include="Images\XtraPivotGrid_light.png" />
+    <EmbeddedResource Include="ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\categories.bmp" />
+    <EmbeddedResource Include="Images\headers.bmp" />
+    <EmbeddedResource Include="Modules\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DrillDownForm.resx">
+      <DependentUpon>DrillDownForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ChartGeneralOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartGeneralOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddNewBonus.resx">
+      <DependentUpon>AddNewBonus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomChartData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomChartData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ConditionalSortBySummary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConditionalSortBySummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ConditionItem.resx">
+      <DependentUpon>ConditionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CompactLayout.resx">
+      <DependentUpon>CompactLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomCellValue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomCellValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomDrawEvents.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDrawEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomerReports.resx">
+      <DependentUpon>CustomerReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ExcelStyleFilter.resx">
+      <DependentUpon>ExcelStyleFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FieldsCustomization.resx">
+      <DependentUpon>FieldsCustomization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FilterPopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\FormatRules.resx">
+      <DependentUpon>FormatRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\frmSQLConnector.resx">
+      <DependentUpon>frmSQLConnector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\frmStyleConditions.resx">
+      <DependentUpon>frmStyleConditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GroupInterval.resx">
+      <DependentUpon>GroupInterval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Groups.resx">
+      <DependentUpon>Groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\HitInfo.resx">
+      <DependentUpon>HitInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\InplaceEditors.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InplaceEditors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\MultipleTotals.resx">
+      <DependentUpon>MultipleTotals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OLAP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OLAPConnectionDesigner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OLAPCustomTotals.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPCustomTotals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OLAPDrillDown.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPDrillDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OLAPKPI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPKPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\OrderReports.resx">
+      <DependentUpon>OrderReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Filtering.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Filtering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ProductReports.resx">
+      <DependentUpon>ProductReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RunTimeChangeSummaryType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RunTimeChangeSummaryType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ServerMode.resx">
+      <DependentUpon>ServerMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AutomaticTotals.resx">
+      <DependentUpon>AutomaticTotals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SortBySummary.resx">
+      <DependentUpon>SortBySummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TopValues.resx">
+      <DependentUpon>TopValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TotalsLocation.resx">
+      <DependentUpon>TotalsLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CalculatedFields.resx">
+      <DependentUpon>CalculatedFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Validation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Validation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EntityDeploy Include="PivotGridDemoDbEntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PivotGridDemoDbEntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="EntityFramework" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="System.Data.OleDb" />
+    <PackageReference Include="System.Data.SqlClient" />
+  </ItemGroup>
+  <PropertyGroup>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    <EmbeddedResourceUseDependentUponConvention>false</EmbeddedResourceUseDependentUponConvention>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+</Project>

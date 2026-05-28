@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<controls>
+	<controlentry>
+		<control>
+			<name>icbShowDropDown</name>
+			<windowcaption>Show DropDown</windowcaption>
+			<description>This combo box allows the behavior of a dropdown window when a user clicks within its text region to be specified.</description>
+			<memberlist>RepositoryItemPopupBase.ShowDropDown</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>seDropDownRows</name>
+			<windowcaption>Drop Down Rows</windowcaption>
+			<description>This spin editor allows the number of visible items in the dropdown window to be specified.</description>
+			<memberlist>RepositoryItemComboBox.DropDownRows</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceAutoComplete</name>
+			<windowcaption>Auto Complete</windowcaption>
+			<description>This check box enables or disables the auto completion feature. This feature allows end-users to select items from the dropdown by typing their first characters in the edit box.</description>
+			<memberlist>RepositoryItemComboBox.AutoComplete</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceCycleOnDblClick</name>
+			<windowcaption>Cycle On Double Click</windowcaption>
+			<description>This check box controls whether end-users can navigate through dropdown values by double clicking the edit box. It's enabled if the 'Never' item is selected in the 'Show DropDown' combo box.</description>
+			<memberlist>RepositoryItemComboBox.CycleOnDblClick</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceHotTrackItems</name>
+			<windowcaption>Hot Track Items</windowcaption>
+			<description>This check box allows you to specify whether the items in the dropdown are hot-tracked when the mouse pointer moves over them.</description>
+			<memberlist>RepositoryItemComboBox.HotTrackItems</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceImmediatePopup</name>
+			<windowcaption>Immediate Popup</windowcaption>
+			<description>This check box controls whether the popup window is displayed immediately after an end-user has typed a character in the edit box.</description>
+			<memberlist>RepositoryItemPopupBaseAutoSearchEdit.ImmediatePopup</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>cePopupSizeable</name>
+			<windowcaption>Popup Sizeable</windowcaption>
+			<description>This check box controls whether end-users can resize the dropdown window by dragging its bottom right corner. </description>
+			<memberlist>RepositoryItemPopupBaseAutoSearchEdit.PopupSizeable</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceCTRLScroll</name>
+			<windowcaption>Use CTRL Scroll</windowcaption>
+			<description>This check box controls whether end-users should hold down the CTRL key when traversing through the items in the edit box by pressing the Up and Down arrow keys.</description>
+			<memberlist>RepositoryItemComboBox.UseCtrlScroll</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>icbAlignment</name>
+			<windowcaption>Image Alignment</windowcaption>
+			<description>This combo box allows the alignment of the item's glyph in the edit box to be specified. If the 'Center' item is selected, an item's caption isn't displayed within the edit box.</description>
+			<memberlist>RepositoryItemImageComboBox.GlyphAlignment</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceLargeImages</name>
+			<windowcaption>Use Large Images</windowcaption>
+			<description>This check box controls whether the items display large images. If it's checked, the image list which contains the large images is assigned to the editor's LargeImages property.</description>
+			<memberlist>RepositoryItemImageComboBox.LargeImages</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+		<controlentry>
+		<control>
+			<name>imageComboBoxEdit1</name>
+			<windowcaption>ImageComboBox editor</windowcaption>
+			<description>The editor's EditValueChanged event is handled to indicate the selected item's index, value and description in the corresponding text editor.</description>
+			<memberlist>EditValueChanged event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+	<hints>
+		<hint>
+			<name>imageComboBoxEditSample</name>
+			<hinttext>#Keyboard<newline></newline>ALT+DOWN, F4 to show or hide the dropdown list<newline></newline>UP, DOWN keys to select the previous or next item<newline></newline>#Mouse Wheel<newline></newline>Supported<newline></newline>#Other End-User Actions<newline></newline>Use the controls on the right pane to learn which additional end-user customization methods are available</hinttext>
+		</hint>
+	</hints>
+
+</totalinfo>

@@ -1,0 +1,30 @@
+﻿.border1 {
+	border-left: solid 3px;
+	border-left-color: @Question;
+}
+
+.border2 {
+	border-left: solid 3px;
+	border-left-color: @Warning;
+}
+
+.border3 {
+	border-left: solid 3px;
+	border-left-color: @Critical;
+}
+
+.border4 {
+	border-left: solid 3px;
+	border-left-color: rgba(48,144,72,0.5);
+}
+
+div {
+	margin-bottom: 10px;
+	padding: 10px;
+	color: @Green;
+	background-color: @Window;
+}
+
+span {
+	color: @Black;
+}

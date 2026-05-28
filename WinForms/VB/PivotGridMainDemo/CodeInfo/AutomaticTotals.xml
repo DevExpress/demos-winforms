@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>icbField</name>
+				<windowcaption>Field</windowcaption>
+				<description>Specifies the Data Field to which summary settings are applied.</description>
+        <memberlist>PivotGridFieldBase.FieldName</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+    
+    <controlentry>
+      <control>
+        <name>icbSummaryType</name>
+        <windowcaption>Summary Type</windowcaption>
+        <description>Specifies the type of the summary function which is calculated against the current data field.</description>
+        <memberlist>PivotGridFieldBase.SummaryType</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>clbOptions</name>
+        <windowcaption>View Options</windowcaption>
+        <description>Contains specific PivotGridControl display options.</description>
+        <memberlist>PivotGridControl.OptionsView</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+  </controls>
+</totalinfo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo>
+	<controls>
+		<controlentry>
+			<control>
+				<name>ceTopValuesShowOthers</name>
+				<windowcaption>Show Others</windowcaption>
+				<description>Sets whether to show the "Others" item within a PivotGridControl when the Top X Value feature is enabled.</description>
+        <memberlist>PivotGridFieldBase.TopValueShowOthers, PivotGridFieldBase.TopValueCount</memberlist>
+				<dtimage/>
+			</control>
+		</controlentry>
+
+    <controlentry>
+      <control>
+        <name>seTop</name>
+        <windowcaption>Top Value Count</windowcaption>
+        <description>Specifies the number of field values that should be displayed for the current row field.</description>
+        <memberlist>PivotGridFieldBase.TopValueCount, PivotGridFieldBase.TopValueShowOthers</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+
+    <controlentry>
+      <control>
+        <name>icbField</name>
+        <windowcaption>Field</windowcaption>
+        <description>Sets a field whose values' number is limited using the Top X Values feature and sorts these values by summary values in rows.</description>
+        <memberlist>PivotGridControl.Fields, PivotGridFieldBase.SortBySummaryInfo</memberlist>
+        <dtimage/>
+      </control>
+    </controlentry>
+	</controls>
+</totalinfo>

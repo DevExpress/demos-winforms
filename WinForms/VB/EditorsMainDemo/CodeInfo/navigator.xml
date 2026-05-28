@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<totalinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="H:\Work\XML Schemes\module-new.xsd">
+	<controls>
+	<controlentry>
+		<control>
+			<name>icbTextLocations</name>
+			<windowcaption>Text Location</windowcaption>
+			<description>This combo box allows you to specify the location of the text displayed within the navigator.</description>
+			<memberlist>NavigatorBase.TextLocation</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceEnableAutoRepeat</name>
+			<windowcaption>Enable Auto Repeat</windowcaption>
+			<description>If this check box is checked, data records are scrolled repeatedly when the navigation button is held down. Otherwise, for each click on the navigation button one record is scrolled.</description>
+			<memberlist>NavigatorButtonsBase.EnabledAutoRepeat</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowToolTips</name>
+			<windowcaption>Show Tool Tips</windowcaption>
+			<description>This check box controls whether the navigator can display hints when the mouse pointer is over its buttons.</description>
+			<memberlist>DataNavigator.ShowToolTips, NavigatorButtonBase.Hint</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowCustomButtons</name>
+			<windowcaption>Show Custom Buttons</windowcaption>
+			<description>This check box shows or hides the custom buttons.</description>
+			<memberlist>NavigatorButtonsBase.CustomButtons</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowEditingButtons</name>
+			<windowcaption>Show Editing Buttons</windowcaption>
+			<description>This check box shows or hides the 'CancelEdit' and 'EndEdit' buttons.</description>
+			<memberlist>DataNavigatorButtons.CancelEdit, DataNavigatorButtons.EndEdit</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowAppendRemove</name>
+			<windowcaption>Show Append Remove</windowcaption>
+			<description>This check box shows or hides the 'Append' and 'Remove' buttons.</description>
+			<memberlist>DataNavigatorButtons.Append, DataNavigatorButtons.Remove</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>ceShowPageButtons</name>
+			<windowcaption>Show Page Buttons</windowcaption>
+			<description>This check box shows or hides the 'PrevPage' and 'NextPage' buttons.</description>
+			<memberlist>DataNavigatorButtons.PrevPage, DataNavigatorButtons.NextPage</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	<controlentry>
+		<control>
+			<name>dataNavigatorSample</name>
+			<windowcaption>Data Navigator</windowcaption>
+			<description>The ButtonClick event is raised when end users click the navigator's buttons. In this tutorial, this event is handled to display the type of the button clicked within the 'Button event log' memo editor.</description>
+			<memberlist>ButtonClick event</memberlist>
+			<dtimage></dtimage>
+		</control>
+	</controlentry>
+	</controls>
+</totalinfo>

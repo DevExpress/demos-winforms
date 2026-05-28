@@ -1,0 +1,748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="ceDiscontinued.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 98</value>
+  </data>
+  <data name="ceDiscontinued.Properties.Caption" xml:space="preserve">
+    <value>Discontinued</value>
+  </data>
+  <data name="ceDiscontinued.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="ceDiscontinued.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ceDiscontinued.Name" xml:space="preserve">
+    <value>ceDiscontinued</value>
+  </data>
+  <data name="&gt;&gt;ceDiscontinued.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceDiscontinued.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceDiscontinued.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="teQuantityPerUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 74</value>
+  </data>
+  <data name="teQuantityPerUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 20</value>
+  </data>
+  <data name="teQuantityPerUnit.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;teQuantityPerUnit.Name" xml:space="preserve">
+    <value>teQuantityPerUnit</value>
+  </data>
+  <data name="&gt;&gt;teQuantityPerUnit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;teQuantityPerUnit.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teQuantityPerUnit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="seUnitPrice.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="seUnitPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 50</value>
+  </data>
+  <data name="seUnitPrice.Properties.Mask.EditMask" xml:space="preserve">
+    <value>c</value>
+  </data>
+  <data name="seUnitPrice.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="seUnitPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 20</value>
+  </data>
+  <data name="seUnitPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <metadata name="dxValidationProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="&gt;&gt;seUnitPrice.Name" xml:space="preserve">
+    <value>seUnitPrice</value>
+  </data>
+  <data name="&gt;&gt;seUnitPrice.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;seUnitPrice.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;seUnitPrice.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="icbCategory.EditValue" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="icbCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 26</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v26.1" name="DevExpress.Utils.v26.1, Culture=neutral"></assembly>
+  <data name="icbCategory.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v26.1">
+    <value>Combo</value>
+  </data>
+  <data name="icbCategory.Properties.Items" xml:space="preserve">
+    <value>Beverages</value>
+  </data>
+  <data name="icbCategory.Properties.Items1" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="icbCategory.Properties.Items2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="icbCategory.Properties.Items3" xml:space="preserve">
+    <value>Condiments</value>
+  </data>
+  <data name="icbCategory.Properties.Items4" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="icbCategory.Properties.Items5" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="icbCategory.Properties.Items6" xml:space="preserve">
+    <value>Confections</value>
+  </data>
+  <data name="icbCategory.Properties.Items7" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="icbCategory.Properties.Items8" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="icbCategory.Properties.Items9" xml:space="preserve">
+    <value>Dairy Products</value>
+  </data>
+  <data name="icbCategory.Properties.Items10" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="icbCategory.Properties.Items11" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="icbCategory.Properties.Items12" xml:space="preserve">
+    <value>Grains/Cereals</value>
+  </data>
+  <data name="icbCategory.Properties.Items13" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="icbCategory.Properties.Items14" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="icbCategory.Properties.Items15" xml:space="preserve">
+    <value>Meat/Poultry</value>
+  </data>
+  <data name="icbCategory.Properties.Items16" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="icbCategory.Properties.Items17" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="icbCategory.Properties.Items18" xml:space="preserve">
+    <value>Produce</value>
+  </data>
+  <data name="icbCategory.Properties.Items19" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="icbCategory.Properties.Items20" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="icbCategory.Properties.Items21" xml:space="preserve">
+    <value>Seafood</value>
+  </data>
+  <data name="icbCategory.Properties.Items22" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="icbCategory.Properties.Items23" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <metadata name="svgImageCollection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>186, 17</value>
+  </metadata>
+  <assembly alias="DevExpress.Data.v26.1" name="DevExpress.Data.v26.1, Culture=neutral"></assembly>
+  <data name="svgImageCollection1.Beverages" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjIsIFZlcnNpb249MjQuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAEcDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkdyZWVue2ZpbGw6IzAzOUMyMzt9Cjwvc3R5bGU+
+        DQogIDxwYXRoIGQ9Ik0yNSwyNkg1Yy0wLjUsMC0xLDAuNS0xLDFzMC41LDEsMSwxaDIwYzAuNSwwLDEt
+        MC41LDEtMVMyNS41LDI2LDI1LDI2eiIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVuIiAvPg0KICA8
+        cGF0aCBkPSJNMjYsOGgtMkg2djEyYzAsMi4yLDEuOCw0LDQsNGgxMGMyLjIsMCw0LTEuOCw0LTR2LTJo
+        MmMyLjIsMCw0LTEuOCw0LTR2LTJDMzAsOS44LDI4LjIsOCwyNiw4eiBNMjgsMTQgIGMwLDEuMS0wLjks
+        Mi0yLDJoLTJ2LTZoMmMxLjEsMCwyLDAuOSwyLDJWMTR6IiBmaWxsPSIjMDM5QzIzIiBjbGFzcz0iR3Jl
+        ZW4iIC8+DQogIDxwb2x5Z29uIHBvaW50cz0iMTIsNiAxMCw2IDEyLDIgMTQsMiAiIGZpbGw9IiMwMzlD
+        MjMiIGNsYXNzPSJHcmVlbiIgLz4NCiAgPHBvbHlnb24gcG9pbnRzPSIxNiw2IDE0LDYgMTYsMiAxOCwy
+        ICIgZmlsbD0iIzAzOUMyMyIgY2xhc3M9IkdyZWVuIiAvPg0KICA8cG9seWdvbiBwb2ludHM9IjIwLDYg
+        MTgsNiAyMCwyIDIyLDIgIiBmaWxsPSIjMDM5QzIzIiBjbGFzcz0iR3JlZW4iIC8+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="svgImageCollection1.condiments" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjIsIFZlcnNpb249MjQuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAALgCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsYWNre2ZpbGw6IzcyNzI3Mjt9Cjwvc3R5bGU+
+        DQogIDxwYXRoIGQ9Ik0yMy42LDI4SDguNGMtMS4yLDAtMi4yLTEuMS0yLTIuNEwxMCwxMmgxMmwzLjYs
+        MTMuNkMyNS44LDI2LjksMjQuOSwyOCwyMy42LDI4eiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNr
+        IiAvPg0KICA8cGF0aCBkPSJNMTYsNGMtMy4zLDAtNiwyLjctNiw2aDEyQzIyLDYuNywxOS4zLDQsMTYs
+        NHogTTEzLDljLTAuNiwwLTEtMC40LTEtMXMwLjQtMSwxLTFzMSwwLjQsMSwxUzEzLjYsOSwxMyw5eiAg
+        IE0xNiw3Yy0wLjYsMC0xLTAuNC0xLTFzMC40LTEsMS0xczEsMC40LDEsMVMxNi42LDcsMTYsN3ogTTE5
+        LDljLTAuNiwwLTEtMC40LTEtMXMwLjQtMSwxLTFzMSwwLjQsMSwxUzE5LjYsOSwxOSw5eiIgZmlsbD0i
+        IzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="svgImageCollection1.confections" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjIsIFZlcnNpb249MjQuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAFcIAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsYWNre2Zp
+        bGw6IzcyNzI3Mjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5XaGl0ZXtmaWxsOiNGRkZGRkY7fQoJ
+        LnN0MHtvcGFjaXR5OjAuNDt9Cgkuc3Qxe29wYWNpdHk6MC43O30KPC9zdHlsZT4NCiAgPHBhdGggZD0i
+        TTI5LDI4SDNjLTAuNiwwLTEtMC40LTEtMXYwYzAtMC42LDAuNC0xLDEtMWgyNmMwLjYsMCwxLDAuNCwx
+        LDF2MEMzMCwyNy42LDI5LjYsMjgsMjksMjh6IiBmaWxsPSIjNzI3MjcyIiBjbGFzcz0iQmxhY2siIC8+
+        DQogIDxwYXRoIGQ9Ik0yNCwxOGMtMS40LDAtMi4yLTAuOC0yLjctMS4zUzIwLjYsMTYsMjAsMTZzLTAu
+        OCwwLjItMS4zLDAuN0MxOC4yLDE3LjMsMTcuNCwxOCwxNiwxOHMtMi4yLTAuOC0yLjctMS4zICBTMTIu
+        NiwxNiwxMiwxNnMtMC44LDAuMi0xLjMsMC43QzEwLjIsMTcuMyw5LjQsMTgsOCwxOHMtMi4yLTAuNy0y
+        LjctMS4zQzQuOCwxNi4yLDQuNiwxNiw0LDE2djhoMjR2LThjLTAuNiwwLTAuOCwwLjItMS4zLDAuNyAg
+        QzI2LjIsMTcuMywyNS40LDE4LDI0LDE4eiIgZmlsbD0iI0QxMUMxQyIgY2xhc3M9IlJlZCIgLz4NCiAg
+        PHBhdGggZD0iTTI3LDhoLTdjMCwyLjItMS44LDQtNCw0cy00LTEuOC00LTRINUM0LjQsOCw0LDguNCw0
+        LDl2NWMxLjQsMCwyLjIsMC43LDIuNywxLjNDNy4yLDE1LjgsNy40LDE2LDgsMTYgIHMwLjgtMC4yLDEu
+        My0wLjdDOS44LDE0LjcsMTAuNiwxNCwxMiwxNHMyLjIsMC43LDIuNywxLjNjMC41LDAuNSwwLjcsMC43
+        LDEuMywwLjdzMC44LTAuMiwxLjMtMC43YzAuNS0wLjYsMS4zLTEuMywyLjctMS4zICBzMi4yLDAuNywy
+        LjcsMS4zYzAuNSwwLjUsMC43LDAuNywxLjMsMC43czAuOC0wLjIsMS4zLTAuN2MwLjUtMC42LDEuMy0x
+        LjMsMi43LTEuM1Y5QzI4LDguNCwyNy42LDgsMjcsOHoiIGZpbGw9IiNEMTFDMUMiIGNsYXNzPSJSZWQi
+        IC8+DQogIDxwb2x5Z29uIHBvaW50cz0iMTcsOCAxNiw4IDE0LDQgMTUsNCAiIGZpbGw9IiM3MjcyNzIi
+        IGNsYXNzPSJCbGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMTYiIGN5PSI4IiByPSIyIiBmaWxsPSIjRDEx
+        QzFDIiBjbGFzcz0iUmVkIiAvPg0KICA8ZyBvcGFjaXR5PSIwLjQiIGNsYXNzPSJzdDAiPg0KICAgIDxw
+        YXRoIGQ9Ik0yNCwxOGMtMS40LDAtMi4yLTAuOC0yLjctMS4zUzIwLjYsMTYsMjAsMTZzLTAuOCwwLjIt
+        MS4zLDAuN0MxOC4yLDE3LjMsMTcuNCwxOCwxNiwxOHMtMi4yLTAuOC0yLjctMS4zICAgUzEyLjYsMTYs
+        MTIsMTZzLTAuOCwwLjItMS4zLDAuN0MxMC4yLDE3LjMsOS40LDE4LDgsMThzLTIuMi0wLjctMi43LTEu
+        M0M0LjgsMTYuMiw0LjYsMTYsNCwxNnY4aDI0di04Yy0wLjYsMC0wLjgsMC4yLTEuMywwLjcgICBDMjYu
+        MiwxNy4zLDI1LjQsMTgsMjQsMTh6IiBmaWxsPSIjMDM5QzIzIiBvcGFjaXR5PSIwLjQiIGNsYXNzPSJH
+        cmVlbiIgLz4NCiAgPC9nPg0KICA8ZyBvcGFjaXR5PSIwLjciIGNsYXNzPSJzdDEiPg0KICAgIDxwYXRo
+        IGQ9Ik0yNyw4aC03YzAsMi4yLTEuOCw0LTQsNHMtNC0xLjgtNC00SDVDNC40LDgsNCw4LjQsNCw5djVj
+        MS40LDAsMi4yLDAuNywyLjcsMS4zQzcuMiwxNS44LDcuNCwxNiw4LDE2ICAgczAuOC0wLjIsMS4zLTAu
+        N0M5LjgsMTQuNywxMC42LDE0LDEyLDE0czIuMiwwLjcsMi43LDEuM2MwLjUsMC41LDAuNywwLjcsMS4z
+        LDAuN3MwLjgtMC4yLDEuMy0wLjdjMC41LTAuNiwxLjMtMS4zLDIuNy0xLjMgICBzMi4yLDAuNywyLjcs
+        MS4zYzAuNSwwLjUsMC43LDAuNywxLjMsMC43czAuOC0wLjIsMS4zLTAuN2MwLjUtMC42LDEuMy0xLjMs
+        Mi43LTEuM1Y5QzI4LDguNCwyNy42LDgsMjcsOHoiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNyIg
+        Y2xhc3M9IldoaXRlIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="svgImageCollection1.DairyProduct" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjIsIFZlcnNpb249MjQuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKYEAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlJlZF94MDAyMF8ye2ZpbGw6I0QxMUMxQzt9Cgku
+        WWVsbG93X3gwMDIwXzJ7ZmlsbDojRkZCMTE1O30KCS5zdDB7b3BhY2l0eTowLjE1O30KCS5zdDF7b3Bh
+        Y2l0eTowLjM7fQo8L3N0eWxlPg0KICA8cGF0aCBkPSJNMjQuNCw2LjljLTAuMi0wLjQtMC43LTAuNi0x
+        LjItMC40TDIsMTB2NmMxLjEsMCwyLDAuOSwyLDJjMCwxLjEtMC45LDItMiwydjEuMiAgYzAsMC41LDAu
+        NCwwLjksMC44LDFsMjYsMy43YzAuNiwwLjEsMS4yLTAuNCwxLjItMVYxNEwyNC40LDYuOXoiIGZpbGw9
+        IiNGRkIxMTUiIGNsYXNzPSJZZWxsb3dfeDAwMjBfMiIgLz4NCiAgPGcgb3BhY2l0eT0iMC4xNSIgY2xh
+        c3M9InN0MCI+DQogICAgPHBhdGggZD0iTTIsMTB2NmMxLjEsMCwyLDAuOSwyLDJjMCwxLjEtMC45LDIt
+        MiwydjEuMmMwLDAuNSwwLjQsMC45LDAuOCwxbDI2LDMuN2MwLjYsMC4xLDEuMi0wLjQsMS4yLTFWMTQg
+        ICBMMiwxMHoiIGZpbGw9IiNEMTFDMUMiIG9wYWNpdHk9IjAuMTUiIGNsYXNzPSJSZWRfeDAwMjBfMiIg
+        Lz4NCiAgPC9nPg0KICA8ZyBvcGFjaXR5PSIwLjMiIGNsYXNzPSJzdDEiPg0KICAgIDxjaXJjbGUgY3g9
+        IjEwIiBjeT0iMTQiIHI9IjIiIGZpbGw9IiNEMTFDMUMiIG9wYWNpdHk9IjAuMyIgY2xhc3M9IlJlZF94
+        MDAyMF8yIiAvPg0KICAgIDxjaXJjbGUgY3g9IjI0IiBjeT0iMjIiIHI9IjIiIGZpbGw9IiNEMTFDMUMi
+        IG9wYWNpdHk9IjAuMyIgY2xhc3M9IlJlZF94MDAyMF8yIiAvPg0KICAgIDxjaXJjbGUgY3g9IjIwIiBj
+        eT0iMTYiIHI9IjIiIGZpbGw9IiNEMTFDMUMiIG9wYWNpdHk9IjAuMyIgY2xhc3M9IlJlZF94MDAyMF8y
+        IiAvPg0KICAgIDxjaXJjbGUgY3g9IjE0IiBjeT0iMjAiIHI9IjIiIGZpbGw9IiNEMTFDMUMiIG9wYWNp
+        dHk9IjAuMyIgY2xhc3M9IlJlZF94MDAyMF8yIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="svgImageCollection1.grains_cereals" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjIsIFZlcnNpb249MjQuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAANECAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlllbGxvd3tmaWxsOiNGRkIxMTU7fQo8L3N0eWxl
+        Pg0KICA8cGF0aCBkPSJNMjEsMTIuNWMwLDUuOC00LDEwLjUtNSwxMC41cy01LTQuNy01LTEwLjVTMTUs
+        MiwxNiwyUzIxLDYuNywyMSwxMi41eiIgZmlsbD0iI0ZGQjExNSIgY2xhc3M9IlllbGxvdyIgLz4NCiAg
+        PHBhdGggZD0iTTI3LjEsMjUuNmMtMy43LDMuNy05LjQsNC45LTkuOSw0LjNzMC42LTYuMiw0LjMtOS45
+        czkuMS00LjYsOS43LTQuMUMzMS43LDE2LjQsMzAuOCwyMS45LDI3LjEsMjUuNnoiIGZpbGw9IiNGRkIx
+        MTUiIGNsYXNzPSJZZWxsb3ciIC8+DQogIDxwYXRoIGQ9Ik00LjksMjUuNmMzLjcsMy43LDkuNCw0Ljks
+        OS45LDQuM2MwLjYtMC42LTAuNi02LjItNC4zLTkuOXMtOS4xLTQuNi05LjctNC4xQzAuMywxNi40LDEu
+        MiwyMS45LDQuOSwyNS42eiIgZmlsbD0iI0ZGQjExNSIgY2xhc3M9IlllbGxvdyIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="svgImageCollection1.MeatPoultry" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjIsIFZlcnNpb249MjQuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOIDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsYWNre2Zp
+        bGw6IzcyNzI3Mjt9CgkuR3JlZW57ZmlsbDojMDM5QzIzO30KCS5XaGl0ZXtmaWxsOiNGRkZGRkY7fQoJ
+        LnN0MHtvcGFjaXR5OjAuNDt9Cjwvc3R5bGU+DQogIDxwYXRoIGQ9Ik0yOS41LDE2LjZjLTAuMy0wLjQt
+        MC4zLTAuOSwwLTEuM0MyOS44LDE1LDMwLDE0LjUsMzAsMTRjMC0xLjEtMC45LTItMi0yYy0xLjEsMC0y
+        LDAuOS0yLDJoLTZ2NGg2ICBjMCwxLjEsMC45LDIsMiwyYzEuMSwwLDItMC45LDItMkMzMCwxNy41LDI5
+        LjgsMTcsMjkuNSwxNi42eiIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICA8cGF0aCBk
+        PSJNMTgsNkg4djIwaDEwYzMuMywwLDYtNC41LDYtMTBDMjQsMTAuNSwyMS4zLDYsMTgsNnoiIGZpbGw9
+        IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQogIDxnIG9wYWNpdHk9IjAuNCIgY2xhc3M9InN0MCI+DQog
+        ICAgPHBhdGggZD0iTTE4LDZIOHYyMGgxMGMzLjMsMCw2LTQuNSw2LTEwQzI0LDEwLjUsMjEuMyw2LDE4
+        LDZ6IiBmaWxsPSIjMDM5QzIzIiBvcGFjaXR5PSIwLjQiIGNsYXNzPSJHcmVlbiIgLz4NCiAgPC9nPg0K
+        ICA8ZWxsaXBzZSBjeD0iOCIgY3k9IjE2IiByeD0iNCIgcnk9IjEwIiBmaWxsPSIjRDExQzFDIiBjbGFz
+        cz0iUmVkIiAvPg0KICA8ZWxsaXBzZSBjeD0iNyIgY3k9IjE0IiByeD0iMSIgcnk9IjIiIGZpbGw9IiNG
+        RkZGRkYiIGNsYXNzPSJXaGl0ZSIgLz4NCjwvc3ZnPgs=
+</value>
+  </data>
+  <data name="svgImageCollection1.produce" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjIsIFZlcnNpb249MjQuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAANQCAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLlJlZHtmaWxsOiNEMTFDMUM7fQoJLkJsYWNre2Zp
+        bGw6IzcyNzI3Mjt9Cjwvc3R5bGU+DQogIDxwb2x5Z29uIHBvaW50cz0iMTgsMTEgMTYsMTEgMTMsMiAx
+        NSwyICIgZmlsbD0iIzcyNzI3MiIgY2xhc3M9IkJsYWNrIiAvPg0KICA8cGF0aCBkPSJNMjIsNi4xYy0x
+        LTAuMi0yLjcsMC0zLjcsMC40bC0xLjIsMC40Yy0wLjcsMC4zLTEuNSwwLjMtMi4zLDBsLTEuMi0wLjRj
+        LTEtMC4zLTIuNi0wLjUtMy43LTAuNCAgYy0zLjYsMC42LTYsMy4xLTYsOC40QzQsMjEuMyw4LjMsMjgs
+        MTIsMjhjMC40LDAsMC44LTAuMSwxLjEtMC4yYzAuMy0wLjEsMS42LTEuMiwyLjktMS4yYzEuMywwLDIu
+        NiwxLjEsMi45LDEuMiAgYzAuMywwLjEsMC42LDAuMiwxLjEsMC4yYzMuNywwLDgtNi43LDgtMTMuNUMy
+        OCw5LjIsMjUuNiw2LjcsMjIsNi4xeiIgZmlsbD0iI0QxMUMxQyIgY2xhc3M9IlJlZCIgLz4NCjwvc3Zn
+        Pgs=
+</value>
+  </data>
+  <data name="svgImageCollection1.Seafood" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v26.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjI0LjIsIFZlcnNpb249MjQuMi4w
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Nzk4NjhiODE0N2I1ZWFlNAUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAOEDAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBlbmFibGUt
+        YmFja2dyb3VuZD0ibmV3IDAgMCAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEi
+        Pg0KICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLkJsdWV7ZmlsbDojMTE3N0Q3O30KPC9zdHlsZT4N
+        CiAgPHBhdGggZD0iTTI4LjUsMTEuMkMyNywxMi4zLDI2LDE0LDI2LDE2czEsMy43LDIuNCw0LjhDMzAu
+        NywxOSwzMiwxNywzMiwxNlMzMC43LDEzLDI4LjUsMTEuMnogTTI5LDE2ICBjLTAuNiwwLTEtMC40LTEt
+        MWMwLTAuNiwwLjQtMSwxLTFjMC42LDAsMSwwLjQsMSwxQzMwLDE1LjYsMjkuNiwxNiwyOSwxNnoiIGZp
+        bGw9IiMxMTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KICA8cGF0aCBkPSJNMjQsMTZjMC0yLjQsMS4xLTQu
+        NSwyLjctNkMyNSw5LDIzLDguMiwyMC45LDhjLTEuOS0xLjgtNi0zLjctNi45LTRjMCwwLDAuMywzLjEs
+        MS4zLDQuNyAgQzE0LjEsOS4xLDEzLDkuNiwxMiwxMC4yYy0xLjMsMC44LTIuNCwxLjktMy4xLDNjLTAu
+        Mi0wLjEtMC41LTAuMy0wLjgtMC40QzQuOSwxMS43LDAsMTEuMywwLDEyYzAsMC43LDIsMi41LDQsNCAg
+        Yy0yLjEsMS41LTQsMy4zLTQsNGMwLDAuNiw0LjUsMC41LDcuNi0wLjZjMC44LTAuMywxLjMtMC42LDEu
+        Ny0wLjljMC43LDAuOCwxLjYsMS43LDIuNywyLjVjMC44LDAuNiwxLjcsMS4xLDIuNiwxLjYgIEMxNC4x
+        LDI0LjMsMTQsMjYsMTQsMjZjMC42LTAuMiwyLjUtMS4xLDQuMi0yLjJjMC42LDAuMSwxLjIsMC4yLDEu
+        OCwwLjJjMi41LDAsNC44LTAuOCw2LjctMkMyNS4xLDIwLjUsMjQsMTguNCwyNCwxNnoiIGZpbGw9IiMx
+        MTc3RDciIGNsYXNzPSJCbHVlIiAvPg0KPC9zdmc+Cw==
+</value>
+  </data>
+  <data name="icbCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 20</value>
+  </data>
+  <data name="icbCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;icbCategory.Name" xml:space="preserve">
+    <value>icbCategory</value>
+  </data>
+  <data name="&gt;&gt;icbCategory.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;icbCategory.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;icbCategory.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="simpleButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 168</value>
+  </data>
+  <data name="simpleButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="simpleButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="simpleButton2.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Name" xml:space="preserve">
+    <value>simpleButton2</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="teProductName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 2</value>
+  </data>
+  <data name="teProductName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 20</value>
+  </data>
+  <data name="teProductName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;teProductName.Name" xml:space="preserve">
+    <value>teProductName</value>
+  </data>
+  <data name="&gt;&gt;teProductName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;teProductName.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;teProductName.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 168</value>
+  </data>
+  <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 22</value>
+  </data>
+  <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="simpleButton1.Text" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Name" xml:space="preserve">
+    <value>simpleButton1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="layoutControlGroup1.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 192</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lciProductName.CustomizationFormText" xml:space="preserve">
+    <value>Product Name:</value>
+  </data>
+  <data name="lciProductName.Text" xml:space="preserve">
+    <value>Product Name:</value>
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="lciOK.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="lciCancel.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="emptySpaceItem2.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="emptySpaceItem3.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="lciCategory.CustomizationFormText" xml:space="preserve">
+    <value>Category:</value>
+  </data>
+  <data name="lciCategory.Text" xml:space="preserve">
+    <value>Category:</value>
+  </data>
+  <data name="lciUnitPrice.CustomizationFormText" xml:space="preserve">
+    <value>Unit Price:</value>
+  </data>
+  <data name="lciUnitPrice.Text" xml:space="preserve">
+    <value>Unit Price:</value>
+  </data>
+  <data name="lciQuantityPerUnit.CustomizationFormText" xml:space="preserve">
+    <value>Quantity Per Unit: </value>
+  </data>
+  <data name="lciQuantityPerUnit.Text" xml:space="preserve">
+    <value>Quantity Per Unit: </value>
+  </data>
+  <data name="lciDiscontinued.CustomizationFormText" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="lciDiscontinued.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>317, 212</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add New Product</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciProductName.Name" xml:space="preserve">
+    <value>lciProductName</value>
+  </data>
+  <data name="&gt;&gt;lciProductName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciOK.Name" xml:space="preserve">
+    <value>lciOK</value>
+  </data>
+  <data name="&gt;&gt;lciOK.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCancel.Name" xml:space="preserve">
+    <value>lciCancel</value>
+  </data>
+  <data name="&gt;&gt;lciCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciCategory.Name" xml:space="preserve">
+    <value>lciCategory</value>
+  </data>
+  <data name="&gt;&gt;lciCategory.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciUnitPrice.Name" xml:space="preserve">
+    <value>lciUnitPrice</value>
+  </data>
+  <data name="&gt;&gt;lciUnitPrice.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciQuantityPerUnit.Name" xml:space="preserve">
+    <value>lciQuantityPerUnit</value>
+  </data>
+  <data name="&gt;&gt;lciQuantityPerUnit.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lciDiscontinued.Name" xml:space="preserve">
+    <value>lciDiscontinued</value>
+  </data>
+  <data name="&gt;&gt;lciDiscontinued.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;dxValidationProvider1.Name" xml:space="preserve">
+    <value>dxValidationProvider1</value>
+  </data>
+  <data name="&gt;&gt;dxValidationProvider1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;svgImageCollection1.Name" xml:space="preserve">
+    <value>svgImageCollection1</value>
+  </data>
+  <data name="&gt;&gt;svgImageCollection1.Type" xml:space="preserve">
+    <value>DevExpress.Utils.SvgImageCollection, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmProduct</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v26.1, Culture=neutral</value>
+  </data>
+</root>

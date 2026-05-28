@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{927D3637-D510-0069-2183-7F714B947CD9}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <EnableWindowsTargeting>True</EnableWindowsTargeting>
+    <Configurations>Debug;Release</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>DevExpress.DentalClinic</RootNamespace>
+    <AssemblyName>DevExpress.DentalClinic</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Demos.Core" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.ExpressApp.Win.All" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.Mvvm" VersionOverride="26.1.2-beta-26148" />
+    <PackageReference Include="DevExpress.ExpressApp.Api.Xpo.All" VersionOverride="26.1.2-beta-26148" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGenerator.cs" />
+    <Compile Include="DentalClinicStringId.cs" />
+    <Compile Include="InvoiceHelper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\Appointment.cs" />
+    <Compile Include="Model\Doctor.cs" />
+    <Compile Include="Model\Document.cs" />
+    <Compile Include="Model\Invoice.cs" />
+    <Compile Include="Model\MissingTooth.cs" />
+    <Compile Include="Model\Patient.cs" />
+    <Compile Include="Model\InvoiceItem.cs" />
+    <Compile Include="Model\Picture.cs" />
+    <Compile Include="Model\Procedure.cs" />
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\InvoiceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\InvoiceReport.Designer.cs">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TreatmentPlanReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TreatmentPlanReport.Designer.cs">
+      <DependentUpon>TreatmentPlanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\FreeDateTimeService.cs" />
+    <Compile Include="Services\LoginService.cs" />
+    <Compile Include="Services\PrintReportService.cs" />
+    <Compile Include="Services\SecuredObjectSpaceService.cs" />
+    <Compile Include="Services\XtraMessageBoxService.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="ViewModels\Analytics\AnalyticsViewModel.cs" />
+    <Compile Include="ViewModels\Dialogs\AppointmentViewModel.cs" />
+    <Compile Include="ViewModels\Dialogs\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModels\Dialogs\LoginViewModel.cs" />
+    <Compile Include="ViewModels\UserCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Settings\EmployeeViewModel.cs" />
+    <Compile Include="ViewModels\Dialogs\EditNotesViewModel.cs" />
+    <Compile Include="ViewModels\Patients\InvoiceCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Dialogs\InvoiceViewModel.cs" />
+    <Compile Include="ViewModels\NavigationViewModel.cs" />
+    <Compile Include="ViewModels\Patients\PatientCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Patients\PatientViewModel.cs" />
+    <Compile Include="ViewModels\Patients\PersonalInformationViewModel.cs" />
+    <Compile Include="ViewModels\Patients\ProcedureCollectionViewModel.cs" />
+    <Compile Include="ViewModels\Analytics\ProcedureHistoryViewModel.cs" />
+    <Compile Include="ViewModels\Scheduler\SchedulerViewModel.cs" />
+    <Compile Include="ViewModels\Patients\TreatmentPlanViewModel.cs" />
+    <Compile Include="Views\Analytics\AnalyticsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Analytics\AnalyticsView.Designer.cs">
+      <DependentUpon>AnalyticsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\AppointmentView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\AppointmentView.Designer.cs">
+      <DependentUpon>AppointmentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Analytics\DashboardView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Analytics\DashboardView.Designer.cs">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\LoginView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\ChangePasswordView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\ChangePasswordView.Designer.cs">
+      <DependentUpon>ChangePasswordView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Patients\ToothFlyoutView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Patients\ToothFlyoutView.Designer.cs">
+      <DependentUpon>ToothFlyoutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scheduler\DateNavigationPaneWithSearchBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scheduler\DateNavigationPaneWithSearchBar.Designer.cs">
+      <DependentUpon>DateNavigationPaneWithSearchBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scheduler\AppointmentFlyoutView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scheduler\AppointmentFlyoutView.Designer.cs">
+      <DependentUpon>AppointmentFlyoutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserCollectionView.Designer.cs">
+      <DependentUpon>UserCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\EmployeeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\EmployeeView.Designer.cs">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\EditNotesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\EditNotesView.Designer.cs">
+      <DependentUpon>EditNotesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Analytics\InfoDashboard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Analytics\InfoDashboard.Designer.cs">
+      <DependentUpon>InfoDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Patients\InvoiceCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Patients\InvoiceCollectionView.Designer.cs">
+      <DependentUpon>InvoiceCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\InvoiceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\InvoiceView.Designer.cs">
+      <DependentUpon>InvoiceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Patients\PatientCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Patients\PatientCollectionView.Designer.cs">
+      <DependentUpon>PatientCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Patients\PatientView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Patients\PatientView.Designer.cs">
+      <DependentUpon>PatientView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Patients\PersonalInformationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Patients\PersonalInformationView.Designer.cs">
+      <DependentUpon>PersonalInformationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Patients\ProcedureCollectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Patients\ProcedureCollectionView.Designer.cs">
+      <DependentUpon>ProcedureCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Analytics\ProcedureHistoryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Analytics\ProcedureHistoryView.Designer.cs">
+      <DependentUpon>ProcedureHistoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Scheduler\SchedulerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Scheduler\SchedulerView.Designer.cs">
+      <DependentUpon>SchedulerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Patients\TreatmentPlanView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Patients\TreatmentPlanView.Designer.cs">
+      <DependentUpon>TreatmentPlanView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\InvoiceReport.resx">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TreatmentPlanReport.resx">
+      <DependentUpon>TreatmentPlanReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Analytics\AnalyticsView.resx">
+      <DependentUpon>AnalyticsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\AppointmentView.resx">
+      <DependentUpon>AppointmentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Analytics\DashboardView.resx">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\ChangePasswordView.resx">
+      <DependentUpon>ChangePasswordView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Patients\ToothFlyoutView.resx">
+      <DependentUpon>ToothFlyoutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scheduler\DateNavigationPaneWithSearchBar.resx">
+      <DependentUpon>DateNavigationPaneWithSearchBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scheduler\AppointmentFlyoutView.resx">
+      <DependentUpon>AppointmentFlyoutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserCollectionView.resx">
+      <DependentUpon>UserCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\EmployeeView.resx">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\EditNotesView.resx">
+      <DependentUpon>EditNotesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Analytics\InfoDashboard.resx">
+      <DependentUpon>InfoDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Patients\InvoiceCollectionView.resx">
+      <DependentUpon>InvoiceCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\InvoiceView.resx">
+      <DependentUpon>InvoiceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Patients\PatientCollectionView.resx">
+      <DependentUpon>PatientCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Patients\PatientView.resx">
+      <DependentUpon>PatientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Patients\PersonalInformationView.resx">
+      <DependentUpon>PersonalInformationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Patients\ProcedureCollectionView.resx">
+      <DependentUpon>ProcedureCollectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Analytics\ProcedureHistoryView.resx">
+      <DependentUpon>ProcedureHistoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Scheduler\SchedulerView.resx">
+      <DependentUpon>SchedulerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Patients\TreatmentPlanView.resx">
+      <DependentUpon>TreatmentPlanView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Admin.svg" />
+    <Content Include="Resources\DarkTheme.svg" />
+    <Content Include="Resources\EditPatient.svg" />
+    <Content Include="Resources\FormIcon.svg" />
+    <Content Include="Resources\Lock.svg" />
+    <Content Include="Resources\Login.svg" />
+    <Content Include="Resources\Patients.svg" />
+    <Content Include="Resources\teeth.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Diagnosis.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Hygiene.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Implantation.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Orthodontics.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Prosthetics.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Restoration.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\RootCanal.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Surgery.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Unknown-user.png" />
+    <Content Include="Resources\TreatmentCalendar.svg" />
+    <Content Include="Resources\User.svg" />
+    <Content Include="Resources\Whitening.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\calendar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\people.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Chart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\people1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Chart1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\settings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AddPatient.svg" />
+    <Content Include="Resources\Delete.svg" />
+    <Content Include="Resources\Edit.svg" />
+    <Content Include="Resources\DeleteNote.svg" />
+    <Content Include="Resources\Close.svg" />
+    <Content Include="Resources\check.svg" />
+    <Content Include="Resources\Whitening.ico" />
+    <Content Include="Resources\DevExpress-Logo-Mono.svg" />
+  </ItemGroup>
+  <PropertyGroup>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="System.Data.SQLite.Core" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+  </ItemGroup>
+</Project>
