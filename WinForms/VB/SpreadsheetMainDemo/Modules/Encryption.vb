@@ -39,11 +39,32 @@ Namespace DevExpress.XtraSpreadsheet.Demos
         End Sub
 
         Private Sub TypeEdit_TextChanged(ByVal sender As Object, ByVal e As EventArgs)
-            workbook.DocumentSettings.Encryption.Type = CType([Enum].Parse(GetType(EncryptionType), typeEdit.Text), EncryptionType)
+            UpdateDocumentEncryptionType()
         End Sub
 
         Private Sub PasswordEdit_TextChanged(ByVal sender As Object, ByVal e As EventArgs)
+            UpdateDocumentEncryptionPassword()
+        End Sub
+
+        Private Sub Spreadsheet_DocumentLoaded(ByVal sender As Object, ByVal e As EventArgs)
+            ApplyCurrentEncryptionSettings()
+        End Sub
+
+        Private Sub Spreadsheet_NewDocumentCreated(ByVal sender As Object, ByVal e As EventArgs)
+            ApplyCurrentEncryptionSettings()
+        End Sub
+
+        Private Sub ApplyCurrentEncryptionSettings()
+            UpdateDocumentEncryptionPassword()
+            UpdateDocumentEncryptionType()
+        End Sub
+
+        Private Sub UpdateDocumentEncryptionPassword()
             workbook.DocumentSettings.Encryption.Password = passwordEdit.Text
+        End Sub
+
+        Private Sub UpdateDocumentEncryptionType()
+            workbook.DocumentSettings.Encryption.Type = CType([Enum].Parse(GetType(EncryptionType), typeEdit.Text), EncryptionType)
         End Sub
 
         Private Sub BtnExport_Click(ByVal sender As Object, ByVal e As EventArgs)

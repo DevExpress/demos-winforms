@@ -14,6 +14,7 @@ Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.XtraLayout
 Imports System.Drawing
 Imports DevExpress.XtraBars.Navigation
+Imports DevExpress.Utils.DPI
 
 ' </checkEditRadioGroup>
 Namespace DevExpress.XtraEditors.Demos
@@ -56,20 +57,21 @@ Namespace DevExpress.XtraEditors.Demos
             InitializeImageListBox(False)
         End Sub
 
+        Protected Overrides Sub DoDpiChange(ByVal deviceDpiOld As Integer, ByVal deviceDpiNew As Integer)
+            MyBase.DoDpiChange(deviceDpiOld, deviceDpiNew)
+            InitializeImageListBox(False)
+        End Sub
+
         Private Sub InitializeImageListBox(ByVal createItems As Boolean)
             lbStyle.BeginUpdate()
             Try
                 Dim imageCollection As ImageCollection = TryCast(lbStyle.ImageList, ImageCollection)
-                If imageCollection Is Nothing Then
-                    imageCollection = New ImageCollection()
-                    imageCollection.ImageSize = GetImageSize()
-                Else
-                    imageCollection.Clear()
-                End If
-
+                If imageCollection Is Nothing Then imageCollection = New ImageCollection()
+                imageCollection.Clear()
+                imageCollection.ImageSize = GetImageSize(ScaleDPI)
                 Dim imageIndex As Integer = 0
                 For Each style As CheckBoxStyle In [Enum].GetValues(GetType(CheckBoxStyle))
-                    Dim image As Image = GetCheckBoxImage(LookAndFeel, style)
+                    Dim image As Image = GetCheckBoxImage(LookAndFeel, style, ScaleDPI)
                     If image Is Nothing Then Continue For
                     imageCollection.Images.Add(image)
                     If createItems Then lbStyle.Items.Add(style, Math.Min(Threading.Interlocked.Increment(imageIndex), imageIndex - 1))
@@ -238,21 +240,27 @@ Namespace DevExpress.XtraEditors.Demos
 
     Friend Module CheckBoxImageProvider
 
-        Private Function GetImageSizeCore() As Size
-            Return New Size(CInt(18 * DpiProvider.Default.DpiScaleFactor), CInt(18 * DpiProvider.Default.DpiScaleFactor))
+        Private Function GetImageSizeCore(ByVal scaleDPI As ScaleHelper) As Size
+            If scaleDPI Is Nothing Then
+                Return New Size(CInt(18 * DpiProvider.Default.DpiScaleFactor), CInt(18 * DpiProvider.Default.DpiScaleFactor))
+            End If
+
+            Return scaleDPI.ScaleSize(New Size(18, 18))
         End Function
 
-        Public Function GetImageSize() As Size
-            Dim size As Size = GetImageSizeCore()
-            size.Width = size.Width * 2 + ImageInterval
+        Public Function GetImageSize(ByVal scaleDPI As ScaleHelper) As Size
+            Dim size As Size = GetImageSizeCore(scaleDPI)
+            size.Width = size.Width * 2 + GetImageInterval(scaleDPI)
             Return size
         End Function
 
-        Private ReadOnly Property ImageInterval As Integer
-            Get
+        Private Function GetImageInterval(ByVal scaleDPI As ScaleHelper) As Integer
+            If scaleDPI Is Nothing Then
                 Return CInt(6 * DpiProvider.Default.DpiScaleFactor)
-            End Get
-        End Property
+            End If
+
+            Return scaleDPI.ScaleHorizontal(6)
+        End Function
 
         Private Function GetCheckBoxElementInfo(ByVal cache As GraphicsCache, ByVal lookAndFeel As UserLookAndFeel, ByVal style As CheckBoxStyle, ByVal state As CheckState, ByVal size As Size) As SkinElementInfo
             Dim name As String = If(style = CheckBoxStyle.Radio, EditorsSkins.SkinRadioButton, EditorsSkins.SkinCheckBox)
@@ -270,16 +278,16 @@ Namespace DevExpress.XtraEditors.Demos
             Return info
         End Function
 
-        Public Function GetCheckBoxImage(ByVal lookAndFeel As UserLookAndFeel, ByVal style As CheckBoxStyle) As Image
+        Public Function GetCheckBoxImage(ByVal lookAndFeel As UserLookAndFeel, ByVal style As CheckBoxStyle, ByVal scaleDPI As ScaleHelper) As Image
             If style = CheckBoxStyle.Default OrElse style = CheckBoxStyle.Custom Then Return Nothing
-            Dim checkedImage As Image = GetCheckBoxImage(style, CheckState.Checked, lookAndFeel)
-            Dim uncheckedImage As Image = GetCheckBoxImage(style, CheckState.Unchecked, lookAndFeel)
+            Dim checkedImage As Image = GetCheckBoxImage(style, CheckState.Checked, lookAndFeel, scaleDPI)
+            Dim uncheckedImage As Image = GetCheckBoxImage(style, CheckState.Unchecked, lookAndFeel, scaleDPI)
             If checkedImage Is Nothing OrElse uncheckedImage Is Nothing Then Return Nothing
-            Dim imageSize As Size = GetImageSize()
+            Dim imageSize As Size = GetImageSize(scaleDPI)
             Dim bmp As Bitmap = New Bitmap(imageSize.Width, imageSize.Height)
             Using g As Graphics = Graphics.FromImage(bmp)
                 g.DrawImageUnscaled(checkedImage, 0, 0)
-                g.DrawImageUnscaled(uncheckedImage, GetImageSizeCore().Width + ImageInterval, 0)
+                g.DrawImageUnscaled(uncheckedImage, GetImageSizeCore(scaleDPI).Width + GetImageInterval(scaleDPI), 0)
             End Using
 
             checkedImage.Dispose()
@@ -287,9 +295,9 @@ Namespace DevExpress.XtraEditors.Demos
             Return bmp
         End Function
 
-        Private Function GetCheckBoxImage(ByVal style As CheckBoxStyle, ByVal state As CheckState, ByVal lookAndFeel As UserLookAndFeel) As Image
+        Private Function GetCheckBoxImage(ByVal style As CheckBoxStyle, ByVal state As CheckState, ByVal lookAndFeel As UserLookAndFeel, ByVal scaleDPI As ScaleHelper) As Image
             If style = CheckBoxStyle.CheckBox OrElse style = CheckBoxStyle.Radio Then
-                Dim imageSize As Size = GetImageSizeCore()
+                Dim imageSize As Size = GetImageSizeCore(scaleDPI)
                 Dim checkBoxBitmap As Bitmap = New Bitmap(imageSize.Width, imageSize.Height)
                 Using g As Graphics = Graphics.FromImage(checkBoxBitmap)
                     Using cache As GraphicsCache = New GraphicsCache(g)
@@ -305,7 +313,7 @@ Namespace DevExpress.XtraEditors.Demos
             If svgImage Is Nothing Then Return Nothing
             Dim svgBitmap = New SvgBitmap(svgImage)
             Dim palette = SvgPaletteHelper.GetSvgPalette(lookAndFeel, ObjectState.Normal)
-            Return svgBitmap.Render(palette)
+            Return svgBitmap.Render(palette, scaleDPI.ScaleFactorHorz)
         End Function
     End Module
 End Namespace

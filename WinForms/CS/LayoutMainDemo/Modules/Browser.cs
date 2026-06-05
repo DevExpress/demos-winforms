@@ -12,7 +12,7 @@ namespace DevExpress.XtraLayout.Demos {
     public partial class Browser : DevExpress.XtraLayout.Demos.TutorialControl {
         bool needDecreaseSelectedPageIndex = false;
         string defaultUrl = "";
-        string dxUrl = "http://www.devexpress.com/";
+        string dxUrl = "https://www.devexpress.com/";
         public Browser() {
             InitializeComponent();
             DisabledVerticalStyle();

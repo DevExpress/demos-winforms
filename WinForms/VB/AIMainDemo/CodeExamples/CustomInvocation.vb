@@ -49,7 +49,7 @@ Namespace DevExpress.AI.Demos
             Dim defaultAIContainer As DevExpress.AIIntegration.AIExtensionsContainerDefault = New DevExpress.AIIntegration.AIExtensionsContainerDefault()
             Dim AzureOpenAIEndpoint As String = "https://public-api.devexpress.com/demo-openai"
             Dim AzureOpenAIKey As String = "DEMO"
-            Dim DeploymentName As String = "gpt-4o-mini"
+            Dim DeploymentName As String = "demo-mini"
             Dim azureOpenAIClient As Microsoft.Extensions.AI.IChatClient = New Azure.AI.OpenAI.AzureOpenAIClient(CType((New System.Uri(CStr((AzureOpenAIEndpoint)))), System.Uri), CType((New System.ClientModel.ApiKeyCredential(CStr((AzureOpenAIKey)))), System.ClientModel.ApiKeyCredential)).GetChatClient(CStr((DeploymentName))).AsIChatClient()
             defaultAIContainer.RegisterChatClient(azureOpenAIClient)
             ' register extensions
@@ -70,7 +70,7 @@ Namespace DevExpress.AI.Demos
             Dim defaultAIContainer As DevExpress.AIIntegration.AIExtensionsContainerDefault = New DevExpress.AIIntegration.AIExtensionsContainerDefault()
             Dim AzureOpenAIEndpoint As String = "https://public-api.devexpress.com/demo-openai"
             Dim AzureOpenAIKey As String = "DEMO"
-            Dim DeploymentName As String = "gpt-4o-mini"
+            Dim DeploymentName As String = "demo-mini"
             Dim azureOpenAIClient As Microsoft.Extensions.AI.IChatClient = New Azure.AI.OpenAI.AzureOpenAIClient(CType((New System.Uri(CStr((AzureOpenAIEndpoint)))), System.Uri), CType((New System.ClientModel.ApiKeyCredential(CStr((AzureOpenAIKey)))), System.ClientModel.ApiKeyCredential)).GetChatClient(CStr((DeploymentName))).AsIChatClient()
             defaultAIContainer.RegisterChatClient(azureOpenAIClient)
             ' register extensions

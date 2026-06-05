@@ -50,7 +50,7 @@ namespace DevExpress.AI.ReportDesigner.Demo {
             AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(AzureOpenAIEndpointUri, AzureOpenAIKeyCredentials, new AzureOpenAIClientOptions() {
                 Transport = new PromoteHttpStatusErrorsPipelineTransport()
             });
-            IChatClient chatClient = azureOpenAIClient.GetChatClient("gpt-4.1").AsIChatClient();
+            IChatClient chatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient();
             //
             var container = AIExtensionsContainerDesktop.Default;
             container.RegisterChatClient(chatClient);
@@ -58,7 +58,7 @@ namespace DevExpress.AI.ReportDesigner.Demo {
             container.RegisterAIExceptionHandler(new Helpers.AIExceptionHandler());
 
             //var builder = Kernel.CreateBuilder();
-            //builder.AddAzureOpenAIChatCompletion("gpt-5.2",
+            //builder.AddAzureOpenAIChatCompletion("demo",
             //    AzureOpenAIEndpoint,
             //    AzureOpenAIKey);
             //((IAIServiceContainer)container).RegisterService<Kernel>(builder.Build());

@@ -307,7 +307,7 @@ Namespace XtraReportsDemos.TableReport
             Me.pictureBox1.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("svg", resources.GetString("pictureBox1.ImageSource"))
             Me.pictureBox1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 30F)
             Me.pictureBox1.Name = "pictureBox1"
-            Me.pictureBox1.NavigateUrl = "http://www.devexpress.com/Products/NET/Reporting/"
+            Me.pictureBox1.NavigateUrl = "https://www.devexpress.com/Products/NET/Reporting/"
             Me.pictureBox1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
             Me.pictureBox1.SizeF = New System.Drawing.SizeF(149.9592F, 37.66764F)
             Me.pictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage

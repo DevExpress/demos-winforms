@@ -345,7 +345,7 @@ Namespace XtraReportsDemos.AnchorVertical
             Me.xrPictureBox2.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("svg", resources.GetString("xrPictureBox2.ImageSource"))
             Me.xrPictureBox2.LocationFloat = New DevExpress.Utils.PointFloat(192.1875F, 22.39584F)
             Me.xrPictureBox2.Name = "xrPictureBox2"
-            Me.xrPictureBox2.NavigateUrl = "http://www.devexpress.com/Products/NET/Reporting/"
+            Me.xrPictureBox2.NavigateUrl = "https://www.devexpress.com/Products/NET/Reporting/"
             Me.xrPictureBox2.SizeF = New System.Drawing.SizeF(365.625F, 30.20833F)
             ' 
             ' dsHomes

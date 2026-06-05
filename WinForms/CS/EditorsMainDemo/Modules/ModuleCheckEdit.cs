@@ -18,6 +18,7 @@ using DevExpress.Utils.Text;
 using DevExpress.XtraLayout;
 using System.Drawing;
 using DevExpress.XtraBars.Navigation;
+using DevExpress.Utils.DPI;
 // </checkEditRadioGroup>
 
 namespace DevExpress.XtraEditors.Demos {
@@ -44,20 +45,22 @@ namespace DevExpress.XtraEditors.Demos {
             base.OnLookAndFeelChanged();
             InitializeImageListBox(false);
         }
+        protected override void DoDpiChange(int deviceDpiOld, int deviceDpiNew) {
+            base.DoDpiChange(deviceDpiOld, deviceDpiNew);
+            InitializeImageListBox(false);
+        }
         void InitializeImageListBox(bool createItems) {
             lbStyle.BeginUpdate();
             try {
                 ImageCollection imageCollection = lbStyle.ImageList as ImageCollection;
-                if(imageCollection == null) {
+                if(imageCollection == null)
                     imageCollection = new ImageCollection();
-                    imageCollection.ImageSize = CheckBoxImageProvider.GetImageSize();
-                }
-                else {
-                    imageCollection.Clear();
-                }
+
+                imageCollection.Clear();
+                imageCollection.ImageSize = CheckBoxImageProvider.GetImageSize(ScaleDPI);
                 int imageIndex = 0;
                 foreach(CheckBoxStyle style in Enum.GetValues(typeof(CheckBoxStyle))) {
-                    Image image = CheckBoxImageProvider.GetCheckBoxImage(LookAndFeel, style);
+                    Image image = CheckBoxImageProvider.GetCheckBoxImage(LookAndFeel, style, ScaleDPI);
                     if(image == null)
                         continue;
                     imageCollection.Images.Add(image);
@@ -112,10 +115,10 @@ namespace DevExpress.XtraEditors.Demos {
             // <skip>
             if(updateValues) return;
             // </skip>
-            HorzAlignment[] alignments = new HorzAlignment[] { 
-				HorzAlignment.Near, 
-				HorzAlignment.Center, 
-				HorzAlignment.Far };
+            HorzAlignment[] alignments = new HorzAlignment[] {
+                HorzAlignment.Near,
+                HorzAlignment.Center,
+                HorzAlignment.Far };
             int selectedIndex = comboAlign.SelectedIndex;
             checkEditSample.Properties.GlyphAlignment = alignments[selectedIndex];
             checkEditSample.Properties.Appearance.TextOptions.HAlignment = alignments[selectedIndex];
@@ -190,7 +193,7 @@ namespace DevExpress.XtraEditors.Demos {
             comboAlign.EditValue = checkEditSample.Properties.Appearance.TextOptions.HAlignment.ToString();
             updateValues = false;
         }
-        
+
         //<ceCheckedColor>
         private void ceCheckedColor_EditValueChanged(object sender, EventArgs e) {
             Color color = ((ColorPickEdit)sender).Color;
@@ -212,16 +215,22 @@ namespace DevExpress.XtraEditors.Demos {
     }
 
     static class CheckBoxImageProvider {
-        static Size GetImageSizeCore() {
-            return new Size((int)(18 * DpiProvider.Default.DpiScaleFactor), (int)(18 * DpiProvider.Default.DpiScaleFactor));
+        static Size GetImageSizeCore(ScaleHelper scaleDPI) {
+            if(scaleDPI == null) {
+                return new Size((int)(18 * DpiProvider.Default.DpiScaleFactor), (int)(18 * DpiProvider.Default.DpiScaleFactor));
+            }
+            return scaleDPI.ScaleSize(new Size(18, 18));
         }
-        public static Size GetImageSize() {
-            Size size = GetImageSizeCore();
-            size.Width = size.Width * 2 + ImageInterval;
+        public static Size GetImageSize(ScaleHelper scaleDPI) {
+            Size size = GetImageSizeCore(scaleDPI);
+            size.Width = size.Width * 2 + GetImageInterval(scaleDPI);
             return size;
         }
-        static int ImageInterval {
-            get { return (int)(6 * DpiProvider.Default.DpiScaleFactor); }
+        static int GetImageInterval(ScaleHelper scaleDPI) {
+            if(scaleDPI == null) {
+                return (int)(6 * DpiProvider.Default.DpiScaleFactor);
+            }
+            return scaleDPI.ScaleHorizontal(6);
         }
 
         static SkinElementInfo GetCheckBoxElementInfo(GraphicsCache cache, UserLookAndFeel lookAndFeel, CheckBoxStyle style, CheckState state, Size size) {
@@ -236,27 +245,27 @@ namespace DevExpress.XtraEditors.Demos {
             }
             return info;
         }
-        public static Image GetCheckBoxImage(UserLookAndFeel lookAndFeel, CheckBoxStyle style) {
+        public static Image GetCheckBoxImage(UserLookAndFeel lookAndFeel, CheckBoxStyle style, ScaleHelper scaleDPI) {
 
             if(style == CheckBoxStyle.Default || style == CheckBoxStyle.Custom)
                 return null;
-            Image checkedImage = GetCheckBoxImage(style, CheckState.Checked, lookAndFeel);
-            Image uncheckedImage = GetCheckBoxImage(style, CheckState.Unchecked, lookAndFeel);
+            Image checkedImage = GetCheckBoxImage(style, CheckState.Checked, lookAndFeel, scaleDPI);
+            Image uncheckedImage = GetCheckBoxImage(style, CheckState.Unchecked, lookAndFeel, scaleDPI);
             if(checkedImage == null || uncheckedImage == null)
                 return null;
-            Size imageSize = GetImageSize();
+            Size imageSize = GetImageSize(scaleDPI);
             Bitmap bmp = new Bitmap(imageSize.Width, imageSize.Height);
             using(Graphics g = Graphics.FromImage(bmp)) {
                 g.DrawImageUnscaled(checkedImage, 0, 0);
-                g.DrawImageUnscaled(uncheckedImage, GetImageSizeCore().Width + ImageInterval, 0);
+                g.DrawImageUnscaled(uncheckedImage, GetImageSizeCore(scaleDPI).Width + GetImageInterval(scaleDPI), 0);
             }
             checkedImage.Dispose();
             uncheckedImage.Dispose();
             return bmp;
         }
-        static Image GetCheckBoxImage(CheckBoxStyle style, CheckState state, UserLookAndFeel lookAndFeel) {
+        static Image GetCheckBoxImage(CheckBoxStyle style, CheckState state, UserLookAndFeel lookAndFeel, ScaleHelper scaleDPI) {
             if(style == CheckBoxStyle.CheckBox || style == CheckBoxStyle.Radio) {
-                Size imageSize = GetImageSizeCore();
+                Size imageSize = GetImageSizeCore(scaleDPI);
                 Bitmap checkBoxBitmap = new Bitmap(imageSize.Width, imageSize.Height);
                 using(Graphics g = Graphics.FromImage(checkBoxBitmap)) {
                     using(GraphicsCache cache = new GraphicsCache(g)) {
@@ -271,7 +280,7 @@ namespace DevExpress.XtraEditors.Demos {
                 return null;
             var svgBitmap = new SvgBitmap(svgImage);
             var palette = SvgPaletteHelper.GetSvgPalette(lookAndFeel, ObjectState.Normal);
-            return svgBitmap.Render(palette);
+            return svgBitmap.Render(palette, scaleDPI.ScaleFactorHorz);
         }
     }
 }

@@ -742,7 +742,7 @@ namespace DevExpress.XtraBars.Demos.RibbonSimplePad {
         }
 
         private void iWeb_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
-            string fileName = "http://www.devexpress.com";
+            string fileName = "https://www.devexpress.com";
             Data.Utils.SafeProcess.Open(fileName);
         }
 
@@ -1097,7 +1097,7 @@ namespace DevExpress.XtraBars.Demos.RibbonSimplePad {
                 this.Close();
         }
         void barEditItem1_ItemPress(object sender, ItemClickEventArgs e) {
-            Data.Utils.SafeProcess.TryOpenHyperlink("http://www.devexpress.com");
+            Data.Utils.SafeProcess.TryOpenHyperlink("https://www.devexpress.com");
         }
         void biStyle_EditValueChanged(object sender, EventArgs e) {
             RibbonControlStyle style = (RibbonControlStyle)biStyle.EditValue;

@@ -34,11 +34,29 @@ namespace DevExpress.XtraSpreadsheet.Demos {
         }
 
         private void TypeEdit_TextChanged(object sender, EventArgs e) {
-            workbook.DocumentSettings.Encryption.Type = (EncryptionType)Enum.Parse(typeof(EncryptionType), typeEdit.Text);
+            UpdateDocumentEncryptionType();
         }
 
         private void PasswordEdit_TextChanged(object sender, EventArgs e) {
+            UpdateDocumentEncryptionPassword();
+        }
+
+        private void Spreadsheet_DocumentLoaded(object sender, EventArgs e) {
+            ApplyCurrentEncryptionSettings();
+        }
+        private void Spreadsheet_NewDocumentCreated(object sender, EventArgs e) {
+            ApplyCurrentEncryptionSettings();
+        }
+
+        void ApplyCurrentEncryptionSettings() {
+            UpdateDocumentEncryptionPassword();
+            UpdateDocumentEncryptionType();
+        }
+        void UpdateDocumentEncryptionPassword() {
             workbook.DocumentSettings.Encryption.Password = passwordEdit.Text;
+        }
+        void UpdateDocumentEncryptionType() {
+            workbook.DocumentSettings.Encryption.Type = (EncryptionType)Enum.Parse(typeof(EncryptionType), typeEdit.Text);
         }
 
         private void BtnExport_Click(object sender, EventArgs e) {

@@ -46,7 +46,7 @@ namespace DevExpress.AI.Demos {
         public static void InvokeWithSettings(LayoutControl layoutControl, SimpleButton button) {
             string AzureOpenAIEndpoint = "https://public-api.devexpress.com/demo-openai";
             string AzureOpenAIKey = "DEMO";
-            string DeploymentName = "gpt-4o-mini";
+            string DeploymentName = "demo-mini";
             IChatClient azureOpenAIClient = new AzureOpenAIClient(new Uri(AzureOpenAIEndpoint),
                                 new System.ClientModel.ApiKeyCredential(AzureOpenAIKey)).GetChatClient(DeploymentName).AsIChatClient();
             // Configure the service provider (this should usually be done at application startup)
@@ -77,7 +77,7 @@ namespace DevExpress.AI.Demos {
         public static void InvokeWithServices(LayoutControl layoutControl, SimpleButton button) {
             string AzureOpenAIEndpoint = "https://public-api.devexpress.com/demo-openai";
             string AzureOpenAIKey = "DEMO";
-            string DeploymentName = "gpt-4o-mini";
+            string DeploymentName = "demo-mini";
             IChatClient azureOpenAIClient = new AzureOpenAIClient(new Uri(AzureOpenAIEndpoint),
                                 new System.ClientModel.ApiKeyCredential(AzureOpenAIKey)).GetChatClient(DeploymentName).AsIChatClient();
             // Configure the service provider (this should usually be done at application startup)

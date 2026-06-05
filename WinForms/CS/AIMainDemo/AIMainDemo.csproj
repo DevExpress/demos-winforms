@@ -110,8 +110,8 @@
     <Reference Include="DevExpress.DemoReports.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agents\Publishing\PublishingAgentTools.cs" />
-    <Compile Include="Agents\Publishing\PublishingGroupChatManager.cs" />
+    <Compile Include="Agents\ToolApprovals\ToolApprovalAIFunctions.cs" />
+    <Compile Include="Agents\ToolApprovals\ToolApprovalRequestBatch.cs" />
     <Compile Include="AITools\SimpleTools.cs" />
     <Compile Include="CodeExamples\AttachBehaviors.cs" />
     <Compile Include="CodeExamples\CustomInvocation.cs" />
@@ -134,11 +134,11 @@
     <Compile Include="Modules\AgentsAPI\AGUIIntegrationModule.Designer.cs">
       <DependentUpon>AGUIIntegrationModule.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\AgentsAPI\GroupChatWorkflowModule.cs">
+    <Compile Include="Modules\AgentsAPI\AIAgentWithToolApprovalModule.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\AgentsAPI\GroupChatWorkflowModule.Designer.cs">
-      <DependentUpon>GroupChatWorkflowModule.cs</DependentUpon>
+    <Compile Include="Modules\AgentsAPI\AIAgentWithToolApprovalModule.Designer.cs">
+      <DependentUpon>AIAgentWithToolApprovalModule.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\AgentsAPI\ToolCallingAgentModule.cs">
       <SubType>UserControl</SubType>
@@ -368,6 +368,8 @@
     <Content Include="Modules\AgentsAPI\EmptyMessageAreaTemplate.razor" />
     <Content Include="Modules\AgentsAPI\WeatherWidgetComponent.razor" />
     <Content Include="Modules\AgentsAPI\WeatherMessageContentTemplate.razor" />
+    <Content Include="Modules\AgentsAPI\ReasoningMessage.razor" />
+    <Content Include="Modules\AgentsAPI\AIAgentWithToolApprovalMessageContentTemplate.razor" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

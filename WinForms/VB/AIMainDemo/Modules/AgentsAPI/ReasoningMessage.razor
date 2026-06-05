@@ -1,0 +1,139 @@
+﻿@namespace DevExpress.AI.Demos
+@using DevExpress.AIIntegration.Blazor.Chat
+@using DevExpress.Blazor
+@using DevExpress.Blazor.Internal
+@using Microsoft.Extensions.AI
+@using Markdig
+
+@{
+    var reasoningItems = Message.Contents.OfType<TextReasoningContent>().ToList();
+    var reasoningText = string.Concat(reasoningItems.Select(r => r.Text));
+    if(reasoningItems.Count > 0)
+        EnsureReasoningStarted(Message);
+}
+@if(reasoningItems.Count > 0) {
+    <div class="reasoning-accordion">
+        <DxAccordion RootItemExpandButtonDisplayMode="AccordionExpandButtonDisplayMode.None">
+            <Items>
+                <DxAccordionItem Expanded="true">
+                    <HeaderTextTemplate Context="accordionItem">
+                        <div class="reasoning-header">
+                            <span class="reasoning-header-left">
+                                @if(GetAccordionText(Message) is string accordionText) {
+                                    @accordionText
+                                } else {
+                                    <DxWaitIndicator Visible="true" />
+                                    <span>Thinking...</span>
+                                }
+                            </span> 
+                            <DxImage Source="@(accordionItem.Expanded ? BlazorIcons.ChevronUp : BlazorIcons.ChevronDown)" />
+                        </div>
+                    </HeaderTextTemplate>
+                    <ContentTemplate Context="_">
+                        <div class="reasoning-text">@ToHtml(reasoningText)</div>
+                    </ContentTemplate>
+                </DxAccordionItem>
+            </Items>
+        </DxAccordion>
+    </div>
+}
+@if(!string.IsNullOrWhiteSpace(Message.Text)) {
+    <div class="reasoning-answer-text">@ToHtml(Message.Text)</div>
+}
+
+<style>
+    .reasoning-demo-container {
+        width: 100%;
+    }
+    /*BeginHide*/ ::deep /*EndHide*/ .demo-chat {
+        width: 100%;
+        height: 600px;
+    }
+    .reasoning-accordion {
+        margin-bottom: 8px;
+        border: 1px solid var(--dxds-color-border-neutral-default-rest);
+        border-radius: var(--bs-border-radius);
+        overflow: hidden;
+    }
+    .reasoning-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .reasoning-header-left {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .reasoning-text {
+        padding: 8px 12px;
+        margin: 0;
+    }
+    .reasoning-answer-text ::deep h1,
+    .reasoning-answer-text ::deep h2,
+    .reasoning-answer-text ::deep h3,
+    .reasoning-answer-text ::deep h4,
+    .reasoning-answer-text ::deep h5,
+    .reasoning-answer-text ::deep h6,
+    .reasoning-text ::deep h1,
+    .reasoning-text ::deep h2,
+    .reasoning-text ::deep h3,
+    .reasoning-text ::deep h4,
+    .reasoning-text ::deep h5,
+    .reasoning-text ::deep h6 {
+        font-size: 1em;
+        font-weight: 700;
+        margin: 0.5em 0 0.25em;
+        line-height: 1.4;
+    }
+    .reasoning-answer-text ::deep p,
+    .reasoning-text ::deep p {
+        margin: 0 0 0.5em;
+    }
+    .reasoning-answer-text ::deep p:last-child,
+    .reasoning-answer-text ::deep ul:last-child,
+    .reasoning-answer-text ::deep ol:last-child,
+    .reasoning-text ::deep p:last-child,
+    .reasoning-text ::deep ul:last-child,
+    .reasoning-text ::deep ol:last-child {
+        margin-bottom: 0;
+    }
+    .reasoning-answer-text ::deep ul,
+    .reasoning-answer-text ::deep ol,
+    .reasoning-text ::deep ul,
+    .reasoning-text ::deep ol {
+        margin: 0 0 0.5em;
+        padding-left: 1.5em;
+    }
+    .reasoning-answer-text ::deep li,
+    .reasoning-text ::deep li {
+        margin-bottom: 0.2em;
+    }
+</style>
+
+@code {
+    [Parameter] public BlazorChatMessage Message { get; set; } = default!;
+
+    static readonly MarkdownPipeline MarkdownPipeline = new MarkdownPipelineBuilder().DisableHtml().Build();
+
+    DateTime? reasoningStart;
+    TimeSpan? reasoningDuration;
+
+    void EnsureReasoningStarted(BlazorChatMessage msg) {
+        reasoningStart ??= DateTime.UtcNow;
+    }
+
+    string GetAccordionText(BlazorChatMessage msg) {
+        if(reasoningDuration == null && reasoningStart != null && Message.Contents.Last().GetType() != typeof(TextReasoningContent))
+            reasoningDuration = DateTime.UtcNow - (reasoningStart ?? DateTime.UtcNow);
+        if(reasoningDuration != null)
+            return $"Thought for {(int)reasoningDuration.Value.TotalSeconds}s";
+        return null;
+    }
+
+    MarkupString ToHtml(string markdown) {
+        string html = Markdown.ToHtml(markdown, MarkdownPipeline).Trim();
+        return new MarkupString(html);
+    }
+}

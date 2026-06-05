@@ -74,6 +74,8 @@ Namespace DevExpress.XtraSpreadsheet.Demos
             Me.spreadsheetControl1.Options.View.Charts.Antialiasing = DevExpress.XtraSpreadsheet.DocumentCapability.Enabled
             Me.spreadsheetControl1.Options.View.Charts.TextAntialiasing = DevExpress.XtraSpreadsheet.DocumentCapability.Enabled
             Me.spreadsheetControl1.Size = New System.Drawing.Size(655, 334)
+            AddHandler Me.spreadsheetControl1.DocumentLoaded, New System.EventHandler(AddressOf Me.Spreadsheet_DocumentLoaded)
+            AddHandler Me.spreadsheetControl1.EmptyDocumentCreated, New System.EventHandler(AddressOf Me.Spreadsheet_NewDocumentCreated)
             ' 
             ' ribbonControl1
             ' 

@@ -295,7 +295,7 @@ Namespace XtraReportsDemos.PivotGridAndChart
             Me.xpbDevExpress.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("svg", resources.GetString("xpbDevExpress.ImageSource"))
             Me.xpbDevExpress.LocationFloat = New DevExpress.Utils.PointFloat(382.875F, 43.875F)
             Me.xpbDevExpress.Name = "xpbDevExpress"
-            Me.xpbDevExpress.NavigateUrl = "http://www.devexpress.com/Products/NET/Reporting/"
+            Me.xpbDevExpress.NavigateUrl = "https://www.devexpress.com/Products/NET/Reporting/"
             Me.xpbDevExpress.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
             Me.xpbDevExpress.SizeF = New System.Drawing.SizeF(156.25F, 31.25F)
             Me.xpbDevExpress.Sizing = DevExpress.XtraPrinting.ImageSizeMode.AutoSize

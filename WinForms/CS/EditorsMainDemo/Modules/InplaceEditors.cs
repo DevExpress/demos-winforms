@@ -79,7 +79,7 @@ namespace DevExpress.XtraEditors.Demos {
             this.gridEditors.Add(this.repositoryItemImageEdit, Properties.Resources.ImageEdit, this.pictureBox1.Image);
             this.gridEditors.Add(this.repositoryItemMemoExEdit, Properties.Resources.MemoExEdit, Properties.Resources.MemoText);
             this.gridEditors.Add(this.repositoryItemRadioGroup, Properties.Resources.RadioGroup, 1);
-            this.gridEditors.Add(this.repositoryItemHyperLinkEdit, Properties.Resources.Hyperlink, "http://www.devexpress.com");
+            this.gridEditors.Add(this.repositoryItemHyperLinkEdit, Properties.Resources.Hyperlink, "https://www.devexpress.com");
             this.gridEditors.Add(this.repositoryItemCalcEdit, Properties.Resources.Calculator, 100.25);
             this.gridEditors.Add(this.repositoryItemColorEdit, Properties.Resources.ColorEdit, System.Drawing.Color.Blue);
             this.gridEditors.Add(this.repositoryItemTrackBar1, Properties.Resources.TrackBar, 4);

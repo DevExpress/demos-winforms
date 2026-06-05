@@ -839,7 +839,7 @@ Namespace XtraReportsDemos.BarCodes
             qrCodeGenerator1.FrameOptions = rectangleQRFrameOptions1
             qrCodeGenerator1.Version = DevExpress.XtraPrinting.BarCode.QRCodeVersion.Version2
             Me.xrBarCode23.Symbology = qrCodeGenerator1
-            Me.xrBarCode23.Text = "URL:http://www.devexpress.com"
+            Me.xrBarCode23.Text = "URL:https://www.devexpress.com"
             ' 
             ' xrBarCode36
             ' 
@@ -858,7 +858,7 @@ Namespace XtraReportsDemos.BarCodes
             qrCodeGenerator2.Logo = New DevExpress.XtraPrinting.Drawing.ImageSource("svg", resources.GetString("qrCodeGenerator2.Logo"))
             qrCodeGenerator2.Version = DevExpress.XtraPrinting.BarCode.QRCodeVersion.Version1
             Me.xrBarCode36.Symbology = qrCodeGenerator2
-            Me.xrBarCode36.Text = "URL:http://www.devexpress.com"
+            Me.xrBarCode36.Text = "URL:https://www.devexpress.com"
             ' 
             ' xrTableCell105
             ' 
@@ -2937,7 +2937,7 @@ Namespace XtraReportsDemos.BarCodes
             Me.xrPictureBox4.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("svg", resources.GetString("xrPictureBox4.ImageSource"))
             Me.xrPictureBox4.LocationFloat = New DevExpress.Utils.PointFloat(249F, 22F)
             Me.xrPictureBox4.Name = "xrPictureBox4"
-            Me.xrPictureBox4.NavigateUrl = "http://www.devexpress.com/Products/NET/Reporting/"
+            Me.xrPictureBox4.NavigateUrl = "https://www.devexpress.com/Products/NET/Reporting/"
             Me.xrPictureBox4.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
             Me.xrPictureBox4.SizeF = New System.Drawing.SizeF(156.25F, 31.25F)
             Me.xrPictureBox4.Sizing = DevExpress.XtraPrinting.ImageSizeMode.AutoSize

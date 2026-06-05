@@ -49,13 +49,13 @@ Namespace DevExpress.AI.ReportDesigner.Demo
             SetDataDirectory(directory)
             XtraReports.Configuration.Settings.Default.UserDesignerOptions.ConvertBindingsToExpressions = XtraReports.UI.PromptBoolean.False
             Dim azureOpenAIClient As AzureOpenAIClient = New AzureOpenAIClient(AzureOpenAIEndpointUri, AzureOpenAIKeyCredentials, New AzureOpenAIClientOptions() With {.Transport = New PromoteHttpStatusErrorsPipelineTransport()})
-            Dim chatClient As IChatClient = azureOpenAIClient.GetChatClient("gpt-4.1").AsIChatClient()
+            Dim chatClient As IChatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient()
             '
             Dim container = AIExtensionsContainerDesktop.Default
             container.RegisterChatClient(chatClient)
             container.RegisterAIExceptionHandler(New Helpers.AIExceptionHandler())
             'var builder = Kernel.CreateBuilder();
-            'builder.AddAzureOpenAIChatCompletion("gpt-5.2",
+            'builder.AddAzureOpenAIChatCompletion("demo",
             '    AzureOpenAIEndpoint,
             '    AzureOpenAIKey);
             '((IAIServiceContainer)container).RegisterService<Kernel>(builder.Build());

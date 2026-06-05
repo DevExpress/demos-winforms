@@ -59,7 +59,7 @@ namespace DevExpress.DevAV {
                 AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(AzureOpenAIEndpoint, AzureOpenAIKey, new AzureOpenAIClientOptions() {
                     Transport = new PromoteHttpStatusErrorsPipelineTransport()
                 });
-                var chatClient = azureOpenAIClient.GetChatClient("gpt-4.1").AsIChatClient();
+                var chatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient();
                 var serviceCollection = new ServiceCollection();
                 serviceCollection.AddSingleton(chatClient);
                 

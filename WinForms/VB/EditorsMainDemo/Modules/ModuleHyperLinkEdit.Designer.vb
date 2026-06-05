@@ -420,7 +420,7 @@ Namespace DevExpress.XtraEditors.Demos
             ' 
             ' hyperLinkEdit2
             ' 
-            Me.hyperLinkEdit2.EditValue = "http://www.devexpress.com/Products/Net/"
+            Me.hyperLinkEdit2.EditValue = "https://www.devexpress.com/Products/Net/"
             Me.hyperLinkEdit2.Location = New System.Drawing.Point(32, 106)
             Me.hyperLinkEdit2.Name = "hyperLinkEdit2"
             Me.hyperLinkEdit2.Properties.AccessibleName = "custom"

@@ -15,7 +15,7 @@ Namespace XtraReportsDemos.AIOperations
             Dim azureOpenAIEndpoint = New Uri("https://public-api.devexpress.com/demo-openai") 'DevExpress proxy-server
             Dim azureOpenAIKey = New ClientModel.ApiKeyCredential("DEMO") 'Demo key
             Dim azureOpenAIClient As AzureOpenAIClient = New AzureOpenAIClient(azureOpenAIEndpoint, azureOpenAIKey, New AzureOpenAIClientOptions() With {.Transport = New PromoteHttpStatusErrorsPipelineTransport()})
-            Dim chatClient As IChatClient = azureOpenAIClient.GetChatClient("gpt-4.1").AsIChatClient()
+            Dim chatClient As IChatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient()
             Dim container = AIExtensionsContainerDesktop.Default
             container.RegisterChatClient(chatClient)
             container.RegisterAIExceptionHandler(New AIExceptionHandler())

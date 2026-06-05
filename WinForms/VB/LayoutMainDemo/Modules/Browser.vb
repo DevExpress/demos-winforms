@@ -14,7 +14,7 @@ Namespace DevExpress.XtraLayout.Demos
 
         Private defaultUrl As String = ""
 
-        Private dxUrl As String = "http://www.devexpress.com/"
+        Private dxUrl As String = "https://www.devexpress.com/"
 
         Public Sub New()
             InitializeComponent()

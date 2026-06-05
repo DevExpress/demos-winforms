@@ -89,7 +89,7 @@ Namespace DevExpress.XtraEditors.Demos
             gridEditors.Add(repositoryItemImageEdit, Properties.Resources.ImageEdit, pictureBox1.Image)
             gridEditors.Add(repositoryItemMemoExEdit, Properties.Resources.MemoExEdit, Properties.Resources.MemoText)
             gridEditors.Add(repositoryItemRadioGroup, Properties.Resources.RadioGroup, 1)
-            gridEditors.Add(repositoryItemHyperLinkEdit, Properties.Resources.Hyperlink, "http://www.devexpress.com")
+            gridEditors.Add(repositoryItemHyperLinkEdit, Properties.Resources.Hyperlink, "https://www.devexpress.com")
             gridEditors.Add(repositoryItemCalcEdit, Properties.Resources.Calculator, 100.25)
             gridEditors.Add(repositoryItemColorEdit, Properties.Resources.ColorEdit, System.Drawing.Color.Blue)
             gridEditors.Add(repositoryItemTrackBar1, Properties.Resources.TrackBar, 4)

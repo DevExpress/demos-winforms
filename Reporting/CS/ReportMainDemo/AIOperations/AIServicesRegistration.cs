@@ -15,7 +15,7 @@ namespace XtraReportsDemos.AIOperations {
             AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(azureOpenAIEndpoint, azureOpenAIKey, new AzureOpenAIClientOptions() {
                 Transport = new PromoteHttpStatusErrorsPipelineTransport()
             });
-            IChatClient chatClient = azureOpenAIClient.GetChatClient("gpt-4.1").AsIChatClient();
+            IChatClient chatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient();
             var container = AIExtensionsContainerDesktop.Default;
             container.RegisterChatClient(chatClient);
             container.RegisterAIExceptionHandler(new AIExceptionHandler());

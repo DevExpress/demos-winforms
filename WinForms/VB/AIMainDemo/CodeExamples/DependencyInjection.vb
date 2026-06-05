@@ -49,7 +49,7 @@ Namespace DevExpress.AI.Demos
         Public Sub InvokeWithSettings(ByVal layoutControl As DevExpress.XtraLayout.LayoutControl, ByVal button As DevExpress.XtraEditors.SimpleButton)
             Dim AzureOpenAIEndpoint As String = "https://public-api.devexpress.com/demo-openai"
             Dim AzureOpenAIKey As String = "DEMO"
-            Dim DeploymentName As String = "gpt-4o-mini"
+            Dim DeploymentName As String = "demo-mini"
             Dim azureOpenAIClient As Microsoft.Extensions.AI.IChatClient = New Azure.AI.OpenAI.AzureOpenAIClient(CType((New System.Uri(CStr((AzureOpenAIEndpoint)))), System.Uri), CType((New System.ClientModel.ApiKeyCredential(CStr((AzureOpenAIKey)))), System.ClientModel.ApiKeyCredential)).GetChatClient(CStr((DeploymentName))).AsIChatClient()
             ' Configure the service provider (this should usually be done at application startup)
             Dim serviceProvider = DevExpress.AIIntegration.AIExtensionsContainerConsole.AddDevExpressAIConsole(New Microsoft.Extensions.DependencyInjection.ServiceCollection(), CType((Sub(settings)
@@ -77,7 +77,7 @@ Namespace DevExpress.AI.Demos
         Public Sub InvokeWithServices(ByVal layoutControl As DevExpress.XtraLayout.LayoutControl, ByVal button As DevExpress.XtraEditors.SimpleButton)
             Dim AzureOpenAIEndpoint As String = "https://public-api.devexpress.com/demo-openai"
             Dim AzureOpenAIKey As String = "DEMO"
-            Dim DeploymentName As String = "gpt-4o-mini"
+            Dim DeploymentName As String = "demo-mini"
             Dim azureOpenAIClient As Microsoft.Extensions.AI.IChatClient = New Azure.AI.OpenAI.AzureOpenAIClient(CType((New System.Uri(CStr((AzureOpenAIEndpoint)))), System.Uri), CType((New System.ClientModel.ApiKeyCredential(CStr((AzureOpenAIKey)))), System.ClientModel.ApiKeyCredential)).GetChatClient(CStr((DeploymentName))).AsIChatClient()
             ' Configure the service provider (this should usually be done at application startup)
             ' 3) You can register your own handlers and customization interceptors here

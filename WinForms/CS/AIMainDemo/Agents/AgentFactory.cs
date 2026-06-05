@@ -1,7 +1,7 @@
 ﻿#if NET
-using DevExpress.AI.Demos.Agents.Publishing;
 using DevExpress.AI.Demos.Agents.Shakespearean;
 using DevExpress.AI.Demos.Agents.TextProcessing;
+using DevExpress.AI.Demos.Agents.ToolApprovals;
 using DevExpress.AIIntegration.Agents;
 using DevExpress.AIIntegration.Chat;
 using Microsoft.Agents.AI;
@@ -52,38 +52,25 @@ namespace DevExpress.AI.Demos.Agents {
                 .Build();
         }
 
-        public Workflow CreatePublishingGroupChatWorkflow() {
-            ChatClientAgent contentReviewer = new(
-                chatClient,
-                "You are a content reviewer responsible for checking articles before publication. " +
-                "Review the article quality and run a plagiarism check, then report results clearly.",
-                "ContentReviewer",
-                "Content reviewer who checks article quality and originality",
-                [
-                    AIFunctionFactory.Create(PublishingAgentTools.ReviewContent),
-                    AIFunctionFactory.Create(PublishingAgentTools.RunPlagiarismCheck)
+        public AIAgent CreateToolApprovalAgent() {
+            const string instructions =
+            @"You are an AI assistant for a CRM demo system. The following data is currently in the system:
+                - CRM Accounts: 8 inactive accounts in Texas at the Tier 1 service level.
+                - Overdue Invoices: 4 clients with unpaid invoices. Total outstanding balance: $321.00.
+                - Order History: 1,234 orders placed between 1999 and 2019 (before 2020). Archive destination: Secure archive vault.
+
+            When calling tools, always use these exact values:
+                - UpdateAccountTier: accountCount=8 for inactive Texas accounts.
+                - SendBulkEmail: clientCount=4, totalBalance=""$321.00"" for overdue invoice reminders.
+                - ArchiveOrders: recordCount=1234, startYear=1999, destination=""Secure archive vault"" for pre-2020 orders.";
+
+            return chatClient.AsAIAgent(
+                instructions: instructions,
+                tools: [
+                    ToolApprovalAIFunctions.UpdateAccountTierTool,
+                    ToolApprovalAIFunctions.SendBulkEmailTool,
+                    ToolApprovalAIFunctions.ArchiveOrdersTool
                 ]);
-
-            ChatClientAgent publisher = new(
-                chatClient,
-                "You are a publisher responsible for scheduling and publishing articles. " +
-                "First schedule the publication date, then proceed to publish to the live channels. " +
-                "Always confirm the schedule is in place before publishing.",
-                "Publisher",
-                "Publisher who schedules and publishes articles to live channels",
-                [
-                    AIFunctionFactory.Create(PublishingAgentTools.SchedulePublication),
-                    new ApprovalRequiredAIFunction(AIFunctionFactory.Create(PublishingAgentTools.PublishToLive))
-                ]);
-
-            PublishingGroupChatManager manager = new([contentReviewer, publisher]) {
-                MaximumIterationCount = 4
-            };
-
-            return AgentWorkflowBuilder
-                .CreateGroupChatBuilderWith(_ => manager)
-                .AddParticipants([contentReviewer, publisher])
-                .Build();
         }
 
         public static Workflow CreateTextProcessingWorkflow() {

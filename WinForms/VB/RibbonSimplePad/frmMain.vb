@@ -813,7 +813,7 @@ Namespace DevExpress.XtraBars.Demos.RibbonSimplePad
         End Sub
 
         Private Sub iWeb_ItemClick(ByVal sender As Object, ByVal e As ItemClickEventArgs)
-            Dim fileName As String = "http://www.devexpress.com"
+            Dim fileName As String = "https://www.devexpress.com"
             SafeProcess.Open(fileName)
         End Sub
 
@@ -1227,7 +1227,7 @@ Namespace DevExpress.XtraBars.Demos.RibbonSimplePad
         End Sub
 
         Private Sub barEditItem1_ItemPress(ByVal sender As Object, ByVal e As ItemClickEventArgs)
-            SafeProcess.TryOpenHyperlink("http://www.devexpress.com")
+            SafeProcess.TryOpenHyperlink("https://www.devexpress.com")
         End Sub
 
         Private Sub biStyle_EditValueChanged(ByVal sender As Object, ByVal e As EventArgs)

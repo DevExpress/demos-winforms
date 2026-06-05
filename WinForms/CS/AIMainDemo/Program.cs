@@ -88,7 +88,7 @@ namespace DevExpress.AI.Demos {
             AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(AzureOpenAIEndpoint, AzureOpenAIKey, new AzureOpenAIClientOptions() {
                 Transport = new PromoteHttpStatusErrorsPipelineTransport()
             });
-            var chatClient = azureOpenAIClient.GetChatClient("gpt-4.1").AsIChatClient();
+            var chatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient();
             var embeddingGenerator = azureOpenAIClient.GetEmbeddingClient("text-embedding-3-small")
                 .AsIEmbeddingGenerator();
 
@@ -150,7 +150,7 @@ namespace DevExpress.AI.Demos {
                     }
                 };
                 var responsesClient = azureOpenAIClient.GetResponsesClient();
-                var reasoningClient = responsesClient.AsIChatClient("gpt-5-mini").AsBuilder().ConfigureOptions(x => {
+                var reasoningClient = responsesClient.AsIChatClient("demo-mini").AsBuilder().ConfigureOptions(x => {
                     x.RawRepresentationFactory = _ => baseOptions;
                 }).Build();
                 return reasoningClient.AsIChatResponseProvider();
@@ -182,12 +182,11 @@ namespace DevExpress.AI.Demos {
                     aguiHost.GetWeatherAgentEndpoint());
             });
 
-            // Group Chat Workflow with Tool Calling Approval
-            serviceCollection.AddKeyedScoped<IChatResponseProvider>(GroupChatWorkflowModule.ServiceKey, (sp, _) => {
-                return new WorkflowResponseProvider<List<ChatMessage>>(
-                    agentFactory.CreatePublishingGroupChatWorkflow(),
-                    messages => [.. messages],
-                    WorkflowResponseProviderStartMode.Open);
+            // Tool Calling Approval
+            serviceCollection.AddKeyedTransient<IChatResponseProvider>(AIAgentWithToolApprovalModule.ServiceKey, (sp, _) => {
+                var agent = agentFactory.CreateToolApprovalAgent();
+                var session = agent.CreateSessionAsync().GetAwaiter().GetResult();
+                return agent.AsIChatResponseProvider(session);
             });
 #endif
             serviceCollection.AddChatClient(chatClient);

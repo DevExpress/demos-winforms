@@ -137,7 +137,7 @@ Namespace XtraReportsDemos.MultiColumnReport
             Me.xrPictureBox1.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("svg", resources.GetString("xrPictureBox1.ImageSource"))
             Me.xrPictureBox1.LocationFloat = New DevExpress.Utils.PointFloat(254F, 13F)
             Me.xrPictureBox1.Name = "xrPictureBox1"
-            Me.xrPictureBox1.NavigateUrl = "http://www.devexpress.com/Products/NET/Reporting/"
+            Me.xrPictureBox1.NavigateUrl = "https://www.devexpress.com/Products/NET/Reporting/"
             Me.xrPictureBox1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
             Me.xrPictureBox1.SizeF = New System.Drawing.SizeF(165.625F, 30.20833F)
             Me.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.AutoSize

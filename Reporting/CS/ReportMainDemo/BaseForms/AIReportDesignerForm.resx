@@ -121,82 +121,53 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="behaviorManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>267, 17</value>
+    <value>470, 17</value>
   </metadata>
   <data name="aiReportPrompt1.Text" xml:space="preserve">
-    <value>1. General Information
-Report Title:
-(e.g., “Monthly Sales Report”)
-
-Page Settings:
-
-Format: (e.g., A4 / A3 / others)
-
-Orientation: (Portrait / Landscape)
-
-Margins: (e.g., 2 cm on all sides)
-
-2. Report Header
-Left Section:
-(e.g., company logo image, date, report number)
-
-Center Section:
-(e.g., report title in large font)
-
-Right Section:
-(e.g., contact information, page number)
-
-Header Text Style:
-(e.g., Font: Arial, Size: 16 pt, Bold, Center-aligned)
-
-Image Placeholder (if needed):
-(Describe the image and its placement — if required)
-
-3. Main Content Area (Body)
-Description of Main Area:
-(Brief description — e.g., table, text blocks, charts)
-
-Table Section:
-
-Number of Columns: (e.g., 5)
-
-Column Titles:
-
-Date
-
-Item Name
-
-Quantity
-
-Unit Price
-
-Total Amount
-
-Table Header Style:
-(e.g., Font: Calibri, Size: 12 pt, Bold, Light gray background)
-
-Row Style:
-(e.g., Font: Calibri, Size: 11 pt, alternate row shading)
-
-Table Rows (if predefined):
-
-Date	Item Name	Quantity	Unit Price	Total Amount
-01.05.2025	Product A	10	$10.00	$100.00
-…	…	…	…	…
-
-4. Footer
-Left Section:
-(e.g., report creation date)
-
-Center Section:
-(e.g., signature)
-
-Right Section:
-(e.g., full name and position)
-
-Additional Information:
-(e.g., “This document was automatically generated using AI”, “Confidential”, etc.)
-</value>
+    <value>Create Sample Report:
+ 
+Page Setup:
+- Paper Size: A4
+- Report Margins:
+    - Top &amp; Bottom: 40
+    - Left &amp; Right: 60
+---
+Report Header:
+- Title: Sample Report
+- Alignment: Center
+- Font: Comic Sans MS, 12pt, Bold
+---
+Page Header:
+- Left side: [Logo image, 100x100]
+- Right side: Document name, Company name, Date labels
+---
+Group Header:
+Create a vertical table with the following rows:
+- | Label1 | [Value1] (data bound field) | 
+- | Label2 | [Value2] (data bound field) |
+- | Label3 | [Value3] (data bound field) |
+ 
+Font for vertical table rows: Comic Sans MS, 12pt, Bold
+ 
+Create one more horizontal table with the following column headers: [Column1, Column2, Column3, Column4]
+Font for column headers: Comic Sans MS, 12pt, Bold
+ 
+---
+Detail Section:
+Bind data cells to the fields corresponding to the column headers defined in the Group Header
+Font for data cells: Comic Sans MS, 12pt, Bold
+ 
+---
+Summary Section:
+Include calculated values for fields: [Field1, Field2, Field3]
+Summary types: [sumSum, sumAvg, sumCount]
+Font for summary values: Comic Sans MS, 12pt, Bold
+ 
+---
+Page Footer:
+Left side: [Optional text or label]
+Right side: [Signature image, Full name label, Position label]
+Font for labels: Comic Sans MS, 12pt, Bold</value>
   </data>
   <data name="aiReportPrompt2.Text" xml:space="preserve">
     <value>Create Sales Summary Report
@@ -425,9 +396,21 @@ Report Footer:
 - Add a ""Returns Policy"" label. Below it, include an empty label for future content.
 - Add a ""Returns Instructions"" label. Below it, include another empty label for additional details.</value>
   </data>
-  <metadata name="adornerUIManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>545, 17</value>
-  </metadata>
+  <data name="aiReportPrompt6.Text" xml:space="preserve">
+    <value>Create a professional quote/estimate report for a customer. The report should contain company information, quote details, customer contact information, and a table of quoted products or services with quantities, unit prices, and totals. Include the subtotal, discount, tax, and final quoted price, terms and conditions, and a customer signature section. The report should look clean and business-oriented, support category grouping, and clearly highlight the final amount and quote validity period.</value>
+  </data>
+  <data name="aiReportPrompt7.Text" xml:space="preserve">
+    <value>Create a clean employee directory report with company information, the report date, and a list of employees grouped by department or office location. Include employee photos, names, job titles, phone numbers, email addresses, and office locations in a compact table. Add department headers, employee counts, and a total employee summary at the end. The report should look modern and easy to scan, with alternating row colors, highlighted department sections, clickable email addresses, and compact spacing to fit many employees on each page.</value>
+  </data>
+  <data name="aiReportPrompt8.Text" xml:space="preserve">
+    <value>Create an inventory stock report for a warehouse. The report should show current stock levels, inventory value, and low-stock alerts. Include a table grouped by product category with item codes, descriptions, locations, quantities on hand, reorder points, incoming stock, unit cost, and total value. Add summary metrics for the total number of inventory items, total stock value, and the number of items below the reorder level, along with a highlighted reorder alert section for items that need restocking. The report should look clean and data-focused, with conditional formatting for low-stock situations and clear category totals.</value>
+  </data>
+  <data name="aiReportPrompt9.Text" xml:space="preserve">
+    <value>Create a professional sales order report for customer purchases. The report should display company information, order details, billing and shipping addresses, payment terms, and the shipping method. Include a detailed table of ordered products with quantities, prices, discounts, and line totals, followed by the subtotal, tax, shipping costs, and a highlighted final order total. Add sections for special instructions, the requested delivery date, and a customer signature. The report should look clean and business-oriented, with clear tables, bordered totals, and support for discounts and shipping information.</value>
+  </data>
+  <data name="aiReportPrompt10.Text" xml:space="preserve">
+    <value>Create a professional account statement report for a customer. The report should show the statement period, account number, customer details, and an account summary with the previous balance, payments, new charges, current balance, and amount due. Include a transaction history table with dates, transaction types, references, charges, payments, and a running balance. Add an aging summary and a payment remittance section at the bottom. The report should look clean and formal, with conditional formatting for overdue aging amounts and a clearly highlighted amount due.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
   <data name="AIReportDesignerForm.IconOptions.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

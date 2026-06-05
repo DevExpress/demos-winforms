@@ -434,7 +434,7 @@ namespace DevExpress.XtraEditors.Demos {
             // 
             // hyperLinkEdit2
             // 
-            this.hyperLinkEdit2.EditValue = "http://www.devexpress.com/Products/Net/";
+            this.hyperLinkEdit2.EditValue = "https://www.devexpress.com/Products/Net/";
             this.hyperLinkEdit2.Location = new System.Drawing.Point(32, 106);
             this.hyperLinkEdit2.Name = "hyperLinkEdit2";
             this.hyperLinkEdit2.Properties.AccessibleName = "custom";

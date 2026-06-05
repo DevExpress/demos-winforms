@@ -1,6 +1,6 @@
-#If NET
+﻿#if NET
 namespace DevExpress.AI.Demos {
-    partial class GroupChatWorkflowModule {
+    partial class AIAgentWithToolApprovalModule {
         private System.ComponentModel.IContainer components = null;
 
         protected override void Dispose(bool disposing) {
@@ -10,14 +10,14 @@ namespace DevExpress.AI.Demos {
             base.Dispose(disposing);
         }
 
-#Region "Component Designer generated code"
+        #region Component Designer generated code
 
         private void InitializeComponent() {
             components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         }
 
-#End Region
+        #endregion
     }
 }
-#End If
+#endif

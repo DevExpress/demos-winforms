@@ -94,7 +94,7 @@ Namespace DevExpress.AI.Demos
             Call Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
             Dim azureOpenAIClient As AzureOpenAIClient = New AzureOpenAIClient(AzureOpenAIEndpoint, AzureOpenAIKey, New AzureOpenAIClientOptions() With {.Transport = New PromoteHttpStatusErrorsPipelineTransport()})
-            Dim chatClient = azureOpenAIClient.GetChatClient("gpt-4.1").AsIChatClient()
+            Dim chatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient()
             Dim embeddingGenerator = azureOpenAIClient.GetEmbeddingClient("text-embedding-3-small").AsIEmbeddingGenerator()
             ' 
             ' For demonstration purposes, we're using a simple InMemoryCollection to store vectors in memory,
@@ -152,7 +152,7 @@ Namespace DevExpress.AI.Demos
                     }
                 };
                 var responsesClient = azureOpenAIClient.GetResponsesClient();
-                var reasoningClient = responsesClient.AsIChatClient("gpt-5-mini").AsBuilder().ConfigureOptions(x => {
+                var reasoningClient = responsesClient.AsIChatClient("demo-mini").AsBuilder().ConfigureOptions(x => {
                     x.RawRepresentationFactory = _ => baseOptions;
                 }).Build();
                 return reasoningClient.AsIChatResponseProvider();
@@ -184,12 +184,11 @@ Namespace DevExpress.AI.Demos
                     aguiHost.GetWeatherAgentEndpoint());
             });
 
-            // Group Chat Workflow with Tool Calling Approval
-            serviceCollection.AddKeyedScoped<IChatResponseProvider>(GroupChatWorkflowModule.ServiceKey, (sp, _) => {
-                return new WorkflowResponseProvider<List<ChatMessage>>(
-                    agentFactory.CreatePublishingGroupChatWorkflow(),
-                    messages => [.. messages],
-                    WorkflowResponseProviderStartMode.Open);
+            // Tool Calling Approval
+            serviceCollection.AddKeyedTransient<IChatResponseProvider>(AIAgentWithToolApprovalModule.ServiceKey, (sp, _) => {
+                var agent = agentFactory.CreateToolApprovalAgent();
+                var session = agent.CreateSessionAsync().GetAwaiter().GetResult();
+                return agent.AsIChatResponseProvider(session);
             });
 #End If
             serviceCollection.AddChatClient(chatClient)

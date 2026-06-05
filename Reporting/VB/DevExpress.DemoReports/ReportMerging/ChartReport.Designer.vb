@@ -297,7 +297,7 @@ Namespace XtraReportsDemos.ReportMerging
             Me.xrPictureBox4.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("svg", resources.GetString("xrPictureBox4.ImageSource"))
             Me.xrPictureBox4.LocationFloat = New DevExpress.Utils.PointFloat(382F, 22F)
             Me.xrPictureBox4.Name = "xrPictureBox4"
-            Me.xrPictureBox4.NavigateUrl = "http://www.devexpress.com/Products/NET/Reporting/"
+            Me.xrPictureBox4.NavigateUrl = "https://www.devexpress.com/Products/NET/Reporting/"
             Me.xrPictureBox4.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
             Me.xrPictureBox4.SizeF = New System.Drawing.SizeF(165.625F, 30.20833F)
             Me.xrPictureBox4.Sizing = DevExpress.XtraPrinting.ImageSizeMode.AutoSize

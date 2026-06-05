@@ -29,6 +29,11 @@ namespace XtraReportsDemos {
             DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt3 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
             DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt4 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
             DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt5 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
+            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt6 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
+            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt7 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
+            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt8 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
+            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt9 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
+            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt10 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.reportDesigner1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
@@ -46,13 +51,28 @@ namespace XtraReportsDemos {
             aiReportPrompt4.Title = "Commercial Invoice Report";
             aiReportPrompt5.Text = resources.GetString("aiReportPrompt5.Text");
             aiReportPrompt5.Title = "Shipping Label Report";
+            aiReportPrompt6.Text = resources.GetString("aiReportPrompt6.Text");
+            aiReportPrompt6.Title = "Customer Quote Report";
+            aiReportPrompt7.Text = resources.GetString("aiReportPrompt7.Text");
+            aiReportPrompt7.Title = "Employee Directory Report";
+            aiReportPrompt8.Text = resources.GetString("aiReportPrompt8.Text");
+            aiReportPrompt8.Title = "Inventory Stock Report";
+            aiReportPrompt9.Text = resources.GetString("aiReportPrompt9.Text");
+            aiReportPrompt9.Title = "Sales Order Report";
+            aiReportPrompt10.Text = resources.GetString("aiReportPrompt10.Text");
+            aiReportPrompt10.Title = "Account Statement Report";
             this.behaviorManager1.SetBehaviors(this.reportDesigner1, new DevExpress.Utils.Behaviors.Behavior[] {
             ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(typeof(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, true, 0F, new DevExpress.AIIntegration.Reporting.AIReportPrompt[] {
                         aiReportPrompt1,
                         aiReportPrompt2,
                         aiReportPrompt3,
                         aiReportPrompt4,
-                        aiReportPrompt5}))),
+                        aiReportPrompt5,
+                        aiReportPrompt6,
+                        aiReportPrompt7,
+                        aiReportPrompt8,
+                        aiReportPrompt9,
+                        aiReportPrompt10}))),
             ((DevExpress.Utils.Behaviors.Behavior)(((DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior)(DevExpress.Utils.Behaviors.Behavior.Create(typeof(DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), typeof(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerLocalizationBehaviorSource), new object[] {
                         ((object)(3)),
                         ((object)(false)),
@@ -62,9 +82,10 @@ namespace XtraReportsDemos {
             // 
             // AIReportDesignerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1220, 602);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.ClientSize = new System.Drawing.Size(1830, 972);
             this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("AIReportDesignerForm.IconOptions.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.Name = "AIReportDesignerForm";
             ((System.ComponentModel.ISupportInitialize)(this.reportDesigner1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();

@@ -278,7 +278,7 @@ Namespace XtraReportsDemos.Sparkline
             xrPictureBox1.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("svg", resources.GetString("xrPictureBox1.ImageSource"))
             xrPictureBox1.LocationFloat = New DevExpress.Utils.PointFloat(249F, 30F)
             xrPictureBox1.Name = "xrPictureBox1"
-            xrPictureBox1.NavigateUrl = "http://www.devexpress.com/Products/NET/Reporting/"
+            xrPictureBox1.NavigateUrl = "https://www.devexpress.com/Products/NET/Reporting/"
             xrPictureBox1.SizeF = New System.Drawing.SizeF(165.625F, 30.20833F)
             xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.AutoSize
             xrPictureBox1.UseImageResolution = False

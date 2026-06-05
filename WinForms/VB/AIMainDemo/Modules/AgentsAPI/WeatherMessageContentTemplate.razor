@@ -14,9 +14,9 @@
                 <WeatherWidgetComponent WeatherData="@weatherData" />
             </div>
         }
-        if (!string.IsNullOrWhiteSpace(Message.Content))
+        if (!string.IsNullOrWhiteSpace(Message.Text))
         {
-            <div>@ToHtml(Message.Content)</div>
+            <div>@ToHtml(Message.Text)</div>
         }
     }
 </div>

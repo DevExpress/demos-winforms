@@ -72,6 +72,8 @@
             this.spreadsheetControl1.Options.View.Charts.Antialiasing = DevExpress.XtraSpreadsheet.DocumentCapability.Enabled;
             this.spreadsheetControl1.Options.View.Charts.TextAntialiasing = DevExpress.XtraSpreadsheet.DocumentCapability.Enabled;
             this.spreadsheetControl1.Size = new System.Drawing.Size(655, 334);
+            this.spreadsheetControl1.DocumentLoaded += new System.EventHandler(this.Spreadsheet_DocumentLoaded);
+            this.spreadsheetControl1.EmptyDocumentCreated += new System.EventHandler(this.Spreadsheet_NewDocumentCreated);
             // 
             // ribbonControl1
             // 

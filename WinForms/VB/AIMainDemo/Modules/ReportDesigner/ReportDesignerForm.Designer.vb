@@ -642,6 +642,11 @@ Namespace DevExpress.AI.Demos
             Dim aiReportPrompt3 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
             Dim aiReportPrompt4 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
             Dim aiReportPrompt5 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
+            Dim aiReportPrompt6 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
+            Dim aiReportPrompt7 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
+            Dim aiReportPrompt8 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
+            Dim aiReportPrompt9 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
+            Dim aiReportPrompt10 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
             Dim xrDesignPanelListener1 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
             Dim xrDesignPanelListener2 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
             Dim xrDesignPanelListener3 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
@@ -988,8 +993,10 @@ Namespace DevExpress.AI.Demos
             Me.ribbonStatusBar1 = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
             Me.reportDesigner1 = New DevExpress.XtraReports.UserDesigner.XRDesignMdiController(Me.components)
             Me.xtraTabbedMdiManager1 = New DevExpress.XtraReports.UserDesigner.XRTabbedMdiManager(Me.components)
-            Me.tabbedView6 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
+            Me.tabbedView8 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
             Me.tabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
+            Me.tabbedView7 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
+            Me.tabbedView6 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
             Me.tabbedView5 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
             Me.tabbedView4 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
             Me.tabbedView3 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
@@ -1022,8 +1029,10 @@ Namespace DevExpress.AI.Demos
             CType((Me.repositoryItemZoomTrackBar1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.reportDesigner1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.xtraTabbedMdiManager1), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((Me.tabbedView6), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.tabbedView8), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.tabbedView1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.tabbedView7), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.tabbedView6), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.tabbedView5), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.tabbedView4), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.tabbedView3), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1042,15 +1051,15 @@ Namespace DevExpress.AI.Demos
             Me.ribbonControl1.ApplicationButtonDropDownControl = Me.applicationMenu1
             Me.ribbonControl1.AutoHideEmptyItems = True
             Me.ribbonControl1.AutoSizeItems = True
-            Me.ribbonControl1.EmptyAreaImageOptions.ImagePadding = New System.Windows.Forms.Padding(480, 460, 480, 460)
+            Me.ribbonControl1.EmptyAreaImageOptions.ImagePadding = New System.Windows.Forms.Padding(360, 386, 360, 386)
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
             Me.ribbonControl1.ItemPanelStyle = DevExpress.XtraBars.Ribbon.RibbonItemPanelStyle.Classic
             Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.commandBarItem1, Me.commandBarItem2, Me.commandBarItem3, Me.commandBarItem4, Me.commandBarItem5, Me.commandBarItem6, Me.commandBarItem7, Me.commandBarItem8, Me.commandBarItem9, Me.commandBarItem10, Me.commandBarItem11, Me.commandBarItem12, Me.commandBarItem13, Me.commandBarItem14, Me.commandBarItem15, Me.commandBarItem16, Me.barEditItem1, Me.barEditItem2, Me.barDockPanelsListItem1, Me.commandBarItem17, Me.commandBarItem18, Me.commandBarItem19, Me.commandColorBarItem1, Me.commandColorBarItem2, Me.commandBarItem20, Me.commandBarItem21, Me.commandBarItem22, Me.commandBarItem23, Me.commandBarItem24, Me.commandBarItem25, Me.commandBarItem26, Me.commandBarItem27, Me.commandBarItem28, Me.commandBarItem29, Me.commandBarItem30, Me.commandBarItem31, Me.commandBarItem32, Me.commandBarItem33, Me.commandBarItem34, Me.commandBarItem35, Me.commandBarItem36, Me.commandBarItem37, Me.commandColorBarItem3, Me.commandBarItem38, Me.commandBarItem39, Me.commandBarItem40, Me.commandBarItem41, Me.commandBarItem42, Me.commandBarItem43, Me.commandBarItem44, Me.commandBarItem45, Me.commandBarItem46, Me.commandBarItem47, Me.commandBarItem48, Me.commandBarItem49, Me.commandBarItem50, Me.commandBarItem51, Me.commandBarItem52, Me.commandBarItem53, Me.commandBarItem54, Me.commandBarItem55, Me.commandBarItem56, Me.commandBarItem57, Me.commandBarItem58, Me.commandBarItem59, Me.commandBarItem60, Me.commandBarItem61, Me.commandBarCheckItem1, Me.commandBarCheckItem2, Me.commandBarItem62, Me.commandBarItem63, Me.commandBarItem64, Me.commandBarItem65, Me.commandColorBarItem4, Me.commandBarItem66, Me.commandBarItem67, Me.commandBarItem68, Me.commandBarItem69, Me.commandBarItem70, Me.commandBarItem71, Me.commandBarItem72, Me.commandBarItem73, Me.commandBarItem74, Me.commandGalleryBarItem1, Me.commandGalleryBarItem2, Me.commandGalleryBarItem3, Me.commandGalleryBarItem4, Me.commandGalleryBarItem5, Me.commandGalleryBarItem6, Me.commandBarEditItem1, Me.commandBarEditItem2, Me.commandBarEditItem3, Me.commandBarEditItem4, Me.commandBarEditItem5, Me.commandBarEditItem6, Me.commandBarEditItem7, Me.commandBarItem75, Me.commandBarItem76, Me.commandBarItem77, Me.commandBarItem78, Me.commandBarItem79, Me.commandBarItem80, Me.commandBarItem81, Me.commandBarItem82, Me.commandBarItem83, Me.commandBarItem84, Me.commandBarItem85, Me.commandBarItem86, Me.commandBarItem87, Me.commandBarItem88, Me.commandBarItem89, Me.commandBarItem90, Me.commandBarItem91, Me.commandBarItem92, Me.commandBarItem93, Me.commandBarItem94, Me.commandBarItem95, Me.commandBarItem96, Me.commandBarItem97, Me.commandBarItem98, Me.commandBarItem99, Me.commandBarItem100, Me.commandBarItem101, Me.commandBarItem102, Me.commandBarItem103, Me.commandBarItem104, Me.commandBarItem105, Me.commandBarItem106, Me.commandBarItem107, Me.commandBarItem108, Me.commandBarItem109, Me.commandBarItem110, Me.commandBarItem111, Me.commandBarItem112, Me.commandBarItem113, Me.commandBarItem114, Me.commandBarItem115, Me.commandBarItem116, Me.commandBarItem117, Me.commandBarItem118, Me.commandBarItem119, Me.commandBarItem120, Me.commandBarCheckItem3, Me.commandBarCheckItem4, Me.commandBarCheckItem5, Me.commandBarCheckItem6, Me.commandBarCheckItem7, Me.commandBarCheckItem8, Me.commandBarItem121, Me.commandBarItem122, Me.commandBarItem123, Me.commandBarItem124, Me.commandBarItem125, Me.commandBarItem126, Me.xrDesignBarButtonGroup1, Me.xrDesignBarButtonGroup2, Me.xrDesignBarButtonGroup3, Me.xrDesignBarButtonGroup4, Me.xrDesignBarButtonGroup5, Me.xrDesignBarButtonGroup6, Me.xrDesignBarButtonGroup7, Me.xrDesignBarButtonGroup8, Me.xrDesignBarButtonGroup9, Me.xrDesignBarButtonGroup10, Me.xrDesignBarButtonGroup11, Me.xrDesignBarButtonGroup12, Me.xrDesignBarButtonGroup13, Me.xrDesignBarButtonGroup14, Me.printPreviewBarItem1, Me.printPreviewBarItem2, Me.printPreviewBarItem3, Me.printPreviewBarItem4, Me.printPreviewBarItem5, Me.printPreviewBarItem7, Me.printPreviewBarItem8, Me.printPreviewBarItem11, Me.printPreviewBarItem13, Me.printPreviewBarItem14, Me.printPreviewBarItem15, Me.printPreviewBarItem16, Me.printPreviewBarItem17, Me.printPreviewBarItem18, Me.printPreviewBarItem19, Me.printPreviewBarItem20, Me.printPreviewBarItem21, Me.printPreviewBarItem22, Me.printPreviewBarItem23, Me.printPreviewBarItem24, Me.printPreviewBarItem25, Me.printPreviewBarItem26, Me.printPreviewBarItem27, Me.printPreviewBarItem28, Me.printPreviewBarItem29, Me.printPreviewBarItem30, Me.printPreviewBarItem31, Me.printPreviewBarItem32, Me.printPreviewBarItem33, Me.printPreviewBarItem34, Me.printPreviewBarItem35, Me.printPreviewBarItem36, Me.printPreviewBarItem37, Me.printPreviewBarItem38, Me.printPreviewBarItem39, Me.printPreviewBarItem40, Me.printPreviewBarItem41, Me.printPreviewBarItem42, Me.printPreviewBarItem43, Me.printPreviewBarItem44, Me.printPreviewBarItem45, Me.printPreviewBarItem46, Me.printPreviewBarItem47, Me.printPreviewBarItem48, Me.printPreviewBarItem49, Me.printPreviewBarItem50, Me.printPreviewBarItem51, Me.printPreviewBarItem52, Me.printPreviewBarItem53, Me.commandBarEditItem8, Me.commandBarCheckItem9, Me.commandBarItem127, Me.commandBarItem128, Me.printPreviewStaticItem1, Me.progressBarEditItem1, Me.printPreviewBarItem6, Me.commandBarItem129, Me.printPreviewStaticItem2, Me.zoomTrackBarEditItem1, Me.commandBarItem130})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
-            Me.ribbonControl1.Margin = New System.Windows.Forms.Padding(48, 48, 48, 48)
+            Me.ribbonControl1.Margin = New System.Windows.Forms.Padding(36, 40, 36, 40)
             Me.ribbonControl1.MaxItemId = 237
             Me.ribbonControl1.Name = "ribbonControl1"
-            Me.ribbonControl1.OptionsMenuMinWidth = 5280
+            Me.ribbonControl1.OptionsMenuMinWidth = 3960
             Me.ribbonControl1.OptionsSearchMenu.SearchItemPosition = DevExpress.XtraBars.Ribbon.SearchItemPosition.PageHeader
             Me.ribbonControl1.PageCategories.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageCategory() {Me.ribbonPageCategory1, Me.ribbonPageCategory2, Me.ribbonPageCategory3, Me.ribbonPageCategory4, Me.ribbonPageCategory5, Me.ribbonPageCategory6, Me.ribbonPageCategory7, Me.ribbonPageCategory8, Me.ribbonPageCategory9})
             Me.ribbonControl1.PageHeaderItemLinks.Add(Me.commandBarItem1)
@@ -1061,7 +1070,7 @@ Namespace DevExpress.AI.Demos
             Me.ribbonControl1.QuickToolbarItemLinks.Add(Me.commandBarItem5)
             Me.ribbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.recentlyUsedItemsComboBox1, Me.designRepositoryItemComboBox1, Me.repositoryItemSpinEdit1, Me.repositoryItemSpinEdit2, Me.repositoryItemSpinEdit3, Me.repositoryItemSpinEdit4, Me.repositoryItemImageComboBox1, Me.repositoryItemLookUpEdit1, Me.repositoryItemComboBox1, Me.repositoryItemLookUpEdit2, Me.repositoryItemProgressBar1, Me.repositoryItemZoomTrackBar1})
             Me.ribbonControl1.ShowItemCaptionsInPageHeader = True
-            Me.ribbonControl1.Size = New System.Drawing.Size(2440, 308)
+            Me.ribbonControl1.Size = New System.Drawing.Size(1830, 296)
             Me.ribbonControl1.StatusBar = Me.ribbonStatusBar1
             Me.ribbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.[True]
             ' 
@@ -1463,11 +1472,11 @@ Namespace DevExpress.AI.Demos
             Me.panelContainer3.Controls.Add(Me.reportGalleryDockPanel1)
             Me.panelContainer3.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right
             Me.panelContainer3.ID = New System.Guid("0f877aec-63de-4e12-8cf9-2274fc480da8")
-            Me.panelContainer3.Location = New System.Drawing.Point(2065, 308)
-            Me.panelContainer3.Margin = New System.Windows.Forms.Padding(6)
+            Me.panelContainer3.Location = New System.Drawing.Point(1455, 296)
+            Me.panelContainer3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.panelContainer3.Name = "panelContainer3"
             Me.panelContainer3.OriginalSize = New System.Drawing.Size(375, 200)
-            Me.panelContainer3.Size = New System.Drawing.Size(375, 802)
+            Me.panelContainer3.Size = New System.Drawing.Size(375, 622)
             Me.panelContainer3.Tabbed = True
             Me.panelContainer3.Text = "panelContainer3"
             ' 
@@ -1476,19 +1485,19 @@ Namespace DevExpress.AI.Demos
             Me.propertyGridDockPanel1.Controls.Add(Me.propertyGridDockPanel1_Container)
             Me.propertyGridDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.propertyGridDockPanel1.ID = New System.Guid("b38d12c3-cd06-4dec-b93d-63a0088e495a")
-            Me.propertyGridDockPanel1.Location = New System.Drawing.Point(2, 46)
-            Me.propertyGridDockPanel1.Margin = New System.Windows.Forms.Padding(6)
+            Me.propertyGridDockPanel1.Location = New System.Drawing.Point(1, 52)
+            Me.propertyGridDockPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.propertyGridDockPanel1.Name = "propertyGridDockPanel1"
-            Me.propertyGridDockPanel1.OriginalSize = New System.Drawing.Size(598, 707)
-            Me.propertyGridDockPanel1.Size = New System.Drawing.Size(373, 707)
+            Me.propertyGridDockPanel1.OriginalSize = New System.Drawing.Size(561, 526)
+            Me.propertyGridDockPanel1.Size = New System.Drawing.Size(374, 526)
             Me.propertyGridDockPanel1.Text = "Properties"
             ' 
             ' propertyGridDockPanel1_Container
             ' 
             Me.propertyGridDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-            Me.propertyGridDockPanel1_Container.Margin = New System.Windows.Forms.Padding(6)
+            Me.propertyGridDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.propertyGridDockPanel1_Container.Name = "propertyGridDockPanel1_Container"
-            Me.propertyGridDockPanel1_Container.Size = New System.Drawing.Size(373, 707)
+            Me.propertyGridDockPanel1_Container.Size = New System.Drawing.Size(374, 526)
             Me.propertyGridDockPanel1_Container.TabIndex = 0
             ' 
             ' reportGalleryDockPanel1
@@ -1496,19 +1505,19 @@ Namespace DevExpress.AI.Demos
             Me.reportGalleryDockPanel1.Controls.Add(Me.reportGalleryDockPanel1_Container)
             Me.reportGalleryDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.reportGalleryDockPanel1.ID = New System.Guid("7cd5b1e8-63bb-46f7-af65-af61eb851a38")
-            Me.reportGalleryDockPanel1.Location = New System.Drawing.Point(2, 46)
-            Me.reportGalleryDockPanel1.Margin = New System.Windows.Forms.Padding(6)
+            Me.reportGalleryDockPanel1.Location = New System.Drawing.Point(1, 52)
+            Me.reportGalleryDockPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.reportGalleryDockPanel1.Name = "reportGalleryDockPanel1"
-            Me.reportGalleryDockPanel1.OriginalSize = New System.Drawing.Size(598, 707)
-            Me.reportGalleryDockPanel1.Size = New System.Drawing.Size(373, 707)
+            Me.reportGalleryDockPanel1.OriginalSize = New System.Drawing.Size(561, 526)
+            Me.reportGalleryDockPanel1.Size = New System.Drawing.Size(374, 526)
             Me.reportGalleryDockPanel1.Text = "Report Gallery"
             ' 
             ' reportGalleryDockPanel1_Container
             ' 
             Me.reportGalleryDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-            Me.reportGalleryDockPanel1_Container.Margin = New System.Windows.Forms.Padding(6)
+            Me.reportGalleryDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.reportGalleryDockPanel1_Container.Name = "reportGalleryDockPanel1_Container"
-            Me.reportGalleryDockPanel1_Container.Size = New System.Drawing.Size(373, 707)
+            Me.reportGalleryDockPanel1_Container.Size = New System.Drawing.Size(374, 526)
             Me.reportGalleryDockPanel1_Container.TabIndex = 0
             ' 
             ' panelContainer2
@@ -1519,11 +1528,11 @@ Namespace DevExpress.AI.Demos
             Me.panelContainer2.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right
             Me.panelContainer2.FloatVertical = True
             Me.panelContainer2.ID = New System.Guid("e7f42a39-943b-4fa0-9ad1-5610286f0ac8")
-            Me.panelContainer2.Location = New System.Drawing.Point(1690, 308)
-            Me.panelContainer2.Margin = New System.Windows.Forms.Padding(6)
+            Me.panelContainer2.Location = New System.Drawing.Point(1080, 296)
+            Me.panelContainer2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.panelContainer2.Name = "panelContainer2"
             Me.panelContainer2.OriginalSize = New System.Drawing.Size(375, 163)
-            Me.panelContainer2.Size = New System.Drawing.Size(375, 802)
+            Me.panelContainer2.Size = New System.Drawing.Size(375, 622)
             Me.panelContainer2.Tabbed = True
             Me.panelContainer2.Text = "panelContainer2"
             ' 
@@ -1532,19 +1541,19 @@ Namespace DevExpress.AI.Demos
             Me.reportExplorerDockPanel1.Controls.Add(Me.reportExplorerDockPanel1_Container)
             Me.reportExplorerDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.reportExplorerDockPanel1.ID = New System.Guid("fb3ec6cc-3b9b-4b9c-91cf-cff78c1edbf1")
-            Me.reportExplorerDockPanel1.Location = New System.Drawing.Point(2, 46)
-            Me.reportExplorerDockPanel1.Margin = New System.Windows.Forms.Padding(6)
+            Me.reportExplorerDockPanel1.Location = New System.Drawing.Point(1, 52)
+            Me.reportExplorerDockPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.reportExplorerDockPanel1.Name = "reportExplorerDockPanel1"
-            Me.reportExplorerDockPanel1.OriginalSize = New System.Drawing.Size(598, 707)
-            Me.reportExplorerDockPanel1.Size = New System.Drawing.Size(373, 707)
+            Me.reportExplorerDockPanel1.OriginalSize = New System.Drawing.Size(561, 526)
+            Me.reportExplorerDockPanel1.Size = New System.Drawing.Size(374, 526)
             Me.reportExplorerDockPanel1.Text = "Report Explorer"
             ' 
             ' reportExplorerDockPanel1_Container
             ' 
             Me.reportExplorerDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-            Me.reportExplorerDockPanel1_Container.Margin = New System.Windows.Forms.Padding(6)
+            Me.reportExplorerDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.reportExplorerDockPanel1_Container.Name = "reportExplorerDockPanel1_Container"
-            Me.reportExplorerDockPanel1_Container.Size = New System.Drawing.Size(373, 707)
+            Me.reportExplorerDockPanel1_Container.Size = New System.Drawing.Size(374, 526)
             Me.reportExplorerDockPanel1_Container.TabIndex = 0
             ' 
             ' fieldListDockPanel1
@@ -1552,19 +1561,19 @@ Namespace DevExpress.AI.Demos
             Me.fieldListDockPanel1.Controls.Add(Me.fieldListDockPanel1_Container)
             Me.fieldListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.fieldListDockPanel1.ID = New System.Guid("faf69838-a93f-4114-83e8-d0d09cc5ce95")
-            Me.fieldListDockPanel1.Location = New System.Drawing.Point(2, 46)
-            Me.fieldListDockPanel1.Margin = New System.Windows.Forms.Padding(6)
+            Me.fieldListDockPanel1.Location = New System.Drawing.Point(1, 52)
+            Me.fieldListDockPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.fieldListDockPanel1.Name = "fieldListDockPanel1"
-            Me.fieldListDockPanel1.OriginalSize = New System.Drawing.Size(598, 707)
-            Me.fieldListDockPanel1.Size = New System.Drawing.Size(373, 707)
+            Me.fieldListDockPanel1.OriginalSize = New System.Drawing.Size(561, 526)
+            Me.fieldListDockPanel1.Size = New System.Drawing.Size(374, 526)
             Me.fieldListDockPanel1.Text = "Field List"
             ' 
             ' fieldListDockPanel1_Container
             ' 
             Me.fieldListDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-            Me.fieldListDockPanel1_Container.Margin = New System.Windows.Forms.Padding(6)
+            Me.fieldListDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.fieldListDockPanel1_Container.Name = "fieldListDockPanel1_Container"
-            Me.fieldListDockPanel1_Container.Size = New System.Drawing.Size(373, 707)
+            Me.fieldListDockPanel1_Container.Size = New System.Drawing.Size(374, 526)
             Me.fieldListDockPanel1_Container.TabIndex = 0
             ' 
             ' panelContainer4
@@ -1575,11 +1584,11 @@ Namespace DevExpress.AI.Demos
             Me.panelContainer4.Dock = DevExpress.XtraBars.Docking.DockingStyle.Bottom
             Me.panelContainer4.FloatVertical = True
             Me.panelContainer4.ID = New System.Guid("892da5d6-11b1-46e1-bc29-e580ced28e38")
-            Me.panelContainer4.Location = New System.Drawing.Point(0, 910)
-            Me.panelContainer4.Margin = New System.Windows.Forms.Padding(6)
+            Me.panelContainer4.Location = New System.Drawing.Point(0, 718)
+            Me.panelContainer4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.panelContainer4.Name = "panelContainer4"
             Me.panelContainer4.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.panelContainer4.Size = New System.Drawing.Size(1690, 200)
+            Me.panelContainer4.Size = New System.Drawing.Size(1080, 200)
             Me.panelContainer4.Tabbed = True
             Me.panelContainer4.Text = "panelContainer4"
             ' 
@@ -1588,19 +1597,19 @@ Namespace DevExpress.AI.Demos
             Me.errorListDockPanel1.Controls.Add(Me.errorListDockPanel1_Container)
             Me.errorListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.errorListDockPanel1.ID = New System.Guid("5a9a01fd-6e95-4e81-a8c4-ac63153d7488")
-            Me.errorListDockPanel1.Location = New System.Drawing.Point(0, 48)
-            Me.errorListDockPanel1.Margin = New System.Windows.Forms.Padding(6)
+            Me.errorListDockPanel1.Location = New System.Drawing.Point(0, 53)
+            Me.errorListDockPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.errorListDockPanel1.Name = "errorListDockPanel1"
-            Me.errorListDockPanel1.OriginalSize = New System.Drawing.Size(1240, 103)
-            Me.errorListDockPanel1.Size = New System.Drawing.Size(1690, 103)
+            Me.errorListDockPanel1.OriginalSize = New System.Drawing.Size(706, 203)
+            Me.errorListDockPanel1.Size = New System.Drawing.Size(1080, 103)
             Me.errorListDockPanel1.Text = "Report Design Analyzer"
             ' 
             ' errorListDockPanel1_Container
             ' 
             Me.errorListDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-            Me.errorListDockPanel1_Container.Margin = New System.Windows.Forms.Padding(6)
+            Me.errorListDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.errorListDockPanel1_Container.Name = "errorListDockPanel1_Container"
-            Me.errorListDockPanel1_Container.Size = New System.Drawing.Size(1690, 103)
+            Me.errorListDockPanel1_Container.Size = New System.Drawing.Size(1080, 103)
             Me.errorListDockPanel1_Container.TabIndex = 0
             ' 
             ' groupAndSortDockPanel1
@@ -1608,19 +1617,19 @@ Namespace DevExpress.AI.Demos
             Me.groupAndSortDockPanel1.Controls.Add(Me.groupAndSortDockPanel1_Container)
             Me.groupAndSortDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.groupAndSortDockPanel1.ID = New System.Guid("4bab159e-c495-4d67-87dc-f4e895da443e")
-            Me.groupAndSortDockPanel1.Location = New System.Drawing.Point(0, 48)
-            Me.groupAndSortDockPanel1.Margin = New System.Windows.Forms.Padding(6)
+            Me.groupAndSortDockPanel1.Location = New System.Drawing.Point(0, 53)
+            Me.groupAndSortDockPanel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.groupAndSortDockPanel1.Name = "groupAndSortDockPanel1"
-            Me.groupAndSortDockPanel1.OriginalSize = New System.Drawing.Size(1240, 103)
-            Me.groupAndSortDockPanel1.Size = New System.Drawing.Size(1690, 103)
+            Me.groupAndSortDockPanel1.OriginalSize = New System.Drawing.Size(706, 203)
+            Me.groupAndSortDockPanel1.Size = New System.Drawing.Size(1080, 103)
             Me.groupAndSortDockPanel1.Text = "Group and Sort"
             ' 
             ' groupAndSortDockPanel1_Container
             ' 
             Me.groupAndSortDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-            Me.groupAndSortDockPanel1_Container.Margin = New System.Windows.Forms.Padding(6)
+            Me.groupAndSortDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.groupAndSortDockPanel1_Container.Name = "groupAndSortDockPanel1_Container"
-            Me.groupAndSortDockPanel1_Container.Size = New System.Drawing.Size(1690, 103)
+            Me.groupAndSortDockPanel1_Container.Size = New System.Drawing.Size(1080, 103)
             Me.groupAndSortDockPanel1_Container.TabIndex = 0
             ' 
             ' commandBarItem17
@@ -2695,7 +2704,7 @@ Namespace DevExpress.AI.Demos
             Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
             Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
             Me.commandGalleryBarItem1.Gallery.ColumnCount = 7
-            Me.commandGalleryBarItem1.Gallery.ImageSize = New System.Drawing.Size(1200, 460)
+            Me.commandGalleryBarItem1.Gallery.ImageSize = New System.Drawing.Size(900, 386)
             Me.commandGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleCheck
             Me.commandGalleryBarItem1.Gallery.ShowItemText = True
             Me.commandGalleryBarItem1.Id = 84
@@ -2709,7 +2718,7 @@ Namespace DevExpress.AI.Demos
             ' 
             ' 
             Me.commandGalleryBarItem2.Gallery.ColumnCount = 8
-            Me.commandGalleryBarItem2.Gallery.ImageSize = New System.Drawing.Size(1600, 508)
+            Me.commandGalleryBarItem2.Gallery.ImageSize = New System.Drawing.Size(1200, 427)
             Me.commandGalleryBarItem2.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
             Me.commandGalleryBarItem2.Gallery.ShowItemText = True
             Me.commandGalleryBarItem2.Id = 85
@@ -2723,7 +2732,7 @@ Namespace DevExpress.AI.Demos
             ' 
             ' 
             Me.commandGalleryBarItem3.Gallery.ColumnCount = 7
-            Me.commandGalleryBarItem3.Gallery.ImageSize = New System.Drawing.Size(1200, 692)
+            Me.commandGalleryBarItem3.Gallery.ImageSize = New System.Drawing.Size(900, 581)
             Me.commandGalleryBarItem3.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
             Me.commandGalleryBarItem3.Id = 86
             Me.commandGalleryBarItem3.Name = "commandGalleryBarItem3"
@@ -2736,7 +2745,7 @@ Namespace DevExpress.AI.Demos
             ' 
             ' 
             Me.commandGalleryBarItem4.Gallery.ColumnCount = 4
-            Me.commandGalleryBarItem4.Gallery.ImageSize = New System.Drawing.Size(768, 740)
+            Me.commandGalleryBarItem4.Gallery.ImageSize = New System.Drawing.Size(576, 622)
             Me.commandGalleryBarItem4.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
             Me.commandGalleryBarItem4.Id = 87
             Me.commandGalleryBarItem4.Name = "commandGalleryBarItem4"
@@ -2749,7 +2758,7 @@ Namespace DevExpress.AI.Demos
             ' 
             ' 
             Me.commandGalleryBarItem5.Gallery.ColumnCount = 7
-            Me.commandGalleryBarItem5.Gallery.ImageSize = New System.Drawing.Size(768, 740)
+            Me.commandGalleryBarItem5.Gallery.ImageSize = New System.Drawing.Size(576, 622)
             Me.commandGalleryBarItem5.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
             Me.commandGalleryBarItem5.Id = 88
             Me.commandGalleryBarItem5.Name = "commandGalleryBarItem5"
@@ -2762,8 +2771,8 @@ Namespace DevExpress.AI.Demos
             ' 
             ' 
             Me.commandGalleryBarItem6.Gallery.ColumnCount = 23
-            Me.commandGalleryBarItem6.Gallery.DistanceBetweenItems = 32
-            Me.commandGalleryBarItem6.Gallery.ImageSize = New System.Drawing.Size(128, 128)
+            Me.commandGalleryBarItem6.Gallery.DistanceBetweenItems = 12
+            Me.commandGalleryBarItem6.Gallery.ImageSize = New System.Drawing.Size(48, 48)
             Me.commandGalleryBarItem6.Gallery.ScaleImages = DevExpress.Utils.DefaultBoolean.[True]
             Me.commandGalleryBarItem6.Id = 89
             Me.commandGalleryBarItem6.Name = "commandGalleryBarItem6"
@@ -5755,11 +5764,11 @@ Namespace DevExpress.AI.Demos
             Me.ribbonStatusBar1.ItemLinks.Add(Me.commandBarItem129)
             Me.ribbonStatusBar1.ItemLinks.Add(Me.printPreviewStaticItem2, True)
             Me.ribbonStatusBar1.ItemLinks.Add(Me.zoomTrackBarEditItem1)
-            Me.ribbonStatusBar1.Location = New System.Drawing.Point(0, 1110)
-            Me.ribbonStatusBar1.Margin = New System.Windows.Forms.Padding(48, 56, 48, 56)
+            Me.ribbonStatusBar1.Location = New System.Drawing.Point(0, 918)
+            Me.ribbonStatusBar1.Margin = New System.Windows.Forms.Padding(36, 47, 36, 47)
             Me.ribbonStatusBar1.Name = "ribbonStatusBar1"
             Me.ribbonStatusBar1.Ribbon = Me.ribbonControl1
-            Me.ribbonStatusBar1.Size = New System.Drawing.Size(2440, 48)
+            Me.ribbonStatusBar1.Size = New System.Drawing.Size(1830, 55)
             ' 
             ' reportDesigner1
             ' 
@@ -5773,7 +5782,17 @@ Namespace DevExpress.AI.Demos
             aiReportPrompt4.Title = "Commercial Invoice Report"
             aiReportPrompt5.Text = resources.GetString("aiReportPrompt5.Text")
             aiReportPrompt5.Title = "Shipping Label Report"
-            Me.behaviorManager1.SetBehaviors(Me.reportDesigner1, New DevExpress.Utils.Behaviors.Behavior() {CType((DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, True, Nothing, New DevExpress.AIIntegration.Reporting.AIReportPrompt() {aiReportPrompt1, aiReportPrompt2, aiReportPrompt3, aiReportPrompt4, aiReportPrompt5})), DevExpress.Utils.Behaviors.Behavior), CType(CType((DevExpress.Utils.Behaviors.Behavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerLocalizationBehaviorSource), New Object() {(CObj((3))), (CObj((False))), (CObj((Nothing)))})), DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), DevExpress.Utils.Behaviors.Behavior), CType((DevExpress.AIIntegration.WinForms.Reporting.ReportTestDataSourceBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerTestDataSourceBehaviorSource), 25, Nothing)), DevExpress.Utils.Behaviors.Behavior), CType((DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToExpressionBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerPromptToReportExpressionBehaviorSource))), DevExpress.Utils.Behaviors.Behavior)})
+            aiReportPrompt6.Text = resources.GetString("aiReportPrompt6.Text")
+            aiReportPrompt6.Title = "Customer Quote Report"
+            aiReportPrompt7.Text = resources.GetString("aiReportPrompt7.Text")
+            aiReportPrompt7.Title = "Employee Directory Report"
+            aiReportPrompt8.Text = resources.GetString("aiReportPrompt8.Text")
+            aiReportPrompt8.Title = "Inventory Stock Report"
+            aiReportPrompt9.Text = resources.GetString("aiReportPrompt9.Text")
+            aiReportPrompt9.Title = "Sales Order Report"
+            aiReportPrompt10.Text = resources.GetString("aiReportPrompt10.Text")
+            aiReportPrompt10.Title = "Account Statement Report"
+            Me.behaviorManager1.SetBehaviors(Me.reportDesigner1, New DevExpress.Utils.Behaviors.Behavior() {CType((DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, True, 0F, New DevExpress.AIIntegration.Reporting.AIReportPrompt() {aiReportPrompt1, aiReportPrompt2, aiReportPrompt3, aiReportPrompt4, aiReportPrompt5, aiReportPrompt6, aiReportPrompt7, aiReportPrompt8, aiReportPrompt9, aiReportPrompt10})), DevExpress.Utils.Behaviors.Behavior), CType(CType((DevExpress.Utils.Behaviors.Behavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerLocalizationBehaviorSource), New Object() {(CObj((3))), (CObj((False))), (CObj((0F)))})), DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), DevExpress.Utils.Behaviors.Behavior), CType((DevExpress.AIIntegration.WinForms.Reporting.ReportTestDataSourceBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerTestDataSourceBehaviorSource), 25, Nothing)), DevExpress.Utils.Behaviors.Behavior), CType((DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToExpressionBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerPromptToReportExpressionBehaviorSource))), DevExpress.Utils.Behaviors.Behavior)})
             Me.reportDesigner1.ContainerControl = Nothing
             xrDesignPanelListener1.DesignControl = Me.xrDesignRibbonController1
             xrDesignPanelListener2.DesignControl = Me.xrDesignDockManager1
@@ -5791,15 +5810,23 @@ Namespace DevExpress.AI.Demos
             ' 
             Me.xtraTabbedMdiManager1.MdiParent = Me
             Me.xtraTabbedMdiManager1.View = Me.tabbedView1
-            Me.xtraTabbedMdiManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.tabbedView6, Me.tabbedView1, Me.tabbedView5, Me.tabbedView4, Me.tabbedView3, Me.tabbedView2})
+            Me.xtraTabbedMdiManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.tabbedView8, Me.tabbedView1, Me.tabbedView7, Me.tabbedView6, Me.tabbedView5, Me.tabbedView4, Me.tabbedView3, Me.tabbedView2})
             ' 
-            ' tabbedView6
+            ' tabbedView8
             ' 
-            Me.tabbedView6.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
+            Me.tabbedView8.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
             ' 
             ' tabbedView1
             ' 
             Me.tabbedView1.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
+            ' 
+            ' tabbedView7
+            ' 
+            Me.tabbedView7.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
+            ' 
+            ' tabbedView6
+            ' 
+            Me.tabbedView6.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
             ' 
             ' tabbedView5
             ' 
@@ -5819,17 +5846,17 @@ Namespace DevExpress.AI.Demos
             ' 
             ' ReportDesignerForm
             ' 
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(12F, 25F)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(9F, 21F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(2440, 1158)
+            Me.ClientSize = New System.Drawing.Size(1830, 973)
             Me.Controls.Add(Me.panelContainer4)
             Me.Controls.Add(Me.panelContainer2)
             Me.Controls.Add(Me.panelContainer3)
-            Me.Controls.Add(Me.ribbonStatusBar1)
             Me.Controls.Add(Me.ribbonControl1)
+            Me.Controls.Add(Me.ribbonStatusBar1)
             Me.IconOptions.Icon = CType((resources.GetObject("ReportDesignerForm.IconOptions.Icon")), System.Drawing.Icon)
             Me.IsMdiContainer = True
-            Me.Margin = New System.Windows.Forms.Padding(6)
+            Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.Name = "ReportDesignerForm"
             Me.Ribbon = Me.ribbonControl1
             Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -5862,8 +5889,10 @@ Namespace DevExpress.AI.Demos
             CType((Me.repositoryItemZoomTrackBar1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.reportDesigner1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.xtraTabbedMdiManager1), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((Me.tabbedView6), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.tabbedView8), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.tabbedView1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.tabbedView7), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.tabbedView6), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.tabbedView5), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.tabbedView4), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.tabbedView3), System.ComponentModel.ISupportInitialize).EndInit()
@@ -6561,5 +6590,9 @@ Namespace DevExpress.AI.Demos
         Private tabbedView5 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
 
         Private tabbedView6 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
+
+        Private tabbedView7 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
+
+        Private tabbedView8 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
     End Class
 End Namespace

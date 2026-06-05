@@ -47,10 +47,10 @@ Namespace DevExpress.XtraRichEdit.Demos
         End Sub
 
         Public Overrides Sub DrawRow(ByVal row As LayoutRow)
-            Dim parentLayoutCell As LayoutTableCell = Nothing
             If IsHighlightingAllowed AndAlso LayoutRowHighlights IsNot Nothing Then
                 Dim highlightBounds = row.Bounds
-                If CSharpImpl.__Assign(parentLayoutCell, TryCast(row.Parent, LayoutTableCell)) IsNot Nothing Then
+                Dim parentLayoutCell As LayoutTableCell = TryCast(row.Parent, LayoutTableCell)
+                If parentLayoutCell IsNot Nothing Then
                     highlightBounds.X = parentLayoutCell.Bounds.X
                     highlightBounds.Width = parentLayoutCell.Bounds.Width
                 End If
@@ -112,14 +112,5 @@ Namespace DevExpress.XtraRichEdit.Demos
                     Return
             End Select
         End Sub
-
-        Private Class CSharpImpl
-
-            <System.Obsolete("Please refactor calling code to use normal Visual Basic assignment")>
-            Shared Function __Assign(Of T)(ByRef target As T, value As T) As T
-                target = value
-                Return value
-            End Function
-        End Class
     End Class
 End Namespace
