@@ -34,8 +34,8 @@ namespace DevExpress.XtraPivotGrid.Demos {
 		}
 
 		const string MSMDPUMPAddress = "https://demos.devexpress.com/Services/OLAP/msmdpump.dll";
-		const string AdventureWorksCatalogName = "Adventure Works DW Standard Edition";
-		const string AdventureWorksCubeName = "Adventure Works";
+        const string AdventureWorksCatalogName = "Adventure Works DW Standard Edition 2026";
+        const string AdventureWorksCubeName = "Adventure Works";
 
 		public static string SampleXMLAConnectionString {
 			get {

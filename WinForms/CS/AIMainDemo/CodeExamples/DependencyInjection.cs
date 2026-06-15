@@ -44,7 +44,7 @@ namespace DevExpress.AI.Demos {
         [CodeExampleHighlightTokens("ChangeStyleExtension", "ChangeStyleRequest", "WritingStyle", "ProofreadRequest")]
         [CodeExampleUnderlineTokens("AddDevExpressAIConsole", "RegisterChatClient", "Register", "RegisterAIExceptionHandler", "BuildServiceProvider", "GetService")]
         public static void InvokeWithSettings(LayoutControl layoutControl, SimpleButton button) {
-            string AzureOpenAIEndpoint = "https://public-api.devexpress.com/demo-openai";
+            string AzureOpenAIEndpoint = "https://api.devexpress.com/demo-openai";
             string AzureOpenAIKey = "DEMO";
             string DeploymentName = "demo-mini";
             IChatClient azureOpenAIClient = new AzureOpenAIClient(new Uri(AzureOpenAIEndpoint),
@@ -75,7 +75,7 @@ namespace DevExpress.AI.Demos {
         [CodeExampleHighlightTokens("ChangeStyleExtension", "ChangeStyleRequest", "WritingStyle", "ProofreadRequest", "IAIExtension <ProofreadRequest, TextResponse>")]
         [CodeExampleUnderlineTokens("AddDevExpressAIConsole", "AddSingleton", "AddTransient", "BuildServiceProvider", "GetService")]
         public static void InvokeWithServices(LayoutControl layoutControl, SimpleButton button) {
-            string AzureOpenAIEndpoint = "https://public-api.devexpress.com/demo-openai";
+            string AzureOpenAIEndpoint = "https://api.devexpress.com/demo-openai";
             string AzureOpenAIKey = "DEMO";
             string DeploymentName = "demo-mini";
             IChatClient azureOpenAIClient = new AzureOpenAIClient(new Uri(AzureOpenAIEndpoint),

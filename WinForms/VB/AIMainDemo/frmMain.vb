@@ -56,7 +56,7 @@ Namespace DevExpress.AI.Demos
 
 #If Not NET
         Protected Overrides Sub RegisterDemos()
-            DXperience.Demos.MainFormRegisterDemoHelper.RegisterDemos(Function(x) Not Equals(x.Group, DemoData.Model.Repository.WinAIChatControlGroupName) AndAlso Not Equals(x.Group, DemoData.Model.Repository.WinAgentsApiGroupName))
+            DXperience.Demos.MainFormRegisterDemoHelper.RegisterDemos(Function(x) Not Equals(x.Group, DemoData.Model.Repository.WinAIChatControlGroupName))
         End Sub
 #End If
     End Class

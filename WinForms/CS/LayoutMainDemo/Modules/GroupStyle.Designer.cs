@@ -106,7 +106,7 @@ namespace DevExpress.XtraLayout.Demos {
             this.labelControlLondon = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.windowsUIButtonPanelLondon = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
-            this.labelControlMoscow = new DevExpress.XtraEditors.LabelControl();
+            this.labelControlMadrid = new DevExpress.XtraEditors.LabelControl();
             this.windowsUIButtonPanelMoscow = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -363,7 +363,7 @@ namespace DevExpress.XtraLayout.Demos {
             this.dataLayoutControl1.Controls.Add(this.labelControlLondon);
             this.dataLayoutControl1.Controls.Add(this.labelControl2);
             this.dataLayoutControl1.Controls.Add(this.windowsUIButtonPanelLondon);
-            this.dataLayoutControl1.Controls.Add(this.labelControlMoscow);
+            this.dataLayoutControl1.Controls.Add(this.labelControlMadrid);
             this.dataLayoutControl1.Controls.Add(this.windowsUIButtonPanelMoscow);
             this.dataLayoutControl1.Controls.Add(this.labelControl8);
             this.dataLayoutControl1.Controls.Add(this.labelControl7);
@@ -734,16 +734,16 @@ namespace DevExpress.XtraLayout.Demos {
             this.windowsUIButtonPanelLondon.Text = "windowsUIButtonPanel1";
             this.windowsUIButtonPanelLondon.UseButtonBackgroundImages = false;
             // 
-            // labelControlMoscow
+            // labelControlMadrid
             // 
-            this.labelControlMoscow.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControlMoscow.Appearance.Options.UseFont = true;
-            this.labelControlMoscow.Location = new System.Drawing.Point(160, 346);
-            this.labelControlMoscow.Name = "labelControlMoscow";
-            this.labelControlMoscow.Size = new System.Drawing.Size(63, 21);
-            this.labelControlMoscow.StyleController = this.dataLayoutControl1;
-            this.labelControlMoscow.TabIndex = 4;
-            this.labelControlMoscow.Text = "Moscow";
+            this.labelControlMadrid.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControlMadrid.Appearance.Options.UseFont = true;
+            this.labelControlMadrid.Location = new System.Drawing.Point(164, 346);
+            this.labelControlMadrid.Name = "labelControlMadrid";
+            this.labelControlMadrid.Size = new System.Drawing.Size(55, 21);
+            this.labelControlMadrid.StyleController = this.dataLayoutControl1;
+            this.labelControlMadrid.TabIndex = 4;
+            this.labelControlMadrid.Text = "Madrid";
             // 
             // windowsUIButtonPanelMoscow
             // 
@@ -976,7 +976,7 @@ namespace DevExpress.XtraLayout.Demos {
             // 
             // layoutControlItem7
             // 
-            this.layoutControlItem7.Control = this.labelControlMoscow;
+            this.layoutControlItem7.Control = this.labelControlMadrid;
             this.layoutControlItem7.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.layoutControlItem7.CustomizationFormText = "layoutControlItem1";
             this.layoutControlItem7.Location = new System.Drawing.Point(134, 0);
@@ -1687,7 +1687,7 @@ namespace DevExpress.XtraLayout.Demos {
         private LayoutControlGroup layoutControlGroupWeather;
         private XtraEditors.LabelControl labelControlClock;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
-        private XtraEditors.LabelControl labelControlMoscow;
+        private XtraEditors.LabelControl labelControlMadrid;
         private XtraBars.Docking2010.WindowsUIButtonPanel windowsUIButtonPanelMoscow;
         private XtraEditors.LabelControl labelControl8;
         private XtraEditors.LabelControl labelControl7;

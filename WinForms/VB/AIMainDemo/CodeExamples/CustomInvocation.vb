@@ -47,7 +47,7 @@ Namespace DevExpress.AI.Demos
         Public Sub Invoke(ByVal layoutControl As DevExpress.XtraLayout.LayoutControl, ByVal button As DevExpress.XtraEditors.SimpleButton)
             ' setup container
             Dim defaultAIContainer As DevExpress.AIIntegration.AIExtensionsContainerDefault = New DevExpress.AIIntegration.AIExtensionsContainerDefault()
-            Dim AzureOpenAIEndpoint As String = "https://public-api.devexpress.com/demo-openai"
+            Dim AzureOpenAIEndpoint As String = "https://api.devexpress.com/demo-openai"
             Dim AzureOpenAIKey As String = "DEMO"
             Dim DeploymentName As String = "demo-mini"
             Dim azureOpenAIClient As Microsoft.Extensions.AI.IChatClient = New Azure.AI.OpenAI.AzureOpenAIClient(CType((New System.Uri(CStr((AzureOpenAIEndpoint)))), System.Uri), CType((New System.ClientModel.ApiKeyCredential(CStr((AzureOpenAIKey)))), System.ClientModel.ApiKeyCredential)).GetChatClient(CStr((DeploymentName))).AsIChatClient()
@@ -68,7 +68,7 @@ Namespace DevExpress.AI.Demos
         Public Sub InvokeWithProcessing(ByVal layoutControl As DevExpress.XtraLayout.LayoutControl, ByVal button As DevExpress.XtraEditors.SimpleButton)
             ' setup container
             Dim defaultAIContainer As DevExpress.AIIntegration.AIExtensionsContainerDefault = New DevExpress.AIIntegration.AIExtensionsContainerDefault()
-            Dim AzureOpenAIEndpoint As String = "https://public-api.devexpress.com/demo-openai"
+            Dim AzureOpenAIEndpoint As String = "https://api.devexpress.com/demo-openai"
             Dim AzureOpenAIKey As String = "DEMO"
             Dim DeploymentName As String = "demo-mini"
             Dim azureOpenAIClient As Microsoft.Extensions.AI.IChatClient = New Azure.AI.OpenAI.AzureOpenAIClient(CType((New System.Uri(CStr((AzureOpenAIEndpoint)))), System.Uri), CType((New System.ClientModel.ApiKeyCredential(CStr((AzureOpenAIKey)))), System.ClientModel.ApiKeyCredential)).GetChatClient(CStr((DeploymentName))).AsIChatClient()

@@ -18,7 +18,7 @@ namespace DevExpress.XtraGauges.Demos {
             timeShifts = new Dictionary<string, int>();
             timeShifts.Add("Washington", -4);
             timeShifts.Add("Paris", +1);
-            timeShifts.Add("Moscow", +3);
+            timeShifts.Add("Madrid", +1);
             timeShifts.Add("London", +0);
             timeShifts.Add("Tokyo", +9);
             timeShifts.Add("Rome", +1);

@@ -36,7 +36,7 @@ Namespace DevExpress.XtraPivotGrid.Demos
 
         Const MSMDPUMPAddress As String = "https://demos.devexpress.com/Services/OLAP/msmdpump.dll"
 
-        Const AdventureWorksCatalogName As String = "Adventure Works DW Standard Edition"
+        Const AdventureWorksCatalogName As String = "Adventure Works DW Standard Edition 2026"
 
         Const AdventureWorksCubeName As String = "Adventure Works"
 

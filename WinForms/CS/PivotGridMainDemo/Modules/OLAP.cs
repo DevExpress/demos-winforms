@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 using System.Linq;
 using DevExpress.XtraPivotGrid.Demos.Helpers;
@@ -65,10 +65,10 @@ namespace DevExpress.XtraPivotGrid.Demos.Modules {
             fieldRevenueTrend.Caption = "Trend";
             await pivotGridControl.EndUpdateAsync();
             await fieldCategory.ExpandAllAsync();
-            await pivotGridControl.ExpandValueAsync(true, new object[] { (short)2005 });
-            await pivotGridControl.ExpandValueAsync(true, new object[] { (short)2005, "H1 FY 2005" });
-            await pivotGridControl.ExpandValueAsync(true, new object[] { (short)2005, "H1 FY 2005", "Q1 FY 2005" });
-            await pivotGridControl.ExpandValueAsync(true, new object[] { (short)2005, "H1 FY 2005", "Q1 FY 2005", "July 2005" });
+            await pivotGridControl.ExpandValueAsync(true, new object[] { (short)2025 });
+            await pivotGridControl.ExpandValueAsync(true, new object[] { (short)2025, "H1 FY 2025" });
+            await pivotGridControl.ExpandValueAsync(true, new object[] { (short)2025, "H1 FY 2025", "Q1 FY 2025" });
+            await pivotGridControl.ExpandValueAsync(true, new object[] { (short)2025, "H1 FY 2025", "Q1 FY 2025", "July 2025" });
             pivotGridControl.BestFitRowArea();
         }
         public override PivotGridControl ViewOptionsControl { get { return pivotGridControl; } }

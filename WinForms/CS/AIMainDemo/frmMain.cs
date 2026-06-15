@@ -39,8 +39,7 @@ namespace DevExpress.AI.Demos {
 #if !NET
         protected override void RegisterDemos() {
             DXperience.Demos.MainFormRegisterDemoHelper.RegisterDemos(
-                x => x.Group != DemoData.Model.Repository.WinAIChatControlGroupName
-                && x.Group != DemoData.Model.Repository.WinAgentsApiGroupName);
+                x => x.Group != DemoData.Model.Repository.WinAIChatControlGroupName);
         }
 #endif
     }

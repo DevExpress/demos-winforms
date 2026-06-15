@@ -23,56 +23,16 @@ namespace XtraReportsDemos {
         #region WinForms designer auto-generated code
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt1 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AIReportDesignerForm));
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt2 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt3 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt4 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt5 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt6 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt7 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt8 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt9 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt10 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.reportDesigner1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // reportDesigner1
-            // 
-            aiReportPrompt1.Text = resources.GetString("aiReportPrompt1.Text");
-            aiReportPrompt1.Title = "Prompt Template";
-            aiReportPrompt2.Text = resources.GetString("aiReportPrompt2.Text");
-            aiReportPrompt2.Title = "Quarterly Sales Report";
-            aiReportPrompt3.Text = resources.GetString("aiReportPrompt3.Text");
-            aiReportPrompt3.Title = "Employee Payroll Report";
-            aiReportPrompt4.Text = resources.GetString("aiReportPrompt4.Text");
-            aiReportPrompt4.Title = "Commercial Invoice Report";
-            aiReportPrompt5.Text = resources.GetString("aiReportPrompt5.Text");
-            aiReportPrompt5.Title = "Shipping Label Report";
-            aiReportPrompt6.Text = resources.GetString("aiReportPrompt6.Text");
-            aiReportPrompt6.Title = "Customer Quote Report";
-            aiReportPrompt7.Text = resources.GetString("aiReportPrompt7.Text");
-            aiReportPrompt7.Title = "Employee Directory Report";
-            aiReportPrompt8.Text = resources.GetString("aiReportPrompt8.Text");
-            aiReportPrompt8.Title = "Inventory Stock Report";
-            aiReportPrompt9.Text = resources.GetString("aiReportPrompt9.Text");
-            aiReportPrompt9.Title = "Sales Order Report";
-            aiReportPrompt10.Text = resources.GetString("aiReportPrompt10.Text");
-            aiReportPrompt10.Title = "Account Statement Report";
+            //
             this.behaviorManager1.SetBehaviors(this.reportDesigner1, new DevExpress.Utils.Behaviors.Behavior[] {
-            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(typeof(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, true, 0F, new DevExpress.AIIntegration.Reporting.AIReportPrompt[] {
-                        aiReportPrompt1,
-                        aiReportPrompt2,
-                        aiReportPrompt3,
-                        aiReportPrompt4,
-                        aiReportPrompt5,
-                        aiReportPrompt6,
-                        aiReportPrompt7,
-                        aiReportPrompt8,
-                        aiReportPrompt9,
-                        aiReportPrompt10}))),
+            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(typeof(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, true, 0F))),
             ((DevExpress.Utils.Behaviors.Behavior)(((DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior)(DevExpress.Utils.Behaviors.Behavior.Create(typeof(DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), typeof(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerLocalizationBehaviorSource), new object[] {
                         ((object)(3)),
                         ((object)(false)),

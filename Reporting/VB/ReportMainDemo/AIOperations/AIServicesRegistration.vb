@@ -12,7 +12,7 @@ Namespace XtraReportsDemos.AIOperations
         Public Sub RegisterIfNeeded()
             If isRegistered Then Return
             isRegistered = True
-            Dim azureOpenAIEndpoint = New Uri("https://public-api.devexpress.com/demo-openai") 'DevExpress proxy-server
+            Dim azureOpenAIEndpoint = New Uri("https://api.devexpress.com/demo-openai") 'DevExpress proxy-server
             Dim azureOpenAIKey = New ClientModel.ApiKeyCredential("DEMO") 'Demo key
             Dim azureOpenAIClient As AzureOpenAIClient = New AzureOpenAIClient(azureOpenAIEndpoint, azureOpenAIKey, New AzureOpenAIClientOptions() With {.Transport = New PromoteHttpStatusErrorsPipelineTransport()})
             Dim chatClient As IChatClient = azureOpenAIClient.GetChatClient("demo").AsIChatClient()

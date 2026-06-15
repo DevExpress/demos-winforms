@@ -66,7 +66,7 @@ Namespace DevExpress.AI.ReportDesigner.Demo
         Private ReadOnly Property AzureOpenAIEndpoint As String
             Get
                 Dim lAzureOpenAIEndpoint As String = GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT", IsDeveloperMode)
-                If String.IsNullOrEmpty(lAzureOpenAIEndpoint) Then lAzureOpenAIEndpoint = "https://public-api.devexpress.com/demo-openai" 'DevExpress proxy-server
+                If String.IsNullOrEmpty(lAzureOpenAIEndpoint) Then lAzureOpenAIEndpoint = "https://api.devexpress.com/demo-openai" 'DevExpress proxy-server
                 Return lAzureOpenAIEndpoint
             End Get
         End Property

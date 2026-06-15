@@ -176,22 +176,22 @@ namespace DevExpress.XtraLayout.Demos {
             //M-L
             for(int i = 0; i < 10; i++) {
                 tickets.Add(new Ticket {
-                    Depart = GetFlight("SVO", "LHR", "Moscow", "London", 7, 35, 9, 45, 4 + i * 2, 260),
-                    Return = GetFlight("LHR", "SVO", "London", "Moscow", 13, 25, 19, 05, 11 + i * 3, 275)
+                    Depart = GetFlight("MAD", "LHR", "Madrid", "London", 7, 35, 9, 45, 4 + i * 2, 260),
+                    Return = GetFlight("LHR", "MAD", "London", "Madrid", 13, 25, 19, 05, 11 + i * 3, 275)
                 });
                 tickets.Add(new Ticket {
-                    Return = GetFlight("SVO", "LHR", "Moscow", "London", 7, 35, 9, 45, 11 + i * 2, 275),
-                    Depart = GetFlight("LHR", "SVO", "London", "Moscow", 13, 25, 19, 05, 4 + i * 3, 260)
+                    Return = GetFlight("MAD", "LHR", "Madrid", "London", 7, 35, 9, 45, 11 + i * 2, 275),
+                    Depart = GetFlight("LHR", "MAD", "London", "Madrid", 13, 25, 19, 05, 4 + i * 3, 260)
                 });
             }
             for(int i = 0; i < 10; i++) {
                 tickets.Add(new Ticket {
-                    Depart = GetFlight("DME", "LHR", "Moscow", "London", 18, 10, 20, 20, 1 + i, 310),
-                    Return = GetFlight("LHR", "DME", "London", "Moscow", 22, 35, 28, 20, 4 + i * 2, 295)
+                    Depart = GetFlight("BCN", "LHR", "Barcelona", "London", 18, 10, 20, 20, 1 + i, 310),
+                    Return = GetFlight("LHR", "BCN", "London", "Barcelona", 22, 35, 28, 20, 4 + i * 2, 295)
                 });
                 tickets.Add(new Ticket {
-                    Return = GetFlight("DME", "LHR", "Moscow", "London", 18, 10, 20, 20, 8 + i, 295),
-                    Depart = GetFlight("LHR", "DME", "London", "Moscow", 22, 35, 28, 20, 3 + i * 2, 310)
+                    Return = GetFlight("BCN", "LHR", "Barcelona", "London", 18, 10, 20, 20, 8 + i, 295),
+                    Depart = GetFlight("LHR", "BCN", "London", "Barcelona", 22, 35, 28, 20, 3 + i * 2, 310)
                 });
             }
             //L-NY
@@ -218,12 +218,12 @@ namespace DevExpress.XtraLayout.Demos {
             //M-NY
             for(int i = 0; i < 20; i++) {
                 tickets.Add(new Ticket {
-                    Depart = GetFlight("SVO", "JFK", "Moscow", "New York", 9, 20, 12, 05, 3 + i, 320),
-                    Return = GetFlight("JFK", "SVO", "New York", "Moscow", 00, 40, 16, 15, 8 + i * 2, 300)
+                    Depart = GetFlight("MAD", "JFK", "Madrid", "New York", 9, 20, 12, 05, 3 + i, 320),
+                    Return = GetFlight("JFK", "MAD", "New York", "Madrid", 00, 40, 16, 15, 8 + i * 2, 300)
                 });
                 tickets.Add(new Ticket {
-                    Return = GetFlight("SVO", "JFK", "Moscow", "New York", 9, 20, 12, 05, 8 + i, 300),
-                    Depart = GetFlight("JFK", "SVO", "New York", "Moscow", 00, 40, 16, 15, 3 + i * 2, 320)
+                    Return = GetFlight("MAD", "JFK", "Madrid", "New York", 9, 20, 12, 05, 8 + i, 300),
+                    Depart = GetFlight("JFK", "MAD", "New York", "Madrid", 00, 40, 16, 15, 3 + i * 2, 320)
                 });
             }
             return tickets;

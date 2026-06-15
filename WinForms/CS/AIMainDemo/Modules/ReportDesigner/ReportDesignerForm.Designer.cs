@@ -635,16 +635,6 @@ namespace DevExpress.AI.Demos {
             DevExpress.Utils.SuperToolTip superToolTip203 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem203 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem203 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt1 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt2 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt3 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt4 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt5 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt6 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt7 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt8 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt9 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
-            DevExpress.AIIntegration.Reporting.AIReportPrompt aiReportPrompt10 = new DevExpress.AIIntegration.Reporting.AIReportPrompt();
             DevExpress.XtraReports.UserDesigner.XRDesignPanelListener xrDesignPanelListener1 = new DevExpress.XtraReports.UserDesigner.XRDesignPanelListener();
             DevExpress.XtraReports.UserDesigner.XRDesignPanelListener xrDesignPanelListener2 = new DevExpress.XtraReports.UserDesigner.XRDesignPanelListener();
             DevExpress.XtraReports.UserDesigner.XRDesignPanelListener xrDesignPanelListener3 = new DevExpress.XtraReports.UserDesigner.XRDesignPanelListener();
@@ -1037,15 +1027,15 @@ namespace DevExpress.AI.Demos {
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // xrDesignRibbonController1
-            // 
+            //
             this.xrDesignRibbonController1.RibbonControl = this.ribbonControl1;
             this.xrDesignRibbonController1.RibbonStatusBar = this.ribbonStatusBar1;
             this.xrDesignRibbonController1.XRDesignDockManager = this.xrDesignDockManager1;
-            // 
+            //
             // ribbonControl1
-            // 
+            //
             this.ribbonControl1.ApplicationButtonDropDownControl = this.applicationMenu1;
             this.ribbonControl1.AutoHideEmptyItems = true;
             this.ribbonControl1.AutoSizeItems = true;
@@ -1327,9 +1317,9 @@ namespace DevExpress.AI.Demos {
             this.ribbonControl1.Size = new System.Drawing.Size(1830, 296);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True;
-            // 
+            //
             // applicationMenu1
-            // 
+            //
             this.applicationMenu1.ItemLinks.Add(this.commandBarItem6);
             this.applicationMenu1.ItemLinks.Add(this.commandBarItem9);
             this.applicationMenu1.ItemLinks.Add(this.commandBarItem7);
@@ -1339,9 +1329,9 @@ namespace DevExpress.AI.Demos {
             this.applicationMenu1.MenuDrawMode = DevExpress.XtraBars.MenuDrawMode.LargeImagesText;
             this.applicationMenu1.Name = "applicationMenu1";
             this.applicationMenu1.Ribbon = this.ribbonControl1;
-            // 
+            //
             // commandBarItem6
-            // 
+            //
             this.commandBarItem6.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem6.Caption = "New Report";
             this.commandBarItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport;
@@ -1356,9 +1346,9 @@ namespace DevExpress.AI.Demos {
             superToolTip1.Items.Add(toolTipItem1);
             superToolTip1.MaxWidth = 210;
             this.commandBarItem6.SuperTip = superToolTip1;
-            // 
+            //
             // commandBarItem9
-            // 
+            //
             this.commandBarItem9.Caption = "Open...";
             this.commandBarItem9.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.OpenFile;
             this.commandBarItem9.Enabled = false;
@@ -1373,9 +1363,9 @@ namespace DevExpress.AI.Demos {
             superToolTip2.Items.Add(toolTipItem2);
             superToolTip2.MaxWidth = 210;
             this.commandBarItem9.SuperTip = superToolTip2;
-            // 
+            //
             // commandBarItem7
-            // 
+            //
             this.commandBarItem7.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem7.Caption = "Save";
             this.commandBarItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFile;
@@ -1390,9 +1380,9 @@ namespace DevExpress.AI.Demos {
             superToolTip3.Items.Add(toolTipItem3);
             superToolTip3.MaxWidth = 210;
             this.commandBarItem7.SuperTip = superToolTip3;
-            // 
+            //
             // commandBarItem8
-            // 
+            //
             this.commandBarItem8.Caption = "Save All";
             this.commandBarItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveAll;
             this.commandBarItem8.Enabled = false;
@@ -1407,9 +1397,9 @@ namespace DevExpress.AI.Demos {
             superToolTip4.Items.Add(toolTipItem4);
             superToolTip4.MaxWidth = 210;
             this.commandBarItem8.SuperTip = superToolTip4;
-            // 
+            //
             // commandBarItem125
-            // 
+            //
             this.commandBarItem125.Caption = "Close";
             this.commandBarItem125.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Close;
             this.commandBarItem125.Enabled = false;
@@ -1424,9 +1414,9 @@ namespace DevExpress.AI.Demos {
             superToolTip5.Items.Add(toolTipItem5);
             superToolTip5.MaxWidth = 210;
             this.commandBarItem125.SuperTip = superToolTip5;
-            // 
+            //
             // commandBarItem126
-            // 
+            //
             this.commandBarItem126.Caption = "Exit";
             this.commandBarItem126.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Exit;
             this.commandBarItem126.Enabled = false;
@@ -1440,9 +1430,9 @@ namespace DevExpress.AI.Demos {
             superToolTip6.Items.Add(toolTipItem6);
             superToolTip6.MaxWidth = 210;
             this.commandBarItem126.SuperTip = superToolTip6;
-            // 
+            //
             // commandBarItem1
-            // 
+            //
             this.commandBarItem1.Caption = "Designer";
             this.commandBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowDesignerTab;
             this.commandBarItem1.Enabled = false;
@@ -1457,9 +1447,9 @@ namespace DevExpress.AI.Demos {
             superToolTip7.Items.Add(toolTipItem7);
             superToolTip7.MaxWidth = 210;
             this.commandBarItem1.SuperTip = superToolTip7;
-            // 
+            //
             // commandBarItem2
-            // 
+            //
             this.commandBarItem2.Caption = "Preview";
             this.commandBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowPreviewTab;
             this.commandBarItem2.Enabled = false;
@@ -1475,9 +1465,9 @@ namespace DevExpress.AI.Demos {
             superToolTip8.Items.Add(toolTipItem8);
             superToolTip8.MaxWidth = 210;
             this.commandBarItem2.SuperTip = superToolTip8;
-            // 
+            //
             // commandBarItem3
-            // 
+            //
             this.commandBarItem3.Caption = "Scripts";
             this.commandBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowScriptsTab;
             this.commandBarItem3.Enabled = false;
@@ -1491,9 +1481,9 @@ namespace DevExpress.AI.Demos {
             superToolTip9.Items.Add(toolTipItem9);
             superToolTip9.MaxWidth = 210;
             this.commandBarItem3.SuperTip = superToolTip9;
-            // 
+            //
             // commandBarItem4
-            // 
+            //
             this.commandBarItem4.Caption = "Undo";
             this.commandBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Undo;
             this.commandBarItem4.Enabled = false;
@@ -1508,9 +1498,9 @@ namespace DevExpress.AI.Demos {
             superToolTip10.Items.Add(toolTipItem10);
             superToolTip10.MaxWidth = 210;
             this.commandBarItem4.SuperTip = superToolTip10;
-            // 
+            //
             // commandBarItem5
-            // 
+            //
             this.commandBarItem5.Caption = "Redo";
             this.commandBarItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Redo;
             this.commandBarItem5.Enabled = false;
@@ -1525,9 +1515,9 @@ namespace DevExpress.AI.Demos {
             superToolTip11.Items.Add(toolTipItem11);
             superToolTip11.MaxWidth = 210;
             this.commandBarItem5.SuperTip = superToolTip11;
-            // 
+            //
             // commandBarItem10
-            // 
+            //
             this.commandBarItem10.Caption = "New Report";
             this.commandBarItem10.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport;
             this.commandBarItem10.Description = "Create a new blank report.";
@@ -1543,9 +1533,9 @@ namespace DevExpress.AI.Demos {
             superToolTip12.Items.Add(toolTipItem12);
             superToolTip12.MaxWidth = 210;
             this.commandBarItem10.SuperTip = superToolTip12;
-            // 
+            //
             // commandBarItem11
-            // 
+            //
             this.commandBarItem11.Caption = "Create a New Report Using Report Wizard...";
             this.commandBarItem11.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReportWizard;
             this.commandBarItem11.Description = "Launch the Report Wizard to create a new report.";
@@ -1561,9 +1551,9 @@ namespace DevExpress.AI.Demos {
             superToolTip13.Items.Add(toolTipItem13);
             superToolTip13.MaxWidth = 210;
             this.commandBarItem11.SuperTip = superToolTip13;
-            // 
+            //
             // commandBarItem12
-            // 
+            //
             this.commandBarItem12.Caption = "Save";
             this.commandBarItem12.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFile;
             this.commandBarItem12.Description = "Save the current report.";
@@ -1579,9 +1569,9 @@ namespace DevExpress.AI.Demos {
             superToolTip14.Items.Add(toolTipItem14);
             superToolTip14.MaxWidth = 210;
             this.commandBarItem12.SuperTip = superToolTip14;
-            // 
+            //
             // commandBarItem13
-            // 
+            //
             this.commandBarItem13.Caption = "Save As...";
             this.commandBarItem13.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFileAs;
             this.commandBarItem13.Description = "Save the current report with a new name.";
@@ -1596,9 +1586,9 @@ namespace DevExpress.AI.Demos {
             superToolTip15.Items.Add(toolTipItem15);
             superToolTip15.MaxWidth = 210;
             this.commandBarItem13.SuperTip = superToolTip15;
-            // 
+            //
             // commandBarItem14
-            // 
+            //
             this.commandBarItem14.Caption = "Paste";
             this.commandBarItem14.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Paste;
             this.commandBarItem14.Enabled = false;
@@ -1613,9 +1603,9 @@ namespace DevExpress.AI.Demos {
             superToolTip16.Items.Add(toolTipItem16);
             superToolTip16.MaxWidth = 210;
             this.commandBarItem14.SuperTip = superToolTip16;
-            // 
+            //
             // commandBarItem15
-            // 
+            //
             this.commandBarItem15.Caption = "Cut";
             this.commandBarItem15.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Cut;
             this.commandBarItem15.Enabled = false;
@@ -1631,9 +1621,9 @@ namespace DevExpress.AI.Demos {
             superToolTip17.Items.Add(toolTipItem17);
             superToolTip17.MaxWidth = 210;
             this.commandBarItem15.SuperTip = superToolTip17;
-            // 
+            //
             // commandBarItem16
-            // 
+            //
             this.commandBarItem16.Caption = "Copy";
             this.commandBarItem16.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Copy;
             this.commandBarItem16.Enabled = false;
@@ -1649,9 +1639,9 @@ namespace DevExpress.AI.Demos {
             superToolTip18.Items.Add(toolTipItem18);
             superToolTip18.MaxWidth = 210;
             this.commandBarItem16.SuperTip = superToolTip18;
-            // 
+            //
             // barEditItem1
-            // 
+            //
             this.barEditItem1.Edit = this.recentlyUsedItemsComboBox1;
             this.barEditItem1.EditWidth = 140;
             this.barEditItem1.Id = 17;
@@ -1664,18 +1654,18 @@ namespace DevExpress.AI.Demos {
             superToolTip19.Items.Add(toolTipItem19);
             superToolTip19.MaxWidth = 210;
             this.barEditItem1.SuperTip = superToolTip19;
-            // 
+            //
             // recentlyUsedItemsComboBox1
-            // 
+            //
             this.recentlyUsedItemsComboBox1.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.recentlyUsedItemsComboBox1.AppearanceDropDown.Options.UseFont = true;
             this.recentlyUsedItemsComboBox1.AutoHeight = false;
             this.recentlyUsedItemsComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.recentlyUsedItemsComboBox1.Name = "recentlyUsedItemsComboBox1";
-            // 
+            //
             // barEditItem2
-            // 
+            //
             this.barEditItem2.Edit = this.designRepositoryItemComboBox1;
             this.barEditItem2.EditWidth = 55;
             this.barEditItem2.Id = 18;
@@ -1688,17 +1678,17 @@ namespace DevExpress.AI.Demos {
             superToolTip20.Items.Add(toolTipItem20);
             superToolTip20.MaxWidth = 210;
             this.barEditItem2.SuperTip = superToolTip20;
-            // 
+            //
             // designRepositoryItemComboBox1
-            // 
+            //
             this.designRepositoryItemComboBox1.AutoHeight = false;
             this.designRepositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.designRepositoryItemComboBox1.DropDownRows = 16;
             this.designRepositoryItemComboBox1.Name = "designRepositoryItemComboBox1";
-            // 
+            //
             // barDockPanelsListItem1
-            // 
+            //
             this.barDockPanelsListItem1.Caption = "Windows";
             this.barDockPanelsListItem1.DockManager = this.xrDesignDockManager1;
             this.barDockPanelsListItem1.Id = 19;
@@ -1714,9 +1704,9 @@ namespace DevExpress.AI.Demos {
             superToolTip21.Items.Add(toolTipItem21);
             superToolTip21.MaxWidth = 210;
             this.barDockPanelsListItem1.SuperTip = superToolTip21;
-            // 
+            //
             // xrDesignDockManager1
-            // 
+            //
             this.xrDesignDockManager1.Form = this;
             this.xrDesignDockManager1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("xrDesignDockManager1.ImageStream")));
             this.xrDesignDockManager1.RootPanels.AddRange(new DevExpress.XtraBars.Docking.DockPanel[] {
@@ -1735,9 +1725,9 @@ namespace DevExpress.AI.Demos {
             "DevExpress.XtraBars.Navigation.TileNavPane",
             "DevExpress.XtraBars.TabFormControl",
             "DevExpress.XtraReports.UserDesigner.XRToolBoxPanel"});
-            // 
+            //
             // panelContainer3
-            // 
+            //
             this.panelContainer3.ActiveChild = this.propertyGridDockPanel1;
             this.panelContainer3.Controls.Add(this.propertyGridDockPanel1);
             this.panelContainer3.Controls.Add(this.reportGalleryDockPanel1);
@@ -1750,9 +1740,9 @@ namespace DevExpress.AI.Demos {
             this.panelContainer3.Size = new System.Drawing.Size(375, 622);
             this.panelContainer3.Tabbed = true;
             this.panelContainer3.Text = "panelContainer3";
-            // 
+            //
             // propertyGridDockPanel1
-            // 
+            //
             this.propertyGridDockPanel1.Controls.Add(this.propertyGridDockPanel1_Container);
             this.propertyGridDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.propertyGridDockPanel1.ID = new System.Guid("b38d12c3-cd06-4dec-b93d-63a0088e495a");
@@ -1762,17 +1752,17 @@ namespace DevExpress.AI.Demos {
             this.propertyGridDockPanel1.OriginalSize = new System.Drawing.Size(561, 526);
             this.propertyGridDockPanel1.Size = new System.Drawing.Size(374, 526);
             this.propertyGridDockPanel1.Text = "Properties";
-            // 
+            //
             // propertyGridDockPanel1_Container
-            // 
+            //
             this.propertyGridDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.propertyGridDockPanel1_Container.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.propertyGridDockPanel1_Container.Name = "propertyGridDockPanel1_Container";
             this.propertyGridDockPanel1_Container.Size = new System.Drawing.Size(374, 526);
             this.propertyGridDockPanel1_Container.TabIndex = 0;
-            // 
+            //
             // reportGalleryDockPanel1
-            // 
+            //
             this.reportGalleryDockPanel1.Controls.Add(this.reportGalleryDockPanel1_Container);
             this.reportGalleryDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.reportGalleryDockPanel1.ID = new System.Guid("7cd5b1e8-63bb-46f7-af65-af61eb851a38");
@@ -1782,17 +1772,17 @@ namespace DevExpress.AI.Demos {
             this.reportGalleryDockPanel1.OriginalSize = new System.Drawing.Size(561, 526);
             this.reportGalleryDockPanel1.Size = new System.Drawing.Size(374, 526);
             this.reportGalleryDockPanel1.Text = "Report Gallery";
-            // 
+            //
             // reportGalleryDockPanel1_Container
-            // 
+            //
             this.reportGalleryDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.reportGalleryDockPanel1_Container.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.reportGalleryDockPanel1_Container.Name = "reportGalleryDockPanel1_Container";
             this.reportGalleryDockPanel1_Container.Size = new System.Drawing.Size(374, 526);
             this.reportGalleryDockPanel1_Container.TabIndex = 0;
-            // 
+            //
             // panelContainer2
-            // 
+            //
             this.panelContainer2.ActiveChild = this.reportExplorerDockPanel1;
             this.panelContainer2.Controls.Add(this.reportExplorerDockPanel1);
             this.panelContainer2.Controls.Add(this.fieldListDockPanel1);
@@ -1806,9 +1796,9 @@ namespace DevExpress.AI.Demos {
             this.panelContainer2.Size = new System.Drawing.Size(375, 622);
             this.panelContainer2.Tabbed = true;
             this.panelContainer2.Text = "panelContainer2";
-            // 
+            //
             // reportExplorerDockPanel1
-            // 
+            //
             this.reportExplorerDockPanel1.Controls.Add(this.reportExplorerDockPanel1_Container);
             this.reportExplorerDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.reportExplorerDockPanel1.ID = new System.Guid("fb3ec6cc-3b9b-4b9c-91cf-cff78c1edbf1");
@@ -1818,17 +1808,17 @@ namespace DevExpress.AI.Demos {
             this.reportExplorerDockPanel1.OriginalSize = new System.Drawing.Size(561, 526);
             this.reportExplorerDockPanel1.Size = new System.Drawing.Size(374, 526);
             this.reportExplorerDockPanel1.Text = "Report Explorer";
-            // 
+            //
             // reportExplorerDockPanel1_Container
-            // 
+            //
             this.reportExplorerDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.reportExplorerDockPanel1_Container.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.reportExplorerDockPanel1_Container.Name = "reportExplorerDockPanel1_Container";
             this.reportExplorerDockPanel1_Container.Size = new System.Drawing.Size(374, 526);
             this.reportExplorerDockPanel1_Container.TabIndex = 0;
-            // 
+            //
             // fieldListDockPanel1
-            // 
+            //
             this.fieldListDockPanel1.Controls.Add(this.fieldListDockPanel1_Container);
             this.fieldListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.fieldListDockPanel1.ID = new System.Guid("faf69838-a93f-4114-83e8-d0d09cc5ce95");
@@ -1838,17 +1828,17 @@ namespace DevExpress.AI.Demos {
             this.fieldListDockPanel1.OriginalSize = new System.Drawing.Size(561, 526);
             this.fieldListDockPanel1.Size = new System.Drawing.Size(374, 526);
             this.fieldListDockPanel1.Text = "Field List";
-            // 
+            //
             // fieldListDockPanel1_Container
-            // 
+            //
             this.fieldListDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.fieldListDockPanel1_Container.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fieldListDockPanel1_Container.Name = "fieldListDockPanel1_Container";
             this.fieldListDockPanel1_Container.Size = new System.Drawing.Size(374, 526);
             this.fieldListDockPanel1_Container.TabIndex = 0;
-            // 
+            //
             // panelContainer4
-            // 
+            //
             this.panelContainer4.ActiveChild = this.errorListDockPanel1;
             this.panelContainer4.Controls.Add(this.errorListDockPanel1);
             this.panelContainer4.Controls.Add(this.groupAndSortDockPanel1);
@@ -1862,9 +1852,9 @@ namespace DevExpress.AI.Demos {
             this.panelContainer4.Size = new System.Drawing.Size(1080, 200);
             this.panelContainer4.Tabbed = true;
             this.panelContainer4.Text = "panelContainer4";
-            // 
+            //
             // errorListDockPanel1
-            // 
+            //
             this.errorListDockPanel1.Controls.Add(this.errorListDockPanel1_Container);
             this.errorListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.errorListDockPanel1.ID = new System.Guid("5a9a01fd-6e95-4e81-a8c4-ac63153d7488");
@@ -1874,17 +1864,17 @@ namespace DevExpress.AI.Demos {
             this.errorListDockPanel1.OriginalSize = new System.Drawing.Size(706, 203);
             this.errorListDockPanel1.Size = new System.Drawing.Size(1080, 103);
             this.errorListDockPanel1.Text = "Report Design Analyzer";
-            // 
+            //
             // errorListDockPanel1_Container
-            // 
+            //
             this.errorListDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.errorListDockPanel1_Container.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.errorListDockPanel1_Container.Name = "errorListDockPanel1_Container";
             this.errorListDockPanel1_Container.Size = new System.Drawing.Size(1080, 103);
             this.errorListDockPanel1_Container.TabIndex = 0;
-            // 
+            //
             // groupAndSortDockPanel1
-            // 
+            //
             this.groupAndSortDockPanel1.Controls.Add(this.groupAndSortDockPanel1_Container);
             this.groupAndSortDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill;
             this.groupAndSortDockPanel1.ID = new System.Guid("4bab159e-c495-4d67-87dc-f4e895da443e");
@@ -1894,17 +1884,17 @@ namespace DevExpress.AI.Demos {
             this.groupAndSortDockPanel1.OriginalSize = new System.Drawing.Size(706, 203);
             this.groupAndSortDockPanel1.Size = new System.Drawing.Size(1080, 103);
             this.groupAndSortDockPanel1.Text = "Group and Sort";
-            // 
+            //
             // groupAndSortDockPanel1_Container
-            // 
+            //
             this.groupAndSortDockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.groupAndSortDockPanel1_Container.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupAndSortDockPanel1_Container.Name = "groupAndSortDockPanel1_Container";
             this.groupAndSortDockPanel1_Container.Size = new System.Drawing.Size(1080, 103);
             this.groupAndSortDockPanel1_Container.TabIndex = 0;
-            // 
+            //
             // commandBarItem17
-            // 
+            //
             this.commandBarItem17.Caption = "Bold";
             this.commandBarItem17.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontBold;
             this.commandBarItem17.Enabled = false;
@@ -1919,9 +1909,9 @@ namespace DevExpress.AI.Demos {
             superToolTip22.Items.Add(toolTipItem22);
             superToolTip22.MaxWidth = 210;
             this.commandBarItem17.SuperTip = superToolTip22;
-            // 
+            //
             // commandBarItem18
-            // 
+            //
             this.commandBarItem18.Caption = "Italic";
             this.commandBarItem18.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontItalic;
             this.commandBarItem18.Enabled = false;
@@ -1936,9 +1926,9 @@ namespace DevExpress.AI.Demos {
             superToolTip23.Items.Add(toolTipItem23);
             superToolTip23.MaxWidth = 210;
             this.commandBarItem18.SuperTip = superToolTip23;
-            // 
+            //
             // commandBarItem19
-            // 
+            //
             this.commandBarItem19.Caption = "Underline";
             this.commandBarItem19.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontUnderline;
             this.commandBarItem19.Enabled = false;
@@ -1953,9 +1943,9 @@ namespace DevExpress.AI.Demos {
             superToolTip24.Items.Add(toolTipItem24);
             superToolTip24.MaxWidth = 210;
             this.commandBarItem19.SuperTip = superToolTip24;
-            // 
+            //
             // commandColorBarItem1
-            // 
+            //
             this.commandColorBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandColorBarItem1.Caption = "Foreground Color";
             this.commandColorBarItem1.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False;
@@ -1971,9 +1961,9 @@ namespace DevExpress.AI.Demos {
             superToolTip25.Items.Add(toolTipItem25);
             superToolTip25.MaxWidth = 210;
             this.commandColorBarItem1.SuperTip = superToolTip25;
-            // 
+            //
             // commandColorBarItem2
-            // 
+            //
             this.commandColorBarItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandColorBarItem2.Caption = "Background Color";
             this.commandColorBarItem2.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False;
@@ -1989,9 +1979,9 @@ namespace DevExpress.AI.Demos {
             superToolTip26.Items.Add(toolTipItem26);
             superToolTip26.MaxWidth = 210;
             this.commandColorBarItem2.SuperTip = superToolTip26;
-            // 
+            //
             // commandBarItem20
-            // 
+            //
             this.commandBarItem20.Caption = "Align Text Left";
             this.commandBarItem20.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyLeft;
             this.commandBarItem20.Enabled = false;
@@ -2005,9 +1995,9 @@ namespace DevExpress.AI.Demos {
             superToolTip27.Items.Add(toolTipItem27);
             superToolTip27.MaxWidth = 210;
             this.commandBarItem20.SuperTip = superToolTip27;
-            // 
+            //
             // commandBarItem21
-            // 
+            //
             this.commandBarItem21.Caption = "Center Text";
             this.commandBarItem21.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyCenter;
             this.commandBarItem21.Enabled = false;
@@ -2021,9 +2011,9 @@ namespace DevExpress.AI.Demos {
             superToolTip28.Items.Add(toolTipItem28);
             superToolTip28.MaxWidth = 210;
             this.commandBarItem21.SuperTip = superToolTip28;
-            // 
+            //
             // commandBarItem22
-            // 
+            //
             this.commandBarItem22.Caption = "Align Text Right";
             this.commandBarItem22.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyRight;
             this.commandBarItem22.Enabled = false;
@@ -2037,9 +2027,9 @@ namespace DevExpress.AI.Demos {
             superToolTip29.Items.Add(toolTipItem29);
             superToolTip29.MaxWidth = 210;
             this.commandBarItem22.SuperTip = superToolTip29;
-            // 
+            //
             // commandBarItem23
-            // 
+            //
             this.commandBarItem23.Caption = "Justify";
             this.commandBarItem23.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyJustify;
             this.commandBarItem23.Enabled = false;
@@ -2053,9 +2043,9 @@ namespace DevExpress.AI.Demos {
             superToolTip30.Items.Add(toolTipItem30);
             superToolTip30.MaxWidth = 210;
             this.commandBarItem23.SuperTip = superToolTip30;
-            // 
+            //
             // commandBarItem24
-            // 
+            //
             this.commandBarItem24.Caption = "Strikethrough";
             this.commandBarItem24.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontStrikeout;
             this.commandBarItem24.Enabled = false;
@@ -2069,9 +2059,9 @@ namespace DevExpress.AI.Demos {
             superToolTip31.Items.Add(toolTipItem31);
             superToolTip31.MaxWidth = 210;
             this.commandBarItem24.SuperTip = superToolTip31;
-            // 
+            //
             // commandBarItem25
-            // 
+            //
             this.commandBarItem25.Caption = "Align Text Top";
             this.commandBarItem25.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignTop;
             this.commandBarItem25.Enabled = false;
@@ -2085,9 +2075,9 @@ namespace DevExpress.AI.Demos {
             superToolTip32.Items.Add(toolTipItem32);
             superToolTip32.MaxWidth = 210;
             this.commandBarItem25.SuperTip = superToolTip32;
-            // 
+            //
             // commandBarItem26
-            // 
+            //
             this.commandBarItem26.Caption = "Align Text Middle";
             this.commandBarItem26.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignMiddle;
             this.commandBarItem26.Enabled = false;
@@ -2101,9 +2091,9 @@ namespace DevExpress.AI.Demos {
             superToolTip33.Items.Add(toolTipItem33);
             superToolTip33.MaxWidth = 210;
             this.commandBarItem26.SuperTip = superToolTip33;
-            // 
+            //
             // commandBarItem27
-            // 
+            //
             this.commandBarItem27.Caption = "Align Text Bottom";
             this.commandBarItem27.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignBottom;
             this.commandBarItem27.Enabled = false;
@@ -2117,9 +2107,9 @@ namespace DevExpress.AI.Demos {
             superToolTip34.Items.Add(toolTipItem34);
             superToolTip34.MaxWidth = 210;
             this.commandBarItem27.SuperTip = superToolTip34;
-            // 
+            //
             // commandBarItem28
-            // 
+            //
             this.commandBarItem28.Caption = "Add Calculated Field";
             this.commandBarItem28.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddCalculatedField;
             this.commandBarItem28.Enabled = false;
@@ -2135,9 +2125,9 @@ namespace DevExpress.AI.Demos {
             superToolTip35.Items.Add(toolTipItem35);
             superToolTip35.MaxWidth = 210;
             this.commandBarItem28.SuperTip = superToolTip35;
-            // 
+            //
             // commandBarItem29
-            // 
+            //
             this.commandBarItem29.Caption = "Add Parameter";
             this.commandBarItem29.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddParameter;
             this.commandBarItem29.Enabled = false;
@@ -2152,9 +2142,9 @@ namespace DevExpress.AI.Demos {
             superToolTip36.Items.Add(toolTipItem36);
             superToolTip36.MaxWidth = 210;
             this.commandBarItem29.SuperTip = superToolTip36;
-            // 
+            //
             // commandBarItem30
-            // 
+            //
             this.commandBarItem30.Caption = "Add Data Source";
             this.commandBarItem30.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddNewDataSource;
             this.commandBarItem30.Enabled = false;
@@ -2168,9 +2158,9 @@ namespace DevExpress.AI.Demos {
             superToolTip37.Items.Add(toolTipItem37);
             superToolTip37.MaxWidth = 210;
             this.commandBarItem30.SuperTip = superToolTip37;
-            // 
+            //
             // commandBarItem31
-            // 
+            //
             this.commandBarItem31.Caption = "Extract Style";
             this.commandBarItem31.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ExtractStyle;
             this.commandBarItem31.Enabled = false;
@@ -2185,9 +2175,9 @@ namespace DevExpress.AI.Demos {
             superToolTip38.Items.Add(toolTipItem38);
             superToolTip38.MaxWidth = 210;
             this.commandBarItem31.SuperTip = superToolTip38;
-            // 
+            //
             // commandBarItem32
-            // 
+            //
             this.commandBarItem32.Caption = "All Borders";
             this.commandBarItem32.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BordersAll;
             this.commandBarItem32.Enabled = false;
@@ -2201,9 +2191,9 @@ namespace DevExpress.AI.Demos {
             superToolTip39.Items.Add(toolTipItem39);
             superToolTip39.MaxWidth = 210;
             this.commandBarItem32.SuperTip = superToolTip39;
-            // 
+            //
             // commandBarItem33
-            // 
+            //
             this.commandBarItem33.Caption = "No Border";
             this.commandBarItem33.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BordersNone;
             this.commandBarItem33.Enabled = false;
@@ -2217,9 +2207,9 @@ namespace DevExpress.AI.Demos {
             superToolTip40.Items.Add(toolTipItem40);
             superToolTip40.MaxWidth = 210;
             this.commandBarItem33.SuperTip = superToolTip40;
-            // 
+            //
             // commandBarItem34
-            // 
+            //
             this.commandBarItem34.Caption = "Left Border";
             this.commandBarItem34.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderLeft;
             this.commandBarItem34.Enabled = false;
@@ -2233,9 +2223,9 @@ namespace DevExpress.AI.Demos {
             superToolTip41.Items.Add(toolTipItem41);
             superToolTip41.MaxWidth = 210;
             this.commandBarItem34.SuperTip = superToolTip41;
-            // 
+            //
             // commandBarItem35
-            // 
+            //
             this.commandBarItem35.Caption = "Top Border";
             this.commandBarItem35.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderTop;
             this.commandBarItem35.Enabled = false;
@@ -2249,9 +2239,9 @@ namespace DevExpress.AI.Demos {
             superToolTip42.Items.Add(toolTipItem42);
             superToolTip42.MaxWidth = 210;
             this.commandBarItem35.SuperTip = superToolTip42;
-            // 
+            //
             // commandBarItem36
-            // 
+            //
             this.commandBarItem36.Caption = "Right Border";
             this.commandBarItem36.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderRight;
             this.commandBarItem36.Enabled = false;
@@ -2265,9 +2255,9 @@ namespace DevExpress.AI.Demos {
             superToolTip43.Items.Add(toolTipItem43);
             superToolTip43.MaxWidth = 210;
             this.commandBarItem36.SuperTip = superToolTip43;
-            // 
+            //
             // commandBarItem37
-            // 
+            //
             this.commandBarItem37.Caption = "Bottom Border";
             this.commandBarItem37.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderBottom;
             this.commandBarItem37.Enabled = false;
@@ -2281,9 +2271,9 @@ namespace DevExpress.AI.Demos {
             superToolTip44.Items.Add(toolTipItem44);
             superToolTip44.MaxWidth = 210;
             this.commandBarItem37.SuperTip = superToolTip44;
-            // 
+            //
             // commandColorBarItem3
-            // 
+            //
             this.commandColorBarItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandColorBarItem3.Caption = "Border Color";
             this.commandColorBarItem3.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False;
@@ -2299,9 +2289,9 @@ namespace DevExpress.AI.Demos {
             superToolTip45.Items.Add(toolTipItem45);
             superToolTip45.MaxWidth = 210;
             this.commandColorBarItem3.SuperTip = superToolTip45;
-            // 
+            //
             // commandBarItem38
-            // 
+            //
             this.commandBarItem38.ActAsDropDown = true;
             this.commandBarItem38.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem38.Caption = "Border Width";
@@ -2317,9 +2307,9 @@ namespace DevExpress.AI.Demos {
             superToolTip46.Items.Add(toolTipItem46);
             superToolTip46.MaxWidth = 210;
             this.commandBarItem38.SuperTip = superToolTip46;
-            // 
+            //
             // commandBarItem39
-            // 
+            //
             this.commandBarItem39.Caption = "Align to Grid";
             this.commandBarItem39.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignToGrid;
             this.commandBarItem39.Enabled = false;
@@ -2333,9 +2323,9 @@ namespace DevExpress.AI.Demos {
             superToolTip47.Items.Add(toolTipItem47);
             superToolTip47.MaxWidth = 210;
             this.commandBarItem39.SuperTip = superToolTip47;
-            // 
+            //
             // commandBarItem40
-            // 
+            //
             this.commandBarItem40.Caption = "Align Lefts";
             this.commandBarItem40.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignLeft;
             this.commandBarItem40.Enabled = false;
@@ -2349,9 +2339,9 @@ namespace DevExpress.AI.Demos {
             superToolTip48.Items.Add(toolTipItem48);
             superToolTip48.MaxWidth = 210;
             this.commandBarItem40.SuperTip = superToolTip48;
-            // 
+            //
             // commandBarItem41
-            // 
+            //
             this.commandBarItem41.Caption = "Align Centers";
             this.commandBarItem41.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignVerticalCenters;
             this.commandBarItem41.Enabled = false;
@@ -2365,9 +2355,9 @@ namespace DevExpress.AI.Demos {
             superToolTip49.Items.Add(toolTipItem49);
             superToolTip49.MaxWidth = 210;
             this.commandBarItem41.SuperTip = superToolTip49;
-            // 
+            //
             // commandBarItem42
-            // 
+            //
             this.commandBarItem42.Caption = "Align Rights";
             this.commandBarItem42.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignRight;
             this.commandBarItem42.Enabled = false;
@@ -2381,9 +2371,9 @@ namespace DevExpress.AI.Demos {
             superToolTip50.Items.Add(toolTipItem50);
             superToolTip50.MaxWidth = 210;
             this.commandBarItem42.SuperTip = superToolTip50;
-            // 
+            //
             // commandBarItem43
-            // 
+            //
             this.commandBarItem43.Caption = "Align Tops";
             this.commandBarItem43.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignTop;
             this.commandBarItem43.Enabled = false;
@@ -2397,9 +2387,9 @@ namespace DevExpress.AI.Demos {
             superToolTip51.Items.Add(toolTipItem51);
             superToolTip51.MaxWidth = 210;
             this.commandBarItem43.SuperTip = superToolTip51;
-            // 
+            //
             // commandBarItem44
-            // 
+            //
             this.commandBarItem44.Caption = "Align Middles";
             this.commandBarItem44.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignHorizontalCenters;
             this.commandBarItem44.Enabled = false;
@@ -2413,9 +2403,9 @@ namespace DevExpress.AI.Demos {
             superToolTip52.Items.Add(toolTipItem52);
             superToolTip52.MaxWidth = 210;
             this.commandBarItem44.SuperTip = superToolTip52;
-            // 
+            //
             // commandBarItem45
-            // 
+            //
             this.commandBarItem45.Caption = "Align Bottoms";
             this.commandBarItem45.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignBottom;
             this.commandBarItem45.Enabled = false;
@@ -2429,9 +2419,9 @@ namespace DevExpress.AI.Demos {
             superToolTip53.Items.Add(toolTipItem53);
             superToolTip53.MaxWidth = 210;
             this.commandBarItem45.SuperTip = superToolTip53;
-            // 
+            //
             // commandBarItem46
-            // 
+            //
             this.commandBarItem46.Caption = "Apply Same Width";
             this.commandBarItem46.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControlWidth;
             this.commandBarItem46.Enabled = false;
@@ -2445,9 +2435,9 @@ namespace DevExpress.AI.Demos {
             superToolTip54.Items.Add(toolTipItem54);
             superToolTip54.MaxWidth = 210;
             this.commandBarItem46.SuperTip = superToolTip54;
-            // 
+            //
             // commandBarItem47
-            // 
+            //
             this.commandBarItem47.Caption = "Fit Bounds to Grid";
             this.commandBarItem47.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToGrid;
             this.commandBarItem47.Enabled = false;
@@ -2461,9 +2451,9 @@ namespace DevExpress.AI.Demos {
             superToolTip55.Items.Add(toolTipItem55);
             superToolTip55.MaxWidth = 210;
             this.commandBarItem47.SuperTip = superToolTip55;
-            // 
+            //
             // commandBarItem48
-            // 
+            //
             this.commandBarItem48.Caption = "Apply Same Height";
             this.commandBarItem48.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControlHeight;
             this.commandBarItem48.Enabled = false;
@@ -2477,9 +2467,9 @@ namespace DevExpress.AI.Demos {
             superToolTip56.Items.Add(toolTipItem56);
             superToolTip56.MaxWidth = 210;
             this.commandBarItem48.SuperTip = superToolTip56;
-            // 
+            //
             // commandBarItem49
-            // 
+            //
             this.commandBarItem49.Caption = "Apply Same Size";
             this.commandBarItem49.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControl;
             this.commandBarItem49.Enabled = false;
@@ -2493,9 +2483,9 @@ namespace DevExpress.AI.Demos {
             superToolTip57.Items.Add(toolTipItem57);
             superToolTip57.MaxWidth = 210;
             this.commandBarItem49.SuperTip = superToolTip57;
-            // 
+            //
             // commandBarItem50
-            // 
+            //
             this.commandBarItem50.Caption = "Apply Equal Horizontal Spacing";
             this.commandBarItem50.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceMakeEqual;
             this.commandBarItem50.Enabled = false;
@@ -2509,9 +2499,9 @@ namespace DevExpress.AI.Demos {
             superToolTip58.Items.Add(toolTipItem58);
             superToolTip58.MaxWidth = 210;
             this.commandBarItem50.SuperTip = superToolTip58;
-            // 
+            //
             // commandBarItem51
-            // 
+            //
             this.commandBarItem51.Caption = "Increase Horizontal Spacing";
             this.commandBarItem51.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceIncrease;
             this.commandBarItem51.Enabled = false;
@@ -2525,9 +2515,9 @@ namespace DevExpress.AI.Demos {
             superToolTip59.Items.Add(toolTipItem59);
             superToolTip59.MaxWidth = 210;
             this.commandBarItem51.SuperTip = superToolTip59;
-            // 
+            //
             // commandBarItem52
-            // 
+            //
             this.commandBarItem52.Caption = "Decrease Horizontal Spacing";
             this.commandBarItem52.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceDecrease;
             this.commandBarItem52.Enabled = false;
@@ -2541,9 +2531,9 @@ namespace DevExpress.AI.Demos {
             superToolTip60.Items.Add(toolTipItem60);
             superToolTip60.MaxWidth = 210;
             this.commandBarItem52.SuperTip = superToolTip60;
-            // 
+            //
             // commandBarItem53
-            // 
+            //
             this.commandBarItem53.Caption = "Remove Horizontal Spacing";
             this.commandBarItem53.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceConcatenate;
             this.commandBarItem53.Enabled = false;
@@ -2557,9 +2547,9 @@ namespace DevExpress.AI.Demos {
             superToolTip61.Items.Add(toolTipItem61);
             superToolTip61.MaxWidth = 210;
             this.commandBarItem53.SuperTip = superToolTip61;
-            // 
+            //
             // commandBarItem54
-            // 
+            //
             this.commandBarItem54.Caption = "Apply Equal Vertical Spacing";
             this.commandBarItem54.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceMakeEqual;
             this.commandBarItem54.Enabled = false;
@@ -2573,9 +2563,9 @@ namespace DevExpress.AI.Demos {
             superToolTip62.Items.Add(toolTipItem62);
             superToolTip62.MaxWidth = 210;
             this.commandBarItem54.SuperTip = superToolTip62;
-            // 
+            //
             // commandBarItem55
-            // 
+            //
             this.commandBarItem55.Caption = "Increase Vertical Spacing";
             this.commandBarItem55.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceIncrease;
             this.commandBarItem55.Enabled = false;
@@ -2589,9 +2579,9 @@ namespace DevExpress.AI.Demos {
             superToolTip63.Items.Add(toolTipItem63);
             superToolTip63.MaxWidth = 210;
             this.commandBarItem55.SuperTip = superToolTip63;
-            // 
+            //
             // commandBarItem56
-            // 
+            //
             this.commandBarItem56.Caption = "Decrease Vertical Spacing";
             this.commandBarItem56.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceDecrease;
             this.commandBarItem56.Enabled = false;
@@ -2605,9 +2595,9 @@ namespace DevExpress.AI.Demos {
             superToolTip64.Items.Add(toolTipItem64);
             superToolTip64.MaxWidth = 210;
             this.commandBarItem56.SuperTip = superToolTip64;
-            // 
+            //
             // commandBarItem57
-            // 
+            //
             this.commandBarItem57.Caption = "Remove Vertical Spacing";
             this.commandBarItem57.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceConcatenate;
             this.commandBarItem57.Enabled = false;
@@ -2621,9 +2611,9 @@ namespace DevExpress.AI.Demos {
             superToolTip65.Items.Add(toolTipItem65);
             superToolTip65.MaxWidth = 210;
             this.commandBarItem57.SuperTip = superToolTip65;
-            // 
+            //
             // commandBarItem58
-            // 
+            //
             this.commandBarItem58.Caption = "Center Horizontally";
             this.commandBarItem58.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CenterHorizontally;
             this.commandBarItem58.Enabled = false;
@@ -2637,9 +2627,9 @@ namespace DevExpress.AI.Demos {
             superToolTip66.Items.Add(toolTipItem66);
             superToolTip66.MaxWidth = 210;
             this.commandBarItem58.SuperTip = superToolTip66;
-            // 
+            //
             // commandBarItem59
-            // 
+            //
             this.commandBarItem59.Caption = "Center Vertically";
             this.commandBarItem59.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CenterVertically;
             this.commandBarItem59.Enabled = false;
@@ -2653,9 +2643,9 @@ namespace DevExpress.AI.Demos {
             superToolTip67.Items.Add(toolTipItem67);
             superToolTip67.MaxWidth = 210;
             this.commandBarItem59.SuperTip = superToolTip67;
-            // 
+            //
             // commandBarItem60
-            // 
+            //
             this.commandBarItem60.Caption = "Bring to Front";
             this.commandBarItem60.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BringToFront;
             this.commandBarItem60.Enabled = false;
@@ -2669,9 +2659,9 @@ namespace DevExpress.AI.Demos {
             superToolTip68.Items.Add(toolTipItem68);
             superToolTip68.MaxWidth = 210;
             this.commandBarItem60.SuperTip = superToolTip68;
-            // 
+            //
             // commandBarItem61
-            // 
+            //
             this.commandBarItem61.Caption = "Send to Back";
             this.commandBarItem61.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SendToBack;
             this.commandBarItem61.Enabled = false;
@@ -2685,9 +2675,9 @@ namespace DevExpress.AI.Demos {
             superToolTip69.Items.Add(toolTipItem69);
             superToolTip69.MaxWidth = 210;
             this.commandBarItem61.SuperTip = superToolTip69;
-            // 
+            //
             // commandBarCheckItem1
-            // 
+            //
             this.commandBarCheckItem1.Caption = "Snap to Grid";
             this.commandBarCheckItem1.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SnapToGrid;
@@ -2702,9 +2692,9 @@ namespace DevExpress.AI.Demos {
             superToolTip70.Items.Add(toolTipItem70);
             superToolTip70.MaxWidth = 210;
             this.commandBarCheckItem1.SuperTip = superToolTip70;
-            // 
+            //
             // commandBarCheckItem2
-            // 
+            //
             this.commandBarCheckItem2.Caption = "Snap Lines";
             this.commandBarCheckItem2.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SnapLines;
@@ -2719,9 +2709,9 @@ namespace DevExpress.AI.Demos {
             superToolTip71.Items.Add(toolTipItem71);
             superToolTip71.MaxWidth = 210;
             this.commandBarCheckItem2.SuperTip = superToolTip71;
-            // 
+            //
             // commandBarItem62
-            // 
+            //
             this.commandBarItem62.Caption = "Fit Bounds to Container";
             this.commandBarItem62.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitBoundsToContainer;
             this.commandBarItem62.Enabled = false;
@@ -2735,9 +2725,9 @@ namespace DevExpress.AI.Demos {
             superToolTip72.Items.Add(toolTipItem72);
             superToolTip72.MaxWidth = 210;
             this.commandBarItem62.SuperTip = superToolTip72;
-            // 
+            //
             // commandBarItem63
-            // 
+            //
             this.commandBarItem63.ActAsDropDown = true;
             this.commandBarItem63.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem63.Caption = "Size";
@@ -2754,9 +2744,9 @@ namespace DevExpress.AI.Demos {
             superToolTip73.Items.Add(toolTipItem73);
             superToolTip73.MaxWidth = 210;
             this.commandBarItem63.SuperTip = superToolTip73;
-            // 
+            //
             // commandBarItem64
-            // 
+            //
             this.commandBarItem64.ActAsDropDown = true;
             this.commandBarItem64.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem64.Caption = "Orientation";
@@ -2772,9 +2762,9 @@ namespace DevExpress.AI.Demos {
             superToolTip74.Items.Add(toolTipItem74);
             superToolTip74.MaxWidth = 210;
             this.commandBarItem64.SuperTip = superToolTip74;
-            // 
+            //
             // commandBarItem65
-            // 
+            //
             this.commandBarItem65.ActAsDropDown = true;
             this.commandBarItem65.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem65.Caption = "Margins";
@@ -2791,9 +2781,9 @@ namespace DevExpress.AI.Demos {
             superToolTip75.Items.Add(toolTipItem75);
             superToolTip75.MaxWidth = 210;
             this.commandBarItem65.SuperTip = superToolTip75;
-            // 
+            //
             // commandColorBarItem4
-            // 
+            //
             this.commandColorBarItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandColorBarItem4.Caption = "Page Color";
             this.commandColorBarItem4.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False;
@@ -2809,9 +2799,9 @@ namespace DevExpress.AI.Demos {
             superToolTip76.Items.Add(toolTipItem76);
             superToolTip76.MaxWidth = 210;
             this.commandColorBarItem4.SuperTip = superToolTip76;
-            // 
+            //
             // commandBarItem66
-            // 
+            //
             this.commandBarItem66.Caption = "Watermark";
             this.commandBarItem66.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageWatermark;
             this.commandBarItem66.Enabled = false;
@@ -2827,9 +2817,9 @@ namespace DevExpress.AI.Demos {
             superToolTip77.Items.Add(toolTipItem77);
             superToolTip77.MaxWidth = 210;
             this.commandBarItem66.SuperTip = superToolTip77;
-            // 
+            //
             // commandBarItem67
-            // 
+            //
             this.commandBarItem67.Caption = "Printing-related Warnings";
             this.commandBarItem67.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowPrintingWarnings;
             this.commandBarItem67.Enabled = false;
@@ -2844,9 +2834,9 @@ namespace DevExpress.AI.Demos {
             superToolTip78.Items.Add(toolTipItem78);
             superToolTip78.MaxWidth = 210;
             this.commandBarItem67.SuperTip = superToolTip78;
-            // 
+            //
             // commandBarItem68
-            // 
+            //
             this.commandBarItem68.Caption = "Export-related Warnings";
             this.commandBarItem68.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowExportWarnings;
             this.commandBarItem68.Enabled = false;
@@ -2861,9 +2851,9 @@ namespace DevExpress.AI.Demos {
             superToolTip79.Items.Add(toolTipItem79);
             superToolTip79.MaxWidth = 210;
             this.commandBarItem68.SuperTip = superToolTip79;
-            // 
+            //
             // commandBarItem69
-            // 
+            //
             this.commandBarItem69.Caption = "Watermark";
             this.commandBarItem69.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.DrawWatermark;
             this.commandBarItem69.Enabled = false;
@@ -2879,9 +2869,9 @@ namespace DevExpress.AI.Demos {
             superToolTip80.Items.Add(toolTipItem80);
             superToolTip80.MaxWidth = 210;
             this.commandBarItem69.SuperTip = superToolTip80;
-            // 
+            //
             // commandBarItem70
-            // 
+            //
             this.commandBarItem70.Caption = "Grid Lines";
             this.commandBarItem70.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.DrawGridLines;
             this.commandBarItem70.Enabled = false;
@@ -2896,9 +2886,9 @@ namespace DevExpress.AI.Demos {
             superToolTip81.Items.Add(toolTipItem81);
             superToolTip81.MaxWidth = 210;
             this.commandBarItem70.SuperTip = superToolTip81;
-            // 
+            //
             // commandBarItem71
-            // 
+            //
             this.commandBarItem71.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem71.Caption = "Zoom";
             this.commandBarItem71.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Zoom;
@@ -2913,9 +2903,9 @@ namespace DevExpress.AI.Demos {
             superToolTip82.Items.Add(toolTipItem82);
             superToolTip82.MaxWidth = 210;
             this.commandBarItem71.SuperTip = superToolTip82;
-            // 
+            //
             // commandBarItem72
-            // 
+            //
             this.commandBarItem72.Caption = "Zoom In";
             this.commandBarItem72.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ZoomIn;
             this.commandBarItem72.Enabled = false;
@@ -2930,9 +2920,9 @@ namespace DevExpress.AI.Demos {
             superToolTip83.Items.Add(toolTipItem83);
             superToolTip83.MaxWidth = 210;
             this.commandBarItem72.SuperTip = superToolTip83;
-            // 
+            //
             // commandBarItem73
-            // 
+            //
             this.commandBarItem73.Caption = "Zoom Out";
             this.commandBarItem73.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ZoomOut;
             this.commandBarItem73.Enabled = false;
@@ -2947,9 +2937,9 @@ namespace DevExpress.AI.Demos {
             superToolTip84.Items.Add(toolTipItem84);
             superToolTip84.MaxWidth = 210;
             this.commandBarItem73.SuperTip = superToolTip84;
-            // 
+            //
             // commandBarItem74
-            // 
+            //
             this.commandBarItem74.Caption = "Validate";
             this.commandBarItem74.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsValidate;
             this.commandBarItem74.Enabled = false;
@@ -2964,14 +2954,14 @@ namespace DevExpress.AI.Demos {
             superToolTip85.Items.Add(toolTipItem85);
             superToolTip85.MaxWidth = 210;
             this.commandBarItem74.SuperTip = superToolTip85;
-            // 
+            //
             // commandGalleryBarItem1
-            // 
+            //
             this.commandGalleryBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.StyleName;
             this.commandGalleryBarItem1.Enabled = false;
-            // 
-            // 
-            // 
+            //
+            //
+            //
             this.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.Options.UseTextOptions = true;
             this.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter;
@@ -2990,76 +2980,76 @@ namespace DevExpress.AI.Demos {
             this.commandGalleryBarItem1.Gallery.ShowItemText = true;
             this.commandGalleryBarItem1.Id = 84;
             this.commandGalleryBarItem1.Name = "commandGalleryBarItem1";
-            // 
+            //
             // commandGalleryBarItem2
-            // 
+            //
             this.commandGalleryBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeSymbology;
             this.commandGalleryBarItem2.Enabled = false;
-            // 
-            // 
-            // 
+            //
+            //
+            //
             this.commandGalleryBarItem2.Gallery.ColumnCount = 8;
             this.commandGalleryBarItem2.Gallery.ImageSize = new System.Drawing.Size(1200, 427);
             this.commandGalleryBarItem2.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
             this.commandGalleryBarItem2.Gallery.ShowItemText = true;
             this.commandGalleryBarItem2.Id = 85;
             this.commandGalleryBarItem2.Name = "commandGalleryBarItem2";
-            // 
+            //
             // commandGalleryBarItem3
-            // 
+            //
             this.commandGalleryBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAppearanceName;
             this.commandGalleryBarItem3.Enabled = false;
-            // 
-            // 
-            // 
+            //
+            //
+            //
             this.commandGalleryBarItem3.Gallery.ColumnCount = 7;
             this.commandGalleryBarItem3.Gallery.ImageSize = new System.Drawing.Size(900, 581);
             this.commandGalleryBarItem3.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
             this.commandGalleryBarItem3.Id = 86;
             this.commandGalleryBarItem3.Name = "commandGalleryBarItem3";
-            // 
+            //
             // commandGalleryBarItem4
-            // 
+            //
             this.commandGalleryBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SparklineView;
             this.commandGalleryBarItem4.Enabled = false;
-            // 
-            // 
-            // 
+            //
+            //
+            //
             this.commandGalleryBarItem4.Gallery.ColumnCount = 4;
             this.commandGalleryBarItem4.Gallery.ImageSize = new System.Drawing.Size(576, 622);
             this.commandGalleryBarItem4.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
             this.commandGalleryBarItem4.Id = 87;
             this.commandGalleryBarItem4.Name = "commandGalleryBarItem4";
-            // 
+            //
             // commandGalleryBarItem5
-            // 
+            //
             this.commandGalleryBarItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewTypeStyle;
             this.commandGalleryBarItem5.Enabled = false;
-            // 
-            // 
-            // 
+            //
+            //
+            //
             this.commandGalleryBarItem5.Gallery.ColumnCount = 7;
             this.commandGalleryBarItem5.Gallery.ImageSize = new System.Drawing.Size(576, 622);
             this.commandGalleryBarItem5.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
             this.commandGalleryBarItem5.Id = 88;
             this.commandGalleryBarItem5.Name = "commandGalleryBarItem5";
-            // 
+            //
             // commandGalleryBarItem6
-            // 
+            //
             this.commandGalleryBarItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShapeType;
             this.commandGalleryBarItem6.Enabled = false;
-            // 
-            // 
-            // 
+            //
+            //
+            //
             this.commandGalleryBarItem6.Gallery.ColumnCount = 23;
             this.commandGalleryBarItem6.Gallery.DistanceBetweenItems = 12;
             this.commandGalleryBarItem6.Gallery.ImageSize = new System.Drawing.Size(48, 48);
             this.commandGalleryBarItem6.Gallery.ScaleImages = DevExpress.Utils.DefaultBoolean.True;
             this.commandGalleryBarItem6.Id = 89;
             this.commandGalleryBarItem6.Name = "commandGalleryBarItem6";
-            // 
+            //
             // commandBarEditItem1
-            // 
+            //
             this.commandBarEditItem1.Caption = "Width: ";
             this.commandBarEditItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellWidth;
             this.commandBarEditItem1.Edit = this.repositoryItemSpinEdit1;
@@ -3075,9 +3065,9 @@ namespace DevExpress.AI.Demos {
             superToolTip86.Items.Add(toolTipItem86);
             superToolTip86.MaxWidth = 210;
             this.commandBarEditItem1.SuperTip = superToolTip86;
-            // 
+            //
             // repositoryItemSpinEdit1
-            // 
+            //
             this.repositoryItemSpinEdit1.AutoHeight = false;
             this.repositoryItemSpinEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -3087,9 +3077,9 @@ namespace DevExpress.AI.Demos {
             -1,
             0});
             this.repositoryItemSpinEdit1.Name = "repositoryItemSpinEdit1";
-            // 
+            //
             // commandBarEditItem2
-            // 
+            //
             this.commandBarEditItem2.Caption = "Height: ";
             this.commandBarEditItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellHeight;
             this.commandBarEditItem2.Edit = this.repositoryItemSpinEdit2;
@@ -3105,9 +3095,9 @@ namespace DevExpress.AI.Demos {
             superToolTip87.Items.Add(toolTipItem87);
             superToolTip87.MaxWidth = 210;
             this.commandBarEditItem2.SuperTip = superToolTip87;
-            // 
+            //
             // repositoryItemSpinEdit2
-            // 
+            //
             this.repositoryItemSpinEdit2.AutoHeight = false;
             this.repositoryItemSpinEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -3117,9 +3107,9 @@ namespace DevExpress.AI.Demos {
             -1,
             0});
             this.repositoryItemSpinEdit2.Name = "repositoryItemSpinEdit2";
-            // 
+            //
             // commandBarEditItem3
-            // 
+            //
             this.commandBarEditItem3.Caption = "Horizontal Spacing: ";
             this.commandBarEditItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellHorizontalSpacing;
             this.commandBarEditItem3.Edit = this.repositoryItemSpinEdit3;
@@ -3135,9 +3125,9 @@ namespace DevExpress.AI.Demos {
             superToolTip88.Items.Add(toolTipItem88);
             superToolTip88.MaxWidth = 210;
             this.commandBarEditItem3.SuperTip = superToolTip88;
-            // 
+            //
             // repositoryItemSpinEdit3
-            // 
+            //
             this.repositoryItemSpinEdit3.AutoHeight = false;
             this.repositoryItemSpinEdit3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -3147,9 +3137,9 @@ namespace DevExpress.AI.Demos {
             -1,
             0});
             this.repositoryItemSpinEdit3.Name = "repositoryItemSpinEdit3";
-            // 
+            //
             // commandBarEditItem4
-            // 
+            //
             this.commandBarEditItem4.Caption = "Vertical Spacing: ";
             this.commandBarEditItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellVerticalSpacing;
             this.commandBarEditItem4.Edit = this.repositoryItemSpinEdit4;
@@ -3165,9 +3155,9 @@ namespace DevExpress.AI.Demos {
             superToolTip89.Items.Add(toolTipItem89);
             superToolTip89.MaxWidth = 210;
             this.commandBarEditItem4.SuperTip = superToolTip89;
-            // 
+            //
             // repositoryItemSpinEdit4
-            // 
+            //
             this.repositoryItemSpinEdit4.AutoHeight = false;
             this.repositoryItemSpinEdit4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -3177,9 +3167,9 @@ namespace DevExpress.AI.Demos {
             -1,
             0});
             this.repositoryItemSpinEdit4.Name = "repositoryItemSpinEdit4";
-            // 
+            //
             // commandBarEditItem5
-            // 
+            //
             this.commandBarEditItem5.Caption = "Border Dash Style";
             this.commandBarEditItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderDashStyle;
             this.commandBarEditItem5.Edit = this.repositoryItemImageComboBox1;
@@ -3195,16 +3185,16 @@ namespace DevExpress.AI.Demos {
             superToolTip90.Items.Add(toolTipItem90);
             superToolTip90.MaxWidth = 210;
             this.commandBarEditItem5.SuperTip = superToolTip90;
-            // 
+            //
             // repositoryItemImageComboBox1
-            // 
+            //
             this.repositoryItemImageComboBox1.AutoHeight = false;
             this.repositoryItemImageComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemImageComboBox1.Name = "repositoryItemImageComboBox1";
-            // 
+            //
             // commandBarEditItem6
-            // 
+            //
             this.commandBarEditItem6.Caption = "Control: ";
             this.commandBarEditItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsSelectControl;
             this.commandBarEditItem6.Edit = this.repositoryItemLookUpEdit1;
@@ -3220,16 +3210,16 @@ namespace DevExpress.AI.Demos {
             superToolTip91.Items.Add(toolTipItem91);
             superToolTip91.MaxWidth = 210;
             this.commandBarEditItem6.SuperTip = superToolTip91;
-            // 
+            //
             // repositoryItemLookUpEdit1
-            // 
+            //
             this.repositoryItemLookUpEdit1.AutoHeight = false;
             this.repositoryItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
-            // 
+            //
             // commandBarEditItem7
-            // 
+            //
             this.commandBarEditItem7.Caption = "Event: ";
             this.commandBarEditItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsSelectEvent;
             this.commandBarEditItem7.Edit = this.repositoryItemComboBox1;
@@ -3245,16 +3235,16 @@ namespace DevExpress.AI.Demos {
             superToolTip92.Items.Add(toolTipItem92);
             superToolTip92.MaxWidth = 210;
             this.commandBarEditItem7.SuperTip = superToolTip92;
-            // 
+            //
             // repositoryItemComboBox1
-            // 
+            //
             this.repositoryItemComboBox1.AutoHeight = false;
             this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
-            // 
+            //
             // commandBarItem75
-            // 
+            //
             this.commandBarItem75.Caption = "Table";
             this.commandBarItem75.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectTable;
             this.commandBarItem75.Enabled = false;
@@ -3268,9 +3258,9 @@ namespace DevExpress.AI.Demos {
             superToolTip93.Items.Add(toolTipItem93);
             superToolTip93.MaxWidth = 210;
             this.commandBarItem75.SuperTip = superToolTip93;
-            // 
+            //
             // commandBarItem76
-            // 
+            //
             this.commandBarItem76.Caption = "Row";
             this.commandBarItem76.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectRow;
             this.commandBarItem76.Enabled = false;
@@ -3284,9 +3274,9 @@ namespace DevExpress.AI.Demos {
             superToolTip94.Items.Add(toolTipItem94);
             superToolTip94.MaxWidth = 210;
             this.commandBarItem76.SuperTip = superToolTip94;
-            // 
+            //
             // commandBarItem77
-            // 
+            //
             this.commandBarItem77.Caption = "Column";
             this.commandBarItem77.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectColumn;
             this.commandBarItem77.Enabled = false;
@@ -3300,9 +3290,9 @@ namespace DevExpress.AI.Demos {
             superToolTip95.Items.Add(toolTipItem95);
             superToolTip95.MaxWidth = 210;
             this.commandBarItem77.SuperTip = superToolTip95;
-            // 
+            //
             // commandBarItem78
-            // 
+            //
             this.commandBarItem78.Caption = "Cell";
             this.commandBarItem78.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteCell;
             this.commandBarItem78.Enabled = false;
@@ -3316,9 +3306,9 @@ namespace DevExpress.AI.Demos {
             superToolTip96.Items.Add(toolTipItem96);
             superToolTip96.MaxWidth = 210;
             this.commandBarItem78.SuperTip = superToolTip96;
-            // 
+            //
             // commandBarItem79
-            // 
+            //
             this.commandBarItem79.Caption = "Row";
             this.commandBarItem79.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteRow;
             this.commandBarItem79.Enabled = false;
@@ -3332,9 +3322,9 @@ namespace DevExpress.AI.Demos {
             superToolTip97.Items.Add(toolTipItem97);
             superToolTip97.MaxWidth = 210;
             this.commandBarItem79.SuperTip = superToolTip97;
-            // 
+            //
             // commandBarItem80
-            // 
+            //
             this.commandBarItem80.Caption = "Column";
             this.commandBarItem80.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteColumn;
             this.commandBarItem80.Enabled = false;
@@ -3348,9 +3338,9 @@ namespace DevExpress.AI.Demos {
             superToolTip98.Items.Add(toolTipItem98);
             superToolTip98.MaxWidth = 210;
             this.commandBarItem80.SuperTip = superToolTip98;
-            // 
+            //
             // commandBarItem81
-            // 
+            //
             this.commandBarItem81.Caption = "Table";
             this.commandBarItem81.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteTable;
             this.commandBarItem81.Enabled = false;
@@ -3364,9 +3354,9 @@ namespace DevExpress.AI.Demos {
             superToolTip99.Items.Add(toolTipItem99);
             superToolTip99.MaxWidth = 210;
             this.commandBarItem81.SuperTip = superToolTip99;
-            // 
+            //
             // commandBarItem82
-            // 
+            //
             this.commandBarItem82.Caption = "Row Above";
             this.commandBarItem82.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertRowAbove;
             this.commandBarItem82.Enabled = false;
@@ -3380,9 +3370,9 @@ namespace DevExpress.AI.Demos {
             superToolTip100.Items.Add(toolTipItem100);
             superToolTip100.MaxWidth = 210;
             this.commandBarItem82.SuperTip = superToolTip100;
-            // 
+            //
             // commandBarItem83
-            // 
+            //
             this.commandBarItem83.Caption = "Row Below";
             this.commandBarItem83.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertRowBelow;
             this.commandBarItem83.Enabled = false;
@@ -3396,9 +3386,9 @@ namespace DevExpress.AI.Demos {
             superToolTip101.Items.Add(toolTipItem101);
             superToolTip101.MaxWidth = 210;
             this.commandBarItem83.SuperTip = superToolTip101;
-            // 
+            //
             // commandBarItem84
-            // 
+            //
             this.commandBarItem84.Caption = "Column to Left";
             this.commandBarItem84.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertColumnToLeft;
             this.commandBarItem84.Enabled = false;
@@ -3412,9 +3402,9 @@ namespace DevExpress.AI.Demos {
             superToolTip102.Items.Add(toolTipItem102);
             superToolTip102.MaxWidth = 210;
             this.commandBarItem84.SuperTip = superToolTip102;
-            // 
+            //
             // commandBarItem85
-            // 
+            //
             this.commandBarItem85.Caption = "Column to Right";
             this.commandBarItem85.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertColumnToRight;
             this.commandBarItem85.Enabled = false;
@@ -3428,9 +3418,9 @@ namespace DevExpress.AI.Demos {
             superToolTip103.Items.Add(toolTipItem103);
             superToolTip103.MaxWidth = 210;
             this.commandBarItem85.SuperTip = superToolTip103;
-            // 
+            //
             // commandBarItem86
-            // 
+            //
             this.commandBarItem86.Caption = "Rows";
             this.commandBarItem86.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDistributeRowsEvenly;
             this.commandBarItem86.Enabled = false;
@@ -3444,9 +3434,9 @@ namespace DevExpress.AI.Demos {
             superToolTip104.Items.Add(toolTipItem104);
             superToolTip104.MaxWidth = 210;
             this.commandBarItem86.SuperTip = superToolTip104;
-            // 
+            //
             // commandBarItem87
-            // 
+            //
             this.commandBarItem87.Caption = "Columns";
             this.commandBarItem87.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDistributeColumnsEvenly;
             this.commandBarItem87.Enabled = false;
@@ -3460,9 +3450,9 @@ namespace DevExpress.AI.Demos {
             superToolTip105.Items.Add(toolTipItem105);
             superToolTip105.MaxWidth = 210;
             this.commandBarItem87.SuperTip = superToolTip105;
-            // 
+            //
             // commandBarItem88
-            // 
+            //
             this.commandBarItem88.Caption = "Merge Cells";
             this.commandBarItem88.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableMergeCells;
             this.commandBarItem88.Enabled = false;
@@ -3476,9 +3466,9 @@ namespace DevExpress.AI.Demos {
             superToolTip106.Items.Add(toolTipItem106);
             superToolTip106.MaxWidth = 210;
             this.commandBarItem88.SuperTip = superToolTip106;
-            // 
+            //
             // commandBarItem89
-            // 
+            //
             this.commandBarItem89.Caption = "Split Cells";
             this.commandBarItem89.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSplitCells;
             this.commandBarItem89.Enabled = false;
@@ -3492,9 +3482,9 @@ namespace DevExpress.AI.Demos {
             superToolTip107.Items.Add(toolTipItem107);
             superToolTip107.MaxWidth = 210;
             this.commandBarItem89.SuperTip = superToolTip107;
-            // 
+            //
             // commandBarItem90
-            // 
+            //
             this.commandBarItem90.Caption = "Run Designer";
             this.commandBarItem90.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRunDesigner;
             this.commandBarItem90.Enabled = false;
@@ -3509,9 +3499,9 @@ namespace DevExpress.AI.Demos {
             superToolTip108.Items.Add(toolTipItem108);
             superToolTip108.MaxWidth = 210;
             this.commandBarItem90.SuperTip = superToolTip108;
-            // 
+            //
             // commandBarItem91
-            // 
+            //
             this.commandBarItem91.Caption = "Add Data Source";
             this.commandBarItem91.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridAddDataSource;
             this.commandBarItem91.Enabled = false;
@@ -3525,9 +3515,9 @@ namespace DevExpress.AI.Demos {
             superToolTip109.Items.Add(toolTipItem109);
             superToolTip109.MaxWidth = 210;
             this.commandBarItem91.SuperTip = superToolTip109;
-            // 
+            //
             // commandBarItem92
-            // 
+            //
             this.commandBarItem92.Caption = "Remove Field";
             this.commandBarItem92.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRemoveField;
             this.commandBarItem92.Enabled = false;
@@ -3541,9 +3531,9 @@ namespace DevExpress.AI.Demos {
             superToolTip110.Items.Add(toolTipItem110);
             superToolTip110.MaxWidth = 210;
             this.commandBarItem92.SuperTip = superToolTip110;
-            // 
+            //
             // commandBarItem93
-            // 
+            //
             this.commandBarItem93.ActAsDropDown = true;
             this.commandBarItem93.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem93.Caption = "Add Field";
@@ -3559,9 +3549,9 @@ namespace DevExpress.AI.Demos {
             superToolTip111.Items.Add(toolTipItem111);
             superToolTip111.MaxWidth = 210;
             this.commandBarItem93.SuperTip = superToolTip111;
-            // 
+            //
             // commandBarItem94
-            // 
+            //
             this.commandBarItem94.Caption = "Vertical Lines";
             this.commandBarItem94.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridVerticalLines;
             this.commandBarItem94.Enabled = false;
@@ -3575,9 +3565,9 @@ namespace DevExpress.AI.Demos {
             superToolTip112.Items.Add(toolTipItem112);
             superToolTip112.MaxWidth = 210;
             this.commandBarItem94.SuperTip = superToolTip112;
-            // 
+            //
             // commandBarItem95
-            // 
+            //
             this.commandBarItem95.Caption = "Horizontal Lines";
             this.commandBarItem95.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridHorizontalLines;
             this.commandBarItem95.Enabled = false;
@@ -3591,9 +3581,9 @@ namespace DevExpress.AI.Demos {
             superToolTip113.Items.Add(toolTipItem113);
             superToolTip113.MaxWidth = 210;
             this.commandBarItem95.SuperTip = superToolTip113;
-            // 
+            //
             // commandBarItem96
-            // 
+            //
             this.commandBarItem96.Caption = "Data Headers";
             this.commandBarItem96.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridDataHeaders;
             this.commandBarItem96.Enabled = false;
@@ -3607,9 +3597,9 @@ namespace DevExpress.AI.Demos {
             superToolTip114.Items.Add(toolTipItem114);
             superToolTip114.MaxWidth = 210;
             this.commandBarItem96.SuperTip = superToolTip114;
-            // 
+            //
             // commandBarItem97
-            // 
+            //
             this.commandBarItem97.Caption = "Column Headers";
             this.commandBarItem97.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridColumnHeaders;
             this.commandBarItem97.Enabled = false;
@@ -3623,9 +3613,9 @@ namespace DevExpress.AI.Demos {
             superToolTip115.Items.Add(toolTipItem115);
             superToolTip115.MaxWidth = 210;
             this.commandBarItem97.SuperTip = superToolTip115;
-            // 
+            //
             // commandBarItem98
-            // 
+            //
             this.commandBarItem98.Caption = "Row Headers";
             this.commandBarItem98.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRowHeaders;
             this.commandBarItem98.Enabled = false;
@@ -3639,9 +3629,9 @@ namespace DevExpress.AI.Demos {
             superToolTip116.Items.Add(toolTipItem116);
             superToolTip116.MaxWidth = 210;
             this.commandBarItem98.SuperTip = superToolTip116;
-            // 
+            //
             // commandBarItem99
-            // 
+            //
             this.commandBarItem99.Caption = "Column Area On Every Page";
             this.commandBarItem99.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridColumnAreaOnEveryPage;
             this.commandBarItem99.Enabled = false;
@@ -3656,9 +3646,9 @@ namespace DevExpress.AI.Demos {
             superToolTip117.Items.Add(toolTipItem117);
             superToolTip117.MaxWidth = 210;
             this.commandBarItem99.SuperTip = superToolTip117;
-            // 
+            //
             // commandBarItem100
-            // 
+            //
             this.commandBarItem100.Caption = "Row Area On Every Page";
             this.commandBarItem100.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRowAreaOnEveryPage;
             this.commandBarItem100.Enabled = false;
@@ -3673,9 +3663,9 @@ namespace DevExpress.AI.Demos {
             superToolTip118.Items.Add(toolTipItem118);
             superToolTip118.MaxWidth = 210;
             this.commandBarItem100.SuperTip = superToolTip118;
-            // 
+            //
             // commandBarItem101
-            // 
+            //
             this.commandBarItem101.Caption = "Load...";
             this.commandBarItem101.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartLoad;
             this.commandBarItem101.Enabled = false;
@@ -3690,9 +3680,9 @@ namespace DevExpress.AI.Demos {
             superToolTip119.Items.Add(toolTipItem119);
             superToolTip119.MaxWidth = 210;
             this.commandBarItem101.SuperTip = superToolTip119;
-            // 
+            //
             // commandBarItem102
-            // 
+            //
             this.commandBarItem102.Caption = "Save...";
             this.commandBarItem102.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartSave;
             this.commandBarItem102.Enabled = false;
@@ -3707,9 +3697,9 @@ namespace DevExpress.AI.Demos {
             superToolTip120.Items.Add(toolTipItem120);
             superToolTip120.MaxWidth = 210;
             this.commandBarItem102.SuperTip = superToolTip120;
-            // 
+            //
             // commandBarItem103
-            // 
+            //
             this.commandBarItem103.Caption = "Run Designer";
             this.commandBarItem103.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRunDesigner;
             this.commandBarItem103.Enabled = false;
@@ -3724,9 +3714,9 @@ namespace DevExpress.AI.Demos {
             superToolTip121.Items.Add(toolTipItem121);
             superToolTip121.MaxWidth = 210;
             this.commandBarItem103.SuperTip = superToolTip121;
-            // 
+            //
             // commandBarItem104
-            // 
+            //
             this.commandBarItem104.Caption = "Add Data Source";
             this.commandBarItem104.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddDataSource;
             this.commandBarItem104.Enabled = false;
@@ -3740,9 +3730,9 @@ namespace DevExpress.AI.Demos {
             superToolTip122.Items.Add(toolTipItem122);
             superToolTip122.MaxWidth = 210;
             this.commandBarItem104.SuperTip = superToolTip122;
-            // 
+            //
             // commandBarItem105
-            // 
+            //
             this.commandBarItem105.ActAsDropDown = true;
             this.commandBarItem105.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem105.Caption = "Palette";
@@ -3758,9 +3748,9 @@ namespace DevExpress.AI.Demos {
             superToolTip123.Items.Add(toolTipItem123);
             superToolTip123.MaxWidth = 210;
             this.commandBarItem105.SuperTip = superToolTip123;
-            // 
+            //
             // commandBarItem106
-            // 
+            //
             this.commandBarItem106.ActAsDropDown = true;
             this.commandBarItem106.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem106.Caption = "Bar";
@@ -3776,9 +3766,9 @@ namespace DevExpress.AI.Demos {
             superToolTip124.Items.Add(toolTipItem124);
             superToolTip124.MaxWidth = 210;
             this.commandBarItem106.SuperTip = superToolTip124;
-            // 
+            //
             // commandBarItem107
-            // 
+            //
             this.commandBarItem107.ActAsDropDown = true;
             this.commandBarItem107.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem107.Caption = "Line";
@@ -3794,9 +3784,9 @@ namespace DevExpress.AI.Demos {
             superToolTip125.Items.Add(toolTipItem125);
             superToolTip125.MaxWidth = 210;
             this.commandBarItem107.SuperTip = superToolTip125;
-            // 
+            //
             // commandBarItem108
-            // 
+            //
             this.commandBarItem108.ActAsDropDown = true;
             this.commandBarItem108.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem108.Caption = "Area";
@@ -3812,9 +3802,9 @@ namespace DevExpress.AI.Demos {
             superToolTip126.Items.Add(toolTipItem126);
             superToolTip126.MaxWidth = 210;
             this.commandBarItem108.SuperTip = superToolTip126;
-            // 
+            //
             // commandBarItem109
-            // 
+            //
             this.commandBarItem109.ActAsDropDown = true;
             this.commandBarItem109.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem109.Caption = "Range";
@@ -3830,9 +3820,9 @@ namespace DevExpress.AI.Demos {
             superToolTip127.Items.Add(toolTipItem127);
             superToolTip127.MaxWidth = 210;
             this.commandBarItem109.SuperTip = superToolTip127;
-            // 
+            //
             // commandBarItem110
-            // 
+            //
             this.commandBarItem110.ActAsDropDown = true;
             this.commandBarItem110.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem110.Caption = "Pie and Doughnut";
@@ -3849,9 +3839,9 @@ namespace DevExpress.AI.Demos {
             superToolTip128.Items.Add(toolTipItem128);
             superToolTip128.MaxWidth = 210;
             this.commandBarItem110.SuperTip = superToolTip128;
-            // 
+            //
             // commandBarItem111
-            // 
+            //
             this.commandBarItem111.ActAsDropDown = true;
             this.commandBarItem111.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem111.Caption = "Radar and Polar";
@@ -3867,9 +3857,9 @@ namespace DevExpress.AI.Demos {
             superToolTip129.Items.Add(toolTipItem129);
             superToolTip129.MaxWidth = 210;
             this.commandBarItem111.SuperTip = superToolTip129;
-            // 
+            //
             // commandBarItem112
-            // 
+            //
             this.commandBarItem112.ActAsDropDown = true;
             this.commandBarItem112.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.commandBarItem112.Caption = "Other Series";
@@ -3885,9 +3875,9 @@ namespace DevExpress.AI.Demos {
             superToolTip130.Items.Add(toolTipItem130);
             superToolTip130.MaxWidth = 210;
             this.commandBarItem112.SuperTip = superToolTip130;
-            // 
+            //
             // commandBarItem113
-            // 
+            //
             this.commandBarItem113.Caption = "Remove Series";
             this.commandBarItem113.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRemoveSeries;
             this.commandBarItem113.Enabled = false;
@@ -3901,9 +3891,9 @@ namespace DevExpress.AI.Demos {
             superToolTip131.Items.Add(toolTipItem131);
             superToolTip131.MaxWidth = 210;
             this.commandBarItem113.SuperTip = superToolTip131;
-            // 
+            //
             // commandBarItem114
-            // 
+            //
             this.commandBarItem114.Caption = "Add Text Annotation";
             this.commandBarItem114.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddTextAnnotation;
             this.commandBarItem114.Enabled = false;
@@ -3917,9 +3907,9 @@ namespace DevExpress.AI.Demos {
             superToolTip132.Items.Add(toolTipItem132);
             superToolTip132.MaxWidth = 210;
             this.commandBarItem114.SuperTip = superToolTip132;
-            // 
+            //
             // commandBarItem115
-            // 
+            //
             this.commandBarItem115.Caption = "Add Image Annotation";
             this.commandBarItem115.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddImageAnnotation;
             this.commandBarItem115.Enabled = false;
@@ -3933,9 +3923,9 @@ namespace DevExpress.AI.Demos {
             superToolTip133.Items.Add(toolTipItem133);
             superToolTip133.MaxWidth = 210;
             this.commandBarItem115.SuperTip = superToolTip133;
-            // 
+            //
             // commandBarItem116
-            // 
+            //
             this.commandBarItem116.Caption = "Remove Annotation";
             this.commandBarItem116.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRemoveAnnotation;
             this.commandBarItem116.Enabled = false;
@@ -3949,9 +3939,9 @@ namespace DevExpress.AI.Demos {
             superToolTip134.Items.Add(toolTipItem134);
             superToolTip134.MaxWidth = 210;
             this.commandBarItem116.SuperTip = superToolTip134;
-            // 
+            //
             // commandBarItem117
-            // 
+            //
             this.commandBarItem117.Caption = "Auto Module";
             this.commandBarItem117.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeAutoModule;
             this.commandBarItem117.Enabled = false;
@@ -3965,9 +3955,9 @@ namespace DevExpress.AI.Demos {
             superToolTip135.Items.Add(toolTipItem135);
             superToolTip135.MaxWidth = 210;
             this.commandBarItem117.SuperTip = superToolTip135;
-            // 
+            //
             // commandBarItem118
-            // 
+            //
             this.commandBarItem118.Caption = "Show Text";
             this.commandBarItem118.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeShowText;
             this.commandBarItem118.Enabled = false;
@@ -3981,9 +3971,9 @@ namespace DevExpress.AI.Demos {
             superToolTip136.Items.Add(toolTipItem136);
             superToolTip136.MaxWidth = 210;
             this.commandBarItem118.SuperTip = superToolTip136;
-            // 
+            //
             // commandBarItem119
-            // 
+            //
             this.commandBarItem119.Caption = "Fit Bounds to Text";
             this.commandBarItem119.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitBoundsToText;
             this.commandBarItem119.Enabled = false;
@@ -3997,9 +3987,9 @@ namespace DevExpress.AI.Demos {
             superToolTip137.Items.Add(toolTipItem137);
             superToolTip137.MaxWidth = 210;
             this.commandBarItem119.SuperTip = superToolTip137;
-            // 
+            //
             // commandBarItem120
-            // 
+            //
             this.commandBarItem120.Caption = "Fit Text to Bounds";
             this.commandBarItem120.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitTextToBounds;
             this.commandBarItem120.Enabled = false;
@@ -4013,9 +4003,9 @@ namespace DevExpress.AI.Demos {
             superToolTip138.Items.Add(toolTipItem138);
             superToolTip138.MaxWidth = 210;
             this.commandBarItem120.SuperTip = superToolTip138;
-            // 
+            //
             // commandBarCheckItem3
-            // 
+            //
             this.commandBarCheckItem3.Caption = "Auto Width";
             this.commandBarCheckItem3.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelAutoWidth;
@@ -4030,9 +4020,9 @@ namespace DevExpress.AI.Demos {
             superToolTip139.Items.Add(toolTipItem139);
             superToolTip139.MaxWidth = 210;
             this.commandBarCheckItem3.SuperTip = superToolTip139;
-            // 
+            //
             // commandBarCheckItem4
-            // 
+            //
             this.commandBarCheckItem4.Caption = "Word Wrap";
             this.commandBarCheckItem4.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelWordWrap;
@@ -4047,9 +4037,9 @@ namespace DevExpress.AI.Demos {
             superToolTip140.Items.Add(toolTipItem140);
             superToolTip140.MaxWidth = 210;
             this.commandBarCheckItem4.SuperTip = superToolTip140;
-            // 
+            //
             // commandBarCheckItem5
-            // 
+            //
             this.commandBarCheckItem5.Caption = "Can Shrink";
             this.commandBarCheckItem5.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelCanShrink;
@@ -4064,9 +4054,9 @@ namespace DevExpress.AI.Demos {
             superToolTip141.Items.Add(toolTipItem141);
             superToolTip141.MaxWidth = 210;
             this.commandBarCheckItem5.SuperTip = superToolTip141;
-            // 
+            //
             // commandBarCheckItem6
-            // 
+            //
             this.commandBarCheckItem6.Caption = "Can Grow";
             this.commandBarCheckItem6.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelCanGrow;
@@ -4081,9 +4071,9 @@ namespace DevExpress.AI.Demos {
             superToolTip142.Items.Add(toolTipItem142);
             superToolTip142.MaxWidth = 210;
             this.commandBarCheckItem6.SuperTip = superToolTip142;
-            // 
+            //
             // commandBarCheckItem7
-            // 
+            //
             this.commandBarCheckItem7.Caption = "Auto Width";
             this.commandBarCheckItem7.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellAutoWidth;
@@ -4098,9 +4088,9 @@ namespace DevExpress.AI.Demos {
             superToolTip143.Items.Add(toolTipItem143);
             superToolTip143.MaxWidth = 210;
             this.commandBarCheckItem7.SuperTip = superToolTip143;
-            // 
+            //
             // commandBarCheckItem8
-            // 
+            //
             this.commandBarCheckItem8.Caption = "Auto Height";
             this.commandBarCheckItem8.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellAutoHeight;
@@ -4115,9 +4105,9 @@ namespace DevExpress.AI.Demos {
             superToolTip144.Items.Add(toolTipItem144);
             superToolTip144.MaxWidth = 210;
             this.commandBarCheckItem8.SuperTip = superToolTip144;
-            // 
+            //
             // commandBarItem121
-            // 
+            //
             this.commandBarItem121.Caption = "Add Data Source";
             this.commandBarItem121.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SparklineAddDataSource;
             this.commandBarItem121.Enabled = false;
@@ -4131,9 +4121,9 @@ namespace DevExpress.AI.Demos {
             superToolTip145.Items.Add(toolTipItem145);
             superToolTip145.MaxWidth = 210;
             this.commandBarItem121.SuperTip = superToolTip145;
-            // 
+            //
             // commandBarItem122
-            // 
+            //
             this.commandBarItem122.Caption = "Flat Light";
             this.commandBarItem122.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewThemeLight;
             this.commandBarItem122.Enabled = false;
@@ -4147,9 +4137,9 @@ namespace DevExpress.AI.Demos {
             superToolTip146.Items.Add(toolTipItem146);
             superToolTip146.MaxWidth = 210;
             this.commandBarItem122.SuperTip = superToolTip146;
-            // 
+            //
             // commandBarItem123
-            // 
+            //
             this.commandBarItem123.Caption = "Flat Dark";
             this.commandBarItem123.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewThemeDark;
             this.commandBarItem123.Enabled = false;
@@ -4163,9 +4153,9 @@ namespace DevExpress.AI.Demos {
             superToolTip147.Items.Add(toolTipItem147);
             superToolTip147.MaxWidth = 210;
             this.commandBarItem123.SuperTip = superToolTip147;
-            // 
+            //
             // commandBarItem124
-            // 
+            //
             this.commandBarItem124.Caption = "Stretch";
             this.commandBarItem124.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShapeStretch;
             this.commandBarItem124.Enabled = false;
@@ -4179,122 +4169,122 @@ namespace DevExpress.AI.Demos {
             superToolTip148.Items.Add(toolTipItem148);
             superToolTip148.MaxWidth = 210;
             this.commandBarItem124.SuperTip = superToolTip148;
-            // 
+            //
             // xrDesignBarButtonGroup1
-            // 
+            //
             this.xrDesignBarButtonGroup1.Id = 155;
             this.xrDesignBarButtonGroup1.ItemLinks.Add(this.barEditItem1);
             this.xrDesignBarButtonGroup1.ItemLinks.Add(this.barEditItem2);
             this.xrDesignBarButtonGroup1.Name = "xrDesignBarButtonGroup1";
-            // 
+            //
             // xrDesignBarButtonGroup2
-            // 
+            //
             this.xrDesignBarButtonGroup2.Id = 156;
             this.xrDesignBarButtonGroup2.ItemLinks.Add(this.commandBarItem17);
             this.xrDesignBarButtonGroup2.ItemLinks.Add(this.commandBarItem18);
             this.xrDesignBarButtonGroup2.ItemLinks.Add(this.commandBarItem19);
             this.xrDesignBarButtonGroup2.ItemLinks.Add(this.commandBarItem24);
             this.xrDesignBarButtonGroup2.Name = "xrDesignBarButtonGroup2";
-            // 
+            //
             // xrDesignBarButtonGroup3
-            // 
+            //
             this.xrDesignBarButtonGroup3.Id = 157;
             this.xrDesignBarButtonGroup3.ItemLinks.Add(this.commandColorBarItem2);
             this.xrDesignBarButtonGroup3.ItemLinks.Add(this.commandColorBarItem1);
             this.xrDesignBarButtonGroup3.Name = "xrDesignBarButtonGroup3";
-            // 
+            //
             // xrDesignBarButtonGroup4
-            // 
+            //
             this.xrDesignBarButtonGroup4.Id = 158;
             this.xrDesignBarButtonGroup4.ItemLinks.Add(this.commandBarItem25);
             this.xrDesignBarButtonGroup4.ItemLinks.Add(this.commandBarItem26);
             this.xrDesignBarButtonGroup4.ItemLinks.Add(this.commandBarItem27);
             this.xrDesignBarButtonGroup4.Name = "xrDesignBarButtonGroup4";
-            // 
+            //
             // xrDesignBarButtonGroup5
-            // 
+            //
             this.xrDesignBarButtonGroup5.Id = 159;
             this.xrDesignBarButtonGroup5.ItemLinks.Add(this.commandBarItem20);
             this.xrDesignBarButtonGroup5.ItemLinks.Add(this.commandBarItem21);
             this.xrDesignBarButtonGroup5.ItemLinks.Add(this.commandBarItem22);
             this.xrDesignBarButtonGroup5.ItemLinks.Add(this.commandBarItem23);
             this.xrDesignBarButtonGroup5.Name = "xrDesignBarButtonGroup5";
-            // 
+            //
             // xrDesignBarButtonGroup6
-            // 
+            //
             this.xrDesignBarButtonGroup6.Id = 160;
             this.xrDesignBarButtonGroup6.ItemLinks.Add(this.commandBarItem32);
             this.xrDesignBarButtonGroup6.ItemLinks.Add(this.commandBarItem33);
             this.xrDesignBarButtonGroup6.Name = "xrDesignBarButtonGroup6";
-            // 
+            //
             // xrDesignBarButtonGroup7
-            // 
+            //
             this.xrDesignBarButtonGroup7.Id = 161;
             this.xrDesignBarButtonGroup7.ItemLinks.Add(this.commandBarItem34);
             this.xrDesignBarButtonGroup7.ItemLinks.Add(this.commandBarItem35);
             this.xrDesignBarButtonGroup7.ItemLinks.Add(this.commandBarItem36);
             this.xrDesignBarButtonGroup7.ItemLinks.Add(this.commandBarItem37);
             this.xrDesignBarButtonGroup7.Name = "xrDesignBarButtonGroup7";
-            // 
+            //
             // xrDesignBarButtonGroup8
-            // 
+            //
             this.xrDesignBarButtonGroup8.Id = 162;
             this.xrDesignBarButtonGroup8.ItemLinks.Add(this.commandColorBarItem3);
             this.xrDesignBarButtonGroup8.ItemLinks.Add(this.commandBarItem38);
             this.xrDesignBarButtonGroup8.ItemLinks.Add(this.commandBarEditItem5);
             this.xrDesignBarButtonGroup8.Name = "xrDesignBarButtonGroup8";
-            // 
+            //
             // xrDesignBarButtonGroup9
-            // 
+            //
             this.xrDesignBarButtonGroup9.Id = 163;
             this.xrDesignBarButtonGroup9.ItemLinks.Add(this.commandBarItem40);
             this.xrDesignBarButtonGroup9.ItemLinks.Add(this.commandBarItem41);
             this.xrDesignBarButtonGroup9.ItemLinks.Add(this.commandBarItem42);
             this.xrDesignBarButtonGroup9.Name = "xrDesignBarButtonGroup9";
-            // 
+            //
             // xrDesignBarButtonGroup10
-            // 
+            //
             this.xrDesignBarButtonGroup10.Id = 164;
             this.xrDesignBarButtonGroup10.ItemLinks.Add(this.commandBarItem43);
             this.xrDesignBarButtonGroup10.ItemLinks.Add(this.commandBarItem44);
             this.xrDesignBarButtonGroup10.ItemLinks.Add(this.commandBarItem45);
             this.xrDesignBarButtonGroup10.Name = "xrDesignBarButtonGroup10";
-            // 
+            //
             // xrDesignBarButtonGroup11
-            // 
+            //
             this.xrDesignBarButtonGroup11.Id = 165;
             this.xrDesignBarButtonGroup11.ItemLinks.Add(this.commandBarItem50);
             this.xrDesignBarButtonGroup11.ItemLinks.Add(this.commandBarItem51);
             this.xrDesignBarButtonGroup11.ItemLinks.Add(this.commandBarItem52);
             this.xrDesignBarButtonGroup11.ItemLinks.Add(this.commandBarItem53);
             this.xrDesignBarButtonGroup11.Name = "xrDesignBarButtonGroup11";
-            // 
+            //
             // xrDesignBarButtonGroup12
-            // 
+            //
             this.xrDesignBarButtonGroup12.Id = 166;
             this.xrDesignBarButtonGroup12.ItemLinks.Add(this.commandBarItem46);
             this.xrDesignBarButtonGroup12.ItemLinks.Add(this.commandBarItem48);
             this.xrDesignBarButtonGroup12.ItemLinks.Add(this.commandBarItem49);
             this.xrDesignBarButtonGroup12.Name = "xrDesignBarButtonGroup12";
-            // 
+            //
             // xrDesignBarButtonGroup13
-            // 
+            //
             this.xrDesignBarButtonGroup13.Id = 167;
             this.xrDesignBarButtonGroup13.ItemLinks.Add(this.commandBarItem54);
             this.xrDesignBarButtonGroup13.ItemLinks.Add(this.commandBarItem55);
             this.xrDesignBarButtonGroup13.ItemLinks.Add(this.commandBarItem56);
             this.xrDesignBarButtonGroup13.ItemLinks.Add(this.commandBarItem57);
             this.xrDesignBarButtonGroup13.Name = "xrDesignBarButtonGroup13";
-            // 
+            //
             // xrDesignBarButtonGroup14
-            // 
+            //
             this.xrDesignBarButtonGroup14.Id = 168;
             this.xrDesignBarButtonGroup14.ItemLinks.Add(this.commandBarItem58);
             this.xrDesignBarButtonGroup14.ItemLinks.Add(this.commandBarItem59);
             this.xrDesignBarButtonGroup14.Name = "xrDesignBarButtonGroup14";
-            // 
+            //
             // printPreviewBarItem1
-            // 
+            //
             this.printPreviewBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.printPreviewBarItem1.Caption = "Editing Fields";
             this.printPreviewBarItem1.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HighlightEditingFields;
@@ -4311,9 +4301,9 @@ namespace DevExpress.AI.Demos {
             superToolTip149.Items.Add(toolTipItem149);
             superToolTip149.MaxWidth = 210;
             this.printPreviewBarItem1.SuperTip = superToolTip149;
-            // 
+            //
             // printPreviewBarItem2
-            // 
+            //
             this.printPreviewBarItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.printPreviewBarItem2.Caption = "Bookmarks";
             this.printPreviewBarItem2.Command = DevExpress.XtraPrinting.PrintingSystemCommand.DocumentMap;
@@ -4330,9 +4320,9 @@ namespace DevExpress.AI.Demos {
             superToolTip150.Items.Add(toolTipItem150);
             superToolTip150.MaxWidth = 210;
             this.printPreviewBarItem2.SuperTip = superToolTip150;
-            // 
+            //
             // printPreviewBarItem3
-            // 
+            //
             this.printPreviewBarItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.printPreviewBarItem3.Caption = "Parameters";
             this.printPreviewBarItem3.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Parameters;
@@ -4349,9 +4339,9 @@ namespace DevExpress.AI.Demos {
             superToolTip151.Items.Add(toolTipItem151);
             superToolTip151.MaxWidth = 210;
             this.printPreviewBarItem3.SuperTip = superToolTip151;
-            // 
+            //
             // printPreviewBarItem4
-            // 
+            //
             this.printPreviewBarItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.printPreviewBarItem4.Caption = "Find";
             this.printPreviewBarItem4.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Find;
@@ -4367,9 +4357,9 @@ namespace DevExpress.AI.Demos {
             superToolTip152.Items.Add(toolTipItem152);
             superToolTip152.MaxWidth = 210;
             this.printPreviewBarItem4.SuperTip = superToolTip152;
-            // 
+            //
             // printPreviewBarItem5
-            // 
+            //
             this.printPreviewBarItem5.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.printPreviewBarItem5.Caption = "Thumbnails";
             this.printPreviewBarItem5.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Thumbnails;
@@ -4385,9 +4375,9 @@ namespace DevExpress.AI.Demos {
             superToolTip153.Items.Add(toolTipItem153);
             superToolTip153.MaxWidth = 210;
             this.printPreviewBarItem5.SuperTip = superToolTip153;
-            // 
+            //
             // printPreviewBarItem7
-            // 
+            //
             this.printPreviewBarItem7.Caption = "Print";
             this.printPreviewBarItem7.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Print;
             this.printPreviewBarItem7.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4402,9 +4392,9 @@ namespace DevExpress.AI.Demos {
             superToolTip154.Items.Add(toolTipItem154);
             superToolTip154.MaxWidth = 210;
             this.printPreviewBarItem7.SuperTip = superToolTip154;
-            // 
+            //
             // printPreviewBarItem8
-            // 
+            //
             this.printPreviewBarItem8.Caption = "Quick Print";
             this.printPreviewBarItem8.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PrintDirect;
             this.printPreviewBarItem8.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4419,9 +4409,9 @@ namespace DevExpress.AI.Demos {
             superToolTip155.Items.Add(toolTipItem155);
             superToolTip155.MaxWidth = 210;
             this.printPreviewBarItem8.SuperTip = superToolTip155;
-            // 
+            //
             // printPreviewBarItem11
-            // 
+            //
             this.printPreviewBarItem11.Caption = "Custom Margins...";
             this.printPreviewBarItem11.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageSetup;
             this.printPreviewBarItem11.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4436,9 +4426,9 @@ namespace DevExpress.AI.Demos {
             superToolTip156.Items.Add(toolTipItem156);
             superToolTip156.MaxWidth = 210;
             this.printPreviewBarItem11.SuperTip = superToolTip156;
-            // 
+            //
             // printPreviewBarItem13
-            // 
+            //
             this.printPreviewBarItem13.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem13.Caption = "Scale";
             this.printPreviewBarItem13.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Scale;
@@ -4454,9 +4444,9 @@ namespace DevExpress.AI.Demos {
             superToolTip157.Items.Add(toolTipItem157);
             superToolTip157.MaxWidth = 210;
             this.printPreviewBarItem13.SuperTip = superToolTip157;
-            // 
+            //
             // printPreviewBarItem14
-            // 
+            //
             this.printPreviewBarItem14.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.printPreviewBarItem14.Caption = "Pointer";
             this.printPreviewBarItem14.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Pointer;
@@ -4474,9 +4464,9 @@ namespace DevExpress.AI.Demos {
             superToolTip158.Items.Add(toolTipItem158);
             superToolTip158.MaxWidth = 210;
             this.printPreviewBarItem14.SuperTip = superToolTip158;
-            // 
+            //
             // printPreviewBarItem15
-            // 
+            //
             this.printPreviewBarItem15.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.printPreviewBarItem15.Caption = "Hand Tool";
             this.printPreviewBarItem15.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HandTool;
@@ -4494,9 +4484,9 @@ namespace DevExpress.AI.Demos {
             superToolTip159.Items.Add(toolTipItem159);
             superToolTip159.MaxWidth = 210;
             this.printPreviewBarItem15.SuperTip = superToolTip159;
-            // 
+            //
             // printPreviewBarItem16
-            // 
+            //
             this.printPreviewBarItem16.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
             this.printPreviewBarItem16.Caption = "Magnifier";
             this.printPreviewBarItem16.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Magnifier;
@@ -4516,9 +4506,9 @@ namespace DevExpress.AI.Demos {
             superToolTip160.Items.Add(toolTipItem160);
             superToolTip160.MaxWidth = 210;
             this.printPreviewBarItem16.SuperTip = superToolTip160;
-            // 
+            //
             // printPreviewBarItem17
-            // 
+            //
             this.printPreviewBarItem17.Caption = "Zoom Out";
             this.printPreviewBarItem17.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomOut;
             this.printPreviewBarItem17.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4533,9 +4523,9 @@ namespace DevExpress.AI.Demos {
             superToolTip161.Items.Add(toolTipItem161);
             superToolTip161.MaxWidth = 210;
             this.printPreviewBarItem17.SuperTip = superToolTip161;
-            // 
+            //
             // printPreviewBarItem18
-            // 
+            //
             this.printPreviewBarItem18.Caption = "Zoom In";
             this.printPreviewBarItem18.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomIn;
             this.printPreviewBarItem18.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4550,9 +4540,9 @@ namespace DevExpress.AI.Demos {
             superToolTip162.Items.Add(toolTipItem162);
             superToolTip162.MaxWidth = 210;
             this.printPreviewBarItem18.SuperTip = superToolTip162;
-            // 
+            //
             // printPreviewBarItem19
-            // 
+            //
             this.printPreviewBarItem19.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem19.Caption = "Zoom";
             this.printPreviewBarItem19.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Zoom;
@@ -4568,9 +4558,9 @@ namespace DevExpress.AI.Demos {
             superToolTip163.Items.Add(toolTipItem163);
             superToolTip163.MaxWidth = 210;
             this.printPreviewBarItem19.SuperTip = superToolTip163;
-            // 
+            //
             // printPreviewBarItem20
-            // 
+            //
             this.printPreviewBarItem20.Caption = "First Page";
             this.printPreviewBarItem20.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowFirstPage;
             this.printPreviewBarItem20.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4585,9 +4575,9 @@ namespace DevExpress.AI.Demos {
             superToolTip164.Items.Add(toolTipItem164);
             superToolTip164.MaxWidth = 210;
             this.printPreviewBarItem20.SuperTip = superToolTip164;
-            // 
+            //
             // printPreviewBarItem21
-            // 
+            //
             this.printPreviewBarItem21.Caption = "Previous Page";
             this.printPreviewBarItem21.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowPrevPage;
             this.printPreviewBarItem21.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4602,9 +4592,9 @@ namespace DevExpress.AI.Demos {
             superToolTip165.Items.Add(toolTipItem165);
             superToolTip165.MaxWidth = 210;
             this.printPreviewBarItem21.SuperTip = superToolTip165;
-            // 
+            //
             // printPreviewBarItem22
-            // 
+            //
             this.printPreviewBarItem22.Caption = "Next  Page ";
             this.printPreviewBarItem22.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowNextPage;
             this.printPreviewBarItem22.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4619,9 +4609,9 @@ namespace DevExpress.AI.Demos {
             superToolTip166.Items.Add(toolTipItem166);
             superToolTip166.MaxWidth = 210;
             this.printPreviewBarItem22.SuperTip = superToolTip166;
-            // 
+            //
             // printPreviewBarItem23
-            // 
+            //
             this.printPreviewBarItem23.Caption = "Last  Page ";
             this.printPreviewBarItem23.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowLastPage;
             this.printPreviewBarItem23.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4636,9 +4626,9 @@ namespace DevExpress.AI.Demos {
             superToolTip167.Items.Add(toolTipItem167);
             superToolTip167.MaxWidth = 210;
             this.printPreviewBarItem23.SuperTip = superToolTip167;
-            // 
+            //
             // printPreviewBarItem24
-            // 
+            //
             this.printPreviewBarItem24.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem24.Caption = "Many Pages";
             this.printPreviewBarItem24.Command = DevExpress.XtraPrinting.PrintingSystemCommand.MultiplePages;
@@ -4654,9 +4644,9 @@ namespace DevExpress.AI.Demos {
             superToolTip168.Items.Add(toolTipItem168);
             superToolTip168.MaxWidth = 210;
             this.printPreviewBarItem24.SuperTip = superToolTip168;
-            // 
+            //
             // printPreviewBarItem25
-            // 
+            //
             this.printPreviewBarItem25.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem25.Caption = "Page Color";
             this.printPreviewBarItem25.Command = DevExpress.XtraPrinting.PrintingSystemCommand.FillBackground;
@@ -4672,9 +4662,9 @@ namespace DevExpress.AI.Demos {
             superToolTip169.Items.Add(toolTipItem169);
             superToolTip169.MaxWidth = 210;
             this.printPreviewBarItem25.SuperTip = superToolTip169;
-            // 
+            //
             // printPreviewBarItem26
-            // 
+            //
             this.printPreviewBarItem26.Caption = "Watermark";
             this.printPreviewBarItem26.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Watermark;
             this.printPreviewBarItem26.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4690,9 +4680,9 @@ namespace DevExpress.AI.Demos {
             superToolTip170.Items.Add(toolTipItem170);
             superToolTip170.MaxWidth = 210;
             this.printPreviewBarItem26.SuperTip = superToolTip170;
-            // 
+            //
             // printPreviewBarItem27
-            // 
+            //
             this.printPreviewBarItem27.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem27.Caption = "Export To";
             this.printPreviewBarItem27.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportFile;
@@ -4709,9 +4699,9 @@ namespace DevExpress.AI.Demos {
             superToolTip171.Items.Add(toolTipItem171);
             superToolTip171.MaxWidth = 210;
             this.printPreviewBarItem27.SuperTip = superToolTip171;
-            // 
+            //
             // printPreviewBarItem28
-            // 
+            //
             this.printPreviewBarItem28.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem28.Caption = "E-Mail As";
             this.printPreviewBarItem28.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendFile;
@@ -4728,9 +4718,9 @@ namespace DevExpress.AI.Demos {
             superToolTip172.Items.Add(toolTipItem172);
             superToolTip172.MaxWidth = 210;
             this.printPreviewBarItem28.SuperTip = superToolTip172;
-            // 
+            //
             // printPreviewBarItem29
-            // 
+            //
             this.printPreviewBarItem29.Caption = "Close";
             this.printPreviewBarItem29.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ClosePreview;
             this.printPreviewBarItem29.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4745,9 +4735,9 @@ namespace DevExpress.AI.Demos {
             superToolTip173.Items.Add(toolTipItem173);
             superToolTip173.MaxWidth = 210;
             this.printPreviewBarItem29.SuperTip = superToolTip173;
-            // 
+            //
             // printPreviewBarItem30
-            // 
+            //
             this.printPreviewBarItem30.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem30.Caption = "Orientation";
             this.printPreviewBarItem30.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageOrientation;
@@ -4763,9 +4753,9 @@ namespace DevExpress.AI.Demos {
             superToolTip174.Items.Add(toolTipItem174);
             superToolTip174.MaxWidth = 210;
             this.printPreviewBarItem30.SuperTip = superToolTip174;
-            // 
+            //
             // printPreviewBarItem31
-            // 
+            //
             this.printPreviewBarItem31.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem31.Caption = "Size";
             this.printPreviewBarItem31.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PaperSize;
@@ -4781,9 +4771,9 @@ namespace DevExpress.AI.Demos {
             superToolTip175.Items.Add(toolTipItem175);
             superToolTip175.MaxWidth = 210;
             this.printPreviewBarItem31.SuperTip = superToolTip175;
-            // 
+            //
             // printPreviewBarItem32
-            // 
+            //
             this.printPreviewBarItem32.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.printPreviewBarItem32.Caption = "Margins";
             this.printPreviewBarItem32.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageMargins;
@@ -4800,9 +4790,9 @@ namespace DevExpress.AI.Demos {
             superToolTip176.Items.Add(toolTipItem176);
             superToolTip176.MaxWidth = 210;
             this.printPreviewBarItem32.SuperTip = superToolTip176;
-            // 
+            //
             // printPreviewBarItem33
-            // 
+            //
             this.printPreviewBarItem33.Caption = "PDF File";
             this.printPreviewBarItem33.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendPdf;
             this.printPreviewBarItem33.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4817,9 +4807,9 @@ namespace DevExpress.AI.Demos {
             superToolTip177.Items.Add(toolTipItem177);
             superToolTip177.MaxWidth = 210;
             this.printPreviewBarItem33.SuperTip = superToolTip177;
-            // 
+            //
             // printPreviewBarItem34
-            // 
+            //
             this.printPreviewBarItem34.Caption = "Text File";
             this.printPreviewBarItem34.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendTxt;
             this.printPreviewBarItem34.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4834,9 +4824,9 @@ namespace DevExpress.AI.Demos {
             superToolTip178.Items.Add(toolTipItem178);
             superToolTip178.MaxWidth = 210;
             this.printPreviewBarItem34.SuperTip = superToolTip178;
-            // 
+            //
             // printPreviewBarItem35
-            // 
+            //
             this.printPreviewBarItem35.Caption = "CSV File";
             this.printPreviewBarItem35.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendCsv;
             this.printPreviewBarItem35.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4851,9 +4841,9 @@ namespace DevExpress.AI.Demos {
             superToolTip179.Items.Add(toolTipItem179);
             superToolTip179.MaxWidth = 210;
             this.printPreviewBarItem35.SuperTip = superToolTip179;
-            // 
+            //
             // printPreviewBarItem36
-            // 
+            //
             this.printPreviewBarItem36.Caption = "MHT File";
             this.printPreviewBarItem36.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendMht;
             this.printPreviewBarItem36.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4868,9 +4858,9 @@ namespace DevExpress.AI.Demos {
             superToolTip180.Items.Add(toolTipItem180);
             superToolTip180.MaxWidth = 210;
             this.printPreviewBarItem36.SuperTip = superToolTip180;
-            // 
+            //
             // printPreviewBarItem37
-            // 
+            //
             this.printPreviewBarItem37.Caption = "XLS File";
             this.printPreviewBarItem37.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXls;
             this.printPreviewBarItem37.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4885,9 +4875,9 @@ namespace DevExpress.AI.Demos {
             superToolTip181.Items.Add(toolTipItem181);
             superToolTip181.MaxWidth = 210;
             this.printPreviewBarItem37.SuperTip = superToolTip181;
-            // 
+            //
             // printPreviewBarItem38
-            // 
+            //
             this.printPreviewBarItem38.Caption = "XLSX File";
             this.printPreviewBarItem38.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXlsx;
             this.printPreviewBarItem38.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4902,9 +4892,9 @@ namespace DevExpress.AI.Demos {
             superToolTip182.Items.Add(toolTipItem182);
             superToolTip182.MaxWidth = 210;
             this.printPreviewBarItem38.SuperTip = superToolTip182;
-            // 
+            //
             // printPreviewBarItem39
-            // 
+            //
             this.printPreviewBarItem39.Caption = "RTF File";
             this.printPreviewBarItem39.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendRtf;
             this.printPreviewBarItem39.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4919,9 +4909,9 @@ namespace DevExpress.AI.Demos {
             superToolTip183.Items.Add(toolTipItem183);
             superToolTip183.MaxWidth = 210;
             this.printPreviewBarItem39.SuperTip = superToolTip183;
-            // 
+            //
             // printPreviewBarItem40
-            // 
+            //
             this.printPreviewBarItem40.Caption = "DOCX File";
             this.printPreviewBarItem40.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendDocx;
             this.printPreviewBarItem40.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4936,9 +4926,9 @@ namespace DevExpress.AI.Demos {
             superToolTip184.Items.Add(toolTipItem184);
             superToolTip184.MaxWidth = 210;
             this.printPreviewBarItem40.SuperTip = superToolTip184;
-            // 
+            //
             // printPreviewBarItem41
-            // 
+            //
             this.printPreviewBarItem41.Caption = "Image File";
             this.printPreviewBarItem41.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendGraphic;
             this.printPreviewBarItem41.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4953,9 +4943,9 @@ namespace DevExpress.AI.Demos {
             superToolTip185.Items.Add(toolTipItem185);
             superToolTip185.MaxWidth = 210;
             this.printPreviewBarItem41.SuperTip = superToolTip185;
-            // 
+            //
             // printPreviewBarItem42
-            // 
+            //
             this.printPreviewBarItem42.Caption = "PDF File";
             this.printPreviewBarItem42.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportPdf;
             this.printPreviewBarItem42.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4970,9 +4960,9 @@ namespace DevExpress.AI.Demos {
             superToolTip186.Items.Add(toolTipItem186);
             superToolTip186.MaxWidth = 210;
             this.printPreviewBarItem42.SuperTip = superToolTip186;
-            // 
+            //
             // printPreviewBarItem43
-            // 
+            //
             this.printPreviewBarItem43.Caption = "HTML File";
             this.printPreviewBarItem43.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportHtm;
             this.printPreviewBarItem43.ContextSpecifier = this.xrDesignRibbonController1;
@@ -4987,9 +4977,9 @@ namespace DevExpress.AI.Demos {
             superToolTip187.Items.Add(toolTipItem187);
             superToolTip187.MaxWidth = 210;
             this.printPreviewBarItem43.SuperTip = superToolTip187;
-            // 
+            //
             // printPreviewBarItem44
-            // 
+            //
             this.printPreviewBarItem44.Caption = "Text File";
             this.printPreviewBarItem44.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportTxt;
             this.printPreviewBarItem44.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5004,9 +4994,9 @@ namespace DevExpress.AI.Demos {
             superToolTip188.Items.Add(toolTipItem188);
             superToolTip188.MaxWidth = 210;
             this.printPreviewBarItem44.SuperTip = superToolTip188;
-            // 
+            //
             // printPreviewBarItem45
-            // 
+            //
             this.printPreviewBarItem45.Caption = "CSV File";
             this.printPreviewBarItem45.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportCsv;
             this.printPreviewBarItem45.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5021,9 +5011,9 @@ namespace DevExpress.AI.Demos {
             superToolTip189.Items.Add(toolTipItem189);
             superToolTip189.MaxWidth = 210;
             this.printPreviewBarItem45.SuperTip = superToolTip189;
-            // 
+            //
             // printPreviewBarItem46
-            // 
+            //
             this.printPreviewBarItem46.Caption = "MHT File";
             this.printPreviewBarItem46.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportMht;
             this.printPreviewBarItem46.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5038,9 +5028,9 @@ namespace DevExpress.AI.Demos {
             superToolTip190.Items.Add(toolTipItem190);
             superToolTip190.MaxWidth = 210;
             this.printPreviewBarItem46.SuperTip = superToolTip190;
-            // 
+            //
             // printPreviewBarItem47
-            // 
+            //
             this.printPreviewBarItem47.Caption = "XLS File";
             this.printPreviewBarItem47.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXls;
             this.printPreviewBarItem47.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5055,9 +5045,9 @@ namespace DevExpress.AI.Demos {
             superToolTip191.Items.Add(toolTipItem191);
             superToolTip191.MaxWidth = 210;
             this.printPreviewBarItem47.SuperTip = superToolTip191;
-            // 
+            //
             // printPreviewBarItem48
-            // 
+            //
             this.printPreviewBarItem48.Caption = "XLSX File";
             this.printPreviewBarItem48.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXlsx;
             this.printPreviewBarItem48.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5072,9 +5062,9 @@ namespace DevExpress.AI.Demos {
             superToolTip192.Items.Add(toolTipItem192);
             superToolTip192.MaxWidth = 210;
             this.printPreviewBarItem48.SuperTip = superToolTip192;
-            // 
+            //
             // printPreviewBarItem49
-            // 
+            //
             this.printPreviewBarItem49.Caption = "RTF File";
             this.printPreviewBarItem49.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportRtf;
             this.printPreviewBarItem49.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5089,9 +5079,9 @@ namespace DevExpress.AI.Demos {
             superToolTip193.Items.Add(toolTipItem193);
             superToolTip193.MaxWidth = 210;
             this.printPreviewBarItem49.SuperTip = superToolTip193;
-            // 
+            //
             // printPreviewBarItem50
-            // 
+            //
             this.printPreviewBarItem50.Caption = "DOCX File";
             this.printPreviewBarItem50.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportDocx;
             this.printPreviewBarItem50.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5106,9 +5096,9 @@ namespace DevExpress.AI.Demos {
             superToolTip194.Items.Add(toolTipItem194);
             superToolTip194.MaxWidth = 210;
             this.printPreviewBarItem50.SuperTip = superToolTip194;
-            // 
+            //
             // printPreviewBarItem51
-            // 
+            //
             this.printPreviewBarItem51.Caption = "Image File";
             this.printPreviewBarItem51.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportGraphic;
             this.printPreviewBarItem51.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5123,9 +5113,9 @@ namespace DevExpress.AI.Demos {
             superToolTip195.Items.Add(toolTipItem195);
             superToolTip195.MaxWidth = 210;
             this.printPreviewBarItem51.SuperTip = superToolTip195;
-            // 
+            //
             // printPreviewBarItem52
-            // 
+            //
             this.printPreviewBarItem52.Caption = "Open";
             this.printPreviewBarItem52.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Open;
             this.printPreviewBarItem52.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5140,9 +5130,9 @@ namespace DevExpress.AI.Demos {
             superToolTip196.Items.Add(toolTipItem196);
             superToolTip196.MaxWidth = 210;
             this.printPreviewBarItem52.SuperTip = superToolTip196;
-            // 
+            //
             // printPreviewBarItem53
-            // 
+            //
             this.printPreviewBarItem53.Caption = "Save";
             this.printPreviewBarItem53.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Save;
             this.printPreviewBarItem53.ContextSpecifier = this.xrDesignRibbonController1;
@@ -5157,9 +5147,9 @@ namespace DevExpress.AI.Demos {
             superToolTip197.Items.Add(toolTipItem197);
             superToolTip197.MaxWidth = 210;
             this.printPreviewBarItem53.SuperTip = superToolTip197;
-            // 
+            //
             // commandBarEditItem8
-            // 
+            //
             this.commandBarEditItem8.Caption = "Language";
             this.commandBarEditItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Language;
             this.commandBarEditItem8.Edit = this.repositoryItemLookUpEdit2;
@@ -5176,16 +5166,16 @@ namespace DevExpress.AI.Demos {
             superToolTip198.Items.Add(toolTipItem198);
             superToolTip198.MaxWidth = 210;
             this.commandBarEditItem8.SuperTip = superToolTip198;
-            // 
+            //
             // repositoryItemLookUpEdit2
-            // 
+            //
             this.repositoryItemLookUpEdit2.AutoHeight = false;
             this.repositoryItemLookUpEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit2.Name = "repositoryItemLookUpEdit2";
-            // 
+            //
             // commandBarCheckItem9
-            // 
+            //
             this.commandBarCheckItem9.Caption = "Show Localizable Properties";
             this.commandBarCheckItem9.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
             this.commandBarCheckItem9.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowLocalizableProperties;
@@ -5200,9 +5190,9 @@ namespace DevExpress.AI.Demos {
             superToolTip199.Items.Add(toolTipItem199);
             superToolTip199.MaxWidth = 210;
             this.commandBarCheckItem9.SuperTip = superToolTip199;
-            // 
+            //
             // commandBarItem127
-            // 
+            //
             this.commandBarItem127.Caption = "Expand All";
             this.commandBarItem127.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BandExpandAll;
             this.commandBarItem127.Enabled = false;
@@ -5216,9 +5206,9 @@ namespace DevExpress.AI.Demos {
             superToolTip200.Items.Add(toolTipItem200);
             superToolTip200.MaxWidth = 210;
             this.commandBarItem127.SuperTip = superToolTip200;
-            // 
+            //
             // commandBarItem128
-            // 
+            //
             this.commandBarItem128.Caption = "Collapse All";
             this.commandBarItem128.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BandCollapseAll;
             this.commandBarItem128.Enabled = false;
@@ -5232,31 +5222,31 @@ namespace DevExpress.AI.Demos {
             superToolTip201.Items.Add(toolTipItem201);
             superToolTip201.MaxWidth = 210;
             this.commandBarItem128.SuperTip = superToolTip201;
-            // 
+            //
             // printPreviewStaticItem1
-            // 
+            //
             this.printPreviewStaticItem1.Caption = "Nothing";
             this.printPreviewStaticItem1.Id = 230;
             this.printPreviewStaticItem1.LeftIndent = 1;
             this.printPreviewStaticItem1.Name = "printPreviewStaticItem1";
             this.printPreviewStaticItem1.RightIndent = 1;
             this.printPreviewStaticItem1.Type = "PageOfPages";
-            // 
+            //
             // progressBarEditItem1
-            // 
+            //
             this.progressBarEditItem1.Edit = this.repositoryItemProgressBar1;
             this.progressBarEditItem1.EditHeight = 12;
             this.progressBarEditItem1.EditWidth = 150;
             this.progressBarEditItem1.Id = 231;
             this.progressBarEditItem1.Name = "progressBarEditItem1";
             this.progressBarEditItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-            // 
+            //
             // repositoryItemProgressBar1
-            // 
+            //
             this.repositoryItemProgressBar1.Name = "repositoryItemProgressBar1";
-            // 
+            //
             // printPreviewBarItem6
-            // 
+            //
             this.printPreviewBarItem6.Caption = "Stop";
             this.printPreviewBarItem6.Command = DevExpress.XtraPrinting.PrintingSystemCommand.StopPageBuilding;
             this.printPreviewBarItem6.Enabled = false;
@@ -5264,27 +5254,27 @@ namespace DevExpress.AI.Demos {
             this.printPreviewBarItem6.Id = 232;
             this.printPreviewBarItem6.Name = "printPreviewBarItem6";
             this.printPreviewBarItem6.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-            // 
+            //
             // commandBarItem129
-            // 
+            //
             this.commandBarItem129.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.commandBarItem129.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowReportDesignAnalyzer;
             this.commandBarItem129.Enabled = false;
             this.commandBarItem129.Id = 233;
             this.commandBarItem129.Name = "commandBarItem129";
             this.commandBarItem129.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
+            //
             // printPreviewStaticItem2
-            // 
+            //
             this.printPreviewStaticItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.printPreviewStaticItem2.AutoSize = DevExpress.XtraBars.BarStaticItemSize.None;
             this.printPreviewStaticItem2.Caption = "100%";
             this.printPreviewStaticItem2.Id = 234;
             this.printPreviewStaticItem2.Name = "printPreviewStaticItem2";
             this.printPreviewStaticItem2.Type = "ZoomFactorText";
-            // 
+            //
             // zoomTrackBarEditItem1
-            // 
+            //
             this.zoomTrackBarEditItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.zoomTrackBarEditItem1.Edit = this.repositoryItemZoomTrackBar1;
             this.zoomTrackBarEditItem1.EditWidth = 140;
@@ -5294,17 +5284,17 @@ namespace DevExpress.AI.Demos {
             this.zoomTrackBarEditItem1.Range = new int[] {
         10,
         500};
-            // 
+            //
             // repositoryItemZoomTrackBar1
-            // 
+            //
             this.repositoryItemZoomTrackBar1.Alignment = DevExpress.Utils.VertAlignment.Center;
             this.repositoryItemZoomTrackBar1.AllowFocused = false;
             this.repositoryItemZoomTrackBar1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.repositoryItemZoomTrackBar1.Maximum = 180;
             this.repositoryItemZoomTrackBar1.Name = "repositoryItemZoomTrackBar1";
-            // 
+            //
             // commandBarItem130
-            // 
+            //
             this.commandBarItem130.Caption = "Dimension Notations";
             this.commandBarItem130.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowDimensionNotations;
             this.commandBarItem130.Enabled = false;
@@ -5320,9 +5310,9 @@ namespace DevExpress.AI.Demos {
             superToolTip202.Items.Add(toolTipItem202);
             superToolTip202.MaxWidth = 210;
             this.commandBarItem130.SuperTip = superToolTip202;
-            // 
+            //
             // ribbonPageCategory1
-            // 
+            //
             this.ribbonPageCategory1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(94)))), ((int)(((byte)(211)))));
             this.ribbonPageCategory1.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory1.AutoStretchPageHeaders = true;
@@ -5331,17 +5321,17 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage6});
             this.ribbonPageCategory1.Text = "Character Comb Tools";
             this.ribbonPageCategory1.Visible = false;
-            // 
+            //
             // ribbonPage6
-            // 
+            //
             this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup18});
             this.ribbonPage6.Name = "ribbonPage6";
             this.ribbonPage6.Text = "Design";
             this.ribbonPage6.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup18
-            // 
+            //
             this.xrDesignRibbonPageGroup18.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup18.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup18.ItemLinks.Add(this.commandBarCheckItem7);
@@ -5353,9 +5343,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup18.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.CellSize;
             this.xrDesignRibbonPageGroup18.Name = "xrDesignRibbonPageGroup18";
             this.xrDesignRibbonPageGroup18.Text = "Cell Size";
-            // 
+            //
             // ribbonPageCategory2
-            // 
+            //
             this.ribbonPageCategory2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(203)))), ((int)(((byte)(29)))));
             this.ribbonPageCategory2.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory2.AutoStretchPageHeaders = true;
@@ -5364,9 +5354,9 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage7});
             this.ribbonPageCategory2.Text = "Table Tools";
             this.ribbonPageCategory2.Visible = false;
-            // 
+            //
             // ribbonPage7
-            // 
+            //
             this.ribbonPage7.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup19,
             this.xrDesignRibbonPageGroup20,
@@ -5376,9 +5366,9 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage7.Name = "ribbonPage7";
             this.ribbonPage7.Text = "Design";
             this.ribbonPage7.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup19
-            // 
+            //
             this.xrDesignRibbonPageGroup19.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup19.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup19.ItemLinks.Add(this.commandBarItem76);
@@ -5387,9 +5377,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup19.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Select;
             this.xrDesignRibbonPageGroup19.Name = "xrDesignRibbonPageGroup19";
             this.xrDesignRibbonPageGroup19.Text = "Select";
-            // 
+            //
             // xrDesignRibbonPageGroup20
-            // 
+            //
             this.xrDesignRibbonPageGroup20.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup20.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup20.ItemLinks.Add(this.commandBarItem82);
@@ -5399,9 +5389,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup20.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Insert;
             this.xrDesignRibbonPageGroup20.Name = "xrDesignRibbonPageGroup20";
             this.xrDesignRibbonPageGroup20.Text = "Insert";
-            // 
+            //
             // xrDesignRibbonPageGroup21
-            // 
+            //
             this.xrDesignRibbonPageGroup21.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup21.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup21.ItemLinks.Add(this.commandBarItem78);
@@ -5411,9 +5401,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup21.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Delete;
             this.xrDesignRibbonPageGroup21.Name = "xrDesignRibbonPageGroup21";
             this.xrDesignRibbonPageGroup21.Text = "Delete";
-            // 
+            //
             // xrDesignRibbonPageGroup22
-            // 
+            //
             this.xrDesignRibbonPageGroup22.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup22.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup22.ItemLinks.Add(this.commandBarItem88);
@@ -5421,9 +5411,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup22.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Merge;
             this.xrDesignRibbonPageGroup22.Name = "xrDesignRibbonPageGroup22";
             this.xrDesignRibbonPageGroup22.Text = "Merge";
-            // 
+            //
             // xrDesignRibbonPageGroup23
-            // 
+            //
             this.xrDesignRibbonPageGroup23.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup23.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup23.ItemLinks.Add(this.commandBarItem86);
@@ -5431,9 +5421,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup23.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Distribute;
             this.xrDesignRibbonPageGroup23.Name = "xrDesignRibbonPageGroup23";
             this.xrDesignRibbonPageGroup23.Text = "Distribute";
-            // 
+            //
             // ribbonPageCategory3
-            // 
+            //
             this.ribbonPageCategory3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(163)))), ((int)(((byte)(73)))));
             this.ribbonPageCategory3.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory3.AutoStretchPageHeaders = true;
@@ -5442,9 +5432,9 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage8});
             this.ribbonPageCategory3.Text = "Chart Tools";
             this.ribbonPageCategory3.Visible = false;
-            // 
+            //
             // ribbonPage8
-            // 
+            //
             this.ribbonPage8.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup24,
             this.xrDesignRibbonPageGroup25,
@@ -5454,9 +5444,9 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage8.Name = "ribbonPage8";
             this.ribbonPage8.Text = "Design";
             this.ribbonPage8.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup24
-            // 
+            //
             this.xrDesignRibbonPageGroup24.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup24.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup24.ItemLinks.Add(this.commandBarItem103);
@@ -5465,18 +5455,18 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup24.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Layout;
             this.xrDesignRibbonPageGroup24.Name = "xrDesignRibbonPageGroup24";
             this.xrDesignRibbonPageGroup24.Text = "Layout";
-            // 
+            //
             // xrDesignRibbonPageGroup25
-            // 
+            //
             this.xrDesignRibbonPageGroup25.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup25.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup25.ItemLinks.Add(this.commandBarItem104);
             this.xrDesignRibbonPageGroup25.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data;
             this.xrDesignRibbonPageGroup25.Name = "xrDesignRibbonPageGroup25";
             this.xrDesignRibbonPageGroup25.Text = "Data";
-            // 
+            //
             // xrDesignRibbonPageGroup26
-            // 
+            //
             this.xrDesignRibbonPageGroup26.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup26.ItemLinks.Add(this.commandBarItem106);
             this.xrDesignRibbonPageGroup26.ItemLinks.Add(this.commandBarItem107);
@@ -5489,9 +5479,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup26.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Series;
             this.xrDesignRibbonPageGroup26.Name = "xrDesignRibbonPageGroup26";
             this.xrDesignRibbonPageGroup26.Text = "Series";
-            // 
+            //
             // xrDesignRibbonPageGroup27
-            // 
+            //
             this.xrDesignRibbonPageGroup27.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup27.ItemLinks.Add(this.commandBarItem114);
             this.xrDesignRibbonPageGroup27.ItemLinks.Add(this.commandBarItem115);
@@ -5499,18 +5489,18 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup27.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Annotations;
             this.xrDesignRibbonPageGroup27.Name = "xrDesignRibbonPageGroup27";
             this.xrDesignRibbonPageGroup27.Text = "Annotations";
-            // 
+            //
             // xrDesignRibbonPageGroup28
-            // 
+            //
             this.xrDesignRibbonPageGroup28.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup28.ItemLinks.Add(this.commandBarItem105);
             this.xrDesignRibbonPageGroup28.ItemLinks.Add(this.commandGalleryBarItem3);
             this.xrDesignRibbonPageGroup28.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Appearance;
             this.xrDesignRibbonPageGroup28.Name = "xrDesignRibbonPageGroup28";
             this.xrDesignRibbonPageGroup28.Text = "Appearance";
-            // 
+            //
             // ribbonPageCategory4
-            // 
+            //
             this.ribbonPageCategory4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(89)))), ((int)(((byte)(156)))));
             this.ribbonPageCategory4.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory4.AutoStretchPageHeaders = true;
@@ -5519,9 +5509,9 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage9});
             this.ribbonPageCategory4.Text = "Pivot Grid Tools";
             this.ribbonPageCategory4.Visible = false;
-            // 
+            //
             // ribbonPage9
-            // 
+            //
             this.ribbonPage9.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup29,
             this.xrDesignRibbonPageGroup30,
@@ -5530,27 +5520,27 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage9.Name = "ribbonPage9";
             this.ribbonPage9.Text = "Design";
             this.ribbonPage9.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup29
-            // 
+            //
             this.xrDesignRibbonPageGroup29.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup29.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup29.ItemLinks.Add(this.commandBarItem90);
             this.xrDesignRibbonPageGroup29.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Layout;
             this.xrDesignRibbonPageGroup29.Name = "xrDesignRibbonPageGroup29";
             this.xrDesignRibbonPageGroup29.Text = "Layout";
-            // 
+            //
             // xrDesignRibbonPageGroup30
-            // 
+            //
             this.xrDesignRibbonPageGroup30.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup30.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup30.ItemLinks.Add(this.commandBarItem91);
             this.xrDesignRibbonPageGroup30.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data;
             this.xrDesignRibbonPageGroup30.Name = "xrDesignRibbonPageGroup30";
             this.xrDesignRibbonPageGroup30.Text = "Data";
-            // 
+            //
             // xrDesignRibbonPageGroup31
-            // 
+            //
             this.xrDesignRibbonPageGroup31.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup31.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup31.ItemLinks.Add(this.commandBarItem93);
@@ -5558,9 +5548,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup31.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PivotFields;
             this.xrDesignRibbonPageGroup31.Name = "xrDesignRibbonPageGroup31";
             this.xrDesignRibbonPageGroup31.Text = "Fields";
-            // 
+            //
             // xrDesignRibbonPageGroup32
-            // 
+            //
             this.xrDesignRibbonPageGroup32.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup32.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup32.ItemLinks.Add(this.commandBarItem94);
@@ -5573,9 +5563,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup32.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PivotPrintOptions;
             this.xrDesignRibbonPageGroup32.Name = "xrDesignRibbonPageGroup32";
             this.xrDesignRibbonPageGroup32.Text = "Print Options";
-            // 
+            //
             // ribbonPageCategory5
-            // 
+            //
             this.ribbonPageCategory5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(94)))), ((int)(((byte)(211)))));
             this.ribbonPageCategory5.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory5.AutoStretchPageHeaders = true;
@@ -5584,18 +5574,18 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage10});
             this.ribbonPageCategory5.Text = "Barcode Tools";
             this.ribbonPageCategory5.Visible = false;
-            // 
+            //
             // ribbonPage10
-            // 
+            //
             this.ribbonPage10.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup33,
             this.xrDesignRibbonPageGroup34});
             this.ribbonPage10.Name = "ribbonPage10";
             this.ribbonPage10.Text = "Design";
             this.ribbonPage10.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup33
-            // 
+            //
             this.xrDesignRibbonPageGroup33.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup33.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup33.ItemLinks.Add(this.commandBarItem117);
@@ -5603,18 +5593,18 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup33.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View;
             this.xrDesignRibbonPageGroup33.Name = "xrDesignRibbonPageGroup33";
             this.xrDesignRibbonPageGroup33.Text = "View";
-            // 
+            //
             // xrDesignRibbonPageGroup34
-            // 
+            //
             this.xrDesignRibbonPageGroup34.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup34.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup34.ItemLinks.Add(this.commandGalleryBarItem2);
             this.xrDesignRibbonPageGroup34.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Symbology;
             this.xrDesignRibbonPageGroup34.Name = "xrDesignRibbonPageGroup34";
             this.xrDesignRibbonPageGroup34.Text = "Symbology";
-            // 
+            //
             // ribbonPageCategory6
-            // 
+            //
             this.ribbonPageCategory6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(157)))), ((int)(((byte)(0)))));
             this.ribbonPageCategory6.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory6.AutoStretchPageHeaders = true;
@@ -5623,27 +5613,27 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage11});
             this.ribbonPageCategory6.Text = "Gauge Tools";
             this.ribbonPageCategory6.Visible = false;
-            // 
+            //
             // ribbonPage11
-            // 
+            //
             this.ribbonPage11.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup35,
             this.xrDesignRibbonPageGroup36});
             this.ribbonPage11.Name = "ribbonPage11";
             this.ribbonPage11.Text = "Design";
             this.ribbonPage11.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup35
-            // 
+            //
             this.xrDesignRibbonPageGroup35.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup35.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup35.ItemLinks.Add(this.commandGalleryBarItem5);
             this.xrDesignRibbonPageGroup35.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View;
             this.xrDesignRibbonPageGroup35.Name = "xrDesignRibbonPageGroup35";
             this.xrDesignRibbonPageGroup35.Text = "View";
-            // 
+            //
             // xrDesignRibbonPageGroup36
-            // 
+            //
             this.xrDesignRibbonPageGroup36.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup36.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup36.ItemLinks.Add(this.commandBarItem122);
@@ -5651,9 +5641,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup36.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Theme;
             this.xrDesignRibbonPageGroup36.Name = "xrDesignRibbonPageGroup36";
             this.xrDesignRibbonPageGroup36.Text = "Theme";
-            // 
+            //
             // ribbonPageCategory7
-            // 
+            //
             this.ribbonPageCategory7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(163)))), ((int)(((byte)(73)))));
             this.ribbonPageCategory7.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory7.AutoStretchPageHeaders = true;
@@ -5662,36 +5652,36 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage12});
             this.ribbonPageCategory7.Text = "Sparkline Tools";
             this.ribbonPageCategory7.Visible = false;
-            // 
+            //
             // ribbonPage12
-            // 
+            //
             this.ribbonPage12.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup37,
             this.xrDesignRibbonPageGroup38});
             this.ribbonPage12.Name = "ribbonPage12";
             this.ribbonPage12.Text = "Design";
             this.ribbonPage12.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup37
-            // 
+            //
             this.xrDesignRibbonPageGroup37.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup37.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup37.ItemLinks.Add(this.commandBarItem121);
             this.xrDesignRibbonPageGroup37.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data;
             this.xrDesignRibbonPageGroup37.Name = "xrDesignRibbonPageGroup37";
             this.xrDesignRibbonPageGroup37.Text = "Data";
-            // 
+            //
             // xrDesignRibbonPageGroup38
-            // 
+            //
             this.xrDesignRibbonPageGroup38.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup38.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup38.ItemLinks.Add(this.commandGalleryBarItem4);
             this.xrDesignRibbonPageGroup38.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View;
             this.xrDesignRibbonPageGroup38.Name = "xrDesignRibbonPageGroup38";
             this.xrDesignRibbonPageGroup38.Text = "View";
-            // 
+            //
             // ribbonPageCategory8
-            // 
+            //
             this.ribbonPageCategory8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(157)))), ((int)(((byte)(0)))));
             this.ribbonPageCategory8.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory8.AutoStretchPageHeaders = true;
@@ -5700,17 +5690,17 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage13});
             this.ribbonPageCategory8.Text = "Shape Tools";
             this.ribbonPageCategory8.Visible = false;
-            // 
+            //
             // ribbonPage13
-            // 
+            //
             this.ribbonPage13.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup39});
             this.ribbonPage13.Name = "ribbonPage13";
             this.ribbonPage13.Text = "Design";
             this.ribbonPage13.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup39
-            // 
+            //
             this.xrDesignRibbonPageGroup39.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup39.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup39.ItemLinks.Add(this.commandBarItem124);
@@ -5718,9 +5708,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup39.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View;
             this.xrDesignRibbonPageGroup39.Name = "xrDesignRibbonPageGroup39";
             this.xrDesignRibbonPageGroup39.Text = "View";
-            // 
+            //
             // ribbonPageCategory9
-            // 
+            //
             this.ribbonPageCategory9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(197)))), ((int)(((byte)(126)))));
             this.ribbonPageCategory9.Appearance.Options.UseBackColor = true;
             this.ribbonPageCategory9.AutoStretchPageHeaders = true;
@@ -5729,18 +5719,18 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage14});
             this.ribbonPageCategory9.Text = "Text Tools";
             this.ribbonPageCategory9.Visible = false;
-            // 
+            //
             // ribbonPage14
-            // 
+            //
             this.ribbonPage14.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup40,
             this.xrDesignRibbonPageGroup41});
             this.ribbonPage14.Name = "ribbonPage14";
             this.ribbonPage14.Text = "Text";
             this.ribbonPage14.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup40
-            // 
+            //
             this.xrDesignRibbonPageGroup40.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup40.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup40.ItemLinks.Add(this.commandBarItem119);
@@ -5748,9 +5738,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup40.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Design;
             this.xrDesignRibbonPageGroup40.Name = "xrDesignRibbonPageGroup40";
             this.xrDesignRibbonPageGroup40.Text = "Design";
-            // 
+            //
             // xrDesignRibbonPageGroup41
-            // 
+            //
             this.xrDesignRibbonPageGroup41.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup41.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup41.ItemLinks.Add(this.commandBarCheckItem3);
@@ -5760,9 +5750,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup41.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Behavior;
             this.xrDesignRibbonPageGroup41.Name = "xrDesignRibbonPageGroup41";
             this.xrDesignRibbonPageGroup41.Text = "Behavior";
-            // 
+            //
             // ribbonPage1
-            // 
+            //
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup1,
             this.xrDesignRibbonPageGroup2,
@@ -5773,9 +5763,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup7});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Home";
-            // 
+            //
             // xrDesignRibbonPageGroup1
-            // 
+            //
             this.xrDesignRibbonPageGroup1.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup1.ItemLinks.Add(this.commandBarItem6);
@@ -5785,9 +5775,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup1.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Report;
             this.xrDesignRibbonPageGroup1.Name = "xrDesignRibbonPageGroup1";
             this.xrDesignRibbonPageGroup1.Text = "Report";
-            // 
+            //
             // xrDesignRibbonPageGroup2
-            // 
+            //
             this.xrDesignRibbonPageGroup2.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup2.ItemLinks.Add(this.commandBarItem30);
@@ -5796,9 +5786,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup2.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data;
             this.xrDesignRibbonPageGroup2.Name = "xrDesignRibbonPageGroup2";
             this.xrDesignRibbonPageGroup2.Text = "Data";
-            // 
+            //
             // xrDesignRibbonPageGroup3
-            // 
+            //
             this.xrDesignRibbonPageGroup3.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup3.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup3.ItemLinks.Add(this.commandBarItem14);
@@ -5807,9 +5797,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup3.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Clipboard;
             this.xrDesignRibbonPageGroup3.Name = "xrDesignRibbonPageGroup3";
             this.xrDesignRibbonPageGroup3.Text = "Clipboard";
-            // 
+            //
             // xrDesignRibbonPageGroup4
-            // 
+            //
             this.xrDesignRibbonPageGroup4.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup4.ItemLinks.Add(this.xrDesignBarButtonGroup1);
@@ -5818,9 +5808,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup4.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Font;
             this.xrDesignRibbonPageGroup4.Name = "xrDesignRibbonPageGroup4";
             this.xrDesignRibbonPageGroup4.Text = "Font";
-            // 
+            //
             // xrDesignRibbonPageGroup5
-            // 
+            //
             this.xrDesignRibbonPageGroup5.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup5.ItemLinks.Add(this.xrDesignBarButtonGroup4);
@@ -5828,9 +5818,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup5.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.TextAlignment;
             this.xrDesignRibbonPageGroup5.Name = "xrDesignRibbonPageGroup5";
             this.xrDesignRibbonPageGroup5.Text = "Alignment";
-            // 
+            //
             // xrDesignRibbonPageGroup6
-            // 
+            //
             this.xrDesignRibbonPageGroup6.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup6.ItemLinks.Add(this.xrDesignBarButtonGroup6);
@@ -5839,18 +5829,18 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup6.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Borders;
             this.xrDesignRibbonPageGroup6.Name = "xrDesignRibbonPageGroup6";
             this.xrDesignRibbonPageGroup6.Text = "Borders";
-            // 
+            //
             // xrDesignRibbonPageGroup7
-            // 
+            //
             this.xrDesignRibbonPageGroup7.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup7.ItemLinks.Add(this.commandBarItem31);
             this.xrDesignRibbonPageGroup7.ItemLinks.Add(this.commandGalleryBarItem1);
             this.xrDesignRibbonPageGroup7.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Styles;
             this.xrDesignRibbonPageGroup7.Name = "xrDesignRibbonPageGroup7";
             this.xrDesignRibbonPageGroup7.Text = "Styles";
-            // 
+            //
             // ribbonPage2
-            // 
+            //
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup8,
             this.xrDesignRibbonPageGroup9,
@@ -5858,9 +5848,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup11});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "Layout";
-            // 
+            //
             // xrDesignRibbonPageGroup8
-            // 
+            //
             this.xrDesignRibbonPageGroup8.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup8.ItemLinks.Add(this.xrDesignBarButtonGroup9);
@@ -5868,9 +5858,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup8.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Alignment;
             this.xrDesignRibbonPageGroup8.Name = "xrDesignRibbonPageGroup8";
             this.xrDesignRibbonPageGroup8.Text = "Alignment";
-            // 
+            //
             // xrDesignRibbonPageGroup9
-            // 
+            //
             this.xrDesignRibbonPageGroup9.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup9.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup9.ItemLinks.Add(this.commandBarItem39);
@@ -5883,9 +5873,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup9.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.SizeAndLayout;
             this.xrDesignRibbonPageGroup9.Name = "xrDesignRibbonPageGroup9";
             this.xrDesignRibbonPageGroup9.Text = "Layout";
-            // 
+            //
             // xrDesignRibbonPageGroup10
-            // 
+            //
             this.xrDesignRibbonPageGroup10.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup10.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup10.ItemLinks.Add(this.commandBarItem60);
@@ -5893,9 +5883,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup10.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Arranging;
             this.xrDesignRibbonPageGroup10.Name = "xrDesignRibbonPageGroup10";
             this.xrDesignRibbonPageGroup10.Text = "Arrangement";
-            // 
+            //
             // xrDesignRibbonPageGroup11
-            // 
+            //
             this.xrDesignRibbonPageGroup11.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup11.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup11.ItemLinks.Add(this.commandBarCheckItem1);
@@ -5903,17 +5893,17 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup11.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Snapping;
             this.xrDesignRibbonPageGroup11.Name = "xrDesignRibbonPageGroup11";
             this.xrDesignRibbonPageGroup11.Text = "Snapping";
-            // 
+            //
             // ribbonPage3
-            // 
+            //
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup12,
             this.xrDesignRibbonPageGroup13});
             this.ribbonPage3.Name = "ribbonPage3";
             this.ribbonPage3.Text = "Page";
-            // 
+            //
             // xrDesignRibbonPageGroup12
-            // 
+            //
             this.xrDesignRibbonPageGroup12.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup12.ItemLinks.Add(this.commandBarItem65);
             this.xrDesignRibbonPageGroup12.ItemLinks.Add(this.commandBarItem64);
@@ -5921,9 +5911,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup12.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PageSetup;
             this.xrDesignRibbonPageGroup12.Name = "xrDesignRibbonPageGroup12";
             this.xrDesignRibbonPageGroup12.Text = "Page Setup";
-            // 
+            //
             // xrDesignRibbonPageGroup13
-            // 
+            //
             this.xrDesignRibbonPageGroup13.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup13.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup13.ItemLinks.Add(this.commandColorBarItem4);
@@ -5931,9 +5921,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup13.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Appearance;
             this.xrDesignRibbonPageGroup13.Name = "xrDesignRibbonPageGroup13";
             this.xrDesignRibbonPageGroup13.Text = "Appearance";
-            // 
+            //
             // ribbonPage4
-            // 
+            //
             this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup14,
             this.xrDesignRibbonPageGroup43,
@@ -5942,9 +5932,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup16});
             this.ribbonPage4.Name = "ribbonPage4";
             this.ribbonPage4.Text = "View";
-            // 
+            //
             // xrDesignRibbonPageGroup14
-            // 
+            //
             this.xrDesignRibbonPageGroup14.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup14.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup14.ItemLinks.Add(this.commandBarItem67);
@@ -5955,9 +5945,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup14.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Show;
             this.xrDesignRibbonPageGroup14.Name = "xrDesignRibbonPageGroup14";
             this.xrDesignRibbonPageGroup14.Text = "Show";
-            // 
+            //
             // xrDesignRibbonPageGroup43
-            // 
+            //
             this.xrDesignRibbonPageGroup43.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup43.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup43.ItemLinks.Add(this.commandBarItem127);
@@ -5965,18 +5955,18 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup43.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Bands;
             this.xrDesignRibbonPageGroup43.Name = "xrDesignRibbonPageGroup43";
             this.xrDesignRibbonPageGroup43.Text = "Bands";
-            // 
+            //
             // xrDesignRibbonPageGroup42
-            // 
+            //
             this.xrDesignRibbonPageGroup42.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup42.ItemLinks.Add(this.commandBarEditItem8);
             this.xrDesignRibbonPageGroup42.ItemLinks.Add(this.commandBarCheckItem9);
             this.xrDesignRibbonPageGroup42.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Localization;
             this.xrDesignRibbonPageGroup42.Name = "xrDesignRibbonPageGroup42";
             this.xrDesignRibbonPageGroup42.Text = "Localization";
-            // 
+            //
             // xrDesignRibbonPageGroup15
-            // 
+            //
             this.xrDesignRibbonPageGroup15.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup15.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup15.ItemLinks.Add(this.commandBarItem73);
@@ -5985,26 +5975,26 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup15.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Zoom;
             this.xrDesignRibbonPageGroup15.Name = "xrDesignRibbonPageGroup15";
             this.xrDesignRibbonPageGroup15.Text = "Zoom";
-            // 
+            //
             // xrDesignRibbonPageGroup16
-            // 
+            //
             this.xrDesignRibbonPageGroup16.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup16.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup16.ItemLinks.Add(this.barDockPanelsListItem1);
             this.xrDesignRibbonPageGroup16.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View;
             this.xrDesignRibbonPageGroup16.Name = "xrDesignRibbonPageGroup16";
             this.xrDesignRibbonPageGroup16.Text = "View";
-            // 
+            //
             // ribbonPage5
-            // 
+            //
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.xrDesignRibbonPageGroup17});
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "Scripts";
             this.ribbonPage5.Visible = false;
-            // 
+            //
             // xrDesignRibbonPageGroup17
-            // 
+            //
             this.xrDesignRibbonPageGroup17.AllowTextClipping = false;
             this.xrDesignRibbonPageGroup17.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.xrDesignRibbonPageGroup17.ItemLinks.Add(this.commandBarEditItem6);
@@ -6013,9 +6003,9 @@ namespace DevExpress.AI.Demos {
             this.xrDesignRibbonPageGroup17.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Edit;
             this.xrDesignRibbonPageGroup17.Name = "xrDesignRibbonPageGroup17";
             this.xrDesignRibbonPageGroup17.Text = "Edit";
-            // 
+            //
             // ribbonPage15
-            // 
+            //
             this.ribbonPage15.ContextSpecifier = this.xrDesignRibbonController1;
             this.ribbonPage15.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.printPreviewRibbonPageGroup1,
@@ -6029,9 +6019,9 @@ namespace DevExpress.AI.Demos {
             this.ribbonPage15.Name = "ribbonPage15";
             this.ribbonPage15.Text = "Home";
             this.ribbonPage15.Visible = false;
-            // 
+            //
             // printPreviewRibbonPageGroup1
-            // 
+            //
             this.printPreviewRibbonPageGroup1.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup1.ContextSpecifier = this.xrDesignRibbonController1;
@@ -6040,9 +6030,9 @@ namespace DevExpress.AI.Demos {
             this.printPreviewRibbonPageGroup1.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Document;
             this.printPreviewRibbonPageGroup1.Name = "printPreviewRibbonPageGroup1";
             this.printPreviewRibbonPageGroup1.Text = "Document";
-            // 
+            //
             // printPreviewRibbonPageGroup2
-            // 
+            //
             this.printPreviewRibbonPageGroup2.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup2.ContextSpecifier = this.xrDesignRibbonController1;
@@ -6052,9 +6042,9 @@ namespace DevExpress.AI.Demos {
             this.printPreviewRibbonPageGroup2.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Print;
             this.printPreviewRibbonPageGroup2.Name = "printPreviewRibbonPageGroup2";
             this.printPreviewRibbonPageGroup2.Text = "Print";
-            // 
+            //
             // printPreviewRibbonPageGroup3
-            // 
+            //
             this.printPreviewRibbonPageGroup3.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup3.ContextSpecifier = this.xrDesignRibbonController1;
             this.printPreviewRibbonPageGroup3.ItemLinks.Add(this.printPreviewBarItem13);
@@ -6072,9 +6062,9 @@ namespace DevExpress.AI.Demos {
             superToolTip203.MaxWidth = 210;
             this.printPreviewRibbonPageGroup3.SuperTip = superToolTip203;
             this.printPreviewRibbonPageGroup3.Text = "Page Setup";
-            // 
+            //
             // printPreviewRibbonPageGroup4
-            // 
+            //
             this.printPreviewRibbonPageGroup4.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup4.ContextSpecifier = this.xrDesignRibbonController1;
@@ -6089,9 +6079,9 @@ namespace DevExpress.AI.Demos {
             this.printPreviewRibbonPageGroup4.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Navigation;
             this.printPreviewRibbonPageGroup4.Name = "printPreviewRibbonPageGroup4";
             this.printPreviewRibbonPageGroup4.Text = "Navigation";
-            // 
+            //
             // printPreviewRibbonPageGroup5
-            // 
+            //
             this.printPreviewRibbonPageGroup5.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup5.ContextSpecifier = this.xrDesignRibbonController1;
@@ -6105,9 +6095,9 @@ namespace DevExpress.AI.Demos {
             this.printPreviewRibbonPageGroup5.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Zoom;
             this.printPreviewRibbonPageGroup5.Name = "printPreviewRibbonPageGroup5";
             this.printPreviewRibbonPageGroup5.Text = "Zoom";
-            // 
+            //
             // printPreviewRibbonPageGroup6
-            // 
+            //
             this.printPreviewRibbonPageGroup6.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup6.ContextSpecifier = this.xrDesignRibbonController1;
@@ -6116,9 +6106,9 @@ namespace DevExpress.AI.Demos {
             this.printPreviewRibbonPageGroup6.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Background;
             this.printPreviewRibbonPageGroup6.Name = "printPreviewRibbonPageGroup6";
             this.printPreviewRibbonPageGroup6.Text = "Page Background";
-            // 
+            //
             // printPreviewRibbonPageGroup7
-            // 
+            //
             this.printPreviewRibbonPageGroup7.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup7.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup7.ContextSpecifier = this.xrDesignRibbonController1;
@@ -6127,9 +6117,9 @@ namespace DevExpress.AI.Demos {
             this.printPreviewRibbonPageGroup7.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Export;
             this.printPreviewRibbonPageGroup7.Name = "printPreviewRibbonPageGroup7";
             this.printPreviewRibbonPageGroup7.Text = "Export";
-            // 
+            //
             // printPreviewRibbonPageGroup8
-            // 
+            //
             this.printPreviewRibbonPageGroup8.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup8.ContextSpecifier = this.xrDesignRibbonController1;
@@ -6137,9 +6127,9 @@ namespace DevExpress.AI.Demos {
             this.printPreviewRibbonPageGroup8.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Close;
             this.printPreviewRibbonPageGroup8.Name = "printPreviewRibbonPageGroup8";
             this.printPreviewRibbonPageGroup8.Text = "Close";
-            // 
+            //
             // ribbonStatusBar1
-            // 
+            //
             this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewStaticItem1);
             this.ribbonStatusBar1.ItemLinks.Add(this.progressBarEditItem1);
             this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewBarItem6);
@@ -6151,41 +6141,11 @@ namespace DevExpress.AI.Demos {
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(1830, 55);
-            // 
+            //
             // reportDesigner1
-            // 
-            aiReportPrompt1.Text = resources.GetString("aiReportPrompt1.Text");
-            aiReportPrompt1.Title = "Prompt Template";
-            aiReportPrompt2.Text = resources.GetString("aiReportPrompt2.Text");
-            aiReportPrompt2.Title = "Quarterly Sales Report";
-            aiReportPrompt3.Text = resources.GetString("aiReportPrompt3.Text");
-            aiReportPrompt3.Title = "Employee Payroll Report";
-            aiReportPrompt4.Text = resources.GetString("aiReportPrompt4.Text");
-            aiReportPrompt4.Title = "Commercial Invoice Report";
-            aiReportPrompt5.Text = resources.GetString("aiReportPrompt5.Text");
-            aiReportPrompt5.Title = "Shipping Label Report";
-            aiReportPrompt6.Text = resources.GetString("aiReportPrompt6.Text");
-            aiReportPrompt6.Title = "Customer Quote Report";
-            aiReportPrompt7.Text = resources.GetString("aiReportPrompt7.Text");
-            aiReportPrompt7.Title = "Employee Directory Report";
-            aiReportPrompt8.Text = resources.GetString("aiReportPrompt8.Text");
-            aiReportPrompt8.Title = "Inventory Stock Report";
-            aiReportPrompt9.Text = resources.GetString("aiReportPrompt9.Text");
-            aiReportPrompt9.Title = "Sales Order Report";
-            aiReportPrompt10.Text = resources.GetString("aiReportPrompt10.Text");
-            aiReportPrompt10.Title = "Account Statement Report";
+            //
             this.behaviorManager1.SetBehaviors(this.reportDesigner1, new DevExpress.Utils.Behaviors.Behavior[] {
-            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(typeof(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, true, 0F, new DevExpress.AIIntegration.Reporting.AIReportPrompt[] {
-                        aiReportPrompt1,
-                        aiReportPrompt2,
-                        aiReportPrompt3,
-                        aiReportPrompt4,
-                        aiReportPrompt5,
-                        aiReportPrompt6,
-                        aiReportPrompt7,
-                        aiReportPrompt8,
-                        aiReportPrompt9,
-                        aiReportPrompt10}))),
+            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(typeof(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, true, 0F))),
             ((DevExpress.Utils.Behaviors.Behavior)(((DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior)(DevExpress.Utils.Behaviors.Behavior.Create(typeof(DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), typeof(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerLocalizationBehaviorSource), new object[] {
                         ((object)(3)),
                         ((object)(false)),
@@ -6212,9 +6172,9 @@ namespace DevExpress.AI.Demos {
             xrDesignPanelListener8});
             this.reportDesigner1.Form = this;
             this.reportDesigner1.XtraTabbedMdiManager = this.xtraTabbedMdiManager1;
-            // 
+            //
             // xtraTabbedMdiManager1
-            // 
+            //
             this.xtraTabbedMdiManager1.MdiParent = this;
             this.xtraTabbedMdiManager1.View = this.tabbedView1;
             this.xtraTabbedMdiManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
@@ -6226,41 +6186,41 @@ namespace DevExpress.AI.Demos {
             this.tabbedView4,
             this.tabbedView3,
             this.tabbedView2});
-            // 
+            //
             // tabbedView8
-            // 
+            //
             this.tabbedView8.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
-            // 
+            //
             // tabbedView1
-            // 
+            //
             this.tabbedView1.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
-            // 
+            //
             // tabbedView7
-            // 
+            //
             this.tabbedView7.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
-            // 
+            //
             // tabbedView6
-            // 
+            //
             this.tabbedView6.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
-            // 
+            //
             // tabbedView5
-            // 
+            //
             this.tabbedView5.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
-            // 
+            //
             // tabbedView4
-            // 
+            //
             this.tabbedView4.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
-            // 
+            //
             // tabbedView3
-            // 
+            //
             this.tabbedView3.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
-            // 
+            //
             // tabbedView2
-            // 
+            //
             this.tabbedView2.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light;
-            // 
+            //
             // ReportDesignerForm
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1830, 973);

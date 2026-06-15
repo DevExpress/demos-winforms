@@ -10,7 +10,7 @@ namespace XtraReportsDemos.AIOperations {
             if (isRegistered)
                 return;
             isRegistered = true;
-            var azureOpenAIEndpoint = new Uri("https://public-api.devexpress.com/demo-openai"); //DevExpress proxy-server
+            var azureOpenAIEndpoint = new Uri("https://api.devexpress.com/demo-openai"); //DevExpress proxy-server
             var azureOpenAIKey = new System.ClientModel.ApiKeyCredential("DEMO"); //Demo key
             AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(azureOpenAIEndpoint, azureOpenAIKey, new AzureOpenAIClientOptions() {
                 Transport = new PromoteHttpStatusErrorsPipelineTransport()

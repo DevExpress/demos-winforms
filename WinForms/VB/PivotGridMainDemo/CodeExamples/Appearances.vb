@@ -53,7 +53,8 @@ Namespace DevExpress.XtraPivotGrid.Demos.CodeExamples
 
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleCase("Html drawing for headers", New System.Type() {GetType(DevExpress.XtraPivotGrid.Demos.CodeExamples.Appearances.DemoHelper)})>
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleUnderlineTokens("AllowHtmlDrawHeaders")>
-        Public Sub EnableHeaderHtlmFormatting(ByVal pivotGridControl As DevExpress.XtraPivotGrid.PivotGridControl)
+        <DevExpress.DXperience.Demos.CodeDemo.CodeExampleDataFile("nwind.xml")>
+        Public Sub EnableHeaderHtmlFormatting(ByVal pivotGridControl As DevExpress.XtraPivotGrid.PivotGridControl)
             pivotGridControl.OptionsView.AllowHtmlDrawHeaders = True
             pivotGridControl.Fields(CStr(("fieldUnitPrice"))).Caption = "<b><color=blue>Unit Price"
             pivotGridControl.Fields(CStr(("fieldProductName"))).Caption = "<b><u> Product Name"
@@ -62,7 +63,8 @@ Namespace DevExpress.XtraPivotGrid.Demos.CodeExamples
 
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleCase("Html drawing for field values", New System.Type() {GetType(DevExpress.XtraPivotGrid.Demos.CodeExamples.Appearances.DemoHelper)})>
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleUnderlineTokens("AllowHtmlDrawFieldValues")>
-        Public Sub EnableFieldHtlmFormatting(ByVal pivotGridControl As DevExpress.XtraPivotGrid.PivotGridControl)
+        <DevExpress.DXperience.Demos.CodeDemo.CodeExampleDataFile("nwind.xml")>
+        Public Sub EnableFieldHtmlFormatting(ByVal pivotGridControl As DevExpress.XtraPivotGrid.PivotGridControl)
             pivotGridControl.HtmlImages = DevExpress.XtraPivotGrid.Demos.CodeExamples.Appearances.DemoHelper.GetHtmlImages()
             pivotGridControl.OptionsView.AllowHtmlDrawFieldValues = True
             AddHandler pivotGridControl.FieldValueDisplayText, Sub(sender, args)
@@ -78,6 +80,7 @@ Namespace DevExpress.XtraPivotGrid.Demos.CodeExamples
 
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleCase("Custom draw for cells", New System.Type() {GetType(DevExpress.XtraPivotGrid.Demos.CodeExamples.Appearances.DemoHelper)})>
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleUnderlineTokens("CustomDrawCell")>
+        <DevExpress.DXperience.Demos.CodeDemo.CodeExampleDataFile("nwind.xml")>
         Public Sub CustomDrawEvents(ByVal pivotGridControl As DevExpress.XtraPivotGrid.PivotGridControl)
             Dim highlightedPoints = New System.Collections.Generic.List(Of System.Drawing.Point)({New System.Drawing.Point With {.X = 0, .Y = 2}, New System.Drawing.Point With {.X = 0, .Y = 3}})
             Dim time As Integer = 0

@@ -43,7 +43,7 @@ Namespace DevExpress.DevAV.ViewModels
                 Case ReportFormat.Pdf
                     report.ExportToPdf(exportStream)
                 Case ReportFormat.Xls
-                    report.ExportToXls(exportStream)
+                    report.ExportToXls(exportStream, New XtraPrinting.XlsExportOptions() With {.FitToPrintedPageWidth = True})
                 Case ReportFormat.Doc
                     report.ExportToDocx(exportStream, New XtraPrinting.DocxExportOptions() With {.TableLayout = True, .ExportMode = XtraPrinting.DocxExportMode.SingleFilePageByPage})
             End Select

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Reflection;
 using DevExpress.Data.Internal;
 using DevExpress.DXperience.Demos.CodeDemo;
@@ -51,6 +51,7 @@ namespace DevExpress.XtraPivotGrid.Demos.Modules {
         protected override List<string> InitializeReferences() {
             List<string> referenceList = base.InitializeReferences();
             referenceList.AddRange(new string[] {
+                "DevExpress.DemoData" + AssemblyInfo.VSuffix,
                 "DevExpress.BonusSkins" + AssemblyInfo.VSuffix,
                 "DevExpress.XtraBars" + AssemblyInfo.VSuffix,
                 "DevExpress.XtraEditors" + AssemblyInfo.VSuffix,

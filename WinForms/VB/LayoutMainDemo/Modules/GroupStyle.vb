@@ -207,13 +207,13 @@ Namespace DevExpress.XtraLayout.Demos
             Dim tickets As System.ComponentModel.BindingList(Of DevExpress.XtraLayout.Demos.Ticket) = New System.ComponentModel.BindingList(Of DevExpress.XtraLayout.Demos.Ticket)()
             'M-L
             For i As Integer = 0 To 10 - 1
-                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("SVO", "LHR", "Moscow", "London", 7, 35, 9, 45, 4 + i * 2, 260), .[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("LHR", "SVO", "London", "Moscow", 13, 25, 19, 05, 11 + i * 3, 275)})
-                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("SVO", "LHR", "Moscow", "London", 7, 35, 9, 45, 11 + i * 2, 275), .Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("LHR", "SVO", "London", "Moscow", 13, 25, 19, 05, 4 + i * 3, 260)})
+                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("MAD", "LHR", "Madrid", "London", 7, 35, 9, 45, 4 + i * 2, 260), .[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("LHR", "MAD", "London", "Madrid", 13, 25, 19, 05, 11 + i * 3, 275)})
+                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("MAD", "LHR", "Madrid", "London", 7, 35, 9, 45, 11 + i * 2, 275), .Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("LHR", "MAD", "London", "Madrid", 13, 25, 19, 05, 4 + i * 3, 260)})
             Next
 
             For i As Integer = 0 To 10 - 1
-                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("DME", "LHR", "Moscow", "London", 18, 10, 20, 20, 1 + i, 310), .[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("LHR", "DME", "London", "Moscow", 22, 35, 28, 20, 4 + i * 2, 295)})
-                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("DME", "LHR", "Moscow", "London", 18, 10, 20, 20, 8 + i, 295), .Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("LHR", "DME", "London", "Moscow", 22, 35, 28, 20, 3 + i * 2, 310)})
+                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("BCN", "LHR", "Barcelona", "London", 18, 10, 20, 20, 1 + i, 310), .[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("LHR", "BCN", "London", "Barcelona", 22, 35, 28, 20, 4 + i * 2, 295)})
+                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("BCN", "LHR", "Barcelona", "London", 18, 10, 20, 20, 8 + i, 295), .Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("LHR", "BCN", "London", "Barcelona", 22, 35, 28, 20, 3 + i * 2, 310)})
             Next
 
             'L-NY
@@ -229,8 +229,8 @@ Namespace DevExpress.XtraLayout.Demos
 
             'M-NY
             For i As Integer = 0 To 20 - 1
-                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("SVO", "JFK", "Moscow", "New York", 9, 20, 12, 05, 3 + i, 320), .[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("JFK", "SVO", "New York", "Moscow", 00, 40, 16, 15, 8 + i * 2, 300)})
-                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("SVO", "JFK", "Moscow", "New York", 9, 20, 12, 05, 8 + i, 300), .Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("JFK", "SVO", "New York", "Moscow", 00, 40, 16, 15, 3 + i * 2, 320)})
+                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("MAD", "JFK", "Madrid", "New York", 9, 20, 12, 05, 3 + i, 320), .[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("JFK", "MAD", "New York", "Madrid", 00, 40, 16, 15, 8 + i * 2, 300)})
+                tickets.Add(New DevExpress.XtraLayout.Demos.Ticket With {.[Return] = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("MAD", "JFK", "Madrid", "New York", 9, 20, 12, 05, 8 + i, 300), .Depart = DevExpress.XtraLayout.Demos.DataHelper.GetFlight("JFK", "MAD", "New York", "Madrid", 00, 40, 16, 15, 3 + i * 2, 320)})
             Next
 
             Return tickets

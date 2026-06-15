@@ -81,7 +81,7 @@ Namespace DevExpress.XtraGauges.Demos
             Me.arcScaleNeedleComponent18 = New DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent()
             Me.arcScaleComponent18 = New DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent()
             Me.arcScaleSpindleCapComponent6 = New DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent()
-            Me.Moscow = New DevExpress.XtraGauges.Win.GaugeControl()
+            Me.Madrid = New DevExpress.XtraGauges.Win.GaugeControl()
             Me.circularGauge5 = New DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge()
             Me.arcScaleBackgroundLayerComponent5 = New DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent()
             Me.arcScaleComponent13 = New DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent()
@@ -249,7 +249,7 @@ Namespace DevExpress.XtraGauges.Demos
             ' layoutControl1
             ' 
             Me.layoutControl1.Controls.Add(Me.Rome)
-            Me.layoutControl1.Controls.Add(Me.Moscow)
+            Me.layoutControl1.Controls.Add(Me.Madrid)
             Me.layoutControl1.Controls.Add(Me.Paris)
             Me.layoutControl1.Controls.Add(Me.Tokyo)
             Me.layoutControl1.Controls.Add(Me.London)
@@ -456,15 +456,15 @@ Namespace DevExpress.XtraGauges.Demos
             Me.arcScaleSpindleCapComponent6.Size = New System.Drawing.SizeF(12F, 12F)
             Me.arcScaleSpindleCapComponent6.ZOrder = -100
             ' 
-            ' Moscow
+            ' Madrid
             ' 
-            Me.Moscow.BackColor = System.Drawing.Color.Transparent
-            Me.Moscow.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-            Me.Moscow.Gauges.AddRange(New DevExpress.XtraGauges.Base.IGauge() {Me.circularGauge5})
-            Me.Moscow.Location = New System.Drawing.Point(459, 8)
-            Me.Moscow.Name = "Moscow"
-            Me.Moscow.Size = New System.Drawing.Size(220, 289)
-            Me.Moscow.TabIndex = 8
+            Me.Madrid.BackColor = System.Drawing.Color.Transparent
+            Me.Madrid.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+            Me.Madrid.Gauges.AddRange(New DevExpress.XtraGauges.Base.IGauge() {Me.circularGauge5})
+            Me.Madrid.Location = New System.Drawing.Point(459, 8)
+            Me.Madrid.Name = "Madrid"
+            Me.Madrid.Size = New System.Drawing.Size(220, 289)
+            Me.Madrid.TabIndex = 8
             ' 
             ' circularGauge5
             ' 
@@ -502,20 +502,20 @@ Namespace DevExpress.XtraGauges.Demos
             scaleLabel4.Name = "Label0"
             scaleLabel4.Position = New DevExpress.XtraGauges.Core.Base.PointF2D(125F, 135F)
             scaleLabel4.Size = New System.Drawing.SizeF(70F, 20F)
-            scaleLabel4.Text = "Moscow"
+            scaleLabel4.Text = "Madrid"
             scaleLabel5.AppearanceText.TextBrush = New DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White")
             scaleLabel5.FormatString = "{0}"
             scaleLabel5.Name = "Label1"
             scaleLabel5.Position = New DevExpress.XtraGauges.Core.Base.PointF2D(75F, 238F)
             scaleLabel5.Size = New System.Drawing.SizeF(50F, 15F)
-            scaleLabel5.Text = "Russia"
+            scaleLabel5.Text = "Spain"
             scaleLabel6.AppearanceText.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             scaleLabel6.AppearanceText.TextBrush = New DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White")
             scaleLabel6.FormatString = "{0:F4}"
             scaleLabel6.Name = "Label2"
             scaleLabel6.Position = New DevExpress.XtraGauges.Core.Base.PointF2D(165F, 225F)
             scaleLabel6.Size = New System.Drawing.SizeF(70F, 20F)
-            scaleLabel6.Text = "2 602.60"
+            scaleLabel6.Text = "73.142"
             Me.arcScaleComponent13.Labels.AddRange(New DevExpress.XtraGauges.Core.Model.ILabel() {scaleLabel4, scaleLabel5, scaleLabel6})
             Me.arcScaleComponent13.MajorTickCount = 13
             Me.arcScaleComponent13.MajorTickmark.FormatString = "{0:F0}"
@@ -551,7 +551,7 @@ Namespace DevExpress.XtraGauges.Demos
             Me.arcScaleStateIndicatorComponent13.Size = New System.Drawing.SizeF(40F, 21F)
             scaleIndicatorState4.IntervalLength = 12F
             scaleIndicatorState4.Name = "Default"
-            scaleIndicatorState4.ShapeType = DevExpress.XtraGauges.Core.Model.StateIndicatorShapeType.FlagRussia
+            scaleIndicatorState4.ShapeType = DevExpress.XtraGauges.Core.Model.StateIndicatorShapeType.FlagSpain
             Me.arcScaleStateIndicatorComponent13.States.AddRange(New DevExpress.XtraGauges.Core.Model.IIndicatorState() {scaleIndicatorState4})
             Me.arcScaleStateIndicatorComponent13.ZOrder = -100
             ' 
@@ -564,7 +564,7 @@ Namespace DevExpress.XtraGauges.Demos
             Me.arcScaleStateIndicatorComponent14.Size = New System.Drawing.SizeF(20F, 20F)
             scaleIndicatorState5.IntervalLength = 12F
             scaleIndicatorState5.Name = "Default"
-            scaleIndicatorState5.ShapeType = DevExpress.XtraGauges.Core.Model.StateIndicatorShapeType.CurrencyRUR
+            scaleIndicatorState5.ShapeType = DevExpress.XtraGauges.Core.Model.StateIndicatorShapeType.CurrencyEUR
             Me.arcScaleStateIndicatorComponent14.States.AddRange(New DevExpress.XtraGauges.Core.Model.IIndicatorState() {scaleIndicatorState5})
             Me.arcScaleStateIndicatorComponent14.ZOrder = -100
             ' 
@@ -1466,7 +1466,7 @@ Namespace DevExpress.XtraGauges.Demos
             ' 
             ' layoutControlItem5
             ' 
-            Me.layoutControlItem5.Control = Me.Moscow
+            Me.layoutControlItem5.Control = Me.Madrid
             Me.layoutControlItem5.CustomizationFormText = "layoutControlItem5"
             Me.layoutControlItem5.Location = New System.Drawing.Point(459, 0)
             Me.layoutControlItem5.Name = "layoutControlItem5"
@@ -1738,7 +1738,7 @@ Namespace DevExpress.XtraGauges.Demos
 
         Private arcScaleSpindleCapComponent6 As DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent
 
-        Private Moscow As DevExpress.XtraGauges.Win.GaugeControl
+        Private Madrid As DevExpress.XtraGauges.Win.GaugeControl
 
         Private circularGauge5 As DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge
 

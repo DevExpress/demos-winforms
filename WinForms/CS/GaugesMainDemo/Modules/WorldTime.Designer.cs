@@ -79,7 +79,7 @@ namespace DevExpress.XtraGauges.Demos {
             this.arcScaleNeedleComponent18 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent();
             this.arcScaleComponent18 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.arcScaleSpindleCapComponent6 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent();
-            this.Moscow = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.Madrid = new DevExpress.XtraGauges.Win.GaugeControl();
             this.circularGauge5 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.arcScaleBackgroundLayerComponent5 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent();
             this.arcScaleComponent13 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
@@ -247,7 +247,7 @@ namespace DevExpress.XtraGauges.Demos {
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.Rome);
-            this.layoutControl1.Controls.Add(this.Moscow);
+            this.layoutControl1.Controls.Add(this.Madrid);
             this.layoutControl1.Controls.Add(this.Paris);
             this.layoutControl1.Controls.Add(this.Tokyo);
             this.layoutControl1.Controls.Add(this.London);
@@ -473,16 +473,16 @@ namespace DevExpress.XtraGauges.Demos {
             this.arcScaleSpindleCapComponent6.Size = new System.Drawing.SizeF(12F, 12F);
             this.arcScaleSpindleCapComponent6.ZOrder = -100;
             // 
-            // Moscow
+            // Madrid
             // 
-            this.Moscow.BackColor = System.Drawing.Color.Transparent;
-            this.Moscow.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.Moscow.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.Madrid.BackColor = System.Drawing.Color.Transparent;
+            this.Madrid.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.Madrid.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.circularGauge5});
-            this.Moscow.Location = new System.Drawing.Point(459, 8);
-            this.Moscow.Name = "Moscow";
-            this.Moscow.Size = new System.Drawing.Size(220, 289);
-            this.Moscow.TabIndex = 8;
+            this.Madrid.Location = new System.Drawing.Point(459, 8);
+            this.Madrid.Name = "Madrid";
+            this.Madrid.Size = new System.Drawing.Size(220, 289);
+            this.Madrid.TabIndex = 8;
             // 
             // circularGauge5
             // 
@@ -532,20 +532,20 @@ namespace DevExpress.XtraGauges.Demos {
             scaleLabel4.Name = "Label0";
             scaleLabel4.Position = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 135F);
             scaleLabel4.Size = new System.Drawing.SizeF(70F, 20F);
-            scaleLabel4.Text = "Moscow";
+            scaleLabel4.Text = "Madrid";
             scaleLabel5.AppearanceText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
             scaleLabel5.FormatString = "{0}";
             scaleLabel5.Name = "Label1";
             scaleLabel5.Position = new DevExpress.XtraGauges.Core.Base.PointF2D(75F, 238F);
             scaleLabel5.Size = new System.Drawing.SizeF(50F, 15F);
-            scaleLabel5.Text = "Russia";
+            scaleLabel5.Text = "Spain";
             scaleLabel6.AppearanceText.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             scaleLabel6.AppearanceText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
             scaleLabel6.FormatString = "{0:F4}";
             scaleLabel6.Name = "Label2";
             scaleLabel6.Position = new DevExpress.XtraGauges.Core.Base.PointF2D(165F, 225F);
             scaleLabel6.Size = new System.Drawing.SizeF(70F, 20F);
-            scaleLabel6.Text = "2 602.60";
+            scaleLabel6.Text = "73.142";
             this.arcScaleComponent13.Labels.AddRange(new DevExpress.XtraGauges.Core.Model.ILabel[] {
             scaleLabel4,
             scaleLabel5,
@@ -584,7 +584,7 @@ namespace DevExpress.XtraGauges.Demos {
             this.arcScaleStateIndicatorComponent13.Size = new System.Drawing.SizeF(40F, 21F);
             scaleIndicatorState4.IntervalLength = 12F;
             scaleIndicatorState4.Name = "Default";
-            scaleIndicatorState4.ShapeType = DevExpress.XtraGauges.Core.Model.StateIndicatorShapeType.FlagRussia;
+            scaleIndicatorState4.ShapeType = DevExpress.XtraGauges.Core.Model.StateIndicatorShapeType.FlagSpain;
             this.arcScaleStateIndicatorComponent13.States.AddRange(new DevExpress.XtraGauges.Core.Model.IIndicatorState[] {
             scaleIndicatorState4});
             this.arcScaleStateIndicatorComponent13.ZOrder = -100;
@@ -598,7 +598,7 @@ namespace DevExpress.XtraGauges.Demos {
             this.arcScaleStateIndicatorComponent14.Size = new System.Drawing.SizeF(20F, 20F);
             scaleIndicatorState5.IntervalLength = 12F;
             scaleIndicatorState5.Name = "Default";
-            scaleIndicatorState5.ShapeType = DevExpress.XtraGauges.Core.Model.StateIndicatorShapeType.CurrencyRUR;
+            scaleIndicatorState5.ShapeType = DevExpress.XtraGauges.Core.Model.StateIndicatorShapeType.CurrencyEUR;
             this.arcScaleStateIndicatorComponent14.States.AddRange(new DevExpress.XtraGauges.Core.Model.IIndicatorState[] {
             scaleIndicatorState5});
             this.arcScaleStateIndicatorComponent14.ZOrder = -100;
@@ -1582,7 +1582,7 @@ namespace DevExpress.XtraGauges.Demos {
             // 
             // layoutControlItem5
             // 
-            this.layoutControlItem5.Control = this.Moscow;
+            this.layoutControlItem5.Control = this.Madrid;
             this.layoutControlItem5.CustomizationFormText = "layoutControlItem5";
             this.layoutControlItem5.Location = new System.Drawing.Point(459, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
@@ -1780,7 +1780,7 @@ namespace DevExpress.XtraGauges.Demos {
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent arcScaleNeedleComponent18;
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent arcScaleComponent18;
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent arcScaleSpindleCapComponent6;
-        private DevExpress.XtraGauges.Win.GaugeControl Moscow;
+        private DevExpress.XtraGauges.Win.GaugeControl Madrid;
         private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge5;
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent arcScaleBackgroundLayerComponent5;
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent arcScaleComponent13;

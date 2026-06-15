@@ -58,7 +58,9 @@
         }
         [CodeExampleCase("Html drawing for headers", new Type[] { typeof(DemoHelper) })]
         [CodeExampleUnderlineTokens("AllowHtmlDrawHeaders")]
-        public static void EnableHeaderHtlmFormatting(PivotGridControl pivotGridControl) {
+        [CodeExampleDataFile("nwind.xml")]
+        public static void EnableHeaderHtmlFormatting(PivotGridControl pivotGridControl) {
+
             pivotGridControl.OptionsView.AllowHtmlDrawHeaders = true;
             pivotGridControl.Fields["fieldUnitPrice"].Caption = "<b><color=blue>Unit Price";
             pivotGridControl.Fields["fieldProductName"].Caption = "<b><u> Product Name";
@@ -66,7 +68,9 @@
         }
         [CodeExampleCase("Html drawing for field values", new Type[] { typeof(DemoHelper) })]
         [CodeExampleUnderlineTokens("AllowHtmlDrawFieldValues")]
-        public static void EnableFieldHtlmFormatting(PivotGridControl pivotGridControl) {
+        [CodeExampleDataFile("nwind.xml")]
+        public static void EnableFieldHtmlFormatting(PivotGridControl pivotGridControl) {
+
             pivotGridControl.HtmlImages = DemoHelper.GetHtmlImages();
             pivotGridControl.OptionsView.AllowHtmlDrawFieldValues = true;
             pivotGridControl.FieldValueDisplayText += (sender, args) => {
@@ -82,6 +86,7 @@
         }
         [CodeExampleCase("Custom draw for cells", new Type[] { typeof(DemoHelper) })]
         [CodeExampleUnderlineTokens("CustomDrawCell")]
+        [CodeExampleDataFile("nwind.xml")]
         public static void CustomDrawEvents(PivotGridControl pivotGridControl) {
             var highlightedPoints = new List<Point>(new[] { new Point { X = 0, Y = 2 }, new Point { X = 0, Y = 3 } });
             int time = 0;

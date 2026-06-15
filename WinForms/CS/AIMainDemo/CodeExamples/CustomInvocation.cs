@@ -44,7 +44,7 @@ namespace DevExpress.AI.Demos {
         public static void Invoke(LayoutControl layoutControl, SimpleButton button) {
             // setup container
             AIExtensionsContainerDefault defaultAIContainer = new AIExtensionsContainerDefault();
-            string AzureOpenAIEndpoint = "https://public-api.devexpress.com/demo-openai";
+            string AzureOpenAIEndpoint = "https://api.devexpress.com/demo-openai";
             string AzureOpenAIKey = "DEMO";
             string DeploymentName = "demo-mini";
             IChatClient azureOpenAIClient = new AzureOpenAIClient(new Uri(AzureOpenAIEndpoint),
@@ -66,7 +66,7 @@ namespace DevExpress.AI.Demos {
         public static void InvokeWithProcessing(LayoutControl layoutControl, SimpleButton button) {
             // setup container
             AIExtensionsContainerDefault defaultAIContainer = new AIExtensionsContainerDefault();
-            string AzureOpenAIEndpoint = "https://public-api.devexpress.com/demo-openai";
+            string AzureOpenAIEndpoint = "https://api.devexpress.com/demo-openai";
             string AzureOpenAIKey = "DEMO";
             string DeploymentName = "demo-mini";
             IChatClient azureOpenAIClient = new AzureOpenAIClient(new Uri(AzureOpenAIEndpoint),

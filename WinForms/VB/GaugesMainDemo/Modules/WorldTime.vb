@@ -27,7 +27,7 @@ Namespace DevExpress.XtraGauges.Demos
             timeShifts = New Dictionary(Of String, Integer)()
             timeShifts.Add("Washington", -4)
             timeShifts.Add("Paris", +1)
-            timeShifts.Add("Moscow", +3)
+            timeShifts.Add("Madrid", +1)
             timeShifts.Add("London", +0)
             timeShifts.Add("Tokyo", +9)
             timeShifts.Add("Rome", +1)

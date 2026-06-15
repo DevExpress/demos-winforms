@@ -637,16 +637,6 @@ Namespace DevExpress.AI.Demos
             Dim superToolTip203 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
             Dim toolTipTitleItem203 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
             Dim toolTipItem203 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
-            Dim aiReportPrompt1 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt2 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt3 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt4 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt5 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt6 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt7 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt8 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt9 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
-            Dim aiReportPrompt10 As DevExpress.AIIntegration.Reporting.AIReportPrompt = New DevExpress.AIIntegration.Reporting.AIReportPrompt()
             Dim xrDesignPanelListener1 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
             Dim xrDesignPanelListener2 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
             Dim xrDesignPanelListener3 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
@@ -1039,15 +1029,15 @@ Namespace DevExpress.AI.Demos
             CType((Me.tabbedView2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.behaviorManager1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
-            ' 
+            '
             ' xrDesignRibbonController1
-            ' 
+            '
             Me.xrDesignRibbonController1.RibbonControl = Me.ribbonControl1
             Me.xrDesignRibbonController1.RibbonStatusBar = Me.ribbonStatusBar1
             Me.xrDesignRibbonController1.XRDesignDockManager = Me.xrDesignDockManager1
-            ' 
+            '
             ' ribbonControl1
-            ' 
+            '
             Me.ribbonControl1.ApplicationButtonDropDownControl = Me.applicationMenu1
             Me.ribbonControl1.AutoHideEmptyItems = True
             Me.ribbonControl1.AutoSizeItems = True
@@ -1073,9 +1063,9 @@ Namespace DevExpress.AI.Demos
             Me.ribbonControl1.Size = New System.Drawing.Size(1830, 296)
             Me.ribbonControl1.StatusBar = Me.ribbonStatusBar1
             Me.ribbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.[True]
-            ' 
+            '
             ' applicationMenu1
-            ' 
+            '
             Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem6)
             Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem9)
             Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem7)
@@ -1085,9 +1075,9 @@ Namespace DevExpress.AI.Demos
             Me.applicationMenu1.MenuDrawMode = DevExpress.XtraBars.MenuDrawMode.LargeImagesText
             Me.applicationMenu1.Name = "applicationMenu1"
             Me.applicationMenu1.Ribbon = Me.ribbonControl1
-            ' 
+            '
             ' commandBarItem6
-            ' 
+            '
             Me.commandBarItem6.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem6.Caption = "New Report"
             Me.commandBarItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport
@@ -1102,9 +1092,9 @@ Namespace DevExpress.AI.Demos
             superToolTip1.Items.Add(toolTipItem1)
             superToolTip1.MaxWidth = 210
             Me.commandBarItem6.SuperTip = superToolTip1
-            ' 
+            '
             ' commandBarItem9
-            ' 
+            '
             Me.commandBarItem9.Caption = "Open..."
             Me.commandBarItem9.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.OpenFile
             Me.commandBarItem9.Enabled = False
@@ -1119,9 +1109,9 @@ Namespace DevExpress.AI.Demos
             superToolTip2.Items.Add(toolTipItem2)
             superToolTip2.MaxWidth = 210
             Me.commandBarItem9.SuperTip = superToolTip2
-            ' 
+            '
             ' commandBarItem7
-            ' 
+            '
             Me.commandBarItem7.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem7.Caption = "Save"
             Me.commandBarItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFile
@@ -1136,9 +1126,9 @@ Namespace DevExpress.AI.Demos
             superToolTip3.Items.Add(toolTipItem3)
             superToolTip3.MaxWidth = 210
             Me.commandBarItem7.SuperTip = superToolTip3
-            ' 
+            '
             ' commandBarItem8
-            ' 
+            '
             Me.commandBarItem8.Caption = "Save All"
             Me.commandBarItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveAll
             Me.commandBarItem8.Enabled = False
@@ -1153,9 +1143,9 @@ Namespace DevExpress.AI.Demos
             superToolTip4.Items.Add(toolTipItem4)
             superToolTip4.MaxWidth = 210
             Me.commandBarItem8.SuperTip = superToolTip4
-            ' 
+            '
             ' commandBarItem125
-            ' 
+            '
             Me.commandBarItem125.Caption = "Close"
             Me.commandBarItem125.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Close
             Me.commandBarItem125.Enabled = False
@@ -1170,9 +1160,9 @@ Namespace DevExpress.AI.Demos
             superToolTip5.Items.Add(toolTipItem5)
             superToolTip5.MaxWidth = 210
             Me.commandBarItem125.SuperTip = superToolTip5
-            ' 
+            '
             ' commandBarItem126
-            ' 
+            '
             Me.commandBarItem126.Caption = "Exit"
             Me.commandBarItem126.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.[Exit]
             Me.commandBarItem126.Enabled = False
@@ -1186,9 +1176,9 @@ Namespace DevExpress.AI.Demos
             superToolTip6.Items.Add(toolTipItem6)
             superToolTip6.MaxWidth = 210
             Me.commandBarItem126.SuperTip = superToolTip6
-            ' 
+            '
             ' commandBarItem1
-            ' 
+            '
             Me.commandBarItem1.Caption = "Designer"
             Me.commandBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowDesignerTab
             Me.commandBarItem1.Enabled = False
@@ -1203,9 +1193,9 @@ Namespace DevExpress.AI.Demos
             superToolTip7.Items.Add(toolTipItem7)
             superToolTip7.MaxWidth = 210
             Me.commandBarItem1.SuperTip = superToolTip7
-            ' 
+            '
             ' commandBarItem2
-            ' 
+            '
             Me.commandBarItem2.Caption = "Preview"
             Me.commandBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowPreviewTab
             Me.commandBarItem2.Enabled = False
@@ -1220,9 +1210,9 @@ Namespace DevExpress.AI.Demos
             superToolTip8.Items.Add(toolTipItem8)
             superToolTip8.MaxWidth = 210
             Me.commandBarItem2.SuperTip = superToolTip8
-            ' 
+            '
             ' commandBarItem3
-            ' 
+            '
             Me.commandBarItem3.Caption = "Scripts"
             Me.commandBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowScriptsTab
             Me.commandBarItem3.Enabled = False
@@ -1236,9 +1226,9 @@ Namespace DevExpress.AI.Demos
             superToolTip9.Items.Add(toolTipItem9)
             superToolTip9.MaxWidth = 210
             Me.commandBarItem3.SuperTip = superToolTip9
-            ' 
+            '
             ' commandBarItem4
-            ' 
+            '
             Me.commandBarItem4.Caption = "Undo"
             Me.commandBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Undo
             Me.commandBarItem4.Enabled = False
@@ -1253,9 +1243,9 @@ Namespace DevExpress.AI.Demos
             superToolTip10.Items.Add(toolTipItem10)
             superToolTip10.MaxWidth = 210
             Me.commandBarItem4.SuperTip = superToolTip10
-            ' 
+            '
             ' commandBarItem5
-            ' 
+            '
             Me.commandBarItem5.Caption = "Redo"
             Me.commandBarItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Redo
             Me.commandBarItem5.Enabled = False
@@ -1270,9 +1260,9 @@ Namespace DevExpress.AI.Demos
             superToolTip11.Items.Add(toolTipItem11)
             superToolTip11.MaxWidth = 210
             Me.commandBarItem5.SuperTip = superToolTip11
-            ' 
+            '
             ' commandBarItem10
-            ' 
+            '
             Me.commandBarItem10.Caption = "New Report"
             Me.commandBarItem10.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport
             Me.commandBarItem10.Description = "Create a new blank report."
@@ -1288,9 +1278,9 @@ Namespace DevExpress.AI.Demos
             superToolTip12.Items.Add(toolTipItem12)
             superToolTip12.MaxWidth = 210
             Me.commandBarItem10.SuperTip = superToolTip12
-            ' 
+            '
             ' commandBarItem11
-            ' 
+            '
             Me.commandBarItem11.Caption = "Create a New Report Using Report Wizard..."
             Me.commandBarItem11.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReportWizard
             Me.commandBarItem11.Description = "Launch the Report Wizard to create a new report."
@@ -1306,9 +1296,9 @@ Namespace DevExpress.AI.Demos
             superToolTip13.Items.Add(toolTipItem13)
             superToolTip13.MaxWidth = 210
             Me.commandBarItem11.SuperTip = superToolTip13
-            ' 
+            '
             ' commandBarItem12
-            ' 
+            '
             Me.commandBarItem12.Caption = "Save"
             Me.commandBarItem12.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFile
             Me.commandBarItem12.Description = "Save the current report."
@@ -1324,9 +1314,9 @@ Namespace DevExpress.AI.Demos
             superToolTip14.Items.Add(toolTipItem14)
             superToolTip14.MaxWidth = 210
             Me.commandBarItem12.SuperTip = superToolTip14
-            ' 
+            '
             ' commandBarItem13
-            ' 
+            '
             Me.commandBarItem13.Caption = "Save As..."
             Me.commandBarItem13.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFileAs
             Me.commandBarItem13.Description = "Save the current report with a new name."
@@ -1341,9 +1331,9 @@ Namespace DevExpress.AI.Demos
             superToolTip15.Items.Add(toolTipItem15)
             superToolTip15.MaxWidth = 210
             Me.commandBarItem13.SuperTip = superToolTip15
-            ' 
+            '
             ' commandBarItem14
-            ' 
+            '
             Me.commandBarItem14.Caption = "Paste"
             Me.commandBarItem14.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Paste
             Me.commandBarItem14.Enabled = False
@@ -1358,9 +1348,9 @@ Namespace DevExpress.AI.Demos
             superToolTip16.Items.Add(toolTipItem16)
             superToolTip16.MaxWidth = 210
             Me.commandBarItem14.SuperTip = superToolTip16
-            ' 
+            '
             ' commandBarItem15
-            ' 
+            '
             Me.commandBarItem15.Caption = "Cut"
             Me.commandBarItem15.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Cut
             Me.commandBarItem15.Enabled = False
@@ -1376,9 +1366,9 @@ Namespace DevExpress.AI.Demos
             superToolTip17.Items.Add(toolTipItem17)
             superToolTip17.MaxWidth = 210
             Me.commandBarItem15.SuperTip = superToolTip17
-            ' 
+            '
             ' commandBarItem16
-            ' 
+            '
             Me.commandBarItem16.Caption = "Copy"
             Me.commandBarItem16.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Copy
             Me.commandBarItem16.Enabled = False
@@ -1394,9 +1384,9 @@ Namespace DevExpress.AI.Demos
             superToolTip18.Items.Add(toolTipItem18)
             superToolTip18.MaxWidth = 210
             Me.commandBarItem16.SuperTip = superToolTip18
-            ' 
+            '
             ' barEditItem1
-            ' 
+            '
             Me.barEditItem1.Edit = Me.recentlyUsedItemsComboBox1
             Me.barEditItem1.EditWidth = 140
             Me.barEditItem1.Id = 17
@@ -1409,17 +1399,17 @@ Namespace DevExpress.AI.Demos
             superToolTip19.Items.Add(toolTipItem19)
             superToolTip19.MaxWidth = 210
             Me.barEditItem1.SuperTip = superToolTip19
-            ' 
+            '
             ' recentlyUsedItemsComboBox1
-            ' 
+            '
             Me.recentlyUsedItemsComboBox1.AppearanceDropDown.Font = New System.Drawing.Font("Tahoma", 11.25F)
             Me.recentlyUsedItemsComboBox1.AppearanceDropDown.Options.UseFont = True
             Me.recentlyUsedItemsComboBox1.AutoHeight = False
             Me.recentlyUsedItemsComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.recentlyUsedItemsComboBox1.Name = "recentlyUsedItemsComboBox1"
-            ' 
+            '
             ' barEditItem2
-            ' 
+            '
             Me.barEditItem2.Edit = Me.designRepositoryItemComboBox1
             Me.barEditItem2.EditWidth = 55
             Me.barEditItem2.Id = 18
@@ -1432,16 +1422,16 @@ Namespace DevExpress.AI.Demos
             superToolTip20.Items.Add(toolTipItem20)
             superToolTip20.MaxWidth = 210
             Me.barEditItem2.SuperTip = superToolTip20
-            ' 
+            '
             ' designRepositoryItemComboBox1
-            ' 
+            '
             Me.designRepositoryItemComboBox1.AutoHeight = False
             Me.designRepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.designRepositoryItemComboBox1.DropDownRows = 16
             Me.designRepositoryItemComboBox1.Name = "designRepositoryItemComboBox1"
-            ' 
+            '
             ' barDockPanelsListItem1
-            ' 
+            '
             Me.barDockPanelsListItem1.Caption = "Windows"
             Me.barDockPanelsListItem1.DockManager = Me.xrDesignDockManager1
             Me.barDockPanelsListItem1.Id = 19
@@ -1457,16 +1447,16 @@ Namespace DevExpress.AI.Demos
             superToolTip21.Items.Add(toolTipItem21)
             superToolTip21.MaxWidth = 210
             Me.barDockPanelsListItem1.SuperTip = superToolTip21
-            ' 
+            '
             ' xrDesignDockManager1
-            ' 
+            '
             Me.xrDesignDockManager1.Form = Me
             Me.xrDesignDockManager1.ImageStream = CType((resources.GetObject("xrDesignDockManager1.ImageStream")), DevExpress.Utils.ImageCollectionStreamer)
             Me.xrDesignDockManager1.RootPanels.AddRange(New DevExpress.XtraBars.Docking.DockPanel() {Me.panelContainer3, Me.panelContainer2, Me.panelContainer4})
             Me.xrDesignDockManager1.TopZIndexControls.AddRange(New String() {"DevExpress.XtraBars.BarDockControl", "DevExpress.XtraBars.StandaloneBarDockControl", "System.Windows.Forms.StatusBar", "System.Windows.Forms.MenuStrip", "System.Windows.Forms.StatusStrip", "DevExpress.XtraBars.Ribbon.RibbonStatusBar", "DevExpress.XtraBars.Ribbon.RibbonControl", "DevExpress.XtraBars.Navigation.OfficeNavigationBar", "DevExpress.XtraBars.Navigation.TileNavPane", "DevExpress.XtraBars.TabFormControl", "DevExpress.XtraReports.UserDesigner.XRToolBoxPanel"})
-            ' 
+            '
             ' panelContainer3
-            ' 
+            '
             Me.panelContainer3.ActiveChild = Me.propertyGridDockPanel1
             Me.panelContainer3.Controls.Add(Me.propertyGridDockPanel1)
             Me.panelContainer3.Controls.Add(Me.reportGalleryDockPanel1)
@@ -1479,9 +1469,9 @@ Namespace DevExpress.AI.Demos
             Me.panelContainer3.Size = New System.Drawing.Size(375, 622)
             Me.panelContainer3.Tabbed = True
             Me.panelContainer3.Text = "panelContainer3"
-            ' 
+            '
             ' propertyGridDockPanel1
-            ' 
+            '
             Me.propertyGridDockPanel1.Controls.Add(Me.propertyGridDockPanel1_Container)
             Me.propertyGridDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.propertyGridDockPanel1.ID = New System.Guid("b38d12c3-cd06-4dec-b93d-63a0088e495a")
@@ -1491,17 +1481,17 @@ Namespace DevExpress.AI.Demos
             Me.propertyGridDockPanel1.OriginalSize = New System.Drawing.Size(561, 526)
             Me.propertyGridDockPanel1.Size = New System.Drawing.Size(374, 526)
             Me.propertyGridDockPanel1.Text = "Properties"
-            ' 
+            '
             ' propertyGridDockPanel1_Container
-            ' 
+            '
             Me.propertyGridDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
             Me.propertyGridDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.propertyGridDockPanel1_Container.Name = "propertyGridDockPanel1_Container"
             Me.propertyGridDockPanel1_Container.Size = New System.Drawing.Size(374, 526)
             Me.propertyGridDockPanel1_Container.TabIndex = 0
-            ' 
+            '
             ' reportGalleryDockPanel1
-            ' 
+            '
             Me.reportGalleryDockPanel1.Controls.Add(Me.reportGalleryDockPanel1_Container)
             Me.reportGalleryDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.reportGalleryDockPanel1.ID = New System.Guid("7cd5b1e8-63bb-46f7-af65-af61eb851a38")
@@ -1511,17 +1501,17 @@ Namespace DevExpress.AI.Demos
             Me.reportGalleryDockPanel1.OriginalSize = New System.Drawing.Size(561, 526)
             Me.reportGalleryDockPanel1.Size = New System.Drawing.Size(374, 526)
             Me.reportGalleryDockPanel1.Text = "Report Gallery"
-            ' 
+            '
             ' reportGalleryDockPanel1_Container
-            ' 
+            '
             Me.reportGalleryDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
             Me.reportGalleryDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.reportGalleryDockPanel1_Container.Name = "reportGalleryDockPanel1_Container"
             Me.reportGalleryDockPanel1_Container.Size = New System.Drawing.Size(374, 526)
             Me.reportGalleryDockPanel1_Container.TabIndex = 0
-            ' 
+            '
             ' panelContainer2
-            ' 
+            '
             Me.panelContainer2.ActiveChild = Me.reportExplorerDockPanel1
             Me.panelContainer2.Controls.Add(Me.reportExplorerDockPanel1)
             Me.panelContainer2.Controls.Add(Me.fieldListDockPanel1)
@@ -1535,9 +1525,9 @@ Namespace DevExpress.AI.Demos
             Me.panelContainer2.Size = New System.Drawing.Size(375, 622)
             Me.panelContainer2.Tabbed = True
             Me.panelContainer2.Text = "panelContainer2"
-            ' 
+            '
             ' reportExplorerDockPanel1
-            ' 
+            '
             Me.reportExplorerDockPanel1.Controls.Add(Me.reportExplorerDockPanel1_Container)
             Me.reportExplorerDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.reportExplorerDockPanel1.ID = New System.Guid("fb3ec6cc-3b9b-4b9c-91cf-cff78c1edbf1")
@@ -1547,17 +1537,17 @@ Namespace DevExpress.AI.Demos
             Me.reportExplorerDockPanel1.OriginalSize = New System.Drawing.Size(561, 526)
             Me.reportExplorerDockPanel1.Size = New System.Drawing.Size(374, 526)
             Me.reportExplorerDockPanel1.Text = "Report Explorer"
-            ' 
+            '
             ' reportExplorerDockPanel1_Container
-            ' 
+            '
             Me.reportExplorerDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
             Me.reportExplorerDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.reportExplorerDockPanel1_Container.Name = "reportExplorerDockPanel1_Container"
             Me.reportExplorerDockPanel1_Container.Size = New System.Drawing.Size(374, 526)
             Me.reportExplorerDockPanel1_Container.TabIndex = 0
-            ' 
+            '
             ' fieldListDockPanel1
-            ' 
+            '
             Me.fieldListDockPanel1.Controls.Add(Me.fieldListDockPanel1_Container)
             Me.fieldListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.fieldListDockPanel1.ID = New System.Guid("faf69838-a93f-4114-83e8-d0d09cc5ce95")
@@ -1567,17 +1557,17 @@ Namespace DevExpress.AI.Demos
             Me.fieldListDockPanel1.OriginalSize = New System.Drawing.Size(561, 526)
             Me.fieldListDockPanel1.Size = New System.Drawing.Size(374, 526)
             Me.fieldListDockPanel1.Text = "Field List"
-            ' 
+            '
             ' fieldListDockPanel1_Container
-            ' 
+            '
             Me.fieldListDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
             Me.fieldListDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.fieldListDockPanel1_Container.Name = "fieldListDockPanel1_Container"
             Me.fieldListDockPanel1_Container.Size = New System.Drawing.Size(374, 526)
             Me.fieldListDockPanel1_Container.TabIndex = 0
-            ' 
+            '
             ' panelContainer4
-            ' 
+            '
             Me.panelContainer4.ActiveChild = Me.errorListDockPanel1
             Me.panelContainer4.Controls.Add(Me.errorListDockPanel1)
             Me.panelContainer4.Controls.Add(Me.groupAndSortDockPanel1)
@@ -1591,9 +1581,9 @@ Namespace DevExpress.AI.Demos
             Me.panelContainer4.Size = New System.Drawing.Size(1080, 200)
             Me.panelContainer4.Tabbed = True
             Me.panelContainer4.Text = "panelContainer4"
-            ' 
+            '
             ' errorListDockPanel1
-            ' 
+            '
             Me.errorListDockPanel1.Controls.Add(Me.errorListDockPanel1_Container)
             Me.errorListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.errorListDockPanel1.ID = New System.Guid("5a9a01fd-6e95-4e81-a8c4-ac63153d7488")
@@ -1603,17 +1593,17 @@ Namespace DevExpress.AI.Demos
             Me.errorListDockPanel1.OriginalSize = New System.Drawing.Size(706, 203)
             Me.errorListDockPanel1.Size = New System.Drawing.Size(1080, 103)
             Me.errorListDockPanel1.Text = "Report Design Analyzer"
-            ' 
+            '
             ' errorListDockPanel1_Container
-            ' 
+            '
             Me.errorListDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
             Me.errorListDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.errorListDockPanel1_Container.Name = "errorListDockPanel1_Container"
             Me.errorListDockPanel1_Container.Size = New System.Drawing.Size(1080, 103)
             Me.errorListDockPanel1_Container.TabIndex = 0
-            ' 
+            '
             ' groupAndSortDockPanel1
-            ' 
+            '
             Me.groupAndSortDockPanel1.Controls.Add(Me.groupAndSortDockPanel1_Container)
             Me.groupAndSortDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
             Me.groupAndSortDockPanel1.ID = New System.Guid("4bab159e-c495-4d67-87dc-f4e895da443e")
@@ -1623,17 +1613,17 @@ Namespace DevExpress.AI.Demos
             Me.groupAndSortDockPanel1.OriginalSize = New System.Drawing.Size(706, 203)
             Me.groupAndSortDockPanel1.Size = New System.Drawing.Size(1080, 103)
             Me.groupAndSortDockPanel1.Text = "Group and Sort"
-            ' 
+            '
             ' groupAndSortDockPanel1_Container
-            ' 
+            '
             Me.groupAndSortDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
             Me.groupAndSortDockPanel1_Container.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
             Me.groupAndSortDockPanel1_Container.Name = "groupAndSortDockPanel1_Container"
             Me.groupAndSortDockPanel1_Container.Size = New System.Drawing.Size(1080, 103)
             Me.groupAndSortDockPanel1_Container.TabIndex = 0
-            ' 
+            '
             ' commandBarItem17
-            ' 
+            '
             Me.commandBarItem17.Caption = "Bold"
             Me.commandBarItem17.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontBold
             Me.commandBarItem17.Enabled = False
@@ -1648,9 +1638,9 @@ Namespace DevExpress.AI.Demos
             superToolTip22.Items.Add(toolTipItem22)
             superToolTip22.MaxWidth = 210
             Me.commandBarItem17.SuperTip = superToolTip22
-            ' 
+            '
             ' commandBarItem18
-            ' 
+            '
             Me.commandBarItem18.Caption = "Italic"
             Me.commandBarItem18.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontItalic
             Me.commandBarItem18.Enabled = False
@@ -1665,9 +1655,9 @@ Namespace DevExpress.AI.Demos
             superToolTip23.Items.Add(toolTipItem23)
             superToolTip23.MaxWidth = 210
             Me.commandBarItem18.SuperTip = superToolTip23
-            ' 
+            '
             ' commandBarItem19
-            ' 
+            '
             Me.commandBarItem19.Caption = "Underline"
             Me.commandBarItem19.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontUnderline
             Me.commandBarItem19.Enabled = False
@@ -1682,9 +1672,9 @@ Namespace DevExpress.AI.Demos
             superToolTip24.Items.Add(toolTipItem24)
             superToolTip24.MaxWidth = 210
             Me.commandBarItem19.SuperTip = superToolTip24
-            ' 
+            '
             ' commandColorBarItem1
-            ' 
+            '
             Me.commandColorBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandColorBarItem1.Caption = "Foreground Color"
             Me.commandColorBarItem1.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.[False]
@@ -1700,9 +1690,9 @@ Namespace DevExpress.AI.Demos
             superToolTip25.Items.Add(toolTipItem25)
             superToolTip25.MaxWidth = 210
             Me.commandColorBarItem1.SuperTip = superToolTip25
-            ' 
+            '
             ' commandColorBarItem2
-            ' 
+            '
             Me.commandColorBarItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandColorBarItem2.Caption = "Background Color"
             Me.commandColorBarItem2.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.[False]
@@ -1718,9 +1708,9 @@ Namespace DevExpress.AI.Demos
             superToolTip26.Items.Add(toolTipItem26)
             superToolTip26.MaxWidth = 210
             Me.commandColorBarItem2.SuperTip = superToolTip26
-            ' 
+            '
             ' commandBarItem20
-            ' 
+            '
             Me.commandBarItem20.Caption = "Align Text Left"
             Me.commandBarItem20.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyLeft
             Me.commandBarItem20.Enabled = False
@@ -1734,9 +1724,9 @@ Namespace DevExpress.AI.Demos
             superToolTip27.Items.Add(toolTipItem27)
             superToolTip27.MaxWidth = 210
             Me.commandBarItem20.SuperTip = superToolTip27
-            ' 
+            '
             ' commandBarItem21
-            ' 
+            '
             Me.commandBarItem21.Caption = "Center Text"
             Me.commandBarItem21.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyCenter
             Me.commandBarItem21.Enabled = False
@@ -1750,9 +1740,9 @@ Namespace DevExpress.AI.Demos
             superToolTip28.Items.Add(toolTipItem28)
             superToolTip28.MaxWidth = 210
             Me.commandBarItem21.SuperTip = superToolTip28
-            ' 
+            '
             ' commandBarItem22
-            ' 
+            '
             Me.commandBarItem22.Caption = "Align Text Right"
             Me.commandBarItem22.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyRight
             Me.commandBarItem22.Enabled = False
@@ -1766,9 +1756,9 @@ Namespace DevExpress.AI.Demos
             superToolTip29.Items.Add(toolTipItem29)
             superToolTip29.MaxWidth = 210
             Me.commandBarItem22.SuperTip = superToolTip29
-            ' 
+            '
             ' commandBarItem23
-            ' 
+            '
             Me.commandBarItem23.Caption = "Justify"
             Me.commandBarItem23.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyJustify
             Me.commandBarItem23.Enabled = False
@@ -1782,9 +1772,9 @@ Namespace DevExpress.AI.Demos
             superToolTip30.Items.Add(toolTipItem30)
             superToolTip30.MaxWidth = 210
             Me.commandBarItem23.SuperTip = superToolTip30
-            ' 
+            '
             ' commandBarItem24
-            ' 
+            '
             Me.commandBarItem24.Caption = "Strikethrough"
             Me.commandBarItem24.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontStrikeout
             Me.commandBarItem24.Enabled = False
@@ -1798,9 +1788,9 @@ Namespace DevExpress.AI.Demos
             superToolTip31.Items.Add(toolTipItem31)
             superToolTip31.MaxWidth = 210
             Me.commandBarItem24.SuperTip = superToolTip31
-            ' 
+            '
             ' commandBarItem25
-            ' 
+            '
             Me.commandBarItem25.Caption = "Align Text Top"
             Me.commandBarItem25.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignTop
             Me.commandBarItem25.Enabled = False
@@ -1814,9 +1804,9 @@ Namespace DevExpress.AI.Demos
             superToolTip32.Items.Add(toolTipItem32)
             superToolTip32.MaxWidth = 210
             Me.commandBarItem25.SuperTip = superToolTip32
-            ' 
+            '
             ' commandBarItem26
-            ' 
+            '
             Me.commandBarItem26.Caption = "Align Text Middle"
             Me.commandBarItem26.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignMiddle
             Me.commandBarItem26.Enabled = False
@@ -1830,9 +1820,9 @@ Namespace DevExpress.AI.Demos
             superToolTip33.Items.Add(toolTipItem33)
             superToolTip33.MaxWidth = 210
             Me.commandBarItem26.SuperTip = superToolTip33
-            ' 
+            '
             ' commandBarItem27
-            ' 
+            '
             Me.commandBarItem27.Caption = "Align Text Bottom"
             Me.commandBarItem27.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignBottom
             Me.commandBarItem27.Enabled = False
@@ -1846,9 +1836,9 @@ Namespace DevExpress.AI.Demos
             superToolTip34.Items.Add(toolTipItem34)
             superToolTip34.MaxWidth = 210
             Me.commandBarItem27.SuperTip = superToolTip34
-            ' 
+            '
             ' commandBarItem28
-            ' 
+            '
             Me.commandBarItem28.Caption = "Add Calculated Field"
             Me.commandBarItem28.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddCalculatedField
             Me.commandBarItem28.Enabled = False
@@ -1863,9 +1853,9 @@ Namespace DevExpress.AI.Demos
             superToolTip35.Items.Add(toolTipItem35)
             superToolTip35.MaxWidth = 210
             Me.commandBarItem28.SuperTip = superToolTip35
-            ' 
+            '
             ' commandBarItem29
-            ' 
+            '
             Me.commandBarItem29.Caption = "Add Parameter"
             Me.commandBarItem29.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddParameter
             Me.commandBarItem29.Enabled = False
@@ -1880,9 +1870,9 @@ Namespace DevExpress.AI.Demos
             superToolTip36.Items.Add(toolTipItem36)
             superToolTip36.MaxWidth = 210
             Me.commandBarItem29.SuperTip = superToolTip36
-            ' 
+            '
             ' commandBarItem30
-            ' 
+            '
             Me.commandBarItem30.Caption = "Add Data Source"
             Me.commandBarItem30.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddNewDataSource
             Me.commandBarItem30.Enabled = False
@@ -1896,9 +1886,9 @@ Namespace DevExpress.AI.Demos
             superToolTip37.Items.Add(toolTipItem37)
             superToolTip37.MaxWidth = 210
             Me.commandBarItem30.SuperTip = superToolTip37
-            ' 
+            '
             ' commandBarItem31
-            ' 
+            '
             Me.commandBarItem31.Caption = "Extract Style"
             Me.commandBarItem31.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ExtractStyle
             Me.commandBarItem31.Enabled = False
@@ -1912,9 +1902,9 @@ Namespace DevExpress.AI.Demos
             superToolTip38.Items.Add(toolTipItem38)
             superToolTip38.MaxWidth = 210
             Me.commandBarItem31.SuperTip = superToolTip38
-            ' 
+            '
             ' commandBarItem32
-            ' 
+            '
             Me.commandBarItem32.Caption = "All Borders"
             Me.commandBarItem32.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BordersAll
             Me.commandBarItem32.Enabled = False
@@ -1928,9 +1918,9 @@ Namespace DevExpress.AI.Demos
             superToolTip39.Items.Add(toolTipItem39)
             superToolTip39.MaxWidth = 210
             Me.commandBarItem32.SuperTip = superToolTip39
-            ' 
+            '
             ' commandBarItem33
-            ' 
+            '
             Me.commandBarItem33.Caption = "No Border"
             Me.commandBarItem33.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BordersNone
             Me.commandBarItem33.Enabled = False
@@ -1944,9 +1934,9 @@ Namespace DevExpress.AI.Demos
             superToolTip40.Items.Add(toolTipItem40)
             superToolTip40.MaxWidth = 210
             Me.commandBarItem33.SuperTip = superToolTip40
-            ' 
+            '
             ' commandBarItem34
-            ' 
+            '
             Me.commandBarItem34.Caption = "Left Border"
             Me.commandBarItem34.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderLeft
             Me.commandBarItem34.Enabled = False
@@ -1960,9 +1950,9 @@ Namespace DevExpress.AI.Demos
             superToolTip41.Items.Add(toolTipItem41)
             superToolTip41.MaxWidth = 210
             Me.commandBarItem34.SuperTip = superToolTip41
-            ' 
+            '
             ' commandBarItem35
-            ' 
+            '
             Me.commandBarItem35.Caption = "Top Border"
             Me.commandBarItem35.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderTop
             Me.commandBarItem35.Enabled = False
@@ -1976,9 +1966,9 @@ Namespace DevExpress.AI.Demos
             superToolTip42.Items.Add(toolTipItem42)
             superToolTip42.MaxWidth = 210
             Me.commandBarItem35.SuperTip = superToolTip42
-            ' 
+            '
             ' commandBarItem36
-            ' 
+            '
             Me.commandBarItem36.Caption = "Right Border"
             Me.commandBarItem36.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderRight
             Me.commandBarItem36.Enabled = False
@@ -1992,9 +1982,9 @@ Namespace DevExpress.AI.Demos
             superToolTip43.Items.Add(toolTipItem43)
             superToolTip43.MaxWidth = 210
             Me.commandBarItem36.SuperTip = superToolTip43
-            ' 
+            '
             ' commandBarItem37
-            ' 
+            '
             Me.commandBarItem37.Caption = "Bottom Border"
             Me.commandBarItem37.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderBottom
             Me.commandBarItem37.Enabled = False
@@ -2008,9 +1998,9 @@ Namespace DevExpress.AI.Demos
             superToolTip44.Items.Add(toolTipItem44)
             superToolTip44.MaxWidth = 210
             Me.commandBarItem37.SuperTip = superToolTip44
-            ' 
+            '
             ' commandColorBarItem3
-            ' 
+            '
             Me.commandColorBarItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandColorBarItem3.Caption = "Border Color"
             Me.commandColorBarItem3.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.[False]
@@ -2026,9 +2016,9 @@ Namespace DevExpress.AI.Demos
             superToolTip45.Items.Add(toolTipItem45)
             superToolTip45.MaxWidth = 210
             Me.commandColorBarItem3.SuperTip = superToolTip45
-            ' 
+            '
             ' commandBarItem38
-            ' 
+            '
             Me.commandBarItem38.ActAsDropDown = True
             Me.commandBarItem38.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem38.Caption = "Border Width"
@@ -2044,9 +2034,9 @@ Namespace DevExpress.AI.Demos
             superToolTip46.Items.Add(toolTipItem46)
             superToolTip46.MaxWidth = 210
             Me.commandBarItem38.SuperTip = superToolTip46
-            ' 
+            '
             ' commandBarItem39
-            ' 
+            '
             Me.commandBarItem39.Caption = "Align to Grid"
             Me.commandBarItem39.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignToGrid
             Me.commandBarItem39.Enabled = False
@@ -2060,9 +2050,9 @@ Namespace DevExpress.AI.Demos
             superToolTip47.Items.Add(toolTipItem47)
             superToolTip47.MaxWidth = 210
             Me.commandBarItem39.SuperTip = superToolTip47
-            ' 
+            '
             ' commandBarItem40
-            ' 
+            '
             Me.commandBarItem40.Caption = "Align Lefts"
             Me.commandBarItem40.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignLeft
             Me.commandBarItem40.Enabled = False
@@ -2076,9 +2066,9 @@ Namespace DevExpress.AI.Demos
             superToolTip48.Items.Add(toolTipItem48)
             superToolTip48.MaxWidth = 210
             Me.commandBarItem40.SuperTip = superToolTip48
-            ' 
+            '
             ' commandBarItem41
-            ' 
+            '
             Me.commandBarItem41.Caption = "Align Centers"
             Me.commandBarItem41.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignVerticalCenters
             Me.commandBarItem41.Enabled = False
@@ -2092,9 +2082,9 @@ Namespace DevExpress.AI.Demos
             superToolTip49.Items.Add(toolTipItem49)
             superToolTip49.MaxWidth = 210
             Me.commandBarItem41.SuperTip = superToolTip49
-            ' 
+            '
             ' commandBarItem42
-            ' 
+            '
             Me.commandBarItem42.Caption = "Align Rights"
             Me.commandBarItem42.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignRight
             Me.commandBarItem42.Enabled = False
@@ -2108,9 +2098,9 @@ Namespace DevExpress.AI.Demos
             superToolTip50.Items.Add(toolTipItem50)
             superToolTip50.MaxWidth = 210
             Me.commandBarItem42.SuperTip = superToolTip50
-            ' 
+            '
             ' commandBarItem43
-            ' 
+            '
             Me.commandBarItem43.Caption = "Align Tops"
             Me.commandBarItem43.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignTop
             Me.commandBarItem43.Enabled = False
@@ -2124,9 +2114,9 @@ Namespace DevExpress.AI.Demos
             superToolTip51.Items.Add(toolTipItem51)
             superToolTip51.MaxWidth = 210
             Me.commandBarItem43.SuperTip = superToolTip51
-            ' 
+            '
             ' commandBarItem44
-            ' 
+            '
             Me.commandBarItem44.Caption = "Align Middles"
             Me.commandBarItem44.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignHorizontalCenters
             Me.commandBarItem44.Enabled = False
@@ -2140,9 +2130,9 @@ Namespace DevExpress.AI.Demos
             superToolTip52.Items.Add(toolTipItem52)
             superToolTip52.MaxWidth = 210
             Me.commandBarItem44.SuperTip = superToolTip52
-            ' 
+            '
             ' commandBarItem45
-            ' 
+            '
             Me.commandBarItem45.Caption = "Align Bottoms"
             Me.commandBarItem45.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignBottom
             Me.commandBarItem45.Enabled = False
@@ -2156,9 +2146,9 @@ Namespace DevExpress.AI.Demos
             superToolTip53.Items.Add(toolTipItem53)
             superToolTip53.MaxWidth = 210
             Me.commandBarItem45.SuperTip = superToolTip53
-            ' 
+            '
             ' commandBarItem46
-            ' 
+            '
             Me.commandBarItem46.Caption = "Apply Same Width"
             Me.commandBarItem46.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControlWidth
             Me.commandBarItem46.Enabled = False
@@ -2172,9 +2162,9 @@ Namespace DevExpress.AI.Demos
             superToolTip54.Items.Add(toolTipItem54)
             superToolTip54.MaxWidth = 210
             Me.commandBarItem46.SuperTip = superToolTip54
-            ' 
+            '
             ' commandBarItem47
-            ' 
+            '
             Me.commandBarItem47.Caption = "Fit Bounds to Grid"
             Me.commandBarItem47.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToGrid
             Me.commandBarItem47.Enabled = False
@@ -2188,9 +2178,9 @@ Namespace DevExpress.AI.Demos
             superToolTip55.Items.Add(toolTipItem55)
             superToolTip55.MaxWidth = 210
             Me.commandBarItem47.SuperTip = superToolTip55
-            ' 
+            '
             ' commandBarItem48
-            ' 
+            '
             Me.commandBarItem48.Caption = "Apply Same Height"
             Me.commandBarItem48.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControlHeight
             Me.commandBarItem48.Enabled = False
@@ -2204,9 +2194,9 @@ Namespace DevExpress.AI.Demos
             superToolTip56.Items.Add(toolTipItem56)
             superToolTip56.MaxWidth = 210
             Me.commandBarItem48.SuperTip = superToolTip56
-            ' 
+            '
             ' commandBarItem49
-            ' 
+            '
             Me.commandBarItem49.Caption = "Apply Same Size"
             Me.commandBarItem49.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControl
             Me.commandBarItem49.Enabled = False
@@ -2220,9 +2210,9 @@ Namespace DevExpress.AI.Demos
             superToolTip57.Items.Add(toolTipItem57)
             superToolTip57.MaxWidth = 210
             Me.commandBarItem49.SuperTip = superToolTip57
-            ' 
+            '
             ' commandBarItem50
-            ' 
+            '
             Me.commandBarItem50.Caption = "Apply Equal Horizontal Spacing"
             Me.commandBarItem50.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceMakeEqual
             Me.commandBarItem50.Enabled = False
@@ -2236,9 +2226,9 @@ Namespace DevExpress.AI.Demos
             superToolTip58.Items.Add(toolTipItem58)
             superToolTip58.MaxWidth = 210
             Me.commandBarItem50.SuperTip = superToolTip58
-            ' 
+            '
             ' commandBarItem51
-            ' 
+            '
             Me.commandBarItem51.Caption = "Increase Horizontal Spacing"
             Me.commandBarItem51.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceIncrease
             Me.commandBarItem51.Enabled = False
@@ -2252,9 +2242,9 @@ Namespace DevExpress.AI.Demos
             superToolTip59.Items.Add(toolTipItem59)
             superToolTip59.MaxWidth = 210
             Me.commandBarItem51.SuperTip = superToolTip59
-            ' 
+            '
             ' commandBarItem52
-            ' 
+            '
             Me.commandBarItem52.Caption = "Decrease Horizontal Spacing"
             Me.commandBarItem52.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceDecrease
             Me.commandBarItem52.Enabled = False
@@ -2268,9 +2258,9 @@ Namespace DevExpress.AI.Demos
             superToolTip60.Items.Add(toolTipItem60)
             superToolTip60.MaxWidth = 210
             Me.commandBarItem52.SuperTip = superToolTip60
-            ' 
+            '
             ' commandBarItem53
-            ' 
+            '
             Me.commandBarItem53.Caption = "Remove Horizontal Spacing"
             Me.commandBarItem53.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceConcatenate
             Me.commandBarItem53.Enabled = False
@@ -2284,9 +2274,9 @@ Namespace DevExpress.AI.Demos
             superToolTip61.Items.Add(toolTipItem61)
             superToolTip61.MaxWidth = 210
             Me.commandBarItem53.SuperTip = superToolTip61
-            ' 
+            '
             ' commandBarItem54
-            ' 
+            '
             Me.commandBarItem54.Caption = "Apply Equal Vertical Spacing"
             Me.commandBarItem54.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceMakeEqual
             Me.commandBarItem54.Enabled = False
@@ -2300,9 +2290,9 @@ Namespace DevExpress.AI.Demos
             superToolTip62.Items.Add(toolTipItem62)
             superToolTip62.MaxWidth = 210
             Me.commandBarItem54.SuperTip = superToolTip62
-            ' 
+            '
             ' commandBarItem55
-            ' 
+            '
             Me.commandBarItem55.Caption = "Increase Vertical Spacing"
             Me.commandBarItem55.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceIncrease
             Me.commandBarItem55.Enabled = False
@@ -2316,9 +2306,9 @@ Namespace DevExpress.AI.Demos
             superToolTip63.Items.Add(toolTipItem63)
             superToolTip63.MaxWidth = 210
             Me.commandBarItem55.SuperTip = superToolTip63
-            ' 
+            '
             ' commandBarItem56
-            ' 
+            '
             Me.commandBarItem56.Caption = "Decrease Vertical Spacing"
             Me.commandBarItem56.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceDecrease
             Me.commandBarItem56.Enabled = False
@@ -2332,9 +2322,9 @@ Namespace DevExpress.AI.Demos
             superToolTip64.Items.Add(toolTipItem64)
             superToolTip64.MaxWidth = 210
             Me.commandBarItem56.SuperTip = superToolTip64
-            ' 
+            '
             ' commandBarItem57
-            ' 
+            '
             Me.commandBarItem57.Caption = "Remove Vertical Spacing"
             Me.commandBarItem57.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceConcatenate
             Me.commandBarItem57.Enabled = False
@@ -2348,9 +2338,9 @@ Namespace DevExpress.AI.Demos
             superToolTip65.Items.Add(toolTipItem65)
             superToolTip65.MaxWidth = 210
             Me.commandBarItem57.SuperTip = superToolTip65
-            ' 
+            '
             ' commandBarItem58
-            ' 
+            '
             Me.commandBarItem58.Caption = "Center Horizontally"
             Me.commandBarItem58.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CenterHorizontally
             Me.commandBarItem58.Enabled = False
@@ -2364,9 +2354,9 @@ Namespace DevExpress.AI.Demos
             superToolTip66.Items.Add(toolTipItem66)
             superToolTip66.MaxWidth = 210
             Me.commandBarItem58.SuperTip = superToolTip66
-            ' 
+            '
             ' commandBarItem59
-            ' 
+            '
             Me.commandBarItem59.Caption = "Center Vertically"
             Me.commandBarItem59.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CenterVertically
             Me.commandBarItem59.Enabled = False
@@ -2380,9 +2370,9 @@ Namespace DevExpress.AI.Demos
             superToolTip67.Items.Add(toolTipItem67)
             superToolTip67.MaxWidth = 210
             Me.commandBarItem59.SuperTip = superToolTip67
-            ' 
+            '
             ' commandBarItem60
-            ' 
+            '
             Me.commandBarItem60.Caption = "Bring to Front"
             Me.commandBarItem60.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BringToFront
             Me.commandBarItem60.Enabled = False
@@ -2396,9 +2386,9 @@ Namespace DevExpress.AI.Demos
             superToolTip68.Items.Add(toolTipItem68)
             superToolTip68.MaxWidth = 210
             Me.commandBarItem60.SuperTip = superToolTip68
-            ' 
+            '
             ' commandBarItem61
-            ' 
+            '
             Me.commandBarItem61.Caption = "Send to Back"
             Me.commandBarItem61.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SendToBack
             Me.commandBarItem61.Enabled = False
@@ -2412,9 +2402,9 @@ Namespace DevExpress.AI.Demos
             superToolTip69.Items.Add(toolTipItem69)
             superToolTip69.MaxWidth = 210
             Me.commandBarItem61.SuperTip = superToolTip69
-            ' 
+            '
             ' commandBarCheckItem1
-            ' 
+            '
             Me.commandBarCheckItem1.Caption = "Snap to Grid"
             Me.commandBarCheckItem1.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SnapToGrid
@@ -2429,9 +2419,9 @@ Namespace DevExpress.AI.Demos
             superToolTip70.Items.Add(toolTipItem70)
             superToolTip70.MaxWidth = 210
             Me.commandBarCheckItem1.SuperTip = superToolTip70
-            ' 
+            '
             ' commandBarCheckItem2
-            ' 
+            '
             Me.commandBarCheckItem2.Caption = "Snap Lines"
             Me.commandBarCheckItem2.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SnapLines
@@ -2446,9 +2436,9 @@ Namespace DevExpress.AI.Demos
             superToolTip71.Items.Add(toolTipItem71)
             superToolTip71.MaxWidth = 210
             Me.commandBarCheckItem2.SuperTip = superToolTip71
-            ' 
+            '
             ' commandBarItem62
-            ' 
+            '
             Me.commandBarItem62.Caption = "Fit Bounds to Container"
             Me.commandBarItem62.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitBoundsToContainer
             Me.commandBarItem62.Enabled = False
@@ -2462,9 +2452,9 @@ Namespace DevExpress.AI.Demos
             superToolTip72.Items.Add(toolTipItem72)
             superToolTip72.MaxWidth = 210
             Me.commandBarItem62.SuperTip = superToolTip72
-            ' 
+            '
             ' commandBarItem63
-            ' 
+            '
             Me.commandBarItem63.ActAsDropDown = True
             Me.commandBarItem63.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem63.Caption = "Size"
@@ -2480,9 +2470,9 @@ Namespace DevExpress.AI.Demos
             superToolTip73.Items.Add(toolTipItem73)
             superToolTip73.MaxWidth = 210
             Me.commandBarItem63.SuperTip = superToolTip73
-            ' 
+            '
             ' commandBarItem64
-            ' 
+            '
             Me.commandBarItem64.ActAsDropDown = True
             Me.commandBarItem64.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem64.Caption = "Orientation"
@@ -2498,9 +2488,9 @@ Namespace DevExpress.AI.Demos
             superToolTip74.Items.Add(toolTipItem74)
             superToolTip74.MaxWidth = 210
             Me.commandBarItem64.SuperTip = superToolTip74
-            ' 
+            '
             ' commandBarItem65
-            ' 
+            '
             Me.commandBarItem65.ActAsDropDown = True
             Me.commandBarItem65.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem65.Caption = "Margins"
@@ -2516,9 +2506,9 @@ Namespace DevExpress.AI.Demos
             superToolTip75.Items.Add(toolTipItem75)
             superToolTip75.MaxWidth = 210
             Me.commandBarItem65.SuperTip = superToolTip75
-            ' 
+            '
             ' commandColorBarItem4
-            ' 
+            '
             Me.commandColorBarItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandColorBarItem4.Caption = "Page Color"
             Me.commandColorBarItem4.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.[False]
@@ -2534,9 +2524,9 @@ Namespace DevExpress.AI.Demos
             superToolTip76.Items.Add(toolTipItem76)
             superToolTip76.MaxWidth = 210
             Me.commandColorBarItem4.SuperTip = superToolTip76
-            ' 
+            '
             ' commandBarItem66
-            ' 
+            '
             Me.commandBarItem66.Caption = "Watermark"
             Me.commandBarItem66.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageWatermark
             Me.commandBarItem66.Enabled = False
@@ -2550,9 +2540,9 @@ Namespace DevExpress.AI.Demos
             superToolTip77.Items.Add(toolTipItem77)
             superToolTip77.MaxWidth = 210
             Me.commandBarItem66.SuperTip = superToolTip77
-            ' 
+            '
             ' commandBarItem67
-            ' 
+            '
             Me.commandBarItem67.Caption = "Printing-related Warnings"
             Me.commandBarItem67.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowPrintingWarnings
             Me.commandBarItem67.Enabled = False
@@ -2566,9 +2556,9 @@ Namespace DevExpress.AI.Demos
             superToolTip78.Items.Add(toolTipItem78)
             superToolTip78.MaxWidth = 210
             Me.commandBarItem67.SuperTip = superToolTip78
-            ' 
+            '
             ' commandBarItem68
-            ' 
+            '
             Me.commandBarItem68.Caption = "Export-related Warnings"
             Me.commandBarItem68.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowExportWarnings
             Me.commandBarItem68.Enabled = False
@@ -2582,9 +2572,9 @@ Namespace DevExpress.AI.Demos
             superToolTip79.Items.Add(toolTipItem79)
             superToolTip79.MaxWidth = 210
             Me.commandBarItem68.SuperTip = superToolTip79
-            ' 
+            '
             ' commandBarItem69
-            ' 
+            '
             Me.commandBarItem69.Caption = "Watermark"
             Me.commandBarItem69.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.DrawWatermark
             Me.commandBarItem69.Enabled = False
@@ -2599,9 +2589,9 @@ Namespace DevExpress.AI.Demos
             superToolTip80.Items.Add(toolTipItem80)
             superToolTip80.MaxWidth = 210
             Me.commandBarItem69.SuperTip = superToolTip80
-            ' 
+            '
             ' commandBarItem70
-            ' 
+            '
             Me.commandBarItem70.Caption = "Grid Lines"
             Me.commandBarItem70.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.DrawGridLines
             Me.commandBarItem70.Enabled = False
@@ -2616,9 +2606,9 @@ Namespace DevExpress.AI.Demos
             superToolTip81.Items.Add(toolTipItem81)
             superToolTip81.MaxWidth = 210
             Me.commandBarItem70.SuperTip = superToolTip81
-            ' 
+            '
             ' commandBarItem71
-            ' 
+            '
             Me.commandBarItem71.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem71.Caption = "Zoom"
             Me.commandBarItem71.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Zoom
@@ -2633,9 +2623,9 @@ Namespace DevExpress.AI.Demos
             superToolTip82.Items.Add(toolTipItem82)
             superToolTip82.MaxWidth = 210
             Me.commandBarItem71.SuperTip = superToolTip82
-            ' 
+            '
             ' commandBarItem72
-            ' 
+            '
             Me.commandBarItem72.Caption = "Zoom In"
             Me.commandBarItem72.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ZoomIn
             Me.commandBarItem72.Enabled = False
@@ -2650,9 +2640,9 @@ Namespace DevExpress.AI.Demos
             superToolTip83.Items.Add(toolTipItem83)
             superToolTip83.MaxWidth = 210
             Me.commandBarItem72.SuperTip = superToolTip83
-            ' 
+            '
             ' commandBarItem73
-            ' 
+            '
             Me.commandBarItem73.Caption = "Zoom Out"
             Me.commandBarItem73.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ZoomOut
             Me.commandBarItem73.Enabled = False
@@ -2667,9 +2657,9 @@ Namespace DevExpress.AI.Demos
             superToolTip84.Items.Add(toolTipItem84)
             superToolTip84.MaxWidth = 210
             Me.commandBarItem73.SuperTip = superToolTip84
-            ' 
+            '
             ' commandBarItem74
-            ' 
+            '
             Me.commandBarItem74.Caption = "Validate"
             Me.commandBarItem74.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsValidate
             Me.commandBarItem74.Enabled = False
@@ -2683,14 +2673,14 @@ Namespace DevExpress.AI.Demos
             superToolTip85.Items.Add(toolTipItem85)
             superToolTip85.MaxWidth = 210
             Me.commandBarItem74.SuperTip = superToolTip85
-            ' 
+            '
             ' commandGalleryBarItem1
-            ' 
+            '
             Me.commandGalleryBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.StyleName
             Me.commandGalleryBarItem1.Enabled = False
-            ' 
-            ' 
-            ' 
+            '
+            '
+            '
             Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.Options.UseTextOptions = True
             Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
             Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
@@ -2709,76 +2699,76 @@ Namespace DevExpress.AI.Demos
             Me.commandGalleryBarItem1.Gallery.ShowItemText = True
             Me.commandGalleryBarItem1.Id = 84
             Me.commandGalleryBarItem1.Name = "commandGalleryBarItem1"
-            ' 
+            '
             ' commandGalleryBarItem2
-            ' 
+            '
             Me.commandGalleryBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeSymbology
             Me.commandGalleryBarItem2.Enabled = False
-            ' 
-            ' 
-            ' 
+            '
+            '
+            '
             Me.commandGalleryBarItem2.Gallery.ColumnCount = 8
             Me.commandGalleryBarItem2.Gallery.ImageSize = New System.Drawing.Size(1200, 427)
             Me.commandGalleryBarItem2.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
             Me.commandGalleryBarItem2.Gallery.ShowItemText = True
             Me.commandGalleryBarItem2.Id = 85
             Me.commandGalleryBarItem2.Name = "commandGalleryBarItem2"
-            ' 
+            '
             ' commandGalleryBarItem3
-            ' 
+            '
             Me.commandGalleryBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAppearanceName
             Me.commandGalleryBarItem3.Enabled = False
-            ' 
-            ' 
-            ' 
+            '
+            '
+            '
             Me.commandGalleryBarItem3.Gallery.ColumnCount = 7
             Me.commandGalleryBarItem3.Gallery.ImageSize = New System.Drawing.Size(900, 581)
             Me.commandGalleryBarItem3.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
             Me.commandGalleryBarItem3.Id = 86
             Me.commandGalleryBarItem3.Name = "commandGalleryBarItem3"
-            ' 
+            '
             ' commandGalleryBarItem4
-            ' 
+            '
             Me.commandGalleryBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SparklineView
             Me.commandGalleryBarItem4.Enabled = False
-            ' 
-            ' 
-            ' 
+            '
+            '
+            '
             Me.commandGalleryBarItem4.Gallery.ColumnCount = 4
             Me.commandGalleryBarItem4.Gallery.ImageSize = New System.Drawing.Size(576, 622)
             Me.commandGalleryBarItem4.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
             Me.commandGalleryBarItem4.Id = 87
             Me.commandGalleryBarItem4.Name = "commandGalleryBarItem4"
-            ' 
+            '
             ' commandGalleryBarItem5
-            ' 
+            '
             Me.commandGalleryBarItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewTypeStyle
             Me.commandGalleryBarItem5.Enabled = False
-            ' 
-            ' 
-            ' 
+            '
+            '
+            '
             Me.commandGalleryBarItem5.Gallery.ColumnCount = 7
             Me.commandGalleryBarItem5.Gallery.ImageSize = New System.Drawing.Size(576, 622)
             Me.commandGalleryBarItem5.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
             Me.commandGalleryBarItem5.Id = 88
             Me.commandGalleryBarItem5.Name = "commandGalleryBarItem5"
-            ' 
+            '
             ' commandGalleryBarItem6
-            ' 
+            '
             Me.commandGalleryBarItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShapeType
             Me.commandGalleryBarItem6.Enabled = False
-            ' 
-            ' 
-            ' 
+            '
+            '
+            '
             Me.commandGalleryBarItem6.Gallery.ColumnCount = 23
             Me.commandGalleryBarItem6.Gallery.DistanceBetweenItems = 12
             Me.commandGalleryBarItem6.Gallery.ImageSize = New System.Drawing.Size(48, 48)
             Me.commandGalleryBarItem6.Gallery.ScaleImages = DevExpress.Utils.DefaultBoolean.[True]
             Me.commandGalleryBarItem6.Id = 89
             Me.commandGalleryBarItem6.Name = "commandGalleryBarItem6"
-            ' 
+            '
             ' commandBarEditItem1
-            ' 
+            '
             Me.commandBarEditItem1.Caption = "Width: "
             Me.commandBarEditItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellWidth
             Me.commandBarEditItem1.Edit = Me.repositoryItemSpinEdit1
@@ -2794,16 +2784,16 @@ Namespace DevExpress.AI.Demos
             superToolTip86.Items.Add(toolTipItem86)
             superToolTip86.MaxWidth = 210
             Me.commandBarEditItem1.SuperTip = superToolTip86
-            ' 
+            '
             ' repositoryItemSpinEdit1
-            ' 
+            '
             Me.repositoryItemSpinEdit1.AutoHeight = False
             Me.repositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemSpinEdit1.MaxValue = New Decimal(New Integer() {-1, -1, -1, 0})
             Me.repositoryItemSpinEdit1.Name = "repositoryItemSpinEdit1"
-            ' 
+            '
             ' commandBarEditItem2
-            ' 
+            '
             Me.commandBarEditItem2.Caption = "Height: "
             Me.commandBarEditItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellHeight
             Me.commandBarEditItem2.Edit = Me.repositoryItemSpinEdit2
@@ -2819,16 +2809,16 @@ Namespace DevExpress.AI.Demos
             superToolTip87.Items.Add(toolTipItem87)
             superToolTip87.MaxWidth = 210
             Me.commandBarEditItem2.SuperTip = superToolTip87
-            ' 
+            '
             ' repositoryItemSpinEdit2
-            ' 
+            '
             Me.repositoryItemSpinEdit2.AutoHeight = False
             Me.repositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemSpinEdit2.MaxValue = New Decimal(New Integer() {-1, -1, -1, 0})
             Me.repositoryItemSpinEdit2.Name = "repositoryItemSpinEdit2"
-            ' 
+            '
             ' commandBarEditItem3
-            ' 
+            '
             Me.commandBarEditItem3.Caption = "Horizontal Spacing: "
             Me.commandBarEditItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellHorizontalSpacing
             Me.commandBarEditItem3.Edit = Me.repositoryItemSpinEdit3
@@ -2844,16 +2834,16 @@ Namespace DevExpress.AI.Demos
             superToolTip88.Items.Add(toolTipItem88)
             superToolTip88.MaxWidth = 210
             Me.commandBarEditItem3.SuperTip = superToolTip88
-            ' 
+            '
             ' repositoryItemSpinEdit3
-            ' 
+            '
             Me.repositoryItemSpinEdit3.AutoHeight = False
             Me.repositoryItemSpinEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemSpinEdit3.MaxValue = New Decimal(New Integer() {-1, -1, -1, 0})
             Me.repositoryItemSpinEdit3.Name = "repositoryItemSpinEdit3"
-            ' 
+            '
             ' commandBarEditItem4
-            ' 
+            '
             Me.commandBarEditItem4.Caption = "Vertical Spacing: "
             Me.commandBarEditItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellVerticalSpacing
             Me.commandBarEditItem4.Edit = Me.repositoryItemSpinEdit4
@@ -2869,16 +2859,16 @@ Namespace DevExpress.AI.Demos
             superToolTip89.Items.Add(toolTipItem89)
             superToolTip89.MaxWidth = 210
             Me.commandBarEditItem4.SuperTip = superToolTip89
-            ' 
+            '
             ' repositoryItemSpinEdit4
-            ' 
+            '
             Me.repositoryItemSpinEdit4.AutoHeight = False
             Me.repositoryItemSpinEdit4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemSpinEdit4.MaxValue = New Decimal(New Integer() {-1, -1, -1, 0})
             Me.repositoryItemSpinEdit4.Name = "repositoryItemSpinEdit4"
-            ' 
+            '
             ' commandBarEditItem5
-            ' 
+            '
             Me.commandBarEditItem5.Caption = "Border Dash Style"
             Me.commandBarEditItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderDashStyle
             Me.commandBarEditItem5.Edit = Me.repositoryItemImageComboBox1
@@ -2894,15 +2884,15 @@ Namespace DevExpress.AI.Demos
             superToolTip90.Items.Add(toolTipItem90)
             superToolTip90.MaxWidth = 210
             Me.commandBarEditItem5.SuperTip = superToolTip90
-            ' 
+            '
             ' repositoryItemImageComboBox1
-            ' 
+            '
             Me.repositoryItemImageComboBox1.AutoHeight = False
             Me.repositoryItemImageComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemImageComboBox1.Name = "repositoryItemImageComboBox1"
-            ' 
+            '
             ' commandBarEditItem6
-            ' 
+            '
             Me.commandBarEditItem6.Caption = "Control: "
             Me.commandBarEditItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsSelectControl
             Me.commandBarEditItem6.Edit = Me.repositoryItemLookUpEdit1
@@ -2918,15 +2908,15 @@ Namespace DevExpress.AI.Demos
             superToolTip91.Items.Add(toolTipItem91)
             superToolTip91.MaxWidth = 210
             Me.commandBarEditItem6.SuperTip = superToolTip91
-            ' 
+            '
             ' repositoryItemLookUpEdit1
-            ' 
+            '
             Me.repositoryItemLookUpEdit1.AutoHeight = False
             Me.repositoryItemLookUpEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1"
-            ' 
+            '
             ' commandBarEditItem7
-            ' 
+            '
             Me.commandBarEditItem7.Caption = "Event: "
             Me.commandBarEditItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsSelectEvent
             Me.commandBarEditItem7.Edit = Me.repositoryItemComboBox1
@@ -2942,15 +2932,15 @@ Namespace DevExpress.AI.Demos
             superToolTip92.Items.Add(toolTipItem92)
             superToolTip92.MaxWidth = 210
             Me.commandBarEditItem7.SuperTip = superToolTip92
-            ' 
+            '
             ' repositoryItemComboBox1
-            ' 
+            '
             Me.repositoryItemComboBox1.AutoHeight = False
             Me.repositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemComboBox1.Name = "repositoryItemComboBox1"
-            ' 
+            '
             ' commandBarItem75
-            ' 
+            '
             Me.commandBarItem75.Caption = "Table"
             Me.commandBarItem75.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectTable
             Me.commandBarItem75.Enabled = False
@@ -2964,9 +2954,9 @@ Namespace DevExpress.AI.Demos
             superToolTip93.Items.Add(toolTipItem93)
             superToolTip93.MaxWidth = 210
             Me.commandBarItem75.SuperTip = superToolTip93
-            ' 
+            '
             ' commandBarItem76
-            ' 
+            '
             Me.commandBarItem76.Caption = "Row"
             Me.commandBarItem76.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectRow
             Me.commandBarItem76.Enabled = False
@@ -2980,9 +2970,9 @@ Namespace DevExpress.AI.Demos
             superToolTip94.Items.Add(toolTipItem94)
             superToolTip94.MaxWidth = 210
             Me.commandBarItem76.SuperTip = superToolTip94
-            ' 
+            '
             ' commandBarItem77
-            ' 
+            '
             Me.commandBarItem77.Caption = "Column"
             Me.commandBarItem77.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectColumn
             Me.commandBarItem77.Enabled = False
@@ -2996,9 +2986,9 @@ Namespace DevExpress.AI.Demos
             superToolTip95.Items.Add(toolTipItem95)
             superToolTip95.MaxWidth = 210
             Me.commandBarItem77.SuperTip = superToolTip95
-            ' 
+            '
             ' commandBarItem78
-            ' 
+            '
             Me.commandBarItem78.Caption = "Cell"
             Me.commandBarItem78.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteCell
             Me.commandBarItem78.Enabled = False
@@ -3012,9 +3002,9 @@ Namespace DevExpress.AI.Demos
             superToolTip96.Items.Add(toolTipItem96)
             superToolTip96.MaxWidth = 210
             Me.commandBarItem78.SuperTip = superToolTip96
-            ' 
+            '
             ' commandBarItem79
-            ' 
+            '
             Me.commandBarItem79.Caption = "Row"
             Me.commandBarItem79.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteRow
             Me.commandBarItem79.Enabled = False
@@ -3028,9 +3018,9 @@ Namespace DevExpress.AI.Demos
             superToolTip97.Items.Add(toolTipItem97)
             superToolTip97.MaxWidth = 210
             Me.commandBarItem79.SuperTip = superToolTip97
-            ' 
+            '
             ' commandBarItem80
-            ' 
+            '
             Me.commandBarItem80.Caption = "Column"
             Me.commandBarItem80.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteColumn
             Me.commandBarItem80.Enabled = False
@@ -3044,9 +3034,9 @@ Namespace DevExpress.AI.Demos
             superToolTip98.Items.Add(toolTipItem98)
             superToolTip98.MaxWidth = 210
             Me.commandBarItem80.SuperTip = superToolTip98
-            ' 
+            '
             ' commandBarItem81
-            ' 
+            '
             Me.commandBarItem81.Caption = "Table"
             Me.commandBarItem81.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteTable
             Me.commandBarItem81.Enabled = False
@@ -3060,9 +3050,9 @@ Namespace DevExpress.AI.Demos
             superToolTip99.Items.Add(toolTipItem99)
             superToolTip99.MaxWidth = 210
             Me.commandBarItem81.SuperTip = superToolTip99
-            ' 
+            '
             ' commandBarItem82
-            ' 
+            '
             Me.commandBarItem82.Caption = "Row Above"
             Me.commandBarItem82.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertRowAbove
             Me.commandBarItem82.Enabled = False
@@ -3076,9 +3066,9 @@ Namespace DevExpress.AI.Demos
             superToolTip100.Items.Add(toolTipItem100)
             superToolTip100.MaxWidth = 210
             Me.commandBarItem82.SuperTip = superToolTip100
-            ' 
+            '
             ' commandBarItem83
-            ' 
+            '
             Me.commandBarItem83.Caption = "Row Below"
             Me.commandBarItem83.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertRowBelow
             Me.commandBarItem83.Enabled = False
@@ -3092,9 +3082,9 @@ Namespace DevExpress.AI.Demos
             superToolTip101.Items.Add(toolTipItem101)
             superToolTip101.MaxWidth = 210
             Me.commandBarItem83.SuperTip = superToolTip101
-            ' 
+            '
             ' commandBarItem84
-            ' 
+            '
             Me.commandBarItem84.Caption = "Column to Left"
             Me.commandBarItem84.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertColumnToLeft
             Me.commandBarItem84.Enabled = False
@@ -3108,9 +3098,9 @@ Namespace DevExpress.AI.Demos
             superToolTip102.Items.Add(toolTipItem102)
             superToolTip102.MaxWidth = 210
             Me.commandBarItem84.SuperTip = superToolTip102
-            ' 
+            '
             ' commandBarItem85
-            ' 
+            '
             Me.commandBarItem85.Caption = "Column to Right"
             Me.commandBarItem85.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertColumnToRight
             Me.commandBarItem85.Enabled = False
@@ -3124,9 +3114,9 @@ Namespace DevExpress.AI.Demos
             superToolTip103.Items.Add(toolTipItem103)
             superToolTip103.MaxWidth = 210
             Me.commandBarItem85.SuperTip = superToolTip103
-            ' 
+            '
             ' commandBarItem86
-            ' 
+            '
             Me.commandBarItem86.Caption = "Rows"
             Me.commandBarItem86.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDistributeRowsEvenly
             Me.commandBarItem86.Enabled = False
@@ -3140,9 +3130,9 @@ Namespace DevExpress.AI.Demos
             superToolTip104.Items.Add(toolTipItem104)
             superToolTip104.MaxWidth = 210
             Me.commandBarItem86.SuperTip = superToolTip104
-            ' 
+            '
             ' commandBarItem87
-            ' 
+            '
             Me.commandBarItem87.Caption = "Columns"
             Me.commandBarItem87.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDistributeColumnsEvenly
             Me.commandBarItem87.Enabled = False
@@ -3156,9 +3146,9 @@ Namespace DevExpress.AI.Demos
             superToolTip105.Items.Add(toolTipItem105)
             superToolTip105.MaxWidth = 210
             Me.commandBarItem87.SuperTip = superToolTip105
-            ' 
+            '
             ' commandBarItem88
-            ' 
+            '
             Me.commandBarItem88.Caption = "Merge Cells"
             Me.commandBarItem88.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableMergeCells
             Me.commandBarItem88.Enabled = False
@@ -3172,9 +3162,9 @@ Namespace DevExpress.AI.Demos
             superToolTip106.Items.Add(toolTipItem106)
             superToolTip106.MaxWidth = 210
             Me.commandBarItem88.SuperTip = superToolTip106
-            ' 
+            '
             ' commandBarItem89
-            ' 
+            '
             Me.commandBarItem89.Caption = "Split Cells"
             Me.commandBarItem89.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSplitCells
             Me.commandBarItem89.Enabled = False
@@ -3188,9 +3178,9 @@ Namespace DevExpress.AI.Demos
             superToolTip107.Items.Add(toolTipItem107)
             superToolTip107.MaxWidth = 210
             Me.commandBarItem89.SuperTip = superToolTip107
-            ' 
+            '
             ' commandBarItem90
-            ' 
+            '
             Me.commandBarItem90.Caption = "Run Designer"
             Me.commandBarItem90.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRunDesigner
             Me.commandBarItem90.Enabled = False
@@ -3204,9 +3194,9 @@ Namespace DevExpress.AI.Demos
             superToolTip108.Items.Add(toolTipItem108)
             superToolTip108.MaxWidth = 210
             Me.commandBarItem90.SuperTip = superToolTip108
-            ' 
+            '
             ' commandBarItem91
-            ' 
+            '
             Me.commandBarItem91.Caption = "Add Data Source"
             Me.commandBarItem91.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridAddDataSource
             Me.commandBarItem91.Enabled = False
@@ -3220,9 +3210,9 @@ Namespace DevExpress.AI.Demos
             superToolTip109.Items.Add(toolTipItem109)
             superToolTip109.MaxWidth = 210
             Me.commandBarItem91.SuperTip = superToolTip109
-            ' 
+            '
             ' commandBarItem92
-            ' 
+            '
             Me.commandBarItem92.Caption = "Remove Field"
             Me.commandBarItem92.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRemoveField
             Me.commandBarItem92.Enabled = False
@@ -3236,9 +3226,9 @@ Namespace DevExpress.AI.Demos
             superToolTip110.Items.Add(toolTipItem110)
             superToolTip110.MaxWidth = 210
             Me.commandBarItem92.SuperTip = superToolTip110
-            ' 
+            '
             ' commandBarItem93
-            ' 
+            '
             Me.commandBarItem93.ActAsDropDown = True
             Me.commandBarItem93.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem93.Caption = "Add Field"
@@ -3254,9 +3244,9 @@ Namespace DevExpress.AI.Demos
             superToolTip111.Items.Add(toolTipItem111)
             superToolTip111.MaxWidth = 210
             Me.commandBarItem93.SuperTip = superToolTip111
-            ' 
+            '
             ' commandBarItem94
-            ' 
+            '
             Me.commandBarItem94.Caption = "Vertical Lines"
             Me.commandBarItem94.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridVerticalLines
             Me.commandBarItem94.Enabled = False
@@ -3270,9 +3260,9 @@ Namespace DevExpress.AI.Demos
             superToolTip112.Items.Add(toolTipItem112)
             superToolTip112.MaxWidth = 210
             Me.commandBarItem94.SuperTip = superToolTip112
-            ' 
+            '
             ' commandBarItem95
-            ' 
+            '
             Me.commandBarItem95.Caption = "Horizontal Lines"
             Me.commandBarItem95.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridHorizontalLines
             Me.commandBarItem95.Enabled = False
@@ -3286,9 +3276,9 @@ Namespace DevExpress.AI.Demos
             superToolTip113.Items.Add(toolTipItem113)
             superToolTip113.MaxWidth = 210
             Me.commandBarItem95.SuperTip = superToolTip113
-            ' 
+            '
             ' commandBarItem96
-            ' 
+            '
             Me.commandBarItem96.Caption = "Data Headers"
             Me.commandBarItem96.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridDataHeaders
             Me.commandBarItem96.Enabled = False
@@ -3302,9 +3292,9 @@ Namespace DevExpress.AI.Demos
             superToolTip114.Items.Add(toolTipItem114)
             superToolTip114.MaxWidth = 210
             Me.commandBarItem96.SuperTip = superToolTip114
-            ' 
+            '
             ' commandBarItem97
-            ' 
+            '
             Me.commandBarItem97.Caption = "Column Headers"
             Me.commandBarItem97.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridColumnHeaders
             Me.commandBarItem97.Enabled = False
@@ -3318,9 +3308,9 @@ Namespace DevExpress.AI.Demos
             superToolTip115.Items.Add(toolTipItem115)
             superToolTip115.MaxWidth = 210
             Me.commandBarItem97.SuperTip = superToolTip115
-            ' 
+            '
             ' commandBarItem98
-            ' 
+            '
             Me.commandBarItem98.Caption = "Row Headers"
             Me.commandBarItem98.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRowHeaders
             Me.commandBarItem98.Enabled = False
@@ -3334,9 +3324,9 @@ Namespace DevExpress.AI.Demos
             superToolTip116.Items.Add(toolTipItem116)
             superToolTip116.MaxWidth = 210
             Me.commandBarItem98.SuperTip = superToolTip116
-            ' 
+            '
             ' commandBarItem99
-            ' 
+            '
             Me.commandBarItem99.Caption = "Column Area On Every Page"
             Me.commandBarItem99.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridColumnAreaOnEveryPage
             Me.commandBarItem99.Enabled = False
@@ -3351,9 +3341,9 @@ Namespace DevExpress.AI.Demos
             superToolTip117.Items.Add(toolTipItem117)
             superToolTip117.MaxWidth = 210
             Me.commandBarItem99.SuperTip = superToolTip117
-            ' 
+            '
             ' commandBarItem100
-            ' 
+            '
             Me.commandBarItem100.Caption = "Row Area On Every Page"
             Me.commandBarItem100.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRowAreaOnEveryPage
             Me.commandBarItem100.Enabled = False
@@ -3368,9 +3358,9 @@ Namespace DevExpress.AI.Demos
             superToolTip118.Items.Add(toolTipItem118)
             superToolTip118.MaxWidth = 210
             Me.commandBarItem100.SuperTip = superToolTip118
-            ' 
+            '
             ' commandBarItem101
-            ' 
+            '
             Me.commandBarItem101.Caption = "Load..."
             Me.commandBarItem101.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartLoad
             Me.commandBarItem101.Enabled = False
@@ -3385,9 +3375,9 @@ Namespace DevExpress.AI.Demos
             superToolTip119.Items.Add(toolTipItem119)
             superToolTip119.MaxWidth = 210
             Me.commandBarItem101.SuperTip = superToolTip119
-            ' 
+            '
             ' commandBarItem102
-            ' 
+            '
             Me.commandBarItem102.Caption = "Save..."
             Me.commandBarItem102.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartSave
             Me.commandBarItem102.Enabled = False
@@ -3402,9 +3392,9 @@ Namespace DevExpress.AI.Demos
             superToolTip120.Items.Add(toolTipItem120)
             superToolTip120.MaxWidth = 210
             Me.commandBarItem102.SuperTip = superToolTip120
-            ' 
+            '
             ' commandBarItem103
-            ' 
+            '
             Me.commandBarItem103.Caption = "Run Designer"
             Me.commandBarItem103.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRunDesigner
             Me.commandBarItem103.Enabled = False
@@ -3418,9 +3408,9 @@ Namespace DevExpress.AI.Demos
             superToolTip121.Items.Add(toolTipItem121)
             superToolTip121.MaxWidth = 210
             Me.commandBarItem103.SuperTip = superToolTip121
-            ' 
+            '
             ' commandBarItem104
-            ' 
+            '
             Me.commandBarItem104.Caption = "Add Data Source"
             Me.commandBarItem104.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddDataSource
             Me.commandBarItem104.Enabled = False
@@ -3434,9 +3424,9 @@ Namespace DevExpress.AI.Demos
             superToolTip122.Items.Add(toolTipItem122)
             superToolTip122.MaxWidth = 210
             Me.commandBarItem104.SuperTip = superToolTip122
-            ' 
+            '
             ' commandBarItem105
-            ' 
+            '
             Me.commandBarItem105.ActAsDropDown = True
             Me.commandBarItem105.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem105.Caption = "Palette"
@@ -3452,9 +3442,9 @@ Namespace DevExpress.AI.Demos
             superToolTip123.Items.Add(toolTipItem123)
             superToolTip123.MaxWidth = 210
             Me.commandBarItem105.SuperTip = superToolTip123
-            ' 
+            '
             ' commandBarItem106
-            ' 
+            '
             Me.commandBarItem106.ActAsDropDown = True
             Me.commandBarItem106.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem106.Caption = "Bar"
@@ -3470,9 +3460,9 @@ Namespace DevExpress.AI.Demos
             superToolTip124.Items.Add(toolTipItem124)
             superToolTip124.MaxWidth = 210
             Me.commandBarItem106.SuperTip = superToolTip124
-            ' 
+            '
             ' commandBarItem107
-            ' 
+            '
             Me.commandBarItem107.ActAsDropDown = True
             Me.commandBarItem107.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem107.Caption = "Line"
@@ -3488,9 +3478,9 @@ Namespace DevExpress.AI.Demos
             superToolTip125.Items.Add(toolTipItem125)
             superToolTip125.MaxWidth = 210
             Me.commandBarItem107.SuperTip = superToolTip125
-            ' 
+            '
             ' commandBarItem108
-            ' 
+            '
             Me.commandBarItem108.ActAsDropDown = True
             Me.commandBarItem108.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem108.Caption = "Area"
@@ -3506,9 +3496,9 @@ Namespace DevExpress.AI.Demos
             superToolTip126.Items.Add(toolTipItem126)
             superToolTip126.MaxWidth = 210
             Me.commandBarItem108.SuperTip = superToolTip126
-            ' 
+            '
             ' commandBarItem109
-            ' 
+            '
             Me.commandBarItem109.ActAsDropDown = True
             Me.commandBarItem109.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem109.Caption = "Range"
@@ -3524,9 +3514,9 @@ Namespace DevExpress.AI.Demos
             superToolTip127.Items.Add(toolTipItem127)
             superToolTip127.MaxWidth = 210
             Me.commandBarItem109.SuperTip = superToolTip127
-            ' 
+            '
             ' commandBarItem110
-            ' 
+            '
             Me.commandBarItem110.ActAsDropDown = True
             Me.commandBarItem110.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem110.Caption = "Pie and Doughnut"
@@ -3542,9 +3532,9 @@ Namespace DevExpress.AI.Demos
             superToolTip128.Items.Add(toolTipItem128)
             superToolTip128.MaxWidth = 210
             Me.commandBarItem110.SuperTip = superToolTip128
-            ' 
+            '
             ' commandBarItem111
-            ' 
+            '
             Me.commandBarItem111.ActAsDropDown = True
             Me.commandBarItem111.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem111.Caption = "Radar and Polar"
@@ -3560,9 +3550,9 @@ Namespace DevExpress.AI.Demos
             superToolTip129.Items.Add(toolTipItem129)
             superToolTip129.MaxWidth = 210
             Me.commandBarItem111.SuperTip = superToolTip129
-            ' 
+            '
             ' commandBarItem112
-            ' 
+            '
             Me.commandBarItem112.ActAsDropDown = True
             Me.commandBarItem112.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.commandBarItem112.Caption = "Other Series"
@@ -3578,9 +3568,9 @@ Namespace DevExpress.AI.Demos
             superToolTip130.Items.Add(toolTipItem130)
             superToolTip130.MaxWidth = 210
             Me.commandBarItem112.SuperTip = superToolTip130
-            ' 
+            '
             ' commandBarItem113
-            ' 
+            '
             Me.commandBarItem113.Caption = "Remove Series"
             Me.commandBarItem113.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRemoveSeries
             Me.commandBarItem113.Enabled = False
@@ -3594,9 +3584,9 @@ Namespace DevExpress.AI.Demos
             superToolTip131.Items.Add(toolTipItem131)
             superToolTip131.MaxWidth = 210
             Me.commandBarItem113.SuperTip = superToolTip131
-            ' 
+            '
             ' commandBarItem114
-            ' 
+            '
             Me.commandBarItem114.Caption = "Add Text Annotation"
             Me.commandBarItem114.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddTextAnnotation
             Me.commandBarItem114.Enabled = False
@@ -3610,9 +3600,9 @@ Namespace DevExpress.AI.Demos
             superToolTip132.Items.Add(toolTipItem132)
             superToolTip132.MaxWidth = 210
             Me.commandBarItem114.SuperTip = superToolTip132
-            ' 
+            '
             ' commandBarItem115
-            ' 
+            '
             Me.commandBarItem115.Caption = "Add Image Annotation"
             Me.commandBarItem115.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddImageAnnotation
             Me.commandBarItem115.Enabled = False
@@ -3626,9 +3616,9 @@ Namespace DevExpress.AI.Demos
             superToolTip133.Items.Add(toolTipItem133)
             superToolTip133.MaxWidth = 210
             Me.commandBarItem115.SuperTip = superToolTip133
-            ' 
+            '
             ' commandBarItem116
-            ' 
+            '
             Me.commandBarItem116.Caption = "Remove Annotation"
             Me.commandBarItem116.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRemoveAnnotation
             Me.commandBarItem116.Enabled = False
@@ -3642,9 +3632,9 @@ Namespace DevExpress.AI.Demos
             superToolTip134.Items.Add(toolTipItem134)
             superToolTip134.MaxWidth = 210
             Me.commandBarItem116.SuperTip = superToolTip134
-            ' 
+            '
             ' commandBarItem117
-            ' 
+            '
             Me.commandBarItem117.Caption = "Auto Module"
             Me.commandBarItem117.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeAutoModule
             Me.commandBarItem117.Enabled = False
@@ -3658,9 +3648,9 @@ Namespace DevExpress.AI.Demos
             superToolTip135.Items.Add(toolTipItem135)
             superToolTip135.MaxWidth = 210
             Me.commandBarItem117.SuperTip = superToolTip135
-            ' 
+            '
             ' commandBarItem118
-            ' 
+            '
             Me.commandBarItem118.Caption = "Show Text"
             Me.commandBarItem118.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeShowText
             Me.commandBarItem118.Enabled = False
@@ -3674,9 +3664,9 @@ Namespace DevExpress.AI.Demos
             superToolTip136.Items.Add(toolTipItem136)
             superToolTip136.MaxWidth = 210
             Me.commandBarItem118.SuperTip = superToolTip136
-            ' 
+            '
             ' commandBarItem119
-            ' 
+            '
             Me.commandBarItem119.Caption = "Fit Bounds to Text"
             Me.commandBarItem119.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitBoundsToText
             Me.commandBarItem119.Enabled = False
@@ -3690,9 +3680,9 @@ Namespace DevExpress.AI.Demos
             superToolTip137.Items.Add(toolTipItem137)
             superToolTip137.MaxWidth = 210
             Me.commandBarItem119.SuperTip = superToolTip137
-            ' 
+            '
             ' commandBarItem120
-            ' 
+            '
             Me.commandBarItem120.Caption = "Fit Text to Bounds"
             Me.commandBarItem120.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitTextToBounds
             Me.commandBarItem120.Enabled = False
@@ -3706,9 +3696,9 @@ Namespace DevExpress.AI.Demos
             superToolTip138.Items.Add(toolTipItem138)
             superToolTip138.MaxWidth = 210
             Me.commandBarItem120.SuperTip = superToolTip138
-            ' 
+            '
             ' commandBarCheckItem3
-            ' 
+            '
             Me.commandBarCheckItem3.Caption = "Auto Width"
             Me.commandBarCheckItem3.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelAutoWidth
@@ -3723,9 +3713,9 @@ Namespace DevExpress.AI.Demos
             superToolTip139.Items.Add(toolTipItem139)
             superToolTip139.MaxWidth = 210
             Me.commandBarCheckItem3.SuperTip = superToolTip139
-            ' 
+            '
             ' commandBarCheckItem4
-            ' 
+            '
             Me.commandBarCheckItem4.Caption = "Word Wrap"
             Me.commandBarCheckItem4.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelWordWrap
@@ -3740,9 +3730,9 @@ Namespace DevExpress.AI.Demos
             superToolTip140.Items.Add(toolTipItem140)
             superToolTip140.MaxWidth = 210
             Me.commandBarCheckItem4.SuperTip = superToolTip140
-            ' 
+            '
             ' commandBarCheckItem5
-            ' 
+            '
             Me.commandBarCheckItem5.Caption = "Can Shrink"
             Me.commandBarCheckItem5.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelCanShrink
@@ -3757,9 +3747,9 @@ Namespace DevExpress.AI.Demos
             superToolTip141.Items.Add(toolTipItem141)
             superToolTip141.MaxWidth = 210
             Me.commandBarCheckItem5.SuperTip = superToolTip141
-            ' 
+            '
             ' commandBarCheckItem6
-            ' 
+            '
             Me.commandBarCheckItem6.Caption = "Can Grow"
             Me.commandBarCheckItem6.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelCanGrow
@@ -3774,9 +3764,9 @@ Namespace DevExpress.AI.Demos
             superToolTip142.Items.Add(toolTipItem142)
             superToolTip142.MaxWidth = 210
             Me.commandBarCheckItem6.SuperTip = superToolTip142
-            ' 
+            '
             ' commandBarCheckItem7
-            ' 
+            '
             Me.commandBarCheckItem7.Caption = "Auto Width"
             Me.commandBarCheckItem7.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellAutoWidth
@@ -3791,9 +3781,9 @@ Namespace DevExpress.AI.Demos
             superToolTip143.Items.Add(toolTipItem143)
             superToolTip143.MaxWidth = 210
             Me.commandBarCheckItem7.SuperTip = superToolTip143
-            ' 
+            '
             ' commandBarCheckItem8
-            ' 
+            '
             Me.commandBarCheckItem8.Caption = "Auto Height"
             Me.commandBarCheckItem8.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellAutoHeight
@@ -3808,9 +3798,9 @@ Namespace DevExpress.AI.Demos
             superToolTip144.Items.Add(toolTipItem144)
             superToolTip144.MaxWidth = 210
             Me.commandBarCheckItem8.SuperTip = superToolTip144
-            ' 
+            '
             ' commandBarItem121
-            ' 
+            '
             Me.commandBarItem121.Caption = "Add Data Source"
             Me.commandBarItem121.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SparklineAddDataSource
             Me.commandBarItem121.Enabled = False
@@ -3824,9 +3814,9 @@ Namespace DevExpress.AI.Demos
             superToolTip145.Items.Add(toolTipItem145)
             superToolTip145.MaxWidth = 210
             Me.commandBarItem121.SuperTip = superToolTip145
-            ' 
+            '
             ' commandBarItem122
-            ' 
+            '
             Me.commandBarItem122.Caption = "Flat Light"
             Me.commandBarItem122.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewThemeLight
             Me.commandBarItem122.Enabled = False
@@ -3840,9 +3830,9 @@ Namespace DevExpress.AI.Demos
             superToolTip146.Items.Add(toolTipItem146)
             superToolTip146.MaxWidth = 210
             Me.commandBarItem122.SuperTip = superToolTip146
-            ' 
+            '
             ' commandBarItem123
-            ' 
+            '
             Me.commandBarItem123.Caption = "Flat Dark"
             Me.commandBarItem123.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewThemeDark
             Me.commandBarItem123.Enabled = False
@@ -3856,9 +3846,9 @@ Namespace DevExpress.AI.Demos
             superToolTip147.Items.Add(toolTipItem147)
             superToolTip147.MaxWidth = 210
             Me.commandBarItem123.SuperTip = superToolTip147
-            ' 
+            '
             ' commandBarItem124
-            ' 
+            '
             Me.commandBarItem124.Caption = "Stretch"
             Me.commandBarItem124.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShapeStretch
             Me.commandBarItem124.Enabled = False
@@ -3872,122 +3862,122 @@ Namespace DevExpress.AI.Demos
             superToolTip148.Items.Add(toolTipItem148)
             superToolTip148.MaxWidth = 210
             Me.commandBarItem124.SuperTip = superToolTip148
-            ' 
+            '
             ' xrDesignBarButtonGroup1
-            ' 
+            '
             Me.xrDesignBarButtonGroup1.Id = 155
             Me.xrDesignBarButtonGroup1.ItemLinks.Add(Me.barEditItem1)
             Me.xrDesignBarButtonGroup1.ItemLinks.Add(Me.barEditItem2)
             Me.xrDesignBarButtonGroup1.Name = "xrDesignBarButtonGroup1"
-            ' 
+            '
             ' xrDesignBarButtonGroup2
-            ' 
+            '
             Me.xrDesignBarButtonGroup2.Id = 156
             Me.xrDesignBarButtonGroup2.ItemLinks.Add(Me.commandBarItem17)
             Me.xrDesignBarButtonGroup2.ItemLinks.Add(Me.commandBarItem18)
             Me.xrDesignBarButtonGroup2.ItemLinks.Add(Me.commandBarItem19)
             Me.xrDesignBarButtonGroup2.ItemLinks.Add(Me.commandBarItem24)
             Me.xrDesignBarButtonGroup2.Name = "xrDesignBarButtonGroup2"
-            ' 
+            '
             ' xrDesignBarButtonGroup3
-            ' 
+            '
             Me.xrDesignBarButtonGroup3.Id = 157
             Me.xrDesignBarButtonGroup3.ItemLinks.Add(Me.commandColorBarItem2)
             Me.xrDesignBarButtonGroup3.ItemLinks.Add(Me.commandColorBarItem1)
             Me.xrDesignBarButtonGroup3.Name = "xrDesignBarButtonGroup3"
-            ' 
+            '
             ' xrDesignBarButtonGroup4
-            ' 
+            '
             Me.xrDesignBarButtonGroup4.Id = 158
             Me.xrDesignBarButtonGroup4.ItemLinks.Add(Me.commandBarItem25)
             Me.xrDesignBarButtonGroup4.ItemLinks.Add(Me.commandBarItem26)
             Me.xrDesignBarButtonGroup4.ItemLinks.Add(Me.commandBarItem27)
             Me.xrDesignBarButtonGroup4.Name = "xrDesignBarButtonGroup4"
-            ' 
+            '
             ' xrDesignBarButtonGroup5
-            ' 
+            '
             Me.xrDesignBarButtonGroup5.Id = 159
             Me.xrDesignBarButtonGroup5.ItemLinks.Add(Me.commandBarItem20)
             Me.xrDesignBarButtonGroup5.ItemLinks.Add(Me.commandBarItem21)
             Me.xrDesignBarButtonGroup5.ItemLinks.Add(Me.commandBarItem22)
             Me.xrDesignBarButtonGroup5.ItemLinks.Add(Me.commandBarItem23)
             Me.xrDesignBarButtonGroup5.Name = "xrDesignBarButtonGroup5"
-            ' 
+            '
             ' xrDesignBarButtonGroup6
-            ' 
+            '
             Me.xrDesignBarButtonGroup6.Id = 160
             Me.xrDesignBarButtonGroup6.ItemLinks.Add(Me.commandBarItem32)
             Me.xrDesignBarButtonGroup6.ItemLinks.Add(Me.commandBarItem33)
             Me.xrDesignBarButtonGroup6.Name = "xrDesignBarButtonGroup6"
-            ' 
+            '
             ' xrDesignBarButtonGroup7
-            ' 
+            '
             Me.xrDesignBarButtonGroup7.Id = 161
             Me.xrDesignBarButtonGroup7.ItemLinks.Add(Me.commandBarItem34)
             Me.xrDesignBarButtonGroup7.ItemLinks.Add(Me.commandBarItem35)
             Me.xrDesignBarButtonGroup7.ItemLinks.Add(Me.commandBarItem36)
             Me.xrDesignBarButtonGroup7.ItemLinks.Add(Me.commandBarItem37)
             Me.xrDesignBarButtonGroup7.Name = "xrDesignBarButtonGroup7"
-            ' 
+            '
             ' xrDesignBarButtonGroup8
-            ' 
+            '
             Me.xrDesignBarButtonGroup8.Id = 162
             Me.xrDesignBarButtonGroup8.ItemLinks.Add(Me.commandColorBarItem3)
             Me.xrDesignBarButtonGroup8.ItemLinks.Add(Me.commandBarItem38)
             Me.xrDesignBarButtonGroup8.ItemLinks.Add(Me.commandBarEditItem5)
             Me.xrDesignBarButtonGroup8.Name = "xrDesignBarButtonGroup8"
-            ' 
+            '
             ' xrDesignBarButtonGroup9
-            ' 
+            '
             Me.xrDesignBarButtonGroup9.Id = 163
             Me.xrDesignBarButtonGroup9.ItemLinks.Add(Me.commandBarItem40)
             Me.xrDesignBarButtonGroup9.ItemLinks.Add(Me.commandBarItem41)
             Me.xrDesignBarButtonGroup9.ItemLinks.Add(Me.commandBarItem42)
             Me.xrDesignBarButtonGroup9.Name = "xrDesignBarButtonGroup9"
-            ' 
+            '
             ' xrDesignBarButtonGroup10
-            ' 
+            '
             Me.xrDesignBarButtonGroup10.Id = 164
             Me.xrDesignBarButtonGroup10.ItemLinks.Add(Me.commandBarItem43)
             Me.xrDesignBarButtonGroup10.ItemLinks.Add(Me.commandBarItem44)
             Me.xrDesignBarButtonGroup10.ItemLinks.Add(Me.commandBarItem45)
             Me.xrDesignBarButtonGroup10.Name = "xrDesignBarButtonGroup10"
-            ' 
+            '
             ' xrDesignBarButtonGroup11
-            ' 
+            '
             Me.xrDesignBarButtonGroup11.Id = 165
             Me.xrDesignBarButtonGroup11.ItemLinks.Add(Me.commandBarItem50)
             Me.xrDesignBarButtonGroup11.ItemLinks.Add(Me.commandBarItem51)
             Me.xrDesignBarButtonGroup11.ItemLinks.Add(Me.commandBarItem52)
             Me.xrDesignBarButtonGroup11.ItemLinks.Add(Me.commandBarItem53)
             Me.xrDesignBarButtonGroup11.Name = "xrDesignBarButtonGroup11"
-            ' 
+            '
             ' xrDesignBarButtonGroup12
-            ' 
+            '
             Me.xrDesignBarButtonGroup12.Id = 166
             Me.xrDesignBarButtonGroup12.ItemLinks.Add(Me.commandBarItem46)
             Me.xrDesignBarButtonGroup12.ItemLinks.Add(Me.commandBarItem48)
             Me.xrDesignBarButtonGroup12.ItemLinks.Add(Me.commandBarItem49)
             Me.xrDesignBarButtonGroup12.Name = "xrDesignBarButtonGroup12"
-            ' 
+            '
             ' xrDesignBarButtonGroup13
-            ' 
+            '
             Me.xrDesignBarButtonGroup13.Id = 167
             Me.xrDesignBarButtonGroup13.ItemLinks.Add(Me.commandBarItem54)
             Me.xrDesignBarButtonGroup13.ItemLinks.Add(Me.commandBarItem55)
             Me.xrDesignBarButtonGroup13.ItemLinks.Add(Me.commandBarItem56)
             Me.xrDesignBarButtonGroup13.ItemLinks.Add(Me.commandBarItem57)
             Me.xrDesignBarButtonGroup13.Name = "xrDesignBarButtonGroup13"
-            ' 
+            '
             ' xrDesignBarButtonGroup14
-            ' 
+            '
             Me.xrDesignBarButtonGroup14.Id = 168
             Me.xrDesignBarButtonGroup14.ItemLinks.Add(Me.commandBarItem58)
             Me.xrDesignBarButtonGroup14.ItemLinks.Add(Me.commandBarItem59)
             Me.xrDesignBarButtonGroup14.Name = "xrDesignBarButtonGroup14"
-            ' 
+            '
             ' printPreviewBarItem1
-            ' 
+            '
             Me.printPreviewBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
             Me.printPreviewBarItem1.Caption = "Editing Fields"
             Me.printPreviewBarItem1.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HighlightEditingFields
@@ -4003,9 +3993,9 @@ Namespace DevExpress.AI.Demos
             superToolTip149.Items.Add(toolTipItem149)
             superToolTip149.MaxWidth = 210
             Me.printPreviewBarItem1.SuperTip = superToolTip149
-            ' 
+            '
             ' printPreviewBarItem2
-            ' 
+            '
             Me.printPreviewBarItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
             Me.printPreviewBarItem2.Caption = "Bookmarks"
             Me.printPreviewBarItem2.Command = DevExpress.XtraPrinting.PrintingSystemCommand.DocumentMap
@@ -4021,9 +4011,9 @@ Namespace DevExpress.AI.Demos
             superToolTip150.Items.Add(toolTipItem150)
             superToolTip150.MaxWidth = 210
             Me.printPreviewBarItem2.SuperTip = superToolTip150
-            ' 
+            '
             ' printPreviewBarItem3
-            ' 
+            '
             Me.printPreviewBarItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
             Me.printPreviewBarItem3.Caption = "Parameters"
             Me.printPreviewBarItem3.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Parameters
@@ -4039,9 +4029,9 @@ Namespace DevExpress.AI.Demos
             superToolTip151.Items.Add(toolTipItem151)
             superToolTip151.MaxWidth = 210
             Me.printPreviewBarItem3.SuperTip = superToolTip151
-            ' 
+            '
             ' printPreviewBarItem4
-            ' 
+            '
             Me.printPreviewBarItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
             Me.printPreviewBarItem4.Caption = "Find"
             Me.printPreviewBarItem4.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Find
@@ -4057,9 +4047,9 @@ Namespace DevExpress.AI.Demos
             superToolTip152.Items.Add(toolTipItem152)
             superToolTip152.MaxWidth = 210
             Me.printPreviewBarItem4.SuperTip = superToolTip152
-            ' 
+            '
             ' printPreviewBarItem5
-            ' 
+            '
             Me.printPreviewBarItem5.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
             Me.printPreviewBarItem5.Caption = "Thumbnails"
             Me.printPreviewBarItem5.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Thumbnails
@@ -4075,9 +4065,9 @@ Namespace DevExpress.AI.Demos
             superToolTip153.Items.Add(toolTipItem153)
             superToolTip153.MaxWidth = 210
             Me.printPreviewBarItem5.SuperTip = superToolTip153
-            ' 
+            '
             ' printPreviewBarItem7
-            ' 
+            '
             Me.printPreviewBarItem7.Caption = "Print"
             Me.printPreviewBarItem7.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Print
             Me.printPreviewBarItem7.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4092,9 +4082,9 @@ Namespace DevExpress.AI.Demos
             superToolTip154.Items.Add(toolTipItem154)
             superToolTip154.MaxWidth = 210
             Me.printPreviewBarItem7.SuperTip = superToolTip154
-            ' 
+            '
             ' printPreviewBarItem8
-            ' 
+            '
             Me.printPreviewBarItem8.Caption = "Quick Print"
             Me.printPreviewBarItem8.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PrintDirect
             Me.printPreviewBarItem8.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4109,9 +4099,9 @@ Namespace DevExpress.AI.Demos
             superToolTip155.Items.Add(toolTipItem155)
             superToolTip155.MaxWidth = 210
             Me.printPreviewBarItem8.SuperTip = superToolTip155
-            ' 
+            '
             ' printPreviewBarItem11
-            ' 
+            '
             Me.printPreviewBarItem11.Caption = "Custom Margins..."
             Me.printPreviewBarItem11.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageSetup
             Me.printPreviewBarItem11.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4126,9 +4116,9 @@ Namespace DevExpress.AI.Demos
             superToolTip156.Items.Add(toolTipItem156)
             superToolTip156.MaxWidth = 210
             Me.printPreviewBarItem11.SuperTip = superToolTip156
-            ' 
+            '
             ' printPreviewBarItem13
-            ' 
+            '
             Me.printPreviewBarItem13.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem13.Caption = "Scale"
             Me.printPreviewBarItem13.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Scale
@@ -4144,9 +4134,9 @@ Namespace DevExpress.AI.Demos
             superToolTip157.Items.Add(toolTipItem157)
             superToolTip157.MaxWidth = 210
             Me.printPreviewBarItem13.SuperTip = superToolTip157
-            ' 
+            '
             ' printPreviewBarItem14
-            ' 
+            '
             Me.printPreviewBarItem14.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
             Me.printPreviewBarItem14.Caption = "Pointer"
             Me.printPreviewBarItem14.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Pointer
@@ -4164,9 +4154,9 @@ Namespace DevExpress.AI.Demos
             superToolTip158.Items.Add(toolTipItem158)
             superToolTip158.MaxWidth = 210
             Me.printPreviewBarItem14.SuperTip = superToolTip158
-            ' 
+            '
             ' printPreviewBarItem15
-            ' 
+            '
             Me.printPreviewBarItem15.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
             Me.printPreviewBarItem15.Caption = "Hand Tool"
             Me.printPreviewBarItem15.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HandTool
@@ -4184,9 +4174,9 @@ Namespace DevExpress.AI.Demos
             superToolTip159.Items.Add(toolTipItem159)
             superToolTip159.MaxWidth = 210
             Me.printPreviewBarItem15.SuperTip = superToolTip159
-            ' 
+            '
             ' printPreviewBarItem16
-            ' 
+            '
             Me.printPreviewBarItem16.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
             Me.printPreviewBarItem16.Caption = "Magnifier"
             Me.printPreviewBarItem16.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Magnifier
@@ -4204,9 +4194,9 @@ Namespace DevExpress.AI.Demos
             superToolTip160.Items.Add(toolTipItem160)
             superToolTip160.MaxWidth = 210
             Me.printPreviewBarItem16.SuperTip = superToolTip160
-            ' 
+            '
             ' printPreviewBarItem17
-            ' 
+            '
             Me.printPreviewBarItem17.Caption = "Zoom Out"
             Me.printPreviewBarItem17.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomOut
             Me.printPreviewBarItem17.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4221,9 +4211,9 @@ Namespace DevExpress.AI.Demos
             superToolTip161.Items.Add(toolTipItem161)
             superToolTip161.MaxWidth = 210
             Me.printPreviewBarItem17.SuperTip = superToolTip161
-            ' 
+            '
             ' printPreviewBarItem18
-            ' 
+            '
             Me.printPreviewBarItem18.Caption = "Zoom In"
             Me.printPreviewBarItem18.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomIn
             Me.printPreviewBarItem18.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4238,9 +4228,9 @@ Namespace DevExpress.AI.Demos
             superToolTip162.Items.Add(toolTipItem162)
             superToolTip162.MaxWidth = 210
             Me.printPreviewBarItem18.SuperTip = superToolTip162
-            ' 
+            '
             ' printPreviewBarItem19
-            ' 
+            '
             Me.printPreviewBarItem19.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem19.Caption = "Zoom"
             Me.printPreviewBarItem19.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Zoom
@@ -4256,9 +4246,9 @@ Namespace DevExpress.AI.Demos
             superToolTip163.Items.Add(toolTipItem163)
             superToolTip163.MaxWidth = 210
             Me.printPreviewBarItem19.SuperTip = superToolTip163
-            ' 
+            '
             ' printPreviewBarItem20
-            ' 
+            '
             Me.printPreviewBarItem20.Caption = "First Page"
             Me.printPreviewBarItem20.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowFirstPage
             Me.printPreviewBarItem20.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4273,9 +4263,9 @@ Namespace DevExpress.AI.Demos
             superToolTip164.Items.Add(toolTipItem164)
             superToolTip164.MaxWidth = 210
             Me.printPreviewBarItem20.SuperTip = superToolTip164
-            ' 
+            '
             ' printPreviewBarItem21
-            ' 
+            '
             Me.printPreviewBarItem21.Caption = "Previous Page"
             Me.printPreviewBarItem21.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowPrevPage
             Me.printPreviewBarItem21.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4290,9 +4280,9 @@ Namespace DevExpress.AI.Demos
             superToolTip165.Items.Add(toolTipItem165)
             superToolTip165.MaxWidth = 210
             Me.printPreviewBarItem21.SuperTip = superToolTip165
-            ' 
+            '
             ' printPreviewBarItem22
-            ' 
+            '
             Me.printPreviewBarItem22.Caption = "Next  Page "
             Me.printPreviewBarItem22.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowNextPage
             Me.printPreviewBarItem22.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4307,9 +4297,9 @@ Namespace DevExpress.AI.Demos
             superToolTip166.Items.Add(toolTipItem166)
             superToolTip166.MaxWidth = 210
             Me.printPreviewBarItem22.SuperTip = superToolTip166
-            ' 
+            '
             ' printPreviewBarItem23
-            ' 
+            '
             Me.printPreviewBarItem23.Caption = "Last  Page "
             Me.printPreviewBarItem23.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowLastPage
             Me.printPreviewBarItem23.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4324,9 +4314,9 @@ Namespace DevExpress.AI.Demos
             superToolTip167.Items.Add(toolTipItem167)
             superToolTip167.MaxWidth = 210
             Me.printPreviewBarItem23.SuperTip = superToolTip167
-            ' 
+            '
             ' printPreviewBarItem24
-            ' 
+            '
             Me.printPreviewBarItem24.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem24.Caption = "Many Pages"
             Me.printPreviewBarItem24.Command = DevExpress.XtraPrinting.PrintingSystemCommand.MultiplePages
@@ -4342,9 +4332,9 @@ Namespace DevExpress.AI.Demos
             superToolTip168.Items.Add(toolTipItem168)
             superToolTip168.MaxWidth = 210
             Me.printPreviewBarItem24.SuperTip = superToolTip168
-            ' 
+            '
             ' printPreviewBarItem25
-            ' 
+            '
             Me.printPreviewBarItem25.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem25.Caption = "Page Color"
             Me.printPreviewBarItem25.Command = DevExpress.XtraPrinting.PrintingSystemCommand.FillBackground
@@ -4360,9 +4350,9 @@ Namespace DevExpress.AI.Demos
             superToolTip169.Items.Add(toolTipItem169)
             superToolTip169.MaxWidth = 210
             Me.printPreviewBarItem25.SuperTip = superToolTip169
-            ' 
+            '
             ' printPreviewBarItem26
-            ' 
+            '
             Me.printPreviewBarItem26.Caption = "Watermark"
             Me.printPreviewBarItem26.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Watermark
             Me.printPreviewBarItem26.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4377,9 +4367,9 @@ Namespace DevExpress.AI.Demos
             superToolTip170.Items.Add(toolTipItem170)
             superToolTip170.MaxWidth = 210
             Me.printPreviewBarItem26.SuperTip = superToolTip170
-            ' 
+            '
             ' printPreviewBarItem27
-            ' 
+            '
             Me.printPreviewBarItem27.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem27.Caption = "Export To"
             Me.printPreviewBarItem27.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportFile
@@ -4395,9 +4385,9 @@ Namespace DevExpress.AI.Demos
             superToolTip171.Items.Add(toolTipItem171)
             superToolTip171.MaxWidth = 210
             Me.printPreviewBarItem27.SuperTip = superToolTip171
-            ' 
+            '
             ' printPreviewBarItem28
-            ' 
+            '
             Me.printPreviewBarItem28.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem28.Caption = "E-Mail As"
             Me.printPreviewBarItem28.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendFile
@@ -4413,9 +4403,9 @@ Namespace DevExpress.AI.Demos
             superToolTip172.Items.Add(toolTipItem172)
             superToolTip172.MaxWidth = 210
             Me.printPreviewBarItem28.SuperTip = superToolTip172
-            ' 
+            '
             ' printPreviewBarItem29
-            ' 
+            '
             Me.printPreviewBarItem29.Caption = "Close"
             Me.printPreviewBarItem29.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ClosePreview
             Me.printPreviewBarItem29.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4430,9 +4420,9 @@ Namespace DevExpress.AI.Demos
             superToolTip173.Items.Add(toolTipItem173)
             superToolTip173.MaxWidth = 210
             Me.printPreviewBarItem29.SuperTip = superToolTip173
-            ' 
+            '
             ' printPreviewBarItem30
-            ' 
+            '
             Me.printPreviewBarItem30.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem30.Caption = "Orientation"
             Me.printPreviewBarItem30.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageOrientation
@@ -4448,9 +4438,9 @@ Namespace DevExpress.AI.Demos
             superToolTip174.Items.Add(toolTipItem174)
             superToolTip174.MaxWidth = 210
             Me.printPreviewBarItem30.SuperTip = superToolTip174
-            ' 
+            '
             ' printPreviewBarItem31
-            ' 
+            '
             Me.printPreviewBarItem31.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem31.Caption = "Size"
             Me.printPreviewBarItem31.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PaperSize
@@ -4466,9 +4456,9 @@ Namespace DevExpress.AI.Demos
             superToolTip175.Items.Add(toolTipItem175)
             superToolTip175.MaxWidth = 210
             Me.printPreviewBarItem31.SuperTip = superToolTip175
-            ' 
+            '
             ' printPreviewBarItem32
-            ' 
+            '
             Me.printPreviewBarItem32.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
             Me.printPreviewBarItem32.Caption = "Margins"
             Me.printPreviewBarItem32.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageMargins
@@ -4484,9 +4474,9 @@ Namespace DevExpress.AI.Demos
             superToolTip176.Items.Add(toolTipItem176)
             superToolTip176.MaxWidth = 210
             Me.printPreviewBarItem32.SuperTip = superToolTip176
-            ' 
+            '
             ' printPreviewBarItem33
-            ' 
+            '
             Me.printPreviewBarItem33.Caption = "PDF File"
             Me.printPreviewBarItem33.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendPdf
             Me.printPreviewBarItem33.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4501,9 +4491,9 @@ Namespace DevExpress.AI.Demos
             superToolTip177.Items.Add(toolTipItem177)
             superToolTip177.MaxWidth = 210
             Me.printPreviewBarItem33.SuperTip = superToolTip177
-            ' 
+            '
             ' printPreviewBarItem34
-            ' 
+            '
             Me.printPreviewBarItem34.Caption = "Text File"
             Me.printPreviewBarItem34.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendTxt
             Me.printPreviewBarItem34.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4518,9 +4508,9 @@ Namespace DevExpress.AI.Demos
             superToolTip178.Items.Add(toolTipItem178)
             superToolTip178.MaxWidth = 210
             Me.printPreviewBarItem34.SuperTip = superToolTip178
-            ' 
+            '
             ' printPreviewBarItem35
-            ' 
+            '
             Me.printPreviewBarItem35.Caption = "CSV File"
             Me.printPreviewBarItem35.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendCsv
             Me.printPreviewBarItem35.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4535,9 +4525,9 @@ Namespace DevExpress.AI.Demos
             superToolTip179.Items.Add(toolTipItem179)
             superToolTip179.MaxWidth = 210
             Me.printPreviewBarItem35.SuperTip = superToolTip179
-            ' 
+            '
             ' printPreviewBarItem36
-            ' 
+            '
             Me.printPreviewBarItem36.Caption = "MHT File"
             Me.printPreviewBarItem36.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendMht
             Me.printPreviewBarItem36.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4552,9 +4542,9 @@ Namespace DevExpress.AI.Demos
             superToolTip180.Items.Add(toolTipItem180)
             superToolTip180.MaxWidth = 210
             Me.printPreviewBarItem36.SuperTip = superToolTip180
-            ' 
+            '
             ' printPreviewBarItem37
-            ' 
+            '
             Me.printPreviewBarItem37.Caption = "XLS File"
             Me.printPreviewBarItem37.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXls
             Me.printPreviewBarItem37.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4569,9 +4559,9 @@ Namespace DevExpress.AI.Demos
             superToolTip181.Items.Add(toolTipItem181)
             superToolTip181.MaxWidth = 210
             Me.printPreviewBarItem37.SuperTip = superToolTip181
-            ' 
+            '
             ' printPreviewBarItem38
-            ' 
+            '
             Me.printPreviewBarItem38.Caption = "XLSX File"
             Me.printPreviewBarItem38.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXlsx
             Me.printPreviewBarItem38.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4586,9 +4576,9 @@ Namespace DevExpress.AI.Demos
             superToolTip182.Items.Add(toolTipItem182)
             superToolTip182.MaxWidth = 210
             Me.printPreviewBarItem38.SuperTip = superToolTip182
-            ' 
+            '
             ' printPreviewBarItem39
-            ' 
+            '
             Me.printPreviewBarItem39.Caption = "RTF File"
             Me.printPreviewBarItem39.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendRtf
             Me.printPreviewBarItem39.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4603,9 +4593,9 @@ Namespace DevExpress.AI.Demos
             superToolTip183.Items.Add(toolTipItem183)
             superToolTip183.MaxWidth = 210
             Me.printPreviewBarItem39.SuperTip = superToolTip183
-            ' 
+            '
             ' printPreviewBarItem40
-            ' 
+            '
             Me.printPreviewBarItem40.Caption = "DOCX File"
             Me.printPreviewBarItem40.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendDocx
             Me.printPreviewBarItem40.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4620,9 +4610,9 @@ Namespace DevExpress.AI.Demos
             superToolTip184.Items.Add(toolTipItem184)
             superToolTip184.MaxWidth = 210
             Me.printPreviewBarItem40.SuperTip = superToolTip184
-            ' 
+            '
             ' printPreviewBarItem41
-            ' 
+            '
             Me.printPreviewBarItem41.Caption = "Image File"
             Me.printPreviewBarItem41.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendGraphic
             Me.printPreviewBarItem41.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4637,9 +4627,9 @@ Namespace DevExpress.AI.Demos
             superToolTip185.Items.Add(toolTipItem185)
             superToolTip185.MaxWidth = 210
             Me.printPreviewBarItem41.SuperTip = superToolTip185
-            ' 
+            '
             ' printPreviewBarItem42
-            ' 
+            '
             Me.printPreviewBarItem42.Caption = "PDF File"
             Me.printPreviewBarItem42.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportPdf
             Me.printPreviewBarItem42.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4654,9 +4644,9 @@ Namespace DevExpress.AI.Demos
             superToolTip186.Items.Add(toolTipItem186)
             superToolTip186.MaxWidth = 210
             Me.printPreviewBarItem42.SuperTip = superToolTip186
-            ' 
+            '
             ' printPreviewBarItem43
-            ' 
+            '
             Me.printPreviewBarItem43.Caption = "HTML File"
             Me.printPreviewBarItem43.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportHtm
             Me.printPreviewBarItem43.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4671,9 +4661,9 @@ Namespace DevExpress.AI.Demos
             superToolTip187.Items.Add(toolTipItem187)
             superToolTip187.MaxWidth = 210
             Me.printPreviewBarItem43.SuperTip = superToolTip187
-            ' 
+            '
             ' printPreviewBarItem44
-            ' 
+            '
             Me.printPreviewBarItem44.Caption = "Text File"
             Me.printPreviewBarItem44.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportTxt
             Me.printPreviewBarItem44.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4688,9 +4678,9 @@ Namespace DevExpress.AI.Demos
             superToolTip188.Items.Add(toolTipItem188)
             superToolTip188.MaxWidth = 210
             Me.printPreviewBarItem44.SuperTip = superToolTip188
-            ' 
+            '
             ' printPreviewBarItem45
-            ' 
+            '
             Me.printPreviewBarItem45.Caption = "CSV File"
             Me.printPreviewBarItem45.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportCsv
             Me.printPreviewBarItem45.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4705,9 +4695,9 @@ Namespace DevExpress.AI.Demos
             superToolTip189.Items.Add(toolTipItem189)
             superToolTip189.MaxWidth = 210
             Me.printPreviewBarItem45.SuperTip = superToolTip189
-            ' 
+            '
             ' printPreviewBarItem46
-            ' 
+            '
             Me.printPreviewBarItem46.Caption = "MHT File"
             Me.printPreviewBarItem46.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportMht
             Me.printPreviewBarItem46.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4722,9 +4712,9 @@ Namespace DevExpress.AI.Demos
             superToolTip190.Items.Add(toolTipItem190)
             superToolTip190.MaxWidth = 210
             Me.printPreviewBarItem46.SuperTip = superToolTip190
-            ' 
+            '
             ' printPreviewBarItem47
-            ' 
+            '
             Me.printPreviewBarItem47.Caption = "XLS File"
             Me.printPreviewBarItem47.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXls
             Me.printPreviewBarItem47.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4739,9 +4729,9 @@ Namespace DevExpress.AI.Demos
             superToolTip191.Items.Add(toolTipItem191)
             superToolTip191.MaxWidth = 210
             Me.printPreviewBarItem47.SuperTip = superToolTip191
-            ' 
+            '
             ' printPreviewBarItem48
-            ' 
+            '
             Me.printPreviewBarItem48.Caption = "XLSX File"
             Me.printPreviewBarItem48.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXlsx
             Me.printPreviewBarItem48.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4756,9 +4746,9 @@ Namespace DevExpress.AI.Demos
             superToolTip192.Items.Add(toolTipItem192)
             superToolTip192.MaxWidth = 210
             Me.printPreviewBarItem48.SuperTip = superToolTip192
-            ' 
+            '
             ' printPreviewBarItem49
-            ' 
+            '
             Me.printPreviewBarItem49.Caption = "RTF File"
             Me.printPreviewBarItem49.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportRtf
             Me.printPreviewBarItem49.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4773,9 +4763,9 @@ Namespace DevExpress.AI.Demos
             superToolTip193.Items.Add(toolTipItem193)
             superToolTip193.MaxWidth = 210
             Me.printPreviewBarItem49.SuperTip = superToolTip193
-            ' 
+            '
             ' printPreviewBarItem50
-            ' 
+            '
             Me.printPreviewBarItem50.Caption = "DOCX File"
             Me.printPreviewBarItem50.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportDocx
             Me.printPreviewBarItem50.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4790,9 +4780,9 @@ Namespace DevExpress.AI.Demos
             superToolTip194.Items.Add(toolTipItem194)
             superToolTip194.MaxWidth = 210
             Me.printPreviewBarItem50.SuperTip = superToolTip194
-            ' 
+            '
             ' printPreviewBarItem51
-            ' 
+            '
             Me.printPreviewBarItem51.Caption = "Image File"
             Me.printPreviewBarItem51.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportGraphic
             Me.printPreviewBarItem51.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4807,9 +4797,9 @@ Namespace DevExpress.AI.Demos
             superToolTip195.Items.Add(toolTipItem195)
             superToolTip195.MaxWidth = 210
             Me.printPreviewBarItem51.SuperTip = superToolTip195
-            ' 
+            '
             ' printPreviewBarItem52
-            ' 
+            '
             Me.printPreviewBarItem52.Caption = "Open"
             Me.printPreviewBarItem52.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Open
             Me.printPreviewBarItem52.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4824,9 +4814,9 @@ Namespace DevExpress.AI.Demos
             superToolTip196.Items.Add(toolTipItem196)
             superToolTip196.MaxWidth = 210
             Me.printPreviewBarItem52.SuperTip = superToolTip196
-            ' 
+            '
             ' printPreviewBarItem53
-            ' 
+            '
             Me.printPreviewBarItem53.Caption = "Save"
             Me.printPreviewBarItem53.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Save
             Me.printPreviewBarItem53.ContextSpecifier = Me.xrDesignRibbonController1
@@ -4841,9 +4831,9 @@ Namespace DevExpress.AI.Demos
             superToolTip197.Items.Add(toolTipItem197)
             superToolTip197.MaxWidth = 210
             Me.printPreviewBarItem53.SuperTip = superToolTip197
-            ' 
+            '
             ' commandBarEditItem8
-            ' 
+            '
             Me.commandBarEditItem8.Caption = "Language"
             Me.commandBarEditItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Language
             Me.commandBarEditItem8.Edit = Me.repositoryItemLookUpEdit2
@@ -4859,15 +4849,15 @@ Namespace DevExpress.AI.Demos
             superToolTip198.Items.Add(toolTipItem198)
             superToolTip198.MaxWidth = 210
             Me.commandBarEditItem8.SuperTip = superToolTip198
-            ' 
+            '
             ' repositoryItemLookUpEdit2
-            ' 
+            '
             Me.repositoryItemLookUpEdit2.AutoHeight = False
             Me.repositoryItemLookUpEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemLookUpEdit2.Name = "repositoryItemLookUpEdit2"
-            ' 
+            '
             ' commandBarCheckItem9
-            ' 
+            '
             Me.commandBarCheckItem9.Caption = "Show Localizable Properties"
             Me.commandBarCheckItem9.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
             Me.commandBarCheckItem9.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowLocalizableProperties
@@ -4882,9 +4872,9 @@ Namespace DevExpress.AI.Demos
             superToolTip199.Items.Add(toolTipItem199)
             superToolTip199.MaxWidth = 210
             Me.commandBarCheckItem9.SuperTip = superToolTip199
-            ' 
+            '
             ' commandBarItem127
-            ' 
+            '
             Me.commandBarItem127.Caption = "Expand All"
             Me.commandBarItem127.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BandExpandAll
             Me.commandBarItem127.Enabled = False
@@ -4898,9 +4888,9 @@ Namespace DevExpress.AI.Demos
             superToolTip200.Items.Add(toolTipItem200)
             superToolTip200.MaxWidth = 210
             Me.commandBarItem127.SuperTip = superToolTip200
-            ' 
+            '
             ' commandBarItem128
-            ' 
+            '
             Me.commandBarItem128.Caption = "Collapse All"
             Me.commandBarItem128.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BandCollapseAll
             Me.commandBarItem128.Enabled = False
@@ -4914,31 +4904,31 @@ Namespace DevExpress.AI.Demos
             superToolTip201.Items.Add(toolTipItem201)
             superToolTip201.MaxWidth = 210
             Me.commandBarItem128.SuperTip = superToolTip201
-            ' 
+            '
             ' printPreviewStaticItem1
-            ' 
+            '
             Me.printPreviewStaticItem1.Caption = "Nothing"
             Me.printPreviewStaticItem1.Id = 230
             Me.printPreviewStaticItem1.LeftIndent = 1
             Me.printPreviewStaticItem1.Name = "printPreviewStaticItem1"
             Me.printPreviewStaticItem1.RightIndent = 1
             Me.printPreviewStaticItem1.Type = "PageOfPages"
-            ' 
+            '
             ' progressBarEditItem1
-            ' 
+            '
             Me.progressBarEditItem1.Edit = Me.repositoryItemProgressBar1
             Me.progressBarEditItem1.EditHeight = 12
             Me.progressBarEditItem1.EditWidth = 150
             Me.progressBarEditItem1.Id = 231
             Me.progressBarEditItem1.Name = "progressBarEditItem1"
             Me.progressBarEditItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
-            ' 
+            '
             ' repositoryItemProgressBar1
-            ' 
+            '
             Me.repositoryItemProgressBar1.Name = "repositoryItemProgressBar1"
-            ' 
+            '
             ' printPreviewBarItem6
-            ' 
+            '
             Me.printPreviewBarItem6.Caption = "Stop"
             Me.printPreviewBarItem6.Command = DevExpress.XtraPrinting.PrintingSystemCommand.StopPageBuilding
             Me.printPreviewBarItem6.Enabled = False
@@ -4946,27 +4936,27 @@ Namespace DevExpress.AI.Demos
             Me.printPreviewBarItem6.Id = 232
             Me.printPreviewBarItem6.Name = "printPreviewBarItem6"
             Me.printPreviewBarItem6.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
-            ' 
+            '
             ' commandBarItem129
-            ' 
+            '
             Me.commandBarItem129.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
             Me.commandBarItem129.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowReportDesignAnalyzer
             Me.commandBarItem129.Enabled = False
             Me.commandBarItem129.Id = 233
             Me.commandBarItem129.Name = "commandBarItem129"
             Me.commandBarItem129.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
-            ' 
+            '
             ' printPreviewStaticItem2
-            ' 
+            '
             Me.printPreviewStaticItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
             Me.printPreviewStaticItem2.AutoSize = DevExpress.XtraBars.BarStaticItemSize.None
             Me.printPreviewStaticItem2.Caption = "100%"
             Me.printPreviewStaticItem2.Id = 234
             Me.printPreviewStaticItem2.Name = "printPreviewStaticItem2"
             Me.printPreviewStaticItem2.Type = "ZoomFactorText"
-            ' 
+            '
             ' zoomTrackBarEditItem1
-            ' 
+            '
             Me.zoomTrackBarEditItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
             Me.zoomTrackBarEditItem1.Edit = Me.repositoryItemZoomTrackBar1
             Me.zoomTrackBarEditItem1.EditWidth = 140
@@ -4974,17 +4964,17 @@ Namespace DevExpress.AI.Demos
             Me.zoomTrackBarEditItem1.Id = 235
             Me.zoomTrackBarEditItem1.Name = "zoomTrackBarEditItem1"
             Me.zoomTrackBarEditItem1.Range = New Integer() {10, 500}
-            ' 
+            '
             ' repositoryItemZoomTrackBar1
-            ' 
+            '
             Me.repositoryItemZoomTrackBar1.Alignment = DevExpress.Utils.VertAlignment.Center
             Me.repositoryItemZoomTrackBar1.AllowFocused = False
             Me.repositoryItemZoomTrackBar1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.repositoryItemZoomTrackBar1.Maximum = 180
             Me.repositoryItemZoomTrackBar1.Name = "repositoryItemZoomTrackBar1"
-            ' 
+            '
             ' commandBarItem130
-            ' 
+            '
             Me.commandBarItem130.Caption = "Dimension Notations"
             Me.commandBarItem130.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowDimensionNotations
             Me.commandBarItem130.Enabled = False
@@ -4998,9 +4988,9 @@ Namespace DevExpress.AI.Demos
             superToolTip202.Items.Add(toolTipItem202)
             superToolTip202.MaxWidth = 210
             Me.commandBarItem130.SuperTip = superToolTip202
-            ' 
+            '
             ' ribbonPageCategory1
-            ' 
+            '
             Me.ribbonPageCategory1.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((147)))))), (CInt(((CByte((94)))))), (CInt(((CByte((211)))))))
             Me.ribbonPageCategory1.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory1.AutoStretchPageHeaders = True
@@ -5008,16 +4998,16 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage6})
             Me.ribbonPageCategory1.Text = "Character Comb Tools"
             Me.ribbonPageCategory1.Visible = False
-            ' 
+            '
             ' ribbonPage6
-            ' 
+            '
             Me.ribbonPage6.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup18})
             Me.ribbonPage6.Name = "ribbonPage6"
             Me.ribbonPage6.Text = "Design"
             Me.ribbonPage6.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup18
-            ' 
+            '
             Me.xrDesignRibbonPageGroup18.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup18.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup18.ItemLinks.Add(Me.commandBarCheckItem7)
@@ -5029,9 +5019,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup18.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.CellSize
             Me.xrDesignRibbonPageGroup18.Name = "xrDesignRibbonPageGroup18"
             Me.xrDesignRibbonPageGroup18.Text = "Cell Size"
-            ' 
+            '
             ' ribbonPageCategory2
-            ' 
+            '
             Me.ribbonPageCategory2.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((242)))))), (CInt(((CByte((203)))))), (CInt(((CByte((29)))))))
             Me.ribbonPageCategory2.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory2.AutoStretchPageHeaders = True
@@ -5039,16 +5029,16 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory2.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage7})
             Me.ribbonPageCategory2.Text = "Table Tools"
             Me.ribbonPageCategory2.Visible = False
-            ' 
+            '
             ' ribbonPage7
-            ' 
+            '
             Me.ribbonPage7.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup19, Me.xrDesignRibbonPageGroup20, Me.xrDesignRibbonPageGroup21, Me.xrDesignRibbonPageGroup22, Me.xrDesignRibbonPageGroup23})
             Me.ribbonPage7.Name = "ribbonPage7"
             Me.ribbonPage7.Text = "Design"
             Me.ribbonPage7.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup19
-            ' 
+            '
             Me.xrDesignRibbonPageGroup19.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup19.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup19.ItemLinks.Add(Me.commandBarItem76)
@@ -5057,9 +5047,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup19.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.[Select]
             Me.xrDesignRibbonPageGroup19.Name = "xrDesignRibbonPageGroup19"
             Me.xrDesignRibbonPageGroup19.Text = "Select"
-            ' 
+            '
             ' xrDesignRibbonPageGroup20
-            ' 
+            '
             Me.xrDesignRibbonPageGroup20.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup20.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup20.ItemLinks.Add(Me.commandBarItem82)
@@ -5069,9 +5059,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup20.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Insert
             Me.xrDesignRibbonPageGroup20.Name = "xrDesignRibbonPageGroup20"
             Me.xrDesignRibbonPageGroup20.Text = "Insert"
-            ' 
+            '
             ' xrDesignRibbonPageGroup21
-            ' 
+            '
             Me.xrDesignRibbonPageGroup21.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup21.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup21.ItemLinks.Add(Me.commandBarItem78)
@@ -5081,9 +5071,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup21.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Delete
             Me.xrDesignRibbonPageGroup21.Name = "xrDesignRibbonPageGroup21"
             Me.xrDesignRibbonPageGroup21.Text = "Delete"
-            ' 
+            '
             ' xrDesignRibbonPageGroup22
-            ' 
+            '
             Me.xrDesignRibbonPageGroup22.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup22.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup22.ItemLinks.Add(Me.commandBarItem88)
@@ -5091,9 +5081,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup22.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Merge
             Me.xrDesignRibbonPageGroup22.Name = "xrDesignRibbonPageGroup22"
             Me.xrDesignRibbonPageGroup22.Text = "Merge"
-            ' 
+            '
             ' xrDesignRibbonPageGroup23
-            ' 
+            '
             Me.xrDesignRibbonPageGroup23.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup23.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup23.ItemLinks.Add(Me.commandBarItem86)
@@ -5101,9 +5091,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup23.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Distribute
             Me.xrDesignRibbonPageGroup23.Name = "xrDesignRibbonPageGroup23"
             Me.xrDesignRibbonPageGroup23.Text = "Distribute"
-            ' 
+            '
             ' ribbonPageCategory3
-            ' 
+            '
             Me.ribbonPageCategory3.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((73)))))), (CInt(((CByte((163)))))), (CInt(((CByte((73)))))))
             Me.ribbonPageCategory3.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory3.AutoStretchPageHeaders = True
@@ -5111,16 +5101,16 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory3.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage8})
             Me.ribbonPageCategory3.Text = "Chart Tools"
             Me.ribbonPageCategory3.Visible = False
-            ' 
+            '
             ' ribbonPage8
-            ' 
+            '
             Me.ribbonPage8.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup24, Me.xrDesignRibbonPageGroup25, Me.xrDesignRibbonPageGroup26, Me.xrDesignRibbonPageGroup27, Me.xrDesignRibbonPageGroup28})
             Me.ribbonPage8.Name = "ribbonPage8"
             Me.ribbonPage8.Text = "Design"
             Me.ribbonPage8.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup24
-            ' 
+            '
             Me.xrDesignRibbonPageGroup24.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup24.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup24.ItemLinks.Add(Me.commandBarItem103)
@@ -5129,18 +5119,18 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup24.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Layout
             Me.xrDesignRibbonPageGroup24.Name = "xrDesignRibbonPageGroup24"
             Me.xrDesignRibbonPageGroup24.Text = "Layout"
-            ' 
+            '
             ' xrDesignRibbonPageGroup25
-            ' 
+            '
             Me.xrDesignRibbonPageGroup25.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup25.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup25.ItemLinks.Add(Me.commandBarItem104)
             Me.xrDesignRibbonPageGroup25.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
             Me.xrDesignRibbonPageGroup25.Name = "xrDesignRibbonPageGroup25"
             Me.xrDesignRibbonPageGroup25.Text = "Data"
-            ' 
+            '
             ' xrDesignRibbonPageGroup26
-            ' 
+            '
             Me.xrDesignRibbonPageGroup26.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup26.ItemLinks.Add(Me.commandBarItem106)
             Me.xrDesignRibbonPageGroup26.ItemLinks.Add(Me.commandBarItem107)
@@ -5153,9 +5143,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup26.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Series
             Me.xrDesignRibbonPageGroup26.Name = "xrDesignRibbonPageGroup26"
             Me.xrDesignRibbonPageGroup26.Text = "Series"
-            ' 
+            '
             ' xrDesignRibbonPageGroup27
-            ' 
+            '
             Me.xrDesignRibbonPageGroup27.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup27.ItemLinks.Add(Me.commandBarItem114)
             Me.xrDesignRibbonPageGroup27.ItemLinks.Add(Me.commandBarItem115)
@@ -5163,18 +5153,18 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup27.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Annotations
             Me.xrDesignRibbonPageGroup27.Name = "xrDesignRibbonPageGroup27"
             Me.xrDesignRibbonPageGroup27.Text = "Annotations"
-            ' 
+            '
             ' xrDesignRibbonPageGroup28
-            ' 
+            '
             Me.xrDesignRibbonPageGroup28.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem105)
             Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandGalleryBarItem3)
             Me.xrDesignRibbonPageGroup28.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Appearance
             Me.xrDesignRibbonPageGroup28.Name = "xrDesignRibbonPageGroup28"
             Me.xrDesignRibbonPageGroup28.Text = "Appearance"
-            ' 
+            '
             ' ribbonPageCategory4
-            ' 
+            '
             Me.ribbonPageCategory4.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((201)))))), (CInt(((CByte((89)))))), (CInt(((CByte((156)))))))
             Me.ribbonPageCategory4.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory4.AutoStretchPageHeaders = True
@@ -5182,34 +5172,34 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory4.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage9})
             Me.ribbonPageCategory4.Text = "Pivot Grid Tools"
             Me.ribbonPageCategory4.Visible = False
-            ' 
+            '
             ' ribbonPage9
-            ' 
+            '
             Me.ribbonPage9.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup29, Me.xrDesignRibbonPageGroup30, Me.xrDesignRibbonPageGroup31, Me.xrDesignRibbonPageGroup32})
             Me.ribbonPage9.Name = "ribbonPage9"
             Me.ribbonPage9.Text = "Design"
             Me.ribbonPage9.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup29
-            ' 
+            '
             Me.xrDesignRibbonPageGroup29.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup29.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup29.ItemLinks.Add(Me.commandBarItem90)
             Me.xrDesignRibbonPageGroup29.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Layout
             Me.xrDesignRibbonPageGroup29.Name = "xrDesignRibbonPageGroup29"
             Me.xrDesignRibbonPageGroup29.Text = "Layout"
-            ' 
+            '
             ' xrDesignRibbonPageGroup30
-            ' 
+            '
             Me.xrDesignRibbonPageGroup30.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup30.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup30.ItemLinks.Add(Me.commandBarItem91)
             Me.xrDesignRibbonPageGroup30.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
             Me.xrDesignRibbonPageGroup30.Name = "xrDesignRibbonPageGroup30"
             Me.xrDesignRibbonPageGroup30.Text = "Data"
-            ' 
+            '
             ' xrDesignRibbonPageGroup31
-            ' 
+            '
             Me.xrDesignRibbonPageGroup31.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup31.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup31.ItemLinks.Add(Me.commandBarItem93)
@@ -5217,9 +5207,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup31.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PivotFields
             Me.xrDesignRibbonPageGroup31.Name = "xrDesignRibbonPageGroup31"
             Me.xrDesignRibbonPageGroup31.Text = "Fields"
-            ' 
+            '
             ' xrDesignRibbonPageGroup32
-            ' 
+            '
             Me.xrDesignRibbonPageGroup32.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup32.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup32.ItemLinks.Add(Me.commandBarItem94)
@@ -5232,9 +5222,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup32.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PivotPrintOptions
             Me.xrDesignRibbonPageGroup32.Name = "xrDesignRibbonPageGroup32"
             Me.xrDesignRibbonPageGroup32.Text = "Print Options"
-            ' 
+            '
             ' ribbonPageCategory5
-            ' 
+            '
             Me.ribbonPageCategory5.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((147)))))), (CInt(((CByte((94)))))), (CInt(((CByte((211)))))))
             Me.ribbonPageCategory5.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory5.AutoStretchPageHeaders = True
@@ -5242,16 +5232,16 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory5.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage10})
             Me.ribbonPageCategory5.Text = "Barcode Tools"
             Me.ribbonPageCategory5.Visible = False
-            ' 
+            '
             ' ribbonPage10
-            ' 
+            '
             Me.ribbonPage10.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup33, Me.xrDesignRibbonPageGroup34})
             Me.ribbonPage10.Name = "ribbonPage10"
             Me.ribbonPage10.Text = "Design"
             Me.ribbonPage10.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup33
-            ' 
+            '
             Me.xrDesignRibbonPageGroup33.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup33.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup33.ItemLinks.Add(Me.commandBarItem117)
@@ -5259,18 +5249,18 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup33.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
             Me.xrDesignRibbonPageGroup33.Name = "xrDesignRibbonPageGroup33"
             Me.xrDesignRibbonPageGroup33.Text = "View"
-            ' 
+            '
             ' xrDesignRibbonPageGroup34
-            ' 
+            '
             Me.xrDesignRibbonPageGroup34.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup34.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup34.ItemLinks.Add(Me.commandGalleryBarItem2)
             Me.xrDesignRibbonPageGroup34.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Symbology
             Me.xrDesignRibbonPageGroup34.Name = "xrDesignRibbonPageGroup34"
             Me.xrDesignRibbonPageGroup34.Text = "Symbology"
-            ' 
+            '
             ' ribbonPageCategory6
-            ' 
+            '
             Me.ribbonPageCategory6.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((157)))))), (CInt(((CByte((0)))))))
             Me.ribbonPageCategory6.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory6.AutoStretchPageHeaders = True
@@ -5278,25 +5268,25 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory6.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage11})
             Me.ribbonPageCategory6.Text = "Gauge Tools"
             Me.ribbonPageCategory6.Visible = False
-            ' 
+            '
             ' ribbonPage11
-            ' 
+            '
             Me.ribbonPage11.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup35, Me.xrDesignRibbonPageGroup36})
             Me.ribbonPage11.Name = "ribbonPage11"
             Me.ribbonPage11.Text = "Design"
             Me.ribbonPage11.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup35
-            ' 
+            '
             Me.xrDesignRibbonPageGroup35.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup35.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup35.ItemLinks.Add(Me.commandGalleryBarItem5)
             Me.xrDesignRibbonPageGroup35.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
             Me.xrDesignRibbonPageGroup35.Name = "xrDesignRibbonPageGroup35"
             Me.xrDesignRibbonPageGroup35.Text = "View"
-            ' 
+            '
             ' xrDesignRibbonPageGroup36
-            ' 
+            '
             Me.xrDesignRibbonPageGroup36.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup36.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup36.ItemLinks.Add(Me.commandBarItem122)
@@ -5304,9 +5294,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup36.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Theme
             Me.xrDesignRibbonPageGroup36.Name = "xrDesignRibbonPageGroup36"
             Me.xrDesignRibbonPageGroup36.Text = "Theme"
-            ' 
+            '
             ' ribbonPageCategory7
-            ' 
+            '
             Me.ribbonPageCategory7.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((73)))))), (CInt(((CByte((163)))))), (CInt(((CByte((73)))))))
             Me.ribbonPageCategory7.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory7.AutoStretchPageHeaders = True
@@ -5314,34 +5304,34 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory7.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage12})
             Me.ribbonPageCategory7.Text = "Sparkline Tools"
             Me.ribbonPageCategory7.Visible = False
-            ' 
+            '
             ' ribbonPage12
-            ' 
+            '
             Me.ribbonPage12.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup37, Me.xrDesignRibbonPageGroup38})
             Me.ribbonPage12.Name = "ribbonPage12"
             Me.ribbonPage12.Text = "Design"
             Me.ribbonPage12.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup37
-            ' 
+            '
             Me.xrDesignRibbonPageGroup37.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup37.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup37.ItemLinks.Add(Me.commandBarItem121)
             Me.xrDesignRibbonPageGroup37.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
             Me.xrDesignRibbonPageGroup37.Name = "xrDesignRibbonPageGroup37"
             Me.xrDesignRibbonPageGroup37.Text = "Data"
-            ' 
+            '
             ' xrDesignRibbonPageGroup38
-            ' 
+            '
             Me.xrDesignRibbonPageGroup38.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup38.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup38.ItemLinks.Add(Me.commandGalleryBarItem4)
             Me.xrDesignRibbonPageGroup38.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
             Me.xrDesignRibbonPageGroup38.Name = "xrDesignRibbonPageGroup38"
             Me.xrDesignRibbonPageGroup38.Text = "View"
-            ' 
+            '
             ' ribbonPageCategory8
-            ' 
+            '
             Me.ribbonPageCategory8.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((157)))))), (CInt(((CByte((0)))))))
             Me.ribbonPageCategory8.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory8.AutoStretchPageHeaders = True
@@ -5349,16 +5339,16 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory8.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage13})
             Me.ribbonPageCategory8.Text = "Shape Tools"
             Me.ribbonPageCategory8.Visible = False
-            ' 
+            '
             ' ribbonPage13
-            ' 
+            '
             Me.ribbonPage13.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup39})
             Me.ribbonPage13.Name = "ribbonPage13"
             Me.ribbonPage13.Text = "Design"
             Me.ribbonPage13.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup39
-            ' 
+            '
             Me.xrDesignRibbonPageGroup39.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup39.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup39.ItemLinks.Add(Me.commandBarItem124)
@@ -5366,9 +5356,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup39.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
             Me.xrDesignRibbonPageGroup39.Name = "xrDesignRibbonPageGroup39"
             Me.xrDesignRibbonPageGroup39.Text = "View"
-            ' 
+            '
             ' ribbonPageCategory9
-            ' 
+            '
             Me.ribbonPageCategory9.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((158)))))), (CInt(((CByte((197)))))), (CInt(((CByte((126)))))))
             Me.ribbonPageCategory9.Appearance.Options.UseBackColor = True
             Me.ribbonPageCategory9.AutoStretchPageHeaders = True
@@ -5376,16 +5366,16 @@ Namespace DevExpress.AI.Demos
             Me.ribbonPageCategory9.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage14})
             Me.ribbonPageCategory9.Text = "Text Tools"
             Me.ribbonPageCategory9.Visible = False
-            ' 
+            '
             ' ribbonPage14
-            ' 
+            '
             Me.ribbonPage14.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup40, Me.xrDesignRibbonPageGroup41})
             Me.ribbonPage14.Name = "ribbonPage14"
             Me.ribbonPage14.Text = "Text"
             Me.ribbonPage14.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup40
-            ' 
+            '
             Me.xrDesignRibbonPageGroup40.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup40.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup40.ItemLinks.Add(Me.commandBarItem119)
@@ -5393,9 +5383,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup40.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Design
             Me.xrDesignRibbonPageGroup40.Name = "xrDesignRibbonPageGroup40"
             Me.xrDesignRibbonPageGroup40.Text = "Design"
-            ' 
+            '
             ' xrDesignRibbonPageGroup41
-            ' 
+            '
             Me.xrDesignRibbonPageGroup41.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup41.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup41.ItemLinks.Add(Me.commandBarCheckItem3)
@@ -5405,15 +5395,15 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup41.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Behavior
             Me.xrDesignRibbonPageGroup41.Name = "xrDesignRibbonPageGroup41"
             Me.xrDesignRibbonPageGroup41.Text = "Behavior"
-            ' 
+            '
             ' ribbonPage1
-            ' 
+            '
             Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup1, Me.xrDesignRibbonPageGroup2, Me.xrDesignRibbonPageGroup3, Me.xrDesignRibbonPageGroup4, Me.xrDesignRibbonPageGroup5, Me.xrDesignRibbonPageGroup6, Me.xrDesignRibbonPageGroup7})
             Me.ribbonPage1.Name = "ribbonPage1"
             Me.ribbonPage1.Text = "Home"
-            ' 
+            '
             ' xrDesignRibbonPageGroup1
-            ' 
+            '
             Me.xrDesignRibbonPageGroup1.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup1.ItemLinks.Add(Me.commandBarItem6)
@@ -5423,9 +5413,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup1.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Report
             Me.xrDesignRibbonPageGroup1.Name = "xrDesignRibbonPageGroup1"
             Me.xrDesignRibbonPageGroup1.Text = "Report"
-            ' 
+            '
             ' xrDesignRibbonPageGroup2
-            ' 
+            '
             Me.xrDesignRibbonPageGroup2.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup2.ItemLinks.Add(Me.commandBarItem30)
@@ -5434,9 +5424,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup2.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
             Me.xrDesignRibbonPageGroup2.Name = "xrDesignRibbonPageGroup2"
             Me.xrDesignRibbonPageGroup2.Text = "Data"
-            ' 
+            '
             ' xrDesignRibbonPageGroup3
-            ' 
+            '
             Me.xrDesignRibbonPageGroup3.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup3.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup3.ItemLinks.Add(Me.commandBarItem14)
@@ -5445,9 +5435,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup3.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Clipboard
             Me.xrDesignRibbonPageGroup3.Name = "xrDesignRibbonPageGroup3"
             Me.xrDesignRibbonPageGroup3.Text = "Clipboard"
-            ' 
+            '
             ' xrDesignRibbonPageGroup4
-            ' 
+            '
             Me.xrDesignRibbonPageGroup4.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup4.ItemLinks.Add(Me.xrDesignBarButtonGroup1)
@@ -5456,9 +5446,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup4.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Font
             Me.xrDesignRibbonPageGroup4.Name = "xrDesignRibbonPageGroup4"
             Me.xrDesignRibbonPageGroup4.Text = "Font"
-            ' 
+            '
             ' xrDesignRibbonPageGroup5
-            ' 
+            '
             Me.xrDesignRibbonPageGroup5.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup5.ItemLinks.Add(Me.xrDesignBarButtonGroup4)
@@ -5466,9 +5456,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup5.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.TextAlignment
             Me.xrDesignRibbonPageGroup5.Name = "xrDesignRibbonPageGroup5"
             Me.xrDesignRibbonPageGroup5.Text = "Alignment"
-            ' 
+            '
             ' xrDesignRibbonPageGroup6
-            ' 
+            '
             Me.xrDesignRibbonPageGroup6.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup6.ItemLinks.Add(Me.xrDesignBarButtonGroup6)
@@ -5477,24 +5467,24 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup6.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Borders
             Me.xrDesignRibbonPageGroup6.Name = "xrDesignRibbonPageGroup6"
             Me.xrDesignRibbonPageGroup6.Text = "Borders"
-            ' 
+            '
             ' xrDesignRibbonPageGroup7
-            ' 
+            '
             Me.xrDesignRibbonPageGroup7.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup7.ItemLinks.Add(Me.commandBarItem31)
             Me.xrDesignRibbonPageGroup7.ItemLinks.Add(Me.commandGalleryBarItem1)
             Me.xrDesignRibbonPageGroup7.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Styles
             Me.xrDesignRibbonPageGroup7.Name = "xrDesignRibbonPageGroup7"
             Me.xrDesignRibbonPageGroup7.Text = "Styles"
-            ' 
+            '
             ' ribbonPage2
-            ' 
+            '
             Me.ribbonPage2.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup8, Me.xrDesignRibbonPageGroup9, Me.xrDesignRibbonPageGroup10, Me.xrDesignRibbonPageGroup11})
             Me.ribbonPage2.Name = "ribbonPage2"
             Me.ribbonPage2.Text = "Layout"
-            ' 
+            '
             ' xrDesignRibbonPageGroup8
-            ' 
+            '
             Me.xrDesignRibbonPageGroup8.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup8.ItemLinks.Add(Me.xrDesignBarButtonGroup9)
@@ -5502,9 +5492,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup8.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Alignment
             Me.xrDesignRibbonPageGroup8.Name = "xrDesignRibbonPageGroup8"
             Me.xrDesignRibbonPageGroup8.Text = "Alignment"
-            ' 
+            '
             ' xrDesignRibbonPageGroup9
-            ' 
+            '
             Me.xrDesignRibbonPageGroup9.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup9.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup9.ItemLinks.Add(Me.commandBarItem39)
@@ -5517,9 +5507,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup9.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.SizeAndLayout
             Me.xrDesignRibbonPageGroup9.Name = "xrDesignRibbonPageGroup9"
             Me.xrDesignRibbonPageGroup9.Text = "Layout"
-            ' 
+            '
             ' xrDesignRibbonPageGroup10
-            ' 
+            '
             Me.xrDesignRibbonPageGroup10.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup10.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup10.ItemLinks.Add(Me.commandBarItem60)
@@ -5527,9 +5517,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup10.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Arranging
             Me.xrDesignRibbonPageGroup10.Name = "xrDesignRibbonPageGroup10"
             Me.xrDesignRibbonPageGroup10.Text = "Arrangement"
-            ' 
+            '
             ' xrDesignRibbonPageGroup11
-            ' 
+            '
             Me.xrDesignRibbonPageGroup11.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup11.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup11.ItemLinks.Add(Me.commandBarCheckItem1)
@@ -5537,15 +5527,15 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup11.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Snapping
             Me.xrDesignRibbonPageGroup11.Name = "xrDesignRibbonPageGroup11"
             Me.xrDesignRibbonPageGroup11.Text = "Snapping"
-            ' 
+            '
             ' ribbonPage3
-            ' 
+            '
             Me.ribbonPage3.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup12, Me.xrDesignRibbonPageGroup13})
             Me.ribbonPage3.Name = "ribbonPage3"
             Me.ribbonPage3.Text = "Page"
-            ' 
+            '
             ' xrDesignRibbonPageGroup12
-            ' 
+            '
             Me.xrDesignRibbonPageGroup12.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup12.ItemLinks.Add(Me.commandBarItem65)
             Me.xrDesignRibbonPageGroup12.ItemLinks.Add(Me.commandBarItem64)
@@ -5553,9 +5543,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup12.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PageSetup
             Me.xrDesignRibbonPageGroup12.Name = "xrDesignRibbonPageGroup12"
             Me.xrDesignRibbonPageGroup12.Text = "Page Setup"
-            ' 
+            '
             ' xrDesignRibbonPageGroup13
-            ' 
+            '
             Me.xrDesignRibbonPageGroup13.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup13.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup13.ItemLinks.Add(Me.commandColorBarItem4)
@@ -5563,15 +5553,15 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup13.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Appearance
             Me.xrDesignRibbonPageGroup13.Name = "xrDesignRibbonPageGroup13"
             Me.xrDesignRibbonPageGroup13.Text = "Appearance"
-            ' 
+            '
             ' ribbonPage4
-            ' 
+            '
             Me.ribbonPage4.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup14, Me.xrDesignRibbonPageGroup43, Me.xrDesignRibbonPageGroup42, Me.xrDesignRibbonPageGroup15, Me.xrDesignRibbonPageGroup16})
             Me.ribbonPage4.Name = "ribbonPage4"
             Me.ribbonPage4.Text = "View"
-            ' 
+            '
             ' xrDesignRibbonPageGroup14
-            ' 
+            '
             Me.xrDesignRibbonPageGroup14.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup14.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup14.ItemLinks.Add(Me.commandBarItem67)
@@ -5582,9 +5572,9 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup14.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Show
             Me.xrDesignRibbonPageGroup14.Name = "xrDesignRibbonPageGroup14"
             Me.xrDesignRibbonPageGroup14.Text = "Show"
-            ' 
+            '
             ' xrDesignRibbonPageGroup43
-            ' 
+            '
             Me.xrDesignRibbonPageGroup43.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup43.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup43.ItemLinks.Add(Me.commandBarItem127)
@@ -5592,18 +5582,18 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup43.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Bands
             Me.xrDesignRibbonPageGroup43.Name = "xrDesignRibbonPageGroup43"
             Me.xrDesignRibbonPageGroup43.Text = "Bands"
-            ' 
+            '
             ' xrDesignRibbonPageGroup42
-            ' 
+            '
             Me.xrDesignRibbonPageGroup42.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup42.ItemLinks.Add(Me.commandBarEditItem8)
             Me.xrDesignRibbonPageGroup42.ItemLinks.Add(Me.commandBarCheckItem9)
             Me.xrDesignRibbonPageGroup42.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Localization
             Me.xrDesignRibbonPageGroup42.Name = "xrDesignRibbonPageGroup42"
             Me.xrDesignRibbonPageGroup42.Text = "Localization"
-            ' 
+            '
             ' xrDesignRibbonPageGroup15
-            ' 
+            '
             Me.xrDesignRibbonPageGroup15.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup15.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup15.ItemLinks.Add(Me.commandBarItem73)
@@ -5612,25 +5602,25 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup15.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Zoom
             Me.xrDesignRibbonPageGroup15.Name = "xrDesignRibbonPageGroup15"
             Me.xrDesignRibbonPageGroup15.Text = "Zoom"
-            ' 
+            '
             ' xrDesignRibbonPageGroup16
-            ' 
+            '
             Me.xrDesignRibbonPageGroup16.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup16.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup16.ItemLinks.Add(Me.barDockPanelsListItem1)
             Me.xrDesignRibbonPageGroup16.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
             Me.xrDesignRibbonPageGroup16.Name = "xrDesignRibbonPageGroup16"
             Me.xrDesignRibbonPageGroup16.Text = "View"
-            ' 
+            '
             ' ribbonPage5
-            ' 
+            '
             Me.ribbonPage5.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.xrDesignRibbonPageGroup17})
             Me.ribbonPage5.Name = "ribbonPage5"
             Me.ribbonPage5.Text = "Scripts"
             Me.ribbonPage5.Visible = False
-            ' 
+            '
             ' xrDesignRibbonPageGroup17
-            ' 
+            '
             Me.xrDesignRibbonPageGroup17.AllowTextClipping = False
             Me.xrDesignRibbonPageGroup17.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.xrDesignRibbonPageGroup17.ItemLinks.Add(Me.commandBarEditItem6)
@@ -5639,17 +5629,17 @@ Namespace DevExpress.AI.Demos
             Me.xrDesignRibbonPageGroup17.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Edit
             Me.xrDesignRibbonPageGroup17.Name = "xrDesignRibbonPageGroup17"
             Me.xrDesignRibbonPageGroup17.Text = "Edit"
-            ' 
+            '
             ' ribbonPage15
-            ' 
+            '
             Me.ribbonPage15.ContextSpecifier = Me.xrDesignRibbonController1
             Me.ribbonPage15.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.printPreviewRibbonPageGroup1, Me.printPreviewRibbonPageGroup2, Me.printPreviewRibbonPageGroup3, Me.printPreviewRibbonPageGroup4, Me.printPreviewRibbonPageGroup5, Me.printPreviewRibbonPageGroup6, Me.printPreviewRibbonPageGroup7, Me.printPreviewRibbonPageGroup8})
             Me.ribbonPage15.Name = "ribbonPage15"
             Me.ribbonPage15.Text = "Home"
             Me.ribbonPage15.Visible = False
-            ' 
+            '
             ' printPreviewRibbonPageGroup1
-            ' 
+            '
             Me.printPreviewRibbonPageGroup1.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup1.ContextSpecifier = Me.xrDesignRibbonController1
@@ -5658,9 +5648,9 @@ Namespace DevExpress.AI.Demos
             Me.printPreviewRibbonPageGroup1.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Document
             Me.printPreviewRibbonPageGroup1.Name = "printPreviewRibbonPageGroup1"
             Me.printPreviewRibbonPageGroup1.Text = "Document"
-            ' 
+            '
             ' printPreviewRibbonPageGroup2
-            ' 
+            '
             Me.printPreviewRibbonPageGroup2.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup2.ContextSpecifier = Me.xrDesignRibbonController1
@@ -5670,9 +5660,9 @@ Namespace DevExpress.AI.Demos
             Me.printPreviewRibbonPageGroup2.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Print
             Me.printPreviewRibbonPageGroup2.Name = "printPreviewRibbonPageGroup2"
             Me.printPreviewRibbonPageGroup2.Text = "Print"
-            ' 
+            '
             ' printPreviewRibbonPageGroup3
-            ' 
+            '
             Me.printPreviewRibbonPageGroup3.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup3.ContextSpecifier = Me.xrDesignRibbonController1
             Me.printPreviewRibbonPageGroup3.ItemLinks.Add(Me.printPreviewBarItem13)
@@ -5690,9 +5680,9 @@ Namespace DevExpress.AI.Demos
             superToolTip203.MaxWidth = 210
             Me.printPreviewRibbonPageGroup3.SuperTip = superToolTip203
             Me.printPreviewRibbonPageGroup3.Text = "Page Setup"
-            ' 
+            '
             ' printPreviewRibbonPageGroup4
-            ' 
+            '
             Me.printPreviewRibbonPageGroup4.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup4.ContextSpecifier = Me.xrDesignRibbonController1
@@ -5707,9 +5697,9 @@ Namespace DevExpress.AI.Demos
             Me.printPreviewRibbonPageGroup4.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Navigation
             Me.printPreviewRibbonPageGroup4.Name = "printPreviewRibbonPageGroup4"
             Me.printPreviewRibbonPageGroup4.Text = "Navigation"
-            ' 
+            '
             ' printPreviewRibbonPageGroup5
-            ' 
+            '
             Me.printPreviewRibbonPageGroup5.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup5.ContextSpecifier = Me.xrDesignRibbonController1
@@ -5723,9 +5713,9 @@ Namespace DevExpress.AI.Demos
             Me.printPreviewRibbonPageGroup5.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Zoom
             Me.printPreviewRibbonPageGroup5.Name = "printPreviewRibbonPageGroup5"
             Me.printPreviewRibbonPageGroup5.Text = "Zoom"
-            ' 
+            '
             ' printPreviewRibbonPageGroup6
-            ' 
+            '
             Me.printPreviewRibbonPageGroup6.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup6.ContextSpecifier = Me.xrDesignRibbonController1
@@ -5734,9 +5724,9 @@ Namespace DevExpress.AI.Demos
             Me.printPreviewRibbonPageGroup6.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Background
             Me.printPreviewRibbonPageGroup6.Name = "printPreviewRibbonPageGroup6"
             Me.printPreviewRibbonPageGroup6.Text = "Page Background"
-            ' 
+            '
             ' printPreviewRibbonPageGroup7
-            ' 
+            '
             Me.printPreviewRibbonPageGroup7.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup7.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup7.ContextSpecifier = Me.xrDesignRibbonController1
@@ -5745,9 +5735,9 @@ Namespace DevExpress.AI.Demos
             Me.printPreviewRibbonPageGroup7.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Export
             Me.printPreviewRibbonPageGroup7.Name = "printPreviewRibbonPageGroup7"
             Me.printPreviewRibbonPageGroup7.Text = "Export"
-            ' 
+            '
             ' printPreviewRibbonPageGroup8
-            ' 
+            '
             Me.printPreviewRibbonPageGroup8.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup8.ContextSpecifier = Me.xrDesignRibbonController1
@@ -5755,9 +5745,9 @@ Namespace DevExpress.AI.Demos
             Me.printPreviewRibbonPageGroup8.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Close
             Me.printPreviewRibbonPageGroup8.Name = "printPreviewRibbonPageGroup8"
             Me.printPreviewRibbonPageGroup8.Text = "Close"
-            ' 
+            '
             ' ribbonStatusBar1
-            ' 
+            '
             Me.ribbonStatusBar1.ItemLinks.Add(Me.printPreviewStaticItem1)
             Me.ribbonStatusBar1.ItemLinks.Add(Me.progressBarEditItem1)
             Me.ribbonStatusBar1.ItemLinks.Add(Me.printPreviewBarItem6)
@@ -5769,30 +5759,10 @@ Namespace DevExpress.AI.Demos
             Me.ribbonStatusBar1.Name = "ribbonStatusBar1"
             Me.ribbonStatusBar1.Ribbon = Me.ribbonControl1
             Me.ribbonStatusBar1.Size = New System.Drawing.Size(1830, 55)
-            ' 
+            '
             ' reportDesigner1
-            ' 
-            aiReportPrompt1.Text = resources.GetString("aiReportPrompt1.Text")
-            aiReportPrompt1.Title = "Prompt Template"
-            aiReportPrompt2.Text = resources.GetString("aiReportPrompt2.Text")
-            aiReportPrompt2.Title = "Quarterly Sales Report"
-            aiReportPrompt3.Text = resources.GetString("aiReportPrompt3.Text")
-            aiReportPrompt3.Title = "Employee Payroll Report"
-            aiReportPrompt4.Text = resources.GetString("aiReportPrompt4.Text")
-            aiReportPrompt4.Title = "Commercial Invoice Report"
-            aiReportPrompt5.Text = resources.GetString("aiReportPrompt5.Text")
-            aiReportPrompt5.Title = "Shipping Label Report"
-            aiReportPrompt6.Text = resources.GetString("aiReportPrompt6.Text")
-            aiReportPrompt6.Title = "Customer Quote Report"
-            aiReportPrompt7.Text = resources.GetString("aiReportPrompt7.Text")
-            aiReportPrompt7.Title = "Employee Directory Report"
-            aiReportPrompt8.Text = resources.GetString("aiReportPrompt8.Text")
-            aiReportPrompt8.Title = "Inventory Stock Report"
-            aiReportPrompt9.Text = resources.GetString("aiReportPrompt9.Text")
-            aiReportPrompt9.Title = "Sales Order Report"
-            aiReportPrompt10.Text = resources.GetString("aiReportPrompt10.Text")
-            aiReportPrompt10.Title = "Account Statement Report"
-            Me.behaviorManager1.SetBehaviors(Me.reportDesigner1, New DevExpress.Utils.Behaviors.Behavior() {CType((DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, True, 0F, New DevExpress.AIIntegration.Reporting.AIReportPrompt() {aiReportPrompt1, aiReportPrompt2, aiReportPrompt3, aiReportPrompt4, aiReportPrompt5, aiReportPrompt6, aiReportPrompt7, aiReportPrompt8, aiReportPrompt9, aiReportPrompt10})), DevExpress.Utils.Behaviors.Behavior), CType(CType((DevExpress.Utils.Behaviors.Behavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerLocalizationBehaviorSource), New Object() {(CObj((3))), (CObj((False))), (CObj((0F)))})), DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), DevExpress.Utils.Behaviors.Behavior), CType((DevExpress.AIIntegration.WinForms.Reporting.ReportTestDataSourceBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerTestDataSourceBehaviorSource), 25, Nothing)), DevExpress.Utils.Behaviors.Behavior), CType((DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToExpressionBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerPromptToReportExpressionBehaviorSource))), DevExpress.Utils.Behaviors.Behavior)})
+            '
+            Me.behaviorManager1.SetBehaviors(Me.reportDesigner1, New DevExpress.Utils.Behaviors.Behavior() {CType((DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToReportBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerGenerationBehaviorSource), 3, True, 0F)), DevExpress.Utils.Behaviors.Behavior), CType(CType((DevExpress.Utils.Behaviors.Behavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerLocalizationBehaviorSource), New Object() {(CObj((3))), (CObj((False))), (CObj((0F)))})), DevExpress.AIIntegration.WinForms.Reporting.ReportLocalizationBehavior), DevExpress.Utils.Behaviors.Behavior), CType((DevExpress.AIIntegration.WinForms.Reporting.ReportTestDataSourceBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerTestDataSourceBehaviorSource), 25, Nothing)), DevExpress.Utils.Behaviors.Behavior), CType((DevExpress.AIIntegration.WinForms.Reporting.ReportPromptToExpressionBehavior.Create(GetType(DevExpress.AIIntegration.WinForms.Reporting.XRDesignMdiControllerPromptToReportExpressionBehaviorSource))), DevExpress.Utils.Behaviors.Behavior)})
             Me.reportDesigner1.ContainerControl = Nothing
             xrDesignPanelListener1.DesignControl = Me.xrDesignRibbonController1
             xrDesignPanelListener2.DesignControl = Me.xrDesignDockManager1
@@ -5805,47 +5775,47 @@ Namespace DevExpress.AI.Demos
             Me.reportDesigner1.DesignPanelListeners.AddRange(New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener() {xrDesignPanelListener1, xrDesignPanelListener2, xrDesignPanelListener3, xrDesignPanelListener4, xrDesignPanelListener5, xrDesignPanelListener6, xrDesignPanelListener7, xrDesignPanelListener8})
             Me.reportDesigner1.Form = Me
             Me.reportDesigner1.XtraTabbedMdiManager = Me.xtraTabbedMdiManager1
-            ' 
+            '
             ' xtraTabbedMdiManager1
-            ' 
+            '
             Me.xtraTabbedMdiManager1.MdiParent = Me
             Me.xtraTabbedMdiManager1.View = Me.tabbedView1
             Me.xtraTabbedMdiManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.tabbedView8, Me.tabbedView1, Me.tabbedView7, Me.tabbedView6, Me.tabbedView5, Me.tabbedView4, Me.tabbedView3, Me.tabbedView2})
-            ' 
+            '
             ' tabbedView8
-            ' 
+            '
             Me.tabbedView8.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
-            ' 
+            '
             ' tabbedView1
-            ' 
+            '
             Me.tabbedView1.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
-            ' 
+            '
             ' tabbedView7
-            ' 
+            '
             Me.tabbedView7.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
-            ' 
+            '
             ' tabbedView6
-            ' 
+            '
             Me.tabbedView6.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
-            ' 
+            '
             ' tabbedView5
-            ' 
+            '
             Me.tabbedView5.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
-            ' 
+            '
             ' tabbedView4
-            ' 
+            '
             Me.tabbedView4.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
-            ' 
+            '
             ' tabbedView3
-            ' 
+            '
             Me.tabbedView3.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
-            ' 
+            '
             ' tabbedView2
-            ' 
+            '
             Me.tabbedView2.Style = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Light
-            ' 
+            '
             ' ReportDesignerForm
-            ' 
+            '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(9F, 21F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(1830, 973)

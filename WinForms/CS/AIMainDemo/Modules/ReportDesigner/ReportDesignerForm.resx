@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -400,292 +400,4 @@
   <metadata name="behaviorManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>838, 17</value>
   </metadata>
-  <data name="aiReportPrompt1.Text" xml:space="preserve">
-    <value>Create Sample Report:
- 
-Page Setup:
-- Paper Size: A4
-- Report Margins:
-    - Top &amp; Bottom: 40
-    - Left &amp; Right: 60
----
-Report Header:
-- Title: Sample Report
-- Alignment: Center
-- Font: Comic Sans MS, 12pt, Bold
----
-Page Header:
-- Left side: [Logo image, 100x100]
-- Right side: Document name, Company name, Date labels
----
-Group Header:
-Create a vertical table with the following rows:
-- | Label1 | [Value1] (data bound field) | 
-- | Label2 | [Value2] (data bound field) |
-- | Label3 | [Value3] (data bound field) |
- 
-Font for vertical table rows: Comic Sans MS, 12pt, Bold
- 
-Create one more horizontal table with the following column headers: [Column1, Column2, Column3, Column4]
-Font for column headers: Comic Sans MS, 12pt, Bold
- 
----
-Detail Section:
-Bind data cells to the fields corresponding to the column headers defined in the Group Header
-Font for data cells: Comic Sans MS, 12pt, Bold
- 
----
-Summary Section:
-Include calculated values for fields: [Field1, Field2, Field3]
-Summary types: [sumSum, sumAvg, sumCount]
-Font for summary values: Comic Sans MS, 12pt, Bold
- 
----
-Page Footer:
-Left side: [Optional text or label]
-Right side: [Signature image, Full name label, Position label]
-Font for labels: Comic Sans MS, 12pt, Bold</value>
-  </data>
-  <data name="aiReportPrompt2.Text" xml:space="preserve">
-    <value>Create Sales Summary Report
- 
-**Page Setup**:
- 
-* Paper size: A4
-* Margins:
-	* Top &amp; Bottom: 40
-	* Left &amp; Right: 60
- 
-* All controls should fit within printable width
-* Report control paddings
-	* Left: 2
-	* Top: 2
-**Font Settings**:
- 
-* Page Header: Segoe UI, 18pt, Bold
-* Table Column Headers: Segoe UI, 10pt, Bold, White
-* Data Table Cells: Segoe UI, 9pt
-* Summary Cells: Arial, 9pt, Bold, Light Gray
- 
-**Report Sections**:
- 
-* Page Header:
- 
-	* Add the title “Quarterly Sales Report” with a dark gray background and white text.
-	* Center-align and span full page width.
- 
-* Group Header:
- 
-	* Group data by Region
-	* Add a table with a light gray background and the following columns:
-		* Region
-		* Sales Rep
-		* Product
-		* Units Sold
-		* Total Sales ($)
- 
-* Details Section:
- 
-	* Bind fields from data source to above columns.
- 
-* Group Footer:
- 
-	* Add totals per Region:
-		* Total Units Sold — Summary
-		* Regional Sales Total — Summary
-		* Average Sale per Unit — Average
- 
-* Page Footer:
- 
-   * Add Report Generated Date and Page Number (centered).</value>
-  </data>
-  <data name="aiReportPrompt3.Text" xml:space="preserve">
-    <value>Create Employee Payroll Report:
- 
-Page Setup:
- 
-- Paper size: Letter
-- Margins:
-	- Top &amp; Bottom: 50
-	- Left &amp; Right: 100
-- Report controls should fit within the available page width (excluding left and right margins).
-- Font Settings:
-	- Report Title: Arial, 16pt, Bold
-	- Column Headers: Arial, 11pt, Bold
-	- Data-bound controls: Arial, 9pt
- 
-Report Sections:
- 
-Page Header:
- 
-- Add a report title ""Payroll Details"" with a light blue background. Stretch it to fit the full page width.
- 
-Group Header:
- 
-- Create a group header containing a table with the following columns:
-	- Employee Name
-	- Department
-	- Hours Worked
-	- Rate ($)
-	- Gross Salary ($)
- 
-Detail Table:
- 
-- Include a detail table with the same data-bound fields as in the group header.
- 
-Group Footer:
- 
-- Add a table with a light blue background containing the following columns:
-	- Total Employees
-	- Total Payroll Expense
-	- Average Salary
-Include a data-bound table with calculations:
-	- Total Employees: Count of Employee Names.
-	- Total Payroll Expense: Sum of Gross Salary.
-	- Average Salary: Average of Gross Salary.
- 
-Page Footer:
- 
-- Add a table with four columns:
-	- Contact Us
-	- Website Address
-	- Phone
-	- Email"
-</value>
-  </data>
-  <data name="aiReportPrompt4.Text" xml:space="preserve">
-    <value>Create a Commercial Invoice Report
- 
-Page Setup:
- 
-- Paper Size: Letter
-- Margins:
-	- Top &amp; Bottom: 100
-	- Left &amp; Right: 50
-- Report controls should fit within the available page width (excluding left and right margins).
- 
-Font Settings:
-	- Static text labels and column headers:
-		- Background: Light grey
-		- Text Color: White
-		- Font: Arial, 10pt, Bold, Uppercase
-		- Text Alignment: Top left
-	- Data-bound report controls:
-		- Font: Arial, 9pt
-		- Text Color: Black
-		- Text Alignment: Middle left
- 
-Report Sections:
- 
-Report Header:
- 
-- Add a logo/image aligned to the right, sized 200x50.
-- Include a full-width label with the static text ""Commercial Invoice"".
- 
-Group Header:
- 
- 
-Create a 4-column table with the following column headers:
-- Shipper/Exporter of Record
-- (Empty Column for Spacing)
-- Shipment/Order
-- (Empty Column for Spacing)
- 
-Add the following rows under each respective column:
-- Shipper/Exporter of Record | (empty) | Shipment/Order | (empty)
-- Company Name | (empty) | Invoice # | (data-bound field)
-- Address | (empty) | Date | (data-bound field)
-- VAT Reg No | (empty) | Order ID | (data-bound field)
-- Shipper Address | (empty) | Number of Parcels | (data-bound field)
-- (empty) | (empty) | Total Actual Weight: | (data-bound field)
-- (empty) | (empty) | Total Dimensional Weight: | (data-bound field)
- 
-Create a 2-column table with the following column headers:
-- Ship To/Consignee
-- Sold To Party
-- Add a single row displaying the corresponding data-bound fields.
- 
-Create a table with the following column headers:
-- Description
-- Item Code
-- Country of Origin
-- Units
-- Unit Value
-- Total Value
- 
-Detail Table:
- 
-- Include a detail table displaying the same data-bound fields as in the Itemized Table from the Group Header.
- 
-Report Footer:
- 
-Create a 2-column table, aligned to the right and occupying half of the page width.
-- First Row:
-	- Column 1: ""Total"" (Header)
-	- Column 2: (Empty Cell)
-- Second Row:
-	- Column 1: ""Goods Value""
-	- Column 2: (Data-bound to ""Total"" field)
- 
-- Add a label with the text ""Value For Customs"".
-- Add a data-bound label linked to the ""Value For Customs"" field.</value>
-  </data>
-  <data name="aiReportPrompt5.Text" xml:space="preserve">
-    <value>Create a Shipping Label Report
- 
-Page Setup:
- 
-- Paper Size: Letter
-- Margins:
-	- Top &amp; Bottom: 50
-	- Left &amp; Right: 100
-- Report controls should fit within the available page width (excluding left and right margins).
-- Font settings:
-	- Static text labels and column headers: light grey background, Arial 10pt font, bold
-	- Data-bound report controls: Arial 9pt font
- 
-Report Sections:
- 
-Report Header:
- 
-- Company Name Report Title: Display in the top-middle of the page. Add smaller text aligned to the right side, stating ""Thank you for your order.""
-- Add Shipping Information Labels:
-	- ""Ship To"" label on the left side, above the company name. Below it, add two more labels to display the customer name and the address.
-	- ""Shipment Information"" label on the right side. Below it, add two more labels to display the order number and the date.
- 
-Group Header:
- 
-- Create a table with the following column headers:
-	- # (Item Number)
-	- Item
-	- Color
-	- Size
-	- EAN 
-	- Quantity
-	- Unit Price
- 
-Detail Table:
- 
-- Include a detail table displaying the same data-bound fields as in the group header.
- 
-Report Footer:
- 
-- Add a ""Returns Policy"" label. Below it, include an empty label for future content.
-- Add a ""Returns Instructions"" label. Below it, include another empty label for additional details.</value>
-  </data>
-  <data name="aiReportPrompt6.Text" xml:space="preserve">
-    <value>Create a professional quote/estimate report for a customer. The report should contain company information, quote details, customer contact information, and a table of quoted products or services with quantities, unit prices, and totals. Include the subtotal, discount, tax, and final quoted price, terms and conditions, and a customer signature section. The report should look clean and business-oriented, support category grouping, and clearly highlight the final amount and quote validity period.</value>
-  </data>
-  <data name="aiReportPrompt7.Text" xml:space="preserve">
-    <value>Create a clean employee directory report with company information, the report date, and a list of employees grouped by department or office location. Include employee photos, names, job titles, phone numbers, email addresses, and office locations in a compact table. Add department headers, employee counts, and a total employee summary at the end. The report should look modern and easy to scan, with alternating row colors, highlighted department sections, clickable email addresses, and compact spacing to fit many employees on each page.</value>
-  </data>
-  <data name="aiReportPrompt8.Text" xml:space="preserve">
-    <value>Create an inventory stock report for a warehouse. The report should show current stock levels, inventory value, and low-stock alerts. Include a table grouped by product category with item codes, descriptions, locations, quantities on hand, reorder points, incoming stock, unit cost, and total value. Add summary metrics for the total number of inventory items, total stock value, and the number of items below the reorder level, along with a highlighted reorder alert section for items that need restocking. The report should look clean and data-focused, with conditional formatting for low-stock situations and clear category totals.</value>
-  </data>
-  <data name="aiReportPrompt9.Text" xml:space="preserve">
-    <value>Create a professional sales order report for customer purchases. The report should display company information, order details, billing and shipping addresses, payment terms, and the shipping method. Include a detailed table of ordered products with quantities, prices, discounts, and line totals, followed by the subtotal, tax, shipping costs, and a highlighted final order total. Add sections for special instructions, the requested delivery date, and a customer signature. The report should look clean and business-oriented, with clear tables, bordered totals, and support for discounts and shipping information.</value>
-  </data>
-  <data name="aiReportPrompt10.Text" xml:space="preserve">
-    <value>Create a professional account statement report for a customer. The report should show the statement period, account number, customer details, and an account summary with the previous balance, payments, new charges, current balance, and amount due. Include a transaction history table with dates, transaction types, references, charges, payments, and a running balance. Add an aging summary and a payment remittance section at the bottom. The report should look clean and formal, with conditional formatting for overdue aging amounts and a clearly highlighted amount due.</value>
-  </data>
 </root>

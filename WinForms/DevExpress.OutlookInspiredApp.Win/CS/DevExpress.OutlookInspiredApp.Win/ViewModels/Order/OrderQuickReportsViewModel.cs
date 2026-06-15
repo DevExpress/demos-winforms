@@ -32,7 +32,9 @@ namespace DevExpress.DevAV.ViewModels {
                     report.ExportToPdf(exportStream);
                     break;
                 case ReportFormat.Xls:
-                    report.ExportToXls(exportStream);
+                    report.ExportToXls(exportStream, new XtraPrinting.XlsExportOptions() {
+                        FitToPrintedPageWidth = true
+                    });
                     break;
                 case ReportFormat.Doc:
                     report.ExportToDocx(exportStream, new XtraPrinting.DocxExportOptions() {

@@ -323,6 +323,7 @@ namespace DevExpress.AI.Demos.Agents.WorkflowInfra {
                 AuthorName = executorCompletedEvent.ExecutorId,
                 MessageId = Guid.NewGuid().ToString(),
                 RawRepresentation = executorCompletedEvent,
+                Role = ChatRole.Tool,
             };
         }
 

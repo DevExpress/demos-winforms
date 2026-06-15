@@ -47,7 +47,7 @@ Namespace DevExpress.AI.Demos
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleHighlightTokens("ChangeStyleExtension", "ChangeStyleRequest", "WritingStyle", "ProofreadRequest")>
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleUnderlineTokens("AddDevExpressAIConsole", "RegisterChatClient", "Register", "RegisterAIExceptionHandler", "BuildServiceProvider", "GetService")>
         Public Sub InvokeWithSettings(ByVal layoutControl As DevExpress.XtraLayout.LayoutControl, ByVal button As DevExpress.XtraEditors.SimpleButton)
-            Dim AzureOpenAIEndpoint As String = "https://public-api.devexpress.com/demo-openai"
+            Dim AzureOpenAIEndpoint As String = "https://api.devexpress.com/demo-openai"
             Dim AzureOpenAIKey As String = "DEMO"
             Dim DeploymentName As String = "demo-mini"
             Dim azureOpenAIClient As Microsoft.Extensions.AI.IChatClient = New Azure.AI.OpenAI.AzureOpenAIClient(CType((New System.Uri(CStr((AzureOpenAIEndpoint)))), System.Uri), CType((New System.ClientModel.ApiKeyCredential(CStr((AzureOpenAIKey)))), System.ClientModel.ApiKeyCredential)).GetChatClient(CStr((DeploymentName))).AsIChatClient()
@@ -75,7 +75,7 @@ Namespace DevExpress.AI.Demos
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleHighlightTokens("ChangeStyleExtension", "ChangeStyleRequest", "WritingStyle", "ProofreadRequest", "IAIExtension <ProofreadRequest, TextResponse>")>
         <DevExpress.DXperience.Demos.CodeDemo.CodeExampleUnderlineTokens("AddDevExpressAIConsole", "AddSingleton", "AddTransient", "BuildServiceProvider", "GetService")>
         Public Sub InvokeWithServices(ByVal layoutControl As DevExpress.XtraLayout.LayoutControl, ByVal button As DevExpress.XtraEditors.SimpleButton)
-            Dim AzureOpenAIEndpoint As String = "https://public-api.devexpress.com/demo-openai"
+            Dim AzureOpenAIEndpoint As String = "https://api.devexpress.com/demo-openai"
             Dim AzureOpenAIKey As String = "DEMO"
             Dim DeploymentName As String = "demo-mini"
             Dim azureOpenAIClient As Microsoft.Extensions.AI.IChatClient = New Azure.AI.OpenAI.AzureOpenAIClient(CType((New System.Uri(CStr((AzureOpenAIEndpoint)))), System.Uri), CType((New System.ClientModel.ApiKeyCredential(CStr((AzureOpenAIKey)))), System.ClientModel.ApiKeyCredential)).GetChatClient(CStr((DeploymentName))).AsIChatClient()

@@ -105,7 +105,7 @@ Namespace DevExpress.XtraLayout.Demos
             Me.labelControlLondon = New DevExpress.XtraEditors.LabelControl()
             Me.labelControl2 = New DevExpress.XtraEditors.LabelControl()
             Me.windowsUIButtonPanelLondon = New DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel()
-            Me.labelControlMoscow = New DevExpress.XtraEditors.LabelControl()
+            Me.labelControlMadrid = New DevExpress.XtraEditors.LabelControl()
             Me.windowsUIButtonPanelMoscow = New DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel()
             Me.labelControl8 = New DevExpress.XtraEditors.LabelControl()
             Me.labelControl7 = New DevExpress.XtraEditors.LabelControl()
@@ -362,7 +362,7 @@ Namespace DevExpress.XtraLayout.Demos
             Me.dataLayoutControl1.Controls.Add(Me.labelControlLondon)
             Me.dataLayoutControl1.Controls.Add(Me.labelControl2)
             Me.dataLayoutControl1.Controls.Add(Me.windowsUIButtonPanelLondon)
-            Me.dataLayoutControl1.Controls.Add(Me.labelControlMoscow)
+            Me.dataLayoutControl1.Controls.Add(Me.labelControlMadrid)
             Me.dataLayoutControl1.Controls.Add(Me.windowsUIButtonPanelMoscow)
             Me.dataLayoutControl1.Controls.Add(Me.labelControl8)
             Me.dataLayoutControl1.Controls.Add(Me.labelControl7)
@@ -709,16 +709,16 @@ Namespace DevExpress.XtraLayout.Demos
             Me.windowsUIButtonPanelLondon.Text = "windowsUIButtonPanel1"
             Me.windowsUIButtonPanelLondon.UseButtonBackgroundImages = False
             ' 
-            ' labelControlMoscow
+            ' labelControlMadrid
             ' 
-            Me.labelControlMoscow.Appearance.Font = New System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
-            Me.labelControlMoscow.Appearance.Options.UseFont = True
-            Me.labelControlMoscow.Location = New System.Drawing.Point(160, 346)
-            Me.labelControlMoscow.Name = "labelControlMoscow"
-            Me.labelControlMoscow.Size = New System.Drawing.Size(63, 21)
-            Me.labelControlMoscow.StyleController = Me.dataLayoutControl1
-            Me.labelControlMoscow.TabIndex = 4
-            Me.labelControlMoscow.Text = "Moscow"
+            Me.labelControlMadrid.Appearance.Font = New System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
+            Me.labelControlMadrid.Appearance.Options.UseFont = True
+            Me.labelControlMadrid.Location = New System.Drawing.Point(164, 346)
+            Me.labelControlMadrid.Name = "labelControlMadrid"
+            Me.labelControlMadrid.Size = New System.Drawing.Size(55, 21)
+            Me.labelControlMadrid.StyleController = Me.dataLayoutControl1
+            Me.labelControlMadrid.TabIndex = 4
+            Me.labelControlMadrid.Text = "Madrid"
             ' 
             ' windowsUIButtonPanelMoscow
             ' 
@@ -917,7 +917,7 @@ Namespace DevExpress.XtraLayout.Demos
             ' 
             ' layoutControlItem7
             ' 
-            Me.layoutControlItem7.Control = Me.labelControlMoscow
+            Me.layoutControlItem7.Control = Me.labelControlMadrid
             Me.layoutControlItem7.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter
             Me.layoutControlItem7.CustomizationFormText = "layoutControlItem1"
             Me.layoutControlItem7.Location = New System.Drawing.Point(134, 0)
@@ -1610,7 +1610,7 @@ Namespace DevExpress.XtraLayout.Demos
 
         Private behaviorManager1 As DevExpress.Utils.Behaviors.BehaviorManager
 
-        Private labelControlMoscow As DevExpress.XtraEditors.LabelControl
+        Private labelControlMadrid As DevExpress.XtraEditors.LabelControl
 
         Private windowsUIButtonPanelMoscow As DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel
 

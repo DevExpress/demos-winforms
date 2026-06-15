@@ -68,10 +68,10 @@ Namespace DevExpress.XtraPivotGrid.Demos.Modules
             fieldRevenueTrend.Caption = "Trend"
             Await pivotGridControl.EndUpdateAsync()
             Await fieldCategory.ExpandAllAsync()
-            Await pivotGridControl.ExpandValueAsync(True, New Object() {CShort(2005)})
-            Await pivotGridControl.ExpandValueAsync(True, New Object() {CShort(2005), "H1 FY 2005"})
-            Await pivotGridControl.ExpandValueAsync(True, New Object() {CShort(2005), "H1 FY 2005", "Q1 FY 2005"})
-            Await pivotGridControl.ExpandValueAsync(True, New Object() {CShort(2005), "H1 FY 2005", "Q1 FY 2005", "July 2005"})
+            Await pivotGridControl.ExpandValueAsync(True, New Object() {CShort(2025)})
+            Await pivotGridControl.ExpandValueAsync(True, New Object() {CShort(2025), "H1 FY 2025"})
+            Await pivotGridControl.ExpandValueAsync(True, New Object() {CShort(2025), "H1 FY 2025", "Q1 FY 2025"})
+            Await pivotGridControl.ExpandValueAsync(True, New Object() {CShort(2025), "H1 FY 2025", "Q1 FY 2025", "July 2025"})
             pivotGridControl.BestFitRowArea()
         End Sub
 

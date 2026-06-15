@@ -34,7 +34,7 @@ Namespace DevExpress.XtraPivotGrid.Demos.Modules
 
         Protected Overrides Function InitializeReferences() As List(Of String)
             Dim referenceList As List(Of String) = MyBase.InitializeReferences()
-            referenceList.AddRange(New String() {"DevExpress.BonusSkins" & AssemblyInfo.VSuffix, "DevExpress.XtraBars" & AssemblyInfo.VSuffix, "DevExpress.XtraEditors" & AssemblyInfo.VSuffix, "DevExpress.XtraPivotGrid" & AssemblyInfo.VSuffix, "DevExpress.XtraLayout" & AssemblyInfo.VSuffix, "DevExpress.XtraPrinting" & AssemblyInfo.VSuffix, "DevExpress.Printing" & AssemblyInfo.VSuffix & ".Core", "DevExpress.PivotGrid" & AssemblyInfo.VSuffix & ".Core"})
+            referenceList.AddRange(New String() {"DevExpress.DemoData" & AssemblyInfo.VSuffix, "DevExpress.BonusSkins" & AssemblyInfo.VSuffix, "DevExpress.XtraBars" & AssemblyInfo.VSuffix, "DevExpress.XtraEditors" & AssemblyInfo.VSuffix, "DevExpress.XtraPivotGrid" & AssemblyInfo.VSuffix, "DevExpress.XtraLayout" & AssemblyInfo.VSuffix, "DevExpress.XtraPrinting" & AssemblyInfo.VSuffix, "DevExpress.Printing" & AssemblyInfo.VSuffix & ".Core", "DevExpress.PivotGrid" & AssemblyInfo.VSuffix & ".Core"})
             Return referenceList
         End Function
 
