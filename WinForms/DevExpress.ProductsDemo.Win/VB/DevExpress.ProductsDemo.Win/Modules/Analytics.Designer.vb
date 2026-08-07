@@ -246,7 +246,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
             Me.labelControl3.ShowLineShadow = False
             Me.labelControl3.Size = New System.Drawing.Size(560, 34)
             Me.labelControl3.TabIndex = 12
-            Me.labelControl3.Text = "MONTHLY SALES PERFORMANCE "
+            Me.labelControl3.Text = "Monthly Sales Performance "
             '
             'monthlySalesPerformance
             '
@@ -286,7 +286,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
             Me.labelControl2.ShowLineShadow = False
             Me.labelControl2.Size = New System.Drawing.Size(560, 34)
             Me.labelControl2.TabIndex = 3
-            Me.labelControl2.Text = "DAILY SALES PERFORMANCE "
+            Me.labelControl2.Text = "Daily Sales Performance "
             '
             'dailySalesPerformance
             '
@@ -331,7 +331,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
             Me.labelControl4.ShowLineShadow = False
             Me.labelControl4.Size = New System.Drawing.Size(408, 34)
             Me.labelControl4.TabIndex = 16
-            Me.labelControl4.Text = "ANNUAL SALES PERFORMANCE "
+            Me.labelControl4.Text = "Annual Sales Performance "
             '
             'gaugeControl2
             '
@@ -615,7 +615,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
             Me.labelFiscalToData.Name = "labelFiscalToData"
             Me.labelFiscalToData.Size = New System.Drawing.Size(198, 16)
             Me.labelFiscalToData.TabIndex = 13
-            Me.labelFiscalToData.Text = "FISCAL TO DATE"
+            Me.labelFiscalToData.Text = "Fiscal To Date"
             Me.labelFiscalToData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'labelFiscalYear
@@ -628,7 +628,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
             Me.labelFiscalYear.Name = "labelFiscalYear"
             Me.labelFiscalYear.Size = New System.Drawing.Size(198, 16)
             Me.labelFiscalYear.TabIndex = 14
-            Me.labelFiscalYear.Text = "FISCAL YEAR"
+            Me.labelFiscalYear.Text = "Fiscal Year"
             Me.labelFiscalYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'fiscalToData
@@ -672,7 +672,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
             Me.labelControl5.ShowLineShadow = False
             Me.labelControl5.Size = New System.Drawing.Size(408, 34)
             Me.labelControl5.TabIndex = 17
-            Me.labelControl5.Text = "SALES FORECAST"
+            Me.labelControl5.Text = "Sales Forecast"
             '
             'tableLayoutPanel2
             '
@@ -744,7 +744,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
             Me.labelControl1.ShowLineShadow = False
             Me.labelControl1.Size = New System.Drawing.Size(408, 34)
             Me.labelControl1.TabIndex = 2
-            Me.labelControl1.Text = "SALES BY SECTOR "
+            Me.labelControl1.Text = "Sales By Sector "
             '
             'AnalyticsModule
             '

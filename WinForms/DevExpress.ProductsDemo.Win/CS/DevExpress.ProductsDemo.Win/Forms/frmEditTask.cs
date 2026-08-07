@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
+using DevExpress.MailClient.Win;
 using DevExpress.Utils.Menu;
 using DevExpress.XtraBars.Ribbon;
-using DevExpress.MailClient.Win;
+using DevExpress.XtraEditors;
 
 namespace DevExpress.ProductsDemo.Win.Forms {
     public partial class frmEditTask : RibbonForm {
@@ -38,7 +32,8 @@ namespace DevExpress.ProductsDemo.Win.Forms {
             if(task.AssignTo != null) {
                 ucContactInfo1.Init(task.AssignTo, string.Empty);
                 splitContainerControl1.Collapsed = LayoutOption.TaskCollapsed;
-            } else
+            }
+            else
                 splitContainerControl1.PanelVisibility = SplitPanelVisibility.Panel1;
         }
 

@@ -71,8 +71,8 @@ namespace DevExpress.DentalClinic.ViewModel {
             get { return this.GetService<IDocumentManagerService>("Flyout"); }
         }
         int sendingReloadDataMessage;
-        bool IsSendingReloadDataMessage { 
-            get { return sendingReloadDataMessage > 0; } 
+        bool IsSendingReloadDataMessage {
+            get { return sendingReloadDataMessage > 0; }
         }
         public bool CanCreateAppointment(object resourceId) {
             return UnassignedProcedures.Count > 0;
@@ -92,7 +92,7 @@ namespace DevExpress.DentalClinic.ViewModel {
             RemoveProcedureCore(procedure, true);
         }
         public void RemoveAllProcedures() {
-            for(int i = UnassignedProcedures.Count - 1; i >= 0 ; i--)
+            for(int i = UnassignedProcedures.Count - 1; i >= 0; i--)
                 RemoveProcedureCore(UnassignedProcedures[i], false);
             CommitChanges();
         }
@@ -304,6 +304,6 @@ namespace DevExpress.DentalClinic.ViewModel {
         public bool CopyEffect { get { return eventArgs.CopyEffect; } }
         public IList<DevExpress.XtraScheduler.Appointment> GetAppointmentsBetween(DateTime start, DateTime end) {
             return scheduler.DataStorage.GetAppointments(start, end).Where(x => Object.Equals(x.ResourceId, scheduler.SelectedResource.Id)).ToList();
-        } 
+        }
     }
 }

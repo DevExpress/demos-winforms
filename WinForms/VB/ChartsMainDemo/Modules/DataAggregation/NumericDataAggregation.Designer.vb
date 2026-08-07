@@ -37,7 +37,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0R
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
             xyDiagram1.EnableAxisXScrolling = True
             xyDiagram1.EnableAxisXZooming = True
@@ -51,6 +52,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Numerical
             series1.LegendTextPattern = "Random Data"
             series1.Name = "series"
+            series1.SeriesID = 0
             lineSeriesView1.LineStyle.Thickness = 1
             series1.View = lineSeriesView1
             Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
@@ -59,6 +61,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(784, 432)
             Me.chart.TabIndex = 3
             chartTitle1.Text = "Data Aggregation (500000 points)"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.chart.AxisVisualRangeChanged, New System.EventHandler(Of DevExpress.XtraCharts.AxisRangeChangedEventArgs)(AddressOf Me.chart_AxisVisualRangeChanged)
             ' 

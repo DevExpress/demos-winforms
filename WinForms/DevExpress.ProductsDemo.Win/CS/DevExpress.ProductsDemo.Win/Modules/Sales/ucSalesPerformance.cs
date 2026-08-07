@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Windows.Forms;
-using DevExpress.XtraCharts;
-using DevExpress.Utils;
-using System.Drawing;
 using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
 using DevExpress.DXperience.Demos;
+using DevExpress.Utils;
+using DevExpress.XtraCharts;
 
 namespace DevExpress.SalesDemo.Win.Modules {
     public enum SalesPerformanceMode { Day, Month }
@@ -30,7 +30,7 @@ namespace DevExpress.SalesDemo.Win.Modules {
         [DefaultValue(true)]
         public bool ShowCaptionPanel {
             get { return captionPanel.Visible; }
-            set { 
+            set {
                 captionPanel.Visible = value;
                 UpdateChartLayout();
             }
@@ -45,7 +45,7 @@ namespace DevExpress.SalesDemo.Win.Modules {
         [DefaultValue(true)]
         public bool ShowButtonsPanel {
             get { return buttonsPanel.Visible; }
-            set { 
+            set {
                 buttonsPanel.Visible = value;
                 UpdateChartLayout();
             }
@@ -55,7 +55,7 @@ namespace DevExpress.SalesDemo.Win.Modules {
             this.provider = provider;
             Series.ArgumentDataMember = provider.ChartArgumentDataMember;
             Series.ValueDataMembers.AddRange(provider.ChartValueDataMember);
-            switch (provider.ChartType) {
+            switch(provider.ChartType) {
                 case SalesPerformanceChartType.Area:
                     Series.ChangeView(ViewType.Area);
                     Diagram.AxisX.WholeRange.AutoSideMargins = false;
@@ -81,7 +81,7 @@ namespace DevExpress.SalesDemo.Win.Modules {
                 default:
                     break;
             }
-            switch (provider.Mode) {
+            switch(provider.Mode) {
                 case SalesPerformanceMode.Day:
                     SetDayMode();
                     break;
@@ -98,7 +98,7 @@ namespace DevExpress.SalesDemo.Win.Modules {
 
         void UpdateNavigationButtons(bool updateCurrentButton, bool updatePreviousButton) {
             DateTime prevDate = TutorialConstants.Today;
-            switch (provider.Mode) {
+            switch(provider.Mode) {
                 case SalesPerformanceMode.Day:
                     prevDate = TutorialConstants.Today.AddDays(-1);
                     break;
@@ -111,15 +111,15 @@ namespace DevExpress.SalesDemo.Win.Modules {
             bool isPreviousDate = (prevDate == currentDate);
             bool isCurentDate = (currentDate == TutorialConstants.Today);
             btnForward.Enabled = !isCurentDate;
-            if (updateCurrentButton)
+            if(updateCurrentButton)
                 btnCurrentDate.Checked = isCurentDate;
-            if (updatePreviousButton)
+            if(updatePreviousButton)
                 btnPreviousDate.Checked = isPreviousDate;
         }
         void SetDayMode() {
-            valuePresenter0.TitleText = "TODAY";
-            valuePresenter1.TitleText = "YESTERDAY";
-            valuePresenter2.TitleText = "LAST WEEK";
+            valuePresenter0.TitleText = "Today";
+            valuePresenter1.TitleText = "Yesterday";
+            valuePresenter2.TitleText = "Last Week";
             btnCurrentDate.Text = "Today";
             btnPreviousDate.Text = "Yesterday";
             SetPaletteColorNumber(1);
@@ -128,8 +128,8 @@ namespace DevExpress.SalesDemo.Win.Modules {
             Diagram.AxisX.DateTimeScaleOptions.AggregateFunction = AggregateFunction.Sum;
         }
         void SetMonthMode() {
-            valuePresenter0.TitleText = "THIS MONTH";
-            valuePresenter1.TitleText = "LAST MONTH";
+            valuePresenter0.TitleText = "This Month";
+            valuePresenter1.TitleText = "Last Month";
             valuePresenter2.TitleText = "YTD";
             btnCurrentDate.Text = "This Month";
             btnPreviousDate.Text = "Last Month";
@@ -142,9 +142,9 @@ namespace DevExpress.SalesDemo.Win.Modules {
 
         }
         void SetPaletteColorNumber(int baseColorNumber) {
-            if (provider.ChartType == SalesPerformanceChartType.Area)
+            if(provider.ChartType == SalesPerformanceChartType.Area)
                 chart.PaletteBaseColorNumber = baseColorNumber;
-            if (baseColorNumber > 0) {
+            if(baseColorNumber > 0) {
                 int index = baseColorNumber - 1;
                 valuePresenter0.ValueTextColor = ChartPalette[index].Color;
                 valuePresenter1.ValueTextColor = ChartPalette[index].Color;
@@ -161,7 +161,7 @@ namespace DevExpress.SalesDemo.Win.Modules {
         }
         void UpdateChart(DateTime date) {
             Series.DataSource = provider.GetChartData(date);
-            switch (provider.Mode) {
+            switch(provider.Mode) {
                 case SalesPerformanceMode.Day:
                     Annotation.Text = date.ToString("d");
                     break;
@@ -172,8 +172,8 @@ namespace DevExpress.SalesDemo.Win.Modules {
         }
         DateTime ChangeDate(DateTime date, int dateDelta) {
             DateTime resultDate = date;
-            if (dateDelta != 0) {
-                switch (provider.Mode) {
+            if(dateDelta != 0) {
+                switch(provider.Mode) {
                     case SalesPerformanceMode.Day:
                         resultDate = date.AddDays(dateDelta);
                         break;
@@ -182,7 +182,7 @@ namespace DevExpress.SalesDemo.Win.Modules {
                         break;
                 }
             }
-            if (resultDate > TutorialConstants.Today)
+            if(resultDate > TutorialConstants.Today)
                 resultDate = TutorialConstants.Today;
             return resultDate;
         }

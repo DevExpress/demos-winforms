@@ -57,35 +57,30 @@
             // 
             this.document1.Caption = "document0";
             this.document1.ControlName = "document0";
-            this.document1.ControlTypeName = null;
             this.document1.ImageOptions.ImageIndex = 0;
             // 
             // document2
             // 
             this.document2.Caption = "document1";
             this.document2.ControlName = "document1";
-            this.document2.ControlTypeName = null;
             this.document2.ImageOptions.ImageIndex = 1;
             // 
             // document3
             // 
             this.document3.Caption = "document2";
             this.document3.ControlName = "document2";
-            this.document3.ControlTypeName = null;
             this.document3.ImageOptions.ImageIndex = 2;
             // 
             // document4
             // 
             this.document4.Caption = "document3";
             this.document4.ControlName = "document3";
-            this.document4.ControlTypeName = null;
             this.document4.ImageOptions.ImageIndex = 3;
             // 
             // document5
             // 
             this.document5.Caption = "document4";
             this.document5.ControlName = "document4";
-            this.document5.ControlTypeName = null;
             this.document5.ImageOptions.ImageIndex = 4;
             // 
             // documentManager

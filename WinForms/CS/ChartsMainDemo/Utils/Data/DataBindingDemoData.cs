@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraCharts.Demos {
     class SaleItem {
@@ -25,14 +26,13 @@ namespace DevExpress.XtraCharts.Demos {
         }
 
         internal static List<SaleItem> GetProductsByMonths() {
-            NonCryptographicRandom rnd = NonCryptographicRandom.System;
             List<SaleItem> items = new List<SaleItem>();
             foreach(string company in companies)
                 foreach(string product in CategorizedProducts["Cameras"]) {
                     DateTime dateTime = new DateTime(2017, 12, 01);
                     for(int i = 0; i < 12; i++) {
-                        int income = rnd.Next(20, 100);
-                        int revenue = income + rnd.Next(20, 50);
+                        int income = TutorialConstants.Random.Next(20, 100);
+                        int revenue = income + TutorialConstants.Random.Next(20, 50);
                         items.Add(new SaleItem() {
                             Company = company,
                             Product = product,
@@ -64,7 +64,7 @@ namespace DevExpress.XtraCharts.Demos {
             return items;
         }
         internal static List<CategorySaleItem> GetProductsCategoriesByMonth() {
-            NonCryptographicRandom rnd = new NonCryptographicRandom(DateTime.Now.Millisecond);
+            NonCryptographicRandom rnd = new NonCryptographicRandom(TutorialConstants.Now.Millisecond);
             List<CategorySaleItem> categoryItems = new List<CategorySaleItem>();
             int productIndex = 0;
             foreach(string category in CategorizedProducts.Keys) {
@@ -91,7 +91,7 @@ namespace DevExpress.XtraCharts.Demos {
             return sortedCategory;
         }
         internal static List<SaleItem> GetProductsIncome() {
-            NonCryptographicRandom rnd = new NonCryptographicRandom(DateTime.Now.Millisecond);
+            NonCryptographicRandom rnd = new NonCryptographicRandom(TutorialConstants.Now.Millisecond);
             List<SaleItem> items = new List<SaleItem>();
             for(int i = 0; i < 50; i++)
                 foreach(string product in CategorizedProducts["Cameras"]) {
@@ -103,8 +103,8 @@ namespace DevExpress.XtraCharts.Demos {
             return items;
         }
         internal static List<SaleItem> GetTotalIncome() {
-            NonCryptographicRandom rnd = new NonCryptographicRandom(DateTime.Now.Millisecond);
-            DateTime now = DateTime.Now;
+            NonCryptographicRandom rnd = new NonCryptographicRandom(TutorialConstants.Now.Millisecond);
+            DateTime now = TutorialConstants.Now;
             DateTime endDate = new DateTime(now.Year, now.Month, 1);
             List<SaleItem> items = new List<SaleItem>();
             foreach(string company in companies) {

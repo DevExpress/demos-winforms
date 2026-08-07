@@ -7,7 +7,6 @@ Imports System.IO
 Imports System.Linq
 Imports System.Text
 Imports System.Xml
-Imports DevExpress.Data.Utils
 Imports DevExpress.Data.Utils.Security
 Imports DevExpress.DXperience.Demos
 Imports DevExpress.Internal
@@ -35,8 +34,6 @@ Namespace DevExpress.XtraPivotGrid.Demos.Helpers
 
     '
     Public Module DatabaseHelper
-
-        Private ReadOnly random As NonCryptographicRandom = NonCryptographicRandom.Default
 
         Private ReadOnly worker As BackgroundWorker = New BackgroundWorker()
 
@@ -83,9 +80,9 @@ Namespace DevExpress.XtraPivotGrid.Demos.Helpers
                 Catch
                 End Try
 
-                Dim salesPersonCount As Integer = random.Next(40, 50)
-                Dim customersCount As Integer = random.Next(40, 50)
-                Dim productsCount As Integer = random.Next(80, 100)
+                Dim salesPersonCount As Integer = TutorialConstants.Random.Next(40, 50)
+                Dim customersCount As Integer = TutorialConstants.Random.Next(40, 50)
+                Dim productsCount As Integer = TutorialConstants.Random.Next(80, 100)
                 Dim peopleNames As List(Of String) = GeneratePeopleNames(salesPersonCount + customersCount)
                 Dim fullProductNames As List(Of String) = GenerateProductNames(productsCount)
                 Dim indexPersonName As Integer = 0
@@ -108,16 +105,16 @@ Namespace DevExpress.XtraPivotGrid.Demos.Helpers
 
                 Dim products As XPCollection(Of Product) = New XPCollection(Of Product)(uow)
                 For i As Integer = 0 To productsCount - 1
-                    products.Add(New Product(uow, fullProductNames(i), categories(random.Next(categories.Count)), random.Next(500)))
+                    products.Add(New Product(uow, fullProductNames(i), categories(TutorialConstants.Random.Next(categories.Count)), TutorialConstants.Random.Next(500)))
                 Next
 
                 Do
                     For k As Integer = 0 To 300 - 1
-                        Dim order As Order = New Order(uow, salesPeople(random.Next(salesPeople.Count)), customers(random.Next(customers.Count)), GetDate())
-                        Dim salesCount As Integer = If(rowsRemaining >= 5, random.Next(1, 6), rowsRemaining)
+                        Dim order As Order = New Order(uow, salesPeople(TutorialConstants.Random.Next(salesPeople.Count)), customers(TutorialConstants.Random.Next(customers.Count)), GetDate())
+                        Dim salesCount As Integer = If(rowsRemaining >= 5, TutorialConstants.Random.Next(1, 6), rowsRemaining)
                         For j As Integer = 0 To salesCount - 1
-                            Dim product As Product = products(random.Next(products.Count))
-                            Dim tmp_Sale = New Sale(uow, order, product, random.Next(1, 100), GetProductPrice(product))
+                            Dim product As Product = products(TutorialConstants.Random.Next(products.Count))
+                            Dim tmp_Sale = New Sale(uow, order, product, TutorialConstants.Random.Next(1, 100), GetProductPrice(product))
                             rowsRemaining -= 1
                         Next
                     Next
@@ -149,19 +146,19 @@ Namespace DevExpress.XtraPivotGrid.Demos.Helpers
         End Function
 
         Private Function GeneratePeopleName() As String
-            Return FirstNames(random.Next(FirstNames.Length)) & " " & LastNames(random.Next(LastNames.Length))
+            Return FirstNames(TutorialConstants.Random.Next(FirstNames.Length)) & " " & LastNames(TutorialConstants.Random.Next(LastNames.Length))
         End Function
 
         Private Function GenerateProductName() As String
-            Return Adjectives(random.Next(Adjectives.Length)) & " " & ProductNames(random.Next(ProductNames.Length))
+            Return Adjectives(TutorialConstants.Random.Next(Adjectives.Length)) & " " & ProductNames(TutorialConstants.Random.Next(ProductNames.Length))
         End Function
 
         Private Function GetProductPrice(ByVal product As Product) As Decimal
-            Return product.Price * CDec((0.5 + random.NextDouble()))
+            Return product.Price * CDec((0.5 + TutorialConstants.Random.NextDouble()))
         End Function
 
         Private Function GetDate() As Date
-            Return New DateTime(random.Next(2007, 2015), random.Next(1, 13), random.Next(1, 28))
+            Return New DateTime(TutorialConstants.Random.Next(2007, 2015), TutorialConstants.Random.Next(1, 13), TutorialConstants.Random.Next(1, 28))
         End Function
 
         Public Function GetContext() As PivotGridDemoDBEntities

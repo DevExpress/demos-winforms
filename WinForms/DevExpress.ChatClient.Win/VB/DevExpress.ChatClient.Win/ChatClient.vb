@@ -2,6 +2,7 @@ Imports System
 Imports System.Drawing
 Imports DevExpress.ChatClient.ViewModels
 Imports DevExpress.ChatClient.Views
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Utils.MVVM.Services
 Imports DevExpress.XtraBars.Docking2010.Customization
 Imports DevExpress.XtraBars.Docking2010.Views.WindowsUI
@@ -84,6 +85,22 @@ Namespace DevExpress.ChatClient
             fluent.BindCommand("btnVideoCall", Sub(x) x.VideoCall())
             fluent.BindCommand("btnMessage", Sub(x) x.TextMessage())
         End Sub
+
+        Protected Overrides Sub OnShown(ByVal e As EventArgs)
+            MyBase.OnShown(e)
+            If MainFormHelper.TakeScreens Then Call MainFormHelper.TakeAllScreens(New Func(Of Integer, String)(AddressOf TakeModule), Me, New Windows.Forms.Control() {messagesView, contactsView}, New Func(Of Integer, Integer)(AddressOf TakeModuleInterval), demoName:=GetType(Messenger).Assembly.GetName().Name)
+        End Sub
+
+        Private ReadOnly takeModuleNames As String() = New String() {NameOf(Views.MessagesView), NameOf(Views.ContactsView)}
+
+        Private Function TakeModule(ByVal num As Integer) As String
+            messagesView.Focus()
+            Return takeModuleNames(num)
+        End Function
+
+        Private Function TakeModuleInterval(ByVal num As Integer) As Integer
+            Return 1500
+        End Function
 
         Private NotInheritable Class Styles
 

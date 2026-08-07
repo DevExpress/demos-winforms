@@ -75,6 +75,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.chart), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((stackedBarSeriesLabel1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((stackedBarSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
@@ -211,7 +212,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
             Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(217, 24)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' layoutControlItemIndent
@@ -243,11 +243,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 204)
             Me.emptySpaceItem.Name = "emptySpaceItem"
             Me.emptySpaceItem.Size = New System.Drawing.Size(237, 330)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' layoutControlGroupTotalLabels
             ' 
@@ -265,7 +263,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemTotalLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemTotalLabelVisible.Name = "layoutControlItemTotalLabelVisible"
             Me.layoutControlItemTotalLabelVisible.Size = New System.Drawing.Size(217, 24)
-            Me.layoutControlItemTotalLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemTotalLabelVisible.TextVisible = False
             ' 
             ' layoutControlGroupRoot
@@ -284,7 +281,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New System.Drawing.Size(241, 538)
-            Me.layoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem1.TextVisible = False
             ' 
             ' chart
@@ -320,6 +316,7 @@ Namespace DevExpress.XtraCharts.Demos
             legend1.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.BottomOutside
             legend1.Border.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             legend1.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight
+            legend1.LegendID = 0
             legend1.Margins.Bottom = 0
             legend1.Name = "Legend 1"
             legend1.Padding.Bottom = 3
@@ -348,13 +345,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(546, 571)
             Me.chart.TabIndex = 3
             chartTitle1.Text = "Population: Age Structure"
+            chartTitle1.TitleID = 0
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle2.Text = "Data estimate for 2020"
-            chartTitle3.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle2.TitleID = 1
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
-            chartTitle3.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            chartTitle3.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
+            chartTitle3.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8.25F)
             chartTitle3.Text = "From www.cia.gov"
             chartTitle3.TextColor = System.Drawing.Color.Gray
+            chartTitle3.TitleID = 2
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2, chartTitle3})
             Me.chart.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[True]
             AddHandler Me.chart.CustomDrawSeriesPoint, New DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(AddressOf Me.Chart_CustomDrawSeriesPoint)
@@ -397,6 +397,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((Me.layoutControlGroupRoot), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((stackedBarSeriesLabel1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((stackedBarSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.chart), System.ComponentModel.ISupportInitialize).EndInit()

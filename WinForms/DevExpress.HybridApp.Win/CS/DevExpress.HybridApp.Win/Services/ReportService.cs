@@ -1,5 +1,5 @@
-using DevExpress.XtraReports;
 using System;
+using DevExpress.XtraReports;
 
 namespace DevExpress.DevAV.Services {
     public interface IReportInfo {

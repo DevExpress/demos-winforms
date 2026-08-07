@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.XtraRichEdit;
-using DevExpress.XtraPrinting;
 using DevExpress.MailClient.Win;
+using DevExpress.XtraPrinting;
+using DevExpress.XtraRichEdit;
 
 namespace DevExpress.ProductsDemo.Win.Modules {
     public partial class WordModule : BaseModule {

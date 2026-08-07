@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
+using System.IO;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win.Controls;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
 using DevExpress.XtraScheduler;
 using DevExpress.XtraScheduler.iCalendar;
-using DevExpress.MailClient.Win.Controls;
-using System.IO;
 using DevExpress.XtraScheduler.UI;
-using DevExpress.XtraEditors;
 
 namespace DevExpress.MailClient.Win {
     public partial class Calendar : BaseModule {
@@ -43,7 +38,7 @@ namespace DevExpress.MailClient.Win {
             this.ribbon = manager as RibbonControl;
             this.appointmentCategory = FindAppointmentPage(this.ribbon);
 
-            if (calendarControls == null) {
+            if(calendarControls == null) {
                 this.calendarControls = data as ucCalendar;
                 this.calendarControls.InitDateNavigator(this.schedulerControl1);
                 this.calendarControls.InitResourcesTree(this.schedulerStorage1);
@@ -51,13 +46,13 @@ namespace DevExpress.MailClient.Win {
             }
         }
         private RibbonPageCategory FindAppointmentPage(RibbonControl ribbonControl) {
-            foreach (RibbonPageCategory category in ribbonControl.PageCategories)
-                if (category.Tag != null && category.Tag.ToString() == "CalendarTools")
+            foreach(RibbonPageCategory category in ribbonControl.PageCategories)
+                if(category.Tag != null && category.Tag.ToString() == "CalendarTools")
                     return category;
             return null;
         }
         protected internal override void ButtonClick(string tag) {
-            switch (tag) {
+            switch(tag) {
                 case TagResources.OpenCalendar:
                     LoadCalendar();
                     break;
@@ -110,14 +105,14 @@ namespace DevExpress.MailClient.Win {
             UpdateAppointmentCategory();
         }
         void UpdateAppointmentCategory() {
-            if (this.schedulerControl1.SelectedAppointments.Count > 0)
+            if(this.schedulerControl1.SelectedAppointments.Count > 0)
                 ShowAppointmentCategory();
             else
                 HideAppointmentCategory();
         }
         private void schedulerStorage1_FilterAppointment(object sender, PersistentObjectCancelEventArgs e) {
             Appointment apt = (Appointment)e.Object;
-            if (EmptyResourceId.Id.Equals(apt.ResourceId))
+            if(EmptyResourceId.Id.Equals(apt.ResourceId))
                 return;
             List<int> selectedIds = this.calendarControls.GetSelectedResourceIds();
             int resourceId = Convert.ToInt32(apt.ResourceId);
@@ -128,7 +123,7 @@ namespace DevExpress.MailClient.Win {
         }
         private void schedulerControl1_InitNewAppointment(object sender, AppointmentEventArgs e) {
             List<int> selectedIds = this.calendarControls.GetSelectedResourceIds();
-            if (selectedIds.Count > 0)
+            if(selectedIds.Count > 0)
                 e.Appointment.ResourceId = selectedIds[0];
         }
 
@@ -136,10 +131,10 @@ namespace DevExpress.MailClient.Win {
             SaveFileDialog fileDialog = new SaveFileDialog();
             fileDialog.Filter = "iCalendar files (*.ics)|*.ics";
             fileDialog.FilterIndex = 1;
-            if (fileDialog.ShowDialog() != DialogResult.OK)
+            if(fileDialog.ShowDialog() != DialogResult.OK)
                 return;
             try {
-                using (Stream stream = fileDialog.OpenFile())
+                using(Stream stream = fileDialog.OpenFile())
                     ExportAppointments(stream);
             }
             catch {
@@ -151,15 +146,15 @@ namespace DevExpress.MailClient.Win {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "iCalendar files (*.ics)|*.ics";
             dialog.FilterIndex = 1;
-            if (dialog.ShowDialog() != DialogResult.OK)
+            if(dialog.ShowDialog() != DialogResult.OK)
                 return;
-            using (Stream stream = dialog.OpenFile()) {
+            using(Stream stream = dialog.OpenFile()) {
                 ImportAppointments(stream);
             }
         }
 
         void ExportAppointments(Stream stream) {
-            if (stream == null)
+            if(stream == null)
                 return;
             iCalendarExporter exporter = new iCalendarExporter(schedulerStorage1);
             exporter.ProductIdentifier = "-//Developer Express Inc.//XtraScheduler iCalendarExportDemo//EN";
@@ -168,7 +163,7 @@ namespace DevExpress.MailClient.Win {
         }
 
         void ImportAppointments(Stream stream) {
-            if (stream == null)
+            if(stream == null)
                 return;
             iCalendarImporter importer = new iCalendarImporter(schedulerStorage1);
             importer.AppointmentImporting += new AppointmentImportingEventHandler(importer_AppointmentImporting);
@@ -181,25 +176,25 @@ namespace DevExpress.MailClient.Win {
         void importer_AppointmentImporting(object sender, AppointmentImportingEventArgs e) {
         }
         void ShowAppointmentCategory() {
-            if (this.appointmentCategory == null)
+            if(this.appointmentCategory == null)
                 return;
-            if (this.lastSelectedPage == null)
+            if(this.lastSelectedPage == null)
                 this.lastSelectedPage = this.ribbon.SelectedPage;
             this.appointmentCategory.Visible = true;
             this.ribbon.SelectedPage = GetFirstVisiblePage(this.appointmentCategory);
         }
         void HideAppointmentCategory() {
-            if (this.appointmentCategory == null)
+            if(this.appointmentCategory == null)
                 return;
             this.appointmentCategory.Visible = false;
-            if (this.lastSelectedPage != null) {
+            if(this.lastSelectedPage != null) {
                 this.ribbon.SelectedPage = this.lastSelectedPage;
                 this.lastSelectedPage = null;
             }
         }
         RibbonPage GetFirstVisiblePage(RibbonPageCategory ribbonPageCategory) {
-            foreach (RibbonPage page in ribbonPageCategory.Pages)
-                if (page.Visible)
+            foreach(RibbonPage page in ribbonPageCategory.Pages)
+                if(page.Visible)
                     return page;
             return null;
         }
@@ -218,7 +213,7 @@ namespace DevExpress.MailClient.Win {
 
         protected override DialogResult ShowRecurrenceForm(Form form) {
             string name = System.Threading.Thread.CurrentThread.CurrentCulture.Name;
-            if (string.Equals(name, "fa", StringComparison.Ordinal))
+            if(string.Equals(name, "fa", StringComparison.Ordinal))
                 form.Width += 100;
             return base.ShowRecurrenceForm(form);
         }

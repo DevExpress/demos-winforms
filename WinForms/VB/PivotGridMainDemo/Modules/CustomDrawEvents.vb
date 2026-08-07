@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Data
-Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraPivotGrid.Demos.Modules
 
@@ -13,8 +13,6 @@ Namespace DevExpress.XtraPivotGrid.Demos.Modules
         Private highlightColor As Color
 
         Private dataSource As DataTable = New DataTable()
-
-        Private random As NonCryptographicRandom = NonCryptographicRandom.Default
 
         Private cells As Object(,)
 
@@ -81,7 +79,7 @@ Namespace DevExpress.XtraPivotGrid.Demos.Modules
         End Property
 
         Private Sub AddDataSourceRow()
-            dataSource.Rows.Add("Category " & ((dataSource.Rows.Count + 1) Mod 2).ToString(), "Product " & ((dataSource.Rows.Count + 1) Mod 10).ToString(), Date.FromOADate(random.Next(365) + New DateTime(2007, 1, 1).ToOADate()), random.Next(1000))
+            dataSource.Rows.Add("Category " & ((dataSource.Rows.Count + 1) Mod 2).ToString(), "Product " & ((dataSource.Rows.Count + 1) Mod 10).ToString(), Date.FromOADate(TutorialConstants.Random.Next(365) + New DateTime(2007, 1, 1).ToOADate()), TutorialConstants.Random.Next(1000))
         End Sub
 
         Private Sub HighlightChanges()

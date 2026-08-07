@@ -1,25 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using DevExpress.Utils.Design;
+using DevExpress.XtraEditors;
 using DevExpress.XtraScheduler;
 using DevExpress.XtraTreeList.Nodes;
-using DevExpress.Skins;
-using DevExpress.XtraNavBar;
-using DevExpress.XtraScheduler.UI;
-using DevExpress.XtraEditors;
-using DevExpress.Utils.Design;
 
 namespace DevExpress.ProductsDemo.Win.Controls {
     public partial class ucCalendar : XtraUserControl {
         SchedulerControl schedulerControl;
-                
+
         public ucCalendar() {
-            if (!DesignTimeTools.IsDesignMode)
+            if(!DesignTimeTools.IsDesignMode)
                 LookAndFeel.ActiveLookAndFeel.StyleChanged += new EventHandler(ActiveLookAndFeel_StyleChanged);
             InitializeComponent();
             this.treeResources.LayoutUpdated += treeResources_LayoutUpdated;
@@ -34,14 +26,14 @@ namespace DevExpress.ProductsDemo.Win.Controls {
             this.dateNavigator1.SchedulerControl = schedulerControl;
         }
         public void InitResourcesTree(SchedulerStorage storage) {
-            if (treeResources.Nodes.Count > 0)
+            if(treeResources.Nodes.Count > 0)
                 return;
 
             treeResources.BeginUnboundLoad();
             treeResources.AppendNode(new object[] { Properties.Resources.Work }, -1, CheckState.Checked);
             treeResources.AppendNode(new object[] { Properties.Resources.Personal }, -1, CheckState.Checked);
 
-            foreach (Resource item in storage.Resources.Items) {
+            foreach(Resource item in storage.Resources.Items) {
                 int id = (int)item.Id;
                 TreeListNode node = treeResources.AppendNode(new object[] { item.Caption }, CalculateResourceCategory(id), id);
                 node.CheckState = CheckState.Checked;
@@ -53,18 +45,18 @@ namespace DevExpress.ProductsDemo.Win.Controls {
             return resourceId < 3 ? 0 : 1;
         }
         private void treeResources_AfterCheckNode(object sender, DevExpress.XtraTreeList.NodeEventArgs e) {
-            foreach (TreeListNode node in e.Node.Nodes) {
+            foreach(TreeListNode node in e.Node.Nodes) {
                 node.CheckState = e.Node.CheckState;
             }
-            if (e.Node.ParentNode != null) 
+            if(e.Node.ParentNode != null)
                 e.Node.ParentNode.CheckState = GetParentNodeState(e.Node.ParentNode.Nodes);
 
             this.schedulerControl.ActiveView.LayoutChanged();
         }
         CheckState GetParentNodeState(TreeListNodes nodes) {
             CheckState state = nodes[0].CheckState;
-            foreach (TreeListNode node in nodes)
-                if (node.CheckState != state) return CheckState.Indeterminate;
+            foreach(TreeListNode node in nodes)
+                if(node.CheckState != state) return CheckState.Indeterminate;
             return state;
         }
         public List<int> GetSelectedResourceIds() {
@@ -74,8 +66,8 @@ namespace DevExpress.ProductsDemo.Win.Controls {
             return result;
         }
         private void FillSelectedNodes(TreeListNode node, List<int> resourceIds) {
-            foreach (TreeListNode item in node.Nodes)
-                if (item.CheckState == CheckState.Checked)
+            foreach(TreeListNode item in node.Nodes)
+                if(item.CheckState == CheckState.Checked)
                     resourceIds.Add((int)item.Tag);
         }
 
@@ -118,12 +110,12 @@ namespace DevExpress.ProductsDemo.Win.Controls {
         }
         protected override void OnLoad(EventArgs e) {
             base.OnLoad(e);
-            if (!DesignTimeTools.IsDesignMode)
+            if(!DesignTimeTools.IsDesignMode)
                 LookAndFeelStyleChanged();
         }
         void ucCalendar_Disposed(object sender, EventArgs e) {
-            if (!DesignTimeTools.IsDesignMode) {
-                if (LookAndFeel != null && LookAndFeel.ActiveLookAndFeel != null)
+            if(!DesignTimeTools.IsDesignMode) {
+                if(LookAndFeel != null && LookAndFeel.ActiveLookAndFeel != null)
                     LookAndFeel.ActiveLookAndFeel.StyleChanged -= new EventHandler(ActiveLookAndFeel_StyleChanged);
             }
         }

@@ -1,17 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.Utils.MVVM.UI;
 using DevExpress.DevAV.ViewModels;
-using DevExpress.XtraPivotGrid;
+using DevExpress.Utils.MVVM.UI;
 using DevExpress.XtraEditors;
-using DevExpress.Data.Filtering;
-using DevExpress.Utils.MVVM;
+using DevExpress.XtraPivotGrid;
 
 namespace DevExpress.DevAV.Views.Quote {
     [ViewType(DevAVDbViewModel.QuoteCollectionViewDocumentType)]
@@ -20,7 +11,7 @@ namespace DevExpress.DevAV.Views.Quote {
             InitializeComponent();
             if(!mvvmContext.IsDesignMode) {
                 InitBinding();
-            }            
+            }
         }
 
         private void InitBinding() {
@@ -31,12 +22,12 @@ namespace DevExpress.DevAV.Views.Quote {
 
             fluentAPI.SetObjectDataSourceBinding(quoteInfoBindingSource, x => x.Entities);
             fluentAPI.SetObjectDataSourceBinding(quoteSummaryItemBindingSource, x => x.OpportunitiesInfo);
-            
+
             fluentAPI.WithEvent<RangeControl, RangeControlRangeEventArgs>(rangeControl, "RangeChanged")
                 .SetBinding(x => x.Range, args => new DateRange((DateTime)args.Range.Minimum, (DateTime)args.Range.Maximum),
                 (control, range) => control.SelectedRange = new RangeControlRange(range.Minimum, range.Maximum)
                 );
-            
+
             fluentAPI.SetBinding(dateTimeChartRangeControlClient1.DataProvider, dp => dp.DataSource, x => x.AverageQuotes);
 
             windowsUIButtonPanel.Buttons[0].Properties.ImageUri = ToolbarExtension.GetImageUri("PivotTable");
@@ -74,7 +65,7 @@ namespace DevExpress.DevAV.Views.Quote {
 
         public enum VisibleElement {
             PivotGrid,
-            MapControl            
+            MapControl
         }
     }
 }

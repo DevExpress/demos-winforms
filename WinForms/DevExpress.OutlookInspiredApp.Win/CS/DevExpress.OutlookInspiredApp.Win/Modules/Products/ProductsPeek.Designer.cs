@@ -218,12 +218,12 @@ namespace DevExpress.DevAV.Modules {
             
             
             this.labelItem.AllowHotTrack = false;
-            this.labelItem.CustomizationFormText = "PRODUCTS";
+            this.labelItem.CustomizationFormText = "Products";
             this.labelItem.Location = new System.Drawing.Point(0, 24);
             this.labelItem.Name = "labelItem";
             this.labelItem.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 8, 8);
             this.labelItem.Size = new System.Drawing.Size(264, 29);
-            this.labelItem.Text = "PRODUCTS";
+            this.labelItem.Text = "Products";
             this.labelItem.TextSize = new System.Drawing.Size(54, 13);
             
             

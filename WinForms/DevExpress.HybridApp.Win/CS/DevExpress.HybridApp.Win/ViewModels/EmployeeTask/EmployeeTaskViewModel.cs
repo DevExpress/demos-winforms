@@ -1,30 +1,19 @@
-using System;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
-using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.DevAVDbDataModel1;
 using DevExpress.DevAV.Common.DataModel;
-using DevExpress.DevAV;
 using DevExpress.DevAV.Common.ViewModel;
+using DevExpress.DevAV.DevAVDbDataModel1;
+using DevExpress.Mvvm.POCO;
 
-namespace DevExpress.DevAV.ViewModels
-{
+namespace DevExpress.DevAV.ViewModels {
     /// <summary>
     /// Represents the single EmployeeTask object view model.
     /// </summary>
-    public partial class EmployeeTaskViewModel : SingleObjectViewModel<EmployeeTask, long, IDevAVDbUnitOfWork>
-    {
+    public partial class EmployeeTaskViewModel : SingleObjectViewModel<EmployeeTask, long, IDevAVDbUnitOfWork> {
 
         /// <summary>
         /// Creates a new instance of EmployeeTaskViewModel as a POCO view model.
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
-        public static EmployeeTaskViewModel Create(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null)
-        {
+        public static EmployeeTaskViewModel Create(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null) {
             return ViewModelSource.Create(() => new EmployeeTaskViewModel(unitOfWorkFactory));
         }
 
@@ -34,23 +23,20 @@ namespace DevExpress.DevAV.ViewModels
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
         protected EmployeeTaskViewModel(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null)
-            : base(unitOfWorkFactory ?? UnitOfWorkSource.GetUnitOfWorkFactory(), x => x.Tasks, x => x.Subject)
-        {
+            : base(unitOfWorkFactory ?? UnitOfWorkSource.GetUnitOfWorkFactory(), x => x.Tasks, x => x.Subject) {
         }
 
         /// <summary>
         /// The view model that contains a look-up collection of CustomerEmployees for the corresponding navigation property in the view.
         /// </summary>
-        public IEntitiesViewModel<CustomerEmployee> LookUpCustomerEmployees
-        {
+        public IEntitiesViewModel<CustomerEmployee> LookUpCustomerEmployees {
             get { return GetLookUpEntitiesViewModel((EmployeeTaskViewModel x) => x.LookUpCustomerEmployees, x => x.CustomerEmployees); }
         }
 
         /// <summary>
         /// The view model that contains a look-up collection of Employees for the corresponding navigation property in the view.
         /// </summary>
-        public IEntitiesViewModel<Employee> LookUpEmployees
-        {
+        public IEntitiesViewModel<Employee> LookUpEmployees {
             get { return GetLookUpEntitiesViewModel((EmployeeTaskViewModel x) => x.LookUpEmployees, x => x.Employees); }
         }
     }

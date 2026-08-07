@@ -47,6 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(seriesTitle1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl)).BeginInit();
             this.layoutControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditSeriesView.Properties)).BeginInit();
@@ -73,7 +74,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // chart
             // 
@@ -104,6 +105,7 @@
             this.chart.SeriesTemplate.LegendTextPattern = "{A}";
             this.chart.SeriesTemplate.SeriesDataMember = "Region";
             this.chart.SeriesTemplate.ValueDataMembersSerializable = "Sales";
+            seriesTitle1.TitleID = 0;
             pieSeriesView1.Titles.AddRange(new DevExpress.XtraCharts.SeriesTitle[] {
             seriesTitle1});
             this.chart.SeriesTemplate.View = pieSeriesView1;
@@ -112,14 +114,18 @@
             this.chart.TabStop = false;
             chartTitle1.Text = "With XtraCharts, <b>you</b> can display an <u>unlimited</u> number of <color=blue" +
     ">chart titles</color>";
+            chartTitle1.TitleID = 0;
             chartTitle1.WordWrap = true;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
             chartTitle2.Text = "<size=14>Title</size> <size=+2>with <size=+6>a</size></size> <size=24>variable</s" +
     "ize> <size=14>font <size=+6>size</size></size>";
+            chartTitle2.TitleID = 1;
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Left;
             chartTitle3.Text = "<i>Italicized</i> title";
+            chartTitle3.TitleID = 2;
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Right;
             chartTitle4.Text = "<color=red>Multi</color>-<color=green>color</color> <color=blue>title</color>";
+            chartTitle4.TitleID = 3;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2,
@@ -141,13 +147,13 @@
             this.layoutControl.Location = new System.Drawing.Point(0, 0);
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
             // comboBoxEditSeriesView
             // 
-            this.comboBoxEditSeriesView.Location = new System.Drawing.Point(73, 31);
+            this.comboBoxEditSeriesView.Location = new System.Drawing.Point(82, 34);
             this.comboBoxEditSeriesView.Name = "comboBoxEditSeriesView";
             this.comboBoxEditSeriesView.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -155,14 +161,14 @@
             "Pie",
             "Bar"});
             this.comboBoxEditSeriesView.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditSeriesView.Size = new System.Drawing.Size(156, 20);
+            this.comboBoxEditSeriesView.Size = new System.Drawing.Size(147, 20);
             this.comboBoxEditSeriesView.StyleController = this.layoutControl;
             this.comboBoxEditSeriesView.TabIndex = 4;
             this.comboBoxEditSeriesView.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditSeriesView_SelectedIndexChanged);
             // 
             // textEditTitleText
             // 
-            this.textEditTitleText.Location = new System.Drawing.Point(12, 94);
+            this.textEditTitleText.Location = new System.Drawing.Point(12, 100);
             this.textEditTitleText.Name = "textEditTitleText";
             this.textEditTitleText.Size = new System.Drawing.Size(217, 20);
             this.textEditTitleText.StyleController = this.layoutControl;
@@ -171,17 +177,17 @@
             // 
             // checkEditWordWrap
             // 
-            this.checkEditWordWrap.Location = new System.Drawing.Point(12, 118);
+            this.checkEditWordWrap.Location = new System.Drawing.Point(12, 124);
             this.checkEditWordWrap.Name = "checkEditWordWrap";
             this.checkEditWordWrap.Properties.Caption = "Word Wrap";
-            this.checkEditWordWrap.Size = new System.Drawing.Size(217, 19);
+            this.checkEditWordWrap.Size = new System.Drawing.Size(217, 20);
             this.checkEditWordWrap.StyleController = this.layoutControl;
             this.checkEditWordWrap.TabIndex = 6;
             this.checkEditWordWrap.CheckedChanged += new System.EventHandler(this.checkEditWordWrap_CheckedChanged);
             // 
             // comboBoxEditDock
             // 
-            this.comboBoxEditDock.Location = new System.Drawing.Point(73, 180);
+            this.comboBoxEditDock.Location = new System.Drawing.Point(82, 190);
             this.comboBoxEditDock.Name = "comboBoxEditDock";
             this.comboBoxEditDock.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -191,14 +197,14 @@
             "Left",
             "Right"});
             this.comboBoxEditDock.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditDock.Size = new System.Drawing.Size(156, 20);
+            this.comboBoxEditDock.Size = new System.Drawing.Size(147, 20);
             this.comboBoxEditDock.StyleController = this.layoutControl;
             this.comboBoxEditDock.TabIndex = 7;
             this.comboBoxEditDock.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditDock_SelectedIndexChanged);
             // 
             // comboBoxEditAlignment
             // 
-            this.comboBoxEditAlignment.Location = new System.Drawing.Point(73, 204);
+            this.comboBoxEditAlignment.Location = new System.Drawing.Point(82, 214);
             this.comboBoxEditAlignment.Name = "comboBoxEditAlignment";
             this.comboBoxEditAlignment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -207,7 +213,7 @@
             "Center",
             "Far"});
             this.comboBoxEditAlignment.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditAlignment.Size = new System.Drawing.Size(156, 20);
+            this.comboBoxEditAlignment.Size = new System.Drawing.Size(147, 20);
             this.comboBoxEditAlignment.StyleController = this.layoutControl;
             this.comboBoxEditAlignment.TabIndex = 8;
             this.comboBoxEditAlignment.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditAlignment_SelectedIndexChanged);
@@ -223,7 +229,7 @@
             this.layoutControlGroupLayout});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupText
@@ -232,9 +238,9 @@
             this.layoutControlGroupText.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemWordWrap,
             this.layoutControlItemTitleText});
-            this.layoutControlGroupText.Location = new System.Drawing.Point(0, 63);
+            this.layoutControlGroupText.Location = new System.Drawing.Point(0, 66);
             this.layoutControlGroupText.Name = "layoutControlGroupText";
-            this.layoutControlGroupText.Size = new System.Drawing.Size(241, 86);
+            this.layoutControlGroupText.Size = new System.Drawing.Size(241, 90);
             this.layoutControlGroupText.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupText.Text = "Selected Title Text";
             // 
@@ -243,8 +249,7 @@
             this.layoutControlItemWordWrap.Control = this.checkEditWordWrap;
             this.layoutControlItemWordWrap.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemWordWrap.Name = "layoutControlItemWordWrap";
-            this.layoutControlItemWordWrap.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemWordWrap.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemWordWrap.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemWordWrap.TextVisible = false;
             // 
             // layoutControlItemTitleText
@@ -254,7 +259,6 @@
             this.layoutControlItemTitleText.Name = "layoutControlItemTitleText";
             this.layoutControlItemTitleText.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemTitleText.Text = "Text: ";
-            this.layoutControlItemTitleText.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemTitleText.TextVisible = false;
             // 
             // layoutControlGroupGeneral
@@ -264,7 +268,7 @@
             this.layoutControlItemSeriesView});
             this.layoutControlGroupGeneral.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral";
-            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 63);
+            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 66);
             this.layoutControlGroupGeneral.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupGeneral.Text = "General";
             // 
@@ -279,11 +283,9 @@
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
-            this.emptySpaceItem.Location = new System.Drawing.Point(0, 236);
+            this.emptySpaceItem.Location = new System.Drawing.Point(0, 246);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 308);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 292);
             // 
             // layoutControlGroupLayout
             // 
@@ -291,9 +293,9 @@
             this.layoutControlGroupLayout.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemDock,
             this.layoutControlItemAlignment});
-            this.layoutControlGroupLayout.Location = new System.Drawing.Point(0, 149);
+            this.layoutControlGroupLayout.Location = new System.Drawing.Point(0, 156);
             this.layoutControlGroupLayout.Name = "layoutControlGroupLayout";
-            this.layoutControlGroupLayout.Size = new System.Drawing.Size(241, 87);
+            this.layoutControlGroupLayout.Size = new System.Drawing.Size(241, 90);
             this.layoutControlGroupLayout.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupLayout.Text = "Selected Title Layout";
             // 
@@ -329,6 +331,7 @@
             this.tabPaneOptions.ResumeLayout(false);
             this.tabNavigationPageOptions.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(seriesTitle1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl)).EndInit();

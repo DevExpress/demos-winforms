@@ -1,3 +1,4 @@
+Imports System
 Imports System.Windows.Forms
 Imports DevExpress.DXperience.Demos
 Imports DevExpress.XtraBars.Navigation
@@ -37,6 +38,7 @@ Namespace DevExpress.XtraCharts.Demos
             newModule.TutorialName = name
             Dim newModuleWithOptions As ChartDemoModuleWithOptions = TryCast(newModule, ChartDemoModuleWithOptions)
             If newModuleWithOptions IsNot Nothing Then newModuleWithOptions.OptionsPanelState = optionsPanelState
+            SetStartOptions(newModule)
             group.Controls.Add(newModule)
             newModule.Visible = True
             Instance.CurrentModuleBase = newModuleInfo
@@ -46,6 +48,18 @@ Namespace DevExpress.XtraCharts.Demos
             Call RaiseModuleChanged()
             Return newModule
         End Function
+
+        Private Shared Sub SetStartOptions(ByVal newModule As ChartDemoModule)
+            If MainFormHelper.TakeScreens Then DisableChartAnimationRecursive(newModule)
+        End Sub
+
+        Private Shared Sub DisableChartAnimationRecursive(ByVal control As Control)
+            Dim chartControl As ChartControl = Nothing
+            For Each child As Control In control.Controls
+                If CSharpImpl.__Assign(chartControl, TryCast(child, ChartControl)) IsNot Nothing Then chartControl.AnimationStartMode = ChartAnimationMode.None
+                DisableChartAnimationRecursive(child)
+            Next
+        End Sub
 
         Friend Shared Sub SetPaletteName(ByVal paletteName As String)
             If Instance.CurrentModuleBase IsNot Nothing Then
@@ -70,5 +84,14 @@ Namespace DevExpress.XtraCharts.Demos
 
             Return DialogResult.Cancel
         End Function
+
+        Private Class CSharpImpl
+
+            <Obsolete("Please refactor calling code to use normal Visual Basic assignment")>
+            Shared Function __Assign(Of T)(ByRef target As T, value As T) As T
+                target = value
+                Return value
+            End Function
+        End Class
     End Class
 End Namespace

@@ -147,11 +147,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItemBottom
             ' 
-            Me.emptySpaceItemBottom.AllowHotTrack = False
             Me.emptySpaceItemBottom.Location = New System.Drawing.Point(0, 214)
             Me.emptySpaceItemBottom.Name = "emptySpaceItem1"
             Me.emptySpaceItemBottom.Size = New System.Drawing.Size(241, 324)
-            Me.emptySpaceItemBottom.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' layoutControlGroupChartType
             ' 
@@ -169,7 +167,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemChartType.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemChartType.Name = "layoutControlItemChartType"
             Me.layoutControlItemChartType.Size = New System.Drawing.Size(221, 12)
-            Me.layoutControlItemChartType.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemChartType.TextVisible = False
             ' 
             ' layoutControlGroupColorizerType
@@ -191,7 +188,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemChartType1.Name = "layoutControlItemChartType1"
             Me.layoutControlItemChartType1.Size = New System.Drawing.Size(221, 12)
             Me.layoutControlItemChartType1.Text = "layoutControlItemChartType"
-            Me.layoutControlItemChartType1.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemChartType1.TextVisible = False
             ' 
             ' layoutControlGroup1
@@ -209,7 +205,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New System.Drawing.Size(217, 60)
-            Me.layoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem1.TextVisible = False
             ' 
             ' chart
@@ -248,6 +243,7 @@ Namespace DevExpress.XtraCharts.Demos
             dataSourceAdapter1.DataMembers.AddRange(New DevExpress.XtraCharts.DataMember() {dataMember1, dataMember2, dataMember3})
             series1.DataAdapter = dataSourceAdapter1
             series1.Name = "Series"
+            series1.SeriesID = 0
             keyColorColorizer1.Keys.Add("January")
             keyColorColorizer1.Keys.Add("February")
             keyColorColorizer1.Keys.Add("March")
@@ -269,6 +265,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.TabIndex = 3
             Me.chart.TabStop = False
             chartTitle1.Text = "Mean Daily Temperature"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' sidePanel1

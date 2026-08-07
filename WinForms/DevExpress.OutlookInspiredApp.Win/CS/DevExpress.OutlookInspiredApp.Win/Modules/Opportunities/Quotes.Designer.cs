@@ -143,7 +143,7 @@ namespace DevExpress.DevAV.Modules {
             this.fieldPercentage.Appearance.CellGrandTotal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.fieldPercentage.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
             this.fieldPercentage.AreaIndex = 1;
-            this.fieldPercentage.Caption = "PERCENTAGE";
+            this.fieldPercentage.Caption = "Percentage";
             this.fieldPercentage.FieldEdit = this.percentageProgressBar;
             this.fieldPercentage.FieldName = "Opportunity";
             this.fieldPercentage.Name = "fieldPercentage";
@@ -166,7 +166,7 @@ namespace DevExpress.DevAV.Modules {
             this.fieldOpportunities.AllowedAreas = DevExpress.XtraPivotGrid.PivotGridAllowedAreas.DataArea;
             this.fieldOpportunities.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
             this.fieldOpportunities.AreaIndex = 0;
-            this.fieldOpportunities.Caption = "OPPORTUNITIES";
+            this.fieldOpportunities.Caption = "Opportunities";
             this.fieldOpportunities.FieldName = "Total";
             this.fieldOpportunities.Name = "fieldOpportunities";
             this.fieldOpportunities.Width = 150;
@@ -176,7 +176,7 @@ namespace DevExpress.DevAV.Modules {
             this.fieldCity.AllowedAreas = DevExpress.XtraPivotGrid.PivotGridAllowedAreas.RowArea;
             this.fieldCity.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
             this.fieldCity.AreaIndex = 1;
-            this.fieldCity.Caption = "CITY";
+            this.fieldCity.Caption = "City";
             this.fieldCity.FieldName = "CustomerStore.City";
             this.fieldCity.Name = "fieldCity";
             this.fieldCity.SortOrder = DevExpress.XtraPivotGrid.PivotSortOrder.Descending;
@@ -187,7 +187,7 @@ namespace DevExpress.DevAV.Modules {
             this.fieldState.AllowedAreas = DevExpress.XtraPivotGrid.PivotGridAllowedAreas.RowArea;
             this.fieldState.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
             this.fieldState.AreaIndex = 0;
-            this.fieldState.Caption = "STATE";
+            this.fieldState.Caption = "State";
             this.fieldState.FieldName = "CustomerStore.State";
             this.fieldState.Name = "fieldState";
             this.fieldState.SortOrder = DevExpress.XtraPivotGrid.PivotSortOrder.Descending;
@@ -471,7 +471,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.hiItemsCount.Caption = "RECORDS: 0";
+            this.hiItemsCount.Caption = "Records: 0";
             this.hiItemsCount.Id = 9;
             this.hiItemsCount.Name = "hiItemsCount";
             

@@ -9,12 +9,20 @@ Namespace DevExpress.DevAV.ViewModels
 
     Public Module AnalysisPeriod
 
-        Public ReadOnly Start As System.DateTime = New System.DateTime(DevExpress.DXperience.Demos.TutorialConstants.Now.Year - 3, 10, 1)
+        Public Function CalculateAnalysisPeriod(ByVal maxDate As System.DateTime) As DatePeriod
+            Dim versionYear As Integer = maxDate.Year
+            Return New DevExpress.DevAV.ViewModels.AnalysisPeriod.DatePeriod With {.Start = New System.DateTime(versionYear - 3, maxDate.Month, 1), .[End] = New System.DateTime(versionYear, maxDate.Month, 1)}
+        End Function
 
-        Public ReadOnly [End] As System.DateTime = New System.DateTime(DevExpress.DXperience.Demos.TutorialConstants.Now.Year, 09, 30)
+        Public Function CalculateReportPeriod(ByVal maxDate As System.DateTime) As DatePeriod
+            Dim currentYear As Integer = System.DateTime.Now.Year
+            Dim versionYear As Integer = maxDate.Year
+            Dim reportEndYear As Integer = versionYear - (If(versionYear < currentYear, 0, 1))
+            Return New DevExpress.DevAV.ViewModels.AnalysisPeriod.DatePeriod With {.Start = New System.DateTime(reportEndYear - 2, 1, 1), .[End] = New System.DateTime(reportEndYear, 12, 30)}
+        End Function
 
-        Public Function MonthOffsetFromStart(ByVal dateTime As System.DateTime) As Integer
-            Return(dateTime.Year - DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Year) * 12 + dateTime.Month - DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Month
+        Public Function MonthOffset(ByVal startDateTime As System.DateTime, ByVal dateTime As System.DateTime) As Integer
+            Return(dateTime.Year - startDateTime.Year) * 12 + dateTime.Month - startDateTime.Month
         End Function
 
         Public Class Item
@@ -31,38 +39,55 @@ Namespace DevExpress.DevAV.ViewModels
                 End Get
             End Property
         End Class
+
+        Public Class DatePeriod
+
+            Public Property Start As DateTime
+
+            Public Property [End] As DateTime
+        End Class
+    End Module
+
+    Public Module AnalysisPeriodHelper
+
+        <Extension()>
+        Public Function GetMaxOrdersDate(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork) As DateTime
+            Dim orders = UnitOfWork.Orders
+            Dim dateRange =(From o In orders Group o By __groupByKey1__ = 1 Into g = Group Select New With {.MaxDate = g.Max(Function(x) x.OrderDate)}).FirstOrDefault()
+            Return dateRange.MaxDate
+        End Function
     End Module
 
     Public Module ProductsAnalysis
 
 #If NET
-        public static IEnumerable<Item> GetFinancialReport(this IDevAVDbUnitOfWork UnitOfWork) {
+        public static IEnumerable<Item> GetFinancialReport(this IDevAVDbUnitOfWork UnitOfWork, DateTime startDate, DateTime endDate) {
             var orders = UnitOfWork.Orders;
             var orderItems =
                 from oi in UnitOfWork.OrderItems
                 join o in orders on oi.OrderId equals o.Id
-                where (o.OrderDate >= AnalysisPeriod.Start && o.OrderDate <= AnalysisPeriod.End)
+                where (o.OrderDate >= startDate && o.OrderDate < endDate)
                 select new {
                     Product = oi.Product,
                     Total = oi.Total,
-                    FY = ((o.OrderDate.Year - AnalysisPeriod.Start.Year) * 12 + (o.OrderDate.Month - AnalysisPeriod.Start.Month)) / 12
+                    FY = ((o.OrderDate.Year - startDate.Year) * 12 + (o.OrderDate.Month - startDate.Month)) / 12
                 };
             return
                 from oi in orderItems
                 group oi by new { oi.Product.Id, oi.Product.Name, oi.FY } into g
                 select new Item {
                     ProductName = g.Key.Name,
-                    Year = AnalysisPeriod.Start.Year + g.Key.FY,
-                    Month = AnalysisPeriod.Start.Month,
+                    Year = startDate.Year + g.Key.FY,
+                    Month = startDate.Month,
                     Total = g.Sum(o => o.Total)
                 };
         }
-        public static IEnumerable<Item> GetFinancialData(this IDevAVDbUnitOfWork UnitOfWork) {
+        public static IEnumerable<Item> GetFinancialData(this IDevAVDbUnitOfWork UnitOfWork, DateTime startDate, DateTime endDate) {
             var orders = UnitOfWork.Orders;
             var orderItems =
                 from oi in UnitOfWork.OrderItems
                 join o in orders on oi.OrderId equals o.Id
-                where (o.OrderDate >= AnalysisPeriod.Start && o.OrderDate <= AnalysisPeriod.End)
+                where (o.OrderDate >= startDate && o.OrderDate < endDate)
                 select new {
                     Product = oi.Product,
                     Date = o.OrderDate,
@@ -80,17 +105,17 @@ Namespace DevExpress.DevAV.ViewModels
         }
 #Else
         <Extension()>
-        Public Function GetFinancialReport(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork) As IEnumerable(Of DevExpress.DevAV.ViewModels.ProductsAnalysis.Item)
+        Public Function GetFinancialReport(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork, ByVal startDate As System.DateTime, ByVal endDate As System.DateTime) As IEnumerable(Of DevExpress.DevAV.ViewModels.ProductsAnalysis.Item)
             Dim orders = UnitOfWork.Orders
-            Dim orderItems = From oi In UnitOfWork.OrderItems Join o In orders On oi.OrderId Equals o.Id Where(o.OrderDate >= DevExpress.DevAV.ViewModels.AnalysisPeriod.Start AndAlso o.OrderDate <= DevExpress.DevAV.ViewModels.AnalysisPeriod.[End]) Select New With {.Product = oi.Product, .Total = oi.Total, .FY =((o.OrderDate.Year - DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Year) * 12 + (o.OrderDate.Month - DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Month)) \ 12}
-            Return From oi In orderItems Group oi By __groupByKey1__ = New With {oi.Product, oi.FY} Into g = Group Select New DevExpress.DevAV.ViewModels.ProductsAnalysis.Item With {.ProductName = __groupByKey1__.Product.Name, .Year = DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Year + __groupByKey1__.FY, .Month = DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Month, .Total = If(System.Linq.Enumerable.[Select](g, Function(o) CType(CType(o.Total, Decimal?), System.[Decimal]?)).Sum(), 0)}
+            Dim orderItems = From oi In UnitOfWork.OrderItems Join o In orders On oi.OrderId Equals o.Id Where(o.OrderDate >= startDate AndAlso o.OrderDate < endDate) Select New With {.Product = oi.Product, .Total = oi.Total, .FY =((o.OrderDate.Year - startDate.Year) * 12 + (o.OrderDate.Month - startDate.Month)) \ 12}
+            Return From oi In orderItems Group oi By __groupByKey2__ = New With {oi.Product, oi.FY} Into g = Group Select New DevExpress.DevAV.ViewModels.ProductsAnalysis.Item With {.ProductName = __groupByKey2__.Product.Name, .Year = startDate.Year + __groupByKey2__.FY, .Month = startDate.Month, .Total = If(System.Linq.Enumerable.[Select](g, Function(o) CType(CType(o.Total, Decimal?), System.[Decimal]?)).Sum(), 0)}
         End Function
 
         <Extension()>
-        Public Function GetFinancialData(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork) As IEnumerable(Of DevExpress.DevAV.ViewModels.ProductsAnalysis.Item)
+        Public Function GetFinancialData(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork, ByVal startDate As System.DateTime, ByVal endDate As System.DateTime) As IEnumerable(Of DevExpress.DevAV.ViewModels.ProductsAnalysis.Item)
             Dim orders = UnitOfWork.Orders
-            Dim orderItems = From oi In UnitOfWork.OrderItems Join o In orders On oi.OrderId Equals o.Id Where(o.OrderDate >= DevExpress.DevAV.ViewModels.AnalysisPeriod.Start AndAlso o.OrderDate <= DevExpress.DevAV.ViewModels.AnalysisPeriod.[End]) Select New With {.Product = oi.Product, .[Date] = o.OrderDate, .Total = oi.Total}
-            Return From oi In orderItems Group oi By __groupByKey2__ = New With {oi.Product.Category, oi.[Date].Year, oi.[Date].Month} Into g = Group Select New DevExpress.DevAV.ViewModels.ProductsAnalysis.Item With {.ProductCategory = __groupByKey2__.Category, .Year = __groupByKey2__.Year, .Month = __groupByKey2__.Month, .Total = If(System.Linq.Enumerable.[Select](g, Function(o) CType(CType(o.Total, Decimal?), System.[Decimal]?)).Sum(), 0)}
+            Dim orderItems = From oi In UnitOfWork.OrderItems Join o In orders On oi.OrderId Equals o.Id Where(o.OrderDate >= startDate AndAlso o.OrderDate < endDate) Select New With {.Product = oi.Product, .[Date] = o.OrderDate, .Total = oi.Total}
+            Return From oi In orderItems Group oi By __groupByKey3__ = New With {oi.Product.Category, oi.[Date].Year, oi.[Date].Month} Into g = Group Select New DevExpress.DevAV.ViewModels.ProductsAnalysis.Item With {.ProductCategory = __groupByKey3__.Category, .Year = __groupByKey3__.Year, .Month = __groupByKey3__.Month, .Total = If(System.Linq.Enumerable.[Select](g, Function(o) CType(CType(o.Total, Decimal?), System.[Decimal]?)).Sum(), 0)}
         End Function
 
 #End If
@@ -106,62 +131,61 @@ Namespace DevExpress.DevAV.ViewModels
     Public Module CustomersAnalysis
 
 #If NET
-        public static IEnumerable<Item> GetSalesReport(this IDevAVDbUnitOfWork UnitOfWork) {
+        public static IEnumerable<Item> GetSalesReport(this IDevAVDbUnitOfWork UnitOfWork, DateTime startDate, DateTime endDate) {
             var orders = UnitOfWork.Orders;
             var orderItems =
                 from oi in UnitOfWork.OrderItems
                 join o in orders on oi.OrderId equals o.Id
-                where (o.OrderDate >= AnalysisPeriod.Start && o.OrderDate <= AnalysisPeriod.End)
+                where (o.OrderDate >= startDate && o.OrderDate < endDate)
                 select new {
                     Customer = o.Customer,
                     Total = oi.Total,
-                    FY = ((o.OrderDate.Year - AnalysisPeriod.Start.Year) * 12 + (o.OrderDate.Month - AnalysisPeriod.Start.Month)) / 12
+                    FY = ((o.OrderDate.Year - startDate.Year) * 12 + (o.OrderDate.Month - startDate.Month)) / 12
                 };
             return
                 from oi in orderItems
                 group oi by new { oi.Customer.Id, oi.Customer.Name, oi.FY } into g
                 select new Item {
                     CustomerName = g.Key.Name,
-                    Year = AnalysisPeriod.Start.Year + g.Key.FY,
-                    Month = AnalysisPeriod.Start.Month,
+                    Year = startDate.Year + g.Key.FY,
+                    Month = startDate.Month,
                     Total = g.Sum(o => o.Total)
                 };
         }
-        public static IEnumerable<Item> GetSalesData(this IDevAVDbUnitOfWork UnitOfWork) {
+        public static IEnumerable<Item> GetSalesData(this IDevAVDbUnitOfWork UnitOfWork, DateTime startDate, DateTime endDate) {
             var orders = UnitOfWork.Orders;
-            var storeStates = UnitOfWork.CustomerStores.ToDictionary(t => t.Id, t => t.Address.State);
-            var data =
+            var orderItems =
                 from oi in UnitOfWork.OrderItems
                 join o in orders on oi.OrderId equals o.Id
-                where (o.OrderDate >= AnalysisPeriod.Start && o.OrderDate <= AnalysisPeriod.End)
-                group oi by new { StoreId = o.Store.Id, o.OrderDate.Year, o.OrderDate.Month } into g
+                where (o.OrderDate >= startDate && o.OrderDate < endDate)
                 select new {
-                    StoreId = g.Key.StoreId,
+                    State = o.Store.Address.State,
+                    OrderDate = o.OrderDate,
+                    Total = oi.Total
+                };
+            return
+                from oi in orderItems.AsEnumerable()
+                group oi by new { oi.State, oi.OrderDate.Year, oi.OrderDate.Month } into g
+                select new Item {
+                    State = g.Key.State,
                     Year = g.Key.Year,
                     Month = g.Key.Month,
                     Total = g.Sum(o => o.Total)
                 };
-            return
-                data.ToList().Select(t => new Item() {
-                    State = storeStates[t.StoreId],
-                    Year = t.Year,
-                    Month = t.Month,
-                    Total = t.Total
-                });
         }
 #Else
         <Extension()>
-        Public Function GetSalesReport(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork) As IEnumerable(Of DevExpress.DevAV.ViewModels.CustomersAnalysis.Item)
+        Public Function GetSalesReport(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork, ByVal startDate As System.DateTime, ByVal endDate As System.DateTime) As IEnumerable(Of DevExpress.DevAV.ViewModels.CustomersAnalysis.Item)
             Dim orders = UnitOfWork.Orders
-            Dim orderItems = From oi In UnitOfWork.OrderItems Join o In orders On oi.OrderId Equals o.Id Where(o.OrderDate >= DevExpress.DevAV.ViewModels.AnalysisPeriod.Start AndAlso o.OrderDate <= DevExpress.DevAV.ViewModels.AnalysisPeriod.[End]) Select New With {.Customer = o.Customer, .Total = oi.Total, .FY =((o.OrderDate.Year - DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Year) * 12 + (o.OrderDate.Month - DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Month)) \ 12}
-            Return From oi In orderItems Group oi By __groupByKey3__ = New With {oi.Customer, oi.FY} Into g = Group Select New DevExpress.DevAV.ViewModels.CustomersAnalysis.Item With {.CustomerName = __groupByKey3__.Customer.Name, .Year = DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Year + __groupByKey3__.FY, .Month = DevExpress.DevAV.ViewModels.AnalysisPeriod.Start.Month, .Total = If(System.Linq.Enumerable.[Select](g, Function(o) CType(CType(o.Total, Decimal?), System.[Decimal]?)).Sum(), 0)}
+            Dim orderItems = From oi In UnitOfWork.OrderItems Join o In orders On oi.OrderId Equals o.Id Where(o.OrderDate >= startDate AndAlso o.OrderDate < endDate) Select New With {.Customer = o.Customer, .Total = oi.Total, .FY =((o.OrderDate.Year - startDate.Year) * 12 + (o.OrderDate.Month - startDate.Month)) \ 12}
+            Return From oi In orderItems Group oi By __groupByKey4__ = New With {oi.Customer, oi.FY} Into g = Group Select New DevExpress.DevAV.ViewModels.CustomersAnalysis.Item With {.CustomerName = __groupByKey4__.Customer.Name, .Year = startDate.Year + __groupByKey4__.FY, .Month = startDate.Month, .Total = If(System.Linq.Enumerable.[Select](g, Function(o) CType(CType(o.Total, Decimal?), System.[Decimal]?)).Sum(), 0)}
         End Function
 
         <Extension()>
-        Public Function GetSalesData(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork) As IEnumerable(Of DevExpress.DevAV.ViewModels.CustomersAnalysis.Item)
+        Public Function GetSalesData(ByVal UnitOfWork As DevExpress.DevAV.DevAVDbDataModel.IDevAVDbUnitOfWork, ByVal startDate As System.DateTime, ByVal endDate As System.DateTime) As IEnumerable(Of DevExpress.DevAV.ViewModels.CustomersAnalysis.Item)
             Dim orders = UnitOfWork.Orders
-            Dim orderItems = From oi In UnitOfWork.OrderItems Join o In orders On oi.OrderId Equals o.Id Where(o.OrderDate >= DevExpress.DevAV.ViewModels.AnalysisPeriod.Start AndAlso o.OrderDate <= DevExpress.DevAV.ViewModels.AnalysisPeriod.[End]) Select New With {.State = o.Store.Address.State, .[Date] = o.OrderDate, .Total = oi.Total}
-            Return From oi In orderItems Group oi By __groupByKey4__ = New With {oi.State, oi.[Date].Year, oi.[Date].Month} Into g = Group Select New DevExpress.DevAV.ViewModels.CustomersAnalysis.Item With {.State = __groupByKey4__.State, .Year = __groupByKey4__.Year, .Month = __groupByKey4__.Month, .Total = If(System.Linq.Enumerable.[Select](g, Function(o) CType(CType(o.Total, Decimal?), System.[Decimal]?)).Sum(), 0)}
+            Dim orderItems = From oi In UnitOfWork.OrderItems Join o In orders On oi.OrderId Equals o.Id Where(o.OrderDate >= startDate AndAlso o.OrderDate < endDate) Select New With {.State = o.Store.Address.State, .[Date] = o.OrderDate, .Total = oi.Total}
+            Return From oi In orderItems Group oi By __groupByKey5__ = New With {oi.State, oi.[Date].Year, oi.[Date].Month} Into g = Group Select New DevExpress.DevAV.ViewModels.CustomersAnalysis.Item With {.State = __groupByKey5__.State, .Year = __groupByKey5__.Year, .Month = __groupByKey5__.Month, .Total = If(System.Linq.Enumerable.[Select](g, Function(o) CType(CType(o.Total, Decimal?), System.[Decimal]?)).Sum(), 0)}
         End Function
 
 #End If

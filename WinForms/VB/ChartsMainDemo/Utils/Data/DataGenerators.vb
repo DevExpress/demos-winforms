@@ -2,6 +2,7 @@ Imports System
 Imports System.Collections.Generic
 Imports System.Threading
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 Imports System.Runtime.InteropServices
 
 Namespace DevExpress.XtraCharts.Demos
@@ -203,7 +204,7 @@ Namespace DevExpress.XtraCharts.Demos
 
         Friend Function GenerateSeriesDataSource(ByVal pointsCount As Integer) As List(Of SimpleDataPoint)
             Dim points As List(Of SimpleDataPoint) = New List(Of SimpleDataPoint)(pointsCount)
-            Dim random As NonCryptographicRandom = New NonCryptographicRandom(Date.Now.Millisecond)
+            Dim random As NonCryptographicRandom = TutorialConstants.Random
             Dim value As Double = 0
             Dim delta As Double =(random.NextDouble()) / 75
             For i As Integer = 0 To pointsCount - 1
@@ -365,7 +366,7 @@ Namespace DevExpress.XtraCharts.Demos
         End Sub
 
         Friend Sub GenerateInitialData()
-            Dim baseTimeStamp As Date = Date.Now.AddMilliseconds(-InitialDataPointsCount * DataGenerationIntervalMilliseconds)
+            Dim baseTimeStamp As Date = TutorialConstants.Now.AddMilliseconds(-InitialDataPointsCount * DataGenerationIntervalMilliseconds)
             Dim argument As Date = baseTimeStamp
             For i As Integer = 0 To InitialDataPointsCount - 1 - 1
                 argument = argument.AddMilliseconds(DataGenerationIntervalMilliseconds)
@@ -510,12 +511,12 @@ Namespace DevExpress.XtraCharts.Demos
         End Function
 
         Friend Sub GenerateInitialData()
-            Dim baseDate As Date = Date.Now.AddMinutes(-InitialDataPointsCount).Date
+            Dim baseDate As Date = TutorialConstants.Now.AddMinutes(-InitialDataPointsCount).Date
             If baseDate.DayOfWeek = DayOfWeek.Saturday OrElse baseDate.DayOfWeek = DayOfWeek.Sunday Then baseDate = baseDate.AddDays(If(baseDate.DayOfWeek = DayOfWeek.Saturday, 2, 1))
             prevPoint = New FinancialDataPoint(baseDate, StartPrice, StartPrice + 0.002, StartPrice - 0.002, StartPrice + 0.001, 100000)
             dataSourceField.Add(prevPoint)
             Dim argument As Date = baseDate
-            While argument < Date.Now.AddMinutes(-1)
+            While argument < TutorialConstants.Now.AddMinutes(-1)
                 argument = argument.AddMinutes(1)
                 If argument.DayOfWeek = DayOfWeek.Saturday Then argument = argument.AddDays(2)
                 Dim point As FinancialDataPoint = CreateHistoryPoint(argument, prevPoint)
@@ -524,7 +525,7 @@ Namespace DevExpress.XtraCharts.Demos
             End While
 
             currentAggregatingPoint = prevPoint
-            currentAggregatingPoint.Volume = CInt(Date.Now.Second / 60R * currentAggregatingPoint.Volume)
+            currentAggregatingPoint.Volume = CInt(TutorialConstants.Now.Second / 60R * currentAggregatingPoint.Volume)
         End Sub
 
         Friend Sub UpdateDataSource()
@@ -613,7 +614,7 @@ Namespace DevExpress.XtraCharts.Demos
         Friend Function Generate() As List(Of FinancialDataPoint)
             Dim random As NonCryptographicRandom = New NonCryptographicRandom(28)
             Dim points As List(Of FinancialDataPoint) = New List(Of FinancialDataPoint)()
-            Dim startYear As Integer = Date.Now.Year - 3
+            Dim startYear As Integer = TutorialConstants.Now.Year - 3
             Dim currentDateTime As Date = New DateTime(startYear, 1, 2, 8, 0, 0)
             Dim endDateTime As Date = New DateTime(startYear + 3, 1, 1, 0, 0, 0)
             Dim previousClose As Double = StartPrice

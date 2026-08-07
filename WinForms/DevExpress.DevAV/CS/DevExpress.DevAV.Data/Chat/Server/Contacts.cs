@@ -87,6 +87,8 @@ namespace DevExpress.DevAV.Chat {
 			}
 			TimeoutState<StatusChanged> inactiveState;
 			void EnsureActivity() {
+				if(Constants.TakeScreen)
+					return;
 				var events = new List<ContactEvent>();
 				if(inactiveState == null) {
 					inactiveState = new TimeoutState<StatusChanged>(ContactIds, events, x => new StatusChanged(x));

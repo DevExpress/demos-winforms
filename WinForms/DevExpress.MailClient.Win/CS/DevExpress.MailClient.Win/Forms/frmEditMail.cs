@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 using DevExpress.Utils.Svg;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
@@ -154,7 +155,7 @@ namespace DevExpress.MailClient.Win {
         }
         void ApplyChanges() {
             if(sourceMessage != null) {
-                sourceMessage.Date = DateTime.Now;
+                sourceMessage.Date = TutorialConstants.Now;
                 sourceMessage.Text = richEditControl.MhtText;
                 sourceMessage.SetPlainText(ObjectHelper.GetPlainTextFromMHT(richEditControl.MhtText));
                 sourceMessage.Subject = edtSubject.Text;

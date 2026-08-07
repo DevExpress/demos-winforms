@@ -16,15 +16,15 @@ namespace DevExpress.WindowsMailClient.Win.Utils {
         public static string MessageFrom = "maildemo@dx-mail.com";
         static string _startMhtText = null;
         static string DefaultTextResourceName = "StartMhtText.txt";
-        public static string StartMhtText { 
+        public static string StartMhtText {
             get {
-                if(string.IsNullOrEmpty(_startMhtText)) {            
+                if(string.IsNullOrEmpty(_startMhtText)) {
                     var assembly = Assembly.GetExecutingAssembly();
                     using(Stream stream = assembly.GetManifestResourceStream(Assembly.GetExecutingAssembly().GetName().Name + ".Data." + DefaultTextResourceName)) {
                         using(StreamReader sr = new StreamReader(stream)) {
                             _startMhtText = sr.ReadToEnd();
                         }
-                    } 
+                    }
                 }
                 return _startMhtText;
             }

@@ -1,13 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ComponentModel;
-using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
-using DevExpress.DevAV.Common.DataModel;
 using DevExpress.DevAV.Common.ViewModel;
 using DevExpress.DevAV.DevAVDbDataModel1;
-using DevExpress.DevAV;
+using DevExpress.Mvvm.POCO;
 
 namespace DevExpress.DevAV.ViewModels {
     /// <summary>
@@ -32,21 +26,21 @@ namespace DevExpress.DevAV.ViewModels {
         }
 
         protected override DevAVDbModuleDescription[] CreateModules() {
-            DevAVDbModuleDescription[] modules = new DevAVDbModuleDescription[] { 
+            DevAVDbModuleDescription[] modules = new DevAVDbModuleDescription[] {
                 new DevAVDbModuleDescription("Dashboard", DashboardViewDocumentType, MyWorldGroup, (FilterViewModelBase)null),
-                new DevAVDbModuleDescription("Tasks", DevAVDbViewModel.EmployeeTaskCollectionViewDocumentType, MyWorldGroup, FiltersSettings.GetTaskFilter(this)), 
-                new DevAVDbModuleDescription("Employees", DevAVDbViewModel.EmployeeCollectionViewDocumentType, MyWorldGroup, FiltersSettings.GetEmployeeFilter(this)), 
-                new DevAVDbModuleDescription("Products", DevAVDbViewModel.ProductCollectionViewDocumentType, OperationsGroup, FiltersSettings.GetProductFilter(this)), 
+                new DevAVDbModuleDescription("Tasks", DevAVDbViewModel.EmployeeTaskCollectionViewDocumentType, MyWorldGroup, FiltersSettings.GetTaskFilter(this)),
+                new DevAVDbModuleDescription("Employees", DevAVDbViewModel.EmployeeCollectionViewDocumentType, MyWorldGroup, FiltersSettings.GetEmployeeFilter(this)),
+                new DevAVDbModuleDescription("Products", DevAVDbViewModel.ProductCollectionViewDocumentType, OperationsGroup, FiltersSettings.GetProductFilter(this)),
                 new DevAVDbModuleDescription("Customers", CustomerCollectionViewDocumentType, OperationsGroup, FiltersSettings.GetCustomerFilter(this)),
                 new DevAVDbModuleDescription("Sales", DevAVDbViewModel.OrderCollectionViewDocumentType, OperationsGroup, (FilterViewModelBase)null),
                 new DevAVDbModuleDescription("Opportunities", DevAVDbViewModel.QuoteCollectionViewDocumentType, OperationsGroup, (FilterViewModelBase)null),
             };
-            foreach (var module in modules) {
-                if (module.FilterViewModel == null)
+            foreach(var module in modules) {
+                if(module.FilterViewModel == null)
                     continue;
                 DevAVDbModuleDescription moduleRef = module;
                 module.FilterViewModel.NavigateAction = (() => {
-                    if (this.ActiveModule != moduleRef)
+                    if(ActiveModule != moduleRef)
                         Show(moduleRef);
                 });
             }

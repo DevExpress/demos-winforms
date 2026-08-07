@@ -82,6 +82,8 @@ Namespace DevExpress.XtraCharts.Demos
             CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((secondaryAxisY2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((secondaryAxisY3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((sideBySideBarSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series2), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -152,12 +154,6 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisX.Label.ResolveOverlappingOptions.MinIndent = 2
             xyDiagram1.AxisX.StickToEdge = True
             xyDiagram1.AxisX.VisibleInPanesSerializable = "1"
-            xyDiagram1.AxisX.VisualRange.Auto = False
-            xyDiagram1.AxisX.VisualRange.AutoSideMargins = False
-            xyDiagram1.AxisX.VisualRange.EndSideMargin = 2R
-            xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "04/06/2021 15:03:00.000"
-            xyDiagram1.AxisX.VisualRange.MinValueSerializable = "04/06/2021 14:54:00.000"
-            xyDiagram1.AxisX.VisualRange.StartSideMargin = 2R
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
             xyDiagram1.AxisX.WholeRange.EndSideMargin = 2R
             xyDiagram1.AxisX.WholeRange.StartSideMargin = 2R
@@ -387,9 +383,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.ribbonControl1.AutoSizeItems = True
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.changeSeriesViewBarItem1, Me.trendLineBarCheckItem, Me.fibbArcBarCheckItem, Me.fibbFansBarCheckItem, Me.fibbRetrBarCheckItem, Me.removeBarCheckItem, Me.addIndicatorBarItem1, Me.selectAxisMeasureUnitBarItem1, Me.selectperiodBarItem1, Me.addTextAnnotationBarItem, Me.addImageAnnotationBarItem})
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.changeSeriesViewBarItem1, Me.trendLineBarCheckItem, Me.fibbArcBarCheckItem, Me.fibbFansBarCheckItem, Me.fibbRetrBarCheckItem, Me.removeBarCheckItem, Me.addIndicatorBarItem1, Me.selectAxisMeasureUnitBarItem1, Me.selectperiodBarItem1, Me.addTextAnnotationBarItem, Me.addImageAnnotationBarItem})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
-            Me.ribbonControl1.MaxItemId = 53
+            Me.ribbonControl1.MaxItemId = 54
             Me.ribbonControl1.Name = "ribbonControl1"
             Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.createFinancialChartRibbonPage1})
             Me.ribbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.changeSeriesViewRepositoryItemComboBox1, Me.selectAxisMeasureUnitRepositoryItemComboBox1, Me.selectSeriesRepositoryItemComboBox1, Me.selectPeriodRepositoryItemComboBox1})
@@ -523,6 +519,8 @@ Namespace DevExpress.XtraCharts.Demos
             CType((secondaryAxisY2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((secondaryAxisY3), System.ComponentModel.ISupportInitialize).EndInit()
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((sideBySideBarSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((bollingerBands1), System.ComponentModel.ISupportInitialize).EndInit()

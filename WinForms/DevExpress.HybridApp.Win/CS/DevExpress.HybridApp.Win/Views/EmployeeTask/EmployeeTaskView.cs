@@ -8,7 +8,7 @@ namespace DevExpress.DevAV.Views {
             InitializeComponent();
             InitImages();
             dataLayoutControl.SetupLayoutControl();
-            if (!mvvmContext.IsDesignMode) {
+            if(!mvvmContext.IsDesignMode) {
                 InitBindings();
             }
         }

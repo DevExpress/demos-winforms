@@ -1,9 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using DevExpress.Data.Filtering;
-using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using System;
 
 namespace DevExpress.DevAV.ViewModels {
     public abstract class FilterViewModelBase {
@@ -64,8 +63,7 @@ namespace DevExpress.DevAV.ViewModels {
                 return ViewModelSource.Create(() => new FilterItem(name, filterCriteria, imageUri));
             }
 
-            public FilterItem Clone()
-            {
+            public FilterItem Clone() {
                 FilterItem item = FilterItem.Create(Name, FilterCriteria, ImageUri);
                 item.Count = this.Count;
                 return item;

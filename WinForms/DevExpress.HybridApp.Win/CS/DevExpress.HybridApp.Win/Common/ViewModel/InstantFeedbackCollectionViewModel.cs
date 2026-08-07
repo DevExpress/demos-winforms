@@ -1,31 +1,24 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using DevExpress.DevAV.Common.DataModel;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm.DataAnnotations;
-using System.Collections.ObjectModel;
-using DevExpress.Data.Linq;
-using System.Collections;
-using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.Common.DataModel;
 
-namespace DevExpress.DevAV.Common.ViewModel
-{
+namespace DevExpress.DevAV.Common.ViewModel {
     public partial class InstantFeedbackCollectionViewModel<TEntity, TPrimaryKey, TUnitOfWork> : InstantFeedbackCollectionViewModelBase<TEntity, TEntity, TPrimaryKey, TUnitOfWork>
         where TEntity : class, new()
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         public static InstantFeedbackCollectionViewModel<TEntity, TPrimaryKey, TUnitOfWork> CreateInstantFeedbackCollectionViewModel(
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null,
-            Func<bool> canCreateNewEntity = null)
-        {
+            Func<bool> canCreateNewEntity = null) {
             return ViewModelSource.Create(() => new InstantFeedbackCollectionViewModel<TEntity, TPrimaryKey, TUnitOfWork>(unitOfWorkFactory, getRepositoryFunc, projection, canCreateNewEntity));
         }
 
@@ -34,23 +27,20 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null,
             Func<bool> canCreateNewEntity = null)
-            : base(unitOfWorkFactory, getRepositoryFunc, projection, canCreateNewEntity)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection, canCreateNewEntity) {
         }
     }
 
     public partial class InstantFeedbackCollectionViewModel<TEntity, TProjection, TPrimaryKey, TUnitOfWork> : InstantFeedbackCollectionViewModelBase<TEntity, TProjection, TPrimaryKey, TUnitOfWork>
         where TEntity : class, new()
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         public static InstantFeedbackCollectionViewModel<TEntity, TProjection, TPrimaryKey, TUnitOfWork> CreateInstantFeedbackCollectionViewModel(
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection,
-            Func<bool> canCreateNewEntity = null)
-        {
+            Func<bool> canCreateNewEntity = null) {
             return ViewModelSource.Create(() => new InstantFeedbackCollectionViewModel<TEntity, TProjection, TPrimaryKey, TUnitOfWork>(unitOfWorkFactory, getRepositoryFunc, projection, canCreateNewEntity));
         }
 
@@ -59,46 +49,39 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection,
             Func<bool> canCreateNewEntity = null)
-            : base(unitOfWorkFactory, getRepositoryFunc, projection, canCreateNewEntity)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection, canCreateNewEntity) {
         }
     }
 
     public abstract class InstantFeedbackCollectionViewModelBase<TEntity, TProjection, TPrimaryKey, TUnitOfWork> : IDocumentContent, ISupportLogicalLayout
         where TEntity : class, new()
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         #region inner classes
-        public class InstantFeedbackSourceViewModel : IListSource
-        {
-            public static InstantFeedbackSourceViewModel Create(Func<int> getCount, IInstantFeedbackSource<TProjection> source)
-            {
+        public class InstantFeedbackSourceViewModel : IListSource {
+            public static InstantFeedbackSourceViewModel Create(Func<int> getCount, IInstantFeedbackSource<TProjection> source) {
                 return ViewModelSource.Create(() => new InstantFeedbackSourceViewModel(getCount, source));
             }
 
             readonly Func<int> getCount;
             readonly IInstantFeedbackSource<TProjection> source;
 
-            protected InstantFeedbackSourceViewModel(Func<int> getCount, IInstantFeedbackSource<TProjection> source)
-            {
+            protected InstantFeedbackSourceViewModel(Func<int> getCount, IInstantFeedbackSource<TProjection> source) {
                 this.getCount = getCount;
                 this.source = source;
             }
 
             public int Count { get { return getCount(); } }
 
-            public void Refresh()
-            {
+            public void Refresh() {
                 source.Refresh();
                 this.RaisePropertyChanged(x => x.Count);
             }
 
             bool IListSource.ContainsListCollection { get { return source.ContainsListCollection; } }
 
-            IList IListSource.GetList()
-            {
+            IList IListSource.GetList() {
                 return source.GetList();
             }
         }
@@ -115,8 +98,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection,
-            Func<bool> canCreateNewEntity = null)
-        {
+            Func<bool> canCreateNewEntity = null) {
             this.unitOfWorkFactory = unitOfWorkFactory;
             this.canCreateNewEntity = canCreateNewEntity;
             this.getRepositoryFunc = getRepositoryFunc;
@@ -128,67 +110,58 @@ namespace DevExpress.DevAV.Common.ViewModel
             this.source = unitOfWorkFactory.CreateInstantFeedbackSource(getRepositoryFunc, Projection);
             this.Entities = InstantFeedbackSourceViewModel.Create(() => helperRepository.Count(), source);
 
-            if (!this.IsInDesignMode())
+            if(!this.IsInDesignMode())
                 OnInitializeInRuntime();
         }
 
         public InstantFeedbackSourceViewModel Entities { get; private set; }
         public virtual object SelectedEntity { get; set; }
 
-        public virtual void New()
-        {
-            if (canCreateNewEntity != null && !canCreateNewEntity())
+        public virtual void New() {
+            if(canCreateNewEntity != null && !canCreateNewEntity())
                 return;
             DocumentManagerService.ShowNewEntityDocument<TEntity>(this);
         }
 
-        public virtual void Edit(object threadSafeProxy)
-        {
-            if (!source.IsLoadedProxy(threadSafeProxy))
+        public virtual void Edit(object threadSafeProxy) {
+            if(!source.IsLoadedProxy(threadSafeProxy))
                 return;
             TPrimaryKey primaryKey = GetProxyPrimaryKey(threadSafeProxy);
             TEntity entity = helperRepository.Find(primaryKey);
-            if (entity == null)
-            {
+            if(entity == null) {
                 DestroyDocument(DocumentManagerService.FindEntityDocument<TEntity, TPrimaryKey>(primaryKey));
                 return;
             }
             DocumentManagerService.ShowExistingEntityDocument<TEntity, TPrimaryKey>(this, primaryKey);
         }
 
-        public bool CanEdit(object threadSafeProxy)
-        {
+        public bool CanEdit(object threadSafeProxy) {
             return threadSafeProxy != null;
         }
 
-        public virtual void Delete(object threadSafeProxy)
-        {
-            if (!source.IsLoadedProxy(threadSafeProxy))
+        public virtual void Delete(object threadSafeProxy) {
+            if(!source.IsLoadedProxy(threadSafeProxy))
                 return;
-            if (MessageBoxService.ShowMessage(string.Format(CommonResources.Confirmation_Delete, typeof(TEntity).Name), CommonResources.Confirmation_Caption, MessageButton.YesNo) != MessageResult.Yes)
+            if(MessageBoxService.ShowMessage(string.Format(CommonResources.Confirmation_Delete, typeof(TEntity).Name), CommonResources.Confirmation_Caption, MessageButton.YesNo) != MessageResult.Yes)
                 return;
-            try
-            {
+            try {
                 TPrimaryKey primaryKey = GetProxyPrimaryKey(threadSafeProxy);
                 TEntity entity = helperRepository.Find(primaryKey);
-                if (entity != null)
-                {
+                if(entity != null) {
                     OnBeforeEntityDeleted(primaryKey, entity);
                     helperRepository.Remove(entity);
                     helperRepository.UnitOfWork.SaveChanges();
                     OnEntityDeleted(primaryKey, entity);
                 }
             }
-            catch (DbException e)
-            {
+            catch(DbException e) {
                 Refresh();
                 MessageBoxService.ShowMessage(e.ErrorMessage, e.ErrorCaption, MessageButton.OK, MessageIcon.Error);
             }
             Refresh();
         }
 
-        public bool CanDelete(object threadSafeProxy)
-        {
+        public bool CanDelete(object threadSafeProxy) {
             return threadSafeProxy != null;
         }
 
@@ -197,40 +170,33 @@ namespace DevExpress.DevAV.Common.ViewModel
         string ViewName { get { return typeof(TEntity).Name + "InstantFeedbackCollectionView"; } }
 
         [Display(AutoGenerateField = false)]
-        public virtual void OnLoaded()
-        {
+        public virtual void OnLoaded() {
             PersistentLayoutHelper.TryDeserializeLayout(LayoutSerializationService, ViewName);
         }
 
         [Display(AutoGenerateField = false)]
-        public virtual void OnUnloaded()
-        {
+        public virtual void OnUnloaded() {
             SaveLayout();
         }
 
-        void SaveLayout()
-        {
+        void SaveLayout() {
             PersistentLayoutHelper.TrySerializeLayout(LayoutSerializationService, ViewName);
         }
 
-        public virtual void Refresh()
-        {
+        public virtual void Refresh() {
             Entities.Refresh();
         }
 
-        protected TPrimaryKey GetProxyPrimaryKey(object threadSafeProxy)
-        {
+        protected TPrimaryKey GetProxyPrimaryKey(object threadSafeProxy) {
             var expression = RepositoryExtensions.GetProjectionPrimaryKeyExpression<TEntity, TProjection, TPrimaryKey>(helperRepository);
             return GetProxyPropertyValue(threadSafeProxy, expression);
         }
 
-        protected TProperty GetProxyPropertyValue<TProperty>(object threadSafeProxy, Expression<Func<TProjection, TProperty>> propertyExpression)
-        {
+        protected TProperty GetProxyPropertyValue<TProperty>(object threadSafeProxy, Expression<Func<TProjection, TProperty>> propertyExpression) {
             return source.GetPropertyValue(threadSafeProxy, propertyExpression);
         }
 
-        protected virtual void OnEntityDeleted(TPrimaryKey primaryKey, TEntity entity)
-        {
+        protected virtual void OnEntityDeleted(TPrimaryKey primaryKey, TEntity entity) {
             Messenger.Default.Send(new EntityMessage<TEntity, TPrimaryKey>(primaryKey, EntityMessageType.Deleted));
         }
 
@@ -239,34 +205,28 @@ namespace DevExpress.DevAV.Common.ViewModel
 
         protected virtual void OnBeforeEntityDeleted(TPrimaryKey primaryKey, TEntity entity) { }
 
-        protected void DestroyDocument(IDocument document)
-        {
-            if (document != null)
+        protected void DestroyDocument(IDocument document) {
+            if(document != null)
                 document.Close();
         }
 
-        protected IRepository<TEntity, TPrimaryKey> CreateRepository()
-        {
+        protected IRepository<TEntity, TPrimaryKey> CreateRepository() {
             return getRepositoryFunc(CreateUnitOfWork());
         }
 
-        protected TUnitOfWork CreateUnitOfWork()
-        {
+        protected TUnitOfWork CreateUnitOfWork() {
             return unitOfWorkFactory.CreateUnitOfWork();
         }
 
-        protected virtual void OnInitializeInRuntime()
-        {
+        protected virtual void OnInitializeInRuntime() {
             Messenger.Default.Register<EntityMessage<TEntity, TPrimaryKey>>(this, x => OnMessage(x));
         }
 
-        protected virtual void OnDestroy()
-        {
+        protected virtual void OnDestroy() {
             Messenger.Default.Unregister(this);
         }
 
-        void OnMessage(EntityMessage<TEntity, TPrimaryKey> message)
-        {
+        void OnMessage(EntityMessage<TEntity, TPrimaryKey> message) {
             Refresh();
         }
 
@@ -275,36 +235,30 @@ namespace DevExpress.DevAV.Common.ViewModel
         #region IDocumentContent
         object IDocumentContent.Title { get { return null; } }
 
-        void IDocumentContent.OnClose(CancelEventArgs e)
-        {
+        void IDocumentContent.OnClose(CancelEventArgs e) {
             SaveLayout();
         }
 
-        void IDocumentContent.OnDestroy()
-        {
+        void IDocumentContent.OnDestroy() {
             OnDestroy();
         }
 
-        IDocumentOwner IDocumentContent.DocumentOwner
-        {
+        IDocumentOwner IDocumentContent.DocumentOwner {
             get { return DocumentOwner; }
             set { DocumentOwner = value; }
         }
         #endregion
 
         #region ISupportLogicalLayout
-        bool ISupportLogicalLayout.CanSerialize
-        {
+        bool ISupportLogicalLayout.CanSerialize {
             get { return true; }
         }
 
-        IDocumentManagerService ISupportLogicalLayout.DocumentManagerService
-        {
+        IDocumentManagerService ISupportLogicalLayout.DocumentManagerService {
             get { return DocumentManagerService; }
         }
 
-        IEnumerable<object> ISupportLogicalLayout.LookupViewModels
-        {
+        IEnumerable<object> ISupportLogicalLayout.LookupViewModels {
             get { return null; }
         }
         #endregion

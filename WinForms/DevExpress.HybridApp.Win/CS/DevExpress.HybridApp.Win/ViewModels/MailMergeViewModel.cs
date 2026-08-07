@@ -1,16 +1,12 @@
-using DevExpress.DevAV.Common.DataModel;
-using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Text;
+using DevExpress.Mvvm;
 
 namespace DevExpress.DevAV.ViewModels {
     public class MailMergeViewModel<TEntity, TLinks> : IDocumentContent
-        where TEntity: class
-        where TLinks: class {
+        where TEntity : class
+        where TLinks : class {
         protected MailMergeViewModel(IEnumerable<TEntity> entities, TEntity selectedEntity, string selectedTemplateName, TLinks linksViewModel) {
             Templates = MailMergeTemplatesHelper.GetAllTemplates();
             SelectedTemplate = Templates.FirstOrDefault(t => t.Name == selectedTemplateName);
@@ -23,7 +19,9 @@ namespace DevExpress.DevAV.ViewModels {
 
         public virtual TEntity SelectedEntity { get; set; }
         protected void OnSelectedEntityChanged() {
-            SelectedEntityIndex = Entities.Select((x, i) => new { item = x, index = i
+            SelectedEntityIndex = Entities.Select((x, i) => new {
+                item = x,
+                index = i
             }).FirstOrDefault(x => x.item == SelectedEntity).index;
         }
 
@@ -34,7 +32,7 @@ namespace DevExpress.DevAV.ViewModels {
         public virtual bool IsAdditionParametersVisible { get; set; }
         public virtual TLinks LinksViewModel { get; protected set; }
         public void Close() {
-            if (DocumentOwner != null) {
+            if(DocumentOwner != null) {
                 DocumentOwner.Close(this);
             }
         }

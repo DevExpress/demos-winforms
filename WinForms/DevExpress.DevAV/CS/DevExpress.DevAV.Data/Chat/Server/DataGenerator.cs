@@ -40,34 +40,36 @@ namespace DevExpress.DevAV.Chat {
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
-	using DevExpress.Data.Utils;
 	using DevExpress.DevAV.Chat.Events;
 	partial class DevAVEmpployeesInMemoryServer {
 		static class DataGenerator {
-			readonly static NonCryptographicRandom generator = new NonCryptographicRandom(10001);
 			public static int GetCount(int min = 0, int max = 10) {
-				return generator.Next(min, max + 1 );
+				return Constants.Next(min, max + 1 );
 			}
 			public static DateTime GetLastYesterdayTime() {
 				var minutes = GetCount(-1440 * 2, -1440);
 				return Constants.Now.AddMinutes(minutes);
 			}
 			public static HashSet<long> GetRandomIds(int all, int bottom = 17, int top = 23) {
+				if(Constants.TakeScreen)
+					return new HashSet<long>(Enumerable.Range(1, 9).Select(i => (long)i));
 				var ids = new HashSet<long>();
-				int count = generator.Next(bottom, all - top);
+				int count = Constants.Next(bottom, all - top);
 				while(ids.Count < count)
-					ids.Add(generator.Next(all));
+					ids.Add(Constants.Next(0, all));
 				return ids;
 			}
 			public static HashSet<long> GetRandomIds(long[] allIds, int min = 3, int max = 7) {
+				if(Constants.TakeScreen)
+					return new HashSet<long>(Enumerable.Range(4, 3).Select(i => (long)i));
 				var ids = new HashSet<long>();
-				int count = generator.Next(min, max);
+				int count = Constants.Next(min, max);
 				while(ids.Count < count)
-					ids.Add(allIds[generator.Next(allIds.Length)]);
+					ids.Add(allIds[Constants.Next(0, allIds.Length)]);
 				return ids;
 			}
 			public static long EitherOr(long current, long other) {
-				return (generator.NextDouble() > 0.5) ? current : other;
+				return (Constants.NextDouble() > 0.5) ? current : other;
 			}
 		}
 		static class LoremIpsum {

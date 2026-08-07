@@ -12,7 +12,7 @@ namespace DevExpress.DevAV.Views {
             var fluent = mvvmContext.OfType<EmployeeTaskFilterViewModel>();
             itemsSourceBinding = fluent.SetItemsSourceBinding(tileGroup2,
                 tg => tg.Items, x => x.StaticFilters,
-                (item, filter) => object.Equals(item.Tag, filter), 
+                (item, filter) => object.Equals(item.Tag, filter),
                 (filter) => CreateTileForFilter(filter),
                 null,
                 (item, filter) => UpdateTileItem(item, filter));

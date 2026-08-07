@@ -289,6 +289,7 @@
             this.chart.TabIndex = 2;
             this.chart.TabStop = false;
             chartTitle1.Text = "Volume (Thousands of USD)";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.BoundDataChanged += new DevExpress.XtraCharts.BoundDataChangedEventHandler(this.chart_BoundDataChanged);

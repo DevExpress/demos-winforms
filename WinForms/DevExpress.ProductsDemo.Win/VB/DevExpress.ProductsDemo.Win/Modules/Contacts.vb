@@ -305,7 +305,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
 				If all_Renamed Is Nothing Then
 					all_Renamed = New AlphaIndex() With {
 						.Count = 0,
-						.Index = "ALL"
+						.Index = "All"
 					}
 				End If
 				Return all_Renamed

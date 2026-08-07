@@ -1,14 +1,14 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text.RegularExpressions;
+using DevExpress.Data.Filtering;
 using DevExpress.Data.Utils;
 using DevExpress.DevAV.Common.ViewModel;
 using DevExpress.DevAV.DevAVDbDataModel1;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using System.Text.RegularExpressions;
-using System.Collections.Generic;
-using DevExpress.Data.Filtering;
 
 namespace DevExpress.DevAV.ViewModels {
     public abstract class FilterViewModel<TEntity, TProjection> : FilterViewModelBase
@@ -16,8 +16,8 @@ namespace DevExpress.DevAV.ViewModels {
         where TProjection : class {
         protected FilterViewModel(IFilterModelPageSpecificSettings settings, Action<object, Action> registerEntityChangedMessageHandler)
             : base(settings) {
-                registerEntityChangedMessageHandler(this, () => UpdateFilters());
-                Messenger.Default.Register<CreateCustomFilterMessage<TEntity>>(this, message => CreateCustomFilter());
+            registerEntityChangedMessageHandler(this, () => UpdateFilters());
+            Messenger.Default.Register<CreateCustomFilterMessage<TEntity>>(this, message => CreateCustomFilter());
         }
         protected ReadOnlyCollectionViewModel<TEntity, TProjection, IDevAVDbUnitOfWork> CollectionViewModel {
             get { return (ReadOnlyCollectionViewModel<TEntity, TProjection, IDevAVDbUnitOfWork>)viewModel; }

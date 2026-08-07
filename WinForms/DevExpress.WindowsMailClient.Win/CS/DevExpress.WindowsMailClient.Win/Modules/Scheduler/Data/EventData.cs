@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
 
 namespace DevExpress.XtraScheduler.Demos.DemoData {
     public class EventData {
@@ -27,7 +24,7 @@ namespace DevExpress.XtraScheduler.Demos.DemoData {
         public EventPriority Priority {
             get {
                 int result = EventState & 6 >> 1;
-                if (result == 6)
+                if(result == 6)
                     return EventPriority.None;
                 return (EventPriority)result;
             }

@@ -50,6 +50,7 @@
             this.chart.Size = new System.Drawing.Size(784, 432);
             this.chart.TabIndex = 0;
             chartTitle1.Text = "DevAV Total Sales";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.ToolTipController = this.toolTipController1;

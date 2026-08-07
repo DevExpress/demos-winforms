@@ -46,8 +46,7 @@
                 var patient = session.GetObjectByKey<Patient>(PatientId);
                 Invoices = patient.InvoiceCollection
                     .SelectMany(x => x.InvoiceItems)
-                    .Select(x => new InvoiceInfo()
-                    {
+                    .Select(x => new InvoiceInfo() {
                         InvoiceId = x.Invoice.Oid,
                         Date = x.Invoice.Date,
                         Doctor = x.Invoice.Doctor.FullName,

@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 using DevExpress.DentalClinic.ViewModel;
 using DevExpress.Utils.MVVM.Services;
-using DevExpress.XtraBars.Docking2010.Customization;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;

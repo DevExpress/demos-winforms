@@ -135,11 +135,9 @@
             // 
             // emptySpaceItem1
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
             this.emptySpaceItem1.Size = new System.Drawing.Size(221, 522);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // sidePanel1
             // 
@@ -195,15 +193,15 @@
             secondaryAxisX1.Name = "Secondary AxisX 1";
             secondaryAxisX1.Tickmarks.MinorVisible = false;
             secondaryAxisX1.Tickmarks.Visible = false;
-            secondaryAxisX1.Title.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            secondaryAxisX1.Title.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             secondaryAxisX1.Title.Text = "Measurment Set 1";
             secondaryAxisX1.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
             secondaryAxisX1.Title.WordWrap = true;
             secondaryAxisX1.Visibility = DevExpress.Utils.DefaultBoolean.False;
             secondaryAxisX1.VisibleInPanesSerializable = "0";
             secondaryAxisX1.WholeRange.Auto = false;
-            secondaryAxisX1.WholeRange.MaxValueSerializable = "4";
-            secondaryAxisX1.WholeRange.MinValueSerializable = "-1";
+            secondaryAxisX1.WholeRange.MaxValueSerializable = "9";
+            secondaryAxisX1.WholeRange.MinValueSerializable = "0";
             xyDiagram1.SecondaryAxesX.AddRange(new DevExpress.XtraCharts.SecondaryAxisX[] {
             secondaryAxisX1});
             this.boxPlotChart.Diagram = xyDiagram1;
@@ -245,6 +243,7 @@
             dataMember8});
             series1.DataAdapter = dataSourceAdapter1;
             series1.Name = "Data Set 1";
+            series1.SeriesID = 0;
             boxPlotSlideAnimation1.Direction = DevExpress.XtraCharts.AnimationDirection.FromTop;
             boxPlotSlideAnimation1.Duration = System.TimeSpan.Parse("00:00:00.8000000");
             boxPlotSlideAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.1000000");
@@ -279,6 +278,7 @@
             dataMember16});
             series2.DataAdapter = dataSourceAdapter2;
             series2.Name = "Data Set 2";
+            series2.SeriesID = 1;
             boxPlotSlideAnimation2.Direction = DevExpress.XtraCharts.AnimationDirection.FromTop;
             boxPlotSlideAnimation2.Duration = System.TimeSpan.Parse("00:00:00.8000000");
             boxPlotSlideAnimation2.PointDelay = System.TimeSpan.Parse("00:00:00.1000000");
@@ -294,6 +294,7 @@
             dataMember18});
             series3.DataAdapter = dataSourceAdapter3;
             series3.Name = "Series 1";
+            series3.SeriesID = 2;
             series3.ShowInLegend = false;
             pointSeriesView1.AxisXName = "Secondary AxisX 1";
             pointSeriesView1.PaneName = "Pane 1";
@@ -313,6 +314,7 @@
             dataMember20});
             series4.DataAdapter = dataSourceAdapter4;
             series4.Name = "Series 2";
+            series4.SeriesID = 3;
             series4.ShowInLegend = false;
             pointSeriesView2.AxisXName = "Secondary AxisX 1";
             pointSeriesView2.PaneName = "Pane 1";
@@ -331,6 +333,7 @@
             this.boxPlotChart.Size = new System.Drawing.Size(546, 571);
             this.boxPlotChart.TabIndex = 4;
             chartTitle1.Text = "Experiment Results";
+            chartTitle1.TitleID = 0;
             this.boxPlotChart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.boxPlotChart.AnimationEnded += new DevExpress.XtraCharts.AnimationEndedEventHandler(this.BoxPlotChart_AnimationEnded);
@@ -400,7 +403,6 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -409,27 +411,22 @@
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 38);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(221, 26);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
-            this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 24);
             this.emptySpaceItem2.MaxSize = new System.Drawing.Size(0, 14);
             this.emptySpaceItem2.MinSize = new System.Drawing.Size(10, 14);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
             this.emptySpaceItem2.Size = new System.Drawing.Size(221, 14);
             this.emptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 106);
             this.emptySpaceItem.Name = "emptySpaceItem";
             this.emptySpaceItem.Size = new System.Drawing.Size(241, 432);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // BoxPlotDemo
             // 

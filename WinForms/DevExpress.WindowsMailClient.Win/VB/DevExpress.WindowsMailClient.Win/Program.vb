@@ -1,6 +1,7 @@
 Imports System
 Imports System.Reflection
 Imports System.Windows.Forms
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Internal
 Imports DevExpress.LookAndFeel
 Imports DevExpress.Skins
@@ -38,6 +39,7 @@ Namespace DevExpress.WindowsMailClient.Win
             WindowsFormsSettings.UseUIAutomation = DevExpress.Utils.DefaultBoolean.True
             Call Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
+            Call MainFormHelper.InitTakeScreen(DevExpress.Data.Utils.SafeEnvironment.GetCommandLineArgs())
             Using New StartUpProcess()
                 Using StartUpProcess.Status.Subscribe(New DemoStartUp())
                     Call Application.Run(New MainForm())

@@ -102,19 +102,16 @@
             // 
             this.document1.Caption = "File.cs";
             this.document1.ControlName = "document1";
-            this.document1.ControlTypeName = null;
             // 
             // document2
             // 
             this.document2.Caption = "ucToolBox.cs";
             this.document2.ControlName = "document2";
-            this.document2.ControlTypeName = null;
             // 
             // document3
             // 
             this.document3.Caption = "ucMain.cs";
             this.document3.ControlName = "document3";
-            this.document3.ControlTypeName = null;
             // 
             // documentManager1
             // 

@@ -71,7 +71,7 @@ Namespace DevExpress.XtraTreeList.Demos
             Me.treeList1.OptionsView.EnableAppearanceEvenRow = True
             Me.treeList1.OptionsView.EnableAppearanceOddRow = True
             Me.treeList1.OptionsView.ShowBandsMode = DevExpress.Utils.DefaultBoolean.[True]
-            Me.treeList1.Size = New System.Drawing.Size(546, 432)
+            Me.treeList1.Size = New System.Drawing.Size(526, 432)
             Me.treeList1.TabIndex = 16
             ' 
             ' treeListBand1
@@ -209,9 +209,9 @@ Namespace DevExpress.XtraTreeList.Demos
             ' 
             Me.sidePanel1.Controls.Add(Me.navigationPane)
             Me.sidePanel1.Dock = System.Windows.Forms.DockStyle.Right
-            Me.sidePanel1.Location = New System.Drawing.Point(546, 0)
+            Me.sidePanel1.Location = New System.Drawing.Point(526, 0)
             Me.sidePanel1.Name = "sidePanel1"
-            Me.sidePanel1.Size = New System.Drawing.Size(237, 432)
+            Me.sidePanel1.Size = New System.Drawing.Size(257, 432)
             Me.sidePanel1.TabIndex = 17
             Me.sidePanel1.Text = "sidePanel1"
             ' 
@@ -225,9 +225,9 @@ Namespace DevExpress.XtraTreeList.Demos
             Me.navigationPane.PageProperties.AppearanceCaption.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
             Me.navigationPane.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text
             Me.navigationPane.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.optionsPage})
-            Me.navigationPane.RegularSize = New System.Drawing.Size(236, 432)
+            Me.navigationPane.RegularSize = New System.Drawing.Size(256, 432)
             Me.navigationPane.SelectedPage = Me.optionsPage
-            Me.navigationPane.Size = New System.Drawing.Size(236, 432)
+            Me.navigationPane.Size = New System.Drawing.Size(256, 432)
             Me.navigationPane.TabIndex = 11
             Me.navigationPane.Text = "navigationPane"
             ' 
@@ -236,14 +236,14 @@ Namespace DevExpress.XtraTreeList.Demos
             Me.optionsPage.Caption = "Options"
             Me.optionsPage.Controls.Add(Me.ucBandOptions1)
             Me.optionsPage.Name = "optionsPage"
-            Me.optionsPage.Size = New System.Drawing.Size(236, 399)
+            Me.optionsPage.Size = New System.Drawing.Size(256, 399)
             ' 
             ' ucBandOptions1
             ' 
             Me.ucBandOptions1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.ucBandOptions1.Location = New System.Drawing.Point(0, 0)
             Me.ucBandOptions1.Name = "ucBandOptions1"
-            Me.ucBandOptions1.Size = New System.Drawing.Size(236, 399)
+            Me.ucBandOptions1.Size = New System.Drawing.Size(256, 399)
             Me.ucBandOptions1.TabIndex = 0
             ' 
             ' Bands

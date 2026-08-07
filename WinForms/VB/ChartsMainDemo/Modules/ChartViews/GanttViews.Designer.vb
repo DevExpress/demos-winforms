@@ -111,6 +111,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelGantt_Container.SuspendLayout()
             CType((Me.chartGantt), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((ganttDiagram1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((constantLine1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((overlappedGanttSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series2), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,6 +123,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((ganttDiagram2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((xyDiagramPane1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((secondaryAxisX1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series3), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((rangeBarSeriesLabel1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((sideBySideGanttSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -206,6 +208,7 @@ Namespace DevExpress.XtraCharts.Demos
             ganttDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             ganttDiagram1.AxisX.VisibleInPanesSerializable = "-1"
             constantLine1.AxisValueSerializable = "09/25/2006 00:00:00.000"
+            constantLine1.ConstantLineID = 0
             constantLine1.Name = "Progress Line"
             constantLine1.RuntimeMoving = True
             constantLine1.ShowInLegend = False
@@ -220,19 +223,8 @@ Namespace DevExpress.XtraCharts.Demos
             ganttDiagram1.AxisY.MinorCount = 4
             ganttDiagram1.AxisY.Title.Text = "Date"
             ganttDiagram1.AxisY.VisibleInPanesSerializable = "-1"
-            ganttDiagram1.AxisY.VisualRange.Auto = False
-            ganttDiagram1.AxisY.VisualRange.AutoSideMargins = False
-            ganttDiagram1.AxisY.VisualRange.EndSideMargin = 0R
-            ganttDiagram1.AxisY.VisualRange.MaxValueSerializable = "11/16/2006 00:00:00.000"
-            ganttDiagram1.AxisY.VisualRange.MinValueSerializable = "08/16/2006 00:00:00.000"
-            ganttDiagram1.AxisY.VisualRange.SideMarginsValue = 0R
-            ganttDiagram1.AxisY.VisualRange.StartSideMargin = 0R
-            ganttDiagram1.AxisY.WholeRange.Auto = False
             ganttDiagram1.AxisY.WholeRange.AutoSideMargins = False
             ganttDiagram1.AxisY.WholeRange.EndSideMargin = 0R
-            ganttDiagram1.AxisY.WholeRange.MaxValueSerializable = "11/16/2006 00:00:00.000"
-            ganttDiagram1.AxisY.WholeRange.MinValueSerializable = "08/16/2006 00:00:00.000"
-            ganttDiagram1.AxisY.WholeRange.SideMarginsValue = 0R
             ganttDiagram1.AxisY.WholeRange.StartSideMargin = 0R
             Me.chartGantt.Diagram = ganttDiagram1
             Me.chartGantt.Dock = System.Windows.Forms.DockStyle.Fill
@@ -256,11 +248,13 @@ Namespace DevExpress.XtraCharts.Demos
             seriesPoint8.Relations.AddRange(New DevExpress.XtraCharts.Relation() {New DevExpress.XtraCharts.TaskLink(4)})
             seriesPoint9.Relations.AddRange(New DevExpress.XtraCharts.Relation() {New DevExpress.XtraCharts.TaskLink(7), New DevExpress.XtraCharts.TaskLink(8), New DevExpress.XtraCharts.TaskLink(9)})
             series1.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint1, seriesPoint2, seriesPoint3, seriesPoint4, seriesPoint5, seriesPoint6, seriesPoint7, seriesPoint8, seriesPoint9})
+            series1.SeriesID = 0
             series1.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series1.View = overlappedGanttSeriesView1
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series2.Name = "Completed"
             series2.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint10, seriesPoint11, seriesPoint12, seriesPoint13, seriesPoint14})
+            series2.SeriesID = 1
             series2.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             barGrowUpAnimation1.BeginTime = System.TimeSpan.Parse("00:00:00.8000000")
             overlappedGanttSeriesView2.Animation = barGrowUpAnimation1
@@ -272,6 +266,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartGantt.TabIndex = 1
             Me.chartGantt.TabStop = False
             chartTitle1.Text = "R&D Schedule"
+            chartTitle1.TitleID = 0
             Me.chartGantt.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.chartGantt.AnimationEnded, New DevExpress.XtraCharts.AnimationEndedEventHandler(AddressOf Me.chartGantt_AnimationEnded)
             AddHandler Me.chartGantt.ConstantLineMoved, New DevExpress.XtraCharts.ConstantLineMovedEventHandler(AddressOf Me.chartGantt_ConstantLineMoved)
@@ -342,6 +337,7 @@ Namespace DevExpress.XtraCharts.Demos
             legend1.BackColor = System.Drawing.Color.Transparent
             legend1.Border.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             legend1.DockTargetName = "Pane 1"
+            legend1.LegendID = 0
             legend1.Name = "Legend1"
             legend1.Title.Text = "Project 2"
             legend1.Title.Visible = True
@@ -354,6 +350,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series3.Name = "Original Plan"
             series3.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint15, seriesPoint16, seriesPoint17, seriesPoint18, seriesPoint19, seriesPoint20})
+            series3.SeriesID = 0
             series3.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             barGrowUpAnimation2.Duration = System.TimeSpan.Parse("00:00:00")
             barGrowUpAnimation2.Enabled = False
@@ -365,6 +362,7 @@ Namespace DevExpress.XtraCharts.Demos
             series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series4.Name = "Current Plan"
             series4.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint21, seriesPoint22, seriesPoint23, seriesPoint24, seriesPoint25, seriesPoint26})
+            series4.SeriesID = 1
             series4.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             barSlideAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.1000000")
             sideBySideGanttSeriesView2.Animation = barSlideAnimation1
@@ -376,6 +374,7 @@ Namespace DevExpress.XtraCharts.Demos
             series5.LegendName = "Legend1"
             series5.Name = "Original Plan "
             series5.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint27, seriesPoint28, seriesPoint29, seriesPoint30, seriesPoint31, seriesPoint32})
+            series5.SeriesID = 2
             series5.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             barGrowUpAnimation3.Duration = System.TimeSpan.Parse("00:00:00")
             barGrowUpAnimation3.Enabled = False
@@ -390,6 +389,7 @@ Namespace DevExpress.XtraCharts.Demos
             series6.LegendName = "Legend1"
             series6.Name = "Current Plan"
             series6.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint33, seriesPoint34, seriesPoint35, seriesPoint36, seriesPoint37, seriesPoint38})
+            series6.SeriesID = 3
             series6.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             barSlideAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.8000000")
             barSlideAnimation2.PointDelay = System.TimeSpan.Parse("00:00:00.1000000")
@@ -403,9 +403,11 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartGanttSideBySide.TabIndex = 1
             Me.chartGanttSideBySide.TabStop = False
             chartTitle2.Text = "Project Comparison"
+            chartTitle2.TitleID = 0
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Left
             chartTitle3.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle3.Text = "Tasks"
+            chartTitle3.TitleID = 1
             Me.chartGanttSideBySide.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle2, chartTitle3})
             ' 
             ' documentManager
@@ -444,6 +446,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((Me.dockManager), System.ComponentModel.ISupportInitialize).EndInit()
             Me.dockPanelGantt.ResumeLayout(False)
             Me.dockPanelGantt_Container.ResumeLayout(False)
+            CType((constantLine1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((ganttDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((overlappedGanttSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
@@ -456,6 +459,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((xyDiagramPane1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((secondaryAxisX1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((ganttDiagram2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((rangeBarSeriesLabel1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((sideBySideGanttSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series3), System.ComponentModel.ISupportInitialize).EndInit()

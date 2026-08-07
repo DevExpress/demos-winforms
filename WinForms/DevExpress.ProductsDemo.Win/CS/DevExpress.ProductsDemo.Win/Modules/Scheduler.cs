@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.XtraScheduler;
-using DevExpress.XtraBars.Ribbon;
 using DevExpress.MailClient.Win;
+using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraScheduler;
 
 namespace DevExpress.ProductsDemo.Win.Modules {
     public partial class SchedulerModule : BaseModule {
@@ -19,7 +13,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             DatabindScheduler();
             SetTopRowTime();
         }
-        
+
         protected override bool AutoMergeRibbon { get { return true; } }
 
         void DatabindScheduler() {
@@ -32,8 +26,8 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.calendarControls.InitResourcesTree(this.schedulerStorage1);
         }
         RibbonPageCategory FindAppointmentPage(RibbonControl ribbonControl) {
-            foreach (RibbonPageCategory category in ribbonControl.PageCategories)
-                if (category.Name == "calendarToolsRibbonPageCategory1")
+            foreach(RibbonPageCategory category in ribbonControl.PageCategories)
+                if(category.Name == "calendarToolsRibbonPageCategory1")
                     return category;
             return null;
         }
@@ -66,19 +60,19 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.schedulerControl1.SelectionChanged -= new EventHandler(schedulerControl1_SelectionChanged);
         }
         void schedulerControl1_SelectionChanged(object sender, EventArgs e) {
-            if (OwnerForm == null)
+            if(OwnerForm == null)
                 return;
             UpdateAppointmentCategory();
         }
         void UpdateAppointmentCategory() {
-            if (this.schedulerControl1.SelectedAppointments.Count > 0)
+            if(this.schedulerControl1.SelectedAppointments.Count > 0)
                 ShowAppointmentCategory();
             else
                 HideAppointmentCategory();
         }
         private void schedulerStorage1_FilterAppointment(object sender, PersistentObjectCancelEventArgs e) {
             Appointment apt = (Appointment)e.Object;
-            if (EmptyResourceId.Id.Equals(apt.ResourceId))
+            if(EmptyResourceId.Id.Equals(apt.ResourceId))
                 return;
             List<int> selectedIds = this.calendarControls.GetSelectedResourceIds();
             int resourceId = Convert.ToInt32(apt.ResourceId);
@@ -89,29 +83,29 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         }
         private void schedulerControl1_InitNewAppointment(object sender, AppointmentEventArgs e) {
             List<int> selectedIds = this.calendarControls.GetSelectedResourceIds();
-            if (selectedIds.Count > 0)
+            if(selectedIds.Count > 0)
                 e.Appointment.ResourceId = selectedIds[0];
         }
         void ShowAppointmentCategory() {
-            if (this.appointmentCategory == null)
+            if(this.appointmentCategory == null)
                 return;
-            if (this.lastSelectedPage == null)
+            if(this.lastSelectedPage == null)
                 this.lastSelectedPage = MainRibbon.SelectedPage;
             this.appointmentCategory.Visible = true;
             MainRibbon.SelectedPage = GetFirstVisiblePage(this.appointmentCategory);
         }
         void HideAppointmentCategory() {
-            if (this.appointmentCategory == null)
+            if(this.appointmentCategory == null)
                 return;
             this.appointmentCategory.Visible = false;
-            if (this.lastSelectedPage != null) {
+            if(this.lastSelectedPage != null) {
                 MainRibbon.SelectedPage = this.lastSelectedPage;
                 this.lastSelectedPage = null;
             }
         }
         RibbonPage GetFirstVisiblePage(RibbonPageCategory ribbonPageCategory) {
-            foreach (RibbonPage page in ribbonPageCategory.Pages)
-                if (page.Visible)
+            foreach(RibbonPage page in ribbonPageCategory.Pages)
+                if(page.Visible)
                     return page;
             return null;
         }

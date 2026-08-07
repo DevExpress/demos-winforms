@@ -1,6 +1,8 @@
 Imports System
 Imports System.ComponentModel
 Imports System.Drawing
+Imports System.Windows.Forms
+Imports DevExpress.Utils
 
 Namespace DevExpress.XtraTreeList.Demos.Options
 
@@ -13,7 +15,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
 
         Protected Overrides Sub InitDataCore()
             '<layoutControl.lgView>
-            ceShowBands.Checked = If(TreeList.OptionsView.ShowBandsMode = Utils.DefaultBoolean.False, False, True)
+            ceShowBands.Checked = If(TreeList.OptionsView.ShowBandsMode = DefaultBoolean.False, False, True)
             ceAllowBandColumnsMultiRow.Checked = TreeList.OptionsView.AllowBandColumnsMultiRow
             '</layoutControl.lgView>
             '<layoutControl.lgCustomization>
@@ -21,10 +23,11 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             ceAllowBandResizing.Checked = TreeList.OptionsCustomization.AllowBandResizing
             ceAllowChangeBandParent.Checked = TreeList.OptionsCustomization.AllowChangeBandParent
             ceAllowChangeColumnParent.Checked = TreeList.OptionsCustomization.AllowChangeColumnParent
-            ceShowBandsInCustomizationForm.Checked = TreeList.OptionsCustomization.ShowBandsInCustomizationForm
-            ceCustomizationFormSearchBoxVisible.Checked = TreeList.OptionsCustomization.CustomizationFormSearchBoxVisible
             ceAllowColumnMoving.Checked = TreeList.OptionsCustomization.AllowColumnMoving
             ceAllowColumnResizing.Checked = TreeList.OptionsCustomization.AllowColumnResizing
+            icbCustomizationFormKind.DataBindings.Add("EditValue", TreeList.OptionsCustomization, "UseAdvancedCustomizationForm", False, DataSourceUpdateMode.OnPropertyChanged)
+            ceShowBandsInCustomizationForm.Checked = TreeList.OptionsCustomization.ShowBandsInCustomizationForm
+            ceCustomizationFormSearchBoxVisible.Checked = TreeList.OptionsCustomization.CustomizationFormSearchBoxVisible
         '</layoutControl.lgCustomization>
         End Sub
 
@@ -61,24 +64,37 @@ Namespace DevExpress.XtraTreeList.Demos.Options
         Private Sub ceShowBandsInCustomizationForm_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
             If IsInitializing OrElse TreeList Is Nothing Then Return
             TreeList.OptionsCustomization.ShowBandsInCustomizationForm = ceShowBandsInCustomizationForm.Checked
-            If TreeList.CustomizationForm IsNot Nothing AndAlso TreeList.CustomizationForm.Visible Then
-                TreeList.DestroyCustomization()
-                TreeList.ColumnsCustomization()
-            End If
+            RecreateCustomizationForm()
         End Sub
 
         Private Sub ceCustomizationFormSearchBoxVisible_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
             If IsInitializing OrElse TreeList Is Nothing Then Return
             TreeList.OptionsCustomization.CustomizationFormSearchBoxVisible = ceCustomizationFormSearchBoxVisible.Checked
+            RecreateCustomizationForm()
+        End Sub
+
+        Private Sub icbCustomizationFormKind_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+            If IsInitializing OrElse TreeList Is Nothing Then Return
+            UpdateClassicCustomizationFormOptionsEnabled()
+            RecreateCustomizationForm()
+        End Sub
+
+        Private Sub RecreateCustomizationForm()
             If TreeList.CustomizationForm IsNot Nothing AndAlso TreeList.CustomizationForm.Visible Then
                 TreeList.DestroyCustomization()
                 TreeList.ColumnsCustomization()
             End If
         End Sub
 
+        Private Sub UpdateClassicCustomizationFormOptionsEnabled()
+            Dim enabled As Boolean = TreeList.OptionsCustomization.UseAdvancedCustomizationForm <> DefaultBoolean.True
+            ceShowBandsInCustomizationForm.Enabled = enabled
+            ceCustomizationFormSearchBoxVisible.Enabled = enabled
+        End Sub
+
         Private Sub ceShowBands_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
             If IsInitializing OrElse TreeList Is Nothing Then Return
-            TreeList.OptionsView.ShowBandsMode = If(ceShowBands.Checked, Utils.DefaultBoolean.True, Utils.DefaultBoolean.False)
+            TreeList.OptionsView.ShowBandsMode = If(ceShowBands.Checked, DefaultBoolean.True, DefaultBoolean.False)
         End Sub
 
         Private Sub ceAllowBandColumnsMultiRow_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)

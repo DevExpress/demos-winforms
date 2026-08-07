@@ -81,21 +81,21 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' sidePanelOptions
             ' 
-            Me.sidePanelOptions.Location = New System.Drawing.Point(1204, 0)
-            Me.sidePanelOptions.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-            Me.sidePanelOptions.Size = New System.Drawing.Size(156, 849)
+            Me.sidePanelOptions.Location = New System.Drawing.Point(903, 0)
+            Me.sidePanelOptions.Margin = New System.Windows.Forms.Padding(4)
+            Me.sidePanelOptions.Size = New System.Drawing.Size(117, 649)
             ' 
             ' tabPaneOptions
             ' 
-            Me.tabPaneOptions.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-            Me.tabPaneOptions.RegularSize = New System.Drawing.Size(155, 849)
-            Me.tabPaneOptions.Size = New System.Drawing.Size(155, 849)
+            Me.tabPaneOptions.Margin = New System.Windows.Forms.Padding(4)
+            Me.tabPaneOptions.RegularSize = New System.Drawing.Size(116, 649)
+            Me.tabPaneOptions.Size = New System.Drawing.Size(116, 649)
             ' 
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(155, 808)
+            Me.tabNavigationPageOptions.Margin = New System.Windows.Forms.Padding(4)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(116, 616)
             ' 
             ' labelSeriesDataMember
             ' 
@@ -112,11 +112,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Controls.Add(Me.radioGroupSelectionMode)
             Me.layoutControl.Dock = System.Windows.Forms.DockStyle.Fill
             Me.layoutControl.Location = New System.Drawing.Point(0, 0)
-            Me.layoutControl.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(843, 250, 650, 400)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(155, 808)
+            Me.layoutControl.Size = New System.Drawing.Size(116, 616)
             Me.layoutControl.TabIndex = 2
             Me.layoutControl.Text = "layoutControl1"
             ' 
@@ -124,15 +123,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.radioGroupSelectionMode.AutoSizeInLayoutControl = True
             Me.radioGroupSelectionMode.EditValue = 2
-            Me.radioGroupSelectionMode.Location = New System.Drawing.Point(16, 43)
-            Me.radioGroupSelectionMode.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.radioGroupSelectionMode.Location = New System.Drawing.Point(12, 34)
             Me.radioGroupSelectionMode.Name = "radioGroupSelectionMode"
             Me.radioGroupSelectionMode.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupSelectionMode.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupSelectionMode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupSelectionMode.Properties.Columns = 1
             Me.radioGroupSelectionMode.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Single"), New DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Multiple"), New DevExpress.XtraEditors.Controls.RadioGroupItem(3, "Extended")})
-            Me.radioGroupSelectionMode.Size = New System.Drawing.Size(123, 100)
+            Me.radioGroupSelectionMode.Size = New System.Drawing.Size(92, 80)
             Me.radioGroupSelectionMode.StyleController = Me.layoutControl
             Me.radioGroupSelectionMode.TabIndex = 11
             AddHandler Me.radioGroupSelectionMode.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupSelectionMode_SelectedIndexChanged)
@@ -144,16 +142,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.emptySpaceItem1, Me.layoutControlGroupSelectionMode})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(155, 808)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(116, 616)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' emptySpaceItem1
             ' 
-            Me.emptySpaceItem1.AllowHotTrack = False
-            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 159)
+            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 126)
             Me.emptySpaceItem1.Name = "emptySpaceItem1"
-            Me.emptySpaceItem1.Size = New System.Drawing.Size(155, 649)
-            Me.emptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem1.Size = New System.Drawing.Size(116, 490)
             ' 
             ' layoutControlGroupSelectionMode
             ' 
@@ -163,7 +159,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupSelectionMode.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.lciSelectionMode})
             Me.layoutControlGroupSelectionMode.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupSelectionMode.Name = "layoutControlGroupSelectionMode"
-            Me.layoutControlGroupSelectionMode.Size = New System.Drawing.Size(155, 159)
+            Me.layoutControlGroupSelectionMode.Size = New System.Drawing.Size(116, 126)
             Me.layoutControlGroupSelectionMode.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupSelectionMode.Text = "Selection Mode"
             ' 
@@ -172,9 +168,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.lciSelectionMode.Control = Me.radioGroupSelectionMode
             Me.lciSelectionMode.Location = New System.Drawing.Point(0, 0)
             Me.lciSelectionMode.Name = "lciSelectionMode"
-            Me.lciSelectionMode.Size = New System.Drawing.Size(129, 106)
+            Me.lciSelectionMode.Size = New System.Drawing.Size(96, 84)
             Me.lciSelectionMode.Text = "Selection Mode:"
-            Me.lciSelectionMode.TextSize = New System.Drawing.Size(0, 0)
             Me.lciSelectionMode.TextVisible = False
             ' 
             ' sidePanelBottomRoot
@@ -182,10 +177,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.sidePanelBottomRoot.Controls.Add(Me.sidePanelBottomRight)
             Me.sidePanelBottomRoot.Controls.Add(Me.sidePanelBottomLeft)
             Me.sidePanelBottomRoot.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.sidePanelBottomRoot.Location = New System.Drawing.Point(0, 567)
-            Me.sidePanelBottomRoot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.sidePanelBottomRoot.Location = New System.Drawing.Point(0, 433)
             Me.sidePanelBottomRoot.Name = "sidePanelBottomRoot"
-            Me.sidePanelBottomRoot.Size = New System.Drawing.Size(1204, 282)
+            Me.sidePanelBottomRoot.Size = New System.Drawing.Size(903, 216)
             Me.sidePanelBottomRoot.TabIndex = 1
             Me.sidePanelBottomRoot.Text = "sidePanel1"
             ' 
@@ -193,10 +187,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.sidePanelBottomRight.Controls.Add(Me.chartUrbanPopulationPercentage)
             Me.sidePanelBottomRight.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.sidePanelBottomRight.Location = New System.Drawing.Point(560, 1)
-            Me.sidePanelBottomRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.sidePanelBottomRight.Location = New System.Drawing.Point(420, 1)
             Me.sidePanelBottomRight.Name = "sidePanelBottomRight"
-            Me.sidePanelBottomRight.Size = New System.Drawing.Size(644, 281)
+            Me.sidePanelBottomRight.Size = New System.Drawing.Size(483, 215)
             Me.sidePanelBottomRight.TabIndex = 1
             Me.sidePanelBottomRight.Text = "sidePanel1"
             ' 
@@ -220,11 +213,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartUrbanPopulationPercentage.Diagram = xyDiagram1
             Me.chartUrbanPopulationPercentage.Dock = System.Windows.Forms.DockStyle.Fill
             Me.chartUrbanPopulationPercentage.EmptyChartText.Text = "Select a country to see urban population percentage"
-            Me.chartUrbanPopulationPercentage.Legend.LegendID = -1
             Me.chartUrbanPopulationPercentage.Legend.Name = "Default Legend"
             Me.chartUrbanPopulationPercentage.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             Me.chartUrbanPopulationPercentage.Location = New System.Drawing.Point(0, 0)
-            Me.chartUrbanPopulationPercentage.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chartUrbanPopulationPercentage.Name = "chartUrbanPopulationPercentage"
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative
             series1.Name = "Series 1"
@@ -232,7 +223,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.Name = "Series 2"
             series2.SeriesID = 1
             Me.chartUrbanPopulationPercentage.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1, series2}
-            Me.chartUrbanPopulationPercentage.Size = New System.Drawing.Size(644, 281)
+            Me.chartUrbanPopulationPercentage.Size = New System.Drawing.Size(483, 215)
             Me.chartUrbanPopulationPercentage.TabIndex = 0
             chartTitle1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 16F)
             chartTitle1.Text = "Urban Population Percentage"
@@ -245,9 +236,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.sidePanelBottomLeft.Controls.Add(Me.treeMap)
             Me.sidePanelBottomLeft.Dock = System.Windows.Forms.DockStyle.Left
             Me.sidePanelBottomLeft.Location = New System.Drawing.Point(0, 1)
-            Me.sidePanelBottomLeft.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.sidePanelBottomLeft.Name = "sidePanelBottomLeft"
-            Me.sidePanelBottomLeft.Size = New System.Drawing.Size(560, 281)
+            Me.sidePanelBottomLeft.Size = New System.Drawing.Size(420, 215)
             Me.sidePanelBottomLeft.TabIndex = 0
             Me.sidePanelBottomLeft.Text = "sidePanel1"
             ' 
@@ -259,6 +249,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.treeMap.BorderOptions.Visible = False
             Me.treeMap.Dock = System.Windows.Forms.DockStyle.Fill
             Me.treeMap.Location = New System.Drawing.Point(0, 0)
+            Me.treeMap.Margin = New System.Windows.Forms.Padding(2)
             Me.treeMap.Name = "treeMap"
             Me.treeMap.SelectionMode = DevExpress.XtraTreeMap.ElementSelectionMode.Multiple
             Me.treeMap.Size = New System.Drawing.Size(419, 215)
@@ -272,9 +263,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.sidePanelTopRoot.Controls.Add(Me.sidePanelTopLeft)
             Me.sidePanelTopRoot.Dock = System.Windows.Forms.DockStyle.Fill
             Me.sidePanelTopRoot.Location = New System.Drawing.Point(0, 0)
-            Me.sidePanelTopRoot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.sidePanelTopRoot.Name = "sidePanelTopRoot"
-            Me.sidePanelTopRoot.Size = New System.Drawing.Size(1204, 567)
+            Me.sidePanelTopRoot.Size = New System.Drawing.Size(903, 433)
             Me.sidePanelTopRoot.TabIndex = 2
             Me.sidePanelTopRoot.Text = "sidePanel1"
             ' 
@@ -282,10 +272,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.sidePanelTopRight.Controls.Add(Me.chartPopulationDynamic)
             Me.sidePanelTopRight.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.sidePanelTopRight.Location = New System.Drawing.Point(560, 0)
-            Me.sidePanelTopRight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.sidePanelTopRight.Location = New System.Drawing.Point(420, 0)
             Me.sidePanelTopRight.Name = "sidePanelTopRight"
-            Me.sidePanelTopRight.Size = New System.Drawing.Size(644, 567)
+            Me.sidePanelTopRight.Size = New System.Drawing.Size(483, 433)
             Me.sidePanelTopRight.TabIndex = 1
             Me.sidePanelTopRight.Text = "sidePanel2"
             ' 
@@ -305,11 +294,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartPopulationDynamic.Diagram = xyDiagram2
             Me.chartPopulationDynamic.Dock = System.Windows.Forms.DockStyle.Fill
             Me.chartPopulationDynamic.EmptyChartText.Text = "Select a country to see population dynamic"
-            Me.chartPopulationDynamic.Legend.LegendID = -1
             Me.chartPopulationDynamic.Legend.Name = "Default Legend"
             Me.chartPopulationDynamic.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             Me.chartPopulationDynamic.Location = New System.Drawing.Point(0, 0)
-            Me.chartPopulationDynamic.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chartPopulationDynamic.Name = "chartPopulationDynamic"
             series3.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative
             series3.CrosshairLabelPattern = "{S}: {V:0.##}M"
@@ -317,7 +304,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.SeriesID = 0
             series3.View = lineSeriesView1
             Me.chartPopulationDynamic.SeriesSerializable = New DevExpress.XtraCharts.Series() {series3}
-            Me.chartPopulationDynamic.Size = New System.Drawing.Size(644, 567)
+            Me.chartPopulationDynamic.Size = New System.Drawing.Size(483, 433)
             Me.chartPopulationDynamic.TabIndex = 0
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 16F)
             chartTitle2.Text = "Population Dynamics"
@@ -330,8 +317,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.sidePanelTopLeft.Controls.Add(Me.chartCountries)
             Me.sidePanelTopLeft.Dock = System.Windows.Forms.DockStyle.Left
             Me.sidePanelTopLeft.Location = New System.Drawing.Point(0, 0)
+            Me.sidePanelTopLeft.Margin = New System.Windows.Forms.Padding(2)
             Me.sidePanelTopLeft.Name = "sidePanelTopLeft"
-            Me.sidePanelTopLeft.Size = New System.Drawing.Size(560, 567)
+            Me.sidePanelTopLeft.Size = New System.Drawing.Size(420, 433)
             Me.sidePanelTopLeft.TabIndex = 0
             Me.sidePanelTopLeft.Text = "sidePanel1"
             ' 
@@ -343,9 +331,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartCountries.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.Center
             Me.chartCountries.Legend.BackColor = System.Drawing.Color.Transparent
             Me.chartCountries.Legend.Border.Visibility = DevExpress.Utils.DefaultBoolean.[False]
-            Me.chartCountries.Legend.LegendID = -1
             Me.chartCountries.Legend.Name = "Default Legend"
             Me.chartCountries.Location = New System.Drawing.Point(0, 0)
+            Me.chartCountries.Margin = New System.Windows.Forms.Padding(2)
             Me.chartCountries.Name = "chartCountries"
             Me.chartCountries.SelectionMode = DevExpress.XtraCharts.ElementSelectionMode.Multiple
             Me.chartCountries.SeriesSelectionMode = DevExpress.XtraCharts.SeriesSelectionMode.Point
@@ -358,7 +346,7 @@ Namespace DevExpress.XtraCharts.Demos
             doughnutSeriesView1.TotalLabel.Visible = True
             series4.View = doughnutSeriesView1
             Me.chartCountries.SeriesSerializable = New DevExpress.XtraCharts.Series() {series4}
-            Me.chartCountries.Size = New System.Drawing.Size(559, 567)
+            Me.chartCountries.Size = New System.Drawing.Size(419, 433)
             Me.chartCountries.TabIndex = 0
             chartTitle3.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 16F)
             chartTitle3.Text = "Top 10 Largest Countries by Area"
@@ -370,15 +358,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' SelectionDemo
             ' 
-            Me.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.Appearance.Options.UseFont = True
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(8F, 17F)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.Controls.Add(Me.sidePanelTopRoot)
             Me.Controls.Add(Me.sidePanelBottomRoot)
-            Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "SelectionDemo"
-            Me.Size = New System.Drawing.Size(1360, 849)
+            Me.Size = New System.Drawing.Size(1020, 649)
             Me.Controls.SetChildIndex(Me.sidePanelOptions, 0)
             Me.Controls.SetChildIndex(Me.sidePanelBottomRoot, 0)
             Me.Controls.SetChildIndex(Me.sidePanelTopRoot, 0)

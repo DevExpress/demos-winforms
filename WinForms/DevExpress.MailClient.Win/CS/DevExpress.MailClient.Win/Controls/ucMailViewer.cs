@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using DevExpress.Skins;
 using DevExpress.Utils.Menu;
 using DevExpress.XtraRichEdit;
@@ -47,9 +41,9 @@ namespace DevExpress.MailClient.Win {
             lbDate.Text = message.Date.ToString();
             pePhoto.Image = DataHelper.GetPhotoByEmail(message.Email);
             lcPicture.Padding = new XtraLayout.Utils.Padding(pePhoto.Image == null ? 10 : 0);
-            pePhoto.Properties.OptionsMask.MaskLayoutMode = pePhoto.Image == null ? 
+            pePhoto.Properties.OptionsMask.MaskLayoutMode = pePhoto.Image == null ?
                 XtraEditors.Controls.PictureEditMaskLayoutMode.Default : XtraEditors.Controls.PictureEditMaskLayoutMode.Stretch;
-            if(pePhoto.Image == null) 
+            if(pePhoto.Image == null)
                 pePhoto.Image = ImageHelper.CreateSenderImage(message.From, pePhoto.Size, pePhoto.LookAndFeel.ActiveLookAndFeel);
             recMessage.MhtText = message.Text;
         }
@@ -60,7 +54,7 @@ namespace DevExpress.MailClient.Win {
         }
         internal void ShowMessagesInfo(List<Message> messages) {
             ShowMessageInfo(false);
-            string text =  StringResources.Get("MessageTile");
+            string text = StringResources.Get("MessageTile");
             foreach(Message message in messages) {
                 text += string.Format(StringResources.Get("MessageTileEx"), message.FullName, message.Date, message.Subject);
             }

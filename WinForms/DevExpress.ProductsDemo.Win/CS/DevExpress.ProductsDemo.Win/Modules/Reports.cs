@@ -23,7 +23,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
                 }
                 reportDesigner1.OpenReport(report);
                 MainRibbon.AutoHideEmptyItems = true;
-                MainRibbon.SelectedPage = MainRibbon.MergedPages.GetPageByText("VIEW");
+                MainRibbon.SelectedPage = MainRibbon.MergedPages.GetPageByText(ViewRibbonPageCaption);
                 MainRibbon.SelectedPage = MainRibbon.MergedPages.GetPageByName(ribbonPagePreview.Name);
                 var reportControl = reportDesigner1.ActiveDesignPanel.GetService(typeof(DevExpress.XtraReports.Design.ReportTabControl)) as DevExpress.XtraReports.Design.ReportTabControl;
                 if(reportControl == null || reportControl.PreviewControl == null) return;

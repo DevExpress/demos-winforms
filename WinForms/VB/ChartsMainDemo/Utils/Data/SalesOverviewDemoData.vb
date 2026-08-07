@@ -5,6 +5,7 @@ Imports System.Data
 Imports System.Linq
 Imports System.Windows.Forms
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Utils.Filtering
 Imports DevExpress.XtraEditors
 
@@ -61,13 +62,11 @@ Namespace DevExpress.XtraCharts.Demos
 
         End Class
 
-        Private ReadOnly rnd As DevExpress.Data.Utils.NonCryptographicRandom = DevExpress.Data.Utils.NonCryptographicRandom.System
-
         Friend BikeCategories As System.Collections.Generic.List(Of String) = New System.Collections.Generic.List(Of String)() From {"Mountain", "Hybrid/Cross", "Road", "Comfort", "Youth", "Cruiser", "Electric"}
 
         Private Function GetUnitsSold(ByVal category As String) As Integer
             Dim max As Integer = If(category.Equals("Bikes"), 50, 250)
-            Return DevExpress.XtraCharts.Demos.SalesProductDataGenerator.rnd.[Next](1, max)
+            Return DevExpress.DXperience.Demos.TutorialConstants.Random.[Next](1, max)
         End Function
 
         Private Function CreateProductBase(ByVal dataRow As System.Data.DataRow, ByVal categoryName As String) As Object
@@ -90,13 +89,13 @@ Namespace DevExpress.XtraCharts.Demos
             Dim totalSales As System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SalesProductDataGenerator.SaleItem) = New System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SalesProductDataGenerator.SaleItem)()
             For Each region As System.Data.DataRow In regions
                 Dim state As String = CStr(region("Region"))
-                Dim year As Integer = System.DateTime.Today.Year - 1
+                Dim year As Integer = DevExpress.DXperience.Demos.TutorialConstants.Today.Year - 1
                 For month As Integer = 1 To 12
                     For Each product As DevExpress.XtraCharts.Demos.SalesProductDataGenerator.ProductItemBase In products
                         Dim tsItem As DevExpress.XtraCharts.Demos.SalesProductDataGenerator.SaleItem = New DevExpress.XtraCharts.Demos.SalesProductDataGenerator.SaleItem With {.State = state, .Category = product.Category, .Product = product.Product, .Price = product.Price}
                         Dim dt As System.DateTime = New System.DateTime(year, month, 1)
                         Dim uSold As Integer = DevExpress.XtraCharts.Demos.SalesProductDataGenerator.GetUnitsSold(product.Category)
-                        Dim uSoldTarget As Integer = uSold + DevExpress.XtraCharts.Demos.SalesProductDataGenerator.rnd.[Next](-CInt((uSold * 0.2)), CInt((uSold * 0.2)))
+                        Dim uSoldTarget As Integer = uSold + DevExpress.DXperience.Demos.TutorialConstants.Random.[Next](-CInt((uSold * 0.2)), CInt((uSold * 0.2)))
                         Dim rev As Decimal = uSold * product.Price
                         Dim revTarget As Decimal = uSoldTarget * product.Price
                         tsItem.Revenue = rev
@@ -124,24 +123,24 @@ Namespace DevExpress.XtraCharts.Demos
 
         Friend Function GenerateBicyclesReport() As List(Of DevExpress.XtraCharts.Demos.SalesProductDataGenerator.BikeReportItem)
             Dim result As System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SalesProductDataGenerator.BikeReportItem) = New System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SalesProductDataGenerator.BikeReportItem)()
-            Dim year As Integer = System.DateTime.Today.Year - 1
+            Dim year As Integer = DevExpress.DXperience.Demos.TutorialConstants.Today.Year - 1
             Dim startDate As System.DateTime = New System.DateTime(year, 1, 1)
             Dim averageMonthSold As Integer = 1700
             Dim averagePrice As Decimal = 900
             Dim [date] As System.DateTime = startDate
             For day As Integer = 1 To 365 Step 7
-                Dim minDay As Integer = DevExpress.XtraCharts.Demos.SalesProductDataGenerator.rnd.[Next](100, 200)
-                Dim maxDay As Integer = DevExpress.XtraCharts.Demos.SalesProductDataGenerator.rnd.[Next](250, 300)
+                Dim minDay As Integer = DevExpress.DXperience.Demos.TutorialConstants.Random.[Next](100, 200)
+                Dim maxDay As Integer = DevExpress.DXperience.Demos.TutorialConstants.Random.[Next](250, 300)
                 [date] = startDate.AddDays(day)
                 For i As Integer = 0 To DevExpress.XtraCharts.Demos.SalesProductDataGenerator.BikeCategories.Count - 1
                     Dim category As String = DevExpress.XtraCharts.Demos.SalesProductDataGenerator.BikeCategories(i)
-                    Dim deltaCorrection As Double = 2 * DevExpress.XtraCharts.Demos.SalesProductDataGenerator.rnd.NextDouble() + 0.2
+                    Dim deltaCorrection As Double = 2 * DevExpress.DXperience.Demos.TutorialConstants.Random.NextDouble() + 0.2
                     Dim tsItem As DevExpress.XtraCharts.Demos.SalesProductDataGenerator.BikeReportItem = New DevExpress.XtraCharts.Demos.SalesProductDataGenerator.BikeReportItem With {.Category = category}
-                    Dim correction As Double = 22 - i * 3 - DevExpress.XtraCharts.Demos.SalesProductDataGenerator.rnd.NextDouble()
+                    Dim correction As Double = 22 - i * 3 - DevExpress.DXperience.Demos.TutorialConstants.Random.NextDouble()
                     If day > minDay AndAlso day < maxDay Then correction += deltaCorrection
                     If day > maxDay Then correction -= deltaCorrection
                     Dim uSold As Integer = CInt((averageMonthSold * correction / 100.0))
-                    Dim uSoldTarget As Integer = uSold + DevExpress.XtraCharts.Demos.SalesProductDataGenerator.rnd.[Next](-CInt((uSold * 0.2)), CInt((uSold * 0.2)))
+                    Dim uSoldTarget As Integer = uSold + DevExpress.DXperience.Demos.TutorialConstants.Random.[Next](-CInt((uSold * 0.2)), CInt((uSold * 0.2)))
                     Dim rev As Decimal = uSold * averagePrice
                     Dim revTarget As Decimal = uSoldTarget * averagePrice
                     tsItem.Revenue = rev

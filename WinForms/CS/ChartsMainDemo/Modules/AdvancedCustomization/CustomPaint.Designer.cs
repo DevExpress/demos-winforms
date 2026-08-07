@@ -55,7 +55,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // chart
             // 
@@ -109,25 +109,25 @@
             this.layoutControl.Location = new System.Drawing.Point(0, 0);
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
             // toggleSwitchClusteringMode
             // 
             this.toggleSwitchClusteringMode.EditValue = true;
-            this.toggleSwitchClusteringMode.Location = new System.Drawing.Point(12, 31);
+            this.toggleSwitchClusteringMode.Location = new System.Drawing.Point(12, 34);
             this.toggleSwitchClusteringMode.Name = "toggleSwitchClusteringMode";
             this.toggleSwitchClusteringMode.Properties.OffText = "Manual";
             this.toggleSwitchClusteringMode.Properties.OnText = "Automatic";
-            this.toggleSwitchClusteringMode.Size = new System.Drawing.Size(217, 24);
+            this.toggleSwitchClusteringMode.Size = new System.Drawing.Size(217, 18);
             this.toggleSwitchClusteringMode.StyleController = this.layoutControl;
             this.toggleSwitchClusteringMode.TabIndex = 4;
             this.toggleSwitchClusteringMode.Toggled += new System.EventHandler(this.toggleSwitchClusteringMode_Toggled);
             // 
             // simpleButtonGeneratePoints
             // 
-            this.simpleButtonGeneratePoints.Location = new System.Drawing.Point(2, 77);
+            this.simpleButtonGeneratePoints.Location = new System.Drawing.Point(2, 74);
             this.simpleButtonGeneratePoints.Name = "simpleButtonGeneratePoints";
             this.simpleButtonGeneratePoints.Size = new System.Drawing.Size(237, 22);
             this.simpleButtonGeneratePoints.StyleController = this.layoutControl;
@@ -137,7 +137,7 @@
             // 
             // simpleButtonClearClusters
             // 
-            this.simpleButtonClearClusters.Location = new System.Drawing.Point(2, 111);
+            this.simpleButtonClearClusters.Location = new System.Drawing.Point(2, 108);
             this.simpleButtonClearClusters.Name = "simpleButtonClearClusters";
             this.simpleButtonClearClusters.Size = new System.Drawing.Size(237, 22);
             this.simpleButtonClearClusters.StyleController = this.layoutControl;
@@ -156,16 +156,14 @@
             this.layoutControlItemClearClusters});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 135);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 132);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(241, 409);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(241, 406);
             // 
             // layoutControlGroupClusteringMode
             // 
@@ -174,7 +172,7 @@
             this.layoutControlItemClusteringMode});
             this.layoutControlGroupClusteringMode.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupClusteringMode.Name = "layoutControlGroupClusteringMode";
-            this.layoutControlGroupClusteringMode.Size = new System.Drawing.Size(241, 67);
+            this.layoutControlGroupClusteringMode.Size = new System.Drawing.Size(241, 64);
             this.layoutControlGroupClusteringMode.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupClusteringMode.Text = "Clustering Mode";
             // 
@@ -183,29 +181,26 @@
             this.layoutControlItemClusteringMode.Control = this.toggleSwitchClusteringMode;
             this.layoutControlItemClusteringMode.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemClusteringMode.Name = "layoutControlItemClusteringMode";
-            this.layoutControlItemClusteringMode.Size = new System.Drawing.Size(221, 28);
-            this.layoutControlItemClusteringMode.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemClusteringMode.Size = new System.Drawing.Size(221, 22);
             this.layoutControlItemClusteringMode.TextVisible = false;
             // 
             // layoutControlItemGeneratePoints
             // 
             this.layoutControlItemGeneratePoints.Control = this.simpleButtonGeneratePoints;
-            this.layoutControlItemGeneratePoints.Location = new System.Drawing.Point(0, 67);
+            this.layoutControlItemGeneratePoints.Location = new System.Drawing.Point(0, 64);
             this.layoutControlItemGeneratePoints.Name = "layoutControlItemGeneratePoints";
             this.layoutControlItemGeneratePoints.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2);
             this.layoutControlItemGeneratePoints.Size = new System.Drawing.Size(241, 34);
             this.layoutControlItemGeneratePoints.Text = "Generate Points";
-            this.layoutControlItemGeneratePoints.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemGeneratePoints.TextVisible = false;
             // 
             // layoutControlItemClearClusters
             // 
             this.layoutControlItemClearClusters.Control = this.simpleButtonClearClusters;
-            this.layoutControlItemClearClusters.Location = new System.Drawing.Point(0, 101);
+            this.layoutControlItemClearClusters.Location = new System.Drawing.Point(0, 98);
             this.layoutControlItemClearClusters.Name = "layoutControlItemClearClusters";
             this.layoutControlItemClearClusters.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2);
             this.layoutControlItemClearClusters.Size = new System.Drawing.Size(241, 34);
-            this.layoutControlItemClearClusters.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemClearClusters.TextVisible = false;
             // 
             // CustomPaintDemo

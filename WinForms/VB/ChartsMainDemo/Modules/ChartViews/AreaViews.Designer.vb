@@ -582,6 +582,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartArea.TabIndex = 12
             Me.chartArea.TabStop = False
             chartTitle1.Text = "Outside Vendor Costs"
+            chartTitle1.TitleID = 0
             Me.chartArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' dockPanelRangeArea
@@ -650,6 +651,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.Label = rangeAreaSeriesLabel1
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series1.Name = "Europe Brent"
+            series1.SeriesID = 0
             series1.ValueDataMembersSerializable = "Min;Max"
             rangeAreaSeriesView1.Border1.Color = System.Drawing.Color.FromArgb((CInt(((CByte((27)))))), (CInt(((CByte((174)))))), (CInt(((CByte((73)))))))
             rangeAreaSeriesView1.Border1.Thickness = 2
@@ -667,11 +669,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartRangeArea.TabIndex = 2
             Me.chartRangeArea.TabStop = False
             chartTitle2.Text = "Crude Oil Prices in 2015"
-            chartTitle3.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle2.TitleID = 0
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle3.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle3.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle3.Text = "From www.eia.gov"
             chartTitle3.TextColor = System.Drawing.Color.Gray
+            chartTitle3.TitleID = 1
             Me.chartRangeArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle2, chartTitle3})
             ' 
             ' dockPanelStackedArea
@@ -746,6 +750,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedArea.TabIndex = 2
             Me.chartStackedArea.TabStop = False
             chartTitle4.Text = "DevAV Sales"
+            chartTitle4.TitleID = 0
             Me.chartStackedArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle4})
             ' 
             ' dockPanelFullStackedArea
@@ -794,17 +799,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram4.AxisY.Label.TextPattern = "{V:P0}"
             xyDiagram4.AxisY.Title.Text = "Percent"
             xyDiagram4.AxisY.VisibleInPanesSerializable = "-1"
-            xyDiagram4.AxisY.VisualRange.Auto = False
-            xyDiagram4.AxisY.VisualRange.AutoSideMargins = False
-            xyDiagram4.AxisY.VisualRange.EndSideMargin = 0R
-            xyDiagram4.AxisY.VisualRange.MaxValueSerializable = "1"
-            xyDiagram4.AxisY.VisualRange.MinValueSerializable = "0"
-            xyDiagram4.AxisY.VisualRange.StartSideMargin = 0R
-            xyDiagram4.AxisY.WholeRange.Auto = False
             xyDiagram4.AxisY.WholeRange.AutoSideMargins = False
             xyDiagram4.AxisY.WholeRange.EndSideMargin = 0R
-            xyDiagram4.AxisY.WholeRange.MaxValueSerializable = "1"
-            xyDiagram4.AxisY.WholeRange.MinValueSerializable = "0"
             xyDiagram4.AxisY.WholeRange.StartSideMargin = 0R
             Me.chartFullStackedArea.Diagram = xyDiagram4
             Me.chartFullStackedArea.Dock = System.Windows.Forms.DockStyle.Fill
@@ -831,6 +827,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedArea.TabIndex = 1
             Me.chartFullStackedArea.TabStop = False
             chartTitle5.Text = "Market Share Over Time"
+            chartTitle5.TitleID = 0
             Me.chartFullStackedArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle5})
             ' 
             ' dockPanelStepArea
@@ -898,6 +895,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.Label = pointSeriesLabel1
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series2.Name = "Fuel Prices"
+            series2.SeriesID = 0
             series2.ValueDataMembersSerializable = "Price"
             stepAreaSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series2.View = stepAreaSeriesView1
@@ -907,11 +905,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStepArea.TabIndex = 1
             Me.chartStepArea.TabStop = False
             chartTitle6.Text = "U.S. No 2 Diesel Ultra Low Sulfur Retail Prices"
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle6.TitleID = 0
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle7.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8.25F)
             chartTitle7.Text = "From www.eia.gov"
             chartTitle7.TextColor = System.Drawing.Color.Gray
+            chartTitle7.TitleID = 1
             Me.chartStepArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle6, chartTitle7})
             ' 
             ' dockPanelStackedStepArea
@@ -976,6 +976,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series3.Name = "Negative"
             series3.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint1, seriesPoint2, seriesPoint3, seriesPoint4, seriesPoint5, seriesPoint6, seriesPoint7, seriesPoint8, seriesPoint9, seriesPoint10, seriesPoint11, seriesPoint12})
+            series3.SeriesID = 0
             stackedStepAreaSeriesView1.SeriesAnimation = xySeriesBlowUpAnimation1
             stackedStepAreaSeriesView1.Transparency =(CByte((135)))
             series3.View = stackedStepAreaSeriesView1
@@ -983,6 +984,7 @@ Namespace DevExpress.XtraCharts.Demos
             series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series4.Name = "Neutral"
             series4.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint13, seriesPoint14, seriesPoint15, seriesPoint16, seriesPoint17, seriesPoint18, seriesPoint19, seriesPoint20, seriesPoint21, seriesPoint22, seriesPoint23, seriesPoint24})
+            series4.SeriesID = 1
             xySeriesBlowUpAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.3000000")
             stackedStepAreaSeriesView2.SeriesAnimation = xySeriesBlowUpAnimation2
             stackedStepAreaSeriesView2.Transparency =(CByte((135)))
@@ -991,6 +993,7 @@ Namespace DevExpress.XtraCharts.Demos
             series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series5.Name = "Positive"
             series5.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint25, seriesPoint26, seriesPoint27, seriesPoint28, seriesPoint29, seriesPoint30, seriesPoint31, seriesPoint32, seriesPoint33, seriesPoint34, seriesPoint35, seriesPoint36})
+            series5.SeriesID = 2
             xySeriesBlowUpAnimation3.BeginTime = System.TimeSpan.Parse("00:00:00.6000000")
             stackedStepAreaSeriesView3.SeriesAnimation = xySeriesBlowUpAnimation3
             stackedStepAreaSeriesView3.Transparency =(CByte((135)))
@@ -1002,6 +1005,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedStepArea.TabIndex = 2
             Me.chartStackedStepArea.TabStop = False
             chartTitle8.Text = "Statistics Comments in the Past Month"
+            chartTitle8.TitleID = 0
             chartTitle8.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             Me.chartStackedStepArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle8})
             ' 
@@ -1072,6 +1076,7 @@ Namespace DevExpress.XtraCharts.Demos
             series6.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series6.Name = "Negative"
             series6.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint37, seriesPoint38, seriesPoint39, seriesPoint40, seriesPoint41, seriesPoint42, seriesPoint43, seriesPoint44, seriesPoint45, seriesPoint46, seriesPoint47, seriesPoint48})
+            series6.SeriesID = 0
             fullStackedStepAreaSeriesView1.Transparency =(CByte((135)))
             series6.View = fullStackedStepAreaSeriesView1
             series7.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
@@ -1080,6 +1085,7 @@ Namespace DevExpress.XtraCharts.Demos
             series7.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series7.Name = "Neutral"
             series7.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint49, seriesPoint50, seriesPoint51, seriesPoint52, seriesPoint53, seriesPoint54, seriesPoint55, seriesPoint56, seriesPoint57, seriesPoint58, seriesPoint59, seriesPoint60})
+            series7.SeriesID = 1
             xySeriesUnwindAnimation1.BeginTime = System.TimeSpan.Parse("00:00:00.4000000")
             fullStackedStepAreaSeriesView2.SeriesAnimation = xySeriesUnwindAnimation1
             fullStackedStepAreaSeriesView2.Transparency =(CByte((135)))
@@ -1090,6 +1096,7 @@ Namespace DevExpress.XtraCharts.Demos
             series8.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series8.Name = "Positive"
             series8.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint61, seriesPoint62, seriesPoint63, seriesPoint64, seriesPoint65, seriesPoint66, seriesPoint67, seriesPoint68, seriesPoint69, seriesPoint70, seriesPoint71, seriesPoint72})
+            series8.SeriesID = 2
             xySeriesUnwindAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.8000000")
             fullStackedStepAreaSeriesView3.SeriesAnimation = xySeriesUnwindAnimation2
             fullStackedStepAreaSeriesView3.Transparency =(CByte((135)))
@@ -1100,6 +1107,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedStepArea.TabIndex = 2
             Me.chartFullStackedStepArea.TabStop = False
             chartTitle9.Text = "Statistics Comments in the Past Month"
+            chartTitle9.TitleID = 0
             chartTitle9.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             Me.chartFullStackedStepArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle9})
             ' 
@@ -1176,6 +1184,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartSplineArea.TabIndex = 12
             Me.chartSplineArea.TabStop = False
             chartTitle10.Text = "Outside Vendor Costs"
+            chartTitle10.TitleID = 0
             Me.chartSplineArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle10})
             ' 
             ' dockPanelStackedSplineArea
@@ -1251,6 +1260,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedSplineArea.TabIndex = 2
             Me.chartStackedSplineArea.TabStop = False
             chartTitle11.Text = "DevAV Sales"
+            chartTitle11.TitleID = 0
             Me.chartStackedSplineArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle11})
             ' 
             ' dockPanelFullStackedSplineArea
@@ -1326,6 +1336,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedSplineArea.TabIndex = 1
             Me.chartFullStackedSplineArea.TabStop = False
             chartTitle12.Text = "Market Share Over Time"
+            chartTitle12.TitleID = 0
             Me.chartFullStackedSplineArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle12})
             ' 
             ' documentManager
@@ -1557,7 +1568,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemMarkerVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemMarkerVisible.Name = "layoutControlItemMarkerVisible"
             Me.layoutControlItemMarkerVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemMarkerVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemMarkerVisible.TextVisible = False
             ' 
             ' layoutControlItemKind
@@ -1588,7 +1598,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemInvertedStep.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemInvertedStep.Name = "layoutControlItemInvertedStep"
             Me.layoutControlItemInvertedStep.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemInvertedStep.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemInvertedStep.TextVisible = False
             ' 
             ' layoutControlItemTransparency
@@ -1638,7 +1647,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
             Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' layoutControlItemAngle
@@ -1657,7 +1665,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent"
             Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutControlItemValueAsPercent.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemValueAsPercent.TextVisible = False
             ' 
             ' layoutControlGroup6
@@ -1693,11 +1700,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 24)
             Me.emptySpaceItem.Name = "emptySpaceItem1"
             Me.emptySpaceItem.Size = New System.Drawing.Size(202, 128)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' layoutControlGroup11
             ' 

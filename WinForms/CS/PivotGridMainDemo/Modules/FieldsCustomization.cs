@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
@@ -8,6 +8,7 @@ using DevExpress.Data.PivotGrid;
 using DevExpress.XtraPivotGrid.Customization;
 using System.Collections.Generic;
 using System.Linq;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraPivotGrid.Demos.Modules {
     public partial class FieldsCustomization : DevExpress.XtraPivotGrid.Demos.TutorialControl {
@@ -37,8 +38,10 @@ namespace DevExpress.XtraPivotGrid.Demos.Modules {
         }
         protected override void OnLayoutCalculated() {
             base.OnLayoutCalculated();
-            pivotGridControl1.FieldsCustomization(pivotGridControl1.PointToScreen(new Point(Width - 300, layoutControlGroup2.Height + 30)));
-            pivotGridControl1.CustomizationForm.TopMost = true;
+            if(!MainFormHelper.TakeScreens) {
+                pivotGridControl1.FieldsCustomization(pivotGridControl1.PointToScreen(new Point(Width - 300, layoutControlGroup2.Height + 30)));
+                pivotGridControl1.CustomizationForm.TopMost = true;
+            }
         }
         void InitCustomization(bool show) {
             showCustomization = show;

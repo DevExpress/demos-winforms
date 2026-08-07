@@ -1,17 +1,12 @@
 using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Linq.Expressions;
+using DevExpress.DevAV.Common.DataModel;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm.DataAnnotations;
-using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.Common.DataModel;
 
-namespace DevExpress.DevAV.Common.ViewModel
-{
+namespace DevExpress.DevAV.Common.ViewModel {
     /// <summary>
     /// The base class for a POCO view models exposing a colection of entities of a given type and CRUD operations against these entities.
     /// This is a partial class that provides extension point to add custom properties, commands and override methods without modifying the auto-generated code.
@@ -21,8 +16,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     /// <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
     public partial class CollectionViewModel<TEntity, TPrimaryKey, TUnitOfWork> : CollectionViewModel<TEntity, TEntity, TPrimaryKey, TUnitOfWork>
         where TEntity : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Creates a new instance of CollectionViewModel as a POCO view model.
@@ -39,8 +33,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null,
             Action<TEntity> newEntityInitializer = null,
             Func<bool> canCreateNewEntity = null,
-            bool ignoreSelectEntityMessage = false)
-        {
+            bool ignoreSelectEntityMessage = false) {
             return ViewModelSource.Create(() => new CollectionViewModel<TEntity, TPrimaryKey, TUnitOfWork>(unitOfWorkFactory, getRepositoryFunc, projection, newEntityInitializer, canCreateNewEntity, ignoreSelectEntityMessage));
         }
 
@@ -62,8 +55,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<bool> canCreateNewEntity = null,
             bool ignoreSelectEntityMessage = false
             )
-            : base(unitOfWorkFactory, getRepositoryFunc, projection, newEntityInitializer, canCreateNewEntity, ignoreSelectEntityMessage)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection, newEntityInitializer, canCreateNewEntity, ignoreSelectEntityMessage) {
         }
     }
 
@@ -78,8 +70,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     public partial class CollectionViewModel<TEntity, TProjection, TPrimaryKey, TUnitOfWork> : CollectionViewModelBase<TEntity, TProjection, TPrimaryKey, TUnitOfWork>
         where TEntity : class
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Creates a new instance of CollectionViewModel as a POCO view model.
@@ -96,8 +87,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection,
             Action<TEntity> newEntityInitializer = null,
             Func<bool> canCreateNewEntity = null,
-            bool ignoreSelectEntityMessage = false)
-        {
+            bool ignoreSelectEntityMessage = false) {
             return ViewModelSource.Create(() => new CollectionViewModel<TEntity, TProjection, TPrimaryKey, TUnitOfWork>(unitOfWorkFactory, getRepositoryFunc, projection, newEntityInitializer, canCreateNewEntity, ignoreSelectEntityMessage));
         }
 
@@ -119,8 +109,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<bool> canCreateNewEntity = null,
             bool ignoreSelectEntityMessage = false
             )
-            : base(unitOfWorkFactory, getRepositoryFunc, projection, newEntityInitializer, canCreateNewEntity, ignoreSelectEntityMessage)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection, newEntityInitializer, canCreateNewEntity, ignoreSelectEntityMessage) {
         }
     }
 
@@ -135,8 +124,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     public abstract class CollectionViewModelBase<TEntity, TProjection, TPrimaryKey, TUnitOfWork> : ReadOnlyCollectionViewModel<TEntity, TProjection, TUnitOfWork>, ISupportLogicalLayout
         where TEntity : class
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         EntitiesChangeTracker<TPrimaryKey> ChangeTrackerWithKey { get { return (EntitiesChangeTracker<TPrimaryKey>)ChangeTracker; } }
         readonly Action<TEntity> newEntityInitializer;
@@ -160,13 +148,12 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<bool> canCreateNewEntity,
             bool ignoreSelectEntityMessage
             )
-            : base(unitOfWorkFactory, getRepositoryFunc, projection)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection) {
             RepositoryExtensions.VerifyProjection(CreateRepository(), projection);
             this.newEntityInitializer = newEntityInitializer;
             this.canCreateNewEntity = canCreateNewEntity;
             this.ignoreSelectEntityMessage = ignoreSelectEntityMessage;
-            if (!this.IsInDesignMode())
+            if(!this.IsInDesignMode())
                 RegisterSelectEntityMessage();
         }
 
@@ -174,9 +161,8 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Creates and shows a document that contains a single object view model for new entity.
         /// Since CollectionViewModelBase is a POCO view model, an the instance of this class will also expose the NewCommand property that can be used as a binding source in views.
         /// </summary>
-        public virtual void New()
-        {
-            if (canCreateNewEntity != null && !canCreateNewEntity())
+        public virtual void New() {
+            if(canCreateNewEntity != null && !canCreateNewEntity())
                 return;
             DocumentManagerService.ShowNewEntityDocument(this, newEntityInitializer);
         }
@@ -186,22 +172,19 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since CollectionViewModelBase is a POCO view model, an the instance of this class will also expose the EditCommand property that can be used as a binding source in views.
         /// </summary>
         /// <param name="projectionEntity">Entity to edit.</param>
-        public virtual void Edit(TProjection projectionEntity)
-        {
-            if (Repository.IsDetached(projectionEntity))
+        public virtual void Edit(TProjection projectionEntity) {
+            if(Repository.IsDetached(projectionEntity))
                 return;
             TPrimaryKey primaryKey = Repository.GetProjectionPrimaryKey(projectionEntity);
             int index = Entities.IndexOf(projectionEntity);
             projectionEntity = ChangeTrackerWithKey.FindActualProjectionByKey(primaryKey);
-            if (index >= 0)
-            {
-                if (projectionEntity == null)
+            if(index >= 0) {
+                if(projectionEntity == null)
                     Entities.RemoveAt(index);
                 else
                     Entities[index] = projectionEntity;
             }
-            if (projectionEntity == null)
-            {
+            if(projectionEntity == null) {
                 DestroyDocument(DocumentManagerService.FindEntityDocument<TEntity, TPrimaryKey>(primaryKey));
                 return;
             }
@@ -213,8 +196,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since CollectionViewModelBase is a POCO view model, this method will be used as a CanExecute callback for EditCommand.
         /// </summary>
         /// <param name="projectionEntity">An entity to edit.</param>
-        public bool CanEdit(TProjection projectionEntity)
-        {
+        public bool CanEdit(TProjection projectionEntity) {
             return projectionEntity != null && !IsLoading;
         }
 
@@ -223,25 +205,21 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since CollectionViewModelBase is a POCO view model, an the instance of this class will also expose the DeleteCommand property that can be used as a binding source in views.
         /// </summary>
         /// <param name="projectionEntity">An entity to edit.</param>
-        public virtual void Delete(TProjection projectionEntity)
-        {
-            if (MessageBoxService.ShowMessage(string.Format(CommonResources.Confirmation_Delete, typeof(TEntity).Name), CommonResources.Confirmation_Caption, MessageButton.YesNo) != MessageResult.Yes)
+        public virtual void Delete(TProjection projectionEntity) {
+            if(MessageBoxService.ShowMessage(string.Format(CommonResources.Confirmation_Delete, typeof(TEntity).Name), CommonResources.Confirmation_Caption, MessageButton.YesNo) != MessageResult.Yes)
                 return;
-            try
-            {
+            try {
                 Entities.Remove(projectionEntity);
                 TPrimaryKey primaryKey = Repository.GetProjectionPrimaryKey(projectionEntity);
                 TEntity entity = Repository.Find(primaryKey);
-                if (entity != null)
-                {
+                if(entity != null) {
                     OnBeforeEntityDeleted(primaryKey, entity);
                     Repository.Remove(entity);
                     Repository.UnitOfWork.SaveChanges();
                     OnEntityDeleted(primaryKey, entity);
                 }
             }
-            catch (DbException e)
-            {
+            catch(DbException e) {
                 Refresh();
                 MessageBoxService.ShowMessage(e.ErrorMessage, e.ErrorCaption, MessageButton.OK, MessageIcon.Error);
             }
@@ -252,8 +230,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since CollectionViewModelBase is a POCO view model, this method will be used as a CanExecute callback for DeleteCommand.
         /// </summary>
         /// <param name="projectionEntity">An entity to edit.</param>
-        public virtual bool CanDelete(TProjection projectionEntity)
-        {
+        public virtual bool CanDelete(TProjection projectionEntity) {
             return projectionEntity != null && !IsLoading;
         }
 
@@ -263,19 +240,16 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// </summary>
         /// <param name="projectionEntity">An entity to save.</param>
         [Display(AutoGenerateField = false)]
-        public virtual void Save(TProjection projectionEntity)
-        {
+        public virtual void Save(TProjection projectionEntity) {
             var entity = Repository.FindExistingOrAddNewEntity(projectionEntity, (p, e) => { ApplyProjectionPropertiesToEntity(p, e); });
-            try
-            {
+            try {
                 OnBeforeEntitySaved(entity);
                 Repository.UnitOfWork.SaveChanges();
                 var primaryKey = Repository.GetPrimaryKey(entity);
                 Repository.SetProjectionPrimaryKey(projectionEntity, primaryKey);
                 OnEntitySaved(primaryKey, entity);
             }
-            catch (DbException e)
-            {
+            catch(DbException e) {
                 MessageBoxService.ShowMessage(e.ErrorMessage, e.ErrorCaption, MessageButton.OK, MessageIcon.Error);
             }
         }
@@ -285,8 +259,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since CollectionViewModelBase is a POCO view model, this method will be used as a CanExecute callback for SaveCommand.
         /// </summary>
         /// <param name="projectionEntity">An entity to save.</param>
-        public virtual bool CanSave(TProjection projectionEntity)
-        {
+        public virtual bool CanSave(TProjection projectionEntity) {
             return projectionEntity != null && !IsLoading;
         }
 
@@ -295,8 +268,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since CollectionViewModelBase is a POCO view model, an the instance of this class will also expose the UpdateSelectedEntityCommand property that can be used as a binding source in views.
         /// </summary>
         [Display(AutoGenerateField = false)]
-        public virtual void UpdateSelectedEntity()
-        {
+        public virtual void UpdateSelectedEntity() {
             this.RaisePropertyChanged(x => x.SelectedEntity);
         }
 
@@ -305,9 +277,8 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since CollectionViewModelBase is a POCO view model, an the instance of this class will also expose the CloseCommand property that can be used as a binding source in views.
         /// </summary>
         [Display(AutoGenerateField = false)]
-        public void Close()
-        {
-            if (DocumentOwner != null)
+        public void Close() {
+            if(DocumentOwner != null)
                 DocumentOwner.Close(this);
         }
 
@@ -318,85 +289,71 @@ namespace DevExpress.DevAV.Common.ViewModel
 
         protected virtual void OnBeforeEntityDeleted(TPrimaryKey primaryKey, TEntity entity) { }
 
-        protected virtual void OnEntityDeleted(TPrimaryKey primaryKey, TEntity entity)
-        {
+        protected virtual void OnEntityDeleted(TPrimaryKey primaryKey, TEntity entity) {
             Messenger.Default.Send(new EntityMessage<TEntity, TPrimaryKey>(primaryKey, EntityMessageType.Deleted));
         }
 
-        protected override Func<TProjection> GetSelectedEntityCallback()
-        {
+        protected override Func<TProjection> GetSelectedEntityCallback() {
             var entity = SelectedEntity;
             return () => FindLocalProjectionWithSameKey(entity);
         }
 
-        TProjection FindLocalProjectionWithSameKey(TProjection projectionEntity)
-        {
+        TProjection FindLocalProjectionWithSameKey(TProjection projectionEntity) {
             bool primaryKeyAvailable = projectionEntity != null && Repository.ProjectionHasPrimaryKey(projectionEntity);
             return primaryKeyAvailable ? ChangeTrackerWithKey.FindLocalProjectionByKey(Repository.GetProjectionPrimaryKey(projectionEntity)) : null;
         }
 
         protected virtual void OnBeforeEntitySaved(TEntity entity) { }
 
-        protected virtual void OnEntitySaved(TPrimaryKey primaryKey, TEntity entity)
-        {
+        protected virtual void OnEntitySaved(TPrimaryKey primaryKey, TEntity entity) {
             Messenger.Default.Send(new EntityMessage<TEntity, TPrimaryKey>(primaryKey, EntityMessageType.Changed));
         }
 
-        protected virtual void ApplyProjectionPropertiesToEntity(TProjection projectionEntity, TEntity entity)
-        {
+        protected virtual void ApplyProjectionPropertiesToEntity(TProjection projectionEntity, TEntity entity) {
             throw new NotImplementedException("Override this method in the collection view model class and apply projection properties to the entity so that it can be correctly saved by unit of work.");
         }
 
-        protected override void OnSelectedEntityChanged()
-        {
+        protected override void OnSelectedEntityChanged() {
             base.OnSelectedEntityChanged();
             UpdateCommands();
         }
 
-        protected override void RestoreSelectedEntity(TProjection existingProjectionEntity, TProjection newProjectionEntity)
-        {
+        protected override void RestoreSelectedEntity(TProjection existingProjectionEntity, TProjection newProjectionEntity) {
             base.RestoreSelectedEntity(existingProjectionEntity, newProjectionEntity);
-            if (ReferenceEquals(SelectedEntity, existingProjectionEntity))
+            if(ReferenceEquals(SelectedEntity, existingProjectionEntity))
                 SelectedEntity = newProjectionEntity;
         }
 
-        protected override void OnIsLoadingChanged()
-        {
+        protected override void OnIsLoadingChanged() {
             base.OnIsLoadingChanged();
             UpdateCommands();
-            if (!IsLoading)
+            if(!IsLoading)
                 RequestSelectedEntity();
         }
 
-        void UpdateCommands()
-        {
+        void UpdateCommands() {
             TProjection projectionEntity = null;
             this.RaiseCanExecuteChanged(x => x.Edit(projectionEntity));
             this.RaiseCanExecuteChanged(x => x.Delete(projectionEntity));
             this.RaiseCanExecuteChanged(x => x.Save(projectionEntity));
         }
 
-        protected void DestroyDocument(IDocument document)
-        {
-            if (document != null)
+        protected void DestroyDocument(IDocument document) {
+            if(document != null)
                 document.Close();
         }
 
-        protected IRepository<TEntity, TPrimaryKey> CreateRepository()
-        {
+        protected IRepository<TEntity, TPrimaryKey> CreateRepository() {
             return (IRepository<TEntity, TPrimaryKey>)CreateReadOnlyRepository();
         }
 
-        protected override IEntitiesChangeTracker CreateEntitiesChangeTracker()
-        {
+        protected override IEntitiesChangeTracker CreateEntitiesChangeTracker() {
             return new EntitiesChangeTracker<TPrimaryKey>(this);
         }
 
         #region SelectEntityMessage
-        protected class SelectEntityMessage
-        {
-            public SelectEntityMessage(TPrimaryKey primaryKey)
-            {
+        protected class SelectEntityMessage {
+            public SelectEntityMessage(TPrimaryKey primaryKey) {
                 PrimaryKey = primaryKey;
             }
             public TPrimaryKey PrimaryKey { get; private set; }
@@ -406,25 +363,21 @@ namespace DevExpress.DevAV.Common.ViewModel
 
         readonly bool ignoreSelectEntityMessage;
 
-        void RegisterSelectEntityMessage()
-        {
-            if (!ignoreSelectEntityMessage)
+        void RegisterSelectEntityMessage() {
+            if(!ignoreSelectEntityMessage)
                 Messenger.Default.Register<SelectEntityMessage>(this, x => OnSelectEntityMessage(x));
         }
 
-        void RequestSelectedEntity()
-        {
-            if (!ignoreSelectEntityMessage)
+        void RequestSelectedEntity() {
+            if(!ignoreSelectEntityMessage)
                 Messenger.Default.Send(new SelectedEntityRequest());
         }
 
-        void OnSelectEntityMessage(SelectEntityMessage message)
-        {
-            if (!IsLoaded)
+        void OnSelectEntityMessage(SelectEntityMessage message) {
+            if(!IsLoaded)
                 return;
             var projectionEntity = ChangeTrackerWithKey.FindActualProjectionByKey(message.PrimaryKey);
-            if (projectionEntity == null)
-            {
+            if(projectionEntity == null) {
                 FilterExpression = null;
                 projectionEntity = ChangeTrackerWithKey.FindActualProjectionByKey(message.PrimaryKey);
             }
@@ -433,18 +386,15 @@ namespace DevExpress.DevAV.Common.ViewModel
         #endregion
 
         #region ISupportLogicalLayout
-        bool ISupportLogicalLayout.CanSerialize
-        {
+        bool ISupportLogicalLayout.CanSerialize {
             get { return true; }
         }
 
-        IDocumentManagerService ISupportLogicalLayout.DocumentManagerService
-        {
+        IDocumentManagerService ISupportLogicalLayout.DocumentManagerService {
             get { return DocumentManagerService; }
         }
 
-        IEnumerable<object> ISupportLogicalLayout.LookupViewModels
-        {
+        IEnumerable<object> ISupportLogicalLayout.LookupViewModels {
             get { return null; }
         }
         #endregion

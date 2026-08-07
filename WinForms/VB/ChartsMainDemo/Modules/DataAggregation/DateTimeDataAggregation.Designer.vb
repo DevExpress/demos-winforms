@@ -51,10 +51,12 @@ Namespace DevExpress.XtraCharts.Demos
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series1.CrosshairLabelPattern = "{A:d} : {V:F4}"
             series1.Name = "Random Data"
+            series1.SeriesID = 0
             Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
             Me.chart.Size = New System.Drawing.Size(784, 432)
             Me.chart.TabIndex = 4
             chartTitle1.Text = "Data Aggregation (50000 points)"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.chart.AxisVisualRangeChanged, New System.EventHandler(Of DevExpress.XtraCharts.AxisRangeChangedEventArgs)(AddressOf Me.chart_AxisVisualRangeChanged)
             ' 

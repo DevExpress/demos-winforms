@@ -49,6 +49,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((Me.chart), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((pieSeriesLabel1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((pieSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((seriesTitle1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.layoutControl), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.layoutControl.SuspendLayout()
             CType((Me.comboBoxEditSeriesView.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,7 +76,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' chart
             ' 
@@ -106,19 +107,24 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.SeriesTemplate.LegendTextPattern = "{A}"
             Me.chart.SeriesTemplate.SeriesDataMember = "Region"
             Me.chart.SeriesTemplate.ValueDataMembersSerializable = "Sales"
+            seriesTitle1.TitleID = 0
             pieSeriesView1.Titles.AddRange(New DevExpress.XtraCharts.SeriesTitle() {seriesTitle1})
             Me.chart.SeriesTemplate.View = pieSeriesView1
             Me.chart.Size = New System.Drawing.Size(772, 571)
             Me.chart.TabIndex = 2
             Me.chart.TabStop = False
             chartTitle1.Text = "With XtraCharts, <b>you</b> can display an <u>unlimited</u> number of <color=blue" & ">chart titles</color>"
+            chartTitle1.TitleID = 0
             chartTitle1.WordWrap = True
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
             chartTitle2.Text = "<size=14>Title</size> <size=+2>with <size=+6>a</size></size> <size=24>variable</s" & "ize> <size=14>font <size=+6>size</size></size>"
+            chartTitle2.TitleID = 1
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Left
             chartTitle3.Text = "<i>Italicized</i> title"
+            chartTitle3.TitleID = 2
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Right
             chartTitle4.Text = "<color=red>Multi</color>-<color=green>color</color> <color=blue>title</color>"
+            chartTitle4.TitleID = 3
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2, chartTitle3, chartTitle4})
             AddHandler Me.chart.ObjectSelected, New DevExpress.XtraCharts.HotTrackEventHandler(AddressOf Me.chart_ObjectSelected)
             AddHandler Me.chart.ObjectHotTracked, New DevExpress.XtraCharts.HotTrackEventHandler(AddressOf Me.chart_ObjectHotTracked)
@@ -136,25 +142,25 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Location = New System.Drawing.Point(0, 0)
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 0
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' comboBoxEditSeriesView
             ' 
-            Me.comboBoxEditSeriesView.Location = New System.Drawing.Point(73, 31)
+            Me.comboBoxEditSeriesView.Location = New System.Drawing.Point(82, 34)
             Me.comboBoxEditSeriesView.Name = "comboBoxEditSeriesView"
             Me.comboBoxEditSeriesView.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditSeriesView.Properties.Items.AddRange(New Object() {"Pie", "Bar"})
             Me.comboBoxEditSeriesView.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditSeriesView.Size = New System.Drawing.Size(156, 20)
+            Me.comboBoxEditSeriesView.Size = New System.Drawing.Size(147, 20)
             Me.comboBoxEditSeriesView.StyleController = Me.layoutControl
             Me.comboBoxEditSeriesView.TabIndex = 4
             AddHandler Me.comboBoxEditSeriesView.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditSeriesView_SelectedIndexChanged)
             ' 
             ' textEditTitleText
             ' 
-            Me.textEditTitleText.Location = New System.Drawing.Point(12, 94)
+            Me.textEditTitleText.Location = New System.Drawing.Point(12, 100)
             Me.textEditTitleText.Name = "textEditTitleText"
             Me.textEditTitleText.Size = New System.Drawing.Size(217, 20)
             Me.textEditTitleText.StyleController = Me.layoutControl
@@ -163,34 +169,34 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' checkEditWordWrap
             ' 
-            Me.checkEditWordWrap.Location = New System.Drawing.Point(12, 118)
+            Me.checkEditWordWrap.Location = New System.Drawing.Point(12, 124)
             Me.checkEditWordWrap.Name = "checkEditWordWrap"
             Me.checkEditWordWrap.Properties.Caption = "Word Wrap"
-            Me.checkEditWordWrap.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditWordWrap.Size = New System.Drawing.Size(217, 20)
             Me.checkEditWordWrap.StyleController = Me.layoutControl
             Me.checkEditWordWrap.TabIndex = 6
             AddHandler Me.checkEditWordWrap.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditWordWrap_CheckedChanged)
             ' 
             ' comboBoxEditDock
             ' 
-            Me.comboBoxEditDock.Location = New System.Drawing.Point(73, 180)
+            Me.comboBoxEditDock.Location = New System.Drawing.Point(82, 190)
             Me.comboBoxEditDock.Name = "comboBoxEditDock"
             Me.comboBoxEditDock.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditDock.Properties.Items.AddRange(New Object() {"Top", "Bottom", "Left", "Right"})
             Me.comboBoxEditDock.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditDock.Size = New System.Drawing.Size(156, 20)
+            Me.comboBoxEditDock.Size = New System.Drawing.Size(147, 20)
             Me.comboBoxEditDock.StyleController = Me.layoutControl
             Me.comboBoxEditDock.TabIndex = 7
             AddHandler Me.comboBoxEditDock.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditDock_SelectedIndexChanged)
             ' 
             ' comboBoxEditAlignment
             ' 
-            Me.comboBoxEditAlignment.Location = New System.Drawing.Point(73, 204)
+            Me.comboBoxEditAlignment.Location = New System.Drawing.Point(82, 214)
             Me.comboBoxEditAlignment.Name = "comboBoxEditAlignment"
             Me.comboBoxEditAlignment.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditAlignment.Properties.Items.AddRange(New Object() {"Near", "Center", "Far"})
             Me.comboBoxEditAlignment.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditAlignment.Size = New System.Drawing.Size(156, 20)
+            Me.comboBoxEditAlignment.Size = New System.Drawing.Size(147, 20)
             Me.comboBoxEditAlignment.StyleController = Me.layoutControl
             Me.comboBoxEditAlignment.TabIndex = 8
             AddHandler Me.comboBoxEditAlignment.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditAlignment_SelectedIndexChanged)
@@ -202,16 +208,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupText, Me.layoutControlGroupGeneral, Me.emptySpaceItem, Me.layoutControlGroupLayout})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupText
             ' 
             Me.layoutControlGroupText.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupText.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemWordWrap, Me.layoutControlItemTitleText})
-            Me.layoutControlGroupText.Location = New System.Drawing.Point(0, 63)
+            Me.layoutControlGroupText.Location = New System.Drawing.Point(0, 66)
             Me.layoutControlGroupText.Name = "layoutControlGroupText"
-            Me.layoutControlGroupText.Size = New System.Drawing.Size(241, 86)
+            Me.layoutControlGroupText.Size = New System.Drawing.Size(241, 90)
             Me.layoutControlGroupText.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupText.Text = "Selected Title Text"
             ' 
@@ -220,8 +226,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemWordWrap.Control = Me.checkEditWordWrap
             Me.layoutControlItemWordWrap.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemWordWrap.Name = "layoutControlItemWordWrap"
-            Me.layoutControlItemWordWrap.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemWordWrap.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemWordWrap.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemWordWrap.TextVisible = False
             ' 
             ' layoutControlItemTitleText
@@ -231,7 +236,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemTitleText.Name = "layoutControlItemTitleText"
             Me.layoutControlItemTitleText.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemTitleText.Text = "Text: "
-            Me.layoutControlItemTitleText.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemTitleText.TextVisible = False
             ' 
             ' layoutControlGroupGeneral
@@ -240,7 +244,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupGeneral.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemSeriesView})
             Me.layoutControlGroupGeneral.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral"
-            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 63)
+            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 66)
             Me.layoutControlGroupGeneral.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupGeneral.Text = "General"
             ' 
@@ -255,19 +259,17 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
-            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 236)
+            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 246)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 308)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 292)
             ' 
             ' layoutControlGroupLayout
             ' 
             Me.layoutControlGroupLayout.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupLayout.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemDock, Me.layoutControlItemAlignment})
-            Me.layoutControlGroupLayout.Location = New System.Drawing.Point(0, 149)
+            Me.layoutControlGroupLayout.Location = New System.Drawing.Point(0, 156)
             Me.layoutControlGroupLayout.Name = "layoutControlGroupLayout"
-            Me.layoutControlGroupLayout.Size = New System.Drawing.Size(241, 87)
+            Me.layoutControlGroupLayout.Size = New System.Drawing.Size(241, 90)
             Me.layoutControlGroupLayout.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupLayout.Text = "Selected Title Layout"
             ' 
@@ -303,6 +305,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.tabPaneOptions.ResumeLayout(False)
             Me.tabNavigationPageOptions.ResumeLayout(False)
             CType((pieSeriesLabel1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((seriesTitle1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((pieSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.chart), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.layoutControl), System.ComponentModel.ISupportInitialize).EndInit()

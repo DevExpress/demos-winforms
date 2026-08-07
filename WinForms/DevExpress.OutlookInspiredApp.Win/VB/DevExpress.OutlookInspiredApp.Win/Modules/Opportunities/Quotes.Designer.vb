@@ -128,7 +128,7 @@ Namespace DevExpress.DevAV.Modules
             Me.fieldPercentage.Appearance.CellGrandTotal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
             Me.fieldPercentage.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea
             Me.fieldPercentage.AreaIndex = 1
-            Me.fieldPercentage.Caption = "PERCENTAGE"
+            Me.fieldPercentage.Caption = "Percentage"
             Me.fieldPercentage.FieldEdit = Me.percentageProgressBar
             Me.fieldPercentage.FieldName = "Opportunity"
             Me.fieldPercentage.Name = "fieldPercentage"
@@ -145,14 +145,14 @@ Namespace DevExpress.DevAV.Modules
             Me.fieldOpportunities.AllowedAreas = DevExpress.XtraPivotGrid.PivotGridAllowedAreas.DataArea
             Me.fieldOpportunities.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea
             Me.fieldOpportunities.AreaIndex = 0
-            Me.fieldOpportunities.Caption = "OPPORTUNITIES"
+            Me.fieldOpportunities.Caption = "Opportunities"
             Me.fieldOpportunities.FieldName = "Total"
             Me.fieldOpportunities.Name = "fieldOpportunities"
             Me.fieldOpportunities.Width = 150
             Me.fieldCity.AllowedAreas = DevExpress.XtraPivotGrid.PivotGridAllowedAreas.RowArea
             Me.fieldCity.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea
             Me.fieldCity.AreaIndex = 1
-            Me.fieldCity.Caption = "CITY"
+            Me.fieldCity.Caption = "City"
             Me.fieldCity.FieldName = "CustomerStore.City"
             Me.fieldCity.Name = "fieldCity"
             Me.fieldCity.SortOrder = DevExpress.XtraPivotGrid.PivotSortOrder.Descending
@@ -160,7 +160,7 @@ Namespace DevExpress.DevAV.Modules
             Me.fieldState.AllowedAreas = DevExpress.XtraPivotGrid.PivotGridAllowedAreas.RowArea
             Me.fieldState.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea
             Me.fieldState.AreaIndex = 0
-            Me.fieldState.Caption = "STATE"
+            Me.fieldState.Caption = "State"
             Me.fieldState.FieldName = "CustomerStore.State"
             Me.fieldState.Name = "fieldState"
             Me.fieldState.SortOrder = DevExpress.XtraPivotGrid.PivotSortOrder.Descending
@@ -337,7 +337,7 @@ Namespace DevExpress.DevAV.Modules
             Me.biNewCustomFilter.ImageOptions.ImageUri.Uri = "resource://DevExpress.DevAV.Resources.Filter.svg"
             Me.biNewCustomFilter.ImageOptions.LargeImage = Global.DevExpress.DevAV.Properties.Resources.icon_filter_32
             Me.biNewCustomFilter.Name = "biNewCustomFilter"
-            Me.hiItemsCount.Caption = "RECORDS: 0"
+            Me.hiItemsCount.Caption = "Records: 0"
             Me.hiItemsCount.Id = 9
             Me.hiItemsCount.Name = "hiItemsCount"
             Me.biShowList.Caption = "List"

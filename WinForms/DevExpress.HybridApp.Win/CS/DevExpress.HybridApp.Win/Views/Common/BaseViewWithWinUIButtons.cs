@@ -1,7 +1,7 @@
+using System.Drawing;
 using System.Windows.Forms;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraEditors;
-using System.Drawing;
 
 namespace DevExpress.DevAV.Views {
     public partial class BaseViewWithWinUIButtons : XtraUserControl {
@@ -11,11 +11,11 @@ namespace DevExpress.DevAV.Views {
         Size peekFormSizeDefault = new Size(200, 260);
 
         void windowsUIButtonPanel_QueryPeekFormContent(object sender, QueryPeekFormContentEventArgs e) {
-            if (e.Button.Properties.Tag != null && e.Button.Properties.Tag is Control) 
+            if(e.Button.Properties.Tag != null && e.Button.Properties.Tag is Control)
                 e.Control = e.Button.Properties.Tag as Control;
         }
         void windowsUIButtonPanel_ButtonClick(object sender, ButtonEventArgs e) {
-            if (e.Button.Properties.Tag != null) 
+            if(e.Button.Properties.Tag != null)
                 windowsUIButtonPanel.ShowPeekForm(e.Button);
         }
         protected override void ScaleControl(System.Drawing.SizeF factor, BoundsSpecified specified) {

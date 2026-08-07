@@ -1,12 +1,9 @@
-using DevExpress.DevAV.Common.ViewModel;
-using DevExpress.DevAV.DevAVDbDataModel1;
 using DevExpress.DevAV.ViewModels;
 using DevExpress.Utils.MVVM.Services;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
-using System;
 
 namespace DevExpress.DevAV.Views {
     [DevExpress.Utils.MVVM.UI.ViewType(DevExpress.DevAV.ViewModels.DevAVDbViewModel.EmployeeViewDocumentType)]
@@ -45,7 +42,7 @@ namespace DevExpress.DevAV.Views {
             var fluentAPI = mvvmContext.OfType<EmployeeViewModel>();
             mvvmContext.RegisterService(WindowedDocumentManagerService.CreateFlyoutFormService(this));
             mvvmContext.RegisterService(MessageBoxService.CreateXtraMessageBoxService());
-         
+
             fluentAPI.SetObjectDataSourceBinding(employeeBindingSource, x => x.Entity, x => x.Update());
             fluentAPI.BindCommand(backWindowsUIButtonPanel.Buttons[0] as WindowsUIButton, x => x.Close());
             fluentAPI.BindCommandAndImage(windowsUIButtonPanel.Buttons[0], x => x.SaveAndClose());

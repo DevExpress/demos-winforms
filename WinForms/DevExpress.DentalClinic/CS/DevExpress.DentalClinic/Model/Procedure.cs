@@ -37,7 +37,7 @@ namespace DevExpress.DentalClinic.Model {
         }
     }
     [Flags]
-    public enum ProcedureGroup { Diagnosis = 0, Restoration = 1, RootCanal = 2, Hygiene = 4, Whitening = 8, Prosthetics= 16, Implantation = 32, Orthodontics = 64, Surgery = 128 }
+    public enum ProcedureGroup { Diagnosis = 0, Restoration = 1, RootCanal = 2, Hygiene = 4, Whitening = 8, Prosthetics = 16, Implantation = 32, Orthodontics = 64, Surgery = 128 }
     public enum ProcedureType { General, Tooth }
     public class ProcedureItem : XPObject {
         Patient patientCore;

@@ -28,6 +28,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             Me.layoutControl = New DevExpress.XtraLayout.LayoutControl()
             Me.ceAllowBandColumnsMultiRow = New DevExpress.XtraEditors.CheckEdit()
             Me.ceShowBands = New DevExpress.XtraEditors.CheckEdit()
+            Me.icbCustomizationFormKind = New DevExpress.XtraEditors.ImageComboBoxEdit()
             Me.ceCustomizationFormSearchBoxVisible = New DevExpress.XtraEditors.CheckEdit()
             Me.ceShowBandsInCustomizationForm = New DevExpress.XtraEditors.CheckEdit()
             Me.ceAllowColumnResizing = New DevExpress.XtraEditors.CheckEdit()
@@ -45,6 +46,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             Me.liAllowChangeColumnParent = New DevExpress.XtraLayout.LayoutControlItem()
             Me.liAllowColumnMoving = New DevExpress.XtraLayout.LayoutControlItem()
             Me.liAllowColumnResizing = New DevExpress.XtraLayout.LayoutControlItem()
+            Me.liCustomizationFormKind = New DevExpress.XtraLayout.LayoutControlItem()
             Me.liShowBandsInCustomizationForm = New DevExpress.XtraLayout.LayoutControlItem()
             Me.liCustomizationFormSearchBoxVisible = New DevExpress.XtraLayout.LayoutControlItem()
             Me.lgView = New DevExpress.XtraLayout.LayoutControlGroup()
@@ -54,6 +56,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             Me.layoutControl.SuspendLayout()
             CType((Me.ceAllowBandColumnsMultiRow.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.ceShowBands.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.icbCustomizationFormKind.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.ceCustomizationFormSearchBoxVisible.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.ceShowBandsInCustomizationForm.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.ceAllowColumnResizing.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,6 +74,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             CType((Me.liAllowChangeColumnParent), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.liAllowColumnMoving), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.liAllowColumnResizing), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.liCustomizationFormKind), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.liShowBandsInCustomizationForm), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.liCustomizationFormSearchBoxVisible), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.lgView), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,6 +86,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             ' 
             Me.layoutControl.Controls.Add(Me.ceAllowBandColumnsMultiRow)
             Me.layoutControl.Controls.Add(Me.ceShowBands)
+            Me.layoutControl.Controls.Add(Me.icbCustomizationFormKind)
             Me.layoutControl.Controls.Add(Me.ceCustomizationFormSearchBoxVisible)
             Me.layoutControl.Controls.Add(Me.ceShowBandsInCustomizationForm)
             Me.layoutControl.Controls.Add(Me.ceAllowColumnResizing)
@@ -119,9 +124,20 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             Me.ceShowBands.TabIndex = 13
             AddHandler Me.ceShowBands.CheckedChanged, New System.EventHandler(AddressOf Me.ceShowBands_CheckedChanged)
             ' 
+            ' icbCustomizationFormKind
+            ' 
+            Me.icbCustomizationFormKind.Location = New System.Drawing.Point(143, 254)
+            Me.icbCustomizationFormKind.Name = "icbCustomizationFormKind"
+            Me.icbCustomizationFormKind.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.icbCustomizationFormKind.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.ImageComboBoxItem() {New DevExpress.XtraEditors.Controls.ImageComboBoxItem("Classic", DevExpress.Utils.DefaultBoolean.[False], -1), New DevExpress.XtraEditors.Controls.ImageComboBoxItem("Advanced", DevExpress.Utils.DefaultBoolean.[True], -1)})
+            Me.icbCustomizationFormKind.Size = New System.Drawing.Size(95, 20)
+            Me.icbCustomizationFormKind.StyleController = Me.layoutControl
+            Me.icbCustomizationFormKind.TabIndex = 15
+            AddHandler Me.icbCustomizationFormKind.SelectedIndexChanged, New System.EventHandler(AddressOf Me.icbCustomizationFormKind_SelectedIndexChanged)
+            ' 
             ' ceCustomizationFormSearchBoxVisible
             ' 
-            Me.ceCustomizationFormSearchBoxVisible.Location = New System.Drawing.Point(12, 277)
+            Me.ceCustomizationFormSearchBoxVisible.Location = New System.Drawing.Point(12, 301)
             Me.ceCustomizationFormSearchBoxVisible.Name = "ceCustomizationFormSearchBoxVisible"
             Me.ceCustomizationFormSearchBoxVisible.Properties.Caption = "Customization Form Search Box Visible"
             Me.ceCustomizationFormSearchBoxVisible.Size = New System.Drawing.Size(226, 19)
@@ -131,7 +147,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             ' 
             ' ceShowBandsInCustomizationForm
             ' 
-            Me.ceShowBandsInCustomizationForm.Location = New System.Drawing.Point(12, 254)
+            Me.ceShowBandsInCustomizationForm.Location = New System.Drawing.Point(12, 278)
             Me.ceShowBandsInCustomizationForm.Name = "ceShowBandsInCustomizationForm"
             Me.ceShowBandsInCustomizationForm.Properties.Caption = "Show Bands In Customization Form"
             Me.ceShowBandsInCustomizationForm.Size = New System.Drawing.Size(226, 19)
@@ -211,18 +227,18 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             ' emptySpaceItem1
             ' 
             Me.emptySpaceItem1.AllowHotTrack = False
-            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 308)
+            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 331)
             Me.emptySpaceItem1.Name = "emptySpaceItem1"
-            Me.emptySpaceItem1.Size = New System.Drawing.Size(250, 32)
+            Me.emptySpaceItem1.Size = New System.Drawing.Size(250, 9)
             Me.emptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' lgCustomization
             ' 
             Me.lgCustomization.GroupStyle = DevExpress.Utils.GroupStyle.Title
-            Me.lgCustomization.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.liAllowBandMoving, Me.liAllowBandResizing, Me.liAllowChangeBandParent, Me.liAllowChangeColumnParent, Me.liAllowColumnMoving, Me.liAllowColumnResizing, Me.liShowBandsInCustomizationForm, Me.liCustomizationFormSearchBoxVisible})
+            Me.lgCustomization.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.liAllowBandMoving, Me.liAllowBandResizing, Me.liAllowChangeBandParent, Me.liAllowChangeColumnParent, Me.liAllowColumnMoving, Me.liAllowColumnResizing, Me.liCustomizationFormKind, Me.liShowBandsInCustomizationForm, Me.liCustomizationFormSearchBoxVisible})
             Me.lgCustomization.Location = New System.Drawing.Point(0, 85)
             Me.lgCustomization.Name = "lgCustomization"
-            Me.lgCustomization.Size = New System.Drawing.Size(250, 223)
+            Me.lgCustomization.Size = New System.Drawing.Size(250, 246)
             Me.lgCustomization.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.lgCustomization.Text = "Customization"
             ' 
@@ -280,10 +296,19 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             Me.liAllowColumnResizing.TextSize = New System.Drawing.Size(0, 0)
             Me.liAllowColumnResizing.TextVisible = False
             ' 
+            ' liCustomizationFormKind
+            ' 
+            Me.liCustomizationFormKind.Control = Me.icbCustomizationFormKind
+            Me.liCustomizationFormKind.Location = New System.Drawing.Point(0, 138)
+            Me.liCustomizationFormKind.Name = "liCustomizationFormKind"
+            Me.liCustomizationFormKind.Size = New System.Drawing.Size(230, 24)
+            Me.liCustomizationFormKind.Text = "Customization Form:"
+            Me.liCustomizationFormKind.TextSize = New System.Drawing.Size(119, 13)
+            ' 
             ' liShowBandsInCustomizationForm
             ' 
             Me.liShowBandsInCustomizationForm.Control = Me.ceShowBandsInCustomizationForm
-            Me.liShowBandsInCustomizationForm.Location = New System.Drawing.Point(0, 138)
+            Me.liShowBandsInCustomizationForm.Location = New System.Drawing.Point(0, 162)
             Me.liShowBandsInCustomizationForm.Name = "liShowBandsInCustomizationForm"
             Me.liShowBandsInCustomizationForm.Size = New System.Drawing.Size(230, 23)
             Me.liShowBandsInCustomizationForm.TextSize = New System.Drawing.Size(0, 0)
@@ -292,7 +317,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             ' liCustomizationFormSearchBoxVisible
             ' 
             Me.liCustomizationFormSearchBoxVisible.Control = Me.ceCustomizationFormSearchBoxVisible
-            Me.liCustomizationFormSearchBoxVisible.Location = New System.Drawing.Point(0, 161)
+            Me.liCustomizationFormSearchBoxVisible.Location = New System.Drawing.Point(0, 185)
             Me.liCustomizationFormSearchBoxVisible.Name = "liCustomizationFormSearchBoxVisible"
             Me.liCustomizationFormSearchBoxVisible.Size = New System.Drawing.Size(230, 23)
             Me.liCustomizationFormSearchBoxVisible.TextSize = New System.Drawing.Size(0, 0)
@@ -338,6 +363,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             Me.layoutControl.ResumeLayout(False)
             CType((Me.ceAllowBandColumnsMultiRow.Properties), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.ceShowBands.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.icbCustomizationFormKind.Properties), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.ceCustomizationFormSearchBoxVisible.Properties), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.ceShowBandsInCustomizationForm.Properties), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.ceAllowColumnResizing.Properties), System.ComponentModel.ISupportInitialize).EndInit()
@@ -355,6 +381,7 @@ Namespace DevExpress.XtraTreeList.Demos.Options
             CType((Me.liAllowChangeColumnParent), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.liAllowColumnMoving), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.liAllowColumnResizing), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.liCustomizationFormKind), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.liShowBandsInCustomizationForm), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.liCustomizationFormSearchBoxVisible), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.lgView), System.ComponentModel.ISupportInitialize).EndInit()
@@ -395,6 +422,10 @@ Namespace DevExpress.XtraTreeList.Demos.Options
         Private ceAllowColumnResizing As DevExpress.XtraEditors.CheckEdit
 
         Private liAllowColumnResizing As DevExpress.XtraLayout.LayoutControlItem
+
+        Private icbCustomizationFormKind As DevExpress.XtraEditors.ImageComboBoxEdit
+
+        Private liCustomizationFormKind As DevExpress.XtraLayout.LayoutControlItem
 
         Private liShowBandsInCustomizationForm As DevExpress.XtraLayout.LayoutControlItem
 

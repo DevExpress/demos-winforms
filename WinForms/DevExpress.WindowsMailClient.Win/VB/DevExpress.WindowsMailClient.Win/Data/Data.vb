@@ -1,6 +1,7 @@
 Imports System
 Imports System.Collections.Generic
 Imports System.Data
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.WindowsMailClient.Win.Model
 Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraRichEdit
@@ -124,13 +125,12 @@ Namespace DevExpress.WindowsMailClient.Win.Data
         Private _from As String = String.Empty, _subject As String = String.Empty, _text As String = String.Empty, _plainText As String = String.Empty, _email As String = String.Empty
 
         Public Sub New()
-            _date = Date.Now
+            _date = TutorialConstants.Now
         End Sub
 
         Public Sub New(ByVal row As DataRow)
             _row = row
-            Dim random = DevExpress.Data.Utils.NonCryptographicRandom.Default
-            _date = Date.Now.AddDays(CInt(row("Day"))).AddSeconds(-random.Next(10000))
+            _date = TutorialConstants.Now.AddDays(CInt(row("Day"))).AddSeconds(-TutorialConstants.Random.Next(10000))
             _email = String.Format("{0}", row("From"))
             _from = MailClientDataModel.GetNameByEmail(_email)
             _subject = String.Format("{0}", row("Subject"))
@@ -289,7 +289,7 @@ Namespace DevExpress.WindowsMailClient.Win.Data
 
         Friend ReadOnly Property Delay As TimeSpan
             Get
-                Return Date.Now - _date
+                Return TutorialConstants.Now - _date
             End Get
         End Property
 

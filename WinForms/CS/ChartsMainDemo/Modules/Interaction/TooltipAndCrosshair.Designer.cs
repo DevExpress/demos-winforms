@@ -1,4 +1,4 @@
-namespace DevExpress.XtraCharts.Demos {
+﻿namespace DevExpress.XtraCharts.Demos {
 	partial class TooltipAndCrosshairDemo {
 		protected override void Dispose(bool disposing) {
 			if (disposing) {
@@ -128,6 +128,7 @@ namespace DevExpress.XtraCharts.Demos {
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
             series1.LegendName = "Default Legend";
             series1.Name = "Series 1";
+            series1.SeriesID = 0;
             series1.SeriesPointsSorting = DevExpress.XtraCharts.SortingMode.Ascending;
             series1.SeriesPointsSortingKey = DevExpress.XtraCharts.SeriesPointKey.Value_1;
             series1.ValueDataMembersSerializable = "TotalIncome";
@@ -146,6 +147,7 @@ namespace DevExpress.XtraCharts.Demos {
             this.chartBar.TabStop = false;
             chartTitle1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 14F);
             chartTitle1.Text = "Annual Income (Thousands of USD)";
+            chartTitle1.TitleID = 0;
             this.chartBar.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chartBar.ToolTipController = this.barChartToolTipController;
@@ -219,6 +221,7 @@ namespace DevExpress.XtraCharts.Demos {
             this.chartSpline.TabIndex = 0;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 14F);
             chartTitle2.Text = "Income Dynamics (Thousands of USD)";
+            chartTitle2.TitleID = 0;
             this.chartSpline.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2});
             this.chartSpline.Click += new System.EventHandler(this.OnChartClick);
@@ -449,7 +452,6 @@ namespace DevExpress.XtraCharts.Demos {
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // lciShowLabel
@@ -458,7 +460,6 @@ namespace DevExpress.XtraCharts.Demos {
             this.lciShowLabel.Location = new System.Drawing.Point(0, 48);
             this.lciShowLabel.Name = "lciShowLabel";
             this.lciShowLabel.Size = new System.Drawing.Size(221, 24);
-            this.lciShowLabel.TextSize = new System.Drawing.Size(0, 0);
             this.lciShowLabel.TextVisible = false;
             // 
             // layoutControlItem5
@@ -467,7 +468,6 @@ namespace DevExpress.XtraCharts.Demos {
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlItem1
@@ -476,7 +476,6 @@ namespace DevExpress.XtraCharts.Demos {
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem6
@@ -485,7 +484,6 @@ namespace DevExpress.XtraCharts.Demos {
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 144);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // lciContentShowMode

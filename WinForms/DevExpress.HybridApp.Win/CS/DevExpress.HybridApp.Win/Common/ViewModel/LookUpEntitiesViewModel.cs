@@ -1,14 +1,10 @@
 using System;
 using System.Linq;
-using System.ComponentModel;
+using DevExpress.DevAV.Common.DataModel;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using System.Collections.ObjectModel;
-using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.Common.DataModel;
 
-namespace DevExpress.DevAV.Common.ViewModel
-{
+namespace DevExpress.DevAV.Common.ViewModel {
     /// <summary>
     /// Represents a POCO view models used by SingleObjectViewModel to exposing collections of related entities.
     /// This is a partial class that provides an extension point to add custom properties, commands and override methods without modifying the auto-generated code.
@@ -20,8 +16,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     public class LookUpEntitiesViewModel<TEntity, TProjection, TPrimaryKey, TUnitOfWork> : EntitiesViewModel<TEntity, TProjection, TUnitOfWork>, IDocumentContent
         where TEntity : class
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Creates a new instance of LookUpEntitiesViewModel as a POCO view model.
@@ -32,8 +27,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         public static LookUpEntitiesViewModel<TEntity, TProjection, TPrimaryKey, TUnitOfWork> Create(
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
-            Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection = null)
-        {
+            Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection = null) {
             return ViewModelSource.Create(() => new LookUpEntitiesViewModel<TEntity, TProjection, TPrimaryKey, TUnitOfWork>(unitOfWorkFactory, getRepositoryFunc, projection));
         }
 
@@ -49,12 +43,10 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection
             )
-            : base(unitOfWorkFactory, getRepositoryFunc, projection)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection) {
         }
 
-        protected override IEntitiesChangeTracker CreateEntitiesChangeTracker()
-        {
+        protected override IEntitiesChangeTracker CreateEntitiesChangeTracker() {
             return new EntitiesChangeTracker<TPrimaryKey>(this);
         }
     }

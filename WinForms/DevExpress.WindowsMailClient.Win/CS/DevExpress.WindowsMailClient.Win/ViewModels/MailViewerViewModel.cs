@@ -1,5 +1,6 @@
 using System;
 using DevExpress.Data.Filtering;
+using DevExpress.DXperience.Demos;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.WindowsMailClient.Win.Data;
@@ -33,7 +34,7 @@ namespace DevExpress.WindowsMailClient.Win.ViewModels {
         protected void OnCurrentMailTypeChanging(MailType currentMailType) {
             switch(currentMailType) {
                 case MailType.Outbox:
-                    ChangeSettings("Outbox",currentMailType);
+                    ChangeSettings("Outbox", currentMailType);
                     break;
                 case MailType.Archive:
                     ChangeSettings("Archive", currentMailType);
@@ -119,15 +120,15 @@ namespace DevExpress.WindowsMailClient.Win.ViewModels {
         public void SetFilterYesterday() {
             AnimateArrival = true;
             if(!ReferenceEquals(ActiveFilter, null))
-                ActiveFilter = new BinaryOperator(new BinaryOperator("MailType", CurrentMailType, BinaryOperatorType.Equal), new BetweenOperator("Date", DateTime.Today.Date.AddHours(-24), DateTime.Today.Date), BinaryOperatorType.BitwiseAnd);
-            else ActiveFilter = new BetweenOperator("Date", DateTime.Today.Date.AddHours(-24), DateTime.Today.Date);
+                ActiveFilter = new BinaryOperator(new BinaryOperator("MailType", CurrentMailType, BinaryOperatorType.Equal), new BetweenOperator("Date", TutorialConstants.Today.Date.AddHours(-24), TutorialConstants.Today.Date), BinaryOperatorType.BitwiseAnd);
+            else ActiveFilter = new BetweenOperator("Date", TutorialConstants.Today.Date.AddHours(-24), TutorialConstants.Today.Date);
         }
         [Command]
         public void SetFilterToday() {
             AnimateArrival = true;
             if(!ReferenceEquals(ActiveFilter, null))
-                ActiveFilter = new BinaryOperator(new BinaryOperator("MailType", CurrentMailType, BinaryOperatorType.Equal), new BetweenOperator("Date", DateTime.Today.Date, DateTime.Today.Date.AddHours(24)), BinaryOperatorType.BitwiseAnd);
-            else ActiveFilter = new BetweenOperator("Date", DateTime.Today.Date, DateTime.Today.Date.AddHours(24));
+                ActiveFilter = new BinaryOperator(new BinaryOperator("MailType", CurrentMailType, BinaryOperatorType.Equal), new BetweenOperator("Date", TutorialConstants.Today.Date, TutorialConstants.Today.Date.AddHours(24)), BinaryOperatorType.BitwiseAnd);
+            else ActiveFilter = new BetweenOperator("Date", TutorialConstants.Today.Date, TutorialConstants.Today.Date.AddHours(24));
         }
         [Command]
         public void SetFilterUnread() {
@@ -201,7 +202,7 @@ namespace DevExpress.WindowsMailClient.Win.ViewModels {
         void OnBoolMessage(bool showFocusedOther) {
             this._showFocusedOtherFilter = showFocusedOther;
             if(showFocusedOther) CurrentFilterType = FilterType.Other;
-            else CurrentFilterType = (FilterType) 3;
+            else CurrentFilterType = (FilterType)3;
             UpdateLabelsVisibility();
             if(ShowFocusedOtherChanged != null && CurrentMailType == MailType.Inbox)
                 ShowFocusedOtherChanged(this, EventArgs.Empty);

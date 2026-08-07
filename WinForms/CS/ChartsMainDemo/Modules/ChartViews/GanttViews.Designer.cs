@@ -185,6 +185,7 @@
             this.dockPanelGantt_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartGantt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(ganttDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(constantLine1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(overlappedGanttSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
@@ -196,6 +197,7 @@
             ((System.ComponentModel.ISupportInitialize)(ganttDiagram2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisX1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(rangeBarSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideGanttSeriesView1)).BeginInit();
@@ -294,6 +296,7 @@
             ganttDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             ganttDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             constantLine1.AxisValueSerializable = "09/25/2006 00:00:00.000";
+            constantLine1.ConstantLineID = 0;
             constantLine1.Name = "Progress Line";
             constantLine1.RuntimeMoving = true;
             constantLine1.ShowInLegend = false;
@@ -309,19 +312,8 @@
             ganttDiagram1.AxisY.MinorCount = 4;
             ganttDiagram1.AxisY.Title.Text = "Date";
             ganttDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            ganttDiagram1.AxisY.VisualRange.Auto = false;
-            ganttDiagram1.AxisY.VisualRange.AutoSideMargins = false;
-            ganttDiagram1.AxisY.VisualRange.EndSideMargin = 0D;
-            ganttDiagram1.AxisY.VisualRange.MaxValueSerializable = "11/16/2006 00:00:00.000";
-            ganttDiagram1.AxisY.VisualRange.MinValueSerializable = "08/16/2006 00:00:00.000";
-            ganttDiagram1.AxisY.VisualRange.SideMarginsValue = 0D;
-            ganttDiagram1.AxisY.VisualRange.StartSideMargin = 0D;
-            ganttDiagram1.AxisY.WholeRange.Auto = false;
             ganttDiagram1.AxisY.WholeRange.AutoSideMargins = false;
             ganttDiagram1.AxisY.WholeRange.EndSideMargin = 0D;
-            ganttDiagram1.AxisY.WholeRange.MaxValueSerializable = "11/16/2006 00:00:00.000";
-            ganttDiagram1.AxisY.WholeRange.MinValueSerializable = "08/16/2006 00:00:00.000";
-            ganttDiagram1.AxisY.WholeRange.SideMarginsValue = 0D;
             ganttDiagram1.AxisY.WholeRange.StartSideMargin = 0D;
             this.chartGantt.Diagram = ganttDiagram1;
             this.chartGantt.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -364,6 +356,7 @@
             seriesPoint7,
             seriesPoint8,
             seriesPoint9});
+            series1.SeriesID = 0;
             series1.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             series1.View = overlappedGanttSeriesView1;
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
@@ -374,6 +367,7 @@
             seriesPoint12,
             seriesPoint13,
             seriesPoint14});
+            series2.SeriesID = 1;
             series2.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             barGrowUpAnimation1.BeginTime = System.TimeSpan.Parse("00:00:00.8000000");
             overlappedGanttSeriesView2.Animation = barGrowUpAnimation1;
@@ -387,6 +381,7 @@
             this.chartGantt.TabIndex = 1;
             this.chartGantt.TabStop = false;
             chartTitle1.Text = "R&D Schedule";
+            chartTitle1.TitleID = 0;
             this.chartGantt.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chartGantt.AnimationEnded += new DevExpress.XtraCharts.AnimationEndedEventHandler(this.chartGantt_AnimationEnded);
@@ -460,6 +455,7 @@
             legend1.BackColor = System.Drawing.Color.Transparent;
             legend1.Border.Visibility = DevExpress.Utils.DefaultBoolean.False;
             legend1.DockTargetName = "Pane 1";
+            legend1.LegendID = 0;
             legend1.Name = "Legend1";
             legend1.Title.Text = "Project 2";
             legend1.Title.Visible = true;
@@ -479,6 +475,7 @@
             seriesPoint18,
             seriesPoint19,
             seriesPoint20});
+            series3.SeriesID = 0;
             series3.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             barGrowUpAnimation2.Duration = System.TimeSpan.Parse("00:00:00");
             barGrowUpAnimation2.Enabled = false;
@@ -496,6 +493,7 @@
             seriesPoint24,
             seriesPoint25,
             seriesPoint26});
+            series4.SeriesID = 1;
             series4.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             barSlideAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.1000000");
             sideBySideGanttSeriesView2.Animation = barSlideAnimation1;
@@ -513,6 +511,7 @@
             seriesPoint30,
             seriesPoint31,
             seriesPoint32});
+            series5.SeriesID = 2;
             series5.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             barGrowUpAnimation3.Duration = System.TimeSpan.Parse("00:00:00");
             barGrowUpAnimation3.Enabled = false;
@@ -533,6 +532,7 @@
             seriesPoint36,
             seriesPoint37,
             seriesPoint38});
+            series6.SeriesID = 3;
             series6.ValueScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             barSlideAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.8000000");
             barSlideAnimation2.PointDelay = System.TimeSpan.Parse("00:00:00.1000000");
@@ -550,9 +550,11 @@
             this.chartGanttSideBySide.TabIndex = 1;
             this.chartGanttSideBySide.TabStop = false;
             chartTitle2.Text = "Project Comparison";
+            chartTitle2.TitleID = 0;
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Left;
             chartTitle3.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle3.Text = "Tasks";
+            chartTitle3.TitleID = 1;
             this.chartGanttSideBySide.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2,
             chartTitle3});
@@ -598,6 +600,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.dockPanelGantt.ResumeLayout(false);
             this.dockPanelGantt_Container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(constantLine1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(ganttDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(overlappedGanttSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
@@ -610,6 +613,7 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisX1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(ganttDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(rangeBarSeriesLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideGanttSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();

@@ -3,14 +3,12 @@ using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace DevExpress.DevAV.Common.DataModel
-{
+namespace DevExpress.DevAV.Common.DataModel {
     /// <summary>
     /// The IUnitOfWork interface represents the Unit Of Work pattern 
     /// such that it can be used to query from a database and group together changes that will then be written back to the store as a unit. 
     /// </summary>
-    public interface IUnitOfWork
-    {
+    public interface IUnitOfWork {
         /// <summary>
         /// Saves all changes made in this unit of work to the underlying store.
         /// </summary>
@@ -26,8 +24,7 @@ namespace DevExpress.DevAV.Common.DataModel
     /// Provides the method to create a unit of work of a given type.
     /// </summary>
     /// <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
-    public interface IUnitOfWorkFactory<TUnitOfWork> where TUnitOfWork : IUnitOfWork
-    {
+    public interface IUnitOfWorkFactory<TUnitOfWork> where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Creates a new unit of work.
@@ -39,8 +36,7 @@ namespace DevExpress.DevAV.Common.DataModel
     }
 
     public interface IInstantFeedbackSource<TEntity> : IListSource
-        where TEntity : class
-    {
+        where TEntity : class {
         void Refresh();
         TProperty GetPropertyValue<TProperty>(object threadSafeProxy, Expression<Func<TEntity, TProperty>> propertyExpression);
         bool IsLoadedProxy(object threadSafeProxy);

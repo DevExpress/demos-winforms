@@ -1,23 +1,12 @@
-using System;
-using System.Linq;
-using System.Data;
-using System.Linq.Expressions;
-using System.Collections.Generic;
-using DevExpress.DevAV.Common.Utils;
 using DevExpress.DevAV.Common.DataModel;
-using DevExpress.DevAV.Common.DataModel.EntityFramework;
-using DevExpress.DevAV;
 #if !NET
-using System.Data.Entity;
 #endif
 
-namespace DevExpress.DevAV.DevAVDbDataModel1
-{
+namespace DevExpress.DevAV.DevAVDbDataModel1 {
     /// <summary>
     /// IDevAVDbUnitOfWork extends the IUnitOfWork interface with repositories representing specific entities.
     /// </summary>
-    public interface IDevAVDbUnitOfWork : IUnitOfWork
-    {
+    public interface IDevAVDbUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// The CustomerCommunication entities repository.

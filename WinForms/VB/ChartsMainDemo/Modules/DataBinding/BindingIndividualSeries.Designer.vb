@@ -140,6 +140,7 @@ Namespace DevExpress.XtraCharts.Demos
             sideBySideBarSeriesLabel1.LineVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series1.Label = sideBySideBarSeriesLabel1
             series1.Name = "DevAV North"
+            series1.SeriesID = 0
             barGrowUpAnimation1.Duration = System.TimeSpan.Parse("00:00:00.8000000")
             barGrowUpAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.0100000")
             sideBySideBarSeriesView1.Animation = barGrowUpAnimation1
@@ -152,16 +153,19 @@ Namespace DevExpress.XtraCharts.Demos
             summaryDataAdapter2.QualitativeSummaryOptions.SummaryFunction = "SUM([Income])"
             series2.DataAdapter = summaryDataAdapter2
             series2.Name = "DevAV South"
+            series2.SeriesID = 1
             Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1, series2}
             sideBySideBarSeriesLabel2.LineVisibility = DevExpress.Utils.DefaultBoolean.[True]
             Me.chart.SeriesTemplate.Label = sideBySideBarSeriesLabel2
             Me.chart.Size = New System.Drawing.Size(546, 347)
             Me.chart.TabIndex = 1
             Me.chart.TabStop = False
-            chartTitle1.Alignment = System.Drawing.StringAlignment.Near
+            chartTitle1.DXAlignment = DevExpress.Drawing.DXStringAlignment.Near
             chartTitle1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 10F)
             chartTitle1.Text = ""
+            chartTitle1.TitleID = 0
             chartTitle2.Text = "Volume (thousands of USD)"
+            chartTitle2.TitleID = 1
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             AddHandler Me.chart.BoundDataChanged, New DevExpress.XtraCharts.BoundDataChangedEventHandler(AddressOf Me.chart_BoundDataChanged)
             ' 

@@ -201,7 +201,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // documentGroup
             // 
@@ -325,17 +325,17 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(234, 257, 650, 400);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 1;
             this.layoutControl.Text = "layoutControl1";
             // 
             // checkEditLabelVisible
             // 
             this.checkEditLabelVisible.EditValue = true;
-            this.checkEditLabelVisible.Location = new System.Drawing.Point(12, 117);
+            this.checkEditLabelVisible.Location = new System.Drawing.Point(12, 124);
             this.checkEditLabelVisible.Name = "checkEditLabelVisible";
             this.checkEditLabelVisible.Properties.Caption = "Visible";
-            this.checkEditLabelVisible.Size = new System.Drawing.Size(217, 19);
+            this.checkEditLabelVisible.Size = new System.Drawing.Size(217, 20);
             this.checkEditLabelVisible.StyleController = this.layoutControl;
             this.checkEditLabelVisible.TabIndex = 3;
             this.checkEditLabelVisible.CheckedChanged += new System.EventHandler(this.checkEditLabelVisible_CheckedChanged);
@@ -347,7 +347,7 @@
             0,
             0,
             0});
-            this.spinEditTransparency.Location = new System.Drawing.Point(105, 54);
+            this.spinEditTransparency.Location = new System.Drawing.Point(114, 58);
             this.spinEditTransparency.Name = "spinEditTransparency";
             this.spinEditTransparency.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -358,44 +358,44 @@
             0,
             0,
             0});
-            this.spinEditTransparency.Size = new System.Drawing.Size(124, 20);
+            this.spinEditTransparency.Size = new System.Drawing.Size(115, 20);
             this.spinEditTransparency.StyleController = this.layoutControl;
             this.spinEditTransparency.TabIndex = 0;
             this.spinEditTransparency.EditValueChanged += new System.EventHandler(this.spinEditTransparency_EditValueChanged);
             // 
             // checkEditInvertedStep
             // 
-            this.checkEditInvertedStep.Location = new System.Drawing.Point(12, 31);
+            this.checkEditInvertedStep.Location = new System.Drawing.Point(12, 34);
             this.checkEditInvertedStep.Name = "checkEditInvertedStep";
             this.checkEditInvertedStep.Properties.Caption = "Inverted Step";
-            this.checkEditInvertedStep.Size = new System.Drawing.Size(217, 19);
+            this.checkEditInvertedStep.Size = new System.Drawing.Size(217, 20);
             this.checkEditInvertedStep.StyleController = this.layoutControl;
             this.checkEditInvertedStep.TabIndex = 2;
             this.checkEditInvertedStep.CheckedChanged += new System.EventHandler(this.checkEditInvertedStep_CheckedChanged);
             // 
             // checkEditValueAsPercent
             // 
-            this.checkEditValueAsPercent.Location = new System.Drawing.Point(12, 140);
+            this.checkEditValueAsPercent.Location = new System.Drawing.Point(12, 148);
             this.checkEditValueAsPercent.Name = "checkEditValueAsPercent";
             this.checkEditValueAsPercent.Properties.Caption = "Value As Percent";
-            this.checkEditValueAsPercent.Size = new System.Drawing.Size(217, 19);
+            this.checkEditValueAsPercent.Size = new System.Drawing.Size(217, 20);
             this.checkEditValueAsPercent.StyleController = this.layoutControl;
             this.checkEditValueAsPercent.TabIndex = 5;
             // 
             // comboBoxEditPerspectiveAngle
             // 
-            this.comboBoxEditPerspectiveAngle.Location = new System.Drawing.Point(105, 202);
+            this.comboBoxEditPerspectiveAngle.Location = new System.Drawing.Point(114, 214);
             this.comboBoxEditPerspectiveAngle.Name = "comboBoxEditPerspectiveAngle";
             this.comboBoxEditPerspectiveAngle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditPerspectiveAngle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditPerspectiveAngle.Size = new System.Drawing.Size(124, 20);
+            this.comboBoxEditPerspectiveAngle.Size = new System.Drawing.Size(115, 20);
             this.comboBoxEditPerspectiveAngle.StyleController = this.layoutControl;
             this.comboBoxEditPerspectiveAngle.TabIndex = 6;
             // 
             // simpleButtonRestoreDefaultAngles
             // 
-            this.simpleButtonRestoreDefaultAngles.Location = new System.Drawing.Point(12, 234);
+            this.simpleButtonRestoreDefaultAngles.Location = new System.Drawing.Point(12, 246);
             this.simpleButtonRestoreDefaultAngles.Name = "simpleButtonRestoreDefaultAngles";
             this.simpleButtonRestoreDefaultAngles.Size = new System.Drawing.Size(217, 22);
             this.simpleButtonRestoreDefaultAngles.StyleController = this.layoutControl;
@@ -413,7 +413,7 @@
             this.layoutControlGroupCamera});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupGeneral
@@ -426,7 +426,7 @@
             this.layoutControlItemTransparency});
             this.layoutControlGroupGeneral.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral";
-            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 86);
+            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 90);
             this.layoutControlGroupGeneral.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupGeneral.Text = "General";
             // 
@@ -435,14 +435,13 @@
             this.layoutControlItemInvertedStep.Control = this.checkEditInvertedStep;
             this.layoutControlItemInvertedStep.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemInvertedStep.Name = "layoutControlItemInvertedStep";
-            this.layoutControlItemInvertedStep.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemInvertedStep.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemInvertedStep.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemInvertedStep.TextVisible = false;
             // 
             // layoutControlItemTransparency
             // 
             this.layoutControlItemTransparency.Control = this.spinEditTransparency;
-            this.layoutControlItemTransparency.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItemTransparency.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemTransparency.Name = "layoutControlItemTransparency";
             this.layoutControlItemTransparency.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemTransparency.Text = "Transparency:";
@@ -456,9 +455,9 @@
             this.layoutControlGroupLabel.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemVisible,
             this.layoutControlItemValueAsPercent});
-            this.layoutControlGroupLabel.Location = new System.Drawing.Point(0, 86);
+            this.layoutControlGroupLabel.Location = new System.Drawing.Point(0, 90);
             this.layoutControlGroupLabel.Name = "layoutControlGroupLabel";
-            this.layoutControlGroupLabel.Size = new System.Drawing.Size(241, 85);
+            this.layoutControlGroupLabel.Size = new System.Drawing.Size(241, 90);
             this.layoutControlGroupLabel.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupLabel.Text = "Label";
             // 
@@ -467,27 +466,23 @@
             this.layoutControlItemVisible.Control = this.checkEditLabelVisible;
             this.layoutControlItemVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemVisible.Name = "layoutControlItemVisible";
-            this.layoutControlItemVisible.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemVisible.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemVisible.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemVisible.TextVisible = false;
             // 
             // layoutControlItemValueAsPercent
             // 
             this.layoutControlItemValueAsPercent.Control = this.checkEditValueAsPercent;
-            this.layoutControlItemValueAsPercent.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItemValueAsPercent.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent";
-            this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 23);
+            this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItemValueAsPercent.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemValueAsPercent.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
-            this.emptySpaceItem.Location = new System.Drawing.Point(0, 268);
+            this.emptySpaceItem.Location = new System.Drawing.Point(0, 280);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 276);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 258);
             // 
             // layoutControlGroupCamera
             // 
@@ -497,9 +492,9 @@
             this.layoutControlGroupCamera.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemPerspectiveAngle,
             this.layoutControlItemRestoreDefaultAngles});
-            this.layoutControlGroupCamera.Location = new System.Drawing.Point(0, 171);
+            this.layoutControlGroupCamera.Location = new System.Drawing.Point(0, 180);
             this.layoutControlGroupCamera.Name = "layoutControlGroupCamera";
-            this.layoutControlGroupCamera.Size = new System.Drawing.Size(241, 97);
+            this.layoutControlGroupCamera.Size = new System.Drawing.Size(241, 100);
             this.layoutControlGroupCamera.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupCamera.Text = "Camera";
             // 
@@ -519,7 +514,6 @@
             this.layoutControlItemRestoreDefaultAngles.Name = "layoutControlItemRestoreDefaultAngles";
             this.layoutControlItemRestoreDefaultAngles.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2);
             this.layoutControlItemRestoreDefaultAngles.Size = new System.Drawing.Size(221, 34);
-            this.layoutControlItemRestoreDefaultAngles.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemRestoreDefaultAngles.TextVisible = false;
             // 
             // dockManager
@@ -559,7 +553,7 @@
             this.dockPanelArea3D.Location = new System.Drawing.Point(0, 0);
             this.dockPanelArea3D.Name = "dockPanelArea3D";
             this.dockPanelArea3D.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelArea3D.Size = new System.Drawing.Size(1089, 545);
+            this.dockPanelArea3D.Size = new System.Drawing.Size(1089, 548);
             this.dockPanelArea3D.Text = "Area3D";
             // 
             // dockPanelArea3D_Container
@@ -567,7 +561,7 @@
             this.dockPanelArea3D_Container.Controls.Add(this.chartArea3D);
             this.dockPanelArea3D_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelArea3D_Container.Name = "dockPanelArea3D_Container";
-            this.dockPanelArea3D_Container.Size = new System.Drawing.Size(1089, 545);
+            this.dockPanelArea3D_Container.Size = new System.Drawing.Size(1089, 548);
             this.dockPanelArea3D_Container.TabIndex = 0;
             // 
             // chartArea3D
@@ -577,7 +571,8 @@
             xyDiagram3D1.AxisX.GridLines.Visible = true;
             xyDiagram3D1.AxisX.Label.MaxWidth = 70;
             xyDiagram3D1.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram3D1.AxisX.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D1.AxisX.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D1.AxisX.WholeRange.StartSideMargin = 0D;
             xyDiagram3D1.AxisY.Label.TextPattern = "${V}K";
             xyDiagram3D1.AxisY.NumericScaleOptions.AutoGrid = false;
             xyDiagram3D1.AxisY.NumericScaleOptions.GridAlignment = DevExpress.XtraCharts.NumericGridAlignment.Hundreds;
@@ -601,13 +596,14 @@
             this.chartArea3D.SeriesTemplate.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             area3DSeriesLabel1.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartArea3D.SeriesTemplate.Label = area3DSeriesLabel1;
-            this.chartArea3D.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            this.chartArea3D.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartArea3D.SeriesTemplate.SeriesDataMember = "Company";
             this.chartArea3D.SeriesTemplate.ValueDataMembersSerializable = "Costs";
             this.chartArea3D.SeriesTemplate.View = area3DSeriesView1;
-            this.chartArea3D.Size = new System.Drawing.Size(1089, 545);
+            this.chartArea3D.Size = new System.Drawing.Size(1089, 548);
             this.chartArea3D.TabIndex = 7;
             chartTitle1.Text = "Outside Vendor Costs";
+            chartTitle1.TitleID = 0;
             this.chartArea3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 
@@ -620,7 +616,7 @@
             this.dockPanelRangeArea3D.Location = new System.Drawing.Point(0, 0);
             this.dockPanelRangeArea3D.Name = "dockPanelRangeArea3D";
             this.dockPanelRangeArea3D.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelRangeArea3D.Size = new System.Drawing.Size(1089, 545);
+            this.dockPanelRangeArea3D.Size = new System.Drawing.Size(1089, 548);
             this.dockPanelRangeArea3D.Text = "Range Area3D";
             // 
             // dockPanelRangeArea3D_Container
@@ -628,7 +624,7 @@
             this.dockPanelRangeArea3D_Container.Controls.Add(this.chartRangeArea3D);
             this.dockPanelRangeArea3D_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelRangeArea3D_Container.Name = "dockPanelRangeArea3D_Container";
-            this.dockPanelRangeArea3D_Container.Size = new System.Drawing.Size(1089, 545);
+            this.dockPanelRangeArea3D_Container.Size = new System.Drawing.Size(1089, 548);
             this.dockPanelRangeArea3D_Container.TabIndex = 0;
             // 
             // chartRangeArea3D
@@ -641,11 +637,11 @@
             xyDiagram3D2.AxisX.Label.TextPattern = "{A:MMMM}";
             xyDiagram3D2.AxisY.Label.TextPattern = "${V}";
             xyDiagram3D2.AxisY.VisualRange.Auto = false;
-            xyDiagram3D2.AxisY.VisualRange.MaxValueSerializable = "70";
-            xyDiagram3D2.AxisY.VisualRange.MinValueSerializable = "30";
+            xyDiagram3D2.AxisY.VisualRange.MaxValueSerializable = "9.8";
+            xyDiagram3D2.AxisY.VisualRange.MinValueSerializable = "1.1";
             xyDiagram3D2.AxisY.WholeRange.Auto = false;
-            xyDiagram3D2.AxisY.WholeRange.MaxValueSerializable = "70";
-            xyDiagram3D2.AxisY.WholeRange.MinValueSerializable = "30";
+            xyDiagram3D2.AxisY.WholeRange.MaxValueSerializable = "9.8";
+            xyDiagram3D2.AxisY.WholeRange.MinValueSerializable = "1.1";
             xyDiagram3D2.HorizontalScrollPercent = -2D;
             xyDiagram3D2.RotationMatrixSerializable = "0.766044437885284;-0.219846323132515;0.604022800922394;0;0;0.939692616462708;0.34" +
     "2020153999329;0;-0.642787635326386;-0.262002646923065;0.719846308231354;0;0;0;0;" +
@@ -667,19 +663,22 @@
             rangeArea3DSeriesLabel1.TextPattern = "{V:F2}";
             series1.Label = rangeArea3DSeriesLabel1;
             series1.Name = "OK WTI";
+            series1.SeriesID = 0;
             series1.ValueDataMembersSerializable = "Min;Max";
             series1.View = rangeArea3DSeriesView1;
             this.chartRangeArea3D.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.chartRangeArea3D.SeriesTemplate.View = overlappedRangeBarSeriesView1;
-            this.chartRangeArea3D.Size = new System.Drawing.Size(1089, 545);
+            this.chartRangeArea3D.Size = new System.Drawing.Size(1089, 548);
             this.chartRangeArea3D.TabIndex = 1;
             chartTitle2.Text = "Crude Oil Prices in 2015";
-            chartTitle3.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle2.TitleID = 0;
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle3.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle3.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle3.Text = "From www.eia.gov";
             chartTitle3.TextColor = System.Drawing.Color.Gray;
+            chartTitle3.TitleID = 1;
             this.chartRangeArea3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2,
             chartTitle3});
@@ -734,25 +733,29 @@
             series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             area3DSeriesLabel2.TextPattern = "{V:F2}";
             series2.Label = area3DSeriesLabel2;
-            series2.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series2.Name = "Gasoline Prices";
+            series2.SeriesID = 0;
             series2.ValueDataMembersSerializable = "Price";
             stepArea3DSeriesView1.AreaWidth = 1D;
             series2.View = stepArea3DSeriesView1;
             this.chartStepArea3D.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
-            this.chartStepArea3D.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            this.chartStepArea3D.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartStepArea3D.SeriesTemplate.View = stepArea3DSeriesView2;
             this.chartStepArea3D.Size = new System.Drawing.Size(1089, 548);
             this.chartStepArea3D.TabIndex = 1;
             chartTitle4.Text = "US Gasoline Prices in 2015";
-            chartTitle5.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle4.TitleID = 0;
             chartTitle5.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle5.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle5.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle5.Text = "From www.eia.gov";
             chartTitle5.TextColor = System.Drawing.Color.Gray;
+            chartTitle5.TitleID = 1;
             chartTitle6.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle6.Text = "Dollars per Gallon";
+            chartTitle6.TitleID = 2;
             this.chartStepArea3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle4,
             chartTitle5,
@@ -788,13 +791,14 @@
             xyDiagram3D4.AxisX.GridLines.Visible = true;
             xyDiagram3D4.AxisX.Label.MaxWidth = 70;
             xyDiagram3D4.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram3D4.AxisX.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D4.AxisX.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D4.AxisX.WholeRange.StartSideMargin = 0D;
             xyDiagram3D4.AxisY.Label.TextPattern = "${V}K";
             xyDiagram3D4.AxisY.NumericScaleOptions.AutoGrid = false;
             xyDiagram3D4.AxisY.NumericScaleOptions.GridAlignment = DevExpress.XtraCharts.NumericGridAlignment.Hundreds;
             xyDiagram3D4.AxisY.VisualRange.Auto = false;
-            xyDiagram3D4.AxisY.VisualRange.MaxValueSerializable = "9.56666666666667";
-            xyDiagram3D4.AxisY.VisualRange.MinValueSerializable = "1.36666666666667";
+            xyDiagram3D4.AxisY.VisualRange.MaxValueSerializable = "9.7";
+            xyDiagram3D4.AxisY.VisualRange.MinValueSerializable = "0.6";
             xyDiagram3D4.AxisY.WholeRange.AlwaysShowZeroLevel = false;
             xyDiagram3D4.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" +
     "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" +
@@ -814,13 +818,14 @@
             this.chartSplineArea3D.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.chartSplineArea3D.SeriesTemplate.ArgumentDataMember = "Year";
             this.chartSplineArea3D.SeriesTemplate.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
-            this.chartSplineArea3D.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            this.chartSplineArea3D.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartSplineArea3D.SeriesTemplate.SeriesDataMember = "Company";
             this.chartSplineArea3D.SeriesTemplate.ValueDataMembersSerializable = "Costs";
             this.chartSplineArea3D.SeriesTemplate.View = splineArea3DSeriesView1;
             this.chartSplineArea3D.Size = new System.Drawing.Size(1089, 548);
             this.chartSplineArea3D.TabIndex = 8;
             chartTitle7.Text = "Outside Vendor Costs";
+            chartTitle7.TitleID = 0;
             this.chartSplineArea3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle7});
             // 
@@ -871,13 +876,14 @@
             stackedArea3DSeriesLabel1.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
             stackedArea3DSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
             this.chartStackedArea3D.SeriesTemplate.Label = stackedArea3DSeriesLabel1;
-            this.chartStackedArea3D.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            this.chartStackedArea3D.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             this.chartStackedArea3D.SeriesTemplate.SeriesDataMember = "Region";
             this.chartStackedArea3D.SeriesTemplate.ValueDataMembersSerializable = "Sales";
             this.chartStackedArea3D.SeriesTemplate.View = stackedArea3DSeriesView1;
             this.chartStackedArea3D.Size = new System.Drawing.Size(1089, 548);
             this.chartStackedArea3D.TabIndex = 2;
             chartTitle8.Text = "DevAV Sales";
+            chartTitle8.TitleID = 0;
             this.chartStackedArea3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle8});
             // 
@@ -906,7 +912,8 @@
             this.chartStackedSplineArea3D.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             xyDiagram3D6.AxisX.DateTimeScaleOptions.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year;
             xyDiagram3D6.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram3D6.AxisX.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D6.AxisX.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D6.AxisX.WholeRange.StartSideMargin = 0D;
             xyDiagram3D6.AxisY.Interlaced = false;
             xyDiagram3D6.AxisY.Label.TextPattern = "${V}M";
             xyDiagram3D6.AxisY.MinorCount = 2;
@@ -929,7 +936,7 @@
             this.chartStackedSplineArea3D.SeriesTemplate.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             stackedArea3DSeriesLabel2.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
             this.chartStackedSplineArea3D.SeriesTemplate.Label = stackedArea3DSeriesLabel2;
-            this.chartStackedSplineArea3D.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            this.chartStackedSplineArea3D.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             this.chartStackedSplineArea3D.SeriesTemplate.SeriesDataMember = "Region";
             this.chartStackedSplineArea3D.SeriesTemplate.ValueDataMembersSerializable = "Sales";
             stackedSplineArea3DSeriesView1.AreaWidth = 1D;
@@ -937,6 +944,7 @@
             this.chartStackedSplineArea3D.Size = new System.Drawing.Size(1089, 548);
             this.chartStackedSplineArea3D.TabIndex = 3;
             chartTitle9.Text = "DevAV Sales";
+            chartTitle9.TitleID = 0;
             this.chartStackedSplineArea3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle9});
             // 
@@ -965,10 +973,12 @@
             this.chartFullStackedArea3D.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             xyDiagram3D7.AxisX.DateTimeScaleOptions.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year;
             xyDiagram3D7.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram3D7.AxisX.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D7.AxisX.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D7.AxisX.WholeRange.StartSideMargin = 0D;
             xyDiagram3D7.AxisY.Label.TextPattern = "{V:P0}";
             xyDiagram3D7.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram3D7.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D7.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D7.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram3D7.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" +
     "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" +
     "1";
@@ -987,7 +997,7 @@
             this.chartFullStackedArea3D.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.chartFullStackedArea3D.SeriesTemplate.ArgumentDataMember = "Year";
             this.chartFullStackedArea3D.SeriesTemplate.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
-            this.chartFullStackedArea3D.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            this.chartFullStackedArea3D.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             this.chartFullStackedArea3D.SeriesTemplate.SeriesDataMember = "Company";
             this.chartFullStackedArea3D.SeriesTemplate.ValueDataMembersSerializable = "Sales";
             fullStackedArea3DSeriesView1.AreaWidth = 1D;
@@ -995,6 +1005,7 @@
             this.chartFullStackedArea3D.Size = new System.Drawing.Size(1089, 548);
             this.chartFullStackedArea3D.TabIndex = 1;
             chartTitle10.Text = "Market Share Over Time";
+            chartTitle10.TitleID = 0;
             this.chartFullStackedArea3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle10});
             // 
@@ -1007,7 +1018,7 @@
             this.dockPanelFullStackedSplineArea3D.Location = new System.Drawing.Point(0, 0);
             this.dockPanelFullStackedSplineArea3D.Name = "dockPanelFullStackedSplineArea3D";
             this.dockPanelFullStackedSplineArea3D.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelFullStackedSplineArea3D.Size = new System.Drawing.Size(1089, 545);
+            this.dockPanelFullStackedSplineArea3D.Size = new System.Drawing.Size(1089, 548);
             this.dockPanelFullStackedSplineArea3D.Text = "Full Stacked Spline Area3D";
             // 
             // dockPanelFullStackedSplineArea3D_Container
@@ -1015,7 +1026,7 @@
             this.dockPanelFullStackedSplineArea3D_Container.Controls.Add(this.chartFullStackedSplineArea3D);
             this.dockPanelFullStackedSplineArea3D_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelFullStackedSplineArea3D_Container.Name = "dockPanelFullStackedSplineArea3D_Container";
-            this.dockPanelFullStackedSplineArea3D_Container.Size = new System.Drawing.Size(1089, 545);
+            this.dockPanelFullStackedSplineArea3D_Container.Size = new System.Drawing.Size(1089, 548);
             this.dockPanelFullStackedSplineArea3D_Container.TabIndex = 0;
             // 
             // chartFullStackedSplineArea3D
@@ -1023,11 +1034,13 @@
             this.chartFullStackedSplineArea3D.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             xyDiagram3D8.AxisX.DateTimeScaleOptions.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year;
             xyDiagram3D8.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram3D8.AxisX.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D8.AxisX.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D8.AxisX.WholeRange.StartSideMargin = 0D;
             xyDiagram3D8.AxisY.Interlaced = false;
             xyDiagram3D8.AxisY.Label.TextPattern = "{V:P0}";
             xyDiagram3D8.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram3D8.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D8.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D8.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram3D8.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" +
     "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" +
     "1";
@@ -1046,14 +1059,15 @@
             this.chartFullStackedSplineArea3D.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.chartFullStackedSplineArea3D.SeriesTemplate.ArgumentDataMember = "Year";
             this.chartFullStackedSplineArea3D.SeriesTemplate.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
-            this.chartFullStackedSplineArea3D.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            this.chartFullStackedSplineArea3D.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             this.chartFullStackedSplineArea3D.SeriesTemplate.SeriesDataMember = "Company";
             this.chartFullStackedSplineArea3D.SeriesTemplate.ValueDataMembersSerializable = "Sales";
             fullStackedSplineArea3DSeriesView1.AreaWidth = 1D;
             this.chartFullStackedSplineArea3D.SeriesTemplate.View = fullStackedSplineArea3DSeriesView1;
-            this.chartFullStackedSplineArea3D.Size = new System.Drawing.Size(1089, 545);
+            this.chartFullStackedSplineArea3D.Size = new System.Drawing.Size(1089, 548);
             this.chartFullStackedSplineArea3D.TabIndex = 2;
             chartTitle11.Text = "Market Share Over Time";
+            chartTitle11.TitleID = 0;
             this.chartFullStackedSplineArea3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle11});
             // 

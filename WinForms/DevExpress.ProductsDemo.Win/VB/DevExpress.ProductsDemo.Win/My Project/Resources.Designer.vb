@@ -1510,7 +1510,7 @@ Namespace My.Resources
 		End Property
 
 		''' <summary>
-		'''   Looks up a localized string similar to ITEMS: {0}.
+		'''   Looks up a localized string similar to Items: {0}.
 		''' </summary>
 		Friend ReadOnly Property InfoText() As String
 			Get
@@ -3024,7 +3024,7 @@ Namespace My.Resources
 		End Property
 
 		''' <summary>
-		'''   Looks up a localized string similar to REMINDERS: {0}.
+		'''   Looks up a localized string similar to Reminders: {0}.
 		''' </summary>
 		Friend ReadOnly Property ReminderText() As String
 			Get

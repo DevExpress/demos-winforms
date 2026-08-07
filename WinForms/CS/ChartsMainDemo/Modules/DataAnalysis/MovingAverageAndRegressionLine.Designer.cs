@@ -87,7 +87,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl1);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(259, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(259, 538);
             // 
             // chart
             // 
@@ -115,8 +115,10 @@
             this.chart.Name = "chart";
             series1.CrosshairLabelPattern = "{A:F0}: {V}";
             series1.Name = "Measurements Data";
+            series1.SeriesID = 0;
             exponentialMovingAverage1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.True;
             exponentialMovingAverage1.EnvelopePercent = 35D;
+            exponentialMovingAverage1.IndicatorID = 0;
             exponentialMovingAverage1.LineStyle.Thickness = 2;
             exponentialMovingAverage1.Name = "Exponential Moving Average";
             exponentialMovingAverage1.PointsCount = 50;
@@ -124,6 +126,7 @@
             exponentialMovingAverage1.Visible = false;
             simpleMovingAverage1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.True;
             simpleMovingAverage1.EnvelopePercent = 35D;
+            simpleMovingAverage1.IndicatorID = 1;
             simpleMovingAverage1.LineStyle.Thickness = 2;
             simpleMovingAverage1.Name = "Simple Moving Average";
             simpleMovingAverage1.PointsCount = 50;
@@ -131,6 +134,7 @@
             simpleMovingAverage1.Visible = false;
             triangularMovingAverage1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.True;
             triangularMovingAverage1.EnvelopePercent = 35D;
+            triangularMovingAverage1.IndicatorID = 2;
             triangularMovingAverage1.LineStyle.Thickness = 2;
             triangularMovingAverage1.Name = "Triangular Moving Average";
             triangularMovingAverage1.PointsCount = 50;
@@ -138,6 +142,7 @@
             triangularMovingAverage1.Visible = false;
             tripleExponentialMovingAverageTema1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.True;
             tripleExponentialMovingAverageTema1.EnvelopePercent = 35D;
+            tripleExponentialMovingAverageTema1.IndicatorID = 3;
             tripleExponentialMovingAverageTema1.LineStyle.Thickness = 2;
             tripleExponentialMovingAverageTema1.Name = "Triple Exponential Moving Average (TEMA)";
             tripleExponentialMovingAverageTema1.PointsCount = 50;
@@ -145,13 +150,15 @@
             tripleExponentialMovingAverageTema1.Visible = false;
             weightedMovingAverage1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.True;
             weightedMovingAverage1.EnvelopePercent = 35D;
+            weightedMovingAverage1.IndicatorID = 4;
             weightedMovingAverage1.LineStyle.Thickness = 2;
             weightedMovingAverage1.Name = "Weighted Moving Average";
             weightedMovingAverage1.PointsCount = 50;
             weightedMovingAverage1.ShowInLegend = true;
             weightedMovingAverage1.Visible = false;
-            regressionLine1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.True;
             regressionLine1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(143)))), ((int)(((byte)(33)))));
+            regressionLine1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.True;
+            regressionLine1.IndicatorID = 5;
             regressionLine1.LineStyle.Thickness = 2;
             regressionLine1.Name = "Regression Line";
             regressionLine1.ShowInLegend = true;
@@ -186,14 +193,14 @@
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(428, 287, 650, 400);
             this.layoutControl1.OptionsView.UseDefaultDragAndDropRendering = false;
             this.layoutControl1.Root = this.layoutControlGroupRoot;
-            this.layoutControl1.Size = new System.Drawing.Size(259, 544);
+            this.layoutControl1.Size = new System.Drawing.Size(259, 538);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // radioGroupMovingAverage
             // 
             this.radioGroupMovingAverage.AutoSizeInLayoutControl = true;
-            this.radioGroupMovingAverage.Location = new System.Drawing.Point(12, 31);
+            this.radioGroupMovingAverage.Location = new System.Drawing.Point(12, 34);
             this.radioGroupMovingAverage.Name = "radioGroupMovingAverage";
             this.radioGroupMovingAverage.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupMovingAverage.Properties.Appearance.Options.UseBackColor = true;
@@ -205,14 +212,14 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Weighted Moving Average", "Weighted Moving Average"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Triangular Moving Average", "Triangular Moving Average"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Triple Exponential Moving Average (TEMA)", "Triple Exponential Moving Average (TEMA)")});
-            this.radioGroupMovingAverage.Size = new System.Drawing.Size(235, 83);
+            this.radioGroupMovingAverage.Size = new System.Drawing.Size(235, 128);
             this.radioGroupMovingAverage.StyleController = this.layoutControl1;
             this.radioGroupMovingAverage.TabIndex = 4;
             this.radioGroupMovingAverage.SelectedIndexChanged += new System.EventHandler(this.radioGroupMovingAverage_SelectedIndexChanged);
             // 
             // comboBoxEditMovingAverageKind
             // 
-            this.comboBoxEditMovingAverageKind.Location = new System.Drawing.Point(103, 142);
+            this.comboBoxEditMovingAverageKind.Location = new System.Drawing.Point(112, 190);
             this.comboBoxEditMovingAverageKind.Name = "comboBoxEditMovingAverageKind";
             this.comboBoxEditMovingAverageKind.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -221,7 +228,7 @@
             "Envelope",
             "Moving Average and Envelope"});
             this.comboBoxEditMovingAverageKind.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditMovingAverageKind.Size = new System.Drawing.Size(144, 20);
+            this.comboBoxEditMovingAverageKind.Size = new System.Drawing.Size(135, 20);
             this.comboBoxEditMovingAverageKind.StyleController = this.layoutControl1;
             this.comboBoxEditMovingAverageKind.TabIndex = 5;
             this.comboBoxEditMovingAverageKind.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditMovingAverageKind_SelectedIndexChanged);
@@ -233,7 +240,7 @@
             0,
             0,
             0});
-            this.spinEditPointsCount.Location = new System.Drawing.Point(103, 118);
+            this.spinEditPointsCount.Location = new System.Drawing.Point(112, 166);
             this.spinEditPointsCount.Name = "spinEditPointsCount";
             this.spinEditPointsCount.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -250,7 +257,7 @@
             0,
             0});
             this.spinEditPointsCount.Properties.ValueChanged += new System.EventHandler(this.spinEditPointsCount_Properties_ValueChanged);
-            this.spinEditPointsCount.Size = new System.Drawing.Size(144, 20);
+            this.spinEditPointsCount.Size = new System.Drawing.Size(135, 20);
             this.spinEditPointsCount.StyleController = this.layoutControl1;
             this.spinEditPointsCount.TabIndex = 6;
             // 
@@ -261,7 +268,7 @@
             0,
             0,
             0});
-            this.spinEditEnvelopePercent.Location = new System.Drawing.Point(103, 166);
+            this.spinEditEnvelopePercent.Location = new System.Drawing.Point(112, 214);
             this.spinEditEnvelopePercent.Name = "spinEditEnvelopePercent";
             this.spinEditEnvelopePercent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -280,16 +287,16 @@
             0,
             0});
             this.spinEditEnvelopePercent.Properties.ValueChanged += new System.EventHandler(this.spinEditEnvelopePercent_Properties_ValueChanged);
-            this.spinEditEnvelopePercent.Size = new System.Drawing.Size(144, 20);
+            this.spinEditEnvelopePercent.Size = new System.Drawing.Size(135, 20);
             this.spinEditEnvelopePercent.StyleController = this.layoutControl1;
             this.spinEditEnvelopePercent.TabIndex = 7;
             // 
             // checkEditRegressionLineVisible
             // 
-            this.checkEditRegressionLineVisible.Location = new System.Drawing.Point(12, 229);
-            this.checkEditRegressionLineVisible.Name = "checkEditShowRegressionLine";
+            this.checkEditRegressionLineVisible.Location = new System.Drawing.Point(12, 280);
+            this.checkEditRegressionLineVisible.Name = "checkEditRegressionLineVisible";
             this.checkEditRegressionLineVisible.Properties.Caption = "Show";
-            this.checkEditRegressionLineVisible.Size = new System.Drawing.Size(235, 19);
+            this.checkEditRegressionLineVisible.Size = new System.Drawing.Size(235, 20);
             this.checkEditRegressionLineVisible.StyleController = this.layoutControl1;
             this.checkEditRegressionLineVisible.TabIndex = 8;
             this.checkEditRegressionLineVisible.CheckedChanged += new System.EventHandler(this.checkEditRegressionLineVisible_CheckedChanged);
@@ -304,16 +311,14 @@
             this.layoutControlGroupRegressionLine});
             this.layoutControlGroupRoot.Name = "Root";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(259, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(259, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 260);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 312);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(259, 284);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(259, 226);
             // 
             // layoutControlGroupMovingAverage
             // 
@@ -325,14 +330,14 @@
             this.layoutControlItemPointsCount});
             this.layoutControlGroupMovingAverage.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupMovingAverage.Name = "layoutControlGroupMovingAverage";
-            this.layoutControlGroupMovingAverage.Size = new System.Drawing.Size(259, 198);
+            this.layoutControlGroupMovingAverage.Size = new System.Drawing.Size(259, 246);
             this.layoutControlGroupMovingAverage.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupMovingAverage.Text = "Moving Average";
             // 
             // layoutControlItemMovingAverageKind
             // 
             this.layoutControlItemMovingAverageKind.Control = this.comboBoxEditMovingAverageKind;
-            this.layoutControlItemMovingAverageKind.Location = new System.Drawing.Point(0, 111);
+            this.layoutControlItemMovingAverageKind.Location = new System.Drawing.Point(0, 156);
             this.layoutControlItemMovingAverageKind.Name = "layoutControlItemMovingAverageKind";
             this.layoutControlItemMovingAverageKind.Size = new System.Drawing.Size(239, 24);
             this.layoutControlItemMovingAverageKind.Text = "Kind:";
@@ -341,7 +346,7 @@
             // layoutControlItemEnvelopePercent
             // 
             this.layoutControlItemEnvelopePercent.Control = this.spinEditEnvelopePercent;
-            this.layoutControlItemEnvelopePercent.Location = new System.Drawing.Point(0, 135);
+            this.layoutControlItemEnvelopePercent.Location = new System.Drawing.Point(0, 180);
             this.layoutControlItemEnvelopePercent.Name = "layoutControlItemEnvelopePercent";
             this.layoutControlItemEnvelopePercent.Size = new System.Drawing.Size(239, 24);
             this.layoutControlItemEnvelopePercent.Text = "Envelope Percent:";
@@ -352,14 +357,13 @@
             this.layoutControlItemMovingAverage.Control = this.radioGroupMovingAverage;
             this.layoutControlItemMovingAverage.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemMovingAverage.Name = "layoutControlItemMovingAverage";
-            this.layoutControlItemMovingAverage.Size = new System.Drawing.Size(239, 87);
-            this.layoutControlItemMovingAverage.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemMovingAverage.Size = new System.Drawing.Size(239, 132);
             this.layoutControlItemMovingAverage.TextVisible = false;
             // 
             // layoutControlItemPointsCount
             // 
             this.layoutControlItemPointsCount.Control = this.spinEditPointsCount;
-            this.layoutControlItemPointsCount.Location = new System.Drawing.Point(0, 87);
+            this.layoutControlItemPointsCount.Location = new System.Drawing.Point(0, 132);
             this.layoutControlItemPointsCount.Name = "layoutControlItemPointsCount";
             this.layoutControlItemPointsCount.Size = new System.Drawing.Size(239, 24);
             this.layoutControlItemPointsCount.Text = "Point Count:";
@@ -370,9 +374,9 @@
             this.layoutControlGroupRegressionLine.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupRegressionLine.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemShowRegressionLine});
-            this.layoutControlGroupRegressionLine.Location = new System.Drawing.Point(0, 198);
+            this.layoutControlGroupRegressionLine.Location = new System.Drawing.Point(0, 246);
             this.layoutControlGroupRegressionLine.Name = "layoutControlGroupRegressionLine";
-            this.layoutControlGroupRegressionLine.Size = new System.Drawing.Size(259, 62);
+            this.layoutControlGroupRegressionLine.Size = new System.Drawing.Size(259, 66);
             this.layoutControlGroupRegressionLine.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupRegressionLine.Text = "Regression Line";
             // 
@@ -381,8 +385,7 @@
             this.layoutControlItemShowRegressionLine.Control = this.checkEditRegressionLineVisible;
             this.layoutControlItemShowRegressionLine.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemShowRegressionLine.Name = "layoutControlItemShowRegressionLine";
-            this.layoutControlItemShowRegressionLine.Size = new System.Drawing.Size(239, 23);
-            this.layoutControlItemShowRegressionLine.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemShowRegressionLine.Size = new System.Drawing.Size(239, 24);
             this.layoutControlItemShowRegressionLine.TextVisible = false;
             // 
             // MovingAverageAndRegressionLineDemo

@@ -1,5 +1,5 @@
-using DevExpress.DevAV.Properties;
 using System;
+using DevExpress.DevAV.Properties;
 
 namespace DevExpress.DevAV.ViewModels {
     public class EmployeesFilterViewModel : FilterViewModel<Employee> {

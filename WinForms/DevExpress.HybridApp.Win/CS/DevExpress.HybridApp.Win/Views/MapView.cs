@@ -1,14 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+using DevExpress.DevAV.ViewModels;
 using DevExpress.XtraEditors;
 using DevExpress.XtraMap;
-using DevExpress.DevAV.ViewModels;
 
 namespace DevExpress.DevAV.Views {
     public partial class MapView : XtraUserControl {

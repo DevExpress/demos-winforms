@@ -1,9 +1,6 @@
 
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 namespace DevExpress.SalesDemo.Model {
 	public static class DateTimeUtils {
 		public static DateTimeRange GetDayRange(DateTime date) {

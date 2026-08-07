@@ -3,14 +3,14 @@ using System.ComponentModel;
 using System.Linq;
 using DevExpress.DentalClinic.Model;
 using DevExpress.DentalClinic.Services;
-using DevExpress.ExpressApp;
+using DevExpress.DXperience.Demos;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
 using DevExpress.Xpo;
 
 namespace DevExpress.DentalClinic.ViewModel {
     public class InvoiceViewModel : IDocumentContent, IDisposable {
-        
+
         public InvoiceViewModel() {
             ButtonText = DentalClinicStringId.Create;
             InvoiceHeader = DentalClinicStringId.InvoiceNew;
@@ -61,7 +61,7 @@ namespace DevExpress.DentalClinic.ViewModel {
             Invoice = new Invoice(Session);
             Patient = Session.GetObjectByKey<Patient>(PatientId);
             Invoice.Patient = Patient;
-            Invoice.Date = DateTime.Now;
+            Invoice.Date = TutorialConstants.Now;
             Appointment = Session.GetObjectByKey<Appointment>(AppointmentId);
             Invoice.Doctor = Appointment.Doctor;
             Invoice.Appointment = Appointment;
@@ -81,8 +81,7 @@ namespace DevExpress.DentalClinic.ViewModel {
         void SaveCore(bool showMessage = true) {
             if(IsNewInvoice) {
                 foreach(var item in Procedures) {
-                    Invoice.InvoiceItems.Add(new InvoiceItem(Session)
-                    {
+                    Invoice.InvoiceItems.Add(new InvoiceItem(Session) {
                         Invoice = Invoice,
                         Procedure = item.Procedure,
                         ProcedurePrice = item.Procedure.Price,

@@ -1,21 +1,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Linq.Expressions;
+using DevExpress.Data.Utils;
 using DevExpress.DevAV.Common.DataModel;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Data.Utils;
-using System.Linq.Expressions;
 
 namespace DevExpress.DevAV.ViewModels {
     public partial class QuoteCollectionViewModel {
-        
+
         const int NumberOfAverageQuotes = 300;
 
         protected override void OnInitializeInRuntime() {
             base.OnInitializeInRuntime();
             MapViewModel = MapViewModel.Create().SetParentViewModel(this);
-            UpdateAverageQuotes();            
+            UpdateAverageQuotes();
         }
         private IList<QuoteSummaryItem> GetOpportunitiesInfo(DateTime start, DateTime end) {
             return QueriesHelper.GetSummaryOpportunities(CreateReadOnlyRepository().GetFilteredEntities(null).Where(x => x.Date >= start && x.Date <= end)).ToList();
@@ -24,7 +23,7 @@ namespace DevExpress.DevAV.ViewModels {
 
         public virtual DateRange Range { get; set; }
 
-        protected void OnRangeChanged() {            
+        protected void OnRangeChanged() {
             this.RaisePropertyChanged(x => x.OpportunitiesInfo);
             this.FilterExpression = CriteriaOperatorToExpressionConverter.GetGenericWhere<Quote>(ConverterExtensions.ConvertEditRangeToFilterCriteria(Range, "Date"));
         }

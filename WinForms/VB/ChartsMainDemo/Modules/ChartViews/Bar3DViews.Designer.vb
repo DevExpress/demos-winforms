@@ -175,7 +175,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 542)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' documentGroup
             ' 
@@ -311,6 +311,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartBar3D.Size = New System.Drawing.Size(963, 548)
             Me.chartBar3D.TabIndex = 1
             chartTitle1.Text = "DevAV Sales by Regions"
+            chartTitle1.TitleID = 0
             Me.chartBar3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' dockPanelManhattanBar
@@ -366,6 +367,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartManhattanBar3D.Size = New System.Drawing.Size(963, 548)
             Me.chartManhattanBar3D.TabIndex = 1
             chartTitle2.Text = "DevAV Sales by Regions"
+            chartTitle2.TitleID = 0
             Me.chartManhattanBar3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle2})
             ' 
             ' dockPanelStackedBar3D
@@ -417,11 +419,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedBar3D.Size = New System.Drawing.Size(963, 548)
             Me.chartStackedBar3D.TabIndex = 2
             chartTitle3.Text = "Female Age Structure"
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle3.TitleID = 0
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle4.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle4.Text = "From www.cia.gov"
             chartTitle4.TextColor = System.Drawing.Color.Gray
+            chartTitle4.TitleID = 1
             Me.chartStackedBar3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle3, chartTitle4})
             ' 
             ' dockPanelStackedBar3DSideBySide
@@ -472,13 +476,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedBar3DSideBySide.Size = New System.Drawing.Size(963, 548)
             Me.chartStackedBar3DSideBySide.TabIndex = 2
             chartTitle5.Text = "Population: Age Structure"
+            chartTitle5.TitleID = 0
             chartTitle6.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle6.Text = "Data estimate for 2020"
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle6.TitleID = 1
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle7.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle7.Text = "From www.cia.gov"
             chartTitle7.TextColor = System.Drawing.Color.Gray
+            chartTitle7.TitleID = 2
             Me.chartStackedBar3DSideBySide.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle5, chartTitle6, chartTitle7})
             ' 
             ' dockPanelFullStackedBar3D
@@ -506,7 +513,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedBar3D.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             xyDiagram3D5.AxisY.Label.TextPattern = "{V:P0}"
             xyDiagram3D5.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram3D5.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D5.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram3D5.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram3D5.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" & "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" & "1"
             xyDiagram3D5.RuntimeRotation = True
             xyDiagram3D5.RuntimeScrolling = True
@@ -529,6 +537,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedBar3D.Size = New System.Drawing.Size(963, 548)
             Me.chartFullStackedBar3D.TabIndex = 1
             chartTitle8.Text = "DevAV Sales Mix by Region"
+            chartTitle8.TitleID = 0
             Me.chartFullStackedBar3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle8})
             ' 
             ' dockPanelFullStackedBar3DSideBySide
@@ -559,13 +568,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedBar3DSideBySide.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             xyDiagram3D6.AxisX.Label.MaxWidth = 60
             xyDiagram3D6.AxisY.Label.TextPattern = "{VP:P0}"
-            xyDiagram3D6.AxisY.VisualRange.Auto = False
-            xyDiagram3D6.AxisY.VisualRange.AutoSideMargins = False
-            xyDiagram3D6.AxisY.VisualRange.MaxValueSerializable = "1"
-            xyDiagram3D6.AxisY.VisualRange.MinValueSerializable = "0"
-            xyDiagram3D6.AxisY.VisualRange.SideMarginsValue = 0R
             xyDiagram3D6.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram3D6.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D6.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram3D6.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram3D6.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" & "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" & "1"
             xyDiagram3D6.RuntimeRotation = True
             xyDiagram3D6.RuntimeScrolling = True
@@ -588,13 +593,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedBar3DSideBySide.Size = New System.Drawing.Size(963, 548)
             Me.chartFullStackedBar3DSideBySide.TabIndex = 2
             chartTitle9.Text = "Population: Age Structure"
+            chartTitle9.TitleID = 0
             chartTitle10.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle10.Text = "Data estimate for 2020"
-            chartTitle11.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle10.TitleID = 1
             chartTitle11.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle11.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle11.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle11.Text = "From www.cia.gov"
             chartTitle11.TextColor = System.Drawing.Color.Gray
+            chartTitle11.TitleID = 2
             Me.chartFullStackedBar3DSideBySide.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle9, chartTitle10, chartTitle11})
             ' 
             ' documentManager
@@ -636,7 +644,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(371, 203, 650, 400)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 542)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 2
             Me.layoutControl.Text = "layoutControl1"
             ' 
@@ -662,11 +670,11 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' comboBoxEditPerspectiveAngle
             ' 
-            Me.comboBoxEditPerspectiveAngle.Location = New System.Drawing.Point(105, 238)
+            Me.comboBoxEditPerspectiveAngle.Location = New System.Drawing.Point(114, 238)
             Me.comboBoxEditPerspectiveAngle.Name = "comboBoxEditPerspectiveAngle"
             Me.comboBoxEditPerspectiveAngle.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditPerspectiveAngle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditPerspectiveAngle.Size = New System.Drawing.Size(124, 20)
+            Me.comboBoxEditPerspectiveAngle.Size = New System.Drawing.Size(115, 20)
             Me.comboBoxEditPerspectiveAngle.StyleController = Me.layoutControl
             Me.comboBoxEditPerspectiveAngle.TabIndex = 6
             ' 
@@ -691,23 +699,23 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' comboBoxEdit3DModel
             ' 
-            Me.comboBoxEdit3DModel.Location = New System.Drawing.Point(105, 58)
+            Me.comboBoxEdit3DModel.Location = New System.Drawing.Point(114, 58)
             Me.comboBoxEdit3DModel.Name = "comboBoxEdit3DModel"
             Me.comboBoxEdit3DModel.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEdit3DModel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEdit3DModel.Size = New System.Drawing.Size(124, 20)
+            Me.comboBoxEdit3DModel.Size = New System.Drawing.Size(115, 20)
             Me.comboBoxEdit3DModel.StyleController = Me.layoutControl
             Me.comboBoxEdit3DModel.TabIndex = 2
             ' 
             ' comboBoxEditGroupSeriesBy
             ' 
             Me.comboBoxEditGroupSeriesBy.EditValue = "Age"
-            Me.comboBoxEditGroupSeriesBy.Location = New System.Drawing.Point(105, 34)
+            Me.comboBoxEditGroupSeriesBy.Location = New System.Drawing.Point(114, 34)
             Me.comboBoxEditGroupSeriesBy.Name = "comboBoxEditGroupSeriesBy"
             Me.comboBoxEditGroupSeriesBy.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditGroupSeriesBy.Properties.Items.AddRange(New Object() {"Gender", "Age"})
             Me.comboBoxEditGroupSeriesBy.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditGroupSeriesBy.Size = New System.Drawing.Size(124, 20)
+            Me.comboBoxEditGroupSeriesBy.Size = New System.Drawing.Size(115, 20)
             Me.comboBoxEditGroupSeriesBy.StyleController = Me.layoutControl
             Me.comboBoxEditGroupSeriesBy.TabIndex = 3
             AddHandler Me.comboBoxEditGroupSeriesBy.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditGroupSeriesBy_SelectedIndexChanged)
@@ -719,7 +727,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupGeneral, Me.layoutControlGroupLabel, Me.emptySpaceItem, Me.layoutControlGroupCamera})
             Me.layoutControlGroupRoot.Name = "Root"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 542)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupGeneral
@@ -740,7 +748,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemShowFacet.Location = New System.Drawing.Point(0, 48)
             Me.layoutControlItemShowFacet.Name = "layoutControlItemShowFacet"
             Me.layoutControlItemShowFacet.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemShowFacet.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemShowFacet.TextVisible = False
             ' 
             ' layoutControlGroupGroupSeriesBy
@@ -780,7 +787,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
             Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' layoutControlItemValueAsPercent
@@ -790,16 +796,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent"
             Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutControlItemValueAsPercent.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemValueAsPercent.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 304)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 238)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 234)
             ' 
             ' layoutControlGroupCamera
             ' 
@@ -829,7 +832,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemRestoreDefaultAngles.Name = "layoutControlItemRestoreDefaultAngles"
             Me.layoutControlItemRestoreDefaultAngles.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemRestoreDefaultAngles.Size = New System.Drawing.Size(221, 34)
-            Me.layoutControlItemRestoreDefaultAngles.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemRestoreDefaultAngles.TextVisible = False
             ' 
             ' Bar3DViewsDemo

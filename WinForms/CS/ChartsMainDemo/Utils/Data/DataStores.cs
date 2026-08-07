@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 using DevExpress.Utils;
 
 namespace DevExpress.XtraCharts.Demos {
@@ -69,10 +70,10 @@ namespace DevExpress.XtraCharts.Demos {
 
     class DevAV {
         internal static int GetLastYear() {
-            return DateTime.Now.Year - 1;
+            return TutorialConstants.Now.Year - 1;
         }
         internal static DataTable GetSales() {
-            int prevYear = DateTime.Now.Year - 1;
+            int prevYear = TutorialConstants.Now.Year - 1;
             DataTable table = new DataTable();
             table.Columns.AddRange(new DataColumn[] { new DataColumn("Year", typeof(int)), new DataColumn("Region", typeof(string)), new DataColumn("Sales", typeof(decimal)) });
 
@@ -133,7 +134,7 @@ namespace DevExpress.XtraCharts.Demos {
             return table;
         }
         internal static DataTable GetBranchesSales() {
-            int lastYear = DateTime.Now.Year - 1;
+            int lastYear = TutorialConstants.Now.Year - 1;
             DataTable table = new DataTable();
             table.Columns.AddRange(new DataColumn[] {
                 new DataColumn("Year", typeof(DateTime)),
@@ -203,7 +204,7 @@ namespace DevExpress.XtraCharts.Demos {
             return table;
         }
         internal static DataTable GetSalesByLast10Years() {
-            int lastYear = DateTime.Now.Year - 1;
+            int lastYear = TutorialConstants.Now.Year - 1;
             DataTable table = new DataTable();
             table.Columns.AddRange(new DataColumn[] { new DataColumn("Year", typeof(DateTime)), new DataColumn("Region", typeof(string)), new DataColumn("Sales", typeof(decimal)) });
 
@@ -254,7 +255,7 @@ namespace DevExpress.XtraCharts.Demos {
             return table;
         }
         internal static DataTable GetOutsideVendorCosts() {
-            int lastYear = DateTime.Now.Year - 1;
+            int lastYear = TutorialConstants.Now.Year - 1;
             DataTable table = new DataTable();
             table.Columns.AddRange(new DataColumn[] { new DataColumn("Year", typeof(DateTime)), new DataColumn("Company", typeof(string)), new DataColumn("Costs", typeof(decimal)) });
 

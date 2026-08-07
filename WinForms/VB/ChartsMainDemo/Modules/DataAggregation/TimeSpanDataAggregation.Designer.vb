@@ -55,7 +55,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = False
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram1.DependentAxesYRange = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram1.EnableAxisXScrolling = True
             xyDiagram1.EnableAxisXZooming = True
@@ -66,7 +67,8 @@ Namespace DevExpress.XtraCharts.Demos
             secondaryAxisY1.VisibleInPanesSerializable = "-1"
             secondaryAxisY1.WholeRange.AlwaysShowZeroLevel = False
             secondaryAxisY1.WholeRange.AutoSideMargins = False
-            secondaryAxisY1.WholeRange.SideMarginsValue = 0R
+            secondaryAxisY1.WholeRange.EndSideMargin = 0R
+            secondaryAxisY1.WholeRange.StartSideMargin = 0R
             xyDiagram1.SecondaryAxesY.AddRange(New DevExpress.XtraCharts.SecondaryAxisY() {secondaryAxisY1})
             xyDiagram1.ZoomingOptions.AxisXMaxZoomPercent = 100000R
             Me.chart.Diagram = xyDiagram1
@@ -78,15 +80,18 @@ Namespace DevExpress.XtraCharts.Demos
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.TimeSpan
             series1.CrosshairLabelPattern = "{S}: {V:0}°C"
             series1.Name = "CPU Temperature"
+            series1.SeriesID = 0
             series1.View = lineSeriesView1
             series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.TimeSpan
             series2.CrosshairLabelPattern = "{S}: {V:0}°C"
             series2.Name = "GPU Temperature"
+            series2.SeriesID = 1
             series2.View = lineSeriesView2
             Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1, series2}
             Me.chart.Size = New System.Drawing.Size(784, 432)
             Me.chart.TabIndex = 4
             chartTitle1.Text = "Hardware Monitor"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.chart.CustomDrawCrosshair, New DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(AddressOf Me.Chart_CustomDrawCrosshair)
             AddHandler Me.chart.AxisVisualRangeChanged, New System.EventHandler(Of DevExpress.XtraCharts.AxisRangeChangedEventArgs)(AddressOf Me.Chart_AxisVisualRangeChanged)

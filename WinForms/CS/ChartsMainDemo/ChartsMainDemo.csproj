@@ -15,8 +15,8 @@
     <ConvertToNet8Windows />
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Prefer32Bit>true</Prefer32Bit>
-  <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-</PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
   <!--ONLY NETCORE3 
   <PropertyGroup>
     <PlatformTarget>x86</PlatformTarget>
@@ -56,7 +56,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility"><Private>False</Private></Reference>
-    <Reference Include="DevExpress.BonusSkins.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.BonusSkins.v26.1">
+    <HintPath></HintPath><Private>False</Private></Reference>
     <Reference Include="DevExpress.Data.Desktop.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
     <Reference Include="DevExpress.Data.v26.1">
       <Name>DevExpress.Data.v26.1</Name>
@@ -66,11 +67,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath></HintPath>
     <Private>False</Private></Reference>
-    <Reference Include="DevExpress.PivotGrid.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.PivotGrid.v26.1.Core">
+    <HintPath></HintPath><Private>False</Private></Reference>
     <Reference Include="DevExpress.Printing.v26.1.Core">
       <SpecificVersion>False</SpecificVersion>
     <HintPath></HintPath><Private>False</Private></Reference>
-    <Reference Include="DevExpress.Sparkline.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.Sparkline.v26.1.Core">
+    <HintPath></HintPath><Private>False</Private></Reference>
     <Reference Include="DevExpress.TreeMap.v26.1.Core"><HintPath></HintPath><Private>False</Private></Reference>
     <Reference Include="DevExpress.Tutorials.v26.1">
       <Name>DevExpress.Tutorials.v26.1</Name>
@@ -105,8 +108,10 @@
     <Reference Include="DevExpress.XtraNavBar.v26.1">
       <Name>DevExpress.XtraNavBar.v26.1</Name>
     <HintPath></HintPath><Private>False</Private></Reference>
-    <Reference Include="DevExpress.XtraPivotGrid.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
-    <Reference Include="DevExpress.XtraPrinting.v26.1"><HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v26.1">
+    <HintPath></HintPath><Private>False</Private></Reference>
+    <Reference Include="DevExpress.XtraPrinting.v26.1">
+    <HintPath></HintPath><Private>False</Private></Reference>
     <Reference Include="DevExpress.XtraTreeList.v26.1">
       <Name>DevExpress.XtraTreeList.v26.1</Name>
     <HintPath></HintPath><Private>False</Private></Reference>
@@ -526,12 +531,6 @@
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\About.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Modules\About.Designer.cs">
-      <DependentUpon>About.cs</DependentUpon>
-    </Compile>
     <Compile Include="Data\DS5.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -753,9 +752,6 @@
       <DependentUpon>TopNAndOthers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\menu.bmp" />
-    <EmbeddedResource Include="Modules\About.resx">
-      <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AppIcon.ico" />
     <EmbeddedResource Include="Data\AppleStock.xml" />
     <EmbeddedResource Include="Data\CityWeather.xml" />

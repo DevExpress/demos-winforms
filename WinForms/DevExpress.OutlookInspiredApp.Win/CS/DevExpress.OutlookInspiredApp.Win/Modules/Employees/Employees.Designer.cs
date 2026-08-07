@@ -540,7 +540,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.hiItemsCount.Caption = "RECORDS: 0";
+            this.hiItemsCount.Caption = "Records: 0";
             this.hiItemsCount.Id = 7;
             this.hiItemsCount.Name = "hiItemsCount";
             
@@ -739,7 +739,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colPrefix.Caption = "PREFIX";
+            this.colPrefix.Caption = "Prefix";
             this.colPrefix.FieldName = "Prefix";
             this.colPrefix.ImageOptions.Alignment = System.Drawing.StringAlignment.Center;
             this.colPrefix.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
@@ -755,7 +755,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colDepartment.Caption = "DEPARTMENT";
+            this.colDepartment.Caption = "Department";
             this.colDepartment.FieldName = "Department";
             this.colDepartment.Name = "colDepartment";
             this.colDepartment.OptionsColumn.AllowFocus = false;
@@ -764,7 +764,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colFullName.Caption = "FULL NAME";
+            this.colFullName.Caption = "Full Name";
             this.colFullName.FieldName = "FullNameBindable";
             this.colFullName.Name = "colFullName";
             this.colFullName.OptionsColumn.AllowFocus = false;
@@ -774,7 +774,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colAddress.Caption = "ADDRESS";
+            this.colAddress.Caption = "Address";
             this.colAddress.FieldName = "Address.Line";
             this.colAddress.Name = "colAddress";
             this.colAddress.OptionsColumn.AllowFocus = false;
@@ -784,7 +784,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCity.Caption = "CITY";
+            this.colCity.Caption = "City";
             this.colCity.FieldName = "Address.City";
             this.colCity.Name = "colCity";
             this.colCity.OptionsColumn.AllowFocus = false;
@@ -794,7 +794,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colState.Caption = "STATE";
+            this.colState.Caption = "State";
             this.colState.FieldName = "Address.State";
             this.colState.Name = "colState";
             this.colState.OptionsColumn.AllowFocus = false;
@@ -804,7 +804,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colZipCode.Caption = "ZIP CODE";
+            this.colZipCode.Caption = "Zip Code";
             this.colZipCode.FieldName = "Address.ZipCode";
             this.colZipCode.Name = "colZipCode";
             this.colZipCode.OptionsColumn.AllowFocus = false;
@@ -814,7 +814,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colEmail.Caption = "EMAIL";
+            this.colEmail.Caption = "Email";
             this.colEmail.FieldName = "Email";
             this.colEmail.Name = "colEmail";
             this.colEmail.OptionsColumn.AllowFocus = false;
@@ -824,35 +824,35 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colBirthDate.Caption = "BIRTH DATE";
+            this.colBirthDate.Caption = "Birth Date";
             this.colBirthDate.FieldName = "BirthDate";
             this.colBirthDate.Name = "colBirthDate";
             this.colBirthDate.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colHireDate.Caption = "HIRE DATE";
+            this.colHireDate.Caption = "Hire Date";
             this.colHireDate.FieldName = "HireDate";
             this.colHireDate.Name = "colHireDate";
             this.colHireDate.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colHomePhone.Caption = "HOME PHONE";
+            this.colHomePhone.Caption = "Home Phone";
             this.colHomePhone.FieldName = "HomePhone";
             this.colHomePhone.Name = "colHomePhone";
             this.colHomePhone.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colMobilePhone1.Caption = "MOBILE PHONE";
+            this.colMobilePhone1.Caption = "Mobile Phone";
             this.colMobilePhone1.FieldName = "MobilePhone";
             this.colMobilePhone1.Name = "colMobilePhone1";
             this.colMobilePhone1.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colTitle.Caption = "TITLE";
+            this.colTitle.Caption = "Title";
             this.colTitle.FieldName = "Title";
             this.colTitle.Name = "colTitle";
             this.colTitle.OptionsColumn.AllowFocus = false;
@@ -951,7 +951,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colAddress1.Caption = "ADDRESS";
+            this.colAddress1.Caption = "Address";
             this.colAddress1.ColumnEdit = this.repositoryItemMemoEdit1;
             this.colAddress1.FieldName = "Address";
             this.colAddress1.LayoutViewField = this.layoutViewField_colAddress1;
@@ -971,7 +971,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colEmail1.Caption = "EMAIL";
+            this.colEmail1.Caption = "Email";
             this.colEmail1.FieldName = "Email";
             this.colEmail1.LayoutViewField = this.layoutViewField_colEmail1;
             this.colEmail1.Name = "colEmail1";
@@ -991,7 +991,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colMobilePhone.Caption = "PHONE";
+            this.colMobilePhone.Caption = "Phone";
             this.colMobilePhone.FieldName = "MobilePhone";
             this.colMobilePhone.LayoutViewField = this.layoutViewField_colMobilePhone;
             this.colMobilePhone.Name = "colMobilePhone";

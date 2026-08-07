@@ -378,7 +378,7 @@ namespace DevExpress.DevAV.Modules {
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(499, 34);
-            this.layoutControlItem3.Text = "OWNER";
+            this.layoutControlItem3.Text = "Owner";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -387,7 +387,7 @@ namespace DevExpress.DevAV.Modules {
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 34);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(499, 34);
-            this.layoutControlItem1.Text = "ASSIGNED TO";
+            this.layoutControlItem1.Text = "Assigned To";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -396,7 +396,7 @@ namespace DevExpress.DevAV.Modules {
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 68);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(499, 34);
-            this.layoutControlItem2.Text = "LINKED TO";
+            this.layoutControlItem2.Text = "Linked To";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -407,7 +407,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForSubject.Location = new System.Drawing.Point(561, 0);
             this.ItemForSubject.Name = "ItemForSubject";
             this.ItemForSubject.Size = new System.Drawing.Size(588, 77);
-            this.ItemForSubject.Text = "SUBJECT";
+            this.ItemForSubject.Text = "Subject";
             this.ItemForSubject.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -418,7 +418,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForDescription.Location = new System.Drawing.Point(561, 77);
             this.ItemForDescription.Name = "ItemForDescription";
             this.ItemForDescription.Size = new System.Drawing.Size(588, 134);
-            this.ItemForDescription.Text = "DESCRIPTION";
+            this.ItemForDescription.Text = "Description";
             this.ItemForDescription.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -466,7 +466,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForCompletion.Location = new System.Drawing.Point(561, 235);
             this.ItemForCompletion.Name = "ItemForCompletion";
             this.ItemForCompletion.Size = new System.Drawing.Size(588, 51);
-            this.ItemForCompletion.Text = "% COMPLETE";
+            this.ItemForCompletion.Text = "% Complete";
             this.ItemForCompletion.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -475,7 +475,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForStartDate.Location = new System.Drawing.Point(0, 126);
             this.ItemForStartDate.Name = "ItemForStartDate";
             this.ItemForStartDate.Size = new System.Drawing.Size(499, 34);
-            this.ItemForStartDate.Text = "START DATE";
+            this.ItemForStartDate.Text = "Start Date";
             this.ItemForStartDate.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -484,7 +484,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForDueDate.Location = new System.Drawing.Point(0, 160);
             this.ItemForDueDate.Name = "ItemForDueDate";
             this.ItemForDueDate.Size = new System.Drawing.Size(499, 34);
-            this.ItemForDueDate.Text = "DUE DATE";
+            this.ItemForDueDate.Text = "Due Date";
             this.ItemForDueDate.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -493,7 +493,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForStatus.Location = new System.Drawing.Point(0, 218);
             this.ItemForStatus.Name = "ItemForStatus";
             this.ItemForStatus.Size = new System.Drawing.Size(499, 34);
-            this.ItemForStatus.Text = "STATUS";
+            this.ItemForStatus.Text = "Status";
             this.ItemForStatus.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -502,7 +502,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForPriority.Location = new System.Drawing.Point(0, 252);
             this.ItemForPriority.Name = "ItemForPriority";
             this.ItemForPriority.Size = new System.Drawing.Size(499, 34);
-            this.ItemForPriority.Text = "PRIORITY";
+            this.ItemForPriority.Text = "Priority";
             this.ItemForPriority.TextSize = new System.Drawing.Size(68, 13);
             
             
@@ -716,7 +716,7 @@ namespace DevExpress.DevAV.Modules {
             this.ribbonPageGroup6,
             this.ribbonPageGroup3});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "TASK";
+            this.ribbonPage1.Text = "Task";
             
             
             

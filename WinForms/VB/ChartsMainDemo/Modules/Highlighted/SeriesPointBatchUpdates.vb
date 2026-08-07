@@ -2,6 +2,7 @@ Imports System
 Imports System.Diagnostics
 Imports System.IO
 Imports System.Windows.Forms
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Utils
 
 Namespace DevExpress.XtraCharts.Demos
@@ -122,7 +123,7 @@ Namespace DevExpress.XtraCharts.Demos
 
         Private Sub Timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
             Dim current As Date = Date.Now
-            Dim span As Double =(current - last).TotalSeconds
+            Dim span As Double = If(MainFormHelper.TakeScreens, 0, (current - last).TotalSeconds)
             last = current
             MoveFrameAndStrip(CInt(span * SamplingFrequency))
             RecalculateFrequencySpectrum()

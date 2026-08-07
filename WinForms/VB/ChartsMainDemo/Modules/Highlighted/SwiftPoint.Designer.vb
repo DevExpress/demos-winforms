@@ -124,11 +124,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItemBottom
             ' 
-            Me.emptySpaceItemBottom.AllowHotTrack = False
             Me.emptySpaceItemBottom.Location = New System.Drawing.Point(0, 324)
             Me.emptySpaceItemBottom.Name = "emptySpaceItem1"
             Me.emptySpaceItemBottom.Size = New System.Drawing.Size(362, 549)
-            Me.emptySpaceItemBottom.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' layoutControlGroupChartType
             ' 
@@ -146,7 +144,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemChartType.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemChartType.Name = "layoutControlItemChartType"
             Me.layoutControlItemChartType.Size = New System.Drawing.Size(342, 30)
-            Me.layoutControlItemChartType.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemChartType.TextVisible = False
             ' 
             ' layoutControlGroupColorizerType
@@ -168,7 +165,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemChartType1.Name = "layoutControlItemChartType1"
             Me.layoutControlItemChartType1.Size = New System.Drawing.Size(342, 30)
             Me.layoutControlItemChartType1.Text = "layoutControlItemChartType"
-            Me.layoutControlItemChartType1.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemChartType1.TextVisible = False
             ' 
             ' layoutControlGroup1
@@ -186,7 +182,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New System.Drawing.Size(338, 134)
-            Me.layoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem1.TextVisible = False
             ' 
             ' chart
@@ -224,7 +219,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.SeriesSelectionMode = DevExpress.XtraCharts.SeriesSelectionMode.Argument
             series1.CrosshairLabelPattern = "{A:N0}ft<sup>2</sup> : {V:$0}"
             series1.Name = "Houses"
+            series1.SeriesID = 0
             regressionLine1.CrosshairLabelPattern = "{A:N0}ft<sup>2</sup> : {V:$0}"
+            regressionLine1.IndicatorID = 0
             regressionLine1.Name = "Regression"
             regressionLine1.ShowInLegend = True
             swiftPointSeriesView1.Indicators.AddRange(New DevExpress.XtraCharts.Indicator() {regressionLine1})
@@ -234,8 +231,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.TabIndex = 3
             Me.chart.TabStop = False
             chartTitle1.Text = "House Sale Prices"
+            chartTitle1.TitleID = 0
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle2.Text = "Point Count: 100000"
+            chartTitle2.TitleID = 1
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             ' 
             ' sidePanel1

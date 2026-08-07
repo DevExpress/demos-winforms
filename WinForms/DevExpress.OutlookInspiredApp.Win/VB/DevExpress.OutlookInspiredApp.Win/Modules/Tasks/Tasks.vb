@@ -107,7 +107,7 @@ Namespace DevExpress.DevAV.Modules
         End Sub
 
         Private Sub UpdateEntitiesCountRelatedUI(ByVal count As Integer)
-            hiItemsCount.Caption = String.Format("RECORDS: {0}", count)
+            hiItemsCount.Caption = String.Format("Records: {0}", count)
         End Sub
 
         Private ReadOnly Property Ribbon As XtraBars.Ribbon.RibbonControl Implements IRibbonModule.Ribbon

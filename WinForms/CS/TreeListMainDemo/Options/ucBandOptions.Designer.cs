@@ -26,6 +26,7 @@
             this.layoutControl = new DevExpress.XtraLayout.LayoutControl();
             this.ceAllowBandColumnsMultiRow = new DevExpress.XtraEditors.CheckEdit();
             this.ceShowBands = new DevExpress.XtraEditors.CheckEdit();
+            this.icbCustomizationFormKind = new DevExpress.XtraEditors.ImageComboBoxEdit();
             this.ceCustomizationFormSearchBoxVisible = new DevExpress.XtraEditors.CheckEdit();
             this.ceShowBandsInCustomizationForm = new DevExpress.XtraEditors.CheckEdit();
             this.ceAllowColumnResizing = new DevExpress.XtraEditors.CheckEdit();
@@ -43,6 +44,7 @@
             this.liAllowChangeColumnParent = new DevExpress.XtraLayout.LayoutControlItem();
             this.liAllowColumnMoving = new DevExpress.XtraLayout.LayoutControlItem();
             this.liAllowColumnResizing = new DevExpress.XtraLayout.LayoutControlItem();
+            this.liCustomizationFormKind = new DevExpress.XtraLayout.LayoutControlItem();
             this.liShowBandsInCustomizationForm = new DevExpress.XtraLayout.LayoutControlItem();
             this.liCustomizationFormSearchBoxVisible = new DevExpress.XtraLayout.LayoutControlItem();
             this.lgView = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -52,6 +54,7 @@
             this.layoutControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ceAllowBandColumnsMultiRow.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceShowBands.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icbCustomizationFormKind.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceCustomizationFormSearchBoxVisible.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceShowBandsInCustomizationForm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceAllowColumnResizing.Properties)).BeginInit();
@@ -69,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.liAllowChangeColumnParent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.liAllowColumnMoving)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.liAllowColumnResizing)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.liCustomizationFormKind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.liShowBandsInCustomizationForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.liCustomizationFormSearchBoxVisible)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lgView)).BeginInit();
@@ -80,6 +84,7 @@
             // 
             this.layoutControl.Controls.Add(this.ceAllowBandColumnsMultiRow);
             this.layoutControl.Controls.Add(this.ceShowBands);
+            this.layoutControl.Controls.Add(this.icbCustomizationFormKind);
             this.layoutControl.Controls.Add(this.ceCustomizationFormSearchBoxVisible);
             this.layoutControl.Controls.Add(this.ceShowBandsInCustomizationForm);
             this.layoutControl.Controls.Add(this.ceAllowColumnResizing);
@@ -117,9 +122,23 @@
             this.ceShowBands.TabIndex = 13;
             this.ceShowBands.CheckedChanged += new System.EventHandler(this.ceShowBands_CheckedChanged);
             // 
+            // icbCustomizationFormKind
+            // 
+            this.icbCustomizationFormKind.Location = new System.Drawing.Point(143, 254);
+            this.icbCustomizationFormKind.Name = "icbCustomizationFormKind";
+            this.icbCustomizationFormKind.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.icbCustomizationFormKind.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Classic", DevExpress.Utils.DefaultBoolean.False, -1),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Advanced", DevExpress.Utils.DefaultBoolean.True, -1)});
+            this.icbCustomizationFormKind.Size = new System.Drawing.Size(95, 20);
+            this.icbCustomizationFormKind.StyleController = this.layoutControl;
+            this.icbCustomizationFormKind.TabIndex = 15;
+            this.icbCustomizationFormKind.SelectedIndexChanged += new System.EventHandler(this.icbCustomizationFormKind_SelectedIndexChanged);
+            // 
             // ceCustomizationFormSearchBoxVisible
             // 
-            this.ceCustomizationFormSearchBoxVisible.Location = new System.Drawing.Point(12, 277);
+            this.ceCustomizationFormSearchBoxVisible.Location = new System.Drawing.Point(12, 301);
             this.ceCustomizationFormSearchBoxVisible.Name = "ceCustomizationFormSearchBoxVisible";
             this.ceCustomizationFormSearchBoxVisible.Properties.Caption = "Customization Form Search Box Visible";
             this.ceCustomizationFormSearchBoxVisible.Size = new System.Drawing.Size(226, 19);
@@ -129,7 +148,7 @@
             // 
             // ceShowBandsInCustomizationForm
             // 
-            this.ceShowBandsInCustomizationForm.Location = new System.Drawing.Point(12, 254);
+            this.ceShowBandsInCustomizationForm.Location = new System.Drawing.Point(12, 278);
             this.ceShowBandsInCustomizationForm.Name = "ceShowBandsInCustomizationForm";
             this.ceShowBandsInCustomizationForm.Properties.Caption = "Show Bands In Customization Form";
             this.ceShowBandsInCustomizationForm.Size = new System.Drawing.Size(226, 19);
@@ -212,9 +231,9 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 308);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 331);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(250, 32);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(250, 9);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // lgCustomization
@@ -227,11 +246,12 @@
             this.liAllowChangeColumnParent,
             this.liAllowColumnMoving,
             this.liAllowColumnResizing,
+            this.liCustomizationFormKind,
             this.liShowBandsInCustomizationForm,
             this.liCustomizationFormSearchBoxVisible});
             this.lgCustomization.Location = new System.Drawing.Point(0, 85);
             this.lgCustomization.Name = "lgCustomization";
-            this.lgCustomization.Size = new System.Drawing.Size(250, 223);
+            this.lgCustomization.Size = new System.Drawing.Size(250, 246);
             this.lgCustomization.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.lgCustomization.Text = "Customization";
             // 
@@ -289,10 +309,19 @@
             this.liAllowColumnResizing.TextSize = new System.Drawing.Size(0, 0);
             this.liAllowColumnResizing.TextVisible = false;
             // 
+            // liCustomizationFormKind
+            // 
+            this.liCustomizationFormKind.Control = this.icbCustomizationFormKind;
+            this.liCustomizationFormKind.Location = new System.Drawing.Point(0, 138);
+            this.liCustomizationFormKind.Name = "liCustomizationFormKind";
+            this.liCustomizationFormKind.Size = new System.Drawing.Size(230, 24);
+            this.liCustomizationFormKind.Text = "Customization Form:";
+            this.liCustomizationFormKind.TextSize = new System.Drawing.Size(119, 13);
+            // 
             // liShowBandsInCustomizationForm
             // 
             this.liShowBandsInCustomizationForm.Control = this.ceShowBandsInCustomizationForm;
-            this.liShowBandsInCustomizationForm.Location = new System.Drawing.Point(0, 138);
+            this.liShowBandsInCustomizationForm.Location = new System.Drawing.Point(0, 162);
             this.liShowBandsInCustomizationForm.Name = "liShowBandsInCustomizationForm";
             this.liShowBandsInCustomizationForm.Size = new System.Drawing.Size(230, 23);
             this.liShowBandsInCustomizationForm.TextSize = new System.Drawing.Size(0, 0);
@@ -301,7 +330,7 @@
             // liCustomizationFormSearchBoxVisible
             // 
             this.liCustomizationFormSearchBoxVisible.Control = this.ceCustomizationFormSearchBoxVisible;
-            this.liCustomizationFormSearchBoxVisible.Location = new System.Drawing.Point(0, 161);
+            this.liCustomizationFormSearchBoxVisible.Location = new System.Drawing.Point(0, 185);
             this.liCustomizationFormSearchBoxVisible.Name = "liCustomizationFormSearchBoxVisible";
             this.liCustomizationFormSearchBoxVisible.Size = new System.Drawing.Size(230, 23);
             this.liCustomizationFormSearchBoxVisible.TextSize = new System.Drawing.Size(0, 0);
@@ -349,6 +378,7 @@
             this.layoutControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ceAllowBandColumnsMultiRow.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceShowBands.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icbCustomizationFormKind.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceCustomizationFormSearchBoxVisible.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceShowBandsInCustomizationForm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceAllowColumnResizing.Properties)).EndInit();
@@ -366,6 +396,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.liAllowChangeColumnParent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.liAllowColumnMoving)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.liAllowColumnResizing)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.liCustomizationFormKind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.liShowBandsInCustomizationForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.liCustomizationFormSearchBoxVisible)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lgView)).EndInit();
@@ -393,6 +424,8 @@
         private XtraEditors.CheckEdit ceShowBandsInCustomizationForm;
         private XtraEditors.CheckEdit ceAllowColumnResizing;
         private XtraLayout.LayoutControlItem liAllowColumnResizing;
+        private XtraEditors.ImageComboBoxEdit icbCustomizationFormKind;
+        private XtraLayout.LayoutControlItem liCustomizationFormKind;
         private XtraLayout.LayoutControlItem liShowBandsInCustomizationForm;
         private XtraEditors.CheckEdit ceCustomizationFormSearchBoxVisible;
         private XtraLayout.LayoutControlItem liCustomizationFormSearchBoxVisible;

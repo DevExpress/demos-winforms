@@ -1,10 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm;
 using DevExpress.Data.Filtering;
+using DevExpress.Mvvm;
+using DevExpress.Mvvm.POCO;
 
 namespace DevExpress.DevAV.ViewModels {
     public struct DateRange {

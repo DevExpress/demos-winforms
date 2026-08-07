@@ -1,12 +1,12 @@
-using DevExpress.Mvvm;
 using System.Collections.Generic;
 using System.Linq;
+using DevExpress.Mvvm;
 
 namespace DevExpress.DevAV.ViewModels {
     public partial class CustomerCollectionViewModel : IFilterTreeViewModelContainer<Customer, CustomerInfoWithSales> {
         public FilterViewModel<Customer, CustomerInfoWithSales> FilterViewModel { get; set; }
         public ICollection<double> GetMonthlySalesByCustomer(Customer customer) {
-            if(customer == null || customer.Orders == null) 
+            if(customer == null || customer.Orders == null)
                 return new double[0];
             return customer.Orders.GroupBy(o => o.OrderDate.Month).Select(g => (double)g.CustomSum(i => i.TotalAmount)).ToList();
         }

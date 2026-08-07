@@ -250,7 +250,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForHomeOffice.Location = new System.Drawing.Point(0, 43);
             this.ItemForHomeOffice.Name = "ItemForHomeOffice";
             this.ItemForHomeOffice.Size = new System.Drawing.Size(192, 26);
-            this.ItemForHomeOffice.Text = "HOME OFFICE";
+            this.ItemForHomeOffice.Text = "Home Office";
             this.ItemForHomeOffice.TextLocation = DevExpress.Utils.Locations.Top;
             this.ItemForHomeOffice.TextSize = new System.Drawing.Size(71, 13);
             

@@ -22,7 +22,7 @@ namespace DevExpress.DentalClinic.View {
             fluentApi.WithEvent(this, nameof(Load))
                 .EventToCommand(x => x.Load);
             fluentApi.SetTrigger(v => v.UnassignedProcedureCount, count => badge.Visible = count > 0);
-            fluentApi.SetBinding(badge.Properties, x => x.Text, x => x.UnassignedProcedureCount, 
+            fluentApi.SetBinding(badge.Properties, x => x.Text, x => x.UnassignedProcedureCount,
                 v => v.ToString(), s => string.IsNullOrEmpty(s) ? 0 : int.Parse(s));
             tabPane.PageAdded += OnTabPanePageAdded;
         }
@@ -31,7 +31,7 @@ namespace DevExpress.DentalClinic.View {
             adornerUIManager.Owner = FindForm();
         }
         void OnTabPanePageAdded(object sender, XtraBars.Navigation.NavigationPageEventArgs e) {
-            if(e.Page.Caption == "Treatment Plan") 
+            if(e.Page.Caption == "Treatment Plan")
                 badge.TargetElement = e.Page;
         }
     }

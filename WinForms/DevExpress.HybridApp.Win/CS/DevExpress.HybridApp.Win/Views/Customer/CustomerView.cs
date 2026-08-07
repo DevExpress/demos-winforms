@@ -1,11 +1,8 @@
-using System.Collections.Generic;
-using System.Linq;
+using System;
 using DevExpress.DevAV.ViewModels;
+using DevExpress.Utils.MVVM.UI;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraEditors;
-using DevExpress.XtraMap;
-using DevExpress.Utils.MVVM.UI;
-using System;
 
 namespace DevExpress.DevAV.Views {
     [ViewType(DevAVDbViewModel.CustomerViewDocumentType)]
@@ -30,9 +27,8 @@ namespace DevExpress.DevAV.Views {
             fluentAPI.SetBinding(customerNameSimpleLabelItem, l => l.Text, x => x.Entity.Name);
             fluentAPI.BindCommandAndImage(windowsUIButtonPanel.Buttons[3] as WindowsUIButton, x => x.ShowOrders(), "OrderList");
             fluentAPI.BindCommandAndImage(windowsUIButtonPanel.Buttons[4] as WindowsUIButton, x => x.ShowStores(), "SalesMap");
-            fluentAPI.SetTrigger(x => x.DetailKind, (v) =>
-            {
-                if (v == DetailKind.Orders) {
+            fluentAPI.SetTrigger(x => x.DetailKind, (v) => {
+                if(v == DetailKind.Orders) {
                     ordersLayoutControlItem.Visibility = XtraLayout.Utils.LayoutVisibility.Always;
                     storesLayoutControlItem.Visibility = XtraLayout.Utils.LayoutVisibility.Never;
                 }
@@ -44,8 +40,7 @@ namespace DevExpress.DevAV.Views {
             fluentAPI.WithEvent<RangeControl, RangeControlRangeEventArgs>(rangeControl, "RangeChanged")
                 .SetBinding(x => x.DateRange,
                     args => new DateRange((DateTime)args.Range.Minimum, (DateTime)args.Range.Maximum),
-                    (rangeCtrl, range) =>
-                    {
+                    (rangeCtrl, range) => {
                         rangeCtrl.SelectedRange = new RangeControlRange(range.Minimum, range.Maximum);
                     });
             fluentAPI.SetBinding(orderGridView, view => view.ActiveFilterCriteria, x => x.DateRange, range => ConverterExtensions.ConvertEditRangeToFilterCriteria(range, "OrderDate"));

@@ -1,15 +1,13 @@
 using System;
 using System.ComponentModel;
 using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
-using DevExpress.DevAV.Services;
 using DevExpress.Utils.MVVM.Services;
 
 namespace DevExpress.DevAV.ViewModels {
     public class PrintableControlPreviewViewModel : IDocumentContent, ISupportParameter {
         public virtual IPreviewModelWrapper<IPrintingSystem> PrintModel { get; protected set; }
         public void Close() {
-            if (DocumentOwner != null) {
+            if(DocumentOwner != null) {
                 DocumentOwner.Close(this);
             }
         }

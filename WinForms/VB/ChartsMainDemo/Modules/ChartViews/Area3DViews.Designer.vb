@@ -203,7 +203,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' documentGroup
             ' 
@@ -319,17 +319,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(234, 257, 650, 400)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 1
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' checkEditLabelVisible
             ' 
             Me.checkEditLabelVisible.EditValue = True
-            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 117)
+            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 124)
             Me.checkEditLabelVisible.Name = "checkEditLabelVisible"
             Me.checkEditLabelVisible.Properties.Caption = "Visible"
-            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 20)
             Me.checkEditLabelVisible.StyleController = Me.layoutControl
             Me.checkEditLabelVisible.TabIndex = 3
             AddHandler Me.checkEditLabelVisible.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditLabelVisible_CheckedChanged)
@@ -337,49 +337,49 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditTransparency
             ' 
             Me.spinEditTransparency.EditValue = New Decimal(New Integer() {135, 0, 0, 0})
-            Me.spinEditTransparency.Location = New System.Drawing.Point(105, 54)
+            Me.spinEditTransparency.Location = New System.Drawing.Point(114, 58)
             Me.spinEditTransparency.Name = "spinEditTransparency"
             Me.spinEditTransparency.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditTransparency.Properties.IsFloatValue = False
             Me.spinEditTransparency.Properties.Mask.EditMask = "N00"
             Me.spinEditTransparency.Properties.MaxValue = New Decimal(New Integer() {255, 0, 0, 0})
-            Me.spinEditTransparency.Size = New System.Drawing.Size(124, 20)
+            Me.spinEditTransparency.Size = New System.Drawing.Size(115, 20)
             Me.spinEditTransparency.StyleController = Me.layoutControl
             Me.spinEditTransparency.TabIndex = 0
             AddHandler Me.spinEditTransparency.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditTransparency_EditValueChanged)
             ' 
             ' checkEditInvertedStep
             ' 
-            Me.checkEditInvertedStep.Location = New System.Drawing.Point(12, 31)
+            Me.checkEditInvertedStep.Location = New System.Drawing.Point(12, 34)
             Me.checkEditInvertedStep.Name = "checkEditInvertedStep"
             Me.checkEditInvertedStep.Properties.Caption = "Inverted Step"
-            Me.checkEditInvertedStep.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditInvertedStep.Size = New System.Drawing.Size(217, 20)
             Me.checkEditInvertedStep.StyleController = Me.layoutControl
             Me.checkEditInvertedStep.TabIndex = 2
             AddHandler Me.checkEditInvertedStep.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditInvertedStep_CheckedChanged)
             ' 
             ' checkEditValueAsPercent
             ' 
-            Me.checkEditValueAsPercent.Location = New System.Drawing.Point(12, 140)
+            Me.checkEditValueAsPercent.Location = New System.Drawing.Point(12, 148)
             Me.checkEditValueAsPercent.Name = "checkEditValueAsPercent"
             Me.checkEditValueAsPercent.Properties.Caption = "Value As Percent"
-            Me.checkEditValueAsPercent.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditValueAsPercent.Size = New System.Drawing.Size(217, 20)
             Me.checkEditValueAsPercent.StyleController = Me.layoutControl
             Me.checkEditValueAsPercent.TabIndex = 5
             ' 
             ' comboBoxEditPerspectiveAngle
             ' 
-            Me.comboBoxEditPerspectiveAngle.Location = New System.Drawing.Point(105, 202)
+            Me.comboBoxEditPerspectiveAngle.Location = New System.Drawing.Point(114, 214)
             Me.comboBoxEditPerspectiveAngle.Name = "comboBoxEditPerspectiveAngle"
             Me.comboBoxEditPerspectiveAngle.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditPerspectiveAngle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditPerspectiveAngle.Size = New System.Drawing.Size(124, 20)
+            Me.comboBoxEditPerspectiveAngle.Size = New System.Drawing.Size(115, 20)
             Me.comboBoxEditPerspectiveAngle.StyleController = Me.layoutControl
             Me.comboBoxEditPerspectiveAngle.TabIndex = 6
             ' 
             ' simpleButtonRestoreDefaultAngles
             ' 
-            Me.simpleButtonRestoreDefaultAngles.Location = New System.Drawing.Point(12, 234)
+            Me.simpleButtonRestoreDefaultAngles.Location = New System.Drawing.Point(12, 246)
             Me.simpleButtonRestoreDefaultAngles.Name = "simpleButtonRestoreDefaultAngles"
             Me.simpleButtonRestoreDefaultAngles.Size = New System.Drawing.Size(217, 22)
             Me.simpleButtonRestoreDefaultAngles.StyleController = Me.layoutControl
@@ -393,7 +393,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupGeneral, Me.layoutControlGroupLabel, Me.emptySpaceItem, Me.layoutControlGroupCamera})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupGeneral
@@ -404,7 +404,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupGeneral.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemInvertedStep, Me.layoutControlItemTransparency})
             Me.layoutControlGroupGeneral.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral"
-            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 86)
+            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 90)
             Me.layoutControlGroupGeneral.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupGeneral.Text = "General"
             ' 
@@ -413,14 +413,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemInvertedStep.Control = Me.checkEditInvertedStep
             Me.layoutControlItemInvertedStep.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemInvertedStep.Name = "layoutControlItemInvertedStep"
-            Me.layoutControlItemInvertedStep.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemInvertedStep.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemInvertedStep.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemInvertedStep.TextVisible = False
             ' 
             ' layoutControlItemTransparency
             ' 
             Me.layoutControlItemTransparency.Control = Me.spinEditTransparency
-            Me.layoutControlItemTransparency.Location = New System.Drawing.Point(0, 23)
+            Me.layoutControlItemTransparency.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemTransparency.Name = "layoutControlItemTransparency"
             Me.layoutControlItemTransparency.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemTransparency.Text = "Transparency:"
@@ -432,9 +431,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupLabel.AppearanceGroup.Options.UseBorderColor = True
             Me.layoutControlGroupLabel.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupLabel.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemVisible, Me.layoutControlItemValueAsPercent})
-            Me.layoutControlGroupLabel.Location = New System.Drawing.Point(0, 86)
+            Me.layoutControlGroupLabel.Location = New System.Drawing.Point(0, 90)
             Me.layoutControlGroupLabel.Name = "layoutControlGroupLabel"
-            Me.layoutControlGroupLabel.Size = New System.Drawing.Size(241, 85)
+            Me.layoutControlGroupLabel.Size = New System.Drawing.Size(241, 90)
             Me.layoutControlGroupLabel.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupLabel.Text = "Label"
             ' 
@@ -443,27 +442,23 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemVisible.Control = Me.checkEditLabelVisible
             Me.layoutControlItemVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemVisible.Name = "layoutControlItemVisible"
-            Me.layoutControlItemVisible.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemVisible.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemVisible.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemVisible.TextVisible = False
             ' 
             ' layoutControlItemValueAsPercent
             ' 
             Me.layoutControlItemValueAsPercent.Control = Me.checkEditValueAsPercent
-            Me.layoutControlItemValueAsPercent.Location = New System.Drawing.Point(0, 23)
+            Me.layoutControlItemValueAsPercent.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent"
-            Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 23)
+            Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutControlItemValueAsPercent.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemValueAsPercent.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
-            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 268)
+            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 280)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 276)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 258)
             ' 
             ' layoutControlGroupCamera
             ' 
@@ -471,9 +466,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupCamera.AppearanceGroup.Options.UseBorderColor = True
             Me.layoutControlGroupCamera.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupCamera.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemPerspectiveAngle, Me.layoutControlItemRestoreDefaultAngles})
-            Me.layoutControlGroupCamera.Location = New System.Drawing.Point(0, 171)
+            Me.layoutControlGroupCamera.Location = New System.Drawing.Point(0, 180)
             Me.layoutControlGroupCamera.Name = "layoutControlGroupCamera"
-            Me.layoutControlGroupCamera.Size = New System.Drawing.Size(241, 97)
+            Me.layoutControlGroupCamera.Size = New System.Drawing.Size(241, 100)
             Me.layoutControlGroupCamera.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupCamera.Text = "Camera"
             ' 
@@ -493,7 +488,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemRestoreDefaultAngles.Name = "layoutControlItemRestoreDefaultAngles"
             Me.layoutControlItemRestoreDefaultAngles.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemRestoreDefaultAngles.Size = New System.Drawing.Size(221, 34)
-            Me.layoutControlItemRestoreDefaultAngles.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemRestoreDefaultAngles.TextVisible = False
             ' 
             ' dockManager
@@ -515,7 +509,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelArea3D.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelArea3D.Name = "dockPanelArea3D"
             Me.dockPanelArea3D.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelArea3D.Size = New System.Drawing.Size(1089, 545)
+            Me.dockPanelArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.dockPanelArea3D.Text = "Area3D"
             ' 
             ' dockPanelArea3D_Container
@@ -523,7 +517,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelArea3D_Container.Controls.Add(Me.chartArea3D)
             Me.dockPanelArea3D_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelArea3D_Container.Name = "dockPanelArea3D_Container"
-            Me.dockPanelArea3D_Container.Size = New System.Drawing.Size(1089, 545)
+            Me.dockPanelArea3D_Container.Size = New System.Drawing.Size(1089, 548)
             Me.dockPanelArea3D_Container.TabIndex = 0
             ' 
             ' chartArea3D
@@ -533,7 +527,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram3D1.AxisX.GridLines.Visible = True
             xyDiagram3D1.AxisX.Label.MaxWidth = 70
             xyDiagram3D1.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram3D1.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D1.AxisX.WholeRange.EndSideMargin = 0R
+            xyDiagram3D1.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram3D1.AxisY.Label.TextPattern = "${V}K"
             xyDiagram3D1.AxisY.NumericScaleOptions.AutoGrid = False
             xyDiagram3D1.AxisY.NumericScaleOptions.GridAlignment = DevExpress.XtraCharts.NumericGridAlignment.Hundreds
@@ -559,9 +554,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartArea3D.SeriesTemplate.SeriesDataMember = "Company"
             Me.chartArea3D.SeriesTemplate.ValueDataMembersSerializable = "Costs"
             Me.chartArea3D.SeriesTemplate.View = area3DSeriesView1
-            Me.chartArea3D.Size = New System.Drawing.Size(1089, 545)
+            Me.chartArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.chartArea3D.TabIndex = 7
             chartTitle1.Text = "Outside Vendor Costs"
+            chartTitle1.TitleID = 0
             Me.chartArea3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' dockPanelRangeArea3D
@@ -573,7 +569,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelRangeArea3D.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelRangeArea3D.Name = "dockPanelRangeArea3D"
             Me.dockPanelRangeArea3D.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelRangeArea3D.Size = New System.Drawing.Size(1089, 545)
+            Me.dockPanelRangeArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.dockPanelRangeArea3D.Text = "Range Area3D"
             ' 
             ' dockPanelRangeArea3D_Container
@@ -581,7 +577,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelRangeArea3D_Container.Controls.Add(Me.chartRangeArea3D)
             Me.dockPanelRangeArea3D_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelRangeArea3D_Container.Name = "dockPanelRangeArea3D_Container"
-            Me.dockPanelRangeArea3D_Container.Size = New System.Drawing.Size(1089, 545)
+            Me.dockPanelRangeArea3D_Container.Size = New System.Drawing.Size(1089, 548)
             Me.dockPanelRangeArea3D_Container.TabIndex = 0
             ' 
             ' chartRangeArea3D
@@ -594,11 +590,11 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram3D2.AxisX.Label.TextPattern = "{A:MMMM}"
             xyDiagram3D2.AxisY.Label.TextPattern = "${V}"
             xyDiagram3D2.AxisY.VisualRange.Auto = False
-            xyDiagram3D2.AxisY.VisualRange.MaxValueSerializable = "70"
-            xyDiagram3D2.AxisY.VisualRange.MinValueSerializable = "30"
+            xyDiagram3D2.AxisY.VisualRange.MaxValueSerializable = "9.8"
+            xyDiagram3D2.AxisY.VisualRange.MinValueSerializable = "1.1"
             xyDiagram3D2.AxisY.WholeRange.Auto = False
-            xyDiagram3D2.AxisY.WholeRange.MaxValueSerializable = "70"
-            xyDiagram3D2.AxisY.WholeRange.MinValueSerializable = "30"
+            xyDiagram3D2.AxisY.WholeRange.MaxValueSerializable = "9.8"
+            xyDiagram3D2.AxisY.WholeRange.MinValueSerializable = "1.1"
             xyDiagram3D2.HorizontalScrollPercent = -2R
             xyDiagram3D2.RotationMatrixSerializable = "0.766044437885284;-0.219846323132515;0.604022800922394;0;0;0.939692616462708;0.34" & "2020153999329;0;-0.642787635326386;-0.262002646923065;0.719846308231354;0;0;0;0;" & "1"
             xyDiagram3D2.RuntimeRotation = True
@@ -618,18 +614,21 @@ Namespace DevExpress.XtraCharts.Demos
             rangeArea3DSeriesLabel1.TextPattern = "{V:F2}"
             series1.Label = rangeArea3DSeriesLabel1
             series1.Name = "OK WTI"
+            series1.SeriesID = 0
             series1.ValueDataMembersSerializable = "Min;Max"
             series1.View = rangeArea3DSeriesView1
             Me.chartRangeArea3D.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
             Me.chartRangeArea3D.SeriesTemplate.View = overlappedRangeBarSeriesView1
-            Me.chartRangeArea3D.Size = New System.Drawing.Size(1089, 545)
+            Me.chartRangeArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.chartRangeArea3D.TabIndex = 1
             chartTitle2.Text = "Crude Oil Prices in 2015"
-            chartTitle3.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle2.TitleID = 0
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle3.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle3.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle3.Text = "From www.eia.gov"
             chartTitle3.TextColor = System.Drawing.Color.Gray
+            chartTitle3.TitleID = 1
             Me.chartRangeArea3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle2, chartTitle3})
             ' 
             ' dockPanelStepArea3D
@@ -682,6 +681,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.Label = area3DSeriesLabel2
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series2.Name = "Gasoline Prices"
+            series2.SeriesID = 0
             series2.ValueDataMembersSerializable = "Price"
             stepArea3DSeriesView1.AreaWidth = 1R
             series2.View = stepArea3DSeriesView1
@@ -691,13 +691,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStepArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.chartStepArea3D.TabIndex = 1
             chartTitle4.Text = "US Gasoline Prices in 2015"
-            chartTitle5.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle4.TitleID = 0
             chartTitle5.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle5.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle5.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle5.Text = "From www.eia.gov"
             chartTitle5.TextColor = System.Drawing.Color.Gray
+            chartTitle5.TitleID = 1
             chartTitle6.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle6.Text = "Dollars per Gallon"
+            chartTitle6.TitleID = 2
             Me.chartStepArea3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle4, chartTitle5, chartTitle6})
             ' 
             ' dockPanelSplineArea3D
@@ -730,13 +733,14 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram3D4.AxisX.GridLines.Visible = True
             xyDiagram3D4.AxisX.Label.MaxWidth = 70
             xyDiagram3D4.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram3D4.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D4.AxisX.WholeRange.EndSideMargin = 0R
+            xyDiagram3D4.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram3D4.AxisY.Label.TextPattern = "${V}K"
             xyDiagram3D4.AxisY.NumericScaleOptions.AutoGrid = False
             xyDiagram3D4.AxisY.NumericScaleOptions.GridAlignment = DevExpress.XtraCharts.NumericGridAlignment.Hundreds
             xyDiagram3D4.AxisY.VisualRange.Auto = False
-            xyDiagram3D4.AxisY.VisualRange.MaxValueSerializable = "9.56666666666667"
-            xyDiagram3D4.AxisY.VisualRange.MinValueSerializable = "1.36666666666667"
+            xyDiagram3D4.AxisY.VisualRange.MaxValueSerializable = "9.7"
+            xyDiagram3D4.AxisY.VisualRange.MinValueSerializable = "0.6"
             xyDiagram3D4.AxisY.WholeRange.AlwaysShowZeroLevel = False
             xyDiagram3D4.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" & "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" & "1"
             xyDiagram3D4.RuntimeRotation = True
@@ -761,6 +765,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartSplineArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.chartSplineArea3D.TabIndex = 8
             chartTitle7.Text = "Outside Vendor Costs"
+            chartTitle7.TitleID = 0
             Me.chartSplineArea3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle7})
             ' 
             ' dockPanelStackedArea3D
@@ -815,6 +820,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.chartStackedArea3D.TabIndex = 2
             chartTitle8.Text = "DevAV Sales"
+            chartTitle8.TitleID = 0
             Me.chartStackedArea3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle8})
             ' 
             ' dockPanelStackedSplineArea3D
@@ -842,7 +848,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedSplineArea3D.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             xyDiagram3D6.AxisX.DateTimeScaleOptions.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year
             xyDiagram3D6.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram3D6.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D6.AxisX.WholeRange.EndSideMargin = 0R
+            xyDiagram3D6.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram3D6.AxisY.Interlaced = False
             xyDiagram3D6.AxisY.Label.TextPattern = "${V}M"
             xyDiagram3D6.AxisY.MinorCount = 2
@@ -871,6 +878,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedSplineArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.chartStackedSplineArea3D.TabIndex = 3
             chartTitle9.Text = "DevAV Sales"
+            chartTitle9.TitleID = 0
             Me.chartStackedSplineArea3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle9})
             ' 
             ' dockPanelFullStackedArea3D
@@ -898,10 +906,12 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedArea3D.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             xyDiagram3D7.AxisX.DateTimeScaleOptions.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year
             xyDiagram3D7.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram3D7.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D7.AxisX.WholeRange.EndSideMargin = 0R
+            xyDiagram3D7.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram3D7.AxisY.Label.TextPattern = "{V:P0}"
             xyDiagram3D7.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram3D7.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D7.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram3D7.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram3D7.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" & "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" & "1"
             xyDiagram3D7.RuntimeRotation = True
             xyDiagram3D7.RuntimeScrolling = True
@@ -926,6 +936,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.chartFullStackedArea3D.TabIndex = 1
             chartTitle10.Text = "Market Share Over Time"
+            chartTitle10.TitleID = 0
             Me.chartFullStackedArea3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle10})
             ' 
             ' dockPanelFullStackedSplineArea3D
@@ -937,7 +948,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelFullStackedSplineArea3D.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelFullStackedSplineArea3D.Name = "dockPanelFullStackedSplineArea3D"
             Me.dockPanelFullStackedSplineArea3D.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelFullStackedSplineArea3D.Size = New System.Drawing.Size(1089, 545)
+            Me.dockPanelFullStackedSplineArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.dockPanelFullStackedSplineArea3D.Text = "Full Stacked Spline Area3D"
             ' 
             ' dockPanelFullStackedSplineArea3D_Container
@@ -945,7 +956,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelFullStackedSplineArea3D_Container.Controls.Add(Me.chartFullStackedSplineArea3D)
             Me.dockPanelFullStackedSplineArea3D_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelFullStackedSplineArea3D_Container.Name = "dockPanelFullStackedSplineArea3D_Container"
-            Me.dockPanelFullStackedSplineArea3D_Container.Size = New System.Drawing.Size(1089, 545)
+            Me.dockPanelFullStackedSplineArea3D_Container.Size = New System.Drawing.Size(1089, 548)
             Me.dockPanelFullStackedSplineArea3D_Container.TabIndex = 0
             ' 
             ' chartFullStackedSplineArea3D
@@ -953,11 +964,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedSplineArea3D.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             xyDiagram3D8.AxisX.DateTimeScaleOptions.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year
             xyDiagram3D8.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram3D8.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D8.AxisX.WholeRange.EndSideMargin = 0R
+            xyDiagram3D8.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram3D8.AxisY.Interlaced = False
             xyDiagram3D8.AxisY.Label.TextPattern = "{V:P0}"
             xyDiagram3D8.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram3D8.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D8.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram3D8.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram3D8.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" & "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" & "1"
             xyDiagram3D8.RuntimeRotation = True
             xyDiagram3D8.RuntimeScrolling = True
@@ -979,9 +992,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedSplineArea3D.SeriesTemplate.ValueDataMembersSerializable = "Sales"
             fullStackedSplineArea3DSeriesView1.AreaWidth = 1R
             Me.chartFullStackedSplineArea3D.SeriesTemplate.View = fullStackedSplineArea3DSeriesView1
-            Me.chartFullStackedSplineArea3D.Size = New System.Drawing.Size(1089, 545)
+            Me.chartFullStackedSplineArea3D.Size = New System.Drawing.Size(1089, 548)
             Me.chartFullStackedSplineArea3D.TabIndex = 2
             chartTitle11.Text = "Market Share Over Time"
+            chartTitle11.TitleID = 0
             Me.chartFullStackedSplineArea3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle11})
             ' 
             ' documentManager

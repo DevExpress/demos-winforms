@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DevExpress.Utils.Menu;
-using DevExpress.XtraBars.Ribbon;
 using DevExpress.MailClient.Win;
+using DevExpress.Utils.Menu;
+using DevExpress.XtraEditors;
 
 namespace DevExpress.ProductsDemo.Win.Forms {
     public partial class frmEditContact : XtraForm {
@@ -24,7 +17,7 @@ namespace DevExpress.ProductsDemo.Win.Forms {
             InitEditors();
             InitMenuManager(menuManager);
             pePhoto.Image = bindingContact.Photo;
-            
+
             teFirstName.DataBindings.Add("Text", bindingContact.FullName, "FirstName");
             teLastName.DataBindings.Add("Text", bindingContact.FullName, "LastName");
             teMiddleName.DataBindings.Add("Text", bindingContact.FullName, "MiddleName");

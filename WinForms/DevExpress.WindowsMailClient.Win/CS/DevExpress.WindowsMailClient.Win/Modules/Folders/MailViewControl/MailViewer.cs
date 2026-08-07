@@ -11,6 +11,7 @@ using DevExpress.WindowsMailClient.Win.Model;
 using DevExpress.WindowsMailClient.Win.Utils;
 using DevExpress.WindowsMailClient.Win.ViewModels;
 using DevExpress.XtraBars;
+using DevExpress.XtraBars.Navigation;
 using DevExpress.XtraBars.ToastNotifications;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Controls;
@@ -19,7 +20,6 @@ using DevExpress.XtraGrid.Views.Tile;
 using DevExpress.XtraGrid.Views.Tile.ViewInfo;
 using DevExpress.XtraLayout;
 using Message = DevExpress.WindowsMailClient.Win.Data.Message;
-using DevExpress.XtraBars.Navigation;
 
 namespace DevExpress.WindowsMailClient.Win.Modules {
     public enum FilterType {
@@ -105,22 +105,22 @@ namespace DevExpress.WindowsMailClient.Win.Modules {
             mvvmContext.SetBinding(lciTabFilter, x => x.Visibility, "FocusedItemVisibility");
 
             MVVMContextFluentAPI<MailViewerViewModel> fluentAPI = mvvmContext.OfType<MailViewerViewModel>();
-            fluentAPI.EventToCommand<FocusedRowChangedEventArgs>(tileView, "FocusedRowChanged", x => x.SetCurrentMessage(null), (Func<FocusedRowChangedEventArgs, object>) GetMessageForFocusedRow);
+            fluentAPI.EventToCommand<FocusedRowChangedEventArgs>(tileView, "FocusedRowChanged", x => x.SetCurrentMessage(null), (Func<FocusedRowChangedEventArgs, object>)GetMessageForFocusedRow);
             fluentAPI.EventToCommand<ItemClickEventArgs>(biSortDate, "ItemClick", x => x.Sort(null), EventArgsToSortCommandParameter());
             fluentAPI.EventToCommand<ItemClickEventArgs>(biSortFrom, "ItemClick", x => x.Sort(null), EventArgsToSortCommandParameter());
             fluentAPI.EventToCommand<ItemClickEventArgs>(biSortRead, "ItemClick", x => x.Sort(null), EventArgsToSortCommandParameter());
             fluentAPI.EventToCommand<ItemClickEventArgs>(biSortSubject, "ItemClick", x => x.Sort(null), EventArgsToSortCommandParameter());
             fluentAPI.EventToCommand<ItemClickEventArgs>(biSortImportance, "ItemClick", x => x.Sort(null), EventArgsToSortCommandParameter());
 
-            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterAll, "CheckedChanged", x => x.SetFilterAll(), x => ((BarCheckItem) x.Item).Checked && !updateSortValues);
-            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterUnread, "CheckedChanged", x => x.SetFilterUnread(), x => ((BarCheckItem) x.Item).Checked && !updateSortValues);
-            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterImportance, "CheckedChanged", x => x.SetFilterImportance(), x => ((BarCheckItem) x.Item).Checked && !updateSortValues);
-            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterToday, "CheckedChanged", x => x.SetFilterToday(), x => ((BarCheckItem) x.Item).Checked && !updateSortValues);
-            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterYesterday, "CheckedChanged", x => x.SetFilterYesterday(), x => ((BarCheckItem) x.Item).Checked && !updateSortValues);
+            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterAll, "CheckedChanged", x => x.SetFilterAll(), x => ((BarCheckItem)x.Item).Checked && !updateSortValues);
+            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterUnread, "CheckedChanged", x => x.SetFilterUnread(), x => ((BarCheckItem)x.Item).Checked && !updateSortValues);
+            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterImportance, "CheckedChanged", x => x.SetFilterImportance(), x => ((BarCheckItem)x.Item).Checked && !updateSortValues);
+            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterToday, "CheckedChanged", x => x.SetFilterToday(), x => ((BarCheckItem)x.Item).Checked && !updateSortValues);
+            fluentAPI.EventToCommand<ItemClickEventArgs>(bcFilterYesterday, "CheckedChanged", x => x.SetFilterYesterday(), x => ((BarCheckItem)x.Item).Checked && !updateSortValues);
             fluentAPI.EventToCommand<NavigationBarItemEventArgs>(officeFilterTab, "SelectedItemChanged", x => x.SetFilterType(GetCurrentFilterType()), x => GetCurrentFilterType());
         }
         object GetMessageForFocusedRow(FocusedRowChangedEventArgs x) {
-            if(x.FocusedRowHandle >= 0) return (Message) tileView.GetFocusedRow();
+            if(x.FocusedRowHandle >= 0) return (Message)tileView.GetFocusedRow();
             return null;
         }
         Func<ItemClickEventArgs, object> EventArgsToSortCommandParameter() {
@@ -134,7 +134,7 @@ namespace DevExpress.WindowsMailClient.Win.Modules {
                     x.Item.ImageIndex = x.Item.ImageIndex == 1 ? 0 : 1;
                 }
                 popupMenu.EndUpdate();
-                return new SortInfo() { Column = tileView.Columns[(string) x.Item.Tag], Order = x.Item.ImageIndex == 1 ? ColumnSortOrder.Ascending : ColumnSortOrder.Descending };
+                return new SortInfo() { Column = tileView.Columns[(string)x.Item.Tag], Order = x.Item.ImageIndex == 1 ? ColumnSortOrder.Ascending : ColumnSortOrder.Descending };
             };
         }
         void ViewModel_MessageDeleted(object sender, EventArgs e) {
@@ -232,7 +232,7 @@ namespace DevExpress.WindowsMailClient.Win.Modules {
         void OnNotificationClick(object notificationId) {
         }
         #endregion
- 
+
         #region UI Customization and Drawing
 
         protected override void WndProc(ref System.Windows.Forms.Message m) {
@@ -272,7 +272,7 @@ namespace DevExpress.WindowsMailClient.Win.Modules {
             this.labelControl1.AppearanceDropDownPressed.ForeColor = UnreadTextColor;
         }
         void tileView_ItemCustomize(object sender, TileViewItemCustomizeEventArgs e) {
-            bool isRead = (int) tileView.GetRowCellValue(e.RowHandle, colRead) == 1;
+            bool isRead = (int)tileView.GetRowCellValue(e.RowHandle, colRead) == 1;
             if(!isRead) {
                 e.Item["Read"].Appearance.Normal.BackColor = UnreadTextColor;
                 e.Item["Date"].Appearance.Normal.ForeColor = UnreadTextColor;
@@ -282,7 +282,7 @@ namespace DevExpress.WindowsMailClient.Win.Modules {
         }
         void tileView_ContextButtonCustomize(object sender, TileViewContextButtonCustomizeEventArgs e) {
             if(e.Item.Name == "cbFlag") {
-                bool flagged = (int) tileView.GetRowCellValue(e.RowHandle, colFlag) % 2 != 0;
+                bool flagged = (int)tileView.GetRowCellValue(e.RowHandle, colFlag) % 2 != 0;
                 e.Item.AllowGlyphSkinning = DefaultBoolean.False;
                 e.Item.Visibility = flagged ? ContextItemVisibility.Visible : ContextItemVisibility.Auto;
             }
@@ -290,7 +290,8 @@ namespace DevExpress.WindowsMailClient.Win.Modules {
                 bool priority = (int)tileView.GetRowCellValue(e.RowHandle, colPriority) == 2;
                 e.Item.AllowGlyphSkinning = DefaultBoolean.False;
                 e.Item.Visibility = priority ? ContextItemVisibility.Visible : ContextItemVisibility.Hidden;
-            } else {
+            }
+            else {
                 e.Item.AllowGlyphSkinning = DefaultBoolean.True;
                 e.Item.AppearanceHover.ForeColor = e.Item.AppearanceNormal.ForeColor = ((ITileControl)tileView.GetViewInfo()).ViewInfo.AppearanceText.ForeColor;
             }

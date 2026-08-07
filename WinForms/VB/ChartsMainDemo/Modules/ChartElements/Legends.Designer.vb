@@ -62,6 +62,12 @@ Namespace DevExpress.XtraCharts.Demos
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((xyDiagramPane1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem3), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((lineSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series2), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,7 +112,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
             Me.tabNavigationPageOptions.Margin = New System.Windows.Forms.Padding(0)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 547)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 541)
             ' 
             ' chart
             ' 
@@ -122,11 +128,13 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisX.VisibleInPanesSerializable = "0"
             xyDiagram1.AxisX.VisualRange.Auto = False
             xyDiagram1.AxisX.VisualRange.AutoSideMargins = False
+            xyDiagram1.AxisX.VisualRange.EndSideMargin = 0R
+            xyDiagram1.AxisX.VisualRange.StartSideMargin = 0R
             xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "00:00:09"
             xyDiagram1.AxisX.VisualRange.MinValueSerializable = "00:00:00"
-            xyDiagram1.AxisX.VisualRange.SideMarginsValue = 0R
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0R
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram1.AxisY.GridLines.MinorVisible = True
             xyDiagram1.AxisY.Label.TextPattern = "{V}MiB"
             xyDiagram1.AxisY.Title.Text = ""
@@ -250,7 +258,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(244, 313, 650, 400)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 547)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 541)
             Me.layoutControl.TabIndex = 0
             Me.layoutControl.Text = "layoutControl1"
             ' 
@@ -258,14 +266,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.radioGroupMarkerMode.AutoSizeInLayoutControl = True
             Me.radioGroupMarkerMode.EditValue = 0
-            Me.radioGroupMarkerMode.Location = New System.Drawing.Point(12, 31)
+            Me.radioGroupMarkerMode.Location = New System.Drawing.Point(12, 34)
             Me.radioGroupMarkerMode.Name = "radioGroupMarkerMode"
             Me.radioGroupMarkerMode.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupMarkerMode.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupMarkerMode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupMarkerMode.Properties.Columns = 1
             Me.radioGroupMarkerMode.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Marker"), New DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Check Box"), New DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Check Box and Marker"), New DevExpress.XtraEditors.Controls.RadioGroupItem(3, "Marker and Check Box"), New DevExpress.XtraEditors.Controls.RadioGroupItem(4, "None")})
-            Me.radioGroupMarkerMode.Size = New System.Drawing.Size(217, 83)
+            Me.radioGroupMarkerMode.Size = New System.Drawing.Size(217, 128)
             Me.radioGroupMarkerMode.StyleController = Me.layoutControl
             Me.radioGroupMarkerMode.TabIndex = 4
             AddHandler Me.radioGroupMarkerMode.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupMarkerMode_SelectedIndexChanged)
@@ -274,14 +282,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.radioGroupLegendMode.AutoSizeInLayoutControl = True
             Me.radioGroupLegendMode.EditValue = 1
-            Me.radioGroupLegendMode.Location = New System.Drawing.Point(12, 157)
+            Me.radioGroupLegendMode.Location = New System.Drawing.Point(12, 208)
             Me.radioGroupLegendMode.Name = "radioGroupLegendMode"
             Me.radioGroupLegendMode.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupLegendMode.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupLegendMode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupLegendMode.Properties.Columns = 1
             Me.radioGroupLegendMode.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Single Legend"), New DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Multiple Pane Bound, Out of Panes"), New DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Multiple Pane Bound, Within Panes"), New DevExpress.XtraEditors.Controls.RadioGroupItem(3, "Single Legend With Custom Items")})
-            Me.radioGroupLegendMode.Size = New System.Drawing.Size(217, 68)
+            Me.radioGroupLegendMode.Size = New System.Drawing.Size(217, 104)
             Me.radioGroupLegendMode.StyleController = Me.layoutControl
             Me.radioGroupLegendMode.TabIndex = 5
             AddHandler Me.radioGroupLegendMode.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupLegendMode_SelectedIndexChanged)
@@ -290,14 +298,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.radioGroupCrosshairContentMode.AutoSizeInLayoutControl = True
             Me.radioGroupCrosshairContentMode.EditValue = 1
-            Me.radioGroupCrosshairContentMode.Location = New System.Drawing.Point(12, 268)
+            Me.radioGroupCrosshairContentMode.Location = New System.Drawing.Point(12, 358)
             Me.radioGroupCrosshairContentMode.Name = "radioGroupCrosshairContentMode"
             Me.radioGroupCrosshairContentMode.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupCrosshairContentMode.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupCrosshairContentMode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupCrosshairContentMode.Properties.Columns = 1
             Me.radioGroupCrosshairContentMode.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Label"), New DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Legend")})
-            Me.radioGroupCrosshairContentMode.Size = New System.Drawing.Size(217, 38)
+            Me.radioGroupCrosshairContentMode.Size = New System.Drawing.Size(217, 56)
             Me.radioGroupCrosshairContentMode.StyleController = Me.layoutControl
             Me.radioGroupCrosshairContentMode.TabIndex = 6
             AddHandler Me.radioGroupCrosshairContentMode.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupCrosshairContentMode_SelectedIndexChanged)
@@ -309,7 +317,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupMarkerMode, Me.layoutControlGroupLegendMode, Me.emptySpaceItem, Me.layoutControlGroupCrosshairContentMode})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 547)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 541)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupMarkerMode
@@ -318,7 +326,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupMarkerMode.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemMarkerMode})
             Me.layoutControlGroupMarkerMode.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupMarkerMode.Name = "layoutControlGroupMarkerMode"
-            Me.layoutControlGroupMarkerMode.Size = New System.Drawing.Size(241, 126)
+            Me.layoutControlGroupMarkerMode.Size = New System.Drawing.Size(241, 174)
             Me.layoutControlGroupMarkerMode.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupMarkerMode.Text = "Marker Mode"
             ' 
@@ -327,17 +335,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemMarkerMode.Control = Me.radioGroupMarkerMode
             Me.layoutControlItemMarkerMode.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemMarkerMode.Name = "layoutControlItemMarkerMode"
-            Me.layoutControlItemMarkerMode.Size = New System.Drawing.Size(221, 87)
-            Me.layoutControlItemMarkerMode.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemMarkerMode.Size = New System.Drawing.Size(221, 132)
             Me.layoutControlItemMarkerMode.TextVisible = False
             ' 
             ' layoutControlGroupLegendMode
             ' 
             Me.layoutControlGroupLegendMode.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupLegendMode.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemLegendMode})
-            Me.layoutControlGroupLegendMode.Location = New System.Drawing.Point(0, 126)
+            Me.layoutControlGroupLegendMode.Location = New System.Drawing.Point(0, 174)
             Me.layoutControlGroupLegendMode.Name = "layoutControlGroupLegendMode"
-            Me.layoutControlGroupLegendMode.Size = New System.Drawing.Size(241, 111)
+            Me.layoutControlGroupLegendMode.Size = New System.Drawing.Size(241, 150)
             Me.layoutControlGroupLegendMode.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupLegendMode.Text = "Legend Mode"
             ' 
@@ -346,25 +353,22 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLegendMode.Control = Me.radioGroupLegendMode
             Me.layoutControlItemLegendMode.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLegendMode.Name = "layoutControlItemLegendMode"
-            Me.layoutControlItemLegendMode.Size = New System.Drawing.Size(221, 72)
-            Me.layoutControlItemLegendMode.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemLegendMode.Size = New System.Drawing.Size(221, 108)
             Me.layoutControlItemLegendMode.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
-            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 318)
+            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 426)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 229)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 115)
             ' 
             ' layoutControlGroupCrosshairContentMode
             ' 
             Me.layoutControlGroupCrosshairContentMode.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupCrosshairContentMode.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemCrosshairContentMode})
-            Me.layoutControlGroupCrosshairContentMode.Location = New System.Drawing.Point(0, 237)
+            Me.layoutControlGroupCrosshairContentMode.Location = New System.Drawing.Point(0, 324)
             Me.layoutControlGroupCrosshairContentMode.Name = "layoutControlGroupCrosshairContentMode"
-            Me.layoutControlGroupCrosshairContentMode.Size = New System.Drawing.Size(241, 81)
+            Me.layoutControlGroupCrosshairContentMode.Size = New System.Drawing.Size(241, 102)
             Me.layoutControlGroupCrosshairContentMode.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupCrosshairContentMode.Text = "Crosshair Content Mode"
             ' 
@@ -373,8 +377,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemCrosshairContentMode.Control = Me.radioGroupCrosshairContentMode
             Me.layoutControlItemCrosshairContentMode.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemCrosshairContentMode.Name = "layoutControlItemCrosshairContentMode"
-            Me.layoutControlItemCrosshairContentMode.Size = New System.Drawing.Size(221, 42)
-            Me.layoutControlItemCrosshairContentMode.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemCrosshairContentMode.Size = New System.Drawing.Size(221, 60)
             Me.layoutControlItemCrosshairContentMode.TextVisible = False
             ' 
             ' LegendsDemo
@@ -396,6 +399,12 @@ Namespace DevExpress.XtraCharts.Demos
             CType((xyDiagramPane1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend3), System.ComponentModel.ISupportInitialize).EndInit()
             CType((lineSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((lineSeriesView2), System.ComponentModel.ISupportInitialize).EndInit()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 using DevExpress.MailClient.Win.Forms;
 using DevExpress.Utils.About;
 using DevExpress.Utils.Taskbar;
@@ -18,10 +19,10 @@ using DevExpress.XtraRichEdit;
 namespace DevExpress.MailClient.Win {
     public partial class frmMain : RibbonForm {
         MailType currentMailType = MailType.Inbox;
-        ModulesNavigator modulesNavigator;
+        readonly ModulesNavigator modulesNavigator;
         internal FilterColumnsManager FilterColumnManager;
-        ZoomManager zoomManager;
-        List<BarItem> AllowCustomizationMenuList = new List<BarItem>();
+        readonly ZoomManager zoomManager;
+        readonly List<BarItem> AllowCustomizationMenuList = new List<BarItem>();
         public frmMain() {
             TaskbarHelper.InitDemoJumpList(TaskbarAssistant.Default, this);
             InitializeComponent();
@@ -37,9 +38,10 @@ namespace DevExpress.MailClient.Win {
         void NavigationInitialize() {
             foreach(NavBarGroup group in navBarControl1.Groups) {
                 if(!group.Visible) continue;
-                BarButtonItem item = new BarButtonItem(ribbonControl1.Manager, group.Caption);
-                item.Tag = group;
-                item.Glyph = group.SmallImage;
+                BarButtonItem item = new BarButtonItem(ribbonControl1.Manager, group.Caption) {
+                    Tag = group,
+                    Glyph = group.SmallImage
+                };
                 item.ItemClick += new ItemClickEventHandler(item_ItemClick);
                 bsiNavigation.ItemLinks.Add(item);
             }
@@ -109,13 +111,14 @@ namespace DevExpress.MailClient.Win {
             bbiCloseSearch.Hint = Properties.Resources.SearchCloseDescription;
             bbiReminder.ImageOptions.SvgImage = Properties.Resources.Reminder;
 
-            List<BarButtonItem> items = new List<BarButtonItem>();
-            items.Add(bbiSubjectColumn);
-            items.Add(bbiFromColumn);
-            items.Add(bbiDateColumn);
-            items.Add(bbiPriorityColumn);
-            items.Add(bbiAttachmentColumn);
-            items.Add(bbiDate);
+            List<BarButtonItem> items = new List<BarButtonItem> {
+                bbiSubjectColumn,
+                bbiFromColumn,
+                bbiDateColumn,
+                bbiPriorityColumn,
+                bbiAttachmentColumn,
+                bbiDate
+            };
             FilterColumnManager = new FilterColumnsManager(items);
             ucContacts1.SynchronizeGalleryItems(rgbiCurrentView);
             ucCalendar1.SetBarController(schedulerBarController1);
@@ -168,7 +171,7 @@ namespace DevExpress.MailClient.Win {
             bbiUnreadRead.Enabled = enabled;
             bbiPriority.Enabled = enabled;
         }
-        internal void EnableMail(bool enabled, bool unread) {
+        internal void EnableMail(bool enabled) {
             bbiReply.Enabled = enabled && currentMailType == MailType.Inbox;
             bbiReplyAll.Enabled = enabled && currentMailType == MailType.Inbox;
             bbiForward.Enabled = enabled && currentMailType == MailType.Inbox;
@@ -220,20 +223,21 @@ namespace DevExpress.MailClient.Win {
             }
         }
         internal void ShowInfo(int? count) {
-            if(count == null) bsiInfo.Caption = string.Empty;
+            if(count == null)
+                bsiInfo.Caption = string.Empty;
             else
                 bsiInfo.Caption = string.Format(Properties.Resources.InfoText, count.Value);
-            HtmlText = string.Format("{0}{1}", GetModuleName(), GetModulePartName());
+            HtmlText = $"{GetModuleName()}{GetModulePartName()}";
         }
         string GetModuleName() {
-            if(string.IsNullOrEmpty(modulesNavigator.CurrentModule.PartName)) return CurrentModuleName;
-#pragma warning disable DX0025 // not a file path
-            return string.Format("<b>{0}</b>", CurrentModuleName);
-#pragma warning restore DX0025 // not a file path
+            if(string.IsNullOrEmpty(modulesNavigator.CurrentModule.PartName))
+                return CurrentModuleName;
+            return $"<b>{CurrentModuleName}</b>";
         }
         string GetModulePartName() {
-            if(string.IsNullOrEmpty(modulesNavigator.CurrentModule.PartName)) return null;
-            return string.Format(" - {0}", modulesNavigator.CurrentModule.PartName);
+            if(string.IsNullOrEmpty(modulesNavigator.CurrentModule.PartName))
+                return null;
+            return $" - {modulesNavigator.CurrentModule.PartName}";
         }
         void navBarControl1_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e) {
             object data = GetModuleData((NavBarGroupTagObject)e.Group.Tag);
@@ -287,12 +291,12 @@ namespace DevExpress.MailClient.Win {
             modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", moduleTag));
         }
         void bvbiExit_ItemClick(object sender, BackstageViewItemEventArgs e) {
-            this.Close();
+            Close();
         }
         void galleryControlGallery1_ItemClick(object sender, GalleryItemClickEventArgs e) {
             if(TagResources.OpenCalendar.Equals(e.Item.Tag)) {
                 ribbonControl1.HideApplicationButtonContentControl();
-                this.Refresh();
+                Refresh();
                 navBarControl1.ActiveGroup = nbgCalendar;
             }
             modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
@@ -323,13 +327,13 @@ namespace DevExpress.MailClient.Win {
         void rgbiCurrentViewTasks_GalleryItemClick(object sender, GalleryItemClickEventArgs e) {
             modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
         }
-        private void ucCalendar1_VisibleChanged(object sender, EventArgs e) {
+        void ucCalendar1_VisibleChanged(object sender, EventArgs e) {
             if(ucCalendar1.Visible)
                 ucCalendar1.UpdateTreeListHeight();
         }
         void bvtiPrint_SelectedChanged(object sender, BackstageViewItemEventArgs e) {
             if(backstageViewControl1.SelectedTab == bvtiPrint)
-                this.printControl1.InitPrintingSystem();
+                printControl1.InitPrintingSystem();
         }
         void ribbonControl1_BeforeApplicationButtonContentControlShow(object sender, EventArgs e) {
             if(backstageViewControl1.SelectedTab == bvtiPrint) backstageViewControl1.SelectedTab = bvtiInfo;
@@ -346,9 +350,8 @@ namespace DevExpress.MailClient.Win {
                 e.CustomizationMenu.RemoveLink(e.CustomizationMenu.ItemLinks[0]);
         }
         void ucMailTree1_UCTreeDragDrop(object sender, UCTreeDragDropEventArgs e) {
-            if(modulesNavigator.CurrentModule is Mail) {
-                ((Mail)modulesNavigator.CurrentModule).OnMoveEmails(ucMailTree1, e);
-            }
+            if(modulesNavigator.CurrentModule is Mail mail)
+                mail.OnMoveEmails(ucMailTree1, e);
         }
         void biRename_ItemClick(object sender, ItemClickEventArgs e) {
             ucMailTree1.StartEditing();
@@ -365,5 +368,21 @@ namespace DevExpress.MailClient.Win {
                 }
             }
         }
+        protected override void OnShown(EventArgs e) {
+            base.OnShown(e);
+            if(MainFormHelper.TakeScreens) {
+                MainFormHelper.TakeAllScreens(TakeModule, 4, //main module and 3 submodules
+                    this, pcMain, TakeModuleInterval, demoName: typeof(frmMain).Assembly.GetName().Name);
+            }
+        }
+        string TakeModule(int num) {
+            NavBarGroup[] groups = { nbgMail, nbgCalendar, nbgContacts, nbgTasks };
+            NavBarGroup group = groups[num];
+            if(navBarControl1.ActiveGroup != group)
+                navBarControl1.ActiveGroup = group;
+            MainFormHelper.UpdateTakeScreenSettings(pcMain);
+            return group.Caption;
+        }
+        static int TakeModuleInterval(int num) => 1000;
     }
 }

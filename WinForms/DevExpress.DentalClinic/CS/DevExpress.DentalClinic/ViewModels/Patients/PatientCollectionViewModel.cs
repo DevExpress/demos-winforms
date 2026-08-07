@@ -6,6 +6,7 @@
     using System.Threading.Tasks;
     using DevExpress.DentalClinic.Model;
     using DevExpress.DentalClinic.View;
+    using DevExpress.DXperience.Demos;
     using DevExpress.Mvvm;
     using DevExpress.Mvvm.POCO;
     using DevExpress.Xpo;
@@ -36,7 +37,7 @@
                             Name = x.FirstName + " " + x.LastName,
                             Phone = x.Phone,
                             LastVisit = x.AppointmentCollection.Where(a => a.Status == AppointmentStatus.Completed).Max(a => a.Date),
-                            NextVisit = x.AppointmentCollection.Where(a => a.Status == AppointmentStatus.Open && a.Date > DateTime.Now).Min(a => a.Date),
+                            NextVisit = x.AppointmentCollection.Where(a => a.Status == AppointmentStatus.Open && a.Date > TutorialConstants.Now).Min(a => a.Date),
                             Status = x.InvoiceCollection.Any(a => a.PaymentStatus == PaymentStatus.Unpaid) ? 0 : 1,
                             Procedures = x.ProcedureCollection.Select(p => new PatientProcedureInfo(p.Appointment) {
                                 Name = p.Procedure.Name,

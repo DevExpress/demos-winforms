@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 using DevExpress.XtraBars.Docking;
 using DevExpress.XtraBars.Docking2010.Views;
 
@@ -27,8 +28,8 @@ namespace DevExpress.XtraCharts.Demos {
         }
         List<WebSitePerformanceIndicatorItem> GetData() {
             List<WebSitePerformanceIndicatorItem> data = new List<WebSitePerformanceIndicatorItem>();
-            DateTime lastDate = DateTime.Now.AddDays(-1);
-            NonCryptographicRandom random = NonCryptographicRandom.System;
+            DateTime lastDate = TutorialConstants.Now.AddDays(-1);
+            NonCryptographicRandom random = TutorialConstants.Random;
             for(int i = 0; i < 30; i++) {
                 int newVisitors = random.Next(18, 77);
                 data.Add(new WebSitePerformanceIndicatorItem() {

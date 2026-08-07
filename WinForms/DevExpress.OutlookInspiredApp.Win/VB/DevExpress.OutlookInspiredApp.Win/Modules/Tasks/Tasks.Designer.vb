@@ -113,7 +113,7 @@ Namespace DevExpress.DevAV.Modules
             Me.ribbonControl.Size = New System.Drawing.Size(1280, 200)
             Me.ribbonControl.StatusBar = Me.ribbonStatusBar1
             Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above
-            Me.hiItemsCount.Caption = "RECORDS: 0"
+            Me.hiItemsCount.Caption = "Records: 0"
             Me.hiItemsCount.Id = 7
             Me.hiItemsCount.Name = "hiItemsCount"
             Me.biResetView.Caption = "Reset View"

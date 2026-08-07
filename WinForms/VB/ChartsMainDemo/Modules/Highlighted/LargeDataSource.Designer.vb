@@ -53,8 +53,8 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 542)
+            Me.tabNavigationPageOptions.Margin = New System.Windows.Forms.Padding(4)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' chart
             ' 
@@ -79,8 +79,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(546, 571)
             Me.chart.TabIndex = 1
             chartTitle1.Text = "Large Data Source"
-            chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            chartTitle1.TitleID = 0
+            chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle2.Text = "Total points count: 50000"
+            chartTitle2.TitleID = 1
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             ' 
             ' layoutControl
@@ -93,15 +95,15 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Location = New System.Drawing.Point(0, 0)
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.Root = Me.layoutControlGroup1
-            Me.layoutControl.Size = New System.Drawing.Size(241, 542)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 0
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' btnAdd500K
             ' 
-            Me.btnAdd500K.Location = New System.Drawing.Point(7, 42)
+            Me.btnAdd500K.Location = New System.Drawing.Point(10, 44)
             Me.btnAdd500K.Name = "btnAdd500K"
-            Me.btnAdd500K.Size = New System.Drawing.Size(227, 22)
+            Me.btnAdd500K.Size = New System.Drawing.Size(221, 22)
             Me.btnAdd500K.StyleController = Me.layoutControl
             Me.btnAdd500K.TabIndex = 4
             Me.btnAdd500K.Text = "Add 500K Points"
@@ -109,22 +111,19 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' btnAdd1M
             ' 
-            Me.btnAdd1M.Location = New System.Drawing.Point(7, 74)
+            Me.btnAdd1M.Location = New System.Drawing.Point(10, 76)
             Me.btnAdd1M.Name = "btnAdd1M"
-            Me.btnAdd1M.Size = New System.Drawing.Size(227, 22)
+            Me.btnAdd1M.Size = New System.Drawing.Size(221, 22)
             Me.btnAdd1M.StyleController = Me.layoutControl
             Me.btnAdd1M.TabIndex = 5
             Me.btnAdd1M.Text = "Add 1M Points"
             AddHandler Me.btnAdd1M.Click, New System.EventHandler(AddressOf Me.btnAdd1M_Click)
             ' 
-            ' btnAdd5M
-            ' 
-            ' 
             ' btnAdd250K
             ' 
-            Me.btnAdd250K.Location = New System.Drawing.Point(7, 10)
+            Me.btnAdd250K.Location = New System.Drawing.Point(10, 12)
             Me.btnAdd250K.Name = "btnAdd250K"
-            Me.btnAdd250K.Size = New System.Drawing.Size(227, 22)
+            Me.btnAdd250K.Size = New System.Drawing.Size(221, 22)
             Me.btnAdd250K.StyleController = Me.layoutControl
             Me.btnAdd250K.TabIndex = 8
             Me.btnAdd250K.Text = "Add 250K Points"
@@ -136,7 +135,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroup1.GroupBordersVisible = False
             Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem1, Me.layoutControlItem2, Me.layoutControlItem3, Me.layoutControlItem5, Me.emptySpaceItem1})
             Me.layoutControlGroup1.Name = "layoutControlGroup1"
-            Me.layoutControlGroup1.Size = New System.Drawing.Size(241, 542)
+            Me.layoutControlGroup1.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroup1.TextVisible = False
             ' 
             ' layoutControlItem1
@@ -145,8 +144,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 34)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 10)
-            Me.layoutControlItem1.Size = New System.Drawing.Size(227, 32)
-            Me.layoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItem1.Size = New System.Drawing.Size(221, 32)
             Me.layoutControlItem1.TextVisible = False
             ' 
             ' layoutControlItem2
@@ -155,8 +153,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem2.Location = New System.Drawing.Point(0, 66)
             Me.layoutControlItem2.Name = "layoutControlItem2"
             Me.layoutControlItem2.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlItem2.Size = New System.Drawing.Size(227, 22)
-            Me.layoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItem2.Size = New System.Drawing.Size(221, 22)
             Me.layoutControlItem2.TextVisible = False
             ' 
             ' layoutControlItem3
@@ -164,8 +161,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem3.Location = New System.Drawing.Point(0, 88)
             Me.layoutControlItem3.Name = "layoutControlItem3"
             Me.layoutControlItem3.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 10, 0)
-            Me.layoutControlItem3.Size = New System.Drawing.Size(227, 32)
-            Me.layoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItem3.Size = New System.Drawing.Size(221, 32)
             Me.layoutControlItem3.TextVisible = False
             ' 
             ' layoutControlItem5
@@ -174,17 +170,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem5.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem5.Name = "layoutControlItem5"
             Me.layoutControlItem5.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 10)
-            Me.layoutControlItem5.Size = New System.Drawing.Size(227, 34)
-            Me.layoutControlItem5.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItem5.Size = New System.Drawing.Size(221, 34)
             Me.layoutControlItem5.TextVisible = False
             ' 
             ' emptySpaceItem1
             ' 
-            Me.emptySpaceItem1.AllowHotTrack = False
             Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 120)
             Me.emptySpaceItem1.Name = "emptySpaceItem1"
-            Me.emptySpaceItem1.Size = New System.Drawing.Size(227, 406)
-            Me.emptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem1.Size = New System.Drawing.Size(221, 398)
             ' 
             ' LargeDataSourceDemo
             ' 
@@ -192,7 +185,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.Controls.Add(Me.chart)
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "LargeDataSourceDemo"
             Me.Controls.SetChildIndex(Me.sidePanelOptions, 0)
             Me.Controls.SetChildIndex(Me.chart, 0)

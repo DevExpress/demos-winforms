@@ -2,6 +2,7 @@ Imports System
 Imports System.Collections.Generic
 Imports System.Drawing
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.XtraEditors.Controls
 
 Namespace DevExpress.XtraCharts.Demos
@@ -29,7 +30,7 @@ Namespace DevExpress.XtraCharts.Demos
         End Sub
 
         Private Sub AddData()
-            Dim random As NonCryptographicRandom = NonCryptographicRandom.System
+            Dim random As NonCryptographicRandom = TutorialConstants.Random
             Dim points As List(Of SimpleDataPoint()) = New List(Of SimpleDataPoint())() From {PointGenerator.GenerateCluster(random, random.Next(20, 70), random.Next(120, 180), random.Next(0, 10), random.Next(70, 120), 2000), PointGenerator.GenerateCluster(random, random.Next(0, 10), random.Next(70, 120), random.Next(40, 80), random.Next(160, 200), 2000), PointGenerator.GenerateCluster(random, random.Next(60, 100), random.Next(160, 200), random.Next(40, 80), random.Next(160, 200), 2000)}
             For i As Integer = 0 To points.Count - 1
                 CType(chart.Series(i * 2).DataAdapter, DataSourceAdapter).DataSource = points(i)

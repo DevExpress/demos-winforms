@@ -1,7 +1,5 @@
 using System;
 using System.Windows.Forms;
-using DevExpress.Utils.Drawing.Helpers;
-using DevExpress.WindowsMailClient.Win.ViewModels;
 using DevExpress.XtraEditors;
 
 namespace DevExpress.WindowsMailClient.Win.Modules {

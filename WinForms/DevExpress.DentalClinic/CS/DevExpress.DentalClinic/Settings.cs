@@ -1,24 +1,19 @@
-﻿namespace DevExpress.DentalClinic.Properties
-{
-    using DevExpress.XtraEditors;
+﻿namespace DevExpress.DentalClinic.Properties {
     using System.ComponentModel;
     using System.Configuration;
+    using DevExpress.XtraEditors;
 
-    public sealed partial class Settings
-    {
-        protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
-        {
+    public sealed partial class Settings {
+        protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e) {
             base.OnSettingsLoaded(sender, e);
             ApplySettings();
         }
-        protected override void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
+        protected override void OnPropertyChanged(object sender, PropertyChangedEventArgs e) {
             base.OnPropertyChanged(sender, e);
-            if (e.PropertyName == nameof(Settings.DarkTheme) || e.PropertyName == nameof(Settings.CompactUI))
+            if(e.PropertyName == nameof(Settings.DarkTheme) || e.PropertyName == nameof(Settings.CompactUI))
                 ApplySettings();
         }
-        static void ApplySettings()
-        {
+        static void ApplySettings() {
             var palette = Settings.Default.DarkTheme ?
                 "Dark Palette" : "Light Palette";
             XtraEditors.WindowsFormsSettings.DefaultLookAndFeel.SetSkinStyle(LookAndFeel.SkinStyle.Bezier, palette);

@@ -1,14 +1,15 @@
-﻿using DevExpress.DentalClinic.ViewModel;
-using DevExpress.DentalClinic.Views.Scheduler;
-using DevExpress.LookAndFeel;
-using DevExpress.Utils;
-using DevExpress.XtraEditors;
-using DevExpress.XtraScheduler;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using DevExpress.DentalClinic.ViewModel;
+using DevExpress.DentalClinic.Views.Scheduler;
+using DevExpress.DXperience.Demos;
+using DevExpress.LookAndFeel;
+using DevExpress.Utils;
+using DevExpress.XtraEditors;
+using DevExpress.XtraScheduler;
 
 namespace DevExpress.DentalClinic.View {
     public partial class SchedulerView : XtraUserControl {
@@ -18,7 +19,7 @@ namespace DevExpress.DentalClinic.View {
             InitializeColoredStatuses();
             if(!mvvmContext1.IsDesignMode)
                 InitializeBindings();
-            schedulerControl.Start = DateTime.Today;
+            schedulerControl.Start = TutorialConstants.Today;
             schedulerControl.TimelineView.Scales.ForEach(x => x.Width = 200);
             schedulerControl.OptionsView.ResourceCategories.ResourceDisplayStyle = ResourceDisplayStyle.Tabs;
             schedulerControl.OptionsView.ResourceCategories.AppointmentDisplayMode = AppointmentDisplayMode.SelectedResource;
@@ -140,11 +141,9 @@ namespace DevExpress.DentalClinic.View {
             fluentAPI.SetBinding(xpBindingSource2, x => x.DataSource, x => x.Doctors);
             fluentAPI.SetTrigger(x => x.ReloadResource, (s) => GroupResources());
             fluentAPI.WithEvent<AppointmentFormEventArgs>(schedulerControl, "EditAppointmentFormShowing")
-                .EventToCommand(x => x.CreateOrEditAppointment, args =>
-                {
+                .EventToCommand(x => x.CreateOrEditAppointment, args => {
                     args.Handled = true;
-                    return new AppointmentInfo()
-                    {
+                    return new AppointmentInfo() {
                         Id = args.Appointment.Id,
                         Date = args.Appointment.Start,
                         ResourceId = schedulerControl.SelectedResource.Id

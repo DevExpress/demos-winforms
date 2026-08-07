@@ -33,6 +33,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart = New DevExpress.XtraCharts.ChartControl()
             CType((Me.chart), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((lineSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series2), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,7 +62,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.[Default]
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0R
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram1.AxisY.CrosshairAxisLabelOptions.Pattern = "{V:0.##}%"
             xyDiagram1.AxisY.GridLines.MinorVisible = True
             xyDiagram1.AxisY.Label.TextPattern = " {V:0.##}%"
@@ -73,9 +75,10 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = False
             xyDiagram1.AxisY.WholeRange.Auto = False
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = False
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0R
             xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "100"
             xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0.01"
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0R
             Me.chart.Diagram = xyDiagram1
             Me.chart.Dock = System.Windows.Forms.DockStyle.Fill
             Me.chart.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center
@@ -95,6 +98,7 @@ Namespace DevExpress.XtraCharts.Demos
             legend1.BackColor = System.Drawing.Color.Transparent
             legend1.Border.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             legend1.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight
+            legend1.LegendID = 0
             legend1.Margins.Top = 0
             legend1.MarkerMode = DevExpress.XtraCharts.LegendMarkerMode.CheckBox
             legend1.Name = "Legend1"
@@ -108,23 +112,27 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Name = "chart"
             series1.CrosshairLabelPattern = "{S}: {V:0.##}%"
             series1.Name = "Headphones 1 90 dB SPL"
+            series1.SeriesID = 0
             lineSeriesView1.LineMarkerOptions.Size = 5
             lineSeriesView1.LineStyle.Thickness = 3
             series1.View = lineSeriesView1
             series2.CrosshairLabelPattern = "{S}: {V:0.##}%"
             series2.Name = "Headphones 1 100 dB SPL"
+            series2.SeriesID = 1
             lineSeriesView2.LineMarkerOptions.Size = 5
             lineSeriesView2.LineStyle.Thickness = 3
             series2.View = lineSeriesView2
             series3.CrosshairLabelPattern = "{S}: {V:0.##}%"
             series3.LegendName = "Legend1"
             series3.Name = "Headphones 2 90 dB SPL"
+            series3.SeriesID = 2
             lineSeriesView3.LineMarkerOptions.Size = 5
             lineSeriesView3.LineStyle.Thickness = 3
             series3.View = lineSeriesView3
             series4.CrosshairLabelPattern = "{S}: {V:0.##}%"
             series4.LegendName = "Legend1"
             series4.Name = "Headphones 2 100 dB SPL"
+            series4.SeriesID = 3
             lineSeriesView4.LineMarkerOptions.Size = 5
             lineSeriesView4.LineStyle.Thickness = 3
             series4.View = lineSeriesView4
@@ -132,8 +140,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(784, 432)
             Me.chart.TabIndex = 0
             chartTitle1.Text = "Headphones comparison"
-            chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            chartTitle1.TitleID = 0
+            chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle2.Text = "Unwanted harmonics"
+            chartTitle2.TitleID = 1
             chartTitle2.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             ' 
@@ -144,6 +154,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.Controls.Add(Me.chart)
             Me.Name = "LogarithmicScaleDemo"
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((lineSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((lineSeriesView2), System.ComponentModel.ISupportInitialize).EndInit()

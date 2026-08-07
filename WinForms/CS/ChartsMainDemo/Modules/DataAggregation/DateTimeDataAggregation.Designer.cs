@@ -49,11 +49,13 @@
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             series1.CrosshairLabelPattern = "{A:d} : {V:F4}";
             series1.Name = "Random Data";
+            series1.SeriesID = 0;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.chart.Size = new System.Drawing.Size(784, 432);
             this.chart.TabIndex = 4;
             chartTitle1.Text = "Data Aggregation (50000 points)";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.AxisVisualRangeChanged += new System.EventHandler<DevExpress.XtraCharts.AxisRangeChangedEventArgs>(this.chart_AxisVisualRangeChanged);

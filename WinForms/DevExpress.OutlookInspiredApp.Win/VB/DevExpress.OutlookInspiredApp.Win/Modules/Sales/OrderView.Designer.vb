@@ -273,7 +273,7 @@ Namespace DevExpress.DevAV.Modules
             Me.ItemForTitleLabel.Location = New System.Drawing.Point(0, 63)
             Me.ItemForTitleLabel.Name = "ItemForTitleLabel"
             Me.ItemForTitleLabel.Size = New System.Drawing.Size(141, 31)
-            Me.ItemForTitleLabel.Text = "INVOICE #"
+            Me.ItemForTitleLabel.Text = "Invoice #"
             Me.ItemForTitleLabel.TextSize = New System.Drawing.Size(69, 20)
             Me.ItemForCompanyImagePictureEdit.Control = Me.companyImagePictureEdit
             Me.ItemForCompanyImagePictureEdit.Location = New System.Drawing.Point(0, 0)

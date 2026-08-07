@@ -24,7 +24,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
                 Next item
                 reportDesigner1.OpenReport(report)
                 MainRibbon.AutoHideEmptyItems = True
-                MainRibbon.SelectedPage = MainRibbon.MergedPages.GetPageByText("VIEW")
+                MainRibbon.SelectedPage = MainRibbon.MergedPages.GetPageByText("View")
                 MainRibbon.SelectedPage = MainRibbon.MergedPages.GetPageByName(ribbonPagePreview.Name)
                 Dim reportControl = TryCast(reportDesigner1.ActiveDesignPanel.GetService(GetType(DevExpress.XtraReports.Design.ReportTabControl)), DevExpress.XtraReports.Design.ReportTabControl)
                 If reportControl Is Nothing OrElse reportControl.PreviewControl Is Nothing Then

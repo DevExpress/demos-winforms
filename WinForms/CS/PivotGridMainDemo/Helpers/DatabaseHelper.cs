@@ -31,7 +31,6 @@ namespace DevExpress.XtraPivotGrid.Demos.Helpers {
     public delegate void DataSetFilledCallback(DataSet dataSet);
     //
     public static class DatabaseHelper {
-        readonly static NonCryptographicRandom random = NonCryptographicRandom.Default;
         readonly static BackgroundWorker worker = new BackgroundWorker();
         static readonly string[] FirstNames = { "Julia", "Stephanie", "Alex", "John", "Curtis", "Keith", "Timothy", "Jack", "Miranda", "Alice" };
         static readonly string[] LastNames = { "Black", "White", "Brown", "Smith", "Cooper", "Parker", "Walker", "Hunter", "Burton", "Douglas", "Fox", "Simpson" };
@@ -66,9 +65,9 @@ namespace DevExpress.XtraPivotGrid.Demos.Helpers {
                     uow.ClearDatabase();
                 }
                 catch { }
-                int salesPersonCount = random.Next(40, 50);
-                int customersCount = random.Next(40, 50);
-                int productsCount = random.Next(80, 100);
+                int salesPersonCount = TutorialConstants.Random.Next(40, 50);
+                int customersCount = TutorialConstants.Random.Next(40, 50);
+                int productsCount = TutorialConstants.Random.Next(80, 100);
                 List<string> peopleNames = GeneratePeopleNames(salesPersonCount + customersCount);
                 List<string> fullProductNames = GenerateProductNames(productsCount);
                 int indexPersonName = 0;
@@ -88,15 +87,15 @@ namespace DevExpress.XtraPivotGrid.Demos.Helpers {
                     categories.Add(new Category(uow, CategoryNames[i]));
                 XPCollection<Product> products = new XPCollection<Product>(uow);
                 for(int i = 0; i < productsCount; i++)
-                    products.Add(new Product(uow, fullProductNames[i], categories[random.Next(categories.Count)], random.Next(500)));
+                    products.Add(new Product(uow, fullProductNames[i], categories[TutorialConstants.Random.Next(categories.Count)], TutorialConstants.Random.Next(500)));
 
                 do {
                     for(int k = 0; k < 300; k++) {
-                        Order order = new Order(uow, salesPeople[random.Next(salesPeople.Count)], customers[random.Next(customers.Count)], GetDate());
-                        int salesCount = rowsRemaining >= 5 ? random.Next(1, 6) : rowsRemaining;
+                        Order order = new Order(uow, salesPeople[TutorialConstants.Random.Next(salesPeople.Count)], customers[TutorialConstants.Random.Next(customers.Count)], GetDate());
+                        int salesCount = rowsRemaining >= 5 ? TutorialConstants.Random.Next(1, 6) : rowsRemaining;
                         for(int j = 0; j < salesCount; j++) {
-                            Product product = products[random.Next(products.Count)];
-                            new Sale(uow, order, product, random.Next(1, 100), GetProductPrice(product));
+                            Product product = products[TutorialConstants.Random.Next(products.Count)];
+                            new Sale(uow, order, product, TutorialConstants.Random.Next(1, 100), GetProductPrice(product));
                             rowsRemaining--;
                         }
                     }
@@ -120,16 +119,16 @@ namespace DevExpress.XtraPivotGrid.Demos.Helpers {
             return names.ToList();
         }
         static string GeneratePeopleName() {
-            return FirstNames[random.Next(FirstNames.Length)] + " " + LastNames[random.Next(LastNames.Length)];
+            return FirstNames[TutorialConstants.Random.Next(FirstNames.Length)] + " " + LastNames[TutorialConstants.Random.Next(LastNames.Length)];
         }
         static string GenerateProductName() {
-            return Adjectives[random.Next(Adjectives.Length)] + " " + ProductNames[random.Next(ProductNames.Length)];
+            return Adjectives[TutorialConstants.Random.Next(Adjectives.Length)] + " " + ProductNames[TutorialConstants.Random.Next(ProductNames.Length)];
         }
         static decimal GetProductPrice(Product product) {
-            return product.Price * (decimal)(0.5 + random.NextDouble());
+            return product.Price * (decimal)(0.5 + TutorialConstants.Random.NextDouble());
         }
         static DateTime GetDate() {
-            return new DateTime(random.Next(2007, 2015), random.Next(1, 13), random.Next(1, 28));
+            return new DateTime(TutorialConstants.Random.Next(2007, 2015), TutorialConstants.Random.Next(1, 13), TutorialConstants.Random.Next(1, 28));
         }
         public static PivotGridDemoDBEntities GetContext() {
             PivotGridDemoDBEntities context = new PivotGridDemoDBEntities(ServerParameters.GetDBConnectionString());

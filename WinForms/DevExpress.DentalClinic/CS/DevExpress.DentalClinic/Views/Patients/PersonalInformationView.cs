@@ -9,8 +9,6 @@ using DevExpress.Mvvm;
 using DevExpress.Utils;
 using DevExpress.Utils.Helpers;
 using DevExpress.XtraEditors;
-using DevExpress.XtraGrid.Views.Tile;
-using DevExpress.XtraGrid.Views.Tile.ViewInfo;
 using DevExpress.XtraGrid.Views.WinExplorer;
 using DevExpress.XtraGrid.Views.WinExplorer.ViewInfo;
 

@@ -123,7 +123,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' documentGroup
             ' 
@@ -168,19 +168,19 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(941, 150, 650, 400)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 2
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' comboBoxEditReductionLevel
             ' 
             Me.comboBoxEditReductionLevel.EditValue = "Close"
-            Me.comboBoxEditReductionLevel.Location = New System.Drawing.Point(95, 141)
+            Me.comboBoxEditReductionLevel.Location = New System.Drawing.Point(104, 148)
             Me.comboBoxEditReductionLevel.Name = "comboBoxEditReductionLevel"
             Me.comboBoxEditReductionLevel.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditReductionLevel.Properties.Items.AddRange(New Object() {"Low", "High", "Open", "Close"})
             Me.comboBoxEditReductionLevel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditReductionLevel.Size = New System.Drawing.Size(134, 20)
+            Me.comboBoxEditReductionLevel.Size = New System.Drawing.Size(125, 20)
             Me.comboBoxEditReductionLevel.StyleController = Me.layoutControl
             Me.comboBoxEditReductionLevel.TabIndex = 0
             AddHandler Me.comboBoxEditReductionLevel.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditReductionLevel_SelectedIndexChanged)
@@ -188,12 +188,12 @@ Namespace DevExpress.XtraCharts.Demos
             ' comboBoxEditStockType
             ' 
             Me.comboBoxEditStockType.EditValue = "Both"
-            Me.comboBoxEditStockType.Location = New System.Drawing.Point(95, 54)
+            Me.comboBoxEditStockType.Location = New System.Drawing.Point(104, 58)
             Me.comboBoxEditStockType.Name = "comboBoxEditStockType"
             Me.comboBoxEditStockType.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditStockType.Properties.Items.AddRange(New Object() {"Both", "Close", "Open"})
             Me.comboBoxEditStockType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditStockType.Size = New System.Drawing.Size(134, 20)
+            Me.comboBoxEditStockType.Size = New System.Drawing.Size(125, 20)
             Me.comboBoxEditStockType.StyleController = Me.layoutControl
             Me.comboBoxEditStockType.TabIndex = 2
             AddHandler Me.comboBoxEditStockType.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditStockType_SelectedIndexChanged)
@@ -201,10 +201,10 @@ Namespace DevExpress.XtraCharts.Demos
             ' checkEditWorkDaysOnly
             ' 
             Me.checkEditWorkDaysOnly.EditValue = True
-            Me.checkEditWorkDaysOnly.Location = New System.Drawing.Point(12, 31)
+            Me.checkEditWorkDaysOnly.Location = New System.Drawing.Point(12, 34)
             Me.checkEditWorkDaysOnly.Name = "checkEditWorkDaysOnly"
             Me.checkEditWorkDaysOnly.Properties.Caption = "Workdays Only"
-            Me.checkEditWorkDaysOnly.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditWorkDaysOnly.Size = New System.Drawing.Size(217, 20)
             Me.checkEditWorkDaysOnly.StyleController = Me.layoutControl
             Me.checkEditWorkDaysOnly.TabIndex = 3
             AddHandler Me.checkEditWorkDaysOnly.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditWorkdaysOnly_CheckedChanged)
@@ -212,12 +212,12 @@ Namespace DevExpress.XtraCharts.Demos
             ' comboBoxEditReductionColorMode
             ' 
             Me.comboBoxEditReductionColorMode.EditValue = "Previous to Current Point"
-            Me.comboBoxEditReductionColorMode.Location = New System.Drawing.Point(95, 117)
+            Me.comboBoxEditReductionColorMode.Location = New System.Drawing.Point(104, 124)
             Me.comboBoxEditReductionColorMode.Name = "comboBoxEditReductionColorMode"
             Me.comboBoxEditReductionColorMode.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditReductionColorMode.Properties.Items.AddRange(New Object() {"Previous to Current Point", "Open to Close Value"})
             Me.comboBoxEditReductionColorMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditReductionColorMode.Size = New System.Drawing.Size(134, 20)
+            Me.comboBoxEditReductionColorMode.Size = New System.Drawing.Size(125, 20)
             Me.comboBoxEditReductionColorMode.StyleController = Me.layoutControl
             Me.comboBoxEditReductionColorMode.TabIndex = 6
             AddHandler Me.comboBoxEditReductionColorMode.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditReductionColorMode_SelectedIndexChanged)
@@ -225,12 +225,12 @@ Namespace DevExpress.XtraCharts.Demos
             ' colorPickEditReductionColor
             ' 
             Me.colorPickEditReductionColor.EditValue = System.Drawing.Color.Empty
-            Me.colorPickEditReductionColor.Location = New System.Drawing.Point(95, 213)
+            Me.colorPickEditReductionColor.Location = New System.Drawing.Point(104, 220)
             Me.colorPickEditReductionColor.Name = "colorPickEditReductionColor"
             Me.colorPickEditReductionColor.Properties.AutomaticColor = System.Drawing.Color.Black
             Me.colorPickEditReductionColor.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.colorPickEditReductionColor.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
-            Me.colorPickEditReductionColor.Size = New System.Drawing.Size(134, 20)
+            Me.colorPickEditReductionColor.Size = New System.Drawing.Size(125, 20)
             Me.colorPickEditReductionColor.StyleController = Me.layoutControl
             Me.colorPickEditReductionColor.TabIndex = 7
             AddHandler Me.colorPickEditReductionColor.EditValueChanged, New System.EventHandler(AddressOf Me.colorPickEditReductionColor_EditValueChanged)
@@ -238,12 +238,12 @@ Namespace DevExpress.XtraCharts.Demos
             ' colorPickEditBaseColor
             ' 
             Me.colorPickEditBaseColor.EditValue = System.Drawing.Color.Empty
-            Me.colorPickEditBaseColor.Location = New System.Drawing.Point(95, 189)
+            Me.colorPickEditBaseColor.Location = New System.Drawing.Point(104, 196)
             Me.colorPickEditBaseColor.Name = "colorPickEditBaseColor"
             Me.colorPickEditBaseColor.Properties.AutomaticColor = System.Drawing.Color.Black
             Me.colorPickEditBaseColor.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.colorPickEditBaseColor.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
-            Me.colorPickEditBaseColor.Size = New System.Drawing.Size(134, 20)
+            Me.colorPickEditBaseColor.Size = New System.Drawing.Size(125, 20)
             Me.colorPickEditBaseColor.StyleController = Me.layoutControl
             Me.colorPickEditBaseColor.TabIndex = 8
             AddHandler Me.colorPickEditBaseColor.EditValueChanged, New System.EventHandler(AddressOf Me.colorPickEditBaseColor_EditValueChanged)
@@ -251,12 +251,12 @@ Namespace DevExpress.XtraCharts.Demos
             ' comboBoxEditFillMode
             ' 
             Me.comboBoxEditFillMode.EditValue = "FilledOnReduction"
-            Me.comboBoxEditFillMode.Location = New System.Drawing.Point(95, 165)
+            Me.comboBoxEditFillMode.Location = New System.Drawing.Point(104, 172)
             Me.comboBoxEditFillMode.Name = "comboBoxEditFillMode"
             Me.comboBoxEditFillMode.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditFillMode.Properties.Items.AddRange(New Object() {"FilledOnReduction", "FilledOnIncrease", "AlwaysEmpty", "AlwaysFilled"})
             Me.comboBoxEditFillMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditFillMode.Size = New System.Drawing.Size(134, 20)
+            Me.comboBoxEditFillMode.Size = New System.Drawing.Size(125, 20)
             Me.comboBoxEditFillMode.StyleController = Me.layoutControl
             Me.comboBoxEditFillMode.TabIndex = 9
             AddHandler Me.comboBoxEditFillMode.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditFillMode_SelectedIndexChanged)
@@ -268,7 +268,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupGeneral, Me.emptySpaceItem, Me.layoutControlGroupOptions})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupGeneral
@@ -279,14 +279,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupGeneral.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemStockType, Me.layoutControlItemWorkdaysOnly})
             Me.layoutControlGroupGeneral.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral"
-            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 86)
+            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 90)
             Me.layoutControlGroupGeneral.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupGeneral.Text = "General"
             ' 
             ' layoutControlItemStockType
             ' 
             Me.layoutControlItemStockType.Control = Me.comboBoxEditStockType
-            Me.layoutControlItemStockType.Location = New System.Drawing.Point(0, 23)
+            Me.layoutControlItemStockType.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemStockType.Name = "layoutControlItemStockType"
             Me.layoutControlItemStockType.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemStockType.Text = "Stock Type:"
@@ -298,17 +298,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemWorkdaysOnly.Control = Me.checkEditWorkDaysOnly
             Me.layoutControlItemWorkdaysOnly.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemWorkdaysOnly.Name = "layoutControlItemWorkdaysOnly"
-            Me.layoutControlItemWorkdaysOnly.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemWorkdaysOnly.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemWorkdaysOnly.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemWorkdaysOnly.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
-            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 245)
+            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 252)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 299)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 286)
             ' 
             ' layoutControlGroupOptions
             ' 
@@ -316,9 +313,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupOptions.AppearanceGroup.Options.UseBorderColor = True
             Me.layoutControlGroupOptions.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupOptions.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemReductionColor, Me.layoutControlItemColorMode, Me.layoutControlItemFillMode, Me.layoutControlItemBaseColor, Me.layoutControlItemReductionLevel})
-            Me.layoutControlGroupOptions.Location = New System.Drawing.Point(0, 86)
+            Me.layoutControlGroupOptions.Location = New System.Drawing.Point(0, 90)
             Me.layoutControlGroupOptions.Name = "layoutControlGroupOptions"
-            Me.layoutControlGroupOptions.Size = New System.Drawing.Size(241, 159)
+            Me.layoutControlGroupOptions.Size = New System.Drawing.Size(241, 162)
             Me.layoutControlGroupOptions.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupOptions.Text = "Reduction Color"
             ' 
@@ -386,7 +383,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelCandleStick.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelCandleStick.Name = "dockPanelCandleStick"
             Me.dockPanelCandleStick.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelCandleStick.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelCandleStick.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelCandleStick.Text = "Candle Stick"
             ' 
             ' dockPanelCandleStick_Container
@@ -394,7 +391,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelCandleStick_Container.Controls.Add(Me.chartCandleStick)
             Me.dockPanelCandleStick_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelCandleStick_Container.Name = "dockPanelCandleStick_Container"
-            Me.dockPanelCandleStick_Container.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelCandleStick_Container.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelCandleStick_Container.TabIndex = 0
             ' 
             ' chartCandleStick
@@ -407,20 +404,17 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisX.Interlaced = True
             xyDiagram1.AxisX.Title.Text = "Date"
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1"
-            xyDiagram1.AxisX.VisualRange.Auto = False
-            xyDiagram1.AxisX.VisualRange.AutoSideMargins = False
-            xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "05/04/2018 00:00:00.000"
-            xyDiagram1.AxisX.VisualRange.MinValueSerializable = "04/27/2018 00:00:00.000"
-            xyDiagram1.AxisX.VisualRange.SideMarginsValue = 2R
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 2R
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 2R
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 2R
             xyDiagram1.AxisY.GridLines.MinorVisible = True
             xyDiagram1.AxisY.Title.Text = "US Dollars"
             xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = False
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram1.DependentAxesYRange = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram1.EnableAxisXScrolling = True
             xyDiagram1.EnableAxisXZooming = True
@@ -438,19 +432,22 @@ Namespace DevExpress.XtraCharts.Demos
             series1.Label = stockSeriesLabel1
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series1.Name = "Google Inc."
+            series1.SeriesID = 0
             candleStickSeriesView1.Color = System.Drawing.Color.Black
             candleStickSeriesView1.LineThickness = 1
             series1.View = candleStickSeriesView1
             Me.chartCandleStick.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
-            Me.chartCandleStick.Size = New System.Drawing.Size(788, 545)
+            Me.chartCandleStick.Size = New System.Drawing.Size(788, 548)
             Me.chartCandleStick.TabIndex = 1
             Me.chartCandleStick.TabStop = False
             chartTitle1.Text = "Stock Prices"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle1.TitleID = 0
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle2.Text = "From www.quandl.com"
             chartTitle2.TextColor = System.Drawing.Color.Gray
+            chartTitle2.TitleID = 1
             Me.chartCandleStick.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             ' 
             ' dockPanelStock
@@ -485,14 +482,16 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram2.AxisX.Title.Text = "Date"
             xyDiagram2.AxisX.VisibleInPanesSerializable = "-1"
             xyDiagram2.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram2.AxisX.WholeRange.SideMarginsValue = 2R
+            xyDiagram2.AxisX.WholeRange.EndSideMargin = 2R
+            xyDiagram2.AxisX.WholeRange.StartSideMargin = 2R
             xyDiagram2.AxisY.GridLines.MinorVisible = True
             xyDiagram2.AxisY.Title.Text = "US Dollars"
             xyDiagram2.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram2.AxisY.VisibleInPanesSerializable = "-1"
             xyDiagram2.AxisY.WholeRange.AlwaysShowZeroLevel = False
             xyDiagram2.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram2.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram2.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram2.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram2.DependentAxesYRange = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram2.EnableAxisXScrolling = True
             xyDiagram2.EnableAxisXZooming = True
@@ -509,6 +508,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.Label = stockSeriesLabel2
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series2.Name = "Google Inc."
+            series2.SeriesID = 0
             financialSlideAnimation1.Direction = DevExpress.XtraCharts.AnimationDirection.FromBottom
             elasticEasingFunction1.EasingMode = DevExpress.XtraCharts.EasingMode.Out
             financialSlideAnimation1.EasingFunction = elasticEasingFunction1
@@ -520,11 +520,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStock.TabIndex = 1
             Me.chartStock.TabStop = False
             chartTitle3.Text = "Stock Prices"
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle3.TitleID = 0
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle4.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle4.Text = "From www.quandl.com"
             chartTitle4.TextColor = System.Drawing.Color.Gray
+            chartTitle4.TitleID = 1
             Me.chartStock.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle3, chartTitle4})
             ' 
             ' documentManager

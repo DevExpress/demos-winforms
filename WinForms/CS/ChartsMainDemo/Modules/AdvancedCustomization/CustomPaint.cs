@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 using DevExpress.Utils.Drawing;
 
 namespace DevExpress.XtraCharts.Demos {
@@ -38,11 +39,10 @@ namespace DevExpress.XtraCharts.Demos {
 
         void InitSeries() {
             if(chart.Series.Count > 0) {
-                NonCryptographicRandom random = NonCryptographicRandom.System;
                 chart.Series[0].Points.Clear();
-                chart.Series[0].Points.AddRange(DiagramToPointHelper.CalculatePoints(random, 50, 5, 9));
-                chart.Series[0].Points.AddRange(DiagramToPointHelper.CalculatePoints(random, 50, 13, 5));
-                chart.Series[0].Points.AddRange(DiagramToPointHelper.CalculatePoints(random, 50, 10, 18));
+                chart.Series[0].Points.AddRange(DiagramToPointHelper.CalculatePoints(TutorialConstants.Random, 50, 5, 9));
+                chart.Series[0].Points.AddRange(DiagramToPointHelper.CalculatePoints(TutorialConstants.Random, 50, 13, 5));
+                chart.Series[0].Points.AddRange(DiagramToPointHelper.CalculatePoints(TutorialConstants.Random, 50, 10, 18));
             }
         }
         void ProcessAutoClusters() {

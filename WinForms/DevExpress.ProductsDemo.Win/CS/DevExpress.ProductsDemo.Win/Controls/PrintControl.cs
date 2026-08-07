@@ -1,20 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
+﻿using System;
+using System.Drawing.Printing;
 using System.Windows.Forms;
 using DevExpress.Drawing;
 using DevExpress.Drawing.Printing;
-using DevExpress.XtraPrinting;
-using DevExpress.XtraPrinting.Preview;
+using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars.Ribbon.Gallery;
-using System.Drawing.Printing;
 using DevExpress.XtraEditors.Controls;
-using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
+using DevExpress.XtraPrinting;
 
 namespace DevExpress.ProductsDemo.Win.Controls {
     public partial class PrintControl : RibbonApplicationUserControl {
@@ -57,7 +50,7 @@ namespace DevExpress.ProductsDemo.Win.Controls {
         }
         public void InitPrintingSystem() {
             frmMain frm = BackstageView.Ribbon.FindForm() as frmMain;
-            BarManager manager = frm == null || frm.Ribbon == null? null: frm.Ribbon.Manager;
+            BarManager manager = frm == null || frm.Ribbon == null ? null : frm.Ribbon.Manager;
             ((GalleryDropDown)this.ddbOrientation.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbMargins.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbPaperSize.DropDownControl).Manager = manager;
@@ -65,7 +58,7 @@ namespace DevExpress.ProductsDemo.Win.Controls {
             ((GalleryDropDown)this.ddbPrinter.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbDuplex.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbPrintStyle.DropDownControl).Manager = manager;
-            lciPrintStyle.Visibility = frm.CurrentRichEdit == null ? DevExpress.XtraLayout.Utils.LayoutVisibility.Never : 
+            lciPrintStyle.Visibility = frm.CurrentRichEdit == null ? DevExpress.XtraLayout.Utils.LayoutVisibility.Never :
                 DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
             CreateDocument();
         }
@@ -90,7 +83,8 @@ namespace DevExpress.ProductsDemo.Win.Controls {
                 link.Landscape = GetLandscape();
                 link.Margins = GetMargins();
                 link.CreateDocument();
-            } else {
+            }
+            else {
                 PrintableComponentLink link = new PrintableComponentLink(ps);
                 link.Component = frm.CurrentPrintableComponent;
                 link.PaperKind = GetPaperKind();
@@ -103,7 +97,7 @@ namespace DevExpress.ProductsDemo.Win.Controls {
             e.PrintDocument.PrinterSettings.Copies = (short)this.copySpinEdit.Value;
             GetMargins();
             e.PrintDocument.PrinterSettings.Collate = (bool)this.ddbCollate.Tag;
-            e.PrintDocument.PrinterSettings.Duplex = ((bool)this.ddbDuplex.Tag)? Duplex.Horizontal: Duplex.Simplex;
+            e.PrintDocument.PrinterSettings.Duplex = ((bool)this.ddbDuplex.Tag) ? Duplex.Horizontal : Duplex.Simplex;
         }
         private void zoomTextEdit_EditValueChanged(object sender, EventArgs e) {
             try {
@@ -343,7 +337,8 @@ namespace DevExpress.ProductsDemo.Win.Controls {
                     if(ps.IsDefaultPrinter)
                         defaultPrinter = item;
                 }
-            } catch { }
+            }
+            catch { }
             res.Gallery.ItemCheckedChanged += new GalleryItemEventHandler(OnPrinterGalleryItemCheckedChanged);
             if(defaultPrinter != null)
                 defaultPrinter.Checked = true;
@@ -383,7 +378,7 @@ namespace DevExpress.ProductsDemo.Win.Controls {
             this.ddbPaperSize.ImageOptions.SvgImage = e.Item.ImageOptions.SvgImage;
             this.ddbPaperSize.Text = e.Item.Caption;
             this.ddbPaperSize.Tag = e.Item.Tag;
-            if(this.printControl1.PrintingSystem != null) 
+            if(this.printControl1.PrintingSystem != null)
                 this.printControl1.PrintingSystem.PageSettings.PaperKind = GetPaperKind();
             UpdatePageButtonsEnabledState();
         }
@@ -415,7 +410,7 @@ namespace DevExpress.ProductsDemo.Win.Controls {
             }
             else if(e.Button.Kind == ButtonPredefines.Right) {
                 if(pageIndex < this.printControl1.PrintingSystem.Pages.Count)
-                    pageIndex ++;
+                    pageIndex++;
             }
             this.pageButtonEdit.EditValue = pageIndex;
         }

@@ -1,4 +1,5 @@
 ﻿using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraCharts.Demos {
     public partial class NumericDataAggregationDemo : ChartDemoModule {
@@ -32,12 +33,11 @@ namespace DevExpress.XtraCharts.Demos {
             if(Series != null) {
                 double value = 0;
                 double argument = 1;
-                NonCryptographicRandom random = NonCryptographicRandom.System;
                 Series.Points.BeginUpdate();
                 Series.Points.Clear();
                 for(double i = 0; i < PointCount; i++) {
                     Series.Points.Add(new SeriesPoint(argument, value));
-                    value += (random.NextDouble() * 10.0 - 5.0);
+                    value += (TutorialConstants.Random.NextDouble() * 10.0 - 5.0);
                     argument++;
                 }
                 Series.Points.EndUpdate();

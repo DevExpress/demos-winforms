@@ -83,6 +83,7 @@ Namespace DevExpress.XtraCharts.Demos
             bubbleSeriesLabel1.TextPattern = "{W:0,,.00} M"
             series1.Label = bubbleSeriesLabel1
             series1.Name = "Series 1"
+            series1.SeriesID = 0
             series1.ToolTipPointPattern = "{A}" & Global.Microsoft.VisualBasic.Constants.vbLf & "GDP per capita: {V:0.00}$" & Global.Microsoft.VisualBasic.Constants.vbLf & "Population: {W:0,,.00} M" & Global.Microsoft.VisualBasic.Constants.vbLf & "HPI: {HINT}"
             bubbleSeriesView1.MaxSize = 1.4R
             bubbleSeriesView1.MinSize = 0.6R
@@ -100,6 +101,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(784, 432)
             Me.chart.TabIndex = 2
             chartTitle1.Text = "Happy Planet Index for G20"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             Me.chart.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[True]
             ' 

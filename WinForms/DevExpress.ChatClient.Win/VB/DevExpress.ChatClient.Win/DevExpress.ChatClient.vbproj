@@ -91,6 +91,10 @@
       <HintPath></HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="DevExpress.Tutorials.v26.1">
+      <HintPath></HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -124,9 +128,7 @@
     <PackageReference Include="System.Data.SQLite.EF6">
       <netcore3ignore />
     </PackageReference>
-    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
-      <netcore3ignore />
-    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\AppSettigns.vb" />

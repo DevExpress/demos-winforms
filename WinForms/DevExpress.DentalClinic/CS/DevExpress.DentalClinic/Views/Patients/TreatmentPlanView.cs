@@ -5,6 +5,7 @@ using System.Text;
 using DevExpress.DentalClinic.Model;
 using DevExpress.DentalClinic.ViewModel;
 using DevExpress.DentalClinic.Views.Scheduler;
+using DevExpress.DXperience.Demos;
 using DevExpress.LookAndFeel;
 using DevExpress.Utils;
 using DevExpress.Utils.DragDrop;
@@ -18,7 +19,7 @@ namespace DevExpress.DentalClinic.View {
         public TreatmentPlanView() {
             InitializeComponent();
             InitializeSchedulerLabels();
-            schedulerControl.Start = DateTime.Now;
+            schedulerControl.Start = TutorialConstants.Now;
             if(!mvvmContext1.IsDesignMode)
                 InitializeBindings();
             schedulerControl.TimelineView.Scales.ForEach(x => x.Width = 200);
@@ -129,25 +130,25 @@ namespace DevExpress.DentalClinic.View {
             return (T)tileViewItem.View.GetRow(tileViewItem.RowHandle);
         }
         void OnSchedulerControlPopupMenuShowing(object sender, PopupMenuShowingEventArgs e) {
-            if (e.Menu.Id == SchedulerMenuItemId.AppointmentMenu ||
+            if(e.Menu.Id == SchedulerMenuItemId.AppointmentMenu ||
                 e.Menu.Id == SchedulerMenuItemId.AppointmentDragMenu)
                 e.Menu = null;
         }
         void OnSchedulerControlCustomAppointmentSort(object sender, CustomAppointmentSortEventArgs e) {
             XtraScheduler.Appointment apt1 = e.AppointmentLayoutInfo1.Appointment;
             XtraScheduler.Appointment apt2 = e.AppointmentLayoutInfo2.Appointment;
-            if (!apt2.LabelKey.Equals(apt1.LabelKey)) {
-                if (apt2.LabelKey == null || apt2.LabelKey.Equals(LabelMappingConverter.HighlightLabelId)) {
+            if(!apt2.LabelKey.Equals(apt1.LabelKey)) {
+                if(apt2.LabelKey == null || apt2.LabelKey.Equals(LabelMappingConverter.HighlightLabelId)) {
                     e.Result = 1;
                     return;
                 }
-                if (apt1.LabelKey == null || apt1.LabelKey.Equals(LabelMappingConverter.HighlightLabelId)) {
+                if(apt1.LabelKey == null || apt1.LabelKey.Equals(LabelMappingConverter.HighlightLabelId)) {
                     e.Result = -1;
                     return;
                 }
             }
             e.Result = apt1.Start.CompareTo(apt2.Start);
-            if (e.Result != 0)
+            if(e.Result != 0)
                 return;
             e.Result = -apt2.End.CompareTo(apt1.End);
         }
@@ -207,11 +208,11 @@ namespace DevExpress.DentalClinic.View {
         }
         void OnTileViewCustomColumnDisplayText(object sender, XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e) {
             if(e.Column.FieldName == nameof(Procedure) + "." + nameof(Procedure.Type) && !Object.Equals(e.Value, ProcedureType.General)) {
-                    int toothNumber = (int)tileViewUnsheduledProcedures.GetRowCellValue(e.ListSourceRowIndex, nameof(ProcedureItem.ToothNumber));
-                    e.DisplayText = $"{e.DisplayText} {toothNumber}";
+                int toothNumber = (int)tileViewUnsheduledProcedures.GetRowCellValue(e.ListSourceRowIndex, nameof(ProcedureItem.ToothNumber));
+                e.DisplayText = $"{e.DisplayText} {toothNumber}";
             }
             if(e.Column.FieldName == nameof(Procedure) + "." + nameof(Procedure.Duration))
-                e.DisplayText = $"{e.Value:%h\\:mm}m";            
+                e.DisplayText = $"{e.Value:%h\\:mm}m";
         }
         void OnAppointmentFlyoutShowing(object sender, AppointmentFlyoutShowingEventArgs e) {
             var appointmentData = e.FlyoutData.Appointment.GetSourceObject(schedulerControl.DataStorage) as Model.Appointment;
@@ -227,9 +228,9 @@ namespace DevExpress.DentalClinic.View {
         public Patient Patient { get; set; }
 
         public object Convert(object obj, Type targetType, object parameter) {
-            if (Patient == null)
+            if(Patient == null)
                 return DefaultLabelId;
-            if (obj == Patient || obj == null)
+            if(obj == Patient || obj == null)
                 return HighlightLabelId;
             return DefaultLabelId;
         }

@@ -1,18 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.Utils.MVVM.UI;
 using DevExpress.DevAV.ViewModels;
-using DevExpress.XtraGrid.Views.Base;
-using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraRichEdit;
-using DevExpress.XtraEditors.Controls;
+using DevExpress.Utils.MVVM.UI;
 using DevExpress.XtraBars.Docking2010;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraGrid.Views.Base;
 
 namespace DevExpress.DevAV.Views {
     [ViewType(DevAVDbViewModel.EmployeeMailMergeViewDocumentType)]
@@ -27,10 +18,10 @@ namespace DevExpress.DevAV.Views {
             var fluentAPI = mvvmContext.OfType<EmployeeMailMergeViewModel>();
             fluentAPI.SetObjectDataSourceBinding(employeeBindingSource, x => x.Entities);
             fluentAPI.WithEvent<ColumnView, FocusedRowObjectChangedEventArgs>(advBandedGridView, "FocusedRowObjectChanged")
-                .SetBinding(x => x.SelectedEntity, args => args.Row as Employee, 
+                .SetBinding(x => x.SelectedEntity, args => args.Row as Employee,
                 (gView, entity) => gView.FocusedRowHandle = gView.FindRow(entity));
             
-            fluentAPI.SetTrigger(x => x.SelectedTemplate, template => { UpdateTemplate(template);});
+            fluentAPI.SetTrigger(x => x.SelectedTemplate, template => { UpdateTemplate(template); });
             fluentAPI.SetItemsSourceBinding(cbMailTemplate.Properties,
                 prop => prop.Items, x => x.Templates,
                 (item, template) => object.Equals(item.Value, template),
@@ -65,7 +56,7 @@ namespace DevExpress.DevAV.Views {
         }
 
         private void EmployeeMailMergeView_Load(object sender, EventArgs e) {
-            if (!mvvmContext.IsDesignMode) {
+            if(!mvvmContext.IsDesignMode) {
                 InitBinding();
             }
         }

@@ -121,7 +121,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // documentGroup
             // 
@@ -168,14 +168,14 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(941, 150, 650, 400);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 2;
             this.layoutControl.Text = "layoutControl1";
             // 
             // comboBoxEditReductionLevel
             // 
             this.comboBoxEditReductionLevel.EditValue = "Close";
-            this.comboBoxEditReductionLevel.Location = new System.Drawing.Point(95, 141);
+            this.comboBoxEditReductionLevel.Location = new System.Drawing.Point(104, 148);
             this.comboBoxEditReductionLevel.Name = "comboBoxEditReductionLevel";
             this.comboBoxEditReductionLevel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -185,7 +185,7 @@
             "Open",
             "Close"});
             this.comboBoxEditReductionLevel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditReductionLevel.Size = new System.Drawing.Size(134, 20);
+            this.comboBoxEditReductionLevel.Size = new System.Drawing.Size(125, 20);
             this.comboBoxEditReductionLevel.StyleController = this.layoutControl;
             this.comboBoxEditReductionLevel.TabIndex = 0;
             this.comboBoxEditReductionLevel.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditReductionLevel_SelectedIndexChanged);
@@ -193,7 +193,7 @@
             // comboBoxEditStockType
             // 
             this.comboBoxEditStockType.EditValue = "Both";
-            this.comboBoxEditStockType.Location = new System.Drawing.Point(95, 54);
+            this.comboBoxEditStockType.Location = new System.Drawing.Point(104, 58);
             this.comboBoxEditStockType.Name = "comboBoxEditStockType";
             this.comboBoxEditStockType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -202,7 +202,7 @@
             "Close",
             "Open"});
             this.comboBoxEditStockType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditStockType.Size = new System.Drawing.Size(134, 20);
+            this.comboBoxEditStockType.Size = new System.Drawing.Size(125, 20);
             this.comboBoxEditStockType.StyleController = this.layoutControl;
             this.comboBoxEditStockType.TabIndex = 2;
             this.comboBoxEditStockType.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditStockType_SelectedIndexChanged);
@@ -210,10 +210,10 @@
             // checkEditWorkDaysOnly
             // 
             this.checkEditWorkDaysOnly.EditValue = true;
-            this.checkEditWorkDaysOnly.Location = new System.Drawing.Point(12, 31);
+            this.checkEditWorkDaysOnly.Location = new System.Drawing.Point(12, 34);
             this.checkEditWorkDaysOnly.Name = "checkEditWorkDaysOnly";
             this.checkEditWorkDaysOnly.Properties.Caption = "Workdays Only";
-            this.checkEditWorkDaysOnly.Size = new System.Drawing.Size(217, 19);
+            this.checkEditWorkDaysOnly.Size = new System.Drawing.Size(217, 20);
             this.checkEditWorkDaysOnly.StyleController = this.layoutControl;
             this.checkEditWorkDaysOnly.TabIndex = 3;
             this.checkEditWorkDaysOnly.CheckedChanged += new System.EventHandler(this.checkEditWorkdaysOnly_CheckedChanged);
@@ -221,7 +221,7 @@
             // comboBoxEditReductionColorMode
             // 
             this.comboBoxEditReductionColorMode.EditValue = "Previous to Current Point";
-            this.comboBoxEditReductionColorMode.Location = new System.Drawing.Point(95, 117);
+            this.comboBoxEditReductionColorMode.Location = new System.Drawing.Point(104, 124);
             this.comboBoxEditReductionColorMode.Name = "comboBoxEditReductionColorMode";
             this.comboBoxEditReductionColorMode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -229,7 +229,7 @@
             "Previous to Current Point",
             "Open to Close Value"});
             this.comboBoxEditReductionColorMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditReductionColorMode.Size = new System.Drawing.Size(134, 20);
+            this.comboBoxEditReductionColorMode.Size = new System.Drawing.Size(125, 20);
             this.comboBoxEditReductionColorMode.StyleController = this.layoutControl;
             this.comboBoxEditReductionColorMode.TabIndex = 6;
             this.comboBoxEditReductionColorMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditReductionColorMode_SelectedIndexChanged);
@@ -237,13 +237,13 @@
             // colorPickEditReductionColor
             // 
             this.colorPickEditReductionColor.EditValue = System.Drawing.Color.Empty;
-            this.colorPickEditReductionColor.Location = new System.Drawing.Point(95, 213);
+            this.colorPickEditReductionColor.Location = new System.Drawing.Point(104, 220);
             this.colorPickEditReductionColor.Name = "colorPickEditReductionColor";
             this.colorPickEditReductionColor.Properties.AutomaticColor = System.Drawing.Color.Black;
             this.colorPickEditReductionColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.colorPickEditReductionColor.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.colorPickEditReductionColor.Size = new System.Drawing.Size(134, 20);
+            this.colorPickEditReductionColor.Size = new System.Drawing.Size(125, 20);
             this.colorPickEditReductionColor.StyleController = this.layoutControl;
             this.colorPickEditReductionColor.TabIndex = 7;
             this.colorPickEditReductionColor.EditValueChanged += new System.EventHandler(this.colorPickEditReductionColor_EditValueChanged);
@@ -251,13 +251,13 @@
             // colorPickEditBaseColor
             // 
             this.colorPickEditBaseColor.EditValue = System.Drawing.Color.Empty;
-            this.colorPickEditBaseColor.Location = new System.Drawing.Point(95, 189);
+            this.colorPickEditBaseColor.Location = new System.Drawing.Point(104, 196);
             this.colorPickEditBaseColor.Name = "colorPickEditBaseColor";
             this.colorPickEditBaseColor.Properties.AutomaticColor = System.Drawing.Color.Black;
             this.colorPickEditBaseColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.colorPickEditBaseColor.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.colorPickEditBaseColor.Size = new System.Drawing.Size(134, 20);
+            this.colorPickEditBaseColor.Size = new System.Drawing.Size(125, 20);
             this.colorPickEditBaseColor.StyleController = this.layoutControl;
             this.colorPickEditBaseColor.TabIndex = 8;
             this.colorPickEditBaseColor.EditValueChanged += new System.EventHandler(this.colorPickEditBaseColor_EditValueChanged);
@@ -265,7 +265,7 @@
             // comboBoxEditFillMode
             // 
             this.comboBoxEditFillMode.EditValue = "FilledOnReduction";
-            this.comboBoxEditFillMode.Location = new System.Drawing.Point(95, 165);
+            this.comboBoxEditFillMode.Location = new System.Drawing.Point(104, 172);
             this.comboBoxEditFillMode.Name = "comboBoxEditFillMode";
             this.comboBoxEditFillMode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -275,7 +275,7 @@
             "AlwaysEmpty",
             "AlwaysFilled"});
             this.comboBoxEditFillMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditFillMode.Size = new System.Drawing.Size(134, 20);
+            this.comboBoxEditFillMode.Size = new System.Drawing.Size(125, 20);
             this.comboBoxEditFillMode.StyleController = this.layoutControl;
             this.comboBoxEditFillMode.TabIndex = 9;
             this.comboBoxEditFillMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditFillMode_SelectedIndexChanged);
@@ -290,7 +290,7 @@
             this.layoutControlGroupOptions});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupGeneral
@@ -303,14 +303,14 @@
             this.layoutControlItemWorkdaysOnly});
             this.layoutControlGroupGeneral.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral";
-            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 86);
+            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 90);
             this.layoutControlGroupGeneral.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupGeneral.Text = "General";
             // 
             // layoutControlItemStockType
             // 
             this.layoutControlItemStockType.Control = this.comboBoxEditStockType;
-            this.layoutControlItemStockType.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItemStockType.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemStockType.Name = "layoutControlItemStockType";
             this.layoutControlItemStockType.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemStockType.Text = "Stock Type:";
@@ -322,17 +322,14 @@
             this.layoutControlItemWorkdaysOnly.Control = this.checkEditWorkDaysOnly;
             this.layoutControlItemWorkdaysOnly.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemWorkdaysOnly.Name = "layoutControlItemWorkdaysOnly";
-            this.layoutControlItemWorkdaysOnly.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemWorkdaysOnly.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemWorkdaysOnly.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemWorkdaysOnly.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
-            this.emptySpaceItem.Location = new System.Drawing.Point(0, 245);
+            this.emptySpaceItem.Location = new System.Drawing.Point(0, 252);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 299);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 286);
             // 
             // layoutControlGroupOptions
             // 
@@ -345,9 +342,9 @@
             this.layoutControlItemFillMode,
             this.layoutControlItemBaseColor,
             this.layoutControlItemReductionLevel});
-            this.layoutControlGroupOptions.Location = new System.Drawing.Point(0, 86);
+            this.layoutControlGroupOptions.Location = new System.Drawing.Point(0, 90);
             this.layoutControlGroupOptions.Name = "layoutControlGroupOptions";
-            this.layoutControlGroupOptions.Size = new System.Drawing.Size(241, 159);
+            this.layoutControlGroupOptions.Size = new System.Drawing.Size(241, 162);
             this.layoutControlGroupOptions.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupOptions.Text = "Reduction Color";
             // 
@@ -427,7 +424,7 @@
             this.dockPanelCandleStick.Location = new System.Drawing.Point(0, 0);
             this.dockPanelCandleStick.Name = "dockPanelCandleStick";
             this.dockPanelCandleStick.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelCandleStick.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelCandleStick.Size = new System.Drawing.Size(788, 548);
             this.dockPanelCandleStick.Text = "Candle Stick";
             // 
             // dockPanelCandleStick_Container
@@ -435,7 +432,7 @@
             this.dockPanelCandleStick_Container.Controls.Add(this.chartCandleStick);
             this.dockPanelCandleStick_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelCandleStick_Container.Name = "dockPanelCandleStick_Container";
-            this.dockPanelCandleStick_Container.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelCandleStick_Container.Size = new System.Drawing.Size(788, 548);
             this.dockPanelCandleStick_Container.TabIndex = 0;
             // 
             // chartCandleStick
@@ -448,20 +445,17 @@
             xyDiagram1.AxisX.Interlaced = true;
             xyDiagram1.AxisX.Title.Text = "Date";
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisX.VisualRange.Auto = false;
-            xyDiagram1.AxisX.VisualRange.AutoSideMargins = false;
-            xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "05/04/2018 00:00:00.000";
-            xyDiagram1.AxisX.VisualRange.MinValueSerializable = "04/27/2018 00:00:00.000";
-            xyDiagram1.AxisX.VisualRange.SideMarginsValue = 2D;
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 2D;
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 2D;
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 2D;
             xyDiagram1.AxisY.GridLines.MinorVisible = true;
             xyDiagram1.AxisY.Title.Text = "US Dollars";
             xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = false;
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram1.DependentAxesYRange = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.EnableAxisXScrolling = true;
             xyDiagram1.EnableAxisXZooming = true;
@@ -479,20 +473,23 @@
             series1.Label = stockSeriesLabel1;
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series1.Name = "Google Inc.";
+            series1.SeriesID = 0;
             candleStickSeriesView1.Color = System.Drawing.Color.Black;
             candleStickSeriesView1.LineThickness = 1;
             series1.View = candleStickSeriesView1;
             this.chartCandleStick.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-            this.chartCandleStick.Size = new System.Drawing.Size(788, 545);
+            this.chartCandleStick.Size = new System.Drawing.Size(788, 548);
             this.chartCandleStick.TabIndex = 1;
             this.chartCandleStick.TabStop = false;
             chartTitle1.Text = "Stock Prices";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle2.Text = "From www.quandl.com";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chartCandleStick.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -529,14 +526,16 @@
             xyDiagram2.AxisX.Title.Text = "Date";
             xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram2.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram2.AxisX.WholeRange.SideMarginsValue = 2D;
+            xyDiagram2.AxisX.WholeRange.EndSideMargin = 2D;
+            xyDiagram2.AxisX.WholeRange.StartSideMargin = 2D;
             xyDiagram2.AxisY.GridLines.MinorVisible = true;
             xyDiagram2.AxisY.Title.Text = "US Dollars";
             xyDiagram2.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram2.AxisY.WholeRange.AlwaysShowZeroLevel = false;
             xyDiagram2.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram2.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram2.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram2.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram2.DependentAxesYRange = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram2.EnableAxisXScrolling = true;
             xyDiagram2.EnableAxisXZooming = true;
@@ -553,6 +552,7 @@
             series2.Label = stockSeriesLabel2;
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series2.Name = "Google Inc.";
+            series2.SeriesID = 0;
             financialSlideAnimation1.Direction = DevExpress.XtraCharts.AnimationDirection.FromBottom;
             elasticEasingFunction1.EasingMode = DevExpress.XtraCharts.EasingMode.Out;
             financialSlideAnimation1.EasingFunction = elasticEasingFunction1;
@@ -565,11 +565,13 @@
             this.chartStock.TabIndex = 1;
             this.chartStock.TabStop = false;
             chartTitle3.Text = "Stock Prices";
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle3.TitleID = 0;
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle4.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle4.Text = "From www.quandl.com";
             chartTitle4.TextColor = System.Drawing.Color.Gray;
+            chartTitle4.TitleID = 1;
             this.chartStock.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle3,
             chartTitle4});

@@ -2,6 +2,7 @@ Imports System
 Imports System.Data
 Imports System.Drawing
 Imports System.Globalization
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.XtraEditors.Controls
 
 Namespace DevExpress.XtraCharts.Demos
@@ -81,7 +82,7 @@ Namespace DevExpress.XtraCharts.Demos
         Private Function PrepareData(ByVal table As System.Data.DataTable) As DataTable
             For Each row As System.Data.DataRow In table.Rows
                 Dim [date] As System.DateTime = CDate(row(0))
-                row(0) = New System.DateTime(System.DateTime.Now.Year - 1, [date].Month, [date].Day)
+                row(0) = New System.DateTime(DevExpress.DXperience.Demos.TutorialConstants.Now.Year - 1, [date].Month, [date].Day)
             Next
 
             Return table

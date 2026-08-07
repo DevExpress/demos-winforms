@@ -185,7 +185,7 @@ Namespace DevExpress.DevAV.Modules
             Me.ItemForHomeOffice.Location = New System.Drawing.Point(0, 43)
             Me.ItemForHomeOffice.Name = "ItemForHomeOffice"
             Me.ItemForHomeOffice.Size = New System.Drawing.Size(192, 26)
-            Me.ItemForHomeOffice.Text = "HOME OFFICE"
+            Me.ItemForHomeOffice.Text = "Home Office"
             Me.ItemForHomeOffice.TextLocation = DevExpress.Utils.Locations.Top
             Me.ItemForHomeOffice.TextSize = New System.Drawing.Size(71, 13)
             Me.sliName.AppearanceItemCaption.Font = New System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte((204))))

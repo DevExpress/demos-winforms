@@ -59,6 +59,12 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
@@ -103,7 +109,7 @@
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
             this.tabNavigationPageOptions.Margin = new System.Windows.Forms.Padding(0);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 547);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 541);
             // 
             // chart
             // 
@@ -119,11 +125,13 @@
             xyDiagram1.AxisX.VisibleInPanesSerializable = "0";
             xyDiagram1.AxisX.VisualRange.Auto = false;
             xyDiagram1.AxisX.VisualRange.AutoSideMargins = false;
+            xyDiagram1.AxisX.VisualRange.EndSideMargin = 0D;
+            xyDiagram1.AxisX.VisualRange.StartSideMargin = 0D;
             xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "00:00:09";
             xyDiagram1.AxisX.VisualRange.MinValueSerializable = "00:00:00";
-            xyDiagram1.AxisX.VisualRange.SideMarginsValue = 0D;
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0D;
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0D;
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0D;
             xyDiagram1.AxisY.GridLines.MinorVisible = true;
             xyDiagram1.AxisY.Label.TextPattern = "{V}MiB";
             xyDiagram1.AxisY.Title.Text = "";
@@ -261,7 +269,7 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(244, 313, 650, 400);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 547);
+            this.layoutControl.Size = new System.Drawing.Size(241, 541);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
@@ -269,7 +277,7 @@
             // 
             this.radioGroupMarkerMode.AutoSizeInLayoutControl = true;
             this.radioGroupMarkerMode.EditValue = 0;
-            this.radioGroupMarkerMode.Location = new System.Drawing.Point(12, 31);
+            this.radioGroupMarkerMode.Location = new System.Drawing.Point(12, 34);
             this.radioGroupMarkerMode.Name = "radioGroupMarkerMode";
             this.radioGroupMarkerMode.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupMarkerMode.Properties.Appearance.Options.UseBackColor = true;
@@ -281,7 +289,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Check Box and Marker"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(3, "Marker and Check Box"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(4, "None")});
-            this.radioGroupMarkerMode.Size = new System.Drawing.Size(217, 83);
+            this.radioGroupMarkerMode.Size = new System.Drawing.Size(217, 128);
             this.radioGroupMarkerMode.StyleController = this.layoutControl;
             this.radioGroupMarkerMode.TabIndex = 4;
             this.radioGroupMarkerMode.SelectedIndexChanged += new System.EventHandler(this.radioGroupMarkerMode_SelectedIndexChanged);
@@ -290,7 +298,7 @@
             // 
             this.radioGroupLegendMode.AutoSizeInLayoutControl = true;
             this.radioGroupLegendMode.EditValue = 1;
-            this.radioGroupLegendMode.Location = new System.Drawing.Point(12, 157);
+            this.radioGroupLegendMode.Location = new System.Drawing.Point(12, 208);
             this.radioGroupLegendMode.Name = "radioGroupLegendMode";
             this.radioGroupLegendMode.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupLegendMode.Properties.Appearance.Options.UseBackColor = true;
@@ -301,7 +309,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Multiple Pane Bound, Out of Panes"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Multiple Pane Bound, Within Panes"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(3, "Single Legend With Custom Items")});
-            this.radioGroupLegendMode.Size = new System.Drawing.Size(217, 68);
+            this.radioGroupLegendMode.Size = new System.Drawing.Size(217, 104);
             this.radioGroupLegendMode.StyleController = this.layoutControl;
             this.radioGroupLegendMode.TabIndex = 5;
             this.radioGroupLegendMode.SelectedIndexChanged += new System.EventHandler(this.radioGroupLegendMode_SelectedIndexChanged);
@@ -310,7 +318,7 @@
             // 
             this.radioGroupCrosshairContentMode.AutoSizeInLayoutControl = true;
             this.radioGroupCrosshairContentMode.EditValue = 1;
-            this.radioGroupCrosshairContentMode.Location = new System.Drawing.Point(12, 268);
+            this.radioGroupCrosshairContentMode.Location = new System.Drawing.Point(12, 358);
             this.radioGroupCrosshairContentMode.Name = "radioGroupCrosshairContentMode";
             this.radioGroupCrosshairContentMode.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupCrosshairContentMode.Properties.Appearance.Options.UseBackColor = true;
@@ -319,7 +327,7 @@
             this.radioGroupCrosshairContentMode.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Label"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Legend")});
-            this.radioGroupCrosshairContentMode.Size = new System.Drawing.Size(217, 38);
+            this.radioGroupCrosshairContentMode.Size = new System.Drawing.Size(217, 56);
             this.radioGroupCrosshairContentMode.StyleController = this.layoutControl;
             this.radioGroupCrosshairContentMode.TabIndex = 6;
             this.radioGroupCrosshairContentMode.SelectedIndexChanged += new System.EventHandler(this.radioGroupCrosshairContentMode_SelectedIndexChanged);
@@ -335,7 +343,7 @@
             this.layoutControlGroupCrosshairContentMode});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 547);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 541);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupMarkerMode
@@ -345,7 +353,7 @@
             this.layoutControlItemMarkerMode});
             this.layoutControlGroupMarkerMode.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupMarkerMode.Name = "layoutControlGroupMarkerMode";
-            this.layoutControlGroupMarkerMode.Size = new System.Drawing.Size(241, 126);
+            this.layoutControlGroupMarkerMode.Size = new System.Drawing.Size(241, 174);
             this.layoutControlGroupMarkerMode.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupMarkerMode.Text = "Marker Mode";
             // 
@@ -354,8 +362,7 @@
             this.layoutControlItemMarkerMode.Control = this.radioGroupMarkerMode;
             this.layoutControlItemMarkerMode.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemMarkerMode.Name = "layoutControlItemMarkerMode";
-            this.layoutControlItemMarkerMode.Size = new System.Drawing.Size(221, 87);
-            this.layoutControlItemMarkerMode.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemMarkerMode.Size = new System.Drawing.Size(221, 132);
             this.layoutControlItemMarkerMode.TextVisible = false;
             // 
             // layoutControlGroupLegendMode
@@ -363,9 +370,9 @@
             this.layoutControlGroupLegendMode.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupLegendMode.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemLegendMode});
-            this.layoutControlGroupLegendMode.Location = new System.Drawing.Point(0, 126);
+            this.layoutControlGroupLegendMode.Location = new System.Drawing.Point(0, 174);
             this.layoutControlGroupLegendMode.Name = "layoutControlGroupLegendMode";
-            this.layoutControlGroupLegendMode.Size = new System.Drawing.Size(241, 111);
+            this.layoutControlGroupLegendMode.Size = new System.Drawing.Size(241, 150);
             this.layoutControlGroupLegendMode.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupLegendMode.Text = "Legend Mode";
             // 
@@ -374,26 +381,23 @@
             this.layoutControlItemLegendMode.Control = this.radioGroupLegendMode;
             this.layoutControlItemLegendMode.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLegendMode.Name = "layoutControlItemLegendMode";
-            this.layoutControlItemLegendMode.Size = new System.Drawing.Size(221, 72);
-            this.layoutControlItemLegendMode.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemLegendMode.Size = new System.Drawing.Size(221, 108);
             this.layoutControlItemLegendMode.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
-            this.emptySpaceItem.Location = new System.Drawing.Point(0, 318);
+            this.emptySpaceItem.Location = new System.Drawing.Point(0, 426);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 229);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 115);
             // 
             // layoutControlGroupCrosshairContentMode
             // 
             this.layoutControlGroupCrosshairContentMode.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupCrosshairContentMode.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemCrosshairContentMode});
-            this.layoutControlGroupCrosshairContentMode.Location = new System.Drawing.Point(0, 237);
+            this.layoutControlGroupCrosshairContentMode.Location = new System.Drawing.Point(0, 324);
             this.layoutControlGroupCrosshairContentMode.Name = "layoutControlGroupCrosshairContentMode";
-            this.layoutControlGroupCrosshairContentMode.Size = new System.Drawing.Size(241, 81);
+            this.layoutControlGroupCrosshairContentMode.Size = new System.Drawing.Size(241, 102);
             this.layoutControlGroupCrosshairContentMode.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupCrosshairContentMode.Text = "Crosshair Content Mode";
             // 
@@ -402,8 +406,7 @@
             this.layoutControlItemCrosshairContentMode.Control = this.radioGroupCrosshairContentMode;
             this.layoutControlItemCrosshairContentMode.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemCrosshairContentMode.Name = "layoutControlItemCrosshairContentMode";
-            this.layoutControlItemCrosshairContentMode.Size = new System.Drawing.Size(221, 42);
-            this.layoutControlItemCrosshairContentMode.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemCrosshairContentMode.Size = new System.Drawing.Size(221, 60);
             this.layoutControlItemCrosshairContentMode.TextVisible = false;
             // 
             // LegendsDemo
@@ -425,6 +428,12 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).EndInit();

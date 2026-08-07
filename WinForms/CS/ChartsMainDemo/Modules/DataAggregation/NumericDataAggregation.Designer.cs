@@ -35,7 +35,8 @@
             xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0D;
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0D;
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0D;
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram1.EnableAxisXScrolling = true;
             xyDiagram1.EnableAxisXZooming = true;
@@ -49,6 +50,7 @@
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Numerical;
             series1.LegendTextPattern = "Random Data";
             series1.Name = "series";
+            series1.SeriesID = 0;
             lineSeriesView1.LineStyle.Thickness = 1;
             series1.View = lineSeriesView1;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
@@ -58,6 +60,7 @@
             this.chart.Size = new System.Drawing.Size(784, 432);
             this.chart.TabIndex = 3;
             chartTitle1.Text = "Data Aggregation (500000 points)";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.AxisVisualRangeChanged += new System.EventHandler<DevExpress.XtraCharts.AxisRangeChangedEventArgs>(this.chart_AxisVisualRangeChanged);

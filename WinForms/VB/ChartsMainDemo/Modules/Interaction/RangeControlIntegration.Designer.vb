@@ -76,7 +76,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "05/13/2018 01:00:00.000"
             xyDiagram1.AxisX.VisualRange.MinValueSerializable = "05/03/2018 23:00:00.000"
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 1R
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 1R
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 1R
             xyDiagram1.AxisY.Label.TextPattern = "{V:F2}"
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = False

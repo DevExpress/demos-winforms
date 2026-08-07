@@ -1,5 +1,6 @@
 Imports System
 Imports System.Linq
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraScheduler.Demos.DemoData
 
@@ -27,7 +28,7 @@ Namespace DevExpress.XtraScheduler.Demos.DemoData
 
         Public Shared ReadOnly Property Start As DateTime
             Get
-                Return System.DateTime.Today
+                Return DevExpress.DXperience.Demos.TutorialConstants.Today
             End Get
         End Property
 
@@ -197,7 +198,7 @@ Namespace DevExpress.XtraScheduler.Demos.DemoData
         End Sub
 
         Private Sub GenerateEvents()
-            Call DevExpress.XtraScheduler.Demos.DemoData.EventGenerator.Generate(Me.events, System.DateTime.Today)
+            Call DevExpress.XtraScheduler.Demos.DemoData.EventGenerator.Generate(Me.events, DevExpress.DXperience.Demos.TutorialConstants.Today)
         End Sub
     End Class
 End Namespace

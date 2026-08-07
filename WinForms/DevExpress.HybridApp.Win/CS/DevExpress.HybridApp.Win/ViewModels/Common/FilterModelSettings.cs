@@ -17,7 +17,7 @@ namespace DevExpress.DevAV.ViewModels {
     public class FilterInfo {
         public string Name { get; set; }
         public string FilterCriteria { get; set; }
-        public string ImageUri { get; set; }        
+        public string ImageUri { get; set; }
     }
     public class FilterInfoList : List<FilterInfo> {
         public FilterInfoList() { }
@@ -34,8 +34,7 @@ namespace DevExpress.DevAV.ViewModels {
         readonly TSettings settings;
         readonly PropertyDescriptor staticFiltersProperty;
         readonly PropertyDescriptor customFiltersProperty;
-        public FilterModelPageSpecificSettings(TSettings settings, Expression<Func<TSettings, FilterInfoList>> getStaticFiltersExpression, Expression<Func<TSettings, FilterInfoList>> getCustomFiltersExpression)
-        {
+        public FilterModelPageSpecificSettings(TSettings settings, Expression<Func<TSettings, FilterInfoList>> getStaticFiltersExpression, Expression<Func<TSettings, FilterInfoList>> getCustomFiltersExpression) {
             this.settings = settings;
             this.staticFiltersProperty = GetProperty(getStaticFiltersExpression);
             this.customFiltersProperty = GetProperty(getCustomFiltersExpression);
@@ -46,8 +45,7 @@ namespace DevExpress.DevAV.ViewModels {
         }
 
 
-        FilterInfoList IFilterModelPageSpecificSettings.CustomFilters
-        {
+        FilterInfoList IFilterModelPageSpecificSettings.CustomFilters {
             get { return GetFilters(customFiltersProperty); }
             set { SetFilters(customFiltersProperty, value); }
         }

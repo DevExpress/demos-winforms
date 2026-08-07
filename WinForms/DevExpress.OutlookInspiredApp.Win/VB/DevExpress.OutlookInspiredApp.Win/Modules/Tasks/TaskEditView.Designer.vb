@@ -298,19 +298,19 @@ Namespace DevExpress.DevAV.Modules
             Me.layoutControlItem3.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem3.Name = "layoutControlItem3"
             Me.layoutControlItem3.Size = New System.Drawing.Size(499, 34)
-            Me.layoutControlItem3.Text = "OWNER"
+            Me.layoutControlItem3.Text = "Owner"
             Me.layoutControlItem3.TextSize = New System.Drawing.Size(68, 13)
             Me.layoutControlItem1.Control = Me.assignedToLookUpEdit
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 34)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New System.Drawing.Size(499, 34)
-            Me.layoutControlItem1.Text = "ASSIGNED TO"
+            Me.layoutControlItem1.Text = "Assigned To"
             Me.layoutControlItem1.TextSize = New System.Drawing.Size(68, 13)
             Me.layoutControlItem2.Control = Me.linkedToLookUpEdit
             Me.layoutControlItem2.Location = New System.Drawing.Point(0, 68)
             Me.layoutControlItem2.Name = "layoutControlItem2"
             Me.layoutControlItem2.Size = New System.Drawing.Size(499, 34)
-            Me.layoutControlItem2.Text = "LINKED TO"
+            Me.layoutControlItem2.Text = "Linked To"
             Me.layoutControlItem2.TextSize = New System.Drawing.Size(68, 13)
             Me.ItemForSubject.AppearanceItemCaption.Options.UseTextOptions = True
             Me.ItemForSubject.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
@@ -318,7 +318,7 @@ Namespace DevExpress.DevAV.Modules
             Me.ItemForSubject.Location = New System.Drawing.Point(561, 0)
             Me.ItemForSubject.Name = "ItemForSubject"
             Me.ItemForSubject.Size = New System.Drawing.Size(588, 77)
-            Me.ItemForSubject.Text = "SUBJECT"
+            Me.ItemForSubject.Text = "Subject"
             Me.ItemForSubject.TextSize = New System.Drawing.Size(68, 13)
             Me.ItemForDescription.AppearanceItemCaption.Options.UseTextOptions = True
             Me.ItemForDescription.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
@@ -326,7 +326,7 @@ Namespace DevExpress.DevAV.Modules
             Me.ItemForDescription.Location = New System.Drawing.Point(561, 77)
             Me.ItemForDescription.Name = "ItemForDescription"
             Me.ItemForDescription.Size = New System.Drawing.Size(588, 134)
-            Me.ItemForDescription.Text = "DESCRIPTION"
+            Me.ItemForDescription.Text = "Description"
             Me.ItemForDescription.TextSize = New System.Drawing.Size(68, 13)
             Me.emptySpaceItem3.Location = New System.Drawing.Point(499, 0)
             Me.emptySpaceItem3.Name = "emptySpaceItem3"
@@ -356,31 +356,31 @@ Namespace DevExpress.DevAV.Modules
             Me.ItemForCompletion.Location = New System.Drawing.Point(561, 235)
             Me.ItemForCompletion.Name = "ItemForCompletion"
             Me.ItemForCompletion.Size = New System.Drawing.Size(588, 51)
-            Me.ItemForCompletion.Text = "% COMPLETE"
+            Me.ItemForCompletion.Text = "% Complete"
             Me.ItemForCompletion.TextSize = New System.Drawing.Size(68, 13)
             Me.ItemForStartDate.Control = Me.StartDateDateEdit
             Me.ItemForStartDate.Location = New System.Drawing.Point(0, 126)
             Me.ItemForStartDate.Name = "ItemForStartDate"
             Me.ItemForStartDate.Size = New System.Drawing.Size(499, 34)
-            Me.ItemForStartDate.Text = "START DATE"
+            Me.ItemForStartDate.Text = "Start Date"
             Me.ItemForStartDate.TextSize = New System.Drawing.Size(68, 13)
             Me.ItemForDueDate.Control = Me.DueDateDateEdit
             Me.ItemForDueDate.Location = New System.Drawing.Point(0, 160)
             Me.ItemForDueDate.Name = "ItemForDueDate"
             Me.ItemForDueDate.Size = New System.Drawing.Size(499, 34)
-            Me.ItemForDueDate.Text = "DUE DATE"
+            Me.ItemForDueDate.Text = "Due Date"
             Me.ItemForDueDate.TextSize = New System.Drawing.Size(68, 13)
             Me.ItemForStatus.Control = Me.statusImageComboBoxEdit
             Me.ItemForStatus.Location = New System.Drawing.Point(0, 218)
             Me.ItemForStatus.Name = "ItemForStatus"
             Me.ItemForStatus.Size = New System.Drawing.Size(499, 34)
-            Me.ItemForStatus.Text = "STATUS"
+            Me.ItemForStatus.Text = "Status"
             Me.ItemForStatus.TextSize = New System.Drawing.Size(68, 13)
             Me.ItemForPriority.Control = Me.priorityImageComboBoxEdit
             Me.ItemForPriority.Location = New System.Drawing.Point(0, 252)
             Me.ItemForPriority.Name = "ItemForPriority"
             Me.ItemForPriority.Size = New System.Drawing.Size(499, 34)
-            Me.ItemForPriority.Text = "PRIORITY"
+            Me.ItemForPriority.Text = "Priority"
             Me.ItemForPriority.TextSize = New System.Drawing.Size(68, 13)
             Me.bindingSource.DataSource = GetType(DevExpress.DevAV.Employee)
             Me.ribbonControl.ExpandCollapseItem.Id = 0
@@ -503,7 +503,7 @@ Namespace DevExpress.DevAV.Modules
             Me.biRefresh.Name = "biRefresh"
             Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1, Me.ribbonPageGroup7, Me.ribbonPageGroup2, Me.ribbonPageGroup4, Me.ribbonPageGroup5, Me.ribbonPageGroup6, Me.ribbonPageGroup3})
             Me.ribbonPage1.Name = "ribbonPage1"
-            Me.ribbonPage1.Text = "TASK"
+            Me.ribbonPage1.Text = "Task"
             Me.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.ribbonPageGroup1.ItemLinks.Add(Me.biSave)
             Me.ribbonPageGroup1.ItemLinks.Add(Me.biSaveAndClose)

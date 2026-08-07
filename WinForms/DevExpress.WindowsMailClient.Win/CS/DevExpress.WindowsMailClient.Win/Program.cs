@@ -1,6 +1,7 @@
 using System;
 using System.Reflection;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 using DevExpress.Internal;
 using DevExpress.LookAndFeel;
 using DevExpress.Skins;
@@ -37,6 +38,7 @@ namespace DevExpress.WindowsMailClient.Win {
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            MainFormHelper.InitTakeScreen(DevExpress.Data.Utils.SafeEnvironment.GetCommandLineArgs());
             using(new StartUpProcess()) {
                 using(StartUpProcess.Status.Subscribe(new DemoStartUp())) {
                     Application.Run(new MainForm());

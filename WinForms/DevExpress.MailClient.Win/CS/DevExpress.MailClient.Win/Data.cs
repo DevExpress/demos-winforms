@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Data;
-using DevExpress.Utils;
-using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
 using DevExpress.XtraEditors.DXErrorProvider;
@@ -12,6 +10,8 @@ using System.ComponentModel;
 using DevExpress.DevAV;
 using DevExpress.Internal;
 using DevExpress.Utils.Svg;
+using DevExpress.DXperience.Demos;
+
 #if !NET
 using System.Data.Entity;
 #else
@@ -26,14 +26,13 @@ namespace DevExpress.MailClient.Win {
         int priority = 1;
         MailType mailType;
         int mailFolder;
-        string from = String.Empty, subject = String.Empty, text = String.Empty, plainText = string.Empty, email = String.Empty;
+        string from = string.Empty, subject = string.Empty, text = string.Empty, plainText = string.Empty, email = string.Empty;
         public Message() {
-            date = DateTime.Now;
+            date = TutorialConstants.Now;
         }
         public Message(DataRow row) {
             this.row = row;
-            var rnd = DevExpress.Data.Utils.NonCryptographicRandom.Default;
-            date = DateTime.Now.AddDays((int)row["Day"]).AddSeconds(-rnd.Next(10000));
+            date = TutorialConstants.Now.AddDays((int)row["Day"]).AddSeconds(-TutorialConstants.Random.Next(10000));
             email = string.Format("{0}", row["From"]);
             from = DataHelper.GetNameByEmail(email);
             subject = string.Format("{0}", row["Subject"]);
@@ -84,7 +83,7 @@ namespace DevExpress.MailClient.Win {
             set { deleted = value; }
         }
         internal TimeSpan Delay {
-            get { return DateTime.Now - date; }
+            get { return TutorialConstants.Now - date; }
         }
         public void ToggleRead() {
             read = !read;
@@ -127,7 +126,7 @@ namespace DevExpress.MailClient.Win {
         TaskCategory category;
         Contact assignTo = null;
         public Task(string subject, TaskCategory category)
-            : this(subject, category, DateTime.Now) {
+            : this(subject, category, TutorialConstants.Now) {
         }
         internal Task(string subject, TaskCategory category, DateTime date) {
             this.subject = subject;
@@ -159,7 +158,7 @@ namespace DevExpress.MailClient.Win {
                 status = value;
                 if(status == TaskStatus.Completed) {
                     PercentComplete = 100;
-                    CompletedDate = DateTime.Now;
+                    CompletedDate = TutorialConstants.Now;
                 }
                 else
                     CompletedDate = null;
@@ -172,12 +171,12 @@ namespace DevExpress.MailClient.Win {
             }
         }
         public Contact AssignTo { get { return assignTo; } set { assignTo = value; } }
-        internal TimeSpan TimeDiff { get { return (DateTime.Now - CreatedDate); } }
+        internal TimeSpan TimeDiff { get { return (TutorialConstants.Now - CreatedDate); } }
         public bool Overdue {
             get {
                 if(Status == TaskStatus.Completed || !DueDate.HasValue) return false;
                 DateTime dDate = DueDate.Value.Date.AddDays(1);
-                if(DateTime.Now >= dDate) return true;
+                if(TutorialConstants.Now >= dDate) return true;
                 return false;
             }
         }
@@ -192,7 +191,7 @@ namespace DevExpress.MailClient.Win {
         public int Icon { get { return Complete ? 0 : 1; } }
         public FlagStatus FlagStatus {
             get {
-                DateTime today = DateTime.Today;
+                DateTime today = TutorialConstants.Today;
                 if(Complete) return FlagStatus.Completed;
                 if(!DueDate.HasValue) return FlagStatus.NoDate;
                 if(DueDate.Value.Date.Equals(today)) return FlagStatus.Today;
@@ -224,7 +223,7 @@ namespace DevExpress.MailClient.Win {
         public string DueIn {
             get {
                 if(DueDate.HasValue) {
-                    int oDays = (DateTime.Today - DueDate.Value).Days;
+                    int oDays = (TutorialConstants.Today - DueDate.Value).Days;
                     return oDays > 0 ? string.Format("{0} day{1} overdue", oDays, oDays > 1 ? "s" : string.Empty) : string.Empty;
                 }
                 return string.Empty;
@@ -437,7 +436,7 @@ namespace DevExpress.MailClient.Win {
         static List<Contact> contacts = null;
         static List<Task> tasks = null;
         static BindingList<Employee> employees = null;
-        internal static DateTime CalendarDate = DateTime.Today;
+        internal static DateTime CalendarDate = TutorialConstants.Today;
         internal static string[] ApplicationArguments;
 
         static DataTable calendarResourcesTable;
@@ -454,9 +453,9 @@ namespace DevExpress.MailClient.Win {
             get {
                 if(employees == null) {
 #if !NET
-                    DevAVDb devAvDb = new DevAVDb();
+                    DevAVDb devAvDb = new DevAVDb(MainFormHelper.TakeScreens);
 #else
-                    DevAVDb devAvDb = new DevAVDb($"Data Source={DevAVDataDirectoryHelper.GetFile("devav.sqlite3")}");
+                    DevAVDb devAvDb = new DevAVDb($"Data Source={DevAVDataDirectoryHelper.GetFile("devav.sqlite3")}", MainFormHelper.TakeScreens);
 #endif
                     devAvDb.Employees.Load();
                     employees = devAvDb.Employees.Local.ToBindingList();
@@ -577,9 +576,8 @@ namespace DevExpress.MailClient.Win {
                     customers = new List<Contact>();
                     List<Contact> temp = DataHelper.GetContacts();
                     if(temp.Count > CustomerCount) {
-                        var rnd = DevExpress.Data.Utils.NonCryptographicRandom.Default;
                         while(customers.Count < CustomerCount) {
-                            Contact contact = GetCustomer(rnd.Next(temp.Count - 1), customers, temp);
+                            Contact contact = GetCustomer(TutorialConstants.Random.Next(temp.Count - 1), customers, temp);
                             if(contact != null)
                                 customers.Add(contact);
                         }
@@ -595,9 +593,8 @@ namespace DevExpress.MailClient.Win {
             return contact;
         }
         public static Task CreateTask(string subject, TaskCategory category) {
-            var rnd = DevExpress.Data.Utils.NonCryptographicRandom.Default;
-            Task task = new Task(subject, category, DateTime.Now.AddHours(-rnd.Next(96)));
-            int rndStatus = rnd.Next(10);
+            Task task = new Task(subject, category, TutorialConstants.Now.AddHours(-TutorialConstants.Random.Next(96)));
+            int rndStatus = TutorialConstants.Random.Next(10);
             if(task.TimeDiff.TotalHours > 12) {
                 if(task.TimeDiff.TotalHours > 80) {
                     task.Status = TaskStatus.Completed;
@@ -605,9 +602,9 @@ namespace DevExpress.MailClient.Win {
                 }
                 else {
                     task.Status = TaskStatus.InProgress;
-                    task.PercentComplete = rnd.Next(9) * 10;
+                    task.PercentComplete = TutorialConstants.Random.Next(9) * 10;
                 }
-                task.StartDate = task.CreatedDate.AddMinutes(rnd.Next(720)).Date;
+                task.StartDate = task.CreatedDate.AddMinutes(TutorialConstants.Random.Next(720)).Date;
             }
             if(rndStatus != 5) task.DueDate = task.CreatedDate.AddHours((90 - rndStatus * 9) + 24).Date;
             if(rndStatus > 8) task.Priority = 2;
@@ -615,10 +612,10 @@ namespace DevExpress.MailClient.Win {
             if(rndStatus == 6 && task.Status == TaskStatus.InProgress) task.Status = TaskStatus.Deferred;
             if(rndStatus == 4 && task.Status == TaskStatus.InProgress && task.PercentComplete < 40) task.Status = TaskStatus.WaitingOnSomeoneElse;
             if(task.Category == TaskCategory.Office && rndStatus != 7 && Customers.Count > 0)
-                task.AssignTo = Customers[rnd.Next(Customers.Count)];
+                task.AssignTo = Customers[TutorialConstants.Random.Next(Customers.Count)];
             if(task.Status == TaskStatus.Completed) {
                 if(!task.StartDate.HasValue) task.StartDate = task.CreatedDate.AddHours(12).Date;
-                task.CompletedDate = task.StartDate.Value.AddHours(rnd.Next(48) + 24);
+                task.CompletedDate = task.StartDate.Value.AddHours(TutorialConstants.Random.Next(48) + 24);
             }
             return task;
         }

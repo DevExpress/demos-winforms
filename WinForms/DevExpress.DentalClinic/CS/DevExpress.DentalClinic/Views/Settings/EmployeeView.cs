@@ -1,5 +1,4 @@
-﻿using System.Windows.Forms;
-using DevExpress.DentalClinic.ViewModel;
+﻿using DevExpress.DentalClinic.ViewModel;
 using DevExpress.XtraEditors;
 
 namespace DevExpress.DentalClinic.View {

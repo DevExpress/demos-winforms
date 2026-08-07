@@ -19,33 +19,33 @@ Namespace DevExpress.XtraCharts.Demos
         ''' </summary>
         Private Overloads Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim xyDiagram2 As DevExpress.XtraCharts.XYDiagram = New DevExpress.XtraCharts.XYDiagram()
-            Dim xyDiagramPane5 As DevExpress.XtraCharts.XYDiagramPane = New DevExpress.XtraCharts.XYDiagramPane()
-            Dim xyDiagramPane6 As DevExpress.XtraCharts.XYDiagramPane = New DevExpress.XtraCharts.XYDiagramPane()
-            Dim xyDiagramPane7 As DevExpress.XtraCharts.XYDiagramPane = New DevExpress.XtraCharts.XYDiagramPane()
-            Dim xyDiagramPane8 As DevExpress.XtraCharts.XYDiagramPane = New DevExpress.XtraCharts.XYDiagramPane()
-            Dim secondaryAxisY5 As DevExpress.XtraCharts.SecondaryAxisY = New DevExpress.XtraCharts.SecondaryAxisY()
-            Dim secondaryAxisY6 As DevExpress.XtraCharts.SecondaryAxisY = New DevExpress.XtraCharts.SecondaryAxisY()
-            Dim secondaryAxisY7 As DevExpress.XtraCharts.SecondaryAxisY = New DevExpress.XtraCharts.SecondaryAxisY()
-            Dim secondaryAxisY8 As DevExpress.XtraCharts.SecondaryAxisY = New DevExpress.XtraCharts.SecondaryAxisY()
-            Dim constantLine3 As DevExpress.XtraCharts.ConstantLine = New DevExpress.XtraCharts.ConstantLine()
-            Dim constantLine4 As DevExpress.XtraCharts.ConstantLine = New DevExpress.XtraCharts.ConstantLine()
-            Dim legend5 As DevExpress.XtraCharts.Legend = New DevExpress.XtraCharts.Legend()
-            Dim legend6 As DevExpress.XtraCharts.Legend = New DevExpress.XtraCharts.Legend()
-            Dim legend7 As DevExpress.XtraCharts.Legend = New DevExpress.XtraCharts.Legend()
-            Dim legend8 As DevExpress.XtraCharts.Legend = New DevExpress.XtraCharts.Legend()
-            Dim series2 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
-            Dim stockSeriesView2 As DevExpress.XtraCharts.StockSeriesView = New DevExpress.XtraCharts.StockSeriesView()
-            Dim averageTrueRange2 As DevExpress.XtraCharts.AverageTrueRange = New DevExpress.XtraCharts.AverageTrueRange()
-            Dim chaikinsVolatility2 As DevExpress.XtraCharts.ChaikinsVolatility = New DevExpress.XtraCharts.ChaikinsVolatility()
-            Dim movingAverageConvergenceDivergence2 As DevExpress.XtraCharts.MovingAverageConvergenceDivergence = New DevExpress.XtraCharts.MovingAverageConvergenceDivergence()
-            Dim williamsR2 As DevExpress.XtraCharts.WilliamsR = New DevExpress.XtraCharts.WilliamsR()
-            Dim chartIntervalItem7 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
-            Dim chartIntervalItem8 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
-            Dim chartIntervalItem9 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
-            Dim chartIntervalItem10 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
-            Dim chartIntervalItem11 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
-            Dim chartIntervalItem12 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
+            Dim xyDiagram1 As DevExpress.XtraCharts.XYDiagram = New DevExpress.XtraCharts.XYDiagram()
+            Dim xyDiagramPane1 As DevExpress.XtraCharts.XYDiagramPane = New DevExpress.XtraCharts.XYDiagramPane()
+            Dim xyDiagramPane2 As DevExpress.XtraCharts.XYDiagramPane = New DevExpress.XtraCharts.XYDiagramPane()
+            Dim xyDiagramPane3 As DevExpress.XtraCharts.XYDiagramPane = New DevExpress.XtraCharts.XYDiagramPane()
+            Dim xyDiagramPane4 As DevExpress.XtraCharts.XYDiagramPane = New DevExpress.XtraCharts.XYDiagramPane()
+            Dim secondaryAxisY1 As DevExpress.XtraCharts.SecondaryAxisY = New DevExpress.XtraCharts.SecondaryAxisY()
+            Dim secondaryAxisY2 As DevExpress.XtraCharts.SecondaryAxisY = New DevExpress.XtraCharts.SecondaryAxisY()
+            Dim secondaryAxisY3 As DevExpress.XtraCharts.SecondaryAxisY = New DevExpress.XtraCharts.SecondaryAxisY()
+            Dim secondaryAxisY4 As DevExpress.XtraCharts.SecondaryAxisY = New DevExpress.XtraCharts.SecondaryAxisY()
+            Dim constantLine1 As DevExpress.XtraCharts.ConstantLine = New DevExpress.XtraCharts.ConstantLine()
+            Dim constantLine2 As DevExpress.XtraCharts.ConstantLine = New DevExpress.XtraCharts.ConstantLine()
+            Dim legend1 As DevExpress.XtraCharts.Legend = New DevExpress.XtraCharts.Legend()
+            Dim legend2 As DevExpress.XtraCharts.Legend = New DevExpress.XtraCharts.Legend()
+            Dim legend3 As DevExpress.XtraCharts.Legend = New DevExpress.XtraCharts.Legend()
+            Dim legend4 As DevExpress.XtraCharts.Legend = New DevExpress.XtraCharts.Legend()
+            Dim series1 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
+            Dim stockSeriesView1 As DevExpress.XtraCharts.StockSeriesView = New DevExpress.XtraCharts.StockSeriesView()
+            Dim averageTrueRange1 As DevExpress.XtraCharts.AverageTrueRange = New DevExpress.XtraCharts.AverageTrueRange()
+            Dim chaikinsVolatility1 As DevExpress.XtraCharts.ChaikinsVolatility = New DevExpress.XtraCharts.ChaikinsVolatility()
+            Dim movingAverageConvergenceDivergence1 As DevExpress.XtraCharts.MovingAverageConvergenceDivergence = New DevExpress.XtraCharts.MovingAverageConvergenceDivergence()
+            Dim williamsR1 As DevExpress.XtraCharts.WilliamsR = New DevExpress.XtraCharts.WilliamsR()
+            Dim chartIntervalItem1 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
+            Dim chartIntervalItem2 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
+            Dim chartIntervalItem3 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
+            Dim chartIntervalItem4 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
+            Dim chartIntervalItem5 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
+            Dim chartIntervalItem6 As DevExpress.XtraCharts.ChartIntervalItem = New DevExpress.XtraCharts.ChartIntervalItem()
             Me.chart = New DevExpress.XtraCharts.ChartControl()
             Me.barManager1 = New DevExpress.XtraBars.BarManager(Me.components)
             Me.chartOptionsBar1 = New DevExpress.XtraCharts.UI.ChartFinancialIndicatorsBar()
@@ -56,41 +56,47 @@ Namespace DevExpress.XtraCharts.Demos
             Me.removeBarCheckItem = New DevExpress.XtraCharts.UI.RemoveIndicatorBarItem()
             Me.addChartIndicatorBarItem1 = New DevExpress.XtraCharts.UI.AddIndicatorBarItem()
             Me.commandBarGalleryDropDown10 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
+            Me.chartAnnotationsBar1 = New DevExpress.XtraCharts.UI.ChartAnnotationsBar()
+            Me.addTextAnnotationBarItem = New DevExpress.XtraCharts.UI.AddTextAnnotationBarItem()
+            Me.addImageAnnotationBarItem = New DevExpress.XtraCharts.UI.AddImageAnnotationBarItem()
             Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
             Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
             Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
             Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
-            Me.chartBarController1 = New DevExpress.XtraCharts.UI.ChartBarController(Me.components)
             Me.selectSeriesRepositoryItemComboBox1 = New DevExpress.XtraCharts.UI.SelectSeriesRepositoryItemComboBox()
             Me.changeSeriesViewRepositoryItemComboBox1 = New DevExpress.XtraCharts.UI.ChangeSeriesViewRepositoryItemComboBox()
-            Me.chartAnnotationsBar1 = New DevExpress.XtraCharts.UI.ChartAnnotationsBar()
-            Me.addTextAnnotationBarItem = New DevExpress.XtraCharts.UI.AddTextAnnotationBarItem()
-            Me.addImageAnnotationBarItem = New DevExpress.XtraCharts.UI.AddImageAnnotationBarItem()
             Me.selectAxisMeasureUnitRepositoryItemComboBox1 = New DevExpress.XtraCharts.UI.SelectAxisMeasureUnitRepositoryItemComboBox()
             Me.selectPeriodRepositoryItemComboBox1 = New DevExpress.XtraCharts.UI.SelectPeriodRepositoryItemComboBox()
+            Me.chartBarController1 = New DevExpress.XtraCharts.UI.ChartBarController(Me.components)
             CType((Me.chart), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((xyDiagram2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((xyDiagramPane5), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((xyDiagramPane6), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((xyDiagramPane7), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((xyDiagramPane8), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((secondaryAxisY5), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((secondaryAxisY6), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((secondaryAxisY7), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((secondaryAxisY8), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((series2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((stockSeriesView2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((averageTrueRange2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((chaikinsVolatility2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((movingAverageConvergenceDivergence2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((williamsR2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((xyDiagram1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((xyDiagramPane1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((xyDiagramPane2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((xyDiagramPane3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((xyDiagramPane4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((secondaryAxisY2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((secondaryAxisY3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((secondaryAxisY4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((constantLine1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((constantLine2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((stockSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((averageTrueRange1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((chaikinsVolatility1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((movingAverageConvergenceDivergence1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((williamsR1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.barManager1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.commandBarGalleryDropDown10), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((Me.chartBarController1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.selectSeriesRepositoryItemComboBox1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.changeSeriesViewRepositoryItemComboBox1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.selectAxisMeasureUnitRepositoryItemComboBox1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.selectPeriodRepositoryItemComboBox1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.chartBarController1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' chart
@@ -100,149 +106,153 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             Me.chart.CrosshairOptions.ShowOnlyInFocusedPane = False
             Me.chart.CrosshairOptions.ShowOutOfRangePoints = True
-            xyDiagram2.AxisX.GridLines.Visible = True
-            xyDiagram2.AxisX.DateTimeScaleOptions.WorkdaysOnly = True
-            xyDiagram2.AxisX.MinorCount = 5
-            xyDiagram2.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.[True]
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "3"
-            xyDiagram2.AxisX.VisualRange.Auto = False
-            xyDiagram2.AxisX.VisualRange.AutoSideMargins = False
-            xyDiagram2.AxisX.VisualRange.MaxValueSerializable = "02/14/2020 00:00:00.000"
-            xyDiagram2.AxisX.VisualRange.MinValueSerializable = "02/05/2020 00:00:00.000"
-            xyDiagram2.AxisX.VisualRange.SideMarginsValue = 0R
-            xyDiagram2.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram2.AxisX.WholeRange.SideMarginsValue = 5R
-            xyDiagram2.AxisY.Alignment = DevExpress.XtraCharts.AxisAlignment.Far
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1"
-            xyDiagram2.AxisY.WholeRange.AlwaysShowZeroLevel = False
-            xyDiagram2.DefaultPane.LayoutOptions.RowSpan = 100
-            xyDiagram2.DefaultPane.ScrollBarOptions.XAxisScrollBarVisible = False
-            xyDiagram2.DependentAxesYRange = DevExpress.Utils.DefaultBoolean.[True]
-            xyDiagram2.EnableAxisXScrolling = True
-            xyDiagram2.EnableAxisXZooming = True
-            xyDiagramPane5.LayoutOptions.RowSpan = 50
-            xyDiagramPane5.Name = "atrPane"
-            xyDiagramPane5.PaneID = 0
-            xyDiagramPane5.ScrollBarOptions.XAxisScrollBarVisible = False
-            xyDiagramPane5.Tag = "AverageTrueRange"
-            xyDiagramPane6.LayoutOptions.RowSpan = 50
-            xyDiagramPane6.Name = "chvPane"
-            xyDiagramPane6.PaneID = 1
-            xyDiagramPane6.ScrollBarOptions.XAxisScrollBarVisible = False
-            xyDiagramPane6.Tag = "ChaikinsVolatility"
-            xyDiagramPane7.LayoutOptions.RowSpan = 50
-            xyDiagramPane7.Name = "macdPane"
-            xyDiagramPane7.PaneID = 2
-            xyDiagramPane7.ScrollBarOptions.XAxisScrollBarVisible = False
-            xyDiagramPane7.Tag = "MovingAverageConvergenceDivergence"
-            xyDiagramPane8.LayoutOptions.RowSpan = 50
-            xyDiagramPane8.Name = "wrPane"
-            xyDiagramPane8.PaneID = 3
-            xyDiagramPane8.Tag = "WilliamsR"
-            xyDiagram2.Panes.AddRange(New DevExpress.XtraCharts.XYDiagramPane() {xyDiagramPane5, xyDiagramPane6, xyDiagramPane7, xyDiagramPane8})
-            xyDiagram2.RuntimePaneResize = True
-            secondaryAxisY5.AxisID = 0
-            secondaryAxisY5.Name = "atrAxisY"
-            secondaryAxisY5.Tag = "AverageTrueRange"
-            secondaryAxisY5.Title.Text = "ATR"
-            secondaryAxisY5.VisibleInPanesSerializable = "0"
-            secondaryAxisY5.WholeRange.AlwaysShowZeroLevel = False
-            secondaryAxisY6.AxisID = 1
-            secondaryAxisY6.Name = "chVAxisY"
-            secondaryAxisY6.Tag = "ChaikinsVolatility"
-            secondaryAxisY6.Title.Text = "CHV"
-            secondaryAxisY6.VisibleInPanesSerializable = "1"
-            secondaryAxisY6.WholeRange.AlwaysShowZeroLevel = False
-            secondaryAxisY7.AxisID = 2
-            secondaryAxisY7.Name = "macdAxisY"
-            secondaryAxisY7.Tag = "MovingAverageConvergenceDivergence"
-            secondaryAxisY7.Title.Text = "MACD"
-            secondaryAxisY7.WholeRange.AlwaysShowZeroLevel = False
-            secondaryAxisY8.AxisID = 3
-            constantLine3.AxisValueSerializable = "-80"
-            constantLine3.Name = "-80"
-            constantLine3.ShowInLegend = False
-            constantLine3.Title.Alignment = DevExpress.XtraCharts.ConstantLineTitleAlignment.Far
-            constantLine3.Title.ShowBelowLine = True
-            constantLine4.AxisValueSerializable = "-20"
-            constantLine4.Name = "-20"
-            constantLine4.ShowInLegend = False
-            constantLine4.Title.Alignment = DevExpress.XtraCharts.ConstantLineTitleAlignment.Far
-            secondaryAxisY8.ConstantLines.AddRange(New DevExpress.XtraCharts.ConstantLine() {constantLine3, constantLine4})
-            secondaryAxisY8.Name = "wrAxisY"
-            secondaryAxisY8.Tag = "WilliamsR"
-            secondaryAxisY8.Title.Text = "%R"
-            secondaryAxisY8.WholeRange.AlwaysShowZeroLevel = False
-            secondaryAxisY8.WholeRange.Auto = False
-            secondaryAxisY8.WholeRange.MaxValueSerializable = "50"
-            secondaryAxisY8.WholeRange.MinValueSerializable = "-150"
-            xyDiagram2.SecondaryAxesY.AddRange(New DevExpress.XtraCharts.SecondaryAxisY() {secondaryAxisY5, secondaryAxisY6, secondaryAxisY7, secondaryAxisY8})
-            Me.chart.Diagram = xyDiagram2
+            xyDiagram1.AxisX.DateTimeScaleOptions.WorkdaysOnly = True
+            xyDiagram1.AxisX.GridLines.Visible = True
+            xyDiagram1.AxisX.MinorCount = 5
+            xyDiagram1.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.[True]
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "3"
+            xyDiagram1.AxisX.VisualRange.Auto = False
+            xyDiagram1.AxisX.VisualRange.AutoSideMargins = False
+            xyDiagram1.AxisX.VisualRange.EndSideMargin = 0R
+            xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "02/14/2020 00:00:00.000"
+            xyDiagram1.AxisX.VisualRange.MinValueSerializable = "02/05/2020 00:00:00.000"
+            xyDiagram1.AxisX.VisualRange.StartSideMargin = 0R
+            xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 5R
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 5R
+            xyDiagram1.AxisY.Alignment = DevExpress.XtraCharts.AxisAlignment.Far
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
+            xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = False
+            xyDiagram1.DefaultPane.LayoutOptions.RowSpan = 100
+            xyDiagram1.DefaultPane.ScrollBarOptions.XAxisScrollBarVisible = False
+            xyDiagram1.DependentAxesYRange = DevExpress.Utils.DefaultBoolean.[True]
+            xyDiagram1.EnableAxisXScrolling = True
+            xyDiagram1.EnableAxisXZooming = True
+            xyDiagramPane1.LayoutOptions.RowSpan = 50
+            xyDiagramPane1.Name = "atrPane"
+            xyDiagramPane1.PaneID = 0
+            xyDiagramPane1.ScrollBarOptions.XAxisScrollBarVisible = False
+            xyDiagramPane1.Tag = "AverageTrueRange"
+            xyDiagramPane2.LayoutOptions.RowSpan = 50
+            xyDiagramPane2.Name = "chvPane"
+            xyDiagramPane2.PaneID = 1
+            xyDiagramPane2.ScrollBarOptions.XAxisScrollBarVisible = False
+            xyDiagramPane2.Tag = "ChaikinsVolatility"
+            xyDiagramPane3.LayoutOptions.RowSpan = 50
+            xyDiagramPane3.Name = "macdPane"
+            xyDiagramPane3.PaneID = 2
+            xyDiagramPane3.ScrollBarOptions.XAxisScrollBarVisible = False
+            xyDiagramPane3.Tag = "MovingAverageConvergenceDivergence"
+            xyDiagramPane4.LayoutOptions.RowSpan = 50
+            xyDiagramPane4.Name = "wrPane"
+            xyDiagramPane4.PaneID = 3
+            xyDiagramPane4.Tag = "WilliamsR"
+            xyDiagram1.Panes.AddRange(New DevExpress.XtraCharts.XYDiagramPane() {xyDiagramPane1, xyDiagramPane2, xyDiagramPane3, xyDiagramPane4})
+            xyDiagram1.RuntimePaneResize = True
+            secondaryAxisY1.AxisID = 0
+            secondaryAxisY1.Name = "atrAxisY"
+            secondaryAxisY1.Tag = "AverageTrueRange"
+            secondaryAxisY1.Title.Text = "ATR"
+            secondaryAxisY1.VisibleInPanesSerializable = "0"
+            secondaryAxisY1.WholeRange.AlwaysShowZeroLevel = False
+            secondaryAxisY2.AxisID = 1
+            secondaryAxisY2.Name = "chVAxisY"
+            secondaryAxisY2.Tag = "ChaikinsVolatility"
+            secondaryAxisY2.Title.Text = "CHV"
+            secondaryAxisY2.VisibleInPanesSerializable = "1"
+            secondaryAxisY2.WholeRange.AlwaysShowZeroLevel = False
+            secondaryAxisY3.AxisID = 2
+            secondaryAxisY3.Name = "macdAxisY"
+            secondaryAxisY3.Tag = "MovingAverageConvergenceDivergence"
+            secondaryAxisY3.Title.Text = "MACD"
+            secondaryAxisY3.VisibleInPanesSerializable = "2"
+            secondaryAxisY3.WholeRange.AlwaysShowZeroLevel = False
+            secondaryAxisY4.AxisID = 3
+            constantLine1.AxisValueSerializable = "-80"
+            constantLine1.Name = "-80"
+            constantLine1.ShowInLegend = False
+            constantLine1.Title.Alignment = DevExpress.XtraCharts.ConstantLineTitleAlignment.Far
+            constantLine1.Title.ShowBelowLine = True
+            constantLine2.AxisValueSerializable = "-20"
+            constantLine2.Name = "-20"
+            constantLine2.ShowInLegend = False
+            constantLine2.Title.Alignment = DevExpress.XtraCharts.ConstantLineTitleAlignment.Far
+            secondaryAxisY4.ConstantLines.AddRange(New DevExpress.XtraCharts.ConstantLine() {constantLine1, constantLine2})
+            secondaryAxisY4.Name = "wrAxisY"
+            secondaryAxisY4.Tag = "WilliamsR"
+            secondaryAxisY4.Title.Text = "%R"
+            secondaryAxisY4.VisibleInPanesSerializable = "3"
+            secondaryAxisY4.WholeRange.AlwaysShowZeroLevel = False
+            secondaryAxisY4.WholeRange.Auto = False
+            secondaryAxisY4.WholeRange.MaxValueSerializable = "50"
+            secondaryAxisY4.WholeRange.MinValueSerializable = "-150"
+            xyDiagram1.SecondaryAxesY.AddRange(New DevExpress.XtraCharts.SecondaryAxisY() {secondaryAxisY1, secondaryAxisY2, secondaryAxisY3, secondaryAxisY4})
+            Me.chart.Diagram = xyDiagram1
             Me.chart.Dock = System.Windows.Forms.DockStyle.Fill
             Me.chart.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
             Me.chart.Legend.DockTargetName = "Default Pane"
             Me.chart.Legend.Name = "Default Legend"
             Me.chart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[True]
-            legend5.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
-            legend5.Border.Visibility = DevExpress.Utils.DefaultBoolean.[True]
-            legend5.DockTargetName = "atrPane"
-            legend5.Name = "atrLegend"
-            legend5.Tag = "AverageTrueRange"
-            legend6.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
-            legend6.Border.Visibility = DevExpress.Utils.DefaultBoolean.[True]
-            legend6.DockTargetName = "chvPane"
-            legend6.Name = "chvLegend"
-            legend6.Tag = "ChaikinsVolatility"
-            legend7.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
-            legend7.Border.Visibility = DevExpress.Utils.DefaultBoolean.[True]
-            legend7.DockTargetName = "wrPane"
-            legend7.Name = "wrLegend"
-            legend7.Tag = "WilliamsR"
-            legend8.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
-            legend8.Border.Visibility = DevExpress.Utils.DefaultBoolean.[True]
-            legend8.DockTargetName = "macdPane"
-            legend8.Name = "macdLegend"
-            legend8.Tag = "MovingAverageConvergenceDivergence"
-            Me.chart.Legends.AddRange(New DevExpress.XtraCharts.Legend() {legend5, legend6, legend7, legend8})
+            legend1.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
+            legend1.Border.Visibility = DevExpress.Utils.DefaultBoolean.[True]
+            legend1.DockTargetName = "atrPane"
+            legend1.Name = "atrLegend"
+            legend1.Tag = "AverageTrueRange"
+            legend2.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
+            legend2.Border.Visibility = DevExpress.Utils.DefaultBoolean.[True]
+            legend2.DockTargetName = "chvPane"
+            legend2.Name = "chvLegend"
+            legend2.Tag = "ChaikinsVolatility"
+            legend3.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
+            legend3.Border.Visibility = DevExpress.Utils.DefaultBoolean.[True]
+            legend3.DockTargetName = "wrPane"
+            legend3.Name = "wrLegend"
+            legend3.Tag = "WilliamsR"
+            legend4.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
+            legend4.Border.Visibility = DevExpress.Utils.DefaultBoolean.[True]
+            legend4.DockTargetName = "macdPane"
+            legend4.Name = "macdLegend"
+            legend4.Tag = "MovingAverageConvergenceDivergence"
+            Me.chart.Legends.AddRange(New DevExpress.XtraCharts.Legend() {legend1, legend2, legend3, legend4})
             Me.chart.Location = New System.Drawing.Point(0, 24)
             Me.chart.Name = "chart"
-            series2.ArgumentDataMember = "DateTimeStamp"
-            series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
-            series2.Name = "USDJPU"
-            series2.ValueDataMembersSerializable = "Low;High;Open;Close"
-            averageTrueRange2.AxisYName = "atrAxisY"
-            averageTrueRange2.LegendName = "atrLegend"
-            averageTrueRange2.LegendText = "ATR (14)"
-            averageTrueRange2.Name = "Average True Range"
-            averageTrueRange2.PaneName = "atrPane"
-            averageTrueRange2.ShowInLegend = True
-            averageTrueRange2.Tag = "AverageTrueRange"
-            chaikinsVolatility2.AxisYName = "chVAxisY"
-            chaikinsVolatility2.LegendName = "chvLegend"
-            chaikinsVolatility2.LegendText = "CHV (10)"
-            chaikinsVolatility2.Name = "Chaikin's Volatility"
-            chaikinsVolatility2.PaneName = "chvPane"
-            chaikinsVolatility2.ShowInLegend = True
-            chaikinsVolatility2.Tag = "ChaikinsVolatility"
-            movingAverageConvergenceDivergence2.AxisYName = "macdAxisY"
-            movingAverageConvergenceDivergence2.LegendName = "macdLegend"
-            movingAverageConvergenceDivergence2.LegendText = "MACD (12, 26, 9)"
-            movingAverageConvergenceDivergence2.Name = "Moving Average Convergence/Divergence"
-            movingAverageConvergenceDivergence2.PaneName = "macdPane"
-            movingAverageConvergenceDivergence2.ShowInLegend = True
-            movingAverageConvergenceDivergence2.SignalLineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dash
-            movingAverageConvergenceDivergence2.Tag = "MovingAverageConvergenceDivergence"
-            williamsR2.AxisYName = "wrAxisY"
-            williamsR2.LegendName = "wrLegend"
-            williamsR2.LegendText = "%R (14)"
-            williamsR2.Name = "Williams %R"
-            williamsR2.PaneName = "wrPane"
-            williamsR2.ShowInLegend = True
-            williamsR2.Tag = "WilliamsR"
-            stockSeriesView2.Indicators.AddRange(New DevExpress.XtraCharts.Indicator() {averageTrueRange2, chaikinsVolatility2, movingAverageConvergenceDivergence2, williamsR2})
-            stockSeriesView2.LineThickness = 1
-            series2.View = stockSeriesView2
-            Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series2}
+            series1.ArgumentDataMember = "DateTimeStamp"
+            series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
+            series1.Name = "USDJPU"
+            series1.ValueDataMembersSerializable = "Low;High;Open;Close"
+            averageTrueRange1.AxisYName = "atrAxisY"
+            averageTrueRange1.LegendName = "atrLegend"
+            averageTrueRange1.LegendText = "ATR (14)"
+            averageTrueRange1.Name = "Average True Range"
+            averageTrueRange1.PaneName = "atrPane"
+            averageTrueRange1.ShowInLegend = True
+            averageTrueRange1.Tag = "AverageTrueRange"
+            chaikinsVolatility1.AxisYName = "chVAxisY"
+            chaikinsVolatility1.LegendName = "chvLegend"
+            chaikinsVolatility1.LegendText = "CHV (10)"
+            chaikinsVolatility1.Name = "Chaikin's Volatility"
+            chaikinsVolatility1.PaneName = "chvPane"
+            chaikinsVolatility1.ShowInLegend = True
+            chaikinsVolatility1.Tag = "ChaikinsVolatility"
+            movingAverageConvergenceDivergence1.AxisYName = "macdAxisY"
+            movingAverageConvergenceDivergence1.LegendName = "macdLegend"
+            movingAverageConvergenceDivergence1.LegendText = "MACD (12, 26, 9)"
+            movingAverageConvergenceDivergence1.Name = "Moving Average Convergence/Divergence"
+            movingAverageConvergenceDivergence1.PaneName = "macdPane"
+            movingAverageConvergenceDivergence1.ShowInLegend = True
+            movingAverageConvergenceDivergence1.SignalLineStyle.DashStyle = DevExpress.XtraCharts.DashStyle.Dash
+            movingAverageConvergenceDivergence1.Tag = "MovingAverageConvergenceDivergence"
+            williamsR1.AxisYName = "wrAxisY"
+            williamsR1.LegendName = "wrLegend"
+            williamsR1.LegendText = "%R (14)"
+            williamsR1.Name = "Williams %R"
+            williamsR1.PaneName = "wrPane"
+            williamsR1.ShowInLegend = True
+            williamsR1.Tag = "WilliamsR"
+            stockSeriesView1.Indicators.AddRange(New DevExpress.XtraCharts.Indicator() {averageTrueRange1, chaikinsVolatility1, movingAverageConvergenceDivergence1, williamsR1})
+            stockSeriesView1.LineThickness = 1
+            series1.View = stockSeriesView1
+            Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
             Me.chart.Size = New System.Drawing.Size(788, 654)
             Me.chart.TabIndex = 1
             AddHandler Me.chart.BeforeZoom, New DevExpress.XtraCharts.ChartBeforeZoomEventHandler(AddressOf Me.chart_BeforeZoom)
@@ -267,7 +277,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' chartOptionsBar1
             ' 
             Me.chartOptionsBar1.Control = Me.chart
-            Me.chartOptionsBar1.DockCol = 2
+            Me.chartOptionsBar1.DockCol = 0
             Me.chartOptionsBar1.DockRow = 0
             Me.chartOptionsBar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
             Me.chartOptionsBar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.trendLineBarCheckItem), New DevExpress.XtraBars.LinkPersistInfo(Me.fibbArcBarCheckItem), New DevExpress.XtraBars.LinkPersistInfo(Me.fibbFansBarCheckItem), New DevExpress.XtraBars.LinkPersistInfo(Me.fibbRetrBarCheckItem), New DevExpress.XtraBars.LinkPersistInfo(Me.removeBarCheckItem), New DevExpress.XtraBars.LinkPersistInfo(Me.addChartIndicatorBarItem1, True)})
@@ -282,28 +292,28 @@ Namespace DevExpress.XtraCharts.Demos
             Me.trendLineBarCheckItem.Name = "trendLineBarCheckItem"
             AddHandler Me.trendLineBarCheckItem.CheckedChanged, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.checkItem_CheckedChanged)
             ' 
-            ' fibbArcBarCheckItem2
+            ' fibbArcBarCheckItem
             ' 
             Me.fibbArcBarCheckItem.Id = 31
-            Me.fibbArcBarCheckItem.Name = "fibbArcBarCheckItem2"
+            Me.fibbArcBarCheckItem.Name = "fibbArcBarCheckItem"
             AddHandler Me.fibbArcBarCheckItem.CheckedChanged, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.checkItem_CheckedChanged)
             ' 
-            ' fibbFansBarCheckItem3
+            ' fibbFansBarCheckItem
             ' 
             Me.fibbFansBarCheckItem.Id = 32
-            Me.fibbFansBarCheckItem.Name = "fibbFansBarCheckItem3"
+            Me.fibbFansBarCheckItem.Name = "fibbFansBarCheckItem"
             AddHandler Me.fibbFansBarCheckItem.CheckedChanged, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.checkItem_CheckedChanged)
             ' 
-            ' fibbRetrBarCheckItem4
+            ' fibbRetrBarCheckItem
             ' 
             Me.fibbRetrBarCheckItem.Id = 33
-            Me.fibbRetrBarCheckItem.Name = "fibbRetrBarCheckItem4"
+            Me.fibbRetrBarCheckItem.Name = "fibbRetrBarCheckItem"
             AddHandler Me.fibbRetrBarCheckItem.CheckedChanged, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.checkItem_CheckedChanged)
             ' 
-            ' removeBarCheckItem5
+            ' removeBarCheckItem
             ' 
             Me.removeBarCheckItem.Id = 35
-            Me.removeBarCheckItem.Name = "removeBarCheckItem5"
+            Me.removeBarCheckItem.Name = "removeBarCheckItem"
             AddHandler Me.removeBarCheckItem.CheckedChanged, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.checkItem_CheckedChanged)
             ' 
             ' addChartIndicatorBarItem1
@@ -337,6 +347,24 @@ Namespace DevExpress.XtraCharts.Demos
             Me.commandBarGalleryDropDown10.Manager = Me.barManager1
             Me.commandBarGalleryDropDown10.Name = "commandBarGalleryDropDown10"
             ' 
+            ' chartAnnotationsBar1
+            ' 
+            Me.chartAnnotationsBar1.Control = Me.chart
+            Me.chartAnnotationsBar1.DockCol = 1
+            Me.chartAnnotationsBar1.DockRow = 0
+            Me.chartAnnotationsBar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
+            Me.chartAnnotationsBar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.addTextAnnotationBarItem), New DevExpress.XtraBars.LinkPersistInfo(Me.addImageAnnotationBarItem)})
+            ' 
+            ' addTextAnnotationBarItem
+            ' 
+            Me.addTextAnnotationBarItem.Id = 49
+            Me.addTextAnnotationBarItem.Name = "addTextAnnotationBarItem"
+            ' 
+            ' addImageAnnotationBarItem
+            ' 
+            Me.addImageAnnotationBarItem.Id = 50
+            Me.addImageAnnotationBarItem.Name = "addImageAnnotationBarItem"
+            ' 
             ' barDockControlTop
             ' 
             Me.barDockControlTop.CausesValidation = False
@@ -369,18 +397,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.barDockControlRight.Manager = Me.barManager1
             Me.barDockControlRight.Size = New System.Drawing.Size(0, 654)
             ' 
-            ' chartBarController1
-            ' 
-            Me.chartBarController1.BarItems.Add(Me.trendLineBarCheckItem)
-            Me.chartBarController1.BarItems.Add(Me.fibbArcBarCheckItem)
-            Me.chartBarController1.BarItems.Add(Me.fibbFansBarCheckItem)
-            Me.chartBarController1.BarItems.Add(Me.fibbRetrBarCheckItem)
-            Me.chartBarController1.BarItems.Add(Me.addChartIndicatorBarItem1)
-            Me.chartBarController1.BarItems.Add(Me.removeBarCheckItem)
-            Me.chartBarController1.BarItems.Add(Me.addTextAnnotationBarItem)
-            Me.chartBarController1.BarItems.Add(Me.addImageAnnotationBarItem)
-            Me.chartBarController1.Control = Me.chart
-            ' 
             ' selectSeriesRepositoryItemComboBox1
             ' 
             Me.selectSeriesRepositoryItemComboBox1.AutoHeight = False
@@ -397,35 +413,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.changeSeriesViewRepositoryItemComboBox1.Name = "changeSeriesViewRepositoryItemComboBox1"
             Me.changeSeriesViewRepositoryItemComboBox1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
             ' 
-            ' chartAnnotationsBar1
-            ' 
-            Me.chartAnnotationsBar1.Control = Me.chart
-            Me.chartAnnotationsBar1.DockCol = 3
-            Me.chartAnnotationsBar1.DockRow = 0
-            Me.chartAnnotationsBar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-            Me.chartAnnotationsBar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.addTextAnnotationBarItem), New DevExpress.XtraBars.LinkPersistInfo(Me.addImageAnnotationBarItem)})
-            ' 
-            ' addTextAnnotationBarItem1
-            ' 
-            Me.addTextAnnotationBarItem.Id = 49
-            Me.addTextAnnotationBarItem.Name = "addTextAnnotationBarItem1"
-            ' 
-            ' addImageAnnotationBarItem1
-            ' 
-            Me.addImageAnnotationBarItem.Id = 50
-            Me.addImageAnnotationBarItem.Name = "addImageAnnotationBarItem1"
-            ' 
             ' selectAxisMeasureUnitRepositoryItemComboBox1
             ' 
             Me.selectAxisMeasureUnitRepositoryItemComboBox1.AutoHeight = False
             Me.selectAxisMeasureUnitRepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            chartIntervalItem7.Caption = "1 day"
-            chartIntervalItem7.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Day
-            chartIntervalItem8.Caption = "1 week"
-            chartIntervalItem8.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Week
-            chartIntervalItem9.Caption = "1 month"
-            chartIntervalItem9.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Month
-            Me.selectAxisMeasureUnitRepositoryItemComboBox1.Items.AddRange(New Object() {chartIntervalItem7, chartIntervalItem8, chartIntervalItem9})
+            chartIntervalItem1.Caption = "1 day"
+            chartIntervalItem1.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Day
+            chartIntervalItem2.Caption = "1 week"
+            chartIntervalItem2.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Week
+            chartIntervalItem3.Caption = "1 month"
+            chartIntervalItem3.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Month
+            Me.selectAxisMeasureUnitRepositoryItemComboBox1.Items.AddRange(New Object() {chartIntervalItem1, chartIntervalItem2, chartIntervalItem3})
             Me.selectAxisMeasureUnitRepositoryItemComboBox1.Name = "selectAxisMeasureUnitRepositoryItemComboBox1"
             Me.selectAxisMeasureUnitRepositoryItemComboBox1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
             ' 
@@ -433,17 +431,29 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.selectPeriodRepositoryItemComboBox1.AutoHeight = False
             Me.selectPeriodRepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            chartIntervalItem10.Caption = "6 month"
-            chartIntervalItem10.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Month
-            chartIntervalItem10.MeasureUnitMultiplier = 6
-            chartIntervalItem11.Caption = "1 year"
-            chartIntervalItem11.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year
-            chartIntervalItem12.Caption = "2 year"
-            chartIntervalItem12.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year
-            chartIntervalItem12.MeasureUnitMultiplier = 2
-            Me.selectPeriodRepositoryItemComboBox1.Items.AddRange(New Object() {chartIntervalItem10, chartIntervalItem11, chartIntervalItem12})
+            chartIntervalItem4.Caption = "6 month"
+            chartIntervalItem4.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Month
+            chartIntervalItem4.MeasureUnitMultiplier = 6
+            chartIntervalItem5.Caption = "1 year"
+            chartIntervalItem5.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year
+            chartIntervalItem6.Caption = "2 year"
+            chartIntervalItem6.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year
+            chartIntervalItem6.MeasureUnitMultiplier = 2
+            Me.selectPeriodRepositoryItemComboBox1.Items.AddRange(New Object() {chartIntervalItem4, chartIntervalItem5, chartIntervalItem6})
             Me.selectPeriodRepositoryItemComboBox1.Name = "selectPeriodRepositoryItemComboBox1"
             Me.selectPeriodRepositoryItemComboBox1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
+            ' 
+            ' chartBarController1
+            ' 
+            Me.chartBarController1.BarItems.Add(Me.trendLineBarCheckItem)
+            Me.chartBarController1.BarItems.Add(Me.fibbArcBarCheckItem)
+            Me.chartBarController1.BarItems.Add(Me.fibbFansBarCheckItem)
+            Me.chartBarController1.BarItems.Add(Me.fibbRetrBarCheckItem)
+            Me.chartBarController1.BarItems.Add(Me.addChartIndicatorBarItem1)
+            Me.chartBarController1.BarItems.Add(Me.removeBarCheckItem)
+            Me.chartBarController1.BarItems.Add(Me.addTextAnnotationBarItem)
+            Me.chartBarController1.BarItems.Add(Me.addImageAnnotationBarItem)
+            Me.chartBarController1.Control = Me.chart
             ' 
             ' FinancialIndicatorsDemo
             ' 
@@ -456,29 +466,35 @@ Namespace DevExpress.XtraCharts.Demos
             Me.Controls.Add(Me.barDockControlTop)
             Me.Name = "FinancialIndicatorsDemo"
             Me.Size = New System.Drawing.Size(788, 678)
-            CType((xyDiagramPane5), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((xyDiagramPane6), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((xyDiagramPane7), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((xyDiagramPane8), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((secondaryAxisY5), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((secondaryAxisY6), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((secondaryAxisY7), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((secondaryAxisY8), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((xyDiagram2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((averageTrueRange2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((chaikinsVolatility2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((movingAverageConvergenceDivergence2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((williamsR2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((stockSeriesView2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((series2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((xyDiagramPane1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((xyDiagramPane2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((xyDiagramPane3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((xyDiagramPane4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((secondaryAxisY2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((secondaryAxisY3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((constantLine1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((constantLine2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((secondaryAxisY4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((xyDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((averageTrueRange1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((chaikinsVolatility1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((movingAverageConvergenceDivergence1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((williamsR1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((stockSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.chart), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.barManager1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.commandBarGalleryDropDown10), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((Me.chartBarController1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.selectSeriesRepositoryItemComboBox1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.changeSeriesViewRepositoryItemComboBox1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.selectAxisMeasureUnitRepositoryItemComboBox1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.selectPeriodRepositoryItemComboBox1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.chartBarController1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
         End Sub

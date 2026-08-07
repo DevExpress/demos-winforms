@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
 using DevExpress.DevAV.ViewModels;
-using DevExpress.XtraEditors;
-using DevExpress.XtraCharts;
-using DevExpress.DevAV.Common.Utils;
 using DevExpress.Utils.MVVM.UI;
+using DevExpress.XtraCharts;
+using DevExpress.XtraEditors;
 
 namespace DevExpress.DevAV.Views {
     [ViewType(DevAVDbViewModel.DashboardViewDocumentType)]
@@ -47,7 +43,7 @@ namespace DevExpress.DevAV.Views {
         public static void Paint(CustomDrawSeriesPointEventArgs e) {
             int imageSizeW = 18, imageSizeH = 14;
             var image = new Bitmap(imageSizeW, imageSizeH);
-            using (var graphics = Graphics.FromImage(image)) {
+            using(var graphics = Graphics.FromImage(image)) {
                 graphics.FillRectangle(new SolidBrush(e.LegendDrawOptions.Color), new Rectangle(new Point(0, 0), new Size(imageSizeW, imageSizeH)));
             }
             e.LegendMarkerImage = image;

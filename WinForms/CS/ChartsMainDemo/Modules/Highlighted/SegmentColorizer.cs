@@ -2,6 +2,7 @@
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using DevExpress.DXperience.Demos;
 using DevExpress.XtraEditors.Controls;
 
 namespace DevExpress.XtraCharts.Demos {
@@ -45,7 +46,7 @@ namespace DevExpress.XtraCharts.Demos {
         DataTable PrepareData(DataTable table) {
             foreach(DataRow row in table.Rows) {
                 DateTime date = (DateTime)row[0];
-                row[0] = new DateTime(DateTime.Now.Year - 1, date.Month, date.Day);
+                row[0] = new DateTime(TutorialConstants.Now.Year - 1, date.Month, date.Day);
             }
             return table;
         }

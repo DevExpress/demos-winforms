@@ -143,9 +143,9 @@ Namespace DevExpress.SalesDemo.Win.Modules
 			End If
 		End Sub
 		Private Sub SetDayMode()
-			valuePresenter0.TitleText = "TODAY"
-			valuePresenter1.TitleText = "YESTERDAY"
-			valuePresenter2.TitleText = "LAST WEEK"
+			valuePresenter0.TitleText = "Today"
+			valuePresenter1.TitleText = "Yesterday"
+			valuePresenter2.TitleText = "Last Week"
 			btnCurrentDate.Text = "Today"
 			btnPreviousDate.Text = "Yesterday"
 			SetPaletteColorNumber(1)
@@ -154,8 +154,8 @@ Namespace DevExpress.SalesDemo.Win.Modules
 			Diagram.AxisX.DateTimeScaleOptions.AggregateFunction = AggregateFunction.Sum
 		End Sub
 		Private Sub SetMonthMode()
-			valuePresenter0.TitleText = "THIS MONTH"
-			valuePresenter1.TitleText = "LAST MONTH"
+			valuePresenter0.TitleText = "This Month"
+			valuePresenter1.TitleText = "Last Month"
 			valuePresenter2.TitleText = "YTD"
 			btnCurrentDate.Text = "This Month"
 			btnPreviousDate.Text = "Last Month"

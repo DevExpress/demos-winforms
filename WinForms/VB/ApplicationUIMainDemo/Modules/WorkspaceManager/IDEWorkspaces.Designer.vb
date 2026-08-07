@@ -101,19 +101,16 @@ Namespace DevExpress.ApplicationUI.Demos
             ' 
             Me.document1.Caption = "File.cs"
             Me.document1.ControlName = "document1"
-            Me.document1.ControlTypeName = Nothing
             ' 
             ' document2
             ' 
             Me.document2.Caption = "ucToolBox.cs"
             Me.document2.ControlName = "document2"
-            Me.document2.ControlTypeName = Nothing
             ' 
             ' document3
             ' 
             Me.document3.Caption = "ucMain.cs"
             Me.document3.ControlName = "document3"
-            Me.document3.ControlTypeName = Nothing
             ' 
             ' documentManager1
             ' 

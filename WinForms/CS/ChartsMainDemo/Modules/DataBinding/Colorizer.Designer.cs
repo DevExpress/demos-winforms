@@ -91,6 +91,7 @@
             bubbleSeriesLabel1.TextPattern = "{W:0,,.00} M";
             series1.Label = bubbleSeriesLabel1;
             series1.Name = "Series 1";
+            series1.SeriesID = 0;
             series1.ToolTipPointPattern = "{A}\nGDP per capita: {V:0.00}$\nPopulation: {W:0,,.00} M\nHPI: {HINT}";
             bubbleSeriesView1.MaxSize = 1.4D;
             bubbleSeriesView1.MinSize = 0.6D;
@@ -109,6 +110,7 @@
             this.chart.Size = new System.Drawing.Size(784, 432);
             this.chart.TabIndex = 2;
             chartTitle1.Text = "Happy Planet Index for G20";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.True;

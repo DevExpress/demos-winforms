@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraScheduler.Demos.DemoData {
     public class SchedulerDataHelper {
@@ -9,23 +10,23 @@ namespace DevExpress.XtraScheduler.Demos.DemoData {
 
         public static LocationDataBindingList GetLocations(SchedulerControl scheduler) {
             SchedulerDataHelper instance = scheduler.Tag as SchedulerDataHelper;
-            if (instance == null)
+            if(instance == null)
                 return null;
             return instance.Locations;
         }
 
         public static void AddLocation(SchedulerControl scheduler, string location) {
-            if (string.IsNullOrEmpty(location))
+            if(string.IsNullOrEmpty(location))
                 return;
             SchedulerDataHelper instance = scheduler.Tag as SchedulerDataHelper;
-            if (instance == null)
+            if(instance == null)
                 return;
-            if (instance.Locations.Select(x => x.Caption).Contains(location))
+            if(instance.Locations.Select(x => x.Caption).Contains(location))
                 return;
             instance.Locations.Add(new LocationData() { Id = instance.Locations.Count, Caption = location });
         }
 
-        public static DateTime Start { get { return DateTime.Today; } }
+        public static DateTime Start { get { return TutorialConstants.Today; } }
 
         EventBindingList events = new EventBindingList();
         CalendarBindingList calendars = new CalendarBindingList();
@@ -50,9 +51,10 @@ namespace DevExpress.XtraScheduler.Demos.DemoData {
 
                 PrepareResourceStorage(storage, hideParentResource);
                 PrepareAppointmentStorage(storage);
-                scheduler.InitNewAppointment += (o, e) => { if (((SchedulerControl)o).GroupType == SchedulerGroupType.None) e.Appointment.ResourceId = 1; };
+                scheduler.InitNewAppointment += (o, e) => { if(((SchedulerControl)o).GroupType == SchedulerGroupType.None) e.Appointment.ResourceId = 1; };
 
-            } finally {
+            }
+            finally {
                 scheduler.EndUpdate();
             }
             
@@ -68,10 +70,10 @@ namespace DevExpress.XtraScheduler.Demos.DemoData {
             mappings.Id = "Id";
             mappings.Caption = "Caption";
             mappings.ParentId = "ParentId";
-            storage.Resources.DataSource = this.calendars;
-            if (hideParentResource) {
-                foreach (Resource resource in storage.Resources.Items) {
-                    if (resource.ParentId.Equals(resource.Id))
+            storage.Resources.DataSource = calendars;
+            if(hideParentResource) {
+                foreach(Resource resource in storage.Resources.Items) {
+                    if(resource.ParentId.Equals(resource.Id))
                         continue;
                     storage.Resources.GetResourceById(resource.ParentId).Visible = false;
                 }
@@ -141,20 +143,20 @@ namespace DevExpress.XtraScheduler.Demos.DemoData {
         }
 
         void GenerateResources() {
-            this.calendars.Add(new Calendar() { Id = 0, Caption = "Work", ParentId = 0 });
-            this.calendars.Add(new Calendar() { Id = 1, Caption = "Indoor meetings", ParentId = 0 });
-            this.calendars.Add(new Calendar() { Id = 2, Caption = "Outdoor meetings", ParentId = 0 });
-            this.calendars.Add(new Calendar() { Id = 3, Caption = "Partnership", ParentId = 3 });
-            this.calendars.Add(new Calendar() { Id = 4, Caption = "Personal", ParentId = 4 });
-            this.calendars.Add(new Calendar() { Id = 5, Caption = "Golfing", ParentId = 4 });
-            this.calendars.Add(new Calendar() { Id = 6, Caption = "Other", ParentId = 0 });
-            this.calendars.Add(new Calendar() { Id = 7, Caption = "Other Activities", ParentId = 4 });
-            this.calendars.Add(new Calendar() { Id = 8, Caption = "Baseball", ParentId = 4 });
-            this.calendars.Add(new Calendar() { Id = 9, Caption = "Family", ParentId = 4 });
+            calendars.Add(new Calendar() { Id = 0, Caption = "Work", ParentId = 0 });
+            calendars.Add(new Calendar() { Id = 1, Caption = "Indoor meetings", ParentId = 0 });
+            calendars.Add(new Calendar() { Id = 2, Caption = "Outdoor meetings", ParentId = 0 });
+            calendars.Add(new Calendar() { Id = 3, Caption = "Partnership", ParentId = 3 });
+            calendars.Add(new Calendar() { Id = 4, Caption = "Personal", ParentId = 4 });
+            calendars.Add(new Calendar() { Id = 5, Caption = "Golfing", ParentId = 4 });
+            calendars.Add(new Calendar() { Id = 6, Caption = "Other", ParentId = 0 });
+            calendars.Add(new Calendar() { Id = 7, Caption = "Other Activities", ParentId = 4 });
+            calendars.Add(new Calendar() { Id = 8, Caption = "Baseball", ParentId = 4 });
+            calendars.Add(new Calendar() { Id = 9, Caption = "Family", ParentId = 4 });
         }
 
         void GenerateEvents() {
-            EventGenerator.Generate(this.events, DateTime.Today);
+            EventGenerator.Generate(events, TutorialConstants.Today);
         }
     }
 }

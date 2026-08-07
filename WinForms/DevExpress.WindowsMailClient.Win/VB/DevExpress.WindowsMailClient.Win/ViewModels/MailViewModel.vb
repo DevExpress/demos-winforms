@@ -1,5 +1,6 @@
 Imports System.Collections.Generic
 Imports System.Linq
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.WindowsMailClient.Win.Data
 Imports DevExpress.WindowsMailClient.Win.Model
 
@@ -15,7 +16,7 @@ Namespace DevExpress.WindowsMailClient.Win.ViewModels
         End Sub
 
         Private Sub SetMessageData(ByVal currentMessage As Message, ByVal text As String, ByVal subject As String, ByVal toEditValue As Object, ByVal fromEditValue As Object)
-            currentMessage.Date = Date.Now
+            currentMessage.Date = TutorialConstants.Now
             currentMessage.Text = text
             currentMessage.SetPlainText(ObjectHelper.GetPlainTextFromMHT(text))
             Dim subj As String = subject

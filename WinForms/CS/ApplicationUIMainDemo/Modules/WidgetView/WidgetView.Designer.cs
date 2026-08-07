@@ -64,56 +64,48 @@ namespace DevExpress.ApplicationUI.Demos {
             // 
             this.document1.Caption = "AAPL";
             this.document1.ControlName = "document1";
-            this.document1.ControlTypeName = null;
             this.document1.Height = 150;
             // 
             // document2
             // 
             this.document2.Caption = "YHOO";
             this.document2.ControlName = "document2";
-            this.document2.ControlTypeName = null;
             this.document2.Height = 150;
             // 
             // document3
             // 
             this.document3.Caption = "CSCO";
             this.document3.ControlName = "document3";
-            this.document3.ControlTypeName = null;
             this.document3.Height = 150;
             // 
             // document4
             // 
             this.document4.Caption = "ADBE";
             this.document4.ControlName = "document4";
-            this.document4.ControlTypeName = null;
             this.document4.Height = 150;
             // 
             // document5
             // 
             this.document5.Caption = "BAC";
             this.document5.ControlName = "document5";
-            this.document5.ControlTypeName = null;
             this.document5.Height = 150;
             // 
             // document6
             // 
             this.document6.Caption = "DELL";
             this.document6.ControlName = "document6";
-            this.document6.ControlTypeName = null;
             this.document6.Height = 150;
             // 
             // document7
             // 
             this.document7.Caption = "NVDA";
             this.document7.ControlName = "document7";
-            this.document7.ControlTypeName = null;
             this.document7.Height = 150;
             // 
             // document8
             // 
             this.document8.Caption = "HPQ";
             this.document8.ControlName = "document8";
-            this.document8.ControlTypeName = null;
             this.document8.Height = 150;
             // 
             // stackGroup1

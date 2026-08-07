@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraCharts.Demos {
 
@@ -188,7 +189,7 @@ namespace DevExpress.XtraCharts.Demos {
         }
         internal static List<SimpleDataPoint> GenerateSeriesDataSource(int pointsCount) {
             List<SimpleDataPoint> points = new List<SimpleDataPoint>(pointsCount);
-            NonCryptographicRandom random = new NonCryptographicRandom(DateTime.Now.Millisecond);
+            NonCryptographicRandom random = TutorialConstants.Random;
             double value = 0;
             double delta = (random.NextDouble()) / 75;
             for(int i = 0; i < pointsCount; i++) {
@@ -352,7 +353,7 @@ namespace DevExpress.XtraCharts.Demos {
         }
 
         internal void GenerateInitialData() {
-            DateTime baseTimeStamp = DateTime.Now.AddMilliseconds(-InitialDataPointsCount * DataGenerationIntervalMilliseconds);
+            DateTime baseTimeStamp = TutorialConstants.Now.AddMilliseconds(-InitialDataPointsCount * DataGenerationIntervalMilliseconds);
             DateTime argument = baseTimeStamp;
             for(int i = 0; i < InitialDataPointsCount - 1; i++) {
                 argument = argument.AddMilliseconds(DataGenerationIntervalMilliseconds);
@@ -480,13 +481,13 @@ namespace DevExpress.XtraCharts.Demos {
         }
 
         internal void GenerateInitialData() {
-            DateTime baseDate = DateTime.Now.AddMinutes(-InitialDataPointsCount).Date;
+            DateTime baseDate = TutorialConstants.Now.AddMinutes(-InitialDataPointsCount).Date;
             if(baseDate.DayOfWeek == DayOfWeek.Saturday || baseDate.DayOfWeek == DayOfWeek.Sunday)
                 baseDate = baseDate.AddDays(baseDate.DayOfWeek == DayOfWeek.Saturday ? 2 : 1);
             prevPoint = new FinancialDataPoint(baseDate, StartPrice, StartPrice + 0.002, StartPrice - 0.002, StartPrice + 0.001, 100000);
             dataSource.Add(prevPoint);
             DateTime argument = baseDate;
-            while(argument < DateTime.Now.AddMinutes(-1)) {
+            while(argument < TutorialConstants.Now.AddMinutes(-1)) {
                 argument = argument.AddMinutes(1);
                 if(argument.DayOfWeek == DayOfWeek.Saturday)
                     argument = argument.AddDays(2);
@@ -495,7 +496,7 @@ namespace DevExpress.XtraCharts.Demos {
                 dataSource.Add(point);
             }
             currentAggregatingPoint = prevPoint;
-            currentAggregatingPoint.Volume = (int)(DateTime.Now.Second / 60d * currentAggregatingPoint.Volume);
+            currentAggregatingPoint.Volume = (int)(TutorialConstants.Now.Second / 60d * currentAggregatingPoint.Volume);
         }
         internal void UpdateDataSource() {
             List<FinancialDataPoint> tempBuffer;
@@ -578,7 +579,7 @@ namespace DevExpress.XtraCharts.Demos {
         static internal List<FinancialDataPoint> Generate() {
             NonCryptographicRandom random = new NonCryptographicRandom(28);
             List<FinancialDataPoint> points = new List<FinancialDataPoint>();
-            int startYear = DateTime.Now.Year - 3;
+            int startYear = TutorialConstants.Now.Year - 3;
             DateTime currentDateTime = new DateTime(startYear, 1, 2, 8, 0, 0);
             DateTime endDateTime = new DateTime(startYear + 3, 1, 1, 0, 0, 0);
             double previousClose = StartPrice;

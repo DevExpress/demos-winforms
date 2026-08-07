@@ -1,11 +1,7 @@
-using DevExpress.DevAV.Common.DataModel;
-using DevExpress.DevAV.DevAVDbDataModel1;
-using DevExpress.Mvvm.POCO;
-using DevExpress.XtraMap;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using DevExpress.Mvvm.POCO;
+using DevExpress.XtraMap;
 
 namespace DevExpress.DevAV.ViewModels {
     public class MapViewModel {

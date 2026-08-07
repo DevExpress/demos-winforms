@@ -1006,7 +1006,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ITEMS: {0}.
+        ///   Looks up a localized string similar to Items: {0}.
         /// </summary>
         internal static string InfoText {
             get {
@@ -1958,7 +1958,7 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to REMINDERS: {0}.
+        ///   Looks up a localized string similar to Reminders: {0}.
         /// </summary>
         internal static string ReminderText {
             get {

@@ -7,6 +7,7 @@ using System.Drawing.Drawing2D;
 using System.Threading.Tasks;
 using DevExpress.Data.Filtering;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
 
@@ -131,7 +132,7 @@ namespace DevExpress.XtraPivotGrid.Demos.Helpers {
                 TransmissionSpeeds = model.TransmissionSpeeds;
                 TransmissionType = model.TransmissionType;
 
-                SalesDate = DateTime.Now.AddDays(-rnd.Next(days));
+                SalesDate = TutorialConstants.Now.AddDays(-rnd.Next(days));
                 Discount = Math.Round(0.05 * rnd.Next(4), 2);
                 OrderID = id;
             }
@@ -189,13 +190,12 @@ namespace DevExpress.XtraPivotGrid.Demos.Helpers {
         }
         class OrdersData {
             public OrdersData(DataSet ds, List<Trademark> trademarks, List<Model> models, int itemCount, int days) {
-                NonCryptographicRandom rnd = NonCryptographicRandom.Default;
                 DataSet = ds;
                 Trademarks = trademarks;
                 TrademarkItems = new List<TrademarkItem>();
                 List<OrderItem> orders = new List<OrderItem>();
                 for(int i = 0; i < itemCount; i++)
-                    orders.Add(new OrderItem(models[rnd.Next(0, models.Count - 1)], days, rnd, i + 1));
+                    orders.Add(new OrderItem(models[TutorialConstants.Random.Next(0, models.Count - 1)], days, TutorialConstants.Random, i + 1));
                 int id = 0;
                 foreach(OrderItem item in orders) {
                     TrademarkItems.Add(new TrademarkBody(item, id));
@@ -245,7 +245,6 @@ namespace DevExpress.XtraPivotGrid.Demos.Helpers {
                 });
 
             var listModels = new List<VehiclesData.Model>();
-            NonCryptographicRandom rnd = NonCryptographicRandom.Default;
             foreach(DataRow row in ds.Tables[Model].Rows)
                 listModels.Add(new VehiclesData.Model() {
                     ID = (int)row["ID"],
@@ -265,8 +264,8 @@ namespace DevExpress.XtraPivotGrid.Demos.Helpers {
                     TransmissionType = (int)row["Transmission Type"],
                     Description = string.Format("{0}", row["Description"]),
                     Photo = ByteImageConverter.FromByteArray((byte[])row["Photo"]),
-                    DeliveryDate = DateTime.Now.AddDays(rnd.Next(dataInterval)),
-                    InStock = rnd.Next(100) < 95,
+                    DeliveryDate = TutorialConstants.Now.AddDays(TutorialConstants.Random.Next(dataInterval)),
+                    InStock = TutorialConstants.Random.Next(100) < 95,
                     Trademarks = listTrademarks
                 });
             return listModels;

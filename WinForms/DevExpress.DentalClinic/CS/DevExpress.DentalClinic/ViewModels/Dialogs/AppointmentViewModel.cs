@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Threading.Tasks;
 using DevExpress.DentalClinic.Model;
 using DevExpress.DentalClinic.View;
+using DevExpress.DXperience.Demos;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
 using DevExpress.Xpo;
@@ -159,7 +159,7 @@ namespace DevExpress.DentalClinic.ViewModel {
             LoadPatientsAndDoctors();
             Patient = Session.GetObjectByKey<Patient>(PatientId);
             Appointment.Patient = Patient;
-            Appointment.Date = DateTime.Now;
+            Appointment.Date = TutorialConstants.Now;
             Appointment.AllDayEvent = false;
             if(Doctor == null && ResourceId != null)
                 Doctor = Session.GetObjectByKey<Doctor>(ResourceId);
@@ -209,7 +209,7 @@ namespace DevExpress.DentalClinic.ViewModel {
             AppointmentHeader = string.Format(DentalClinicStringId.AppointmentEdit, AppointmentId);
             if(Appointment == null) {
                 Appointment = new Appointment(Session);
-                Appointment.Date = Date.GetValueOrDefault(DateTime.Now);
+                Appointment.Date = Date.GetValueOrDefault(TutorialConstants.Now);
                 Appointment.AllDayEvent = false;
                 ButtonText = DentalClinicStringId.Create;
                 AppointmentHeader = DentalClinicStringId.AppointmentNew;
@@ -229,16 +229,14 @@ namespace DevExpress.DentalClinic.ViewModel {
         void LoadPatientsAndDoctors() {
             using(var session = SessionProvider.CreateSession()) {
                 var patients = session.Query<Patient>()
-                    .Select(x => new PatientInfo()
-                    {
+                    .Select(x => new PatientInfo() {
                         PatientId = x.Oid,
                         Name = x.FirstName + " " + x.LastName,
                         Phone = x.Phone,
                     }).ToList();
                 Patients = patients;
                 var doctors = session.Query<Doctor>()
-                    .Select(x => new DoctorInfo
-                    {
+                    .Select(x => new DoctorInfo {
                         DoctorId = x.Oid,
                         Name = x.FirstName + " " + x.LastName
                     }).ToList();

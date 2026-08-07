@@ -1,5 +1,6 @@
 Imports System
 Imports DevExpress.Data.Filtering
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Mvvm
 Imports DevExpress.Mvvm.DataAnnotations
 Imports DevExpress.WindowsMailClient.Win.Data
@@ -135,9 +136,9 @@ Namespace DevExpress.WindowsMailClient.Win.ViewModels
         Public Sub SetFilterYesterday()
             AnimateArrival = True
             If Not ReferenceEquals(ActiveFilter, Nothing) Then
-                ActiveFilter = New BinaryOperator(New BinaryOperator("MailType", CurrentMailType, BinaryOperatorType.Equal), New BetweenOperator("Date", Date.Today.Date.AddHours(-24), Date.Today.Date), BinaryOperatorType.BitwiseAnd)
+                ActiveFilter = New BinaryOperator(New BinaryOperator("MailType", CurrentMailType, BinaryOperatorType.Equal), New BetweenOperator("Date", TutorialConstants.Today.Date.AddHours(-24), TutorialConstants.Today.Date), BinaryOperatorType.BitwiseAnd)
             Else
-                ActiveFilter = New BetweenOperator("Date", Date.Today.Date.AddHours(-24), Date.Today.Date)
+                ActiveFilter = New BetweenOperator("Date", TutorialConstants.Today.Date.AddHours(-24), TutorialConstants.Today.Date)
             End If
         End Sub
 
@@ -145,9 +146,9 @@ Namespace DevExpress.WindowsMailClient.Win.ViewModels
         Public Sub SetFilterToday()
             AnimateArrival = True
             If Not ReferenceEquals(ActiveFilter, Nothing) Then
-                ActiveFilter = New BinaryOperator(New BinaryOperator("MailType", CurrentMailType, BinaryOperatorType.Equal), New BetweenOperator("Date", Date.Today.Date, Date.Today.Date.AddHours(24)), BinaryOperatorType.BitwiseAnd)
+                ActiveFilter = New BinaryOperator(New BinaryOperator("MailType", CurrentMailType, BinaryOperatorType.Equal), New BetweenOperator("Date", TutorialConstants.Today.Date, TutorialConstants.Today.Date.AddHours(24)), BinaryOperatorType.BitwiseAnd)
             Else
-                ActiveFilter = New BetweenOperator("Date", Date.Today.Date, Date.Today.Date.AddHours(24))
+                ActiveFilter = New BetweenOperator("Date", TutorialConstants.Today.Date, TutorialConstants.Today.Date.AddHours(24))
             End If
         End Sub
 

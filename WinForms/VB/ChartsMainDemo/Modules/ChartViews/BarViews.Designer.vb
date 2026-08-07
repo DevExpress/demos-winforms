@@ -226,7 +226,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' documentGroup
             ' 
@@ -335,8 +335,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelBar.Name = "dockPanelBar"
             Me.dockPanelBar.Options.ShowCloseButton = False
             Me.dockPanelBar.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelBar.SavedSizeFactor = 1R
-            Me.dockPanelBar.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelBar.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelBar.Text = "Bar"
             ' 
             ' dockPanelBar_Container
@@ -344,7 +343,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelBar_Container.Controls.Add(Me.chartBar)
             Me.dockPanelBar_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelBar_Container.Name = "dockPanelBar_Container"
-            Me.dockPanelBar_Container.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelBar_Container.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelBar_Container.TabIndex = 0
             ' 
             ' chartBar
@@ -363,13 +362,11 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisY.VisualRange.Auto = False
-            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "6"
+            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "9.3"
             xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0"
-            xyDiagram1.AxisY.WholeRange.Auto = False
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "6"
-            xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0"
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram1.LabelsResolveOverlappingMinIndent = 0
             Me.chartBar.Diagram = xyDiagram1
             Me.chartBar.Dock = System.Windows.Forms.DockStyle.Fill
@@ -386,10 +383,11 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartBar.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             Me.chartBar.SeriesTemplate.SeriesDataMember = "Year"
             Me.chartBar.SeriesTemplate.ValueDataMembersSerializable = "Sales"
-            Me.chartBar.Size = New System.Drawing.Size(924, 545)
+            Me.chartBar.Size = New System.Drawing.Size(924, 548)
             Me.chartBar.TabIndex = 1
             Me.chartBar.TabStop = False
             chartTitle1.Text = "DevAV Sales by Regions"
+            chartTitle1.TitleID = 0
             Me.chartBar.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' dockPanelStackedBar
@@ -401,8 +399,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelStackedBar.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelStackedBar.Name = "dockPanelStackedBar"
             Me.dockPanelStackedBar.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelStackedBar.SavedSizeFactor = 1R
-            Me.dockPanelStackedBar.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelStackedBar.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelStackedBar.Text = "Stacked Bar"
             ' 
             ' dockPanelStackedBar_Container
@@ -410,7 +407,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelStackedBar_Container.Controls.Add(Me.chartStackedBar)
             Me.dockPanelStackedBar_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelStackedBar_Container.Name = "dockPanelStackedBar_Container"
-            Me.dockPanelStackedBar_Container.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelStackedBar_Container.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelStackedBar_Container.TabIndex = 0
             ' 
             ' chartStackedBar
@@ -423,7 +420,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram2.AxisX.Title.Text = "Countries"
             xyDiagram2.AxisX.VisibleInPanesSerializable = "-1"
             xyDiagram2.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram2.AxisX.WholeRange.SideMarginsValue = 0.65R
+            xyDiagram2.AxisX.WholeRange.EndSideMargin = 0.65R
+            xyDiagram2.AxisX.WholeRange.StartSideMargin = 0.65R
             xyDiagram2.AxisY.GridLines.MinorVisible = True
             xyDiagram2.AxisY.Label.TextPattern = "{V:0,,}"
             xyDiagram2.AxisY.Title.Text = "Millions"
@@ -450,15 +448,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedBar.SeriesTemplate.ValueDataMembersSerializable = "Population"
             stackedBarSeriesView1.BarWidth = 0.7R
             Me.chartStackedBar.SeriesTemplate.View = stackedBarSeriesView1
-            Me.chartStackedBar.Size = New System.Drawing.Size(924, 545)
+            Me.chartStackedBar.Size = New System.Drawing.Size(924, 548)
             Me.chartStackedBar.TabIndex = 1
             Me.chartStackedBar.TabStop = False
             chartTitle2.Text = "Male Age Structure"
-            chartTitle3.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle2.TitleID = 0
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle3.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle3.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle3.Text = "From www.cia.gov"
             chartTitle3.TextColor = System.Drawing.Color.Gray
+            chartTitle3.TitleID = 1
             Me.chartStackedBar.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle2, chartTitle3})
             ' 
             ' dockPanelFullStackedBar
@@ -473,8 +473,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelFullStackedBar.OriginalSize = New System.Drawing.Size(200, 200)
             Me.dockPanelFullStackedBar.SavedIndex = 2
             Me.dockPanelFullStackedBar.SavedMdiDocument = True
-            Me.dockPanelFullStackedBar.SavedSizeFactor = 1R
-            Me.dockPanelFullStackedBar.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelFullStackedBar.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelFullStackedBar.Text = "Full Stacked Bar"
             ' 
             ' dockPanelFullStackedBar_Container
@@ -482,7 +481,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelFullStackedBar_Container.Controls.Add(Me.chartFullStackedBar)
             Me.dockPanelFullStackedBar_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelFullStackedBar_Container.Name = "dockPanelFullStackedBar_Container"
-            Me.dockPanelFullStackedBar_Container.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelFullStackedBar_Container.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelFullStackedBar_Container.TabIndex = 0
             ' 
             ' chartFullStackedBar
@@ -496,11 +495,9 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram3.AxisY.Label.TextPattern = "{V:P0}"
             xyDiagram3.AxisY.Title.Text = "Percent"
             xyDiagram3.AxisY.VisibleInPanesSerializable = "-1"
-            xyDiagram3.AxisY.WholeRange.Auto = False
             xyDiagram3.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram3.AxisY.WholeRange.MaxValueSerializable = "1"
-            xyDiagram3.AxisY.WholeRange.MinValueSerializable = "0"
-            xyDiagram3.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram3.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram3.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram3.DefaultPane.StackedBarTotalLabel.TextPattern = "Total" & Global.Microsoft.VisualBasic.Constants.vbLf & "{TV:F0}K"
             Me.chartFullStackedBar.Diagram = xyDiagram3
             Me.chartFullStackedBar.Dock = System.Windows.Forms.DockStyle.Fill
@@ -520,10 +517,11 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedBar.SeriesTemplate.SeriesDataMember = "ProductCategory"
             Me.chartFullStackedBar.SeriesTemplate.ValueDataMembersSerializable = "Sales"
             Me.chartFullStackedBar.SeriesTemplate.View = fullStackedBarSeriesView1
-            Me.chartFullStackedBar.Size = New System.Drawing.Size(924, 545)
+            Me.chartFullStackedBar.Size = New System.Drawing.Size(924, 548)
             Me.chartFullStackedBar.TabIndex = 1
             Me.chartFullStackedBar.TabStop = False
             chartTitle4.Text = "DevAV Sales Mix by Region"
+            chartTitle4.TitleID = 0
             Me.chartFullStackedBar.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle4})
             ' 
             ' dockPanelStackedBarSideBySide
@@ -535,8 +533,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelStackedBarSideBySide.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelStackedBarSideBySide.Name = "dockPanelStackedBarSideBySide"
             Me.dockPanelStackedBarSideBySide.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelStackedBarSideBySide.SavedSizeFactor = 1R
-            Me.dockPanelStackedBarSideBySide.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelStackedBarSideBySide.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelStackedBarSideBySide.Text = "Stacked Bar Side-By-Side"
             ' 
             ' dockPanelStackedBarSideBySide_Container
@@ -544,7 +541,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelStackedBarSideBySide_Container.Controls.Add(Me.chartStackedBarSideBySide)
             Me.dockPanelStackedBarSideBySide_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelStackedBarSideBySide_Container.Name = "dockPanelStackedBarSideBySide_Container"
-            Me.dockPanelStackedBarSideBySide_Container.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelStackedBarSideBySide_Container.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelStackedBarSideBySide_Container.TabIndex = 0
             ' 
             ' chartStackedBarSideBySide
@@ -587,16 +584,19 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedBarSideBySide.SeriesTemplate.SeriesDataMember = "GenderAge"
             Me.chartStackedBarSideBySide.SeriesTemplate.ValueDataMembersSerializable = "Population"
             Me.chartStackedBarSideBySide.SeriesTemplate.View = sideBySideStackedBarSeriesView1
-            Me.chartStackedBarSideBySide.Size = New System.Drawing.Size(924, 545)
+            Me.chartStackedBarSideBySide.Size = New System.Drawing.Size(924, 548)
             Me.chartStackedBarSideBySide.TabIndex = 2
             chartTitle5.Text = "Population: Age-Gender Structure"
+            chartTitle5.TitleID = 0
             chartTitle6.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle6.Text = "Data estimate for 2020"
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle6.TitleID = 1
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle7.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle7.Text = "From www.cia.gov"
             chartTitle7.TextColor = System.Drawing.Color.Gray
+            chartTitle7.TitleID = 2
             Me.chartStackedBarSideBySide.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle5, chartTitle6, chartTitle7})
             AddHandler Me.chartStackedBarSideBySide.BoundDataChanged, New DevExpress.XtraCharts.BoundDataChangedEventHandler(AddressOf Me.chartStackedBarSideBySide_BoundDataChanged)
             ' 
@@ -609,8 +609,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelFullStackedBarSideBySide.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelFullStackedBarSideBySide.Name = "dockPanelFullStackedBarSideBySide"
             Me.dockPanelFullStackedBarSideBySide.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelFullStackedBarSideBySide.SavedSizeFactor = 1R
-            Me.dockPanelFullStackedBarSideBySide.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelFullStackedBarSideBySide.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelFullStackedBarSideBySide.Text = "Full Stacked Bar Side-By-Side"
             ' 
             ' dockPanelFullStackedBarSideBySide_Container
@@ -618,7 +617,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelFullStackedBarSideBySide_Container.Controls.Add(Me.chartFullStackedBarSideBySide)
             Me.dockPanelFullStackedBarSideBySide_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelFullStackedBarSideBySide_Container.Name = "dockPanelFullStackedBarSideBySide_Container"
-            Me.dockPanelFullStackedBarSideBySide_Container.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelFullStackedBarSideBySide_Container.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelFullStackedBarSideBySide_Container.TabIndex = 0
             ' 
             ' chartFullStackedBarSideBySide
@@ -633,13 +632,9 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram5.AxisY.Label.TextPattern = "{V:P0}"
             xyDiagram5.AxisY.Title.Text = "Percent"
             xyDiagram5.AxisY.VisibleInPanesSerializable = "-1"
-            xyDiagram5.AxisY.VisualRange.Auto = False
-            xyDiagram5.AxisY.VisualRange.AutoSideMargins = False
-            xyDiagram5.AxisY.VisualRange.MaxValueSerializable = "1"
-            xyDiagram5.AxisY.VisualRange.MinValueSerializable = "0"
-            xyDiagram5.AxisY.VisualRange.SideMarginsValue = 0R
             xyDiagram5.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram5.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram5.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram5.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram5.DefaultPane.StackedBarTotalLabel.TextPattern = "Total" & Global.Microsoft.VisualBasic.Constants.vbLf & "{TV:0,,.00}M"
             Me.chartFullStackedBarSideBySide.Diagram = xyDiagram5
             Me.chartFullStackedBarSideBySide.Dock = System.Windows.Forms.DockStyle.Fill
@@ -661,16 +656,19 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFullStackedBarSideBySide.SeriesTemplate.SeriesDataMember = "GenderAge"
             Me.chartFullStackedBarSideBySide.SeriesTemplate.ValueDataMembersSerializable = "Population"
             Me.chartFullStackedBarSideBySide.SeriesTemplate.View = sideBySideFullStackedBarSeriesView1
-            Me.chartFullStackedBarSideBySide.Size = New System.Drawing.Size(924, 545)
+            Me.chartFullStackedBarSideBySide.Size = New System.Drawing.Size(924, 548)
             Me.chartFullStackedBarSideBySide.TabIndex = 2
             chartTitle8.Text = "Population: Age-Gender Structure"
+            chartTitle8.TitleID = 0
             chartTitle9.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle9.Text = "Data estimate for mid-2016"
-            chartTitle10.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle9.TitleID = 1
             chartTitle10.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle10.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle10.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle10.Text = "From www.cia.gov"
             chartTitle10.TextColor = System.Drawing.Color.Gray
+            chartTitle10.TitleID = 2
             Me.chartFullStackedBarSideBySide.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle8, chartTitle9, chartTitle10})
             AddHandler Me.chartFullStackedBarSideBySide.BoundDataChanged, New DevExpress.XtraCharts.BoundDataChangedEventHandler(AddressOf Me.chartFullStackedBarSideBySide_BoundDataChanged)
             ' 
@@ -683,8 +681,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelRangeBar.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelRangeBar.Name = "dockPanelRangeBar"
             Me.dockPanelRangeBar.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelRangeBar.SavedSizeFactor = 1R
-            Me.dockPanelRangeBar.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelRangeBar.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelRangeBar.Text = "Range Bar"
             ' 
             ' dockPanelRangeBar_Container
@@ -692,7 +689,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelRangeBar_Container.Controls.Add(Me.chartRangeBar)
             Me.dockPanelRangeBar_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelRangeBar_Container.Name = "dockPanelRangeBar_Container"
-            Me.dockPanelRangeBar_Container.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelRangeBar_Container.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelRangeBar_Container.TabIndex = 0
             ' 
             ' chartRangeBar
@@ -735,6 +732,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.Label = rangeBarSeriesLabel1
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series1.Name = "Europe Brent"
+            series1.SeriesID = 0
             series1.ToolTipPointPattern = "{S}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Month: {A:MMMM}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Min Price: ${V1:0.00}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Max Price: ${V2:0.00}"
             series1.ValueDataMembersSerializable = "Min;Max"
             series1.View = overlappedRangeBarSeriesView1
@@ -747,6 +745,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.Label = rangeBarSeriesLabel2
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series2.Name = "OK WTI"
+            series2.SeriesID = 1
             series2.ToolTipPointPattern = "{S}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Month: {A:MMMM}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Min Price: ${V1:0.00}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Max Price: ${V2:0.00}"
             series2.ValueDataMembersSerializable = "Min;Max"
             barGrowUpAnimation1.BeginTime = System.TimeSpan.Parse("00:00:00.8000000")
@@ -756,15 +755,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartRangeBar.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1, series2}
             Me.chartRangeBar.SeriesTemplate.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[False]
             Me.chartRangeBar.SeriesTemplate.View = overlappedRangeBarSeriesView3
-            Me.chartRangeBar.Size = New System.Drawing.Size(924, 545)
+            Me.chartRangeBar.Size = New System.Drawing.Size(924, 548)
             Me.chartRangeBar.TabIndex = 1
             Me.chartRangeBar.TabStop = False
             chartTitle11.Text = "Crude Oil Prices in 2015"
-            chartTitle12.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle11.TitleID = 0
             chartTitle12.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle12.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle12.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle12.Text = "From www.eia.gov"
             chartTitle12.TextColor = System.Drawing.Color.Gray
+            chartTitle12.TitleID = 1
             Me.chartRangeBar.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle11, chartTitle12})
             Me.chartRangeBar.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[False]
             Me.chartRangeBar.ToolTipOptions.ShowForPoints = False
@@ -779,8 +780,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelRangeBarSideBySide.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelRangeBarSideBySide.Name = "dockPanelRangeBarSideBySide"
             Me.dockPanelRangeBarSideBySide.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelRangeBarSideBySide.SavedSizeFactor = 1R
-            Me.dockPanelRangeBarSideBySide.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelRangeBarSideBySide.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelRangeBarSideBySide.Text = "Range Bar Side-By-Side"
             ' 
             ' dockPanelRangeBarSideBySide_Container
@@ -788,7 +788,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelRangeBarSideBySide_Container.Controls.Add(Me.chartRangeBarSideBySide)
             Me.dockPanelRangeBarSideBySide_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelRangeBarSideBySide_Container.Name = "dockPanelRangeBarSideBySide_Container"
-            Me.dockPanelRangeBarSideBySide_Container.Size = New System.Drawing.Size(924, 545)
+            Me.dockPanelRangeBarSideBySide_Container.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelRangeBarSideBySide_Container.TabIndex = 0
             ' 
             ' chartRangeBarSideBySide
@@ -831,6 +831,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.Label = rangeBarSeriesLabel3
             series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series3.Name = "Europe Brent"
+            series3.SeriesID = 0
             series3.ToolTipPointPattern = "{S}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Month: {A:MMMM}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Min Price: ${V1:0.00}" & Global.Microsoft.VisualBasic.Constants.vbLf & "Max Price: ${V2:0.00}" & Global.Microsoft.VisualBasic.Constants.vbLf
             series3.ValueDataMembersSerializable = "Min;Max"
             barWidenAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.2000000")
@@ -845,6 +846,7 @@ Namespace DevExpress.XtraCharts.Demos
             series4.Label = rangeBarSeriesLabel4
             series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series4.Name = "OK WTI"
+            series4.SeriesID = 1
             series4.ValueDataMembersSerializable = "Min;Max"
             barWidenAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.1000000")
             barWidenAnimation2.PointDelay = System.TimeSpan.Parse("00:00:00.2000000")
@@ -852,15 +854,17 @@ Namespace DevExpress.XtraCharts.Demos
             series4.View = sideBySideRangeBarSeriesView2
             Me.chartRangeBarSideBySide.SeriesSerializable = New DevExpress.XtraCharts.Series() {series3, series4}
             Me.chartRangeBarSideBySide.SeriesTemplate.View = sideBySideRangeBarSeriesView3
-            Me.chartRangeBarSideBySide.Size = New System.Drawing.Size(924, 545)
+            Me.chartRangeBarSideBySide.Size = New System.Drawing.Size(924, 548)
             Me.chartRangeBarSideBySide.TabIndex = 1
             Me.chartRangeBarSideBySide.TabStop = False
             chartTitle13.Text = "Crude Oil Prices in 2015"
-            chartTitle14.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle13.TitleID = 0
             chartTitle14.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle14.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle14.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle14.Text = "From www.eia.gov"
             chartTitle14.TextColor = System.Drawing.Color.Gray
+            chartTitle14.TitleID = 1
             Me.chartRangeBarSideBySide.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle13, chartTitle14})
             Me.chartRangeBarSideBySide.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[False]
             AddHandler Me.chartRangeBarSideBySide.CustomDrawCrosshair, New DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(AddressOf Me.OnRangeBarCustomDrawCrosshair)
@@ -905,34 +909,34 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(434, 57, 1127, 704)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 1
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' checkEditLabelVisible
             ' 
             Me.checkEditLabelVisible.EditValue = True
-            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 117)
+            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 124)
             Me.checkEditLabelVisible.Name = "checkEditLabelVisible"
             Me.checkEditLabelVisible.Properties.Caption = "Visible"
-            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 20)
             Me.checkEditLabelVisible.StyleController = Me.layoutControl
             Me.checkEditLabelVisible.TabIndex = 4
             AddHandler Me.checkEditLabelVisible.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditLabelVisible_CheckedChanged)
             ' 
             ' checkEditValueAsPercent
             ' 
-            Me.checkEditValueAsPercent.Location = New System.Drawing.Point(12, 140)
+            Me.checkEditValueAsPercent.Location = New System.Drawing.Point(12, 148)
             Me.checkEditValueAsPercent.Name = "checkEditValueAsPercent"
             Me.checkEditValueAsPercent.Properties.Caption = "Value as Percent"
-            Me.checkEditValueAsPercent.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditValueAsPercent.Size = New System.Drawing.Size(217, 20)
             Me.checkEditValueAsPercent.StyleController = Me.layoutControl
             Me.checkEditValueAsPercent.TabIndex = 11
             ' 
             ' spinEditLabelIndent
             ' 
             Me.spinEditLabelIndent.EditValue = New Decimal(New Integer() {2, 0, 0, 0})
-            Me.spinEditLabelIndent.Location = New System.Drawing.Point(95, 235)
+            Me.spinEditLabelIndent.Location = New System.Drawing.Point(104, 244)
             Me.spinEditLabelIndent.Name = "spinEditLabelIndent"
             Me.spinEditLabelIndent.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditLabelIndent.Properties.DisplayFormat.FormatString = "0 px"
@@ -940,7 +944,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditLabelIndent.Properties.IsFloatValue = False
             Me.spinEditLabelIndent.Properties.Mask.EditMask = "N00"
             Me.spinEditLabelIndent.Properties.MaxValue = New Decimal(New Integer() {100, 0, 0, 0})
-            Me.spinEditLabelIndent.Size = New System.Drawing.Size(134, 20)
+            Me.spinEditLabelIndent.Size = New System.Drawing.Size(125, 20)
             Me.spinEditLabelIndent.StyleController = Me.layoutControl
             Me.spinEditLabelIndent.TabIndex = 12
             AddHandler Me.spinEditLabelIndent.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditLabelIndent_EditValueChanged)
@@ -948,33 +952,33 @@ Namespace DevExpress.XtraCharts.Demos
             ' comboBoxEditLabelOrientation
             ' 
             Me.comboBoxEditLabelOrientation.EditValue = "Horizontal"
-            Me.comboBoxEditLabelOrientation.Location = New System.Drawing.Point(95, 211)
+            Me.comboBoxEditLabelOrientation.Location = New System.Drawing.Point(104, 220)
             Me.comboBoxEditLabelOrientation.Name = "comboBoxEditLabelOrientation"
             Me.comboBoxEditLabelOrientation.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditLabelOrientation.Properties.Items.AddRange(New Object() {"Horizontal", "Top To Bottom", "Bottom To Top"})
             Me.comboBoxEditLabelOrientation.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditLabelOrientation.Size = New System.Drawing.Size(134, 20)
+            Me.comboBoxEditLabelOrientation.Size = New System.Drawing.Size(125, 20)
             Me.comboBoxEditLabelOrientation.StyleController = Me.layoutControl
             Me.comboBoxEditLabelOrientation.TabIndex = 13
             AddHandler Me.comboBoxEditLabelOrientation.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditLabelOrientation_SelectedIndexChanged)
             ' 
             ' comboBoxEditLabelPosition
             ' 
-            Me.comboBoxEditLabelPosition.Location = New System.Drawing.Point(95, 163)
+            Me.comboBoxEditLabelPosition.Location = New System.Drawing.Point(104, 172)
             Me.comboBoxEditLabelPosition.Name = "comboBoxEditLabelPosition"
             Me.comboBoxEditLabelPosition.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditLabelPosition.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditLabelPosition.Size = New System.Drawing.Size(134, 20)
+            Me.comboBoxEditLabelPosition.Size = New System.Drawing.Size(125, 20)
             Me.comboBoxEditLabelPosition.StyleController = Me.layoutControl
             Me.comboBoxEditLabelPosition.TabIndex = 14
             AddHandler Me.comboBoxEditLabelPosition.EditValueChanged, New System.EventHandler(AddressOf Me.comboBoxEditLabelPosition_EditValueChanged)
             ' 
             ' comboBoxEditTotalLabelVisible
             ' 
-            Me.comboBoxEditTotalLabelVisible.Location = New System.Drawing.Point(12, 298)
+            Me.comboBoxEditTotalLabelVisible.Location = New System.Drawing.Point(12, 310)
             Me.comboBoxEditTotalLabelVisible.Name = "comboBoxEditTotalLabelVisible"
             Me.comboBoxEditTotalLabelVisible.Properties.Caption = "Visible"
-            Me.comboBoxEditTotalLabelVisible.Size = New System.Drawing.Size(217, 19)
+            Me.comboBoxEditTotalLabelVisible.Size = New System.Drawing.Size(217, 20)
             Me.comboBoxEditTotalLabelVisible.StyleController = Me.layoutControl
             Me.comboBoxEditTotalLabelVisible.TabIndex = 15
             AddHandler Me.comboBoxEditTotalLabelVisible.CheckedChanged, New System.EventHandler(AddressOf Me.comboBoxEditTotalLabelVisible_CheckedChanged)
@@ -982,22 +986,22 @@ Namespace DevExpress.XtraCharts.Demos
             ' comboBoxEditGroupSeriesBy
             ' 
             Me.comboBoxEditGroupSeriesBy.EditValue = "Gender"
-            Me.comboBoxEditGroupSeriesBy.Location = New System.Drawing.Point(95, 31)
+            Me.comboBoxEditGroupSeriesBy.Location = New System.Drawing.Point(104, 34)
             Me.comboBoxEditGroupSeriesBy.Name = "comboBoxEditGroupSeriesBy"
             Me.comboBoxEditGroupSeriesBy.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditGroupSeriesBy.Properties.Items.AddRange(New Object() {"Gender", "Age"})
             Me.comboBoxEditGroupSeriesBy.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditGroupSeriesBy.Size = New System.Drawing.Size(134, 20)
+            Me.comboBoxEditGroupSeriesBy.Size = New System.Drawing.Size(125, 20)
             Me.comboBoxEditGroupSeriesBy.StyleController = Me.layoutControl
             Me.comboBoxEditGroupSeriesBy.TabIndex = 16
             AddHandler Me.comboBoxEditGroupSeriesBy.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditGroupSeriesBy_SelectedIndexChanged)
             ' 
             ' checkEditDiagramRotated
             ' 
-            Me.checkEditDiagramRotated.Location = New System.Drawing.Point(12, 55)
+            Me.checkEditDiagramRotated.Location = New System.Drawing.Point(12, 58)
             Me.checkEditDiagramRotated.Name = "checkEditDiagramRotated"
             Me.checkEditDiagramRotated.Properties.Caption = "Diagram Rotated"
-            Me.checkEditDiagramRotated.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditDiagramRotated.Size = New System.Drawing.Size(217, 20)
             Me.checkEditDiagramRotated.StyleController = Me.layoutControl
             Me.checkEditDiagramRotated.TabIndex = 17
             AddHandler Me.checkEditDiagramRotated.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditDiagramRotated_CheckedChanged)
@@ -1005,12 +1009,12 @@ Namespace DevExpress.XtraCharts.Demos
             ' comboBoxEditRangeBarLabelPosition
             ' 
             Me.comboBoxEditRangeBarLabelPosition.EditValue = "Outside"
-            Me.comboBoxEditRangeBarLabelPosition.Location = New System.Drawing.Point(95, 187)
+            Me.comboBoxEditRangeBarLabelPosition.Location = New System.Drawing.Point(104, 196)
             Me.comboBoxEditRangeBarLabelPosition.Name = "comboBoxEditRangeBarLabelPosition"
             Me.comboBoxEditRangeBarLabelPosition.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditRangeBarLabelPosition.Properties.Items.AddRange(New Object() {"Outside", "Inside", "Center"})
             Me.comboBoxEditRangeBarLabelPosition.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditRangeBarLabelPosition.Size = New System.Drawing.Size(134, 20)
+            Me.comboBoxEditRangeBarLabelPosition.Size = New System.Drawing.Size(125, 20)
             Me.comboBoxEditRangeBarLabelPosition.StyleController = Me.layoutControl
             Me.comboBoxEditRangeBarLabelPosition.TabIndex = 18
             AddHandler Me.comboBoxEditRangeBarLabelPosition.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditRangeBarLabelPosition_SelectedIndexChanged)
@@ -1022,7 +1026,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupGeneral, Me.layoutControlGroupLabel, Me.emptySpaceItem, Me.layoutControlGroupTotalLabels})
             Me.layoutControlGroupRoot.Name = "Root"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupGeneral
@@ -1033,7 +1037,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupGeneral.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemGroupSeriesBy, Me.layoutControlItemDiagramRotated})
             Me.layoutControlGroupGeneral.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral"
-            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 86)
+            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 90)
             Me.layoutControlGroupGeneral.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupGeneral.Text = "General"
             ' 
@@ -1051,8 +1055,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemDiagramRotated.Control = Me.checkEditDiagramRotated
             Me.layoutControlItemDiagramRotated.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemDiagramRotated.Name = "layoutControlItemDiagramRotated"
-            Me.layoutControlItemDiagramRotated.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemDiagramRotated.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemDiagramRotated.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemDiagramRotated.TextVisible = False
             ' 
             ' layoutControlGroupLabel
@@ -1061,9 +1064,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupLabel.AppearanceGroup.Options.UseBorderColor = True
             Me.layoutControlGroupLabel.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupLabel.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemLabelVisible, Me.layoutControlItemValueAsPercent, Me.layoutControlItemIndent, Me.layoutControlItemOrientation, Me.layoutControlItemPosition, Me.layoutControlItemRangeBarLabelPosition})
-            Me.layoutControlGroupLabel.Location = New System.Drawing.Point(0, 86)
+            Me.layoutControlGroupLabel.Location = New System.Drawing.Point(0, 90)
             Me.layoutControlGroupLabel.Name = "layoutControlGroupLabel"
-            Me.layoutControlGroupLabel.Size = New System.Drawing.Size(241, 181)
+            Me.layoutControlGroupLabel.Size = New System.Drawing.Size(241, 186)
             Me.layoutControlGroupLabel.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupLabel.Text = "Label"
             ' 
@@ -1072,24 +1075,22 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Control = Me.checkEditLabelVisible
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
-            Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' layoutControlItemValueAsPercent
             ' 
             Me.layoutControlItemValueAsPercent.Control = Me.checkEditValueAsPercent
-            Me.layoutControlItemValueAsPercent.Location = New System.Drawing.Point(0, 23)
+            Me.layoutControlItemValueAsPercent.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent"
-            Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 23)
+            Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutControlItemValueAsPercent.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemValueAsPercent.TextVisible = False
             ' 
             ' layoutControlItemIndent
             ' 
             Me.layoutControlItemIndent.Control = Me.spinEditLabelIndent
-            Me.layoutControlItemIndent.Location = New System.Drawing.Point(0, 118)
+            Me.layoutControlItemIndent.Location = New System.Drawing.Point(0, 120)
             Me.layoutControlItemIndent.Name = "layoutControlItemIndent"
             Me.layoutControlItemIndent.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemIndent.Text = "Indent:"
@@ -1098,7 +1099,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' layoutControlItemOrientation
             ' 
             Me.layoutControlItemOrientation.Control = Me.comboBoxEditLabelOrientation
-            Me.layoutControlItemOrientation.Location = New System.Drawing.Point(0, 94)
+            Me.layoutControlItemOrientation.Location = New System.Drawing.Point(0, 96)
             Me.layoutControlItemOrientation.Name = "layoutControlItemOrientation"
             Me.layoutControlItemOrientation.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemOrientation.Text = "Orientation:"
@@ -1107,7 +1108,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' layoutControlItemPosition
             ' 
             Me.layoutControlItemPosition.Control = Me.comboBoxEditLabelPosition
-            Me.layoutControlItemPosition.Location = New System.Drawing.Point(0, 46)
+            Me.layoutControlItemPosition.Location = New System.Drawing.Point(0, 48)
             Me.layoutControlItemPosition.Name = "lciLabelPosition"
             Me.layoutControlItemPosition.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemPosition.Text = "Position:"
@@ -1116,7 +1117,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' layoutControlItemRangeBarLabelPosition
             ' 
             Me.layoutControlItemRangeBarLabelPosition.Control = Me.comboBoxEditRangeBarLabelPosition
-            Me.layoutControlItemRangeBarLabelPosition.Location = New System.Drawing.Point(0, 70)
+            Me.layoutControlItemRangeBarLabelPosition.Location = New System.Drawing.Point(0, 72)
             Me.layoutControlItemRangeBarLabelPosition.Name = "layoutControlItemRangeBarLabelPosition"
             Me.layoutControlItemRangeBarLabelPosition.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemRangeBarLabelPosition.Text = "Position"
@@ -1124,19 +1125,17 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
-            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 329)
+            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 342)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 215)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 196)
             ' 
             ' layoutControlGroupTotalLabels
             ' 
             Me.layoutControlGroupTotalLabels.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupTotalLabels.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemTotalLabelVisible})
-            Me.layoutControlGroupTotalLabels.Location = New System.Drawing.Point(0, 267)
+            Me.layoutControlGroupTotalLabels.Location = New System.Drawing.Point(0, 276)
             Me.layoutControlGroupTotalLabels.Name = "layoutControlGroupTotalLabels"
-            Me.layoutControlGroupTotalLabels.Size = New System.Drawing.Size(241, 62)
+            Me.layoutControlGroupTotalLabels.Size = New System.Drawing.Size(241, 66)
             Me.layoutControlGroupTotalLabels.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupTotalLabels.Text = "Total Label"
             ' 
@@ -1145,8 +1144,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemTotalLabelVisible.Control = Me.comboBoxEditTotalLabelVisible
             Me.layoutControlItemTotalLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemTotalLabelVisible.Name = "layoutControlItemTotalLabelVisible"
-            Me.layoutControlItemTotalLabelVisible.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemTotalLabelVisible.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemTotalLabelVisible.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemTotalLabelVisible.TextVisible = False
             ' 
             ' BarViewsDemo

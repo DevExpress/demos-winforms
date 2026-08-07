@@ -155,9 +155,9 @@ namespace DevExpress.XtraGrid.Views.Grid {
 
 namespace DevExpress.XtraEditors {
     using System.Linq.Expressions;
+    using DevExpress.Data.Filtering.Helpers;
     using DevExpress.XtraEditors.Filtering;
     using DevExpress.XtraEditors.Repository;
-    using DevExpress.Data.Filtering.Helpers;
 
     class FilterColumnCollectionBuilder<TEntity> {
         FilterColumnCollection filterColumns;

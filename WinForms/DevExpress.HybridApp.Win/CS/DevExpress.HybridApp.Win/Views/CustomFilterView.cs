@@ -1,8 +1,8 @@
 using System;
-using DevExpress.XtraEditors;
-using DevExpress.Utils.MVVM.UI;
-using DevExpress.DevAV.ViewModels;
 using DevExpress.Data.Filtering;
+using DevExpress.DevAV.ViewModels;
+using DevExpress.Utils.MVVM.UI;
+using DevExpress.XtraEditors;
 
 namespace DevExpress.DevAV.Views {
     [ViewType(DevAVDbViewModel.CustomFilterViewDocumentType)]

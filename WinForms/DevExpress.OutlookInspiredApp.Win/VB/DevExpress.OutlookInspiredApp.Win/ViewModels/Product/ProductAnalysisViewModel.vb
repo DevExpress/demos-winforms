@@ -18,12 +18,16 @@ Namespace DevExpress.DevAV.ViewModels
             unitOfWork = GetUnitOfWorkFactory().CreateUnitOfWork()
         End Sub
 
-        Public Function GetFinancialReport() As IEnumerable(Of ProductsAnalysis.Item)
-            Return unitOfWork.GetFinancialReport
+        Public Function GetFinancialReport(ByVal startDate As Date, ByVal endDate As Date) As IEnumerable(Of ProductsAnalysis.Item)
+            Return unitOfWork.GetFinancialReport(startDate, endDate)
         End Function
 
-        Public Function GetFinancialData() As IEnumerable(Of ProductsAnalysis.Item)
-            Return unitOfWork.GetFinancialData
+        Public Function GetFinancialData(ByVal startDate As Date, ByVal endDate As Date) As IEnumerable(Of ProductsAnalysis.Item)
+            Return unitOfWork.GetFinancialData(startDate, endDate)
+        End Function
+
+        Public Function GetMaxOrdersDate() As Date
+            Return unitOfWork.GetMaxOrdersDate
         End Function
     End Class
 End Namespace

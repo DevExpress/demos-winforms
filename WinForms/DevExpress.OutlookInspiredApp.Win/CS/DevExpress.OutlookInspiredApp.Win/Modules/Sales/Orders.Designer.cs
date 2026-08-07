@@ -170,7 +170,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colProductUnits.Caption = "UNITS";
+            this.colProductUnits.Caption = "Units";
             this.colProductUnits.FieldName = "ProductUnits";
             this.colProductUnits.Name = "colProductUnits";
             this.colProductUnits.OptionsColumn.AllowFocus = false;
@@ -181,7 +181,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colProductPrice.Caption = "UNIT PRICE";
+            this.colProductPrice.Caption = "Unit Price";
             this.colProductPrice.DisplayFormat.FormatString = "c";
             this.colProductPrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colProductPrice.FieldName = "ProductPrice";
@@ -192,7 +192,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colDiscount.Caption = "DISCOUNT";
+            this.colDiscount.Caption = "Discount";
             this.colDiscount.DisplayFormat.FormatString = "c";
             this.colDiscount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colDiscount.FieldName = "Discount";
@@ -205,7 +205,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colTotal.Caption = "TOTAL";
+            this.colTotal.Caption = "Total";
             this.colTotal.DisplayFormat.FormatString = "c";
             this.colTotal.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colTotal.FieldName = "Total";
@@ -291,7 +291,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCustomer.Caption = "COMPANY";
+            this.colCustomer.Caption = "Company";
             this.colCustomer.FieldName = "Customer.Name";
             this.colCustomer.Name = "colCustomer";
             this.colCustomer.OptionsColumn.AllowFocus = false;
@@ -325,7 +325,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colInvoiceNumber.Caption = "INVOICE #";
+            this.colInvoiceNumber.Caption = "Invoice #";
             this.colInvoiceNumber.FieldName = "InvoiceNumber";
             this.colInvoiceNumber.Name = "colInvoiceNumber";
             this.colInvoiceNumber.OptionsColumn.AllowFocus = false;
@@ -335,7 +335,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colOrderDate.Caption = "ORDER DATE";
+            this.colOrderDate.Caption = "Order Date";
             this.colOrderDate.FieldName = "OrderDate";
             this.colOrderDate.Name = "colOrderDate";
             this.colOrderDate.OptionsColumn.AllowFocus = false;
@@ -345,7 +345,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colTotalAmount.Caption = "ORDER TOTAL";
+            this.colTotalAmount.Caption = "Order Total";
             this.colTotalAmount.DisplayFormat.FormatString = "c";
             this.colTotalAmount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colTotalAmount.FieldName = "TotalAmount";
@@ -357,7 +357,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colStore.Caption = "STORE";
+            this.colStore.Caption = "Store";
             this.colStore.FieldName = "Store.CrestCity";
             this.colStore.Name = "colStore";
             this.colStore.OptionsColumn.AllowFocus = false;
@@ -367,7 +367,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colShipDate1.Caption = "SHIP DATE";
+            this.colShipDate1.Caption = "Ship Date";
             this.colShipDate1.FieldName = "ShipDate";
             this.colShipDate1.Name = "colShipDate1";
             this.colShipDate1.OptionsColumn.AllowFocus = false;
@@ -377,7 +377,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colShippingAmount.Caption = "SHIPPING AMOUNT";
+            this.colShippingAmount.Caption = "Shipping Amount";
             this.colShippingAmount.DisplayFormat.FormatString = "c";
             this.colShippingAmount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colShippingAmount.FieldName = "ShippingAmount";
@@ -389,7 +389,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colPaymentTotal.Caption = "PAYMENT TOTAL";
+            this.colPaymentTotal.Caption = "Payment Total";
             this.colPaymentTotal.DisplayFormat.FormatString = "c";
             this.colPaymentTotal.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colPaymentTotal.FieldName = "PaymentTotal";
@@ -401,7 +401,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colRefundTotal.Caption = "REFUND TOTAL";
+            this.colRefundTotal.Caption = "Refund Total";
             this.colRefundTotal.DisplayFormat.FormatString = "c";
             this.colRefundTotal.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colRefundTotal.FieldName = "RefundTotal";
@@ -410,7 +410,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colShipmentCourier.Caption = "SHIPMENT COURIER";
+            this.colShipmentCourier.Caption = "Shipment Courier";
             this.colShipmentCourier.FieldName = "ShipmentCourier";
             this.colShipmentCourier.Name = "colShipmentCourier";
             this.colShipmentCourier.OptionsColumn.AllowFocus = false;
@@ -491,7 +491,7 @@ namespace DevExpress.DevAV.Modules {
             tileViewItemElement3.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             tileViewItemElement3.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
             tileViewItemElement3.RowIndex = 1;
-            tileViewItemElement3.Text = "UNITS:";
+            tileViewItemElement3.Text = "Units:";
             tileViewItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
             tileViewItemElement4.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tileViewItemElement4.Appearance.Normal.ForeColor = System.Drawing.Color.Gray;
@@ -501,7 +501,7 @@ namespace DevExpress.DevAV.Modules {
             tileViewItemElement4.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             tileViewItemElement4.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
             tileViewItemElement4.RowIndex = 2;
-            tileViewItemElement4.Text = "UNIT PRICE:";
+            tileViewItemElement4.Text = "Unit Price:";
             tileViewItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
             tileViewItemElement5.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tileViewItemElement5.Appearance.Normal.ForeColor = System.Drawing.Color.Gray;
@@ -511,7 +511,7 @@ namespace DevExpress.DevAV.Modules {
             tileViewItemElement5.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             tileViewItemElement5.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
             tileViewItemElement5.RowIndex = 3;
-            tileViewItemElement5.Text = "DISCOUNT:";
+            tileViewItemElement5.Text = "Discount:";
             tileViewItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
             tileViewItemElement6.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tileViewItemElement6.Appearance.Normal.Options.UseFont = true;
@@ -519,7 +519,7 @@ namespace DevExpress.DevAV.Modules {
             tileViewItemElement6.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             tileViewItemElement6.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
             tileViewItemElement6.RowIndex = 4;
-            tileViewItemElement6.Text = "SUB TOTAL:";
+            tileViewItemElement6.Text = "Sub Total:";
             tileViewItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
             tileViewItemElement7.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tileViewItemElement7.Appearance.Normal.Options.UseFont = true;
@@ -570,7 +570,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumnProductName.Caption = "PRODUCT";
+            this.tileViewColumnProductName.Caption = "Product";
             this.tileViewColumnProductName.FieldName = "Product.Name";
             this.tileViewColumnProductName.Name = "tileViewColumnProductName";
             this.tileViewColumnProductName.Visible = true;
@@ -578,7 +578,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumnProductUnits.Caption = "UNITS";
+            this.tileViewColumnProductUnits.Caption = "Units";
             this.tileViewColumnProductUnits.FieldName = "ProductUnits";
             this.tileViewColumnProductUnits.Name = "tileViewColumnProductUnits";
             this.tileViewColumnProductUnits.Visible = true;
@@ -586,7 +586,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumnProductPrice.Caption = "UNIT PRICE";
+            this.tileViewColumnProductPrice.Caption = "Unit Price";
             this.tileViewColumnProductPrice.DisplayFormat.FormatString = "c";
             this.tileViewColumnProductPrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.tileViewColumnProductPrice.FieldName = "ProductPrice";
@@ -596,7 +596,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumnDiscount.Caption = "DISCOUNT";
+            this.tileViewColumnDiscount.Caption = "Discount";
             this.tileViewColumnDiscount.DisplayFormat.FormatString = "c";
             this.tileViewColumnDiscount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.tileViewColumnDiscount.FieldName = "Discount";
@@ -606,7 +606,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumnTotal.Caption = "TOTAL";
+            this.tileViewColumnTotal.Caption = "Total";
             this.tileViewColumnTotal.DisplayFormat.FormatString = "c";
             this.tileViewColumnTotal.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.tileViewColumnTotal.FieldName = "Total";
@@ -616,7 +616,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumnProductImage.Caption = "IMAGE";
+            this.tileViewColumnProductImage.Caption = "Image";
             this.tileViewColumnProductImage.ColumnEdit = this.repositoryItemPictureEdit1;
             this.tileViewColumnProductImage.FieldName = "Product.ProductImage";
             this.tileViewColumnProductImage.Name = "tileViewColumnProductImage";
@@ -925,7 +925,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.hiItemsCount.Caption = "RECORDS: 0";
+            this.hiItemsCount.Caption = "Records: 0";
             this.hiItemsCount.Id = 7;
             this.hiItemsCount.Name = "hiItemsCount";
             

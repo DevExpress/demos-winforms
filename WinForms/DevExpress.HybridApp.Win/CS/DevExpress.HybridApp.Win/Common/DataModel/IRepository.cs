@@ -1,19 +1,17 @@
 using System;
+using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
-using System.ComponentModel;
 using DevExpress.DevAV.Common.Utils;
 
-namespace DevExpress.DevAV.Common.DataModel
-{
+namespace DevExpress.DevAV.Common.DataModel {
     /// <summary>
     /// The IRepository interface represents the read and write implementation of the Repository pattern 
     /// such that it can be used to query entities of a given type. 
     /// </summary>
     /// <typeparam name="TEntity">A repository entity type.</typeparam>
     /// <typeparam name="TPrimaryKey">An entity primary key type.</typeparam>
-    public interface IRepository<TEntity, TPrimaryKey> : IReadOnlyRepository<TEntity> where TEntity : class
-    {
+    public interface IRepository<TEntity, TPrimaryKey> : IReadOnlyRepository<TEntity> where TEntity : class {
 
         /// <summary>
         /// Finds an entity with the given primary key value. 
@@ -91,10 +89,8 @@ namespace DevExpress.DevAV.Common.DataModel
     /// <summary>
     /// Provides a set of extension methods to perform commonly used operations with IRepository.
     /// </summary>
-    public static class RepositoryExtensions
-    {
-        public static Expression<Func<TProjection, TPrimaryKey>> GetProjectionPrimaryKeyExpression<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository) where TEntity : class
-        {
+    public static class RepositoryExtensions {
+        public static Expression<Func<TProjection, TPrimaryKey>> GetProjectionPrimaryKeyExpression<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository) where TEntity : class {
             var parameter = Expression.Parameter(typeof(TProjection));
             return Expression.Lambda<Func<TProjection, TPrimaryKey>>(Expression.Property(parameter, repository.GetPrimaryKeyPropertyName()), parameter);
         }
@@ -106,8 +102,7 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <typeparam name="TPrimaryKey">An entity primary key type.</typeparam>
         /// <param name="repository">A repository.</param>
         /// <param name="primaryKey">A value to compare with the entity primary key.</param>
-        public static Expression<Func<TEntity, bool>> GetPrimaryKeyEqualsExpression<TEntity, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TPrimaryKey primaryKey) where TEntity : class
-        {
+        public static Expression<Func<TEntity, bool>> GetPrimaryKeyEqualsExpression<TEntity, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TPrimaryKey primaryKey) where TEntity : class {
             return ExpressionHelper.GetValueEqualsExpression(repository.GetPrimaryKeyExpression, primaryKey);
         }
 
@@ -119,12 +114,10 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <typeparam name="TPrimaryKey">An entity primary key type.</typeparam>
         /// <param name="repository">A repository.</param>
         /// <param name="primaryKey">A value to compare with the entity primary key.</param>
-        public static Expression<Func<TProjection, bool>> GetProjectionPrimaryKeyEqualsExpression<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TPrimaryKey primaryKey) where TEntity : class
-        {
+        public static Expression<Func<TProjection, bool>> GetProjectionPrimaryKeyEqualsExpression<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TPrimaryKey primaryKey) where TEntity : class {
             return GetProjectionValue(primaryKey,
                 (TPrimaryKey x) => repository.GetPrimaryKeyEqualsExpression(x),
-                (TPrimaryKey x) =>
-                {
+                (TPrimaryKey x) => {
                     var parameter = Expression.Parameter(typeof(TProjection));
                     var keyExpression = Expression.Lambda<Func<TProjection, TPrimaryKey>>(Expression.Property(parameter, repository.GetPrimaryKeyPropertyName()), parameter);
                     return ExpressionHelper.GetValueEqualsExpression(keyExpression, primaryKey);
@@ -139,13 +132,10 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <typeparam name="TPrimaryKey">An entity primary key type.</typeparam>
         /// <param name="repository">A repository.</param>
         /// <param name="projectionEntity">An entity.</param>
-        public static TPrimaryKey GetProjectionPrimaryKey<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity) where TEntity : class
-        {
+        public static TPrimaryKey GetProjectionPrimaryKey<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity) where TEntity : class {
             return GetProjectionValue(projectionEntity,
-                (TEntity x) =>
-                {
-                    if (repository.HasPrimaryKey(x))
-                    {
+                (TEntity x) => {
+                    if(repository.HasPrimaryKey(x)) {
                         return repository.GetPrimaryKey(x);
                     }
                     return default(TPrimaryKey);
@@ -153,17 +143,14 @@ namespace DevExpress.DevAV.Common.DataModel
                 (TProjection x) => (TPrimaryKey)GetProjectionKeyProperty<TEntity, TProjection, TPrimaryKey>(repository).GetValue(x));
         }
 
-        private static PropertyDescriptor GetProjectionKeyProperty<TEntity, TProjection, TPrimaryKey>(IRepository<TEntity, TPrimaryKey> repository) where TEntity : class
-        {
+        private static PropertyDescriptor GetProjectionKeyProperty<TEntity, TProjection, TPrimaryKey>(IRepository<TEntity, TPrimaryKey> repository) where TEntity : class {
             return TypeDescriptor.GetProperties(typeof(TProjection))[repository.GetPrimaryKeyPropertyName()];
         }
 
-        public static void VerifyProjection<TEntity, TProjection, TPrimaryKey>(IRepository<TEntity, TPrimaryKey> repository, Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection) where TEntity : class
-        {
-            if (typeof(TProjection) != typeof(TEntity) && projection == null)
+        public static void VerifyProjection<TEntity, TProjection, TPrimaryKey>(IRepository<TEntity, TPrimaryKey> repository, Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection) where TEntity : class {
+            if(typeof(TProjection) != typeof(TEntity) && projection == null)
                 throw new ArgumentException("Projection should not be null when its type is different from TEntity.");
-            if (GetProjectionKeyProperty<TEntity, TProjection, TPrimaryKey>(repository) == null)
-            {
+            if(GetProjectionKeyProperty<TEntity, TProjection, TPrimaryKey>(repository) == null) {
                 string tprojectionName = typeof(TProjection).Name;
                 throw new ArgumentException(string.Format("Projection type {0} should have primary key property {1}",
                     tprojectionName, repository.GetPrimaryKeyPropertyName()), tprojectionName);
@@ -179,14 +166,11 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <param name="repository">A repository.</param>
         /// <param name="projectionEntity">A projection.</param>
         /// <param name="primaryKey">A new primary key value.</param>
-        public static void SetProjectionPrimaryKey<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity, TPrimaryKey primaryKey) where TEntity : class
-        {
-            if (IsProjection<TEntity, TProjection>(projectionEntity))
-            {
+        public static void SetProjectionPrimaryKey<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity, TPrimaryKey primaryKey) where TEntity : class {
+            if(IsProjection<TEntity, TProjection>(projectionEntity)) {
                 GetProjectionKeyProperty<TEntity, TProjection, TPrimaryKey>(repository).SetValue(projectionEntity, primaryKey);
             }
-            else
-            {
+            else {
                 repository.SetPrimaryKey(projectionEntity as TEntity, primaryKey);
             }
         }
@@ -202,24 +186,19 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <param name="repository">A repository.</param>
         /// <param name="projectionEntity">A projection.</param>
         /// <param name="applyProjectionPropertiesToEntity">An action which applies the projection properties to the newly created entity.</param>		
-        public static TEntity FindExistingOrAddNewEntity<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity, Action<TProjection, TEntity> applyProjectionPropertiesToEntity) where TEntity : class
-        {
+        public static TEntity FindExistingOrAddNewEntity<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity, Action<TProjection, TEntity> applyProjectionPropertiesToEntity) where TEntity : class {
             bool projection = IsProjection<TEntity, TProjection>(projectionEntity);
             var entity = repository.Find(repository.GetProjectionPrimaryKey(projectionEntity));
-            if (entity == null)
-            {
-                if (projection)
-                {
+            if(entity == null) {
+                if(projection) {
                     entity = repository.Create();
                 }
-                else
-                {
+                else {
                     entity = projectionEntity as TEntity;
                     repository.Add(entity);
                 }
             }
-            if (projection)
-            {
+            if(projection) {
                 applyProjectionPropertiesToEntity(projectionEntity, entity);
             }
             return entity;
@@ -233,8 +212,7 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <typeparam name="TPrimaryKey">An entity primary key type.</typeparam>
         /// <param name="repository">A repository.</param>
         /// <param name="projectionEntity">An entity.</param>
-        public static bool IsDetached<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity) where TEntity : class
-        {
+        public static bool IsDetached<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity) where TEntity : class {
             return GetProjectionValue(projectionEntity,
                 (TEntity x) => repository.GetState(x) == EntityState.Detached,
                 (TProjection x) => false);
@@ -248,8 +226,7 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <typeparam name="TPrimaryKey">An entity primary key type.</typeparam>
         /// <param name="repository">A repository.</param>
         /// <param name="projectionEntity">An entity.</param>
-        public static bool ProjectionHasPrimaryKey<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity) where TEntity : class
-        {
+        public static bool ProjectionHasPrimaryKey<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, TProjection projectionEntity) where TEntity : class {
             return GetProjectionValue(projectionEntity,
                 (TEntity x) => repository.HasPrimaryKey(x),
                 (TProjection x) => true);
@@ -264,8 +241,7 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <param name="repository">A repository.</param>
         /// <param name="projection">A LINQ function used to transform entities from the repository entity type to the projection entity type.</param>
         /// <param name="primaryKey">A value to compare with the entity primary key.</param>
-        public static TProjection FindActualProjectionByKey<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection, TPrimaryKey primaryKey) where TEntity : class
-        {
+        public static TProjection FindActualProjectionByKey<TEntity, TProjection, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository, Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection, TPrimaryKey primaryKey) where TEntity : class {
             var primaryKeyEqualsExpression = GetProjectionPrimaryKeyEqualsExpression<TEntity, TProjection, TPrimaryKey>(repository, primaryKey);
             var result = repository.GetFilteredEntities(null, projection).Where(primaryKeyEqualsExpression).Take(1).ToArray().FirstOrDefault(); 
             return GetProjectionValue(result,
@@ -279,20 +255,17 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <typeparam name="TEntity">A repository entity type.</typeparam>
         /// <typeparam name="TPrimaryKey">A primary key type.</typeparam>
         /// <param name="repository">A repository.</param>
-        public static string GetPrimaryKeyPropertyName<TEntity, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository) where TEntity : class
-        {
+        public static string GetPrimaryKeyPropertyName<TEntity, TPrimaryKey>(this IRepository<TEntity, TPrimaryKey> repository) where TEntity : class {
             return ExpressionHelper.GetPropertyName(repository.GetPrimaryKeyExpression);
         }
 
-        static TProjectionResult GetProjectionValue<TEntity, TProjection, TEntityResult, TProjectionResult>(TProjection value, Func<TEntity, TEntityResult> entityFunc, Func<TProjection, TProjectionResult> projectionFunc)
-        {
-            if (typeof(TEntity) != typeof(TProjection) || typeof(TEntityResult) != typeof(TProjectionResult))
+        static TProjectionResult GetProjectionValue<TEntity, TProjection, TEntityResult, TProjectionResult>(TProjection value, Func<TEntity, TEntityResult> entityFunc, Func<TProjection, TProjectionResult> projectionFunc) {
+            if(typeof(TEntity) != typeof(TProjection) || typeof(TEntityResult) != typeof(TProjectionResult))
                 return projectionFunc(value);
             return (TProjectionResult)(object)entityFunc((TEntity)(object)value);
         }
 
-        static bool IsProjection<TEntity, TProjection>(TProjection projection)
-        {
+        static bool IsProjection<TEntity, TProjection>(TProjection projection) {
             return !(projection is TEntity);
         }
     }

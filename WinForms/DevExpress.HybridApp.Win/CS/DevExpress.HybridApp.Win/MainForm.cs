@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Linq;
 using DevExpress.DevAV.ViewModels;
 using DevExpress.DevAV.Views;
+using DevExpress.DXperience.Demos;
 using DevExpress.Utils.MVVM;
 using DevExpress.Utils.Taskbar;
 using DevExpress.Utils.Taskbar.Core;
@@ -35,6 +36,29 @@ namespace DevExpress.DevAV {
         protected override void OnShown(EventArgs e) {
             SplashScreenManager.CloseForm(false);
             base.OnShown(e);
+            if(MainFormHelper.TakeScreens) {
+                navigationFrame.AllowTransitionAnimation = Utils.DefaultBoolean.False;
+                MainFormHelper.TakeAllScreens(TakeModule, takeModuleDocumentTypes.Length, this,
+                    navigationFrame, null, demoName: typeof(MainForm).Assembly.GetName().Name);
+            }
+        }
+        readonly string[] takeModuleDocumentTypes = new string[] {
+            DevAVDbViewModel.EmployeeCollectionViewDocumentType,
+            
+            DevAVDbViewModel.OrderCollectionViewDocumentType,
+            DevAVDbViewModel.CustomerCollectionViewDocumentType,
+            DevAVDbViewModel.EmployeeReportViewDocumentType,
+            DevAVDbViewModel.EmployeeTaskCollectionViewDocumentType
+        };
+        string TakeModule(int num) {
+            var viewModel = mvvmContext.GetViewModel<DevAVDbViewModel>();
+            var module = viewModel.Modules.FirstOrDefault(m => m.DocumentType == takeModuleDocumentTypes[num]);
+            if(module != null && viewModel.SelectedModule != module) {
+                viewModel.SelectedModule = module;
+                MainFormHelper.UpdateTakeScreenSettings(navigationFrame);
+            }
+            navigationFrame.Update();
+            return takeModuleDocumentTypes[num];
         }
         void InitializeNavigation() {
             mvvmContext.RegisterService(DevExpress.Utils.MVVM.Services.DocumentManagerService.Create(navigationFrame));

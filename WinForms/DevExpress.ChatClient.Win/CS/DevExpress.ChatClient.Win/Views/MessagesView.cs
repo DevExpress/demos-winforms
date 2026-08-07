@@ -162,7 +162,7 @@ namespace DevExpress.ChatClient.Views {
             sealed class MessageStyle : Style { }
             sealed class MyMessageStyle : Style { }
             sealed class MenuStyle : Style { }
-            sealed class ContextMenuStyle: Style { }
+            sealed class ContextMenuStyle : Style { }
             sealed class TypingBoxStyle : Style { }
             sealed class NoMessagesStyle : Style { }
         }

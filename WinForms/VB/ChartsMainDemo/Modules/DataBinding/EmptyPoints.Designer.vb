@@ -145,16 +145,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemSeriesView.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemSeriesView.Name = "layoutControlItemSeriesView"
             Me.layoutControlItemSeriesView.Size = New System.Drawing.Size(217, 12)
-            Me.layoutControlItemSeriesView.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemSeriesView.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 124)
             Me.emptySpaceItem.Name = "emptySpaceItem"
             Me.emptySpaceItem.Size = New System.Drawing.Size(241, 414)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' layoutControlGroup1
             ' 
@@ -176,7 +173,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItemLabelVisible"
             Me.layoutControlItem1.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem1.TextVisible = False
             ' 
             ' chart
@@ -224,11 +220,13 @@ Namespace DevExpress.XtraCharts.Demos
             series1.CrosshairLabelPattern = "{S}: {V} m/s"
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series1.Name = "Wind"
+            series1.SeriesID = 0
             series1.ValueDataMembersSerializable = "Wind"
             series2.ArgumentDataMember = "Date"
             series2.CrosshairLabelPattern = "{S}: {V} mmHG"
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series2.Name = "Pressure"
+            series2.SeriesID = 1
             series2.ValueDataMembersSerializable = "Pressure"
             sideBySideBarSeriesView1.AxisYName = "Secondary AxisY 1"
             sideBySideBarSeriesView1.PaneName = "Pane 1"
@@ -236,6 +234,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.ArgumentDataMember = "Date"
             series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series3.Name = "Temperature"
+            series3.SeriesID = 2
             series3.ValueDataMembersSerializable = "DayTemperature"
             sideBySideBarSeriesView2.AxisYName = "Secondary AxisY 2"
             sideBySideBarSeriesView2.PaneName = "Pane 2"
@@ -244,6 +243,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(546, 571)
             Me.chart.TabIndex = 2
             chartTitle1.Text = "Weather in Washington for July"
+            chartTitle1.TitleID = 0
             chartTitle1.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 

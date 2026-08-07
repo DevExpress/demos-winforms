@@ -682,6 +682,7 @@
             this.chartArea.TabIndex = 12;
             this.chartArea.TabStop = false;
             chartTitle1.Text = "Outside Vendor Costs";
+            chartTitle1.TitleID = 0;
             this.chartArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 
@@ -751,6 +752,7 @@
             series1.Label = rangeAreaSeriesLabel1;
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series1.Name = "Europe Brent";
+            series1.SeriesID = 0;
             series1.ValueDataMembersSerializable = "Min;Max";
             rangeAreaSeriesView1.Border1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(174)))), ((int)(((byte)(73)))));
             rangeAreaSeriesView1.Border1.Thickness = 2;
@@ -769,11 +771,13 @@
             this.chartRangeArea.TabIndex = 2;
             this.chartRangeArea.TabStop = false;
             chartTitle2.Text = "Crude Oil Prices in 2015";
-            chartTitle3.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle2.TitleID = 0;
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle3.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle3.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle3.Text = "From www.eia.gov";
             chartTitle3.TextColor = System.Drawing.Color.Gray;
+            chartTitle3.TitleID = 1;
             this.chartRangeArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2,
             chartTitle3});
@@ -850,6 +854,7 @@
             this.chartStackedArea.TabIndex = 2;
             this.chartStackedArea.TabStop = false;
             chartTitle4.Text = "DevAV Sales";
+            chartTitle4.TitleID = 0;
             this.chartStackedArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle4});
             // 
@@ -899,17 +904,8 @@
             xyDiagram4.AxisY.Label.TextPattern = "{V:P0}";
             xyDiagram4.AxisY.Title.Text = "Percent";
             xyDiagram4.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram4.AxisY.VisualRange.Auto = false;
-            xyDiagram4.AxisY.VisualRange.AutoSideMargins = false;
-            xyDiagram4.AxisY.VisualRange.EndSideMargin = 0D;
-            xyDiagram4.AxisY.VisualRange.MaxValueSerializable = "1";
-            xyDiagram4.AxisY.VisualRange.MinValueSerializable = "0";
-            xyDiagram4.AxisY.VisualRange.StartSideMargin = 0D;
-            xyDiagram4.AxisY.WholeRange.Auto = false;
             xyDiagram4.AxisY.WholeRange.AutoSideMargins = false;
             xyDiagram4.AxisY.WholeRange.EndSideMargin = 0D;
-            xyDiagram4.AxisY.WholeRange.MaxValueSerializable = "1";
-            xyDiagram4.AxisY.WholeRange.MinValueSerializable = "0";
             xyDiagram4.AxisY.WholeRange.StartSideMargin = 0D;
             this.chartFullStackedArea.Diagram = xyDiagram4;
             this.chartFullStackedArea.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -936,6 +932,7 @@
             this.chartFullStackedArea.TabIndex = 1;
             this.chartFullStackedArea.TabStop = false;
             chartTitle5.Text = "Market Share Over Time";
+            chartTitle5.TitleID = 0;
             this.chartFullStackedArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle5});
             // 
@@ -1004,6 +1001,7 @@
             series2.Label = pointSeriesLabel1;
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series2.Name = "Fuel Prices";
+            series2.SeriesID = 0;
             series2.ValueDataMembersSerializable = "Price";
             stepAreaSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             series2.View = stepAreaSeriesView1;
@@ -1014,11 +1012,13 @@
             this.chartStepArea.TabIndex = 1;
             this.chartStepArea.TabStop = false;
             chartTitle6.Text = "U.S. No 2 Diesel Ultra Low Sulfur Retail Prices";
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle6.TitleID = 0;
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle7.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             chartTitle7.Text = "From www.eia.gov";
             chartTitle7.TextColor = System.Drawing.Color.Gray;
+            chartTitle7.TitleID = 1;
             this.chartStepArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle6,
             chartTitle7});
@@ -1097,6 +1097,7 @@
             seriesPoint10,
             seriesPoint11,
             seriesPoint12});
+            series3.SeriesID = 0;
             stackedStepAreaSeriesView1.SeriesAnimation = xySeriesBlowUpAnimation1;
             stackedStepAreaSeriesView1.Transparency = ((byte)(135));
             series3.View = stackedStepAreaSeriesView1;
@@ -1116,6 +1117,7 @@
             seriesPoint22,
             seriesPoint23,
             seriesPoint24});
+            series4.SeriesID = 1;
             xySeriesBlowUpAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.3000000");
             stackedStepAreaSeriesView2.SeriesAnimation = xySeriesBlowUpAnimation2;
             stackedStepAreaSeriesView2.Transparency = ((byte)(135));
@@ -1136,6 +1138,7 @@
             seriesPoint34,
             seriesPoint35,
             seriesPoint36});
+            series5.SeriesID = 2;
             xySeriesBlowUpAnimation3.BeginTime = System.TimeSpan.Parse("00:00:00.6000000");
             stackedStepAreaSeriesView3.SeriesAnimation = xySeriesBlowUpAnimation3;
             stackedStepAreaSeriesView3.Transparency = ((byte)(135));
@@ -1150,6 +1153,7 @@
             this.chartStackedStepArea.TabIndex = 2;
             this.chartStackedStepArea.TabStop = false;
             chartTitle8.Text = "Statistics Comments in the Past Month";
+            chartTitle8.TitleID = 0;
             chartTitle8.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartStackedStepArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle8});
@@ -1233,6 +1237,7 @@
             seriesPoint46,
             seriesPoint47,
             seriesPoint48});
+            series6.SeriesID = 0;
             fullStackedStepAreaSeriesView1.Transparency = ((byte)(135));
             series6.View = fullStackedStepAreaSeriesView1;
             series7.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
@@ -1253,6 +1258,7 @@
             seriesPoint58,
             seriesPoint59,
             seriesPoint60});
+            series7.SeriesID = 1;
             xySeriesUnwindAnimation1.BeginTime = System.TimeSpan.Parse("00:00:00.4000000");
             fullStackedStepAreaSeriesView2.SeriesAnimation = xySeriesUnwindAnimation1;
             fullStackedStepAreaSeriesView2.Transparency = ((byte)(135));
@@ -1275,6 +1281,7 @@
             seriesPoint70,
             seriesPoint71,
             seriesPoint72});
+            series8.SeriesID = 2;
             xySeriesUnwindAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.8000000");
             fullStackedStepAreaSeriesView3.SeriesAnimation = xySeriesUnwindAnimation2;
             fullStackedStepAreaSeriesView3.Transparency = ((byte)(135));
@@ -1288,6 +1295,7 @@
             this.chartFullStackedStepArea.TabIndex = 2;
             this.chartFullStackedStepArea.TabStop = false;
             chartTitle9.Text = "Statistics Comments in the Past Month";
+            chartTitle9.TitleID = 0;
             chartTitle9.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartFullStackedStepArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle9});
@@ -1365,6 +1373,7 @@
             this.chartSplineArea.TabIndex = 12;
             this.chartSplineArea.TabStop = false;
             chartTitle10.Text = "Outside Vendor Costs";
+            chartTitle10.TitleID = 0;
             this.chartSplineArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle10});
             // 
@@ -1441,6 +1450,7 @@
             this.chartStackedSplineArea.TabIndex = 2;
             this.chartStackedSplineArea.TabStop = false;
             chartTitle11.Text = "DevAV Sales";
+            chartTitle11.TitleID = 0;
             this.chartStackedSplineArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle11});
             // 
@@ -1517,6 +1527,7 @@
             this.chartFullStackedSplineArea.TabIndex = 1;
             this.chartFullStackedSplineArea.TabStop = false;
             chartTitle12.Text = "Market Share Over Time";
+            chartTitle12.TitleID = 0;
             this.chartFullStackedSplineArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle12});
             // 
@@ -1822,7 +1833,6 @@
             this.layoutControlItemMarkerVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemMarkerVisible.Name = "layoutControlItemMarkerVisible";
             this.layoutControlItemMarkerVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemMarkerVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemMarkerVisible.TextVisible = false;
             // 
             // layoutControlItemKind
@@ -1857,7 +1867,6 @@
             this.layoutControlItemInvertedStep.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemInvertedStep.Name = "layoutControlItemInvertedStep";
             this.layoutControlItemInvertedStep.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemInvertedStep.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemInvertedStep.TextVisible = false;
             // 
             // layoutControlItemTransparency
@@ -1910,7 +1919,6 @@
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
             this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItemAngle
@@ -1929,7 +1937,6 @@
             this.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent";
             this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItemValueAsPercent.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemValueAsPercent.TextVisible = false;
             // 
             // layoutControlGroup6
@@ -1966,11 +1973,9 @@
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 24);
             this.emptySpaceItem.Name = "emptySpaceItem1";
             this.emptySpaceItem.Size = new System.Drawing.Size(202, 128);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup11
             // 

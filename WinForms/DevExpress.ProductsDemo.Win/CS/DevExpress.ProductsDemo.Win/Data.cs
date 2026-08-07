@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using DevExpress.Utils;
-using System.Windows.Forms;
 using System.Drawing;
-using DevExpress.XtraEditors.DXErrorProvider;
+using DevExpress.DXperience.Demos;
+using DevExpress.Internal;
 using DevExpress.MailDemo.Win;
 using DevExpress.ProductsDemo.Win;
 using DevExpress.Utils.Svg;
-using DevExpress.DXperience.Demos;
-using DevExpress.Internal;
+using DevExpress.XtraEditors.DXErrorProvider;
 
 namespace DevExpress.MailClient.Win {
     public class Task : IDXDataErrorInfo {
@@ -33,16 +31,16 @@ namespace DevExpress.MailClient.Win {
         public int PercentComplete {
             get { return _percentComplete; }
             set {
-                if (value < 0)
+                if(value < 0)
                     value = 0;
-                if (value > 100)
+                if(value > 100)
                     value = 100;
-                if (_percentComplete == value)
+                if(_percentComplete == value)
                     return;
                 _percentComplete = value;
-                if (_percentComplete == 100)
+                if(_percentComplete == 100)
                     Status = TaskStatus.Completed;
-                if (_percentComplete > 0 && _percentComplete < 100)
+                if(_percentComplete > 0 && _percentComplete < 100)
                     Status = TaskStatus.InProgress;
             }
         }
@@ -57,16 +55,17 @@ namespace DevExpress.MailClient.Win {
             get { return _status; }
             set {
                 _status = value;
-                if (_status == TaskStatus.Completed) {
+                if(_status == TaskStatus.Completed) {
                     PercentComplete = 100;
                     CompletedDate = TutorialConstants.Now;
-                } else
+                }
+                else
                     CompletedDate = null;
-                if (_status == TaskStatus.NotStarted)
+                if(_status == TaskStatus.NotStarted)
                     PercentComplete = 0;
-                if (_status == TaskStatus.InProgress && PercentComplete == 100)
+                if(_status == TaskStatus.InProgress && PercentComplete == 100)
                     PercentComplete = 75;
-                if (_status == TaskStatus.Deferred || _status == TaskStatus.WaitingOnSomeoneElse)
+                if(_status == TaskStatus.Deferred || _status == TaskStatus.WaitingOnSomeoneElse)
                     DueDate = null;
             }
         }
@@ -74,10 +73,10 @@ namespace DevExpress.MailClient.Win {
         internal TimeSpan TimeDiff { get { return (TutorialConstants.Now - CreatedDate); } }
         public bool Overdue {
             get {
-                if (Status == TaskStatus.Completed || !DueDate.HasValue)
+                if(Status == TaskStatus.Completed || !DueDate.HasValue)
                     return false;
                 DateTime dDate = DueDate.Value.Date.AddDays(1);
-                if (TutorialConstants.Now >= dDate)
+                if(TutorialConstants.Now >= dDate)
                     return true;
                 return false;
             }
@@ -85,7 +84,7 @@ namespace DevExpress.MailClient.Win {
         public bool Complete {
             get { return Status == TaskStatus.Completed; }
             set {
-                if (value)
+                if(value)
                     Status = TaskStatus.Completed;
                 else
                     Status = TaskStatus.NotStarted;
@@ -95,18 +94,18 @@ namespace DevExpress.MailClient.Win {
         public FlagStatus FlagStatus {
             get {
                 DateTime today = TutorialConstants.Today;
-                if (Complete)
+                if(Complete)
                     return FlagStatus.Completed;
-                if (!DueDate.HasValue)
+                if(!DueDate.HasValue)
                     return FlagStatus.NoDate;
-                if (DueDate.Value.Date.Equals(today))
+                if(DueDate.Value.Date.Equals(today))
                     return FlagStatus.Today;
-                if (DueDate.Value.Date.Equals(today.AddDays(1)))
+                if(DueDate.Value.Date.Equals(today.AddDays(1)))
                     return FlagStatus.Tomorrow;
                 DateTime thisWeekStart = DevExpress.Data.Filtering.Helpers.EvalHelpers.GetWeekStart(today);
-                if (DueDate.Value.Date >= thisWeekStart && DueDate.Value.Date < thisWeekStart.AddDays(7))
+                if(DueDate.Value.Date >= thisWeekStart && DueDate.Value.Date < thisWeekStart.AddDays(7))
                     return FlagStatus.ThisWeek;
-                if (DueDate.Value.Date >= thisWeekStart.AddDays(7) && DueDate.Value.Date < thisWeekStart.AddDays(14))
+                if(DueDate.Value.Date >= thisWeekStart.AddDays(7) && DueDate.Value.Date < thisWeekStart.AddDays(14))
                     return FlagStatus.NextWeek;
                 return FlagStatus.Custom;
             }
@@ -142,10 +141,10 @@ namespace DevExpress.MailClient.Win {
         public void GetError(DevExpress.XtraEditors.DXErrorProvider.ErrorInfo info) { }
 
         public void GetPropertyError(string propertyName, DevExpress.XtraEditors.DXErrorProvider.ErrorInfo info) {
-            if (propertyName == "DueDate") {
-                if ((DueDate.HasValue && StartDate.HasValue) && DueDate < StartDate)
+            if(propertyName == "DueDate") {
+                if((DueDate.HasValue && StartDate.HasValue) && DueDate < StartDate)
                     SetErrorInfo(info, DevExpress.ProductsDemo.Win.Properties.Resources.DueDateError, ErrorType.Critical);
-                if (!DueDate.HasValue && Status == TaskStatus.InProgress)
+                if(!DueDate.HasValue && Status == TaskStatus.InProgress)
                     SetErrorInfo(info, DevExpress.ProductsDemo.Win.Properties.Resources.DueDateWarning, ErrorType.Warning);
             }
         }
@@ -176,10 +175,11 @@ namespace DevExpress.MailClient.Win {
         public Contact(DataRow customer, DataRow person) {
             this._customer = customer;
             this._person = person;
-            if (!(customer["Photo"] is DBNull)) {
+            if(!(customer["Photo"] is DBNull)) {
                 _photo = XtraEditors.Controls.ByteImageConverter.FromByteArray((byte[])customer["Photo"]);
                 _hasPhoto = true;
-            } else
+            }
+            else
                 _photo = global::DevExpress.ProductsDemo.Win.Properties.Resources.Unknown_user;
             _name = new FullName(string.Format("{0}", person["FirstName"]), string.Format("{0}", customer["MiddleName"]), string.Format("{0}", person["LastName"]));
             _email = string.Format("{0}", customer["Email"]).Replace("dxvideorent.com", "dxmail.net");
@@ -197,7 +197,7 @@ namespace DevExpress.MailClient.Win {
         public DateTime? BirthDate { get { return _birthDate; } }
         public DateTime BindingBirthDate {
             get {
-                if (BirthDate.HasValue)
+                if(BirthDate.HasValue)
                     return BirthDate.Value;
                 return DateTime.MinValue;
             }
@@ -217,11 +217,11 @@ namespace DevExpress.MailClient.Win {
         public string GetContactInfoHtml() {
             string ret = string.Format("<size=+2><b>{0}</b><size=-2>", Name);
             ret += "<br>";
-            if (BirthDate != null && BirthDate != DateTime.MinValue)
+            if(BirthDate != null && BirthDate != DateTime.MinValue)
                 ret += string.Format(DevExpress.ProductsDemo.Win.Properties.Resources.BirthDateHtml, BirthDate);
-            if (!string.IsNullOrEmpty(Email))
+            if(!string.IsNullOrEmpty(Email))
                 ret += string.Format(DevExpress.ProductsDemo.Win.Properties.Resources.EmailHtml, Email);
-            if (!string.IsNullOrEmpty(Phone))
+            if(!string.IsNullOrEmpty(Phone))
                 ret += string.Format(DevExpress.ProductsDemo.Win.Properties.Resources.PhoneHtml, Phone);
             ret += string.Format(DevExpress.ProductsDemo.Win.Properties.Resources.AddressHtml, Address);
 
@@ -231,9 +231,9 @@ namespace DevExpress.MailClient.Win {
         public Image Icon {
             get {
                 ContactTitle title = _name.Title;
-                if (title == ContactTitle.None && _gender == ContactGender.Female)
+                if(title == ContactTitle.None && _gender == ContactGender.Female)
                     title = ContactTitle.Mrs;
-                switch (title) {
+                switch(title) {
                     case ContactTitle.Dr:
                         return global::DevExpress.ProductsDemo.Win.Properties.Resources.Doctor;
                     case ContactTitle.Miss:
@@ -255,15 +255,15 @@ namespace DevExpress.MailClient.Win {
                     title = ContactTitle.Mrs;
                 switch(title) {
                     case ContactTitle.Dr:
-                    return global::DevExpress.ProductsDemo.Win.Properties.Resources.Doctor1;
+                        return global::DevExpress.ProductsDemo.Win.Properties.Resources.Doctor1;
                     case ContactTitle.Miss:
-                    return global::DevExpress.ProductsDemo.Win.Properties.Resources.Miss1;
+                        return global::DevExpress.ProductsDemo.Win.Properties.Resources.Miss1;
                     case ContactTitle.Mrs:
-                    return global::DevExpress.ProductsDemo.Win.Properties.Resources.Mrs1;
+                        return global::DevExpress.ProductsDemo.Win.Properties.Resources.Mrs1;
                     case ContactTitle.Ms:
-                    return global::DevExpress.ProductsDemo.Win.Properties.Resources.Ms1;
+                        return global::DevExpress.ProductsDemo.Win.Properties.Resources.Ms1;
                     case ContactTitle.Prof:
-                    return global::DevExpress.ProductsDemo.Win.Properties.Resources.Professor1;
+                        return global::DevExpress.ProductsDemo.Win.Properties.Resources.Professor1;
                 }
                 return global::DevExpress.ProductsDemo.Win.Properties.Resources.Mr1;
             }
@@ -310,7 +310,7 @@ namespace DevExpress.MailClient.Win {
                 GetFormatString(FirstName), GetFormatString(MiddleName), LastName);
         }
         string GetFormatString(string name) {
-            if (string.IsNullOrEmpty(name))
+            if(string.IsNullOrEmpty(name))
                 return string.Empty;
             return string.Format("{0} ", name);
         }
@@ -331,7 +331,7 @@ namespace DevExpress.MailClient.Win {
             this._zip = zip;
         }
         internal Address(string addressString) {
-            if (string.IsNullOrEmpty(addressString))
+            if(string.IsNullOrEmpty(addressString))
                 return;
             try {
                 string[] lines = addressString.Split(',');
@@ -340,7 +340,8 @@ namespace DevExpress.MailClient.Win {
                 this._state = lines[2].Trim().Substring(0, 2);
                 string temp = lines[2].Trim();
                 this._zip = temp.Substring(3, temp.Length - 3);
-            } catch { }
+            }
+            catch { }
         }
         public string AddressLine { get { return _address; } set { _address = value; } }
         public string State { get { return _state; } set { _state = value; } }
@@ -350,7 +351,7 @@ namespace DevExpress.MailClient.Win {
             return string.Format("{0}{1}{2}{3}", GetFormatString(AddressLine), GetFormatString(City), GetFormatString(State), Zip);
         }
         string GetFormatString(string name) {
-            if (string.IsNullOrEmpty(name))
+            if(string.IsNullOrEmpty(name))
                 return string.Empty;
             return string.Format("{0}, ", name);
         }
@@ -370,21 +371,21 @@ namespace DevExpress.MailClient.Win {
 
         public static List<Contact> Contacts {
             get {
-                if (_contacts == null)
+                if(_contacts == null)
                     _contacts = GetContacts();
                 return _contacts;
             }
         }
         public static List<Task> Tasks {
             get {
-                if (_tasks == null)
+                if(_tasks == null)
                     _tasks = GenerateTasks();
                 return _tasks;
             }
         }
         internal static DataTable CalendarResources {
             get {
-                if (calendarResourcesTable == null) {
+                if(calendarResourcesTable == null) {
                     string table = "Resources";
                     calendarResourcesTable = CreateDataTable(table);
                 }
@@ -393,7 +394,7 @@ namespace DevExpress.MailClient.Win {
         }
         internal static DataTable CalendarAppointments {
             get {
-                if (calendarAppointmentsTable == null) {
+                if(calendarAppointmentsTable == null) {
                     string table = "Appointments";
                     calendarAppointmentsTable = CreateDataTable(table);
                 }
@@ -402,12 +403,12 @@ namespace DevExpress.MailClient.Win {
         }
         static List<Task> GenerateTasks() {
             List<Task> ret = new List<Task>();
-            for (int i = 0; i < TaskGenerator.CustomerCount; i++)
-                foreach (string s in CollectionResources.OfficeTasks)
+            for(int i = 0; i < TaskGenerator.CustomerCount; i++)
+                foreach(string s in CollectionResources.OfficeTasks)
                     ret.Add(TaskGenerator.CreateTask(s, TaskCategory.Office));
-            foreach (string s in CollectionResources.HouseTasks)
+            foreach(string s in CollectionResources.HouseTasks)
                 ret.Add(TaskGenerator.CreateTask(s, TaskCategory.HouseChores));
-            foreach (string s in CollectionResources.ShoppingTasks)
+            foreach(string s in CollectionResources.ShoppingTasks)
                 ret.Add(TaskGenerator.CreateTask(s, TaskCategory.Shopping));
             return ret;
         }
@@ -417,7 +418,7 @@ namespace DevExpress.MailClient.Win {
             if(dataSet == null)
                 return ret;
             DataTable tbl = dataSet.Relations["FK_CustomerOidOidPerson"].ChildTable;
-            for (int i = 0; i < tbl.Rows.Count; i++)
+            for(int i = 0; i < tbl.Rows.Count; i++)
                 ret.Add(new Contact(tbl.Rows[i], tbl.Rows[i].GetParentRow("FK_CustomerOidOidPerson")));
             return ret;
         }
@@ -442,13 +443,13 @@ namespace DevExpress.MailClient.Win {
         static List<Contact> _customers;
         internal static List<Contact> Customers {
             get {
-                if (_customers == null) {
+                if(_customers == null) {
                     _customers = new List<Contact>();
                     List<Contact> temp = DataHelper.GetContacts();
-                    if (temp.Count > CustomerCount) {
-                        while (_customers.Count < CustomerCount) {
+                    if(temp.Count > CustomerCount) {
+                        while(_customers.Count < CustomerCount) {
                             Contact contact = GetCustomer(TutorialConstants.Random.Next(temp.Count - 1), _customers, temp);
-                            if (contact != null)
+                            if(contact != null)
                                 _customers.Add(contact);
                         }
                     }
@@ -458,40 +459,41 @@ namespace DevExpress.MailClient.Win {
         }
         static Contact GetCustomer(int index, List<Contact> customers, List<Contact> contacts) {
             Contact contact = contacts[index];
-            if (!contact.HasPhoto)
+            if(!contact.HasPhoto)
                 return null;
-            foreach (Contact c in customers)
-                if (ReferenceEquals(c, contact))
+            foreach(Contact c in customers)
+                if(ReferenceEquals(c, contact))
                     return null;
             return contact;
         }
         public static Task CreateTask(string subject, TaskCategory category) {
             Task task = new Task(subject, category, TutorialConstants.Now.AddHours(-TutorialConstants.Random.Next(96)));
             int rndStatus = TutorialConstants.Random.Next(10);
-            if (task.TimeDiff.TotalHours > 12) {
-                if (task.TimeDiff.TotalHours > 80) {
+            if(task.TimeDiff.TotalHours > 12) {
+                if(task.TimeDiff.TotalHours > 80) {
                     task.Status = TaskStatus.Completed;
 
-                } else {
+                }
+                else {
                     task.Status = TaskStatus.InProgress;
                     task.PercentComplete = TutorialConstants.Random.Next(9) * 10;
                 }
                 task.StartDate = task.CreatedDate.AddMinutes(TutorialConstants.Random.Next(720)).Date;
             }
-            if (rndStatus != 5)
+            if(rndStatus != 5)
                 task.DueDate = task.CreatedDate.AddHours((90 - rndStatus * 9) + 24).Date;
-            if (rndStatus > 8)
+            if(rndStatus > 8)
                 task.Priority = 2;
-            if (rndStatus < 3)
+            if(rndStatus < 3)
                 task.Priority = 0;
-            if (rndStatus == 6 && task.Status == TaskStatus.InProgress)
+            if(rndStatus == 6 && task.Status == TaskStatus.InProgress)
                 task.Status = TaskStatus.Deferred;
-            if (rndStatus == 4 && task.Status == TaskStatus.InProgress && task.PercentComplete < 40)
+            if(rndStatus == 4 && task.Status == TaskStatus.InProgress && task.PercentComplete < 40)
                 task.Status = TaskStatus.WaitingOnSomeoneElse;
-            if (task.Category == TaskCategory.Office && rndStatus != 7 && Customers.Count > 0)
+            if(task.Category == TaskCategory.Office && rndStatus != 7 && Customers.Count > 0)
                 task.AssignTo = Customers[TutorialConstants.Random.Next(Customers.Count)];
-            if (task.Status == TaskStatus.Completed) {
-                if (!task.StartDate.HasValue)
+            if(task.Status == TaskStatus.Completed) {
+                if(!task.StartDate.HasValue)
                     task.StartDate = task.CreatedDate.AddHours(12).Date;
                 task.CompletedDate = task.StartDate.Value.AddHours(TutorialConstants.Random.Next(48) + 24);
             }

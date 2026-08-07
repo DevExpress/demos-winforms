@@ -59,7 +59,7 @@ namespace DevExpress.DentalClinic.Model {
             }
         }
         [NonPersistent]
-        public string Description { 
+        public string Description {
             get {
                 var descriptionStringBuilder = new StringBuilder();
                 foreach(var procedureItem in ProcedureCollection) {

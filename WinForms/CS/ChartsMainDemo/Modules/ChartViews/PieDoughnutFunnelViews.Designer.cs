@@ -164,6 +164,7 @@
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(seriesTitle1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).BeginInit();
             this.dockPanelFunnel.SuspendLayout();
@@ -185,6 +186,12 @@
             this.dockPanelNestedDoughnut.SuspendLayout();
             this.dockPanelNestedDoughnut_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartNestedDoughnut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(nestedDoughnutSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(nestedDoughnutSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager)).BeginInit();
@@ -359,12 +366,14 @@
             seriesPoint6,
             seriesPoint7,
             seriesPoint8});
+            series1.SeriesID = 0;
             pieBurstAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.1000000");
             pieSeriesView1.Animation = pieBurstAnimation1;
             pieSeriesView1.Rotation = 90;
             pieSeriesView1.RuntimeExploding = true;
             seriesTitle1.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
             seriesTitle1.Text = "Total: {TV:#.##}M km²";
+            seriesTitle1.TitleID = 0;
             pieSeriesView1.Titles.AddRange(new DevExpress.XtraCharts.SeriesTitle[] {
             seriesTitle1});
             series1.View = pieSeriesView1;
@@ -379,11 +388,13 @@
             this.chartPie.TabStop = false;
             chartTitle1.Indent = 10;
             chartTitle1.Text = "Land Area by Country";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle2.Text = "From www.nationmaster.com";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chartPie.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -434,6 +445,7 @@
             seriesPoint11,
             seriesPoint12,
             seriesPoint13});
+            series2.SeriesID = 0;
             series2.View = funnelSeriesView1;
             this.chartFunnel.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
@@ -442,6 +454,7 @@
             this.chartFunnel.Size = new System.Drawing.Size(788, 548);
             this.chartFunnel.TabIndex = 1;
             chartTitle3.Text = "Website Visitor Trend";
+            chartTitle3.TitleID = 0;
             this.chartFunnel.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle3});
             // 
@@ -494,6 +507,7 @@
             seriesPoint19,
             seriesPoint20,
             seriesPoint21});
+            series3.SeriesID = 0;
             series3.ToolTipPointPattern = "{A}: {V:0.0}M km²";
             doughnutSeriesView1.Rotation = 90;
             doughnutSeriesView1.RuntimeExploding = true;
@@ -511,11 +525,13 @@
             this.chartDoughnut.TabStop = false;
             chartTitle4.Indent = 10;
             chartTitle4.Text = "Land Area by Country";
-            chartTitle5.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle4.TitleID = 0;
             chartTitle5.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle5.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle5.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle5.Text = "From www.nationmaster.com";
             chartTitle5.TextColor = System.Drawing.Color.Gray;
+            chartTitle5.TitleID = 1;
             this.chartDoughnut.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle4,
             chartTitle5});
@@ -560,18 +576,23 @@
             legend1.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.Bottom;
             legend1.BackColor = System.Drawing.Color.Transparent;
             legend1.Border.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            customLegendItem1.CustomLegendItemID = 0;
             customLegendItem1.MarkerImage.DXImage = ((DevExpress.Drawing.DXBitmap)(DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage"))));
             customLegendItem1.Name = "Custom Legend Item 3";
             customLegendItem1.Text = "0 - 14 years";
+            customLegendItem2.CustomLegendItemID = 1;
             customLegendItem2.MarkerImage.DXImage = ((DevExpress.Drawing.DXBitmap)(DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage1"))));
             customLegendItem2.Name = "Custom Legend Item 2";
             customLegendItem2.Text = "15 - 64 years";
+            customLegendItem3.CustomLegendItemID = 2;
             customLegendItem3.MarkerImage.DXImage = ((DevExpress.Drawing.DXBitmap)(DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage2"))));
             customLegendItem3.Name = "Custom Legend Item 1";
             customLegendItem3.Text = "65 years and older";
+            customLegendItem4.CustomLegendItemID = 3;
             customLegendItem4.MarkerImage.DXImage = ((DevExpress.Drawing.DXBitmap)(DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage3"))));
             customLegendItem4.Name = "Custom Legend Item 4";
             customLegendItem4.Text = "Male";
+            customLegendItem5.CustomLegendItemID = 4;
             customLegendItem5.MarkerImage.DXImage = ((DevExpress.Drawing.DXBitmap)(DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage4"))));
             customLegendItem5.Name = "Custom Legend Item 5";
             customLegendItem5.Text = "Female";
@@ -582,6 +603,7 @@
             customLegendItem4,
             customLegendItem5});
             legend1.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight;
+            legend1.LegendID = 0;
             legend1.Name = "Legend2";
             this.chartNestedDoughnut.Legends.AddRange(new DevExpress.XtraCharts.Legend[] {
             legend1});
@@ -607,13 +629,16 @@
             this.chartNestedDoughnut.TabIndex = 1;
             this.chartNestedDoughnut.TabStop = false;
             chartTitle6.Text = "Population: Age Structure";
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle6.TitleID = 0;
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle7.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle7.Text = "From www.cia.gov";
             chartTitle7.TextColor = System.Drawing.Color.Gray;
+            chartTitle7.TitleID = 1;
             chartTitle8.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle8.Text = "Data estimate for 2020";
+            chartTitle8.TitleID = 2;
             this.chartNestedDoughnut.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle6,
             chartTitle7,
@@ -930,7 +955,6 @@
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
             this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItemPosition
@@ -950,7 +974,6 @@
             this.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent";
             this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItemValueAsPercent.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemValueAsPercent.TextVisible = false;
             // 
             // layoutControlGroupPieDoughnutGeneral
@@ -987,11 +1010,9 @@
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 500);
             this.emptySpaceItem.Name = "emptySpaceItem";
             this.emptySpaceItem.Size = new System.Drawing.Size(241, 38);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroupFunnelGeneral
             // 
@@ -1019,7 +1040,6 @@
             this.layoutControlItemAlignToCenter.Name = "layoutControlItemAlignToCenter";
             this.layoutControlItemAlignToCenter.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemAlignToCenter.Text = "Align To Center";
-            this.layoutControlItemAlignToCenter.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAlignToCenter.TextVisible = false;
             // 
             // layoutControlItemAutoHeightToWidthRatio
@@ -1028,7 +1048,6 @@
             this.layoutControlItemAutoHeightToWidthRatio.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemAutoHeightToWidthRatio.Name = "layoutControlItemAutoHeightToWidthRatio";
             this.layoutControlItemAutoHeightToWidthRatio.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemAutoHeightToWidthRatio.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAutoHeightToWidthRatio.TextVisible = false;
             // 
             // layoutControlItemPointDistance
@@ -1098,7 +1117,6 @@
             this.layoutControlItemTotalLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemTotalLabelVisible.Name = "layoutControlItemTotalLabelVisible";
             this.layoutControlItemTotalLabelVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemTotalLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemTotalLabelVisible.TextVisible = false;
             // 
             // PieDoughnutFunnelViewsDemo
@@ -1120,6 +1138,7 @@
             this.dockPanelPie.ResumeLayout(false);
             this.dockPanelPie_Container.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(seriesTitle1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel2)).EndInit();
@@ -1143,6 +1162,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartDoughnut)).EndInit();
             this.dockPanelNestedDoughnut.ResumeLayout(false);
             this.dockPanelNestedDoughnut_Container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(nestedDoughnutSeriesLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(nestedDoughnutSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartNestedDoughnut)).EndInit();

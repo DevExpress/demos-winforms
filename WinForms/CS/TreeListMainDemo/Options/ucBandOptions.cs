@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.Utils;
 
 namespace DevExpress.XtraTreeList.Demos.Options {
     public partial class ucBandOptions : ucDefault {
@@ -23,10 +24,11 @@ namespace DevExpress.XtraTreeList.Demos.Options {
             ceAllowBandResizing.Checked = TreeList.OptionsCustomization.AllowBandResizing;
             ceAllowChangeBandParent.Checked = TreeList.OptionsCustomization.AllowChangeBandParent;
             ceAllowChangeColumnParent.Checked = TreeList.OptionsCustomization.AllowChangeColumnParent;
-            ceShowBandsInCustomizationForm.Checked = TreeList.OptionsCustomization.ShowBandsInCustomizationForm;
-            ceCustomizationFormSearchBoxVisible.Checked = TreeList.OptionsCustomization.CustomizationFormSearchBoxVisible;
             ceAllowColumnMoving.Checked = TreeList.OptionsCustomization.AllowColumnMoving;
             ceAllowColumnResizing.Checked = TreeList.OptionsCustomization.AllowColumnResizing;
+            icbCustomizationFormKind.DataBindings.Add("EditValue", TreeList.OptionsCustomization, "UseAdvancedCustomizationForm", false, DataSourceUpdateMode.OnPropertyChanged);
+            ceShowBandsInCustomizationForm.Checked = TreeList.OptionsCustomization.ShowBandsInCustomizationForm;
+            ceCustomizationFormSearchBoxVisible.Checked = TreeList.OptionsCustomization.CustomizationFormSearchBoxVisible;
             //</layoutControl.lgCustomization>
         }
         private void ceAllowBandMoving_CheckedChanged(object sender, EventArgs e) {
@@ -63,19 +65,30 @@ namespace DevExpress.XtraTreeList.Demos.Options {
             if(IsInitializing || TreeList == null)
                 return;
             TreeList.OptionsCustomization.ShowBandsInCustomizationForm = ceShowBandsInCustomizationForm.Checked;
-            if(TreeList.CustomizationForm != null && TreeList.CustomizationForm.Visible) {
-                TreeList.DestroyCustomization();
-                TreeList.ColumnsCustomization();
-            }
+            RecreateCustomizationForm();
         }
         private void ceCustomizationFormSearchBoxVisible_CheckedChanged(object sender, EventArgs e) {
             if(IsInitializing || TreeList == null)
                 return;
             TreeList.OptionsCustomization.CustomizationFormSearchBoxVisible = ceCustomizationFormSearchBoxVisible.Checked;
+            RecreateCustomizationForm();
+        }
+        private void icbCustomizationFormKind_SelectedIndexChanged(object sender, EventArgs e) {
+            if(IsInitializing || TreeList == null)
+                return;
+            UpdateClassicCustomizationFormOptionsEnabled();
+            RecreateCustomizationForm();
+        }
+        private void RecreateCustomizationForm() {
             if(TreeList.CustomizationForm != null && TreeList.CustomizationForm.Visible) {
                 TreeList.DestroyCustomization();
                 TreeList.ColumnsCustomization();
             }
+        }
+        private void UpdateClassicCustomizationFormOptionsEnabled() {
+            bool enabled = TreeList.OptionsCustomization.UseAdvancedCustomizationForm != DefaultBoolean.True;
+            ceShowBandsInCustomizationForm.Enabled = enabled;
+            ceCustomizationFormSearchBoxVisible.Enabled = enabled;
         }
         private void ceShowBands_CheckedChanged(object sender, EventArgs e) {
             if(IsInitializing || TreeList == null)

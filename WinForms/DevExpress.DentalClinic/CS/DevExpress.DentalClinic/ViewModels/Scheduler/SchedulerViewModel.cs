@@ -6,7 +6,7 @@ using DevExpress.Mvvm.POCO;
 using DevExpress.Xpo;
 
 namespace DevExpress.DentalClinic.ViewModel {
-    public class SchedulerViewModel: IDisposable {
+    public class SchedulerViewModel : IDisposable {
         public SchedulerViewModel() {
             Appointments = new XPCollection<Appointment>(Session);
             Doctors = new XPCollection<Doctor>(Session);

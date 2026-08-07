@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
@@ -30,7 +24,7 @@ namespace DevExpress.MailClient.Win.Forms {
 
         private void gridView1_RowCellClick(object sender, XtraGrid.Views.Grid.RowCellClickEventArgs e) {
             if(CurrentTask == null) return;
-            if(e.Button == MouseButtons.Left && e.RowHandle >= 0 && e.Clicks == 2) 
+            if(e.Button == MouseButtons.Left && e.RowHandle >= 0 && e.Clicks == 2)
                 OkClick();
         }
         void OkClick() {

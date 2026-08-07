@@ -21,29 +21,29 @@ Namespace DevExpress.XtraCharts.Demos
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DevExpress.XtraCharts.Demos.Line3DViewsDemo))
             Dim xyDiagram3D1 As DevExpress.XtraCharts.XYDiagram3D = New DevExpress.XtraCharts.XYDiagram3D()
+            Dim series1 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
+            Dim line3DSeriesLabel1 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
+            Dim line3DSeriesView1 As DevExpress.XtraCharts.Line3DSeriesView = New DevExpress.XtraCharts.Line3DSeriesView()
             Dim series2 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
             Dim line3DSeriesLabel2 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
             Dim line3DSeriesView2 As DevExpress.XtraCharts.Line3DSeriesView = New DevExpress.XtraCharts.Line3DSeriesView()
-            Dim series3 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
-            Dim line3DSeriesLabel3 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
-            Dim line3DSeriesView3 As DevExpress.XtraCharts.Line3DSeriesView = New DevExpress.XtraCharts.Line3DSeriesView()
             Dim chartTitle1 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Dim chartTitle2 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Dim xyDiagram3D2 As DevExpress.XtraCharts.XYDiagram3D = New DevExpress.XtraCharts.XYDiagram3D()
-            Dim series4 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
-            Dim line3DSeriesLabel4 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
+            Dim series3 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
+            Dim line3DSeriesLabel3 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
             Dim stepLine3DSeriesView1 As DevExpress.XtraCharts.StepLine3DSeriesView = New DevExpress.XtraCharts.StepLine3DSeriesView()
             Dim chartTitle3 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Dim chartTitle4 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Dim chartTitle5 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Dim xyDiagram3D3 As DevExpress.XtraCharts.XYDiagram3D = New DevExpress.XtraCharts.XYDiagram3D()
-            Dim series6 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
-            Dim line3DSeriesLabel6 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
+            Dim series4 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
+            Dim line3DSeriesLabel4 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
+            Dim spline3DSeriesView1 As DevExpress.XtraCharts.Spline3DSeriesView = New DevExpress.XtraCharts.Spline3DSeriesView()
+            Dim series5 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
+            Dim line3DSeriesLabel5 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
             Dim spline3DSeriesView2 As DevExpress.XtraCharts.Spline3DSeriesView = New DevExpress.XtraCharts.Spline3DSeriesView()
-            Dim series7 As DevExpress.XtraCharts.Series = New DevExpress.XtraCharts.Series()
-            Dim line3DSeriesLabel7 As DevExpress.XtraCharts.Line3DSeriesLabel = New DevExpress.XtraCharts.Line3DSeriesLabel()
             Dim spline3DSeriesView3 As DevExpress.XtraCharts.Spline3DSeriesView = New DevExpress.XtraCharts.Spline3DSeriesView()
-            Dim spline3DSeriesView4 As DevExpress.XtraCharts.Spline3DSeriesView = New DevExpress.XtraCharts.Spline3DSeriesView()
             Dim chartTitle6 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Dim chartTitle7 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Dim xyDiagram3D4 As DevExpress.XtraCharts.XYDiagram3D = New DevExpress.XtraCharts.XYDiagram3D()
@@ -110,30 +110,30 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelLine3D_Container.SuspendLayout()
             CType((Me.chartLine3D), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((xyDiagram3D1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((line3DSeriesLabel1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((line3DSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((line3DSeriesLabel2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((line3DSeriesView2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((series3), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((line3DSeriesLabel3), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((line3DSeriesView3), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.dockPanelStepLine3D.SuspendLayout()
             Me.dockPanelStepLine3D_Container.SuspendLayout()
             CType((Me.chartStepLine3D), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((xyDiagram3D2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((series4), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((line3DSeriesLabel4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((series3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((line3DSeriesLabel3), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((stepLine3DSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.dockPanelSpline3D.SuspendLayout()
             Me.dockPanelSpline3D_Container.SuspendLayout()
             CType((Me.chartSpline), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((xyDiagram3D3), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((series6), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((line3DSeriesLabel6), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((series4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((line3DSeriesLabel4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((spline3DSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((series5), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((line3DSeriesLabel5), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((spline3DSeriesView2), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((series7), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((line3DSeriesLabel7), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((spline3DSeriesView3), System.ComponentModel.ISupportInitialize).BeginInit()
-            CType((spline3DSeriesView4), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.dockPanelStackedLine3D.SuspendLayout()
             Me.dockPanelStackedLine3D_Container.SuspendLayout()
             CType((Me.chartStackedLine), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -169,7 +169,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' documentGroup
             ' 
@@ -285,35 +285,39 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartLine3D.Legend.Name = "Default Legend"
             Me.chartLine3D.Location = New System.Drawing.Point(0, 0)
             Me.chartLine3D.Name = "chartLine3D"
+            series1.ArgumentDataMember = "Date"
+            series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
+            line3DSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped
+            line3DSeriesLabel1.TextPattern = "{V:F2}"
+            series1.Label = line3DSeriesLabel1
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
+            series1.Name = "South Africa"
+            series1.SeriesID = 0
+            series1.ValueDataMembersSerializable = "South Africa"
+            line3DSeriesView1.LineWidth = 2R
+            series1.View = line3DSeriesView1
             series2.ArgumentDataMember = "Date"
             series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             line3DSeriesLabel2.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped
             line3DSeriesLabel2.TextPattern = "{V:F2}"
             series2.Label = line3DSeriesLabel2
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
-            series2.Name = "South Africa"
-            series2.ValueDataMembersSerializable = "South Africa"
+            series2.Name = "Poland"
+            series2.SeriesID = 1
+            series2.ValueDataMembersSerializable = "Poland"
             line3DSeriesView2.LineWidth = 2R
             series2.View = line3DSeriesView2
-            series3.ArgumentDataMember = "Date"
-            series3.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
-            line3DSeriesLabel3.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped
-            line3DSeriesLabel3.TextPattern = "{V:F2}"
-            series3.Label = line3DSeriesLabel3
-            series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
-            series3.Name = "Poland"
-            series3.ValueDataMembersSerializable = "Poland"
-            line3DSeriesView3.LineWidth = 2R
-            series3.View = line3DSeriesView3
-            Me.chartLine3D.SeriesSerializable = New DevExpress.XtraCharts.Series() {series2, series3}
+            Me.chartLine3D.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1, series2}
             Me.chartLine3D.Size = New System.Drawing.Size(788, 548)
             Me.chartLine3D.TabIndex = 1
             chartTitle1.Text = "Coal Production, in Millions of Tonnes"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle1.TitleID = 0
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle2.Text = "From www.quandl.com"
             chartTitle2.TextColor = System.Drawing.Color.Gray
+            chartTitle2.TitleID = 1
             Me.chartLine3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             ' 
             ' dockPanelStepLine3D
@@ -355,26 +359,30 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStepLine3D.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             Me.chartStepLine3D.Location = New System.Drawing.Point(0, 0)
             Me.chartStepLine3D.Name = "chartStepLine3D"
-            series4.ArgumentDataMember = "Date"
-            series4.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
-            line3DSeriesLabel4.TextPattern = "{V:#.00}"
-            series4.Label = line3DSeriesLabel4
-            series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
-            series4.Name = "Gasoline Prices"
-            series4.ValueDataMembersSerializable = "Price"
+            series3.ArgumentDataMember = "Date"
+            series3.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
+            line3DSeriesLabel3.TextPattern = "{V:#.00}"
+            series3.Label = line3DSeriesLabel3
+            series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
+            series3.Name = "Gasoline Prices"
+            series3.SeriesID = 0
+            series3.ValueDataMembersSerializable = "Price"
             stepLine3DSeriesView1.LineWidth = 1.2R
-            series4.View = stepLine3DSeriesView1
-            Me.chartStepLine3D.SeriesSerializable = New DevExpress.XtraCharts.Series() {series4}
+            series3.View = stepLine3DSeriesView1
+            Me.chartStepLine3D.SeriesSerializable = New DevExpress.XtraCharts.Series() {series3}
             Me.chartStepLine3D.Size = New System.Drawing.Size(788, 548)
             Me.chartStepLine3D.TabIndex = 1
             chartTitle3.Text = "US Gasoline Prices in 2015"
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle3.TitleID = 0
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle4.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle4.Text = "From www.eia.gov"
             chartTitle4.TextColor = System.Drawing.Color.Gray
+            chartTitle4.TitleID = 1
             chartTitle5.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle5.Text = "Dollars per Gallon"
+            chartTitle5.TitleID = 2
             Me.chartStepLine3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle3, chartTitle4, chartTitle5})
             ' 
             ' dockPanelSpline3D
@@ -418,35 +426,39 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartSpline.Legend.Name = "Default Legend"
             Me.chartSpline.Location = New System.Drawing.Point(0, 0)
             Me.chartSpline.Name = "chartSpline"
-            series6.ArgumentDataMember = "Date"
-            series6.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
-            line3DSeriesLabel6.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped
-            series6.Label = line3DSeriesLabel6
-            series6.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
-            series6.Name = "South Africa"
-            series6.ValueDataMembersSerializable = "South Africa"
+            series4.ArgumentDataMember = "Date"
+            series4.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
+            line3DSeriesLabel4.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped
+            series4.Label = line3DSeriesLabel4
+            series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
+            series4.Name = "South Africa"
+            series4.SeriesID = 0
+            series4.ValueDataMembersSerializable = "South Africa"
+            spline3DSeriesView1.LineWidth = 2R
+            series4.View = spline3DSeriesView1
+            series5.ArgumentDataMember = "Date"
+            series5.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
+            line3DSeriesLabel5.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped
+            series5.Label = line3DSeriesLabel5
+            series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
+            series5.Name = "Poland"
+            series5.SeriesID = 1
+            series5.ValueDataMembersSerializable = "Poland"
             spline3DSeriesView2.LineWidth = 2R
-            series6.View = spline3DSeriesView2
-            series7.ArgumentDataMember = "Date"
-            series7.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
-            line3DSeriesLabel7.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped
-            series7.Label = line3DSeriesLabel7
-            series7.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
-            series7.Name = "Poland"
-            series7.ValueDataMembersSerializable = "Poland"
-            spline3DSeriesView3.LineWidth = 2R
-            series7.View = spline3DSeriesView3
-            Me.chartSpline.SeriesSerializable = New DevExpress.XtraCharts.Series() {series6, series7}
+            series5.View = spline3DSeriesView2
+            Me.chartSpline.SeriesSerializable = New DevExpress.XtraCharts.Series() {series4, series5}
             Me.chartSpline.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
-            Me.chartSpline.SeriesTemplate.View = spline3DSeriesView4
+            Me.chartSpline.SeriesTemplate.View = spline3DSeriesView3
             Me.chartSpline.Size = New System.Drawing.Size(788, 548)
             Me.chartSpline.TabIndex = 1
             chartTitle6.Text = "Coal Production, in Millions of Tonnes"
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle6.TitleID = 0
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle7.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle7.Text = "From www.quandl.com"
             chartTitle7.TextColor = System.Drawing.Color.Gray
+            chartTitle7.TitleID = 1
             Me.chartSpline.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle6, chartTitle7})
             ' 
             ' dockPanelStackedLine3D
@@ -499,6 +511,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartStackedLine.Size = New System.Drawing.Size(788, 548)
             Me.chartStackedLine.TabIndex = 1
             chartTitle8.Text = "DevAV Sales"
+            chartTitle8.TitleID = 0
             Me.chartStackedLine.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle8})
             ' 
             ' dockPanelFullStackedLine3D
@@ -510,7 +523,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelFullStackedLine3D.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelFullStackedLine3D.Name = "dockPanelFullStackedLine3D"
             Me.dockPanelFullStackedLine3D.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelFullStackedLine3D.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelFullStackedLine3D.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelFullStackedLine3D.Text = "Full Stacked Line 3D"
             ' 
             ' dockPanelFullStackedLine3D_Container
@@ -518,7 +531,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelFullStackedLine3D_Container.Controls.Add(Me.chartFulStackedLine)
             Me.dockPanelFullStackedLine3D_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelFullStackedLine3D_Container.Name = "dockPanelFullStackedLine3D_Container"
-            Me.dockPanelFullStackedLine3D_Container.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelFullStackedLine3D_Container.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelFullStackedLine3D_Container.TabIndex = 0
             ' 
             ' chartFulStackedLine
@@ -527,7 +540,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram3D5.AxisX.DateTimeScaleOptions.MeasureUnit = DevExpress.XtraCharts.DateTimeMeasureUnit.Year
             xyDiagram3D5.AxisY.Label.TextPattern = "{V:P0}"
             xyDiagram3D5.AxisY.WholeRange.AutoSideMargins = False
-            xyDiagram3D5.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram3D5.AxisY.WholeRange.EndSideMargin = 0R
+            xyDiagram3D5.AxisY.WholeRange.StartSideMargin = 0R
             xyDiagram3D5.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" & "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" & "1"
             xyDiagram3D5.RuntimeRotation = True
             xyDiagram3D5.RuntimeScrolling = True
@@ -551,9 +565,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFulStackedLine.SeriesTemplate.ValueDataMembersSerializable = "Sales"
             fullStackedLine3DSeriesView1.LineWidth = 1R
             Me.chartFulStackedLine.SeriesTemplate.View = fullStackedLine3DSeriesView1
-            Me.chartFulStackedLine.Size = New System.Drawing.Size(788, 545)
+            Me.chartFulStackedLine.Size = New System.Drawing.Size(788, 548)
             Me.chartFulStackedLine.TabIndex = 1
             chartTitle9.Text = "Market Share Over Time"
+            chartTitle9.TitleID = 0
             Me.chartFulStackedLine.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle9})
             ' 
             ' documentManager
@@ -595,17 +610,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(237, 228, 650, 400)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 3
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' checkEditLabelVisible
             ' 
             Me.checkEditLabelVisible.EditValue = True
-            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 93)
+            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 100)
             Me.checkEditLabelVisible.Name = "checkEditLabelVisible"
             Me.checkEditLabelVisible.Properties.Caption = "Visible"
-            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 20)
             Me.checkEditLabelVisible.StyleController = Me.layoutControl
             Me.checkEditLabelVisible.TabIndex = 4
             AddHandler Me.checkEditLabelVisible.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditLabelVisible_CheckedChanged)
@@ -613,26 +628,26 @@ Namespace DevExpress.XtraCharts.Demos
             ' checkEditValueAsPercent
             ' 
             Me.checkEditValueAsPercent.EditValue = True
-            Me.checkEditValueAsPercent.Location = New System.Drawing.Point(12, 116)
+            Me.checkEditValueAsPercent.Location = New System.Drawing.Point(12, 124)
             Me.checkEditValueAsPercent.Name = "checkEditValueAsPercent"
             Me.checkEditValueAsPercent.Properties.Caption = "Value as Percent"
-            Me.checkEditValueAsPercent.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditValueAsPercent.Size = New System.Drawing.Size(217, 20)
             Me.checkEditValueAsPercent.StyleController = Me.layoutControl
             Me.checkEditValueAsPercent.TabIndex = 5
             ' 
             ' comboBoxEditPerspectiveAngle
             ' 
-            Me.comboBoxEditPerspectiveAngle.Location = New System.Drawing.Point(105, 178)
+            Me.comboBoxEditPerspectiveAngle.Location = New System.Drawing.Point(114, 190)
             Me.comboBoxEditPerspectiveAngle.Name = "comboBoxEditPerspectiveAngle"
             Me.comboBoxEditPerspectiveAngle.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditPerspectiveAngle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditPerspectiveAngle.Size = New System.Drawing.Size(124, 20)
+            Me.comboBoxEditPerspectiveAngle.Size = New System.Drawing.Size(115, 20)
             Me.comboBoxEditPerspectiveAngle.StyleController = Me.layoutControl
             Me.comboBoxEditPerspectiveAngle.TabIndex = 6
             ' 
             ' simpleButtonRestoreDefaultAngles
             ' 
-            Me.simpleButtonRestoreDefaultAngles.Location = New System.Drawing.Point(12, 210)
+            Me.simpleButtonRestoreDefaultAngles.Location = New System.Drawing.Point(12, 222)
             Me.simpleButtonRestoreDefaultAngles.Name = "simpleButtonRestoreDefaultAngles"
             Me.simpleButtonRestoreDefaultAngles.Size = New System.Drawing.Size(217, 22)
             Me.simpleButtonRestoreDefaultAngles.StyleController = Me.layoutControl
@@ -641,10 +656,10 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' checkEditInvertedStep
             ' 
-            Me.checkEditInvertedStep.Location = New System.Drawing.Point(12, 31)
+            Me.checkEditInvertedStep.Location = New System.Drawing.Point(12, 34)
             Me.checkEditInvertedStep.Name = "checkEditInvertedStep"
             Me.checkEditInvertedStep.Properties.Caption = "Inverted Step"
-            Me.checkEditInvertedStep.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditInvertedStep.Size = New System.Drawing.Size(217, 20)
             Me.checkEditInvertedStep.StyleController = Me.layoutControl
             Me.checkEditInvertedStep.TabIndex = 0
             AddHandler Me.checkEditInvertedStep.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditInvertedStep_CheckedChanged)
@@ -656,7 +671,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupGeneral, Me.layoutControlGroupLabelOptions, Me.emptySpaceItem, Me.layoutControlGroupCamera})
             Me.layoutControlGroupRoot.Name = "Root"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupGeneral
@@ -667,7 +682,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupGeneral.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItemInvertedStep})
             Me.layoutControlGroupGeneral.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral"
-            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 62)
+            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 66)
             Me.layoutControlGroupGeneral.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupGeneral.Text = "General"
             ' 
@@ -676,8 +691,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.LayoutControlItemInvertedStep.Control = Me.checkEditInvertedStep
             Me.LayoutControlItemInvertedStep.Location = New System.Drawing.Point(0, 0)
             Me.LayoutControlItemInvertedStep.Name = "LayoutControlItemInvertedStep"
-            Me.LayoutControlItemInvertedStep.Size = New System.Drawing.Size(221, 23)
-            Me.LayoutControlItemInvertedStep.TextSize = New System.Drawing.Size(0, 0)
+            Me.LayoutControlItemInvertedStep.Size = New System.Drawing.Size(221, 24)
             Me.LayoutControlItemInvertedStep.TextVisible = False
             ' 
             ' layoutControlGroupLabelOptions
@@ -686,9 +700,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupLabelOptions.AppearanceGroup.Options.UseBorderColor = True
             Me.layoutControlGroupLabelOptions.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupLabelOptions.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemLabelVisible, Me.LayoutControlItemValueAsPercent})
-            Me.layoutControlGroupLabelOptions.Location = New System.Drawing.Point(0, 62)
+            Me.layoutControlGroupLabelOptions.Location = New System.Drawing.Point(0, 66)
             Me.layoutControlGroupLabelOptions.Name = "layoutControlGroupLabelOptions"
-            Me.layoutControlGroupLabelOptions.Size = New System.Drawing.Size(241, 85)
+            Me.layoutControlGroupLabelOptions.Size = New System.Drawing.Size(241, 90)
             Me.layoutControlGroupLabelOptions.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupLabelOptions.Text = "Label"
             ' 
@@ -697,27 +711,23 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Control = Me.checkEditLabelVisible
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
-            Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' LayoutControlItemValueAsPercent
             ' 
             Me.LayoutControlItemValueAsPercent.Control = Me.checkEditValueAsPercent
-            Me.LayoutControlItemValueAsPercent.Location = New System.Drawing.Point(0, 23)
+            Me.LayoutControlItemValueAsPercent.Location = New System.Drawing.Point(0, 24)
             Me.LayoutControlItemValueAsPercent.Name = "LayoutControlItemValueAsPercent"
-            Me.LayoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 23)
+            Me.LayoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 24)
             Me.LayoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left
-            Me.LayoutControlItemValueAsPercent.TextSize = New System.Drawing.Size(0, 0)
             Me.LayoutControlItemValueAsPercent.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
-            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 244)
+            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 256)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 300)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 282)
             ' 
             ' layoutControlGroupCamera
             ' 
@@ -725,9 +735,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupCamera.AppearanceGroup.Options.UseBorderColor = True
             Me.layoutControlGroupCamera.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupCamera.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemPerspectiveAngle, Me.layoutControlItemRestoreDefaultAngles})
-            Me.layoutControlGroupCamera.Location = New System.Drawing.Point(0, 147)
+            Me.layoutControlGroupCamera.Location = New System.Drawing.Point(0, 156)
             Me.layoutControlGroupCamera.Name = "layoutControlGroupCamera"
-            Me.layoutControlGroupCamera.Size = New System.Drawing.Size(241, 97)
+            Me.layoutControlGroupCamera.Size = New System.Drawing.Size(241, 100)
             Me.layoutControlGroupCamera.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupCamera.Text = "Camera"
             ' 
@@ -747,7 +757,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemRestoreDefaultAngles.Name = "layoutControlItemRestoreDefaultAngles"
             Me.layoutControlItemRestoreDefaultAngles.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemRestoreDefaultAngles.Size = New System.Drawing.Size(221, 34)
-            Me.layoutControlItemRestoreDefaultAngles.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemRestoreDefaultAngles.TextVisible = False
             ' 
             ' Line3DViewsDemo
@@ -770,30 +779,30 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelLine3D.ResumeLayout(False)
             Me.dockPanelLine3D_Container.ResumeLayout(False)
             CType((xyDiagram3D1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((line3DSeriesLabel1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((line3DSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((line3DSeriesLabel2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((line3DSeriesView2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((line3DSeriesLabel3), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((line3DSeriesView3), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((series3), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.chartLine3D), System.ComponentModel.ISupportInitialize).EndInit()
             Me.dockPanelStepLine3D.ResumeLayout(False)
             Me.dockPanelStepLine3D_Container.ResumeLayout(False)
             CType((xyDiagram3D2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((line3DSeriesLabel4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((line3DSeriesLabel3), System.ComponentModel.ISupportInitialize).EndInit()
             CType((stepLine3DSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((series4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((series3), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.chartStepLine3D), System.ComponentModel.ISupportInitialize).EndInit()
             Me.dockPanelSpline3D.ResumeLayout(False)
             Me.dockPanelSpline3D_Container.ResumeLayout(False)
             CType((xyDiagram3D3), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((line3DSeriesLabel6), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((line3DSeriesLabel4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((spline3DSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((series4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((line3DSeriesLabel5), System.ComponentModel.ISupportInitialize).EndInit()
             CType((spline3DSeriesView2), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((series6), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((line3DSeriesLabel7), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((series5), System.ComponentModel.ISupportInitialize).EndInit()
             CType((spline3DSeriesView3), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((series7), System.ComponentModel.ISupportInitialize).EndInit()
-            CType((spline3DSeriesView4), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.chartSpline), System.ComponentModel.ISupportInitialize).EndInit()
             Me.dockPanelStackedLine3D.ResumeLayout(False)
             Me.dockPanelStackedLine3D_Container.ResumeLayout(False)

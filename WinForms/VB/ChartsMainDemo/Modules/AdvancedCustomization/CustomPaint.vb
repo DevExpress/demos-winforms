@@ -4,6 +4,7 @@ Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.Windows.Forms
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Utils.Drawing
 
 Namespace DevExpress.XtraCharts.Demos
@@ -53,11 +54,10 @@ Namespace DevExpress.XtraCharts.Demos
 
         Private Sub InitSeries()
             If chart.Series.Count > 0 Then
-                Dim random As NonCryptographicRandom = NonCryptographicRandom.System
                 chart.Series(0).Points.Clear()
-                chart.Series(0).Points.AddRange(CalculatePoints(random, 50, 5, 9))
-                chart.Series(0).Points.AddRange(CalculatePoints(random, 50, 13, 5))
-                chart.Series(0).Points.AddRange(CalculatePoints(random, 50, 10, 18))
+                chart.Series(0).Points.AddRange(CalculatePoints(TutorialConstants.Random, 50, 5, 9))
+                chart.Series(0).Points.AddRange(CalculatePoints(TutorialConstants.Random, 50, 13, 5))
+                chart.Series(0).Points.AddRange(CalculatePoints(TutorialConstants.Random, 50, 10, 18))
             End If
         End Sub
 

@@ -1,11 +1,11 @@
-using DevExpress.XtraEditors;
 using System;
+using DevExpress.XtraEditors;
 
 namespace DevExpress.WindowsMailClient.Win.Forms {
     public partial class EmailSignatureEditForm : XtraForm {
         public EmailSignatureEditForm() {
             InitializeComponent();
-            toggleSwitch1.EditValue = (bool) Utils.Utils.UseAsEmailSignature;
+            toggleSwitch1.EditValue = (bool)Utils.Utils.UseAsEmailSignature;
             signatureEditFormControl1.LoadText(Utils.Utils.StartMhtText);
         }
 
@@ -19,7 +19,7 @@ namespace DevExpress.WindowsMailClient.Win.Forms {
         }
 
         void toggleSwitch1_EditValueChanged(object sender, EventArgs e) {
-            Utils.Utils.UseAsEmailSignature = (bool) ((ToggleSwitch) sender).EditValue;
+            Utils.Utils.UseAsEmailSignature = (bool)((ToggleSwitch)sender).EditValue;
         }
     }
 }

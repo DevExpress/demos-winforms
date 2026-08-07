@@ -1,5 +1,5 @@
-Imports DevExpress.XtraEditors
 Imports System
+Imports DevExpress.XtraEditors
 
 Namespace DevExpress.WindowsMailClient.Win.Forms
 

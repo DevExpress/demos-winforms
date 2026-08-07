@@ -158,19 +158,21 @@
             // 
             // sidePanelOptions
             // 
-            this.sidePanelOptions.Location = new System.Drawing.Point(762, 0);
+            this.sidePanelOptions.Location = new System.Drawing.Point(719, 0);
+            this.sidePanelOptions.Size = new System.Drawing.Size(285, 571);
+            // 
+            // tabPaneOptions
+            // 
+            this.tabPaneOptions.RegularSize = new System.Drawing.Size(284, 571);
+            this.tabPaneOptions.Size = new System.Drawing.Size(284, 571);
             // 
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
-            //
-            // sidePanelOptions
-            //
-            this.sidePanelOptions.Width = 285;
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(284, 538);
             // 
             // chart
-            //
+            // 
             this.chart.AnimationStartMode = DevExpress.XtraCharts.ChartAnimationMode.OnLoad;
             this.chart.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.False;
@@ -185,17 +187,18 @@
             xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0.01D;
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0.01D;
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0.01D;
             customAxisLabel1.AxisValueSerializable = "-15.3";
-            customAxisLabel1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point);
+            customAxisLabel1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             customAxisLabel1.Name = "-15.3";
             customAxisLabel1.TextColor = System.Drawing.Color.Red;
             customAxisLabel2.AxisValueSerializable = "-76";
-            customAxisLabel2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point);
+            customAxisLabel2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             customAxisLabel2.Name = "-76.0";
             customAxisLabel2.TextColor = System.Drawing.Color.DodgerBlue;
             customAxisLabel3.AxisValueSerializable = "-45.65";
-            customAxisLabel3.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold, DevExpress.Drawing.DXGraphicsUnit.Point);
+            customAxisLabel3.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             customAxisLabel3.Name = "-45.7";
             customAxisLabel3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             xyDiagram1.AxisY.CustomLabels.AddRange(new DevExpress.XtraCharts.CustomAxisLabel[] {
@@ -260,20 +263,23 @@
             seriesPoint29,
             seriesPoint30,
             seriesPoint31});
+            series1.SeriesID = 0;
             lineSeriesView1.LineMarkerOptions.Kind = DevExpress.XtraCharts.MarkerKind.Hexagon;
             series1.View = lineSeriesView1;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.chart.SeriesTemplate.View = lineSeriesView2;
-            this.chart.Size = new System.Drawing.Size(762, 571);
+            this.chart.Size = new System.Drawing.Size(719, 571);
             this.chart.TabIndex = 3;
             this.chart.TabStop = false;
             chartTitle1.Text = "Mars Pathfinder Temperature Data";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle2.Text = "From www-k12.atmos.washington.edu/k12";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -295,7 +301,7 @@
             this.layoutControl.Location = new System.Drawing.Point(0, 0);
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(284, 538);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
@@ -306,7 +312,7 @@
             0,
             0,
             0});
-            this.spinEditAxisLabelsMinIndent.Location = new System.Drawing.Point(85, 31);
+            this.spinEditAxisLabelsMinIndent.Location = new System.Drawing.Point(94, 34);
             this.spinEditAxisLabelsMinIndent.Name = "spinEditAxisLabelsMinIndent";
             this.spinEditAxisLabelsMinIndent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -324,44 +330,44 @@
             0,
             0,
             -2147483648});
-            this.spinEditAxisLabelsMinIndent.Size = new System.Drawing.Size(144, 20);
+            this.spinEditAxisLabelsMinIndent.Size = new System.Drawing.Size(178, 20);
             this.spinEditAxisLabelsMinIndent.StyleController = this.layoutControl;
             this.spinEditAxisLabelsMinIndent.TabIndex = 4;
             this.spinEditAxisLabelsMinIndent.EditValueChanged += new System.EventHandler(this.spinEditAxisLabelsMinIndent_EditValueChanged);
             // 
             // checkEditAllowStaggerAxisLabels
             // 
-            this.checkEditAllowStaggerAxisLabels.Location = new System.Drawing.Point(12, 55);
+            this.checkEditAllowStaggerAxisLabels.Location = new System.Drawing.Point(12, 58);
             this.checkEditAllowStaggerAxisLabels.Name = "checkEditAllowStaggerAxisLabels";
             this.checkEditAllowStaggerAxisLabels.Properties.Caption = "Allow Stagger";
-            this.checkEditAllowStaggerAxisLabels.Size = new System.Drawing.Size(217, 19);
+            this.checkEditAllowStaggerAxisLabels.Size = new System.Drawing.Size(260, 20);
             this.checkEditAllowStaggerAxisLabels.StyleController = this.layoutControl;
             this.checkEditAllowStaggerAxisLabels.TabIndex = 5;
             this.checkEditAllowStaggerAxisLabels.CheckedChanged += new System.EventHandler(this.checkEditAllowStaggerAxisLabels_CheckedChanged);
             // 
             // checkEditAllowRotateAxisLabels
             // 
-            this.checkEditAllowRotateAxisLabels.Location = new System.Drawing.Point(12, 78);
+            this.checkEditAllowRotateAxisLabels.Location = new System.Drawing.Point(12, 82);
             this.checkEditAllowRotateAxisLabels.Name = "checkEditAllowRotateAxisLabels";
             this.checkEditAllowRotateAxisLabels.Properties.Caption = "Allow Rotate";
-            this.checkEditAllowRotateAxisLabels.Size = new System.Drawing.Size(217, 19);
+            this.checkEditAllowRotateAxisLabels.Size = new System.Drawing.Size(260, 20);
             this.checkEditAllowRotateAxisLabels.StyleController = this.layoutControl;
             this.checkEditAllowRotateAxisLabels.TabIndex = 6;
             this.checkEditAllowRotateAxisLabels.CheckedChanged += new System.EventHandler(this.checkEditAllowRotateAxisLabels_CheckedChanged);
             // 
             // checkEditAllowHideAxisLabels
             // 
-            this.checkEditAllowHideAxisLabels.Location = new System.Drawing.Point(12, 101);
+            this.checkEditAllowHideAxisLabels.Location = new System.Drawing.Point(12, 106);
             this.checkEditAllowHideAxisLabels.Name = "checkEditAllowHideAxisLabels";
             this.checkEditAllowHideAxisLabels.Properties.Caption = "Allow Hide";
-            this.checkEditAllowHideAxisLabels.Size = new System.Drawing.Size(217, 19);
+            this.checkEditAllowHideAxisLabels.Size = new System.Drawing.Size(260, 20);
             this.checkEditAllowHideAxisLabels.StyleController = this.layoutControl;
             this.checkEditAllowHideAxisLabels.TabIndex = 7;
             this.checkEditAllowHideAxisLabels.CheckedChanged += new System.EventHandler(this.checkEditAllowHideAxisLabels_CheckedChanged);
             // 
             // comboBoxEditSeriesLabelsResolveOverlappingMode
             // 
-            this.comboBoxEditSeriesLabelsResolveOverlappingMode.Location = new System.Drawing.Point(85, 187);
+            this.comboBoxEditSeriesLabelsResolveOverlappingMode.Location = new System.Drawing.Point(94, 196);
             this.comboBoxEditSeriesLabelsResolveOverlappingMode.Name = "comboBoxEditSeriesLabelsResolveOverlappingMode";
             this.comboBoxEditSeriesLabelsResolveOverlappingMode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -372,7 +378,7 @@
             "Justify Around Point",
             "Justify All Around Point"});
             this.comboBoxEditSeriesLabelsResolveOverlappingMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditSeriesLabelsResolveOverlappingMode.Size = new System.Drawing.Size(144, 20);
+            this.comboBoxEditSeriesLabelsResolveOverlappingMode.Size = new System.Drawing.Size(178, 20);
             this.comboBoxEditSeriesLabelsResolveOverlappingMode.StyleController = this.layoutControl;
             this.comboBoxEditSeriesLabelsResolveOverlappingMode.TabIndex = 8;
             this.comboBoxEditSeriesLabelsResolveOverlappingMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditSeriesLabelsResolveOverlappingMode_SelectedIndexChanged);
@@ -384,7 +390,7 @@
             0,
             0,
             -2147483648});
-            this.spinEditSeriesLabelsMinIndent.Location = new System.Drawing.Point(85, 163);
+            this.spinEditSeriesLabelsMinIndent.Location = new System.Drawing.Point(94, 172);
             this.spinEditSeriesLabelsMinIndent.Name = "spinEditSeriesLabelsMinIndent";
             this.spinEditSeriesLabelsMinIndent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -402,14 +408,14 @@
             0,
             0,
             -2147483648});
-            this.spinEditSeriesLabelsMinIndent.Size = new System.Drawing.Size(144, 20);
+            this.spinEditSeriesLabelsMinIndent.Size = new System.Drawing.Size(178, 20);
             this.spinEditSeriesLabelsMinIndent.StyleController = this.layoutControl;
             this.spinEditSeriesLabelsMinIndent.TabIndex = 9;
             this.spinEditSeriesLabelsMinIndent.EditValueChanged += new System.EventHandler(this.spinEditSeriesLabelsMinIndent_EditValueChanged);
             // 
             // comboBoxEditAxisXLabelsPattern
             // 
-            this.comboBoxEditAxisXLabelsPattern.Location = new System.Drawing.Point(85, 250);
+            this.comboBoxEditAxisXLabelsPattern.Location = new System.Drawing.Point(94, 262);
             this.comboBoxEditAxisXLabelsPattern.Name = "comboBoxEditAxisXLabelsPattern";
             this.comboBoxEditAxisXLabelsPattern.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -420,14 +426,14 @@
             "{A:0.##}",
             "{A:0.###} Sol"});
             this.comboBoxEditAxisXLabelsPattern.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditAxisXLabelsPattern.Size = new System.Drawing.Size(144, 20);
+            this.comboBoxEditAxisXLabelsPattern.Size = new System.Drawing.Size(178, 20);
             this.comboBoxEditAxisXLabelsPattern.StyleController = this.layoutControl;
             this.comboBoxEditAxisXLabelsPattern.TabIndex = 10;
             this.comboBoxEditAxisXLabelsPattern.TextChanged += new System.EventHandler(this.comboBoxEditAxisXLabelsPattern_TextChanged);
             // 
             // comboBoxEditSeriesLabelsPattern
             // 
-            this.comboBoxEditSeriesLabelsPattern.Location = new System.Drawing.Point(85, 274);
+            this.comboBoxEditSeriesLabelsPattern.Location = new System.Drawing.Point(94, 286);
             this.comboBoxEditSeriesLabelsPattern.Name = "comboBoxEditSeriesLabelsPattern";
             this.comboBoxEditSeriesLabelsPattern.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -438,24 +444,24 @@
             "{S}: {A:0.#}: {V:0.#}°C",
             "{A}: {V}°C"});
             this.comboBoxEditSeriesLabelsPattern.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditSeriesLabelsPattern.Size = new System.Drawing.Size(144, 20);
+            this.comboBoxEditSeriesLabelsPattern.Size = new System.Drawing.Size(178, 20);
             this.comboBoxEditSeriesLabelsPattern.StyleController = this.layoutControl;
             this.comboBoxEditSeriesLabelsPattern.TabIndex = 11;
             this.comboBoxEditSeriesLabelsPattern.TextChanged += new System.EventHandler(this.comboBoxEditSeriesLabelsPattern_TextChanged);
             // 
             // checkEditShowCustomLabels
             // 
-            this.checkEditShowCustomLabels.Location = new System.Drawing.Point(12, 337);
+            this.checkEditShowCustomLabels.Location = new System.Drawing.Point(12, 352);
             this.checkEditShowCustomLabels.Name = "checkEditShowCustomLabels";
             this.checkEditShowCustomLabels.Properties.Caption = "Show Custom Labels";
-            this.checkEditShowCustomLabels.Size = new System.Drawing.Size(217, 19);
+            this.checkEditShowCustomLabels.Size = new System.Drawing.Size(260, 20);
             this.checkEditShowCustomLabels.StyleController = this.layoutControl;
             this.checkEditShowCustomLabels.TabIndex = 12;
             this.checkEditShowCustomLabels.CheckedChanged += new System.EventHandler(this.checkEditShowCustomLabels_CheckedChanged);
             // 
             // comboBoxEditCustomLabelsMode
             // 
-            this.comboBoxEditCustomLabelsMode.Location = new System.Drawing.Point(85, 360);
+            this.comboBoxEditCustomLabelsMode.Location = new System.Drawing.Point(94, 376);
             this.comboBoxEditCustomLabelsMode.Name = "comboBoxEditCustomLabelsMode";
             this.comboBoxEditCustomLabelsMode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -463,7 +469,7 @@
             "Custom only",
             "Auto and Custom"});
             this.comboBoxEditCustomLabelsMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditCustomLabelsMode.Size = new System.Drawing.Size(144, 20);
+            this.comboBoxEditCustomLabelsMode.Size = new System.Drawing.Size(178, 20);
             this.comboBoxEditCustomLabelsMode.StyleController = this.layoutControl;
             this.comboBoxEditCustomLabelsMode.TabIndex = 13;
             this.comboBoxEditCustomLabelsMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditCustomLabelsMode_SelectedIndexChanged);
@@ -480,16 +486,14 @@
             this.layoutControlGroupCustomLabelsOptions});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(284, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
-            this.emptySpaceItem.Location = new System.Drawing.Point(0, 392);
+            this.emptySpaceItem.Location = new System.Drawing.Point(0, 408);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 152);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(284, 130);
             // 
             // layoutControlGroupAxisXResolveOverlappingOptions
             // 
@@ -501,7 +505,7 @@
             this.layoutControlItemAllowHideAxisLabels});
             this.layoutControlGroupAxisXResolveOverlappingOptions.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupAxisXResolveOverlappingOptions.Name = "layoutControlGroupAxisXResolveOverlappingOptions";
-            this.layoutControlGroupAxisXResolveOverlappingOptions.Size = new System.Drawing.Size(241, 132);
+            this.layoutControlGroupAxisXResolveOverlappingOptions.Size = new System.Drawing.Size(284, 138);
             this.layoutControlGroupAxisXResolveOverlappingOptions.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupAxisXResolveOverlappingOptions.Text = "Axis X Labels\' Resolve Overlapping Options";
             // 
@@ -510,17 +514,16 @@
             this.layoutControlItemAxisLabelsMinIndent.Control = this.spinEditAxisLabelsMinIndent;
             this.layoutControlItemAxisLabelsMinIndent.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemAxisLabelsMinIndent.Name = "layoutControlItemAxisLabelsMinIndent";
-            this.layoutControlItemAxisLabelsMinIndent.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemAxisLabelsMinIndent.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemAxisLabelsMinIndent.Text = "Min Indent: ";
             this.layoutControlItemAxisLabelsMinIndent.TextSize = new System.Drawing.Size(70, 13);
             // 
             // layoutControlItemAllowRotateAxisLabels
             // 
             this.layoutControlItemAllowRotateAxisLabels.Control = this.checkEditAllowRotateAxisLabels;
-            this.layoutControlItemAllowRotateAxisLabels.Location = new System.Drawing.Point(0, 47);
+            this.layoutControlItemAllowRotateAxisLabels.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemAllowRotateAxisLabels.Name = "layoutControlItemAllowRotateAxisLabels";
-            this.layoutControlItemAllowRotateAxisLabels.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemAllowRotateAxisLabels.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemAllowRotateAxisLabels.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemAllowRotateAxisLabels.TextVisible = false;
             // 
             // layoutControlItemAllowStaggerAxisLabels
@@ -528,17 +531,15 @@
             this.layoutControlItemAllowStaggerAxisLabels.Control = this.checkEditAllowStaggerAxisLabels;
             this.layoutControlItemAllowStaggerAxisLabels.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemAllowStaggerAxisLabels.Name = "layoutControlItemAllowStaggerAxisLabels";
-            this.layoutControlItemAllowStaggerAxisLabels.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemAllowStaggerAxisLabels.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemAllowStaggerAxisLabels.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemAllowStaggerAxisLabels.TextVisible = false;
             // 
             // layoutControlItemAllowHideAxisLabels
             // 
             this.layoutControlItemAllowHideAxisLabels.Control = this.checkEditAllowHideAxisLabels;
-            this.layoutControlItemAllowHideAxisLabels.Location = new System.Drawing.Point(0, 70);
+            this.layoutControlItemAllowHideAxisLabels.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemAllowHideAxisLabels.Name = "layoutControlItemAllowHideAxisLabels";
-            this.layoutControlItemAllowHideAxisLabels.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemAllowHideAxisLabels.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemAllowHideAxisLabels.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemAllowHideAxisLabels.TextVisible = false;
             // 
             // layoutControlGroupSeriesLabelsResolveOverlappingOptions
@@ -547,9 +548,9 @@
             this.layoutControlGroupSeriesLabelsResolveOverlappingOptions.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemSeriesLabelResolveOverlappingMode,
             this.layoutControlItemSeriesLabelsResolveOverlappingMinIndent});
-            this.layoutControlGroupSeriesLabelsResolveOverlappingOptions.Location = new System.Drawing.Point(0, 132);
+            this.layoutControlGroupSeriesLabelsResolveOverlappingOptions.Location = new System.Drawing.Point(0, 138);
             this.layoutControlGroupSeriesLabelsResolveOverlappingOptions.Name = "layoutControlGroupSeriesLabelsResolveOverlappingOptions";
-            this.layoutControlGroupSeriesLabelsResolveOverlappingOptions.Size = new System.Drawing.Size(241, 87);
+            this.layoutControlGroupSeriesLabelsResolveOverlappingOptions.Size = new System.Drawing.Size(284, 90);
             this.layoutControlGroupSeriesLabelsResolveOverlappingOptions.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupSeriesLabelsResolveOverlappingOptions.Text = "Series Labels\' Resolve Overlapping Options";
             // 
@@ -558,7 +559,7 @@
             this.layoutControlItemSeriesLabelResolveOverlappingMode.Control = this.comboBoxEditSeriesLabelsResolveOverlappingMode;
             this.layoutControlItemSeriesLabelResolveOverlappingMode.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemSeriesLabelResolveOverlappingMode.Name = "layoutControlItemSeriesLabelResolveOverlappingMode";
-            this.layoutControlItemSeriesLabelResolveOverlappingMode.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemSeriesLabelResolveOverlappingMode.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemSeriesLabelResolveOverlappingMode.Text = "Mode:";
             this.layoutControlItemSeriesLabelResolveOverlappingMode.TextSize = new System.Drawing.Size(70, 13);
             // 
@@ -567,7 +568,7 @@
             this.layoutControlItemSeriesLabelsResolveOverlappingMinIndent.Control = this.spinEditSeriesLabelsMinIndent;
             this.layoutControlItemSeriesLabelsResolveOverlappingMinIndent.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemSeriesLabelsResolveOverlappingMinIndent.Name = "layoutControlItemSeriesLabelsResolveOverlappingMinIndent";
-            this.layoutControlItemSeriesLabelsResolveOverlappingMinIndent.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemSeriesLabelsResolveOverlappingMinIndent.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemSeriesLabelsResolveOverlappingMinIndent.Text = "Min Indent:";
             this.layoutControlItemSeriesLabelsResolveOverlappingMinIndent.TextSize = new System.Drawing.Size(70, 13);
             // 
@@ -577,9 +578,9 @@
             this.layoutControlGroupDisplayPatterns.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemSeriesLabelsPattern,
             this.layoutControlItemAxisXLabelsPattern});
-            this.layoutControlGroupDisplayPatterns.Location = new System.Drawing.Point(0, 219);
+            this.layoutControlGroupDisplayPatterns.Location = new System.Drawing.Point(0, 228);
             this.layoutControlGroupDisplayPatterns.Name = "layoutControlGroupDisplayPatterns";
-            this.layoutControlGroupDisplayPatterns.Size = new System.Drawing.Size(241, 87);
+            this.layoutControlGroupDisplayPatterns.Size = new System.Drawing.Size(284, 90);
             this.layoutControlGroupDisplayPatterns.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupDisplayPatterns.Text = "Label Patterns";
             // 
@@ -589,7 +590,7 @@
             this.layoutControlItemSeriesLabelsPattern.CustomizationFormText = "layoutControlItemSeriesLabelsPattern";
             this.layoutControlItemSeriesLabelsPattern.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemSeriesLabelsPattern.Name = "layoutControlItemSeriesLabelsPattern";
-            this.layoutControlItemSeriesLabelsPattern.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemSeriesLabelsPattern.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemSeriesLabelsPattern.Text = "Series:";
             this.layoutControlItemSeriesLabelsPattern.TextSize = new System.Drawing.Size(70, 13);
             // 
@@ -598,7 +599,7 @@
             this.layoutControlItemAxisXLabelsPattern.Control = this.comboBoxEditAxisXLabelsPattern;
             this.layoutControlItemAxisXLabelsPattern.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemAxisXLabelsPattern.Name = "layoutControlItemAxisXLabelsPattern";
-            this.layoutControlItemAxisXLabelsPattern.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemAxisXLabelsPattern.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemAxisXLabelsPattern.Text = "X-Axis:";
             this.layoutControlItemAxisXLabelsPattern.TextSize = new System.Drawing.Size(70, 13);
             // 
@@ -608,9 +609,9 @@
             this.layoutControlGroupCustomLabelsOptions.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemShowCustomLabels,
             this.layoutControlItemCustomLabelsMode});
-            this.layoutControlGroupCustomLabelsOptions.Location = new System.Drawing.Point(0, 306);
+            this.layoutControlGroupCustomLabelsOptions.Location = new System.Drawing.Point(0, 318);
             this.layoutControlGroupCustomLabelsOptions.Name = "layoutControlGroupCustomLabelsOptions";
-            this.layoutControlGroupCustomLabelsOptions.Size = new System.Drawing.Size(241, 86);
+            this.layoutControlGroupCustomLabelsOptions.Size = new System.Drawing.Size(284, 90);
             this.layoutControlGroupCustomLabelsOptions.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupCustomLabelsOptions.Text = "Axis Y Custom Labels Options";
             // 
@@ -619,16 +620,15 @@
             this.layoutControlItemShowCustomLabels.Control = this.checkEditShowCustomLabels;
             this.layoutControlItemShowCustomLabels.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemShowCustomLabels.Name = "layoutControlItemShowCustomLabels";
-            this.layoutControlItemShowCustomLabels.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemShowCustomLabels.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemShowCustomLabels.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemShowCustomLabels.TextVisible = false;
             // 
             // layoutControlItemCustomLabelsMode
             // 
             this.layoutControlItemCustomLabelsMode.Control = this.comboBoxEditCustomLabelsMode;
-            this.layoutControlItemCustomLabelsMode.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItemCustomLabelsMode.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemCustomLabelsMode.Name = "layoutControlItemCustomLabelsMode";
-            this.layoutControlItemCustomLabelsMode.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemCustomLabelsMode.Size = new System.Drawing.Size(264, 24);
             this.layoutControlItemCustomLabelsMode.Text = "Visibility Mode:";
             this.layoutControlItemCustomLabelsMode.TextSize = new System.Drawing.Size(70, 13);
             // 

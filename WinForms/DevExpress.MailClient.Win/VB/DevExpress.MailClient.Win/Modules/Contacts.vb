@@ -267,7 +267,7 @@ Namespace DevExpress.MailClient.Win
         Public Shared ReadOnly Property All() As AlphaIndex
             Get
                 If all_Field Is Nothing Then
-                    all_Field = New AlphaIndex() With {.Count = 0, .Index = "ALL"}
+                    all_Field = New AlphaIndex() With {.Count = 0, .Index = "All"}
                 End If
                 Return all_Field
             End Get

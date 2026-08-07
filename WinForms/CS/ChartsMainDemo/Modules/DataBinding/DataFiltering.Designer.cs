@@ -80,8 +80,9 @@
             this.chart.SeriesTemplate.SeriesColorizer = seriesKeyColorColorizer1;
             this.chart.Size = new System.Drawing.Size(893, 714);
             this.chart.TabIndex = 6;
-            chartTitle1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 14.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            chartTitle1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 14.25F);
             chartTitle1.Text = "Market Share Over Time";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 

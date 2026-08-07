@@ -3,6 +3,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.Utils;
@@ -77,8 +78,8 @@ namespace DevExpress.WindowsMailClient.Win {
                 
                 
                 
-                
-                calendarControl1.CalendarAppearance.DayCellToday.Font = 
+
+                calendarControl1.CalendarAppearance.DayCellToday.Font =
                 calendarControl1.CalendarAppearance.DayCellInactive.Font =
                 calendarControl1.CalendarAppearance.DayCellSpecialInactive.Font = calendarControl1.CalendarAppearance.DayCell.Font;
 
@@ -94,7 +95,7 @@ namespace DevExpress.WindowsMailClient.Win {
 
                 
                 
-                
+
                 calendarControl1.CalendarAppearance.DayCellPressed.Font =
                 calendarControl1.CalendarAppearance.DayCellSpecialPressed.Font =
                 calendarControl1.CalendarAppearance.DayCell.Font;
@@ -106,7 +107,7 @@ namespace DevExpress.WindowsMailClient.Win {
                 calendarControl1.CalendarAppearance.Header.Font =
                 calendarControl1.CalendarAppearance.HeaderHighlighted.Font =
                 calendarControl1.CalendarAppearance.HeaderPressed.Font =
-                calendarControl1.CalendarAppearance.DayCell.Font; 
+                calendarControl1.CalendarAppearance.DayCell.Font;
 
                 
                 calendarControl1.CalendarAppearance.WeekDay.Font = calendarControl1.CalendarAppearance.DayCell.Font;
@@ -129,7 +130,7 @@ namespace DevExpress.WindowsMailClient.Win {
         }
         void ConfigureAddedModule(Control module) {
             if(module is MailModule) {
-                ((MailModule) module).Init();
+                ((MailModule)module).Init();
                 accordionControl.OptionsMinimizing.State = AccordionControlState.Minimized;
             }
         }
@@ -222,7 +223,20 @@ namespace DevExpress.WindowsMailClient.Win {
         protected override void OnShown(EventArgs e) {
             base.OnShown(e);
             StartUpProcess.OnComplete();
+            if(MainFormHelper.TakeScreens)
+                MainFormHelper.TakeAllScreens(TakeModule, takeModuleTypes.Length, this,
+                    fluentDesignFormContainer, TakeModuleInterval, demoName: typeof(MainForm).Assembly.GetName().Name);
         }
+        readonly ModuleType[] takeModuleTypes = new ModuleType[] {
+            ModuleType.MailViewer, ModuleType.SchedulerModule, ModuleType.MailModule };
+        string TakeModule(int num) {
+            if(ViewModel.SelectedModuleType != takeModuleTypes[num])
+                ViewModel.SelectedModuleType = takeModuleTypes[num];
+            fluentDesignFormContainer.Update();
+            Application.DoEvents();
+            return takeModuleTypes[num].ToString();
+        }
+        int TakeModuleInterval(int num) => 1000;
         protected override void OnFormClosed(FormClosedEventArgs e) {
             ViewModel.SelectedModuleType = ModuleType.Unknown;
             ViewModel.ModuleAdded -= ViewModelOnModuleAdded;
@@ -238,6 +252,8 @@ namespace DevExpress.WindowsMailClient.Win {
         void accordionControl_CustomDrawElement(object sender, CustomDrawElementEventArgs e) {
             int selectionWidth = 3;
             SkinElement elem = HamburgerMenuSkins.GetSkin(UserLookAndFeel.Default)[HamburgerMenuSkins.SkinItem];
+            if(elem == null)
+                return;
             if(string.Equals(e.ObjectInfo.Element.Tag, "Account")) {
                 e.Handled = true;
                 e.DrawHeaderBackground();
@@ -246,18 +262,18 @@ namespace DevExpress.WindowsMailClient.Win {
             }
             else {
                 int _tag = Convert.ToInt32(e.ObjectInfo.Element.Tag);
-                if(_tag >= (int) ModuleType.DraftsModule && _tag <= (int) ModuleType.SentItemsModule) {
+                if(_tag >= (int)ModuleType.DraftsModule && _tag <= (int)ModuleType.SentItemsModule) {
                     e.Handled = true;
                     e.DrawHeaderBackground();
                     e.DrawText();
                     if(Equals(accordionControl.SelectedElement, e.ObjectInfo.Element))
                         e.Cache.FillRectangle(elem.GetForeColor(ObjectState.Pressed), new Rectangle(e.ObjectInfo.HeaderBounds.Location, new Size(ScaleHelper.ScaleHorizontal(selectionWidth), e.ObjectInfo.HeaderBounds.Height)));
-                    if(_tag == (int) ModuleType.DraftsModule && ViewModel.DraftsMailCounter > 0) {
+                    if(_tag == (int)ModuleType.DraftsModule && ViewModel.DraftsMailCounter > 0) {
                         float x = e.ObjectInfo.HeaderBounds.Width - e.ObjectInfo.HeaderBounds.X - e.ObjectInfo.TextBounds.X;
                         float y = e.ObjectInfo.TextBounds.Y;
                         Font fn = accordionControl.Appearance.Item.Normal.Font;
                         if(e.ObjectInfo.Element != null) {
-                            int elementTag = e.ObjectInfo.Element.Tag is int ? (int) e.ObjectInfo.Element.Tag : -1;
+                            int elementTag = e.ObjectInfo.Element.Tag is int ? (int)e.ObjectInfo.Element.Tag : -1;
                             ObjectState state = Equals(elementTag, _tag) ? ObjectState.Pressed : ObjectState.Hot;
                             e.Cache.DrawString(ViewModel.DraftsMailCounter.ToString(), fn, e.Cache.GetSolidBrush(elem.GetForeColor(state)), x, y);
                         }

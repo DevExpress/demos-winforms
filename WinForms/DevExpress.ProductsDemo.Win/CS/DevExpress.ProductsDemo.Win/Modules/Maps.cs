@@ -277,7 +277,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
                 airPaths.Add(info.Trajectory);
             }
         }
-        
+
         void OnTimedEvent(object source, EventArgs e) {
             DateTime currentTime = TutorialConstants.Now;
             TimeSpan interval = currentTime.Subtract(lastTime);
@@ -430,7 +430,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         public double Course { get; private set; }
 
         protected override MapItemType Type { get { return MapItemType.Pushpin; } }
-        
+
         public string Title { get { return "Flight info"; } }
         public double CurrentFlightTime {
             get { return currentFlightTime; }
@@ -574,7 +574,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             }
             return result;
         }
-        
+
         public void Update() {
             htmlContentPopup.UpdateLayout();
         }

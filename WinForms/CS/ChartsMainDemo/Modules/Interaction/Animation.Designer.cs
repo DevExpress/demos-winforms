@@ -71,7 +71,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 542);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // chart
             // 
@@ -101,7 +101,7 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(268, 270, 650, 398);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 542);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
@@ -128,39 +128,39 @@
             // 
             // comboBoxEditSeriesAnimation
             // 
-            this.comboBoxEditSeriesAnimation.Location = new System.Drawing.Point(98, 132);
+            this.comboBoxEditSeriesAnimation.Location = new System.Drawing.Point(107, 132);
             this.comboBoxEditSeriesAnimation.Name = "comboBoxEditSeriesAnimation";
             this.comboBoxEditSeriesAnimation.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditSeriesAnimation.Properties.DropDownRows = 8;
             this.comboBoxEditSeriesAnimation.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditSeriesAnimation.Size = new System.Drawing.Size(131, 20);
+            this.comboBoxEditSeriesAnimation.Size = new System.Drawing.Size(122, 20);
             this.comboBoxEditSeriesAnimation.StyleController = this.layoutControl;
             this.comboBoxEditSeriesAnimation.TabIndex = 21;
             this.comboBoxEditSeriesAnimation.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditSeriesAnimation_SelectedValueChanged);
             // 
             // comboBoxEditPointAnimation
             // 
-            this.comboBoxEditPointAnimation.Location = new System.Drawing.Point(98, 156);
+            this.comboBoxEditPointAnimation.Location = new System.Drawing.Point(107, 156);
             this.comboBoxEditPointAnimation.Name = "comboBoxEditPointAnimation";
             this.comboBoxEditPointAnimation.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditPointAnimation.Properties.DropDownRows = 8;
             this.comboBoxEditPointAnimation.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditPointAnimation.Size = new System.Drawing.Size(131, 20);
+            this.comboBoxEditPointAnimation.Size = new System.Drawing.Size(122, 20);
             this.comboBoxEditPointAnimation.StyleController = this.layoutControl;
             this.comboBoxEditPointAnimation.TabIndex = 20;
             this.comboBoxEditPointAnimation.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditPointAnimation_SelectedIndexChanged);
             // 
             // comboBoxEditSeriesView
             // 
-            this.comboBoxEditSeriesView.Location = new System.Drawing.Point(98, 34);
+            this.comboBoxEditSeriesView.Location = new System.Drawing.Point(107, 34);
             this.comboBoxEditSeriesView.Name = "comboBoxEditSeriesView";
             this.comboBoxEditSeriesView.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditSeriesView.Properties.DropDownRows = 16;
             this.comboBoxEditSeriesView.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditSeriesView.Size = new System.Drawing.Size(131, 20);
+            this.comboBoxEditSeriesView.Size = new System.Drawing.Size(122, 20);
             this.comboBoxEditSeriesView.StyleController = this.layoutControl;
             this.comboBoxEditSeriesView.TabIndex = 19;
             this.comboBoxEditSeriesView.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditSeriesView_SelectedIndexChanged);
@@ -206,16 +206,14 @@
             this.layoutControlGroupDiagramOptions});
             this.layoutControlGroupRoot.Name = "Root";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 542);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 336);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 206);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 202);
             // 
             // layoutControlGroupGeneral
             // 
@@ -245,7 +243,6 @@
             this.layoutControlItemShowSeriesLabels.Name = "layoutControlItemShowSeriesLabels";
             this.layoutControlItemShowSeriesLabels.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2);
             this.layoutControlItemShowSeriesLabels.Size = new System.Drawing.Size(221, 32);
-            this.layoutControlItemShowSeriesLabels.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemShowSeriesLabels.TextVisible = false;
             // 
             // layoutControlGroupAnimation
@@ -268,7 +265,6 @@
             this.layoutControlItemAnimate.Name = "layoutControlItemAnimate";
             this.layoutControlItemAnimate.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2);
             this.layoutControlItemAnimate.Size = new System.Drawing.Size(221, 34);
-            this.layoutControlItemAnimate.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAnimate.TextVisible = false;
             // 
             // layoutControlItemPointAnimation
@@ -308,7 +304,6 @@
             this.layoutControlItemDiagramRotated.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemDiagramRotated.Name = "layoutControlItemDiagramRotated";
             this.layoutControlItemDiagramRotated.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemDiagramRotated.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemDiagramRotated.TextVisible = false;
             // 
             // layoutControlItemAxisYReversed
@@ -317,7 +312,6 @@
             this.layoutControlItemAxisYReversed.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemAxisYReversed.Name = "layoutControlItemAxisYReversed";
             this.layoutControlItemAxisYReversed.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemAxisYReversed.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAxisYReversed.TextVisible = false;
             // 
             // layoutControlItemAxisXReversed
@@ -326,7 +320,6 @@
             this.layoutControlItemAxisXReversed.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemAxisXReversed.Name = "layoutControlItemAxisXReversed";
             this.layoutControlItemAxisXReversed.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemAxisXReversed.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAxisXReversed.TextVisible = false;
             // 
             // AnimationDemo

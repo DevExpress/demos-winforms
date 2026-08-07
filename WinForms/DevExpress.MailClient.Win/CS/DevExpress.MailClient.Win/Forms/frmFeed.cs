@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using DevExpress.XtraNavBar;
 using DevExpress.XtraEditors.DXErrorProvider;
+using DevExpress.XtraNavBar;
 
 namespace DevExpress.MailClient.Win.Forms {
     public partial class frmFeed : XtraForm {
@@ -21,7 +16,7 @@ namespace DevExpress.MailClient.Win.Forms {
         void InitValidation() {
             UniqueNameValidationRule rule = new UniqueNameValidationRule(uniqueNames);
             rule.ErrorType = ErrorType.Critical;
-            rule.ErrorText = Properties.Resources.RuleUniqueNamesWarning; 
+            rule.ErrorText = Properties.Resources.RuleUniqueNamesWarning;
             dxValidationProvider1.SetValidationRule(teCaption, rule);
             dxValidationProvider1.SetValidationRule(cbeGroup, ValidationRulesHelper.RuleIsNotBlank);
             dxValidationProvider1.SetValidationRule(heLink, ValidationRulesHelper.RuleIsNotBlank);
@@ -47,7 +42,8 @@ namespace DevExpress.MailClient.Win.Forms {
                 teCaption.Text = NavBarHelper.GetUniqueItemName(Properties.Resources.TempFeedName, navBar);
                 cbeGroup.Text = Properties.Resources.TempGroupName;
                 sbOK.Enabled = false;
-            } else {
+            }
+            else {
                 uniqueNames.Remove(CurrentItem.Caption);
                 teCaption.Text = CurrentItem.Caption;
                 cbeGroup.Text = CurrentGroup.Caption;
@@ -67,7 +63,8 @@ namespace DevExpress.MailClient.Win.Forms {
                     item.Tag = ObjectHelper.GetCorrectUrl(heLink.Text);
                     navBar.SelectedLink = link;
                     navBar.EndUpdate();
-                } else {
+                }
+                else {
                     CurrentItem.Caption = teCaption.Text;
                     CurrentItem.Tag = ObjectHelper.GetCorrectUrl(heLink.Text);
                     if(CurrentGroup.Caption != cbeGroup.Text) {

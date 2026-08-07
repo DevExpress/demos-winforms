@@ -78,14 +78,13 @@
             // 
             // tabPaneOptions
             // 
-            this.tabPaneOptions.RegularSize = new System.Drawing.Size(322, 747);
-            this.tabPaneOptions.Size = new System.Drawing.Size(322, 747);
+            this.tabPaneOptions.Margin = new System.Windows.Forms.Padding(2);
             // 
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl1);
-            this.tabNavigationPageOptions.Margin = new System.Windows.Forms.Padding(5);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(322, 706);
+            this.tabNavigationPageOptions.Margin = new System.Windows.Forms.Padding(4);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // sidePanel1
             // 
@@ -93,9 +92,8 @@
             this.sidePanel1.Controls.Add(this.sidePanel2);
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
-            this.sidePanel1.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(728, 747);
+            this.sidePanel1.Size = new System.Drawing.Size(546, 571);
             this.sidePanel1.TabIndex = 1;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -110,15 +108,11 @@
             this.fieldOrderDate,
             this.fieldOrderYear});
             this.pivotGridControl.Location = new System.Drawing.Point(0, 0);
-            this.pivotGridControl.Margin = new System.Windows.Forms.Padding(4);
             this.pivotGridControl.Name = "pivotGridControl";
             this.pivotGridControl.OptionsChartDataSource.DataProvideMode = DevExpress.XtraPivotGrid.PivotChartDataProvideMode.UseCustomSettings;
             this.pivotGridControl.OptionsChartDataSource.ProvideDataByColumns = false;
             this.pivotGridControl.OptionsChartDataSource.UpdateDelay = 500;
-            this.pivotGridControl.OptionsDataField.RowHeaderWidth = 133;
-            this.pivotGridControl.OptionsView.RowTreeOffset = 28;
-            this.pivotGridControl.OptionsView.RowTreeWidth = 133;
-            this.pivotGridControl.Size = new System.Drawing.Size(728, 465);
+            this.pivotGridControl.Size = new System.Drawing.Size(546, 355);
             this.pivotGridControl.TabIndex = 3;
             // 
             // fieldProductName
@@ -127,9 +121,8 @@
             this.fieldProductName.AreaIndex = 0;
             this.fieldProductName.Caption = "Product Name";
             this.fieldProductName.FieldName = "ProductName";
-            this.fieldProductName.MinWidth = 27;
             this.fieldProductName.Name = "fieldProductName";
-            this.fieldProductName.Width = 207;
+            this.fieldProductName.Width = 155;
             // 
             // fieldExtendedPrice
             // 
@@ -138,9 +131,7 @@
             this.fieldExtendedPrice.CellFormat.FormatString = "c";
             this.fieldExtendedPrice.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.fieldExtendedPrice.FieldName = "Extended Price";
-            this.fieldExtendedPrice.MinWidth = 27;
             this.fieldExtendedPrice.Name = "fieldExtendedPrice";
-            this.fieldExtendedPrice.Width = 133;
             // 
             // fieldOrderDate
             // 
@@ -149,10 +140,8 @@
             this.fieldOrderDate.Caption = "Order Month";
             this.fieldOrderDate.FieldName = "OrderDate";
             this.fieldOrderDate.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateMonth;
-            this.fieldOrderDate.MinWidth = 27;
             this.fieldOrderDate.Name = "fieldOrderDate";
             this.fieldOrderDate.UnboundFieldName = "fieldOrderDate";
-            this.fieldOrderDate.Width = 133;
             // 
             // fieldOrderYear
             // 
@@ -160,21 +149,18 @@
             this.fieldOrderYear.Caption = "Order Year";
             this.fieldOrderYear.FieldName = "OrderDate";
             this.fieldOrderYear.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear;
-            this.fieldOrderYear.MinWidth = 27;
             this.fieldOrderYear.Name = "fieldOrderYear";
             this.fieldOrderYear.Options.IsFilterRadioMode = DevExpress.Utils.DefaultBoolean.True;
             this.fieldOrderYear.UnboundFieldName = "pivotGridField1";
-            this.fieldOrderYear.Width = 133;
             // 
             // sidePanel2
             // 
             this.sidePanel2.AllowResize = false;
             this.sidePanel2.Controls.Add(this.chart);
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel2.Location = new System.Drawing.Point(0, 465);
-            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.sidePanel2.Location = new System.Drawing.Point(0, 355);
             this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.Size = new System.Drawing.Size(728, 282);
+            this.sidePanel2.Size = new System.Drawing.Size(546, 216);
             this.sidePanel2.TabIndex = 0;
             this.sidePanel2.Text = "sidePanel2";
             // 
@@ -192,7 +178,6 @@
             this.chart.Legend.MaxHorizontalPercentage = 30D;
             this.chart.Legend.Name = "Default Legend";
             this.chart.Location = new System.Drawing.Point(0, 1);
-            this.chart.Margin = new System.Windows.Forms.Padding(4);
             this.chart.Name = "chart";
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.chart.SeriesTemplate.CrosshairLabelPattern = "{S} : {V:c}";
@@ -210,7 +195,7 @@
             this.chart.SeriesTemplate.Label = sideBySideBarSeriesLabel1;
             this.chart.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart.SeriesTemplate.SeriesColorizer = seriesKeyColorColorizer1;
-            this.chart.Size = new System.Drawing.Size(728, 281);
+            this.chart.Size = new System.Drawing.Size(546, 215);
             this.chart.TabIndex = 4;
             this.chart.BoundDataChanged += new DevExpress.XtraCharts.BoundDataChangedEventHandler(this.chart_BoundDataChanged);
             // 
@@ -224,21 +209,19 @@
             this.layoutControl1.Controls.Add(this.checkEditShowRowGrandTotal);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(941, 150, 650, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(322, 706);
+            this.layoutControl1.Size = new System.Drawing.Size(241, 538);
             this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // checkEditLabelVisible
             // 
-            this.checkEditLabelVisible.Location = new System.Drawing.Point(12, 198);
-            this.checkEditLabelVisible.Margin = new System.Windows.Forms.Padding(4);
+            this.checkEditLabelVisible.Location = new System.Drawing.Point(12, 172);
             this.checkEditLabelVisible.Name = "checkEditLabelVisible";
             this.checkEditLabelVisible.Properties.Caption = "Visible";
-            this.checkEditLabelVisible.Size = new System.Drawing.Size(298, 24);
+            this.checkEditLabelVisible.Size = new System.Drawing.Size(217, 20);
             this.checkEditLabelVisible.StyleController = this.layoutControl1;
             this.checkEditLabelVisible.TabIndex = 4;
             this.checkEditLabelVisible.CheckedChanged += new System.EventHandler(this.checkEditLabelVisible_CheckedChanged);
@@ -246,44 +229,40 @@
             // checkEditSelectionOnly
             // 
             this.checkEditSelectionOnly.EditValue = true;
-            this.checkEditSelectionOnly.Location = new System.Drawing.Point(12, 39);
-            this.checkEditSelectionOnly.Margin = new System.Windows.Forms.Padding(4);
+            this.checkEditSelectionOnly.Location = new System.Drawing.Point(12, 34);
             this.checkEditSelectionOnly.Name = "checkEditSelectionOnly";
             this.checkEditSelectionOnly.Properties.Caption = "Selection Only";
-            this.checkEditSelectionOnly.Size = new System.Drawing.Size(298, 24);
+            this.checkEditSelectionOnly.Size = new System.Drawing.Size(217, 20);
             this.checkEditSelectionOnly.StyleController = this.layoutControl1;
             this.checkEditSelectionOnly.TabIndex = 17;
             this.checkEditSelectionOnly.CheckedChanged += new System.EventHandler(this.checkEditSelectionOnly_CheckedChanged);
             // 
             // checkEditShowColumnGrandTotal
             // 
-            this.checkEditShowColumnGrandTotal.Location = new System.Drawing.Point(12, 123);
-            this.checkEditShowColumnGrandTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.checkEditShowColumnGrandTotal.Location = new System.Drawing.Point(12, 106);
             this.checkEditShowColumnGrandTotal.Name = "checkEditShowColumnGrandTotal";
             this.checkEditShowColumnGrandTotal.Properties.Caption = "Show Column Grand Total";
-            this.checkEditShowColumnGrandTotal.Size = new System.Drawing.Size(298, 24);
+            this.checkEditShowColumnGrandTotal.Size = new System.Drawing.Size(217, 20);
             this.checkEditShowColumnGrandTotal.StyleController = this.layoutControl1;
             this.checkEditShowColumnGrandTotal.TabIndex = 18;
             this.checkEditShowColumnGrandTotal.CheckedChanged += new System.EventHandler(this.checkEditShowColumnGrandTotals_CheckedChanged);
             // 
             // checkEditGenerateSeriesByColumns
             // 
-            this.checkEditGenerateSeriesByColumns.Location = new System.Drawing.Point(12, 67);
-            this.checkEditGenerateSeriesByColumns.Margin = new System.Windows.Forms.Padding(4);
+            this.checkEditGenerateSeriesByColumns.Location = new System.Drawing.Point(12, 58);
             this.checkEditGenerateSeriesByColumns.Name = "checkEditGenerateSeriesByColumns";
             this.checkEditGenerateSeriesByColumns.Properties.Caption = "Generate Series by Columns";
-            this.checkEditGenerateSeriesByColumns.Size = new System.Drawing.Size(298, 24);
+            this.checkEditGenerateSeriesByColumns.Size = new System.Drawing.Size(217, 20);
             this.checkEditGenerateSeriesByColumns.StyleController = this.layoutControl1;
             this.checkEditGenerateSeriesByColumns.TabIndex = 19;
             this.checkEditGenerateSeriesByColumns.CheckedChanged += new System.EventHandler(this.checkEditGenerateSeriesByColumns_CheckedChanged);
             // 
             // checkEditShowRowGrandTotal
             // 
-            this.checkEditShowRowGrandTotal.Location = new System.Drawing.Point(12, 95);
-            this.checkEditShowRowGrandTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.checkEditShowRowGrandTotal.Location = new System.Drawing.Point(12, 82);
             this.checkEditShowRowGrandTotal.Name = "checkEditShowRowGrandTotal";
             this.checkEditShowRowGrandTotal.Properties.Caption = "Show Row Grand Total";
-            this.checkEditShowRowGrandTotal.Size = new System.Drawing.Size(298, 24);
+            this.checkEditShowRowGrandTotal.Size = new System.Drawing.Size(217, 20);
             this.checkEditShowRowGrandTotal.StyleController = this.layoutControl1;
             this.checkEditShowRowGrandTotal.TabIndex = 20;
             this.checkEditShowRowGrandTotal.CheckedChanged += new System.EventHandler(this.checkEditShowRowGrandTotals_CheckedChanged);
@@ -298,7 +277,7 @@
             this.lcgLabelOptions});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(322, 706);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -307,9 +286,9 @@
             this.layoutControlGroup2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 234);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 204);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(322, 472);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(241, 334);
             this.layoutControlGroup2.Text = "Marker Kind";
             // 
             // layoutControlGroup3
@@ -317,7 +296,7 @@
             this.layoutControlGroup3.GroupBordersVisible = false;
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(322, 472);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(241, 334);
             // 
             // lcgCommonOptions
             // 
@@ -331,7 +310,7 @@
             this.lciShowRowGrandTotal});
             this.lcgCommonOptions.Location = new System.Drawing.Point(0, 0);
             this.lcgCommonOptions.Name = "lcgCommonOptions";
-            this.lcgCommonOptions.Size = new System.Drawing.Size(322, 159);
+            this.lcgCommonOptions.Size = new System.Drawing.Size(241, 138);
             this.lcgCommonOptions.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.lcgCommonOptions.Text = "General";
             // 
@@ -340,36 +319,32 @@
             this.layoutControlItem2.Control = this.checkEditSelectionOnly;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(302, 28);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItem2.TextVisible = false;
             // 
             // lciShowColumnGrandTotal
             // 
             this.lciShowColumnGrandTotal.Control = this.checkEditShowColumnGrandTotal;
-            this.lciShowColumnGrandTotal.Location = new System.Drawing.Point(0, 84);
+            this.lciShowColumnGrandTotal.Location = new System.Drawing.Point(0, 72);
             this.lciShowColumnGrandTotal.Name = "lciShowColumnGrandTotal";
-            this.lciShowColumnGrandTotal.Size = new System.Drawing.Size(302, 28);
-            this.lciShowColumnGrandTotal.TextSize = new System.Drawing.Size(0, 0);
+            this.lciShowColumnGrandTotal.Size = new System.Drawing.Size(221, 24);
             this.lciShowColumnGrandTotal.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.checkEditGenerateSeriesByColumns;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(302, 28);
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItem4.TextVisible = false;
             // 
             // lciShowRowGrandTotal
             // 
             this.lciShowRowGrandTotal.Control = this.checkEditShowRowGrandTotal;
             this.lciShowRowGrandTotal.Enabled = false;
-            this.lciShowRowGrandTotal.Location = new System.Drawing.Point(0, 56);
+            this.lciShowRowGrandTotal.Location = new System.Drawing.Point(0, 48);
             this.lciShowRowGrandTotal.Name = "lciShowRowGrandTotal";
-            this.lciShowRowGrandTotal.Size = new System.Drawing.Size(302, 28);
-            this.lciShowRowGrandTotal.TextSize = new System.Drawing.Size(0, 0);
+            this.lciShowRowGrandTotal.Size = new System.Drawing.Size(221, 24);
             this.lciShowRowGrandTotal.TextVisible = false;
             // 
             // lcgLabelOptions
@@ -379,9 +354,9 @@
             this.lcgLabelOptions.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.lcgLabelOptions.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1});
-            this.lcgLabelOptions.Location = new System.Drawing.Point(0, 159);
+            this.lcgLabelOptions.Location = new System.Drawing.Point(0, 138);
             this.lcgLabelOptions.Name = "lcgLabelOptions";
-            this.lcgLabelOptions.Size = new System.Drawing.Size(322, 75);
+            this.lcgLabelOptions.Size = new System.Drawing.Size(241, 66);
             this.lcgLabelOptions.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.lcgLabelOptions.Text = "Label";
             // 
@@ -390,18 +365,16 @@
             this.layoutControlItem1.Control = this.checkEditLabelVisible;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(302, 28);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItem1.TextVisible = false;
             // 
             // PivotGridChartingDemo
             // 
-            this.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.sidePanel1);
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PivotGridChartingDemo";
             this.Controls.SetChildIndex(this.sidePanelOptions, 0);
             this.Controls.SetChildIndex(this.sidePanel1, 0);

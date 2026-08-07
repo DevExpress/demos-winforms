@@ -41,23 +41,23 @@ namespace DevExpress.DentalClinic.ViewModel {
             get;
             protected set;
         }
-        public virtual string AddedProceduresCost { 
-            get; 
+        public virtual string AddedProceduresCost {
+            get;
             protected set;
         }
         public BindingList<Procedure> Procedures {
             get;
             protected set;
         }
-        public virtual ProcedureGroup SelectedGroup { 
-            get; set; 
+        public virtual ProcedureGroup SelectedGroup {
+            get; set;
         }
         public virtual IEnumerable<int> Selection {
             get;
             set;
         }
         public virtual ProcedureGroup[] EnabledGroups {
-            get; 
+            get;
             protected set;
         }
         public virtual ProcedureType[] EnabledTypes {
@@ -102,7 +102,7 @@ namespace DevExpress.DentalClinic.ViewModel {
             var procedureTypes = new List<ProcedureType> { ProcedureType.General, ProcedureType.Tooth };
             if(Selection == null || !Selection.Any())
                 procedureTypes.Remove(ProcedureType.Tooth);
-            EnabledTypes =  procedureTypes.Where(x => Procedures.Where(p => p.Group == SelectedGroup).Any(p => p.Type == x)).ToArray();
+            EnabledTypes = procedureTypes.Where(x => Procedures.Where(p => p.Group == SelectedGroup).Any(p => p.Type == x)).ToArray();
         }
         public bool CanAddProcedures() {
             return AddedProcedures.Any();

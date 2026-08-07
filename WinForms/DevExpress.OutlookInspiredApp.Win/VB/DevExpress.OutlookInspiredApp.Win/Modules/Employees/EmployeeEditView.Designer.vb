@@ -465,7 +465,7 @@ Namespace DevExpress.DevAV.Modules
             Me.gvTasks.OptionsBehavior.FocusLeaveOnTab = True
             Me.gvTasks.PreviewFieldName = "Description"
             Me.gvTasks.PreviewIndent = 0
-            Me.colPriority.Caption = "PRIORITY"
+            Me.colPriority.Caption = "Priority"
             Me.colPriority.FieldName = "Priority"
             Me.colPriority.Name = "colPriority"
             Me.colPriority.OptionsColumn.AllowEdit = False
@@ -476,7 +476,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colPriority.Width = 65
             Me.colDueDate.AppearanceCell.Font = New System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
             Me.colDueDate.AppearanceCell.Options.UseFont = True
-            Me.colDueDate.Caption = "DUE DATE"
+            Me.colDueDate.Caption = "Due Date"
             Me.colDueDate.FieldName = "DueDate"
             Me.colDueDate.Name = "colDueDate"
             Me.colDueDate.OptionsColumn.AllowEdit = False
@@ -484,7 +484,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colDueDate.Visible = True
             Me.colDueDate.VisibleIndex = 1
             Me.colDueDate.Width = 80
-            Me.colSubject1.Caption = "SUBJECT"
+            Me.colSubject1.Caption = "Subject"
             Me.colSubject1.FieldName = "Subject"
             Me.colSubject1.Name = "colSubject1"
             Me.colSubject1.OptionsColumn.AllowEdit = False
@@ -492,7 +492,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colSubject1.Visible = True
             Me.colSubject1.VisibleIndex = 2
             Me.colSubject1.Width = 288
-            Me.colDescription.Caption = "DESCRIPTION"
+            Me.colDescription.Caption = "Description"
             Me.colDescription.FieldName = "Description"
             Me.colDescription.Name = "colDescription"
             Me.colDescription.OptionsColumn.AllowEdit = False
@@ -500,7 +500,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colDescription.Visible = True
             Me.colDescription.VisibleIndex = 3
             Me.colDescription.Width = 524
-            Me.colCompletion.Caption = "COMPLETION"
+            Me.colCompletion.Caption = "Completion"
             Me.colCompletion.ColumnEdit = Me.repositoryItemProgressBar1
             Me.colCompletion.FieldName = "Completion"
             Me.colCompletion.Name = "colCompletion"
@@ -530,7 +530,7 @@ Namespace DevExpress.DevAV.Modules
             AddHandler Me.gvEvaluations.RowCellStyle, New DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(AddressOf Me.gvEvaluations_RowCellStyle)
             Me.colCreatedOn.AppearanceCell.Font = New System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
             Me.colCreatedOn.AppearanceCell.Options.UseFont = True
-            Me.colCreatedOn.Caption = "CREATED ON"
+            Me.colCreatedOn.Caption = "Created On"
             Me.colCreatedOn.FieldName = "CreatedOn"
             Me.colCreatedOn.Name = "colCreatedOn"
             Me.colCreatedOn.OptionsColumn.AllowEdit = False
@@ -538,7 +538,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colCreatedOn.Visible = True
             Me.colCreatedOn.VisibleIndex = 0
             Me.colCreatedOn.Width = 88
-            Me.colSubject.Caption = "SUBJECT"
+            Me.colSubject.Caption = "Subject"
             Me.colSubject.FieldName = "Subject"
             Me.colSubject.Name = "colSubject"
             Me.colSubject.OptionsColumn.AllowEdit = False
@@ -546,7 +546,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colSubject.Visible = True
             Me.colSubject.VisibleIndex = 1
             Me.colSubject.Width = 351
-            Me.colCreatedBy.Caption = "MANAGER"
+            Me.colCreatedBy.Caption = "Manager"
             Me.colCreatedBy.FieldName = "CreatedBy"
             Me.colCreatedBy.Name = "colCreatedBy"
             Me.colCreatedBy.OptionsColumn.AllowEdit = False
@@ -703,7 +703,7 @@ Namespace DevExpress.DevAV.Modules
             Me.ItemForTasks.AppearanceItemCaption.Options.UseTextOptions = True
             Me.ItemForTasks.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top
             Me.ItemForTasks.Control = Me.gridControlTasks
-            Me.ItemForTasks.CustomizationFormText = "TASKS"
+            Me.ItemForTasks.CustomizationFormText = "Tasks"
             Me.ItemForTasks.Location = New System.Drawing.Point(0, 468)
             Me.ItemForTasks.Name = "ItemForTasks"
             Me.ItemForTasks.Size = New System.Drawing.Size(1160, 206)

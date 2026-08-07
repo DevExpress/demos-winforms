@@ -1,5 +1,6 @@
 ﻿using System;
 using DevExpress.DentalClinic.ViewModels;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.DentalClinic.Views.Settings {
     public partial class LoginView : DevExpress.XtraEditors.XtraUserControl {
@@ -12,11 +13,11 @@ namespace DevExpress.DentalClinic.Views.Settings {
             // Register the IErrorProviderService service
             mvvmContext.RegisterService(this);
             // Initializing Fluent API
-            var fluentAPI = mvvmContext.OfType<LoginViewModel>();          
+            var fluentAPI = mvvmContext.OfType<LoginViewModel>();
             fluentAPI.SetBinding(rememberMeCheckEdit, x => x.EditValue, x => x.RememberMe);
             fluentAPI.SetBinding(userNameTextEdit, x => x.Text, x => x.UserName);
             fluentAPI.SetBinding(passwordTextEdit, x => x.Text, x => x.Password);
-            fluentAPI.SetTrigger(x => x.IsDefaultPassword, isDefaultPassword => 
+            fluentAPI.SetTrigger(x => x.IsDefaultPassword, isDefaultPassword =>
                 InitializePasswordUI(isDefaultPassword));
             fluentAPI.BindCommand(sbLogin, x => x.Login);
             InitializePasswordUI(fluentAPI.ViewModel.IsDefaultPassword);
@@ -30,6 +31,8 @@ namespace DevExpress.DentalClinic.Views.Settings {
             base.OnLoad(e);
             dataLayoutControl1.BeginInvoke(new Action(() => {
                 sbLogin.Focus();
+                if(MainFormHelper.TakeScreens)
+                    sbLogin.PerformClick();
             }));
         }
     }

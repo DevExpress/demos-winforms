@@ -3,6 +3,7 @@ Imports System.ComponentModel
 Imports System.Diagnostics
 Imports System.Windows.Forms
 Imports DevExpress.Data.Linq
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.XtraEditors
 Imports DevExpress.XtraPivotGrid.Demos.Helpers
 
@@ -17,7 +18,7 @@ Namespace DevExpress.XtraPivotGrid.Demos.Modules
 
         Private ReadOnly timer As Stopwatch = New Stopwatch()
 
-        Private asyncCompleted As Date = Date.Now
+        Private asyncCompleted As Date = TutorialConstants.Now
 
         Private currentState As DemoState
 
@@ -112,7 +113,7 @@ Namespace DevExpress.XtraPivotGrid.Demos.Modules
         Private Sub pivotGridControl_AsyncOperationStarting(ByVal sender As Object, ByVal e As EventArgs)
             lcTimeTaken.Text = "Working..."
             If Not timer.IsRunning Then
-                If(Date.Now - asyncCompleted).TotalMilliseconds < 100 Then
+                If(TutorialConstants.Now - asyncCompleted).TotalMilliseconds < 100 Then
                     timer.Start()
                 Else
                     timer.Restart()
@@ -122,7 +123,7 @@ Namespace DevExpress.XtraPivotGrid.Demos.Modules
 
         Private Sub pivotGridControl_AsyncOperationCompleted(ByVal sender As Object, ByVal e As EventArgs)
             timer.Stop()
-            asyncCompleted = Date.Now
+            asyncCompleted = TutorialConstants.Now
             lcTimeTaken.Text = timer.ElapsedMilliseconds.ToString()
         End Sub
 

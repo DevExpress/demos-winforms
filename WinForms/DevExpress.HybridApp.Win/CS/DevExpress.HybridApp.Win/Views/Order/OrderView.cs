@@ -1,9 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using DevExpress.DevAV.ViewModels;
-using DevExpress.XtraBars.Docking2010;
 using DevExpress.Utils.MVVM.UI;
+using DevExpress.XtraBars.Docking2010;
 
 namespace DevExpress.DevAV.Views {
     [ViewType(DevAVDbViewModel.OrderViewDocumentType)]
@@ -12,7 +9,7 @@ namespace DevExpress.DevAV.Views {
             InitializeComponent();
             dataLayoutControl.SetupLayoutControl();
             viewItems.SetupCollectionGrid();
-            if (!mvvmContext.IsDesignMode) {
+            if(!mvvmContext.IsDesignMode) {
                 
                 InitBindings();
             }
@@ -37,7 +34,7 @@ namespace DevExpress.DevAV.Views {
             
         }
         
-            
+        
         
     }
 }

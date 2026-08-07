@@ -1,10 +1,11 @@
 using DevExpress.DevAV.Common;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.DevAV.ViewModels {
     public partial class EvaluationViewModel {
         protected override Evaluation CreateEntity() {
             var evaluation = base.CreateEntity();
-            evaluation.CreatedOn = System.DateTime.Now;
+            evaluation.CreatedOn = TutorialConstants.Now;
             return evaluation;
         }
         protected override string GetTitle() {

@@ -3,6 +3,7 @@ Imports System.ComponentModel
 Imports System.Drawing
 Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.XtraPivotGrid.Customization
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraPivotGrid.Demos.Modules
 
@@ -46,8 +47,10 @@ Namespace DevExpress.XtraPivotGrid.Demos.Modules
 
         Protected Overrides Sub OnLayoutCalculated()
             MyBase.OnLayoutCalculated()
-            pivotGridControl1.FieldsCustomization(pivotGridControl1.PointToScreen(New Point(Width - 300, layoutControlGroup2.Height + 30)))
-            pivotGridControl1.CustomizationForm.TopMost = True
+            If Not MainFormHelper.TakeScreens Then
+                pivotGridControl1.FieldsCustomization(pivotGridControl1.PointToScreen(New Point(Width - 300, layoutControlGroup2.Height + 30)))
+                pivotGridControl1.CustomizationForm.TopMost = True
+            End If
         End Sub
 
         Private Sub InitCustomization(ByVal show As Boolean)

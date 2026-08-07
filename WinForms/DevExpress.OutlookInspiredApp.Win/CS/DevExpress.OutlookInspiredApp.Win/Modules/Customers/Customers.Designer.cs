@@ -231,9 +231,9 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colAddress1.Caption = "ADDRESS";
+            this.colAddress1.Caption = "Address";
             this.colAddress1.ColumnEdit = this.repositoryItemMemoEdit1;
-            this.colAddress1.CustomizationCaption = "ADDRESS";
+            this.colAddress1.CustomizationCaption = "Address";
             this.colAddress1.FieldName = "Address";
             this.colAddress1.LayoutViewField = this.layoutViewField_colAddress1;
             this.colAddress1.Name = "colAddress1";
@@ -259,8 +259,8 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colEmail1.Caption = "EMAIL";
-            this.colEmail1.CustomizationCaption = "EMAIL";
+            this.colEmail1.Caption = "Email";
+            this.colEmail1.CustomizationCaption = "Email";
             this.colEmail1.FieldName = "Email";
             this.colEmail1.LayoutViewField = this.layoutViewField_colEmail1;
             this.colEmail1.Name = "colEmail1";
@@ -279,8 +279,8 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colMobilePhone.Caption = "PHONE";
-            this.colMobilePhone.CustomizationCaption = "PHONE";
+            this.colMobilePhone.Caption = "Phone";
+            this.colMobilePhone.CustomizationCaption = "Phone";
             this.colMobilePhone.FieldName = "MobilePhone";
             this.colMobilePhone.LayoutViewField = this.layoutViewField_colMobilePhone;
             this.colMobilePhone.Name = "colMobilePhone";
@@ -349,7 +349,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colEmployee.Caption = "EMPLOYEE";
+            this.colEmployee.Caption = "Employee";
             this.colEmployee.FieldName = "Employee.FullName";
             this.colEmployee.Name = "colEmployee";
             this.colEmployee.OptionsColumn.AllowFocus = false;
@@ -359,7 +359,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colInvoiceNumber.Caption = "INVOICE NUMBER";
+            this.colInvoiceNumber.Caption = "Invoice Number";
             this.colInvoiceNumber.FieldName = "InvoiceNumber";
             this.colInvoiceNumber.Name = "colInvoiceNumber";
             this.colInvoiceNumber.OptionsColumn.AllowFocus = false;
@@ -371,7 +371,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colOrderDate.Caption = "ORDER DATE";
+            this.colOrderDate.Caption = "Order Date";
             this.colOrderDate.FieldName = "OrderDate";
             this.colOrderDate.GroupInterval = DevExpress.XtraGrid.ColumnGroupInterval.DateRange;
             this.colOrderDate.Name = "colOrderDate";
@@ -382,7 +382,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colShipDate.Caption = "SHIP DATE";
+            this.colShipDate.Caption = "Ship Date";
             this.colShipDate.FieldName = "ShipDate";
             this.colShipDate.GroupInterval = DevExpress.XtraGrid.ColumnGroupInterval.DateRange;
             this.colShipDate.Name = "colShipDate";
@@ -393,7 +393,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colSaleAmount.Caption = "SALE AMOUNT";
+            this.colSaleAmount.Caption = "Sale Amount";
             this.colSaleAmount.DisplayFormat.FormatString = "c";
             this.colSaleAmount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSaleAmount.FieldName = "SaleAmount";
@@ -407,7 +407,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colShippingAmount.Caption = "SHIPPING AMOUNT";
+            this.colShippingAmount.Caption = "Shipping Amount";
             this.colShippingAmount.DisplayFormat.FormatString = "c";
             this.colShippingAmount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colShippingAmount.FieldName = "ShippingAmount";
@@ -421,7 +421,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colTotalAmount.Caption = "TOTAL AMOUNT";
+            this.colTotalAmount.Caption = "Total Amount";
             this.colTotalAmount.DisplayFormat.FormatString = "c";
             this.colTotalAmount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colTotalAmount.FieldName = "TotalAmount";
@@ -475,7 +475,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colName.Caption = "CUSTOMER";
+            this.colName.Caption = "Customer";
             this.colName.FieldName = "Name";
             this.colName.Name = "colName";
             this.colName.OptionsColumn.AllowFocus = false;
@@ -485,7 +485,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colAddress.Caption = "ADDRESS";
+            this.colAddress.Caption = "Address";
             this.colAddress.FieldName = "HomeOffice.Line";
             this.colAddress.Name = "colAddress";
             this.colAddress.OptionsColumn.AllowFocus = false;
@@ -495,7 +495,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCity.Caption = "CITY";
+            this.colCity.Caption = "City";
             this.colCity.FieldName = "HomeOffice.City";
             this.colCity.Name = "colCity";
             this.colCity.OptionsColumn.AllowFocus = false;
@@ -505,7 +505,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colState.Caption = "STATE";
+            this.colState.Caption = "State";
             this.colState.FieldName = "HomeOffice.State";
             this.colState.Name = "colState";
             this.colState.OptionsColumn.AllowFocus = false;
@@ -515,7 +515,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colZipCode.Caption = "ZIP CODE";
+            this.colZipCode.Caption = "Zip Code";
             this.colZipCode.FieldName = "HomeOffice.ZipCode";
             this.colZipCode.Name = "colZipCode";
             this.colZipCode.OptionsColumn.AllowFocus = false;
@@ -525,7 +525,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colPhone.Caption = "PHONE";
+            this.colPhone.Caption = "Phone";
             this.colPhone.FieldName = "Phone";
             this.colPhone.Name = "colPhone";
             this.colPhone.OptionsColumn.AllowFocus = false;
@@ -535,7 +535,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colLogo.Caption = "LOGO";
+            this.colLogo.Caption = "Logo";
             this.colLogo.FieldName = "Image";
             this.colLogo.ImageOptions.Alignment = System.Drawing.StringAlignment.Center;
             this.colLogo.ImageOptions.ImageUri.ResourceType = typeof(DevExpress.DevAV.MainForm);
@@ -554,42 +554,42 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colFax.Caption = "FAX";
+            this.colFax.Caption = "Fax";
             this.colFax.FieldName = "Fax";
             this.colFax.Name = "colFax";
             this.colFax.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colWebsite.Caption = "WEBSITE";
+            this.colWebsite.Caption = "Website";
             this.colWebsite.FieldName = "Website";
             this.colWebsite.Name = "colWebsite";
             this.colWebsite.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colProfile.Caption = "PROFILE";
+            this.colProfile.Caption = "Profile";
             this.colProfile.FieldName = "Profile";
             this.colProfile.Name = "colProfile";
             this.colProfile.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colStatus.Caption = "STATUS";
+            this.colStatus.Caption = "Status";
             this.colStatus.FieldName = "Status";
             this.colStatus.Name = "colStatus";
             this.colStatus.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colBillingAddress.Caption = "BILLING ADDRESS";
+            this.colBillingAddress.Caption = "Billing Address";
             this.colBillingAddress.FieldName = "BillingAddress";
             this.colBillingAddress.Name = "colBillingAddress";
             this.colBillingAddress.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colAnnualRevenue.Caption = "ANNUAL REVENUE";
+            this.colAnnualRevenue.Caption = "Annual Revenue";
             this.colAnnualRevenue.DisplayFormat.FormatString = "{0:c}";
             this.colAnnualRevenue.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colAnnualRevenue.FieldName = "AnnualRevenue";
@@ -598,7 +598,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colTotalEmployees.Caption = "TOTAL EMPLOYEES";
+            this.colTotalEmployees.Caption = "Total Employees";
             this.colTotalEmployees.DisplayFormat.FormatString = "{0:n0}";
             this.colTotalEmployees.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colTotalEmployees.FieldName = "TotalEmployees";
@@ -607,7 +607,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colTotalStores.Caption = "TOTAL STORES";
+            this.colTotalStores.Caption = "Total Stores";
             this.colTotalStores.FieldName = "TotalStores";
             this.colTotalStores.Name = "colTotalStores";
             this.colTotalStores.OptionsColumn.AllowFocus = false;
@@ -969,7 +969,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.hiItemsCount.Caption = "RECORDS: 0";
+            this.hiItemsCount.Caption = "Records: 0";
             this.hiItemsCount.Id = 35;
             this.hiItemsCount.Name = "hiItemsCount";
             
@@ -1145,7 +1145,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colHomeOffice.Caption = "HOME OFFICE";
+            this.colHomeOffice.Caption = "Home Office";
             this.colHomeOffice.ColumnEdit = this.repositoryItemMemoEdit1;
             this.colHomeOffice.FieldName = "HomeOffice";
             this.colHomeOffice.LayoutViewField = this.layoutViewField_colHomeOffice;
@@ -1166,7 +1166,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colBillingAddress1.Caption = "BILLING ADDRESS";
+            this.colBillingAddress1.Caption = "Billing Address";
             this.colBillingAddress1.ColumnEdit = this.repositoryItemMemoEdit1;
             this.colBillingAddress1.FieldName = "BillingAddress";
             this.colBillingAddress1.LayoutViewField = this.layoutViewField_colBillingAddress1;
@@ -1187,7 +1187,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colImage.Caption = "IMAGE";
+            this.colImage.Caption = "Image";
             this.colImage.FieldName = "Image";
             this.colImage.LayoutViewField = this.layoutViewField_layoutViewColumn1;
             this.colImage.Name = "colImage";

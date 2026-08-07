@@ -6,13 +6,13 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
-using System.Windows.Forms;
 using DevExpress.DevAV;
 using DevExpress.Internal;
-using DevExpress.Utils;
 using DevExpress.Utils.Drawing;
 using DevExpress.XtraEditors;
 using Message = DevExpress.WindowsMailClient.Win.Data.Message;
+using DevExpress.DXperience.Demos;
+
 #if !NET
 using System.Data.Entity;
 #else
@@ -57,9 +57,9 @@ namespace DevExpress.WindowsMailClient.Win.Model {
             get {
                 if(_employees == null) {
 #if !NET
-                    DevAVDb devAvDb = new DevAVDb();
+                    DevAVDb devAvDb = new DevAVDb(MainFormHelper.TakeScreens);
 #else
-                    DevAVDb devAvDb = new DevAVDb($"Data Source={Internal.DevAVDataDirectoryHelper.GetFile("devav.sqlite3")}");
+                    DevAVDb devAvDb = new DevAVDb($"Data Source={Internal.DevAVDataDirectoryHelper.GetFile("devav.sqlite3")}", MainFormHelper.TakeScreens);
 #endif
                     devAvDb.Employees.Load();
                     _employees = devAvDb.Employees.Local.ToBindingList();

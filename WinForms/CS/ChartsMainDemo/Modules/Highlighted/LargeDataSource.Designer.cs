@@ -51,8 +51,8 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 542);
+            this.tabNavigationPageOptions.Margin = new System.Windows.Forms.Padding(4);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // chart
             // 
@@ -77,8 +77,10 @@
             this.chart.Size = new System.Drawing.Size(546, 571);
             this.chart.TabIndex = 1;
             chartTitle1.Text = "Large Data Source";
-            chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            chartTitle1.TitleID = 0;
+            chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle2.Text = "Total points count: 50000";
+            chartTitle2.TitleID = 1;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -93,15 +95,15 @@
             this.layoutControl.Location = new System.Drawing.Point(0, 0);
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.Root = this.layoutControlGroup1;
-            this.layoutControl.Size = new System.Drawing.Size(241, 542);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
             // btnAdd500K
             // 
-            this.btnAdd500K.Location = new System.Drawing.Point(7, 42);
+            this.btnAdd500K.Location = new System.Drawing.Point(10, 44);
             this.btnAdd500K.Name = "btnAdd500K";
-            this.btnAdd500K.Size = new System.Drawing.Size(227, 22);
+            this.btnAdd500K.Size = new System.Drawing.Size(221, 22);
             this.btnAdd500K.StyleController = this.layoutControl;
             this.btnAdd500K.TabIndex = 4;
             this.btnAdd500K.Text = "Add 500K Points";
@@ -109,22 +111,19 @@
             // 
             // btnAdd1M
             // 
-            this.btnAdd1M.Location = new System.Drawing.Point(7, 74);
+            this.btnAdd1M.Location = new System.Drawing.Point(10, 76);
             this.btnAdd1M.Name = "btnAdd1M";
-            this.btnAdd1M.Size = new System.Drawing.Size(227, 22);
+            this.btnAdd1M.Size = new System.Drawing.Size(221, 22);
             this.btnAdd1M.StyleController = this.layoutControl;
             this.btnAdd1M.TabIndex = 5;
             this.btnAdd1M.Text = "Add 1M Points";
             this.btnAdd1M.Click += new System.EventHandler(this.btnAdd1M_Click);
             // 
-            // btnAdd5M
-            // 
-            // 
             // btnAdd250K
             // 
-            this.btnAdd250K.Location = new System.Drawing.Point(7, 10);
+            this.btnAdd250K.Location = new System.Drawing.Point(10, 12);
             this.btnAdd250K.Name = "btnAdd250K";
-            this.btnAdd250K.Size = new System.Drawing.Size(227, 22);
+            this.btnAdd250K.Size = new System.Drawing.Size(221, 22);
             this.btnAdd250K.StyleController = this.layoutControl;
             this.btnAdd250K.TabIndex = 8;
             this.btnAdd250K.Text = "Add 250K Points";
@@ -141,7 +140,7 @@
             this.layoutControlItem5,
             this.emptySpaceItem1});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(241, 542);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -150,8 +149,7 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 34);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 10);
-            this.layoutControlItem1.Size = new System.Drawing.Size(227, 32);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.Size = new System.Drawing.Size(221, 32);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -160,8 +158,7 @@
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 66);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItem2.Size = new System.Drawing.Size(227, 22);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.Size = new System.Drawing.Size(221, 22);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
@@ -169,8 +166,7 @@
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 88);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 10, 0);
-            this.layoutControlItem3.Size = new System.Drawing.Size(227, 32);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.Size = new System.Drawing.Size(221, 32);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem5
@@ -179,17 +175,14 @@
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 10);
-            this.layoutControlItem5.Size = new System.Drawing.Size(227, 34);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.Size = new System.Drawing.Size(221, 34);
             this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 120);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(227, 406);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(221, 398);
             // 
             // LargeDataSourceDemo
             // 
@@ -197,7 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.chart);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LargeDataSourceDemo";
             this.Controls.SetChildIndex(this.sidePanelOptions, 0);
             this.Controls.SetChildIndex(this.chart, 0);

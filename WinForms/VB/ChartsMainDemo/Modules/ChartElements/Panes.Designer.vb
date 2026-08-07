@@ -185,7 +185,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelLinearPaneLayout.Name = "dockPanelLinearPaneLayout"
             Me.dockPanelLinearPaneLayout.Options.ShowCloseButton = False
             Me.dockPanelLinearPaneLayout.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelLinearPaneLayout.SavedSizeFactor = 1R
             Me.dockPanelLinearPaneLayout.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelLinearPaneLayout.Text = "Linear Pane Layout"
             ' 
@@ -212,7 +211,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram1.AxisX.VisibleInPanesSerializable = "1"
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0.5R
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0.5R
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0.5R
             xyDiagram1.AxisY.Interlaced = True
             xyDiagram1.AxisY.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
@@ -261,17 +261,20 @@ Namespace DevExpress.XtraCharts.Demos
             series1.ArgumentDataMember = "ReportDate"
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series1.Name = "New Visitors"
+            series1.SeriesID = 0
             series1.ValueDataMembersSerializable = "NewVisitors"
             series1.View = stackedBarSeriesView1
             series2.ArgumentDataMember = "ReportDate"
             series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series2.Name = "Return Visitors"
+            series2.SeriesID = 1
             series2.ValueDataMembersSerializable = "ReturnVisitors"
             series2.View = stackedBarSeriesView2
             series3.ArgumentDataMember = "ReportDate"
             series3.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series3.CrosshairLabelPattern = "{S} : {V} per sec"
             series3.Name = "Unique Users"
+            series3.SeriesID = 2
             series3.ValueDataMembersSerializable = "TrafficTime"
             lineSeriesView1.AxisYName = "Secondary AxisY 1"
             lineSeriesView1.PaneName = "User Traffic / Average Response Time"
@@ -280,6 +283,7 @@ Namespace DevExpress.XtraCharts.Demos
             series4.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series4.CrosshairLabelPattern = "{S} : {V} ms"
             series4.Name = "Average Response Time"
+            series4.SeriesID = 3
             series4.ValueDataMembersSerializable = "ResponseTime"
             lineSeriesView2.AxisYName = "AverageResponseTime"
             lineSeriesView2.PaneName = "User Traffic / Average Response Time"
@@ -288,6 +292,7 @@ Namespace DevExpress.XtraCharts.Demos
             series5.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series5.CrosshairLabelPattern = "{S} : {V:0.##} sec"
             series5.Name = "Average Page Load Time"
+            series5.SeriesID = 4
             series5.ValueDataMembersSerializable = "AveragePageLoadTime"
             sideBySideBarSeriesView1.AxisYName = "AveragePageLoadTime"
             sideBySideBarSeriesView1.PaneName = "Average Page Load Time"
@@ -296,8 +301,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartLinearLayout.Size = New System.Drawing.Size(924, 548)
             Me.chartLinearLayout.TabIndex = 1
             Me.chartLinearLayout.TabStop = False
-            chartTitle1.Alignment = System.Drawing.StringAlignment.Near
+            chartTitle1.DXAlignment = DevExpress.Drawing.DXStringAlignment.Near
             chartTitle1.Text = "Website Performance Indicators By Last Month"
+            chartTitle1.TitleID = 0
             Me.chartLinearLayout.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' dockPanelGridPaneLayout
@@ -309,7 +315,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelGridPaneLayout.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelGridPaneLayout.Name = "dockPanelGridPaneLayout"
             Me.dockPanelGridPaneLayout.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelGridPaneLayout.SavedSizeFactor = 1R
             Me.dockPanelGridPaneLayout.Size = New System.Drawing.Size(924, 548)
             Me.dockPanelGridPaneLayout.Text = "Grid Pane Layout"
             ' 
@@ -336,7 +341,8 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram2.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             xyDiagram2.AxisX.VisibleInPanesSerializable = "6;7"
             xyDiagram2.AxisX.WholeRange.AutoSideMargins = False
-            xyDiagram2.AxisX.WholeRange.SideMarginsValue = 1R
+            xyDiagram2.AxisX.WholeRange.EndSideMargin = 1R
+            xyDiagram2.AxisX.WholeRange.StartSideMargin = 1R
             xyDiagram2.AxisY.Interlaced = True
             xyDiagram2.AxisY.NumericScaleOptions.AutoGrid = False
             xyDiagram2.AxisY.Visibility = DevExpress.Utils.DefaultBoolean.[False]
@@ -419,18 +425,21 @@ Namespace DevExpress.XtraCharts.Demos
             series6.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series6.CrosshairLabelPattern = "{S} : {V} per sec"
             series6.Name = "Unique Users"
+            series6.SeriesID = 0
             series6.ValueDataMembersSerializable = "TrafficTime"
             series6.View = lineSeriesView3
             series7.ArgumentDataMember = "ReportDate"
             series7.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series7.CrosshairLabelPattern = "{S} : {V} ms"
             series7.Name = "Average Response Time"
+            series7.SeriesID = 1
             series7.ValueDataMembersSerializable = "ResponseTime"
             lineSeriesView4.AxisYName = "AverageResponseTime"
             series7.View = lineSeriesView4
             series8.ArgumentDataMember = "ReportDate"
             series8.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series8.Name = "New Visitors"
+            series8.SeriesID = 2
             series8.ValueDataMembersSerializable = "NewVisitors"
             stackedBarSeriesView3.AxisYName = "Visitors"
             stackedBarSeriesView3.PaneName = "Visitors"
@@ -438,6 +447,7 @@ Namespace DevExpress.XtraCharts.Demos
             series9.ArgumentDataMember = "ReportDate"
             series9.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series9.Name = "Return Visitors"
+            series9.SeriesID = 3
             series9.ValueDataMembersSerializable = "ReturnVisitors"
             stackedBarSeriesView4.AxisYName = "Visitors"
             stackedBarSeriesView4.PaneName = "Visitors"
@@ -446,6 +456,7 @@ Namespace DevExpress.XtraCharts.Demos
             series10.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series10.CrosshairLabelPattern = "{S} : {V:0.##} sec"
             series10.Name = "Average Page Load Time"
+            series10.SeriesID = 4
             series10.ValueDataMembersSerializable = "AveragePageLoadTime"
             sideBySideBarSeriesView2.AxisYName = "AveragePageLoadTime"
             sideBySideBarSeriesView2.PaneName = "Average Page Load Time"
@@ -453,6 +464,7 @@ Namespace DevExpress.XtraCharts.Demos
             series11.ArgumentDataMember = "ReportDate"
             series11.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series11.Name = "Client Errors"
+            series11.SeriesID = 5
             series11.ValueDataMembersSerializable = "ClientErrors"
             lineSeriesView5.AxisYName = "HTTPErrorStatusCodes"
             lineSeriesView5.PaneName = "HTTP Error Status Codes"
@@ -460,6 +472,7 @@ Namespace DevExpress.XtraCharts.Demos
             series12.ArgumentDataMember = "ReportDate"
             series12.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series12.Name = "Server Errors"
+            series12.SeriesID = 6
             series12.ValueDataMembersSerializable = "ServerErrors"
             lineSeriesView6.AxisYName = "HTTPErrorStatusCodes"
             lineSeriesView6.PaneName = "HTTP Error Status Codes"
@@ -469,6 +482,7 @@ Namespace DevExpress.XtraCharts.Demos
             series13.CrosshairLabelPattern = "{S} : {V} MB"
             series13.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series13.Name = "Memory"
+            series13.SeriesID = 7
             series13.ValueDataMembersSerializable = "MemoryUsage"
             areaSeriesView1.AxisYName = "Memory"
             areaSeriesView1.PaneName = "Memory / CPU usage"
@@ -477,6 +491,7 @@ Namespace DevExpress.XtraCharts.Demos
             series14.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
             series14.CrosshairLabelPattern = "{S} : {V}%"
             series14.Name = "CPU"
+            series14.SeriesID = 8
             series14.ValueDataMembersSerializable = "CPUUsage"
             lineSeriesView7.AxisYName = "CPU"
             lineSeriesView7.PaneName = "Memory / CPU usage"
@@ -485,8 +500,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartGridLayout.Size = New System.Drawing.Size(924, 548)
             Me.chartGridLayout.TabIndex = 1
             Me.chartGridLayout.TabStop = False
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Near
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Near
             chartTitle2.Text = "Website Performance Indicators By Last Month"
+            chartTitle2.TitleID = 0
             Me.chartGridLayout.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle2})
             Me.chartGridLayout.ToolTipOptions.ShowForPoints = False
             ' 

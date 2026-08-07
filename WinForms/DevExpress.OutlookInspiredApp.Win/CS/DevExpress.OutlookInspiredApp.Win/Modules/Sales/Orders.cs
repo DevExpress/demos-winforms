@@ -82,7 +82,7 @@ namespace DevExpress.DevAV.Modules {
             galleryQuickReports.Gallery.Groups[0].Items[index].BindCommand(() => ViewModel.QuickReportFormat(parameter), ViewModel, () => parameter);
         }
         void UpdateEntitiesCountRelatedUI(int count) {
-            hiItemsCount.Caption = string.Format("RECORDS: {0}", count);
+            hiItemsCount.Caption = string.Format("Records: {0}", count);
             UpdateAdditionalButtons(count > 0);
         }
         void UpdateAdditionalButtons(bool hasRecords) {

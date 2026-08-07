@@ -12,7 +12,7 @@ namespace DevExpress.DevAV.Views {
             gridControl.Visible = false;
             searchControl.SetupSearchControl(windowsUIButtonPanel);
             
-            if(!mvvmContext.IsDesignMode) 
+            if(!mvvmContext.IsDesignMode)
                 InitBindings();
         }
         void InitBindings() {

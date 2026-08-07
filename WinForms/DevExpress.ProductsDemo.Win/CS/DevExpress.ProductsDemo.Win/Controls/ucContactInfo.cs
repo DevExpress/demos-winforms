@@ -1,10 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using DevExpress.XtraLayout.Utils;
 using DevExpress.XtraLayout;
-using System.ComponentModel;
+using DevExpress.XtraLayout.Utils;
 
 namespace DevExpress.MailClient.Win.Controls {
     public partial class ucContactInfo : XtraUserControl {
@@ -92,10 +92,11 @@ namespace DevExpress.MailClient.Win.Controls {
             get { return (float)(pePhoto.Properties.ZoomPercent / 100); }
             set {
                 if(value == 1) {
-                    pePhoto.Properties.ZoomPercent= 100;
+                    pePhoto.Properties.ZoomPercent = 100;
                     pePhoto.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
                     pePhoto.Properties.ShowScrollBars = false;
-                } else {
+                }
+                else {
                     pePhoto.Properties.ZoomPercent = (int)(value * 100);
                     pePhoto.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Clip;
                     pePhoto.Properties.ShowScrollBars = true;

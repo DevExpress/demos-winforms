@@ -136,11 +136,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItem1
             ' 
-            Me.emptySpaceItem1.AllowHotTrack = False
             Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 0)
             Me.emptySpaceItem1.Name = "emptySpaceItem1"
             Me.emptySpaceItem1.Size = New System.Drawing.Size(221, 522)
-            Me.emptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' sidePanel1
             ' 
@@ -193,15 +191,15 @@ Namespace DevExpress.XtraCharts.Demos
             secondaryAxisX1.Name = "Secondary AxisX 1"
             secondaryAxisX1.Tickmarks.MinorVisible = False
             secondaryAxisX1.Tickmarks.Visible = False
-            secondaryAxisX1.Title.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            secondaryAxisX1.Title.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             secondaryAxisX1.Title.Text = "Measurment Set 1"
             secondaryAxisX1.Title.Visibility = DevExpress.Utils.DefaultBoolean.[Default]
             secondaryAxisX1.Title.WordWrap = True
             secondaryAxisX1.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             secondaryAxisX1.VisibleInPanesSerializable = "0"
             secondaryAxisX1.WholeRange.Auto = False
-            secondaryAxisX1.WholeRange.MaxValueSerializable = "4"
-            secondaryAxisX1.WholeRange.MinValueSerializable = "-1"
+            secondaryAxisX1.WholeRange.MaxValueSerializable = "9"
+            secondaryAxisX1.WholeRange.MinValueSerializable = "0"
             xyDiagram1.SecondaryAxesX.AddRange(New DevExpress.XtraCharts.SecondaryAxisX() {secondaryAxisX1})
             Me.boxPlotChart.Diagram = xyDiagram1
             Me.boxPlotChart.Dock = System.Windows.Forms.DockStyle.Fill
@@ -233,6 +231,7 @@ Namespace DevExpress.XtraCharts.Demos
             dataSourceAdapter1.DataMembers.AddRange(New DevExpress.XtraCharts.DataMember() {dataMember1, dataMember2, dataMember3, dataMember4, dataMember5, dataMember6, dataMember7, dataMember8})
             series1.DataAdapter = dataSourceAdapter1
             series1.Name = "Data Set 1"
+            series1.SeriesID = 0
             boxPlotSlideAnimation1.Direction = DevExpress.XtraCharts.AnimationDirection.FromTop
             boxPlotSlideAnimation1.Duration = System.TimeSpan.Parse("00:00:00.8000000")
             boxPlotSlideAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.1000000")
@@ -258,6 +257,7 @@ Namespace DevExpress.XtraCharts.Demos
             dataSourceAdapter2.DataMembers.AddRange(New DevExpress.XtraCharts.DataMember() {dataMember9, dataMember10, dataMember11, dataMember12, dataMember13, dataMember14, dataMember15, dataMember16})
             series2.DataAdapter = dataSourceAdapter2
             series2.Name = "Data Set 2"
+            series2.SeriesID = 1
             boxPlotSlideAnimation2.Direction = DevExpress.XtraCharts.AnimationDirection.FromTop
             boxPlotSlideAnimation2.Duration = System.TimeSpan.Parse("00:00:00.8000000")
             boxPlotSlideAnimation2.PointDelay = System.TimeSpan.Parse("00:00:00.1000000")
@@ -271,6 +271,7 @@ Namespace DevExpress.XtraCharts.Demos
             dataSourceAdapter3.DataMembers.AddRange(New DevExpress.XtraCharts.DataMember() {dataMember17, dataMember18})
             series3.DataAdapter = dataSourceAdapter3
             series3.Name = "Series 1"
+            series3.SeriesID = 2
             series3.ShowInLegend = False
             pointSeriesView1.AxisXName = "Secondary AxisX 1"
             pointSeriesView1.PaneName = "Pane 1"
@@ -288,6 +289,7 @@ Namespace DevExpress.XtraCharts.Demos
             dataSourceAdapter4.DataMembers.AddRange(New DevExpress.XtraCharts.DataMember() {dataMember19, dataMember20})
             series4.DataAdapter = dataSourceAdapter4
             series4.Name = "Series 2"
+            series4.SeriesID = 3
             series4.ShowInLegend = False
             pointSeriesView2.AxisXName = "Secondary AxisX 1"
             pointSeriesView2.PaneName = "Pane 1"
@@ -302,6 +304,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.boxPlotChart.Size = New System.Drawing.Size(546, 571)
             Me.boxPlotChart.TabIndex = 4
             chartTitle1.Text = "Experiment Results"
+            chartTitle1.TitleID = 0
             Me.boxPlotChart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.boxPlotChart.AnimationEnded, New DevExpress.XtraCharts.AnimationEndedEventHandler(AddressOf Me.BoxPlotChart_AnimationEnded)
             ' 
@@ -365,7 +368,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem1.TextVisible = False
             ' 
             ' layoutControlItem2
@@ -374,27 +376,22 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem2.Location = New System.Drawing.Point(0, 38)
             Me.layoutControlItem2.Name = "layoutControlItem2"
             Me.layoutControlItem2.Size = New System.Drawing.Size(221, 26)
-            Me.layoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem2.TextVisible = False
             ' 
             ' emptySpaceItem2
             ' 
-            Me.emptySpaceItem2.AllowHotTrack = False
             Me.emptySpaceItem2.Location = New System.Drawing.Point(0, 24)
             Me.emptySpaceItem2.MaxSize = New System.Drawing.Size(0, 14)
             Me.emptySpaceItem2.MinSize = New System.Drawing.Size(10, 14)
             Me.emptySpaceItem2.Name = "emptySpaceItem2"
             Me.emptySpaceItem2.Size = New System.Drawing.Size(221, 14)
             Me.emptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-            Me.emptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 106)
             Me.emptySpaceItem.Name = "emptySpaceItem"
             Me.emptySpaceItem.Size = New System.Drawing.Size(241, 432)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' BoxPlotDemo
             ' 

@@ -1,20 +1,18 @@
 using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm.DataAnnotations;
-using System.Collections.ObjectModel;
 using System.Threading;
 using System.Threading.Tasks;
-using DevExpress.DevAV.Common.Utils;
 using DevExpress.DevAV.Common.DataModel;
+using DevExpress.DevAV.Common.Utils;
+using DevExpress.Mvvm;
+using DevExpress.Mvvm.DataAnnotations;
+using DevExpress.Mvvm.POCO;
 
-namespace DevExpress.DevAV.Common.ViewModel
-{
+namespace DevExpress.DevAV.Common.ViewModel {
     /// <summary>
     /// The base class for POCO view models exposing a collection of entities of the given type.
     /// This is a partial class that provides an extension point to add custom properties, commands and override methods without modifying the auto-generated code.
@@ -26,8 +24,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         EntitiesViewModelBase<TEntity, TProjection, TUnitOfWork>
         where TEntity : class
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Initializes a new instance of the EntitiesViewModel class.
@@ -39,8 +36,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection)
-            : base(unitOfWorkFactory, getRepositoryFunc, projection)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection) {
         }
     }
 
@@ -55,61 +51,50 @@ namespace DevExpress.DevAV.Common.ViewModel
     public abstract class EntitiesViewModelBase<TEntity, TProjection, TUnitOfWork> : IEntitiesViewModel<TProjection>
         where TEntity : class
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         #region inner classes
-        protected interface IEntitiesChangeTracker
-        {
+        protected interface IEntitiesChangeTracker {
             void RegisterMessageHandler();
             void UnregisterMessageHandler();
         }
 
-        protected class EntitiesChangeTracker<TPrimaryKey> : IEntitiesChangeTracker
-        {
+        protected class EntitiesChangeTracker<TPrimaryKey> : IEntitiesChangeTracker {
 
             readonly EntitiesViewModelBase<TEntity, TProjection, TUnitOfWork> owner;
             ObservableCollection<TProjection> Entities { get { return owner.Entities; } }
             IRepository<TEntity, TPrimaryKey> Repository { get { return (IRepository<TEntity, TPrimaryKey>)owner.ReadOnlyRepository; } }
 
-            public EntitiesChangeTracker(EntitiesViewModelBase<TEntity, TProjection, TUnitOfWork> owner)
-            {
+            public EntitiesChangeTracker(EntitiesViewModelBase<TEntity, TProjection, TUnitOfWork> owner) {
                 this.owner = owner;
             }
 
-            void IEntitiesChangeTracker.RegisterMessageHandler()
-            {
+            void IEntitiesChangeTracker.RegisterMessageHandler() {
                 Messenger.Default.Register<EntityMessage<TEntity, TPrimaryKey>>(this, x => OnMessage(x));
             }
 
-            void IEntitiesChangeTracker.UnregisterMessageHandler()
-            {
+            void IEntitiesChangeTracker.UnregisterMessageHandler() {
                 Messenger.Default.Unregister(this);
             }
 
-            public TProjection FindLocalProjectionByKey(TPrimaryKey primaryKey)
-            {
+            public TProjection FindLocalProjectionByKey(TPrimaryKey primaryKey) {
                 var primaryKeyEqualsExpression = RepositoryExtensions.GetProjectionPrimaryKeyEqualsExpression<TEntity, TProjection, TPrimaryKey>(Repository, primaryKey);
                 return Entities.AsQueryable().FirstOrDefault(primaryKeyEqualsExpression);
             }
 
-            public TProjection FindActualProjectionByKey(TPrimaryKey primaryKey)
-            {
+            public TProjection FindActualProjectionByKey(TPrimaryKey primaryKey) {
                 var projectionEntity = Repository.FindActualProjectionByKey(owner.Projection, primaryKey);
-                if (projectionEntity != null && ExpressionHelper.IsFitEntity(Repository.Find(primaryKey), owner.GetFilterExpression()))
-                {
+                if(projectionEntity != null && ExpressionHelper.IsFitEntity(Repository.Find(primaryKey), owner.GetFilterExpression())) {
                     owner.OnEntitiesLoaded(GetUnitOfWork(Repository), new TProjection[] { projectionEntity });
                     return projectionEntity;
                 }
                 return null;
             }
 
-            void OnMessage(EntityMessage<TEntity, TPrimaryKey> message)
-            {
-                if (!owner.IsLoaded)
+            void OnMessage(EntityMessage<TEntity, TPrimaryKey> message) {
+                if(!owner.IsLoaded)
                     return;
-                switch (message.MessageType)
-                {
+                switch(message.MessageType) {
                     case EntityMessageType.Added:
                         OnEntityAdded(message.PrimaryKey);
                         break;
@@ -122,24 +107,20 @@ namespace DevExpress.DevAV.Common.ViewModel
                 }
             }
 
-            void OnEntityAdded(TPrimaryKey primaryKey)
-            {
+            void OnEntityAdded(TPrimaryKey primaryKey) {
                 var projectionEntity = FindActualProjectionByKey(primaryKey);
-                if (projectionEntity != null)
+                if(projectionEntity != null)
                     Entities.Add(projectionEntity);
             }
 
-            void OnEntityChanged(TPrimaryKey primaryKey)
-            {
+            void OnEntityChanged(TPrimaryKey primaryKey) {
                 var existingProjectionEntity = FindLocalProjectionByKey(primaryKey);
                 var projectionEntity = FindActualProjectionByKey(primaryKey);
-                if (projectionEntity == null)
-                {
+                if(projectionEntity == null) {
                     Entities.Remove(existingProjectionEntity);
                     return;
                 }
-                if (existingProjectionEntity != null)
-                {
+                if(existingProjectionEntity != null) {
                     Entities[Entities.IndexOf(existingProjectionEntity)] = projectionEntity;
                     owner.RestoreSelectedEntity(existingProjectionEntity, projectionEntity);
                     return;
@@ -147,8 +128,7 @@ namespace DevExpress.DevAV.Common.ViewModel
                 OnEntityAdded(primaryKey);
             }
 
-            void OnEntityDeleted(TPrimaryKey primaryKey)
-            {
+            void OnEntityDeleted(TPrimaryKey primaryKey) {
                 Entities.Remove(FindLocalProjectionByKey(primaryKey));
             }
         }
@@ -170,13 +150,12 @@ namespace DevExpress.DevAV.Common.ViewModel
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection
-            )
-        {
+            ) {
             this.unitOfWorkFactory = unitOfWorkFactory;
             this.getRepositoryFunc = getRepositoryFunc;
             this.Projection = projection;
             this.ChangeTracker = CreateEntitiesChangeTracker();
-            if (!this.IsInDesignMode())
+            if(!this.IsInDesignMode())
                 OnInitializeInRuntime();
         }
 
@@ -188,11 +167,9 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// <summary>
         /// The collection of entities loaded from the unit of work.
         /// </summary>
-        public ObservableCollection<TProjection> Entities
-        {
-            get
-            {
-                if (!IsLoaded)
+        public ObservableCollection<TProjection> Entities {
+            get {
+                if(!IsLoaded)
                     LoadEntities(false);
                 return entities;
             }
@@ -204,42 +181,34 @@ namespace DevExpress.DevAV.Common.ViewModel
 
         protected bool IsLoaded { get { return ReadOnlyRepository != null; } }
 
-        protected void LoadEntities(bool forceLoad)
-        {
-            if (forceLoad)
-            {
-                if (loadCancellationTokenSource != null)
+        protected void LoadEntities(bool forceLoad) {
+            if(forceLoad) {
+                if(loadCancellationTokenSource != null)
                     loadCancellationTokenSource.Cancel();
             }
-            else if (IsLoading)
-            {
+            else if(IsLoading) {
                 return;
             }
             loadCancellationTokenSource = LoadCore();
         }
 
-        void CancelLoading()
-        {
-            if (loadCancellationTokenSource != null)
+        void CancelLoading() {
+            if(loadCancellationTokenSource != null)
                 loadCancellationTokenSource.Cancel();
             IsLoading = false;
         }
 
-        CancellationTokenSource LoadCore()
-        {
+        CancellationTokenSource LoadCore() {
             IsLoading = true;
             var cancellationTokenSource = new CancellationTokenSource();
             var selectedEntityCallback = GetSelectedEntityCallback();
-            System.Threading.Tasks.Task.Factory.StartNew(() =>
-            {
+            System.Threading.Tasks.Task.Factory.StartNew(() => {
                 var repository = CreateReadOnlyRepository();
                 var entities = new ObservableCollection<TProjection>(repository.GetFilteredEntities(GetFilterExpression(), Projection));
                 OnEntitiesLoaded(GetUnitOfWork(repository), entities);
                 return new Tuple<IReadOnlyRepository<TEntity>, ObservableCollection<TProjection>>(repository, entities);
-            }).ContinueWith(x =>
-            {
-                if (!x.IsFaulted)
-                {
+            }).ContinueWith(x => {
+                if(!x.IsFaulted) {
                     ReadOnlyRepository = x.Result.Item1;
                     entities = x.Result.Item2;
                     this.RaisePropertyChanged(y => y.Entities);
@@ -250,62 +219,50 @@ namespace DevExpress.DevAV.Common.ViewModel
             return cancellationTokenSource;
         }
 
-        static TUnitOfWork GetUnitOfWork(IReadOnlyRepository<TEntity> repository)
-        {
+        static TUnitOfWork GetUnitOfWork(IReadOnlyRepository<TEntity> repository) {
             return (TUnitOfWork)repository.UnitOfWork;
         }
 
-        protected virtual void OnEntitiesLoaded(TUnitOfWork unitOfWork, IEnumerable<TProjection> entities)
-        {
+        protected virtual void OnEntitiesLoaded(TUnitOfWork unitOfWork, IEnumerable<TProjection> entities) {
         }
 
-        protected virtual void OnEntitiesAssigned(Func<TProjection> getSelectedEntityCallback)
-        {
+        protected virtual void OnEntitiesAssigned(Func<TProjection> getSelectedEntityCallback) {
         }
 
-        protected virtual Func<TProjection> GetSelectedEntityCallback()
-        {
+        protected virtual Func<TProjection> GetSelectedEntityCallback() {
             return null;
         }
 
-        protected virtual void RestoreSelectedEntity(TProjection existingProjectionEntity, TProjection projectionEntity)
-        {
+        protected virtual void RestoreSelectedEntity(TProjection existingProjectionEntity, TProjection projectionEntity) {
         }
 
-        protected virtual Expression<Func<TEntity, bool>> GetFilterExpression()
-        {
+        protected virtual Expression<Func<TEntity, bool>> GetFilterExpression() {
             return null;
         }
 
-        protected virtual void OnInitializeInRuntime()
-        {
-            if (ChangeTracker != null)
+        protected virtual void OnInitializeInRuntime() {
+            if(ChangeTracker != null)
                 ChangeTracker.RegisterMessageHandler();
         }
 
-        protected virtual void OnDestroy()
-        {
+        protected virtual void OnDestroy() {
             CancelLoading();
-            if (ChangeTracker != null)
+            if(ChangeTracker != null)
                 ChangeTracker.UnregisterMessageHandler();
         }
 
-        protected virtual void OnIsLoadingChanged()
-        {
+        protected virtual void OnIsLoadingChanged() {
         }
 
-        protected IReadOnlyRepository<TEntity> CreateReadOnlyRepository()
-        {
+        protected IReadOnlyRepository<TEntity> CreateReadOnlyRepository() {
             return getRepositoryFunc(CreateUnitOfWork());
         }
 
-        protected TUnitOfWork CreateUnitOfWork()
-        {
+        protected TUnitOfWork CreateUnitOfWork() {
             return unitOfWorkFactory.CreateUnitOfWork();
         }
 
-        protected virtual IEntitiesChangeTracker CreateEntitiesChangeTracker()
-        {
+        protected virtual IEntitiesChangeTracker CreateEntitiesChangeTracker() {
             return null;
         }
 
@@ -315,18 +272,15 @@ namespace DevExpress.DevAV.Common.ViewModel
         object IDocumentContent.Title { get { return null; } }
 
         protected virtual void OnClose(CancelEventArgs e) { }
-        void IDocumentContent.OnClose(CancelEventArgs e)
-        {
+        void IDocumentContent.OnClose(CancelEventArgs e) {
             OnClose(e);
         }
 
-        void IDocumentContent.OnDestroy()
-        {
+        void IDocumentContent.OnDestroy() {
             OnDestroy();
         }
 
-        IDocumentOwner IDocumentContent.DocumentOwner
-        {
+        IDocumentOwner IDocumentContent.DocumentOwner {
             get { return DocumentOwner; }
             set { DocumentOwner = value; }
         }
@@ -343,8 +297,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     /// The base interface for view models exposing a collection of entities of the given type.
     /// </summary>
     /// <typeparam name="TEntity">An entity type.</typeparam>
-    public interface IEntitiesViewModel<TEntity> : IDocumentContent where TEntity : class
-    {
+    public interface IEntitiesViewModel<TEntity> : IDocumentContent where TEntity : class {
 
         /// <summary>
         /// The loaded collection of entities.

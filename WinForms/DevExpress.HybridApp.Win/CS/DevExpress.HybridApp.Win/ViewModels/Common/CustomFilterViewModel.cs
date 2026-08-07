@@ -1,7 +1,6 @@
 using System;
-using DevExpress.Mvvm.POCO;
-using System.Collections.Generic;
 using DevExpress.Data.Filtering;
+using DevExpress.Mvvm.POCO;
 
 namespace DevExpress.DevAV.ViewModels {
     public class CustomFilterViewModel {

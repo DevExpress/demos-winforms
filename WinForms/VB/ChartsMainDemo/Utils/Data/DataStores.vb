@@ -3,6 +3,7 @@ Imports System.Collections.Generic
 Imports System.Data
 Imports System.Drawing
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Utils
 
 Namespace DevExpress.XtraCharts.Demos
@@ -68,11 +69,11 @@ Namespace DevExpress.XtraCharts.Demos
     Friend Class DevAV
 
         Friend Shared Function GetLastYear() As Integer
-            Return Date.Now.Year - 1
+            Return TutorialConstants.Now.Year - 1
         End Function
 
         Friend Shared Function GetSales() As DataTable
-            Dim prevYear As Integer = Date.Now.Year - 1
+            Dim prevYear As Integer = TutorialConstants.Now.Year - 1
             Dim table As DataTable = New DataTable()
             table.Columns.AddRange(New DataColumn() {New DataColumn("Year", GetType(Integer)), New DataColumn("Region", GetType(String)), New DataColumn("Sales", GetType(Decimal))})
             table.Rows.Add(prevYear - 2, "Asia", 4.2372R)
@@ -125,7 +126,7 @@ Namespace DevExpress.XtraCharts.Demos
         End Function
 
         Friend Shared Function GetBranchesSales() As DataTable
-            Dim lastYear As Integer = Date.Now.Year - 1
+            Dim lastYear As Integer = TutorialConstants.Now.Year - 1
             Dim table As DataTable = New DataTable()
             table.Columns.AddRange(New DataColumn() {New DataColumn("Year", GetType(Date)), New DataColumn("Company", GetType(String)), New DataColumn("Sales", GetType(Decimal)), New DataColumn("Charges", GetType(Decimal)), New DataColumn("Penalties", GetType(Decimal))})
             table.Rows.Add(New DateTime(lastYear - 10, 12, 31), "DevAV North", 1.010, 0.430, 0)
@@ -178,7 +179,7 @@ Namespace DevExpress.XtraCharts.Demos
         End Function
 
         Friend Shared Function GetSalesByLast10Years() As DataTable
-            Dim lastYear As Integer = Date.Now.Year - 1
+            Dim lastYear As Integer = TutorialConstants.Now.Year - 1
             Dim table As DataTable = New DataTable()
             table.Columns.AddRange(New DataColumn() {New DataColumn("Year", GetType(Date)), New DataColumn("Region", GetType(String)), New DataColumn("Sales", GetType(Decimal))})
             table.Rows.Add(New DateTime(lastYear - 10, 12, 31), "North America", 3.010D)
@@ -218,7 +219,7 @@ Namespace DevExpress.XtraCharts.Demos
         End Function
 
         Friend Shared Function GetOutsideVendorCosts() As DataTable
-            Dim lastYear As Integer = Date.Now.Year - 1
+            Dim lastYear As Integer = TutorialConstants.Now.Year - 1
             Dim table As DataTable = New DataTable()
             table.Columns.AddRange(New DataColumn() {New DataColumn("Year", GetType(Date)), New DataColumn("Company", GetType(String)), New DataColumn("Costs", GetType(Decimal))})
             table.Rows.Add(New DateTime(lastYear - 6, 1, 1), "DevAV North", 362.5D)

@@ -614,7 +614,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colPriority.Caption = "PRIORITY";
+            this.colPriority.Caption = "Priority";
             this.colPriority.FieldName = "Priority";
             this.colPriority.Name = "colPriority";
             this.colPriority.OptionsColumn.AllowEdit = false;
@@ -628,7 +628,7 @@ namespace DevExpress.DevAV.Modules {
             
             this.colDueDate.AppearanceCell.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colDueDate.AppearanceCell.Options.UseFont = true;
-            this.colDueDate.Caption = "DUE DATE";
+            this.colDueDate.Caption = "Due Date";
             this.colDueDate.FieldName = "DueDate";
             this.colDueDate.Name = "colDueDate";
             this.colDueDate.OptionsColumn.AllowEdit = false;
@@ -639,7 +639,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colSubject1.Caption = "SUBJECT";
+            this.colSubject1.Caption = "Subject";
             this.colSubject1.FieldName = "Subject";
             this.colSubject1.Name = "colSubject1";
             this.colSubject1.OptionsColumn.AllowEdit = false;
@@ -650,7 +650,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colDescription.Caption = "DESCRIPTION";
+            this.colDescription.Caption = "Description";
             this.colDescription.FieldName = "Description";
             this.colDescription.Name = "colDescription";
             this.colDescription.OptionsColumn.AllowEdit = false;
@@ -661,7 +661,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCompletion.Caption = "COMPLETION";
+            this.colCompletion.Caption = "Completion";
             this.colCompletion.ColumnEdit = this.repositoryItemProgressBar1;
             this.colCompletion.FieldName = "Completion";
             this.colCompletion.Name = "colCompletion";
@@ -710,7 +710,7 @@ namespace DevExpress.DevAV.Modules {
             
             this.colCreatedOn.AppearanceCell.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colCreatedOn.AppearanceCell.Options.UseFont = true;
-            this.colCreatedOn.Caption = "CREATED ON";
+            this.colCreatedOn.Caption = "Created On";
             this.colCreatedOn.FieldName = "CreatedOn";
             this.colCreatedOn.Name = "colCreatedOn";
             this.colCreatedOn.OptionsColumn.AllowEdit = false;
@@ -721,7 +721,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colSubject.Caption = "SUBJECT";
+            this.colSubject.Caption = "Subject";
             this.colSubject.FieldName = "Subject";
             this.colSubject.Name = "colSubject";
             this.colSubject.OptionsColumn.AllowEdit = false;
@@ -732,7 +732,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCreatedBy.Caption = "MANAGER";
+            this.colCreatedBy.Caption = "Manager";
             this.colCreatedBy.FieldName = "CreatedBy";
             this.colCreatedBy.Name = "colCreatedBy";
             this.colCreatedBy.OptionsColumn.AllowEdit = false;
@@ -970,7 +970,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForTasks.AppearanceItemCaption.Options.UseTextOptions = true;
             this.ItemForTasks.AppearanceItemCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
             this.ItemForTasks.Control = this.gridControlTasks;
-            this.ItemForTasks.CustomizationFormText = "TASKS";
+            this.ItemForTasks.CustomizationFormText = "Tasks";
             this.ItemForTasks.Location = new System.Drawing.Point(0, 468);
             this.ItemForTasks.Name = "ItemForTasks";
             this.ItemForTasks.Size = new System.Drawing.Size(1160, 206);

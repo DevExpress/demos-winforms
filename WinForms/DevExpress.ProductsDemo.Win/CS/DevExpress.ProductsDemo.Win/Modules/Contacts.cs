@@ -1,19 +1,18 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win;
+using DevExpress.MailDemo.Win;
+using DevExpress.ProductsDemo.Win.Forms;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Layout.ViewInfo;
-using DevExpress.ProductsDemo.Win.Forms;
-using DevExpress.MailClient.Win;
-using DevExpress.MailDemo.Win;
-
-using System.Collections;
 
 namespace DevExpress.ProductsDemo.Win.Modules {
     public partial class Contacts : BaseModule {
@@ -92,7 +91,8 @@ namespace DevExpress.ProductsDemo.Win.Modules {
                     gridControl1.MainView.BeginDataUpdate();
                     try {
                         DataHelper.Contacts.Remove(CurrentContact);
-                    } finally {
+                    }
+                    finally {
                         gridControl1.MainView.EndDataUpdate();
                     }
                     if(index > gridView1.DataRowCount - 1) index--;
@@ -105,7 +105,8 @@ namespace DevExpress.ProductsDemo.Win.Modules {
                         gridControl1.MainView.BeginDataUpdate();
                         try {
                             DataHelper.Contacts.Add(contact);
-                        } finally {
+                        }
+                        finally {
                             gridControl1.MainView.EndDataUpdate();
                         }
                         ColumnView view = gridControl1.MainView as ColumnView;
@@ -138,7 +139,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public override float ZoomFactor {
             get { return ucContactInfo1.ZoomFactor; }
-            set { 
+            set {
                 ucContactInfo1.ZoomFactor = value;
                 SetZoomCaption();
             }
@@ -150,7 +151,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         }
 
         private void gridView1_RowCellClick(object sender, RowCellClickEventArgs e) {
-            if(e.Button == MouseButtons.Left && e.RowHandle >= 0 && e.Clicks == 2) 
+            if(e.Button == MouseButtons.Left && e.RowHandle >= 0 && e.Clicks == 2)
                 EditContact(CurrentContact);
         }
 
@@ -178,7 +179,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             return ret;
         }
         private void gridView1_KeyDown(object sender, KeyEventArgs e) {
-            if(e.KeyData == Keys.Enter && gridView1.FocusedRowHandle >=0)
+            if(e.KeyData == Keys.Enter && gridView1.FocusedRowHandle >= 0)
                 EditContact(CurrentContact);
         }
         void UpdateInfo() {
@@ -224,8 +225,8 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         IList ApplyFilter(List<Contact> list, AlphaIndex alpha) {
             if(alpha == null || alpha == AlphaIndex.All) return list;
             var res = from q in list
-                    where alpha.Match(extractName(q))
-                    select q;
+                      where alpha.Match(extractName(q))
+                      select q;
             return res.ToList();
 
         }
@@ -264,7 +265,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         static AlphaIndex _all, _alphaNumber;
         public static AlphaIndex All {
             get {
-                if(_all == null) _all = new AlphaIndex() { Count = 0, Index = "ALL" };
+                if(_all == null) _all = new AlphaIndex() { Count = 0, Index = "All" };
                 return _all;
             }
         }

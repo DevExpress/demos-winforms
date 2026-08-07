@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Drawing;
 using System.Collections.Generic;
+using System.Drawing;
+using DevExpress.DXperience.Demos;
 using DevExpress.SalesDemo.Model;
 using DevExpress.SalesDemo.Win.Modules;
 using DevExpress.XtraCharts;
-using DevExpress.DXperience.Demos;
 
 namespace DevExpress.SalesDemo.Win {
     public static class ChartUtils {
@@ -20,14 +20,14 @@ namespace DevExpress.SalesDemo.Win {
             });
         }
         public static void CustomDrawAxisLabel(object sender, CustomDrawAxisLabelEventArgs e) {
-            if (e.Item.Axis is AxisY) {
+            if(e.Item.Axis is AxisY) {
                 double value = ((double)e.Item.AxisValue);
                 e.Item.Text = DoubleToShortString(value);
             }
             ChartControl chart = sender as ChartControl;
-            if (chart == null)
+            if(chart == null)
                 return;
-            if (chart.LookAndFeel.ActiveSkinName == "Office 2016 Dark")
+            if(chart.LookAndFeel.ActiveSkinName == "Office 2016 Dark")
                 e.Item.TextColor = Color.White;
         }
         public static void CustomDrawSeriesPointLegendMarker(object sender, CustomDrawSeriesPointEventArgs e) {
@@ -42,32 +42,32 @@ namespace DevExpress.SalesDemo.Win {
             double value = e.SeriesPoint.Values[0];
             e.LabelText = "$" + DoubleToShortString(value);
             ChartControl chart = sender as ChartControl;
-            if (chart == null)
+            if(chart == null)
                 return;
-            if (chart.LookAndFeel.ActiveSkinName == "Office 2016 Dark")
+            if(chart.LookAndFeel.ActiveSkinName == "Office 2016 Dark")
                 e.LegendTextColor = Color.White;
         }
         public static void CustomDrawBarSeriesPoint(object sender, CustomDrawSeriesPointEventArgs e) {
             double value = e.SeriesPoint.Values[0];
-            if (value >= 1000000)
+            if(value >= 1000000)
                 e.LabelText = Math.Round(value / 1000000).ToString() + "M";
-            else if (value >= 10000)
+            else if(value >= 10000)
                 e.LabelText = Math.Round(value / 1000).ToString() + "K";
         }
 
         static Bitmap CreateLegendMarker(Size size, Color color) {
             Bitmap bmp = new Bitmap(size.Width, size.Height);
-            using (Graphics gr = Graphics.FromImage(bmp)) {
-                using (Brush brush = new SolidBrush(color)) {
+            using(Graphics gr = Graphics.FromImage(bmp)) {
+                using(Brush brush = new SolidBrush(color)) {
                     gr.FillRectangle(brush, new Rectangle(Point.Empty, size));
                 }
             }
             return bmp;
         }
         static string DoubleToShortString(double value) {
-            if (value >= 1000000)
+            if(value >= 1000000)
                 return Math.Round(value / 1000000).ToString() + "M";
-            else if (value >= 1000)
+            else if(value >= 1000)
                 return Math.Round(value / 1000).ToString() + "K";
             else
                 return value.ToString();

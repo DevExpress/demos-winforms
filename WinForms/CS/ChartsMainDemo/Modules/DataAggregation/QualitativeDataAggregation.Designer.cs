@@ -57,7 +57,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl1);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // chart
             // 
@@ -77,12 +77,14 @@
             series1.ArgumentDataMember = "Product";
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
             series1.Name = "Series 1";
+            series1.SeriesID = 0;
             series1.ValueDataMembersSerializable = "Income";
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.chart.Size = new System.Drawing.Size(546, 334);
             this.chart.TabIndex = 1;
             chartTitle1.Text = "Volume (USD)";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 
@@ -165,14 +167,14 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(941, 150, 650, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl1.Size = new System.Drawing.Size(241, 538);
             this.layoutControl1.TabIndex = 3;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // radioGroupAggregationFunction
             // 
             this.radioGroupAggregationFunction.AutoSizeInLayoutControl = true;
-            this.radioGroupAggregationFunction.Location = new System.Drawing.Point(12, 31);
+            this.radioGroupAggregationFunction.Location = new System.Drawing.Point(12, 34);
             this.radioGroupAggregationFunction.Name = "radioGroupAggregationFunction";
             this.radioGroupAggregationFunction.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupAggregationFunction.Properties.Appearance.Options.UseBackColor = true;
@@ -185,7 +187,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Maximal"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Sum"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Count")});
-            this.radioGroupAggregationFunction.Size = new System.Drawing.Size(217, 98);
+            this.radioGroupAggregationFunction.Size = new System.Drawing.Size(217, 152);
             this.radioGroupAggregationFunction.StyleController = this.layoutControl1;
             this.radioGroupAggregationFunction.TabIndex = 4;
             this.radioGroupAggregationFunction.SelectedIndexChanged += new System.EventHandler(this.radioGroupAggregationFunction_SelectedIndexChanged);
@@ -198,7 +200,7 @@
             this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -209,7 +211,7 @@
             this.layoutControlGroup3});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroup2.Text = "Marker Kind";
             // 
             // layoutControlGroup3
@@ -219,7 +221,7 @@
             this.layoutControlGroup4});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(241, 538);
             // 
             // layoutControlGroup4
             // 
@@ -228,7 +230,7 @@
             this.layoutControlItemAggregationFunction});
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "layoutControlGroup4";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroup4.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup4.Text = "Aggregation Function";
             // 
@@ -237,8 +239,7 @@
             this.layoutControlItemAggregationFunction.Control = this.radioGroupAggregationFunction;
             this.layoutControlItemAggregationFunction.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemAggregationFunction.Name = "layoutControlItemAggregationFunction";
-            this.layoutControlItemAggregationFunction.Size = new System.Drawing.Size(221, 505);
-            this.layoutControlItemAggregationFunction.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemAggregationFunction.Size = new System.Drawing.Size(221, 496);
             this.layoutControlItemAggregationFunction.TextVisible = false;
             // 
             // QualitativeDataAggregationDemo

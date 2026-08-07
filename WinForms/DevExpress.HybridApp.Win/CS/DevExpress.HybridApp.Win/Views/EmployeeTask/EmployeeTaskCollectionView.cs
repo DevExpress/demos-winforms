@@ -1,9 +1,7 @@
 using DevExpress.DevAV.Common.ViewModel;
-using DevExpress.DevAV.Services;
 using DevExpress.DevAV.ViewModels;
 using DevExpress.Utils.MVVM.Services;
 using DevExpress.Utils.MVVM.UI;
-using DevExpress.XtraPrinting;
 
 namespace DevExpress.DevAV.Views {
     [ViewType(DevAVDbViewModel.EmployeeTaskCollectionViewDocumentType)]
@@ -12,7 +10,7 @@ namespace DevExpress.DevAV.Views {
 
             InitializeComponent();
             gridView.SetupCollectionGrid();
-            if(!mvvmContext.IsDesignMode) 
+            if(!mvvmContext.IsDesignMode)
                 InitBindings();
         }
         void InitBindings() {
@@ -27,7 +25,7 @@ namespace DevExpress.DevAV.Views {
             mvvmContext.RegisterService(PrintableControlPreviewService.Create(gridControl));
         }
         protected override void DocumentShownMessageReceived(DocumentShownMessage msg) {
-            if(msg.DocumentType != DevAVDbViewModel.EmployeeTaskCollectionViewDocumentType) 
+            if(msg.DocumentType != DevAVDbViewModel.EmployeeTaskCollectionViewDocumentType)
                 return;
             var fluentAPI = mvvmContext.OfType<EmployeeTaskCollectionViewModel>();
             employeeTaskFilterView.SetViewModel(fluentAPI.ViewModel.FilterViewModel);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 using DevExpress.Utils;
 using DevExpress.XtraBars.Docking2010.Views;
 using DevExpress.XtraBars.Docking2010.Views.Tabbed;
@@ -151,11 +152,10 @@ namespace DevExpress.XtraCharts.Demos {
     public class SeriesPointsInitializer {
         public static void InitSeries(ChartControl chart, int count) {
             if(chart.Series.Count > 2 && chart.Series[0].View.GetType().Equals(typeof(PointSeriesView))) {
-                NonCryptographicRandom random = NonCryptographicRandom.System;
-                chart.Series[0].DataSource = PointGenerator.GenerateCluster(random, 140, 1280, 100, 1240, count);
-                chart.Series[1].DataSource = PointGenerator.GenerateCluster(random, 500, 1600, 1000, 2100, count);
-                chart.Series[2].DataSource = PointGenerator.GenerateCluster(random, 450, 950, 1550, 2050, count);
-                chart.Series[3].DataSource = PointGenerator.GenerateCluster(random, 800, 1700, 300, 1200, count);
+                chart.Series[0].DataSource = PointGenerator.GenerateCluster(TutorialConstants.Random, 140, 1280, 100, 1240, count);
+                chart.Series[1].DataSource = PointGenerator.GenerateCluster(TutorialConstants.Random, 500, 1600, 1000, 2100, count);
+                chart.Series[2].DataSource = PointGenerator.GenerateCluster(TutorialConstants.Random, 450, 950, 1550, 2050, count);
+                chart.Series[3].DataSource = PointGenerator.GenerateCluster(TutorialConstants.Random, 800, 1700, 300, 1200, count);
                 foreach(Series series in chart.Series) {
                     series.ArgumentDataMember = "Argument";
                     series.ValueDataMembers.AddRange("Value");

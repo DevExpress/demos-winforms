@@ -52,56 +52,48 @@ Namespace DevExpress.ApplicationUI.Demos
             ' 
             Me.document1.Caption = "AAPL"
             Me.document1.ControlName = "document1"
-            Me.document1.ControlTypeName = Nothing
             Me.document1.Height = 150
             ' 
             ' document2
             ' 
             Me.document2.Caption = "YHOO"
             Me.document2.ControlName = "document2"
-            Me.document2.ControlTypeName = Nothing
             Me.document2.Height = 150
             ' 
             ' document3
             ' 
             Me.document3.Caption = "CSCO"
             Me.document3.ControlName = "document3"
-            Me.document3.ControlTypeName = Nothing
             Me.document3.Height = 150
             ' 
             ' document4
             ' 
             Me.document4.Caption = "ADBE"
             Me.document4.ControlName = "document4"
-            Me.document4.ControlTypeName = Nothing
             Me.document4.Height = 150
             ' 
             ' document5
             ' 
             Me.document5.Caption = "BAC"
             Me.document5.ControlName = "document5"
-            Me.document5.ControlTypeName = Nothing
             Me.document5.Height = 150
             ' 
             ' document6
             ' 
             Me.document6.Caption = "DELL"
             Me.document6.ControlName = "document6"
-            Me.document6.ControlTypeName = Nothing
             Me.document6.Height = 150
             ' 
             ' document7
             ' 
             Me.document7.Caption = "NVDA"
             Me.document7.ControlName = "document7"
-            Me.document7.ControlTypeName = Nothing
             Me.document7.Height = 150
             ' 
             ' document8
             ' 
             Me.document8.Caption = "HPQ"
             Me.document8.ControlName = "document8"
-            Me.document8.ControlTypeName = Nothing
             Me.document8.Height = 150
             ' 
             ' stackGroup1

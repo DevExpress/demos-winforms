@@ -1,5 +1,5 @@
-Imports DevExpress.XtraScheduler.Native
 Imports System
+Imports DevExpress.XtraScheduler.Native
 
 Namespace DevExpress.XtraScheduler.Demos.DemoData
 

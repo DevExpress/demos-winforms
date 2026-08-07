@@ -11,6 +11,7 @@ Imports DevExpress.Internal
 Imports DevExpress.Utils.Drawing
 Imports DevExpress.XtraEditors
 Imports Message = DevExpress.WindowsMailClient.Win.Data.Message
+Imports DevExpress.DXperience.Demos
 #If Not NET
 Imports System.Data.Entity
 
@@ -62,9 +63,9 @@ Namespace DevExpress.WindowsMailClient.Win.Model
             Get
                 If _employees Is Nothing Then
 #If Not NET
-                    Dim devAvDb As DevAVDb = New DevAVDb()
+                    Dim devAvDb As DevAVDb = New DevAVDb(MainFormHelper.TakeScreens)
 #Else
-                    DevAVDb devAvDb = new DevAVDb($"Data Source={Internal.DevAVDataDirectoryHelper.GetFile("devav.sqlite3")}");
+                    DevAVDb devAvDb = new DevAVDb($"Data Source={Internal.DevAVDataDirectoryHelper.GetFile("devav.sqlite3")}", MainFormHelper.TakeScreens);
 #End If
                     devAvDb.Employees.Load()
                     _employees = devAvDb.Employees.Local.ToBindingList()

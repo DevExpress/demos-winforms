@@ -1,16 +1,12 @@
 using System;
-using System.Linq;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
+using DevExpress.DevAV.Common.DataModel;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm.DataAnnotations;
-using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.Common.DataModel;
 
-namespace DevExpress.DevAV.Common.ViewModel
-{
+namespace DevExpress.DevAV.Common.ViewModel {
     /// <summary>
     /// The base class for POCO view models that operate the collection of documents.
     /// </summary>
@@ -18,8 +14,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     /// <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
     public abstract class DocumentsViewModel<TModule, TUnitOfWork> : ISupportLogicalLayout
         where TModule : ModuleDescription<TModule>
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         const string ViewLayoutName = "DocumentViewModel";
 
@@ -29,20 +24,17 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Initializes a new instance of the DocumentsViewModel class.
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
-        protected DocumentsViewModel(IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory)
-        {
+        protected DocumentsViewModel(IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory) {
             this.unitOfWorkFactory = unitOfWorkFactory;
             Modules = CreateModules().ToArray();
-            foreach (var module in Modules)
+            foreach(var module in Modules)
                 Messenger.Default.Register<NavigateMessage<TModule>>(this, module, x => Show(x.Token));
             Messenger.Default.Register<DestroyOrphanedDocumentsMessage>(this, x => DestroyOrphanedDocuments());
         }
 
-        void DestroyOrphanedDocuments()
-        {
+        void DestroyOrphanedDocuments() {
             var orphans = this.GetOrphanedDocuments().Except(this.GetImmediateChildren());
-            foreach (IDocument orphan in orphans)
-            {
+            foreach(IDocument orphan in orphans) {
                 orphan.DestroyOnClose = true;
                 orphan.Close();
             }
@@ -69,8 +61,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Saves changes in all opened documents.
         /// Since DocumentsViewModel is a POCO view model, an instance of this class will also expose the SaveAllCommand property that can be used as a binding source in views.
         /// </summary>
-        public void SaveAll()
-        {
+        public void SaveAll() {
             Messenger.Default.Send(new SaveAllMessage());
         }
 
@@ -79,11 +70,9 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since DocumentsViewModel is a POCO view model, an instance of this class will also expose the OnClosingCommand property that can be used as a binding source in views.
         /// </summary>
         /// <param name="cancelEventArgs">An argument of the System.ComponentModel.CancelEventArgs type which is used to cancel closing if needed.</param>
-        public virtual void OnClosing(CancelEventArgs cancelEventArgs)
-        {
+        public virtual void OnClosing(CancelEventArgs cancelEventArgs) {
             SaveLogicalLayout();
-            if (LayoutSerializationService != null)
-            {
+            if(LayoutSerializationService != null) {
                 PersistentLayoutHelper.PersistentViewsLayout[ViewLayoutName] = LayoutSerializationService.Serialize();
             }
             Messenger.Default.Send(new CloseAllMessage(cancelEventArgs));
@@ -101,8 +90,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since DocumentsViewModel is a POCO view model, an instance of this class will also expose the ShowCommand property that can be used as a binding source in views.
         /// </summary>
         /// <param name="module">A navigation list entry specifying a document what to be opened.</param>
-        public void Show(TModule module)
-        {
+        public void Show(TModule module) {
             IDocument document = ShowCore(module);
             documentChanging = true;
             ActiveModule = module;
@@ -110,14 +98,12 @@ namespace DevExpress.DevAV.Common.ViewModel
             DocumentShown(module, document);
         }
 
-        protected virtual void DocumentShown(TModule module, IDocument document)
-        {
-            
+        protected virtual void DocumentShown(TModule module, IDocument document) {
+
         }
 
-        public IDocument ShowCore(TModule module)
-        {
-            if (module == null || DocumentManagerService == null)
+        public IDocument ShowCore(TModule module) {
+            if(module == null || DocumentManagerService == null)
                 return null;
             IDocument document = DocumentManagerService.FindDocumentByIdOrCreate(module.DocumentType, x => CreateDocument(module));
             document.Show();
@@ -129,9 +115,8 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since DocumentsViewModel is a POCO view model, an instance of this class will also expose the PinPeekCollectionViewCommand property that can be used as a binding source in views.
         /// </summary>
         /// <param name="module">A navigation list entry that is used as a PeekCollectionViewModel factory.</param>
-        public void PinPeekCollectionView(TModule module)
-        {
-            if (WorkspaceDocumentManagerService == null)
+        public void PinPeekCollectionView(TModule module) {
+            if(WorkspaceDocumentManagerService == null)
                 return;
             IDocument document = WorkspaceDocumentManagerService.FindDocumentByIdOrCreate(module.DocumentType, x => CreatePinnedPeekCollectionDocument(module));
             document.Show();
@@ -141,20 +126,18 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Finalizes the DocumentsViewModel initialization and opens the default document.
         /// Since DocumentsViewModel is a POCO view model, an instance of this class will also expose the OnLoadedCommand property that can be used as a binding source in views.
         /// </summary>
-        public virtual void OnLoaded(TModule module)
-        {
+        public virtual void OnLoaded(TModule module) {
             IsLoaded = true;
             
             
             
-                Show(module);
+            Show(module);
             
             
         }
 
         bool documentChanging = false;
-        void OnActiveDocumentChanged(object sender, ActiveDocumentChangedEventArgs e)
-        {
+        void OnActiveDocumentChanged(object sender, ActiveDocumentChangedEventArgs e) {
             
             
             
@@ -175,74 +158,62 @@ namespace DevExpress.DevAV.Common.ViewModel
 
         protected bool IsLoaded { get; private set; }
 
-        protected virtual void OnSelectedModuleChanged(TModule oldModule)
-        {
-            if (IsLoaded && !documentChanging)
+        protected virtual void OnSelectedModuleChanged(TModule oldModule) {
+            if(IsLoaded && !documentChanging)
                 Show(SelectedModule);
         }
 
-        protected virtual void OnActiveModuleChanged(TModule oldModule)
-        {
+        protected virtual void OnActiveModuleChanged(TModule oldModule) {
             SelectedModule = ActiveModule;
         }
 
-        IDocument CreateDocument(TModule module)
-        {
+        IDocument CreateDocument(TModule module) {
             var document = DocumentManagerService.CreateDocument(module.DocumentType, null, this);
             document.Title = GetModuleTitle(module);
             document.DestroyOnClose = false;
             return document;
         }
 
-        protected virtual string GetModuleTitle(TModule module)
-        {
+        protected virtual string GetModuleTitle(TModule module) {
             return module.ModuleTitle;
         }
 
-        IDocument CreatePinnedPeekCollectionDocument(TModule module)
-        {
+        IDocument CreatePinnedPeekCollectionDocument(TModule module) {
             var document = WorkspaceDocumentManagerService.CreateDocument("PeekCollectionView", module.CreatePeekCollectionViewModel());
             document.Title = module.ModuleTitle;
             return document;
         }
 
-        protected Func<TModule, object> GetPeekCollectionViewModelFactory<TEntity, TPrimaryKey>(Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc) where TEntity : class
-        {
+        protected Func<TModule, object> GetPeekCollectionViewModelFactory<TEntity, TPrimaryKey>(Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc) where TEntity : class {
             return module => PeekCollectionViewModel<TModule, TEntity, TPrimaryKey, TUnitOfWork>.Create(module, unitOfWorkFactory, getRepositoryFunc).SetParentViewModel(this);
         }
 
         protected abstract TModule[] CreateModules();
 
-        protected TUnitOfWork CreateUnitOfWork()
-        {
+        protected TUnitOfWork CreateUnitOfWork() {
             return unitOfWorkFactory.CreateUnitOfWork();
         }
 
-        public void SaveLogicalLayout()
-        {
+        public void SaveLogicalLayout() {
             PersistentLayoutHelper.PersistentLogicalLayout = this.SerializeDocumentManagerService();
         }
 
-        public bool RestoreLogicalLayout()
-        {
-            if (string.IsNullOrEmpty(PersistentLayoutHelper.PersistentLogicalLayout))
+        public bool RestoreLogicalLayout() {
+            if(string.IsNullOrEmpty(PersistentLayoutHelper.PersistentLogicalLayout))
                 return false;
             this.RestoreDocumentManagerService(PersistentLayoutHelper.PersistentLogicalLayout);
             return true;
         }
 
-        bool ISupportLogicalLayout.CanSerialize
-        {
+        bool ISupportLogicalLayout.CanSerialize {
             get { return true; }
         }
 
-        IDocumentManagerService ISupportLogicalLayout.DocumentManagerService
-        {
+        IDocumentManagerService ISupportLogicalLayout.DocumentManagerService {
             get { return DocumentManagerService; }
         }
 
-        IEnumerable<object> ISupportLogicalLayout.LookupViewModels
-        {
+        IEnumerable<object> ISupportLogicalLayout.LookupViewModels {
             get { return null; }
         }
     }
@@ -251,8 +222,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     /// A base class representing a navigation list entry.
     /// </summary>
     /// <typeparam name="TModule">A navigation list entry type.</typeparam>
-    public abstract partial class ModuleDescription<TModule> where TModule : ModuleDescription<TModule>
-    {
+    public abstract partial class ModuleDescription<TModule> where TModule : ModuleDescription<TModule> {
 
         readonly Func<TModule, object> peekCollectionViewModelFactory;
         object peekCollectionViewModel;
@@ -264,8 +234,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// <param name="documentType">A string value that specifies the view type of corresponding document.</param>
         /// <param name="group">A navigation list entry group name.</param>
         /// <param name="peekCollectionViewModelFactory">An optional parameter that provides a function used to create a PeekCollectionViewModel that provides quick navigation between collection views.</param>
-        public ModuleDescription(string title, string documentType, string group, Func<TModule, object> peekCollectionViewModelFactory = null)
-        {
+        public ModuleDescription(string title, string documentType, string group, Func<TModule, object> peekCollectionViewModelFactory = null) {
             ModuleTitle = title;
             ModuleGroup = group;
             DocumentType = documentType;
@@ -290,13 +259,11 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// <summary>
         /// A primary instance of corresponding PeekCollectionViewModel used to quick navigation between collection views.
         /// </summary>
-        public object PeekCollectionViewModel
-        {
-            get
-            {
-                if (peekCollectionViewModelFactory == null)
+        public object PeekCollectionViewModel {
+            get {
+                if(peekCollectionViewModelFactory == null)
                     return null;
-                if (peekCollectionViewModel == null)
+                if(peekCollectionViewModel == null)
                     peekCollectionViewModel = CreatePeekCollectionViewModel();
                 return peekCollectionViewModel;
             }
@@ -305,8 +272,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// <summary>
         /// Creates and returns a new instance of the corresponding PeekCollectionViewModel that provides quick navigation between collection views.
         /// </summary>
-        public object CreatePeekCollectionViewModel()
-        {
+        public object CreatePeekCollectionViewModel() {
             return peekCollectionViewModelFactory((TModule)this);
         }
     }
@@ -314,8 +280,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     /// <summary>
     /// Represents a navigation pane state.
     /// </summary>
-    public enum NavigationPaneVisibility
-    {
+    public enum NavigationPaneVisibility {
 
         /// <summary>
         /// Navigation pane is visible and minimized.

@@ -1,12 +1,10 @@
 ﻿using System;
-using System.IO;
-using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.DentalClinic.Model;
+using DevExpress.DXperience.Demos;
 using DevExpress.ExpressApp;
-using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 using DevExpress.Utils;
@@ -46,6 +44,7 @@ namespace DevExpress.DentalClinic {
             DataGenerator.Instance.RecreateData();
 #endif
             Task rescheduleAppointments = InvoiceHelper.RescheduleAppointments();
+            MainFormHelper.InitTakeScreen(DevExpress.Data.Utils.SafeEnvironment.GetCommandLineArgs());
             Application.Run(new MainForm(rescheduleAppointments));
         }
         static void RegisterEntities() {

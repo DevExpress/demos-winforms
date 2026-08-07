@@ -2,11 +2,9 @@
     using System;
     using System.ComponentModel;
     using System.Drawing;
-    using System.Linq;
     using System.Text;
     using DevExpress.Utils;
     using DevExpress.XtraEditors;
-    using DevExpress.XtraGauges.Core.Model;
     using DevExpress.XtraGrid;
     using DevExpress.XtraGrid.Columns;
     using DevExpress.XtraGrid.Registrator;

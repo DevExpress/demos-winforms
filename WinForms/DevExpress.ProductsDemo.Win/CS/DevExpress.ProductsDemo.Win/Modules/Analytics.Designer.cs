@@ -249,7 +249,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.labelControl3.ShowLineShadow = false;
             this.labelControl3.Size = new System.Drawing.Size(567, 34);
             this.labelControl3.TabIndex = 12;
-            this.labelControl3.Text = "MONTHLY SALES PERFORMANCE ";
+            this.labelControl3.Text = "Monthly Sales Performance ";
             // 
             // monthlySalesPerformance
             // 
@@ -289,7 +289,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.labelControl2.ShowLineShadow = false;
             this.labelControl2.Size = new System.Drawing.Size(567, 34);
             this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "DAILY SALES PERFORMANCE ";
+            this.labelControl2.Text = "Daily Sales Performance ";
             // 
             // dailySalesPerformance
             // 
@@ -334,7 +334,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.labelControl4.ShowLineShadow = false;
             this.labelControl4.Size = new System.Drawing.Size(408, 34);
             this.labelControl4.TabIndex = 16;
-            this.labelControl4.Text = "ANNUAL SALES PERFORMANCE ";
+            this.labelControl4.Text = "Annual Sales Performance ";
             // 
             // gaugeControl2
             // 
@@ -638,7 +638,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.labelFiscalToData.Name = "labelFiscalToData";
             this.labelFiscalToData.Size = new System.Drawing.Size(198, 16);
             this.labelFiscalToData.TabIndex = 13;
-            this.labelFiscalToData.Text = "FISCAL TO DATE";
+            this.labelFiscalToData.Text = "Fiscal To Date";
             this.labelFiscalToData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelFiscalYear
@@ -651,7 +651,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.labelFiscalYear.Name = "labelFiscalYear";
             this.labelFiscalYear.Size = new System.Drawing.Size(198, 16);
             this.labelFiscalYear.TabIndex = 14;
-            this.labelFiscalYear.Text = "FISCAL YEAR";
+            this.labelFiscalYear.Text = "Fiscal Year";
             this.labelFiscalYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fiscalToData
@@ -695,7 +695,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.labelControl5.ShowLineShadow = false;
             this.labelControl5.Size = new System.Drawing.Size(408, 34);
             this.labelControl5.TabIndex = 17;
-            this.labelControl5.Text = "SALES FORECAST";
+            this.labelControl5.Text = "Sales Forecast";
             // 
             // tableLayoutPanel2
             // 
@@ -768,7 +768,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             this.labelControl1.ShowLineShadow = false;
             this.labelControl1.Size = new System.Drawing.Size(408, 34);
             this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "SALES BY SECTOR ";
+            this.labelControl1.Text = "Sales By Sector ";
             // 
             // AnalyticsModule
             // 

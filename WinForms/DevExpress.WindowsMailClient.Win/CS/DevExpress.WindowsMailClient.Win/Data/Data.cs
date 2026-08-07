@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using DevExpress.DXperience.Demos;
 using DevExpress.WindowsMailClient.Win.Model;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraRichEdit;
@@ -47,16 +48,16 @@ namespace DevExpress.WindowsMailClient.Win.Data {
         }
         public DataRow Row { get { return _row; } }
         public int Priority {
-            get { return (int) _row["Priority"]; }
+            get { return (int)_row["Priority"]; }
             set { _row["Priority"] = value; }
         }
-        public int Attachment { get { return (int) _row["Attachment"]; } }
+        public int Attachment { get { return (int)_row["Attachment"]; } }
         public int Read {
-            get { return (int) _row["Read"]; }
+            get { return (int)_row["Read"]; }
             set { _row["Read"] = value; }
         }
         public int Flag {
-            get { return (int) _row["Flag"]; }
+            get { return (int)_row["Flag"]; }
             set { _row["Flag"] = value; }
         }
         public string Subject { get { return string.Format("{0}", _row["Subject"]); } }
@@ -72,12 +73,11 @@ namespace DevExpress.WindowsMailClient.Win.Data {
         string _from = String.Empty, _subject = String.Empty, _text = String.Empty, _plainText = string.Empty, _email = String.Empty;
         
         public Message() {
-            _date = DateTime.Now;
+            _date = TutorialConstants.Now;
         }
         public Message(DataRow row) {
             this._row = row;
-            var random = DevExpress.Data.Utils.NonCryptographicRandom.Default;
-            _date = DateTime.Now.AddDays((int) row["Day"]).AddSeconds(-random.Next(10000));
+            _date = TutorialConstants.Now.AddDays((int)row["Day"]).AddSeconds(-TutorialConstants.Random.Next(10000));
             _email = string.Format("{0}", row["From"]);
             _from = MailClientDataModel.GetNameByEmail(_email);
             _subject = string.Format("{0}", row["Subject"]);
@@ -85,13 +85,13 @@ namespace DevExpress.WindowsMailClient.Win.Data {
             _text = string.Format("{0}", row["Text"]);
             _deleted = false;
             _mailType = MailType.Inbox;
-            _mailFolder = (int) GetFolder(row);
+            _mailFolder = (int)GetFolder(row);
             _plainText = GetPlainText();
             DataTweaking();
         }
         public string FullName {
             get {
-                if(string.IsNullOrEmpty(_email)) 
+                if(string.IsNullOrEmpty(_email))
                     return _from;
                 return string.Format("{0} ({1})", _from, _email);
             }
@@ -129,7 +129,7 @@ namespace DevExpress.WindowsMailClient.Win.Data {
             set { _deleted = value; }
         }
         internal TimeSpan Delay {
-            get { return DateTime.Now - _date; }
+            get { return TutorialConstants.Now - _date; }
         }
         public void ToggleRead() {
             _read = !_read;
@@ -137,7 +137,7 @@ namespace DevExpress.WindowsMailClient.Win.Data {
         void DataTweaking() {
             if(Delay > TimeSpan.FromHours(50) && Delay < TimeSpan.FromHours(100)) _read = false;
             if(_subject.IndexOf("RE:") >= 0 || _subject.IndexOf("FW:") >= 0) _read = false;
-            this._hasAttachment = _text.Length > 20000;
+            _hasAttachment = _text.Length > 20000;
             if(_subject.IndexOf("Review") >= 0 || _subject.IndexOf("Important") >= 0) _priority = 2;
             if(_subject.IndexOf("FW:") >= 0 && Delay > TimeSpan.FromHours(48)) _priority = 0;
             if(_subject.IndexOf("New") >= 0 || _subject.IndexOf("Meeting") >= 0)
@@ -145,9 +145,9 @@ namespace DevExpress.WindowsMailClient.Win.Data {
         }
         MailFolder GetFolder(DataRow row) {
             object category = row["CategoryID"];
-            string ret = string.Format("{0}", (MailCategories) (category == DBNull.Value ? 1 : (int) category));
+            string ret = string.Format("{0}", (MailCategories)(category == DBNull.Value ? 1 : (int)category));
             if(string.IsNullOrEmpty(ret)) return Data.MailFolder.All;
-            return (MailFolder) Enum.Parse(typeof(MailFolder), ret.Replace(" ", ""));
+            return (MailFolder)Enum.Parse(typeof(MailFolder), ret.Replace(" ", ""));
         }
         public void SetPlainText(string text) { _plainText = text; }
     }

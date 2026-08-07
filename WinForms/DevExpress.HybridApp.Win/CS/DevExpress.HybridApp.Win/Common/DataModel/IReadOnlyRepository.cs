@@ -1,19 +1,16 @@
 using System;
-using System.Linq;
-using System.Collections.ObjectModel;
-using System.Linq.Expressions;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
-namespace DevExpress.DevAV.Common.DataModel
-{
+namespace DevExpress.DevAV.Common.DataModel {
     /// <summary>
     /// The IReadOnlyRepository interface represents the read-only implementation of the Repository pattern 
     /// such that it can be used to query entities of a given type. 
     /// </summary>
     /// <typeparam name="TEntity">Repository entity type.</typeparam>
-    public interface IReadOnlyRepository<TEntity> : IRepositoryQuery<TEntity> where TEntity : class
-    {
+    public interface IReadOnlyRepository<TEntity> : IRepositoryQuery<TEntity> where TEntity : class {
 
         /// <summary>
         /// The owner unit of work.
@@ -25,8 +22,7 @@ namespace DevExpress.DevAV.Common.DataModel
     /// The IRepositoryQuery interface represents an extension of IQueryable designed to provide an ability to specify the related objects to include in the query results.
     /// </summary>
     /// <typeparam name="T">An entity type.</typeparam>
-    public interface IRepositoryQuery<T> : IQueryable<T>
-    {
+    public interface IRepositoryQuery<T> : IQueryable<T> {
 
         /// <summary>
         /// Specifies the related objects to include in the query results.
@@ -46,12 +42,10 @@ namespace DevExpress.DevAV.Common.DataModel
     /// The base class that helps to implement the IRepositoryQuery interface as a wrapper over an existing IQuerable instance.
     /// </summary>
     /// <typeparam name="T">An entity type.</typeparam>
-    public abstract class RepositoryQueryBase<T> : IQueryable<T>
-    {
+    public abstract class RepositoryQueryBase<T> : IQueryable<T> {
         readonly Lazy<IQueryable<T>> queryable;
         protected IQueryable<T> Queryable { get { return queryable.Value; } }
-        protected RepositoryQueryBase(Func<IQueryable<T>> getQueryable)
-        {
+        protected RepositoryQueryBase(Func<IQueryable<T>> getQueryable) {
             this.queryable = new Lazy<IQueryable<T>>(getQueryable);
         }
         Type IQueryable.ElementType { get { return this.Queryable.ElementType; } }
@@ -64,8 +58,7 @@ namespace DevExpress.DevAV.Common.DataModel
     /// <summary>
     /// Provides a set of extension methods to perform commonly used operations with IReadOnlyRepository.
     /// </summary>
-    public static class ReadOnlyRepositoryExtensions
-    {
+    public static class ReadOnlyRepositoryExtensions {
         /// <summary>
         /// Returns IQuerable representing sequence of entities from repository filtered by the given predicate and projected to the specified projection entity type by the given LINQ function.
         /// </summary>
@@ -74,8 +67,7 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <param name="repository">A repository.</param>
         /// <param name="predicate">A function to test each element for a condition.</param>
         /// <param name="projection">A LINQ function used to transform entities from repository entity type to projection entity type.</param>
-        public static IQueryable<TProjection> GetFilteredEntities<TEntity, TProjection>(this IReadOnlyRepository<TEntity> repository, Expression<Func<TEntity, bool>> predicate, Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection) where TEntity : class
-        {
+        public static IQueryable<TProjection> GetFilteredEntities<TEntity, TProjection>(this IReadOnlyRepository<TEntity> repository, Expression<Func<TEntity, bool>> predicate, Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection) where TEntity : class {
             return AppendToProjection(predicate, projection)(repository);
         }
 
@@ -87,13 +79,12 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <param name="predicate">A function to test each element for a condition.</param>
         /// <param name="projection">A LINQ function used to transform entities from repository entity type to projection entity type.</param>
         /// <returns></returns>
-        public static Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> AppendToProjection<TEntity, TProjection>(Expression<Func<TEntity, bool>> predicate, Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection) where TEntity : class
-        {
-            if (predicate == null && projection == null)
+        public static Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> AppendToProjection<TEntity, TProjection>(Expression<Func<TEntity, bool>> predicate, Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection) where TEntity : class {
+            if(predicate == null && projection == null)
                 return q => (IQueryable<TProjection>)q;
-            if (predicate == null)
+            if(predicate == null)
                 return projection;
-            if (projection == null)
+            if(projection == null)
                 return q => (IQueryable<TProjection>)q.Where(predicate);
             return q => projection(q.Where(predicate));
         }
@@ -104,8 +95,7 @@ namespace DevExpress.DevAV.Common.DataModel
         /// <typeparam name="TEntity">A repository entity type.</typeparam>
         /// <param name="repository">A repository.</param>
         /// <param name="predicate">A function to test each element for a condition.</param>
-        public static IQueryable<TEntity> GetFilteredEntities<TEntity>(this IReadOnlyRepository<TEntity> repository, Expression<Func<TEntity, bool>> predicate) where TEntity : class
-        {
+        public static IQueryable<TEntity> GetFilteredEntities<TEntity>(this IReadOnlyRepository<TEntity> repository, Expression<Func<TEntity, bool>> predicate) where TEntity : class {
             return repository.GetFilteredEntities(predicate, x => x);
         }
     }

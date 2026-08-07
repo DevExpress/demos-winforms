@@ -1,9 +1,8 @@
 ﻿namespace DevExpress.DentalClinic.Model {
-    using System.ComponentModel;
     using DevExpress.Xpo;
 
     public class Doctor : Employee {
-        public Doctor(Session session) 
+        public Doctor(Session session)
             : base(session) {
         }
         [Association]

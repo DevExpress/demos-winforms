@@ -382,7 +382,7 @@ namespace DevExpress.DevAV.Modules {
             this.ItemForTitleLabel.Location = new System.Drawing.Point(0, 63);
             this.ItemForTitleLabel.Name = "ItemForTitleLabel";
             this.ItemForTitleLabel.Size = new System.Drawing.Size(141, 31);
-            this.ItemForTitleLabel.Text = "INVOICE #";
+            this.ItemForTitleLabel.Text = "Invoice #";
             this.ItemForTitleLabel.TextSize = new System.Drawing.Size(69, 20);
             
             

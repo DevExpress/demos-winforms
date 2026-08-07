@@ -145,6 +145,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((pieSeriesLabel1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((pieSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((seriesTitle1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((pieSeriesLabel2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((pieSeriesView2), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.dockPanelFunnel.SuspendLayout()
@@ -166,6 +167,12 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelNestedDoughnut.SuspendLayout()
             Me.dockPanelNestedDoughnut_Container.SuspendLayout()
             CType((Me.chartNestedDoughnut), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem5), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((nestedDoughnutSeriesLabel1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((nestedDoughnutSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.documentManager), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -314,12 +321,14 @@ Namespace DevExpress.XtraCharts.Demos
             series1.LegendTextPattern = "{A}"
             series1.Name = "Series 1"
             series1.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint1, seriesPoint2, seriesPoint3, seriesPoint4, seriesPoint5, seriesPoint6, seriesPoint7, seriesPoint8})
+            series1.SeriesID = 0
             pieBurstAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.1000000")
             pieSeriesView1.Animation = pieBurstAnimation1
             pieSeriesView1.Rotation = 90
             pieSeriesView1.RuntimeExploding = True
             seriesTitle1.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
             seriesTitle1.Text = "Total: {TV:#.##}M km²"
+            seriesTitle1.TitleID = 0
             pieSeriesView1.Titles.AddRange(New DevExpress.XtraCharts.SeriesTitle() {seriesTitle1})
             series1.View = pieSeriesView1
             Me.chartPie.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
@@ -332,11 +341,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartPie.TabStop = False
             chartTitle1.Indent = 10
             chartTitle1.Text = "Land Area by Country"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle1.TitleID = 0
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle2.Text = "From www.nationmaster.com"
             chartTitle2.TextColor = System.Drawing.Color.Gray
+            chartTitle2.TitleID = 1
             Me.chartPie.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             AddHandler Me.chartPie.PieSeriesPointExploded, New DevExpress.XtraCharts.PieSeriesPointExplodedEventHandler(AddressOf Me.OnChartPieSeriesPointExploded)
             ' 
@@ -380,6 +391,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.LegendTextPattern = "{A}"
             series2.Name = "Series 1"
             series2.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint9, seriesPoint10, seriesPoint11, seriesPoint12, seriesPoint13})
+            series2.SeriesID = 0
             series2.View = funnelSeriesView1
             Me.chartFunnel.SeriesSerializable = New DevExpress.XtraCharts.Series() {series2}
             Me.chartFunnel.SeriesTemplate.ToolTipPointPattern = "{A}: {V} ({VP:0.0%})"
@@ -387,6 +399,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFunnel.Size = New System.Drawing.Size(788, 548)
             Me.chartFunnel.TabIndex = 1
             chartTitle3.Text = "Website Visitor Trend"
+            chartTitle3.TitleID = 0
             Me.chartFunnel.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle3})
             ' 
             ' dockPanelDoughnut
@@ -430,6 +443,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.LegendTextPattern = "{A}"
             series3.Name = "Series 1"
             series3.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint14, seriesPoint15, seriesPoint16, seriesPoint17, seriesPoint18, seriesPoint19, seriesPoint20, seriesPoint21})
+            series3.SeriesID = 0
             series3.ToolTipPointPattern = "{A}: {V:0.0}M km²"
             doughnutSeriesView1.Rotation = 90
             doughnutSeriesView1.RuntimeExploding = True
@@ -446,11 +460,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartDoughnut.TabStop = False
             chartTitle4.Indent = 10
             chartTitle4.Text = "Land Area by Country"
-            chartTitle5.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle4.TitleID = 0
             chartTitle5.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle5.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle5.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle5.Text = "From www.nationmaster.com"
             chartTitle5.TextColor = System.Drawing.Color.Gray
+            chartTitle5.TitleID = 1
             Me.chartDoughnut.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle4, chartTitle5})
             Me.chartDoughnut.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[True]
             AddHandler Me.chartDoughnut.PieSeriesPointExploded, New DevExpress.XtraCharts.PieSeriesPointExplodedEventHandler(AddressOf Me.OnChartPieSeriesPointExploded)
@@ -493,23 +509,29 @@ Namespace DevExpress.XtraCharts.Demos
             legend1.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.Bottom
             legend1.BackColor = System.Drawing.Color.Transparent
             legend1.Border.Visibility = DevExpress.Utils.DefaultBoolean.[False]
+            customLegendItem1.CustomLegendItemID = 0
             customLegendItem1.MarkerImage.DXImage = CType((DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage"))), DevExpress.Drawing.DXBitmap)
             customLegendItem1.Name = "Custom Legend Item 3"
             customLegendItem1.Text = "0 - 14 years"
+            customLegendItem2.CustomLegendItemID = 1
             customLegendItem2.MarkerImage.DXImage = CType((DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage1"))), DevExpress.Drawing.DXBitmap)
             customLegendItem2.Name = "Custom Legend Item 2"
             customLegendItem2.Text = "15 - 64 years"
+            customLegendItem3.CustomLegendItemID = 2
             customLegendItem3.MarkerImage.DXImage = CType((DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage2"))), DevExpress.Drawing.DXBitmap)
             customLegendItem3.Name = "Custom Legend Item 1"
             customLegendItem3.Text = "65 years and older"
+            customLegendItem4.CustomLegendItemID = 3
             customLegendItem4.MarkerImage.DXImage = CType((DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage3"))), DevExpress.Drawing.DXBitmap)
             customLegendItem4.Name = "Custom Legend Item 4"
             customLegendItem4.Text = "Male"
+            customLegendItem5.CustomLegendItemID = 4
             customLegendItem5.MarkerImage.DXImage = CType((DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage4"))), DevExpress.Drawing.DXBitmap)
             customLegendItem5.Name = "Custom Legend Item 5"
             customLegendItem5.Text = "Female"
             legend1.CustomItems.AddRange(New DevExpress.XtraCharts.CustomLegendItem() {customLegendItem1, customLegendItem2, customLegendItem3, customLegendItem4, customLegendItem5})
             legend1.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight
+            legend1.LegendID = 0
             legend1.Name = "Legend2"
             Me.chartNestedDoughnut.Legends.AddRange(New DevExpress.XtraCharts.Legend() {legend1})
             Me.chartNestedDoughnut.Location = New System.Drawing.Point(0, 0)
@@ -534,13 +556,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartNestedDoughnut.TabIndex = 1
             Me.chartNestedDoughnut.TabStop = False
             chartTitle6.Text = "Population: Age Structure"
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle6.TitleID = 0
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle7.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle7.Text = "From www.cia.gov"
             chartTitle7.TextColor = System.Drawing.Color.Gray
+            chartTitle7.TitleID = 1
             chartTitle8.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle8.Text = "Data estimate for 2020"
+            chartTitle8.TitleID = 2
             Me.chartNestedDoughnut.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle6, chartTitle7, chartTitle8})
             Me.chartNestedDoughnut.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[True]
             AddHandler Me.chartNestedDoughnut.BoundDataChanged, New DevExpress.XtraCharts.BoundDataChangedEventHandler(AddressOf Me.chartNestedDoughnut_BoundDataChanged)
@@ -790,7 +815,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
             Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' layoutControlItemPosition
@@ -810,7 +834,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent"
             Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutControlItemValueAsPercent.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemValueAsPercent.TextVisible = False
             ' 
             ' layoutControlGroupPieDoughnutGeneral
@@ -845,11 +868,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 500)
             Me.emptySpaceItem.Name = "emptySpaceItem"
             Me.emptySpaceItem.Size = New System.Drawing.Size(241, 38)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' layoutControlGroupFunnelGeneral
             ' 
@@ -873,7 +894,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAlignToCenter.Name = "layoutControlItemAlignToCenter"
             Me.layoutControlItemAlignToCenter.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemAlignToCenter.Text = "Align To Center"
-            Me.layoutControlItemAlignToCenter.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAlignToCenter.TextVisible = False
             ' 
             ' layoutControlItemAutoHeightToWidthRatio
@@ -882,7 +902,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAutoHeightToWidthRatio.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemAutoHeightToWidthRatio.Name = "layoutControlItemAutoHeightToWidthRatio"
             Me.layoutControlItemAutoHeightToWidthRatio.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemAutoHeightToWidthRatio.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAutoHeightToWidthRatio.TextVisible = False
             ' 
             ' layoutControlItemPointDistance
@@ -951,7 +970,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemTotalLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemTotalLabelVisible.Name = "layoutControlItemTotalLabelVisible"
             Me.layoutControlItemTotalLabelVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemTotalLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemTotalLabelVisible.TextVisible = False
             ' 
             ' PieDoughnutFunnelViewsDemo
@@ -973,6 +991,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelPie.ResumeLayout(False)
             Me.dockPanelPie_Container.ResumeLayout(False)
             CType((pieSeriesLabel1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((seriesTitle1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((pieSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((pieSeriesLabel2), System.ComponentModel.ISupportInitialize).EndInit()
@@ -996,6 +1015,12 @@ Namespace DevExpress.XtraCharts.Demos
             CType((Me.chartDoughnut), System.ComponentModel.ISupportInitialize).EndInit()
             Me.dockPanelNestedDoughnut.ResumeLayout(False)
             Me.dockPanelNestedDoughnut_Container.ResumeLayout(False)
+            CType((customLegendItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem5), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((nestedDoughnutSeriesLabel1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((nestedDoughnutSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.chartNestedDoughnut), System.ComponentModel.ISupportInitialize).EndInit()

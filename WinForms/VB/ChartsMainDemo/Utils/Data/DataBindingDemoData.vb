@@ -3,6 +3,7 @@ Imports System.Collections.Generic
 Imports System.Globalization
 Imports System.Linq
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraCharts.Demos
 
@@ -29,14 +30,13 @@ Namespace DevExpress.XtraCharts.Demos
         End Property
 
         Friend Shared Function GetProductsByMonths() As List(Of DevExpress.XtraCharts.Demos.SaleItem)
-            Dim rnd As DevExpress.Data.Utils.NonCryptographicRandom = DevExpress.Data.Utils.NonCryptographicRandom.System
             Dim items As System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SaleItem) = New System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SaleItem)()
             For Each company As String In DevExpress.XtraCharts.Demos.SaleItem.companies
                 For Each product As String In DevExpress.XtraCharts.Demos.SaleItem.CategorizedProducts("Cameras")
                     Dim dateTime As System.DateTime = New System.DateTime(2017, 12, 01)
                     For i As Integer = 0 To 12 - 1
-                        Dim income As Integer = rnd.[Next](20, 100)
-                        Dim revenue As Integer = income + rnd.[Next](20, 50)
+                        Dim income As Integer = DevExpress.DXperience.Demos.TutorialConstants.Random.[Next](20, 100)
+                        Dim revenue As Integer = income + DevExpress.DXperience.Demos.TutorialConstants.Random.[Next](20, 50)
                         items.Add(New DevExpress.XtraCharts.Demos.SaleItem() With {.Company = company, .Product = product, .Month = dateTime.AddMonths(CInt((1))).ToString("MMMM", System.Globalization.CultureInfo.InvariantCulture), .Income = income, .Revenue = revenue})
                         dateTime = dateTime.AddMonths(1)
                     Next
@@ -61,7 +61,7 @@ Namespace DevExpress.XtraCharts.Demos
         End Function
 
         Friend Shared Function GetProductsCategoriesByMonth() As List(Of DevExpress.XtraCharts.Demos.CategorySaleItem)
-            Dim rnd As DevExpress.Data.Utils.NonCryptographicRandom = New DevExpress.Data.Utils.NonCryptographicRandom(System.DateTime.Now.Millisecond)
+            Dim rnd As DevExpress.Data.Utils.NonCryptographicRandom = New DevExpress.Data.Utils.NonCryptographicRandom(DevExpress.DXperience.Demos.TutorialConstants.Now.Millisecond)
             Dim categoryItems As System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.CategorySaleItem) = New System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.CategorySaleItem)()
             Dim productIndex As Integer = 0
             For Each category As String In DevExpress.XtraCharts.Demos.SaleItem.CategorizedProducts.Keys
@@ -88,7 +88,7 @@ Namespace DevExpress.XtraCharts.Demos
         End Function
 
         Friend Shared Function GetProductsIncome() As List(Of DevExpress.XtraCharts.Demos.SaleItem)
-            Dim rnd As DevExpress.Data.Utils.NonCryptographicRandom = New DevExpress.Data.Utils.NonCryptographicRandom(System.DateTime.Now.Millisecond)
+            Dim rnd As DevExpress.Data.Utils.NonCryptographicRandom = New DevExpress.Data.Utils.NonCryptographicRandom(DevExpress.DXperience.Demos.TutorialConstants.Now.Millisecond)
             Dim items As System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SaleItem) = New System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SaleItem)()
             For i As Integer = 0 To 50 - 1
                 For Each product As String In DevExpress.XtraCharts.Demos.SaleItem.CategorizedProducts("Cameras")
@@ -100,8 +100,8 @@ Namespace DevExpress.XtraCharts.Demos
         End Function
 
         Friend Shared Function GetTotalIncome() As List(Of DevExpress.XtraCharts.Demos.SaleItem)
-            Dim rnd As DevExpress.Data.Utils.NonCryptographicRandom = New DevExpress.Data.Utils.NonCryptographicRandom(System.DateTime.Now.Millisecond)
-            Dim now As System.DateTime = System.DateTime.Now
+            Dim rnd As DevExpress.Data.Utils.NonCryptographicRandom = New DevExpress.Data.Utils.NonCryptographicRandom(DevExpress.DXperience.Demos.TutorialConstants.Now.Millisecond)
+            Dim now As System.DateTime = DevExpress.DXperience.Demos.TutorialConstants.Now
             Dim endDate As System.DateTime = New System.DateTime(now.Year, now.Month, 1)
             Dim items As System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SaleItem) = New System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.SaleItem)()
             For Each company As String In DevExpress.XtraCharts.Demos.SaleItem.companies

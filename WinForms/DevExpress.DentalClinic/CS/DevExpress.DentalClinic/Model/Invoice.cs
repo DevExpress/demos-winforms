@@ -58,15 +58,15 @@
         }
     }
     //
-    public enum PaymentMethod { 
-        Cash, 
-        Card 
+    public enum PaymentMethod {
+        Cash,
+        Card
     }
-    public enum PaymentStatus { 
+    public enum PaymentStatus {
         Unpaid,
         [System.ComponentModel.DataAnnotations.Display(Name = "Paid In Full")]
         PaidInFull,
         [System.ComponentModel.DataAnnotations.Display(Name = "Refund In Full")]
-        RefundInFull 
+        RefundInFull
     }
 }

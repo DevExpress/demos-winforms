@@ -1,27 +1,27 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Reflection;
 using System.Windows.Forms;
-using DevExpress.XtraNavBar;
+using DevExpress.Skins;
+using DevExpress.Utils;
+using DevExpress.Utils.Design;
+using DevExpress.Utils.Menu;
+using DevExpress.Utils.Svg;
+using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
-using System.Reflection;
-using DevExpress.Utils.Menu;
 using DevExpress.XtraGrid;
-using DevExpress.Utils.Design;
-using DevExpress.XtraBars;
 using DevExpress.XtraGrid.Columns;
-using DevExpress.XtraSplashScreen;
-using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Controls;
-using DevExpress.Skins;
-using System.Collections;
 using DevExpress.XtraGrid.Views.Base;
-using DevExpress.Utils;
-using DevExpress.XtraRichEdit;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraNavBar;
 using DevExpress.XtraPrinting;
-using DevExpress.Utils.Svg;
+using DevExpress.XtraRichEdit;
+using DevExpress.XtraSplashScreen;
 
 namespace DevExpress.MailClient.Win {
     public class ModulesNavigator {
@@ -34,57 +34,58 @@ namespace DevExpress.MailClient.Win {
         public void ChangeGroup(NavBarGroup group, object moduleData) {
             bool allowSetVisiblePage = true;
             NavBarGroupTagObject groupObject = group.Tag as NavBarGroupTagObject;
-            if (groupObject == null) return;
+            if(groupObject == null) return;
             List<RibbonPage> deferredPagesToShow = new List<RibbonPage>();
-            foreach (RibbonPage page in ribbon.Pages) {
-                if (!string.IsNullOrEmpty(string.Format("{0}", page.Tag))) {
+            foreach(RibbonPage page in ribbon.Pages) {
+                if(!string.IsNullOrEmpty(string.Format("{0}", page.Tag))) {
                     bool isPageVisible = groupObject.Name.Equals(page.Tag);
-                    if (isPageVisible != page.Visible && isPageVisible)
+                    if(isPageVisible != page.Visible && isPageVisible)
                         deferredPagesToShow.Add(page);
                     else
                         page.Visible = isPageVisible;
                 }
-                if (page.Visible && allowSetVisiblePage) {
+                if(page.Visible && allowSetVisiblePage) {
                     //page.Text = "Home";
                     ribbon.SelectedPage = page;
                     allowSetVisiblePage = false;
                 }
             }
             bool firstShow = groupObject.Module == null;
-            if (firstShow) {
-                if (SplashScreenManager.Default == null)
+            if(firstShow) {
+                if(SplashScreenManager.Default == null)
                     SplashScreenManager.ShowForm(ribbon.FindForm(), typeof(DevExpress.MailClient.Win.Forms.wfMain), false, true);
                 ConstructorInfo constructorInfoObj = groupObject.ModuleType.GetConstructor(Type.EmptyTypes);
-                if (constructorInfoObj != null) {
+                if(constructorInfoObj != null) {
                     groupObject.Module = constructorInfoObj.Invoke(null) as BaseModule;
                     groupObject.Module.InitModule(ribbon, moduleData);
                 }
-                if (SplashScreenManager.Default != null) {
+                if(SplashScreenManager.Default != null) {
                     Form frm = moduleData as Form;
                     if(frm != null) {
                         if(SplashScreenManager.FormInPendingState)
                             SplashScreenManager.CloseForm();
                         else
                             SplashScreenManager.CloseForm(false, 500, frm);
-                    } else
+                    }
+                    else
                         SplashScreenManager.CloseForm();
                 }
             }
 
-            foreach (RibbonPage page in deferredPagesToShow) {
+            foreach(RibbonPage page in deferredPagesToShow) {
                 page.Visible = true;
             }
-            foreach (RibbonPage page in ribbon.Pages) {
-                if (page.Visible) {
+            foreach(RibbonPage page in ribbon.Pages) {
+                if(page.Visible) {
                     ribbon.SelectedPage = page;
                     break;
                 }
             }
 
-            if (groupObject.Module != null) {
-                if (panel.Controls.Count > 0) {
+            if(groupObject.Module != null) {
+                if(panel.Controls.Count > 0) {
                     BaseModule currentModule = panel.Controls[0] as BaseModule;
-                    if (currentModule != null)
+                    if(currentModule != null)
                         currentModule.HideModule();
                 }
                 panel.Controls.Clear();
@@ -95,7 +96,7 @@ namespace DevExpress.MailClient.Win {
         }
         public BaseModule CurrentModule {
             get {
-                if (panel.Controls.Count == 0) return null;
+                if(panel.Controls.Count == 0) return null;
                 return panel.Controls[0] as BaseModule;
             }
         }
@@ -130,7 +131,7 @@ namespace DevExpress.MailClient.Win {
             UpdateSearchTools();
         }
         void UpdateSearchTools() {
-            if (fControl.FindButton.Focused ||
+            if(fControl.FindButton.Focused ||
                 fControl.FindEdit.ContainsFocus ||
                 fControl.ClearButton.Focused) {
                 ribbon.PageCategories[TagResources.SearchTools].Visible = true;
@@ -159,18 +160,18 @@ namespace DevExpress.MailClient.Win {
         bool lockUpdate = false;
         public FilterColumnsManager(List<BarButtonItem> items) {
             this.items = items;
-            foreach (BarButtonItem item in items)
+            foreach(BarButtonItem item in items)
                 item.DownChanged += new ItemClickEventHandler(item_DownChanged);
         }
         BarButtonItem GetItemByName(string name) {
-            foreach (BarButtonItem item in items)
-                if (item.Tag.Equals(name)) return item;
+            foreach(BarButtonItem item in items)
+                if(item.Tag.Equals(name)) return item;
             return null;
         }
         public void SetDefault() {
             lockUpdate = true;
-            foreach (BarButtonItem item in items)
-                if (item.CanDown)
+            foreach(BarButtonItem item in items)
+                if(item.CanDown)
                     item.Down = false;
             GetItemByName(TagResources.SubjectColumn).Down = true;
             GetItemByName(TagResources.PersonColumn).Down = true;
@@ -179,19 +180,19 @@ namespace DevExpress.MailClient.Win {
         }
         void Update() {
             string filterColumns = string.Empty;
-            if (GetItemByName(TagResources.SubjectColumn).Down) filterColumns += "Subject;";
-            if (GetItemByName(TagResources.PersonColumn).Down) filterColumns += "From;";
-            if (GetItemByName(TagResources.DateColumn).Down) filterColumns += "Date;";
-            if (GetItemByName(TagResources.PriorityColumn).Down) filterColumns += "Priority;";
-            if (GetItemByName(TagResources.AttachmentColumn).Down) filterColumns += "Attachment;";
+            if(GetItemByName(TagResources.SubjectColumn).Down) filterColumns += "Subject;";
+            if(GetItemByName(TagResources.PersonColumn).Down) filterColumns += "From;";
+            if(GetItemByName(TagResources.DateColumn).Down) filterColumns += "Date;";
+            if(GetItemByName(TagResources.PriorityColumn).Down) filterColumns += "Priority;";
+            if(GetItemByName(TagResources.AttachmentColumn).Down) filterColumns += "Attachment;";
             view.OptionsFind.FindFilterColumns = filterColumns;
         }
         void item_DownChanged(object sender, ItemClickEventArgs e) {
-            if (lockUpdate) return;
+            if(lockUpdate) return;
             Update();
         }
         public void InitGridView(DevExpress.XtraGrid.Views.Grid.GridView gridView) {
-            if (view != null) return;
+            if(view != null) return;
             view = gridView;
             SetDefault();
         }
@@ -225,12 +226,12 @@ namespace DevExpress.MailClient.Win {
         protected override void OnBeforePopup(CancelEventArgs e) {
             base.OnBeforePopup(e);
             int priority = -1;
-            foreach (int row in view.GetSelectedRows()) {
-                if (row >= 0) {
+            foreach(int row in view.GetSelectedRows()) {
+                if(row >= 0) {
                     Message message = view.GetRow(row) as Message;
-                    if (priority == -1)
+                    if(priority == -1)
                         priority = message.Priority;
-                    if (priority != message.Priority) {
+                    if(priority != message.Priority) {
                         priority = -1;
                         break;
                     }
@@ -241,8 +242,8 @@ namespace DevExpress.MailClient.Win {
             highPriority.Down = priority == 2;
         }
         void SetPriority(int value) {
-            foreach (int row in view.GetSelectedRows())
-                if (row >= 0)
+            foreach(int row in view.GetSelectedRows())
+                if(row >= 0)
                     ((Message)view.GetRow(row)).Priority = value;
             view.LayoutChanged();
             view.MakeRowVisible(view.FocusedRowHandle);
@@ -287,9 +288,9 @@ namespace DevExpress.MailClient.Win {
             UpdateFilterInfo();
         }
         void UpdateFilterInfo() {
-            foreach (FilterCriteriaItem item in itemList)
+            foreach(FilterCriteriaItem item in itemList)
                 item.UpdateDown();
-            if (clearFilterItem != null)
+            if(clearFilterItem != null)
                 clearFilterItem.Enabled = !view.ActiveFilter.IsEmpty;
         }
         public void AddBarItem(BarButtonItem item, GridColumn column, string filterCriteria) {
@@ -301,14 +302,14 @@ namespace DevExpress.MailClient.Win {
         }
         internal string GetFilterCriteriaByColumn(GridColumn column) {
             string ret = string.Empty;
-            foreach (FilterCriteriaItem item in itemList)
-                if (item.Checked && item.IsColumnEquals(column))
+            foreach(FilterCriteriaItem item in itemList)
+                if(item.Checked && item.IsColumnEquals(column))
                     ret = AddCriteria(ret, item.FilterCriteria);
             return ret;
         }
 
         string AddCriteria(string ret, string filterCriteria) {
-            if (!string.IsNullOrEmpty(ret))
+            if(!string.IsNullOrEmpty(ret))
                 ret = string.Format("{0} Or {1}", ret, filterCriteria);
             else ret = filterCriteria;
             return ret;
@@ -338,7 +339,7 @@ namespace DevExpress.MailClient.Win {
         }
         void UpdateFilterCriteria(GridColumn column) {
             string filterCriteria = owner.GetFilterCriteriaByColumn(column);
-            if (string.IsNullOrEmpty(filterCriteria)) View.ActiveFilter.Remove(column);
+            if(string.IsNullOrEmpty(filterCriteria)) View.ActiveFilter.Remove(column);
             else
                 View.ActiveFilter.Add(column, new ColumnFilterInfo(filterCriteria));
         }
@@ -348,16 +349,16 @@ namespace DevExpress.MailClient.Win {
     }
     public class BaseControl : XtraUserControl {
         public BaseControl() {
-            if (!DesignTimeTools.IsDesignMode)
+            if(!DesignTimeTools.IsDesignMode)
                 LookAndFeel.ActiveLookAndFeel.StyleChanged += new EventHandler(ActiveLookAndFeel_StyleChanged);
         }
         protected override void OnLoad(EventArgs e) {
             base.OnLoad(e);
-            if (!DesignTimeTools.IsDesignMode)
+            if(!DesignTimeTools.IsDesignMode)
                 LookAndFeelStyleChanged();
         }
         protected override void Dispose(bool disposing) {
-            if (disposing && !DesignTimeTools.IsDesignMode)
+            if(disposing && !DesignTimeTools.IsDesignMode)
                 LookAndFeel.ActiveLookAndFeel.StyleChanged -= new EventHandler(ActiveLookAndFeel_StyleChanged);
             base.Dispose(disposing);
         }
@@ -399,7 +400,7 @@ namespace DevExpress.MailClient.Win {
         public BaseModule() { }
         internal virtual void ShowModule(bool firstShow) {
             frmMain owner = OwnerForm;
-            if (owner == null) return;
+            if(owner == null) return;
             owner.SaveAsMenuItem.Enabled = SaveAsEnable;
             owner.SaveAttachmentMenuItem.Enabled = SaveAttachmentEnable;
             owner.SaveCalendar.Visible = SaveCalendarVisible;
@@ -416,25 +417,25 @@ namespace DevExpress.MailClient.Win {
                 OwnerForm.ShowReminder(null);
         }
         internal void ShowInfo() {
-            if (OwnerForm == null) return;
-            if (Grid == null) {
+            if(OwnerForm == null) return;
+            if(Grid == null) {
                 OwnerForm.ShowInfo(null);
                 return;
             }
             ICollection list = Grid.DataSource as ICollection;
-            if (list == null)
+            if(list == null)
                 OwnerForm.ShowInfo(null);
             else OwnerForm.ShowInfo(list.Count);
         }
         internal virtual void HideModule() { }
         internal virtual void InitModule(IDXMenuManager manager, object data) {
             SetMenuManager(this.Controls, manager);
-            if (Grid != null && Grid.MainView is ColumnView) {
+            if(Grid != null && Grid.MainView is ColumnView) {
                 ((ColumnView)Grid.MainView).ColumnFilterChanged += new EventHandler(BaseModule_ColumnFilterChanged);
             }
         }
         internal void ShowInfo(ColumnView view) {
-            if (OwnerForm == null) return;
+            if(OwnerForm == null) return;
             ShowReminder();
             OwnerForm.ShowInfo(view.DataRowCount);
         }
@@ -442,14 +443,14 @@ namespace DevExpress.MailClient.Win {
             ShowInfo(sender as ColumnView);
         }
         void SetMenuManager(ControlCollection controlCollection, IDXMenuManager manager) {
-            foreach (Control ctrl in controlCollection) {
+            foreach(Control ctrl in controlCollection) {
                 GridControl grid = ctrl as GridControl;
-                if (grid != null) {
+                if(grid != null) {
                     grid.MenuManager = manager;
                     break;
                 }
                 BaseEdit edit = ctrl as BaseEdit;
-                if (edit != null) {
+                if(edit != null) {
                     edit.MenuManager = manager;
                     break;
                 }
@@ -522,7 +523,7 @@ namespace DevExpress.MailClient.Win {
                 zoomFactor = value;
                 beiZoom.Caption = string.Format(" {0}%", ZoomFactor);
                 int index = zoomValues.IndexOf(ZoomFactor);
-                if (index == -1)
+                if(index == -1)
                     beiZoom.EditValue = ZoomFactor / 10;
                 else beiZoom.EditValue = 10 + index;
                 modulesNavigator.CurrentModule.ZoomFactor = (float)ZoomFactor / 100;
@@ -533,7 +534,7 @@ namespace DevExpress.MailClient.Win {
         }
         private void beiZoom_ShownEditor(object sender, ItemClickEventArgs e) {
             this.zoomControl = ribbon.Manager.ActiveEditor as ZoomTrackBarControl;
-            if (ZoomControl != null) {
+            if(ZoomControl != null) {
                 ZoomControl.ValueChanged += new EventHandler(OnZoomTackValueChanged);
                 OnZoomTackValueChanged(ZoomControl, EventArgs.Empty);
             }
@@ -544,7 +545,7 @@ namespace DevExpress.MailClient.Win {
         }
         private void OnZoomTackValueChanged(object sender, EventArgs e) {
             int val = val = ZoomControl.Value * 10;
-            if (ZoomControl.Value > 10) val = zoomValues[ZoomControl.Value - 10];
+            if(ZoomControl.Value > 10) val = zoomValues[ZoomControl.Value - 10];
             ZoomFactor = val;
         }
     }
@@ -565,7 +566,7 @@ namespace DevExpress.MailClient.Win {
             parent.MouseLeave += new EventHandler(delegate { HideHint(true); });
         }
         public void ShowHint(object editObject, Point location) {
-            if (object.Equals(editObject, this.editObject)) return;
+            if(object.Equals(editObject, this.editObject)) return;
             this.editObject = editObject;
             ToolTipControlInfo info = new ToolTipControlInfo();
             ToolTipItem item = new ToolTipItem();
@@ -574,13 +575,13 @@ namespace DevExpress.MailClient.Win {
             info.Object = DateTime.Now.Ticks;
             info.SuperTip = new SuperToolTip();
             info.SuperTip.Items.Add(item);
-            info.ToolTipPosition = this.parent.PointToScreen(location);
+            info.ToolTipPosition = parent.PointToScreen(location);
             controller.ShowHint(info);
         }
         protected virtual void InitToolTipItem(ToolTipItem item) {
         }
         public void HideHint(bool clearCurrentObject) {
-            if (clearCurrentObject) this.editObject = null;
+            if(clearCurrentObject) editObject = null;
             this.controller.HideHint();
         }
         #region IDisposable Members
@@ -589,7 +590,7 @@ namespace DevExpress.MailClient.Win {
             GC.SuppressFinalize(this);
         }
         protected virtual void Dispose(bool disposing) {
-            if (disposing) {
+            if(disposing) {
                 this.controller.Dispose();
             }
         }
@@ -603,18 +604,18 @@ namespace DevExpress.MailClient.Win {
         public ContactToolTipController(Control parent) : base(parent) { }
         Contact CurrentContact { get { return EditObject as Contact; } }
         protected override void InitToolTipItem(ToolTipItem item) {
-            if (CurrentContact == null) return;
-            if (CurrentContact.Photo != null)
+            if(CurrentContact == null) return;
+            if(CurrentContact.Photo != null)
                 item.Image = ImageCreator.CreateImage(CurrentContact.Photo, MaxPhotoWidth, MaxPhotoHeight);
             item.Text = CurrentContact.GetContactInfoHtml();
         }
     }
     public class ImageCreator {
         public static Image CreateImage(Image srcImage, int maxWidth, int maxHeight) {
-            if (srcImage == null) return null;
+            if(srcImage == null) return null;
             Size size = GetPhotoSize(srcImage, maxWidth, maxHeight);
             Image ret = new Bitmap(size.Width, size.Height);
-            using (Graphics gr = Graphics.FromImage(ret)) {
+            using(Graphics gr = Graphics.FromImage(ret)) {
                 gr.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                 gr.DrawImage(srcImage, new Rectangle(0, 0, size.Width, size.Height));
             }
@@ -623,7 +624,7 @@ namespace DevExpress.MailClient.Win {
         static Size GetPhotoSize(Image image, int maxWidth, int maxHeight) {
             int width = Math.Min(maxWidth, image.Width),
                 height = width * image.Height / image.Width;
-            if (height > maxHeight) {
+            if(height > maxHeight) {
                 height = maxHeight;
                 width = height * image.Width / image.Height;
             }

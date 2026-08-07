@@ -90,7 +90,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // chart
             // 
@@ -127,6 +127,7 @@
             seriesPoint3,
             seriesPoint4,
             seriesPoint5});
+            series1.SeriesID = 0;
             series1.View = lineSeriesView1;
             pointSeriesLabel2.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.JustifyAroundPoint;
             pointSeriesLabel2.TextPattern = "{A}: {V}";
@@ -140,6 +141,7 @@
             seriesPoint10,
             seriesPoint11,
             seriesPoint12});
+            series2.SeriesID = 1;
             lineSeriesView2.LineMarkerOptions.Kind = DevExpress.XtraCharts.MarkerKind.Square;
             series2.View = lineSeriesView2;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
@@ -159,14 +161,14 @@
             this.layoutControl.Location = new System.Drawing.Point(0, 0);
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
             // radioGroupChartType
             // 
             this.radioGroupChartType.AutoSizeInLayoutControl = true;
-            this.radioGroupChartType.Location = new System.Drawing.Point(12, 31);
+            this.radioGroupChartType.Location = new System.Drawing.Point(12, 34);
             this.radioGroupChartType.Name = "radioGroupChartType";
             this.radioGroupChartType.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupChartType.Properties.Appearance.Options.UseBackColor = true;
@@ -180,7 +182,7 @@
             // radioGroupSeries2AxisX
             // 
             this.radioGroupSeries2AxisX.AutoSizeInLayoutControl = true;
-            this.radioGroupSeries2AxisX.Location = new System.Drawing.Point(12, 82);
+            this.radioGroupSeries2AxisX.Location = new System.Drawing.Point(12, 88);
             this.radioGroupSeries2AxisX.Name = "radioGroupSeries2AxisX";
             this.radioGroupSeries2AxisX.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupSeries2AxisX.Properties.Appearance.Options.UseBackColor = true;
@@ -194,7 +196,7 @@
             // radioGroupSeries2AxisY
             // 
             this.radioGroupSeries2AxisY.AutoSizeInLayoutControl = true;
-            this.radioGroupSeries2AxisY.Location = new System.Drawing.Point(12, 133);
+            this.radioGroupSeries2AxisY.Location = new System.Drawing.Point(12, 142);
             this.radioGroupSeries2AxisY.Name = "radioGroupSeries2AxisY";
             this.radioGroupSeries2AxisY.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupSeries2AxisY.Properties.Appearance.Options.UseBackColor = true;
@@ -216,16 +218,14 @@
             this.layoutControlGroupSeries2AxisY});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // emptySpaceItemBottom
             // 
-            this.emptySpaceItemBottom.AllowHotTrack = false;
-            this.emptySpaceItemBottom.Location = new System.Drawing.Point(0, 153);
+            this.emptySpaceItemBottom.Location = new System.Drawing.Point(0, 162);
             this.emptySpaceItemBottom.Name = "emptySpaceItem1";
-            this.emptySpaceItemBottom.Size = new System.Drawing.Size(241, 391);
-            this.emptySpaceItemBottom.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItemBottom.Size = new System.Drawing.Size(241, 376);
             // 
             // layoutControlGroupChartType
             // 
@@ -234,7 +234,7 @@
             this.layoutControlItemChartType});
             this.layoutControlGroupChartType.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupChartType.Name = "layoutControlGroupChartType";
-            this.layoutControlGroupChartType.Size = new System.Drawing.Size(241, 51);
+            this.layoutControlGroupChartType.Size = new System.Drawing.Size(241, 54);
             this.layoutControlGroupChartType.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupChartType.Text = "Chart Type";
             // 
@@ -244,7 +244,6 @@
             this.layoutControlItemChartType.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemChartType.Name = "layoutControlItemChartType";
             this.layoutControlItemChartType.Size = new System.Drawing.Size(221, 12);
-            this.layoutControlItemChartType.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemChartType.TextVisible = false;
             // 
             // layoutControlGroupSeries2AxisX
@@ -252,9 +251,9 @@
             this.layoutControlGroupSeries2AxisX.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupSeries2AxisX.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemSeries2AxisX});
-            this.layoutControlGroupSeries2AxisX.Location = new System.Drawing.Point(0, 51);
+            this.layoutControlGroupSeries2AxisX.Location = new System.Drawing.Point(0, 54);
             this.layoutControlGroupSeries2AxisX.Name = "layoutControlGroupSeries2AxisX";
-            this.layoutControlGroupSeries2AxisX.Size = new System.Drawing.Size(241, 51);
+            this.layoutControlGroupSeries2AxisX.Size = new System.Drawing.Size(241, 54);
             this.layoutControlGroupSeries2AxisX.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupSeries2AxisX.Text = "Series 2 Axis X";
             // 
@@ -264,7 +263,6 @@
             this.layoutControlItemSeries2AxisX.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemSeries2AxisX.Name = "layoutControlItemSeries2AxisX";
             this.layoutControlItemSeries2AxisX.Size = new System.Drawing.Size(221, 12);
-            this.layoutControlItemSeries2AxisX.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemSeries2AxisX.TextVisible = false;
             // 
             // layoutControlGroupSeries2AxisY
@@ -272,9 +270,9 @@
             this.layoutControlGroupSeries2AxisY.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupSeries2AxisY.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemSeries2AxisY});
-            this.layoutControlGroupSeries2AxisY.Location = new System.Drawing.Point(0, 102);
+            this.layoutControlGroupSeries2AxisY.Location = new System.Drawing.Point(0, 108);
             this.layoutControlGroupSeries2AxisY.Name = "layoutControlGroupSeries2AxisY";
-            this.layoutControlGroupSeries2AxisY.Size = new System.Drawing.Size(241, 51);
+            this.layoutControlGroupSeries2AxisY.Size = new System.Drawing.Size(241, 54);
             this.layoutControlGroupSeries2AxisY.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupSeries2AxisY.Text = "Series 2 Axis Y";
             // 
@@ -284,7 +282,6 @@
             this.layoutControlItemSeries2AxisY.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemSeries2AxisY.Name = "layoutControlItemSeries2AxisY";
             this.layoutControlItemSeries2AxisY.Size = new System.Drawing.Size(221, 12);
-            this.layoutControlItemSeries2AxisY.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemSeries2AxisY.TextVisible = false;
             // 
             // SecondaryAxesDemo

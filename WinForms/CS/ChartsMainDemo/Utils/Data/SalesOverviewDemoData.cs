@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 using DevExpress.Utils.Filtering;
 using DevExpress.XtraEditors;
 
@@ -37,8 +38,6 @@ namespace DevExpress.XtraCharts.Demos {
         internal class BikeReportItem : SaleItemBase {
         }
 
-        static readonly NonCryptographicRandom rnd = NonCryptographicRandom.System;
-
         internal static List<string> BikeCategories = new List<string>() {
             "Mountain",
             "Hybrid/Cross",
@@ -51,7 +50,7 @@ namespace DevExpress.XtraCharts.Demos {
 
         static int GetUnitsSold(string category) {
             int max = category.Equals("Bikes") ? 50 : 250;
-            return rnd.Next(1, max);
+            return TutorialConstants.Random.Next(1, max);
         }
         static object CreateProductBase(DataRow dataRow, string categoryName) {
             return new ProductItemBase() {
@@ -74,13 +73,13 @@ namespace DevExpress.XtraCharts.Demos {
             List<SaleItem> totalSales = new List<SaleItem>();
             foreach(DataRow region in regions) {
                 string state = (string)region["Region"];
-                int year = DateTime.Today.Year - 1;
+                int year = TutorialConstants.Today.Year - 1;
                 for(int month = 1; month <= 12; month++) {
                     foreach(ProductItemBase product in products) {
                         SaleItem tsItem = new SaleItem { State = state, Category = product.Category, Product = product.Product, Price = product.Price };
                         DateTime dt = new DateTime(year, month, 1);
                         int uSold = GetUnitsSold(product.Category);
-                        int uSoldTarget = uSold + rnd.Next(-(int)(uSold * 0.2), (int)(uSold * 0.2));
+                        int uSoldTarget = uSold + TutorialConstants.Random.Next(-(int)(uSold * 0.2), (int)(uSold * 0.2));
                         decimal rev = uSold * product.Price;
                         decimal revTarget = uSoldTarget * product.Price;
 
@@ -115,29 +114,29 @@ namespace DevExpress.XtraCharts.Demos {
         }
         internal static List<BikeReportItem> GenerateBicyclesReport() {
             List<BikeReportItem> result = new List<BikeReportItem>();
-            int year = DateTime.Today.Year - 1;
+            int year = TutorialConstants.Today.Year - 1;
             DateTime startDate = new DateTime(year, 1, 1);
             int averageMonthSold = 1700;
             decimal averagePrice = 900;
             DateTime date = startDate;
             for(int day = 1; day <= 365; day += 7) {
-                int minDay = rnd.Next(100, 200);
-                int maxDay = rnd.Next(250, 300);
+                int minDay = TutorialConstants.Random.Next(100, 200);
+                int maxDay = TutorialConstants.Random.Next(250, 300);
                 date = startDate.AddDays(day);
                 for(int i = 0; i < BikeCategories.Count; i++) {
                     string category = BikeCategories[i];
 
-                    double deltaCorrection = 2 * rnd.NextDouble() + 0.2;
+                    double deltaCorrection = 2 * TutorialConstants.Random.NextDouble() + 0.2;
 
                     BikeReportItem tsItem = new BikeReportItem { Category = category };
-                    double correction = 22 - i * 3 - rnd.NextDouble();
+                    double correction = 22 - i * 3 - TutorialConstants.Random.NextDouble();
                     if(day > minDay && day < maxDay)
                         correction += deltaCorrection;
                     if(day > maxDay)
                         correction -= deltaCorrection;
 
                     int uSold = (int)(averageMonthSold * correction / 100.0);
-                    int uSoldTarget = uSold + rnd.Next(-(int)(uSold * 0.2), (int)(uSold * 0.2));
+                    int uSoldTarget = uSold + TutorialConstants.Random.Next(-(int)(uSold * 0.2), (int)(uSold * 0.2));
                     decimal rev = uSold * averagePrice;
                     decimal revTarget = uSoldTarget * averagePrice;
 

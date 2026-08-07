@@ -1,5 +1,6 @@
 Imports System
 Imports System.Windows.Forms
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Internal
 Imports DevExpress.Utils
 Imports DevExpress.XtraEditors
@@ -27,6 +28,7 @@ Namespace DevExpress.ChatClient
             WindowsFormsSettings.FontBehavior = WindowsFormsFontBehavior.ForceSegoeUI
             WindowsFormsSettings.DefaultLookAndFeel.SetSkinStyle(LookAndFeel.SkinStyle.Bezier, LookAndFeel.SkinSvgPalette.Bezier.Default)
             SvgImages = SvgImageCollection.FromResources(GetType(ChatClient).Assembly)
+            Call MainFormHelper.InitTakeScreen(Data.Utils.SafeEnvironment.GetCommandLineArgs())
             Call RegisterAppServices()
             DevAVDataDirectoryHelper.LocalPrefix = "WinChatClientApp"
         End Sub
@@ -34,9 +36,9 @@ Namespace DevExpress.ChatClient
         Private Sub RegisterAppServices()
             Call Services.AppSettigns.Register()
 #If NET
-                () => new DevAV.DevAVDb(string.Format("Data Source={0}", GetDatabaseFilePath()));
+                () => new DevAV.DevAVDb(string.Format("Data Source={0}", GetDatabaseFilePath()), MainFormHelper.TakeScreens);
 #Else
-            Dim createDB As Func(Of DevAV.DevAVDb) = Function() New DevAV.DevAVDb()
+            Dim createDB As Func(Of DevAV.DevAVDb) = Function() New DevAV.DevAVDb(MainFormHelper.TakeScreens)
 #End If
             Dim messageServer = New DevAV.Chat.DevAVEmpployeesInMemoryServer(createDB)
             Mvvm.ServiceContainer.Default.RegisterService(messageServer)

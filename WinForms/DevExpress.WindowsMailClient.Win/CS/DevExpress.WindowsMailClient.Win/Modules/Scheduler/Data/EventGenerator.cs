@@ -1,5 +1,5 @@
-using DevExpress.XtraScheduler.Native;
 using System;
+using DevExpress.XtraScheduler.Native;
 
 namespace DevExpress.XtraScheduler.Demos.DemoData {
     public static class EventGenerator {

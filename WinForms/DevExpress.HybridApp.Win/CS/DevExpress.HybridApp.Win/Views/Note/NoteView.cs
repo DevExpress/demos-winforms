@@ -7,7 +7,7 @@ namespace DevExpress.DevAV.Views {
         public NoteView() {
             InitializeComponent();
             dataLayoutControl.SetupLayoutControl();
-            if (!mvvmContext.IsDesignMode)
+            if(!mvvmContext.IsDesignMode)
                 InitBindings();
         }
         void InitBindings() {

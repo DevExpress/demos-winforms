@@ -151,11 +151,9 @@
             // 
             // emptySpaceItemBottom
             // 
-            this.emptySpaceItemBottom.AllowHotTrack = false;
             this.emptySpaceItemBottom.Location = new System.Drawing.Point(0, 214);
             this.emptySpaceItemBottom.Name = "emptySpaceItem1";
             this.emptySpaceItemBottom.Size = new System.Drawing.Size(241, 324);
-            this.emptySpaceItemBottom.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroupChartType
             // 
@@ -174,7 +172,6 @@
             this.layoutControlItemChartType.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemChartType.Name = "layoutControlItemChartType";
             this.layoutControlItemChartType.Size = new System.Drawing.Size(221, 12);
-            this.layoutControlItemChartType.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemChartType.TextVisible = false;
             // 
             // layoutControlGroupColorizerType
@@ -197,7 +194,6 @@
             this.layoutControlItemChartType1.Name = "layoutControlItemChartType1";
             this.layoutControlItemChartType1.Size = new System.Drawing.Size(221, 12);
             this.layoutControlItemChartType1.Text = "layoutControlItemChartType";
-            this.layoutControlItemChartType1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemChartType1.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -216,7 +212,6 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(217, 60);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // chart
@@ -271,6 +266,7 @@
             dataMember3});
             series1.DataAdapter = dataSourceAdapter1;
             series1.Name = "Series";
+            series1.SeriesID = 0;
             keyColorColorizer1.Keys.Add("January");
             keyColorColorizer1.Keys.Add("February");
             keyColorColorizer1.Keys.Add("March");
@@ -293,6 +289,7 @@
             this.chart.TabIndex = 3;
             this.chart.TabStop = false;
             chartTitle1.Text = "Mean Daily Temperature";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 

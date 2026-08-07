@@ -29,10 +29,10 @@ Namespace DevExpress.XtraCharts.Demos
             Dim chartTitle1 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Dim chartTitle2 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Me.chart = New DevExpress.XtraCharts.ChartControl()
+            Me.dS21 = New DevExpress.XtraCharts.Demos.DS2()
             Me.oleDbDataAdapter = New System.Data.OleDb.OleDbDataAdapter()
             Me.oleDbSelectCommand = New System.Data.OleDb.OleDbCommand()
             Me.oleDbConnection = New System.Data.OleDb.OleDbConnection()
-            Me.dS21 = New DevExpress.XtraCharts.Demos.DS2()
             Me.layoutControl = New DevExpress.XtraLayout.LayoutControl()
             Me.checkEditLabelVisible = New DevExpress.XtraEditors.CheckEdit()
             Me.spinEditCount = New DevExpress.XtraEditors.SpinEdit()
@@ -106,6 +106,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.Label = doughnut3DSeriesLabel1
             series1.LegendTextPattern = "{A:P2}"
             series1.Name = "Series 1"
+            series1.SeriesID = 0
             series1.SeriesPointsSorting = DevExpress.XtraCharts.SortingMode.Descending
             series1.SeriesPointsSortingKey = DevExpress.XtraCharts.SeriesPointKey.Value_1
             series1.TopNOptions.Enabled = True
@@ -118,12 +119,19 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(546, 571)
             Me.chart.TabIndex = 1
             chartTitle1.Text = "Land Area by Country"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle1.TitleID = 0
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle2.Text = "From www.nationmaster.com"
             chartTitle2.TextColor = System.Drawing.Color.Gray
+            chartTitle2.TitleID = 1
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
+            ' 
+            ' dS21
+            ' 
+            Me.dS21.DataSetName = "DS2"
+            Me.dS21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
             ' 
             ' oleDbDataAdapter
             ' 
@@ -134,11 +142,6 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.oleDbSelectCommand.CommandText = "SELECT Country, OfficialName, Area FROM Countries"
             Me.oleDbSelectCommand.Connection = Me.oleDbConnection
-            ' 
-            ' dS21
-            ' 
-            Me.dS21.DataSetName = "DS2"
-            Me.dS21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
             ' 
             ' layoutControl
             ' 
@@ -254,7 +257,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemShowOther.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemShowOther.Name = "layoutControlItemShowOther"
             Me.layoutControlItemShowOther.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemShowOther.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemShowOther.TextVisible = False
             ' 
             ' layoutControlItemMode
@@ -277,11 +279,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 204)
             Me.emptySpaceItem.Name = "emptySpaceItem"
             Me.emptySpaceItem.Size = New System.Drawing.Size(241, 334)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' layoutControlGroupLabel
             ' 
@@ -301,7 +301,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
             Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' TopNAndOthersDemo

@@ -1,8 +1,7 @@
-using DevExpress.DevAV.DevAVDbDataModel1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using DevExpress.DevAV.DevAVDbDataModel1;
 
 namespace DevExpress.DevAV.ViewModels {
     public class DashboardViewModel {

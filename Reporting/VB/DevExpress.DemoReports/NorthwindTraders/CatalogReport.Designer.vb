@@ -492,7 +492,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrTable2})
             Me.Detail.HeightF = 24F
             Me.Detail.Name = "Detail"
-            Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
             ' xrTable2
@@ -502,7 +502,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrTable2.Font = New DevExpress.Drawing.DXFont("Tahoma", 8.25F)
             Me.xrTable2.LocationFloat = New DevExpress.Utils.PointFloat(33F, 0F)
             Me.xrTable2.Name = "xrTable2"
-            Me.xrTable2.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTable2.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.xrTableRow3})
             Me.xrTable2.SizeF = New System.Drawing.SizeF(572F, 24F)
             Me.xrTable2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -517,7 +517,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbCategoryName.ForeColor = System.Drawing.Color.DimGray
             Me.lbCategoryName.LocationFloat = New DevExpress.Utils.PointFloat(34F, 33.00006F)
             Me.lbCategoryName.Name = "lbCategoryName"
-            Me.lbCategoryName.Padding = New DevExpress.XtraPrinting.PaddingInfo(12, 0, 0, 0, 100F)
+            Me.lbCategoryName.Padding = New DevExpress.XtraPrinting.PaddingInfo(10F, 0F, 0F, 0F, 100F)
             Me.lbCategoryName.SizeF = New System.Drawing.SizeF(391F, 44.00002F)
             Me.lbCategoryName.Text = "xrLabel1"
             Me.lbCategoryName.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
@@ -530,7 +530,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrTableRow3.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell4, Me.xrTableCell9, Me.xrTableCell5, Me.xrTableCell6})
             Me.xrTableRow3.Font = New DevExpress.Drawing.DXFont("Tahoma", 8.25F)
             Me.xrTableRow3.Name = "xrTableRow3"
-            Me.xrTableRow3.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow3.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow3.Weight = 1R
             ' 
@@ -538,7 +538,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell4.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "ProductName")})
             Me.xrTableCell4.Name = "xrTableCell4"
-            Me.xrTableCell4.Padding = New DevExpress.XtraPrinting.PaddingInfo(7, 0, 0, 0, 100F)
+            Me.xrTableCell4.Padding = New DevExpress.XtraPrinting.PaddingInfo(6F, 0F, 0F, 0F, 100F)
             Me.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             Me.xrTableCell4.Weight = 0.42832167832167833R
             ' 
@@ -546,7 +546,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell9.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "ProductID")})
             Me.xrTableCell9.Name = "xrTableCell9"
-            Me.xrTableCell9.Padding = New DevExpress.XtraPrinting.PaddingInfo(7, 0, 0, 0, 100F)
+            Me.xrTableCell9.Padding = New DevExpress.XtraPrinting.PaddingInfo(6F, 0F, 0F, 0F, 100F)
             Me.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             Me.xrTableCell9.Weight = 0.16433566433566432R
             ' 
@@ -554,7 +554,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell5.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "QuantityPerUnit")})
             Me.xrTableCell5.Name = "xrTableCell5"
-            Me.xrTableCell5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell5.Weight = 0.23426573426573427R
             ' 
@@ -562,7 +562,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell6.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "UnitPrice")})
             Me.xrTableCell6.Name = "xrTableCell6"
-            Me.xrTableCell6.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 7, 0, 0, 100F)
+            Me.xrTableCell6.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 6F, 0F, 0F, 100F)
             Me.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
             Me.xrTableCell6.TextFormatString = "{0:C}"
             Me.xrTableCell6.Weight = 0.17307692307692307R
@@ -574,17 +574,17 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.ReportHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrTableOfContents1, Me.lbTourParagraph4, Me.lbTourParagraph3, Me.lbTourParagraph2, Me.lbTourParagraph1, Me.lbTourParagraph, Me.lbTourTitle, Me.lbFallCatalog, Me.pbLargeLogo, Me.lnThickLeft, Me.lnThinLeft, Me.lbCommitment1, Me.lbCommitment, Me.lnThickRight, Me.lnThinRight})
             Me.ReportHeader.HeightF = 1848F
             Me.ReportHeader.Name = "ReportHeader"
-            Me.ReportHeader.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.ReportHeader.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.ReportHeader.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBand
             Me.ReportHeader.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
             ' xrTableOfContents1
             ' 
             Me.xrTableOfContents1.LevelDefault.Font = New DevExpress.Drawing.DXFont("Segoe UI", 9.75F)
-            Me.xrTableOfContents1.LevelDefault.Padding = New DevExpress.XtraPrinting.PaddingInfo(50, 50, 0, 0, 100F)
+            Me.xrTableOfContents1.LevelDefault.Padding = New DevExpress.XtraPrinting.PaddingInfo(50F, 50F, 0F, 0F, 100F)
             Me.xrTableOfContents1.LevelTitle.Font = New DevExpress.Drawing.DXFont("Segoe UI", 14.25F, DevExpress.Drawing.DXFontStyle.Bold)
             Me.xrTableOfContents1.LevelTitle.Height = 325F
-            Me.xrTableOfContents1.LevelTitle.Padding = New DevExpress.XtraPrinting.PaddingInfo(50, 0, 250, 0, 100F)
+            Me.xrTableOfContents1.LevelTitle.Padding = New DevExpress.XtraPrinting.PaddingInfo(50F, 0F, 250F, 0F, 100F)
             Me.xrTableOfContents1.LevelTitle.Text = "Table of Contents"
             Me.xrTableOfContents1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 1500F)
             Me.xrTableOfContents1.MaxNestingLevel = 1
@@ -597,7 +597,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbTourParagraph4.ForeColor = System.Drawing.Color.Black
             Me.lbTourParagraph4.LocationFloat = New DevExpress.Utils.PointFloat(125F, 1366F)
             Me.lbTourParagraph4.Name = "lbTourParagraph4"
-            Me.lbTourParagraph4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbTourParagraph4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbTourParagraph4.SizeF = New System.Drawing.SizeF(400F, 66F)
             Me.lbTourParagraph4.Text = "Our sales representatives are ready to take your orders now. For your convenience" & ", we've included details on ordering on the last page of this catalog."
             Me.lbTourParagraph4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -608,7 +608,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbTourParagraph3.ForeColor = System.Drawing.Color.Black
             Me.lbTourParagraph3.LocationFloat = New DevExpress.Utils.PointFloat(125F, 1266F)
             Me.lbTourParagraph3.Name = "lbTourParagraph3"
-            Me.lbTourParagraph3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbTourParagraph3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbTourParagraph3.SizeF = New System.Drawing.SizeF(400F, 91F)
             Me.lbTourParagraph3.Text = resources.GetString("lbTourParagraph3.Text")
             Me.lbTourParagraph3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -619,7 +619,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbTourParagraph2.ForeColor = System.Drawing.Color.Black
             Me.lbTourParagraph2.LocationFloat = New DevExpress.Utils.PointFloat(125F, 1200F)
             Me.lbTourParagraph2.Name = "lbTourParagraph2"
-            Me.lbTourParagraph2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbTourParagraph2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbTourParagraph2.SizeF = New System.Drawing.SizeF(400F, 58F)
             Me.lbTourParagraph2.Text = "For thirst quenchers, try exotic Chang, hearty Laughing Lumberjack Lager, robust " & "Rhnbru Klosterbier, and refreshing Lakkalikri."
             Me.lbTourParagraph2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -630,7 +630,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbTourParagraph1.ForeColor = System.Drawing.Color.Black
             Me.lbTourParagraph1.LocationFloat = New DevExpress.Utils.PointFloat(125F, 1141F)
             Me.lbTourParagraph1.Name = "lbTourParagraph1"
-            Me.lbTourParagraph1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbTourParagraph1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbTourParagraph1.SizeF = New System.Drawing.SizeF(400F, 41F)
             Me.lbTourParagraph1.Text = "The beverages and confections we're featuring this fall are sure to please even t" & "he most discerning palates."
             Me.lbTourParagraph1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -641,7 +641,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbTourParagraph.ForeColor = System.Drawing.Color.Black
             Me.lbTourParagraph.LocationFloat = New DevExpress.Utils.PointFloat(125F, 1050F)
             Me.lbTourParagraph.Name = "lbTourParagraph"
-            Me.lbTourParagraph.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbTourParagraph.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbTourParagraph.SizeF = New System.Drawing.SizeF(400F, 75F)
             Me.lbTourParagraph.Text = "When Northwind Traders buyers set out to search for the Wonders of the Gastronomi" & "c World they found a lot more than seven of them. And here they are--tastefully " & "presented in our Fall Catalog."
             Me.lbTourParagraph.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -653,7 +653,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbTourTitle.LocationFloat = New DevExpress.Utils.PointFloat(150F, 966F)
             Me.lbTourTitle.Multiline = True
             Me.lbTourTitle.Name = "lbTourTitle"
-            Me.lbTourTitle.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbTourTitle.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbTourTitle.SizeF = New System.Drawing.SizeF(350F, 58F)
             Me.lbTourTitle.Text = "Tour the Gastronomic World with Northwind Traders!"
             Me.lbTourTitle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
@@ -664,7 +664,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbFallCatalog.ForeColor = System.Drawing.Color.Maroon
             Me.lbFallCatalog.LocationFloat = New DevExpress.Utils.PointFloat(267F, 442F)
             Me.lbFallCatalog.Name = "lbFallCatalog"
-            Me.lbFallCatalog.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbFallCatalog.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbFallCatalog.SizeF = New System.Drawing.SizeF(116F, 25F)
             Me.lbFallCatalog.Text = "Fall Catalog"
             Me.lbFallCatalog.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -674,7 +674,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.pbLargeLogo.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("pbLargeLogo.ImageSource"))
             Me.pbLargeLogo.LocationFloat = New DevExpress.Utils.PointFloat(180F, 50F)
             Me.pbLargeLogo.Name = "pbLargeLogo"
-            Me.pbLargeLogo.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.pbLargeLogo.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.pbLargeLogo.SizeF = New System.Drawing.SizeF(290.625F, 320.8333F)
             Me.pbLargeLogo.Sizing = DevExpress.XtraPrinting.ImageSizeMode.AutoSize
             Me.pbLargeLogo.UseImageResolution = False
@@ -684,14 +684,14 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lnThickLeft.LineWidth = 4F
             Me.lnThickLeft.LocationFloat = New DevExpress.Utils.PointFloat(0F, 175F)
             Me.lnThickLeft.Name = "lnThickLeft"
-            Me.lnThickLeft.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.lnThickLeft.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.lnThickLeft.SizeF = New System.Drawing.SizeF(180F, 8F)
             ' 
             ' lnThinLeft
             ' 
             Me.lnThinLeft.LocationFloat = New DevExpress.Utils.PointFloat(0F, 167F)
             Me.lnThinLeft.Name = "lnThinLeft"
-            Me.lnThinLeft.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.lnThinLeft.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.lnThinLeft.SizeF = New System.Drawing.SizeF(180F, 8F)
             ' 
             ' lbCommitment1
@@ -700,7 +700,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbCommitment1.ForeColor = System.Drawing.Color.Maroon
             Me.lbCommitment1.LocationFloat = New DevExpress.Utils.PointFloat(171F, 695F)
             Me.lbCommitment1.Name = "lbCommitment1"
-            Me.lbCommitment1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbCommitment1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbCommitment1.SizeF = New System.Drawing.SizeF(308F, 100F)
             Me.lbCommitment1.Text = resources.GetString("lbCommitment1.Text")
             Me.lbCommitment1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -711,7 +711,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbCommitment.ForeColor = System.Drawing.Color.Maroon
             Me.lbCommitment.LocationFloat = New DevExpress.Utils.PointFloat(221F, 658F)
             Me.lbCommitment.Name = "lbCommitment"
-            Me.lbCommitment.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbCommitment.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbCommitment.SizeF = New System.Drawing.SizeF(208F, 23F)
             Me.lbCommitment.Text = "Commitment to Quality"
             Me.lbCommitment.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -721,14 +721,14 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lnThickRight.LineWidth = 4F
             Me.lnThickRight.LocationFloat = New DevExpress.Utils.PointFloat(471F, 175F)
             Me.lnThickRight.Name = "lnThickRight"
-            Me.lnThickRight.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.lnThickRight.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.lnThickRight.SizeF = New System.Drawing.SizeF(179F, 8F)
             ' 
             ' lnThinRight
             ' 
             Me.lnThinRight.LocationFloat = New DevExpress.Utils.PointFloat(471F, 167F)
             Me.lnThinRight.Name = "lnThinRight"
-            Me.lnThinRight.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.lnThinRight.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.lnThinRight.SizeF = New System.Drawing.SizeF(179F, 8F)
             ' 
             ' GroupHeader1
@@ -738,7 +738,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WholePage
             Me.GroupHeader1.HeightF = 178F
             Me.GroupHeader1.Name = "GroupHeader1"
-            Me.GroupHeader1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.GroupHeader1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.GroupHeader1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
             ' lbHighestPrice
@@ -749,7 +749,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbHighestPrice.ForeColor = System.Drawing.Color.DimGray
             Me.lbHighestPrice.LocationFloat = New DevExpress.Utils.PointFloat(226F, 127F)
             Me.lbHighestPrice.Name = "lbHighestPrice"
-            Me.lbHighestPrice.Padding = New DevExpress.XtraPrinting.PaddingInfo(12, 12, 0, 0, 100F)
+            Me.lbHighestPrice.Padding = New DevExpress.XtraPrinting.PaddingInfo(10F, 10F, 0F, 0F, 100F)
             Me.lbHighestPrice.SizeF = New System.Drawing.SizeF(198F, 22.99995F)
             Me.lbHighestPrice.StylePriority.UseBackColor = False
             Me.lbHighestPrice.StylePriority.UseFont = False
@@ -771,7 +771,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbLowestPrice.ForeColor = System.Drawing.Color.DimGray
             Me.lbLowestPrice.LocationFloat = New DevExpress.Utils.PointFloat(226F, 104.0001F)
             Me.lbLowestPrice.Name = "lbLowestPrice"
-            Me.lbLowestPrice.Padding = New DevExpress.XtraPrinting.PaddingInfo(12, 12, 0, 0, 100F)
+            Me.lbLowestPrice.Padding = New DevExpress.XtraPrinting.PaddingInfo(10F, 10F, 0F, 0F, 100F)
             Me.lbLowestPrice.SizeF = New System.Drawing.SizeF(198F, 22.99995F)
             Me.lbLowestPrice.StylePriority.UseBackColor = False
             Me.lbLowestPrice.StylePriority.UseFont = False
@@ -793,7 +793,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbTotalSales.ForeColor = System.Drawing.Color.DimGray
             Me.lbTotalSales.LocationFloat = New DevExpress.Utils.PointFloat(34F, 127F)
             Me.lbTotalSales.Name = "lbTotalSales"
-            Me.lbTotalSales.Padding = New DevExpress.XtraPrinting.PaddingInfo(12, 12, 0, 0, 100F)
+            Me.lbTotalSales.Padding = New DevExpress.XtraPrinting.PaddingInfo(10F, 10F, 0F, 0F, 100F)
             Me.lbTotalSales.SizeF = New System.Drawing.SizeF(192F, 22.99995F)
             Me.lbTotalSales.StylePriority.UseBackColor = False
             Me.lbTotalSales.StylePriority.UseFont = False
@@ -814,7 +814,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbCount.ForeColor = System.Drawing.Color.DimGray
             Me.lbCount.LocationFloat = New DevExpress.Utils.PointFloat(34F, 104.0001F)
             Me.lbCount.Name = "lbCount"
-            Me.lbCount.Padding = New DevExpress.XtraPrinting.PaddingInfo(12, 12, 0, 0, 100F)
+            Me.lbCount.Padding = New DevExpress.XtraPrinting.PaddingInfo(10F, 10F, 0F, 0F, 100F)
             Me.lbCount.SizeF = New System.Drawing.SizeF(192F, 22.99995F)
             Me.lbCount.StylePriority.UseBackColor = False
             Me.lbCount.StylePriority.UseFont = False
@@ -837,7 +837,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbDesciption.ForeColor = System.Drawing.Color.DarkGray
             Me.lbDesciption.LocationFloat = New DevExpress.Utils.PointFloat(33.99998F, 77.00008F)
             Me.lbDesciption.Name = "lbDesciption"
-            Me.lbDesciption.Padding = New DevExpress.XtraPrinting.PaddingInfo(12, 12, 0, 0, 100F)
+            Me.lbDesciption.Padding = New DevExpress.XtraPrinting.PaddingInfo(10F, 10F, 0F, 0F, 100F)
             Me.lbDesciption.SizeF = New System.Drawing.SizeF(391F, 27F)
             Me.lbDesciption.Text = "xrLabel1"
             Me.lbDesciption.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -850,7 +850,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.PictureBox.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "ImageSource", "Picture")})
             Me.PictureBox.LocationFloat = New DevExpress.Utils.PointFloat(425F, 33F)
             Me.PictureBox.Name = "PictureBox"
-            Me.PictureBox.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.PictureBox.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.PictureBox.SizeF = New System.Drawing.SizeF(180F, 117F)
             Me.PictureBox.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage
             ' 
@@ -861,7 +861,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrTable1.Font = New DevExpress.Drawing.DXFont("Tahoma", 8.25F)
             Me.xrTable1.LocationFloat = New DevExpress.Utils.PointFloat(33F, 152F)
             Me.xrTable1.Name = "xrTable1"
-            Me.xrTable1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTable1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.xrTableRow1})
             Me.xrTable1.SizeF = New System.Drawing.SizeF(572F, 26F)
             Me.xrTable1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -873,14 +873,14 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrTableRow1.Font = New DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)
             Me.xrTableRow1.ForeColor = System.Drawing.Color.White
             Me.xrTableRow1.Name = "xrTableRow1"
-            Me.xrTableRow1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow1.Weight = 1R
             ' 
             ' xrTableCell1
             ' 
             Me.xrTableCell1.Name = "xrTableCell1"
-            Me.xrTableCell1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell1.Text = "Product Name:"
             Me.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell1.Weight = 0.42832167832167833R
@@ -888,7 +888,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' xrTableCell7
             ' 
             Me.xrTableCell7.Name = "xrTableCell7"
-            Me.xrTableCell7.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell7.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell7.Text = "Product ID:"
             Me.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell7.Weight = 0.16433566433566432R
@@ -896,7 +896,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' xrTableCell2
             ' 
             Me.xrTableCell2.Name = "xrTableCell2"
-            Me.xrTableCell2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell2.Text = "Quantity Per Unit:"
             Me.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell2.Weight = 0.23426573426573427R
@@ -904,7 +904,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' xrTableCell3
             ' 
             Me.xrTableCell3.Name = "xrTableCell3"
-            Me.xrTableCell3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell3.Text = "Unit Price: "
             Me.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell3.Weight = 0.17307692307692307R
@@ -916,7 +916,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrTable4.ForeColor = System.Drawing.Color.Black
             Me.xrTable4.LocationFloat = New DevExpress.Utils.PointFloat(34F, 425F)
             Me.xrTable4.Name = "xrTable4"
-            Me.xrTable4.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTable4.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTable4.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.xrTableRow4, Me.xrTableRow5, Me.xrTableRow9, Me.xrTableRow10, Me.xrTableRow11, Me.xrTableRow12, Me.xrTableRow13, Me.xrTableRow14, Me.xrTableRow15, Me.xrTableRow16, Me.xrTableRow17, Me.xrTableRow18, Me.xrTableRow19})
             Me.xrTable4.SizeF = New System.Drawing.SizeF(582F, 258F)
             Me.xrTable4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -925,7 +925,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow4.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell10, Me.xrTableCell13, Me.xrTableCell11, Me.xrTableCell14, Me.xrTableCell12})
             Me.xrTableRow4.Name = "xrTableRow4"
-            Me.xrTableRow4.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow4.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow4.Weight = 0.16279069767441862R
             ' 
@@ -933,7 +933,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell10.Multiline = True
             Me.xrTableCell10.Name = "xrTableCell10"
-            Me.xrTableCell10.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell10.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell10.Text = "Product ID:"
             Me.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell10.Weight = 0.1872852233676976R
@@ -942,7 +942,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell13.Multiline = True
             Me.xrTableCell13.Name = "xrTableCell13"
-            Me.xrTableCell13.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell13.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell13.Text = "Product Name:"
             Me.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell13.Weight = 0.3127147766323024R
@@ -951,7 +951,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell11.Multiline = True
             Me.xrTableCell11.Name = "xrTableCell11"
-            Me.xrTableCell11.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell11.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell11.Text = "Unit Price:"
             Me.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell11.Weight = 0.16666666666666666R
@@ -960,7 +960,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell14.Multiline = True
             Me.xrTableCell14.Name = "xrTableCell14"
-            Me.xrTableCell14.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell14.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell14.Text = "Quantity:"
             Me.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell14.Weight = 0.16838487972508592R
@@ -969,7 +969,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell12.Multiline = True
             Me.xrTableCell12.Name = "xrTableCell12"
-            Me.xrTableCell12.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell12.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell12.Text = "Extended Price:"
             Me.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             Me.xrTableCell12.Weight = 0.16494845360824742R
@@ -978,42 +978,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow5.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell15, Me.xrTableCell22, Me.xrTableCell23, Me.xrTableCell24, Me.xrTableCell25})
             Me.xrTableRow5.Name = "xrTableRow5"
-            Me.xrTableRow5.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow5.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow5.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell15
             ' 
             Me.xrTableCell15.Name = "xrTableCell15"
-            Me.xrTableCell15.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell15.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell15.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell22
             ' 
             Me.xrTableCell22.Name = "xrTableCell22"
-            Me.xrTableCell22.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell22.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell22.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell23
             ' 
             Me.xrTableCell23.Name = "xrTableCell23"
-            Me.xrTableCell23.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell23.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell23.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell24
             ' 
             Me.xrTableCell24.Name = "xrTableCell24"
-            Me.xrTableCell24.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell24.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell24.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell25
             ' 
             Me.xrTableCell25.Name = "xrTableCell25"
-            Me.xrTableCell25.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell25.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell25.Weight = 0.16494845360824742R
             ' 
@@ -1021,42 +1021,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow9.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell26, Me.xrTableCell27, Me.xrTableCell28, Me.xrTableCell29, Me.xrTableCell30})
             Me.xrTableRow9.Name = "xrTableRow9"
-            Me.xrTableRow9.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow9.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow9.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell26
             ' 
             Me.xrTableCell26.Name = "xrTableCell26"
-            Me.xrTableCell26.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell26.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell26.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell27
             ' 
             Me.xrTableCell27.Name = "xrTableCell27"
-            Me.xrTableCell27.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell27.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell27.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell28
             ' 
             Me.xrTableCell28.Name = "xrTableCell28"
-            Me.xrTableCell28.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell28.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell28.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell29
             ' 
             Me.xrTableCell29.Name = "xrTableCell29"
-            Me.xrTableCell29.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell29.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell29.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell30
             ' 
             Me.xrTableCell30.Name = "xrTableCell30"
-            Me.xrTableCell30.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell30.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell30.Weight = 0.16494845360824742R
             ' 
@@ -1064,42 +1064,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow10.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell31, Me.xrTableCell32, Me.xrTableCell33, Me.xrTableCell34, Me.xrTableCell35})
             Me.xrTableRow10.Name = "xrTableRow10"
-            Me.xrTableRow10.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow10.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow10.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell31
             ' 
             Me.xrTableCell31.Name = "xrTableCell31"
-            Me.xrTableCell31.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell31.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell31.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell32
             ' 
             Me.xrTableCell32.Name = "xrTableCell32"
-            Me.xrTableCell32.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell32.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell32.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell33
             ' 
             Me.xrTableCell33.Name = "xrTableCell33"
-            Me.xrTableCell33.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell33.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell33.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell34
             ' 
             Me.xrTableCell34.Name = "xrTableCell34"
-            Me.xrTableCell34.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell34.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell34.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell34.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell35
             ' 
             Me.xrTableCell35.Name = "xrTableCell35"
-            Me.xrTableCell35.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell35.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell35.Weight = 0.16494845360824742R
             ' 
@@ -1107,42 +1107,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow11.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell36, Me.xrTableCell37, Me.xrTableCell38, Me.xrTableCell39, Me.xrTableCell40})
             Me.xrTableRow11.Name = "xrTableRow11"
-            Me.xrTableRow11.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow11.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow11.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell36
             ' 
             Me.xrTableCell36.Name = "xrTableCell36"
-            Me.xrTableCell36.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell36.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell36.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell36.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell37
             ' 
             Me.xrTableCell37.Name = "xrTableCell37"
-            Me.xrTableCell37.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell37.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell37.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell38
             ' 
             Me.xrTableCell38.Name = "xrTableCell38"
-            Me.xrTableCell38.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell38.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell38.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell39
             ' 
             Me.xrTableCell39.Name = "xrTableCell39"
-            Me.xrTableCell39.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell39.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell39.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell40
             ' 
             Me.xrTableCell40.Name = "xrTableCell40"
-            Me.xrTableCell40.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell40.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell40.Weight = 0.16494845360824742R
             ' 
@@ -1150,42 +1150,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow12.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell41, Me.xrTableCell42, Me.xrTableCell43, Me.xrTableCell44, Me.xrTableCell45})
             Me.xrTableRow12.Name = "xrTableRow12"
-            Me.xrTableRow12.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow12.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow12.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell41
             ' 
             Me.xrTableCell41.Name = "xrTableCell41"
-            Me.xrTableCell41.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell41.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell41.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell42
             ' 
             Me.xrTableCell42.Name = "xrTableCell42"
-            Me.xrTableCell42.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell42.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell42.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell42.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell43
             ' 
             Me.xrTableCell43.Name = "xrTableCell43"
-            Me.xrTableCell43.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell43.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell43.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell44
             ' 
             Me.xrTableCell44.Name = "xrTableCell44"
-            Me.xrTableCell44.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell44.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell44.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell44.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell45
             ' 
             Me.xrTableCell45.Name = "xrTableCell45"
-            Me.xrTableCell45.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell45.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell45.Weight = 0.16494845360824742R
             ' 
@@ -1193,42 +1193,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow13.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell46, Me.xrTableCell47, Me.xrTableCell48, Me.xrTableCell49, Me.xrTableCell50})
             Me.xrTableRow13.Name = "xrTableRow13"
-            Me.xrTableRow13.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow13.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow13.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell46
             ' 
             Me.xrTableCell46.Name = "xrTableCell46"
-            Me.xrTableCell46.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell46.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell46.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell47
             ' 
             Me.xrTableCell47.Name = "xrTableCell47"
-            Me.xrTableCell47.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell47.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell47.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell47.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell48
             ' 
             Me.xrTableCell48.Name = "xrTableCell48"
-            Me.xrTableCell48.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell48.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell48.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell49
             ' 
             Me.xrTableCell49.Name = "xrTableCell49"
-            Me.xrTableCell49.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell49.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell49.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell49.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell50
             ' 
             Me.xrTableCell50.Name = "xrTableCell50"
-            Me.xrTableCell50.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell50.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell50.Weight = 0.16494845360824742R
             ' 
@@ -1236,42 +1236,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow14.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell51, Me.xrTableCell52, Me.xrTableCell53, Me.xrTableCell54, Me.xrTableCell55})
             Me.xrTableRow14.Name = "xrTableRow14"
-            Me.xrTableRow14.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow14.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow14.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell51
             ' 
             Me.xrTableCell51.Name = "xrTableCell51"
-            Me.xrTableCell51.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell51.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell51.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell51.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell52
             ' 
             Me.xrTableCell52.Name = "xrTableCell52"
-            Me.xrTableCell52.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell52.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell52.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell52.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell53
             ' 
             Me.xrTableCell53.Name = "xrTableCell53"
-            Me.xrTableCell53.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell53.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell53.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell53.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell54
             ' 
             Me.xrTableCell54.Name = "xrTableCell54"
-            Me.xrTableCell54.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell54.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell54.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell54.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell55
             ' 
             Me.xrTableCell55.Name = "xrTableCell55"
-            Me.xrTableCell55.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell55.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell55.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell55.Weight = 0.16494845360824742R
             ' 
@@ -1279,42 +1279,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow15.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell56, Me.xrTableCell57, Me.xrTableCell58, Me.xrTableCell59, Me.xrTableCell60})
             Me.xrTableRow15.Name = "xrTableRow15"
-            Me.xrTableRow15.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow15.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow15.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell56
             ' 
             Me.xrTableCell56.Name = "xrTableCell56"
-            Me.xrTableCell56.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell56.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell56.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell56.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell57
             ' 
             Me.xrTableCell57.Name = "xrTableCell57"
-            Me.xrTableCell57.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell57.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell57.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell57.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell58
             ' 
             Me.xrTableCell58.Name = "xrTableCell58"
-            Me.xrTableCell58.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell58.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell58.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell58.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell59
             ' 
             Me.xrTableCell59.Name = "xrTableCell59"
-            Me.xrTableCell59.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell59.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell59.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell59.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell60
             ' 
             Me.xrTableCell60.Name = "xrTableCell60"
-            Me.xrTableCell60.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell60.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell60.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell60.Weight = 0.16494845360824742R
             ' 
@@ -1322,42 +1322,42 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow16.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell61, Me.xrTableCell62, Me.xrTableCell63, Me.xrTableCell64, Me.xrTableCell65})
             Me.xrTableRow16.Name = "xrTableRow16"
-            Me.xrTableRow16.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow16.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow16.Weight = 0.069767441860465115R
             ' 
             ' xrTableCell61
             ' 
             Me.xrTableCell61.Name = "xrTableCell61"
-            Me.xrTableCell61.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell61.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell61.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell61.Weight = 0.1872852233676976R
             ' 
             ' xrTableCell62
             ' 
             Me.xrTableCell62.Name = "xrTableCell62"
-            Me.xrTableCell62.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell62.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell62.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell62.Weight = 0.3127147766323024R
             ' 
             ' xrTableCell63
             ' 
             Me.xrTableCell63.Name = "xrTableCell63"
-            Me.xrTableCell63.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell63.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell63.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell63.Weight = 0.16666666666666666R
             ' 
             ' xrTableCell64
             ' 
             Me.xrTableCell64.Name = "xrTableCell64"
-            Me.xrTableCell64.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell64.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell64.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell64.Weight = 0.16838487972508592R
             ' 
             ' xrTableCell65
             ' 
             Me.xrTableCell65.Name = "xrTableCell65"
-            Me.xrTableCell65.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell65.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell65.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell65.Weight = 0.16494845360824742R
             ' 
@@ -1365,7 +1365,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow17.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell67, Me.xrTableCell69, Me.xrTableCell70})
             Me.xrTableRow17.Name = "xrTableRow17"
-            Me.xrTableRow17.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow17.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow17.Weight = 0.069767441860465115R
             ' 
@@ -1373,14 +1373,14 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell67.Borders = DevExpress.XtraPrinting.BorderSide.Right
             Me.xrTableCell67.Name = "xrTableCell67"
-            Me.xrTableCell67.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell67.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell67.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell67.Weight = 0.5R
             ' 
             ' xrTableCell69
             ' 
             Me.xrTableCell69.Name = "xrTableCell69"
-            Me.xrTableCell69.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell69.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell69.Text = "Subtotal:"
             Me.xrTableCell69.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             Me.xrTableCell69.Weight = 0.33505154639175255R
@@ -1388,7 +1388,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' xrTableCell70
             ' 
             Me.xrTableCell70.Name = "xrTableCell70"
-            Me.xrTableCell70.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell70.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell70.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell70.Weight = 0.16494845360824742R
             ' 
@@ -1396,7 +1396,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow18.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell66, Me.xrTableCell68, Me.xrTableCell71})
             Me.xrTableRow18.Name = "xrTableRow18"
-            Me.xrTableRow18.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow18.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow18.Weight = 0.069767441860465115R
             ' 
@@ -1404,14 +1404,14 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell66.Borders = DevExpress.XtraPrinting.BorderSide.Right
             Me.xrTableCell66.Name = "xrTableCell66"
-            Me.xrTableCell66.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell66.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell66.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell66.Weight = 0.5R
             ' 
             ' xrTableCell68
             ' 
             Me.xrTableCell68.Name = "xrTableCell68"
-            Me.xrTableCell68.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell68.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell68.Text = "Freight (estimated):"
             Me.xrTableCell68.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             Me.xrTableCell68.Weight = 0.33505154639175255R
@@ -1419,7 +1419,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' xrTableCell71
             ' 
             Me.xrTableCell71.Name = "xrTableCell71"
-            Me.xrTableCell71.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell71.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell71.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell71.Weight = 0.16494845360824742R
             ' 
@@ -1427,7 +1427,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableRow19.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell72, Me.xrTableCell73, Me.xrTableCell74})
             Me.xrTableRow19.Name = "xrTableRow19"
-            Me.xrTableRow19.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 96F)
+            Me.xrTableRow19.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 96F)
             Me.xrTableRow19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableRow19.Weight = 0.069767441860465115R
             ' 
@@ -1435,14 +1435,14 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' 
             Me.xrTableCell72.Borders = DevExpress.XtraPrinting.BorderSide.Right
             Me.xrTableCell72.Name = "xrTableCell72"
-            Me.xrTableCell72.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell72.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell72.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell72.Weight = 0.5R
             ' 
             ' xrTableCell73
             ' 
             Me.xrTableCell73.Name = "xrTableCell73"
-            Me.xrTableCell73.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell73.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell73.Text = "Total:"
             Me.xrTableCell73.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             Me.xrTableCell73.Weight = 0.33505154639175255R
@@ -1450,7 +1450,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             ' xrTableCell74
             ' 
             Me.xrTableCell74.Name = "xrTableCell74"
-            Me.xrTableCell74.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrTableCell74.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrTableCell74.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             Me.xrTableCell74.Weight = 0.16494845360824742R
             ' 
@@ -1459,7 +1459,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.BottomMargin.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrPageInfo1, Me.xrLabel1, Me.lbPageNumber})
             Me.BottomMargin.HeightF = 75F
             Me.BottomMargin.Name = "BottomMargin"
-            Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
             ' xrPageInfo1
@@ -1469,7 +1469,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrPageInfo1.ForeColor = System.Drawing.Color.Black
             Me.xrPageInfo1.LocationFloat = New DevExpress.Utils.PointFloat(367F, 25F)
             Me.xrPageInfo1.Name = "xrPageInfo1"
-            Me.xrPageInfo1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrPageInfo1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrPageInfo1.SizeF = New System.Drawing.SizeF(82F, 25F)
             Me.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             ' 
@@ -1480,7 +1480,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLabel1.ForeColor = System.Drawing.Color.Black
             Me.xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
             Me.xrLabel1.Name = "xrLabel1"
-            Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.xrLabel1.SizeF = New System.Drawing.SizeF(650F, 20F)
             Me.xrLabel1.Text = "Northwind Traders  - Fall Catalog"
             Me.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
@@ -1491,7 +1491,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbPageNumber.ForeColor = System.Drawing.Color.Black
             Me.lbPageNumber.LocationFloat = New DevExpress.Utils.PointFloat(258F, 25F)
             Me.lbPageNumber.Name = "lbPageNumber"
-            Me.lbPageNumber.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbPageNumber.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbPageNumber.SizeF = New System.Drawing.SizeF(100F, 25F)
             Me.lbPageNumber.Text = "Page Number"
             Me.lbPageNumber.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
@@ -1501,7 +1501,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.ReportFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrPanel1, Me.xrTable4, Me.lbInstructionsText, Me.xrLine13, Me.lbCustomerID, Me.xrLine12, Me.lbDateRequired, Me.lbDateOfOrder, Me.xrLine11, Me.xrLine10, Me.xrLine9, Me.xrLine8, Me.xrLine7, Me.xrLine6, Me.xrLine5, Me.xrLine4, Me.xrLine3, Me.lbShipTo, Me.lbBillTo, Me.lbAddress, Me.lbOrderForm, Me.xrPictureBox2, Me.xrPictureBox1, Me.xrLine2})
             Me.ReportFooter.HeightF = 836F
             Me.ReportFooter.Name = "ReportFooter"
-            Me.ReportFooter.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.ReportFooter.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.ReportFooter.PageBreak = DevExpress.XtraReports.UI.PageBreak.BeforeBand
             Me.ReportFooter.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
@@ -1511,7 +1511,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrPanel1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.cbFederalShipping, Me.lbShipVia, Me.cbSpeedyExpress, Me.cbUnitedPackage})
             Me.xrPanel1.LocationFloat = New DevExpress.Utils.PointFloat(33F, 700F)
             Me.xrPanel1.Name = "xrPanel1"
-            Me.xrPanel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrPanel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrPanel1.SizeF = New System.Drawing.SizeF(192F, 125F)
             ' 
             ' cbFederalShipping
@@ -1521,7 +1521,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.cbFederalShipping.ForeColor = System.Drawing.Color.Black
             Me.cbFederalShipping.LocationFloat = New DevExpress.Utils.PointFloat(8F, 92F)
             Me.cbFederalShipping.Name = "cbFederalShipping"
-            Me.cbFederalShipping.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.cbFederalShipping.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.cbFederalShipping.SizeF = New System.Drawing.SizeF(146F, 20F)
             Me.cbFederalShipping.Text = "Federal Shipping"
             ' 
@@ -1532,7 +1532,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbShipVia.ForeColor = System.Drawing.Color.Black
             Me.lbShipVia.LocationFloat = New DevExpress.Utils.PointFloat(9F, 9F)
             Me.lbShipVia.Name = "lbShipVia"
-            Me.lbShipVia.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbShipVia.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbShipVia.SizeF = New System.Drawing.SizeF(150F, 21F)
             Me.lbShipVia.Text = "Ship Via (check one):"
             Me.lbShipVia.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1544,7 +1544,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.cbSpeedyExpress.ForeColor = System.Drawing.Color.Black
             Me.cbSpeedyExpress.LocationFloat = New DevExpress.Utils.PointFloat(8F, 42F)
             Me.cbSpeedyExpress.Name = "cbSpeedyExpress"
-            Me.cbSpeedyExpress.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.cbSpeedyExpress.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.cbSpeedyExpress.SizeF = New System.Drawing.SizeF(146F, 20F)
             Me.cbSpeedyExpress.Text = "Speedy Express"
             ' 
@@ -1555,7 +1555,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.cbUnitedPackage.ForeColor = System.Drawing.Color.Black
             Me.cbUnitedPackage.LocationFloat = New DevExpress.Utils.PointFloat(8F, 67F)
             Me.cbUnitedPackage.Name = "cbUnitedPackage"
-            Me.cbUnitedPackage.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.cbUnitedPackage.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.cbUnitedPackage.SizeF = New System.Drawing.SizeF(146F, 20F)
             Me.cbUnitedPackage.Text = "United Package"
             ' 
@@ -1567,7 +1567,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbInstructionsText.LocationFloat = New DevExpress.Utils.PointFloat(42F, 166F)
             Me.lbInstructionsText.Multiline = True
             Me.lbInstructionsText.Name = "lbInstructionsText"
-            Me.lbInstructionsText.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbInstructionsText.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbInstructionsText.SizeF = New System.Drawing.SizeF(566F, 75F)
             Me.lbInstructionsText.Text = resources.GetString("lbInstructionsText.Text")
             Me.lbInstructionsText.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1577,7 +1577,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine13.ForeColor = System.Drawing.Color.Black
             Me.xrLine13.LocationFloat = New DevExpress.Utils.PointFloat(441F, 400F)
             Me.xrLine13.Name = "xrLine13"
-            Me.xrLine13.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine13.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine13.SizeF = New System.Drawing.SizeF(173F, 8F)
             ' 
             ' lbCustomerID
@@ -1586,7 +1586,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbCustomerID.ForeColor = System.Drawing.Color.Black
             Me.lbCustomerID.LocationFloat = New DevExpress.Utils.PointFloat(333F, 391F)
             Me.lbCustomerID.Name = "lbCustomerID"
-            Me.lbCustomerID.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbCustomerID.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbCustomerID.SizeF = New System.Drawing.SizeF(108F, 22F)
             Me.lbCustomerID.Text = "Customer ID:"
             Me.lbCustomerID.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1596,7 +1596,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine12.ForeColor = System.Drawing.Color.Black
             Me.xrLine12.LocationFloat = New DevExpress.Utils.PointFloat(150F, 400F)
             Me.xrLine12.Name = "xrLine12"
-            Me.xrLine12.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine12.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine12.SizeF = New System.Drawing.SizeF(167F, 8F)
             ' 
             ' lbDateRequired
@@ -1605,7 +1605,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbDateRequired.ForeColor = System.Drawing.Color.Black
             Me.lbDateRequired.LocationFloat = New DevExpress.Utils.PointFloat(33F, 391F)
             Me.lbDateRequired.Name = "lbDateRequired"
-            Me.lbDateRequired.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbDateRequired.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbDateRequired.SizeF = New System.Drawing.SizeF(116F, 22F)
             Me.lbDateRequired.Text = "Date Required:"
             Me.lbDateRequired.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1616,7 +1616,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbDateOfOrder.ForeColor = System.Drawing.Color.Black
             Me.lbDateOfOrder.LocationFloat = New DevExpress.Utils.PointFloat(33F, 366F)
             Me.lbDateOfOrder.Name = "lbDateOfOrder"
-            Me.lbDateOfOrder.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbDateOfOrder.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbDateOfOrder.SizeF = New System.Drawing.SizeF(115F, 22F)
             Me.lbDateOfOrder.Text = "Date of Order:"
             Me.lbDateOfOrder.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1626,7 +1626,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine11.ForeColor = System.Drawing.Color.Black
             Me.xrLine11.LocationFloat = New DevExpress.Utils.PointFloat(150F, 375F)
             Me.xrLine11.Name = "xrLine11"
-            Me.xrLine11.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine11.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine11.SizeF = New System.Drawing.SizeF(159F, 8F)
             ' 
             ' xrLine10
@@ -1634,7 +1634,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine10.ForeColor = System.Drawing.Color.Black
             Me.xrLine10.LocationFloat = New DevExpress.Utils.PointFloat(341F, 325F)
             Me.xrLine10.Name = "xrLine10"
-            Me.xrLine10.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine10.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine10.SizeF = New System.Drawing.SizeF(275F, 8F)
             ' 
             ' xrLine9
@@ -1642,7 +1642,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine9.ForeColor = System.Drawing.Color.Black
             Me.xrLine9.LocationFloat = New DevExpress.Utils.PointFloat(33F, 325F)
             Me.xrLine9.Name = "xrLine9"
-            Me.xrLine9.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine9.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine9.SizeF = New System.Drawing.SizeF(266F, 8F)
             ' 
             ' xrLine8
@@ -1650,7 +1650,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine8.ForeColor = System.Drawing.Color.Black
             Me.xrLine8.LocationFloat = New DevExpress.Utils.PointFloat(341F, 341F)
             Me.xrLine8.Name = "xrLine8"
-            Me.xrLine8.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine8.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine8.SizeF = New System.Drawing.SizeF(275F, 8F)
             ' 
             ' xrLine7
@@ -1658,7 +1658,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine7.ForeColor = System.Drawing.Color.Black
             Me.xrLine7.LocationFloat = New DevExpress.Utils.PointFloat(33F, 341F)
             Me.xrLine7.Name = "xrLine7"
-            Me.xrLine7.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine7.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine7.SizeF = New System.Drawing.SizeF(266F, 8F)
             ' 
             ' xrLine6
@@ -1666,7 +1666,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine6.ForeColor = System.Drawing.Color.Black
             Me.xrLine6.LocationFloat = New DevExpress.Utils.PointFloat(341F, 308F)
             Me.xrLine6.Name = "xrLine6"
-            Me.xrLine6.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine6.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine6.SizeF = New System.Drawing.SizeF(275F, 8F)
             ' 
             ' xrLine5
@@ -1674,7 +1674,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine5.ForeColor = System.Drawing.Color.Black
             Me.xrLine5.LocationFloat = New DevExpress.Utils.PointFloat(33F, 308F)
             Me.xrLine5.Name = "xrLine5"
-            Me.xrLine5.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine5.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine5.SizeF = New System.Drawing.SizeF(266F, 8F)
             ' 
             ' xrLine4
@@ -1682,7 +1682,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine4.ForeColor = System.Drawing.Color.Black
             Me.xrLine4.LocationFloat = New DevExpress.Utils.PointFloat(408F, 291F)
             Me.xrLine4.Name = "xrLine4"
-            Me.xrLine4.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine4.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine4.SizeF = New System.Drawing.SizeF(207F, 8F)
             ' 
             ' xrLine3
@@ -1690,7 +1690,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine3.ForeColor = System.Drawing.Color.Black
             Me.xrLine3.LocationFloat = New DevExpress.Utils.PointFloat(99F, 291F)
             Me.xrLine3.Name = "xrLine3"
-            Me.xrLine3.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine3.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine3.SizeF = New System.Drawing.SizeF(200F, 8F)
             ' 
             ' lbShipTo
@@ -1699,7 +1699,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbShipTo.ForeColor = System.Drawing.Color.Black
             Me.lbShipTo.LocationFloat = New DevExpress.Utils.PointFloat(339F, 278F)
             Me.lbShipTo.Name = "lbShipTo"
-            Me.lbShipTo.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbShipTo.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbShipTo.SizeF = New System.Drawing.SizeF(67F, 20F)
             Me.lbShipTo.Text = "Ship To:"
             Me.lbShipTo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1710,7 +1710,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbBillTo.ForeColor = System.Drawing.Color.Black
             Me.lbBillTo.LocationFloat = New DevExpress.Utils.PointFloat(33F, 278F)
             Me.lbBillTo.Name = "lbBillTo"
-            Me.lbBillTo.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbBillTo.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbBillTo.SizeF = New System.Drawing.SizeF(66F, 20F)
             Me.lbBillTo.Text = "Bill To:"
             Me.lbBillTo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1722,7 +1722,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbAddress.LocationFloat = New DevExpress.Utils.PointFloat(33F, 116F)
             Me.lbAddress.Multiline = True
             Me.lbAddress.Name = "lbAddress"
-            Me.lbAddress.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbAddress.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbAddress.SizeF = New System.Drawing.SizeF(258F, 33F)
             Me.lbAddress.Text = "One Portals Way, Twin Points WA  98156" & Global.Microsoft.VisualBasic.Constants.vbCrLf & "Phone: 1-206-555-1417   Fax: 1-206-555-59" & "38"
             Me.lbAddress.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1733,7 +1733,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.lbOrderForm.ForeColor = System.Drawing.Color.Black
             Me.lbOrderForm.LocationFloat = New DevExpress.Utils.PointFloat(425F, 0F)
             Me.lbOrderForm.Name = "lbOrderForm"
-            Me.lbOrderForm.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
+            Me.lbOrderForm.Padding = New DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F)
             Me.lbOrderForm.SizeF = New System.Drawing.SizeF(220F, 33F)
             Me.lbOrderForm.Text = "ORDER FORM"
             Me.lbOrderForm.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -1743,7 +1743,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrPictureBox2.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox2.ImageSource"))
             Me.xrPictureBox2.LocationFloat = New DevExpress.Utils.PointFloat(118F, 21F)
             Me.xrPictureBox2.Name = "xrPictureBox2"
-            Me.xrPictureBox2.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrPictureBox2.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrPictureBox2.SizeF = New System.Drawing.SizeF(162F, 38F)
             Me.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage
             ' 
@@ -1752,7 +1752,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrPictureBox1.ImageSource = New DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"))
             Me.xrPictureBox1.LocationFloat = New DevExpress.Utils.PointFloat(30F, 1F)
             Me.xrPictureBox1.Name = "xrPictureBox1"
-            Me.xrPictureBox1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrPictureBox1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrPictureBox1.SizeF = New System.Drawing.SizeF(87.5F, 87.5F)
             Me.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.AutoSize
             Me.xrPictureBox1.UseImageResolution = False
@@ -1762,7 +1762,7 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.xrLine2.LineWidth = 3F
             Me.xrLine2.LocationFloat = New DevExpress.Utils.PointFloat(0F, 91F)
             Me.xrLine2.Name = "xrLine2"
-            Me.xrLine2.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
+            Me.xrLine2.Padding = New DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F)
             Me.xrLine2.SizeF = New System.Drawing.SizeF(650F, 16F)
             ' 
             ' topMarginBand1
@@ -1870,11 +1870,11 @@ Namespace XtraReportsDemos.NorthwindTraders
             Me.CalculatedFields.AddRange(New DevExpress.XtraReports.UI.CalculatedField() {Me.ProductSales})
             Me.DataMember = "Products"
             Me.DataSource = Me.sqlDataSource1
-            Me.Margins = New DevExpress.Drawing.DXMargins(100, 100, 100, 75)
+            Me.Margins = New DevExpress.Drawing.DXMargins(100F, 100F, 100F, 75F)
             Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.parameterSortGroupsType, Me.parameterSortGroupsOrder})
             Me.ReportPrintOptions.DetailCountAtDesignTime = 6
             Me.RequestParameters = False
-            Me.Version = "19.1"
+            Me.Version = "26.1"
             CType((Me.xrTable2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.xrTable1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.xrTable4), System.ComponentModel.ISupportInitialize).EndInit()

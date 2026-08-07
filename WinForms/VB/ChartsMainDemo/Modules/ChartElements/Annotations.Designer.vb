@@ -414,6 +414,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabPaneOptions
             ' 
             Me.tabPaneOptions.RegularSize = New System.Drawing.Size(241, 421)
+            Me.tabPaneOptions.SelectedPage = Me.tabNavigationPageOptions
             Me.tabPaneOptions.Size = New System.Drawing.Size(241, 421)
             ' 
             ' tabNavigationPageOptions
@@ -426,6 +427,7 @@ Namespace DevExpress.XtraCharts.Demos
             seriesPointAnchorPoint1.SeriesID = 0
             seriesPointAnchorPoint1.SeriesPointID = 30
             textAnnotation1.AnchorPoint = seriesPointAnchorPoint1
+            textAnnotation1.AnnotationID = 0
             textAnnotation1.AutoHeight = True
             textAnnotation1.AutoWidth = True
             textAnnotation1.Name = "Minimum"
@@ -440,6 +442,7 @@ Namespace DevExpress.XtraCharts.Demos
             seriesPointAnchorPoint2.SeriesID = 0
             seriesPointAnchorPoint2.SeriesPointID = 91
             textAnnotation2.AnchorPoint = seriesPointAnchorPoint2
+            textAnnotation2.AnnotationID = 1
             textAnnotation2.AutoHeight = True
             textAnnotation2.AutoWidth = True
             textAnnotation2.Name = "Maximum"
@@ -454,6 +457,7 @@ Namespace DevExpress.XtraCharts.Demos
             chartAnchorPoint1.X = 103
             chartAnchorPoint1.Y = 65
             imageAnnotation1.AnchorPoint = chartAnchorPoint1
+            imageAnnotation1.AnnotationID = 2
             imageAnnotation1.AutoHeight = True
             imageAnnotation1.AutoWidth = True
             imageAnnotation1.Image.DXImage = CType((DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage"))), DevExpress.Drawing.DXBitmap)
@@ -468,6 +472,7 @@ Namespace DevExpress.XtraCharts.Demos
             paneAnchorPoint1.AxisXCoordinate.AxisValueSerializable = "2.5632"
             paneAnchorPoint1.AxisYCoordinate.AxisValueSerializable = "-54.0941176470588"
             textAnnotation3.AnchorPoint = paneAnchorPoint1
+            textAnnotation3.AnnotationID = 3
             textAnnotation3.AutoHeight = True
             textAnnotation3.AutoWidth = True
             textAnnotation3.Name = "Day"
@@ -483,6 +488,7 @@ Namespace DevExpress.XtraCharts.Demos
             paneAnchorPoint2.AxisXCoordinate.AxisValueSerializable = "2.984"
             paneAnchorPoint2.AxisYCoordinate.AxisValueSerializable = "-35.0020761245675"
             textAnnotation4.AnchorPoint = paneAnchorPoint2
+            textAnnotation4.AnnotationID = 4
             textAnnotation4.AutoHeight = True
             textAnnotation4.AutoWidth = True
             textAnnotation4.Name = "Night"
@@ -504,18 +510,21 @@ Namespace DevExpress.XtraCharts.Demos
             strip1.MinLimit.AxisValueSerializable = "2.748"
             strip1.Name = "Night1"
             strip1.ShowInLegend = False
+            strip1.StripID = 0
             strip2.Color = System.Drawing.Color.FromArgb((CInt(((CByte((80)))))), (CInt(((CByte((120)))))), (CInt(((CByte((120)))))), (CInt(((CByte((120)))))))
             strip2.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid
             strip2.MaxLimit.AxisValueSerializable = "4.216"
             strip2.MinLimit.AxisValueSerializable = "3.748"
             strip2.Name = "Night2"
             strip2.ShowInLegend = False
+            strip2.StripID = 1
             strip3.Color = System.Drawing.Color.FromArgb((CInt(((CByte((80)))))), (CInt(((CByte((120)))))), (CInt(((CByte((120)))))), (CInt(((CByte((120)))))))
             strip3.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid
             strip3.MaxLimit.AxisValueSerializable = "5.216"
             strip3.MinLimit.AxisValueSerializable = "4.748"
             strip3.Name = "Night3"
             strip3.ShowInLegend = False
+            strip3.StripID = 2
             xyDiagram1.AxisX.Strips.AddRange(New DevExpress.XtraCharts.Strip() {strip1, strip2, strip3})
             xyDiagram1.AxisX.Title.Text = "Sol"
             xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.[True]
@@ -557,11 +566,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(806, 421)
             Me.chart.TabIndex = 3
             chartTitle1.Text = "Mars Pathfinder Temperature Data"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle1.TitleID = 0
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle2.Text = "From www-k12.atmos.washington.edu/k12"
             chartTitle2.TextColor = System.Drawing.Color.Gray
+            chartTitle2.TitleID = 1
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             AddHandler Me.chart.ObjectSelected, New DevExpress.XtraCharts.HotTrackEventHandler(AddressOf Me.OnChartObjectHotTrackedOrSelected)
             AddHandler Me.chart.ObjectHotTracked, New DevExpress.XtraCharts.HotTrackEventHandler(AddressOf Me.OnChartObjectHotTrackedOrSelected)
@@ -703,7 +714,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAllowMoving.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemAllowMoving.Name = "layoutControlItemAllowMoving"
             Me.layoutControlItemAllowMoving.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemAllowMoving.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAllowMoving.TextVisible = False
             ' 
             ' layoutControlItemAllowAnchoring
@@ -712,7 +722,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAllowAnchoring.Location = New System.Drawing.Point(0, 72)
             Me.layoutControlItemAllowAnchoring.Name = "layoutControlItemAllowAnchoring"
             Me.layoutControlItemAllowAnchoring.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemAllowAnchoring.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAllowAnchoring.TextVisible = False
             ' 
             ' layoutControlItemAllowRotation
@@ -721,7 +730,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAllowRotation.Location = New System.Drawing.Point(0, 48)
             Me.layoutControlItemAllowRotation.Name = "layoutControlItemAllowRotation"
             Me.layoutControlItemAllowRotation.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemAllowRotation.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAllowRotation.TextVisible = False
             ' 
             ' layoutControlItemAllowResizing
@@ -730,7 +738,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAllowResizing.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemAllowResizing.Name = "layoutControlItemAllowResizing"
             Me.layoutControlItemAllowResizing.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemAllowResizing.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAllowResizing.TextVisible = False
             ' 
             ' layoutControlItemAllowEditing
@@ -742,16 +749,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAllowEditing.Name = "layoutControlItemAllowEditing"
             Me.layoutControlItemAllowEditing.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemAllowEditing.Text = "layoutControlItemAllowAnchoring"
-            Me.layoutControlItemAllowEditing.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAllowEditing.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 252)
             Me.emptySpaceItem.Name = "emptySpaceItem"
             Me.emptySpaceItem.Size = New System.Drawing.Size(241, 136)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
             ' 
             ' layoutControlGroupAppearance
             ' 
@@ -785,7 +789,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.ribbonControl1.AutoSizeItems = True
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.createBarBaseItem1, Me.createLineBaseItem1, Me.createPieBaseItem1, Me.createRotatedBarBaseItem1, Me.createAreaBaseItem1, Me.createOtherSeriesTypesBaseItem1, Me.changePaletteGalleryBaseItem1, Me.changeAppearanceGalleryBaseItem1, Me.runDesignerChartItem1, Me.saveAsTemplateChartItem1, Me.loadTemplateChartItem1, Me.printPreviewChartItem1, Me.printChartItem1, Me.createExportBaseItem1, Me.exportToPDFChartItem1, Me.exportToHTMLChartItem1, Me.exportToMHTChartItem1, Me.exportToXLSChartItem1, Me.exportToXLSXChartItem1, Me.exportToRTFChartItem1, Me.exportToBMPChartItem1, Me.exportToGIFChartItem1, Me.exportToJPEGChartItem1, Me.exportToPNGChartItem1, Me.exportToTIFFChartItem1, Me.createExportToImageBaseItem1, Me.selectSeriesBarItem1, Me.changeSeriesViewBarItem1, Me.drawTrendLineIndicatorBarItem1, Me.drawFibonacciArcsIndicatorBarItem1, Me.drawFibonacciFansIndicatorBarItem1, Me.drawFibonacciRetracementIndicatorBarItem1, Me.removeIndicatorBarItem1, Me.addIndicatorBarItem1, Me.addTextAnnotationBarItem1, Me.addImageAnnotationBarItem1, Me.selectAxisMeasureUnitBarItem1, Me.selectPeriodBarItem1})
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.createBarBaseItem1, Me.createLineBaseItem1, Me.createPieBaseItem1, Me.createRotatedBarBaseItem1, Me.createAreaBaseItem1, Me.createOtherSeriesTypesBaseItem1, Me.changePaletteGalleryBaseItem1, Me.changeAppearanceGalleryBaseItem1, Me.runDesignerChartItem1, Me.saveAsTemplateChartItem1, Me.loadTemplateChartItem1, Me.printPreviewChartItem1, Me.printChartItem1, Me.createExportBaseItem1, Me.exportToPDFChartItem1, Me.exportToHTMLChartItem1, Me.exportToMHTChartItem1, Me.exportToXLSChartItem1, Me.exportToXLSXChartItem1, Me.exportToRTFChartItem1, Me.exportToBMPChartItem1, Me.exportToGIFChartItem1, Me.exportToJPEGChartItem1, Me.exportToPNGChartItem1, Me.exportToTIFFChartItem1, Me.createExportToImageBaseItem1, Me.selectSeriesBarItem1, Me.changeSeriesViewBarItem1, Me.drawTrendLineIndicatorBarItem1, Me.drawFibonacciArcsIndicatorBarItem1, Me.drawFibonacciFansIndicatorBarItem1, Me.drawFibonacciRetracementIndicatorBarItem1, Me.removeIndicatorBarItem1, Me.addIndicatorBarItem1, Me.addTextAnnotationBarItem1, Me.addImageAnnotationBarItem1, Me.selectAxisMeasureUnitBarItem1, Me.selectPeriodBarItem1})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
             Me.ribbonControl1.MaxItemId = 40
             Me.ribbonControl1.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always

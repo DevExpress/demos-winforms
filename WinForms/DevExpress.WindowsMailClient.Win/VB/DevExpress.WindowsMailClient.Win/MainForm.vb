@@ -3,6 +3,7 @@ Imports System.Drawing
 Imports System.IO
 Imports System.Linq
 Imports System.Windows.Forms
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.LookAndFeel
 Imports DevExpress.Skins
 Imports DevExpress.Utils
@@ -208,7 +209,21 @@ Namespace DevExpress.WindowsMailClient.Win
         Protected Overrides Sub OnShown(ByVal e As EventArgs)
             MyBase.OnShown(e)
             Call StartUpProcess.OnComplete()
+            If MainFormHelper.TakeScreens Then Call MainFormHelper.TakeAllScreens(New Func(Of Integer, String)(AddressOf TakeModule), takeModuleTypes.Length, Me, fluentDesignFormContainer, New Func(Of Integer, Integer)(AddressOf TakeModuleInterval), demoName:=GetType(MainForm).Assembly.GetName().Name)
         End Sub
+
+        Private ReadOnly takeModuleTypes As ModuleType() = New ModuleType() {ModuleType.MailViewer, ModuleType.SchedulerModule, ModuleType.MailModule}
+
+        Private Function TakeModule(ByVal num As Integer) As String
+            If ViewModel.SelectedModuleType <> takeModuleTypes(num) Then ViewModel.SelectedModuleType = takeModuleTypes(num)
+            fluentDesignFormContainer.Update()
+            Call Application.DoEvents()
+            Return takeModuleTypes(num).ToString()
+        End Function
+
+        Private Function TakeModuleInterval(ByVal num As Integer) As Integer
+            Return 1000
+        End Function
 
         Protected Overrides Sub OnFormClosed(ByVal e As FormClosedEventArgs)
             ViewModel.SelectedModuleType = ModuleType.Unknown
@@ -228,6 +243,7 @@ Namespace DevExpress.WindowsMailClient.Win
         Private Sub accordionControl_CustomDrawElement(ByVal sender As Object, ByVal e As CustomDrawElementEventArgs)
             Dim selectionWidth As Integer = 3
             Dim elem As SkinElement = HamburgerMenuSkins.GetSkin(UserLookAndFeel.Default)(HamburgerMenuSkins.SkinItem)
+            If elem Is Nothing Then Return
             If Equals(e.ObjectInfo.Element.Tag, "Account") Then
                 e.Handled = True
                 e.DrawHeaderBackground()

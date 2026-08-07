@@ -11,6 +11,7 @@ Imports DevExpress.WindowsMailClient.Win.Model
 Imports DevExpress.WindowsMailClient.Win.Utils
 Imports DevExpress.WindowsMailClient.Win.ViewModels
 Imports DevExpress.XtraBars
+Imports DevExpress.XtraBars.Navigation
 Imports DevExpress.XtraBars.ToastNotifications
 Imports DevExpress.XtraEditors
 Imports DevExpress.XtraGrid.Controls
@@ -19,7 +20,6 @@ Imports DevExpress.XtraGrid.Views.Tile
 Imports DevExpress.XtraGrid.Views.Tile.ViewInfo
 Imports DevExpress.XtraLayout
 Imports Message = DevExpress.WindowsMailClient.Win.Data.Message
-Imports DevExpress.XtraBars.Navigation
 
 Namespace DevExpress.WindowsMailClient.Win.Modules
 

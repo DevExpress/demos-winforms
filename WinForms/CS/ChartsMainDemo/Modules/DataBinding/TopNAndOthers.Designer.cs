@@ -26,10 +26,10 @@
             DevExpress.XtraCharts.ChartTitle chartTitle1 = new DevExpress.XtraCharts.ChartTitle();
             DevExpress.XtraCharts.ChartTitle chartTitle2 = new DevExpress.XtraCharts.ChartTitle();
             this.chart = new DevExpress.XtraCharts.ChartControl();
+            this.dS21 = new DevExpress.XtraCharts.Demos.DS2();
             this.oleDbDataAdapter = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbSelectCommand = new System.Data.OleDb.OleDbCommand();
             this.oleDbConnection = new System.Data.OleDb.OleDbConnection();
-            this.dS21 = new DevExpress.XtraCharts.Demos.DS2();
             this.layoutControl = new DevExpress.XtraLayout.LayoutControl();
             this.checkEditLabelVisible = new DevExpress.XtraEditors.CheckEdit();
             this.spinEditCount = new DevExpress.XtraEditors.SpinEdit();
@@ -107,6 +107,7 @@
             series1.Label = doughnut3DSeriesLabel1;
             series1.LegendTextPattern = "{A:P2}";
             series1.Name = "Series 1";
+            series1.SeriesID = 0;
             series1.SeriesPointsSorting = DevExpress.XtraCharts.SortingMode.Descending;
             series1.SeriesPointsSortingKey = DevExpress.XtraCharts.SeriesPointKey.Value_1;
             series1.TopNOptions.Enabled = true;
@@ -120,14 +121,21 @@
             this.chart.Size = new System.Drawing.Size(546, 571);
             this.chart.TabIndex = 1;
             chartTitle1.Text = "Land Area by Country";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle2.Text = "From www.nationmaster.com";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
+            // 
+            // dS21
+            // 
+            this.dS21.DataSetName = "DS2";
+            this.dS21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // oleDbDataAdapter
             // 
@@ -142,11 +150,6 @@
             // 
             this.oleDbSelectCommand.CommandText = "SELECT Country, OfficialName, Area FROM Countries";
             this.oleDbSelectCommand.Connection = this.oleDbConnection;
-            // 
-            // dS21
-            // 
-            this.dS21.DataSetName = "DS2";
-            this.dS21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // layoutControl
             // 
@@ -286,7 +289,6 @@
             this.layoutControlItemShowOther.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemShowOther.Name = "layoutControlItemShowOther";
             this.layoutControlItemShowOther.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemShowOther.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemShowOther.TextVisible = false;
             // 
             // layoutControlItemMode
@@ -309,11 +311,9 @@
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 204);
             this.emptySpaceItem.Name = "emptySpaceItem";
             this.emptySpaceItem.Size = new System.Drawing.Size(241, 334);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroupLabel
             // 
@@ -334,7 +334,6 @@
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
             this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // TopNAndOthersDemo

@@ -191,7 +191,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 542);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // documentGroup
             // 
@@ -316,6 +316,7 @@
             seriesPoint6,
             seriesPoint7,
             seriesPoint8});
+            series1.SeriesID = 0;
             series1.View = pie3DSeriesView1;
             this.chartPie3D.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
@@ -323,11 +324,13 @@
             this.chartPie3D.TabIndex = 1;
             chartTitle1.Indent = 10;
             chartTitle1.Text = "Land Area by Country";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle2.Text = "From www.nationmaster.com";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chartPie3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -388,6 +391,7 @@
             seriesPoint14,
             seriesPoint15,
             seriesPoint16});
+            series2.SeriesID = 0;
             series2.View = doughnut3DSeriesView1;
             this.chartDoughnut3D.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
@@ -395,11 +399,13 @@
             this.chartDoughnut3D.TabIndex = 1;
             chartTitle3.Indent = 10;
             chartTitle3.Text = "Land Area by Country";
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle3.TitleID = 0;
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle4.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle4.Text = "From www.nationmaster.com";
             chartTitle4.TextColor = System.Drawing.Color.Gray;
+            chartTitle4.TitleID = 1;
             this.chartDoughnut3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle3,
             chartTitle4});
@@ -451,6 +457,7 @@
             seriesPoint19,
             seriesPoint20,
             seriesPoint21});
+            series3.SeriesID = 0;
             funnel3DSeriesView1.PointDistance = 10;
             series3.View = funnel3DSeriesView1;
             this.chartFunnel3D.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
@@ -459,6 +466,7 @@
             this.chartFunnel3D.Size = new System.Drawing.Size(788, 548);
             this.chartFunnel3D.TabIndex = 1;
             chartTitle5.Text = "Website Visitor Trend";
+            chartTitle5.TitleID = 0;
             this.chartFunnel3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle5});
             // 
@@ -513,7 +521,7 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(325, 182, 650, 400);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 542);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 2;
             this.layoutControl.Text = "layoutControl1";
             // 
@@ -539,12 +547,12 @@
             // 
             // comboBoxEditPerspectiveAngle
             // 
-            this.comboBoxEditPerspectiveAngle.Location = new System.Drawing.Point(128, 376);
+            this.comboBoxEditPerspectiveAngle.Location = new System.Drawing.Point(137, 376);
             this.comboBoxEditPerspectiveAngle.Name = "comboBoxEditPerspectiveAngle";
             this.comboBoxEditPerspectiveAngle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditPerspectiveAngle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditPerspectiveAngle.Size = new System.Drawing.Size(101, 20);
+            this.comboBoxEditPerspectiveAngle.Size = new System.Drawing.Size(92, 20);
             this.comboBoxEditPerspectiveAngle.StyleController = this.layoutControl;
             this.comboBoxEditPerspectiveAngle.TabIndex = 6;
             // 
@@ -564,7 +572,7 @@
             0,
             0,
             0});
-            this.spinEditHoleRadius.Location = new System.Drawing.Point(128, 58);
+            this.spinEditHoleRadius.Location = new System.Drawing.Point(137, 58);
             this.spinEditHoleRadius.Name = "spinEditHoleRadius";
             this.spinEditHoleRadius.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -577,30 +585,30 @@
             0,
             0,
             0});
-            this.spinEditHoleRadius.Size = new System.Drawing.Size(101, 20);
+            this.spinEditHoleRadius.Size = new System.Drawing.Size(92, 20);
             this.spinEditHoleRadius.StyleController = this.layoutControl;
             this.spinEditHoleRadius.TabIndex = 12;
             // 
             // comboBoxEditExplodedPoints
             // 
-            this.comboBoxEditExplodedPoints.Location = new System.Drawing.Point(128, 34);
+            this.comboBoxEditExplodedPoints.Location = new System.Drawing.Point(137, 34);
             this.comboBoxEditExplodedPoints.Name = "comboBoxEditExplodedPoints";
             this.comboBoxEditExplodedPoints.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditExplodedPoints.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditExplodedPoints.Size = new System.Drawing.Size(101, 20);
+            this.comboBoxEditExplodedPoints.Size = new System.Drawing.Size(92, 20);
             this.comboBoxEditExplodedPoints.StyleController = this.layoutControl;
             this.comboBoxEditExplodedPoints.TabIndex = 13;
             this.comboBoxEditExplodedPoints.EditValueChanged += new System.EventHandler(this.comboBoxEditExplodedPoints_SelectedIndexChanged);
             // 
             // comboBoxEditHeightToWidthRatio
             // 
-            this.comboBoxEditHeightToWidthRatio.Location = new System.Drawing.Point(128, 196);
+            this.comboBoxEditHeightToWidthRatio.Location = new System.Drawing.Point(137, 196);
             this.comboBoxEditHeightToWidthRatio.Name = "comboBoxEditHeightToWidthRatio";
             this.comboBoxEditHeightToWidthRatio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditHeightToWidthRatio.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditHeightToWidthRatio.Size = new System.Drawing.Size(101, 20);
+            this.comboBoxEditHeightToWidthRatio.Size = new System.Drawing.Size(92, 20);
             this.comboBoxEditHeightToWidthRatio.StyleController = this.layoutControl;
             this.comboBoxEditHeightToWidthRatio.TabIndex = 5;
             this.comboBoxEditHeightToWidthRatio.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditHeightToWidthRatio_SelectedIndexChanged);
@@ -612,7 +620,7 @@
             0,
             0,
             0});
-            this.spinEditPointDistance.Location = new System.Drawing.Point(128, 172);
+            this.spinEditPointDistance.Location = new System.Drawing.Point(137, 172);
             this.spinEditPointDistance.Name = "spinEditPointDistance";
             this.spinEditPointDistance.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -630,19 +638,19 @@
             0,
             0,
             0});
-            this.spinEditPointDistance.Size = new System.Drawing.Size(101, 20);
+            this.spinEditPointDistance.Size = new System.Drawing.Size(92, 20);
             this.spinEditPointDistance.StyleController = this.layoutControl;
             this.spinEditPointDistance.TabIndex = 8;
             this.spinEditPointDistance.EditValueChanged += new System.EventHandler(this.spinEditPointDistance_EditValueChanged);
             // 
             // comboBoxEditLabelPosition
             // 
-            this.comboBoxEditLabelPosition.Location = new System.Drawing.Point(128, 310);
+            this.comboBoxEditLabelPosition.Location = new System.Drawing.Point(137, 310);
             this.comboBoxEditLabelPosition.Name = "comboBoxEditLabelPosition";
             this.comboBoxEditLabelPosition.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditLabelPosition.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditLabelPosition.Size = new System.Drawing.Size(101, 20);
+            this.comboBoxEditLabelPosition.Size = new System.Drawing.Size(92, 20);
             this.comboBoxEditLabelPosition.StyleController = this.layoutControl;
             this.comboBoxEditLabelPosition.TabIndex = 14;
             this.comboBoxEditLabelPosition.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditLabelPosition_SelectedIndexChanged);
@@ -654,7 +662,7 @@
             0,
             0,
             0});
-            this.spinEditExplodedDistance.Location = new System.Drawing.Point(128, 82);
+            this.spinEditExplodedDistance.Location = new System.Drawing.Point(137, 82);
             this.spinEditExplodedDistance.Name = "spinEditExplodedDistance";
             this.spinEditExplodedDistance.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -673,7 +681,7 @@
             0,
             0,
             0});
-            this.spinEditExplodedDistance.Size = new System.Drawing.Size(101, 20);
+            this.spinEditExplodedDistance.Size = new System.Drawing.Size(92, 20);
             this.spinEditExplodedDistance.StyleController = this.layoutControl;
             this.spinEditExplodedDistance.TabIndex = 17;
             this.spinEditExplodedDistance.EditValueChanged += new System.EventHandler(this.spinEditExplodedDistance_EditValueChanged);
@@ -685,7 +693,7 @@
             0,
             0,
             0});
-            this.spinEditFunnelHoleRadius.Location = new System.Drawing.Point(128, 148);
+            this.spinEditFunnelHoleRadius.Location = new System.Drawing.Point(137, 148);
             this.spinEditFunnelHoleRadius.Name = "spinEditFunnelHoleRadius";
             this.spinEditFunnelHoleRadius.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -700,7 +708,7 @@
             0,
             0,
             0});
-            this.spinEditFunnelHoleRadius.Size = new System.Drawing.Size(101, 20);
+            this.spinEditFunnelHoleRadius.Size = new System.Drawing.Size(92, 20);
             this.spinEditFunnelHoleRadius.StyleController = this.layoutControl;
             this.spinEditFunnelHoleRadius.TabIndex = 18;
             this.spinEditFunnelHoleRadius.EditValueChanged += new System.EventHandler(this.spinEditFunnelHoleRadius_EditValueChanged);
@@ -717,7 +725,7 @@
             this.layoutControlGroupCamera});
             this.layoutControlGroupRoot.Name = "Root";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 542);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupPieDoughnutGeneral
@@ -785,7 +793,6 @@
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
             this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItemPosition
@@ -805,16 +812,13 @@
             this.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent";
             this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItemValueAsPercent.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemValueAsPercent.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 442);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 100);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 96);
             // 
             // layoutControlGroupFunnelGeneral
             // 
@@ -890,7 +894,6 @@
             this.layoutControlItemRestoreDefaultAngles.Name = "layoutControlItemRestoreDefaultAngles";
             this.layoutControlItemRestoreDefaultAngles.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2);
             this.layoutControlItemRestoreDefaultAngles.Size = new System.Drawing.Size(221, 34);
-            this.layoutControlItemRestoreDefaultAngles.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemRestoreDefaultAngles.TextVisible = false;
             // 
             // Pie3DDoughnut3DFunnel3DViewsDemo

@@ -1,5 +1,6 @@
 Imports System
 Imports System.Collections.Generic
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraCharts.Demos
 
@@ -16,7 +17,7 @@ Namespace DevExpress.XtraCharts.Demos
 
         Private Sub InitCollection()
             dataField = New List(Of WeatherPoint)()
-            Dim lastYear As Integer = Date.Now.Year - 1
+            Dim lastYear As Integer = TutorialConstants.Now.Year - 1
             Call dataField.Add(New WeatherPoint() With {.[Date] = New DateTime(lastYear, 7, 10), .DayTemperature = 23, .NightTemperature = 22, .Pressure = 732})
             Call dataField.Add(New WeatherPoint() With {.[Date] = New DateTime(lastYear, 7, 11), .DayTemperature = 28, .NightTemperature = 22, .Wind = 5, .Pressure = 729})
             Call dataField.Add(New WeatherPoint() With {.[Date] = New DateTime(lastYear, 7, 12), .DayTemperature = 27, .NightTemperature = 22, .Wind = 5, .Pressure = 734})

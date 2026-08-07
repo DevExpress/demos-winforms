@@ -17,14 +17,17 @@ namespace DevExpress.DevAV.ViewModels {
         protected CustomerAnalysisViewModel() {
             unitOfWork = UnitOfWorkSource.GetUnitOfWorkFactory().CreateUnitOfWork();
         }
-        public IEnumerable<CustomersAnalysis.Item> GetSalesReport() {
-            return CustomersAnalysis.GetSalesReport(unitOfWork);
+        public IEnumerable<CustomersAnalysis.Item> GetSalesReport(DateTime startDate, DateTime endDate) {
+            return CustomersAnalysis.GetSalesReport(unitOfWork, startDate, endDate);
         }
-        public IEnumerable<CustomersAnalysis.Item> GetSalesData() {
-            return CustomersAnalysis.GetSalesData(unitOfWork);
+        public IEnumerable<CustomersAnalysis.Item> GetSalesData(DateTime startDate, DateTime endDate) {
+            return CustomersAnalysis.GetSalesData(unitOfWork, startDate, endDate);
         }
         public IEnumerable<string> GetStates(IEnumerable<StateEnum> states) {
             return QueriesHelper.GetStateNames(unitOfWork.States, states);
+        }
+        public DateTime GetMaxOrdersDate() {
+            return AnalysisPeriodHelper.GetMaxOrdersDate(unitOfWork);
         }
     }
 }

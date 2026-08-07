@@ -173,7 +173,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 542);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // documentGroup
             // 
@@ -333,6 +333,7 @@
             this.chartBar3D.Size = new System.Drawing.Size(963, 548);
             this.chartBar3D.TabIndex = 1;
             chartTitle1.Text = "DevAV Sales by Regions";
+            chartTitle1.TitleID = 0;
             this.chartBar3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 
@@ -389,6 +390,7 @@
             this.chartManhattanBar3D.Size = new System.Drawing.Size(963, 548);
             this.chartManhattanBar3D.TabIndex = 1;
             chartTitle2.Text = "DevAV Sales by Regions";
+            chartTitle2.TitleID = 0;
             this.chartManhattanBar3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2});
             // 
@@ -443,11 +445,13 @@
             this.chartStackedBar3D.Size = new System.Drawing.Size(963, 548);
             this.chartStackedBar3D.TabIndex = 2;
             chartTitle3.Text = "Female Age Structure";
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle3.TitleID = 0;
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle4.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle4.Text = "From www.cia.gov";
             chartTitle4.TextColor = System.Drawing.Color.Gray;
+            chartTitle4.TitleID = 1;
             this.chartStackedBar3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle3,
             chartTitle4});
@@ -502,13 +506,16 @@
             this.chartStackedBar3DSideBySide.Size = new System.Drawing.Size(963, 548);
             this.chartStackedBar3DSideBySide.TabIndex = 2;
             chartTitle5.Text = "Population: Age Structure";
+            chartTitle5.TitleID = 0;
             chartTitle6.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle6.Text = "Data estimate for 2020";
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle6.TitleID = 1;
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle7.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle7.Text = "From www.cia.gov";
             chartTitle7.TextColor = System.Drawing.Color.Gray;
+            chartTitle7.TitleID = 2;
             this.chartStackedBar3DSideBySide.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle5,
             chartTitle6,
@@ -539,7 +546,8 @@
             this.chartFullStackedBar3D.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             xyDiagram3D5.AxisY.Label.TextPattern = "{V:P0}";
             xyDiagram3D5.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram3D5.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D5.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D5.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram3D5.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" +
     "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" +
     "1";
@@ -564,6 +572,7 @@
             this.chartFullStackedBar3D.Size = new System.Drawing.Size(963, 548);
             this.chartFullStackedBar3D.TabIndex = 1;
             chartTitle8.Text = "DevAV Sales Mix by Region";
+            chartTitle8.TitleID = 0;
             this.chartFullStackedBar3D.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle8});
             // 
@@ -595,13 +604,9 @@
             this.chartFullStackedBar3DSideBySide.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             xyDiagram3D6.AxisX.Label.MaxWidth = 60;
             xyDiagram3D6.AxisY.Label.TextPattern = "{VP:P0}";
-            xyDiagram3D6.AxisY.VisualRange.Auto = false;
-            xyDiagram3D6.AxisY.VisualRange.AutoSideMargins = false;
-            xyDiagram3D6.AxisY.VisualRange.MaxValueSerializable = "1";
-            xyDiagram3D6.AxisY.VisualRange.MinValueSerializable = "0";
-            xyDiagram3D6.AxisY.VisualRange.SideMarginsValue = 0D;
             xyDiagram3D6.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram3D6.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3D6.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram3D6.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram3D6.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" +
     "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" +
     "1";
@@ -626,13 +631,16 @@
             this.chartFullStackedBar3DSideBySide.Size = new System.Drawing.Size(963, 548);
             this.chartFullStackedBar3DSideBySide.TabIndex = 2;
             chartTitle9.Text = "Population: Age Structure";
+            chartTitle9.TitleID = 0;
             chartTitle10.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle10.Text = "Data estimate for 2020";
-            chartTitle11.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle10.TitleID = 1;
             chartTitle11.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle11.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle11.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle11.Text = "From www.cia.gov";
             chartTitle11.TextColor = System.Drawing.Color.Gray;
+            chartTitle11.TitleID = 2;
             this.chartFullStackedBar3DSideBySide.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle9,
             chartTitle10,
@@ -686,7 +694,7 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(371, 203, 650, 400);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 542);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 2;
             this.layoutControl.Text = "layoutControl1";
             // 
@@ -712,12 +720,12 @@
             // 
             // comboBoxEditPerspectiveAngle
             // 
-            this.comboBoxEditPerspectiveAngle.Location = new System.Drawing.Point(105, 238);
+            this.comboBoxEditPerspectiveAngle.Location = new System.Drawing.Point(114, 238);
             this.comboBoxEditPerspectiveAngle.Name = "comboBoxEditPerspectiveAngle";
             this.comboBoxEditPerspectiveAngle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditPerspectiveAngle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditPerspectiveAngle.Size = new System.Drawing.Size(124, 20);
+            this.comboBoxEditPerspectiveAngle.Size = new System.Drawing.Size(115, 20);
             this.comboBoxEditPerspectiveAngle.StyleController = this.layoutControl;
             this.comboBoxEditPerspectiveAngle.TabIndex = 6;
             // 
@@ -742,19 +750,19 @@
             // 
             // comboBoxEdit3DModel
             // 
-            this.comboBoxEdit3DModel.Location = new System.Drawing.Point(105, 58);
+            this.comboBoxEdit3DModel.Location = new System.Drawing.Point(114, 58);
             this.comboBoxEdit3DModel.Name = "comboBoxEdit3DModel";
             this.comboBoxEdit3DModel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit3DModel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit3DModel.Size = new System.Drawing.Size(124, 20);
+            this.comboBoxEdit3DModel.Size = new System.Drawing.Size(115, 20);
             this.comboBoxEdit3DModel.StyleController = this.layoutControl;
             this.comboBoxEdit3DModel.TabIndex = 2;
             // 
             // comboBoxEditGroupSeriesBy
             // 
             this.comboBoxEditGroupSeriesBy.EditValue = "Age";
-            this.comboBoxEditGroupSeriesBy.Location = new System.Drawing.Point(105, 34);
+            this.comboBoxEditGroupSeriesBy.Location = new System.Drawing.Point(114, 34);
             this.comboBoxEditGroupSeriesBy.Name = "comboBoxEditGroupSeriesBy";
             this.comboBoxEditGroupSeriesBy.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -762,7 +770,7 @@
             "Gender",
             "Age"});
             this.comboBoxEditGroupSeriesBy.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditGroupSeriesBy.Size = new System.Drawing.Size(124, 20);
+            this.comboBoxEditGroupSeriesBy.Size = new System.Drawing.Size(115, 20);
             this.comboBoxEditGroupSeriesBy.StyleController = this.layoutControl;
             this.comboBoxEditGroupSeriesBy.TabIndex = 3;
             this.comboBoxEditGroupSeriesBy.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditGroupSeriesBy_SelectedIndexChanged);
@@ -778,7 +786,7 @@
             this.layoutControlGroupCamera});
             this.layoutControlGroupRoot.Name = "Root";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 542);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupGeneral
@@ -802,7 +810,6 @@
             this.layoutControlItemShowFacet.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemShowFacet.Name = "layoutControlItemShowFacet";
             this.layoutControlItemShowFacet.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemShowFacet.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemShowFacet.TextVisible = false;
             // 
             // layoutControlGroupGroupSeriesBy
@@ -844,7 +851,6 @@
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
             this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItemValueAsPercent
@@ -854,16 +860,13 @@
             this.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent";
             this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItemValueAsPercent.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemValueAsPercent.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 304);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 238);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 234);
             // 
             // layoutControlGroupCamera
             // 
@@ -895,7 +898,6 @@
             this.layoutControlItemRestoreDefaultAngles.Name = "layoutControlItemRestoreDefaultAngles";
             this.layoutControlItemRestoreDefaultAngles.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2);
             this.layoutControlItemRestoreDefaultAngles.Size = new System.Drawing.Size(221, 34);
-            this.layoutControlItemRestoreDefaultAngles.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemRestoreDefaultAngles.TextVisible = false;
             // 
             // Bar3DViewsDemo

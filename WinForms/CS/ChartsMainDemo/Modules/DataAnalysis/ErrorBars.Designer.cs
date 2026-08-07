@@ -70,7 +70,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // dataSet
             // 
@@ -118,7 +118,7 @@
             this.layoutControl.Location = new System.Drawing.Point(0, 0);
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
@@ -126,7 +126,7 @@
             // 
             this.radioGroupEndStyle.AutoSizeInLayoutControl = true;
             this.radioGroupEndStyle.EditValue = 0;
-            this.radioGroupEndStyle.Location = new System.Drawing.Point(12, 259);
+            this.radioGroupEndStyle.Location = new System.Drawing.Point(12, 316);
             this.radioGroupEndStyle.Name = "radioGroupEndStyle";
             this.radioGroupEndStyle.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupEndStyle.Properties.Appearance.Options.UseBackColor = true;
@@ -135,7 +135,7 @@
             this.radioGroupEndStyle.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Cap"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(1, "No Cap")});
-            this.radioGroupEndStyle.Size = new System.Drawing.Size(217, 38);
+            this.radioGroupEndStyle.Size = new System.Drawing.Size(217, 56);
             this.radioGroupEndStyle.StyleController = this.layoutControl;
             this.radioGroupEndStyle.TabIndex = 17;
             this.radioGroupEndStyle.SelectedIndexChanged += new System.EventHandler(this.radioGroupEndStyle_SelectedIndexChanged);
@@ -144,7 +144,7 @@
             // 
             this.radioGroupDirection.AutoSizeInLayoutControl = true;
             this.radioGroupDirection.EditValue = 0;
-            this.radioGroupDirection.Location = new System.Drawing.Point(12, 163);
+            this.radioGroupDirection.Location = new System.Drawing.Point(12, 190);
             this.radioGroupDirection.Name = "radioGroupDirection";
             this.radioGroupDirection.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupDirection.Properties.Appearance.Options.UseBackColor = true;
@@ -154,7 +154,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Both"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Minus"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Plus")});
-            this.radioGroupDirection.Size = new System.Drawing.Size(217, 53);
+            this.radioGroupDirection.Size = new System.Drawing.Size(217, 80);
             this.radioGroupDirection.StyleController = this.layoutControl;
             this.radioGroupDirection.TabIndex = 18;
             this.radioGroupDirection.SelectedIndexChanged += new System.EventHandler(this.radioGroupDirection_SelectedIndexChanged);
@@ -162,7 +162,7 @@
             // radioGroupErrorBarsKind
             // 
             this.radioGroupErrorBarsKind.AutoSizeInLayoutControl = true;
-            this.radioGroupErrorBarsKind.Location = new System.Drawing.Point(12, 112);
+            this.radioGroupErrorBarsKind.Location = new System.Drawing.Point(12, 136);
             this.radioGroupErrorBarsKind.Name = "radioGroupErrorBarsKind";
             this.radioGroupErrorBarsKind.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupErrorBarsKind.Properties.Appearance.Options.UseBackColor = true;
@@ -177,7 +177,7 @@
             // 
             this.radioGroupSeriesView.AutoSizeInLayoutControl = true;
             this.radioGroupSeriesView.EditValue = 0;
-            this.radioGroupSeriesView.Location = new System.Drawing.Point(12, 31);
+            this.radioGroupSeriesView.Location = new System.Drawing.Point(12, 34);
             this.radioGroupSeriesView.Name = "radioGroupSeriesView";
             this.radioGroupSeriesView.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupSeriesView.Properties.Appearance.Options.UseBackColor = true;
@@ -186,7 +186,7 @@
             this.radioGroupSeriesView.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Bar"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(9, "Point")});
-            this.radioGroupSeriesView.Size = new System.Drawing.Size(217, 38);
+            this.radioGroupSeriesView.Size = new System.Drawing.Size(217, 56);
             this.radioGroupSeriesView.StyleController = this.layoutControl;
             this.radioGroupSeriesView.TabIndex = 15;
             this.radioGroupSeriesView.SelectedIndexChanged += new System.EventHandler(this.radioGroupSeriesView_SelectedIndexChanged);
@@ -203,7 +203,7 @@
             this.layoutControlGroupEndStyle});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupDirection
@@ -211,9 +211,9 @@
             this.layoutControlGroupDirection.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupDirection.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemDirection});
-            this.layoutControlGroupDirection.Location = new System.Drawing.Point(0, 132);
+            this.layoutControlGroupDirection.Location = new System.Drawing.Point(0, 156);
             this.layoutControlGroupDirection.Name = "layoutControlGroupDirection";
-            this.layoutControlGroupDirection.Size = new System.Drawing.Size(241, 96);
+            this.layoutControlGroupDirection.Size = new System.Drawing.Size(241, 126);
             this.layoutControlGroupDirection.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupDirection.Text = "Direction";
             // 
@@ -222,9 +222,8 @@
             this.layoutControlItemDirection.Control = this.radioGroupDirection;
             this.layoutControlItemDirection.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemDirection.Name = "layoutControlItemDirection";
-            this.layoutControlItemDirection.Size = new System.Drawing.Size(221, 57);
+            this.layoutControlItemDirection.Size = new System.Drawing.Size(221, 84);
             this.layoutControlItemDirection.Text = "Direction:";
-            this.layoutControlItemDirection.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemDirection.TextVisible = false;
             // 
             // layoutControlGroupErrorBarKind
@@ -232,9 +231,9 @@
             this.layoutControlGroupErrorBarKind.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupErrorBarKind.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemErrorBarKind});
-            this.layoutControlGroupErrorBarKind.Location = new System.Drawing.Point(0, 81);
+            this.layoutControlGroupErrorBarKind.Location = new System.Drawing.Point(0, 102);
             this.layoutControlGroupErrorBarKind.Name = "layoutControlGroupErrorBarKind";
-            this.layoutControlGroupErrorBarKind.Size = new System.Drawing.Size(241, 51);
+            this.layoutControlGroupErrorBarKind.Size = new System.Drawing.Size(241, 54);
             this.layoutControlGroupErrorBarKind.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupErrorBarKind.Text = "Error Bar Kind";
             // 
@@ -245,7 +244,6 @@
             this.layoutControlItemErrorBarKind.Name = "layoutControlItemErrorBarKind";
             this.layoutControlItemErrorBarKind.Size = new System.Drawing.Size(221, 12);
             this.layoutControlItemErrorBarKind.Text = "Error Bar Kind:";
-            this.layoutControlItemErrorBarKind.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemErrorBarKind.TextVisible = false;
             // 
             // layoutControlGroupSeriesView
@@ -255,7 +253,7 @@
             this.layoutControlItemSeriesView});
             this.layoutControlGroupSeriesView.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupSeriesView.Name = "layoutControlGroupSeriesView";
-            this.layoutControlGroupSeriesView.Size = new System.Drawing.Size(241, 81);
+            this.layoutControlGroupSeriesView.Size = new System.Drawing.Size(241, 102);
             this.layoutControlGroupSeriesView.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupSeriesView.Text = "SeriesV iew";
             // 
@@ -264,27 +262,24 @@
             this.layoutControlItemSeriesView.Control = this.radioGroupSeriesView;
             this.layoutControlItemSeriesView.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemSeriesView.Name = "layoutControlItemSeriesView";
-            this.layoutControlItemSeriesView.Size = new System.Drawing.Size(221, 42);
+            this.layoutControlItemSeriesView.Size = new System.Drawing.Size(221, 60);
             this.layoutControlItemSeriesView.Text = "Series View";
-            this.layoutControlItemSeriesView.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemSeriesView.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 309);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 384);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(241, 235);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(241, 154);
             // 
             // layoutControlGroupEndStyle
             // 
             this.layoutControlGroupEndStyle.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupEndStyle.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemEndStyle});
-            this.layoutControlGroupEndStyle.Location = new System.Drawing.Point(0, 228);
+            this.layoutControlGroupEndStyle.Location = new System.Drawing.Point(0, 282);
             this.layoutControlGroupEndStyle.Name = "layoutControlGroupEndStyle";
-            this.layoutControlGroupEndStyle.Size = new System.Drawing.Size(241, 81);
+            this.layoutControlGroupEndStyle.Size = new System.Drawing.Size(241, 102);
             this.layoutControlGroupEndStyle.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupEndStyle.Text = "End Style";
             // 
@@ -293,9 +288,8 @@
             this.layoutControlItemEndStyle.Control = this.radioGroupEndStyle;
             this.layoutControlItemEndStyle.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemEndStyle.Name = "layoutControlItemEndStyle";
-            this.layoutControlItemEndStyle.Size = new System.Drawing.Size(221, 42);
+            this.layoutControlItemEndStyle.Size = new System.Drawing.Size(221, 60);
             this.layoutControlItemEndStyle.Text = "End Style:";
-            this.layoutControlItemEndStyle.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemEndStyle.TextVisible = false;
             // 
             // chart
@@ -308,9 +302,10 @@
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.WholeRange.Auto = false;
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = false;
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0D;
             xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "65";
             xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0";
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0D;
             this.chart.Diagram = xyDiagram1;
             this.chart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart.Legend.Name = "Default Legend";
@@ -321,6 +316,7 @@
             series1.DataSource = this.dataSet;
             series1.LegendName = "Default Legend";
             series1.Name = "Series 1";
+            series1.SeriesID = 0;
             series1.ValueDataMembersSerializable = "Table1.Value";
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};

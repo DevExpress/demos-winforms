@@ -1,26 +1,19 @@
-using System;
-using System.Linq;
-using DevExpress.Mvvm.POCO;
-using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.DevAVDbDataModel1;
 using DevExpress.DevAV.Common.DataModel;
-using DevExpress.DevAV;
 using DevExpress.DevAV.Common.ViewModel;
+using DevExpress.DevAV.DevAVDbDataModel1;
+using DevExpress.Mvvm.POCO;
 
-namespace DevExpress.DevAV.ViewModels
-{
+namespace DevExpress.DevAV.ViewModels {
     /// <summary>
     /// Represents the Version collection view model.
     /// </summary>
-    public partial class DatabaseVersionCollectionViewModel : CollectionViewModel<DatabaseVersion, long, IDevAVDbUnitOfWork>
-    {
+    public partial class DatabaseVersionCollectionViewModel : CollectionViewModel<DatabaseVersion, long, IDevAVDbUnitOfWork> {
 
         /// <summary>
         /// Creates a new instance of DatabaseVersionCollectionViewModel as a POCO view model.
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
-        public static DatabaseVersionCollectionViewModel Create(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null)
-        {
+        public static DatabaseVersionCollectionViewModel Create(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null) {
             return ViewModelSource.Create(() => new DatabaseVersionCollectionViewModel(unitOfWorkFactory));
         }
 
@@ -30,8 +23,7 @@ namespace DevExpress.DevAV.ViewModels
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
         protected DatabaseVersionCollectionViewModel(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null)
-            : base(unitOfWorkFactory ?? UnitOfWorkSource.GetUnitOfWorkFactory(), x => x.Version)
-        {
+            : base(unitOfWorkFactory ?? UnitOfWorkSource.GetUnitOfWorkFactory(), x => x.Version) {
         }
     }
 }

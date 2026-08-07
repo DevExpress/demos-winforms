@@ -1,10 +1,6 @@
-using DevExpress.DevAV.Common.ViewModel;
+using System.Collections.Generic;
 using DevExpress.DevAV.DevAVDbDataModel1;
 using DevExpress.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace DevExpress.DevAV.ViewModels {
     public partial class ProductCollectionViewModel : IFilterTreeViewModelContainer<Product, ProductInfoWithSales> {

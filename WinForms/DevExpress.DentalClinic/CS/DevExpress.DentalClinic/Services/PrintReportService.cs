@@ -1,9 +1,8 @@
-﻿using DevExpress.DataAccess.ConnectionParameters;
+﻿using System.Windows.Forms;
+using DevExpress.DataAccess.ConnectionParameters;
 using DevExpress.DataAccess.Sql;
 using DevExpress.DataAccess.Wizard.Services;
-using DevExpress.Utils;
 using DevExpress.XtraReports.UI;
-using System.Windows.Forms;
 
 namespace DevExpress.DentalClinic.Services {
     public interface IPrintReportService {

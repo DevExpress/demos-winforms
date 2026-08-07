@@ -18,16 +18,20 @@ Namespace DevExpress.DevAV.ViewModels
             unitOfWork = GetUnitOfWorkFactory().CreateUnitOfWork()
         End Sub
 
-        Public Function GetSalesReport() As IEnumerable(Of CustomersAnalysis.Item)
-            Return unitOfWork.GetSalesReport
+        Public Function GetSalesReport(ByVal startDate As Date, ByVal endDate As Date) As IEnumerable(Of CustomersAnalysis.Item)
+            Return unitOfWork.GetSalesReport(startDate, endDate)
         End Function
 
-        Public Function GetSalesData() As IEnumerable(Of CustomersAnalysis.Item)
-            Return unitOfWork.GetSalesData
+        Public Function GetSalesData(ByVal startDate As Date, ByVal endDate As Date) As IEnumerable(Of CustomersAnalysis.Item)
+            Return unitOfWork.GetSalesData(startDate, endDate)
         End Function
 
         Public Function GetStates(ByVal states As IEnumerable(Of StateEnum)) As IEnumerable(Of String)
             Return QueriesHelper.GetStateNames(unitOfWork.States, states)
+        End Function
+
+        Public Function GetMaxOrdersDate() As Date
+            Return unitOfWork.GetMaxOrdersDate
         End Function
     End Class
 End Namespace

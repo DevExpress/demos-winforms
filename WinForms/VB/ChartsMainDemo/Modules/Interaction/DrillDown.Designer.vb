@@ -52,6 +52,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(784, 432)
             Me.chart.TabIndex = 0
             chartTitle1.Text = "DevAV Total Sales"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             Me.chart.ToolTipController = Me.toolTipController1
             Me.chart.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[True]

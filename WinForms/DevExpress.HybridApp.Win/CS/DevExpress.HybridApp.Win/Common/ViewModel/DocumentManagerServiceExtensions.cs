@@ -1,27 +1,20 @@
 using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
 using DevExpress.Mvvm;
 
-namespace DevExpress.DevAV.Common.ViewModel
-{
+namespace DevExpress.DevAV.Common.ViewModel {
     /// <summary>
     /// Provides the extension methods that are used to implement the IDocumentManagerService interface.
     /// </summary>
-    public static class DocumentManagerServiceExtensions
-    {
+    public static class DocumentManagerServiceExtensions {
         /// <summary>
         /// Creates and shows a document containing a single object view model for the existing entity.
         /// </summary>
         /// <param name="documentManagerService">An instance of the IDocumentManager interface used to create and show the document.</param>
         /// <param name="parentViewModel">An object that is passed to the view model of the created view.</param>
         /// <param name="primaryKey">An entity primary key.</param>
-        public static IDocument ShowExistingEntityDocument<TEntity, TPrimaryKey>(this IDocumentManagerService documentManagerService, object parentViewModel, TPrimaryKey primaryKey)
-        {
+        public static IDocument ShowExistingEntityDocument<TEntity, TPrimaryKey>(this IDocumentManagerService documentManagerService, object parentViewModel, TPrimaryKey primaryKey) {
             IDocument document = FindEntityDocument<TEntity, TPrimaryKey>(documentManagerService, primaryKey) ?? CreateDocument<TEntity>(documentManagerService, primaryKey, parentViewModel);
-            if (document != null)
+            if(document != null)
                 document.Show();
             return document;
         }
@@ -32,8 +25,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// <param name="documentManagerService">An instance of the IDocumentManager interface used to create and show the document.</param>
         /// <param name="parentViewModel">An object that is passed to the view model of the created view.</param>
         /// <param name="newEntityInitializer">An optional parameter that provides a function that initializes a new entity.</param>
-        public static void ShowNewEntityDocument<TEntity>(this IDocumentManagerService documentManagerService, object parentViewModel, Action<TEntity> newEntityInitializer = null) 
-        {
+        public static void ShowNewEntityDocument<TEntity>(this IDocumentManagerService documentManagerService, object parentViewModel, Action<TEntity> newEntityInitializer = null) {
             IDocument document = FindNewEntityDocument<TEntity>(documentManagerService) ?? CreateDocument<TEntity>(documentManagerService, newEntityInitializer ?? (x => DefaultEntityInitializer(x)), parentViewModel);
             if(document != null)
                 document.Show();
@@ -44,14 +36,12 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// </summary>
         /// <param name="documentManagerService">An instance of the IDocumentManager interface used to find a document.</param>
         /// <param name="primaryKey">An entity primary key.</param>
-        public static IDocument FindEntityDocument<TEntity, TPrimaryKey>(this IDocumentManagerService documentManagerService, TPrimaryKey primaryKey)
-        {
-            if (documentManagerService == null)
+        public static IDocument FindEntityDocument<TEntity, TPrimaryKey>(this IDocumentManagerService documentManagerService, TPrimaryKey primaryKey) {
+            if(documentManagerService == null)
                 return null;
-            foreach (IDocument document in documentManagerService.Documents)
-            {
+            foreach(IDocument document in documentManagerService.Documents) {
                 ISingleObjectViewModel<TEntity, TPrimaryKey> entityViewModel = document.Content as ISingleObjectViewModel<TEntity, TPrimaryKey>;
-                if (entityViewModel != null && object.Equals(entityViewModel.PrimaryKey, primaryKey))
+                if(entityViewModel != null && object.Equals(entityViewModel.PrimaryKey, primaryKey))
                     return document;
             }
             return null;
@@ -64,10 +54,9 @@ namespace DevExpress.DevAV.Common.ViewModel
         public static IDocument FindNewEntityDocument<TEntity>(this IDocumentManagerService documentManagerService) {
             if(documentManagerService == null)
                 return null;
-            foreach(IDocument document in documentManagerService.Documents) 
-            {
+            foreach(IDocument document in documentManagerService.Documents) {
                 ISingleObjectViewModel<TEntity> entityViewModel = document.Content as ISingleObjectViewModel<TEntity>;
-                if (entityViewModel != null && entityViewModel.IsNew())
+                if(entityViewModel != null && entityViewModel.IsNew())
                     return document;
             }
             return null;
@@ -75,9 +64,8 @@ namespace DevExpress.DevAV.Common.ViewModel
 
         static void DefaultEntityInitializer<TEntity>(TEntity entity) { }
 
-        static IDocument CreateDocument<TEntity>(IDocumentManagerService documentManagerService, object parameter, object parentViewModel)
-        {
-            if (documentManagerService == null)
+        static IDocument CreateDocument<TEntity>(IDocumentManagerService documentManagerService, object parameter, object parentViewModel) {
+            if(documentManagerService == null)
                 return null;
             var document = documentManagerService.CreateDocument(GetDocumentTypeName<TEntity>(), parameter, parentViewModel);
             document.Id = "_" + Guid.NewGuid().ToString().Replace('-', '_');
@@ -85,8 +73,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             return document;
         }
 
-        public static string GetDocumentTypeName<TEntity>()
-        {
+        public static string GetDocumentTypeName<TEntity>() {
             return typeof(TEntity).Name + "View";
         }
     }

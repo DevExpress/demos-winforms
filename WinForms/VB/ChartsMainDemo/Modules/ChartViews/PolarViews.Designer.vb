@@ -190,7 +190,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' documentGroup
             ' 
@@ -273,14 +273,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(576, 500, 1004, 761)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 2
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' spinEditAxisLabelAngle
             ' 
             Me.spinEditAxisLabelAngle.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-            Me.spinEditAxisLabelAngle.Location = New System.Drawing.Point(107, 228)
+            Me.spinEditAxisLabelAngle.Location = New System.Drawing.Point(116, 238)
             Me.spinEditAxisLabelAngle.Name = "spinEditAxisLabelAngle"
             Me.spinEditAxisLabelAngle.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditAxisLabelAngle.Properties.DisplayFormat.FormatString = "0°"
@@ -290,7 +290,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditAxisLabelAngle.Properties.Mask.EditMask = "N00"
             Me.spinEditAxisLabelAngle.Properties.MaxValue = New Decimal(New Integer() {360, 0, 0, 0})
             Me.spinEditAxisLabelAngle.Properties.MinValue = New Decimal(New Integer() {360, 0, 0, -2147483648})
-            Me.spinEditAxisLabelAngle.Size = New System.Drawing.Size(122, 20)
+            Me.spinEditAxisLabelAngle.Size = New System.Drawing.Size(113, 20)
             Me.spinEditAxisLabelAngle.StyleController = Me.layoutControl
             Me.spinEditAxisLabelAngle.TabIndex = 18
             AddHandler Me.spinEditAxisLabelAngle.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditAxisLabelAngle_EditValueChanged)
@@ -298,10 +298,10 @@ Namespace DevExpress.XtraCharts.Demos
             ' checkEditLabelVisible
             ' 
             Me.checkEditLabelVisible.EditValue = True
-            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 205)
+            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 214)
             Me.checkEditLabelVisible.Name = "checkEditLabelVisible"
             Me.checkEditLabelVisible.Properties.Caption = "Show Series Labels"
-            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 20)
             Me.checkEditLabelVisible.StyleController = Me.layoutControl
             Me.checkEditLabelVisible.TabIndex = 4
             AddHandler Me.checkEditLabelVisible.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditLabelVisible_CheckedChanged)
@@ -309,7 +309,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditMarkerSize
             ' 
             Me.spinEditMarkerSize.EditValue = New Decimal(New Integer() {10, 0, 0, 0})
-            Me.spinEditMarkerSize.Location = New System.Drawing.Point(107, 314)
+            Me.spinEditMarkerSize.Location = New System.Drawing.Point(116, 328)
             Me.spinEditMarkerSize.Name = "spinEditMarkerSize"
             Me.spinEditMarkerSize.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditMarkerSize.Properties.DisplayFormat.FormatString = "0 px"
@@ -318,39 +318,39 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditMarkerSize.Properties.Mask.EditMask = "N00"
             Me.spinEditMarkerSize.Properties.MaxValue = New Decimal(New Integer() {30, 0, 0, 0})
             Me.spinEditMarkerSize.Properties.MinValue = New Decimal(New Integer() {1, 0, 0, 0})
-            Me.spinEditMarkerSize.Size = New System.Drawing.Size(122, 20)
+            Me.spinEditMarkerSize.Size = New System.Drawing.Size(113, 20)
             Me.spinEditMarkerSize.StyleController = Me.layoutControl
             Me.spinEditMarkerSize.TabIndex = 8
             ' 
             ' checkEditMarkerVisible
             ' 
             Me.checkEditMarkerVisible.EditValue = True
-            Me.checkEditMarkerVisible.Location = New System.Drawing.Point(12, 291)
+            Me.checkEditMarkerVisible.Location = New System.Drawing.Point(12, 304)
             Me.checkEditMarkerVisible.Name = "checkEditMarkerVisible"
             Me.checkEditMarkerVisible.Properties.Caption = "Visible"
-            Me.checkEditMarkerVisible.Size = New System.Drawing.Size(217, 19)
+            Me.checkEditMarkerVisible.Size = New System.Drawing.Size(217, 20)
             Me.checkEditMarkerVisible.StyleController = Me.layoutControl
             Me.checkEditMarkerVisible.TabIndex = 6
             AddHandler Me.checkEditMarkerVisible.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditMarkerVisible_CheckedChanged)
             ' 
             ' comboBoxEditMarkerKind
             ' 
-            Me.comboBoxEditMarkerKind.Location = New System.Drawing.Point(107, 338)
+            Me.comboBoxEditMarkerKind.Location = New System.Drawing.Point(116, 352)
             Me.comboBoxEditMarkerKind.Name = "comboBoxEditMarkerKind"
             Me.comboBoxEditMarkerKind.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditMarkerKind.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditMarkerKind.Size = New System.Drawing.Size(122, 20)
+            Me.comboBoxEditMarkerKind.Size = New System.Drawing.Size(113, 20)
             Me.comboBoxEditMarkerKind.StyleController = Me.layoutControl
             Me.comboBoxEditMarkerKind.TabIndex = 5
             ' 
             ' comboBoxEditFunction
             ' 
-            Me.comboBoxEditFunction.Location = New System.Drawing.Point(107, 31)
+            Me.comboBoxEditFunction.Location = New System.Drawing.Point(116, 34)
             Me.comboBoxEditFunction.Name = "comboBoxEditFunction"
             Me.comboBoxEditFunction.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditFunction.Properties.Items.AddRange(New Object() {"Archimedean Spiral", "Cardioid", "Cartesian Folium"})
             Me.comboBoxEditFunction.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditFunction.Size = New System.Drawing.Size(122, 20)
+            Me.comboBoxEditFunction.Size = New System.Drawing.Size(113, 20)
             Me.comboBoxEditFunction.StyleController = Me.layoutControl
             Me.comboBoxEditFunction.TabIndex = 13
             AddHandler Me.comboBoxEditFunction.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditFunction_SelectedIndexChanged)
@@ -358,7 +358,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditStartAngle
             ' 
             Me.spinEditStartAngle.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-            Me.spinEditStartAngle.Location = New System.Drawing.Point(107, 142)
+            Me.spinEditStartAngle.Location = New System.Drawing.Point(116, 148)
             Me.spinEditStartAngle.Name = "spinEditStartAngle"
             Me.spinEditStartAngle.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditStartAngle.Properties.DisplayFormat.FormatString = "0°"
@@ -367,7 +367,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditStartAngle.Properties.IsFloatValue = False
             Me.spinEditStartAngle.Properties.Mask.EditMask = "N00"
             Me.spinEditStartAngle.Properties.MaxValue = New Decimal(New Integer() {360, 0, 0, 0})
-            Me.spinEditStartAngle.Size = New System.Drawing.Size(122, 20)
+            Me.spinEditStartAngle.Size = New System.Drawing.Size(113, 20)
             Me.spinEditStartAngle.StyleController = Me.layoutControl
             Me.spinEditStartAngle.TabIndex = 17
             AddHandler Me.spinEditStartAngle.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditStartAngle_EditValueChanged)
@@ -375,12 +375,12 @@ Namespace DevExpress.XtraCharts.Demos
             ' comboBoxEditRotationDirection
             ' 
             Me.comboBoxEditRotationDirection.EditValue = "Counterclockwise"
-            Me.comboBoxEditRotationDirection.Location = New System.Drawing.Point(107, 118)
+            Me.comboBoxEditRotationDirection.Location = New System.Drawing.Point(116, 124)
             Me.comboBoxEditRotationDirection.Name = "comboBoxEditRotationDirection"
             Me.comboBoxEditRotationDirection.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditRotationDirection.Properties.Items.AddRange(New Object() {"Counterclockwise", "Clockwise"})
             Me.comboBoxEditRotationDirection.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditRotationDirection.Size = New System.Drawing.Size(122, 20)
+            Me.comboBoxEditRotationDirection.Size = New System.Drawing.Size(113, 20)
             Me.comboBoxEditRotationDirection.StyleController = Me.layoutControl
             Me.comboBoxEditRotationDirection.TabIndex = 16
             AddHandler Me.comboBoxEditRotationDirection.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditRotationDirection_SelectedIndexChanged)
@@ -388,12 +388,12 @@ Namespace DevExpress.XtraCharts.Demos
             ' comboBoxStyle
             ' 
             Me.comboBoxStyle.EditValue = "Polygon"
-            Me.comboBoxStyle.Location = New System.Drawing.Point(107, 94)
+            Me.comboBoxStyle.Location = New System.Drawing.Point(116, 100)
             Me.comboBoxStyle.Name = "comboBoxStyle"
             Me.comboBoxStyle.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxStyle.Properties.Items.AddRange(New Object() {"Circle", "Polygon"})
             Me.comboBoxStyle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxStyle.Size = New System.Drawing.Size(122, 20)
+            Me.comboBoxStyle.Size = New System.Drawing.Size(113, 20)
             Me.comboBoxStyle.StyleController = Me.layoutControl
             Me.comboBoxStyle.TabIndex = 14
             AddHandler Me.comboBoxStyle.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditStyle_SelectedIndexChanged)
@@ -405,7 +405,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupLabel, Me.layoutControlGroupMarker, Me.layoutControlGroupGeneral, Me.emptySpaceItem, Me.layoutControlGroupDiagram})
             Me.layoutControlGroupRoot.Name = "Root"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupLabel
@@ -415,9 +415,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupLabel.CustomizationFormText = "Label"
             Me.layoutControlGroupLabel.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupLabel.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemLabelVisible, Me.layoutControlItem1})
-            Me.layoutControlGroupLabel.Location = New System.Drawing.Point(0, 174)
+            Me.layoutControlGroupLabel.Location = New System.Drawing.Point(0, 180)
             Me.layoutControlGroupLabel.Name = "layoutControlGroupLabel"
-            Me.layoutControlGroupLabel.Size = New System.Drawing.Size(241, 86)
+            Me.layoutControlGroupLabel.Size = New System.Drawing.Size(241, 90)
             Me.layoutControlGroupLabel.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupLabel.Text = "Label"
             ' 
@@ -427,15 +427,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.CustomizationFormText = "layoutControlItem1"
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
-            Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' layoutControlItem1
             ' 
             Me.layoutControlItem1.Control = Me.spinEditAxisLabelAngle
             Me.layoutControlItem1.CustomizationFormText = "layoutControlItemAxisLabelAngle"
-            Me.layoutControlItem1.Location = New System.Drawing.Point(0, 23)
+            Me.layoutControlItem1.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItem1.Text = "Y-Axis Label Angle:"
@@ -448,9 +447,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupMarker.CustomizationFormText = "Marker"
             Me.layoutControlGroupMarker.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupMarker.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemSize, Me.layoutControlItemMarkerVisible, Me.layoutControlItemKind})
-            Me.layoutControlGroupMarker.Location = New System.Drawing.Point(0, 260)
+            Me.layoutControlGroupMarker.Location = New System.Drawing.Point(0, 270)
             Me.layoutControlGroupMarker.Name = "layoutControlGroupMarker"
-            Me.layoutControlGroupMarker.Size = New System.Drawing.Size(241, 110)
+            Me.layoutControlGroupMarker.Size = New System.Drawing.Size(241, 114)
             Me.layoutControlGroupMarker.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupMarker.Text = "Marker"
             ' 
@@ -458,7 +457,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.layoutControlItemSize.Control = Me.spinEditMarkerSize
             Me.layoutControlItemSize.CustomizationFormText = "Size:"
-            Me.layoutControlItemSize.Location = New System.Drawing.Point(0, 23)
+            Me.layoutControlItemSize.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemSize.Name = "layoutControlItemSize"
             Me.layoutControlItemSize.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemSize.Text = "Size:"
@@ -470,15 +469,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemMarkerVisible.CustomizationFormText = "layoutControlItem3"
             Me.layoutControlItemMarkerVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemMarkerVisible.Name = "layoutControlItemMarkerVisible"
-            Me.layoutControlItemMarkerVisible.Size = New System.Drawing.Size(221, 23)
-            Me.layoutControlItemMarkerVisible.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemMarkerVisible.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemMarkerVisible.TextVisible = False
             ' 
             ' layoutControlItemKind
             ' 
             Me.layoutControlItemKind.Control = Me.comboBoxEditMarkerKind
             Me.layoutControlItemKind.CustomizationFormText = "Kind:"
-            Me.layoutControlItemKind.Location = New System.Drawing.Point(0, 47)
+            Me.layoutControlItemKind.Location = New System.Drawing.Point(0, 48)
             Me.layoutControlItemKind.Name = "layoutControlItemKind"
             Me.layoutControlItemKind.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemKind.Text = "Kind:"
@@ -492,7 +490,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupGeneral.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemFunction})
             Me.layoutControlGroupGeneral.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral"
-            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 63)
+            Me.layoutControlGroupGeneral.Size = New System.Drawing.Size(241, 66)
             Me.layoutControlGroupGeneral.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupGeneral.Text = "General"
             ' 
@@ -507,20 +505,18 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
-            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 370)
+            Me.emptySpaceItem.Location = New System.Drawing.Point(0, 384)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 174)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 154)
             ' 
             ' layoutControlGroupDiagram
             ' 
             Me.layoutControlGroupDiagram.CustomizationFormText = "Diagram"
             Me.layoutControlGroupDiagram.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupDiagram.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemStartAngle, Me.layoutControlItemRotationDirection, Me.layoutControlItemStyle})
-            Me.layoutControlGroupDiagram.Location = New System.Drawing.Point(0, 63)
+            Me.layoutControlGroupDiagram.Location = New System.Drawing.Point(0, 66)
             Me.layoutControlGroupDiagram.Name = "layoutControlGroupDiagram"
-            Me.layoutControlGroupDiagram.Size = New System.Drawing.Size(241, 111)
+            Me.layoutControlGroupDiagram.Size = New System.Drawing.Size(241, 114)
             Me.layoutControlGroupDiagram.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupDiagram.Text = "Diagram"
             ' 
@@ -573,7 +569,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelPoint.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelPoint.Name = "dockPanelPoint"
             Me.dockPanelPoint.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelPoint.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelPoint.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelPoint.Text = "Point"
             ' 
             ' dockPanelPoint_Container
@@ -581,7 +577,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelPoint_Container.Controls.Add(Me.chartPoint)
             Me.dockPanelPoint_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelPoint_Container.Name = "dockPanelPoint_Container"
-            Me.dockPanelPoint_Container.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelPoint_Container.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelPoint_Container.TabIndex = 0
             ' 
             ' chartPoint
@@ -598,6 +594,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.Label = radarPointSeriesLabel1
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series1.Name = "Function"
+            series1.SeriesID = 0
             series1.ToolTipPointPattern = "{A}: {V:F2}"
             circularMarkerSlideAnimation1.Direction = DevExpress.XtraCharts.CircularMarkerAnimationDirection.FromCenter
             polarPointSeriesView1.SeriesPointAnimation = circularMarkerSlideAnimation1
@@ -605,15 +602,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartPoint.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
             sideBySideBarSeriesLabel1.TextPattern = "{V:y}"
             Me.chartPoint.SeriesTemplate.Label = sideBySideBarSeriesLabel1
-            Me.chartPoint.Size = New System.Drawing.Size(788, 545)
+            Me.chartPoint.Size = New System.Drawing.Size(788, 548)
             Me.chartPoint.TabIndex = 1
             Me.chartPoint.TabStop = False
             chartTitle1.Text = "Function in Polar Coordinates"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle1.TitleID = 0
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle2.Text = ""
             chartTitle2.TextColor = System.Drawing.Color.Gray
+            chartTitle2.TitleID = 1
             Me.chartPoint.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             ' 
             ' dockPanelLine
@@ -625,7 +624,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelLine.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelLine.Name = "dockPanelLine"
             Me.dockPanelLine.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelLine.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelLine.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelLine.Text = "Line"
             ' 
             ' dockPanelLine_Container
@@ -633,7 +632,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelLine_Container.Controls.Add(Me.chartLine)
             Me.dockPanelLine_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelLine_Container.Name = "dockPanelLine_Container"
-            Me.dockPanelLine_Container.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelLine_Container.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelLine_Container.TabIndex = 0
             ' 
             ' chartLine
@@ -650,6 +649,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.Label = radarPointSeriesLabel2
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series2.Name = "Function"
+            series2.SeriesID = 0
             series2.ToolTipPointPattern = "{A}: {V:F2}"
             polarLineSeriesView1.LineMarkerOptions.Size = 8
             polarLineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.[True]
@@ -660,15 +660,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartLine.SeriesSerializable = New DevExpress.XtraCharts.Series() {series2}
             sideBySideBarSeriesLabel2.TextPattern = "{V:y}"
             Me.chartLine.SeriesTemplate.Label = sideBySideBarSeriesLabel2
-            Me.chartLine.Size = New System.Drawing.Size(788, 545)
+            Me.chartLine.Size = New System.Drawing.Size(788, 548)
             Me.chartLine.TabIndex = 1
             Me.chartLine.TabStop = False
             chartTitle3.Text = "Function in Polar Coordinates"
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle3.TitleID = 0
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle4.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle4.Text = ""
             chartTitle4.TextColor = System.Drawing.Color.Gray
+            chartTitle4.TitleID = 1
             Me.chartLine.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle3, chartTitle4})
             ' 
             ' dockPanelArea
@@ -680,7 +682,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelArea.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelArea.Name = "dockPanelArea"
             Me.dockPanelArea.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelArea.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelArea.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelArea.Text = "Area"
             ' 
             ' dockPanelArea_Container
@@ -688,14 +690,15 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelArea_Container.Controls.Add(Me.chartArea)
             Me.dockPanelArea_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelArea_Container.Name = "dockPanelArea_Container"
-            Me.dockPanelArea_Container.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelArea_Container.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelArea_Container.TabIndex = 0
             ' 
             ' chartArea
             ' 
             Me.chartArea.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             polarDiagram1.AxisX.WholeRange.AutoSideMargins = False
-            polarDiagram1.AxisX.WholeRange.SideMarginsValue = 0R
+            polarDiagram1.AxisX.WholeRange.EndSideMargin = 0R
+            polarDiagram1.AxisX.WholeRange.StartSideMargin = 0R
             Me.chartArea.Diagram = polarDiagram1
             Me.chartArea.Dock = System.Windows.Forms.DockStyle.Fill
             Me.chartArea.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right
@@ -708,6 +711,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.Label = radarPointSeriesLabel3
             series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series3.Name = "Function"
+            series3.SeriesID = 0
             series3.ToolTipPointPattern = "{A}: {V:F2}"
             polarAreaSeriesView1.MarkerOptions.Size = 8
             polarAreaSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.[True]
@@ -721,15 +725,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartArea.SeriesSerializable = New DevExpress.XtraCharts.Series() {series3}
             sideBySideBarSeriesLabel3.TextPattern = "{V:y}"
             Me.chartArea.SeriesTemplate.Label = sideBySideBarSeriesLabel3
-            Me.chartArea.Size = New System.Drawing.Size(788, 545)
+            Me.chartArea.Size = New System.Drawing.Size(788, 548)
             Me.chartArea.TabIndex = 1
             Me.chartArea.TabStop = False
             chartTitle5.Text = "Function in Polar Coordinates"
-            chartTitle6.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle5.TitleID = 0
             chartTitle6.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle6.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle6.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle6.Text = ""
             chartTitle6.TextColor = System.Drawing.Color.Gray
+            chartTitle6.TitleID = 1
             Me.chartArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle5, chartTitle6})
             ' 
             ' dockPanelScatterLine
@@ -741,7 +747,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelScatterLine.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelScatterLine.Name = "dockPanelScatterLine"
             Me.dockPanelScatterLine.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelScatterLine.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelScatterLine.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelScatterLine.Text = "Scatter Line"
             ' 
             ' dockPanelScatterLine_Container
@@ -749,7 +755,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelScatterLine_Container.Controls.Add(Me.chartScatterLine)
             Me.dockPanelScatterLine_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelScatterLine_Container.Name = "dockPanelScatterLine_Container"
-            Me.dockPanelScatterLine_Container.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelScatterLine_Container.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelScatterLine_Container.TabIndex = 0
             ' 
             ' chartScatterLine
@@ -769,6 +775,7 @@ Namespace DevExpress.XtraCharts.Demos
             series4.Label = radarPointSeriesLabel4
             series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series4.Name = "Function"
+            series4.SeriesID = 0
             series4.ToolTipPointPattern = "{A}: {V:N2}"
             scatterPolarLineSeriesView1.Closed = False
             scatterPolarLineSeriesView1.LineMarkerOptions.Size = 8
@@ -781,15 +788,17 @@ Namespace DevExpress.XtraCharts.Demos
             scatterPolarLineSeriesView1.SeriesPointAnimation = circularMarkerWidenAnimation2
             series4.View = scatterPolarLineSeriesView1
             Me.chartScatterLine.SeriesSerializable = New DevExpress.XtraCharts.Series() {series4}
-            Me.chartScatterLine.Size = New System.Drawing.Size(788, 545)
+            Me.chartScatterLine.Size = New System.Drawing.Size(788, 548)
             Me.chartScatterLine.TabIndex = 1
             Me.chartScatterLine.TabStop = False
             chartTitle7.Text = "Function in Polar Coordinates"
-            chartTitle8.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle7.TitleID = 0
             chartTitle8.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle8.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle8.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle8.Text = ""
             chartTitle8.TextColor = System.Drawing.Color.Gray
+            chartTitle8.TitleID = 1
             Me.chartScatterLine.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle7, chartTitle8})
             ' 
             ' dockPanelRangeArea
@@ -801,7 +810,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelRangeArea.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelRangeArea.Name = "dockPanelRangeArea"
             Me.dockPanelRangeArea.OriginalSize = New System.Drawing.Size(200, 200)
-            Me.dockPanelRangeArea.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelRangeArea.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelRangeArea.Text = "Range Area"
             ' 
             ' dockPanelRangeArea_Container
@@ -809,14 +818,15 @@ Namespace DevExpress.XtraCharts.Demos
             Me.dockPanelRangeArea_Container.Controls.Add(Me.chartRangeArea)
             Me.dockPanelRangeArea_Container.Location = New System.Drawing.Point(0, 0)
             Me.dockPanelRangeArea_Container.Name = "dockPanelRangeArea_Container"
-            Me.dockPanelRangeArea_Container.Size = New System.Drawing.Size(788, 545)
+            Me.dockPanelRangeArea_Container.Size = New System.Drawing.Size(788, 548)
             Me.dockPanelRangeArea_Container.TabIndex = 0
             ' 
             ' chartRangeArea
             ' 
             Me.chartRangeArea.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             polarDiagram3.AxisX.WholeRange.AutoSideMargins = False
-            polarDiagram3.AxisX.WholeRange.SideMarginsValue = 0R
+            polarDiagram3.AxisX.WholeRange.EndSideMargin = 0R
+            polarDiagram3.AxisX.WholeRange.StartSideMargin = 0R
             Me.chartRangeArea.Diagram = polarDiagram3
             Me.chartRangeArea.Dock = System.Windows.Forms.DockStyle.Fill
             Me.chartRangeArea.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right
@@ -830,6 +840,7 @@ Namespace DevExpress.XtraCharts.Demos
             radarRangeAreaSeriesLabel1.TextPattern = "{V:F}"
             series5.Label = radarRangeAreaSeriesLabel1
             series5.Name = "Function"
+            series5.SeriesID = 0
             series5.ToolTipPointPattern = "{A}: {V:F2}"
             polarRangeAreaSeriesView1.Marker1Visibility = DevExpress.Utils.DefaultBoolean.[True]
             polarRangeAreaSeriesView1.Marker2Visibility = DevExpress.Utils.DefaultBoolean.[True]
@@ -840,10 +851,11 @@ Namespace DevExpress.XtraCharts.Demos
             polarRangeAreaSeriesView1.SeriesPointAnimation = circularMarkerSlideAnimation3
             series5.View = polarRangeAreaSeriesView1
             Me.chartRangeArea.SeriesSerializable = New DevExpress.XtraCharts.Series() {series5}
-            Me.chartRangeArea.Size = New System.Drawing.Size(788, 545)
+            Me.chartRangeArea.Size = New System.Drawing.Size(788, 548)
             Me.chartRangeArea.TabIndex = 2
             Me.chartRangeArea.TabStop = False
             chartTitle9.Text = "Function in Polar Coordinates"
+            chartTitle9.TitleID = 0
             Me.chartRangeArea.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle9})
             ' 
             ' documentManager

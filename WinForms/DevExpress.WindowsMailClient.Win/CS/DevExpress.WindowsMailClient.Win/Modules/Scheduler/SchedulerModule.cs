@@ -9,8 +9,7 @@ namespace DevExpress.WindowsMailClient.Win.Modules {
         public SchedulerModule() : base(typeof(SchedulerModuleViewModel)) {
             InitializeComponent();
             this.schedulerControl1.BeginUpdate();
-            try
-            {
+            try {
                 this.schedulerControl1.OptionsBehavior.UseAsyncMode = false;
                 this.schedulerControl1.MonthView.AllowScrollAnimation = false;
             }

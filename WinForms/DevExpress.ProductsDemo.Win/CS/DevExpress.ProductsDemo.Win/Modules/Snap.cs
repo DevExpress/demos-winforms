@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.Utils;
+﻿using System.Windows.Forms;
 using System.IO;
-using DevExpress.DataAccess;
-using DevExpress.DataAccess.ConnectionParameters;
 using System.Data.OleDb;
 using DevExpress.ProductsDemo.Win.nwindDataSetTableAdapters;
 #if !NET
@@ -30,7 +20,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         }
         void LoadDocument() {
             string path = DemoUtils.GetRelativePath("MailMergeReports.snx");
-            if (File.Exists(path))
+            if(File.Exists(path))
                 this.snapControl.LoadDocument(path, SnapDocumentFormat.Snap);
         }
         void SetDataSource() {

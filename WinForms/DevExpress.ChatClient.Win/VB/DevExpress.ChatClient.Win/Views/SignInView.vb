@@ -1,6 +1,6 @@
+Imports DevExpress.ChatClient.ViewModels
 Imports DevExpress.Utils.MVVM.UI
 Imports DevExpress.XtraEditors
-Imports DevExpress.ChatClient.ViewModels
 
 Namespace DevExpress.ChatClient.Views
 

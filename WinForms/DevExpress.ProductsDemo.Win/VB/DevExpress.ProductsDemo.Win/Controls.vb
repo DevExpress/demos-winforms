@@ -177,7 +177,7 @@ Namespace DevExpress.ProductsDemo.Win
 			End If
 			If AutoMergeRibbon AndAlso ChildRibbon IsNot Nothing Then
 				OwnerForm.Ribbon.MergeRibbon(ChildRibbon)
-					Dim page As RibbonPage = OwnerForm.Ribbon.Pages.GetPageByText("VIEW")
+					Dim page As RibbonPage = OwnerForm.Ribbon.Pages.GetPageByText("View")
 					If page IsNot Nothing Then
 						OwnerForm.Ribbon.MergedPages.Remove(page)
 						OwnerForm.Ribbon.MergedPages.Insert(OwnerForm.Ribbon.MergedPages.Count, page)
@@ -221,7 +221,7 @@ Namespace DevExpress.ProductsDemo.Win
 		Friend Overridable Sub HideModule()
 			If AutoMergeRibbon AndAlso OwnerForm IsNot Nothing Then
 				If OwnerForm.Ribbon.MergedRibbon Is ChildRibbon Then
-					Dim page As RibbonPage = OwnerForm.Ribbon.MergedPages.GetPageByText("VIEW")
+					Dim page As RibbonPage = OwnerForm.Ribbon.MergedPages.GetPageByText("View")
 					If page IsNot Nothing Then
 						OwnerForm.Ribbon.Pages.Add(page)
 					End If

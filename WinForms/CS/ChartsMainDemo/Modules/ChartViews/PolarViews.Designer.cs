@@ -188,7 +188,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // documentGroup
             // 
@@ -276,7 +276,7 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(576, 500, 1004, 761);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 2;
             this.layoutControl.Text = "layoutControl1";
             // 
@@ -287,7 +287,7 @@
             0,
             0,
             0});
-            this.spinEditAxisLabelAngle.Location = new System.Drawing.Point(107, 228);
+            this.spinEditAxisLabelAngle.Location = new System.Drawing.Point(116, 238);
             this.spinEditAxisLabelAngle.Name = "spinEditAxisLabelAngle";
             this.spinEditAxisLabelAngle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -310,7 +310,7 @@
             0,
             0,
             -2147483648});
-            this.spinEditAxisLabelAngle.Size = new System.Drawing.Size(122, 20);
+            this.spinEditAxisLabelAngle.Size = new System.Drawing.Size(113, 20);
             this.spinEditAxisLabelAngle.StyleController = this.layoutControl;
             this.spinEditAxisLabelAngle.TabIndex = 18;
             this.spinEditAxisLabelAngle.EditValueChanged += new System.EventHandler(this.spinEditAxisLabelAngle_EditValueChanged);
@@ -318,10 +318,10 @@
             // checkEditLabelVisible
             // 
             this.checkEditLabelVisible.EditValue = true;
-            this.checkEditLabelVisible.Location = new System.Drawing.Point(12, 205);
+            this.checkEditLabelVisible.Location = new System.Drawing.Point(12, 214);
             this.checkEditLabelVisible.Name = "checkEditLabelVisible";
             this.checkEditLabelVisible.Properties.Caption = "Show Series Labels";
-            this.checkEditLabelVisible.Size = new System.Drawing.Size(217, 19);
+            this.checkEditLabelVisible.Size = new System.Drawing.Size(217, 20);
             this.checkEditLabelVisible.StyleController = this.layoutControl;
             this.checkEditLabelVisible.TabIndex = 4;
             this.checkEditLabelVisible.CheckedChanged += new System.EventHandler(this.checkEditLabelVisible_CheckedChanged);
@@ -333,7 +333,7 @@
             0,
             0,
             0});
-            this.spinEditMarkerSize.Location = new System.Drawing.Point(107, 314);
+            this.spinEditMarkerSize.Location = new System.Drawing.Point(116, 328);
             this.spinEditMarkerSize.Name = "spinEditMarkerSize";
             this.spinEditMarkerSize.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -351,35 +351,35 @@
             0,
             0,
             0});
-            this.spinEditMarkerSize.Size = new System.Drawing.Size(122, 20);
+            this.spinEditMarkerSize.Size = new System.Drawing.Size(113, 20);
             this.spinEditMarkerSize.StyleController = this.layoutControl;
             this.spinEditMarkerSize.TabIndex = 8;
             // 
             // checkEditMarkerVisible
             // 
             this.checkEditMarkerVisible.EditValue = true;
-            this.checkEditMarkerVisible.Location = new System.Drawing.Point(12, 291);
+            this.checkEditMarkerVisible.Location = new System.Drawing.Point(12, 304);
             this.checkEditMarkerVisible.Name = "checkEditMarkerVisible";
             this.checkEditMarkerVisible.Properties.Caption = "Visible";
-            this.checkEditMarkerVisible.Size = new System.Drawing.Size(217, 19);
+            this.checkEditMarkerVisible.Size = new System.Drawing.Size(217, 20);
             this.checkEditMarkerVisible.StyleController = this.layoutControl;
             this.checkEditMarkerVisible.TabIndex = 6;
             this.checkEditMarkerVisible.CheckedChanged += new System.EventHandler(this.checkEditMarkerVisible_CheckedChanged);
             // 
             // comboBoxEditMarkerKind
             // 
-            this.comboBoxEditMarkerKind.Location = new System.Drawing.Point(107, 338);
+            this.comboBoxEditMarkerKind.Location = new System.Drawing.Point(116, 352);
             this.comboBoxEditMarkerKind.Name = "comboBoxEditMarkerKind";
             this.comboBoxEditMarkerKind.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditMarkerKind.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditMarkerKind.Size = new System.Drawing.Size(122, 20);
+            this.comboBoxEditMarkerKind.Size = new System.Drawing.Size(113, 20);
             this.comboBoxEditMarkerKind.StyleController = this.layoutControl;
             this.comboBoxEditMarkerKind.TabIndex = 5;
             // 
             // comboBoxEditFunction
             // 
-            this.comboBoxEditFunction.Location = new System.Drawing.Point(107, 31);
+            this.comboBoxEditFunction.Location = new System.Drawing.Point(116, 34);
             this.comboBoxEditFunction.Name = "comboBoxEditFunction";
             this.comboBoxEditFunction.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -388,7 +388,7 @@
             "Cardioid",
             "Cartesian Folium"});
             this.comboBoxEditFunction.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditFunction.Size = new System.Drawing.Size(122, 20);
+            this.comboBoxEditFunction.Size = new System.Drawing.Size(113, 20);
             this.comboBoxEditFunction.StyleController = this.layoutControl;
             this.comboBoxEditFunction.TabIndex = 13;
             this.comboBoxEditFunction.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditFunction_SelectedIndexChanged);
@@ -400,7 +400,7 @@
             0,
             0,
             0});
-            this.spinEditStartAngle.Location = new System.Drawing.Point(107, 142);
+            this.spinEditStartAngle.Location = new System.Drawing.Point(116, 148);
             this.spinEditStartAngle.Name = "spinEditStartAngle";
             this.spinEditStartAngle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -418,7 +418,7 @@
             0,
             0,
             0});
-            this.spinEditStartAngle.Size = new System.Drawing.Size(122, 20);
+            this.spinEditStartAngle.Size = new System.Drawing.Size(113, 20);
             this.spinEditStartAngle.StyleController = this.layoutControl;
             this.spinEditStartAngle.TabIndex = 17;
             this.spinEditStartAngle.EditValueChanged += new System.EventHandler(this.spinEditStartAngle_EditValueChanged);
@@ -426,7 +426,7 @@
             // comboBoxEditRotationDirection
             // 
             this.comboBoxEditRotationDirection.EditValue = "Counterclockwise";
-            this.comboBoxEditRotationDirection.Location = new System.Drawing.Point(107, 118);
+            this.comboBoxEditRotationDirection.Location = new System.Drawing.Point(116, 124);
             this.comboBoxEditRotationDirection.Name = "comboBoxEditRotationDirection";
             this.comboBoxEditRotationDirection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -434,7 +434,7 @@
             "Counterclockwise",
             "Clockwise"});
             this.comboBoxEditRotationDirection.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditRotationDirection.Size = new System.Drawing.Size(122, 20);
+            this.comboBoxEditRotationDirection.Size = new System.Drawing.Size(113, 20);
             this.comboBoxEditRotationDirection.StyleController = this.layoutControl;
             this.comboBoxEditRotationDirection.TabIndex = 16;
             this.comboBoxEditRotationDirection.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditRotationDirection_SelectedIndexChanged);
@@ -442,7 +442,7 @@
             // comboBoxStyle
             // 
             this.comboBoxStyle.EditValue = "Polygon";
-            this.comboBoxStyle.Location = new System.Drawing.Point(107, 94);
+            this.comboBoxStyle.Location = new System.Drawing.Point(116, 100);
             this.comboBoxStyle.Name = "comboBoxStyle";
             this.comboBoxStyle.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -450,7 +450,7 @@
             "Circle",
             "Polygon"});
             this.comboBoxStyle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxStyle.Size = new System.Drawing.Size(122, 20);
+            this.comboBoxStyle.Size = new System.Drawing.Size(113, 20);
             this.comboBoxStyle.StyleController = this.layoutControl;
             this.comboBoxStyle.TabIndex = 14;
             this.comboBoxStyle.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditStyle_SelectedIndexChanged);
@@ -467,7 +467,7 @@
             this.layoutControlGroupDiagram});
             this.layoutControlGroupRoot.Name = "Root";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupLabel
@@ -479,9 +479,9 @@
             this.layoutControlGroupLabel.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemLabelVisible,
             this.layoutControlItem1});
-            this.layoutControlGroupLabel.Location = new System.Drawing.Point(0, 174);
+            this.layoutControlGroupLabel.Location = new System.Drawing.Point(0, 180);
             this.layoutControlGroupLabel.Name = "layoutControlGroupLabel";
-            this.layoutControlGroupLabel.Size = new System.Drawing.Size(241, 86);
+            this.layoutControlGroupLabel.Size = new System.Drawing.Size(241, 90);
             this.layoutControlGroupLabel.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupLabel.Text = "Label";
             // 
@@ -491,15 +491,14 @@
             this.layoutControlItemLabelVisible.CustomizationFormText = "layoutControlItem1";
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
-            this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.spinEditAxisLabelAngle;
             this.layoutControlItem1.CustomizationFormText = "layoutControlItemAxisLabelAngle";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItem1.Text = "Y-Axis Label Angle:";
@@ -515,9 +514,9 @@
             this.layoutControlItemSize,
             this.layoutControlItemMarkerVisible,
             this.layoutControlItemKind});
-            this.layoutControlGroupMarker.Location = new System.Drawing.Point(0, 260);
+            this.layoutControlGroupMarker.Location = new System.Drawing.Point(0, 270);
             this.layoutControlGroupMarker.Name = "layoutControlGroupMarker";
-            this.layoutControlGroupMarker.Size = new System.Drawing.Size(241, 110);
+            this.layoutControlGroupMarker.Size = new System.Drawing.Size(241, 114);
             this.layoutControlGroupMarker.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupMarker.Text = "Marker";
             // 
@@ -525,7 +524,7 @@
             // 
             this.layoutControlItemSize.Control = this.spinEditMarkerSize;
             this.layoutControlItemSize.CustomizationFormText = "Size:";
-            this.layoutControlItemSize.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItemSize.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemSize.Name = "layoutControlItemSize";
             this.layoutControlItemSize.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemSize.Text = "Size:";
@@ -537,15 +536,14 @@
             this.layoutControlItemMarkerVisible.CustomizationFormText = "layoutControlItem3";
             this.layoutControlItemMarkerVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemMarkerVisible.Name = "layoutControlItemMarkerVisible";
-            this.layoutControlItemMarkerVisible.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemMarkerVisible.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemMarkerVisible.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemMarkerVisible.TextVisible = false;
             // 
             // layoutControlItemKind
             // 
             this.layoutControlItemKind.Control = this.comboBoxEditMarkerKind;
             this.layoutControlItemKind.CustomizationFormText = "Kind:";
-            this.layoutControlItemKind.Location = new System.Drawing.Point(0, 47);
+            this.layoutControlItemKind.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemKind.Name = "layoutControlItemKind";
             this.layoutControlItemKind.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemKind.Text = "Kind:";
@@ -560,7 +558,7 @@
             this.layoutControlItemFunction});
             this.layoutControlGroupGeneral.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral";
-            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 63);
+            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 66);
             this.layoutControlGroupGeneral.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupGeneral.Text = "General";
             // 
@@ -575,11 +573,9 @@
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
-            this.emptySpaceItem.Location = new System.Drawing.Point(0, 370);
+            this.emptySpaceItem.Location = new System.Drawing.Point(0, 384);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 174);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 154);
             // 
             // layoutControlGroupDiagram
             // 
@@ -589,9 +585,9 @@
             this.layoutControlItemStartAngle,
             this.layoutControlItemRotationDirection,
             this.layoutControlItemStyle});
-            this.layoutControlGroupDiagram.Location = new System.Drawing.Point(0, 63);
+            this.layoutControlGroupDiagram.Location = new System.Drawing.Point(0, 66);
             this.layoutControlGroupDiagram.Name = "layoutControlGroupDiagram";
-            this.layoutControlGroupDiagram.Size = new System.Drawing.Size(241, 111);
+            this.layoutControlGroupDiagram.Size = new System.Drawing.Size(241, 114);
             this.layoutControlGroupDiagram.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupDiagram.Text = "Diagram";
             // 
@@ -659,7 +655,7 @@
             this.dockPanelPoint.Location = new System.Drawing.Point(0, 0);
             this.dockPanelPoint.Name = "dockPanelPoint";
             this.dockPanelPoint.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelPoint.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelPoint.Size = new System.Drawing.Size(788, 548);
             this.dockPanelPoint.Text = "Point";
             // 
             // dockPanelPoint_Container
@@ -667,7 +663,7 @@
             this.dockPanelPoint_Container.Controls.Add(this.chartPoint);
             this.dockPanelPoint_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelPoint_Container.Name = "dockPanelPoint_Container";
-            this.dockPanelPoint_Container.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelPoint_Container.Size = new System.Drawing.Size(788, 548);
             this.dockPanelPoint_Container.TabIndex = 0;
             // 
             // chartPoint
@@ -682,8 +678,9 @@
             radarPointSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
             radarPointSeriesLabel1.TextPattern = "{V:N2}";
             series1.Label = radarPointSeriesLabel1;
-            series1.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series1.Name = "Function";
+            series1.SeriesID = 0;
             series1.ToolTipPointPattern = "{A}: {V:F2}";
             circularMarkerSlideAnimation1.Direction = DevExpress.XtraCharts.CircularMarkerAnimationDirection.FromCenter;
             polarPointSeriesView1.SeriesPointAnimation = circularMarkerSlideAnimation1;
@@ -692,15 +689,17 @@
         series1};
             sideBySideBarSeriesLabel1.TextPattern = "{V:y}";
             this.chartPoint.SeriesTemplate.Label = sideBySideBarSeriesLabel1;
-            this.chartPoint.Size = new System.Drawing.Size(788, 545);
+            this.chartPoint.Size = new System.Drawing.Size(788, 548);
             this.chartPoint.TabIndex = 1;
             this.chartPoint.TabStop = false;
             chartTitle1.Text = "Function in Polar Coordinates";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle2.Text = "";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chartPoint.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -714,7 +713,7 @@
             this.dockPanelLine.Location = new System.Drawing.Point(0, 0);
             this.dockPanelLine.Name = "dockPanelLine";
             this.dockPanelLine.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelLine.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelLine.Size = new System.Drawing.Size(788, 548);
             this.dockPanelLine.Text = "Line";
             // 
             // dockPanelLine_Container
@@ -722,7 +721,7 @@
             this.dockPanelLine_Container.Controls.Add(this.chartLine);
             this.dockPanelLine_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelLine_Container.Name = "dockPanelLine_Container";
-            this.dockPanelLine_Container.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelLine_Container.Size = new System.Drawing.Size(788, 548);
             this.dockPanelLine_Container.TabIndex = 0;
             // 
             // chartLine
@@ -737,8 +736,9 @@
             radarPointSeriesLabel2.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
             radarPointSeriesLabel2.TextPattern = "{V:N2}";
             series2.Label = radarPointSeriesLabel2;
-            series2.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series2.Name = "Function";
+            series2.SeriesID = 0;
             series2.ToolTipPointPattern = "{A}: {V:F2}";
             polarLineSeriesView1.LineMarkerOptions.Size = 8;
             polarLineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
@@ -750,15 +750,17 @@
         series2};
             sideBySideBarSeriesLabel2.TextPattern = "{V:y}";
             this.chartLine.SeriesTemplate.Label = sideBySideBarSeriesLabel2;
-            this.chartLine.Size = new System.Drawing.Size(788, 545);
+            this.chartLine.Size = new System.Drawing.Size(788, 548);
             this.chartLine.TabIndex = 1;
             this.chartLine.TabStop = false;
             chartTitle3.Text = "Function in Polar Coordinates";
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle3.TitleID = 0;
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle4.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle4.Text = "";
             chartTitle4.TextColor = System.Drawing.Color.Gray;
+            chartTitle4.TitleID = 1;
             this.chartLine.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle3,
             chartTitle4});
@@ -772,7 +774,7 @@
             this.dockPanelArea.Location = new System.Drawing.Point(0, 0);
             this.dockPanelArea.Name = "dockPanelArea";
             this.dockPanelArea.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelArea.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelArea.Size = new System.Drawing.Size(788, 548);
             this.dockPanelArea.Text = "Area";
             // 
             // dockPanelArea_Container
@@ -780,14 +782,15 @@
             this.dockPanelArea_Container.Controls.Add(this.chartArea);
             this.dockPanelArea_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelArea_Container.Name = "dockPanelArea_Container";
-            this.dockPanelArea_Container.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelArea_Container.Size = new System.Drawing.Size(788, 548);
             this.dockPanelArea_Container.TabIndex = 0;
             // 
             // chartArea
             // 
             this.chartArea.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             polarDiagram1.AxisX.WholeRange.AutoSideMargins = false;
-            polarDiagram1.AxisX.WholeRange.SideMarginsValue = 0D;
+            polarDiagram1.AxisX.WholeRange.EndSideMargin = 0D;
+            polarDiagram1.AxisX.WholeRange.StartSideMargin = 0D;
             this.chartArea.Diagram = polarDiagram1;
             this.chartArea.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartArea.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right;
@@ -798,8 +801,9 @@
             radarPointSeriesLabel3.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
             radarPointSeriesLabel3.TextPattern = "{V:N2}";
             series3.Label = radarPointSeriesLabel3;
-            series3.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series3.Name = "Function";
+            series3.SeriesID = 0;
             series3.ToolTipPointPattern = "{A}: {V:F2}";
             polarAreaSeriesView1.MarkerOptions.Size = 8;
             polarAreaSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
@@ -814,15 +818,17 @@
         series3};
             sideBySideBarSeriesLabel3.TextPattern = "{V:y}";
             this.chartArea.SeriesTemplate.Label = sideBySideBarSeriesLabel3;
-            this.chartArea.Size = new System.Drawing.Size(788, 545);
+            this.chartArea.Size = new System.Drawing.Size(788, 548);
             this.chartArea.TabIndex = 1;
             this.chartArea.TabStop = false;
             chartTitle5.Text = "Function in Polar Coordinates";
-            chartTitle6.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle5.TitleID = 0;
             chartTitle6.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle6.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle6.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle6.Text = "";
             chartTitle6.TextColor = System.Drawing.Color.Gray;
+            chartTitle6.TitleID = 1;
             this.chartArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle5,
             chartTitle6});
@@ -836,7 +842,7 @@
             this.dockPanelScatterLine.Location = new System.Drawing.Point(0, 0);
             this.dockPanelScatterLine.Name = "dockPanelScatterLine";
             this.dockPanelScatterLine.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelScatterLine.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelScatterLine.Size = new System.Drawing.Size(788, 548);
             this.dockPanelScatterLine.Text = "Scatter Line";
             // 
             // dockPanelScatterLine_Container
@@ -844,7 +850,7 @@
             this.dockPanelScatterLine_Container.Controls.Add(this.chartScatterLine);
             this.dockPanelScatterLine_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelScatterLine_Container.Name = "dockPanelScatterLine_Container";
-            this.dockPanelScatterLine_Container.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelScatterLine_Container.Size = new System.Drawing.Size(788, 548);
             this.dockPanelScatterLine_Container.TabIndex = 0;
             // 
             // chartScatterLine
@@ -862,8 +868,9 @@
             radarPointSeriesLabel4.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
             radarPointSeriesLabel4.TextPattern = "{V:N2}";
             series4.Label = radarPointSeriesLabel4;
-            series4.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series4.Name = "Function";
+            series4.SeriesID = 0;
             series4.ToolTipPointPattern = "{A}: {V:N2}";
             scatterPolarLineSeriesView1.Closed = false;
             scatterPolarLineSeriesView1.LineMarkerOptions.Size = 8;
@@ -877,15 +884,17 @@
             series4.View = scatterPolarLineSeriesView1;
             this.chartScatterLine.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series4};
-            this.chartScatterLine.Size = new System.Drawing.Size(788, 545);
+            this.chartScatterLine.Size = new System.Drawing.Size(788, 548);
             this.chartScatterLine.TabIndex = 1;
             this.chartScatterLine.TabStop = false;
             chartTitle7.Text = "Function in Polar Coordinates";
-            chartTitle8.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle7.TitleID = 0;
             chartTitle8.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle8.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle8.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle8.Text = "";
             chartTitle8.TextColor = System.Drawing.Color.Gray;
+            chartTitle8.TitleID = 1;
             this.chartScatterLine.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle7,
             chartTitle8});
@@ -899,7 +908,7 @@
             this.dockPanelRangeArea.Location = new System.Drawing.Point(0, 0);
             this.dockPanelRangeArea.Name = "dockPanelRangeArea";
             this.dockPanelRangeArea.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelRangeArea.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelRangeArea.Size = new System.Drawing.Size(788, 548);
             this.dockPanelRangeArea.Text = "Range Area";
             // 
             // dockPanelRangeArea_Container
@@ -907,14 +916,15 @@
             this.dockPanelRangeArea_Container.Controls.Add(this.chartRangeArea);
             this.dockPanelRangeArea_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelRangeArea_Container.Name = "dockPanelRangeArea_Container";
-            this.dockPanelRangeArea_Container.Size = new System.Drawing.Size(788, 545);
+            this.dockPanelRangeArea_Container.Size = new System.Drawing.Size(788, 548);
             this.dockPanelRangeArea_Container.TabIndex = 0;
             // 
             // chartRangeArea
             // 
             this.chartRangeArea.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
             polarDiagram3.AxisX.WholeRange.AutoSideMargins = false;
-            polarDiagram3.AxisX.WholeRange.SideMarginsValue = 0D;
+            polarDiagram3.AxisX.WholeRange.EndSideMargin = 0D;
+            polarDiagram3.AxisX.WholeRange.StartSideMargin = 0D;
             this.chartRangeArea.Diagram = polarDiagram3;
             this.chartRangeArea.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartRangeArea.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right;
@@ -928,6 +938,7 @@
             radarRangeAreaSeriesLabel1.TextPattern = "{V:F}";
             series5.Label = radarRangeAreaSeriesLabel1;
             series5.Name = "Function";
+            series5.SeriesID = 0;
             series5.ToolTipPointPattern = "{A}: {V:F2}";
             polarRangeAreaSeriesView1.Marker1Visibility = DevExpress.Utils.DefaultBoolean.True;
             polarRangeAreaSeriesView1.Marker2Visibility = DevExpress.Utils.DefaultBoolean.True;
@@ -939,10 +950,11 @@
             series5.View = polarRangeAreaSeriesView1;
             this.chartRangeArea.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series5};
-            this.chartRangeArea.Size = new System.Drawing.Size(788, 545);
+            this.chartRangeArea.Size = new System.Drawing.Size(788, 548);
             this.chartRangeArea.TabIndex = 2;
             this.chartRangeArea.TabStop = false;
             chartTitle9.Text = "Function in Polar Coordinates";
+            chartTitle9.TitleID = 0;
             this.chartRangeArea.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle9});
             // 

@@ -1,5 +1,6 @@
 ﻿using System;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraCharts.Demos {
     public partial class DateTimeDataAggregationDemo : ChartDemoModule {
@@ -22,7 +23,7 @@ namespace DevExpress.XtraCharts.Demos {
         void LoadPoints() {
             if(Series != null) {
                 double value = 0;
-                DateTime argument = DateTime.Now.AddDays(-PointCount);
+                DateTime argument = TutorialConstants.Now.AddDays(-PointCount);
                 NonCryptographicRandom random = NonCryptographicRandom.System;
                 Series.Points.BeginUpdate();
                 Series.Points.Clear();

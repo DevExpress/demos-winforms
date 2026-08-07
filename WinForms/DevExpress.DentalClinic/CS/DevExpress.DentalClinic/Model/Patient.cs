@@ -85,8 +85,8 @@
             get { return GetCollection<Appointment>(); }
         }
         [Xpo.Association]
-        public XPCollection<ProcedureItem> ProcedureCollection { 
-            get { return GetCollection<ProcedureItem>(); } 
+        public XPCollection<ProcedureItem> ProcedureCollection {
+            get { return GetCollection<ProcedureItem>(); }
         }
         public XPCollection<ProcedureItem> UnassignedProcedureCollection {
             get {
@@ -94,7 +94,7 @@
                     var filter = new NullOperator(nameof(ProcedureItem.Appointment));
                     unassignedProcedureCollection = new XPCollection<ProcedureItem>(ProcedureCollection, filter);
                 }
-                return unassignedProcedureCollection; 
+                return unassignedProcedureCollection;
             }
         }
         [Xpo.Association("Document-Patient")]

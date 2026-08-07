@@ -47,7 +47,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
 
             int preYear = year - 1;
             SalesGroup prevYearSales = dataProvider.GetTotalSalesByRange(new DateTime(preYear, 1, 1), new DateTime(preYear, 12, DateTime.DaysInMonth(preYear, 12)));
-            labelFiscalYear.Text = "FISCAL YEAR " + preYear.ToString();
+            labelFiscalYear.Text = "Fiscal Year " + preYear.ToString();
             fiscalYear.Text = prevYearSales.TotalCost.ToString("$0,0");
             needleFiscalYear.Value = (float)prevYearSales.TotalCost;
         }

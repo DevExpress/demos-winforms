@@ -80,6 +80,16 @@ Namespace DevExpress.XtraCharts.Demos
             CType((swiftPlotDiagramSecondaryAxisY1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((swiftPlotDiagramSecondaryAxisY2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((swiftPlotDiagramSecondaryAxisY3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem5), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem6), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((swiftPlotSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series2), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -155,8 +165,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Legend.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center
             Me.chart.Legend.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.BottomOutside
             Me.chart.Legend.Border.Visibility = DevExpress.Utils.DefaultBoolean.[False]
+            customLegendItem1.CustomLegendItemID = 0
             customLegendItem1.MarkerSize = New System.Drawing.Size(20, 1)
             customLegendItem1.Name = "Sensor Set 1"
+            customLegendItem2.CustomLegendItemID = 1
             customLegendItem2.MarkerSize = New System.Drawing.Size(20, 1)
             customLegendItem2.Name = "Sensor Set 2"
             Me.chart.Legend.CustomItems.AddRange(New DevExpress.XtraCharts.CustomLegendItem() {customLegendItem1, customLegendItem2})
@@ -164,32 +176,40 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Legend.HorizontalIndent = 10
             Me.chart.Legend.Name = "Default Legend"
             legend1.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
+            customLegendItem3.CustomLegendItemID = 0
             customLegendItem3.MarkerSize = New System.Drawing.Size(1, 16)
             customLegendItem3.MarkerVisible = False
             customLegendItem3.Name = "Temperature"
             legend1.CustomItems.AddRange(New DevExpress.XtraCharts.CustomLegendItem() {customLegendItem3})
             legend1.DockTargetName = "Default Pane"
+            legend1.LegendID = 0
             legend1.Name = "Legend1"
             legend2.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
+            customLegendItem4.CustomLegendItemID = 0
             customLegendItem4.MarkerSize = New System.Drawing.Size(1, 16)
             customLegendItem4.MarkerVisible = False
             customLegendItem4.Name = "Pressure"
             legend2.CustomItems.AddRange(New DevExpress.XtraCharts.CustomLegendItem() {customLegendItem4})
             legend2.DockTargetName = "Pane 1"
+            legend2.LegendID = 1
             legend2.Name = "Legend2"
             legend3.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
+            customLegendItem5.CustomLegendItemID = 0
             customLegendItem5.MarkerSize = New System.Drawing.Size(1, 16)
             customLegendItem5.MarkerVisible = False
             customLegendItem5.Name = "Power"
             legend3.CustomItems.AddRange(New DevExpress.XtraCharts.CustomLegendItem() {customLegendItem5})
             legend3.DockTargetName = "Pane 2"
+            legend3.LegendID = 2
             legend3.Name = "Legend3"
             legend4.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Left
+            customLegendItem6.CustomLegendItemID = 0
             customLegendItem6.MarkerSize = New System.Drawing.Size(1, 16)
             customLegendItem6.MarkerVisible = False
             customLegendItem6.Name = "Intensity"
             legend4.CustomItems.AddRange(New DevExpress.XtraCharts.CustomLegendItem() {customLegendItem6})
             legend4.DockTargetName = "Pane 3"
+            legend4.LegendID = 3
             legend4.Name = "Legend4"
             Me.chart.Legends.AddRange(New DevExpress.XtraCharts.Legend() {legend1, legend2, legend3, legend4})
             Me.chart.Location = New System.Drawing.Point(0, 0)
@@ -201,6 +221,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.DataAdapter = dataSourceAdapter1
             series1.DataSorted = True
             series1.Name = "Series 1"
+            series1.SeriesID = 0
             series1.View = swiftPlotSeriesView1
             dataMember3.ColumnName = "TimeStamp"
             dataMember4.ColumnName = "SensorIndication2"
@@ -209,6 +230,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.DataAdapter = dataSourceAdapter2
             series2.DataSorted = True
             series2.Name = "Series 2"
+            series2.SeriesID = 1
             series2.View = swiftPlotSeriesView2
             dataMember5.ColumnName = "TimeStamp"
             dataMember6.ColumnName = "SensorIndication3"
@@ -217,6 +239,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.DataAdapter = dataSourceAdapter3
             series3.DataSorted = True
             series3.Name = "Series 3"
+            series3.SeriesID = 2
             swiftPlotSeriesView3.AxisYName = "Secondary AxisY 1"
             swiftPlotSeriesView3.PaneName = "Pane 1"
             series3.View = swiftPlotSeriesView3
@@ -227,6 +250,7 @@ Namespace DevExpress.XtraCharts.Demos
             series4.DataAdapter = dataSourceAdapter4
             series4.DataSorted = True
             series4.Name = "Series 4"
+            series4.SeriesID = 3
             swiftPlotSeriesView4.AxisYName = "Secondary AxisY 1"
             swiftPlotSeriesView4.PaneName = "Pane 1"
             series4.View = swiftPlotSeriesView4
@@ -237,6 +261,7 @@ Namespace DevExpress.XtraCharts.Demos
             series5.DataAdapter = dataSourceAdapter5
             series5.DataSorted = True
             series5.Name = "Series 5"
+            series5.SeriesID = 4
             swiftPlotSeriesView5.AxisYName = "Secondary AxisY 2"
             swiftPlotSeriesView5.PaneName = "Pane 2"
             series5.View = swiftPlotSeriesView5
@@ -247,6 +272,7 @@ Namespace DevExpress.XtraCharts.Demos
             series6.DataAdapter = dataSourceAdapter6
             series6.DataSorted = True
             series6.Name = "Series 6"
+            series6.SeriesID = 5
             swiftPlotSeriesView6.AxisYName = "Secondary AxisY 2"
             swiftPlotSeriesView6.PaneName = "Pane 2"
             series6.View = swiftPlotSeriesView6
@@ -257,6 +283,7 @@ Namespace DevExpress.XtraCharts.Demos
             series7.DataAdapter = dataSourceAdapter7
             series7.DataSorted = True
             series7.Name = "Series 7"
+            series7.SeriesID = 6
             swiftPlotSeriesView7.AxisYName = "Secondary AxisY 3"
             swiftPlotSeriesView7.PaneName = "Pane 3"
             series7.View = swiftPlotSeriesView7
@@ -267,6 +294,7 @@ Namespace DevExpress.XtraCharts.Demos
             series8.DataAdapter = dataSourceAdapter8
             series8.DataSorted = True
             series8.Name = "Series 8"
+            series8.SeriesID = 7
             swiftPlotSeriesView8.AxisYName = "Secondary AxisY 3"
             swiftPlotSeriesView8.PaneName = "Pane 3"
             series8.View = swiftPlotSeriesView8
@@ -274,9 +302,11 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(999, 644)
             Me.chart.TabIndex = 0
             chartTitle1.Text = "Live Sensors Data (8 series, 10 000 points per series)"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Near
+            chartTitle1.TitleID = 0
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Near
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             chartTitle2.Text = "FPS:"
+            chartTitle2.TitleID = 1
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             AddHandler Me.chart.CustomPaint, New DevExpress.XtraCharts.CustomPaintEventHandler(AddressOf Me.Chart_CustomPaint)
             ' 
@@ -299,6 +329,16 @@ Namespace DevExpress.XtraCharts.Demos
             CType((swiftPlotDiagramSecondaryAxisY2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((swiftPlotDiagramSecondaryAxisY3), System.ComponentModel.ISupportInitialize).EndInit()
             CType((swiftPlotDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem5), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem6), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend4), System.ComponentModel.ISupportInitialize).EndInit()
             CType((swiftPlotSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((swiftPlotSeriesView2), System.ComponentModel.ISupportInitialize).EndInit()

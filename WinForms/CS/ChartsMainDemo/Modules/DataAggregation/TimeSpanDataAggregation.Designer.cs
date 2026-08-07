@@ -53,7 +53,8 @@
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = false;
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram1.DependentAxesYRange = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.EnableAxisXScrolling = true;
             xyDiagram1.EnableAxisXZooming = true;
@@ -64,7 +65,8 @@
             secondaryAxisY1.VisibleInPanesSerializable = "-1";
             secondaryAxisY1.WholeRange.AlwaysShowZeroLevel = false;
             secondaryAxisY1.WholeRange.AutoSideMargins = false;
-            secondaryAxisY1.WholeRange.SideMarginsValue = 0D;
+            secondaryAxisY1.WholeRange.EndSideMargin = 0D;
+            secondaryAxisY1.WholeRange.StartSideMargin = 0D;
             xyDiagram1.SecondaryAxesY.AddRange(new DevExpress.XtraCharts.SecondaryAxisY[] {
             secondaryAxisY1});
             xyDiagram1.ZoomingOptions.AxisXMaxZoomPercent = 100000D;
@@ -77,10 +79,12 @@
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.TimeSpan;
             series1.CrosshairLabelPattern = "{S}: {V:0}°C";
             series1.Name = "CPU Temperature";
+            series1.SeriesID = 0;
             series1.View = lineSeriesView1;
             series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.TimeSpan;
             series2.CrosshairLabelPattern = "{S}: {V:0}°C";
             series2.Name = "GPU Temperature";
+            series2.SeriesID = 1;
             series2.View = lineSeriesView2;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
@@ -88,6 +92,7 @@
             this.chart.Size = new System.Drawing.Size(784, 432);
             this.chart.TabIndex = 4;
             chartTitle1.Text = "Hardware Monitor";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.Chart_CustomDrawCrosshair);

@@ -38,9 +38,9 @@
     <DefineConstants>TRACE;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.3" />
-    <PackageReference Include="DevExpress.Demos.Core" VersionOverride="26.1.3" />
-    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.3" />
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.4" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.4" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.4" />
     
     
     
@@ -60,6 +60,8 @@
     
     
     
+    
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AppIcon.ico" />

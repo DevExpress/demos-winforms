@@ -49,6 +49,9 @@ You can use these projects as the foundation of your next great app or as a prac
 
 Refer to the following DevExpress WinForms help topic for information on system requirements (v26.1): [Prerequisites](https://docs.devexpress.com/WindowsForms/8092/prerequisites).
 
+> Note: AI services used for this demo have been rate limited. As such, you may experience performance-related delays when exploring the capabilities of DevExpress AI-powered Extensions.
+> When connected to your own AI model/service without rate limits, DevExpress AI-powered Extensions will perform seamlessly, without artificial delays.
+
 ## Run Demos Locally
 
 1. Clone the current repository:

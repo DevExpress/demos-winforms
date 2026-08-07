@@ -117,6 +117,9 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(splineAreaSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
@@ -383,7 +386,6 @@
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
             this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItemAngle
@@ -405,7 +407,6 @@
             this.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent";
             this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItemValueAsPercent.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemValueAsPercent.TextVisible = false;
             // 
             // layoutControlGroupMarker
@@ -440,7 +441,6 @@
             this.layoutControlItemMarkerVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemMarkerVisible.Name = "layoutControlItemMarkerVisible";
             this.layoutControlItemMarkerVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemMarkerVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemMarkerVisible.TextVisible = false;
             // 
             // layoutControlGroupGeneral
@@ -558,16 +558,19 @@
             this.chart.Legend.Name = "Default Legend";
             this.chart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
             legend1.DockTargetName = "Supply and Demand";
+            legend1.LegendID = 0;
             legend1.Name = "StockDemandProduction";
             legend2.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center;
             legend2.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.BottomOutside;
-            customLegendItem1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            customLegendItem1.CustomLegendItemID = 0;
+            customLegendItem1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             customLegendItem1.MarkerVisible = true;
             customLegendItem1.Name = "Total Income";
             customLegendItem1.TextVisible = true;
             legend2.CustomItems.AddRange(new DevExpress.XtraCharts.CustomLegendItem[] {
             customLegendItem1});
             legend2.DockTargetName = "Supply and Demand";
+            legend2.LegendID = 1;
             legend2.MarkerMode = DevExpress.XtraCharts.LegendMarkerMode.None;
             legend2.Name = "TotalIncome";
             this.chart.Legends.AddRange(new DevExpress.XtraCharts.Legend[] {
@@ -585,6 +588,7 @@
             dataMember2});
             series1.DataAdapter = dataSourceAdapter1;
             series1.Name = "Income";
+            series1.SeriesID = 0;
             splineAreaSeriesView1.AxisYName = "Income Axis";
             series1.View = splineAreaSeriesView1;
             dataMember3.ColumnName = "Month";
@@ -598,6 +602,7 @@
             series2.Label = pointSeriesLabel1;
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series2.Name = "Retail Price";
+            series2.SeriesID = 1;
             lineSeriesView1.LineMarkerOptions.Size = 12;
             lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             series2.View = lineSeriesView1;
@@ -612,6 +617,7 @@
             series3.Label = sideBySideBarSeriesLabel1;
             series3.LegendName = "StockDemandProduction";
             series3.Name = "Stock";
+            series3.SeriesID = 2;
             sideBySideBarSeriesView1.AxisYName = "Supply and Demand Axis";
             sideBySideBarSeriesView1.PaneName = "Supply and Demand";
             sideBySideBarSeriesView1.Transparency = ((byte)(135));
@@ -629,6 +635,7 @@
             series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series4.LegendName = "StockDemandProduction";
             series4.Name = "Demand";
+            series4.SeriesID = 3;
             lineSeriesView2.AxisYName = "Supply and Demand Axis";
             lineSeriesView2.LineMarkerOptions.Size = 12;
             lineSeriesView2.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
@@ -647,6 +654,7 @@
             series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series5.LegendName = "StockDemandProduction";
             series5.Name = "Production";
+            series5.SeriesID = 4;
             lineSeriesView3.AxisYName = "Supply and Demand Axis";
             lineSeriesView3.LineMarkerOptions.Size = 12;
             lineSeriesView3.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
@@ -664,6 +672,7 @@
             this.chart.TabIndex = 2;
             this.chart.TabStop = false;
             chartTitle1.Text = "Income Forecast";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.CustomDrawSeriesPoint += new DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(this.Chart_CustomDrawSeriesPoint);
@@ -711,6 +720,9 @@
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(customLegendItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(splineAreaSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pointSeriesLabel1)).EndInit();

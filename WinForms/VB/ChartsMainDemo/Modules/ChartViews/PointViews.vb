@@ -2,7 +2,7 @@ Imports System
 Imports System.Collections.Generic
 Imports System.Drawing
 Imports System.Globalization
-Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.Utils
 Imports DevExpress.XtraBars.Docking2010.Views
 Imports DevExpress.XtraBars.Docking2010.Views.Tabbed
@@ -190,11 +190,10 @@ Namespace DevExpress.XtraCharts.Demos
 
         Public Shared Sub InitSeries(ByVal chart As ChartControl, ByVal count As Integer)
             If chart.Series.Count > 2 AndAlso chart.Series(0).View.GetType().Equals(GetType(PointSeriesView)) Then
-                Dim random As NonCryptographicRandom = NonCryptographicRandom.System
-                chart.Series(0).DataSource = PointGenerator.GenerateCluster(random, 140, 1280, 100, 1240, count)
-                chart.Series(1).DataSource = PointGenerator.GenerateCluster(random, 500, 1600, 1000, 2100, count)
-                chart.Series(2).DataSource = PointGenerator.GenerateCluster(random, 450, 950, 1550, 2050, count)
-                chart.Series(3).DataSource = PointGenerator.GenerateCluster(random, 800, 1700, 300, 1200, count)
+                chart.Series(0).DataSource = PointGenerator.GenerateCluster(TutorialConstants.Random, 140, 1280, 100, 1240, count)
+                chart.Series(1).DataSource = PointGenerator.GenerateCluster(TutorialConstants.Random, 500, 1600, 1000, 2100, count)
+                chart.Series(2).DataSource = PointGenerator.GenerateCluster(TutorialConstants.Random, 450, 950, 1550, 2050, count)
+                chart.Series(3).DataSource = PointGenerator.GenerateCluster(TutorialConstants.Random, 800, 1700, 300, 1200, count)
                 For Each series As Series In chart.Series
                     series.ArgumentDataMember = "Argument"
                     series.ValueDataMembers.AddRange("Value")

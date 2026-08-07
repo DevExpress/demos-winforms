@@ -1,17 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using DevExpress.Skins;
-using DevExpress.XtraTreeList.Nodes;
-using DevExpress.XtraTreeList;
 using DevExpress.Utils.Design;
-using System.Collections;
+using DevExpress.XtraTreeList;
+using DevExpress.XtraTreeList.Nodes;
 
 namespace DevExpress.MailClient.Win {
     public partial class ucMailTree : BaseControl {
@@ -36,7 +31,7 @@ namespace DevExpress.MailClient.Win {
             TreeListNode tlPerson = treeList1.AppendNode(new object[] { Properties.Resources.OwnerName, MailType.Inbox, MailFolder.All, 4 }, null);
             TreeListNode tlPersonInbox = treeList1.AppendNode(new object[] { Properties.Resources.Inbox, MailType.Inbox, MailFolder.All }, tlPerson);
             treeList1.AppendNode(new object[] { Properties.Resources.Management, MailType.Inbox, MailFolder.Management, 6 }, tlPersonInbox);
-            treeList1.AppendNode(new object[] { Properties.Resources.IT, MailType.Inbox, MailFolder.IT, 7  }, tlPersonInbox);
+            treeList1.AppendNode(new object[] { Properties.Resources.IT, MailType.Inbox, MailFolder.IT, 7 }, tlPersonInbox);
             treeList1.AppendNode(new object[] { Properties.Resources.Sales, MailType.Inbox, MailFolder.Sales, 8 }, tlPersonInbox);
             treeList1.AppendNode(new object[] { Properties.Resources.Engineering, MailType.Inbox, MailFolder.Engineering, 9 }, tlPersonInbox);
             treeList1.AppendNode(new object[] { Properties.Resources.SentItems, MailType.Sent, MailFolder.All, 1 }, tlPerson);
@@ -85,9 +80,9 @@ namespace DevExpress.MailClient.Win {
             MailType mailType = GetNodeMailType(node);
             int mailFolder = GetNodeMailFolder(node);
             foreach(Message message in DataHelper.Messages) {
-                if(message.MailType == mailType && ((message.MailFolder & mailFolder) > 0 || 
+                if(message.MailType == mailType && ((message.MailFolder & mailFolder) > 0 ||
                     mailFolder == (int)MailFolder.All || mailType == MailType.Deleted) && !message.Deleted)
-                        messages.Add(message);
+                    messages.Add(message);
             }
             node.SetValue(colData, messages);
         }
@@ -101,7 +96,8 @@ namespace DevExpress.MailClient.Win {
         void SetFocusedColor(Skin skin) {
             if("|Office 2016 Colorful|".IndexOf(skin.Name) > 0) {
                 treeList1.Appearance.FocusedRow.BackColor = skin.Colors.GetColor("HideSelection");
-            } else treeList1.Appearance.FocusedRow.BackColor = skin.Colors.GetColor("Highlight");
+            }
+            else treeList1.Appearance.FocusedRow.BackColor = skin.Colors.GetColor("Highlight");
         }
         private void treeList1_FocusedNodeChanged(object sender, DevExpress.XtraTreeList.FocusedNodeChangedEventArgs e) {
             RaiseDataSourceChanged(e.Node);
@@ -110,7 +106,7 @@ namespace DevExpress.MailClient.Win {
             if(DataSourceChanged != null && allowDataSourceChanged)
                 DataSourceChanged(treeList1, new DataSourceChangedEventArgs(GetNodeCaption(node), node.GetValue(colData), node.GetValue(colType)));
         }
-        string GetNodeCaption(TreeListNode node) { 
+        string GetNodeCaption(TreeListNode node) {
             string ret = string.Format("{0}", node.GetValue(colName));
             while(node.ParentNode != null) {
                 node = node.ParentNode;
@@ -130,17 +126,18 @@ namespace DevExpress.MailClient.Win {
                 int unread = GetUnreadMessagesCount(list);
                 if(unread > 0 && DataHelper.ShowUnreadMessageCount) {
                     if(DataHelper.ShowAllMessageCount)
-                        e.CellText = string.Format("<Color={5}><b>{0}</b><Size=-1><Color={2}> [{1}/<Color={4}>{3}<Color={2}>]", textValue, unread, focused ? ColorHelper.HtmlHighlightTextColor :  ColorHelper.HtmlQuestionColor, list.Count, focused ? ColorHelper.HtmlHighlightTextColor : ColorHelper.HtmlWarningColor, textColor);
+                        e.CellText = string.Format("<Color={5}><b>{0}</b><Size=-1><Color={2}> [{1}/<Color={4}>{3}<Color={2}>]", textValue, unread, focused ? ColorHelper.HtmlHighlightTextColor : ColorHelper.HtmlQuestionColor, list.Count, focused ? ColorHelper.HtmlHighlightTextColor : ColorHelper.HtmlWarningColor, textColor);
                     else
                         e.CellText = string.Format("<Color={3}><b>{0}</b><Size=-1><Color={2}> [{1}]", textValue, unread, focused ? ColorHelper.HtmlHighlightTextColor : ColorHelper.HtmlQuestionColor, textColor);
-                } else {
+                }
+                else {
                     if(DataHelper.ShowAllMessageCount && list.Count > 0)
                         e.CellText = string.Format("<Color={3}>{0}<Size=-1><Color={2}> [{1}]", textValue, list.Count, focused ? ColorHelper.HtmlHighlightTextColor : ColorHelper.HtmlQuestionColor, textColor);
                 }
             }
         }
         static string GetHtmlTextColor(bool focused) {
-            if(focused) 
+            if(focused)
                 return ColorHelper.HtmlHighlightTextColor;
             return AllowControlTextColor ? ColorHelper.HtmlControlTextColor : ColorHelper.HtmlControlTextColor2;
         }
@@ -157,7 +154,7 @@ namespace DevExpress.MailClient.Win {
         internal void CreateNewFolder() {
             if(treeList1.FocusedNode == null || IsDeletedFolderFocused()) return;
             var node = treeList1.FocusedNode.Nodes.Add(new object[] { Properties.Resources.NewFolder, MailType.Inbox, CustomFolderId++, 9, new List<Message>() });
-            
+
             treeList1.FocusedNode = node;
             StartEditing();
 
@@ -178,7 +175,7 @@ namespace DevExpress.MailClient.Win {
             treeList1.LayoutChanged();
         }
         private void treeList1_MouseDown(object sender, MouseEventArgs e) {
-            if(e.Button == MouseButtons.Right && ShowMenu != null) ShowMenu(sender, e); 
+            if(e.Button == MouseButtons.Right && ShowMenu != null) ShowMenu(sender, e);
         }
 
         internal void UpdateTreeViewMessages() {

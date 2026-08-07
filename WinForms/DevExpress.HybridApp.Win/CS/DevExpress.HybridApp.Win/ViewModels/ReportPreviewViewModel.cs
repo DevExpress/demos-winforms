@@ -21,17 +21,17 @@ namespace DevExpress.DevAV.ViewModels {
             Report = (XtraReport)ReportInfo.CreateReport();
             Report.CreateDocument(true);
         }
-        public virtual IReportInfo ReportInfo { 
-            get; 
-            set; 
+        public virtual IReportInfo ReportInfo {
+            get;
+            set;
         }
-        public virtual XtraReport Report { 
-            get; 
-            protected set; 
+        public virtual XtraReport Report {
+            get;
+            protected set;
         }
         public virtual EmployeeReportType ReportType {
-            get; 
-            protected set; 
+            get;
+            protected set;
         }
         public bool CanShowEvaluations(bool include) {
             return Report != null;

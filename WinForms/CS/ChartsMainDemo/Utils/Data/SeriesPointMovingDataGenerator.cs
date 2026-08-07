@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraCharts.Demos {
     class DraggableItem : INotifyPropertyChanged {
@@ -78,8 +79,7 @@ namespace DevExpress.XtraCharts.Demos {
     }
     class DraggableDataModel : BindingList<DraggableItem> {
         public static DraggableDataModel CreateModel(int itemProductionCost = 50) {
-            NonCryptographicRandom rnd = NonCryptographicRandom.System;
-            DateTime now = DateTime.Now;
+            DateTime now = TutorialConstants.Now;
             DateTime startDate = new DateTime(now.Year, now.Month, 1);
             DraggableDataModel data = new DraggableDataModel(itemProductionCost);
 
@@ -90,17 +90,17 @@ namespace DevExpress.XtraCharts.Demos {
                 double cost;
                 double demand;
                 if(i < 4 || i > 7) {
-                    cost = data[i - 1].Cost + rnd.Next(3, 6);
+                    cost = data[i - 1].Cost + TutorialConstants.Random.Next(3, 6);
                     if(i < 4)
-                        demand = data[i - 1].Demand + (rnd.NextDouble() * (5 - 3) + 3) * 1000;
+                        demand = data[i - 1].Demand + (TutorialConstants.Random.NextDouble() * (5 - 3) + 3) * 1000;
                     else
-                        demand = data[i - 1].Demand + (rnd.NextDouble() * (8 - 6) + 6) * 1000;
+                        demand = data[i - 1].Demand + (TutorialConstants.Random.NextDouble() * (8 - 6) + 6) * 1000;
                 }
                 else {
-                    cost = data[i - 1].Cost + rnd.Next(10, 20);
-                    demand = data[i - 1].Demand + (rnd.NextDouble() * (13 - 8) + 8) * 1000;
+                    cost = data[i - 1].Cost + TutorialConstants.Random.Next(10, 20);
+                    demand = data[i - 1].Demand + (TutorialConstants.Random.NextDouble() * (13 - 8) + 8) * 1000;
                 }
-                double production = data[i - 1].Production + (rnd.NextDouble() * (8 - 5) + 5) * 1000;
+                double production = data[i - 1].Production + (TutorialConstants.Random.NextDouble() * (8 - 5) + 5) * 1000;
 
                 data.Add(new DraggableItem(0, cost, production, demand, 0, month));
                 startDate = startDate.AddMonths(1);
@@ -139,8 +139,7 @@ namespace DevExpress.XtraCharts.Demos {
                 return 0;
         }
         public void InitStock() {
-            NonCryptographicRandom rnd = NonCryptographicRandom.System;
-            double initialStock = rnd.Next(20, 40) * 1000;
+            double initialStock = TutorialConstants.Random.Next(20, 40) * 1000;
             for(int i = 0; i < Count; i++) {
                 this[i].Stock = initialStock + this[i].Production;
                 initialStock = Math.Max(0, this[i].Stock - this[i].Demand);

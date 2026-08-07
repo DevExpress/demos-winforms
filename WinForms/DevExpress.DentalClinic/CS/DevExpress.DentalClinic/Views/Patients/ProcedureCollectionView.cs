@@ -52,13 +52,13 @@ namespace DevExpress.DentalClinic.View {
                 .Bind(sbAddProcedure)
                 .After(ResetSelection);
             fluentAPI.SetTrigger(x => x.EnabledTypes, ts => {
-                tbNavPageAllProcedures.PageEnabled  = ts.Contains(ProcedureType.Tooth) && ts.Contains(ProcedureType.General);
+                tbNavPageAllProcedures.PageEnabled = ts.Contains(ProcedureType.Tooth) && ts.Contains(ProcedureType.General);
                 tbNavPageGeneralProcedures.PageEnabled = ts.Contains(ProcedureType.General);
                 tbNavPageToothProcedures.PageEnabled = ts.Contains(ProcedureType.Tooth);
                 if(proceduresTabPane.SelectedPage == null || !proceduresTabPane.SelectedPage.PageEnabled)
                     proceduresTabPane.SelectedPage = proceduresTabPane.Pages.FirstOrDefault(x => x.PageEnabled) as TabNavigationPage;
             });
-            fluentAPI.SetTrigger(x => x.EnabledGroups, gs => { 
+            fluentAPI.SetTrigger(x => x.EnabledGroups, gs => {
                 tbProcedureGroups.Groups
                 .SelectMany(x => x.Items)
                 .ForEach(x => x.Enabled = gs.Any(g => (ProcedureGroup)x.Tag == g));
@@ -160,7 +160,7 @@ namespace DevExpress.DentalClinic.View {
         void OnSvgImageBoxSelectionChanging(object sender, SvgImageSelectionChangingEventArgs ea) {
             if(ea.Action == SvgImageSelectionChangeAction.Clear) {
                 svgImageBoxTeeth.BeginUpdate();
-                foreach(var item in svgImageBoxTeeth.Selection) 
+                foreach(var item in svgImageBoxTeeth.Selection)
                     ToothLayoutHelper.SetToothBadgeBackgroundVisibility(item, false);
                 svgImageBoxTeeth.EndUpdate();
             }

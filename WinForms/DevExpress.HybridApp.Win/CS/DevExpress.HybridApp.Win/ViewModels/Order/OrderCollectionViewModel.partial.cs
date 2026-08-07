@@ -1,11 +1,6 @@
+using System.Collections.Generic;
 using DevExpress.DevAV.Common.ViewModel;
 using DevExpress.DevAV.DevAVDbDataModel1;
-using DevExpress.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DevExpress.Mvvm.POCO;
 
 namespace DevExpress.DevAV.ViewModels {
     public partial class OrderCollectionViewModel : CollectionViewModel<Order, long, IDevAVDbUnitOfWork> {
@@ -14,19 +9,19 @@ namespace DevExpress.DevAV.ViewModels {
             this.Print<DevAVDbViewModel>(DevAVDbViewModel.PrintableControlPrintPreviewDocumentType);
         }
         protected override void OnInitializeInRuntime() {
-            if (Sales.Count > 0)
+            if(Sales.Count > 0)
                 SelectedListProductInfo = Sales[0].ListProductInfo;
         }
         public List<SalesInfo> Sales {
             get {
-                if (sales == null)
+                if(sales == null)
                     sales = QueriesHelper.GetSales(CreateUnitOfWork().OrderItems);
                 return sales;
             }
         }
-        public virtual List<SalesProductInfo> SelectedListProductInfo { 
-            get; 
-            set; 
+        public virtual List<SalesProductInfo> SelectedListProductInfo {
+            get;
+            set;
         }
         public virtual DateRange DateRange {
             get;

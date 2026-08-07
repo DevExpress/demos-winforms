@@ -525,6 +525,7 @@
             // tabPaneOptions
             // 
             this.tabPaneOptions.RegularSize = new System.Drawing.Size(241, 421);
+            this.tabPaneOptions.SelectedPage = this.tabNavigationPageOptions;
             this.tabPaneOptions.Size = new System.Drawing.Size(241, 421);
             // 
             // tabNavigationPageOptions
@@ -537,6 +538,7 @@
             seriesPointAnchorPoint1.SeriesID = 0;
             seriesPointAnchorPoint1.SeriesPointID = 30;
             textAnnotation1.AnchorPoint = seriesPointAnchorPoint1;
+            textAnnotation1.AnnotationID = 0;
             textAnnotation1.AutoHeight = true;
             textAnnotation1.AutoWidth = true;
             textAnnotation1.Name = "Minimum";
@@ -551,6 +553,7 @@
             seriesPointAnchorPoint2.SeriesID = 0;
             seriesPointAnchorPoint2.SeriesPointID = 91;
             textAnnotation2.AnchorPoint = seriesPointAnchorPoint2;
+            textAnnotation2.AnnotationID = 1;
             textAnnotation2.AutoHeight = true;
             textAnnotation2.AutoWidth = true;
             textAnnotation2.Name = "Maximum";
@@ -565,6 +568,7 @@
             chartAnchorPoint1.X = 103;
             chartAnchorPoint1.Y = 65;
             imageAnnotation1.AnchorPoint = chartAnchorPoint1;
+            imageAnnotation1.AnnotationID = 2;
             imageAnnotation1.AutoHeight = true;
             imageAnnotation1.AutoWidth = true;
             imageAnnotation1.Image.DXImage = ((DevExpress.Drawing.DXBitmap)(DevExpress.Drawing.DXImage.FromBase64String(resources.GetString("resource.DXImage"))));
@@ -579,6 +583,7 @@
             paneAnchorPoint1.AxisXCoordinate.AxisValueSerializable = "2.5632";
             paneAnchorPoint1.AxisYCoordinate.AxisValueSerializable = "-54.0941176470588";
             textAnnotation3.AnchorPoint = paneAnchorPoint1;
+            textAnnotation3.AnnotationID = 3;
             textAnnotation3.AutoHeight = true;
             textAnnotation3.AutoWidth = true;
             textAnnotation3.Name = "Day";
@@ -594,6 +599,7 @@
             paneAnchorPoint2.AxisXCoordinate.AxisValueSerializable = "2.984";
             paneAnchorPoint2.AxisYCoordinate.AxisValueSerializable = "-35.0020761245675";
             textAnnotation4.AnchorPoint = paneAnchorPoint2;
+            textAnnotation4.AnnotationID = 4;
             textAnnotation4.AutoHeight = true;
             textAnnotation4.AutoWidth = true;
             textAnnotation4.Name = "Night";
@@ -620,18 +626,21 @@
             strip1.MinLimit.AxisValueSerializable = "2.748";
             strip1.Name = "Night1";
             strip1.ShowInLegend = false;
+            strip1.StripID = 0;
             strip2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             strip2.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
             strip2.MaxLimit.AxisValueSerializable = "4.216";
             strip2.MinLimit.AxisValueSerializable = "3.748";
             strip2.Name = "Night2";
             strip2.ShowInLegend = false;
+            strip2.StripID = 1;
             strip3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
             strip3.FillStyle.FillMode = DevExpress.XtraCharts.FillMode.Solid;
             strip3.MaxLimit.AxisValueSerializable = "5.216";
             strip3.MinLimit.AxisValueSerializable = "4.748";
             strip3.Name = "Night3";
             strip3.ShowInLegend = false;
+            strip3.StripID = 2;
             xyDiagram1.AxisX.Strips.AddRange(new DevExpress.XtraCharts.Strip[] {
             strip1,
             strip2,
@@ -790,11 +799,13 @@
             this.chart.Size = new System.Drawing.Size(806, 421);
             this.chart.TabIndex = 3;
             chartTitle1.Text = "Mars Pathfinder Temperature Data";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle2.Text = "From www-k12.atmos.washington.edu/k12";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -956,7 +967,6 @@
             this.layoutControlItemAllowMoving.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemAllowMoving.Name = "layoutControlItemAllowMoving";
             this.layoutControlItemAllowMoving.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemAllowMoving.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAllowMoving.TextVisible = false;
             // 
             // layoutControlItemAllowAnchoring
@@ -965,7 +975,6 @@
             this.layoutControlItemAllowAnchoring.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemAllowAnchoring.Name = "layoutControlItemAllowAnchoring";
             this.layoutControlItemAllowAnchoring.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemAllowAnchoring.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAllowAnchoring.TextVisible = false;
             // 
             // layoutControlItemAllowRotation
@@ -974,7 +983,6 @@
             this.layoutControlItemAllowRotation.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemAllowRotation.Name = "layoutControlItemAllowRotation";
             this.layoutControlItemAllowRotation.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemAllowRotation.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAllowRotation.TextVisible = false;
             // 
             // layoutControlItemAllowResizing
@@ -983,7 +991,6 @@
             this.layoutControlItemAllowResizing.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemAllowResizing.Name = "layoutControlItemAllowResizing";
             this.layoutControlItemAllowResizing.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemAllowResizing.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAllowResizing.TextVisible = false;
             // 
             // layoutControlItemAllowEditing
@@ -995,16 +1002,13 @@
             this.layoutControlItemAllowEditing.Name = "layoutControlItemAllowEditing";
             this.layoutControlItemAllowEditing.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemAllowEditing.Text = "layoutControlItemAllowAnchoring";
-            this.layoutControlItemAllowEditing.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemAllowEditing.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 252);
             this.emptySpaceItem.Name = "emptySpaceItem";
             this.emptySpaceItem.Size = new System.Drawing.Size(241, 136);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroupAppearance
             // 
@@ -1042,7 +1046,6 @@
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
-            this.ribbonControl1.SearchEditItem,
             this.createBarBaseItem1,
             this.createLineBaseItem1,
             this.createPieBaseItem1,

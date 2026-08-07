@@ -128,11 +128,9 @@
             // 
             // emptySpaceItemBottom
             // 
-            this.emptySpaceItemBottom.AllowHotTrack = false;
             this.emptySpaceItemBottom.Location = new System.Drawing.Point(0, 324);
             this.emptySpaceItemBottom.Name = "emptySpaceItem1";
             this.emptySpaceItemBottom.Size = new System.Drawing.Size(362, 549);
-            this.emptySpaceItemBottom.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroupChartType
             // 
@@ -151,7 +149,6 @@
             this.layoutControlItemChartType.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemChartType.Name = "layoutControlItemChartType";
             this.layoutControlItemChartType.Size = new System.Drawing.Size(342, 30);
-            this.layoutControlItemChartType.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemChartType.TextVisible = false;
             // 
             // layoutControlGroupColorizerType
@@ -174,7 +171,6 @@
             this.layoutControlItemChartType1.Name = "layoutControlItemChartType1";
             this.layoutControlItemChartType1.Size = new System.Drawing.Size(342, 30);
             this.layoutControlItemChartType1.Text = "layoutControlItemChartType";
-            this.layoutControlItemChartType1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemChartType1.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -193,7 +189,6 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(338, 134);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // chart
@@ -244,7 +239,9 @@
             this.chart.SeriesSelectionMode = DevExpress.XtraCharts.SeriesSelectionMode.Argument;
             series1.CrosshairLabelPattern = "{A:N0}ft<sup>2</sup> : {V:$0}";
             series1.Name = "Houses";
+            series1.SeriesID = 0;
             regressionLine1.CrosshairLabelPattern = "{A:N0}ft<sup>2</sup> : {V:$0}";
+            regressionLine1.IndicatorID = 0;
             regressionLine1.Name = "Regression";
             regressionLine1.ShowInLegend = true;
             swiftPointSeriesView1.Indicators.AddRange(new DevExpress.XtraCharts.Indicator[] {
@@ -256,8 +253,10 @@
             this.chart.TabIndex = 3;
             this.chart.TabStop = false;
             chartTitle1.Text = "House Sale Prices";
+            chartTitle1.TitleID = 0;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle2.Text = "Point Count: 100000";
+            chartTitle2.TitleID = 1;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});

@@ -1,8 +1,15 @@
+Imports System
 Imports System.Collections.Generic
 Imports System.Drawing
 Imports System.IO
+Imports System.Linq
 Imports System.Xml.Serialization
+#If NET
+using Microsoft.EntityFrameworkCore;
+#Else
+Imports System.Data.SQLite
 
+#End If
 Namespace DevExpress.Diagram.Demos
 
     <XmlRoot("Employees")>
@@ -71,30 +78,110 @@ Namespace DevExpress.Diagram.Demos
 
         Public ReadOnly FilteredEmployees As EmployeesWithPhotoData
 
-        Sub New()
-            Using stream = GetDataStream("FilteredEmployeesWithPhoto.xml")
-                FilteredEmployees = Utils.SafeXml.Deserialize(Of EmployeesWithPhotoData)(stream)
-            End Using
+        Private ReadOnly employees As Lazy(Of Dictionary(Of Integer, Employee)) = New Lazy(Of Dictionary(Of Integer, Employee))(AddressOf LoadEmployees)
 
-            For Each employee In FilteredEmployees
+        Sub New()
+            FilteredEmployees = New EmployeesWithPhotoData()
+            For Each id In filteredIds
+                Dim employee As Employee
+                If Not employees.Value.TryGetValue(id, employee) Then Continue For
+                employee.ParentId = GetParentId(id)
                 employee.CroppedImageData = CropImage(employee.ImageData)
+                FilteredEmployees.Add(employee)
             Next
         End Sub
 
         Public Function GetOrgChartEmployees() As IEnumerable(Of Object)
-            Dim allEmployees As EmployeesWithPhotoData
-            Using stream = GetDataStream("EmployeesWithPhoto.xml")
-                allEmployees = Utils.SafeXml.Deserialize(Of EmployeesWithPhotoData)(stream)
-            End Using
-
-            For Each pair In idMap
-                For Each childID In pair.Value
-                    Dim copyID = childID
-                    allEmployees.Find(Function(x) Equals(copyID, x.Id)).ParentId = pair.Key
-                Next
+            Dim allEmployees = New EmployeesWithPhotoData()
+            For Each employee In employees.Value.Values.OrderBy(Function(x) x.Id)
+                employee.ParentId = GetParentId(employee.Id)
+                allEmployees.Add(employee)
             Next
 
             Return allEmployees
+        End Function
+
+        Private Function LoadEmployees() As Dictionary(Of Integer, Employee)
+            Dim result = New Dictionary(Of Integer, Employee)()
+            Dim path As String = Internal.DataDirectoryHelper.GetFile("devav.sqlite3", Internal.DataDirectoryHelper.DataFolderName)
+            ClearReadOnly(path)
+#If NET
+            using(var devAvDb = new DevExpress.DevAV.DevAVDb($"Data Source={path}")) {
+                var sources = devAvDb.Employees
+                    .Include(e => e.Picture)
+                    .ToList();
+                foreach(var source in sources) {
+                    if(source.Picture == null || source.Picture.Data == null)
+                        continue;
+                    result[(int)source.Id] = new Employee {
+                        Id = (int)source.Id,
+                        FirstName = source.FirstName,
+                        LastName = source.LastName,
+                        JobTitle = source.Title,
+                        GroupName = GetDepartmentName(source.Department),
+                        Phone = string.IsNullOrEmpty(source.MobilePhone) ? source.HomePhone : source.MobilePhone,
+                        EmailAddress = source.Email,
+                        AddressLine1 = source.Address != null ? source.Address.Line : null,
+                        BirthDate = source.BirthDate ?? default(DateTime),
+                        HireDate = source.HireDate ?? default(DateTime),
+                        ImageData = source.Picture.Data
+                    };
+                }
+            }
+#Else
+            Using connection = New SQLiteConnection(New SQLiteConnectionStringBuilder With {.DataSource = path}.ConnectionString)
+                connection.Open()
+                Using command = connection.CreateCommand()
+                    command.CommandText = "SELECT e.Id, e.FirstName, e.LastName, e.Department, e.Title, " & "e.MobilePhone, e.HomePhone, e.Email, e.Address_Line, e.BirthDate, e.HireDate, p.Data " & "FROM Employees e LEFT JOIN Pictures p ON p.Id = e.PictureId"
+                    Using reader = command.ExecuteReader()
+                        While reader.Read()
+                            If reader.IsDBNull(11) Then Continue While
+                            Dim employee = New Employee With {.Id = CInt(reader.GetInt64(0)), .FirstName = reader.GetString(1), .LastName = reader.GetString(2), .GroupName = GetDepartmentName(CType(reader.GetInt64(3), DevAV.EmployeeDepartment)), .JobTitle = reader.GetString(4), .Phone = If(Not reader.IsDBNull(5), reader.GetString(5), If(Not reader.IsDBNull(6), reader.GetString(6), Nothing)), .EmailAddress = If(Not reader.IsDBNull(7), reader.GetString(7), Nothing), .AddressLine1 = If(Not reader.IsDBNull(8), reader.GetString(8), Nothing), .BirthDate = If(Not reader.IsDBNull(9), reader.GetDateTime(9), Nothing), .HireDate = If(Not reader.IsDBNull(10), reader.GetDateTime(10), Nothing), .ImageData = CType(reader(11), Byte())}
+                            result(employee.Id) = employee
+                        End While
+                    End Using
+                End Using
+            End Using
+
+#End If
+            Return result
+        End Function
+
+        Private Sub ClearReadOnly(ByVal path As String)
+            Try
+                Dim attributes = File.GetAttributes(path)
+                If attributes.HasFlag(FileAttributes.ReadOnly) Then File.SetAttributes(path, attributes And Not FileAttributes.ReadOnly)
+            Catch
+            End Try
+        End Sub
+
+        Private Function GetDepartmentName(ByVal department As DevAV.EmployeeDepartment) As String
+            Select Case department
+                Case DevAV.EmployeeDepartment.Sales
+                    Return "Sales"
+                Case DevAV.EmployeeDepartment.Support
+                    Return "Support"
+                Case DevAV.EmployeeDepartment.Shipping
+                    Return "Shipping"
+                Case DevAV.EmployeeDepartment.Engineering
+                    Return "Engineering"
+                Case DevAV.EmployeeDepartment.HumanResources
+                    Return "Human Resources"
+                Case DevAV.EmployeeDepartment.Management
+                    Return "Management"
+                Case DevAV.EmployeeDepartment.IT
+                    Return "IT"
+                Case Else
+                    Return String.Empty
+            End Select
+        End Function
+
+        Private Function GetParentId(ByVal id As Integer) As Integer
+            For Each pair In idMap
+                If pair.Value.Contains(id) Then Return pair.Key
+            Next
+
+            Return 0
         End Function
 
         Private Function CropImage(ByVal imageBytes As Byte()) As Byte()
@@ -118,14 +205,10 @@ Namespace DevExpress.Diagram.Demos
             End Using
         End Function
 
+        Private ReadOnly filteredIds As Integer() = {1, 2, 3, 4, 5, 6, 30, 8, 9, 10, 32}
+
 #Region "id map"
-        '0
-        '1
-        '2
-        '3
-        '4
-        '5
-        Private idMap As Dictionary(Of Integer, Integer()) = New Dictionary(Of Integer, Integer())() From {{109, {42, 117, 102}}, {42, {149, 150, 28}}, {117, {188, 6}}, {102, {46}}, {149, {119}}, {150, {140, 30, 191}}, {28, {82, 70}}, {188, {71, 274}}, {6, {261}}, {46, {266, 103, 139, 216}}, {119, {130, 12}}, {30, {3}}, {191, {263, 5}}, {82, {265, 11, 4}}, {71, {270, 217}}, {274, {79, 114, 273}}, {266, {268}}, {103, {278, 283, 276}}, {139, {290, 284}}, {216, {287}}, {130, {281, 288}}, {12, {280, 277}}, {263, {275, 148, 218}}, {114, {225, 49}}, {283, {260, 21}}, {287, {200}}, {288, {44}}, {148, {206, 41, 145}}}
+        Private ReadOnly idMap As Dictionary(Of Integer, Integer()) = New Dictionary(Of Integer, Integer())() From {{1, {2, 3, 4}}, {2, {5}}, {3, {32}}, {4, {8}}, {5, {11, 26, 27, 7, 30, 9, 10}}, {6, {21, 22, 23, 24, 25, 28}}, {8, {12, 20, 40, 41, 42, 43, 44, 45, 47}}, {9, {17, 18, 19, 31, 39, 46}}, {10, {13, 14, 15, 16, 49, 50}}, {32, {33, 34, 36, 37, 48, 51, 6}}, {28, {29}}, {33, {38}}}
 #End Region
     End Module
 End Namespace

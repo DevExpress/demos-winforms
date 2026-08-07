@@ -1,11 +1,9 @@
 ﻿namespace DevExpress.DentalClinic.ViewModel {
-    using System.ComponentModel;
+    using System.Linq;
     using DevExpress.DentalClinic.Model;
     using DevExpress.DentalClinic.View;
     using DevExpress.Mvvm;
-    using System.Linq;
     using DevExpress.Mvvm.POCO;
-    using DevExpress.Xpo;
 
     public class PatientViewModel : ISupportParameter, IEditViewModel {
         public PatientViewModel() {
@@ -68,11 +66,11 @@
             }
         }
         bool IEditViewModel.CanNavigateFrom() {
-            var document = DocumentManagerService.Documents.FirstOrDefault(x =>x.Content is IEditViewModel);
+            var document = DocumentManagerService.Documents.FirstOrDefault(x => x.Content is IEditViewModel);
             if(document == null) return true;
             var viewModel = document.Content as IEditViewModel;
             return viewModel.CanNavigateFrom();
-        } 
+        }
         ISecuredObjectSpaceService SessionProvider { get { return this.GetService<ISecuredObjectSpaceService>(); } }
     }
 }

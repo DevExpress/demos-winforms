@@ -67,6 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagramSecondaryAxisX1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagramSecondaryAxisY1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
@@ -87,6 +89,7 @@
             strip1.MinLimit.AxisValueSerializable = "00:00:00";
             strip1.Name = "Strip 1";
             strip1.ShowInLegend = false;
+            strip1.StripID = 0;
             swiftPlotDiagram1.AxisX.Strips.AddRange(new DevExpress.XtraCharts.Strip[] {
             strip1});
             swiftPlotDiagram1.AxisX.Tickmarks.MinorVisible = false;
@@ -260,10 +263,12 @@
             this.chart.Legend.Name = "Default Legend";
             this.chart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             legend1.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right;
+            legend1.LegendID = 0;
             legend1.Name = "Legend1";
             legend1.Visibility = DevExpress.Utils.DefaultBoolean.False;
             legend2.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Right;
             legend2.DockTargetName = "Pane 2";
+            legend2.LegendID = 1;
             legend2.Name = "Legend2";
             legend2.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chart.Legends.AddRange(new DevExpress.XtraCharts.Legend[] {
@@ -275,14 +280,17 @@
             series1.DataAdapter = seriesPointCollectionDataAdapter1;
             series1.LegendName = "Legend1";
             series1.Name = "Left";
+            series1.SeriesID = 0;
             series1.View = swiftPlotSeriesView1;
             series2.DataAdapter = seriesPointCollectionDataAdapter2;
             series2.Name = "Right";
+            series2.SeriesID = 1;
             swiftPlotSeriesView2.PaneName = "Pane 1";
             series2.View = swiftPlotSeriesView2;
             series3.DataAdapter = seriesPointCollectionDataAdapter3;
             series3.LegendName = "Legend2";
             series3.Name = "Frequency Spectrum";
+            series3.SeriesID = 2;
             swiftPlotSeriesView3.AxisXName = "Secondary AxisX 1";
             swiftPlotSeriesView3.AxisYName = "Secondary AxisY 1";
             swiftPlotSeriesView3.LineStyle.Thickness = 3;
@@ -295,6 +303,7 @@
             this.chart.Size = new System.Drawing.Size(944, 634);
             this.chart.TabIndex = 2;
             chartTitle1.Text = "Audio Spectrum Analyzer ";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 
@@ -312,6 +321,8 @@
             ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagramSecondaryAxisX1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagramSecondaryAxisY1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView2)).EndInit();

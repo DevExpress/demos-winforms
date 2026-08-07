@@ -59,7 +59,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl1)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' chart
             ' 
@@ -79,11 +79,13 @@ Namespace DevExpress.XtraCharts.Demos
             series1.ArgumentDataMember = "Product"
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative
             series1.Name = "Series 1"
+            series1.SeriesID = 0
             series1.ValueDataMembersSerializable = "Income"
             Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
             Me.chart.Size = New System.Drawing.Size(546, 334)
             Me.chart.TabIndex = 1
             chartTitle1.Text = "Volume (USD)"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' sidePanel1
@@ -161,21 +163,21 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl1.Name = "layoutControl1"
             Me.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(941, 150, 650, 400)
             Me.layoutControl1.Root = Me.layoutControlGroup1
-            Me.layoutControl1.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl1.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl1.TabIndex = 3
             Me.layoutControl1.Text = "layoutControl1"
             ' 
             ' radioGroupAggregationFunction
             ' 
             Me.radioGroupAggregationFunction.AutoSizeInLayoutControl = True
-            Me.radioGroupAggregationFunction.Location = New System.Drawing.Point(12, 31)
+            Me.radioGroupAggregationFunction.Location = New System.Drawing.Point(12, 34)
             Me.radioGroupAggregationFunction.Name = "radioGroupAggregationFunction"
             Me.radioGroupAggregationFunction.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupAggregationFunction.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupAggregationFunction.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupAggregationFunction.Properties.Columns = 1
             Me.radioGroupAggregationFunction.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(Nothing, "None"), New DevExpress.XtraEditors.Controls.RadioGroupItem(Nothing, "Average"), New DevExpress.XtraEditors.Controls.RadioGroupItem(Nothing, "Minimal"), New DevExpress.XtraEditors.Controls.RadioGroupItem(Nothing, "Maximal"), New DevExpress.XtraEditors.Controls.RadioGroupItem(Nothing, "Sum"), New DevExpress.XtraEditors.Controls.RadioGroupItem(Nothing, "Count")})
-            Me.radioGroupAggregationFunction.Size = New System.Drawing.Size(217, 98)
+            Me.radioGroupAggregationFunction.Size = New System.Drawing.Size(217, 152)
             Me.radioGroupAggregationFunction.StyleController = Me.layoutControl1
             Me.radioGroupAggregationFunction.TabIndex = 4
             AddHandler Me.radioGroupAggregationFunction.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupAggregationFunction_SelectedIndexChanged)
@@ -187,7 +189,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroup2})
             Me.layoutControlGroup1.Name = "Root"
             Me.layoutControlGroup1.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroup1.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroup1.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroup1.TextVisible = False
             ' 
             ' layoutControlGroup2
@@ -197,7 +199,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroup3})
             Me.layoutControlGroup2.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup2.Name = "layoutControlGroup2"
-            Me.layoutControlGroup2.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroup2.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroup2.Text = "Marker Kind"
             ' 
             ' layoutControlGroup3
@@ -206,7 +208,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroup4})
             Me.layoutControlGroup3.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup3.Name = "layoutControlGroup3"
-            Me.layoutControlGroup3.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroup3.Size = New System.Drawing.Size(241, 538)
             ' 
             ' layoutControlGroup4
             ' 
@@ -214,7 +216,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroup4.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemAggregationFunction})
             Me.layoutControlGroup4.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup4.Name = "layoutControlGroup4"
-            Me.layoutControlGroup4.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroup4.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroup4.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroup4.Text = "Aggregation Function"
             ' 
@@ -223,8 +225,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAggregationFunction.Control = Me.radioGroupAggregationFunction
             Me.layoutControlItemAggregationFunction.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemAggregationFunction.Name = "layoutControlItemAggregationFunction"
-            Me.layoutControlItemAggregationFunction.Size = New System.Drawing.Size(221, 505)
-            Me.layoutControlItemAggregationFunction.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemAggregationFunction.Size = New System.Drawing.Size(221, 496)
             Me.layoutControlItemAggregationFunction.TextVisible = False
             ' 
             ' QualitativeDataAggregationDemo

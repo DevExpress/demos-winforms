@@ -1,6 +1,5 @@
 Imports System
 Imports System.Windows.Forms
-Imports DevExpress.Utils.Drawing.Helpers
 Imports DevExpress.XtraEditors
 
 Namespace DevExpress.WindowsMailClient.Win.Modules

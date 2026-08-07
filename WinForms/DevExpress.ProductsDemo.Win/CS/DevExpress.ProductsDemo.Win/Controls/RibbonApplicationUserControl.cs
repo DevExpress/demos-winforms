@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using DevExpress.XtraBars.Ribbon.Drawing;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraBars.Ribbon.Drawing;
 
 namespace DevExpress.ProductsDemo.Win.Controls {
     public partial class RibbonApplicationUserControl : UserControl {

@@ -35,7 +35,7 @@ namespace DevExpress.WindowsMailClient.Win.Services {
         static object GetFlyoutPanelInstance(string name) {
             var mainFormType = AppProvider.MainForm.GetType();
             FieldInfo info = mainFormType.GetField(name, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-            if(info != null) 
+            if(info != null)
                 return info.GetValue(AppProvider.MainForm);
             return null;
         }

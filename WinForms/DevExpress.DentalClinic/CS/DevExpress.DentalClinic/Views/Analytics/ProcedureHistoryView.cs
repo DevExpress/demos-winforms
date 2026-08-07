@@ -1,10 +1,5 @@
-﻿using System;
-using System.Text;
-using DevExpress.DentalClinic.ViewModel;
+﻿using DevExpress.DentalClinic.ViewModel;
 using DevExpress.XtraEditors;
-using DevExpress.XtraGrid;
-using DevExpress.XtraGrid.Views.Base;
-using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 
 namespace DevExpress.DentalClinic.View {
     public partial class ProcedureHistoryView : XtraUserControl {

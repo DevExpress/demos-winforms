@@ -54,35 +54,30 @@ Namespace DevExpress.ApplicationUI.Demos
             ' 
             Me.document1.Caption = "document0"
             Me.document1.ControlName = "document0"
-            Me.document1.ControlTypeName = Nothing
             Me.document1.ImageOptions.ImageIndex = 0
             ' 
             ' document2
             ' 
             Me.document2.Caption = "document1"
             Me.document2.ControlName = "document1"
-            Me.document2.ControlTypeName = Nothing
             Me.document2.ImageOptions.ImageIndex = 1
             ' 
             ' document3
             ' 
             Me.document3.Caption = "document2"
             Me.document3.ControlName = "document2"
-            Me.document3.ControlTypeName = Nothing
             Me.document3.ImageOptions.ImageIndex = 2
             ' 
             ' document4
             ' 
             Me.document4.Caption = "document3"
             Me.document4.ControlName = "document3"
-            Me.document4.ControlTypeName = Nothing
             Me.document4.ImageOptions.ImageIndex = 3
             ' 
             ' document5
             ' 
             Me.document5.Caption = "document4"
             Me.document5.ControlName = "document4"
-            Me.document5.ControlTypeName = Nothing
             Me.document5.ImageOptions.ImageIndex = 4
             ' 
             ' documentManager

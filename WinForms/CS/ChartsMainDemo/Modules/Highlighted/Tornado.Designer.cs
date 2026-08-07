@@ -73,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
             this.SuspendLayout();
@@ -230,7 +231,6 @@
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
             this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(217, 24);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItemIndent
@@ -262,11 +262,9 @@
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 204);
             this.emptySpaceItem.Name = "emptySpaceItem";
             this.emptySpaceItem.Size = new System.Drawing.Size(237, 330);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroupTotalLabels
             // 
@@ -285,7 +283,6 @@
             this.layoutControlItemTotalLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemTotalLabelVisible.Name = "layoutControlItemTotalLabelVisible";
             this.layoutControlItemTotalLabelVisible.Size = new System.Drawing.Size(217, 24);
-            this.layoutControlItemTotalLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemTotalLabelVisible.TextVisible = false;
             // 
             // layoutControlGroupRoot
@@ -305,7 +302,6 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(241, 538);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // chart
@@ -341,6 +337,7 @@
             legend1.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.BottomOutside;
             legend1.Border.Visibility = DevExpress.Utils.DefaultBoolean.False;
             legend1.Direction = DevExpress.XtraCharts.LegendDirection.LeftToRight;
+            legend1.LegendID = 0;
             legend1.Margins.Bottom = 0;
             legend1.Name = "Legend 1";
             legend1.Padding.Bottom = 3;
@@ -378,13 +375,16 @@
             this.chart.Size = new System.Drawing.Size(546, 571);
             this.chart.TabIndex = 3;
             chartTitle1.Text = "Population: Age Structure";
+            chartTitle1.TitleID = 0;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle2.Text = "Data estimate for 2020";
-            chartTitle3.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle2.TitleID = 1;
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
-            chartTitle3.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            chartTitle3.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
+            chartTitle3.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             chartTitle3.Text = "From www.cia.gov";
             chartTitle3.TextColor = System.Drawing.Color.Gray;
+            chartTitle3.TitleID = 2;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2,
@@ -430,6 +430,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupRoot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(legend1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();

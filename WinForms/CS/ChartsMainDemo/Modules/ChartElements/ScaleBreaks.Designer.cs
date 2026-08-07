@@ -91,7 +91,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 534);
             // 
             // layoutControl
             // 
@@ -105,7 +105,7 @@
             this.layoutControl.Location = new System.Drawing.Point(0, 0);
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 538);
+            this.layoutControl.Size = new System.Drawing.Size(241, 534);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
@@ -122,12 +122,12 @@
             // colorEditScaleBreakColor
             // 
             this.colorEditScaleBreakColor.EditValue = System.Drawing.Color.Empty;
-            this.colorEditScaleBreakColor.Location = new System.Drawing.Point(74, 148);
+            this.colorEditScaleBreakColor.Location = new System.Drawing.Point(83, 148);
             this.colorEditScaleBreakColor.Name = "colorEditScaleBreakColor";
             this.colorEditScaleBreakColor.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
             this.colorEditScaleBreakColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.colorEditScaleBreakColor.Size = new System.Drawing.Size(155, 20);
+            this.colorEditScaleBreakColor.Size = new System.Drawing.Size(146, 20);
             this.colorEditScaleBreakColor.StyleController = this.layoutControl;
             this.colorEditScaleBreakColor.TabIndex = 8;
             this.colorEditScaleBreakColor.EditValueChanged += new System.EventHandler(this.colorEditScaleBreakColor_EditValueChanged);
@@ -139,7 +139,7 @@
             0,
             0,
             0});
-            this.spinEditSize.Location = new System.Drawing.Point(74, 124);
+            this.spinEditSize.Location = new System.Drawing.Point(83, 124);
             this.spinEditSize.Name = "spinEditSize";
             this.spinEditSize.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -158,7 +158,7 @@
             0,
             -2147483648});
             this.spinEditSize.Properties.ValidateOnEnterKey = true;
-            this.spinEditSize.Size = new System.Drawing.Size(155, 20);
+            this.spinEditSize.Size = new System.Drawing.Size(146, 20);
             this.spinEditSize.StyleController = this.layoutControl;
             this.spinEditSize.TabIndex = 7;
             this.spinEditSize.EditValueChanged += new System.EventHandler(this.spinEditSize_EditValueChanged);
@@ -180,7 +180,7 @@
             0,
             0,
             0});
-            this.spinEditMaxCount.Location = new System.Drawing.Point(74, 58);
+            this.spinEditMaxCount.Location = new System.Drawing.Point(83, 58);
             this.spinEditMaxCount.Name = "spinEditMaxCount";
             this.spinEditMaxCount.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -196,7 +196,7 @@
             0,
             0,
             0});
-            this.spinEditMaxCount.Size = new System.Drawing.Size(155, 20);
+            this.spinEditMaxCount.Size = new System.Drawing.Size(146, 20);
             this.spinEditMaxCount.StyleController = this.layoutControl;
             this.spinEditMaxCount.TabIndex = 5;
             this.spinEditMaxCount.EditValueChanged += new System.EventHandler(this.spinEditMaxCount_EditValueChanged);
@@ -211,7 +211,7 @@
             this.layoutControlGroupAppearance});
             this.layoutControlGroupRoot.Name = "layoutControlGroupRoot";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 534);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupGeneral
@@ -241,16 +241,13 @@
             this.layoutControlItemShowScaleBreaks.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemShowScaleBreaks.Name = "layoutControlItemShowScaleBreaks";
             this.layoutControlItemShowScaleBreaks.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemShowScaleBreaks.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemShowScaleBreaks.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 214);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 324);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 320);
             // 
             // layoutControlGroupAppearance
             // 
@@ -272,7 +269,6 @@
             this.layoutControlItemRestoreColor.Name = "layoutControlItemRestoreColor";
             this.layoutControlItemRestoreColor.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2);
             this.layoutControlItemRestoreColor.Size = new System.Drawing.Size(221, 34);
-            this.layoutControlItemRestoreColor.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemRestoreColor.TextVisible = false;
             // 
             // layoutControlItemColor
@@ -324,6 +320,7 @@
             seriesPoint6,
             seriesPoint7,
             seriesPoint8});
+            series1.SeriesID = 0;
             barSlideAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.1000000");
             barSlideAnimation1.PointOrder = DevExpress.XtraCharts.PointAnimationOrder.Inverted;
             sideBySideBarSeriesView1.Animation = barSlideAnimation1;
@@ -334,6 +331,7 @@
             this.chart.Size = new System.Drawing.Size(542, 567);
             this.chart.TabIndex = 3;
             chartTitle1.Text = "Mass of Planets in the Solar System";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 

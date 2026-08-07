@@ -4,6 +4,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Windows.Forms;
 using DevExpress.Data.Linq;
+using DevExpress.DXperience.Demos;
 using DevExpress.XtraEditors;
 using DevExpress.XtraPivotGrid.Demos.Helpers;
 
@@ -12,7 +13,7 @@ namespace DevExpress.XtraPivotGrid.Demos.Modules {
         readonly NoDataState stateNoData;
         readonly EntityState stateEntity;
         readonly Stopwatch timer = new Stopwatch();
-        DateTime asyncCompleted = DateTime.Now;
+        DateTime asyncCompleted = TutorialConstants.Now;
         DemoState currentState;
 
         public PanelControl PnlDemo { get { return panelDemo; } }
@@ -91,7 +92,7 @@ namespace DevExpress.XtraPivotGrid.Demos.Modules {
         void pivotGridControl_AsyncOperationStarting(object sender, EventArgs e) {
             lcTimeTaken.Text = "Working...";
             if(!timer.IsRunning)
-                if((DateTime.Now - asyncCompleted).TotalMilliseconds < 100)
+                if((TutorialConstants.Now - asyncCompleted).TotalMilliseconds < 100)
                     timer.Start();
                 else
                     timer.Restart();
@@ -99,7 +100,7 @@ namespace DevExpress.XtraPivotGrid.Demos.Modules {
 
         void pivotGridControl_AsyncOperationCompleted(object sender, EventArgs e) {
             timer.Stop();
-            asyncCompleted = DateTime.Now;
+            asyncCompleted = TutorialConstants.Now;
             lcTimeTaken.Text = timer.ElapsedMilliseconds.ToString();
         }
 

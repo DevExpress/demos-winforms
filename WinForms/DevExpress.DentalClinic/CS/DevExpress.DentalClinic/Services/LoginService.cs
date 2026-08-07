@@ -8,7 +8,6 @@ using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Security.ClientServer;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Utils;
 using DevExpress.Utils.MVVM;
 
 namespace DevExpress.DentalClinic.Services {

@@ -80,7 +80,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' chart
             ' 
@@ -112,12 +112,14 @@ Namespace DevExpress.XtraCharts.Demos
             series1.Label = pointSeriesLabel1
             series1.Name = "Series 1"
             series1.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint1, seriesPoint2, seriesPoint3, seriesPoint4, seriesPoint5})
+            series1.SeriesID = 0
             series1.View = lineSeriesView1
             pointSeriesLabel2.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.JustifyAroundPoint
             pointSeriesLabel2.TextPattern = "{A}: {V}"
             series2.Label = pointSeriesLabel2
             series2.Name = "Series 2"
             series2.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint6, seriesPoint7, seriesPoint8, seriesPoint9, seriesPoint10, seriesPoint11, seriesPoint12})
+            series2.SeriesID = 1
             lineSeriesView2.LineMarkerOptions.Kind = DevExpress.XtraCharts.MarkerKind.Square
             series2.View = lineSeriesView2
             Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1, series2}
@@ -135,14 +137,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Location = New System.Drawing.Point(0, 0)
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 0
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' radioGroupChartType
             ' 
             Me.radioGroupChartType.AutoSizeInLayoutControl = True
-            Me.radioGroupChartType.Location = New System.Drawing.Point(12, 31)
+            Me.radioGroupChartType.Location = New System.Drawing.Point(12, 34)
             Me.radioGroupChartType.Name = "radioGroupChartType"
             Me.radioGroupChartType.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupChartType.Properties.Appearance.Options.UseBackColor = True
@@ -156,7 +158,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' radioGroupSeries2AxisX
             ' 
             Me.radioGroupSeries2AxisX.AutoSizeInLayoutControl = True
-            Me.radioGroupSeries2AxisX.Location = New System.Drawing.Point(12, 82)
+            Me.radioGroupSeries2AxisX.Location = New System.Drawing.Point(12, 88)
             Me.radioGroupSeries2AxisX.Name = "radioGroupSeries2AxisX"
             Me.radioGroupSeries2AxisX.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupSeries2AxisX.Properties.Appearance.Options.UseBackColor = True
@@ -170,7 +172,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' radioGroupSeries2AxisY
             ' 
             Me.radioGroupSeries2AxisY.AutoSizeInLayoutControl = True
-            Me.radioGroupSeries2AxisY.Location = New System.Drawing.Point(12, 133)
+            Me.radioGroupSeries2AxisY.Location = New System.Drawing.Point(12, 142)
             Me.radioGroupSeries2AxisY.Name = "radioGroupSeries2AxisY"
             Me.radioGroupSeries2AxisY.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupSeries2AxisY.Properties.Appearance.Options.UseBackColor = True
@@ -188,16 +190,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.emptySpaceItemBottom, Me.layoutControlGroupChartType, Me.layoutControlGroupSeries2AxisX, Me.layoutControlGroupSeries2AxisY})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' emptySpaceItemBottom
             ' 
-            Me.emptySpaceItemBottom.AllowHotTrack = False
-            Me.emptySpaceItemBottom.Location = New System.Drawing.Point(0, 153)
+            Me.emptySpaceItemBottom.Location = New System.Drawing.Point(0, 162)
             Me.emptySpaceItemBottom.Name = "emptySpaceItem1"
-            Me.emptySpaceItemBottom.Size = New System.Drawing.Size(241, 391)
-            Me.emptySpaceItemBottom.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItemBottom.Size = New System.Drawing.Size(241, 376)
             ' 
             ' layoutControlGroupChartType
             ' 
@@ -205,7 +205,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupChartType.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemChartType})
             Me.layoutControlGroupChartType.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupChartType.Name = "layoutControlGroupChartType"
-            Me.layoutControlGroupChartType.Size = New System.Drawing.Size(241, 51)
+            Me.layoutControlGroupChartType.Size = New System.Drawing.Size(241, 54)
             Me.layoutControlGroupChartType.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupChartType.Text = "Chart Type"
             ' 
@@ -215,16 +215,15 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemChartType.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemChartType.Name = "layoutControlItemChartType"
             Me.layoutControlItemChartType.Size = New System.Drawing.Size(221, 12)
-            Me.layoutControlItemChartType.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemChartType.TextVisible = False
             ' 
             ' layoutControlGroupSeries2AxisX
             ' 
             Me.layoutControlGroupSeries2AxisX.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupSeries2AxisX.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemSeries2AxisX})
-            Me.layoutControlGroupSeries2AxisX.Location = New System.Drawing.Point(0, 51)
+            Me.layoutControlGroupSeries2AxisX.Location = New System.Drawing.Point(0, 54)
             Me.layoutControlGroupSeries2AxisX.Name = "layoutControlGroupSeries2AxisX"
-            Me.layoutControlGroupSeries2AxisX.Size = New System.Drawing.Size(241, 51)
+            Me.layoutControlGroupSeries2AxisX.Size = New System.Drawing.Size(241, 54)
             Me.layoutControlGroupSeries2AxisX.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupSeries2AxisX.Text = "Series 2 Axis X"
             ' 
@@ -234,16 +233,15 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemSeries2AxisX.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemSeries2AxisX.Name = "layoutControlItemSeries2AxisX"
             Me.layoutControlItemSeries2AxisX.Size = New System.Drawing.Size(221, 12)
-            Me.layoutControlItemSeries2AxisX.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemSeries2AxisX.TextVisible = False
             ' 
             ' layoutControlGroupSeries2AxisY
             ' 
             Me.layoutControlGroupSeries2AxisY.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupSeries2AxisY.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemSeries2AxisY})
-            Me.layoutControlGroupSeries2AxisY.Location = New System.Drawing.Point(0, 102)
+            Me.layoutControlGroupSeries2AxisY.Location = New System.Drawing.Point(0, 108)
             Me.layoutControlGroupSeries2AxisY.Name = "layoutControlGroupSeries2AxisY"
-            Me.layoutControlGroupSeries2AxisY.Size = New System.Drawing.Size(241, 51)
+            Me.layoutControlGroupSeries2AxisY.Size = New System.Drawing.Size(241, 54)
             Me.layoutControlGroupSeries2AxisY.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupSeries2AxisY.Text = "Series 2 Axis Y"
             ' 
@@ -253,7 +251,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemSeries2AxisY.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemSeries2AxisY.Name = "layoutControlItemSeries2AxisY"
             Me.layoutControlItemSeries2AxisY.Size = New System.Drawing.Size(221, 12)
-            Me.layoutControlItemSeries2AxisY.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemSeries2AxisY.TextVisible = False
             ' 
             ' SecondaryAxesDemo

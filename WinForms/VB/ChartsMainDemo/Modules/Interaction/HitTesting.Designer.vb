@@ -174,6 +174,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((xyDiagramPane2), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((secondaryAxisY2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((constantLine1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((pointSeriesLabel1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((lineSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -189,6 +190,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.chart.AnimationStartMode = DevExpress.XtraCharts.ChartAnimationMode.OnLoad
             textAnnotation1.AnchorPoint = chartAnchorPoint1
+            textAnnotation1.AnnotationID = 0
+            textAnnotation1.AutoHeight = True
+            textAnnotation1.AutoWidth = True
             textAnnotation1.Border.Visibility = DevExpress.Utils.DefaultBoolean.[False]
             textAnnotation1.ConnectorStyle = DevExpress.XtraCharts.AnnotationConnectorStyle.None
             textAnnotation1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 10F)
@@ -214,14 +218,16 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisX.VisibleInPanesSerializable = "1"
             xyDiagram1.AxisX.VisualRange.Auto = False
             xyDiagram1.AxisX.VisualRange.AutoSideMargins = False
+            xyDiagram1.AxisX.VisualRange.EndSideMargin = 0R
             xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "06/11/2008 08:00:00.000"
             xyDiagram1.AxisX.VisualRange.MinValueSerializable = "06/05/2008 22:00:00.000"
-            xyDiagram1.AxisX.VisualRange.SideMarginsValue = 0R
+            xyDiagram1.AxisX.VisualRange.StartSideMargin = 0R
             xyDiagram1.AxisX.WholeRange.Auto = False
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = False
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0R
             xyDiagram1.AxisX.WholeRange.MaxValueSerializable = "06/11/2008 08:00:00.000"
             xyDiagram1.AxisX.WholeRange.MinValueSerializable = "06/05/2008 22:00:00.000"
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0R
             xyDiagram1.AxisY.GridLines.MinorVisible = True
             xyDiagram1.AxisY.Title.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 10F)
             xyDiagram1.AxisY.Title.Text = "Temperature, F"
@@ -230,12 +236,12 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = False
             xyDiagram1.DefaultPane.LayoutOptions.RowSpan = 20
             xyDiagram1.PaneDistance = 4
+            xyDiagramPane1.LayoutOptions.RowSpan = 10
             xyDiagramPane1.Name = "Pane 1"
             xyDiagramPane1.PaneID = 0
-            xyDiagramPane1.LayoutOptions.RowSpan = 10
+            xyDiagramPane2.LayoutOptions.RowSpan = 17
             xyDiagramPane2.Name = "Pane 2"
             xyDiagramPane2.PaneID = 1
-            xyDiagramPane2.LayoutOptions.RowSpan = 17
             xyDiagram1.Panes.AddRange(New DevExpress.XtraCharts.XYDiagramPane() {xyDiagramPane1, xyDiagramPane2})
             secondaryAxisY1.Alignment = DevExpress.XtraCharts.AxisAlignment.Near
             secondaryAxisY1.AxisID = 0
@@ -250,18 +256,21 @@ Namespace DevExpress.XtraCharts.Demos
             secondaryAxisY1.VisibleInPanesSerializable = "0"
             secondaryAxisY1.VisualRange.Auto = False
             secondaryAxisY1.VisualRange.AutoSideMargins = False
+            secondaryAxisY1.VisualRange.EndSideMargin = 0R
             secondaryAxisY1.VisualRange.MaxValueSerializable = "1025"
             secondaryAxisY1.VisualRange.MinValueSerializable = "1014"
-            secondaryAxisY1.VisualRange.SideMarginsValue = 0R
+            secondaryAxisY1.VisualRange.StartSideMargin = 0R
             secondaryAxisY1.WholeRange.AlwaysShowZeroLevel = False
             secondaryAxisY1.WholeRange.Auto = False
             secondaryAxisY1.WholeRange.AutoSideMargins = False
+            secondaryAxisY1.WholeRange.EndSideMargin = 0R
             secondaryAxisY1.WholeRange.MaxValueSerializable = "1025"
             secondaryAxisY1.WholeRange.MinValueSerializable = "1014"
-            secondaryAxisY1.WholeRange.SideMarginsValue = 0R
+            secondaryAxisY1.WholeRange.StartSideMargin = 0R
             secondaryAxisY2.Alignment = DevExpress.XtraCharts.AxisAlignment.Near
             secondaryAxisY2.AxisID = 1
             constantLine1.AxisValueSerializable = "100"
+            constantLine1.ConstantLineID = 0
             constantLine1.Name = "ConstantLine1"
             constantLine1.ShowInLegend = False
             constantLine1.Title.Visible = False
@@ -277,15 +286,17 @@ Namespace DevExpress.XtraCharts.Demos
             secondaryAxisY2.VisibleInPanesSerializable = "1"
             secondaryAxisY2.VisualRange.Auto = False
             secondaryAxisY2.VisualRange.AutoSideMargins = False
+            secondaryAxisY2.VisualRange.EndSideMargin = 0R
             secondaryAxisY2.VisualRange.MaxValueSerializable = "120"
             secondaryAxisY2.VisualRange.MinValueSerializable = "0"
-            secondaryAxisY2.VisualRange.SideMarginsValue = 0R
+            secondaryAxisY2.VisualRange.StartSideMargin = 0R
             secondaryAxisY2.WholeRange.AlwaysShowZeroLevel = False
             secondaryAxisY2.WholeRange.Auto = False
             secondaryAxisY2.WholeRange.AutoSideMargins = False
+            secondaryAxisY2.WholeRange.EndSideMargin = 0R
             secondaryAxisY2.WholeRange.MaxValueSerializable = "120"
             secondaryAxisY2.WholeRange.MinValueSerializable = "0"
-            secondaryAxisY2.WholeRange.SideMarginsValue = 0R
+            secondaryAxisY2.WholeRange.StartSideMargin = 0R
             xyDiagram1.SecondaryAxesY.AddRange(New DevExpress.XtraCharts.SecondaryAxisY() {secondaryAxisY1, secondaryAxisY2})
             Me.chart.Diagram = xyDiagram1
             Me.chart.Dock = System.Windows.Forms.DockStyle.Fill
@@ -302,6 +313,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series1.Name = "Temperature (F)"
             series1.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint1, seriesPoint2, seriesPoint3, seriesPoint4, seriesPoint5, seriesPoint6, seriesPoint7, seriesPoint8, seriesPoint9, seriesPoint10, seriesPoint11, seriesPoint12, seriesPoint13, seriesPoint14, seriesPoint15, seriesPoint16, seriesPoint17, seriesPoint18, seriesPoint19, seriesPoint20, seriesPoint21, seriesPoint22, seriesPoint23, seriesPoint24, seriesPoint25, seriesPoint26, seriesPoint27, seriesPoint28, seriesPoint29, seriesPoint30, seriesPoint31, seriesPoint32, seriesPoint33, seriesPoint34, seriesPoint35, seriesPoint36, seriesPoint37, seriesPoint38, seriesPoint39, seriesPoint40, seriesPoint41, seriesPoint42, seriesPoint43})
+            series1.SeriesID = 0
             lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series1.View = lineSeriesView1
             series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime
@@ -311,6 +323,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             series2.Name = "Pressure (mbar)"
             series2.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint44, seriesPoint45, seriesPoint46, seriesPoint47, seriesPoint48, seriesPoint49, seriesPoint50, seriesPoint51, seriesPoint52, seriesPoint53, seriesPoint54, seriesPoint55, seriesPoint56, seriesPoint57, seriesPoint58, seriesPoint59, seriesPoint60, seriesPoint61, seriesPoint62, seriesPoint63, seriesPoint64, seriesPoint65, seriesPoint66, seriesPoint67, seriesPoint68, seriesPoint69, seriesPoint70, seriesPoint71, seriesPoint72, seriesPoint73, seriesPoint74, seriesPoint75, seriesPoint76, seriesPoint77, seriesPoint78, seriesPoint79, seriesPoint80, seriesPoint81, seriesPoint82, seriesPoint83, seriesPoint84, seriesPoint85, seriesPoint86})
+            series2.SeriesID = 1
             areaSeriesView1.AxisYName = "secondaryAxisY1"
             areaSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.[False]
             areaSeriesView1.PaneName = "Pane 1"
@@ -321,6 +334,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.Label = sideBySideBarSeriesLabel1
             series3.Name = "Relative humidity (%)"
             series3.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint87, seriesPoint88, seriesPoint89, seriesPoint90, seriesPoint91, seriesPoint92, seriesPoint93, seriesPoint94, seriesPoint95, seriesPoint96, seriesPoint97, seriesPoint98, seriesPoint99, seriesPoint100, seriesPoint101, seriesPoint102, seriesPoint103, seriesPoint104, seriesPoint105, seriesPoint106, seriesPoint107, seriesPoint108, seriesPoint109, seriesPoint110, seriesPoint111, seriesPoint112, seriesPoint113, seriesPoint114, seriesPoint115, seriesPoint116, seriesPoint117, seriesPoint118, seriesPoint119, seriesPoint120, seriesPoint121, seriesPoint122, seriesPoint123, seriesPoint124, seriesPoint125, seriesPoint126, seriesPoint127, seriesPoint128, seriesPoint129})
+            series3.SeriesID = 2
             sideBySideBarSeriesView1.AxisYName = "secondaryAxisY2"
             sideBySideBarSeriesView1.BarWidth = 1.5R
             sideBySideBarSeriesView1.PaneName = "Pane 2"
@@ -329,6 +343,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(784, 432)
             Me.chart.TabIndex = 2
             chartTitle1.Text = "Weather in London"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.chart.MouseLeave, New System.EventHandler(AddressOf Me.chart_MouseLeave)
             AddHandler Me.chart.MouseMove, New System.Windows.Forms.MouseEventHandler(AddressOf Me.chart_MouseMove)
@@ -344,6 +359,7 @@ Namespace DevExpress.XtraCharts.Demos
             CType((xyDiagramPane1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((xyDiagramPane2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((constantLine1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((secondaryAxisY2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((pointSeriesLabel1), System.ComponentModel.ISupportInitialize).EndInit()

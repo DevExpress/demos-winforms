@@ -176,5 +176,26 @@ namespace DevExpress.XtraCharts.Demos {
             else if(IsFullStackedView(view))
                 series.Label.TextPattern = valueAsPercent ? PercentPattern : "${V}M";
         }
+
+        private void InitializeComponent() {
+            this.sidePanelOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPaneOptions)).BeginInit();
+            this.tabPaneOptions.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tabNavigationPageOptions
+            // 
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
+            // 
+            // ChartDemoModuleLabelViews
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.Name = "ChartDemoModuleLabelViews";
+            this.sidePanelOptions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabPaneOptions)).EndInit();
+            this.tabPaneOptions.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
     }
 }

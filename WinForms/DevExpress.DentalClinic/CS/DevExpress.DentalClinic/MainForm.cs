@@ -1,5 +1,9 @@
-﻿using DevExpress.DentalClinic.Services;
+﻿using System;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using DevExpress.DentalClinic.Services;
 using DevExpress.DentalClinic.ViewModel;
+using DevExpress.DXperience.Demos;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
 using DevExpress.Utils;
@@ -11,8 +15,6 @@ using DevExpress.XtraBars.FluentDesignSystem;
 using DevExpress.XtraBars.Navigation;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using System;
-using System.Threading.Tasks;
 
 namespace DevExpress.DentalClinic {
     public partial class MainForm : FluentDesignForm {
@@ -96,8 +98,22 @@ namespace DevExpress.DentalClinic {
                 Close();
                 return;
             }
-            if(rescheduleAppointments != null)
-                rescheduleAppointments.Wait();
+            rescheduleAppointments?.Wait();
+            if(MainFormHelper.TakeScreens) 
+                MainFormHelper.TakeAllScreens(TakeModule, takeModuleTypes.Length, this, navigationFrame, null, demoName: Application.ProductName);
+        }
+        static readonly string[] takeModuleTypes = new[] {
+            nameof(View.PatientCollectionView),
+            nameof(View.SchedulerView),
+            nameof(View.AnalyticsView),
+            nameof(View.UserCollectionView),
+            nameof(View.EmployeeView)
+        };
+        string TakeModule(int num) {
+            var viewModel = mvvmContext.GetViewModel<NavigationViewModel>();
+            viewModel.NavigateTo(new NavigateArgs(takeModuleTypes[num], null, false));
+            navigationFrame.Focus();
+            return takeModuleTypes[num];
         }
         NavigateArgs CreateNavigateArgs(EventArgs eventArgs) {
             string path;
@@ -112,7 +128,7 @@ namespace DevExpress.DentalClinic {
                 path = args.Node.Path;
                 cancelAction = () => args.Handled = true;
             }
-            bool showOverlay = (path == nameof(View.AnalyticsView)) 
+            bool showOverlay = (path == nameof(View.AnalyticsView))
                 || (path == nameof(View.SchedulerView));
             return new NavigateArgs(path, cancelAction, showOverlay);
         }

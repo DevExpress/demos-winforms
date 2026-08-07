@@ -1,11 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using DevExpress.DevAV.ViewModels;
 using DevExpress.XtraEditors;
 
@@ -31,7 +25,7 @@ namespace DevExpress.DevAV.Views {
                 item => item == null ? null : (FilterViewModelBase.FilterItem)item.Tag);
         }
         protected override void Init() {
-            if(itemsSourceBinding != null) 
+            if(itemsSourceBinding != null)
                 itemsSourceBinding.Dispose();
             if(selectedItemBinding != null)
                 selectedItemBinding.Dispose();

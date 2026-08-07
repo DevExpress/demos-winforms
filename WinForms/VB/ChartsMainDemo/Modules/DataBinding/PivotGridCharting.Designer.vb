@@ -80,14 +80,13 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' tabPaneOptions
             ' 
-            Me.tabPaneOptions.RegularSize = New System.Drawing.Size(322, 747)
-            Me.tabPaneOptions.Size = New System.Drawing.Size(322, 747)
+            Me.tabPaneOptions.Margin = New System.Windows.Forms.Padding(2)
             ' 
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl1)
-            Me.tabNavigationPageOptions.Margin = New System.Windows.Forms.Padding(5)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(322, 706)
+            Me.tabNavigationPageOptions.Margin = New System.Windows.Forms.Padding(4)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' sidePanel1
             ' 
@@ -95,9 +94,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.sidePanel1.Controls.Add(Me.sidePanel2)
             Me.sidePanel1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.sidePanel1.Location = New System.Drawing.Point(0, 0)
-            Me.sidePanel1.Margin = New System.Windows.Forms.Padding(4)
             Me.sidePanel1.Name = "sidePanel1"
-            Me.sidePanel1.Size = New System.Drawing.Size(728, 747)
+            Me.sidePanel1.Size = New System.Drawing.Size(546, 571)
             Me.sidePanel1.TabIndex = 1
             Me.sidePanel1.Text = "sidePanel1"
             ' 
@@ -108,15 +106,11 @@ Namespace DevExpress.XtraCharts.Demos
             Me.pivotGridControl.Dock = System.Windows.Forms.DockStyle.Fill
             Me.pivotGridControl.Fields.AddRange(New DevExpress.XtraPivotGrid.PivotGridField() {Me.fieldProductName, Me.fieldExtendedPrice, Me.fieldOrderDate, Me.fieldOrderYear})
             Me.pivotGridControl.Location = New System.Drawing.Point(0, 0)
-            Me.pivotGridControl.Margin = New System.Windows.Forms.Padding(4)
             Me.pivotGridControl.Name = "pivotGridControl"
             Me.pivotGridControl.OptionsChartDataSource.DataProvideMode = DevExpress.XtraPivotGrid.PivotChartDataProvideMode.UseCustomSettings
             Me.pivotGridControl.OptionsChartDataSource.ProvideDataByColumns = False
             Me.pivotGridControl.OptionsChartDataSource.UpdateDelay = 500
-            Me.pivotGridControl.OptionsDataField.RowHeaderWidth = 133
-            Me.pivotGridControl.OptionsView.RowTreeOffset = 28
-            Me.pivotGridControl.OptionsView.RowTreeWidth = 133
-            Me.pivotGridControl.Size = New System.Drawing.Size(728, 465)
+            Me.pivotGridControl.Size = New System.Drawing.Size(546, 355)
             Me.pivotGridControl.TabIndex = 3
             ' 
             ' fieldProductName
@@ -125,9 +119,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.fieldProductName.AreaIndex = 0
             Me.fieldProductName.Caption = "Product Name"
             Me.fieldProductName.FieldName = "ProductName"
-            Me.fieldProductName.MinWidth = 27
             Me.fieldProductName.Name = "fieldProductName"
-            Me.fieldProductName.Width = 207
+            Me.fieldProductName.Width = 155
             ' 
             ' fieldExtendedPrice
             ' 
@@ -136,9 +129,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.fieldExtendedPrice.CellFormat.FormatString = "c"
             Me.fieldExtendedPrice.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.fieldExtendedPrice.FieldName = "Extended Price"
-            Me.fieldExtendedPrice.MinWidth = 27
             Me.fieldExtendedPrice.Name = "fieldExtendedPrice"
-            Me.fieldExtendedPrice.Width = 133
             ' 
             ' fieldOrderDate
             ' 
@@ -147,10 +138,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.fieldOrderDate.Caption = "Order Month"
             Me.fieldOrderDate.FieldName = "OrderDate"
             Me.fieldOrderDate.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateMonth
-            Me.fieldOrderDate.MinWidth = 27
             Me.fieldOrderDate.Name = "fieldOrderDate"
             Me.fieldOrderDate.UnboundFieldName = "fieldOrderDate"
-            Me.fieldOrderDate.Width = 133
             ' 
             ' fieldOrderYear
             ' 
@@ -158,21 +147,18 @@ Namespace DevExpress.XtraCharts.Demos
             Me.fieldOrderYear.Caption = "Order Year"
             Me.fieldOrderYear.FieldName = "OrderDate"
             Me.fieldOrderYear.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear
-            Me.fieldOrderYear.MinWidth = 27
             Me.fieldOrderYear.Name = "fieldOrderYear"
             Me.fieldOrderYear.Options.IsFilterRadioMode = DevExpress.Utils.DefaultBoolean.[True]
             Me.fieldOrderYear.UnboundFieldName = "pivotGridField1"
-            Me.fieldOrderYear.Width = 133
             ' 
             ' sidePanel2
             ' 
             Me.sidePanel2.AllowResize = False
             Me.sidePanel2.Controls.Add(Me.chart)
             Me.sidePanel2.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.sidePanel2.Location = New System.Drawing.Point(0, 465)
-            Me.sidePanel2.Margin = New System.Windows.Forms.Padding(4)
+            Me.sidePanel2.Location = New System.Drawing.Point(0, 355)
             Me.sidePanel2.Name = "sidePanel2"
-            Me.sidePanel2.Size = New System.Drawing.Size(728, 282)
+            Me.sidePanel2.Size = New System.Drawing.Size(546, 216)
             Me.sidePanel2.TabIndex = 0
             Me.sidePanel2.Text = "sidePanel2"
             ' 
@@ -190,7 +176,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Legend.MaxHorizontalPercentage = 30R
             Me.chart.Legend.Name = "Default Legend"
             Me.chart.Location = New System.Drawing.Point(0, 1)
-            Me.chart.Margin = New System.Windows.Forms.Padding(4)
             Me.chart.Name = "chart"
             Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series(-1) {}
             Me.chart.SeriesTemplate.CrosshairLabelPattern = "{S} : {V:c}"
@@ -205,7 +190,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.SeriesTemplate.Label = sideBySideBarSeriesLabel1
             Me.chart.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[False]
             Me.chart.SeriesTemplate.SeriesColorizer = seriesKeyColorColorizer1
-            Me.chart.Size = New System.Drawing.Size(728, 281)
+            Me.chart.Size = New System.Drawing.Size(546, 215)
             Me.chart.TabIndex = 4
             AddHandler Me.chart.BoundDataChanged, New DevExpress.XtraCharts.BoundDataChangedEventHandler(AddressOf Me.chart_BoundDataChanged)
             ' 
@@ -219,21 +204,19 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl1.Controls.Add(Me.checkEditShowRowGrandTotal)
             Me.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.layoutControl1.Location = New System.Drawing.Point(0, 0)
-            Me.layoutControl1.Margin = New System.Windows.Forms.Padding(4)
             Me.layoutControl1.Name = "layoutControl1"
             Me.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(941, 150, 650, 400)
             Me.layoutControl1.Root = Me.layoutControlGroup1
-            Me.layoutControl1.Size = New System.Drawing.Size(322, 706)
+            Me.layoutControl1.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl1.TabIndex = 2
             Me.layoutControl1.Text = "layoutControl1"
             ' 
             ' checkEditLabelVisible
             ' 
-            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 198)
-            Me.checkEditLabelVisible.Margin = New System.Windows.Forms.Padding(4)
+            Me.checkEditLabelVisible.Location = New System.Drawing.Point(12, 172)
             Me.checkEditLabelVisible.Name = "checkEditLabelVisible"
             Me.checkEditLabelVisible.Properties.Caption = "Visible"
-            Me.checkEditLabelVisible.Size = New System.Drawing.Size(298, 24)
+            Me.checkEditLabelVisible.Size = New System.Drawing.Size(217, 20)
             Me.checkEditLabelVisible.StyleController = Me.layoutControl1
             Me.checkEditLabelVisible.TabIndex = 4
             AddHandler Me.checkEditLabelVisible.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditLabelVisible_CheckedChanged)
@@ -241,44 +224,40 @@ Namespace DevExpress.XtraCharts.Demos
             ' checkEditSelectionOnly
             ' 
             Me.checkEditSelectionOnly.EditValue = True
-            Me.checkEditSelectionOnly.Location = New System.Drawing.Point(12, 39)
-            Me.checkEditSelectionOnly.Margin = New System.Windows.Forms.Padding(4)
+            Me.checkEditSelectionOnly.Location = New System.Drawing.Point(12, 34)
             Me.checkEditSelectionOnly.Name = "checkEditSelectionOnly"
             Me.checkEditSelectionOnly.Properties.Caption = "Selection Only"
-            Me.checkEditSelectionOnly.Size = New System.Drawing.Size(298, 24)
+            Me.checkEditSelectionOnly.Size = New System.Drawing.Size(217, 20)
             Me.checkEditSelectionOnly.StyleController = Me.layoutControl1
             Me.checkEditSelectionOnly.TabIndex = 17
             AddHandler Me.checkEditSelectionOnly.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditSelectionOnly_CheckedChanged)
             ' 
             ' checkEditShowColumnGrandTotal
             ' 
-            Me.checkEditShowColumnGrandTotal.Location = New System.Drawing.Point(12, 123)
-            Me.checkEditShowColumnGrandTotal.Margin = New System.Windows.Forms.Padding(4)
+            Me.checkEditShowColumnGrandTotal.Location = New System.Drawing.Point(12, 106)
             Me.checkEditShowColumnGrandTotal.Name = "checkEditShowColumnGrandTotal"
             Me.checkEditShowColumnGrandTotal.Properties.Caption = "Show Column Grand Total"
-            Me.checkEditShowColumnGrandTotal.Size = New System.Drawing.Size(298, 24)
+            Me.checkEditShowColumnGrandTotal.Size = New System.Drawing.Size(217, 20)
             Me.checkEditShowColumnGrandTotal.StyleController = Me.layoutControl1
             Me.checkEditShowColumnGrandTotal.TabIndex = 18
             AddHandler Me.checkEditShowColumnGrandTotal.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditShowColumnGrandTotals_CheckedChanged)
             ' 
             ' checkEditGenerateSeriesByColumns
             ' 
-            Me.checkEditGenerateSeriesByColumns.Location = New System.Drawing.Point(12, 67)
-            Me.checkEditGenerateSeriesByColumns.Margin = New System.Windows.Forms.Padding(4)
+            Me.checkEditGenerateSeriesByColumns.Location = New System.Drawing.Point(12, 58)
             Me.checkEditGenerateSeriesByColumns.Name = "checkEditGenerateSeriesByColumns"
             Me.checkEditGenerateSeriesByColumns.Properties.Caption = "Generate Series by Columns"
-            Me.checkEditGenerateSeriesByColumns.Size = New System.Drawing.Size(298, 24)
+            Me.checkEditGenerateSeriesByColumns.Size = New System.Drawing.Size(217, 20)
             Me.checkEditGenerateSeriesByColumns.StyleController = Me.layoutControl1
             Me.checkEditGenerateSeriesByColumns.TabIndex = 19
             AddHandler Me.checkEditGenerateSeriesByColumns.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditGenerateSeriesByColumns_CheckedChanged)
             ' 
             ' checkEditShowRowGrandTotal
             ' 
-            Me.checkEditShowRowGrandTotal.Location = New System.Drawing.Point(12, 95)
-            Me.checkEditShowRowGrandTotal.Margin = New System.Windows.Forms.Padding(4)
+            Me.checkEditShowRowGrandTotal.Location = New System.Drawing.Point(12, 82)
             Me.checkEditShowRowGrandTotal.Name = "checkEditShowRowGrandTotal"
             Me.checkEditShowRowGrandTotal.Properties.Caption = "Show Row Grand Total"
-            Me.checkEditShowRowGrandTotal.Size = New System.Drawing.Size(298, 24)
+            Me.checkEditShowRowGrandTotal.Size = New System.Drawing.Size(217, 20)
             Me.checkEditShowRowGrandTotal.StyleController = Me.layoutControl1
             Me.checkEditShowRowGrandTotal.TabIndex = 20
             AddHandler Me.checkEditShowRowGrandTotal.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditShowRowGrandTotals_CheckedChanged)
@@ -290,7 +269,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroup2, Me.lcgCommonOptions, Me.lcgLabelOptions})
             Me.layoutControlGroup1.Name = "Root"
             Me.layoutControlGroup1.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroup1.Size = New System.Drawing.Size(322, 706)
+            Me.layoutControlGroup1.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroup1.TextVisible = False
             ' 
             ' layoutControlGroup2
@@ -298,9 +277,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroup2.GroupBordersVisible = False
             Me.layoutControlGroup2.GroupStyle = DevExpress.Utils.GroupStyle.Light
             Me.layoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroup3})
-            Me.layoutControlGroup2.Location = New System.Drawing.Point(0, 234)
+            Me.layoutControlGroup2.Location = New System.Drawing.Point(0, 204)
             Me.layoutControlGroup2.Name = "layoutControlGroup2"
-            Me.layoutControlGroup2.Size = New System.Drawing.Size(322, 472)
+            Me.layoutControlGroup2.Size = New System.Drawing.Size(241, 334)
             Me.layoutControlGroup2.Text = "Marker Kind"
             ' 
             ' layoutControlGroup3
@@ -308,7 +287,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroup3.GroupBordersVisible = False
             Me.layoutControlGroup3.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup3.Name = "layoutControlGroup3"
-            Me.layoutControlGroup3.Size = New System.Drawing.Size(322, 472)
+            Me.layoutControlGroup3.Size = New System.Drawing.Size(241, 334)
             ' 
             ' lcgCommonOptions
             ' 
@@ -318,7 +297,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.lcgCommonOptions.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem2, Me.lciShowColumnGrandTotal, Me.layoutControlItem4, Me.lciShowRowGrandTotal})
             Me.lcgCommonOptions.Location = New System.Drawing.Point(0, 0)
             Me.lcgCommonOptions.Name = "lcgCommonOptions"
-            Me.lcgCommonOptions.Size = New System.Drawing.Size(322, 159)
+            Me.lcgCommonOptions.Size = New System.Drawing.Size(241, 138)
             Me.lcgCommonOptions.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.lcgCommonOptions.Text = "General"
             ' 
@@ -327,36 +306,32 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem2.Control = Me.checkEditSelectionOnly
             Me.layoutControlItem2.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem2.Name = "layoutControlItem2"
-            Me.layoutControlItem2.Size = New System.Drawing.Size(302, 28)
-            Me.layoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItem2.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItem2.TextVisible = False
             ' 
             ' lciShowColumnGrandTotal
             ' 
             Me.lciShowColumnGrandTotal.Control = Me.checkEditShowColumnGrandTotal
-            Me.lciShowColumnGrandTotal.Location = New System.Drawing.Point(0, 84)
+            Me.lciShowColumnGrandTotal.Location = New System.Drawing.Point(0, 72)
             Me.lciShowColumnGrandTotal.Name = "lciShowColumnGrandTotal"
-            Me.lciShowColumnGrandTotal.Size = New System.Drawing.Size(302, 28)
-            Me.lciShowColumnGrandTotal.TextSize = New System.Drawing.Size(0, 0)
+            Me.lciShowColumnGrandTotal.Size = New System.Drawing.Size(221, 24)
             Me.lciShowColumnGrandTotal.TextVisible = False
             ' 
             ' layoutControlItem4
             ' 
             Me.layoutControlItem4.Control = Me.checkEditGenerateSeriesByColumns
-            Me.layoutControlItem4.Location = New System.Drawing.Point(0, 28)
+            Me.layoutControlItem4.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItem4.Name = "layoutControlItem4"
-            Me.layoutControlItem4.Size = New System.Drawing.Size(302, 28)
-            Me.layoutControlItem4.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItem4.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItem4.TextVisible = False
             ' 
             ' lciShowRowGrandTotal
             ' 
             Me.lciShowRowGrandTotal.Control = Me.checkEditShowRowGrandTotal
             Me.lciShowRowGrandTotal.Enabled = False
-            Me.lciShowRowGrandTotal.Location = New System.Drawing.Point(0, 56)
+            Me.lciShowRowGrandTotal.Location = New System.Drawing.Point(0, 48)
             Me.lciShowRowGrandTotal.Name = "lciShowRowGrandTotal"
-            Me.lciShowRowGrandTotal.Size = New System.Drawing.Size(302, 28)
-            Me.lciShowRowGrandTotal.TextSize = New System.Drawing.Size(0, 0)
+            Me.lciShowRowGrandTotal.Size = New System.Drawing.Size(221, 24)
             Me.lciShowRowGrandTotal.TextVisible = False
             ' 
             ' lcgLabelOptions
@@ -365,9 +340,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.lcgLabelOptions.AppearanceGroup.Options.UseBorderColor = True
             Me.lcgLabelOptions.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.lcgLabelOptions.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem1})
-            Me.lcgLabelOptions.Location = New System.Drawing.Point(0, 159)
+            Me.lcgLabelOptions.Location = New System.Drawing.Point(0, 138)
             Me.lcgLabelOptions.Name = "lcgLabelOptions"
-            Me.lcgLabelOptions.Size = New System.Drawing.Size(322, 75)
+            Me.lcgLabelOptions.Size = New System.Drawing.Size(241, 66)
             Me.lcgLabelOptions.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.lcgLabelOptions.Text = "Label"
             ' 
@@ -376,18 +351,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem1.Control = Me.checkEditLabelVisible
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItem1.Name = "layoutControlItem1"
-            Me.layoutControlItem1.Size = New System.Drawing.Size(302, 28)
-            Me.layoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItem1.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItem1.TextVisible = False
             ' 
             ' PivotGridChartingDemo
             ' 
-            Me.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.Appearance.Options.UseFont = True
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(8F, 17F)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.Controls.Add(Me.sidePanel1)
-            Me.Margin = New System.Windows.Forms.Padding(5)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "PivotGridChartingDemo"
             Me.Controls.SetChildIndex(Me.sidePanelOptions, 0)
             Me.Controls.SetChildIndex(Me.sidePanel1, 0)

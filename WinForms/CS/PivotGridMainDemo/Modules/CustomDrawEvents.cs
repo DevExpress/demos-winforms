@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -6,14 +6,14 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraPivotGrid.Demos.Modules {
 
     public partial class CustomDrawEvents : DevExpress.XtraPivotGrid.Demos.TutorialControl {
 		Color highlightColor;
 		DataTable dataSource = new DataTable();
-        NonCryptographicRandom random = NonCryptographicRandom.Default;
-		object[,] cells;
+        object[,] cells;
 		List<Point> difference;
 		const int colorStep = 25;
 
@@ -58,7 +58,7 @@ namespace DevExpress.XtraPivotGrid.Demos.Modules {
 		}
 		void AddDataSourceRow() {
 			dataSource.Rows.Add("Category " + ((dataSource.Rows.Count + 1) % 2).ToString(), "Product " + ((dataSource.Rows.Count + 1) % 10).ToString(),
-				DateTime.FromOADate(random.Next(365) + new DateTime(2007, 1, 1).ToOADate()), random.Next(1000));
+				DateTime.FromOADate(TutorialConstants.Random.Next(365) + new DateTime(2007, 1, 1).ToOADate()), TutorialConstants.Random.Next(1000));
 		}
 		void HighlightChanges() {
 			highlightColor = Color.Red;

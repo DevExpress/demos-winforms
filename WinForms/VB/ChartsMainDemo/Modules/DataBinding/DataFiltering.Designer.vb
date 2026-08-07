@@ -79,8 +79,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.SeriesTemplate.SeriesColorizer = seriesKeyColorColorizer1
             Me.chart.Size = New System.Drawing.Size(893, 714)
             Me.chart.TabIndex = 6
-            chartTitle1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 14.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            chartTitle1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 14.25F)
             chartTitle1.Text = "Market Share Over Time"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' accordionControl1

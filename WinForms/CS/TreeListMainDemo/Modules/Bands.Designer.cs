@@ -81,7 +81,7 @@
             this.treeList1.OptionsView.EnableAppearanceEvenRow = true;
             this.treeList1.OptionsView.EnableAppearanceOddRow = true;
             this.treeList1.OptionsView.ShowBandsMode = DevExpress.Utils.DefaultBoolean.True;
-            this.treeList1.Size = new System.Drawing.Size(546, 432);
+            this.treeList1.Size = new System.Drawing.Size(526, 432);
             this.treeList1.TabIndex = 16;
             // 
             // treeListBand1
@@ -221,9 +221,9 @@
             // 
             this.sidePanel1.Controls.Add(this.navigationPane);
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel1.Location = new System.Drawing.Point(546, 0);
+            this.sidePanel1.Location = new System.Drawing.Point(526, 0);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(237, 432);
+            this.sidePanel1.Size = new System.Drawing.Size(257, 432);
             this.sidePanel1.TabIndex = 17;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -238,9 +238,9 @@
             this.navigationPane.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text;
             this.navigationPane.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.optionsPage});
-            this.navigationPane.RegularSize = new System.Drawing.Size(236, 432);
+            this.navigationPane.RegularSize = new System.Drawing.Size(256, 432);
             this.navigationPane.SelectedPage = this.optionsPage;
-            this.navigationPane.Size = new System.Drawing.Size(236, 432);
+            this.navigationPane.Size = new System.Drawing.Size(256, 432);
             this.navigationPane.TabIndex = 11;
             this.navigationPane.Text = "navigationPane";
             // 
@@ -249,14 +249,14 @@
             this.optionsPage.Caption = "Options";
             this.optionsPage.Controls.Add(this.ucBandOptions1);
             this.optionsPage.Name = "optionsPage";
-            this.optionsPage.Size = new System.Drawing.Size(236, 399);
+            this.optionsPage.Size = new System.Drawing.Size(256, 399);
             // 
             // ucBandOptions1
             // 
             this.ucBandOptions1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucBandOptions1.Location = new System.Drawing.Point(0, 0);
             this.ucBandOptions1.Name = "ucBandOptions1";
-            this.ucBandOptions1.Size = new System.Drawing.Size(236, 399);
+            this.ucBandOptions1.Size = new System.Drawing.Size(256, 399);
             this.ucBandOptions1.TabIndex = 0;
             // 
             // Bands

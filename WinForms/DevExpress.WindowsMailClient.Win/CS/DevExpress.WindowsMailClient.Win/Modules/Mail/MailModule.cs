@@ -27,7 +27,7 @@ namespace DevExpress.WindowsMailClient.Win.Modules {
         public bool SaveMessageToDrafts() {
             if(teFrom.EditValue != null) {
                 ViewModel.SaveMessageToDrafts(editMail.MhtText, tEditSubject.Text, tEditTo.EditValue, teFrom.EditValue);
-                
+
                 return true;
             }
             return false;

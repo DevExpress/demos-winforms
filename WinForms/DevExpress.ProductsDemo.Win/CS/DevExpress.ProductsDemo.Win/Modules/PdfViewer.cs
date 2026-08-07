@@ -15,9 +15,9 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         }
         internal override void ShowModule(bool firstShow) {
             base.ShowModule(firstShow);
-            if (firstShow) {
+            if(firstShow) {
                 string path = DemoUtils.GetRelativePath(fileName);
-                if (!String.IsNullOrEmpty(path)) 
+                if(!String.IsNullOrEmpty(path))
                     try {
                         pdfViewer.LoadDocument(path);
                     }
@@ -29,7 +29,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
         }
         internal override void HideModule() {
             base.HideModule();
-            if (pdfViewer != null)
+            if(pdfViewer != null)
                 pdfViewer.HideFindDialog(true);
         }
     }

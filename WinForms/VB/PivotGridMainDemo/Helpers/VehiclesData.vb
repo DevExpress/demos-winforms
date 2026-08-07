@@ -7,6 +7,7 @@ Imports System.Drawing.Drawing2D
 Imports System.Threading.Tasks
 Imports DevExpress.Data.Filtering
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.XtraEditors.Controls
 Imports DevExpress.XtraEditors.Repository
 Imports System.Runtime.InteropServices
@@ -167,7 +168,7 @@ Namespace DevExpress.XtraPivotGrid.Demos.Helpers
                 Torque = model.Torque
                 TransmissionSpeeds = model.TransmissionSpeeds
                 TransmissionType = model.TransmissionType
-                SalesDate = Date.Now.AddDays(-rnd.Next(days))
+                SalesDate = TutorialConstants.Now.AddDays(-rnd.Next(days))
                 Discount = Math.Round(0.05 * rnd.Next(4), 2)
                 OrderID = id
             End Sub
@@ -278,13 +279,12 @@ Namespace DevExpress.XtraPivotGrid.Demos.Helpers
             Private _DataSet As DataSet, _Trademarks As List(Of DevExpress.XtraPivotGrid.Demos.Helpers.VehiclesData.Trademark), _TrademarkItems As List(Of DevExpress.XtraPivotGrid.Demos.Helpers.VehiclesData.TrademarkItem)
 
             Public Sub New(ByVal ds As DataSet, ByVal trademarks As List(Of Trademark), ByVal models As List(Of Model), ByVal itemCount As Integer, ByVal days As Integer)
-                Dim rnd As NonCryptographicRandom = NonCryptographicRandom.Default
                 DataSet = ds
                 Me.Trademarks = trademarks
                 TrademarkItems = New List(Of TrademarkItem)()
                 Dim orders As List(Of OrderItem) = New List(Of OrderItem)()
                 For i As Integer = 0 To itemCount - 1
-                    orders.Add(New OrderItem(models(rnd.Next(0, models.Count - 1)), days, rnd, i + 1))
+                    orders.Add(New OrderItem(models(TutorialConstants.Random.Next(0, models.Count - 1)), days, TutorialConstants.Random, i + 1))
                 Next
 
                 Dim id As Integer = 0
@@ -352,9 +352,8 @@ Namespace DevExpress.XtraPivotGrid.Demos.Helpers
             Next
 
             Dim listModels = New List(Of Model)()
-            Dim rnd As NonCryptographicRandom = NonCryptographicRandom.Default
             For Each row As DataRow In ds.Tables(Model).Rows
-                listModels.Add(New VehiclesData.Model() With {.ID = CInt(row("ID")), .Name = CStr(row("Name")), .Trademark = CInt(row("TrademarkID")), .Modification = CStr(row("Modification")), .Category = CInt(row("CategoryID")), .Price = CDec(row("Price")), .MPGCity = If(DBNull.Value.Equals(row("MPG City")), Nothing, CType(row("MPG City"), Integer?)), .MPGHighway = If(DBNull.Value.Equals(row("MPG City")), Nothing, CType(row("MPG Highway"), Integer?)), .Doors = CInt(row("Doors")), .BodyStyle = CInt(row("BodyStyleID")), .Cylinders = CInt(row("Cylinders")), .Horsepower = CStr(row("Horsepower")), .Torque = CStr(row("Torque")), .TransmissionSpeeds = Convert.ToInt32(row("Transmission Speeds")), .TransmissionType = CInt(row("Transmission Type")), .Description = String.Format("{0}", row("Description")), .Photo = ByteImageConverter.FromByteArray(CType(row("Photo"), Byte())), .DeliveryDate = Date.Now.AddDays(rnd.Next(dataInterval)), .InStock = rnd.Next(100) < 95, .Trademarks = listTrademarks})
+                listModels.Add(New VehiclesData.Model() With {.ID = CInt(row("ID")), .Name = CStr(row("Name")), .Trademark = CInt(row("TrademarkID")), .Modification = CStr(row("Modification")), .Category = CInt(row("CategoryID")), .Price = CDec(row("Price")), .MPGCity = If(DBNull.Value.Equals(row("MPG City")), Nothing, CType(row("MPG City"), Integer?)), .MPGHighway = If(DBNull.Value.Equals(row("MPG City")), Nothing, CType(row("MPG Highway"), Integer?)), .Doors = CInt(row("Doors")), .BodyStyle = CInt(row("BodyStyleID")), .Cylinders = CInt(row("Cylinders")), .Horsepower = CStr(row("Horsepower")), .Torque = CStr(row("Torque")), .TransmissionSpeeds = Convert.ToInt32(row("Transmission Speeds")), .TransmissionType = CInt(row("Transmission Type")), .Description = String.Format("{0}", row("Description")), .Photo = ByteImageConverter.FromByteArray(CType(row("Photo"), Byte())), .DeliveryDate = TutorialConstants.Now.AddDays(TutorialConstants.Random.Next(dataInterval)), .InStock = TutorialConstants.Random.Next(100) < 95, .Trademarks = listTrademarks})
             Next
 
             Return listModels

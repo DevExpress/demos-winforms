@@ -172,7 +172,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 542)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' documentGroup
             ' 
@@ -271,17 +271,20 @@ Namespace DevExpress.XtraCharts.Demos
             series1.LegendTextPattern = "{A}"
             series1.Name = "Series 1"
             series1.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint1, seriesPoint2, seriesPoint3, seriesPoint4, seriesPoint5, seriesPoint6, seriesPoint7, seriesPoint8})
+            series1.SeriesID = 0
             series1.View = pie3DSeriesView1
             Me.chartPie3D.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
             Me.chartPie3D.Size = New System.Drawing.Size(788, 548)
             Me.chartPie3D.TabIndex = 1
             chartTitle1.Indent = 10
             chartTitle1.Text = "Land Area by Country"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle1.TitleID = 0
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle2.Text = "From www.nationmaster.com"
             chartTitle2.TextColor = System.Drawing.Color.Gray
+            chartTitle2.TitleID = 1
             Me.chartPie3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             ' 
             ' dockPanelDoughnut3D
@@ -330,17 +333,20 @@ Namespace DevExpress.XtraCharts.Demos
             series2.LegendTextPattern = "{A}"
             series2.Name = "Series 1"
             series2.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint9, seriesPoint10, seriesPoint11, seriesPoint12, seriesPoint13, seriesPoint14, seriesPoint15, seriesPoint16})
+            series2.SeriesID = 0
             series2.View = doughnut3DSeriesView1
             Me.chartDoughnut3D.SeriesSerializable = New DevExpress.XtraCharts.Series() {series2}
             Me.chartDoughnut3D.Size = New System.Drawing.Size(788, 548)
             Me.chartDoughnut3D.TabIndex = 1
             chartTitle3.Indent = 10
             chartTitle3.Text = "Land Area by Country"
-            chartTitle4.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle3.TitleID = 0
             chartTitle4.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
+            chartTitle4.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
             chartTitle4.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8F)
             chartTitle4.Text = "From www.nationmaster.com"
             chartTitle4.TextColor = System.Drawing.Color.Gray
+            chartTitle4.TitleID = 1
             Me.chartDoughnut3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle3, chartTitle4})
             ' 
             ' dockPanelFunnel3D
@@ -385,6 +391,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.LegendTextPattern = "{A}"
             series3.Name = "Series 1"
             series3.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint17, seriesPoint18, seriesPoint19, seriesPoint20, seriesPoint21})
+            series3.SeriesID = 0
             funnel3DSeriesView1.PointDistance = 10
             series3.View = funnel3DSeriesView1
             Me.chartFunnel3D.SeriesSerializable = New DevExpress.XtraCharts.Series() {series3}
@@ -392,6 +399,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartFunnel3D.Size = New System.Drawing.Size(788, 548)
             Me.chartFunnel3D.TabIndex = 1
             chartTitle5.Text = "Website Visitor Trend"
+            chartTitle5.TitleID = 0
             Me.chartFunnel3D.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle5})
             ' 
             ' documentManager
@@ -439,7 +447,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(325, 182, 650, 400)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 542)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 2
             Me.layoutControl.Text = "layoutControl1"
             ' 
@@ -465,11 +473,11 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' comboBoxEditPerspectiveAngle
             ' 
-            Me.comboBoxEditPerspectiveAngle.Location = New System.Drawing.Point(128, 376)
+            Me.comboBoxEditPerspectiveAngle.Location = New System.Drawing.Point(137, 376)
             Me.comboBoxEditPerspectiveAngle.Name = "comboBoxEditPerspectiveAngle"
             Me.comboBoxEditPerspectiveAngle.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditPerspectiveAngle.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditPerspectiveAngle.Size = New System.Drawing.Size(101, 20)
+            Me.comboBoxEditPerspectiveAngle.Size = New System.Drawing.Size(92, 20)
             Me.comboBoxEditPerspectiveAngle.StyleController = Me.layoutControl
             Me.comboBoxEditPerspectiveAngle.TabIndex = 6
             ' 
@@ -485,7 +493,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditHoleRadius
             ' 
             Me.spinEditHoleRadius.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-            Me.spinEditHoleRadius.Location = New System.Drawing.Point(128, 58)
+            Me.spinEditHoleRadius.Location = New System.Drawing.Point(137, 58)
             Me.spinEditHoleRadius.Name = "spinEditHoleRadius"
             Me.spinEditHoleRadius.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditHoleRadius.Properties.DisplayFormat.FormatString = "0\%"
@@ -493,28 +501,28 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditHoleRadius.Properties.IsFloatValue = False
             Me.spinEditHoleRadius.Properties.Mask.EditMask = "N00"
             Me.spinEditHoleRadius.Properties.MaxValue = New Decimal(New Integer() {100, 0, 0, 0})
-            Me.spinEditHoleRadius.Size = New System.Drawing.Size(101, 20)
+            Me.spinEditHoleRadius.Size = New System.Drawing.Size(92, 20)
             Me.spinEditHoleRadius.StyleController = Me.layoutControl
             Me.spinEditHoleRadius.TabIndex = 12
             ' 
             ' comboBoxEditExplodedPoints
             ' 
-            Me.comboBoxEditExplodedPoints.Location = New System.Drawing.Point(128, 34)
+            Me.comboBoxEditExplodedPoints.Location = New System.Drawing.Point(137, 34)
             Me.comboBoxEditExplodedPoints.Name = "comboBoxEditExplodedPoints"
             Me.comboBoxEditExplodedPoints.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditExplodedPoints.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditExplodedPoints.Size = New System.Drawing.Size(101, 20)
+            Me.comboBoxEditExplodedPoints.Size = New System.Drawing.Size(92, 20)
             Me.comboBoxEditExplodedPoints.StyleController = Me.layoutControl
             Me.comboBoxEditExplodedPoints.TabIndex = 13
             AddHandler Me.comboBoxEditExplodedPoints.EditValueChanged, New System.EventHandler(AddressOf Me.comboBoxEditExplodedPoints_SelectedIndexChanged)
             ' 
             ' comboBoxEditHeightToWidthRatio
             ' 
-            Me.comboBoxEditHeightToWidthRatio.Location = New System.Drawing.Point(128, 196)
+            Me.comboBoxEditHeightToWidthRatio.Location = New System.Drawing.Point(137, 196)
             Me.comboBoxEditHeightToWidthRatio.Name = "comboBoxEditHeightToWidthRatio"
             Me.comboBoxEditHeightToWidthRatio.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditHeightToWidthRatio.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditHeightToWidthRatio.Size = New System.Drawing.Size(101, 20)
+            Me.comboBoxEditHeightToWidthRatio.Size = New System.Drawing.Size(92, 20)
             Me.comboBoxEditHeightToWidthRatio.StyleController = Me.layoutControl
             Me.comboBoxEditHeightToWidthRatio.TabIndex = 5
             AddHandler Me.comboBoxEditHeightToWidthRatio.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditHeightToWidthRatio_SelectedIndexChanged)
@@ -522,7 +530,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditPointDistance
             ' 
             Me.spinEditPointDistance.EditValue = New Decimal(New Integer() {10, 0, 0, 0})
-            Me.spinEditPointDistance.Location = New System.Drawing.Point(128, 172)
+            Me.spinEditPointDistance.Location = New System.Drawing.Point(137, 172)
             Me.spinEditPointDistance.Name = "spinEditPointDistance"
             Me.spinEditPointDistance.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditPointDistance.Properties.DisplayFormat.FormatString = "0 px"
@@ -531,18 +539,18 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditPointDistance.Properties.Mask.EditMask = "N00"
             Me.spinEditPointDistance.Properties.MaxValue = New Decimal(New Integer() {30, 0, 0, 0})
             Me.spinEditPointDistance.Properties.MinValue = New Decimal(New Integer() {1, 0, 0, 0})
-            Me.spinEditPointDistance.Size = New System.Drawing.Size(101, 20)
+            Me.spinEditPointDistance.Size = New System.Drawing.Size(92, 20)
             Me.spinEditPointDistance.StyleController = Me.layoutControl
             Me.spinEditPointDistance.TabIndex = 8
             AddHandler Me.spinEditPointDistance.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditPointDistance_EditValueChanged)
             ' 
             ' comboBoxEditLabelPosition
             ' 
-            Me.comboBoxEditLabelPosition.Location = New System.Drawing.Point(128, 310)
+            Me.comboBoxEditLabelPosition.Location = New System.Drawing.Point(137, 310)
             Me.comboBoxEditLabelPosition.Name = "comboBoxEditLabelPosition"
             Me.comboBoxEditLabelPosition.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditLabelPosition.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditLabelPosition.Size = New System.Drawing.Size(101, 20)
+            Me.comboBoxEditLabelPosition.Size = New System.Drawing.Size(92, 20)
             Me.comboBoxEditLabelPosition.StyleController = Me.layoutControl
             Me.comboBoxEditLabelPosition.TabIndex = 14
             AddHandler Me.comboBoxEditLabelPosition.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditLabelPosition_SelectedIndexChanged)
@@ -550,7 +558,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditExplodedDistance
             ' 
             Me.spinEditExplodedDistance.EditValue = New Decimal(New Integer() {1, 0, 0, 0})
-            Me.spinEditExplodedDistance.Location = New System.Drawing.Point(128, 82)
+            Me.spinEditExplodedDistance.Location = New System.Drawing.Point(137, 82)
             Me.spinEditExplodedDistance.Name = "spinEditExplodedDistance"
             Me.spinEditExplodedDistance.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditExplodedDistance.Properties.DisplayFormat.FormatString = "0px"
@@ -560,7 +568,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditExplodedDistance.Properties.Mask.EditMask = "N00"
             Me.spinEditExplodedDistance.Properties.MaxValue = New Decimal(New Integer() {1000, 0, 0, 0})
             Me.spinEditExplodedDistance.Properties.MinValue = New Decimal(New Integer() {1, 0, 0, 0})
-            Me.spinEditExplodedDistance.Size = New System.Drawing.Size(101, 20)
+            Me.spinEditExplodedDistance.Size = New System.Drawing.Size(92, 20)
             Me.spinEditExplodedDistance.StyleController = Me.layoutControl
             Me.spinEditExplodedDistance.TabIndex = 17
             AddHandler Me.spinEditExplodedDistance.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditExplodedDistance_EditValueChanged)
@@ -568,7 +576,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditFunnelHoleRadius
             ' 
             Me.spinEditFunnelHoleRadius.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-            Me.spinEditFunnelHoleRadius.Location = New System.Drawing.Point(128, 148)
+            Me.spinEditFunnelHoleRadius.Location = New System.Drawing.Point(137, 148)
             Me.spinEditFunnelHoleRadius.Name = "spinEditFunnelHoleRadius"
             Me.spinEditFunnelHoleRadius.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditFunnelHoleRadius.Properties.DisplayFormat.FormatString = "0\%"
@@ -578,7 +586,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditFunnelHoleRadius.Properties.Mask.EditMask = "N00"
             Me.spinEditFunnelHoleRadius.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None
             Me.spinEditFunnelHoleRadius.Properties.MaxValue = New Decimal(New Integer() {100, 0, 0, 0})
-            Me.spinEditFunnelHoleRadius.Size = New System.Drawing.Size(101, 20)
+            Me.spinEditFunnelHoleRadius.Size = New System.Drawing.Size(92, 20)
             Me.spinEditFunnelHoleRadius.StyleController = Me.layoutControl
             Me.spinEditFunnelHoleRadius.TabIndex = 18
             AddHandler Me.spinEditFunnelHoleRadius.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditFunnelHoleRadius_EditValueChanged)
@@ -590,7 +598,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupPieDoughnutGeneral, Me.layoutControlGroupLabel, Me.emptySpaceItem, Me.layoutControlGroupFunnelGeneral, Me.layoutControlGroupCamera})
             Me.layoutControlGroupRoot.Name = "Root"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 542)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupPieDoughnutGeneral
@@ -652,7 +660,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
             Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' layoutControlItemPosition
@@ -672,16 +679,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent"
             Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutControlItemValueAsPercent.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemValueAsPercent.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 442)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 100)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 96)
             ' 
             ' layoutControlGroupFunnelGeneral
             ' 
@@ -752,7 +756,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemRestoreDefaultAngles.Name = "layoutControlItemRestoreDefaultAngles"
             Me.layoutControlItemRestoreDefaultAngles.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemRestoreDefaultAngles.Size = New System.Drawing.Size(221, 34)
-            Me.layoutControlItemRestoreDefaultAngles.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemRestoreDefaultAngles.TextVisible = False
             ' 
             ' Pie3DDoughnut3DFunnel3DViewsDemo

@@ -130,6 +130,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative
             series1.LegendName = "Default Legend"
             series1.Name = "Series 1"
+            series1.SeriesID = 0
             series1.SeriesPointsSorting = DevExpress.XtraCharts.SortingMode.Ascending
             series1.SeriesPointsSortingKey = DevExpress.XtraCharts.SeriesPointKey.Value_1
             series1.ValueDataMembersSerializable = "TotalIncome"
@@ -147,6 +148,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartBar.TabStop = False
             chartTitle1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 14F)
             chartTitle1.Text = "Annual Income (Thousands of USD)"
+            chartTitle1.TitleID = 0
             Me.chartBar.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             Me.chartBar.ToolTipController = Me.barChartToolTipController
             Me.chartBar.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.[True]
@@ -219,6 +221,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartSpline.TabIndex = 0
             chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 14F)
             chartTitle2.Text = "Income Dynamics (Thousands of USD)"
+            chartTitle2.TitleID = 0
             Me.chartSpline.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle2})
             AddHandler Me.chartSpline.Click, New System.EventHandler(AddressOf Me.OnChartClick)
             ' 
@@ -422,7 +425,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem2.Location = New System.Drawing.Point(0, 96)
             Me.layoutControlItem2.Name = "layoutControlItem2"
             Me.layoutControlItem2.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem2.TextVisible = False
             ' 
             ' lciShowLabel
@@ -431,7 +433,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.lciShowLabel.Location = New System.Drawing.Point(0, 48)
             Me.lciShowLabel.Name = "lciShowLabel"
             Me.lciShowLabel.Size = New System.Drawing.Size(221, 24)
-            Me.lciShowLabel.TextSize = New System.Drawing.Size(0, 0)
             Me.lciShowLabel.TextVisible = False
             ' 
             ' layoutControlItem5
@@ -440,7 +441,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem5.Location = New System.Drawing.Point(0, 120)
             Me.layoutControlItem5.Name = "layoutControlItem5"
             Me.layoutControlItem5.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItem5.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem5.TextVisible = False
             ' 
             ' layoutControlItem1
@@ -449,7 +449,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem1.Location = New System.Drawing.Point(0, 72)
             Me.layoutControlItem1.Name = "layoutControlItem1"
             Me.layoutControlItem1.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem1.TextVisible = False
             ' 
             ' layoutControlItem6
@@ -458,7 +457,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem6.Location = New System.Drawing.Point(0, 144)
             Me.layoutControlItem6.Name = "layoutControlItem6"
             Me.layoutControlItem6.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItem6.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem6.TextVisible = False
             ' 
             ' lciContentShowMode

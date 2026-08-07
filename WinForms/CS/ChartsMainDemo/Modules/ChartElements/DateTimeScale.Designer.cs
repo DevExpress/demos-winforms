@@ -112,7 +112,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // layoutControl
             // 
@@ -137,52 +137,52 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(605, 330, 650, 400);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 0;
             this.layoutControl.Text = "layoutControl1";
             // 
             // comboBoxEditScaleMode
             // 
-            this.comboBoxEditScaleMode.Location = new System.Drawing.Point(126, 112);
+            this.comboBoxEditScaleMode.Location = new System.Drawing.Point(135, 136);
             this.comboBoxEditScaleMode.Name = "comboBoxEditScaleMode";
             this.comboBoxEditScaleMode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditScaleMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditScaleMode.Size = new System.Drawing.Size(103, 20);
+            this.comboBoxEditScaleMode.Size = new System.Drawing.Size(77, 20);
             this.comboBoxEditScaleMode.StyleController = this.layoutControl;
             this.comboBoxEditScaleMode.TabIndex = 4;
             this.comboBoxEditScaleMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditScaleMode_SelectedIndexChanged);
             // 
             // comboBoxEditMeasureUnit
             // 
-            this.comboBoxEditMeasureUnit.Location = new System.Drawing.Point(126, 136);
+            this.comboBoxEditMeasureUnit.Location = new System.Drawing.Point(135, 160);
             this.comboBoxEditMeasureUnit.Name = "comboBoxEditMeasureUnit";
             this.comboBoxEditMeasureUnit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditMeasureUnit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditMeasureUnit.Size = new System.Drawing.Size(103, 20);
+            this.comboBoxEditMeasureUnit.Size = new System.Drawing.Size(77, 20);
             this.comboBoxEditMeasureUnit.StyleController = this.layoutControl;
             this.comboBoxEditMeasureUnit.TabIndex = 5;
             this.comboBoxEditMeasureUnit.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditMeasureUnit_SelectedIndexChanged);
             // 
             // checkEditAutoGrid
             // 
-            this.checkEditAutoGrid.Location = new System.Drawing.Point(12, 247);
+            this.checkEditAutoGrid.Location = new System.Drawing.Point(12, 274);
             this.checkEditAutoGrid.Name = "checkEditAutoGrid";
             this.checkEditAutoGrid.Properties.Caption = "Auto Grid";
-            this.checkEditAutoGrid.Size = new System.Drawing.Size(217, 19);
+            this.checkEditAutoGrid.Size = new System.Drawing.Size(200, 20);
             this.checkEditAutoGrid.StyleController = this.layoutControl;
             this.checkEditAutoGrid.TabIndex = 6;
             this.checkEditAutoGrid.CheckedChanged += new System.EventHandler(this.checkEditAutoGrid_CheckedChanged);
             // 
             // comboBoxEditGridAlignment
             // 
-            this.comboBoxEditGridAlignment.Location = new System.Drawing.Point(126, 270);
+            this.comboBoxEditGridAlignment.Location = new System.Drawing.Point(135, 298);
             this.comboBoxEditGridAlignment.Name = "comboBoxEditGridAlignment";
             this.comboBoxEditGridAlignment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditGridAlignment.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditGridAlignment.Size = new System.Drawing.Size(103, 20);
+            this.comboBoxEditGridAlignment.Size = new System.Drawing.Size(77, 20);
             this.comboBoxEditGridAlignment.StyleController = this.layoutControl;
             this.comboBoxEditGridAlignment.TabIndex = 7;
             this.comboBoxEditGridAlignment.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditGridAlignment_SelectedIndexChanged);
@@ -194,7 +194,7 @@
             0,
             0,
             0});
-            this.spinEditMeasureUnitFactor.Location = new System.Drawing.Point(126, 160);
+            this.spinEditMeasureUnitFactor.Location = new System.Drawing.Point(135, 184);
             this.spinEditMeasureUnitFactor.Name = "spinEditMeasureUnitFactor";
             this.spinEditMeasureUnitFactor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -210,7 +210,7 @@
             0,
             0,
             0});
-            this.spinEditMeasureUnitFactor.Size = new System.Drawing.Size(103, 20);
+            this.spinEditMeasureUnitFactor.Size = new System.Drawing.Size(77, 20);
             this.spinEditMeasureUnitFactor.StyleController = this.layoutControl;
             this.spinEditMeasureUnitFactor.TabIndex = 9;
             this.spinEditMeasureUnitFactor.ValueChanged += new System.EventHandler(this.spinEditMeasureUnitFactor_ValueChanged);
@@ -222,7 +222,7 @@
             0,
             0,
             0});
-            this.spinEditMinorTickMarksCount.Location = new System.Drawing.Point(126, 342);
+            this.spinEditMinorTickMarksCount.Location = new System.Drawing.Point(135, 370);
             this.spinEditMinorTickMarksCount.Name = "spinEditMinorTickMarksCount";
             this.spinEditMinorTickMarksCount.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -238,7 +238,7 @@
             0,
             0,
             0});
-            this.spinEditMinorTickMarksCount.Size = new System.Drawing.Size(103, 20);
+            this.spinEditMinorTickMarksCount.Size = new System.Drawing.Size(77, 20);
             this.spinEditMinorTickMarksCount.StyleController = this.layoutControl;
             this.spinEditMinorTickMarksCount.TabIndex = 10;
             this.spinEditMinorTickMarksCount.ValueChanged += new System.EventHandler(this.spinEditMinorTickMarksCount_ValueChanged);
@@ -250,7 +250,7 @@
             0,
             0,
             -2147483648});
-            this.spinEditGridSpacing.Location = new System.Drawing.Point(126, 294);
+            this.spinEditGridSpacing.Location = new System.Drawing.Point(135, 322);
             this.spinEditGridSpacing.Name = "spinEditGridSpacing";
             this.spinEditGridSpacing.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -269,19 +269,19 @@
             0,
             0,
             0});
-            this.spinEditGridSpacing.Size = new System.Drawing.Size(103, 20);
+            this.spinEditGridSpacing.Size = new System.Drawing.Size(77, 20);
             this.spinEditGridSpacing.StyleController = this.layoutControl;
             this.spinEditGridSpacing.TabIndex = 8;
             this.spinEditGridSpacing.ValueChanged += new System.EventHandler(this.spinEditGridSpacing_ValueChanged);
             // 
             // comboBoxEditAggregateFunction
             // 
-            this.comboBoxEditAggregateFunction.Location = new System.Drawing.Point(126, 184);
+            this.comboBoxEditAggregateFunction.Location = new System.Drawing.Point(135, 208);
             this.comboBoxEditAggregateFunction.Name = "comboBoxEditAggregateFunction";
             this.comboBoxEditAggregateFunction.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditAggregateFunction.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditAggregateFunction.Size = new System.Drawing.Size(103, 20);
+            this.comboBoxEditAggregateFunction.Size = new System.Drawing.Size(77, 20);
             this.comboBoxEditAggregateFunction.StyleController = this.layoutControl;
             this.comboBoxEditAggregateFunction.TabIndex = 11;
             this.comboBoxEditAggregateFunction.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditAggregateFunction_SelectedIndexChanged);
@@ -293,7 +293,7 @@
             0,
             0,
             0});
-            this.spinEditGridOffset.Location = new System.Drawing.Point(126, 318);
+            this.spinEditGridOffset.Location = new System.Drawing.Point(135, 346);
             this.spinEditGridOffset.Name = "spinEditGridOffset";
             this.spinEditGridOffset.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -310,7 +310,7 @@
             0,
             0,
             -2147483648});
-            this.spinEditGridOffset.Size = new System.Drawing.Size(103, 20);
+            this.spinEditGridOffset.Size = new System.Drawing.Size(77, 20);
             this.spinEditGridOffset.StyleController = this.layoutControl;
             this.spinEditGridOffset.TabIndex = 12;
             this.spinEditGridOffset.ValueChanged += new System.EventHandler(this.spinEditGridOffset_ValueChanged);
@@ -318,7 +318,7 @@
             // radioGroupView
             // 
             this.radioGroupView.AutoSizeInLayoutControl = true;
-            this.radioGroupView.Location = new System.Drawing.Point(12, 31);
+            this.radioGroupView.Location = new System.Drawing.Point(12, 34);
             this.radioGroupView.Name = "radioGroupView";
             this.radioGroupView.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.radioGroupView.Properties.Appearance.Options.UseBackColor = true;
@@ -327,7 +327,8 @@
             this.radioGroupView.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Price"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Sales Volume")});
-            this.radioGroupView.Size = new System.Drawing.Size(217, 38);
+            this.radioGroupView.Size = new System.Drawing.Size(200, 56);
+            this.radioGroupView.StyleController = this.layoutControl;
             this.radioGroupView.TabIndex = 13;
             this.radioGroupView.SelectedIndexChanged += new System.EventHandler(this.radioGroupView_SelectedIndexChanged);
             // 
@@ -338,7 +339,7 @@
             0,
             0,
             0});
-            this.spinEditStartHour.Location = new System.Drawing.Point(126, 428);
+            this.spinEditStartHour.Location = new System.Drawing.Point(135, 460);
             this.spinEditStartHour.Name = "spinEditStartHour";
             this.spinEditStartHour.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -351,7 +352,7 @@
             0,
             0,
             0});
-            this.spinEditStartHour.Size = new System.Drawing.Size(103, 20);
+            this.spinEditStartHour.Size = new System.Drawing.Size(77, 20);
             this.spinEditStartHour.StyleController = this.layoutControl;
             this.spinEditStartHour.TabIndex = 14;
             this.spinEditStartHour.ValueChanged += new System.EventHandler(this.spinEditStartHour_ValueChanged);
@@ -363,7 +364,7 @@
             0,
             0,
             0});
-            this.spinEditEndHour.Location = new System.Drawing.Point(126, 452);
+            this.spinEditEndHour.Location = new System.Drawing.Point(135, 484);
             this.spinEditEndHour.Name = "spinEditEndHour";
             this.spinEditEndHour.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -381,27 +382,27 @@
             0,
             0,
             0});
-            this.spinEditEndHour.Size = new System.Drawing.Size(103, 20);
+            this.spinEditEndHour.Size = new System.Drawing.Size(77, 20);
             this.spinEditEndHour.StyleController = this.layoutControl;
             this.spinEditEndHour.TabIndex = 15;
             this.spinEditEndHour.ValueChanged += new System.EventHandler(this.spinEditEndHour_ValueChanged);
             // 
             // checkEditExcludeWeekends
             // 
-            this.checkEditExcludeWeekends.Location = new System.Drawing.Point(12, 476);
+            this.checkEditExcludeWeekends.Location = new System.Drawing.Point(12, 508);
             this.checkEditExcludeWeekends.Name = "checkEditExcludeWeekends";
             this.checkEditExcludeWeekends.Properties.Caption = "Exclude Weekends";
-            this.checkEditExcludeWeekends.Size = new System.Drawing.Size(217, 19);
+            this.checkEditExcludeWeekends.Size = new System.Drawing.Size(200, 20);
             this.checkEditExcludeWeekends.StyleController = this.layoutControl;
             this.checkEditExcludeWeekends.TabIndex = 16;
             this.checkEditExcludeWeekends.CheckedChanged += new System.EventHandler(this.checkEditExcludeWeekends_CheckedChanged);
             // 
             // checkEditExcludeHolidays
             // 
-            this.checkEditExcludeHolidays.Location = new System.Drawing.Point(12, 499);
+            this.checkEditExcludeHolidays.Location = new System.Drawing.Point(12, 532);
             this.checkEditExcludeHolidays.Name = "checkEditExcludeHolidays";
             this.checkEditExcludeHolidays.Properties.Caption = "Exclude Holidays";
-            this.checkEditExcludeHolidays.Size = new System.Drawing.Size(217, 19);
+            this.checkEditExcludeHolidays.Size = new System.Drawing.Size(200, 20);
             this.checkEditExcludeHolidays.StyleController = this.layoutControl;
             this.checkEditExcludeHolidays.TabIndex = 17;
             this.checkEditExcludeHolidays.ToolTip = "Exclude 1 May and 1 January";
@@ -409,10 +410,10 @@
             // 
             // checkEditWorkTimeOnly
             // 
-            this.checkEditWorkTimeOnly.Location = new System.Drawing.Point(12, 405);
+            this.checkEditWorkTimeOnly.Location = new System.Drawing.Point(12, 436);
             this.checkEditWorkTimeOnly.Name = "checkEditWorkTimeOnly";
             this.checkEditWorkTimeOnly.Properties.Caption = "Work Time Only";
-            this.checkEditWorkTimeOnly.Size = new System.Drawing.Size(217, 19);
+            this.checkEditWorkTimeOnly.Size = new System.Drawing.Size(200, 20);
             this.checkEditWorkTimeOnly.StyleController = this.layoutControl;
             this.checkEditWorkTimeOnly.TabIndex = 18;
             this.checkEditWorkTimeOnly.CheckedChanged += new System.EventHandler(this.checkEditWorkTimeOnly_CheckedChanged);
@@ -429,7 +430,7 @@
             this.layoutControlGroupWorkTimeOptions});
             this.layoutControlGroupRoot.Name = "Root";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(224, 574);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupScale
@@ -440,9 +441,9 @@
             this.layoutControlItemMeasureUnitFactor,
             this.layoutControlItemMeasureUnit,
             this.layoutControlItemScaleMode});
-            this.layoutControlGroupScale.Location = new System.Drawing.Point(0, 81);
+            this.layoutControlGroupScale.Location = new System.Drawing.Point(0, 102);
             this.layoutControlGroupScale.Name = "layoutControlGroupScale";
-            this.layoutControlGroupScale.Size = new System.Drawing.Size(241, 135);
+            this.layoutControlGroupScale.Size = new System.Drawing.Size(224, 138);
             this.layoutControlGroupScale.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupScale.Text = "Scale";
             // 
@@ -451,7 +452,7 @@
             this.layoutControlItemAggregateFunction.Control = this.comboBoxEditAggregateFunction;
             this.layoutControlItemAggregateFunction.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemAggregateFunction.Name = "layoutControlItemAggregateFunction";
-            this.layoutControlItemAggregateFunction.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemAggregateFunction.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemAggregateFunction.Text = "Aggregate Function:";
             this.layoutControlItemAggregateFunction.TextSize = new System.Drawing.Size(111, 13);
             // 
@@ -460,7 +461,7 @@
             this.layoutControlItemMeasureUnitFactor.Control = this.spinEditMeasureUnitFactor;
             this.layoutControlItemMeasureUnitFactor.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemMeasureUnitFactor.Name = "layoutControlItemMeasureUnitFactor";
-            this.layoutControlItemMeasureUnitFactor.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemMeasureUnitFactor.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemMeasureUnitFactor.Text = "Unit Multiplier:";
             this.layoutControlItemMeasureUnitFactor.TextSize = new System.Drawing.Size(111, 13);
             // 
@@ -469,7 +470,7 @@
             this.layoutControlItemMeasureUnit.Control = this.comboBoxEditMeasureUnit;
             this.layoutControlItemMeasureUnit.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemMeasureUnit.Name = "layoutControlItemMeasureUnit";
-            this.layoutControlItemMeasureUnit.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemMeasureUnit.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemMeasureUnit.Text = "Measurement Unit: ";
             this.layoutControlItemMeasureUnit.TextSize = new System.Drawing.Size(111, 13);
             // 
@@ -478,7 +479,7 @@
             this.layoutControlItemScaleMode.Control = this.comboBoxEditScaleMode;
             this.layoutControlItemScaleMode.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemScaleMode.Name = "layoutControlItemScaleMode";
-            this.layoutControlItemScaleMode.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemScaleMode.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemScaleMode.Text = "Scale Mode:";
             this.layoutControlItemScaleMode.TextSize = new System.Drawing.Size(111, 13);
             // 
@@ -491,27 +492,27 @@
             this.layoutControlItemAutoGrid,
             this.layoutControlItemMinorTickMarksCount,
             this.layoutControlItemGridOffset});
-            this.layoutControlGroupGrid.Location = new System.Drawing.Point(0, 216);
+            this.layoutControlGroupGrid.Location = new System.Drawing.Point(0, 240);
             this.layoutControlGroupGrid.Name = "layoutControlGroupGrid";
-            this.layoutControlGroupGrid.Size = new System.Drawing.Size(241, 158);
+            this.layoutControlGroupGrid.Size = new System.Drawing.Size(224, 162);
             this.layoutControlGroupGrid.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupGrid.Text = "Grid";
             // 
             // layoutControlItemGridSpacing
             // 
             this.layoutControlItemGridSpacing.Control = this.spinEditGridSpacing;
-            this.layoutControlItemGridSpacing.Location = new System.Drawing.Point(0, 47);
+            this.layoutControlItemGridSpacing.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemGridSpacing.Name = "layoutControlItemGridSpacing";
-            this.layoutControlItemGridSpacing.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemGridSpacing.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemGridSpacing.Text = "Grid Spacing:";
             this.layoutControlItemGridSpacing.TextSize = new System.Drawing.Size(111, 13);
             // 
             // layoutControlItemGridAlignment
             // 
             this.layoutControlItemGridAlignment.Control = this.comboBoxEditGridAlignment;
-            this.layoutControlItemGridAlignment.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItemGridAlignment.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemGridAlignment.Name = "layoutControlItemGridAlignment";
-            this.layoutControlItemGridAlignment.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemGridAlignment.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemGridAlignment.Text = "Grid Alignment:";
             this.layoutControlItemGridAlignment.TextSize = new System.Drawing.Size(111, 13);
             // 
@@ -520,36 +521,33 @@
             this.layoutControlItemAutoGrid.Control = this.checkEditAutoGrid;
             this.layoutControlItemAutoGrid.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemAutoGrid.Name = "layoutControlItemAutoGrid";
-            this.layoutControlItemAutoGrid.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemAutoGrid.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemAutoGrid.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemAutoGrid.TextVisible = false;
             // 
             // layoutControlItemMinorTickMarksCount
             // 
             this.layoutControlItemMinorTickMarksCount.Control = this.spinEditMinorTickMarksCount;
-            this.layoutControlItemMinorTickMarksCount.Location = new System.Drawing.Point(0, 95);
+            this.layoutControlItemMinorTickMarksCount.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItemMinorTickMarksCount.Name = "layoutControlItemMinorTickMarksCount";
-            this.layoutControlItemMinorTickMarksCount.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemMinorTickMarksCount.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemMinorTickMarksCount.Text = "Minor Tickmarks Count:";
             this.layoutControlItemMinorTickMarksCount.TextSize = new System.Drawing.Size(111, 13);
             // 
             // layoutControlItemGridOffset
             // 
             this.layoutControlItemGridOffset.Control = this.spinEditGridOffset;
-            this.layoutControlItemGridOffset.Location = new System.Drawing.Point(0, 71);
+            this.layoutControlItemGridOffset.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemGridOffset.Name = "layoutControlItemGridOffset";
-            this.layoutControlItemGridOffset.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemGridOffset.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemGridOffset.Text = "Grid Offset:";
             this.layoutControlItemGridOffset.TextSize = new System.Drawing.Size(111, 13);
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
-            this.emptySpaceItem.Location = new System.Drawing.Point(0, 530);
+            this.emptySpaceItem.Location = new System.Drawing.Point(0, 564);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 14);
+            this.emptySpaceItem.Size = new System.Drawing.Size(224, 10);
             this.emptySpaceItem.Text = "emptySpaceItemBottom";
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroupView
             // 
@@ -558,7 +556,7 @@
             this.layoutControlItemView});
             this.layoutControlGroupView.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupView.Name = "layoutControlGroupView";
-            this.layoutControlGroupView.Size = new System.Drawing.Size(241, 81);
+            this.layoutControlGroupView.Size = new System.Drawing.Size(224, 102);
             this.layoutControlGroupView.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupView.Text = "View";
             // 
@@ -567,8 +565,7 @@
             this.layoutControlItemView.Control = this.radioGroupView;
             this.layoutControlItemView.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemView.Name = "layoutControlItemView";
-            this.layoutControlItemView.Size = new System.Drawing.Size(221, 42);
-            this.layoutControlItemView.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemView.Size = new System.Drawing.Size(204, 60);
             this.layoutControlItemView.TextVisible = false;
             // 
             // layoutControlGroupWorkTimeOptions
@@ -580,46 +577,44 @@
             this.layoutControlItemExcludeWeekends,
             this.layoutControlItemExcludeHolidays,
             this.layoutControlItemWorkTimeOnly});
-            this.layoutControlGroupWorkTimeOptions.Location = new System.Drawing.Point(0, 374);
+            this.layoutControlGroupWorkTimeOptions.Location = new System.Drawing.Point(0, 402);
             this.layoutControlGroupWorkTimeOptions.Name = "layoutControlGroupWorkTimeOptions";
-            this.layoutControlGroupWorkTimeOptions.Size = new System.Drawing.Size(241, 156);
+            this.layoutControlGroupWorkTimeOptions.Size = new System.Drawing.Size(224, 162);
             this.layoutControlGroupWorkTimeOptions.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupWorkTimeOptions.Text = "Work Time Options";
             // 
             // layoutControlItemStartWorkHour
             // 
             this.layoutControlItemStartWorkHour.Control = this.spinEditStartHour;
-            this.layoutControlItemStartWorkHour.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItemStartWorkHour.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemStartWorkHour.Name = "layoutControlItemStartWorkHour";
-            this.layoutControlItemStartWorkHour.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemStartWorkHour.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemStartWorkHour.Text = "Start Work Hour:";
             this.layoutControlItemStartWorkHour.TextSize = new System.Drawing.Size(111, 13);
             // 
             // layoutControlItemEndWorkHour
             // 
             this.layoutControlItemEndWorkHour.Control = this.spinEditEndHour;
-            this.layoutControlItemEndWorkHour.Location = new System.Drawing.Point(0, 47);
+            this.layoutControlItemEndWorkHour.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemEndWorkHour.Name = "layoutControlItemEndWorkHour";
-            this.layoutControlItemEndWorkHour.Size = new System.Drawing.Size(221, 24);
+            this.layoutControlItemEndWorkHour.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemEndWorkHour.Text = "End Work Hour:";
             this.layoutControlItemEndWorkHour.TextSize = new System.Drawing.Size(111, 13);
             // 
             // layoutControlItemExcludeWeekends
             // 
             this.layoutControlItemExcludeWeekends.Control = this.checkEditExcludeWeekends;
-            this.layoutControlItemExcludeWeekends.Location = new System.Drawing.Point(0, 71);
+            this.layoutControlItemExcludeWeekends.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemExcludeWeekends.Name = "layoutControlItemExcludeWeekends";
-            this.layoutControlItemExcludeWeekends.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemExcludeWeekends.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemExcludeWeekends.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemExcludeWeekends.TextVisible = false;
             // 
             // layoutControlItemExcludeHolidays
             // 
             this.layoutControlItemExcludeHolidays.Control = this.checkEditExcludeHolidays;
-            this.layoutControlItemExcludeHolidays.Location = new System.Drawing.Point(0, 94);
+            this.layoutControlItemExcludeHolidays.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItemExcludeHolidays.Name = "layoutControlItemExcludeHolidays";
-            this.layoutControlItemExcludeHolidays.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemExcludeHolidays.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemExcludeHolidays.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemExcludeHolidays.TextVisible = false;
             // 
             // layoutControlItemWorkTimeOnly
@@ -627,8 +622,7 @@
             this.layoutControlItemWorkTimeOnly.Control = this.checkEditWorkTimeOnly;
             this.layoutControlItemWorkTimeOnly.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemWorkTimeOnly.Name = "layoutControlItemWorkTimeOnly";
-            this.layoutControlItemWorkTimeOnly.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemWorkTimeOnly.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemWorkTimeOnly.Size = new System.Drawing.Size(204, 24);
             this.layoutControlItemWorkTimeOnly.TextVisible = false;
             // 
             // chart
@@ -660,8 +654,10 @@
             series1.CrosshairLabelPattern = "${V:0,.}K";
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series1.Name = "Sales Volume";
+            series1.SeriesID = 0;
             series2.CrosshairLabelPattern = "Open: ${OV:0.00}\nHigh: ${HV:0.00}\nLow: ${LV:0.00}\nClose: ${CV:0.00}";
             series2.Name = "Price";
+            series2.SeriesID = 1;
             series2.View = stockSeriesView1;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
@@ -670,6 +666,7 @@
             this.chart.TabIndex = 2;
             this.chart.TabStop = false;
             chartTitle1.Text = "Orders";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.AxisScaleChanged += new System.EventHandler<DevExpress.XtraCharts.AxisScaleChangedEventArgs>(this.chart_AxisScaleChanged);

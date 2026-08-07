@@ -6,7 +6,7 @@ namespace DevExpress.WindowsMailClient.Win.Utils {
         public static TViewModel GetParentViewModel<TViewModel>(object viewModel) {
             ISupportParentViewModel parentViewModelSupport = viewModel as ISupportParentViewModel;
             if(parentViewModelSupport != null)
-                return (TViewModel) parentViewModelSupport.ParentViewModel;
+                return (TViewModel)parentViewModelSupport.ParentViewModel;
             return default(TViewModel);
         }
         public static void CheckModuleViewModel(object module, object parentViewModel, object parameter = null) {

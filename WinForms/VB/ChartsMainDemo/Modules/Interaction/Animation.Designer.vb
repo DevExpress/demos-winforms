@@ -73,7 +73,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 542)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' chart
             ' 
@@ -103,7 +103,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(268, 270, 650, 398)
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 542)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 0
             Me.layoutControl.Text = "layoutControl1"
             ' 
@@ -130,36 +130,36 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' comboBoxEditSeriesAnimation
             ' 
-            Me.comboBoxEditSeriesAnimation.Location = New System.Drawing.Point(98, 132)
+            Me.comboBoxEditSeriesAnimation.Location = New System.Drawing.Point(107, 132)
             Me.comboBoxEditSeriesAnimation.Name = "comboBoxEditSeriesAnimation"
             Me.comboBoxEditSeriesAnimation.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditSeriesAnimation.Properties.DropDownRows = 8
             Me.comboBoxEditSeriesAnimation.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditSeriesAnimation.Size = New System.Drawing.Size(131, 20)
+            Me.comboBoxEditSeriesAnimation.Size = New System.Drawing.Size(122, 20)
             Me.comboBoxEditSeriesAnimation.StyleController = Me.layoutControl
             Me.comboBoxEditSeriesAnimation.TabIndex = 21
             AddHandler Me.comboBoxEditSeriesAnimation.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditSeriesAnimation_SelectedValueChanged)
             ' 
             ' comboBoxEditPointAnimation
             ' 
-            Me.comboBoxEditPointAnimation.Location = New System.Drawing.Point(98, 156)
+            Me.comboBoxEditPointAnimation.Location = New System.Drawing.Point(107, 156)
             Me.comboBoxEditPointAnimation.Name = "comboBoxEditPointAnimation"
             Me.comboBoxEditPointAnimation.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditPointAnimation.Properties.DropDownRows = 8
             Me.comboBoxEditPointAnimation.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditPointAnimation.Size = New System.Drawing.Size(131, 20)
+            Me.comboBoxEditPointAnimation.Size = New System.Drawing.Size(122, 20)
             Me.comboBoxEditPointAnimation.StyleController = Me.layoutControl
             Me.comboBoxEditPointAnimation.TabIndex = 20
             AddHandler Me.comboBoxEditPointAnimation.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditPointAnimation_SelectedIndexChanged)
             ' 
             ' comboBoxEditSeriesView
             ' 
-            Me.comboBoxEditSeriesView.Location = New System.Drawing.Point(98, 34)
+            Me.comboBoxEditSeriesView.Location = New System.Drawing.Point(107, 34)
             Me.comboBoxEditSeriesView.Name = "comboBoxEditSeriesView"
             Me.comboBoxEditSeriesView.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditSeriesView.Properties.DropDownRows = 16
             Me.comboBoxEditSeriesView.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditSeriesView.Size = New System.Drawing.Size(131, 20)
+            Me.comboBoxEditSeriesView.Size = New System.Drawing.Size(122, 20)
             Me.comboBoxEditSeriesView.StyleController = Me.layoutControl
             Me.comboBoxEditSeriesView.TabIndex = 19
             AddHandler Me.comboBoxEditSeriesView.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditSeriesView_SelectedIndexChanged)
@@ -201,16 +201,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.emptySpaceItem, Me.layoutControlGroupGeneral, Me.layoutControlGroupAnimation, Me.layoutControlGroupDiagramOptions})
             Me.layoutControlGroupRoot.Name = "Root"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 542)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 336)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 206)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 202)
             ' 
             ' layoutControlGroupGeneral
             ' 
@@ -238,7 +236,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemShowSeriesLabels.Name = "layoutControlItemShowSeriesLabels"
             Me.layoutControlItemShowSeriesLabels.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemShowSeriesLabels.Size = New System.Drawing.Size(221, 32)
-            Me.layoutControlItemShowSeriesLabels.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemShowSeriesLabels.TextVisible = False
             ' 
             ' layoutControlGroupAnimation
@@ -258,7 +255,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAnimate.Name = "layoutControlItemAnimate"
             Me.layoutControlItemAnimate.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemAnimate.Size = New System.Drawing.Size(221, 34)
-            Me.layoutControlItemAnimate.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAnimate.TextVisible = False
             ' 
             ' layoutControlItemPointAnimation
@@ -295,7 +291,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemDiagramRotated.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemDiagramRotated.Name = "layoutControlItemDiagramRotated"
             Me.layoutControlItemDiagramRotated.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemDiagramRotated.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemDiagramRotated.TextVisible = False
             ' 
             ' layoutControlItemAxisYReversed
@@ -304,7 +299,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAxisYReversed.Location = New System.Drawing.Point(0, 48)
             Me.layoutControlItemAxisYReversed.Name = "layoutControlItemAxisYReversed"
             Me.layoutControlItemAxisYReversed.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemAxisYReversed.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAxisYReversed.TextVisible = False
             ' 
             ' layoutControlItemAxisXReversed
@@ -313,7 +307,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemAxisXReversed.Location = New System.Drawing.Point(0, 24)
             Me.layoutControlItemAxisXReversed.Name = "layoutControlItemAxisXReversed"
             Me.layoutControlItemAxisXReversed.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemAxisXReversed.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemAxisXReversed.TextVisible = False
             ' 
             ' AnimationDemo

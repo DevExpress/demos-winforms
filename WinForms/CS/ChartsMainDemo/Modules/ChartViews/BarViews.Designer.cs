@@ -224,7 +224,7 @@
             // tabNavigationPageOptions
             // 
             this.tabNavigationPageOptions.Controls.Add(this.layoutControl);
-            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 544);
+            this.tabNavigationPageOptions.Size = new System.Drawing.Size(241, 538);
             // 
             // documentGroup
             // 
@@ -357,8 +357,7 @@
             this.dockPanelBar.Name = "dockPanelBar";
             this.dockPanelBar.Options.ShowCloseButton = false;
             this.dockPanelBar.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelBar.SavedSizeFactor = 1D;
-            this.dockPanelBar.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelBar.Size = new System.Drawing.Size(924, 548);
             this.dockPanelBar.Text = "Bar";
             // 
             // dockPanelBar_Container
@@ -366,7 +365,7 @@
             this.dockPanelBar_Container.Controls.Add(this.chartBar);
             this.dockPanelBar_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelBar_Container.Name = "dockPanelBar_Container";
-            this.dockPanelBar_Container.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelBar_Container.Size = new System.Drawing.Size(924, 548);
             this.dockPanelBar_Container.TabIndex = 0;
             // 
             // chartBar
@@ -385,13 +384,11 @@
             xyDiagram1.AxisY.Title.Visibility = DevExpress.Utils.DefaultBoolean.True;
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.VisualRange.Auto = false;
-            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "6";
+            xyDiagram1.AxisY.VisualRange.MaxValueSerializable = "9.3";
             xyDiagram1.AxisY.VisualRange.MinValueSerializable = "0";
-            xyDiagram1.AxisY.WholeRange.Auto = false;
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "6";
-            xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0";
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram1.LabelsResolveOverlappingMinIndent = 0;
             this.chartBar.Diagram = xyDiagram1;
             this.chartBar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -405,13 +402,14 @@
             this.chartBar.SeriesTemplate.CrosshairLabelPattern = "Year: {S}\nGSP: ${V}M";
             sideBySideBarSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
             this.chartBar.SeriesTemplate.Label = sideBySideBarSeriesLabel1;
-            this.chartBar.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            this.chartBar.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartBar.SeriesTemplate.SeriesDataMember = "Year";
             this.chartBar.SeriesTemplate.ValueDataMembersSerializable = "Sales";
-            this.chartBar.Size = new System.Drawing.Size(924, 545);
+            this.chartBar.Size = new System.Drawing.Size(924, 548);
             this.chartBar.TabIndex = 1;
             this.chartBar.TabStop = false;
             chartTitle1.Text = "DevAV Sales by Regions";
+            chartTitle1.TitleID = 0;
             this.chartBar.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 
@@ -424,8 +422,7 @@
             this.dockPanelStackedBar.Location = new System.Drawing.Point(0, 0);
             this.dockPanelStackedBar.Name = "dockPanelStackedBar";
             this.dockPanelStackedBar.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelStackedBar.SavedSizeFactor = 1D;
-            this.dockPanelStackedBar.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelStackedBar.Size = new System.Drawing.Size(924, 548);
             this.dockPanelStackedBar.Text = "Stacked Bar";
             // 
             // dockPanelStackedBar_Container
@@ -433,7 +430,7 @@
             this.dockPanelStackedBar_Container.Controls.Add(this.chartStackedBar);
             this.dockPanelStackedBar_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelStackedBar_Container.Name = "dockPanelStackedBar_Container";
-            this.dockPanelStackedBar_Container.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelStackedBar_Container.Size = new System.Drawing.Size(924, 548);
             this.dockPanelStackedBar_Container.TabIndex = 0;
             // 
             // chartStackedBar
@@ -446,7 +443,8 @@
             xyDiagram2.AxisX.Title.Text = "Countries";
             xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram2.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram2.AxisX.WholeRange.SideMarginsValue = 0.65D;
+            xyDiagram2.AxisX.WholeRange.EndSideMargin = 0.65D;
+            xyDiagram2.AxisX.WholeRange.StartSideMargin = 0.65D;
             xyDiagram2.AxisY.GridLines.MinorVisible = true;
             xyDiagram2.AxisY.Label.TextPattern = "{V:0,,}";
             xyDiagram2.AxisY.Title.Text = "Millions";
@@ -468,20 +466,22 @@
             this.chartStackedBar.SeriesTemplate.CrosshairLabelPattern = "Age: {S}\nPopulation: {V:0,,.0}M";
             stackedBarSeriesLabel1.TextPattern = "{V:0,,.0}";
             this.chartStackedBar.SeriesTemplate.Label = stackedBarSeriesLabel1;
-            this.chartStackedBar.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            this.chartStackedBar.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartStackedBar.SeriesTemplate.SeriesDataMember = "Age";
             this.chartStackedBar.SeriesTemplate.ValueDataMembersSerializable = "Population";
             stackedBarSeriesView1.BarWidth = 0.7D;
             this.chartStackedBar.SeriesTemplate.View = stackedBarSeriesView1;
-            this.chartStackedBar.Size = new System.Drawing.Size(924, 545);
+            this.chartStackedBar.Size = new System.Drawing.Size(924, 548);
             this.chartStackedBar.TabIndex = 1;
             this.chartStackedBar.TabStop = false;
             chartTitle2.Text = "Male Age Structure";
-            chartTitle3.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle2.TitleID = 0;
             chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle3.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle3.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle3.Text = "From www.cia.gov";
             chartTitle3.TextColor = System.Drawing.Color.Gray;
+            chartTitle3.TitleID = 1;
             this.chartStackedBar.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2,
             chartTitle3});
@@ -498,8 +498,7 @@
             this.dockPanelFullStackedBar.OriginalSize = new System.Drawing.Size(200, 200);
             this.dockPanelFullStackedBar.SavedIndex = 2;
             this.dockPanelFullStackedBar.SavedMdiDocument = true;
-            this.dockPanelFullStackedBar.SavedSizeFactor = 1D;
-            this.dockPanelFullStackedBar.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelFullStackedBar.Size = new System.Drawing.Size(924, 548);
             this.dockPanelFullStackedBar.Text = "Full Stacked Bar";
             // 
             // dockPanelFullStackedBar_Container
@@ -507,7 +506,7 @@
             this.dockPanelFullStackedBar_Container.Controls.Add(this.chartFullStackedBar);
             this.dockPanelFullStackedBar_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelFullStackedBar_Container.Name = "dockPanelFullStackedBar_Container";
-            this.dockPanelFullStackedBar_Container.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelFullStackedBar_Container.Size = new System.Drawing.Size(924, 548);
             this.dockPanelFullStackedBar_Container.TabIndex = 0;
             // 
             // chartFullStackedBar
@@ -521,11 +520,9 @@
             xyDiagram3.AxisY.Label.TextPattern = "{V:P0}";
             xyDiagram3.AxisY.Title.Text = "Percent";
             xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram3.AxisY.WholeRange.Auto = false;
             xyDiagram3.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram3.AxisY.WholeRange.MaxValueSerializable = "1";
-            xyDiagram3.AxisY.WholeRange.MinValueSerializable = "0";
-            xyDiagram3.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram3.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram3.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram3.DefaultPane.StackedBarTotalLabel.TextPattern = "Total\n{TV:F0}K";
             this.chartFullStackedBar.Diagram = xyDiagram3;
             this.chartFullStackedBar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -541,14 +538,15 @@
             this.chartFullStackedBar.SeriesTemplate.CrosshairLabelPattern = "{S}: {V:0.0}";
             fullStackedBarSeriesLabel1.TextPattern = "{VP:P0}";
             this.chartFullStackedBar.SeriesTemplate.Label = fullStackedBarSeriesLabel1;
-            this.chartFullStackedBar.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            this.chartFullStackedBar.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartFullStackedBar.SeriesTemplate.SeriesDataMember = "ProductCategory";
             this.chartFullStackedBar.SeriesTemplate.ValueDataMembersSerializable = "Sales";
             this.chartFullStackedBar.SeriesTemplate.View = fullStackedBarSeriesView1;
-            this.chartFullStackedBar.Size = new System.Drawing.Size(924, 545);
+            this.chartFullStackedBar.Size = new System.Drawing.Size(924, 548);
             this.chartFullStackedBar.TabIndex = 1;
             this.chartFullStackedBar.TabStop = false;
             chartTitle4.Text = "DevAV Sales Mix by Region";
+            chartTitle4.TitleID = 0;
             this.chartFullStackedBar.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle4});
             // 
@@ -561,8 +559,7 @@
             this.dockPanelStackedBarSideBySide.Location = new System.Drawing.Point(0, 0);
             this.dockPanelStackedBarSideBySide.Name = "dockPanelStackedBarSideBySide";
             this.dockPanelStackedBarSideBySide.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelStackedBarSideBySide.SavedSizeFactor = 1D;
-            this.dockPanelStackedBarSideBySide.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelStackedBarSideBySide.Size = new System.Drawing.Size(924, 548);
             this.dockPanelStackedBarSideBySide.Text = "Stacked Bar Side-By-Side";
             // 
             // dockPanelStackedBarSideBySide_Container
@@ -570,7 +567,7 @@
             this.dockPanelStackedBarSideBySide_Container.Controls.Add(this.chartStackedBarSideBySide);
             this.dockPanelStackedBarSideBySide_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelStackedBarSideBySide_Container.Name = "dockPanelStackedBarSideBySide_Container";
-            this.dockPanelStackedBarSideBySide_Container.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelStackedBarSideBySide_Container.Size = new System.Drawing.Size(924, 548);
             this.dockPanelStackedBarSideBySide_Container.TabIndex = 0;
             // 
             // chartStackedBarSideBySide
@@ -609,20 +606,23 @@
             stackedBarSeriesLabel2.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
             stackedBarSeriesLabel2.TextPattern = "{V:0,,.0}";
             this.chartStackedBarSideBySide.SeriesTemplate.Label = stackedBarSeriesLabel2;
-            this.chartStackedBarSideBySide.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            this.chartStackedBarSideBySide.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartStackedBarSideBySide.SeriesTemplate.SeriesDataMember = "GenderAge";
             this.chartStackedBarSideBySide.SeriesTemplate.ValueDataMembersSerializable = "Population";
             this.chartStackedBarSideBySide.SeriesTemplate.View = sideBySideStackedBarSeriesView1;
-            this.chartStackedBarSideBySide.Size = new System.Drawing.Size(924, 545);
+            this.chartStackedBarSideBySide.Size = new System.Drawing.Size(924, 548);
             this.chartStackedBarSideBySide.TabIndex = 2;
             chartTitle5.Text = "Population: Age-Gender Structure";
+            chartTitle5.TitleID = 0;
             chartTitle6.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle6.Text = "Data estimate for 2020";
-            chartTitle7.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle6.TitleID = 1;
             chartTitle7.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle7.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle7.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle7.Text = "From www.cia.gov";
             chartTitle7.TextColor = System.Drawing.Color.Gray;
+            chartTitle7.TitleID = 2;
             this.chartStackedBarSideBySide.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle5,
             chartTitle6,
@@ -638,8 +638,7 @@
             this.dockPanelFullStackedBarSideBySide.Location = new System.Drawing.Point(0, 0);
             this.dockPanelFullStackedBarSideBySide.Name = "dockPanelFullStackedBarSideBySide";
             this.dockPanelFullStackedBarSideBySide.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelFullStackedBarSideBySide.SavedSizeFactor = 1D;
-            this.dockPanelFullStackedBarSideBySide.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelFullStackedBarSideBySide.Size = new System.Drawing.Size(924, 548);
             this.dockPanelFullStackedBarSideBySide.Text = "Full Stacked Bar Side-By-Side";
             // 
             // dockPanelFullStackedBarSideBySide_Container
@@ -647,7 +646,7 @@
             this.dockPanelFullStackedBarSideBySide_Container.Controls.Add(this.chartFullStackedBarSideBySide);
             this.dockPanelFullStackedBarSideBySide_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelFullStackedBarSideBySide_Container.Name = "dockPanelFullStackedBarSideBySide_Container";
-            this.dockPanelFullStackedBarSideBySide_Container.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelFullStackedBarSideBySide_Container.Size = new System.Drawing.Size(924, 548);
             this.dockPanelFullStackedBarSideBySide_Container.TabIndex = 0;
             // 
             // chartFullStackedBarSideBySide
@@ -662,13 +661,9 @@
             xyDiagram5.AxisY.Label.TextPattern = "{V:P0}";
             xyDiagram5.AxisY.Title.Text = "Percent";
             xyDiagram5.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram5.AxisY.VisualRange.Auto = false;
-            xyDiagram5.AxisY.VisualRange.AutoSideMargins = false;
-            xyDiagram5.AxisY.VisualRange.MaxValueSerializable = "1";
-            xyDiagram5.AxisY.VisualRange.MinValueSerializable = "0";
-            xyDiagram5.AxisY.VisualRange.SideMarginsValue = 0D;
             xyDiagram5.AxisY.WholeRange.AutoSideMargins = false;
-            xyDiagram5.AxisY.WholeRange.SideMarginsValue = 0D;
+            xyDiagram5.AxisY.WholeRange.EndSideMargin = 0D;
+            xyDiagram5.AxisY.WholeRange.StartSideMargin = 0D;
             xyDiagram5.DefaultPane.StackedBarTotalLabel.TextPattern = "Total\n{TV:0,,.00}M";
             this.chartFullStackedBarSideBySide.Diagram = xyDiagram5;
             this.chartFullStackedBarSideBySide.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -686,20 +681,23 @@
             this.chartFullStackedBarSideBySide.SeriesTemplate.CrosshairLabelPattern = "{S}\n{V:0,,.00} million";
             fullStackedBarSeriesLabel2.TextPattern = "{VP:P0}";
             this.chartFullStackedBarSideBySide.SeriesTemplate.Label = fullStackedBarSeriesLabel2;
-            this.chartFullStackedBarSideBySide.SeriesTemplate.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            this.chartFullStackedBarSideBySide.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartFullStackedBarSideBySide.SeriesTemplate.SeriesDataMember = "GenderAge";
             this.chartFullStackedBarSideBySide.SeriesTemplate.ValueDataMembersSerializable = "Population";
             this.chartFullStackedBarSideBySide.SeriesTemplate.View = sideBySideFullStackedBarSeriesView1;
-            this.chartFullStackedBarSideBySide.Size = new System.Drawing.Size(924, 545);
+            this.chartFullStackedBarSideBySide.Size = new System.Drawing.Size(924, 548);
             this.chartFullStackedBarSideBySide.TabIndex = 2;
             chartTitle8.Text = "Population: Age-Gender Structure";
+            chartTitle8.TitleID = 0;
             chartTitle9.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 12F);
             chartTitle9.Text = "Data estimate for mid-2016";
-            chartTitle10.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle9.TitleID = 1;
             chartTitle10.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle10.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle10.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle10.Text = "From www.cia.gov";
             chartTitle10.TextColor = System.Drawing.Color.Gray;
+            chartTitle10.TitleID = 2;
             this.chartFullStackedBarSideBySide.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle8,
             chartTitle9,
@@ -715,8 +713,7 @@
             this.dockPanelRangeBar.Location = new System.Drawing.Point(0, 0);
             this.dockPanelRangeBar.Name = "dockPanelRangeBar";
             this.dockPanelRangeBar.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelRangeBar.SavedSizeFactor = 1D;
-            this.dockPanelRangeBar.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelRangeBar.Size = new System.Drawing.Size(924, 548);
             this.dockPanelRangeBar.Text = "Range Bar";
             // 
             // dockPanelRangeBar_Container
@@ -724,7 +721,7 @@
             this.dockPanelRangeBar_Container.Controls.Add(this.chartRangeBar);
             this.dockPanelRangeBar_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelRangeBar_Container.Name = "dockPanelRangeBar_Container";
-            this.dockPanelRangeBar_Container.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelRangeBar_Container.Size = new System.Drawing.Size(924, 548);
             this.dockPanelRangeBar_Container.TabIndex = 0;
             // 
             // chartRangeBar
@@ -765,8 +762,9 @@
             rangeBarSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
             rangeBarSeriesLabel1.TextPattern = "{V:F2}";
             series1.Label = rangeBarSeriesLabel1;
-            series1.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series1.Name = "Europe Brent";
+            series1.SeriesID = 0;
             series1.ToolTipPointPattern = "{S}\nMonth: {A:MMMM}\nMin Price: ${V1:0.00}\nMax Price: ${V2:0.00}";
             series1.ValueDataMembersSerializable = "Min;Max";
             series1.View = overlappedRangeBarSeriesView1;
@@ -777,8 +775,9 @@
             rangeBarSeriesLabel2.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
             rangeBarSeriesLabel2.TextPattern = "{V:F2}";
             series2.Label = rangeBarSeriesLabel2;
-            series2.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series2.Name = "OK WTI";
+            series2.SeriesID = 1;
             series2.ToolTipPointPattern = "{S}\nMonth: {A:MMMM}\nMin Price: ${V1:0.00}\nMax Price: ${V2:0.00}";
             series2.ValueDataMembersSerializable = "Min;Max";
             barGrowUpAnimation1.BeginTime = System.TimeSpan.Parse("00:00:00.8000000");
@@ -790,15 +789,17 @@
         series2};
             this.chartRangeBar.SeriesTemplate.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.False;
             this.chartRangeBar.SeriesTemplate.View = overlappedRangeBarSeriesView3;
-            this.chartRangeBar.Size = new System.Drawing.Size(924, 545);
+            this.chartRangeBar.Size = new System.Drawing.Size(924, 548);
             this.chartRangeBar.TabIndex = 1;
             this.chartRangeBar.TabStop = false;
             chartTitle11.Text = "Crude Oil Prices in 2015";
-            chartTitle12.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle11.TitleID = 0;
             chartTitle12.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle12.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle12.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle12.Text = "From www.eia.gov";
             chartTitle12.TextColor = System.Drawing.Color.Gray;
+            chartTitle12.TitleID = 1;
             this.chartRangeBar.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle11,
             chartTitle12});
@@ -815,8 +816,7 @@
             this.dockPanelRangeBarSideBySide.Location = new System.Drawing.Point(0, 0);
             this.dockPanelRangeBarSideBySide.Name = "dockPanelRangeBarSideBySide";
             this.dockPanelRangeBarSideBySide.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanelRangeBarSideBySide.SavedSizeFactor = 1D;
-            this.dockPanelRangeBarSideBySide.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelRangeBarSideBySide.Size = new System.Drawing.Size(924, 548);
             this.dockPanelRangeBarSideBySide.Text = "Range Bar Side-By-Side";
             // 
             // dockPanelRangeBarSideBySide_Container
@@ -824,7 +824,7 @@
             this.dockPanelRangeBarSideBySide_Container.Controls.Add(this.chartRangeBarSideBySide);
             this.dockPanelRangeBarSideBySide_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanelRangeBarSideBySide_Container.Name = "dockPanelRangeBarSideBySide_Container";
-            this.dockPanelRangeBarSideBySide_Container.Size = new System.Drawing.Size(924, 545);
+            this.dockPanelRangeBarSideBySide_Container.Size = new System.Drawing.Size(924, 548);
             this.dockPanelRangeBarSideBySide_Container.TabIndex = 0;
             // 
             // chartRangeBarSideBySide
@@ -865,8 +865,9 @@
             rangeBarSeriesLabel3.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
             rangeBarSeriesLabel3.TextPattern = "{V:F2}";
             series3.Label = rangeBarSeriesLabel3;
-            series3.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series3.Name = "Europe Brent";
+            series3.SeriesID = 0;
             series3.ToolTipPointPattern = "{S}\nMonth: {A:MMMM}\nMin Price: ${V1:0.00}\nMax Price: ${V2:0.00}\n";
             series3.ValueDataMembersSerializable = "Min;Max";
             barWidenAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.2000000");
@@ -879,8 +880,9 @@
             rangeBarSeriesLabel4.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
             rangeBarSeriesLabel4.TextPattern = "{V:F2}";
             series4.Label = rangeBarSeriesLabel4;
-            series4.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series4.Name = "OK WTI";
+            series4.SeriesID = 1;
             series4.ValueDataMembersSerializable = "Min;Max";
             barWidenAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.1000000");
             barWidenAnimation2.PointDelay = System.TimeSpan.Parse("00:00:00.2000000");
@@ -890,15 +892,17 @@
         series3,
         series4};
             this.chartRangeBarSideBySide.SeriesTemplate.View = sideBySideRangeBarSeriesView3;
-            this.chartRangeBarSideBySide.Size = new System.Drawing.Size(924, 545);
+            this.chartRangeBarSideBySide.Size = new System.Drawing.Size(924, 548);
             this.chartRangeBarSideBySide.TabIndex = 1;
             this.chartRangeBarSideBySide.TabStop = false;
             chartTitle13.Text = "Crude Oil Prices in 2015";
-            chartTitle14.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle13.TitleID = 0;
             chartTitle14.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle14.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle14.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle14.Text = "From www.eia.gov";
             chartTitle14.TextColor = System.Drawing.Color.Gray;
+            chartTitle14.TitleID = 1;
             this.chartRangeBarSideBySide.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle13,
             chartTitle14});
@@ -955,27 +959,27 @@
             this.layoutControl.Name = "layoutControl";
             this.layoutControl.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(434, 57, 1127, 704);
             this.layoutControl.Root = this.layoutControlGroupRoot;
-            this.layoutControl.Size = new System.Drawing.Size(241, 544);
+            this.layoutControl.Size = new System.Drawing.Size(241, 538);
             this.layoutControl.TabIndex = 1;
             this.layoutControl.Text = "layoutControl1";
             // 
             // checkEditLabelVisible
             // 
             this.checkEditLabelVisible.EditValue = true;
-            this.checkEditLabelVisible.Location = new System.Drawing.Point(12, 117);
+            this.checkEditLabelVisible.Location = new System.Drawing.Point(12, 124);
             this.checkEditLabelVisible.Name = "checkEditLabelVisible";
             this.checkEditLabelVisible.Properties.Caption = "Visible";
-            this.checkEditLabelVisible.Size = new System.Drawing.Size(217, 19);
+            this.checkEditLabelVisible.Size = new System.Drawing.Size(217, 20);
             this.checkEditLabelVisible.StyleController = this.layoutControl;
             this.checkEditLabelVisible.TabIndex = 4;
             this.checkEditLabelVisible.CheckedChanged += new System.EventHandler(this.checkEditLabelVisible_CheckedChanged);
             // 
             // checkEditValueAsPercent
             // 
-            this.checkEditValueAsPercent.Location = new System.Drawing.Point(12, 140);
+            this.checkEditValueAsPercent.Location = new System.Drawing.Point(12, 148);
             this.checkEditValueAsPercent.Name = "checkEditValueAsPercent";
             this.checkEditValueAsPercent.Properties.Caption = "Value as Percent";
-            this.checkEditValueAsPercent.Size = new System.Drawing.Size(217, 19);
+            this.checkEditValueAsPercent.Size = new System.Drawing.Size(217, 20);
             this.checkEditValueAsPercent.StyleController = this.layoutControl;
             this.checkEditValueAsPercent.TabIndex = 11;
             // 
@@ -986,7 +990,7 @@
             0,
             0,
             0});
-            this.spinEditLabelIndent.Location = new System.Drawing.Point(95, 235);
+            this.spinEditLabelIndent.Location = new System.Drawing.Point(104, 244);
             this.spinEditLabelIndent.Name = "spinEditLabelIndent";
             this.spinEditLabelIndent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -999,7 +1003,7 @@
             0,
             0,
             0});
-            this.spinEditLabelIndent.Size = new System.Drawing.Size(134, 20);
+            this.spinEditLabelIndent.Size = new System.Drawing.Size(125, 20);
             this.spinEditLabelIndent.StyleController = this.layoutControl;
             this.spinEditLabelIndent.TabIndex = 12;
             this.spinEditLabelIndent.EditValueChanged += new System.EventHandler(this.spinEditLabelIndent_EditValueChanged);
@@ -1007,7 +1011,7 @@
             // comboBoxEditLabelOrientation
             // 
             this.comboBoxEditLabelOrientation.EditValue = "Horizontal";
-            this.comboBoxEditLabelOrientation.Location = new System.Drawing.Point(95, 211);
+            this.comboBoxEditLabelOrientation.Location = new System.Drawing.Point(104, 220);
             this.comboBoxEditLabelOrientation.Name = "comboBoxEditLabelOrientation";
             this.comboBoxEditLabelOrientation.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1016,29 +1020,29 @@
             "Top To Bottom",
             "Bottom To Top"});
             this.comboBoxEditLabelOrientation.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditLabelOrientation.Size = new System.Drawing.Size(134, 20);
+            this.comboBoxEditLabelOrientation.Size = new System.Drawing.Size(125, 20);
             this.comboBoxEditLabelOrientation.StyleController = this.layoutControl;
             this.comboBoxEditLabelOrientation.TabIndex = 13;
             this.comboBoxEditLabelOrientation.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditLabelOrientation_SelectedIndexChanged);
             // 
             // comboBoxEditLabelPosition
             // 
-            this.comboBoxEditLabelPosition.Location = new System.Drawing.Point(95, 163);
+            this.comboBoxEditLabelPosition.Location = new System.Drawing.Point(104, 172);
             this.comboBoxEditLabelPosition.Name = "comboBoxEditLabelPosition";
             this.comboBoxEditLabelPosition.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEditLabelPosition.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditLabelPosition.Size = new System.Drawing.Size(134, 20);
+            this.comboBoxEditLabelPosition.Size = new System.Drawing.Size(125, 20);
             this.comboBoxEditLabelPosition.StyleController = this.layoutControl;
             this.comboBoxEditLabelPosition.TabIndex = 14;
             this.comboBoxEditLabelPosition.EditValueChanged += new System.EventHandler(this.comboBoxEditLabelPosition_EditValueChanged);
             // 
             // comboBoxEditTotalLabelVisible
             // 
-            this.comboBoxEditTotalLabelVisible.Location = new System.Drawing.Point(12, 298);
+            this.comboBoxEditTotalLabelVisible.Location = new System.Drawing.Point(12, 310);
             this.comboBoxEditTotalLabelVisible.Name = "comboBoxEditTotalLabelVisible";
             this.comboBoxEditTotalLabelVisible.Properties.Caption = "Visible";
-            this.comboBoxEditTotalLabelVisible.Size = new System.Drawing.Size(217, 19);
+            this.comboBoxEditTotalLabelVisible.Size = new System.Drawing.Size(217, 20);
             this.comboBoxEditTotalLabelVisible.StyleController = this.layoutControl;
             this.comboBoxEditTotalLabelVisible.TabIndex = 15;
             this.comboBoxEditTotalLabelVisible.CheckedChanged += new System.EventHandler(this.comboBoxEditTotalLabelVisible_CheckedChanged);
@@ -1046,7 +1050,7 @@
             // comboBoxEditGroupSeriesBy
             // 
             this.comboBoxEditGroupSeriesBy.EditValue = "Gender";
-            this.comboBoxEditGroupSeriesBy.Location = new System.Drawing.Point(95, 31);
+            this.comboBoxEditGroupSeriesBy.Location = new System.Drawing.Point(104, 34);
             this.comboBoxEditGroupSeriesBy.Name = "comboBoxEditGroupSeriesBy";
             this.comboBoxEditGroupSeriesBy.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1054,17 +1058,17 @@
             "Gender",
             "Age"});
             this.comboBoxEditGroupSeriesBy.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditGroupSeriesBy.Size = new System.Drawing.Size(134, 20);
+            this.comboBoxEditGroupSeriesBy.Size = new System.Drawing.Size(125, 20);
             this.comboBoxEditGroupSeriesBy.StyleController = this.layoutControl;
             this.comboBoxEditGroupSeriesBy.TabIndex = 16;
             this.comboBoxEditGroupSeriesBy.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditGroupSeriesBy_SelectedIndexChanged);
             // 
             // checkEditDiagramRotated
             // 
-            this.checkEditDiagramRotated.Location = new System.Drawing.Point(12, 55);
+            this.checkEditDiagramRotated.Location = new System.Drawing.Point(12, 58);
             this.checkEditDiagramRotated.Name = "checkEditDiagramRotated";
             this.checkEditDiagramRotated.Properties.Caption = "Diagram Rotated";
-            this.checkEditDiagramRotated.Size = new System.Drawing.Size(217, 19);
+            this.checkEditDiagramRotated.Size = new System.Drawing.Size(217, 20);
             this.checkEditDiagramRotated.StyleController = this.layoutControl;
             this.checkEditDiagramRotated.TabIndex = 17;
             this.checkEditDiagramRotated.CheckedChanged += new System.EventHandler(this.checkEditDiagramRotated_CheckedChanged);
@@ -1072,7 +1076,7 @@
             // comboBoxEditRangeBarLabelPosition
             // 
             this.comboBoxEditRangeBarLabelPosition.EditValue = "Outside";
-            this.comboBoxEditRangeBarLabelPosition.Location = new System.Drawing.Point(95, 187);
+            this.comboBoxEditRangeBarLabelPosition.Location = new System.Drawing.Point(104, 196);
             this.comboBoxEditRangeBarLabelPosition.Name = "comboBoxEditRangeBarLabelPosition";
             this.comboBoxEditRangeBarLabelPosition.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1081,7 +1085,7 @@
             "Inside",
             "Center"});
             this.comboBoxEditRangeBarLabelPosition.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEditRangeBarLabelPosition.Size = new System.Drawing.Size(134, 20);
+            this.comboBoxEditRangeBarLabelPosition.Size = new System.Drawing.Size(125, 20);
             this.comboBoxEditRangeBarLabelPosition.StyleController = this.layoutControl;
             this.comboBoxEditRangeBarLabelPosition.TabIndex = 18;
             this.comboBoxEditRangeBarLabelPosition.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditRangeBarLabelPosition_SelectedIndexChanged);
@@ -1097,7 +1101,7 @@
             this.layoutControlGroupTotalLabels});
             this.layoutControlGroupRoot.Name = "Root";
             this.layoutControlGroupRoot.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 544);
+            this.layoutControlGroupRoot.Size = new System.Drawing.Size(241, 538);
             this.layoutControlGroupRoot.TextVisible = false;
             // 
             // layoutControlGroupGeneral
@@ -1110,7 +1114,7 @@
             this.layoutControlItemDiagramRotated});
             this.layoutControlGroupGeneral.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupGeneral.Name = "layoutControlGroupGeneral";
-            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 86);
+            this.layoutControlGroupGeneral.Size = new System.Drawing.Size(241, 90);
             this.layoutControlGroupGeneral.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupGeneral.Text = "General";
             // 
@@ -1128,8 +1132,7 @@
             this.layoutControlItemDiagramRotated.Control = this.checkEditDiagramRotated;
             this.layoutControlItemDiagramRotated.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemDiagramRotated.Name = "layoutControlItemDiagramRotated";
-            this.layoutControlItemDiagramRotated.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemDiagramRotated.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemDiagramRotated.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemDiagramRotated.TextVisible = false;
             // 
             // layoutControlGroupLabel
@@ -1144,9 +1147,9 @@
             this.layoutControlItemOrientation,
             this.layoutControlItemPosition,
             this.layoutControlItemRangeBarLabelPosition});
-            this.layoutControlGroupLabel.Location = new System.Drawing.Point(0, 86);
+            this.layoutControlGroupLabel.Location = new System.Drawing.Point(0, 90);
             this.layoutControlGroupLabel.Name = "layoutControlGroupLabel";
-            this.layoutControlGroupLabel.Size = new System.Drawing.Size(241, 181);
+            this.layoutControlGroupLabel.Size = new System.Drawing.Size(241, 186);
             this.layoutControlGroupLabel.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupLabel.Text = "Label";
             // 
@@ -1155,24 +1158,22 @@
             this.layoutControlItemLabelVisible.Control = this.checkEditLabelVisible;
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
-            this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItemValueAsPercent
             // 
             this.layoutControlItemValueAsPercent.Control = this.checkEditValueAsPercent;
-            this.layoutControlItemValueAsPercent.Location = new System.Drawing.Point(0, 23);
+            this.layoutControlItemValueAsPercent.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent";
-            this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 23);
+            this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItemValueAsPercent.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemValueAsPercent.TextVisible = false;
             // 
             // layoutControlItemIndent
             // 
             this.layoutControlItemIndent.Control = this.spinEditLabelIndent;
-            this.layoutControlItemIndent.Location = new System.Drawing.Point(0, 118);
+            this.layoutControlItemIndent.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItemIndent.Name = "layoutControlItemIndent";
             this.layoutControlItemIndent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemIndent.Text = "Indent:";
@@ -1181,7 +1182,7 @@
             // layoutControlItemOrientation
             // 
             this.layoutControlItemOrientation.Control = this.comboBoxEditLabelOrientation;
-            this.layoutControlItemOrientation.Location = new System.Drawing.Point(0, 94);
+            this.layoutControlItemOrientation.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItemOrientation.Name = "layoutControlItemOrientation";
             this.layoutControlItemOrientation.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemOrientation.Text = "Orientation:";
@@ -1190,7 +1191,7 @@
             // layoutControlItemPosition
             // 
             this.layoutControlItemPosition.Control = this.comboBoxEditLabelPosition;
-            this.layoutControlItemPosition.Location = new System.Drawing.Point(0, 46);
+            this.layoutControlItemPosition.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemPosition.Name = "lciLabelPosition";
             this.layoutControlItemPosition.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemPosition.Text = "Position:";
@@ -1199,7 +1200,7 @@
             // layoutControlItemRangeBarLabelPosition
             // 
             this.layoutControlItemRangeBarLabelPosition.Control = this.comboBoxEditRangeBarLabelPosition;
-            this.layoutControlItemRangeBarLabelPosition.Location = new System.Drawing.Point(0, 70);
+            this.layoutControlItemRangeBarLabelPosition.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemRangeBarLabelPosition.Name = "layoutControlItemRangeBarLabelPosition";
             this.layoutControlItemRangeBarLabelPosition.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemRangeBarLabelPosition.Text = "Position";
@@ -1207,20 +1208,18 @@
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
-            this.emptySpaceItem.Location = new System.Drawing.Point(0, 329);
+            this.emptySpaceItem.Location = new System.Drawing.Point(0, 342);
             this.emptySpaceItem.Name = "emptySpaceItem";
-            this.emptySpaceItem.Size = new System.Drawing.Size(241, 215);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
+            this.emptySpaceItem.Size = new System.Drawing.Size(241, 196);
             // 
             // layoutControlGroupTotalLabels
             // 
             this.layoutControlGroupTotalLabels.GroupStyle = DevExpress.Utils.GroupStyle.Title;
             this.layoutControlGroupTotalLabels.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemTotalLabelVisible});
-            this.layoutControlGroupTotalLabels.Location = new System.Drawing.Point(0, 267);
+            this.layoutControlGroupTotalLabels.Location = new System.Drawing.Point(0, 276);
             this.layoutControlGroupTotalLabels.Name = "layoutControlGroupTotalLabels";
-            this.layoutControlGroupTotalLabels.Size = new System.Drawing.Size(241, 62);
+            this.layoutControlGroupTotalLabels.Size = new System.Drawing.Size(241, 66);
             this.layoutControlGroupTotalLabels.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroupTotalLabels.Text = "Total Label";
             // 
@@ -1229,8 +1228,7 @@
             this.layoutControlItemTotalLabelVisible.Control = this.comboBoxEditTotalLabelVisible;
             this.layoutControlItemTotalLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemTotalLabelVisible.Name = "layoutControlItemTotalLabelVisible";
-            this.layoutControlItemTotalLabelVisible.Size = new System.Drawing.Size(221, 23);
-            this.layoutControlItemTotalLabelVisible.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemTotalLabelVisible.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemTotalLabelVisible.TextVisible = false;
             // 
             // BarViewsDemo

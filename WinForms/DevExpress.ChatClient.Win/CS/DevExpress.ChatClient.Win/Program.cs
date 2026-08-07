@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 using DevExpress.Internal;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
@@ -24,6 +25,7 @@ namespace DevExpress.ChatClient {
             WindowsFormsSettings.FontBehavior = WindowsFormsFontBehavior.ForceSegoeUI;
             WindowsFormsSettings.DefaultLookAndFeel.SetSkinStyle(DevExpress.LookAndFeel.SkinStyle.Bezier, DevExpress.LookAndFeel.SkinSvgPalette.Bezier.Default);
             SvgImages = SvgImageCollection.FromResources("DevExpress.ChatClient.Resources.Svg", typeof(ChatClient).Assembly);
+            MainFormHelper.InitTakeScreen(DevExpress.Data.Utils.SafeEnvironment.GetCommandLineArgs());
             RegisterAppServices();
             DevAVDataDirectoryHelper.LocalPrefix = "WinChatClientApp";
         }
@@ -31,9 +33,9 @@ namespace DevExpress.ChatClient {
             Services.AppSettigns.Register();
             Func<DevAV.DevAVDb> createDB =
 #if NET
-                () => new DevAV.DevAVDb(string.Format("Data Source={0}", GetDatabaseFilePath()));
+                () => new DevAV.DevAVDb(string.Format("Data Source={0}", GetDatabaseFilePath()), MainFormHelper.TakeScreens);
 #else
-                () => new DevAV.DevAVDb();
+                () => new DevAV.DevAVDb(MainFormHelper.TakeScreens);
 #endif
             var messageServer = new DevAV.Chat.DevAVEmpployeesInMemoryServer(createDB);
             Mvvm.ServiceContainer.Default.RegisterService(messageServer);

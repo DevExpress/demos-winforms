@@ -113,8 +113,9 @@
             this.chartTotalUnitsSold.SeriesTemplate.SeriesColorizer = seriesKeyColorColorizer1;
             this.chartTotalUnitsSold.Size = new System.Drawing.Size(300, 147);
             this.chartTotalUnitsSold.TabIndex = 2;
-            chartTitle1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 14.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            chartTitle1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 14.25F);
             chartTitle1.Text = "Total Units Sold";
+            chartTitle1.TitleID = 0;
             this.chartTotalUnitsSold.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chartTotalUnitsSold.Click += new System.EventHandler(this.OnChartControlClick);
@@ -295,8 +296,9 @@
             this.chartMonthlyRevenue.SeriesTemplate.View = lineSeriesView1;
             this.chartMonthlyRevenue.Size = new System.Drawing.Size(456, 147);
             this.chartMonthlyRevenue.TabIndex = 5;
-            chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 14.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 14.25F);
             chartTitle2.Text = "Monthly Revenue";
+            chartTitle2.TitleID = 0;
             this.chartMonthlyRevenue.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2});
             this.chartMonthlyRevenue.Click += new System.EventHandler(this.OnChartControlClick);
@@ -325,13 +327,11 @@
             this.layoutControlItem4.Location = new System.Drawing.Point(304, 261);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(460, 151);
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // simpleLabelItem1
             // 
-            this.simpleLabelItem1.AllowHotTrack = false;
-            this.simpleLabelItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.simpleLabelItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14.25F);
             this.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = true;
             this.simpleLabelItem1.AppearanceItemCaption.Options.UseTextOptions = true;
             this.simpleLabelItem1.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -348,7 +348,6 @@
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 261);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(304, 151);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem2
@@ -357,7 +356,6 @@
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 35);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(764, 226);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // DataGridChartingDemo

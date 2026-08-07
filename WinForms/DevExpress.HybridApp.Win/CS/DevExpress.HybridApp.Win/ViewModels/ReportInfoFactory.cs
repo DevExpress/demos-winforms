@@ -1,14 +1,11 @@
-using DevExpress.DevAV.Services;
-using DevExpress.Mvvm.DataAnnotations;
-using DevExpress.Mvvm.POCO;
-using DevExpress.XtraReports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
 using DevExpress.DevAV.Reports;
+using DevExpress.DevAV.Services;
+using DevExpress.Mvvm.POCO;
+using DevExpress.XtraReports;
 
 namespace DevExpress.DevAV.ViewModels {
     public static class ReportInfoFactory {

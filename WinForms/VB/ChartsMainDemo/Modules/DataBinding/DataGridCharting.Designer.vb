@@ -112,8 +112,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartTotalUnitsSold.SeriesTemplate.SeriesColorizer = seriesKeyColorColorizer1
             Me.chartTotalUnitsSold.Size = New System.Drawing.Size(300, 147)
             Me.chartTotalUnitsSold.TabIndex = 2
-            chartTitle1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 14.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            chartTitle1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 14.25F)
             chartTitle1.Text = "Total Units Sold"
+            chartTitle1.TitleID = 0
             Me.chartTotalUnitsSold.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.chartTotalUnitsSold.Click, New System.EventHandler(AddressOf Me.OnChartControlClick)
             ' 
@@ -277,8 +278,9 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chartMonthlyRevenue.SeriesTemplate.View = lineSeriesView1
             Me.chartMonthlyRevenue.Size = New System.Drawing.Size(456, 147)
             Me.chartMonthlyRevenue.TabIndex = 5
-            chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 14.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 14.25F)
             chartTitle2.Text = "Monthly Revenue"
+            chartTitle2.TitleID = 0
             Me.chartMonthlyRevenue.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle2})
             AddHandler Me.chartMonthlyRevenue.Click, New System.EventHandler(AddressOf Me.OnChartControlClick)
             ' 
@@ -302,13 +304,11 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem4.Location = New System.Drawing.Point(304, 261)
             Me.layoutControlItem4.Name = "layoutControlItem4"
             Me.layoutControlItem4.Size = New System.Drawing.Size(460, 151)
-            Me.layoutControlItem4.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem4.TextVisible = False
             ' 
             ' simpleLabelItem1
             ' 
-            Me.simpleLabelItem1.AllowHotTrack = False
-            Me.simpleLabelItem1.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+            Me.simpleLabelItem1.AppearanceItemCaption.Font = New System.Drawing.Font("Tahoma", 14.25F)
             Me.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = True
             Me.simpleLabelItem1.AppearanceItemCaption.Options.UseTextOptions = True
             Me.simpleLabelItem1.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
@@ -325,7 +325,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem3.Location = New System.Drawing.Point(0, 261)
             Me.layoutControlItem3.Name = "layoutControlItem3"
             Me.layoutControlItem3.Size = New System.Drawing.Size(304, 151)
-            Me.layoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem3.TextVisible = False
             ' 
             ' layoutControlItem2
@@ -334,7 +333,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItem2.Location = New System.Drawing.Point(0, 35)
             Me.layoutControlItem2.Name = "layoutControlItem2"
             Me.layoutControlItem2.Size = New System.Drawing.Size(764, 226)
-            Me.layoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItem2.TextVisible = False
             ' 
             ' DataGridChartingDemo

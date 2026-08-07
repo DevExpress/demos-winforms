@@ -2,8 +2,8 @@
     using DevExpress.Xpo;
 
     public class Address : XPObject {
-        public Address(Session uow) 
-            : base(uow) { 
+        public Address(Session uow)
+            : base(uow) {
         }
         //
         string streetCore;

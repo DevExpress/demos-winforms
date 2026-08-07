@@ -131,7 +131,7 @@ namespace DevExpress.ProductsDemo.Win {
                 XtraMessageBox.Show("", Properties.Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
-    
+
     public class ValidationRulesHelper {
         static ConditionValidationRule _ruleIsNotBlank = null;
         public static ConditionValidationRule RuleIsNotBlank {

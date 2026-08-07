@@ -16,11 +16,14 @@ namespace DevExpress.DevAV.ViewModels {
         protected ProductAnalysisViewModel() {           
             unitOfWork = UnitOfWorkSource.GetUnitOfWorkFactory().CreateUnitOfWork();
         }
-        public IEnumerable<ProductsAnalysis.Item> GetFinancialReport() {
-            return ProductsAnalysis.GetFinancialReport(unitOfWork);
+        public IEnumerable<ProductsAnalysis.Item> GetFinancialReport(DateTime startDate, DateTime endDate) {
+            return ProductsAnalysis.GetFinancialReport(unitOfWork, startDate, endDate);
         }
-        public IEnumerable<ProductsAnalysis.Item> GetFinancialData() {
-            return ProductsAnalysis.GetFinancialData(unitOfWork);
+        public IEnumerable<ProductsAnalysis.Item> GetFinancialData(DateTime startDate, DateTime endDate) {
+            return ProductsAnalysis.GetFinancialData(unitOfWork, startDate, endDate);
+        }
+        public DateTime GetMaxOrdersDate() {
+            return AnalysisPeriodHelper.GetMaxOrdersDate(unitOfWork);
         }
     }
 }

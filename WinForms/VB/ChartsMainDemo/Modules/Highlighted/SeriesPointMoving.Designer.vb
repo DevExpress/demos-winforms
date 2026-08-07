@@ -119,6 +119,9 @@ Namespace DevExpress.XtraCharts.Demos
             CType((xyDiagramPane1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((secondaryAxisY2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((customLegendItem1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((splineAreaSeriesView1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((series2), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -328,7 +331,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemLabelVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible"
             Me.layoutControlItemLabelVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemLabelVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemLabelVisible.TextVisible = False
             ' 
             ' layoutControlItemAngle
@@ -350,7 +352,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent"
             Me.layoutControlItemValueAsPercent.Size = New System.Drawing.Size(221, 24)
             Me.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left
-            Me.layoutControlItemValueAsPercent.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemValueAsPercent.TextVisible = False
             ' 
             ' layoutControlGroupMarker
@@ -383,7 +384,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemMarkerVisible.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemMarkerVisible.Name = "layoutControlItemMarkerVisible"
             Me.layoutControlItemMarkerVisible.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemMarkerVisible.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemMarkerVisible.TextVisible = False
             ' 
             ' layoutControlGroupGeneral
@@ -496,15 +496,18 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Legend.Name = "Default Legend"
             Me.chart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.[True]
             legend1.DockTargetName = "Supply and Demand"
+            legend1.LegendID = 0
             legend1.Name = "StockDemandProduction"
             legend2.AlignmentHorizontal = DevExpress.XtraCharts.LegendAlignmentHorizontal.Center
             legend2.AlignmentVertical = DevExpress.XtraCharts.LegendAlignmentVertical.BottomOutside
-            customLegendItem1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            customLegendItem1.CustomLegendItemID = 0
+            customLegendItem1.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 12F)
             customLegendItem1.MarkerVisible = True
             customLegendItem1.Name = "Total Income"
             customLegendItem1.TextVisible = True
             legend2.CustomItems.AddRange(New DevExpress.XtraCharts.CustomLegendItem() {customLegendItem1})
             legend2.DockTargetName = "Supply and Demand"
+            legend2.LegendID = 1
             legend2.MarkerMode = DevExpress.XtraCharts.LegendMarkerMode.None
             legend2.Name = "TotalIncome"
             Me.chart.Legends.AddRange(New DevExpress.XtraCharts.Legend() {legend1, legend2})
@@ -518,6 +521,7 @@ Namespace DevExpress.XtraCharts.Demos
             dataSourceAdapter1.DataMembers.AddRange(New DevExpress.XtraCharts.DataMember() {dataMember1, dataMember2})
             series1.DataAdapter = dataSourceAdapter1
             series1.Name = "Income"
+            series1.SeriesID = 0
             splineAreaSeriesView1.AxisYName = "Income Axis"
             series1.View = splineAreaSeriesView1
             dataMember3.ColumnName = "Month"
@@ -529,6 +533,7 @@ Namespace DevExpress.XtraCharts.Demos
             series2.Label = pointSeriesLabel1
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series2.Name = "Retail Price"
+            series2.SeriesID = 1
             lineSeriesView1.LineMarkerOptions.Size = 12
             lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series2.View = lineSeriesView1
@@ -541,6 +546,7 @@ Namespace DevExpress.XtraCharts.Demos
             series3.Label = sideBySideBarSeriesLabel1
             series3.LegendName = "StockDemandProduction"
             series3.Name = "Stock"
+            series3.SeriesID = 2
             sideBySideBarSeriesView1.AxisYName = "Supply and Demand Axis"
             sideBySideBarSeriesView1.PaneName = "Supply and Demand"
             sideBySideBarSeriesView1.Transparency =(CByte((135)))
@@ -556,6 +562,7 @@ Namespace DevExpress.XtraCharts.Demos
             series4.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series4.LegendName = "StockDemandProduction"
             series4.Name = "Demand"
+            series4.SeriesID = 3
             lineSeriesView2.AxisYName = "Supply and Demand Axis"
             lineSeriesView2.LineMarkerOptions.Size = 12
             lineSeriesView2.MarkerVisibility = DevExpress.Utils.DefaultBoolean.[True]
@@ -572,6 +579,7 @@ Namespace DevExpress.XtraCharts.Demos
             series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.[True]
             series5.LegendName = "StockDemandProduction"
             series5.Name = "Production"
+            series5.SeriesID = 4
             lineSeriesView3.AxisYName = "Supply and Demand Axis"
             lineSeriesView3.LineMarkerOptions.Size = 12
             lineSeriesView3.MarkerVisibility = DevExpress.Utils.DefaultBoolean.[True]
@@ -584,6 +592,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.TabIndex = 2
             Me.chart.TabStop = False
             chartTitle1.Text = "Income Forecast"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.chart.CustomDrawSeriesPoint, New DevExpress.XtraCharts.CustomDrawSeriesPointEventHandler(AddressOf Me.Chart_CustomDrawSeriesPoint)
             AddHandler Me.chart.MouseDown, New System.Windows.Forms.MouseEventHandler(AddressOf Me.Chart_MouseDown)
@@ -630,6 +639,9 @@ Namespace DevExpress.XtraCharts.Demos
             CType((secondaryAxisY1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((secondaryAxisY2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((xyDiagram1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((customLegendItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((legend2), System.ComponentModel.ISupportInitialize).EndInit()
             CType((splineAreaSeriesView1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((series1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((pointSeriesLabel1), System.ComponentModel.ISupportInitialize).EndInit()

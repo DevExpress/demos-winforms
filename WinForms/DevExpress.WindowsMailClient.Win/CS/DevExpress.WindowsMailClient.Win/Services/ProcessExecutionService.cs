@@ -1,10 +1,8 @@
-using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using DevExpress.Customization;
 using DevExpress.Utils.Commands;
-using DevExpress.Utils.MVVM.Services;
 using DevExpress.WindowsMailClient.Win.Forms;
 using DevExpress.WindowsMailClient.Win.Utils;
 using DevExpress.XtraScheduler;

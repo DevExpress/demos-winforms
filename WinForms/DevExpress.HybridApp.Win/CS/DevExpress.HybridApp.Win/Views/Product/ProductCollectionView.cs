@@ -9,7 +9,7 @@ namespace DevExpress.DevAV.Views {
             InitializeComponent();
             gridView.SetupCollectionGrid();
             searchControl.SetupSearchControl(windowsUIButtonPanel);
-            if(!mvvmContext.IsDesignMode) 
+            if(!mvvmContext.IsDesignMode)
                 InitBindings();
         }
         void InitBindings() {

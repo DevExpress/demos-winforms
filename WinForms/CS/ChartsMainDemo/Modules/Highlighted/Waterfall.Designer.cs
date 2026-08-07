@@ -132,11 +132,13 @@
             this.chart.Size = new System.Drawing.Size(546, 571);
             this.chart.TabIndex = 0;
             chartTitle1.Text = "Global Carbon Balance";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
-            chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
+            chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             chartTitle2.Text = "From globalcarbonproject.org";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -217,16 +219,13 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(221, 60);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 102);
             this.emptySpaceItem.Name = "emptySpaceItem";
             this.emptySpaceItem.Size = new System.Drawing.Size(241, 436);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // WaterfallDemo
             // 

@@ -1,4 +1,7 @@
 ﻿namespace DevExpress.DentalClinic.ViewModel {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
     using DevExpress.DentalClinic.Model;
     using DevExpress.DentalClinic.Services;
     using DevExpress.DentalClinic.View;
@@ -7,9 +10,6 @@
     using DevExpress.Mvvm.POCO;
     using DevExpress.Xpo;
     using DevExpress.XtraEditors;
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
 
     public class NavigationViewModel : IDisposable {
         NavigationTreeNode navigationRootNode;
@@ -24,7 +24,7 @@
             sessionCore?.Dispose();
         }
         void OnReloadData(ReloadDataMessage message) {
-            if(SessionProvider == null) 
+            if(SessionProvider == null)
                 return;
             sessionCore = null;
             ShowUserCollectionView = SessionProvider.Security.CanNavigate("UserCollection");
@@ -38,32 +38,32 @@
                 return sessionCore;
             }
         }
-        public virtual string CurrentViewType { 
-            get; 
-            set; 
+        public virtual string CurrentViewType {
+            get;
+            set;
         }
-        public virtual string NavigationPath { 
-            get; 
-            set; 
+        public virtual string NavigationPath {
+            get;
+            set;
         }
-        public virtual bool NavigationBarVisible { 
-            get; 
-            set; 
+        public virtual bool NavigationBarVisible {
+            get;
+            set;
         }
-        public virtual BreadCrumbNode SelectedNode { 
-            get; 
-            set; 
+        public virtual BreadCrumbNode SelectedNode {
+            get;
+            set;
         }
-        public virtual bool OverlayFormTrigger { 
-            get; 
-            set; 
+        public virtual bool OverlayFormTrigger {
+            get;
+            set;
         }
         protected INavigationService NavigationService {
             get { return this.GetService<INavigationService>(); }
         }
-        protected NavigationTreeNode CurrentNavigationNode { 
+        protected NavigationTreeNode CurrentNavigationNode {
             get { return currentNavigationNode; }
-            set { 
+            set {
                 currentNavigationNode = value;
                 CurrentViewType = currentNavigationNode?.ViewType;
             }
@@ -78,7 +78,7 @@
             NavigateTo(nameof(PatientCollectionView));
         }
         void OnNavigationServiceCurrentChanged(object sender, System.EventArgs e) {
-            if(NavigationService.Current == null) 
+            if(NavigationService.Current == null)
                 return;
             var document = NavigationService.Current as IDocument;
             var documentInfo = NavigationService.Current as IDocumentInfo;
@@ -90,7 +90,7 @@
                 UpdateCurrentNavigationNodeDisplayTextCore(viewType, document.Content);
         }
         void UpdateCurrentNavigationNodeDisplayText() {
-            if(NavigationService.Current == null || SelectedNode == null) 
+            if(NavigationService.Current == null || SelectedNode == null)
                 return;
             var document = NavigationService.Current as IDocument;
             var documentInfo = NavigationService.Current as IDocumentInfo;
@@ -98,7 +98,7 @@
             UpdateCurrentNavigationNodeDisplayTextCore(viewType, document.Content);
         }
         void UpdateCurrentNavigationNodeDisplayTextCore(string viewType, object viewModel) {
-            if(SelectedNode == null || CurrentNavigationNode.DisplayText != "PersonName") 
+            if(SelectedNode == null || CurrentNavigationNode.DisplayText != "PersonName")
                 return;
             string actualName = string.Empty;
             if(viewType == nameof(PatientView)) {
@@ -135,9 +135,9 @@
         public void OpenLoginView() {
             LoginService.Login(SessionProvider.Security.UserName);
         }
-        public virtual bool ShowUserCollectionView { 
-            get; 
-            set; 
+        public virtual bool ShowUserCollectionView {
+            get;
+            set;
         }
         protected void OnShowUserCollectionViewChanged() {
             if(!ShowUserCollectionView && CurrentViewType == nameof(UserCollectionView)) {
@@ -203,15 +203,15 @@
             nodes = new List<NavigationTreeNode>();
         }
         public string ViewType {
-            get; 
+            get;
             set;
         }
         public string DisplayText {
-            get; 
+            get;
             set;
         }
         public NavigationTreeNode Parent {
-            get; 
+            get;
             private set;
         }
         public IEnumerable<NavigationTreeNode> Nodes {
@@ -226,7 +226,7 @@
         }
         NavigationTreeNode FindNode(Predicate<NavigationTreeNode> predicate, bool recursively) {
             foreach(var node in Nodes) {
-                if(predicate(node)) 
+                if(predicate(node))
                     return node;
                 if(recursively) {
                     var result = node.FindNode(predicate, recursively);
@@ -284,7 +284,7 @@
             get;
             private set;
         }
-        public bool ShowOverlay { 
+        public bool ShowOverlay {
             get;
             private set;
         }

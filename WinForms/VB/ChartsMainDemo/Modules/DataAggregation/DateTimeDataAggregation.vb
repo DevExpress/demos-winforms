@@ -1,5 +1,6 @@
 Imports System
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraCharts.Demos
 
@@ -30,7 +31,7 @@ Namespace DevExpress.XtraCharts.Demos
         Private Sub LoadPoints()
             If Series IsNot Nothing Then
                 Dim value As Double = 0
-                Dim argument As Date = Date.Now.AddDays(-PointCount)
+                Dim argument As Date = TutorialConstants.Now.AddDays(-PointCount)
                 Dim random As NonCryptographicRandom = NonCryptographicRandom.System
                 Series.Points.BeginUpdate()
                 Series.Points.Clear()

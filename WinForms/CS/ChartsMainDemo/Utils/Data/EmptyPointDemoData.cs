@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraCharts.Demos {
     public static class WeatherInWashington {
@@ -14,7 +15,7 @@ namespace DevExpress.XtraCharts.Demos {
         }
         static void InitCollection() {
             data = new List<WeatherPoint>();
-            int lastYear = DateTime.Now.Year - 1;
+            int lastYear = TutorialConstants.Now.Year - 1;
             data.Add(new WeatherPoint() { Date = new DateTime(lastYear, 7, 10), DayTemperature = 23, NightTemperature = 22, Pressure = 732 });
             data.Add(new WeatherPoint() { Date = new DateTime(lastYear, 7, 11), DayTemperature = 28, NightTemperature = 22, Wind = 5, Pressure = 729 });
             data.Add(new WeatherPoint() { Date = new DateTime(lastYear, 7, 12), DayTemperature = 27, NightTemperature = 22, Wind = 5, Pressure = 734 });

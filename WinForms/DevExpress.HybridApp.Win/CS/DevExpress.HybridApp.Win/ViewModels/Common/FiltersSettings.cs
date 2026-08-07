@@ -1,10 +1,7 @@
+using System;
 using DevExpress.DevAV.Common.ViewModel;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace DevExpress.DevAV.ViewModels {
     public static class FiltersSettings {

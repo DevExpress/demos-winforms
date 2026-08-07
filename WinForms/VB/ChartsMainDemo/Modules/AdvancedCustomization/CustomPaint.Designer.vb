@@ -57,7 +57,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' chart
             ' 
@@ -109,25 +109,25 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Location = New System.Drawing.Point(0, 0)
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 0
             Me.layoutControl.Text = "layoutControl1"
             ' 
             ' toggleSwitchClusteringMode
             ' 
             Me.toggleSwitchClusteringMode.EditValue = True
-            Me.toggleSwitchClusteringMode.Location = New System.Drawing.Point(12, 31)
+            Me.toggleSwitchClusteringMode.Location = New System.Drawing.Point(12, 34)
             Me.toggleSwitchClusteringMode.Name = "toggleSwitchClusteringMode"
             Me.toggleSwitchClusteringMode.Properties.OffText = "Manual"
             Me.toggleSwitchClusteringMode.Properties.OnText = "Automatic"
-            Me.toggleSwitchClusteringMode.Size = New System.Drawing.Size(217, 24)
+            Me.toggleSwitchClusteringMode.Size = New System.Drawing.Size(217, 18)
             Me.toggleSwitchClusteringMode.StyleController = Me.layoutControl
             Me.toggleSwitchClusteringMode.TabIndex = 4
             AddHandler Me.toggleSwitchClusteringMode.Toggled, New System.EventHandler(AddressOf Me.toggleSwitchClusteringMode_Toggled)
             ' 
             ' simpleButtonGeneratePoints
             ' 
-            Me.simpleButtonGeneratePoints.Location = New System.Drawing.Point(2, 77)
+            Me.simpleButtonGeneratePoints.Location = New System.Drawing.Point(2, 74)
             Me.simpleButtonGeneratePoints.Name = "simpleButtonGeneratePoints"
             Me.simpleButtonGeneratePoints.Size = New System.Drawing.Size(237, 22)
             Me.simpleButtonGeneratePoints.StyleController = Me.layoutControl
@@ -137,7 +137,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             ' simpleButtonClearClusters
             ' 
-            Me.simpleButtonClearClusters.Location = New System.Drawing.Point(2, 111)
+            Me.simpleButtonClearClusters.Location = New System.Drawing.Point(2, 108)
             Me.simpleButtonClearClusters.Name = "simpleButtonClearClusters"
             Me.simpleButtonClearClusters.Size = New System.Drawing.Size(237, 22)
             Me.simpleButtonClearClusters.StyleController = Me.layoutControl
@@ -152,16 +152,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.emptySpaceItem1, Me.layoutControlGroupClusteringMode, Me.layoutControlItemGeneratePoints, Me.layoutControlItemClearClusters})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' emptySpaceItem1
             ' 
-            Me.emptySpaceItem1.AllowHotTrack = False
-            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 135)
+            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 132)
             Me.emptySpaceItem1.Name = "emptySpaceItem1"
-            Me.emptySpaceItem1.Size = New System.Drawing.Size(241, 409)
-            Me.emptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem1.Size = New System.Drawing.Size(241, 406)
             ' 
             ' layoutControlGroupClusteringMode
             ' 
@@ -169,7 +167,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupClusteringMode.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemClusteringMode})
             Me.layoutControlGroupClusteringMode.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupClusteringMode.Name = "layoutControlGroupClusteringMode"
-            Me.layoutControlGroupClusteringMode.Size = New System.Drawing.Size(241, 67)
+            Me.layoutControlGroupClusteringMode.Size = New System.Drawing.Size(241, 64)
             Me.layoutControlGroupClusteringMode.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupClusteringMode.Text = "Clustering Mode"
             ' 
@@ -178,29 +176,26 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemClusteringMode.Control = Me.toggleSwitchClusteringMode
             Me.layoutControlItemClusteringMode.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemClusteringMode.Name = "layoutControlItemClusteringMode"
-            Me.layoutControlItemClusteringMode.Size = New System.Drawing.Size(221, 28)
-            Me.layoutControlItemClusteringMode.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemClusteringMode.Size = New System.Drawing.Size(221, 22)
             Me.layoutControlItemClusteringMode.TextVisible = False
             ' 
             ' layoutControlItemGeneratePoints
             ' 
             Me.layoutControlItemGeneratePoints.Control = Me.simpleButtonGeneratePoints
-            Me.layoutControlItemGeneratePoints.Location = New System.Drawing.Point(0, 67)
+            Me.layoutControlItemGeneratePoints.Location = New System.Drawing.Point(0, 64)
             Me.layoutControlItemGeneratePoints.Name = "layoutControlItemGeneratePoints"
             Me.layoutControlItemGeneratePoints.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemGeneratePoints.Size = New System.Drawing.Size(241, 34)
             Me.layoutControlItemGeneratePoints.Text = "Generate Points"
-            Me.layoutControlItemGeneratePoints.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemGeneratePoints.TextVisible = False
             ' 
             ' layoutControlItemClearClusters
             ' 
             Me.layoutControlItemClearClusters.Control = Me.simpleButtonClearClusters
-            Me.layoutControlItemClearClusters.Location = New System.Drawing.Point(0, 101)
+            Me.layoutControlItemClearClusters.Location = New System.Drawing.Point(0, 98)
             Me.layoutControlItemClearClusters.Name = "layoutControlItemClearClusters"
             Me.layoutControlItemClearClusters.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemClearClusters.Size = New System.Drawing.Size(241, 34)
-            Me.layoutControlItemClearClusters.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemClearClusters.TextVisible = False
             ' 
             ' CustomPaintDemo

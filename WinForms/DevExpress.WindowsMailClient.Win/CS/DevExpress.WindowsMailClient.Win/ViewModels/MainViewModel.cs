@@ -29,7 +29,7 @@ namespace DevExpress.WindowsMailClient.Win.ViewModels {
         }
         public MainViewModel(IMainModule module) {
             var mainModuleType = module.GetType();
-            ISupportServices localServices = (ISupportServices) this;
+            ISupportServices localServices = (ISupportServices)this;
             localServices.ServiceContainer.RegisterService(new ModuleActivator(mainModuleType.Assembly, mainModuleType.Namespace + ".Modules"));
             localServices.ServiceContainer.RegisterService(new ModuleLocator(localServices.ServiceContainer));
             localServices.ServiceContainer.RegisterService(new ProcessExecutionService());
@@ -133,7 +133,7 @@ namespace DevExpress.WindowsMailClient.Win.ViewModels {
         public void ShowHelp() {
             this.GetService<IProcessExecutionService>().ShowDocumentation();
         }
-        
+
         [Command]
         public void ShowPersonalization(Form mainForm) {
             HideAllPanels();

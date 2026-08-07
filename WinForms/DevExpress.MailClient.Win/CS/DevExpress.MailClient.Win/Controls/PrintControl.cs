@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing.Printing;
 using System.Windows.Forms;
 using DevExpress.Drawing.Internal;
@@ -56,7 +56,7 @@ namespace DevExpress.MailClient.Win.Controls {
         }
         public void InitPrintingSystem() {
             frmMain frm = BackstageView.Ribbon.FindForm() as frmMain;
-            BarManager manager = frm == null || frm.Ribbon == null? null: frm.Ribbon.Manager;
+            BarManager manager = frm == null || frm.Ribbon == null ? null : frm.Ribbon.Manager;
             ((GalleryDropDown)this.ddbOrientation.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbMargins.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbPaperSize.DropDownControl).Manager = manager;
@@ -64,7 +64,7 @@ namespace DevExpress.MailClient.Win.Controls {
             ((GalleryDropDown)this.ddbPrinter.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbDuplex.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbPrintStyle.DropDownControl).Manager = manager;
-            lciPrintStyle.Visibility = frm.CurrentRichEdit == null ? DevExpress.XtraLayout.Utils.LayoutVisibility.Never : 
+            lciPrintStyle.Visibility = frm.CurrentRichEdit == null ? DevExpress.XtraLayout.Utils.LayoutVisibility.Never :
                 DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
             CreateDocument();
         }
@@ -89,7 +89,8 @@ namespace DevExpress.MailClient.Win.Controls {
                 link.Landscape = GetLandscape();
                 link.Margins = SystemDrawingConverter.CreateDXMargins(GetMargins());
                 link.CreateDocument();
-            } else {
+            }
+            else {
                 PrintableComponentLink link = new PrintableComponentLink(ps);
                 link.Component = frm.CurrentPrintableComponent;
                 link.PaperKind = GetPaperKind();
@@ -102,7 +103,7 @@ namespace DevExpress.MailClient.Win.Controls {
             e.PrintDocument.PrinterSettings.Copies = (short)this.copySpinEdit.Value;
             GetMargins();
             e.PrintDocument.PrinterSettings.Collate = (bool)this.ddbCollate.Tag;
-            e.PrintDocument.PrinterSettings.Duplex = ((bool)this.ddbDuplex.Tag)? Duplex.Horizontal: Duplex.Simplex;
+            e.PrintDocument.PrinterSettings.Duplex = ((bool)this.ddbDuplex.Tag) ? Duplex.Horizontal : Duplex.Simplex;
         }
         void zoomTextEdit_EditValueChanged(object sender, EventArgs e) {
             try {
@@ -321,7 +322,8 @@ namespace DevExpress.MailClient.Win.Controls {
                     if(defaultPrinterName == str)
                         defaultPrinter = item;
                 }
-            } catch { }
+            }
+            catch { }
             res.Gallery.ItemCheckedChanged += OnPrinterGalleryItemCheckedChanged;
             if(defaultPrinter != null)
                 defaultPrinter.Checked = true;
@@ -356,7 +358,7 @@ namespace DevExpress.MailClient.Win.Controls {
             this.ddbPaperSize.ImageOptions.SvgImage = e.Item.ImageOptions.SvgImage;
             this.ddbPaperSize.Text = e.Item.Caption;
             this.ddbPaperSize.Tag = e.Item.Tag;
-            if(this.printControl1.PrintingSystem != null) 
+            if(this.printControl1.PrintingSystem != null)
                 this.printControl1.PrintingSystem.PageSettings.PaperKind = GetPaperKind();
             UpdatePageButtonsEnabledState();
         }
@@ -386,7 +388,7 @@ namespace DevExpress.MailClient.Win.Controls {
             }
             else if(e.Button.Kind == ButtonPredefines.Right) {
                 if(pageIndex < this.printControl1.PrintingSystem.Pages.Count)
-                    pageIndex ++;
+                    pageIndex++;
             }
             this.pageButtonEdit.EditValue = pageIndex;
         }

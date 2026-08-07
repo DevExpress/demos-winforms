@@ -27,8 +27,8 @@ Namespace DevExpress.AI.Demos
 <href=https://docs.devexpress.com/XtraReports/405435>Learn More</href>", .Image = Resources.ai_reports_localizationThumb}, New FeatureTileInfo() With {.Caption = "Report Creation", .Description = "Run the Report Wizard to generate a new report layout based on a natural language prompt.
 <href=https://docs.devexpress.com/XtraReports/405460>Learn More</href>", .Image = Resources.ai_reports_wizardThumb}, New FeatureTileInfo() With {.Caption = "Report Modification", .Description = "Chat with an AI Assistant to make adjustments to your report layout (available for .NET 8+).
 <href=https://docs.devexpress.com/XtraReports/405498>Learn More</href>", .Image = Resources.ai_reports_chatThumb}, New FeatureTileInfo() With {.Caption = "Test Data Preview", .Description = "Preview your report with AI-generated test data before connecting to a live source.
-<href=http://docs.devexpress.devx/XtraReports/405566>Learn More</href>", .Image = Resources.ai_reports_test_dataThumb}, New FeatureTileInfo() With {.Caption = "Prompt-to-Expression", .Description = "Generate a data binding expression or a filter condition based on a natural language prompt.
-<href=http://docs.devexpress.devx/XtraReports/405646>Learn More</href>", .Image = Resources.ai_expression_Thumb}}
+<href=https://docs.devexpress.com/XtraReports/405566>Learn More</href>", .Image = Resources.ai_reports_test_dataThumb}, New FeatureTileInfo() With {.Caption = "Prompt-to-Expression", .Description = "Generate a data binding expression or a filter condition based on a natural language prompt.
+<href=https://docs.devexpress.com/XtraReports/405646>Learn More</href>", .Image = Resources.ai_expression_Thumb}}
         End Function
 
         Private Sub runDesignerBtn_Click(ByVal sender As Object, ByVal e As EventArgs)

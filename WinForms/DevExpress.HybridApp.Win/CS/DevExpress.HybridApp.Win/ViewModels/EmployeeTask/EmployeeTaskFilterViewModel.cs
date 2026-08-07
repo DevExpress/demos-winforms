@@ -1,8 +1,5 @@
-using DevExpress.DevAV.Properties;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using DevExpress.DevAV.Properties;
 
 namespace DevExpress.DevAV.ViewModels {
     public class EmployeeTaskFilterViewModel : FilterViewModel<EmployeeTask> {

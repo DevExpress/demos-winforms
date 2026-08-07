@@ -210,6 +210,7 @@
             series1.DataAdapter = dataSourceAdapter1;
             series1.LegendName = "Default Legend";
             series1.Name = "Series 1";
+            series1.SeriesID = 0;
             series1.View = pointSeriesView1;
             dataMember3.ColumnName = "Argument";
             dataSourceAdapter2.DataMembers.AddRange(new DevExpress.XtraCharts.DataMember[] {
@@ -217,6 +218,7 @@
             series2.DataAdapter = dataSourceAdapter2;
             series2.LegendName = "Default Legend";
             series2.Name = "Histogram 1";
+            series2.SeriesID = 1;
             sideBySideBarSeriesView1.AxisXName = "Secondary AxisX 1";
             sideBySideBarSeriesView1.AxisYName = "Secondary Axis Y 1";
             sideBySideBarSeriesView1.BarWidth = 1D;
@@ -231,12 +233,14 @@
             dataMember5});
             series3.DataAdapter = dataSourceAdapter3;
             series3.Name = "Series 2";
+            series3.SeriesID = 2;
             series3.View = pointSeriesView2;
             dataMember6.ColumnName = "Argument";
             dataSourceAdapter4.DataMembers.AddRange(new DevExpress.XtraCharts.DataMember[] {
             dataMember6});
             series4.DataAdapter = dataSourceAdapter4;
             series4.Name = "Histogram 2";
+            series4.SeriesID = 3;
             sideBySideBarSeriesView2.AxisXName = "Secondary AxisX 1";
             sideBySideBarSeriesView2.AxisYName = "Secondary Axis Y 1";
             sideBySideBarSeriesView2.BarWidth = 1D;
@@ -251,12 +255,14 @@
             dataMember8});
             series5.DataAdapter = dataSourceAdapter5;
             series5.Name = "Series 3";
+            series5.SeriesID = 4;
             series5.View = pointSeriesView3;
             dataMember9.ColumnName = "Argument";
             dataSourceAdapter6.DataMembers.AddRange(new DevExpress.XtraCharts.DataMember[] {
             dataMember9});
             series6.DataAdapter = dataSourceAdapter6;
             series6.Name = "Histogram 3";
+            series6.SeriesID = 5;
             sideBySideBarSeriesView3.AxisXName = "Secondary AxisX 1";
             sideBySideBarSeriesView3.AxisYName = "Secondary Axis Y 1";
             sideBySideBarSeriesView3.BarWidth = 1D;
@@ -272,6 +278,7 @@
             this.chart.Size = new System.Drawing.Size(546, 571);
             this.chart.TabIndex = 2;
             chartTitle1.Text = "Point Distribution by Arguments";
+            chartTitle1.TitleID = 0;
             chartTitle1.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
@@ -519,7 +526,6 @@
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(217, 76);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // layoutControlGroup4
@@ -538,7 +544,6 @@
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(217, 76);
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -557,7 +562,6 @@
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(217, 12);
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlGroup5
@@ -577,7 +581,6 @@
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(217, 76);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem7
@@ -586,16 +589,13 @@
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 76);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(217, 26);
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 516);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
             this.emptySpaceItem1.Size = new System.Drawing.Size(241, 22);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // HistogramDemo
             // 

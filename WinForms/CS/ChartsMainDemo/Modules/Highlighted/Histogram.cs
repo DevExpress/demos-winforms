@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 using DevExpress.XtraEditors.Controls;
 
 namespace DevExpress.XtraCharts.Demos {
@@ -25,7 +26,7 @@ namespace DevExpress.XtraCharts.Demos {
             trackBar3.Value = 3;
         }
         void AddData() {
-            NonCryptographicRandom random = NonCryptographicRandom.System;
+            NonCryptographicRandom random = TutorialConstants.Random;
             List<SimpleDataPoint[]> points = new List<SimpleDataPoint[]>() {
                 PointGenerator.GenerateCluster(random, random.Next(20, 70), random.Next(120, 180), random.Next(0, 10), random.Next(70, 120), 2000),
                 PointGenerator.GenerateCluster(random, random.Next(0, 10), random.Next(70, 120), random.Next(40, 80), random.Next(160, 200), 2000),

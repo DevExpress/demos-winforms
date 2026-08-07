@@ -53,7 +53,7 @@ namespace DevExpress.DevAV.Modules {
             UpdateEntitiesCountRelatedUI(ViewModel.Entities.Count);
         }
         void UpdateEntitiesCountRelatedUI(int count) {
-            hiItemsCount.Caption = string.Format("RECORDS: {0}", count);
+            hiItemsCount.Caption = string.Format("Records: {0}", count);
             UpdateAdditionalButtons(count > 0);
         }
         public QuoteCollectionViewModel ViewModel {

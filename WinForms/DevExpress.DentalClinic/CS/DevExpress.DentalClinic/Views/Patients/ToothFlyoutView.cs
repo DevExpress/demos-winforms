@@ -1,5 +1,5 @@
-﻿using DevExpress.Utils;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using DevExpress.Utils;
 
 namespace DevExpress.DentalClinic.Views.Patients {
     public partial class ToothFlyoutView : UserControl {

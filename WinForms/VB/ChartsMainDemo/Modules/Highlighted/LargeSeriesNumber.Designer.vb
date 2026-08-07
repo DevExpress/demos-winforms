@@ -108,16 +108,18 @@ Namespace DevExpress.XtraCharts.Demos
             dataMember3.DataMemberType = DevExpress.XtraCharts.ChartDataMemberType.Series
             seriesTemplateAdapter1.DataMembers.AddRange(New DevExpress.XtraCharts.DataMember() {dataMember1, dataMember2, dataMember3})
             Me.chart.SeriesTemplate.DataAdapter = seriesTemplateAdapter1
-            lineSeriesView1.LineStyle.LineJoin = System.Drawing.Drawing2D.LineJoin.Round
+            lineSeriesView1.LineStyle.DXLineJoin = DevExpress.Drawing.DXLineJoin.Round
             Me.chart.SeriesTemplate.View = lineSeriesView1
             Me.chart.Size = New System.Drawing.Size(784, 432)
             Me.chart.TabIndex = 0
             chartTitle1.Text = "Global Sea Ice Area"
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far
+            chartTitle1.TitleID = 0
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom
-            chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point)
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far
+            chartTitle2.DXFont = New DevExpress.Drawing.DXFont("Tahoma", 8.25F)
             chartTitle2.Text = "From NSIDC NASA Team sea ice concentration data"
             chartTitle2.TextColor = System.Drawing.Color.Gray
+            chartTitle2.TitleID = 1
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1, chartTitle2})
             AddHandler Me.chart.BoundDataChanged, New DevExpress.XtraCharts.BoundDataChangedEventHandler(AddressOf Me.ChartControl_BoundDataChanged)
             AddHandler Me.chart.LegendItemChecked, New DevExpress.XtraCharts.LegendItemCheckedEventHandler(AddressOf Me.ChartControl_LegendItemChecked)

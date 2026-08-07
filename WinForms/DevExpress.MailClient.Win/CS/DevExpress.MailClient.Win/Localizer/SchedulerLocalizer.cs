@@ -1,13 +1,9 @@
 ﻿using DevExpress.XtraScheduler.Localization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace DevExpress.MailClient.Win.Localizer {
     public class FarsiSchedulerLocalizer : SchedulerLocalizer {
         public override string GetLocalizedString(SchedulerStringId id) {
-            switch (id) {
+            switch(id) {
                 case SchedulerStringId.AppointmentLabel_Anniversary:
                     return "سالگرد";
                 case SchedulerStringId.Caption_WeekOfMonthLast:
@@ -779,7 +775,7 @@ namespace DevExpress.MailClient.Win.Localizer {
     }
     public class ArabicSchedulerLocalizer : SchedulerLocalizer {
         public override string GetLocalizedString(SchedulerStringId id) {
-            switch (id) {
+            switch(id) {
                 case SchedulerStringId.AppointmentLabel_Anniversary:
                     return "الذكرى السنوية";
                 case SchedulerStringId.Msg_InvalidEndDate:
@@ -1550,7 +1546,7 @@ namespace DevExpress.MailClient.Win.Localizer {
     }
     public class HebrewSchedulerLocalizer : SchedulerLocalizer {
         public override string GetLocalizedString(SchedulerStringId id) {
-            switch (id) {
+            switch(id) {
                 case SchedulerStringId.AppointmentLabel_Anniversary:
                     return "יום השנה";
                 case SchedulerStringId.Msg_IsNotValid:
@@ -2370,9 +2366,9 @@ namespace DevExpress.MailClient.Win.Localizer {
                 case SchedulerExtensionsStringId.Caption_GroupArrange:
                     return "ترتیب";
                 default:
-                return base.GetLocalizedString(id);
+                    return base.GetLocalizedString(id);
             }
-            
+
         }
     }
     public class ArabicSchedulerExtensionsLocalizer : SchedulerExtensionsLocalizer {

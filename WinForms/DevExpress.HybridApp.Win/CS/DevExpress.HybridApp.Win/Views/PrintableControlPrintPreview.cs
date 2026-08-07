@@ -1,25 +1,15 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DevExpress.Utils.MVVM.UI;
 using DevExpress.DevAV.ViewModels;
-using DevExpress.DevAV.Services;
-using DevExpress.XtraPrinting;
-using DevExpress.Mvvm;
+using DevExpress.Utils.MVVM.UI;
 using DevExpress.XtraBars.Docking2010;
+using DevExpress.XtraPrinting;
 
 namespace DevExpress.DevAV.Views {
     [ViewType(DevAVDbViewModel.PrintableControlPrintPreviewDocumentType)]
     public partial class PrintableControlPrintPreview : BaseViewWithWinUIButtons {
         public PrintableControlPrintPreview() {
             InitializeComponent();
-            if (!mvvmContext1.IsDesignMode) {
+            if(!mvvmContext1.IsDesignMode) {
                 InitBinding();
             }
         }
@@ -31,7 +21,7 @@ namespace DevExpress.DevAV.Views {
             ((WindowsUIButton)windowsUIButtonPanel.Buttons[0]).ImageUri = ToolbarExtension.GetImageUri("ZoomIn");
             ((WindowsUIButton)windowsUIButtonPanel.Buttons[0]).Click += (s, e) => documentViewer.ExecCommand(PrintingSystemCommand.ZoomIn);
             ((WindowsUIButton)windowsUIButtonPanel.Buttons[1]).ImageUri = ToolbarExtension.GetImageUri("ZoomOut");
-            ((WindowsUIButton)windowsUIButtonPanel.Buttons[1]).Click += (s, e) => documentViewer.ExecCommand(PrintingSystemCommand.ZoomOut); 
+            ((WindowsUIButton)windowsUIButtonPanel.Buttons[1]).Click += (s, e) => documentViewer.ExecCommand(PrintingSystemCommand.ZoomOut);
 
             ((WindowsUIButton)windowsUIButtonPanel.Buttons[3]).ImageUri = ToolbarExtension.GetImageUri("Print");
             ((WindowsUIButton)windowsUIButtonPanel.Buttons[3]).Click += (s, e) => documentViewer.ExecCommand(PrintingSystemCommand.PrintDirect);

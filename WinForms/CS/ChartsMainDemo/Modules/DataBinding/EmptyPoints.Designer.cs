@@ -146,16 +146,13 @@
             this.layoutControlItemSeriesView.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemSeriesView.Name = "layoutControlItemSeriesView";
             this.layoutControlItemSeriesView.Size = new System.Drawing.Size(217, 12);
-            this.layoutControlItemSeriesView.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemSeriesView.TextVisible = false;
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 124);
             this.emptySpaceItem.Name = "emptySpaceItem";
             this.emptySpaceItem.Size = new System.Drawing.Size(241, 414);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup1
             // 
@@ -178,7 +175,6 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItemLabelVisible";
             this.layoutControlItem1.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // chart
@@ -230,11 +226,13 @@
             series1.CrosshairLabelPattern = "{S}: {V} m/s";
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series1.Name = "Wind";
+            series1.SeriesID = 0;
             series1.ValueDataMembersSerializable = "Wind";
             series2.ArgumentDataMember = "Date";
             series2.CrosshairLabelPattern = "{S}: {V} mmHG";
             series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series2.Name = "Pressure";
+            series2.SeriesID = 1;
             series2.ValueDataMembersSerializable = "Pressure";
             sideBySideBarSeriesView1.AxisYName = "Secondary AxisY 1";
             sideBySideBarSeriesView1.PaneName = "Pane 1";
@@ -242,6 +240,7 @@
             series3.ArgumentDataMember = "Date";
             series3.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series3.Name = "Temperature";
+            series3.SeriesID = 2;
             series3.ValueDataMembersSerializable = "DayTemperature";
             sideBySideBarSeriesView2.AxisYName = "Secondary AxisY 2";
             sideBySideBarSeriesView2.PaneName = "Pane 2";
@@ -253,6 +252,7 @@
             this.chart.Size = new System.Drawing.Size(546, 571);
             this.chart.TabIndex = 2;
             chartTitle1.Text = "Weather in Washington for July";
+            chartTitle1.TitleID = 0;
             chartTitle1.Visibility = DevExpress.Utils.DefaultBoolean.True;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});

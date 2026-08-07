@@ -1,6 +1,7 @@
 Imports System
 Imports System.Collections.Generic
 Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 Imports DevExpress.XtraBars.Docking
 Imports DevExpress.XtraBars.Docking2010.Views
 
@@ -32,8 +33,8 @@ Namespace DevExpress.XtraCharts.Demos
 
         Private Function GetData() As List(Of DevExpress.XtraCharts.Demos.WebSitePerformanceIndicatorItem)
             Dim data As System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.WebSitePerformanceIndicatorItem) = New System.Collections.Generic.List(Of DevExpress.XtraCharts.Demos.WebSitePerformanceIndicatorItem)()
-            Dim lastDate As System.DateTime = System.DateTime.Now.AddDays(-1)
-            Dim random As DevExpress.Data.Utils.NonCryptographicRandom = DevExpress.Data.Utils.NonCryptographicRandom.System
+            Dim lastDate As System.DateTime = DevExpress.DXperience.Demos.TutorialConstants.Now.AddDays(-1)
+            Dim random As DevExpress.Data.Utils.NonCryptographicRandom = DevExpress.DXperience.Demos.TutorialConstants.Random
             For i As Integer = 0 To 30 - 1
                 Dim newVisitors As Integer = random.[Next](18, 77)
                 data.Add(New DevExpress.XtraCharts.Demos.WebSitePerformanceIndicatorItem() With {.ReportDate = lastDate.AddDays(-i), .TrafficTime = random.[Next](3, 12), .ResponseTime = random.[Next](40, 110), .AveragePageLoadTime = random.NextDouble() * 3 + 0.5, .MemoryUsage = random.[Next](500, 2000), .CPUUsage = random.[Next](10, 77), .ClientErrors = random.[Next](2, 45), .ServerErrors = random.[Next](2, 7), .NewVisitors = newVisitors, .ReturnVisitors = random.[Next](10, newVisitors)})

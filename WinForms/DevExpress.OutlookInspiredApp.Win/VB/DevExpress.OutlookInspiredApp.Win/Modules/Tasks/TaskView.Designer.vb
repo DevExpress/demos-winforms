@@ -143,7 +143,7 @@ Namespace DevExpress.DevAV.Modules
             CType((Me.lciEvaluations), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
-            Me.tileViewColumn3.Caption = "MANAGER"
+            Me.tileViewColumn3.Caption = "Manager"
             Me.tileViewColumn3.FieldName = "CreatedBy"
             Me.tileViewColumn3.Name = "tileViewColumn3"
             Me.tileViewColumn3.OptionsColumn.AllowEdit = False
@@ -151,7 +151,7 @@ Namespace DevExpress.DevAV.Modules
             Me.tileViewColumn3.Visible = True
             Me.tileViewColumn3.VisibleIndex = 2
             Me.tileViewColumn3.Width = 228
-            Me.tileViewColumn2.Caption = "SUBJECT"
+            Me.tileViewColumn2.Caption = "Subject"
             Me.tileViewColumn2.FieldName = "Subject"
             Me.tileViewColumn2.Name = "tileViewColumn2"
             Me.tileViewColumn2.OptionsColumn.AllowEdit = False
@@ -161,7 +161,7 @@ Namespace DevExpress.DevAV.Modules
             Me.tileViewColumn2.Width = 238
             Me.tileViewColumn1.AppearanceCell.Font = New System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold)
             Me.tileViewColumn1.AppearanceCell.Options.UseFont = True
-            Me.tileViewColumn1.Caption = "CREATED ON"
+            Me.tileViewColumn1.Caption = "Created On"
             Me.tileViewColumn1.FieldName = "CreatedOn"
             Me.tileViewColumn1.Name = "tileViewColumn1"
             Me.tileViewColumn1.OptionsColumn.AllowEdit = False
@@ -169,7 +169,7 @@ Namespace DevExpress.DevAV.Modules
             Me.tileViewColumn1.Visible = True
             Me.tileViewColumn1.VisibleIndex = 0
             Me.tileViewColumn1.Width = 90
-            Me.tileViewColumn4.Caption = "DETAILS"
+            Me.tileViewColumn4.Caption = "Details"
             Me.tileViewColumn4.FieldName = "Details"
             Me.tileViewColumn4.Name = "tileViewColumn4"
             Me.tileViewColumn4.Visible = True
@@ -257,7 +257,7 @@ Namespace DevExpress.DevAV.Modules
             Me.officeTabFilter.TabIndex = 10
             Me.officeTabFilter.ViewMode = DevExpress.XtraBars.Navigation.OfficeNavigationBarViewMode.Tab
             Me.navigationItemTasks.Name = "navigationItemTasks"
-            Me.navigationItemTasks.Text = "TASKS"
+            Me.navigationItemTasks.Text = "Tasks"
             Me.gcEvaluations.Location = New System.Drawing.Point(289, 184)
             Me.gcEvaluations.MainView = Me.tvEvaluations
             Me.gcEvaluations.Name = "gcEvaluations"
@@ -329,7 +329,7 @@ Namespace DevExpress.DevAV.Modules
             tileViewItemElement2.Appearance.Normal.Options.UseForeColor = True
             tileViewItemElement2.ColumnIndex = 1
             tileViewItemElement2.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter
-            tileViewItemElement2.Text = "MANAGER"
+            tileViewItemElement2.Text = "Manager"
             tileViewItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopRight
             tileViewItemElement3.Appearance.Normal.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((224)))))), (CInt(((CByte((224)))))), (CInt(((CByte((224)))))))
             tileViewItemElement3.Appearance.Normal.Options.UseBackColor = True
@@ -376,7 +376,7 @@ Namespace DevExpress.DevAV.Modules
             tileViewItemElement7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top
             tileViewItemElement7.Name = "RaiseImage"
             tileViewItemElement7.RowIndex = 2
-            tileViewItemElement7.Text = "RAISE"
+            tileViewItemElement7.Text = "Raise"
             tileViewItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter
             tileViewItemElement8.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 7.25F, System.Drawing.FontStyle.Bold)
             tileViewItemElement8.Appearance.Normal.FontStyleDelta = System.Drawing.FontStyle.Bold
@@ -389,7 +389,7 @@ Namespace DevExpress.DevAV.Modules
             tileViewItemElement8.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top
             tileViewItemElement8.Name = "BonusImage"
             tileViewItemElement8.RowIndex = 2
-            tileViewItemElement8.Text = "BONUS"
+            tileViewItemElement8.Text = "Bonus"
             tileViewItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter
             Me.tvEvaluations.TileTemplate.Add(tileViewItemElement1)
             Me.tvEvaluations.TileTemplate.Add(tileViewItemElement2)
@@ -406,7 +406,7 @@ Namespace DevExpress.DevAV.Modules
             Me.gvEvaluations.PreviewIndent = 0
             Me.colCreatedOn.AppearanceCell.Font = New System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold)
             Me.colCreatedOn.AppearanceCell.Options.UseFont = True
-            Me.colCreatedOn.Caption = "CREATED ON"
+            Me.colCreatedOn.Caption = "Created On"
             Me.colCreatedOn.FieldName = "CreatedOn"
             Me.colCreatedOn.Name = "colCreatedOn"
             Me.colCreatedOn.OptionsColumn.AllowEdit = False
@@ -414,7 +414,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colCreatedOn.Visible = True
             Me.colCreatedOn.VisibleIndex = 0
             Me.colCreatedOn.Width = 90
-            Me.colSubject1.Caption = "SUBJECT"
+            Me.colSubject1.Caption = "Subject"
             Me.colSubject1.FieldName = "Subject"
             Me.colSubject1.Name = "colSubject1"
             Me.colSubject1.OptionsColumn.AllowEdit = False
@@ -422,7 +422,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colSubject1.Visible = True
             Me.colSubject1.VisibleIndex = 1
             Me.colSubject1.Width = 238
-            Me.colCreatedBy.Caption = "MANAGER"
+            Me.colCreatedBy.Caption = "Manager"
             Me.colCreatedBy.FieldName = "CreatedBy"
             Me.colCreatedBy.Name = "colCreatedBy"
             Me.colCreatedBy.OptionsColumn.AllowEdit = False
@@ -494,7 +494,7 @@ Namespace DevExpress.DevAV.Modules
             tileViewItemElement10.Appearance.Normal.Options.UseForeColor = True
             tileViewItemElement10.ColumnIndex = 1
             tileViewItemElement10.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-            tileViewItemElement10.Text = "DUE DATE"
+            tileViewItemElement10.Text = "Due Date"
             tileViewItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleRight
             tileViewItemElement11.Appearance.Normal.Font = New System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((0))))
             tileViewItemElement11.Appearance.Normal.FontStyleDelta = System.Drawing.FontStyle.Bold
@@ -581,7 +581,7 @@ Namespace DevExpress.DevAV.Modules
             Me.gvTasks.PreviewIndent = 0
             Me.colDueDate.AppearanceCell.Font = New System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold)
             Me.colDueDate.AppearanceCell.Options.UseFont = True
-            Me.colDueDate.Caption = "DUE DATE"
+            Me.colDueDate.Caption = "Due Date"
             Me.colDueDate.FieldName = "DueDate"
             Me.colDueDate.Name = "colDueDate"
             Me.colDueDate.OptionsColumn.AllowEdit = False
@@ -589,7 +589,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colDueDate.Visible = True
             Me.colDueDate.VisibleIndex = 0
             Me.colDueDate.Width = 116
-            Me.colSubject.Caption = "SUBJECT"
+            Me.colSubject.Caption = "Subject"
             Me.colSubject.FieldName = "Subject"
             Me.colSubject.Name = "colSubject"
             Me.colSubject.OptionsColumn.AllowEdit = False
@@ -597,7 +597,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colSubject.Visible = True
             Me.colSubject.VisibleIndex = 1
             Me.colSubject.Width = 221
-            Me.colDescription.Caption = "DESCRIPTION"
+            Me.colDescription.Caption = "Description"
             Me.colDescription.FieldName = "Description"
             Me.colDescription.Name = "colDescription"
             Me.colDescription.OptionsColumn.AllowEdit = False

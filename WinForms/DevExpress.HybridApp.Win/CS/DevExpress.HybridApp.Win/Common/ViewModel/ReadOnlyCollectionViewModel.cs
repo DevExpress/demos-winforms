@@ -1,21 +1,14 @@
 using System;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm.DataAnnotations;
-using System.Collections.ObjectModel;
-using System.Threading;
-using System.Threading.Tasks;
-using DevExpress.DevAV.Common.Utils;
+using System.Linq;
+using System.Linq.Expressions;
 using DevExpress.DevAV.Common.DataModel;
+using DevExpress.Mvvm;
+using DevExpress.Mvvm.DataAnnotations;
+using DevExpress.Mvvm.POCO;
 
-namespace DevExpress.DevAV.Common.ViewModel
-{
+namespace DevExpress.DevAV.Common.ViewModel {
     /// <summary>
     /// The base class for POCO view models exposing a read-only collection of entities of a given type. 
     /// This is a partial class that provides the extension point to add custom properties, commands and override methods without modifying the auto-generated code.
@@ -24,8 +17,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     /// <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
     public partial class ReadOnlyCollectionViewModel<TEntity, TUnitOfWork> : ReadOnlyCollectionViewModel<TEntity, TEntity, TUnitOfWork>
         where TEntity : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Creates a new instance of ReadOnlyCollectionViewModel as a POCO view model.
@@ -36,8 +28,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         public static ReadOnlyCollectionViewModel<TEntity, TUnitOfWork> CreateReadOnlyCollectionViewModel(
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
-            Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null)
-        {
+            Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null) {
             return ViewModelSource.Create(() => new ReadOnlyCollectionViewModel<TEntity, TUnitOfWork>(unitOfWorkFactory, getRepositoryFunc, projection));
         }
 
@@ -52,8 +43,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null)
-            : base(unitOfWorkFactory, getRepositoryFunc, projection)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection) {
         }
     }
 
@@ -67,8 +57,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     public partial class ReadOnlyCollectionViewModel<TEntity, TProjection, TUnitOfWork> : ReadOnlyCollectionViewModelBase<TEntity, TProjection, TUnitOfWork>
         where TEntity : class
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Creates a new instance of ReadOnlyCollectionViewModel as a POCO view model.
@@ -79,8 +68,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         public static ReadOnlyCollectionViewModel<TEntity, TProjection, TUnitOfWork> CreateReadOnlyProjectionCollectionViewModel(
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
-            Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection)
-        {
+            Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection) {
             return ViewModelSource.Create(() => new ReadOnlyCollectionViewModel<TEntity, TProjection, TUnitOfWork>(unitOfWorkFactory, getRepositoryFunc, projection));
         }
 
@@ -95,8 +83,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection)
-            : base(unitOfWorkFactory, getRepositoryFunc, projection)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection) {
         }
     }
 
@@ -111,8 +98,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     public abstract class ReadOnlyCollectionViewModelBase<TEntity, TProjection, TUnitOfWork> : EntitiesViewModel<TEntity, TProjection, TUnitOfWork>
         where TEntity : class
         where TProjection : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Initializes a new instance of the ReadOnlyCollectionViewModelBase class.
@@ -125,8 +111,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<TUnitOfWork, IReadOnlyRepository<TEntity>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TProjection>> projection
             )
-            : base(unitOfWorkFactory, getRepositoryFunc, projection)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection) {
             Messenger.Default.Register<CloseAllMessage>(this, x => SaveLayout());
         }
 
@@ -146,8 +131,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Reloads entities.
         /// Since CollectionViewModelBase is a POCO view model, an instance of this class will also expose the RefreshCommand property that can be used as a binding source in views.
         /// </summary>
-        public virtual void Refresh()
-        {
+        public virtual void Refresh() {
             LoadEntities(false);
         }
 
@@ -158,28 +142,23 @@ namespace DevExpress.DevAV.Common.ViewModel
         bool isLoaded = false;
 
         [Display(AutoGenerateField = false)]
-        public virtual void OnLoaded()
-        {
+        public virtual void OnLoaded() {
             isLoaded = true;
             PersistentLayoutHelper.TryDeserializeLayout(LayoutSerializationService, ViewName);
         }
 
         [Display(AutoGenerateField = false)]
-        public virtual void OnUnloaded()
-        {
-            if (isLoaded)
-            {
+        public virtual void OnUnloaded() {
+            if(isLoaded) {
                 SaveLayout();
             }
         }
 
-        void SaveLayout()
-        {
+        void SaveLayout() {
             PersistentLayoutHelper.TrySerializeLayout(LayoutSerializationService, ViewName);
         }
 
-        protected override void OnClose(CancelEventArgs e)
-        {
+        protected override void OnClose(CancelEventArgs e) {
             SaveLayout();
             Messenger.Default.Send(new DestroyOrphanedDocumentsMessage());
             base.OnClose(e);
@@ -189,39 +168,33 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Determines whether entities can be reloaded.
         /// Since CollectionViewModelBase is a POCO view model, this method will be used as a CanExecute callback for RefreshCommand.
         /// </summary>
-        public bool CanRefresh()
-        {
+        public bool CanRefresh() {
             return !IsLoading;
         }
 
-        protected override void OnEntitiesAssigned(Func<TProjection> getSelectedEntityCallback)
-        {
+        protected override void OnEntitiesAssigned(Func<TProjection> getSelectedEntityCallback) {
             base.OnEntitiesAssigned(getSelectedEntityCallback);
             SelectedEntity = getSelectedEntityCallback() ?? Entities.FirstOrDefault();
         }
 
-        protected override Func<TProjection> GetSelectedEntityCallback()
-        {
+        protected override Func<TProjection> GetSelectedEntityCallback() {
             int selectedItemIndex = Entities.IndexOf(SelectedEntity);
             return () => (selectedItemIndex >= 0 && selectedItemIndex < Entities.Count) ? Entities[selectedItemIndex] : null;
         }
 
-        protected override void OnIsLoadingChanged()
-        {
+        protected override void OnIsLoadingChanged() {
             base.OnIsLoadingChanged();
             this.RaiseCanExecuteChanged(x => x.Refresh());
         }
 
         protected virtual void OnSelectedEntityChanged() { }
 
-        protected virtual void OnFilterExpressionChanged()
-        {
-            if (IsLoaded || IsLoading)
+        protected virtual void OnFilterExpressionChanged() {
+            if(IsLoaded || IsLoading)
                 LoadEntities(true);
         }
 
-        protected override Expression<Func<TEntity, bool>> GetFilterExpression()
-        {
+        protected override Expression<Func<TEntity, bool>> GetFilterExpression() {
             return FilterExpression;
         }
     }

@@ -136,7 +136,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colAvailable.Caption = "AVAILABLE";
+            this.colAvailable.Caption = "Available";
             this.colAvailable.FieldName = "Available";
             this.colAvailable.Name = "colAvailable";
             this.colAvailable.OptionsColumn.AllowFocus = false;
@@ -505,7 +505,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.hiItemsCount.Caption = "RECORDS: 0";
+            this.hiItemsCount.Caption = "Records: 0";
             this.hiItemsCount.Id = 34;
             this.hiItemsCount.Name = "hiItemsCount";
             
@@ -725,7 +725,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCategory.Caption = "CATEGORY";
+            this.colCategory.Caption = "Category";
             this.colCategory.FieldName = "Category";
             this.colCategory.Name = "colCategory";
             this.colCategory.OptionsColumn.AllowFocus = false;
@@ -734,7 +734,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colName.Caption = "PRODUCT NAME";
+            this.colName.Caption = "Product Name";
             this.colName.FieldName = "Name";
             this.colName.Name = "colName";
             this.colName.OptionsColumn.AllowFocus = false;
@@ -744,7 +744,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCost.Caption = "COST";
+            this.colCost.Caption = "Cost";
             this.colCost.DisplayFormat.FormatString = "c";
             this.colCost.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colCost.FieldName = "Cost";
@@ -756,7 +756,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colSalePrice.Caption = "SALES PRICE";
+            this.colSalePrice.Caption = "Sales Price";
             this.colSalePrice.DisplayFormat.FormatString = "c";
             this.colSalePrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSalePrice.FieldName = "SalePrice";
@@ -768,7 +768,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colRetailPrice.Caption = "RETAIL PRICE";
+            this.colRetailPrice.Caption = "Retail Price";
             this.colRetailPrice.DisplayFormat.FormatString = "c";
             this.colRetailPrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colRetailPrice.FieldName = "RetailPrice";
@@ -780,7 +780,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCurrentInventory.Caption = "INVENTORY";
+            this.colCurrentInventory.Caption = "Inventory";
             this.colCurrentInventory.DisplayFormat.FormatString = "n0";
             this.colCurrentInventory.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colCurrentInventory.FieldName = "CurrentInventory";
@@ -794,7 +794,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colBackorder.Caption = "BACKORDER";
+            this.colBackorder.Caption = "Backorder";
             this.colBackorder.DisplayFormat.FormatString = "n0";
             this.colBackorder.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBackorder.FieldName = "Backorder";
@@ -808,7 +808,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colDescription1.Caption = "DESCRIPTION";
+            this.colDescription1.Caption = "Description";
             this.colDescription1.ColumnEdit = this.repositoryItemMemoExEdit1;
             this.colDescription1.FieldName = "Description";
             this.colDescription1.Name = "colDescription1";
@@ -823,14 +823,14 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colConsumerRating.Caption = "CONSUMER RATING";
+            this.colConsumerRating.Caption = "Consumer Rating";
             this.colConsumerRating.FieldName = "ConsumerRating";
             this.colConsumerRating.Name = "colConsumerRating";
             this.colConsumerRating.OptionsColumn.AllowFocus = false;
             
             
             
-            this.colProductImage.Caption = "PRODUCT IMAGE";
+            this.colProductImage.Caption = "Product Image";
             this.colProductImage.ColumnEdit = this.repositoryItemPictureEdit1;
             this.colProductImage.FieldName = "ProductImage";
             this.colProductImage.ImageOptions.Alignment = System.Drawing.StringAlignment.Center;
@@ -908,7 +908,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colName1.Caption = "NAME";
+            this.colName1.Caption = "Name";
             this.colName1.FieldName = "Name";
             this.colName1.LayoutViewField = this.layoutViewField_colName1;
             this.colName1.Name = "colName1";
@@ -943,7 +943,7 @@ namespace DevExpress.DevAV.Modules {
             
             this.colCost1.AppearanceCell.Options.UseTextOptions = true;
             this.colCost1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.colCost1.Caption = "COST";
+            this.colCost1.Caption = "Cost";
             this.colCost1.DisplayFormat.FormatString = "c";
             this.colCost1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colCost1.FieldName = "Cost";
@@ -963,7 +963,7 @@ namespace DevExpress.DevAV.Modules {
             
             this.colSalePrice1.AppearanceCell.Options.UseTextOptions = true;
             this.colSalePrice1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.colSalePrice1.Caption = "SALES PRICE";
+            this.colSalePrice1.Caption = "Sales Price";
             this.colSalePrice1.DisplayFormat.FormatString = "c";
             this.colSalePrice1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSalePrice1.FieldName = "SalePrice";

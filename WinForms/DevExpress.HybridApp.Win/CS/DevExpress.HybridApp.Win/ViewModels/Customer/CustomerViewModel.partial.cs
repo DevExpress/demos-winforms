@@ -4,8 +4,6 @@ using System.Linq;
 using DevExpress.DevAV.Common.ViewModel;
 using DevExpress.DevAV.DevAVDbDataModel1;
 using DevExpress.Mvvm.POCO;
-using System.Drawing;
-using DevExpress.XtraMap;
 
 namespace DevExpress.DevAV.ViewModels {
     public partial class CustomerViewModel : SingleObjectViewModel<Customer, long, IDevAVDbUnitOfWork> {

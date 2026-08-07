@@ -1,13 +1,8 @@
-using System;
-using System.Linq;
-
-namespace DevExpress.DevAV.Common.DataModel
-{
+namespace DevExpress.DevAV.Common.DataModel {
     /// <summary>
     /// Represents the state of the entity relative to the unit of work.
     /// </summary>
-    public enum EntityState
-    {
+    public enum EntityState {
 
         /// <summary>
         /// The object exists but is not being tracked. 

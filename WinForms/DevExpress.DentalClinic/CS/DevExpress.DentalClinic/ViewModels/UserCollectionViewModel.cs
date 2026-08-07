@@ -1,12 +1,12 @@
-﻿using DevExpress.DentalClinic.Model;
+﻿using System;
+using DevExpress.DentalClinic.Model;
 using DevExpress.DentalClinic.View;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
 using DevExpress.Xpo;
-using System;
 
 namespace DevExpress.DentalClinic.ViewModel {
-    public class UserCollectionViewModel: IDisposable {
+    public class UserCollectionViewModel : IDisposable {
         UnitOfWork sessionCore;
         public UserCollectionViewModel() {
             Users = new XPCollection<Employee>(Session);

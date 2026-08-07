@@ -267,6 +267,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.TabIndex = 2
             Me.chart.TabStop = False
             chartTitle1.Text = "Volume (Thousands of USD)"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             AddHandler Me.chart.BoundDataChanged, New DevExpress.XtraCharts.BoundDataChangedEventHandler(AddressOf Me.chart_BoundDataChanged)
             ' 

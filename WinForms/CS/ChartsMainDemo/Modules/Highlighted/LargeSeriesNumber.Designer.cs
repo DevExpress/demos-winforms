@@ -121,16 +121,18 @@
             dataMember2,
             dataMember3});
             this.chart.SeriesTemplate.DataAdapter = seriesTemplateAdapter1;
-            lineSeriesView1.LineStyle.LineJoin = System.Drawing.Drawing2D.LineJoin.Round;
+            lineSeriesView1.LineStyle.DXLineJoin = DevExpress.Drawing.DXLineJoin.Round;
             this.chart.SeriesTemplate.View = lineSeriesView1;
             this.chart.Size = new System.Drawing.Size(784, 432);
             this.chart.TabIndex = 0;
             chartTitle1.Text = "Global Sea Ice Area";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
-            chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point);
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
+            chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             chartTitle2.Text = "From NSIDC NASA Team sea ice concentration data";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});

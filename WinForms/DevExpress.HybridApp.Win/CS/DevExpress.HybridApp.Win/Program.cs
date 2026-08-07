@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 using DevExpress.Internal;
 
 namespace DevExpress.DevAV {
@@ -36,8 +37,10 @@ namespace DevExpress.DevAV {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 
-                MainForm = new DevAV.MainForm();
-                MainForm.Icon = AppIcon;
+                MainFormHelper.InitTakeScreen(DevExpress.Data.Utils.SafeEnvironment.GetCommandLineArgs());
+                MainForm = new DevAV.MainForm {
+                    Icon = AppIcon
+                };
                 if(IsTablet)
                     SetupAsTablet();
                 Application.Run(MainForm);

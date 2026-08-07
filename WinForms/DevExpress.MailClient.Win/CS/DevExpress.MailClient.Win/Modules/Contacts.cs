@@ -12,8 +12,8 @@ using DevExpress.XtraGrid.Views.Grid;
 
 namespace DevExpress.MailClient.Win {
     public partial class Contacts : BaseModule {
-        public override string ModuleName { 
-            get { return Properties.Resources.ContactsName; } 
+        public override string ModuleName {
+            get { return Properties.Resources.ContactsName; }
         }
         //
         public Contacts() {
@@ -23,8 +23,8 @@ namespace DevExpress.MailClient.Win {
             gridView1.ShowFindPanel();
             InitIndex(DataHelper.Contacts);
         }
-        protected override DevExpress.XtraGrid.GridControl Grid { 
-            get { return gridControl1; } 
+        protected override DevExpress.XtraGrid.GridControl Grid {
+            get { return gridControl1; }
         }
         protected override bool AllowZoomControl {
             get { return true; }
@@ -197,8 +197,7 @@ namespace DevExpress.MailClient.Win {
                 alphaChange.Dispose();
             alphaChange = new Timer();
             alphaChange.Interval = 200;
-            alphaChange.Tick += (s, ea) =>
-            {
+            alphaChange.Tick += (s, ea) => {
                 ((Timer)s).Stop();
                 var focusedIndex = ((GridView)sender).GetFocusedRow() as AlphaIndex;
                 gridControl1.DataSource = ApplyFilter(DataHelper.Contacts, focusedIndex);
@@ -238,7 +237,7 @@ namespace DevExpress.MailClient.Win {
                 return null;
             if(text.Length > 1)
                 text = text.Substring(0, 1);
-            if(text.Length == 1) 
+            if(text.Length == 1)
                 if(Char.IsNumber(text[0])) return "0-9";
             return text.ToUpper();
         }
@@ -246,7 +245,7 @@ namespace DevExpress.MailClient.Win {
         public static AlphaIndex All {
             get {
                 if(all == null)
-                    all = new AlphaIndex() { Count = 0, Index = "ALL" };
+                    all = new AlphaIndex() { Count = 0, Index = "All" };
                 return all;
             }
         }

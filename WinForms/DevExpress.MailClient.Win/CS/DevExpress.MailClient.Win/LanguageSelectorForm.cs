@@ -1,24 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using DevExpress.MailClient.Win.Forms;
-using DevExpress.XtraEditors;
-using DevExpress.XtraSplashScreen;
-using DevExpress.XtraGrid.Localization;
-using DevExpress.Utils.Localization;
 using DevExpress.MailClient.Win.Localizer;
-using DevExpress.XtraEditors.Controls;
-using DevExpress.XtraScheduler.Localization;
+using DevExpress.Utils.Localization;
 using DevExpress.XtraBars.Localization;
+using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraGrid.Localization;
 using DevExpress.XtraNavBar;
+using DevExpress.XtraScheduler.Localization;
 
 namespace DevExpress.MailClient.Win {
-    public partial class LanguageSelectorForm :XtraForm {
+    public partial class LanguageSelectorForm : XtraForm {
         public LanguageSelectorForm() {
             InitializeComponent();
         }
@@ -73,65 +65,65 @@ namespace DevExpress.MailClient.Win {
         private static XtraLocalizer<NavBarStringId> GetActiveNavBarLocalizer(string name) {
             switch(name) {
                 case "fa":
-                return new FarsiNavBarLocalizer();
+                    return new FarsiNavBarLocalizer();
                 case "ar":
-                return new ArabicNavBarLocalizer();
+                    return new ArabicNavBarLocalizer();
                 case "he":
-                return new HebrewNavBarLocalizer();
+                    return new HebrewNavBarLocalizer();
                 default:
-                return NavBarLocalizer.Active;
+                    return NavBarLocalizer.Active;
             }
         }
 
         private static XtraLocalizer<BarString> GetActiveBarLocalizer(string name) {
             switch(name) {
                 case "fa":
-                return new FarsiBarLocalizer();
-                case "ar":      
-                return new ArabicBarLocalizer();
-                case "he":      
-                return new HebrewBarLocalizer();
+                    return new FarsiBarLocalizer();
+                case "ar":
+                    return new ArabicBarLocalizer();
+                case "he":
+                    return new HebrewBarLocalizer();
                 default:
-                return BarLocalizer.Active;
+                    return BarLocalizer.Active;
             }
         }
 
         private static XtraLocalizer<SchedulerStringId> GetActiveSchedulerLocalizer(string name) {
             switch(name) {
                 case "fa":
-                return new FarsiSchedulerLocalizer();
+                    return new FarsiSchedulerLocalizer();
                 case "ar":
-                return new ArabicSchedulerLocalizer();
+                    return new ArabicSchedulerLocalizer();
                 case "he":
-                return new HebrewSchedulerLocalizer();
+                    return new HebrewSchedulerLocalizer();
                 default:
-                return SchedulerLocalizer.Active;
+                    return SchedulerLocalizer.Active;
             }
         }
 
         private static XtraLocalizer<StringId> GetActiveEditorLocalizer(string name) {
             switch(name) {
                 case "fa":
-                return new FarsiEditorLocalizer();
+                    return new FarsiEditorLocalizer();
                 case "ar":
-                return new ArabicEditorLocalizer();
+                    return new ArabicEditorLocalizer();
                 case "he":
-                return new HebrewEditorLocalizer();
+                    return new HebrewEditorLocalizer();
                 default:
-                return XtraEditors.Controls.Localizer.Active;
+                    return XtraEditors.Controls.Localizer.Active;
             }
         }
 
         private static XtraLocalizer<GridStringId> GetActiveGridLocalizer(string name) {
             switch(name) {
                 case "fa":
-                return new FarsiGridLocalizer();
+                    return new FarsiGridLocalizer();
                 case "ar":
-                return new ArabicGridLocalizer();
+                    return new ArabicGridLocalizer();
                 case "he":
-                return new HebrewGridLocalizer();
+                    return new HebrewGridLocalizer();
                 default:
-                return GridLocalizer.Active;
+                    return GridLocalizer.Active;
             }
         }
     }

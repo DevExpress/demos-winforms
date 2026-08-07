@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 using DevExpress.Utils;
 
 namespace DevExpress.XtraCharts.Demos {
@@ -80,7 +81,7 @@ namespace DevExpress.XtraCharts.Demos {
 
         void Timer_Tick(object sender, EventArgs e) {
             DateTime current = DateTime.Now;
-            double span = (current - last).TotalSeconds;
+            double span = MainFormHelper.TakeScreens ? 0 : (current - last).TotalSeconds;
             last = current;
             MoveFrameAndStrip((int)(span * SamplingFrequency));
             RecalculateFrequencySpectrum();

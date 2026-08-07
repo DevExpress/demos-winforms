@@ -1,4 +1,4 @@
-Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraCharts.Demos
 
@@ -45,12 +45,11 @@ Namespace DevExpress.XtraCharts.Demos
             If Series IsNot Nothing Then
                 Dim value As Double = 0
                 Dim argument As Double = 1
-                Dim random As NonCryptographicRandom = NonCryptographicRandom.System
                 Series.Points.BeginUpdate()
                 Series.Points.Clear()
                 For i As Double = 0 To PointCount - 1
                     Series.Points.Add(New SeriesPoint(argument, value))
-                    value +=(random.NextDouble() * 10.0 - 5.0)
+                    value +=(TutorialConstants.Random.NextDouble() * 10.0 - 5.0)
                     argument += 1
                 Next
 

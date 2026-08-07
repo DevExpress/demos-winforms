@@ -135,7 +135,7 @@ Namespace DevExpress.DevAV.Modules
             CType((Me.roundedSkinPanelPnlView), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.navigationRoundedPanel), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
-            Me.colAvailable.Caption = "AVAILABLE"
+            Me.colAvailable.Caption = "Available"
             Me.colAvailable.FieldName = "Available"
             Me.colAvailable.Name = "colAvailable"
             Me.colAvailable.OptionsColumn.AllowFocus = False
@@ -352,7 +352,7 @@ Namespace DevExpress.DevAV.Modules
             Me.biExpandCollapse.ImageOptions.ImageUri.Uri = "resource://DevExpress.DevAV.Resources.ExpandCollapse.svg?Size=16x16"
             Me.biExpandCollapse.Name = "biExpandCollapse"
             AddHandler Me.biExpandCollapse.ItemClick, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.biExpandCollapse_ItemClick)
-            Me.hiItemsCount.Caption = "RECORDS: 0"
+            Me.hiItemsCount.Caption = "Records: 0"
             Me.hiItemsCount.Id = 34
             Me.hiItemsCount.Name = "hiItemsCount"
             Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1, Me.ribbonPageGroup2, Me.ribbonPageGroup3, Me.ribbonPageGroup7, Me.ribbonPageGroup4, Me.ribbonPageGroup6})
@@ -488,20 +488,20 @@ Namespace DevExpress.DevAV.Modules
             Me.gridView.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.[False]
             Me.gridView.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colCategory, DevExpress.Data.ColumnSortOrder.Ascending)})
             AddHandler Me.gridView.RowStyle, New DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(AddressOf Me.gridView_RowStyle)
-            Me.colCategory.Caption = "CATEGORY"
+            Me.colCategory.Caption = "Category"
             Me.colCategory.FieldName = "Category"
             Me.colCategory.Name = "colCategory"
             Me.colCategory.OptionsColumn.AllowFocus = False
             Me.colCategory.Visible = True
             Me.colCategory.VisibleIndex = 7
-            Me.colName.Caption = "PRODUCT NAME"
+            Me.colName.Caption = "Product Name"
             Me.colName.FieldName = "Name"
             Me.colName.Name = "colName"
             Me.colName.OptionsColumn.AllowFocus = False
             Me.colName.Visible = True
             Me.colName.VisibleIndex = 1
             Me.colName.Width = 218
-            Me.colCost.Caption = "COST"
+            Me.colCost.Caption = "Cost"
             Me.colCost.DisplayFormat.FormatString = "c"
             Me.colCost.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.colCost.FieldName = "Cost"
@@ -510,7 +510,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colCost.Visible = True
             Me.colCost.VisibleIndex = 2
             Me.colCost.Width = 141
-            Me.colSalePrice.Caption = "SALES PRICE"
+            Me.colSalePrice.Caption = "Sales Price"
             Me.colSalePrice.DisplayFormat.FormatString = "c"
             Me.colSalePrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.colSalePrice.FieldName = "SalePrice"
@@ -519,7 +519,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colSalePrice.Visible = True
             Me.colSalePrice.VisibleIndex = 3
             Me.colSalePrice.Width = 141
-            Me.colRetailPrice.Caption = "RETAIL PRICE"
+            Me.colRetailPrice.Caption = "Retail Price"
             Me.colRetailPrice.DisplayFormat.FormatString = "c"
             Me.colRetailPrice.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.colRetailPrice.FieldName = "RetailPrice"
@@ -528,7 +528,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colRetailPrice.Visible = True
             Me.colRetailPrice.VisibleIndex = 4
             Me.colRetailPrice.Width = 141
-            Me.colCurrentInventory.Caption = "INVENTORY"
+            Me.colCurrentInventory.Caption = "Inventory"
             Me.colCurrentInventory.DisplayFormat.FormatString = "n0"
             Me.colCurrentInventory.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.colCurrentInventory.FieldName = "CurrentInventory"
@@ -538,7 +538,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colCurrentInventory.Visible = True
             Me.colCurrentInventory.VisibleIndex = 5
             Me.colCurrentInventory.Width = 141
-            Me.colBackorder.Caption = "BACKORDER"
+            Me.colBackorder.Caption = "Backorder"
             Me.colBackorder.DisplayFormat.FormatString = "n0"
             Me.colBackorder.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.colBackorder.FieldName = "Backorder"
@@ -548,7 +548,7 @@ Namespace DevExpress.DevAV.Modules
             Me.colBackorder.Visible = True
             Me.colBackorder.VisibleIndex = 6
             Me.colBackorder.Width = 152
-            Me.colDescription1.Caption = "DESCRIPTION"
+            Me.colDescription1.Caption = "Description"
             Me.colDescription1.ColumnEdit = Me.repositoryItemMemoExEdit1
             Me.colDescription1.FieldName = "Description"
             Me.colDescription1.Name = "colDescription1"
@@ -556,11 +556,11 @@ Namespace DevExpress.DevAV.Modules
             Me.repositoryItemMemoExEdit1.AutoHeight = False
             Me.repositoryItemMemoExEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemMemoExEdit1.Name = "repositoryItemMemoExEdit1"
-            Me.colConsumerRating.Caption = "CONSUMER RATING"
+            Me.colConsumerRating.Caption = "Consumer Rating"
             Me.colConsumerRating.FieldName = "ConsumerRating"
             Me.colConsumerRating.Name = "colConsumerRating"
             Me.colConsumerRating.OptionsColumn.AllowFocus = False
-            Me.colProductImage.Caption = "PRODUCT IMAGE"
+            Me.colProductImage.Caption = "Product Image"
             Me.colProductImage.ColumnEdit = Me.repositoryItemPictureEdit1
             Me.colProductImage.FieldName = "ProductImage"
             Me.colProductImage.ImageOptions.Alignment = System.Drawing.StringAlignment.Center
@@ -611,7 +611,7 @@ Namespace DevExpress.DevAV.Modules
             Me.layoutView.OptionsView.ViewMode = DevExpress.XtraGrid.Views.Layout.LayoutViewMode.Carousel
             Me.layoutView.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colName1, DevExpress.Data.ColumnSortOrder.Ascending)})
             Me.layoutView.TemplateCard = Me.layoutViewCard1
-            Me.colName1.Caption = "NAME"
+            Me.colName1.Caption = "Name"
             Me.colName1.FieldName = "Name"
             Me.colName1.LayoutViewField = Me.layoutViewField_colName1
             Me.colName1.Name = "colName1"
@@ -634,7 +634,7 @@ Namespace DevExpress.DevAV.Modules
             Me.layoutViewField_colImage.TextVisible = False
             Me.colCost1.AppearanceCell.Options.UseTextOptions = True
             Me.colCost1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.colCost1.Caption = "COST"
+            Me.colCost1.Caption = "Cost"
             Me.colCost1.DisplayFormat.FormatString = "c"
             Me.colCost1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.colCost1.FieldName = "Cost"
@@ -648,7 +648,7 @@ Namespace DevExpress.DevAV.Modules
             Me.layoutViewField_colCost1.TextSize = New System.Drawing.Size(65, 13)
             Me.colSalePrice1.AppearanceCell.Options.UseTextOptions = True
             Me.colSalePrice1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-            Me.colSalePrice1.Caption = "SALES PRICE"
+            Me.colSalePrice1.Caption = "Sales Price"
             Me.colSalePrice1.DisplayFormat.FormatString = "c"
             Me.colSalePrice1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
             Me.colSalePrice1.FieldName = "SalePrice"

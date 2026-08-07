@@ -459,6 +459,7 @@
             seriesPoint9,
             seriesPoint10,
             seriesPoint11});
+            series1.SeriesID = 0;
             lineSeriesView1.LineMarkerOptions.Size = 8;
             lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             xySeriesUnwindAnimation1.Duration = System.TimeSpan.Parse("00:00:01.4000000");
@@ -486,6 +487,7 @@
             seriesPoint20,
             seriesPoint21,
             seriesPoint22});
+            series2.SeriesID = 1;
             lineSeriesView2.LineMarkerOptions.Size = 8;
             lineSeriesView2.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             xySeriesUnwindAnimation2.BeginTime = System.TimeSpan.Parse("00:00:00.5000000");
@@ -516,6 +518,7 @@
             seriesPoint31,
             seriesPoint32,
             seriesPoint33});
+            series3.SeriesID = 2;
             lineSeriesView3.LineMarkerOptions.Size = 8;
             lineSeriesView3.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             xySeriesUnwindAnimation3.BeginTime = System.TimeSpan.Parse("00:00:01");
@@ -534,11 +537,13 @@
             this.chartLine.TabIndex = 1;
             this.chartLine.TabStop = false;
             chartTitle1.Text = "Historic, Current and Future Population ";
-            chartTitle2.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle1.TitleID = 0;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle2.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle2.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8F);
             chartTitle2.Text = "From www.geohive.com";
             chartTitle2.TextColor = System.Drawing.Color.Gray;
+            chartTitle2.TitleID = 1;
             this.chartLine.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});
@@ -599,6 +604,7 @@
             this.chartStackedLine.TabIndex = 1;
             this.chartStackedLine.TabStop = false;
             chartTitle3.Text = "DevAV Sales";
+            chartTitle3.TitleID = 0;
             this.chartStackedLine.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle3});
             // 
@@ -635,12 +641,6 @@
             xyDiagram3.AxisY.Label.TextPattern = "{V:P0}";
             xyDiagram3.AxisY.Title.Text = "Percent";
             xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram3.AxisY.VisualRange.Auto = false;
-            xyDiagram3.AxisY.VisualRange.AutoSideMargins = false;
-            xyDiagram3.AxisY.VisualRange.EndSideMargin = 0D;
-            xyDiagram3.AxisY.VisualRange.MaxValueSerializable = "1";
-            xyDiagram3.AxisY.VisualRange.MinValueSerializable = "0";
-            xyDiagram3.AxisY.VisualRange.StartSideMargin = 0D;
             this.chartFullStackedLine.Diagram = xyDiagram3;
             this.chartFullStackedLine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartFullStackedLine.Legend.BackColor = System.Drawing.Color.Transparent;
@@ -661,6 +661,7 @@
             this.chartFullStackedLine.TabIndex = 1;
             this.chartFullStackedLine.TabStop = false;
             chartTitle4.Text = "Market Share Over Time";
+            chartTitle4.TitleID = 0;
             this.chartFullStackedLine.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle4});
             // 
@@ -698,12 +699,6 @@
             xyDiagram4.AxisX.Label.TextPattern = "{A:y}";
             xyDiagram4.AxisX.Title.Text = "Date";
             xyDiagram4.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram4.AxisX.VisualRange.Auto = false;
-            xyDiagram4.AxisX.VisualRange.AutoSideMargins = false;
-            xyDiagram4.AxisX.VisualRange.EndSideMargin = 1000000000D;
-            xyDiagram4.AxisX.VisualRange.MaxValueSerializable = "02/16/2023 00:00:00.000";
-            xyDiagram4.AxisX.VisualRange.MinValueSerializable = "02/07/2023 00:00:00.000";
-            xyDiagram4.AxisX.VisualRange.StartSideMargin = 1000000000D;
             xyDiagram4.AxisX.WholeRange.AutoSideMargins = false;
             xyDiagram4.AxisX.WholeRange.EndSideMargin = 1000000000D;
             xyDiagram4.AxisX.WholeRange.StartSideMargin = 1000000000D;
@@ -726,6 +721,7 @@
             series4.Label = pointSeriesLabel4;
             series4.LegendTextPattern = "{A: MMM}: ${V:0.000}";
             series4.Name = "Fuel";
+            series4.SeriesID = 0;
             series4.ValueDataMembersSerializable = "Price";
             stepLineSeriesView1.ColorEach = true;
             stepLineSeriesView1.LineMarkerOptions.Kind = DevExpress.XtraCharts.MarkerKind.Square;
@@ -748,11 +744,13 @@
             this.chartStepLine.TabIndex = 1;
             this.chartStepLine.TabStop = false;
             chartTitle5.Text = "U.S. No 2 Diesel Ultra Low Sulfur  Retail Price";
-            chartTitle6.Alignment = System.Drawing.StringAlignment.Far;
+            chartTitle5.TitleID = 0;
             chartTitle6.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Bottom;
+            chartTitle6.DXAlignment = DevExpress.Drawing.DXStringAlignment.Far;
             chartTitle6.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             chartTitle6.Text = "From www.eia.gov";
             chartTitle6.TextColor = System.Drawing.Color.Gray;
+            chartTitle6.TitleID = 1;
             this.chartStepLine.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle5,
             chartTitle6});
@@ -813,6 +811,7 @@
             this.chartSpline.TabIndex = 1;
             this.chartSpline.TabStop = false;
             chartTitle7.Text = "Power Consumption per Working Day";
+            chartTitle7.TitleID = 0;
             this.chartSpline.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle7});
             // 
@@ -876,6 +875,7 @@
             series5.Label = pointSeriesLabel6;
             series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series5.Name = "Archimedean Spiral";
+            series5.SeriesID = 0;
             scatterLineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             scatterLineSeriesView1.SeriesAnimation = xySeriesBlowUpAnimation1;
             xyMarkerSlideAnimation4.BeginTime = System.TimeSpan.Parse("00:00:01.2000000");
@@ -888,6 +888,7 @@
             series6.Label = pointSeriesLabel7;
             series6.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series6.Name = "Cardioid";
+            series6.SeriesID = 1;
             scatterLineSeriesView2.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             scatterLineSeriesView2.SeriesAnimation = xySeriesBlowUpAnimation2;
             xyMarkerSlideAnimation5.BeginTime = System.TimeSpan.Parse("00:00:01.2000000");
@@ -899,6 +900,7 @@
             pointSeriesLabel8.TextPattern = "{V:F1}";
             series7.Label = pointSeriesLabel8;
             series7.Name = "Cartesian Folium";
+            series7.SeriesID = 2;
             scatterLineSeriesView3.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             scatterLineSeriesView3.SeriesAnimation = xySeriesBlowUpAnimation3;
             xyMarkerSlideAnimation6.BeginTime = System.TimeSpan.Parse("00:00:01.2000000");
@@ -913,6 +915,7 @@
             this.chartScatterLine.TabIndex = 2;
             this.chartScatterLine.TabStop = false;
             chartTitle8.Text = "Function in Cartesian Coordinates";
+            chartTitle8.TitleID = 0;
             this.chartScatterLine.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle8});
             this.chartScatterLine.ToolTipController = this.toolTipController;
@@ -1198,7 +1201,6 @@
             this.layoutControlItemLabelVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemLabelVisible.Name = "layoutControlItemLabelVisible";
             this.layoutControlItemLabelVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemLabelVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemLabelVisible.TextVisible = false;
             // 
             // layoutControlItemAngle
@@ -1220,7 +1222,6 @@
             this.layoutControlItemValueAsPercent.Name = "layoutControlItemValueAsPercent";
             this.layoutControlItemValueAsPercent.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItemValueAsPercent.TextLocation = DevExpress.Utils.Locations.Left;
-            this.layoutControlItemValueAsPercent.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemValueAsPercent.TextVisible = false;
             // 
             // layoutControlGroupMarker
@@ -1256,7 +1257,6 @@
             this.layoutControlItemMarkerVisible.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemMarkerVisible.Name = "layoutControlItemMarkerVisible";
             this.layoutControlItemMarkerVisible.Size = new System.Drawing.Size(221, 24);
-            this.layoutControlItemMarkerVisible.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemMarkerVisible.TextVisible = false;
             // 
             // layoutControlItemMarkerKind
@@ -1316,11 +1316,9 @@
             // 
             // emptySpaceItem
             // 
-            this.emptySpaceItem.AllowHotTrack = false;
             this.emptySpaceItem.Location = new System.Drawing.Point(0, 342);
             this.emptySpaceItem.Name = "emptySpaceItem";
             this.emptySpaceItem.Size = new System.Drawing.Size(241, 196);
-            this.emptySpaceItem.TextSize = new System.Drawing.Size(0, 0);
             // 
             // LineViewsDemo
             // 

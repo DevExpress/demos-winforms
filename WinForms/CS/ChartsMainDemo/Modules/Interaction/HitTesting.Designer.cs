@@ -301,6 +301,7 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(constantLine1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pointSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
@@ -316,6 +317,9 @@
             // 
             this.chart.AnimationStartMode = DevExpress.XtraCharts.ChartAnimationMode.OnLoad;
             textAnnotation1.AnchorPoint = chartAnchorPoint1;
+            textAnnotation1.AnnotationID = 0;
+            textAnnotation1.AutoHeight = true;
+            textAnnotation1.AutoWidth = true;
             textAnnotation1.Border.Visibility = DevExpress.Utils.DefaultBoolean.False;
             textAnnotation1.ConnectorStyle = DevExpress.XtraCharts.AnnotationConnectorStyle.None;
             textAnnotation1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 10F);
@@ -342,14 +346,16 @@
             xyDiagram1.AxisX.VisibleInPanesSerializable = "1";
             xyDiagram1.AxisX.VisualRange.Auto = false;
             xyDiagram1.AxisX.VisualRange.AutoSideMargins = false;
+            xyDiagram1.AxisX.VisualRange.EndSideMargin = 0D;
             xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "06/11/2008 08:00:00.000";
             xyDiagram1.AxisX.VisualRange.MinValueSerializable = "06/05/2008 22:00:00.000";
-            xyDiagram1.AxisX.VisualRange.SideMarginsValue = 0D;
+            xyDiagram1.AxisX.VisualRange.StartSideMargin = 0D;
             xyDiagram1.AxisX.WholeRange.Auto = false;
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = false;
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 0D;
             xyDiagram1.AxisX.WholeRange.MaxValueSerializable = "06/11/2008 08:00:00.000";
             xyDiagram1.AxisX.WholeRange.MinValueSerializable = "06/05/2008 22:00:00.000";
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 0D;
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 0D;
             xyDiagram1.AxisY.GridLines.MinorVisible = true;
             xyDiagram1.AxisY.Title.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 10F);
             xyDiagram1.AxisY.Title.Text = "Temperature, F";
@@ -358,12 +364,12 @@
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = false;
             xyDiagram1.DefaultPane.LayoutOptions.RowSpan = 20;
             xyDiagram1.PaneDistance = 4;
+            xyDiagramPane1.LayoutOptions.RowSpan = 10;
             xyDiagramPane1.Name = "Pane 1";
             xyDiagramPane1.PaneID = 0;
-            xyDiagramPane1.LayoutOptions.RowSpan = 10;
+            xyDiagramPane2.LayoutOptions.RowSpan = 17;
             xyDiagramPane2.Name = "Pane 2";
             xyDiagramPane2.PaneID = 1;
-            xyDiagramPane2.LayoutOptions.RowSpan = 17;
             xyDiagram1.Panes.AddRange(new DevExpress.XtraCharts.XYDiagramPane[] {
             xyDiagramPane1,
             xyDiagramPane2});
@@ -380,18 +386,21 @@
             secondaryAxisY1.VisibleInPanesSerializable = "0";
             secondaryAxisY1.VisualRange.Auto = false;
             secondaryAxisY1.VisualRange.AutoSideMargins = false;
+            secondaryAxisY1.VisualRange.EndSideMargin = 0D;
             secondaryAxisY1.VisualRange.MaxValueSerializable = "1025";
             secondaryAxisY1.VisualRange.MinValueSerializable = "1014";
-            secondaryAxisY1.VisualRange.SideMarginsValue = 0D;
+            secondaryAxisY1.VisualRange.StartSideMargin = 0D;
             secondaryAxisY1.WholeRange.AlwaysShowZeroLevel = false;
             secondaryAxisY1.WholeRange.Auto = false;
             secondaryAxisY1.WholeRange.AutoSideMargins = false;
+            secondaryAxisY1.WholeRange.EndSideMargin = 0D;
             secondaryAxisY1.WholeRange.MaxValueSerializable = "1025";
             secondaryAxisY1.WholeRange.MinValueSerializable = "1014";
-            secondaryAxisY1.WholeRange.SideMarginsValue = 0D;
+            secondaryAxisY1.WholeRange.StartSideMargin = 0D;
             secondaryAxisY2.Alignment = DevExpress.XtraCharts.AxisAlignment.Near;
             secondaryAxisY2.AxisID = 1;
             constantLine1.AxisValueSerializable = "100";
+            constantLine1.ConstantLineID = 0;
             constantLine1.Name = "ConstantLine1";
             constantLine1.ShowInLegend = false;
             constantLine1.Title.Visible = false;
@@ -408,15 +417,17 @@
             secondaryAxisY2.VisibleInPanesSerializable = "1";
             secondaryAxisY2.VisualRange.Auto = false;
             secondaryAxisY2.VisualRange.AutoSideMargins = false;
+            secondaryAxisY2.VisualRange.EndSideMargin = 0D;
             secondaryAxisY2.VisualRange.MaxValueSerializable = "120";
             secondaryAxisY2.VisualRange.MinValueSerializable = "0";
-            secondaryAxisY2.VisualRange.SideMarginsValue = 0D;
+            secondaryAxisY2.VisualRange.StartSideMargin = 0D;
             secondaryAxisY2.WholeRange.AlwaysShowZeroLevel = false;
             secondaryAxisY2.WholeRange.Auto = false;
             secondaryAxisY2.WholeRange.AutoSideMargins = false;
+            secondaryAxisY2.WholeRange.EndSideMargin = 0D;
             secondaryAxisY2.WholeRange.MaxValueSerializable = "120";
             secondaryAxisY2.WholeRange.MinValueSerializable = "0";
-            secondaryAxisY2.WholeRange.SideMarginsValue = 0D;
+            secondaryAxisY2.WholeRange.StartSideMargin = 0D;
             xyDiagram1.SecondaryAxesY.AddRange(new DevExpress.XtraCharts.SecondaryAxisY[] {
             secondaryAxisY1,
             secondaryAxisY2});
@@ -432,7 +443,7 @@
             series1.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             pointSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.HideOverlapped;
             series1.Label = pointSeriesLabel1;
-            series1.LabelsVisibility =DevExpress.Utils.DefaultBoolean.True;
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series1.Name = "Temperature (F)";
             series1.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
             seriesPoint1,
@@ -478,13 +489,14 @@
             seriesPoint41,
             seriesPoint42,
             seriesPoint43});
-            lineSeriesView1.MarkerVisibility =DevExpress.Utils.DefaultBoolean.True;
+            series1.SeriesID = 0;
+            lineSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.True;
             series1.View = lineSeriesView1;
             series2.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.DateTime;
             pointSeriesLabel2.Angle = 90;
             pointSeriesLabel2.LineLength = 5;
             series2.Label = pointSeriesLabel2;
-            series2.LabelsVisibility =DevExpress.Utils.DefaultBoolean.False;
+            series2.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
             series2.Name = "Pressure (mbar)";
             series2.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
             seriesPoint44,
@@ -530,8 +542,9 @@
             seriesPoint84,
             seriesPoint85,
             seriesPoint86});
+            series2.SeriesID = 1;
             areaSeriesView1.AxisYName = "secondaryAxisY1";
-            areaSeriesView1.MarkerVisibility =DevExpress.Utils.DefaultBoolean.False;
+            areaSeriesView1.MarkerVisibility = DevExpress.Utils.DefaultBoolean.False;
             areaSeriesView1.PaneName = "Pane 1";
             areaSeriesView1.Transparency = ((byte)(0));
             series2.View = areaSeriesView1;
@@ -583,6 +596,7 @@
             seriesPoint127,
             seriesPoint128,
             seriesPoint129});
+            series3.SeriesID = 2;
             sideBySideBarSeriesView1.AxisYName = "secondaryAxisY2";
             sideBySideBarSeriesView1.BarWidth = 1.5D;
             sideBySideBarSeriesView1.PaneName = "Pane 2";
@@ -594,6 +608,7 @@
             this.chart.Size = new System.Drawing.Size(784, 432);
             this.chart.TabIndex = 2;
             chartTitle1.Text = "Weather in London";
+            chartTitle1.TitleID = 0;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             this.chart.MouseLeave += new System.EventHandler(this.chart_MouseLeave);
@@ -610,6 +625,7 @@
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagramPane2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(constantLine1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(secondaryAxisY2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pointSeriesLabel1)).EndInit();

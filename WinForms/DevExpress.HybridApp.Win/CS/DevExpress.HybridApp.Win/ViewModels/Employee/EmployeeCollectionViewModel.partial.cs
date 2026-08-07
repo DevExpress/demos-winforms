@@ -1,10 +1,9 @@
-using System.ComponentModel;
-using DevExpress.DevAV.Common.ViewModel;
-using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
-using DevExpress.DevAV.Services;
 using System;
 using System.Linq;
+using DevExpress.DevAV.Common.ViewModel;
+using DevExpress.DevAV.Services;
+using DevExpress.Mvvm;
+using DevExpress.Mvvm.POCO;
 
 namespace DevExpress.DevAV.ViewModels {
     public partial class EmployeeCollectionViewModel : IFilterTreeViewModelContainer<Employee> {
@@ -25,12 +24,12 @@ namespace DevExpress.DevAV.ViewModels {
             return (employeeReportType != EmployeeReportType.Profile) || (SelectedEntity != null);
         }
         public void ShowReportForSelectedEntity(EmployeeReportType employeeReportType) {
-            DocumentManagerService.CreateDocument(DevAVDbViewModel.EmployeeReportViewDocumentType, 
+            DocumentManagerService.CreateDocument(DevAVDbViewModel.EmployeeReportViewDocumentType,
                     new object[] { GetReport(employeeReportType), employeeReportType }
                 , this).Show();
         }
         IReportInfo GetReport(EmployeeReportType reportType) {
-            switch (reportType) {
+            switch(reportType) {
                 case EmployeeReportType.TaskList:
                     return ReportInfoFactory.EmployeeTaskList(unitOfWorkFactory.CreateUnitOfWork().Tasks.ToList());
                 case EmployeeReportType.Profile:

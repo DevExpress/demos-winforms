@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using DevExpress.Utils;
 using DevExpress.Utils.Extensions;
@@ -18,7 +14,7 @@ namespace DevExpress.WindowsMailClient.Win.Controls {
         }
         protected override void CheckToolWindowLocation() {
             if(OwnerForm is MainForm) {
-                if(((MainForm) OwnerForm).ExtendNavigationControlToFormTitleInternal) {
+                if(((MainForm)OwnerForm).ExtendNavigationControlToFormTitleInternal) {
                     if(AnimationProvider == null || IsOwnerOrItselfDisposed)
                         return;
                     Point loc = AnimationProvider.CalcTargetFormLocation();

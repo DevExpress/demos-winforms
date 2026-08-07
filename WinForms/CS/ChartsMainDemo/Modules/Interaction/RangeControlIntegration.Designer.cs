@@ -74,7 +74,8 @@
             xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "05/13/2018 01:00:00.000";
             xyDiagram1.AxisX.VisualRange.MinValueSerializable = "05/03/2018 23:00:00.000";
             xyDiagram1.AxisX.WholeRange.AutoSideMargins = false;
-            xyDiagram1.AxisX.WholeRange.SideMarginsValue = 1D;
+            xyDiagram1.AxisX.WholeRange.EndSideMargin = 1D;
+            xyDiagram1.AxisX.WholeRange.StartSideMargin = 1D;
             xyDiagram1.AxisY.Label.TextPattern = "{V:F2}";
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = false;

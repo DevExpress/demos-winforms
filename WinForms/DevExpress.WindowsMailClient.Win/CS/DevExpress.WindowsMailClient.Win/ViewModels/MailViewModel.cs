@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using DevExpress.Mvvm;
+using DevExpress.DXperience.Demos;
 using DevExpress.WindowsMailClient.Win.Data;
 using DevExpress.WindowsMailClient.Win.Model;
 
@@ -14,7 +13,7 @@ namespace DevExpress.WindowsMailClient.Win.ViewModels {
             MailClientDataModel.Messages.Add(currentMessage);
         }
         void SetMessageData(Message currentMessage, string text, string subject, object toEditValue, object fromEditValue) {
-            currentMessage.Date = DateTime.Now;
+            currentMessage.Date = TutorialConstants.Now;
             currentMessage.Text = text;
             currentMessage.SetPlainText(ObjectHelper.GetPlainTextFromMHT(text));
             string subj = subject;

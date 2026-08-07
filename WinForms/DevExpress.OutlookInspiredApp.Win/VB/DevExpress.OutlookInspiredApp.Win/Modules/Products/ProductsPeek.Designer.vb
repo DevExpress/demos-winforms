@@ -163,12 +163,12 @@ Namespace DevExpress.DevAV.Modules
             Me.layoutControlItem2.TextToControlDistance = 0
             Me.layoutControlItem2.TextVisible = False
             Me.labelItem.AllowHotTrack = False
-            Me.labelItem.CustomizationFormText = "PRODUCTS"
+            Me.labelItem.CustomizationFormText = "Products"
             Me.labelItem.Location = New System.Drawing.Point(0, 24)
             Me.labelItem.Name = "labelItem"
             Me.labelItem.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 8, 8)
             Me.labelItem.Size = New System.Drawing.Size(264, 29)
-            Me.labelItem.Text = "PRODUCTS"
+            Me.labelItem.Text = "Products"
             Me.labelItem.TextSize = New System.Drawing.Size(54, 13)
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font

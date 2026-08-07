@@ -85,7 +85,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 534)
             ' 
             ' layoutControl
             ' 
@@ -99,7 +99,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Location = New System.Drawing.Point(0, 0)
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 534)
             Me.layoutControl.TabIndex = 0
             Me.layoutControl.Text = "layoutControl1"
             ' 
@@ -116,11 +116,11 @@ Namespace DevExpress.XtraCharts.Demos
             ' colorEditScaleBreakColor
             ' 
             Me.colorEditScaleBreakColor.EditValue = System.Drawing.Color.Empty
-            Me.colorEditScaleBreakColor.Location = New System.Drawing.Point(74, 148)
+            Me.colorEditScaleBreakColor.Location = New System.Drawing.Point(83, 148)
             Me.colorEditScaleBreakColor.Name = "colorEditScaleBreakColor"
             Me.colorEditScaleBreakColor.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
             Me.colorEditScaleBreakColor.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            Me.colorEditScaleBreakColor.Size = New System.Drawing.Size(155, 20)
+            Me.colorEditScaleBreakColor.Size = New System.Drawing.Size(146, 20)
             Me.colorEditScaleBreakColor.StyleController = Me.layoutControl
             Me.colorEditScaleBreakColor.TabIndex = 8
             AddHandler Me.colorEditScaleBreakColor.EditValueChanged, New System.EventHandler(AddressOf Me.colorEditScaleBreakColor_EditValueChanged)
@@ -128,7 +128,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditSize
             ' 
             Me.spinEditSize.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-            Me.spinEditSize.Location = New System.Drawing.Point(74, 124)
+            Me.spinEditSize.Location = New System.Drawing.Point(83, 124)
             Me.spinEditSize.Name = "spinEditSize"
             Me.spinEditSize.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton()})
             Me.spinEditSize.Properties.DisplayFormat.FormatString = "0 px"
@@ -138,7 +138,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditSize.Properties.MaxValue = New Decimal(New Integer() {50, 0, 0, 0})
             Me.spinEditSize.Properties.MinValue = New Decimal(New Integer() {1, 0, 0, -2147483648})
             Me.spinEditSize.Properties.ValidateOnEnterKey = True
-            Me.spinEditSize.Size = New System.Drawing.Size(155, 20)
+            Me.spinEditSize.Size = New System.Drawing.Size(146, 20)
             Me.spinEditSize.StyleController = Me.layoutControl
             Me.spinEditSize.TabIndex = 7
             AddHandler Me.spinEditSize.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditSize_EditValueChanged)
@@ -156,14 +156,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditMaxCount
             ' 
             Me.spinEditMaxCount.EditValue = New Decimal(New Integer() {1, 0, 0, 0})
-            Me.spinEditMaxCount.Location = New System.Drawing.Point(74, 58)
+            Me.spinEditMaxCount.Location = New System.Drawing.Point(83, 58)
             Me.spinEditMaxCount.Name = "spinEditMaxCount"
             Me.spinEditMaxCount.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditMaxCount.Properties.IsFloatValue = False
             Me.spinEditMaxCount.Properties.Mask.EditMask = "N00"
             Me.spinEditMaxCount.Properties.MaxValue = New Decimal(New Integer() {4, 0, 0, 0})
             Me.spinEditMaxCount.Properties.MinValue = New Decimal(New Integer() {1, 0, 0, 0})
-            Me.spinEditMaxCount.Size = New System.Drawing.Size(155, 20)
+            Me.spinEditMaxCount.Size = New System.Drawing.Size(146, 20)
             Me.spinEditMaxCount.StyleController = Me.layoutControl
             Me.spinEditMaxCount.TabIndex = 5
             AddHandler Me.spinEditMaxCount.EditValueChanged, New System.EventHandler(AddressOf Me.spinEditMaxCount_EditValueChanged)
@@ -175,7 +175,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupGeneral, Me.emptySpaceItem, Me.layoutControlGroupAppearance})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 534)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupGeneral
@@ -203,16 +203,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemShowScaleBreaks.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemShowScaleBreaks.Name = "layoutControlItemShowScaleBreaks"
             Me.layoutControlItemShowScaleBreaks.Size = New System.Drawing.Size(221, 24)
-            Me.layoutControlItemShowScaleBreaks.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemShowScaleBreaks.TextVisible = False
             ' 
             ' emptySpaceItem
             ' 
-            Me.emptySpaceItem.AllowHotTrack = False
             Me.emptySpaceItem.Location = New System.Drawing.Point(0, 214)
             Me.emptySpaceItem.Name = "emptySpaceItem"
-            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 324)
-            Me.emptySpaceItem.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem.Size = New System.Drawing.Size(241, 320)
             ' 
             ' layoutControlGroupAppearance
             ' 
@@ -231,7 +228,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemRestoreColor.Name = "layoutControlItemRestoreColor"
             Me.layoutControlItemRestoreColor.Padding = New DevExpress.XtraLayout.Utils.Padding(2, 2, 10, 2)
             Me.layoutControlItemRestoreColor.Size = New System.Drawing.Size(221, 34)
-            Me.layoutControlItemRestoreColor.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemRestoreColor.TextVisible = False
             ' 
             ' layoutControlItemColor
@@ -275,6 +271,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.LegendTextPattern = "{A}: {V}"
             series1.Name = "Series 1"
             series1.Points.AddRange(New DevExpress.XtraCharts.SeriesPoint() {seriesPoint1, seriesPoint2, seriesPoint3, seriesPoint4, seriesPoint5, seriesPoint6, seriesPoint7, seriesPoint8})
+            series1.SeriesID = 0
             barSlideAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.1000000")
             barSlideAnimation1.PointOrder = DevExpress.XtraCharts.PointAnimationOrder.Inverted
             sideBySideBarSeriesView1.Animation = barSlideAnimation1
@@ -284,6 +281,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Size = New System.Drawing.Size(542, 567)
             Me.chart.TabIndex = 3
             chartTitle1.Text = "Mass of Planets in the Solar System"
+            chartTitle1.TitleID = 0
             Me.chart.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' ScaleBreaksDemo

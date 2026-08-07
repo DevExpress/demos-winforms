@@ -1,11 +1,10 @@
 ﻿using System;
 using DevExpress.Data.Utils;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraCharts.Demos {
     public partial class TimeSpanDataAggregationDemo : ChartDemoModule {
         const int PointCount = 50000;
-
-        readonly NonCryptographicRandom random = NonCryptographicRandom.System;
 
         XYDiagram Diagram {
             get { return chart.Diagram as XYDiagram; }
@@ -29,11 +28,11 @@ namespace DevExpress.XtraCharts.Demos {
                 double threshold = (min - initialValue) / 0.2;
                 for(double i = 0; i < threshold; i++) {
                     series.Points.Add(new SeriesPoint(TimeSpan.FromSeconds(i), value));
-                    value += random.NextDouble() - 0.3;
+                    value += TutorialConstants.Random.NextDouble() - 0.3;
                 }
                 for(double i = threshold; i < PointCount; i++) {
                     series.Points.Add(new SeriesPoint(TimeSpan.FromSeconds(i), value));
-                    value = Math.Max(Math.Min(value + random.NextDouble() - 0.5, max), min);
+                    value = Math.Max(Math.Min(value + TutorialConstants.Random.NextDouble() - 0.5, max), min);
                 }
                 series.Points.EndUpdate();
             }

@@ -1,17 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DevExpress.Utils.MVVM.UI;
 using DevExpress.DevAV.ViewModels;
-using DevExpress.XtraCharts;
-using DevExpress.XtraBars.Docking2010;
 using DevExpress.Utils.MVVM.Services;
+using DevExpress.Utils.MVVM.UI;
+using DevExpress.XtraBars.Docking2010;
+using DevExpress.XtraCharts;
+using DevExpress.XtraEditors;
 
 namespace DevExpress.DevAV.Views {
     [ViewType(DevAVDbViewModel.OrderCollectionViewDocumentType)]
@@ -25,10 +20,10 @@ namespace DevExpress.DevAV.Views {
             salesGridView.OptionsView.ShowFooter = false;
             SetupChart();
             searchControl.SetupSearchControl(windowsUIButtonPanel);
-            if (!mvvmContext.IsDesignMode) {
+            if(!mvvmContext.IsDesignMode) {
                 InitBindings();
             }
-           
+
         }
         void SetupChart() {
             chartControl.Series[0].ValueDataMembers.AddRange(new string[] { "Value" });
@@ -47,9 +42,8 @@ namespace DevExpress.DevAV.Views {
             fluentAPI.WithEvent<RangeControl, RangeControlRangeEventArgs>(rangeControl1, "RangeChanged")
                .SetBinding(x => x.DateRange,
                    args => new DateRange(Convert.ToDateTime(args.Range.Minimum), Convert.ToDateTime(args.Range.Maximum)),
-                   (rangeControl, range) =>
-                   {
-                     rangeControl.SelectedRange = new RangeControlRange(range.Minimum, range.Maximum);
+                   (rangeControl, range) => {
+                       rangeControl.SelectedRange = new RangeControlRange(range.Minimum, range.Maximum);
                    });
             fluentAPI.SetBinding(salesGridView, view => view.ActiveFilterCriteria, x => x.DateRange, range => ConverterExtensions.ConvertEditRangeToFilterCriteria(range, "OrderDate"));
         }

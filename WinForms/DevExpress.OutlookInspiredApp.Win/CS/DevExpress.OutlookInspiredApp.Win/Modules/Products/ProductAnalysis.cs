@@ -5,11 +5,14 @@ namespace DevExpress.DevAV.Modules {
     using DevExpress.Spreadsheet;
 
     public partial class ProductAnalysis : BaseModuleControl, IRibbonModule {
+        AnalysisPeriod.DatePeriod dataPeriod;
+        AnalysisPeriod.DatePeriod reportPeriod;
         public ProductAnalysis()
             : base(typeof(ProductAnalysisViewModel)) {
             InitializeComponent();
             BindCommands();
             LoadTemplate();
+            InitializeCurrentDateTimePeriod();
         }
         public ProductAnalysisViewModel ViewModel {
             get { return GetViewModel<ProductAnalysisViewModel>(); }
@@ -28,10 +31,19 @@ namespace DevExpress.DevAV.Modules {
             using(var stream = AnalysisTemplatesHelper.GetAnalysisTemplate(AnalysisTemplate.ProductSales))
                 spreadsheetControl.LoadDocument(stream, DocumentFormat.Xlsm);
         }
+        void InitializeCurrentDateTimePeriod() {
+            var maxDate = ViewModel.GetMaxOrdersDate();
+            dataPeriod = AnalysisPeriod.CalculateAnalysisPeriod(maxDate);
+            reportPeriod = AnalysisPeriod.CalculateReportPeriod(maxDate);
+        }
         void LoadAnalysisData() {
             spreadsheetControl.Document.BeginUpdate();
+            var defName = spreadsheetControl.Document.DefinedNames.GetDefinedName("ReportYear");
+            if(defName != null)
+                defName.RefersTo = "=" + reportPeriod.End.Year.ToString(System.Globalization.CultureInfo.InvariantCulture);
+
             var financialReportWorksheet = spreadsheetControl.Document.Worksheets["Financial Report"];
-            var financialReportItems = ViewModel.GetFinancialReport().ToList(); 
+            var financialReportItems = ViewModel.GetFinancialReport(dataPeriod.Start, dataPeriod.End).ToList(); 
             var frProducts = financialReportItems
                 .Select(i => i.ProductName)
                 .Distinct()
@@ -39,14 +51,15 @@ namespace DevExpress.DevAV.Modules {
             financialReportWorksheet.Import(frProducts, 17, 1, true);
             foreach(var reportItem in financialReportItems) {
                 int rowOffset = frProducts.IndexOf(reportItem.ProductName);
-                int columnOffset = AnalysisPeriod.MonthOffsetFromStart(reportItem.Date) / 12;
+                int columnOffset = AnalysisPeriod.MonthOffset(dataPeriod.Start, reportItem.Date) / 12;
                 if(rowOffset < 0 || columnOffset < 0) continue;
                 financialReportWorksheet.Cells[17 + rowOffset, 3 + columnOffset * 2].SetValue(reportItem.Total);
             }
+
             var financialDataWorksheet = spreadsheetControl.Document.Worksheets["Financial Data"];
-            var financialDataItems = ViewModel.GetFinancialData().ToList(); 
+            var financialDataItems = ViewModel.GetFinancialData(dataPeriod.Start, dataPeriod.End).ToList(); 
             foreach(var dataItem in financialDataItems) {
-                int rowOffset = AnalysisPeriod.MonthOffsetFromStart(dataItem.Date);
+                int rowOffset = AnalysisPeriod.MonthOffset(dataPeriod.Start, dataItem.Date);
                 int columnOffset = GetColumnIndex(dataItem.ProductCategory);
                 if(rowOffset < 0 || columnOffset < 0) continue;
                 financialDataWorksheet.Cells[6 + rowOffset, 3 + columnOffset].SetValue(dataItem.Total);

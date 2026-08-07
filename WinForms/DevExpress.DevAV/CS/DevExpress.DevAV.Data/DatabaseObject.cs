@@ -39,9 +39,8 @@
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.Serialization;
 using DevExpress.Common;
+using DevExpress.Data.Utils;
 namespace DevExpress.DevAV {
 	public abstract class DatabaseObject : IDataErrorInfo {
 		[Key]
@@ -65,6 +64,7 @@ namespace DevExpress.DevAV {
 	internal class Constants {
 		static DateTime fieldNow = DateTime.MinValue;
 		static bool fieldTakeScreen = false;
+		readonly static NonCryptographicRandom generator = new NonCryptographicRandom(10001);
 		internal static void CreateConstants(bool takeScreen) {
 			fieldTakeScreen = takeScreen;
 			if(takeScreen)  
@@ -77,5 +77,7 @@ namespace DevExpress.DevAV {
 		public static DateTime Now => GetNow();
 		public static DateTime Today => GetNow().Date;
 		public static bool TakeScreen => fieldTakeScreen;
+		internal static int Next(int min, int max) => generator.Next(min, max);
+		internal static double NextDouble() => generator.NextDouble();
 	}
 }

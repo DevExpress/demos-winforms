@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 using DevExpress.MailClient.Win.Forms;
 using DevExpress.Utils;
 using DevExpress.Utils.Svg;
@@ -109,7 +110,7 @@ namespace DevExpress.MailClient.Win {
         }
         List<Task> GetReminders(List<Task> tasks) {
             var data = from task in tasks
-                       where !task.Complete && task.DueDate <= DateTime.Now
+                       where !task.Complete && task.DueDate <= TutorialConstants.Now
                        select task;
             return data.ToList<Task>();
         }
@@ -301,9 +302,9 @@ namespace DevExpress.MailClient.Win {
                 return;
             int day = -1;
             if(tag.Equals(FlagStatus.Today.ToString()))
-                CurrentTask.DueDate = DateTime.Today;
+                CurrentTask.DueDate = TutorialConstants.Today;
             if(tag.Equals(FlagStatus.Tomorrow.ToString()))
-                CurrentTask.DueDate = DateTime.Today.AddDays(1);
+                CurrentTask.DueDate = TutorialConstants.Today.AddDays(1);
             if(tag.Equals(FlagStatus.ThisWeek.ToString())) {
                 if(CurrentTask.FlagStatus != FlagStatus.ThisWeek) day = 5;
             }
@@ -311,7 +312,7 @@ namespace DevExpress.MailClient.Win {
                 if(CurrentTask.FlagStatus != FlagStatus.NextWeek) day = 12;
             }
             if(day > 0)
-                CurrentTask.DueDate = DevExpress.Data.Filtering.Helpers.EvalHelpers.GetWeekStart(DateTime.Today).AddDays(day);
+                CurrentTask.DueDate = DevExpress.Data.Filtering.Helpers.EvalHelpers.GetWeekStart(TutorialConstants.Today).AddDays(day);
             if(tag.Equals(FlagStatus.NoDate.ToString()))
                 CurrentTask.DueDate = null;
             if(tag.Equals(FlagStatus.Custom.ToString())) {

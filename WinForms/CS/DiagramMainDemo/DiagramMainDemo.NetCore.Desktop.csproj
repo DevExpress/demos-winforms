@@ -19,6 +19,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ApplicationIcon>DemoIcon.ico</ApplicationIcon>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -27,7 +28,6 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <ErrorReport>prompt</ErrorReport>
-    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
     <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
     <DefineConstants>DEBUG;TRACE;</DefineConstants>
   </PropertyGroup>
@@ -37,14 +37,14 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <ErrorReport>prompt</ErrorReport>
-    <IntermediateOutputPath>obj.NCD</IntermediateOutputPath>
     <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
     <DefineConstants>TRACE;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.3" />
-    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.3" />
-    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.3" />
+    <PackageReference Include="DevExpress.Win.BonusSkins" VersionOverride="26.1.4" />
+    <PackageReference Include="DevExpress.Win.Design" VersionOverride="26.1.4" />
+    <PackageReference Include="DevExpress.Win.Demos" VersionOverride="26.1.4" />
+    
     
     
     

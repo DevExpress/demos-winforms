@@ -9,7 +9,7 @@
         public static string NewInvoiceCaption = "New invoice has been created";
         public static string LoginErrorMessage = "Please enter a correct username and password";
         public static string LoginMessage = "You are logon as {0}";
-        public static string AppointmentEdit  = "Appointment #{0}";
+        public static string AppointmentEdit = "Appointment #{0}";
         public static string AppointmentNew = "New Appointment";
         public static string InvoiceEdit = "Invoice #{0}";
         public static string InvoiceNew = "New Invoice";

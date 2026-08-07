@@ -1,5 +1,5 @@
 Imports System
-Imports System.Data.SQLite
+Imports Microsoft.Data.Sqlite
 Imports System.IO
 Imports System.Threading.Tasks
 Imports DevExpress.XtraPrinting.Caching
@@ -28,12 +28,15 @@ Namespace XtraReportsDemos.HugeAmountRecords
                 Clear()
                 CreateDirectory()
                 Dim dbFileName As String = GetDbFileName()
-                SQLiteConnection.CreateFile(dbFileName)
+                Using conn = New SqliteConnection("Data Source=" & dbFileName)
+                    conn.Open()
+                End Using
+
                 Return New DbDocumentStorage("XpoProvider=SQLite;Data Source=" & dbFileName & ";Version=3;")
             End Function
 
             Public Sub Clear()
-                Call SQLiteConnection.ClearAllPools()
+                Call SqliteConnection.ClearAllPools()
                 If Directory.Exists(path) Then ClearFiles(path)
             End Sub
 

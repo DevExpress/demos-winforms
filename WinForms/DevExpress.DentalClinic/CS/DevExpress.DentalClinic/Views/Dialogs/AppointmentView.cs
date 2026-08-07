@@ -104,7 +104,7 @@ namespace DevExpress.DentalClinic.View {
             }
         }
         void tlProcedures_RowClick(object sender, XtraTreeList.RowClickEventArgs e) {
-            if(!e.HitInfo.HitTest.InRowCheckBox) 
+            if(!e.HitInfo.HitTest.InRowCheckBox)
                 e.Node.Checked = !e.Node.Checked;
         }
         public HashSet<DateTime> FreeDays { get; set; }

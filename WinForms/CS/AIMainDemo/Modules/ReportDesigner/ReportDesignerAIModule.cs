@@ -41,13 +41,13 @@ namespace DevExpress.AI.Demos {
                 new FeatureTileInfo() {
                     Caption = "Test Data Preview",
                     Description = @"Preview your report with AI-generated test data before connecting to a live source.
-<href=http://docs.devexpress.devx/XtraReports/405566>Learn More</href>",
+<href=https://docs.devexpress.com/XtraReports/405566>Learn More</href>",
                     Image = Resources.ai_reports_test_dataThumb
                 },
                 new FeatureTileInfo() {
                     Caption = "Prompt-to-Expression",
                     Description = @"Generate a data binding expression or a filter condition based on a natural language prompt.
-<href=http://docs.devexpress.devx/XtraReports/405646>Learn More</href>",
+<href=https://docs.devexpress.com/XtraReports/405646>Learn More</href>",
                     Image = Resources.ai_expression_Thumb
                 },
             };

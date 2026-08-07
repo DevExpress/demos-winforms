@@ -1,10 +1,6 @@
 using System;
-using System.Linq;
-using System.Data;
 using System.Linq.Expressions;
-using System.Collections.Generic;
 using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.Common.DataModel;
 #if !NET
 using System.Data.Entity;
 using System.Data.Entity.Validation;
@@ -15,8 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using OriginalEntityState = Microsoft.EntityFrameworkCore.EntityState;
 #endif
 
-namespace DevExpress.DevAV.Common.DataModel.EntityFramework
-{
+namespace DevExpress.DevAV.Common.DataModel.EntityFramework {
     /// <summary>
     /// A DbRepository is a IRepository interface implementation representing the collection of all entities in the unit of work, or that can be queried from the database, of a given type. 
     /// DbRepository objects are created from a DbUnitOfWork using the GetRepository method. 
@@ -27,8 +22,7 @@ namespace DevExpress.DevAV.Common.DataModel.EntityFramework
     /// <typeparam name="TDbContext">DbContext type.</typeparam>
     public class DbRepository<TEntity, TPrimaryKey, TDbContext> : DbReadOnlyRepository<TEntity, TDbContext>, IRepository<TEntity, TPrimaryKey>
         where TEntity : class
-        where TDbContext : DbContext
-    {
+        where TDbContext : DbContext {
 
         readonly Expression<Func<TEntity, TPrimaryKey>> getPrimaryKeyExpression;
         readonly EntityTraits<TEntity, TPrimaryKey> entityTraits;
@@ -40,39 +34,32 @@ namespace DevExpress.DevAV.Common.DataModel.EntityFramework
         /// <param name="dbSetAccessor">Function that returns DbSet entities from Entity Framework DbContext.</param>
         /// <param name="getPrimaryKeyExpression">Lambda-expression that returns entity primary key.</param>
         public DbRepository(DbUnitOfWork<TDbContext> unitOfWork, Func<TDbContext, DbSet<TEntity>> dbSetAccessor, Expression<Func<TEntity, TPrimaryKey>> getPrimaryKeyExpression)
-            : base(unitOfWork, dbSetAccessor)
-        {
+            : base(unitOfWork, dbSetAccessor) {
             this.getPrimaryKeyExpression = getPrimaryKeyExpression;
             this.entityTraits = ExpressionHelper.GetEntityTraits(this, getPrimaryKeyExpression);
         }
 
-        protected virtual TEntity CreateCore(bool add = true)
-        {
+        protected virtual TEntity CreateCore(bool add = true) {
 #if !NET
             TEntity newEntity = DbSet.Create();
 #else
             TEntity newEntity = DbSet.CreateProxy();
 #endif
-            if (add)
-            {
+            if(add) {
                 DbSet.Add(newEntity);
             }
             return newEntity;
         }
 
-        protected virtual void UpdateCore(TEntity entity)
-        {
+        protected virtual void UpdateCore(TEntity entity) {
         }
 
-        protected virtual EntityState GetStateCore(TEntity entity)
-        {
+        protected virtual EntityState GetStateCore(TEntity entity) {
             return GetEntityState(Context.Entry(entity).State);
         }
 
-        static EntityState GetEntityState(OriginalEntityState entityStates)
-        {
-            switch (entityStates)
-            {
+        static EntityState GetEntityState(OriginalEntityState entityStates) {
+            switch(entityStates) {
                 case OriginalEntityState.Added:
                     return EntityState.Added;
                 case OriginalEntityState.Deleted:
@@ -89,98 +76,79 @@ namespace DevExpress.DevAV.Common.DataModel.EntityFramework
         }
 
 
-        protected virtual TEntity FindCore(TPrimaryKey primaryKey)
-        {
+        protected virtual TEntity FindCore(TPrimaryKey primaryKey) {
             return DbSet.Find(primaryKey);
         }
 
-        protected virtual void RemoveCore(TEntity entity)
-        {
-            try
-            {
+        protected virtual void RemoveCore(TEntity entity) {
+            try {
                 DbSet.Remove(entity);
             }
 #if !NET
-            catch (DbEntityValidationException ex)
-            {
+            catch(DbEntityValidationException ex) {
                 throw DbExceptionsConverter.Convert(ex);
             }
 #endif
-            catch (DbUpdateException ex)
-            {
+            catch(DbUpdateException ex) {
                 throw DbExceptionsConverter.Convert(ex);
             }
         }
 
-        protected virtual TEntity ReloadCore(TEntity entity)
-        {
+        protected virtual TEntity ReloadCore(TEntity entity) {
             Context.Entry(entity).Reload();
             return FindCore(GetPrimaryKeyCore(entity));
         }
-        protected virtual TPrimaryKey GetPrimaryKeyCore(TEntity entity)
-        {
+        protected virtual TPrimaryKey GetPrimaryKeyCore(TEntity entity) {
             return entityTraits.GetPrimaryKey(entity);
         }
 
-        protected virtual void SetPrimaryKeyCore(TEntity entity, TPrimaryKey primaryKey)
-        {
+        protected virtual void SetPrimaryKeyCore(TEntity entity, TPrimaryKey primaryKey) {
             var setPrimaryKeyAction = entityTraits.SetPrimaryKey;
             setPrimaryKeyAction(entity, primaryKey);
         }
 
         #region IRepository
-        TEntity IRepository<TEntity, TPrimaryKey>.Find(TPrimaryKey primaryKey)
-        {
+        TEntity IRepository<TEntity, TPrimaryKey>.Find(TPrimaryKey primaryKey) {
             return FindCore(primaryKey);
         }
 
-        void IRepository<TEntity, TPrimaryKey>.Add(TEntity entity)
-        {
+        void IRepository<TEntity, TPrimaryKey>.Add(TEntity entity) {
             DbSet.Add(entity);
         }
 
-        void IRepository<TEntity, TPrimaryKey>.Remove(TEntity entity)
-        {
+        void IRepository<TEntity, TPrimaryKey>.Remove(TEntity entity) {
             RemoveCore(entity);
         }
 
-        TEntity IRepository<TEntity, TPrimaryKey>.Create(bool add)
-        {
+        TEntity IRepository<TEntity, TPrimaryKey>.Create(bool add) {
             return CreateCore(add);
         }
 
-        void IRepository<TEntity, TPrimaryKey>.Update(TEntity entity)
-        {
+        void IRepository<TEntity, TPrimaryKey>.Update(TEntity entity) {
             UpdateCore(entity);
         }
 
-        EntityState IRepository<TEntity, TPrimaryKey>.GetState(TEntity entity)
-        {
+        EntityState IRepository<TEntity, TPrimaryKey>.GetState(TEntity entity) {
             return GetStateCore(entity);
         }
 
-        TEntity IRepository<TEntity, TPrimaryKey>.Reload(TEntity entity)
-        {
+        TEntity IRepository<TEntity, TPrimaryKey>.Reload(TEntity entity) {
             return ReloadCore(entity);
         }
 
-        Expression<Func<TEntity, TPrimaryKey>> IRepository<TEntity, TPrimaryKey>.GetPrimaryKeyExpression
-        {
+        Expression<Func<TEntity, TPrimaryKey>> IRepository<TEntity, TPrimaryKey>.GetPrimaryKeyExpression {
             get { return this.getPrimaryKeyExpression; }
         }
 
-        void IRepository<TEntity, TPrimaryKey>.SetPrimaryKey(TEntity entity, TPrimaryKey primaryKey)
-        {
+        void IRepository<TEntity, TPrimaryKey>.SetPrimaryKey(TEntity entity, TPrimaryKey primaryKey) {
             SetPrimaryKeyCore(entity, primaryKey);
         }
 
-        TPrimaryKey IRepository<TEntity, TPrimaryKey>.GetPrimaryKey(TEntity entity)
-        {
+        TPrimaryKey IRepository<TEntity, TPrimaryKey>.GetPrimaryKey(TEntity entity) {
             return GetPrimaryKeyCore(entity);
         }
 
-        bool IRepository<TEntity, TPrimaryKey>.HasPrimaryKey(TEntity entity)
-        {
+        bool IRepository<TEntity, TPrimaryKey>.HasPrimaryKey(TEntity entity) {
             return entityTraits.HasPrimaryKey(entity);
         }
         #endregion

@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using DevExpress.DXperience.Demos;
 using DevExpress.XtraBars.Navigation;
 using DevExpress.XtraCharts.Designer;
@@ -35,6 +36,7 @@ namespace DevExpress.XtraCharts.Demos {
             ChartDemoModuleWithOptions newModuleWithOptions = newModule as ChartDemoModuleWithOptions;
             if(newModuleWithOptions != null)
                 newModuleWithOptions.OptionsPanelState = optionsPanelState;
+            SetStartOptions(newModule);
             group.Controls.Add(newModule);
             newModule.Visible = true;
             Instance.CurrentModuleBase = newModuleInfo;
@@ -43,6 +45,17 @@ namespace DevExpress.XtraCharts.Demos {
             newModuleInfo.WasShown = true;
             RaiseModuleChanged();
             return newModule;
+        }
+        static void SetStartOptions(ChartDemoModule newModule) {
+            if(MainFormHelper.TakeScreens)
+                DisableChartAnimationRecursive(newModule);
+        }
+        static void DisableChartAnimationRecursive(Control control) {
+            foreach(Control child in control.Controls) {
+                if(child is ChartControl chartControl)
+                    chartControl.AnimationStartMode = ChartAnimationMode.None;
+                DisableChartAnimationRecursive(child);
+            }
         }
         internal static void SetPaletteName(string paletteName) {
             if(Instance.CurrentModuleBase != null) {

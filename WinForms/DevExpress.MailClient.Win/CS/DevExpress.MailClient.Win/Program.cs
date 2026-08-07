@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using DevExpress.Data.Filtering;
+using DevExpress.DXperience.Demos;
 using DevExpress.MailClient.Win.Forms;
 using DevExpress.Skins;
 using DevExpress.XtraEditors;
@@ -26,11 +27,14 @@ namespace DevExpress.MailClient.Win {
             //
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            using(var landSelector = new LanguageSelectorForm()) {
-                if(landSelector.ShowDialog() != DialogResult.OK)
-                    return;
+            MainFormHelper.InitTakeScreen(DevExpress.Data.Utils.SafeEnvironment.GetCommandLineArgs());
+            if(!MainFormHelper.TakeScreens) {
+                using(var landSelector = new LanguageSelectorForm()) {
+                    if(landSelector.ShowDialog() != DialogResult.OK)
+                        return;
+                }
+                SplashScreenManager.ShowForm(null, typeof(ssMain), true, true, false, 1);
             }
-            SplashScreenManager.ShowForm(null, typeof(ssMain), true, true, false, 1);
             Application.Run(new frmMain());
         }
     }

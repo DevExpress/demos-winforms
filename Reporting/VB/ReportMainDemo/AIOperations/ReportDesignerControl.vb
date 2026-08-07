@@ -29,8 +29,8 @@ Namespace XtraReportsDemos.AIOperations
 <href=https://docs.devexpress.com/XtraReports/405435>Learn More</href>", .Image = GetImage("LocalizationThumb")}, New FeatureTileInfo() With {.Caption = "Report Creation", .Description = "Run the Report Wizard to generate a new report layout based on a natural language prompt.
 <href=https://docs.devexpress.com/XtraReports/405460>Learn More</href>", .Image = GetImage("WizardThumb")}, New FeatureTileInfo() With {.Caption = "Report Modification", .Description = "Chat with an AI Assistant to make adjustments to your report layout (available for .NET 8+).
 <href=https://docs.devexpress.com/XtraReports/405498>Learn More</href>", .Image = GetImage("ChatThumb")}, New FeatureTileInfo() With {.Caption = "Test Data Preview", .Description = "Preview your report with AI-generated test data before connecting to a live source.
-<href=http://docs.devexpress.devx/XtraReports/405566>Learn More</href>", .Image = GetImage("FakeDataThumb")}, New FeatureTileInfo() With {.Caption = "Prompt-to-Expression", .Description = "Generate a data binding expression or a filter condition based on a natural language prompt.
-<href=http://docs.devexpress.devx/XtraReports/405646>Learn More</href>", .Image = GetImage("ExpressionsThumb")}}
+<href=https://docs.devexpress.com/XtraReports/405566>Learn More</href>", .Image = GetImage("FakeDataThumb")}, New FeatureTileInfo() With {.Caption = "Prompt-to-Expression", .Description = "Generate a data binding expression or a filter condition based on a natural language prompt.
+<href=https://docs.devexpress.com/XtraReports/405646>Learn More</href>", .Image = GetImage("ExpressionsThumb")}}
         End Function
 
         Protected Overrides Function CreateDesignerForm() As MainFormBase
@@ -64,19 +64,19 @@ Namespace XtraReportsDemos.AIOperations
             CType(lcgRoot, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(lciHeader, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
-            ' 
+            '
             ' lcc
-            ' 
+            '
             lcc.Controls.Add(ucDisclaimerPanel1)
             lcc.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(1698, 338, 1687, 1183)
             lcc.Controls.SetChildIndex(ucDisclaimerPanel1, 0)
-            ' 
+            '
             ' lciHeader
-            ' 
+            '
             lciHeader.AppearanceItemCaption.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte(255))))), (CInt(((CByte(192))))), (CInt(((CByte(192))))))
             lciHeader.AppearanceItemCaption.Options.UseBackColor = True
             lciHeader.Control = ucDisclaimerPanel1
-            ' 
+            '
             ' ucDisclaimerPanel1
             '
             ucDisclaimerPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
@@ -84,9 +84,9 @@ Namespace XtraReportsDemos.AIOperations
             ucDisclaimerPanel1.Name = "ucDisclaimerPanel1"
             ucDisclaimerPanel1.Size = New System.Drawing.Size(1568, 220)
             ucDisclaimerPanel1.TabIndex = 5
-            ' 
+            '
             ' AIReportDesignerControl
-            ' 
+            '
             Appearance.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Appearance.Options.UseFont = True
             Name = "AIReportDesignerControl"

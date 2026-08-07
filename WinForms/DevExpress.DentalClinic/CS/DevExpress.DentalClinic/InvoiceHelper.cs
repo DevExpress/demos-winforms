@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.DentalClinic.Model;
+using DevExpress.DXperience.Demos;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Security.ClientServer;
 using DevExpress.ExpressApp.Xpo;
@@ -48,7 +49,7 @@ namespace DevExpress.DentalClinic {
         }
         public static void RescheduleAppointments(IEnumerable<Appointment> appointments, bool useBackDirection) {
             int startHour = 9, endHour = 18, lunchHour = 12, lunchDuration = 1;
-            var initialTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, startHour, 0, 0);
+            var initialTime = new DateTime(TutorialConstants.Now.Year, TutorialConstants.Now.Month, TutorialConstants.Now.Day, startHour, 0, 0);
             var nextFreeTime = initialTime;
             Func<DateTime, TimeSpan, DateTime> offsetTime = (d, s) => useBackDirection ? d - s : d + s;
             foreach(var appointment in appointments) {
@@ -90,7 +91,7 @@ namespace DevExpress.DentalClinic {
     }
     public static class ScheduleHelper {
         public static IList<DateTimeRange> GetFreeIntervals(UnitOfWork session, Guid doctorId, TimeSpan duration) {
-            DateTime date = DateTime.Now;
+            DateTime date = TutorialConstants.Now;
             List<Appointment> appointments = GetSortedAppointments(date, doctorId, session);
             List<DateTimeRange> busyRanges = new List<DateTimeRange>();
             foreach(var apt in appointments) {

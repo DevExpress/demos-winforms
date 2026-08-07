@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using System.Text;
 #if !NET
 using System.Data.Entity.Infrastructure;
@@ -8,23 +7,19 @@ using System.Data.Entity.Validation;
 using Microsoft.EntityFrameworkCore;
 #endif
 
-namespace DevExpress.DevAV.Common.DataModel.EntityFramework
-{
+namespace DevExpress.DevAV.Common.DataModel.EntityFramework {
     /// <summary>
     /// Provides methods to convert Entity Framework exceptions to database-independent exceptions used in Data Layer and View Model Layer.
     /// </summary>
-    public static class DbExceptionsConverter
-    {
+    public static class DbExceptionsConverter {
 
         /// <summary>
         /// Converts System.Data.Entity.Infrastructure.DbUpdateException exception to database-independent DbException exception used in Data Layer and View Model Layer.
         /// </summary>
         /// <param name="exception">Exception to convert.</param>
-        public static DbException Convert(DbUpdateException exception)
-        {
+        public static DbException Convert(DbUpdateException exception) {
             Exception originalException = exception;
-            while (originalException.InnerException != null)
-            {
+            while(originalException.InnerException != null) {
                 originalException = originalException.InnerException;
             }
             return new DbException(originalException.Message, CommonResources.Exception_UpdateErrorCaption, exception);
@@ -34,14 +29,11 @@ namespace DevExpress.DevAV.Common.DataModel.EntityFramework
         /// Converts System.Data.Entity.Validation.DbEntityValidationException exception to database-independent DbException exception used in Data Layer and View Model Layer.
         /// </summary>
         /// <param name="exception">Exception to convert.</param>
-        public static DbException Convert(DbEntityValidationException exception)
-        {
+        public static DbException Convert(DbEntityValidationException exception) {
             StringBuilder stringBuilder = new StringBuilder();
-            foreach (DbEntityValidationResult validationResult in exception.EntityValidationErrors)
-            {
-                foreach (DbValidationError error in validationResult.ValidationErrors)
-                {
-                    if (stringBuilder.Length > 0)
+            foreach(DbEntityValidationResult validationResult in exception.EntityValidationErrors) {
+                foreach(DbValidationError error in validationResult.ValidationErrors) {
+                    if(stringBuilder.Length > 0)
                         stringBuilder.AppendLine();
                     stringBuilder.Append(error.PropertyName + ": " + error.ErrorMessage);
                 }

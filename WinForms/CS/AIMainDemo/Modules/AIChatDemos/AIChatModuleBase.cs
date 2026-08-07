@@ -15,7 +15,6 @@ namespace DevExpress.AI.Demos {
         BindingSource optionsBindingSource;
         public AIChatModuleBase() {
             InitializeComponent();
-            UpdatePanelControlBackColor();
 
             aiChatControl.ChatResponseProviderServiceKey = ToolsChatClientServiceKey;
             if(!string.IsNullOrEmpty(SystemMessage))
@@ -49,13 +48,6 @@ namespace DevExpress.AI.Demos {
 
         protected override void UpdatePaddings() {
             UpdateBottomSpacings(lciUcDisclaimerPanel1, ucDisclaimerPanel1.RoundedPanelOffset);
-        }
-        protected override void OnLookAndFeelChanged() {
-            base.OnLookAndFeelChanged();
-            UpdatePanelControlBackColor();
-        }
-        void UpdatePanelControlBackColor() {
-            panelControl1.BackColor = CommonSkins.GetSkin(LookAndFeel).TranslateColor(SystemColors.Window);
         }
 #endif
     }

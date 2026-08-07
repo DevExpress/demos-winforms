@@ -89,7 +89,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl1)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(259, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(259, 538)
             ' 
             ' chart
             ' 
@@ -117,8 +117,10 @@ Namespace DevExpress.XtraCharts.Demos
             Me.chart.Name = "chart"
             series1.CrosshairLabelPattern = "{A:F0}: {V}"
             series1.Name = "Measurements Data"
+            series1.SeriesID = 0
             exponentialMovingAverage1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.[True]
             exponentialMovingAverage1.EnvelopePercent = 35R
+            exponentialMovingAverage1.IndicatorID = 0
             exponentialMovingAverage1.LineStyle.Thickness = 2
             exponentialMovingAverage1.Name = "Exponential Moving Average"
             exponentialMovingAverage1.PointsCount = 50
@@ -126,6 +128,7 @@ Namespace DevExpress.XtraCharts.Demos
             exponentialMovingAverage1.Visible = False
             simpleMovingAverage1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.[True]
             simpleMovingAverage1.EnvelopePercent = 35R
+            simpleMovingAverage1.IndicatorID = 1
             simpleMovingAverage1.LineStyle.Thickness = 2
             simpleMovingAverage1.Name = "Simple Moving Average"
             simpleMovingAverage1.PointsCount = 50
@@ -133,6 +136,7 @@ Namespace DevExpress.XtraCharts.Demos
             simpleMovingAverage1.Visible = False
             triangularMovingAverage1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.[True]
             triangularMovingAverage1.EnvelopePercent = 35R
+            triangularMovingAverage1.IndicatorID = 2
             triangularMovingAverage1.LineStyle.Thickness = 2
             triangularMovingAverage1.Name = "Triangular Moving Average"
             triangularMovingAverage1.PointsCount = 50
@@ -140,6 +144,7 @@ Namespace DevExpress.XtraCharts.Demos
             triangularMovingAverage1.Visible = False
             tripleExponentialMovingAverageTema1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.[True]
             tripleExponentialMovingAverageTema1.EnvelopePercent = 35R
+            tripleExponentialMovingAverageTema1.IndicatorID = 3
             tripleExponentialMovingAverageTema1.LineStyle.Thickness = 2
             tripleExponentialMovingAverageTema1.Name = "Triple Exponential Moving Average (TEMA)"
             tripleExponentialMovingAverageTema1.PointsCount = 50
@@ -147,13 +152,15 @@ Namespace DevExpress.XtraCharts.Demos
             tripleExponentialMovingAverageTema1.Visible = False
             weightedMovingAverage1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.[True]
             weightedMovingAverage1.EnvelopePercent = 35R
+            weightedMovingAverage1.IndicatorID = 4
             weightedMovingAverage1.LineStyle.Thickness = 2
             weightedMovingAverage1.Name = "Weighted Moving Average"
             weightedMovingAverage1.PointsCount = 50
             weightedMovingAverage1.ShowInLegend = True
             weightedMovingAverage1.Visible = False
-            regressionLine1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.[True]
             regressionLine1.Color = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((143)))))), (CInt(((CByte((33)))))))
+            regressionLine1.CrosshairEnabled = DevExpress.Utils.DefaultBoolean.[True]
+            regressionLine1.IndicatorID = 5
             regressionLine1.LineStyle.Thickness = 2
             regressionLine1.Name = "Regression Line"
             regressionLine1.ShowInLegend = True
@@ -181,33 +188,33 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(428, 287, 650, 400)
             Me.layoutControl1.OptionsView.UseDefaultDragAndDropRendering = False
             Me.layoutControl1.Root = Me.layoutControlGroupRoot
-            Me.layoutControl1.Size = New System.Drawing.Size(259, 544)
+            Me.layoutControl1.Size = New System.Drawing.Size(259, 538)
             Me.layoutControl1.TabIndex = 0
             Me.layoutControl1.Text = "layoutControl1"
             ' 
             ' radioGroupMovingAverage
             ' 
             Me.radioGroupMovingAverage.AutoSizeInLayoutControl = True
-            Me.radioGroupMovingAverage.Location = New System.Drawing.Point(12, 31)
+            Me.radioGroupMovingAverage.Location = New System.Drawing.Point(12, 34)
             Me.radioGroupMovingAverage.Name = "radioGroupMovingAverage"
             Me.radioGroupMovingAverage.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupMovingAverage.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupMovingAverage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupMovingAverage.Properties.Columns = 1
             Me.radioGroupMovingAverage.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem("Simple Moving Average", "Simple Moving Average"), New DevExpress.XtraEditors.Controls.RadioGroupItem("Exponential Moving Average", "Exponential Moving Average"), New DevExpress.XtraEditors.Controls.RadioGroupItem("Weighted Moving Average", "Weighted Moving Average"), New DevExpress.XtraEditors.Controls.RadioGroupItem("Triangular Moving Average", "Triangular Moving Average"), New DevExpress.XtraEditors.Controls.RadioGroupItem("Triple Exponential Moving Average (TEMA)", "Triple Exponential Moving Average (TEMA)")})
-            Me.radioGroupMovingAverage.Size = New System.Drawing.Size(235, 83)
+            Me.radioGroupMovingAverage.Size = New System.Drawing.Size(235, 128)
             Me.radioGroupMovingAverage.StyleController = Me.layoutControl1
             Me.radioGroupMovingAverage.TabIndex = 4
             AddHandler Me.radioGroupMovingAverage.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupMovingAverage_SelectedIndexChanged)
             ' 
             ' comboBoxEditMovingAverageKind
             ' 
-            Me.comboBoxEditMovingAverageKind.Location = New System.Drawing.Point(103, 142)
+            Me.comboBoxEditMovingAverageKind.Location = New System.Drawing.Point(112, 190)
             Me.comboBoxEditMovingAverageKind.Name = "comboBoxEditMovingAverageKind"
             Me.comboBoxEditMovingAverageKind.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.comboBoxEditMovingAverageKind.Properties.Items.AddRange(New Object() {"MovingAverage", "Envelope", "Moving Average and Envelope"})
             Me.comboBoxEditMovingAverageKind.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-            Me.comboBoxEditMovingAverageKind.Size = New System.Drawing.Size(144, 20)
+            Me.comboBoxEditMovingAverageKind.Size = New System.Drawing.Size(135, 20)
             Me.comboBoxEditMovingAverageKind.StyleController = Me.layoutControl1
             Me.comboBoxEditMovingAverageKind.TabIndex = 5
             AddHandler Me.comboBoxEditMovingAverageKind.SelectedIndexChanged, New System.EventHandler(AddressOf Me.comboBoxEditMovingAverageKind_SelectedIndexChanged)
@@ -215,7 +222,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' spinEditPointsCount
             ' 
             Me.spinEditPointsCount.EditValue = New Decimal(New Integer() {3, 0, 0, 0})
-            Me.spinEditPointsCount.Location = New System.Drawing.Point(103, 118)
+            Me.spinEditPointsCount.Location = New System.Drawing.Point(112, 166)
             Me.spinEditPointsCount.Name = "spinEditPointsCount"
             Me.spinEditPointsCount.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditPointsCount.Properties.IsFloatValue = False
@@ -223,14 +230,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditPointsCount.Properties.MaxValue = New Decimal(New Integer() {1000, 0, 0, 0})
             Me.spinEditPointsCount.Properties.MinValue = New Decimal(New Integer() {3, 0, 0, 0})
             AddHandler Me.spinEditPointsCount.Properties.ValueChanged, New System.EventHandler(AddressOf Me.spinEditPointsCount_Properties_ValueChanged)
-            Me.spinEditPointsCount.Size = New System.Drawing.Size(144, 20)
+            Me.spinEditPointsCount.Size = New System.Drawing.Size(135, 20)
             Me.spinEditPointsCount.StyleController = Me.layoutControl1
             Me.spinEditPointsCount.TabIndex = 6
             ' 
             ' spinEditEnvelopePercent
             ' 
             Me.spinEditEnvelopePercent.EditValue = New Decimal(New Integer() {1, 0, 0, 0})
-            Me.spinEditEnvelopePercent.Location = New System.Drawing.Point(103, 166)
+            Me.spinEditEnvelopePercent.Location = New System.Drawing.Point(112, 214)
             Me.spinEditEnvelopePercent.Name = "spinEditEnvelopePercent"
             Me.spinEditEnvelopePercent.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.spinEditEnvelopePercent.Properties.DisplayFormat.FormatString = "0\%"
@@ -240,16 +247,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.spinEditEnvelopePercent.Properties.MaxValue = New Decimal(New Integer() {50, 0, 0, 0})
             Me.spinEditEnvelopePercent.Properties.MinValue = New Decimal(New Integer() {1, 0, 0, 0})
             AddHandler Me.spinEditEnvelopePercent.Properties.ValueChanged, New System.EventHandler(AddressOf Me.spinEditEnvelopePercent_Properties_ValueChanged)
-            Me.spinEditEnvelopePercent.Size = New System.Drawing.Size(144, 20)
+            Me.spinEditEnvelopePercent.Size = New System.Drawing.Size(135, 20)
             Me.spinEditEnvelopePercent.StyleController = Me.layoutControl1
             Me.spinEditEnvelopePercent.TabIndex = 7
             ' 
             ' checkEditRegressionLineVisible
             ' 
-            Me.checkEditRegressionLineVisible.Location = New System.Drawing.Point(12, 229)
-            Me.checkEditRegressionLineVisible.Name = "checkEditShowRegressionLine"
+            Me.checkEditRegressionLineVisible.Location = New System.Drawing.Point(12, 280)
+            Me.checkEditRegressionLineVisible.Name = "checkEditRegressionLineVisible"
             Me.checkEditRegressionLineVisible.Properties.Caption = "Show"
-            Me.checkEditRegressionLineVisible.Size = New System.Drawing.Size(235, 19)
+            Me.checkEditRegressionLineVisible.Size = New System.Drawing.Size(235, 20)
             Me.checkEditRegressionLineVisible.StyleController = Me.layoutControl1
             Me.checkEditRegressionLineVisible.TabIndex = 8
             AddHandler Me.checkEditRegressionLineVisible.CheckedChanged, New System.EventHandler(AddressOf Me.checkEditRegressionLineVisible_CheckedChanged)
@@ -261,16 +268,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.emptySpaceItem1, Me.layoutControlGroupMovingAverage, Me.layoutControlGroupRegressionLine})
             Me.layoutControlGroupRoot.Name = "Root"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(259, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(259, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' emptySpaceItem1
             ' 
-            Me.emptySpaceItem1.AllowHotTrack = False
-            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 260)
+            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 312)
             Me.emptySpaceItem1.Name = "emptySpaceItem1"
-            Me.emptySpaceItem1.Size = New System.Drawing.Size(259, 284)
-            Me.emptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem1.Size = New System.Drawing.Size(259, 226)
             ' 
             ' layoutControlGroupMovingAverage
             ' 
@@ -278,14 +283,14 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupMovingAverage.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemMovingAverageKind, Me.layoutControlItemEnvelopePercent, Me.layoutControlItemMovingAverage, Me.layoutControlItemPointsCount})
             Me.layoutControlGroupMovingAverage.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupMovingAverage.Name = "layoutControlGroupMovingAverage"
-            Me.layoutControlGroupMovingAverage.Size = New System.Drawing.Size(259, 198)
+            Me.layoutControlGroupMovingAverage.Size = New System.Drawing.Size(259, 246)
             Me.layoutControlGroupMovingAverage.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupMovingAverage.Text = "Moving Average"
             ' 
             ' layoutControlItemMovingAverageKind
             ' 
             Me.layoutControlItemMovingAverageKind.Control = Me.comboBoxEditMovingAverageKind
-            Me.layoutControlItemMovingAverageKind.Location = New System.Drawing.Point(0, 111)
+            Me.layoutControlItemMovingAverageKind.Location = New System.Drawing.Point(0, 156)
             Me.layoutControlItemMovingAverageKind.Name = "layoutControlItemMovingAverageKind"
             Me.layoutControlItemMovingAverageKind.Size = New System.Drawing.Size(239, 24)
             Me.layoutControlItemMovingAverageKind.Text = "Kind:"
@@ -294,7 +299,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' layoutControlItemEnvelopePercent
             ' 
             Me.layoutControlItemEnvelopePercent.Control = Me.spinEditEnvelopePercent
-            Me.layoutControlItemEnvelopePercent.Location = New System.Drawing.Point(0, 135)
+            Me.layoutControlItemEnvelopePercent.Location = New System.Drawing.Point(0, 180)
             Me.layoutControlItemEnvelopePercent.Name = "layoutControlItemEnvelopePercent"
             Me.layoutControlItemEnvelopePercent.Size = New System.Drawing.Size(239, 24)
             Me.layoutControlItemEnvelopePercent.Text = "Envelope Percent:"
@@ -305,14 +310,13 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemMovingAverage.Control = Me.radioGroupMovingAverage
             Me.layoutControlItemMovingAverage.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemMovingAverage.Name = "layoutControlItemMovingAverage"
-            Me.layoutControlItemMovingAverage.Size = New System.Drawing.Size(239, 87)
-            Me.layoutControlItemMovingAverage.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemMovingAverage.Size = New System.Drawing.Size(239, 132)
             Me.layoutControlItemMovingAverage.TextVisible = False
             ' 
             ' layoutControlItemPointsCount
             ' 
             Me.layoutControlItemPointsCount.Control = Me.spinEditPointsCount
-            Me.layoutControlItemPointsCount.Location = New System.Drawing.Point(0, 87)
+            Me.layoutControlItemPointsCount.Location = New System.Drawing.Point(0, 132)
             Me.layoutControlItemPointsCount.Name = "layoutControlItemPointsCount"
             Me.layoutControlItemPointsCount.Size = New System.Drawing.Size(239, 24)
             Me.layoutControlItemPointsCount.Text = "Point Count:"
@@ -322,9 +326,9 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.layoutControlGroupRegressionLine.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupRegressionLine.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemShowRegressionLine})
-            Me.layoutControlGroupRegressionLine.Location = New System.Drawing.Point(0, 198)
+            Me.layoutControlGroupRegressionLine.Location = New System.Drawing.Point(0, 246)
             Me.layoutControlGroupRegressionLine.Name = "layoutControlGroupRegressionLine"
-            Me.layoutControlGroupRegressionLine.Size = New System.Drawing.Size(259, 62)
+            Me.layoutControlGroupRegressionLine.Size = New System.Drawing.Size(259, 66)
             Me.layoutControlGroupRegressionLine.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupRegressionLine.Text = "Regression Line"
             ' 
@@ -333,8 +337,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemShowRegressionLine.Control = Me.checkEditRegressionLineVisible
             Me.layoutControlItemShowRegressionLine.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemShowRegressionLine.Name = "layoutControlItemShowRegressionLine"
-            Me.layoutControlItemShowRegressionLine.Size = New System.Drawing.Size(239, 23)
-            Me.layoutControlItemShowRegressionLine.TextSize = New System.Drawing.Size(0, 0)
+            Me.layoutControlItemShowRegressionLine.Size = New System.Drawing.Size(239, 24)
             Me.layoutControlItemShowRegressionLine.TextVisible = False
             ' 
             ' MovingAverageAndRegressionLineDemo

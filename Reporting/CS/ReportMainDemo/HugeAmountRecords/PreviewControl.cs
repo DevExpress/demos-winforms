@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Data.SQLite;
+using Microsoft.Data.Sqlite;
 using System.IO;
 using System.Threading.Tasks;
 using DevExpress.XtraPrinting.Caching;
@@ -21,11 +21,12 @@ namespace XtraReportsDemos.HugeAmountRecords {
                 CreateDirectory();
 
                 string dbFileName = GetDbFileName();
-                SQLiteConnection.CreateFile(dbFileName);
+                using (var conn = new SqliteConnection("Data Source=" + dbFileName))
+                    conn.Open();
                 return new DbDocumentStorage("XpoProvider=SQLite;Data Source=" + dbFileName + ";Version=3;");
             }
             public void Clear() {
-                SQLiteConnection.ClearAllPools();
+                SqliteConnection.ClearAllPools();
 
                 if(Directory.Exists(path))
                     ClearFiles(path);

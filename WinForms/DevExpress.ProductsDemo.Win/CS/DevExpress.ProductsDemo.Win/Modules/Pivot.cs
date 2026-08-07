@@ -1,20 +1,20 @@
 ﻿using System;
-using System.Data;
-using System.Linq;
 using System.Collections.Generic;
+using System.Data;
 using System.Globalization;
-using DevExpress.XtraPivotGrid;
-using DevExpress.XtraCharts;
+using System.Linq;
 using DevExpress.SalesDemo.Model;
 using DevExpress.SalesDemo.Win;
 using DevExpress.SalesDemo.Win.Modules;
+using DevExpress.XtraCharts;
+using DevExpress.XtraPivotGrid;
 
 namespace DevExpress.ProductsDemo.Win.Modules {
     public partial class PivotModuleNew : BaseModule {
         protected override bool AutoMergeRibbon { get { return true; } }
         DateTimeRange currentRange, range;
         IDataProvider dataProvider;
-        RangeControlSalesClient rangeControlClient; 
+        RangeControlSalesClient rangeControlClient;
         public PivotModuleNew() {
             InitializeComponent();
             InitializePivot();
@@ -35,7 +35,7 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             pivot.OptionsFilterPopup.FieldFilterPopupMode = FieldFilterPopupMode.Excel;
             pivot.Fields.Add(new PivotGridField("StartOfPeriod", PivotArea.RowArea) { Caption = "Year", GroupInterval = PivotGroupInterval.DateYear, TotalsVisibility = PivotTotalsVisibility.None });
             pivot.Fields.Add(new PivotGridField("StartOfPeriod", PivotArea.RowArea) { Caption = "Month", GroupInterval = PivotGroupInterval.DateMonth, TotalsVisibility = PivotTotalsVisibility.None });
-            pivot.Fields.Add(new PivotGridField("GroupName", PivotArea.ColumnArea) { Caption = "Product"});
+            pivot.Fields.Add(new PivotGridField("GroupName", PivotArea.ColumnArea) { Caption = "Product" });
             pivot.Fields.Add(new PivotGridField("TotalCost", PivotArea.DataArea) { Caption = "Sales" });
             pivot.Fields.Add(new PivotGridField("Units", PivotArea.DataArea) { Caption = "Units" });
         }
@@ -112,11 +112,11 @@ namespace DevExpress.ProductsDemo.Win.Modules {
             DateTime end = this.range.Start.AddDays((int)range.Range.Maximum);
             this.currentRange = new DateTimeRange(start, end);
             UpdateData();
-            
+
         }
 
     }
-    public class SalesByProductByDateRange: ISalesPerformanceProvider {
+    public class SalesByProductByDateRange : ISalesPerformanceProvider {
         protected IDataProvider dataProvider;
         protected DateTimeRange range;
         public SalesPerformanceMode Mode { get { return SalesPerformanceMode.Month; } }

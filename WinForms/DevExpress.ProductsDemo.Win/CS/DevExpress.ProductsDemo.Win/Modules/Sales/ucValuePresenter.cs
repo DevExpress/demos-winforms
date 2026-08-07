@@ -36,7 +36,7 @@ namespace DevExpress.SalesDemo.Win.Modules {
             InitializeComponent();
         }
         void UpdateValueText() {
-            if (_valueFormat != null)
+            if(_valueFormat != null)
                 labelValue.Text = string.Format(_valueFormat, doubleValue);
             else
                 labelValue.Text = doubleValue.ToString();

@@ -1,14 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DevExpress.Mvvm;
 using DevExpress.DevAV.Common.ViewModel;
+using DevExpress.Mvvm;
 
 namespace DevExpress.DevAV.Views {
     public partial class FilterCollectionViewBase : BaseViewWithWinUIButtons {

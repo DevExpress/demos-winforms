@@ -1,5 +1,5 @@
 Imports System
-Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraCharts.Demos
 
@@ -7,8 +7,6 @@ Namespace DevExpress.XtraCharts.Demos
         Inherits ChartDemoModule
 
         Const PointCount As Integer = 50000
-
-        Private ReadOnly random As NonCryptographicRandom = NonCryptographicRandom.System
 
         Private ReadOnly Property Diagram As XYDiagram
             Get
@@ -38,12 +36,12 @@ Namespace DevExpress.XtraCharts.Demos
                 Dim threshold As Double =(min - initialValue) / 0.2
                 For i As Double = 0 To threshold - 1
                     series.Points.Add(New SeriesPoint(TimeSpan.FromSeconds(i), value))
-                    value += random.NextDouble() - 0.3
+                    value += TutorialConstants.Random.NextDouble() - 0.3
                 Next
 
                 For i As Double = threshold To PointCount - 1
                     series.Points.Add(New SeriesPoint(TimeSpan.FromSeconds(i), value))
-                    value = Math.Max(Math.Min(value + random.NextDouble() - 0.5, max), min)
+                    value = Math.Max(Math.Min(value + TutorialConstants.Random.NextDouble() - 0.5, max), min)
                 Next
 
                 series.Points.EndUpdate()

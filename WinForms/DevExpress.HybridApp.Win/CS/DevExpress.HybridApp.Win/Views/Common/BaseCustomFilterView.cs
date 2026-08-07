@@ -1,8 +1,8 @@
 using System.Linq;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using DevExpress.DevAV.ViewModels;
 using DevExpress.XtraBars.Navigation;
+using DevExpress.XtraEditors;
 
 namespace DevExpress.DevAV.Views {
     public partial class BaseCustomFilterView : XtraUserControl {
@@ -19,10 +19,10 @@ namespace DevExpress.DevAV.Views {
             var fluent = mvvmContext.OfType<FilterViewModelBase>();
             fluent.SetBinding(tileBar,
                 x => x.SelectedItem, x => x.SelectedItem,
-                filter => (TileItem)tileBarGroup2.Items.FirstOrDefault(item => Equals(item.Tag, filter)), 
+                filter => (TileItem)tileBarGroup2.Items.FirstOrDefault(item => Equals(item.Tag, filter)),
                 item => (FilterViewModelBase.FilterItem)item.Tag);
             fluent.SetItemsSourceBinding(tileBarGroup2,
-                tg => tg.Items, x => x.CustomFilters, 
+                tg => tg.Items, x => x.CustomFilters,
                 (item, filter) => object.Equals(item.Tag, filter),
                 (filter) => CreateTileForFilter(filter));
         }

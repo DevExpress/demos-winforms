@@ -52,7 +52,7 @@ Namespace DevExpress.ProductsDemo.Win.Modules
 
 			Dim preYear As Integer = year - 1
 			Dim prevYearSales As SalesGroup = dataProvider.GetTotalSalesByRange(New Date(preYear, 1, 1), New Date(preYear, 12, Date.DaysInMonth(preYear, 12)))
-			labelFiscalYear.Text = "FISCAL YEAR " & preYear.ToString()
+			labelFiscalYear.Text = "Fiscal Year " & preYear.ToString()
 			fiscalYear.Text = prevYearSales.TotalCost.ToString("$0,0")
 			needleFiscalYear.Value = CSng(prevYearSales.TotalCost)
 		End Sub

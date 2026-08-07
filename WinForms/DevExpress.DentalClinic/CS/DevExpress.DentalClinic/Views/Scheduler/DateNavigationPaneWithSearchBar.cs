@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraScheduler.Design;
 using DevExpress.XtraEditors;
 using DevExpress.XtraScheduler;
+using DevExpress.XtraScheduler.Design;
 
 namespace DevExpress.DentalClinic.View {
     public partial class DateNavigationPaneWithSearchBar : SchedulerDateNavigationBarPanel {
@@ -32,14 +25,14 @@ namespace DevExpress.DentalClinic.View {
         }
 
         void FindAndSelectAppointment(string text) {
-            if (SchedulerControl == null)
+            if(SchedulerControl == null)
                 return;
             DateTime start = SchedulerControl.ActiveView.SelectedInterval.Start;
             var appointments = SchedulerControl.DataStorage.GetAppointments(start, start.AddYears(2));
             text = text.ToLowerInvariant();
             AppointmentBaseCollection selectedAppointments = SchedulerControl.SelectedAppointments;
             var appointment = appointments.FirstOrDefault(x => x.Subject.ToLowerInvariant().Contains(text) && !selectedAppointments.Contains(x));
-            if (appointment == null)
+            if(appointment == null)
                 return;
             SchedulerControl.ActiveView.SelectAppointment(appointment);
         }

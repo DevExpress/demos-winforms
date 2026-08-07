@@ -1,7 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
 using DevExpress.DentalClinic.Model;
-using DevExpress.ExpressApp;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
 using DevExpress.Xpo;

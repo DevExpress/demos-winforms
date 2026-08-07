@@ -144,7 +144,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumn3.Caption = "MANAGER";
+            this.tileViewColumn3.Caption = "Manager";
             this.tileViewColumn3.FieldName = "CreatedBy";
             this.tileViewColumn3.Name = "tileViewColumn3";
             this.tileViewColumn3.OptionsColumn.AllowEdit = false;
@@ -155,7 +155,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumn2.Caption = "SUBJECT";
+            this.tileViewColumn2.Caption = "Subject";
             this.tileViewColumn2.FieldName = "Subject";
             this.tileViewColumn2.Name = "tileViewColumn2";
             this.tileViewColumn2.OptionsColumn.AllowEdit = false;
@@ -168,7 +168,7 @@ namespace DevExpress.DevAV.Modules {
             
             this.tileViewColumn1.AppearanceCell.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.tileViewColumn1.AppearanceCell.Options.UseFont = true;
-            this.tileViewColumn1.Caption = "CREATED ON";
+            this.tileViewColumn1.Caption = "Created On";
             this.tileViewColumn1.FieldName = "CreatedOn";
             this.tileViewColumn1.Name = "tileViewColumn1";
             this.tileViewColumn1.OptionsColumn.AllowEdit = false;
@@ -179,7 +179,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.tileViewColumn4.Caption = "DETAILS";
+            this.tileViewColumn4.Caption = "Details";
             this.tileViewColumn4.FieldName = "Details";
             this.tileViewColumn4.Name = "tileViewColumn4";
             this.tileViewColumn4.Visible = true;
@@ -300,7 +300,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             this.navigationItemTasks.Name = "navigationItemTasks";
-            this.navigationItemTasks.Text = "TASKS";
+            this.navigationItemTasks.Text = "Tasks";
             
             
             
@@ -384,7 +384,7 @@ namespace DevExpress.DevAV.Modules {
             tileViewItemElement2.Appearance.Normal.Options.UseForeColor = true;
             tileViewItemElement2.ColumnIndex = 1;
             tileViewItemElement2.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement2.Text = "MANAGER";
+            tileViewItemElement2.Text = "Manager";
             tileViewItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopRight;
             tileViewItemElement3.Appearance.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             tileViewItemElement3.Appearance.Normal.Options.UseBackColor = true;
@@ -431,7 +431,7 @@ namespace DevExpress.DevAV.Modules {
             tileViewItemElement7.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
             tileViewItemElement7.Name = "RaiseImage";
             tileViewItemElement7.RowIndex = 2;
-            tileViewItemElement7.Text = "RAISE";
+            tileViewItemElement7.Text = "Raise";
             tileViewItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             tileViewItemElement8.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 7.25F, System.Drawing.FontStyle.Bold);
             tileViewItemElement8.Appearance.Normal.FontStyleDelta = System.Drawing.FontStyle.Bold;
@@ -444,7 +444,7 @@ namespace DevExpress.DevAV.Modules {
             tileViewItemElement8.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Top;
             tileViewItemElement8.Name = "BonusImage";
             tileViewItemElement8.RowIndex = 2;
-            tileViewItemElement8.Text = "BONUS";
+            tileViewItemElement8.Text = "Bonus";
             tileViewItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             this.tvEvaluations.TileTemplate.Add(tileViewItemElement1);
             this.tvEvaluations.TileTemplate.Add(tileViewItemElement2);
@@ -470,7 +470,7 @@ namespace DevExpress.DevAV.Modules {
             
             this.colCreatedOn.AppearanceCell.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.colCreatedOn.AppearanceCell.Options.UseFont = true;
-            this.colCreatedOn.Caption = "CREATED ON";
+            this.colCreatedOn.Caption = "Created On";
             this.colCreatedOn.FieldName = "CreatedOn";
             this.colCreatedOn.Name = "colCreatedOn";
             this.colCreatedOn.OptionsColumn.AllowEdit = false;
@@ -481,7 +481,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colSubject1.Caption = "SUBJECT";
+            this.colSubject1.Caption = "Subject";
             this.colSubject1.FieldName = "Subject";
             this.colSubject1.Name = "colSubject1";
             this.colSubject1.OptionsColumn.AllowEdit = false;
@@ -492,7 +492,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colCreatedBy.Caption = "MANAGER";
+            this.colCreatedBy.Caption = "Manager";
             this.colCreatedBy.FieldName = "CreatedBy";
             this.colCreatedBy.Name = "colCreatedBy";
             this.colCreatedBy.OptionsColumn.AllowEdit = false;
@@ -578,7 +578,7 @@ namespace DevExpress.DevAV.Modules {
             tileViewItemElement10.Appearance.Normal.Options.UseForeColor = true;
             tileViewItemElement10.ColumnIndex = 1;
             tileViewItemElement10.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement10.Text = "DUE DATE";
+            tileViewItemElement10.Text = "Due Date";
             tileViewItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleRight;
             tileViewItemElement11.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tileViewItemElement11.Appearance.Normal.FontStyleDelta = System.Drawing.FontStyle.Bold;
@@ -677,7 +677,7 @@ namespace DevExpress.DevAV.Modules {
             
             this.colDueDate.AppearanceCell.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             this.colDueDate.AppearanceCell.Options.UseFont = true;
-            this.colDueDate.Caption = "DUE DATE";
+            this.colDueDate.Caption = "Due Date";
             this.colDueDate.FieldName = "DueDate";
             this.colDueDate.Name = "colDueDate";
             this.colDueDate.OptionsColumn.AllowEdit = false;
@@ -688,7 +688,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colSubject.Caption = "SUBJECT";
+            this.colSubject.Caption = "Subject";
             this.colSubject.FieldName = "Subject";
             this.colSubject.Name = "colSubject";
             this.colSubject.OptionsColumn.AllowEdit = false;
@@ -699,7 +699,7 @@ namespace DevExpress.DevAV.Modules {
             
             
             
-            this.colDescription.Caption = "DESCRIPTION";
+            this.colDescription.Caption = "Description";
             this.colDescription.FieldName = "Description";
             this.colDescription.Name = "colDescription";
             this.colDescription.OptionsColumn.AllowEdit = false;

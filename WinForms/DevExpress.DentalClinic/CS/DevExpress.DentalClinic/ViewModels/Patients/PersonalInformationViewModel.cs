@@ -4,6 +4,7 @@
     using DevExpress.DentalClinic.Model;
     using DevExpress.DentalClinic.Services;
     using DevExpress.DentalClinic.View;
+    using DevExpress.DXperience.Demos;
     using DevExpress.Mvvm;
     using DevExpress.Mvvm.POCO;
     using DevExpress.Xpo;
@@ -82,7 +83,7 @@
             if(!HasObjectsToSave)
                 return true;
             if(HasValidationErrors) {
-                if(MessageBoxService.ShowMessage(DentalClinicStringId.ChangesNotCompletedMessage, nameof(Patient), MessageButton.YesNo) == MessageResult.No) 
+                if(MessageBoxService.ShowMessage(DentalClinicStringId.ChangesNotCompletedMessage, nameof(Patient), MessageButton.YesNo) == MessageResult.No)
                     return false;
                 Session.DropChanges();
                 return true;
@@ -102,7 +103,7 @@
                 Document document = new Document(Session);
                 using(FileStream stream = new FileStream(fileName, FileMode.Open))
                     document.LoadFromStream(Path.GetFileName(fileName), stream);
-                document.Date = DateTime.Now;
+                document.Date = TutorialConstants.Now;
                 Patient.DocumentCollection.Add(document);
                 Session.CommitChanges();
             }

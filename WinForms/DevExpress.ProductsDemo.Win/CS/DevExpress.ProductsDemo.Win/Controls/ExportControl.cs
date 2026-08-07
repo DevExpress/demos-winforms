@@ -1,15 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraPrinting;
-using System.Drawing.Imaging;
-using DevExpress.XtraEditors;
-using System.Diagnostics;
 using DevExpress.Drawing;
+using DevExpress.XtraEditors;
+using DevExpress.XtraPrinting;
 
 namespace DevExpress.ProductsDemo.Win.Controls {
     public partial class ExportControl : RibbonApplicationUserControl {
@@ -71,9 +65,11 @@ namespace DevExpress.ProductsDemo.Win.Controls {
                     if(XtraMessageBox.Show(Properties.Resources.OpentFileQuestion, Properties.Resources.Export, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
                         Data.Utils.SafeProcess.Start(saveFileDialog1.FileName);
                     }
-                } catch {
+                }
+                catch {
                     ShowExportErrorMessage();
-                } finally {
+                }
+                finally {
                     Cursor.Current = Cursors.Default;
                 }
         }

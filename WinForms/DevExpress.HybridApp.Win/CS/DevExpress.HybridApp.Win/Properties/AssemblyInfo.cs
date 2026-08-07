@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 
 
 
-[assembly: ComVisible(false)] 
+[assembly: ComVisible(false)]
 #if NET
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows")]

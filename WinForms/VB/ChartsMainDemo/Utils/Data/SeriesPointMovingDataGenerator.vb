@@ -2,7 +2,7 @@ Imports System
 Imports System.ComponentModel
 Imports System.Globalization
 Imports System.Linq
-Imports DevExpress.Data.Utils
+Imports DevExpress.DXperience.Demos
 
 Namespace DevExpress.XtraCharts.Demos
 
@@ -110,8 +110,7 @@ Namespace DevExpress.XtraCharts.Demos
         Inherits BindingList(Of DraggableItem)
 
         Public Shared Function CreateModel(ByVal Optional itemProductionCost As Integer = 50) As DraggableDataModel
-            Dim rnd As NonCryptographicRandom = NonCryptographicRandom.System
-            Dim now As Date = Date.Now
+            Dim now As Date = TutorialConstants.Now
             Dim startDate As Date = New DateTime(now.Year, now.Month, 1)
             Dim data As DraggableDataModel = New DraggableDataModel(itemProductionCost)
             data.Add(New DraggableItem(0, 120, 2000, 1000, 0, startDate.ToString("MMMM", CultureInfo.InvariantCulture)))
@@ -121,18 +120,18 @@ Namespace DevExpress.XtraCharts.Demos
                 Dim cost As Double
                 Dim demand As Double
                 If i < 4 OrElse i > 7 Then
-                    cost = data(i - 1).Cost + rnd.Next(3, 6)
+                    cost = data(i - 1).Cost + TutorialConstants.Random.Next(3, 6)
                     If i < 4 Then
-                        demand = data(i - 1).Demand + (rnd.NextDouble() * (5 - 3) + 3) * 1000
+                        demand = data(i - 1).Demand + (TutorialConstants.Random.NextDouble() * (5 - 3) + 3) * 1000
                     Else
-                        demand = data(i - 1).Demand + (rnd.NextDouble() * (8 - 6) + 6) * 1000
+                        demand = data(i - 1).Demand + (TutorialConstants.Random.NextDouble() * (8 - 6) + 6) * 1000
                     End If
                 Else
-                    cost = data(i - 1).Cost + rnd.Next(10, 20)
-                    demand = data(i - 1).Demand + (rnd.NextDouble() * (13 - 8) + 8) * 1000
+                    cost = data(i - 1).Cost + TutorialConstants.Random.Next(10, 20)
+                    demand = data(i - 1).Demand + (TutorialConstants.Random.NextDouble() * (13 - 8) + 8) * 1000
                 End If
 
-                Dim production As Double = data(i - 1).Production + (rnd.NextDouble() * (8 - 5) + 5) * 1000
+                Dim production As Double = data(i - 1).Production + (TutorialConstants.Random.NextDouble() * (8 - 5) + 5) * 1000
                 data.Add(New DraggableItem(0, cost, production, demand, 0, month))
                 startDate = startDate.AddMonths(1)
             Next
@@ -180,8 +179,7 @@ Namespace DevExpress.XtraCharts.Demos
         End Function
 
         Public Sub InitStock()
-            Dim rnd As NonCryptographicRandom = NonCryptographicRandom.System
-            Dim initialStock As Double = rnd.Next(20, 40) * 1000
+            Dim initialStock As Double = TutorialConstants.Random.Next(20, 40) * 1000
             For i As Integer = 0 To Count - 1
                 Me(i).Stock = initialStock + Me(i).Production
                 initialStock = Math.Max(0, Me(i).Stock - Me(i).Demand)

@@ -1,8 +1,7 @@
 namespace DevExpress.ChatClient.Views {
-    using System;
+    using DevExpress.ChatClient.ViewModels;
     using DevExpress.Utils.MVVM.UI;
     using DevExpress.XtraEditors;
-    using DevExpress.ChatClient.ViewModels;
 
     [ViewType(typeof(SignInViewModel))]
     public partial class SignInView : XtraUserControl {

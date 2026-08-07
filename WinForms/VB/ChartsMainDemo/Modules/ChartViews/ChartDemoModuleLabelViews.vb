@@ -223,5 +223,25 @@ Namespace DevExpress.XtraCharts.Demos
                 series.Label.TextPattern = If(valueAsPercent, PercentPattern, "${V}M")
             End If
         End Sub
+
+        Private Overloads Sub InitializeComponent()
+            sidePanelOptions.SuspendLayout()
+            CType(tabPaneOptions, System.ComponentModel.ISupportInitialize).BeginInit()
+            tabPaneOptions.SuspendLayout()
+            Me.SuspendLayout()
+            ' 
+            ' tabNavigationPageOptions
+            ' 
+            tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
+            ' 
+            ' ChartDemoModuleLabelViews
+            ' 
+            AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+            Name = "ChartDemoModuleLabelViews"
+            sidePanelOptions.ResumeLayout(False)
+            CType(tabPaneOptions, System.ComponentModel.ISupportInitialize).EndInit()
+            tabPaneOptions.ResumeLayout(False)
+            Me.ResumeLayout(False)
+        End Sub
     End Class
 End Namespace

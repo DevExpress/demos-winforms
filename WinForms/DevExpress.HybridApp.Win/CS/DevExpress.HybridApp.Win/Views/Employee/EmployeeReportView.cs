@@ -15,7 +15,7 @@ namespace DevExpress.DevAV.Views {
             InitializeComponent();
             imagesContainer = new PrinterImagesContainer();
             CreatePrintItemContainer();
-            if(!mvvmContext.IsDesignMode) 
+            if(!mvvmContext.IsDesignMode)
                 InitBinding();
         }
         void CreatePrintItemContainer() {
@@ -54,13 +54,14 @@ namespace DevExpress.DevAV.Views {
                 foreach(PrinterItem printerItem in printerItemContainer.Items)
                     cbPrinters.Properties.Items.Add(CreateItemForPrinter(printerItem));
                 SelectedPrinter = printerItemContainer.DefaultPrinterName;
-            } else {
+            }
+            else {
                 DisablePrintButtons();
             }
 
             btnOptions.Click += (s, e) => documentViewer.ExecCommand(PrintingSystemCommand.Print);
             fluentAPI.SetTrigger(x => x.ReportType, type => {
-                layoutControlGroupSettings.Visibility = type == EmployeeReportType.Profile ? 
+                layoutControlGroupSettings.Visibility = type == EmployeeReportType.Profile ?
                     XtraLayout.Utils.LayoutVisibility.Always : XtraLayout.Utils.LayoutVisibility.Never;
             });
         }
@@ -91,9 +92,11 @@ namespace DevExpress.DevAV.Views {
             using(var tool = new PrintTool(fluentAPI.ViewModel.Report.PrintingSystem)) {
                 try {
                     tool.Print(SelectedPrinter);
-                } catch(Win32Exception) {
+                }
+                catch(Win32Exception) {
                     
-                } catch(Exception e) {
+                }
+                catch(Exception e) {
                     NotificationService.ShowException<PrintingSystemBase>(LookAndFeel, ParentForm, e);
                 }
             }

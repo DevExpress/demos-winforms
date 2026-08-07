@@ -2,7 +2,7 @@
     using DevExpress.Xpo;
 
     public class MissingTooth : XPObject {
-        public MissingTooth(Session session) 
+        public MissingTooth(Session session)
             : base(session) {
         }
         Patient patientCore;

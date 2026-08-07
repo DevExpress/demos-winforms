@@ -1,17 +1,11 @@
 using System;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
+using DevExpress.DevAV.Common.DataModel;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm.DataAnnotations;
-using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.Common.DataModel;
 
-namespace DevExpress.DevAV.Common.ViewModel
-{
+namespace DevExpress.DevAV.Common.ViewModel {
     /// <summary>
     /// A POCO view model exposing a read-only collection of entities of a given type. It is designed for quick navigation between collection views.
     /// This is a partial class that provides an extension point to add custom properties, commands and override methods without modifying the auto-generated code.
@@ -22,8 +16,7 @@ namespace DevExpress.DevAV.Common.ViewModel
     /// <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
     public partial class PeekCollectionViewModel<TNavigationToken, TEntity, TPrimaryKey, TUnitOfWork> : CollectionViewModelBase<TEntity, TEntity, TPrimaryKey, TUnitOfWork>
         where TEntity : class
-        where TUnitOfWork : IUnitOfWork
-    {
+        where TUnitOfWork : IUnitOfWork {
 
         /// <summary>
         /// Creates a new instance of PeekCollectionViewModel as a POCO view model.
@@ -36,8 +29,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             TNavigationToken navigationToken,
             IUnitOfWorkFactory<TUnitOfWork> unitOfWorkFactory,
             Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc,
-            Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null)
-        {
+            Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null) {
             return ViewModelSource.Create(() => new PeekCollectionViewModel<TNavigationToken, TEntity, TPrimaryKey, TUnitOfWork>(navigationToken, unitOfWorkFactory, getRepositoryFunc, projection));
         }
 
@@ -58,8 +50,7 @@ namespace DevExpress.DevAV.Common.ViewModel
             Func<TUnitOfWork, IRepository<TEntity, TPrimaryKey>> getRepositoryFunc,
             Func<IRepositoryQuery<TEntity>, IQueryable<TEntity>> projection = null
             )
-            : base(unitOfWorkFactory, getRepositoryFunc, projection, null, null, true)
-        {
+            : base(unitOfWorkFactory, getRepositoryFunc, projection, null, null, true) {
             this.navigationToken = navigationToken;
         }
 
@@ -69,8 +60,7 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// </summary>
         /// <param name="projectionEntity">An entity to select within the collection view.</param>
         [Display(AutoGenerateField = false)]
-        public void Navigate(TEntity projectionEntity)
-        {
+        public void Navigate(TEntity projectionEntity) {
             pickedEntity = projectionEntity;
             SendSelectEntityMessage();
             Messenger.Default.Send(new NavigateMessage<TNavigationToken>(navigationToken), navigationToken);
@@ -81,20 +71,17 @@ namespace DevExpress.DevAV.Common.ViewModel
         /// Since PeekCollectionViewModel is a POCO view model, this method will be used as a CanExecute callback for NavigateCommand.
         /// </summary>
         /// <param name="projectionEntity">An entity to select in the collection view.</param>
-        public bool CanNavigate(TEntity projectionEntity)
-        {
+        public bool CanNavigate(TEntity projectionEntity) {
             return projectionEntity != null;
         }
 
-        protected override void OnInitializeInRuntime()
-        {
+        protected override void OnInitializeInRuntime() {
             base.OnInitializeInRuntime();
             Messenger.Default.Register<SelectedEntityRequest>(this, x => SendSelectEntityMessage());
         }
 
-        void SendSelectEntityMessage()
-        {
-            if (IsLoaded && pickedEntity != null)
+        void SendSelectEntityMessage() {
+            if(IsLoaded && pickedEntity != null)
                 Messenger.Default.Send(new SelectEntityMessage(CreateRepository().GetProjectionPrimaryKey(pickedEntity)));
         }
     }

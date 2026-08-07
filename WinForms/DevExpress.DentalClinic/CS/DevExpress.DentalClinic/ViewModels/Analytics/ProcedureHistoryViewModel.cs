@@ -27,8 +27,7 @@
                 invoices = await session
                     .Query<InvoiceItem>()
                     .Select(x =>
-                        new ExtendedInvoiceInfo
-                        {
+                        new ExtendedInvoiceInfo {
                             InvoiceId = x.Invoice.Oid,
                             PatientName = x.Invoice.Patient.FullName,
                             Date = x.Invoice.Date,

@@ -77,7 +77,7 @@ namespace DevExpress.DevAV.Modules {
             mvvmContext.RegisterService(new DetailFormDocumentManagerService(ModuleType.TaskEditView));
         }
         void UpdateEntitiesCountRelatedUI(int count) {
-            hiItemsCount.Caption = string.Format("RECORDS: {0}", count);
+            hiItemsCount.Caption = string.Format("Records: {0}", count);
         }
         XtraBars.Ribbon.RibbonControl IRibbonModule.Ribbon {
             get { return ribbonControl; }

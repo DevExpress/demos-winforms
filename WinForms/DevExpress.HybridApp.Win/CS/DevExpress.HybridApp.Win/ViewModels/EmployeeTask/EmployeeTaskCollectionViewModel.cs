@@ -1,26 +1,20 @@
-using System;
 using System.Linq;
-using DevExpress.Mvvm.POCO;
-using DevExpress.DevAV.Common.Utils;
-using DevExpress.DevAV.DevAVDbDataModel1;
 using DevExpress.DevAV.Common.DataModel;
-using DevExpress.DevAV;
 using DevExpress.DevAV.Common.ViewModel;
+using DevExpress.DevAV.DevAVDbDataModel1;
+using DevExpress.Mvvm.POCO;
 
-namespace DevExpress.DevAV.ViewModels
-{
+namespace DevExpress.DevAV.ViewModels {
     /// <summary>
     /// Represents the Tasks collection view model.
     /// </summary>
-    public partial class EmployeeTaskCollectionViewModel : CollectionViewModel<EmployeeTask, long, IDevAVDbUnitOfWork>
-    {
+    public partial class EmployeeTaskCollectionViewModel : CollectionViewModel<EmployeeTask, long, IDevAVDbUnitOfWork> {
 
         /// <summary>
         /// Creates a new instance of EmployeeTaskCollectionViewModel as a POCO view model.
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
-        public static EmployeeTaskCollectionViewModel Create(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null)
-        {
+        public static EmployeeTaskCollectionViewModel Create(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null) {
             return ViewModelSource.Create(() => new EmployeeTaskCollectionViewModel(unitOfWorkFactory));
         }
 
@@ -30,8 +24,7 @@ namespace DevExpress.DevAV.ViewModels
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
         protected EmployeeTaskCollectionViewModel(IUnitOfWorkFactory<IDevAVDbUnitOfWork> unitOfWorkFactory = null)
-            : base(unitOfWorkFactory ?? UnitOfWorkSource.GetUnitOfWorkFactory(), x => x.Tasks, q => q.OrderByDescending(t => t.DueDate))
-        {
+            : base(unitOfWorkFactory ?? UnitOfWorkSource.GetUnitOfWorkFactory(), x => x.Tasks, q => q.OrderByDescending(t => t.DueDate)) {
         }
     }
 }

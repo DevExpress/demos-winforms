@@ -139,6 +139,7 @@
             sideBySideBarSeriesLabel1.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
             series1.Label = sideBySideBarSeriesLabel1;
             series1.Name = "DevAV North";
+            series1.SeriesID = 0;
             barGrowUpAnimation1.Duration = System.TimeSpan.Parse("00:00:00.8000000");
             barGrowUpAnimation1.PointDelay = System.TimeSpan.Parse("00:00:00.0100000");
             sideBySideBarSeriesView1.Animation = barGrowUpAnimation1;
@@ -153,6 +154,7 @@
             summaryDataAdapter2.QualitativeSummaryOptions.SummaryFunction = "SUM([Income])";
             series2.DataAdapter = summaryDataAdapter2;
             series2.Name = "DevAV South";
+            series2.SeriesID = 1;
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
         series2};
@@ -161,10 +163,12 @@
             this.chart.Size = new System.Drawing.Size(546, 347);
             this.chart.TabIndex = 1;
             this.chart.TabStop = false;
-            chartTitle1.Alignment = System.Drawing.StringAlignment.Near;
+            chartTitle1.DXAlignment = DevExpress.Drawing.DXStringAlignment.Near;
             chartTitle1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 10F);
             chartTitle1.Text = "";
+            chartTitle1.TitleID = 0;
             chartTitle2.Text = "Volume (thousands of USD)";
+            chartTitle2.TitleID = 1;
             this.chart.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1,
             chartTitle2});

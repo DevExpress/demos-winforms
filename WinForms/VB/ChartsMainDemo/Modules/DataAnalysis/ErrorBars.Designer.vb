@@ -72,7 +72,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' tabNavigationPageOptions
             ' 
             Me.tabNavigationPageOptions.Controls.Add(Me.layoutControl)
-            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 544)
+            Me.tabNavigationPageOptions.Size = New System.Drawing.Size(241, 538)
             ' 
             ' dataSet
             ' 
@@ -115,7 +115,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControl.Location = New System.Drawing.Point(0, 0)
             Me.layoutControl.Name = "layoutControl"
             Me.layoutControl.Root = Me.layoutControlGroupRoot
-            Me.layoutControl.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControl.Size = New System.Drawing.Size(241, 538)
             Me.layoutControl.TabIndex = 0
             Me.layoutControl.Text = "layoutControl1"
             ' 
@@ -123,14 +123,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.radioGroupEndStyle.AutoSizeInLayoutControl = True
             Me.radioGroupEndStyle.EditValue = 0
-            Me.radioGroupEndStyle.Location = New System.Drawing.Point(12, 259)
+            Me.radioGroupEndStyle.Location = New System.Drawing.Point(12, 316)
             Me.radioGroupEndStyle.Name = "radioGroupEndStyle"
             Me.radioGroupEndStyle.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupEndStyle.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupEndStyle.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupEndStyle.Properties.Columns = 1
             Me.radioGroupEndStyle.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Cap"), New DevExpress.XtraEditors.Controls.RadioGroupItem(1, "No Cap")})
-            Me.radioGroupEndStyle.Size = New System.Drawing.Size(217, 38)
+            Me.radioGroupEndStyle.Size = New System.Drawing.Size(217, 56)
             Me.radioGroupEndStyle.StyleController = Me.layoutControl
             Me.radioGroupEndStyle.TabIndex = 17
             AddHandler Me.radioGroupEndStyle.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupEndStyle_SelectedIndexChanged)
@@ -139,14 +139,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.radioGroupDirection.AutoSizeInLayoutControl = True
             Me.radioGroupDirection.EditValue = 0
-            Me.radioGroupDirection.Location = New System.Drawing.Point(12, 163)
+            Me.radioGroupDirection.Location = New System.Drawing.Point(12, 190)
             Me.radioGroupDirection.Name = "radioGroupDirection"
             Me.radioGroupDirection.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupDirection.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupDirection.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupDirection.Properties.Columns = 1
             Me.radioGroupDirection.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Both"), New DevExpress.XtraEditors.Controls.RadioGroupItem(1, "Minus"), New DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Plus")})
-            Me.radioGroupDirection.Size = New System.Drawing.Size(217, 53)
+            Me.radioGroupDirection.Size = New System.Drawing.Size(217, 80)
             Me.radioGroupDirection.StyleController = Me.layoutControl
             Me.radioGroupDirection.TabIndex = 18
             AddHandler Me.radioGroupDirection.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupDirection_SelectedIndexChanged)
@@ -154,7 +154,7 @@ Namespace DevExpress.XtraCharts.Demos
             ' radioGroupErrorBarsKind
             ' 
             Me.radioGroupErrorBarsKind.AutoSizeInLayoutControl = True
-            Me.radioGroupErrorBarsKind.Location = New System.Drawing.Point(12, 112)
+            Me.radioGroupErrorBarsKind.Location = New System.Drawing.Point(12, 136)
             Me.radioGroupErrorBarsKind.Name = "radioGroupErrorBarsKind"
             Me.radioGroupErrorBarsKind.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupErrorBarsKind.Properties.Appearance.Options.UseBackColor = True
@@ -169,14 +169,14 @@ Namespace DevExpress.XtraCharts.Demos
             ' 
             Me.radioGroupSeriesView.AutoSizeInLayoutControl = True
             Me.radioGroupSeriesView.EditValue = 0
-            Me.radioGroupSeriesView.Location = New System.Drawing.Point(12, 31)
+            Me.radioGroupSeriesView.Location = New System.Drawing.Point(12, 34)
             Me.radioGroupSeriesView.Name = "radioGroupSeriesView"
             Me.radioGroupSeriesView.Properties.Appearance.BackColor = System.Drawing.Color.Transparent
             Me.radioGroupSeriesView.Properties.Appearance.Options.UseBackColor = True
             Me.radioGroupSeriesView.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.radioGroupSeriesView.Properties.Columns = 1
             Me.radioGroupSeriesView.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(0, "Bar"), New DevExpress.XtraEditors.Controls.RadioGroupItem(9, "Point")})
-            Me.radioGroupSeriesView.Size = New System.Drawing.Size(217, 38)
+            Me.radioGroupSeriesView.Size = New System.Drawing.Size(217, 56)
             Me.radioGroupSeriesView.StyleController = Me.layoutControl
             Me.radioGroupSeriesView.TabIndex = 15
             AddHandler Me.radioGroupSeriesView.SelectedIndexChanged, New System.EventHandler(AddressOf Me.radioGroupSeriesView_SelectedIndexChanged)
@@ -188,16 +188,16 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupRoot.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlGroupDirection, Me.layoutControlGroupErrorBarKind, Me.layoutControlGroupSeriesView, Me.emptySpaceItem1, Me.layoutControlGroupEndStyle})
             Me.layoutControlGroupRoot.Name = "layoutControlGroupRoot"
             Me.layoutControlGroupRoot.Padding = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
-            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 544)
+            Me.layoutControlGroupRoot.Size = New System.Drawing.Size(241, 538)
             Me.layoutControlGroupRoot.TextVisible = False
             ' 
             ' layoutControlGroupDirection
             ' 
             Me.layoutControlGroupDirection.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupDirection.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemDirection})
-            Me.layoutControlGroupDirection.Location = New System.Drawing.Point(0, 132)
+            Me.layoutControlGroupDirection.Location = New System.Drawing.Point(0, 156)
             Me.layoutControlGroupDirection.Name = "layoutControlGroupDirection"
-            Me.layoutControlGroupDirection.Size = New System.Drawing.Size(241, 96)
+            Me.layoutControlGroupDirection.Size = New System.Drawing.Size(241, 126)
             Me.layoutControlGroupDirection.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupDirection.Text = "Direction"
             ' 
@@ -206,18 +206,17 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemDirection.Control = Me.radioGroupDirection
             Me.layoutControlItemDirection.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemDirection.Name = "layoutControlItemDirection"
-            Me.layoutControlItemDirection.Size = New System.Drawing.Size(221, 57)
+            Me.layoutControlItemDirection.Size = New System.Drawing.Size(221, 84)
             Me.layoutControlItemDirection.Text = "Direction:"
-            Me.layoutControlItemDirection.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemDirection.TextVisible = False
             ' 
             ' layoutControlGroupErrorBarKind
             ' 
             Me.layoutControlGroupErrorBarKind.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupErrorBarKind.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemErrorBarKind})
-            Me.layoutControlGroupErrorBarKind.Location = New System.Drawing.Point(0, 81)
+            Me.layoutControlGroupErrorBarKind.Location = New System.Drawing.Point(0, 102)
             Me.layoutControlGroupErrorBarKind.Name = "layoutControlGroupErrorBarKind"
-            Me.layoutControlGroupErrorBarKind.Size = New System.Drawing.Size(241, 51)
+            Me.layoutControlGroupErrorBarKind.Size = New System.Drawing.Size(241, 54)
             Me.layoutControlGroupErrorBarKind.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupErrorBarKind.Text = "Error Bar Kind"
             ' 
@@ -228,7 +227,6 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemErrorBarKind.Name = "layoutControlItemErrorBarKind"
             Me.layoutControlItemErrorBarKind.Size = New System.Drawing.Size(221, 12)
             Me.layoutControlItemErrorBarKind.Text = "Error Bar Kind:"
-            Me.layoutControlItemErrorBarKind.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemErrorBarKind.TextVisible = False
             ' 
             ' layoutControlGroupSeriesView
@@ -237,7 +235,7 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlGroupSeriesView.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemSeriesView})
             Me.layoutControlGroupSeriesView.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroupSeriesView.Name = "layoutControlGroupSeriesView"
-            Me.layoutControlGroupSeriesView.Size = New System.Drawing.Size(241, 81)
+            Me.layoutControlGroupSeriesView.Size = New System.Drawing.Size(241, 102)
             Me.layoutControlGroupSeriesView.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupSeriesView.Text = "SeriesV iew"
             ' 
@@ -246,26 +244,23 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemSeriesView.Control = Me.radioGroupSeriesView
             Me.layoutControlItemSeriesView.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemSeriesView.Name = "layoutControlItemSeriesView"
-            Me.layoutControlItemSeriesView.Size = New System.Drawing.Size(221, 42)
+            Me.layoutControlItemSeriesView.Size = New System.Drawing.Size(221, 60)
             Me.layoutControlItemSeriesView.Text = "Series View"
-            Me.layoutControlItemSeriesView.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemSeriesView.TextVisible = False
             ' 
             ' emptySpaceItem1
             ' 
-            Me.emptySpaceItem1.AllowHotTrack = False
-            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 309)
+            Me.emptySpaceItem1.Location = New System.Drawing.Point(0, 384)
             Me.emptySpaceItem1.Name = "emptySpaceItem1"
-            Me.emptySpaceItem1.Size = New System.Drawing.Size(241, 235)
-            Me.emptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
+            Me.emptySpaceItem1.Size = New System.Drawing.Size(241, 154)
             ' 
             ' layoutControlGroupEndStyle
             ' 
             Me.layoutControlGroupEndStyle.GroupStyle = DevExpress.Utils.GroupStyle.Title
             Me.layoutControlGroupEndStyle.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItemEndStyle})
-            Me.layoutControlGroupEndStyle.Location = New System.Drawing.Point(0, 228)
+            Me.layoutControlGroupEndStyle.Location = New System.Drawing.Point(0, 282)
             Me.layoutControlGroupEndStyle.Name = "layoutControlGroupEndStyle"
-            Me.layoutControlGroupEndStyle.Size = New System.Drawing.Size(241, 81)
+            Me.layoutControlGroupEndStyle.Size = New System.Drawing.Size(241, 102)
             Me.layoutControlGroupEndStyle.Spacing = New DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0)
             Me.layoutControlGroupEndStyle.Text = "End Style"
             ' 
@@ -274,9 +269,8 @@ Namespace DevExpress.XtraCharts.Demos
             Me.layoutControlItemEndStyle.Control = Me.radioGroupEndStyle
             Me.layoutControlItemEndStyle.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlItemEndStyle.Name = "layoutControlItemEndStyle"
-            Me.layoutControlItemEndStyle.Size = New System.Drawing.Size(221, 42)
+            Me.layoutControlItemEndStyle.Size = New System.Drawing.Size(221, 60)
             Me.layoutControlItemEndStyle.Text = "End Style:"
-            Me.layoutControlItemEndStyle.TextSize = New System.Drawing.Size(0, 0)
             Me.layoutControlItemEndStyle.TextVisible = False
             ' 
             ' chart
@@ -289,9 +283,10 @@ Namespace DevExpress.XtraCharts.Demos
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1"
             xyDiagram1.AxisY.WholeRange.Auto = False
             xyDiagram1.AxisY.WholeRange.AutoSideMargins = False
+            xyDiagram1.AxisY.WholeRange.EndSideMargin = 0R
             xyDiagram1.AxisY.WholeRange.MaxValueSerializable = "65"
             xyDiagram1.AxisY.WholeRange.MinValueSerializable = "0"
-            xyDiagram1.AxisY.WholeRange.SideMarginsValue = 0R
+            xyDiagram1.AxisY.WholeRange.StartSideMargin = 0R
             Me.chart.Diagram = xyDiagram1
             Me.chart.Dock = System.Windows.Forms.DockStyle.Fill
             Me.chart.Legend.Name = "Default Legend"
@@ -302,6 +297,7 @@ Namespace DevExpress.XtraCharts.Demos
             series1.DataSource = Me.dataSet
             series1.LegendName = "Default Legend"
             series1.Name = "Series 1"
+            series1.SeriesID = 0
             series1.ValueDataMembersSerializable = "Table1.Value"
             Me.chart.SeriesSerializable = New DevExpress.XtraCharts.Series() {series1}
             Me.chart.SeriesTemplate.LegendName = "Default Legend"

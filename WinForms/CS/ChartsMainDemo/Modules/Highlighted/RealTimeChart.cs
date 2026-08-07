@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using DevExpress.DXperience.Demos;
 
 namespace DevExpress.XtraCharts.Demos {
     public partial class RealTimeChartDemo : ChartDemoModule {
