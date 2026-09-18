@@ -489,6 +489,8 @@ Namespace DevExpress.DevAV.Modules
             AddHandler Me.spreadsheetControl1.CellValueChanged, New DevExpress.XtraSpreadsheet.CellValueChangedEventHandler(AddressOf Me.SpreadsheetControl_CellValueChanged)
             AddHandler Me.spreadsheetControl1.ProtectionWarning, New System.ComponentModel.HandledEventHandler(AddressOf Me.SpreadsheetControl_ProtectionWarning)
             AddHandler Me.spreadsheetControl1.MouseClick, New System.Windows.Forms.MouseEventHandler(AddressOf Me.SpreadsheetControl_MouseClick)
+            AddHandler Me.spreadsheetControl1.Document.RowsInserted, New DevExpress.Spreadsheet.RowsInsertedEventHandler(AddressOf Me.SpreadsheetControl_RowsInserted)
+            AddHandler Me.spreadsheetControl1.Document.RowsRemoved, New DevExpress.Spreadsheet.RowsRemovedEventHandler(AddressOf Me.SpreadsheetControl_RowsRemoved)
             Me.repositoryItemPopupGalleryEdit1.AutoHeight = False
             Me.repositoryItemPopupGalleryEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.repositoryItemPopupGalleryEdit1.Gallery.AllowFilter = False

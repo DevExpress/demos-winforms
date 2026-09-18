@@ -13,6 +13,7 @@ namespace DevExpress.AI.Demos {
 #if NET
         public AgentModuleBase() {
             InitializeComponent();
+            UpdatePanelControlBackColor();
 
             aiChatControl.ChatResponseProviderServiceKey = ChatClientServiceKey;
             aiChatControl.ContentFormat = ResponseContentFormat.Markdown;
@@ -37,6 +38,13 @@ namespace DevExpress.AI.Demos {
 
         protected override void UpdatePaddings() {
             UpdateBottomSpacings(lciUcDisclaimerPanel1, ucDisclaimerPanel1.RoundedPanelOffset);
+        }
+        protected override void OnLookAndFeelChanged() {
+            base.OnLookAndFeelChanged();
+            UpdatePanelControlBackColor();
+        }
+        void UpdatePanelControlBackColor() {
+            panelControl1.BackColor = CommonSkins.GetSkin(LookAndFeel).TranslateColor(SystemColors.Window);
         }
         void MarkdownConvert(object sender, AIIntegration.Blazor.Chat.WebView.AIChatControlMarkdownConvertEventArgs e) {
             string html = Markdown.ToHtml(e.MarkdownText);

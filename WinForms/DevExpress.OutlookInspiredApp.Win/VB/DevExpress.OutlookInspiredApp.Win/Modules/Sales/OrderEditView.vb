@@ -39,6 +39,8 @@ Namespace DevExpress.DevAV.Modules
             BindCommands()
             LoadInvoiceTemplate()
             CreateInvoiceHelper()
+            spreadsheetControl1.Document.History.Clear()
+            spreadsheetControl1.Options.Events.RaiseOnModificationsViaAPI = True
         End Sub
 
         Public ReadOnly Property ViewModel As OrderViewModel
@@ -105,6 +107,24 @@ Namespace DevExpress.DevAV.Modules
             ViewModel.Update()
         End Sub
 
+        Private Sub SpreadsheetControl_RowsInserted(ByVal sender As Object, ByVal e As RowsChangedEventArgs)
+            UnsubscribeFromCellValueAndSelectionChanged()
+            Try
+                invoiceHelper.RowsInserted(e.StartIndex, e.Count)
+            Finally
+                SubscribeToCellValueAndSelectionChanged()
+            End Try
+        End Sub
+
+        Private Sub SpreadsheetControl_RowsRemoved(ByVal sender As Object, ByVal e As RowsChangedEventArgs)
+            UnsubscribeFromCellValueAndSelectionChanged()
+            Try
+                invoiceHelper.RowsRemoved(e.StartIndex, e.Count)
+            Finally
+                SubscribeToCellValueAndSelectionChanged()
+            End Try
+        End Sub
+
         Private Sub SpreadsheetControl_MouseClick(ByVal sender As Object, ByVal e As MouseEventArgs)
             If e.Button = MouseButtons.Left Then invoiceHelper.OnPreviewMouseLeftButton(spreadsheetControl1.GetCellFromPoint(e.Location))
         End Sub
@@ -118,7 +138,7 @@ Namespace DevExpress.DevAV.Modules
             If Not Equals(sheet.Name, "Invoice") Then Return
             Dim invoiceItems As DefinedName = sheet.DefinedNames.GetDefinedName("InvoiceItems")
             If e.Cell.ColumnIndex = 2 AndAlso e.Cell.RowIndex = If(invoiceItems Is Nothing, 21, invoiceItems.Range.BottomRowIndex + 1) Then DrawLink(e, e.Cache, "Add Order Item")
-            If invoiceItems IsNot Nothing AndAlso e.Cell.ColumnIndex = 13 AndAlso invoiceItems.Range.RowCount > 1 AndAlso e.Cell.RowIndex >= invoiceItems.Range.TopRowIndex AndAlso e.Cell.RowIndex <= invoiceItems.Range.BottomRowIndex Then DrawLink(e, e.Cache, "Delete Order Item")
+            If invoiceItems IsNot Nothing AndAlso e.Cell.ColumnIndex = 13 AndAlso invoiceItems.Range.RowCount > 1 AndAlso e.Cell.RowIndex >= invoiceItems.Range.TopRowIndex AndAlso e.Cell.RowIndex < invoiceItems.Range.BottomRowIndex Then DrawLink(e, e.Cache, "Delete Order Item")
         End Sub
 
         Private Sub DrawLink(ByVal e As CustomDrawCellEventArgs, ByVal cache As GraphicsCache, ByVal text As String)
@@ -131,6 +151,16 @@ Namespace DevExpress.DevAV.Modules
             Dim height As Single = CSng(bounds.Height) - size.Height
             Dim textBounds As RectangleF = New RectangleF(bounds.Left + 11, bounds.Top + height / 2, size.Width + 4, size.Height)
             cache.DrawString(text, font, brush, Rectangle.Round(textBounds), StringFormat.GenericDefault)
+        End Sub
+
+        Private Sub SubscribeToCellValueAndSelectionChanged()
+            AddHandler spreadsheetControl1.CellValueChanged, AddressOf SpreadsheetControl_CellValueChanged
+            AddHandler spreadsheetControl1.SelectionChanged, AddressOf SpreadsheetControl_SelectionChanged
+        End Sub
+
+        Private Sub UnsubscribeFromCellValueAndSelectionChanged()
+            RemoveHandler spreadsheetControl1.CellValueChanged, AddressOf SpreadsheetControl_CellValueChanged
+            RemoveHandler spreadsheetControl1.SelectionChanged, AddressOf SpreadsheetControl_SelectionChanged
         End Sub
 
 #Region ""

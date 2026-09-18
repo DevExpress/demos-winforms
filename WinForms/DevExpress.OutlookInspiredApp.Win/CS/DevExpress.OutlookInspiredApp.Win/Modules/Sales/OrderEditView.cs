@@ -36,6 +36,8 @@ namespace DevExpress.DevAV.Modules {
             BindCommands();
             LoadInvoiceTemplate();
             CreateInvoiceHelper();
+            spreadsheetControl1.Document.History.Clear();
+            spreadsheetControl1.Options.Events.RaiseOnModificationsViaAPI = true;
         }
         public OrderViewModel ViewModel {
             get { return GetViewModel<OrderViewModel>(); }
@@ -93,6 +95,25 @@ namespace DevExpress.DevAV.Modules {
             invoiceHelper.CellValueChanged(sender, e);
             ViewModel.Update();
         }
+        void SpreadsheetControl_RowsInserted(object sender, RowsChangedEventArgs e) {
+            UnsubscribeFromCellValueAndSelectionChanged();
+            try {
+                invoiceHelper.RowsInserted(e.StartIndex, e.Count);
+            }
+            finally {
+                SubscribeToCellValueAndSelectionChanged();
+            }
+        }
+
+        void SpreadsheetControl_RowsRemoved(object sender, RowsChangedEventArgs e) {
+            UnsubscribeFromCellValueAndSelectionChanged();
+            try {
+                invoiceHelper.RowsRemoved(e.StartIndex, e.Count);
+            }
+            finally {
+                SubscribeToCellValueAndSelectionChanged();
+            }
+        }
         void SpreadsheetControl_MouseClick(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left)
                 invoiceHelper.OnPreviewMouseLeftButton(spreadsheetControl1.GetCellFromPoint(e.Location));
@@ -111,7 +132,7 @@ namespace DevExpress.DevAV.Modules {
                 DrawLink(e, e.Cache, "Add Order Item");
             
             if (invoiceItems != null && e.Cell.ColumnIndex == 13 && invoiceItems.Range.RowCount > 1 &&
-                e.Cell.RowIndex >= invoiceItems.Range.TopRowIndex && e.Cell.RowIndex <= invoiceItems.Range.BottomRowIndex)
+                e.Cell.RowIndex >= invoiceItems.Range.TopRowIndex && e.Cell.RowIndex < invoiceItems.Range.BottomRowIndex)
                 DrawLink(e, e.Cache, "Delete Order Item");
         }
         void DrawLink(CustomDrawCellEventArgs e, GraphicsCache cache, string text) {
@@ -124,6 +145,15 @@ namespace DevExpress.DevAV.Modules {
             float height = (float)bounds.Height - size.Height;
             RectangleF textBounds = new RectangleF(bounds.Left + 11, bounds.Top + height / 2, size.Width + 4, size.Height);
             cache.DrawString(text, font, brush, Rectangle.Round(textBounds), StringFormat.GenericDefault);
+        }
+
+        void SubscribeToCellValueAndSelectionChanged() {
+            this.spreadsheetControl1.CellValueChanged += SpreadsheetControl_CellValueChanged;
+            this.spreadsheetControl1.SelectionChanged += SpreadsheetControl_SelectionChanged;
+        }
+        void UnsubscribeFromCellValueAndSelectionChanged() {
+            this.spreadsheetControl1.CellValueChanged -= SpreadsheetControl_CellValueChanged;
+            this.spreadsheetControl1.SelectionChanged -= SpreadsheetControl_SelectionChanged;
         }
         #region
         XtraBars.Ribbon.RibbonControl IRibbonModule.Ribbon {

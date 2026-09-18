@@ -28,6 +28,12 @@ namespace DevExpress.XtraTreeMap.Demos {
 
         public override bool AutoMergeRibbon { get { return true; } set { } }
         public IDXMenuManager MenuManager { get; set; }
+        public bool ShouldSerializeMenuManager() {
+            return MenuManager != null;
+        }
+        public void ResetMenuManager() {
+            MenuManager = null;
+        }
         public virtual Control ActiveDemoModule { get { return null; } }
         IComponentExportable ComponentExportable { get { return ActiveDemoModule as IComponentExportable; } }
         IComponentPrintable ComponentPrintable { get { return ActiveDemoModule as IComponentPrintable; } }

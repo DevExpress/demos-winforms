@@ -590,6 +590,8 @@ namespace DevExpress.DevAV.Modules {
             this.spreadsheetControl1.CellValueChanged += new DevExpress.XtraSpreadsheet.CellValueChangedEventHandler(this.SpreadsheetControl_CellValueChanged);
             this.spreadsheetControl1.ProtectionWarning += new System.ComponentModel.HandledEventHandler(this.SpreadsheetControl_ProtectionWarning);
             this.spreadsheetControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.SpreadsheetControl_MouseClick);
+            this.spreadsheetControl1.Document.RowsInserted += new Spreadsheet.RowsInsertedEventHandler(this.SpreadsheetControl_RowsInserted);
+            this.spreadsheetControl1.Document.RowsRemoved += new Spreadsheet.RowsRemovedEventHandler(this.SpreadsheetControl_RowsRemoved);
             
             
             

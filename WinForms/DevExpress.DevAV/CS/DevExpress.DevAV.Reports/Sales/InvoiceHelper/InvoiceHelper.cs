@@ -63,6 +63,7 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 				CreateCollectionEditors();
 			}
 			AddOrderItemsToSheet();
+			Invoice.Selection = Invoice.Cells["A2"];
 		}
 		#region Event Handlers
 		public void OnPreviewMouseLeftButton(Cell cell) {
@@ -83,7 +84,7 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 				return;
 			string reference = e.Cell.GetReferenceA1();
 			var oldCustomerId = order.CustomerId;
-			string shiftedRange = CellsHelper.GetActualCellRange(reference, -actualOrderItems.Count);
+			string shiftedRange = CellsHelper.GetActualCellRange(reference, -GetOrderItemsArea().Range.RowCount + 1);
 			Action<Order, CellValue, OrderCollections> setter = null;
 			if(OrderPropertiesHelper.Setters.TryGetValue(shiftedRange, out setter)) {
 				setter.Invoke(order, e.Cell.Value, source);
@@ -100,6 +101,35 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 		public void SelectionChanged() {
 			editActions.ActivateEditor();
 		}
+		public void RowsInserted(int rowIndex, int count) {
+			int rowOffset = GetOrderItemOffset(rowIndex);
+			if(rowOffset < 0 || rowOffset > actualOrderItems.Count)
+				return;
+			bool isLast = rowOffset == actualOrderItems.Count;
+			OrderItem orderItem = CreateAndAddOrderItem(rowOffset);
+			var invoiceItemsArea = GetOrderItemsArea();
+			Range range = invoiceItemsArea.Range;
+			Range itemRange = Invoice.Range.FromLTRB(range.LeftColumnIndex, rowIndex, range.RightColumnIndex, rowIndex);
+			if(actualOrderItems.Count == 1)
+				ExpandOrderItemsAreaBelow(invoiceItemsArea);
+			var cell = itemRange[CellsHelper.GetOffset(CellsKind.ProductDescription)];
+			UpdateOrderItem(cell);
+			UpdateTotalValues();
+			if(isLast)
+				UpdateSelection(true);
+		}
+		public void RowsRemoved(int rowIndex, int count) {
+			int rowOffset = GetOrderItemOffset(rowIndex);
+			if(rowOffset < 0 || rowOffset >= actualOrderItems.Count)
+				return;
+			bool isLast = rowOffset == actualOrderItems.Count - 1;
+			var item = actualOrderItems[rowOffset];
+			actualOrderItems.Remove(item);
+			editActions.RemoveOrderItem(item);
+			UpdateTotalValues();
+			if(isLast)
+				UpdateSelection(false);
+		}
 		#endregion
 		public static Stream GetInvoiceTemplate() {
 			return Utils.AssemblyHelper.GetResourceStream(typeof(InvoiceHelper).Assembly, "SalesInvoice.xltx", false);
@@ -115,23 +145,30 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 		}
 		void AddOrderItem() {
 			editActions.CloseEditor.Invoke();
+			Invoice.Workbook.BeginUpdate();
+			try {
+				AddOrderItemToSheetCore(GetOrderItemsArea());
+				InitializeLastOrderItem();
+			}
+			finally {
+				Invoice.Workbook.EndUpdate();
+			}
+		}
+		OrderItem CreateAndAddOrderItem(int index) {
 			var orderItem = editActions.CreateOrderItem();
 			orderItem.Order = order;
 			orderItem.OrderId = order.Id;
 			editActions.AddOrderItem(orderItem);
-			actualOrderItems.Add(orderItem);
-			AddOrderItemToSheet(orderItem);
-			if(actualOrderItems.Count == 1)
-				Invoice.Rows.Remove(GetOrderItemsArea().Range.TopRowIndex);
+			if(index < actualOrderItems.Count)
+				actualOrderItems.Insert(index, orderItem);
+			else
+				actualOrderItems.Add(orderItem);
+			return orderItem;
 		}
 		void AddOrderItemToSheet(OrderItem orderItem) {
 			var invoiceItemsArea = GetOrderItemsArea();
-			int rowIndex = invoiceItemsArea.Range.BottomRowIndex;
-			Invoice.Rows.Insert(rowIndex);
-			Invoice.Rows[rowIndex].Height = Invoice.Rows[rowIndex - 1].Height;
-			Invoice.Rows[rowIndex + 1].Height = Invoice.Rows[rowIndex].Height;
+			Range itemRange = AddOrderItemToSheetCore(invoiceItemsArea);
 			Range range = invoiceItemsArea.Range;
-			Range itemRange = Invoice.Range.FromLTRB(range.LeftColumnIndex, range.BottomRowIndex, range.RightColumnIndex, range.BottomRowIndex);
 			if(range.RowCount == 1) {
 				Invoice["K24"].FormulaInvariant = "=SUM(K22:K23)";
 				invoiceItemsArea.Range = Invoice.Range.FromLTRB(range.LeftColumnIndex, range.TopRowIndex - 1, range.RightColumnIndex, range.BottomRowIndex)
@@ -139,16 +176,30 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 				if(AllowChangeOrder())
 					UpdateOrderItemEditors();
 			}
-			CellsHelper.CopyOrderItemRange(itemRange);
 			OrderPropertiesHelper.InitializeOrderItem(itemRange, orderItem);
 		}
+		Range AddOrderItemToSheetCore(DefinedName invoiceItemsArea) {
+			Range range = invoiceItemsArea.Range;
+			int rowIndex = range.BottomRowIndex;
+			Invoice.Rows.Insert(rowIndex);
+			Invoice.Rows[rowIndex].Height = Invoice.Rows[rowIndex - 1].Height;
+			Range itemRange = Invoice.Range.FromLTRB(range.LeftColumnIndex, rowIndex, range.RightColumnIndex, rowIndex);
+			CellsHelper.CopyOrderItemRange(itemRange);
+			return itemRange;
+		}
 		void AddOrderItemsToSheet() {
-			actualOrderItems.ForEach(x => AddOrderItemToSheet(x));
-			if(actualOrderItems.Count > 0)
-				Invoice.Rows.Remove(GetOrderItemsArea().Range.TopRowIndex);
+			Invoice.Workbook.BeginUpdate();
+			try {
+				actualOrderItems.ForEach(x => AddOrderItemToSheet(x));
+			}
+			finally {
+				Invoice.Workbook.EndUpdate();
+			}
 		}
 		void UpdateOrderItem(Cell cell) {
-			var verticalOffset = GetOrderItemOffset(cell);
+			var verticalOffset = GetOrderItemOffset(cell.TopRowIndex);
+			if(verticalOffset < 0 || verticalOffset >= actualOrderItems.Count)
+				return;
 			Range orderItemsRange = GetOrderItemsArea().Range;
 			var orderItem = actualOrderItems[verticalOffset];
 			var orderItemRange = Invoice.Range.FromLTRB(orderItemsRange.LeftColumnIndex, orderItemsRange.TopRowIndex + verticalOffset,
@@ -162,14 +213,18 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 			editActions.CloseEditor.Invoke();
 			var item = actualOrderItems[deletedRowOffset];
 			var actualRowIndex = GetOrderItemsArea().Range.TopRowIndex + deletedRowOffset;
-			actualOrderItems.Remove(item);
-			editActions.RemoveOrderItem(item);
 			Invoice.Rows.Remove(actualRowIndex);
 		}
 		void UpdateOrderItemEditors() {
 			CellsHelper.RemoveAllEditors("B23:M23", Invoice);
 			CellsHelper.GenerateEditors(CellsHelper.OrderItemCells, Invoice);
 			CellsHelper.CreateCollectionEditor<Product>(CellsKind.ProductDescription, Invoice, source.Products, x => x.Name);
+		}
+		private void InitializeLastOrderItem() {
+			OrderItem orderItem = actualOrderItems.Last();
+			CellRange range = GetActualOrderItemsArea();
+			CellRange itemRange = Invoice.Range.FromLTRB(range.LeftColumnIndex, range.BottomRowIndex, range.RightColumnIndex, range.BottomRowIndex);
+			OrderPropertiesHelper.InitializeOrderItem(itemRange, orderItem);
 		}
 		#endregion
 		#region CustomerStores Management
@@ -212,16 +267,29 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 			return !(source.IsEmpty && editActions.IsDefaultActions);
 		}
 		bool IsOrderItemsRegionModified(Cell cell) {
-			return cell.Areas.First().IsIntersecting(GetOrderItemsArea().Range);
+			return cell.Areas.First().IsIntersecting(GetActualOrderItemsArea());
 		}
 		DefinedName GetOrderItemsArea() {
 			return Invoice.DefinedNames.GetDefinedName("InvoiceItems");
 		}
-		int GetOrderItemOffset(Cell cell) {
-			return cell.TopRowIndex - GetOrderItemsArea().Range.TopRowIndex;
+		int GetOrderItemOffset(int rowIndex) {
+			return rowIndex - GetOrderItemsArea().Range.TopRowIndex;
 		}
-		int GetOrderItemPropertyOffset(Cell cell) {
-			return cell.LeftColumnIndex - GetOrderItemsArea().Range.LeftColumnIndex;
+		Range GetActualOrderItemsArea() {
+			CellRange range = GetOrderItemsArea().Range;
+			return Invoice.Range.FromLTRB(range.LeftColumnIndex, range.TopRowIndex, range.RightColumnIndex, range.BottomRowIndex - 1)
+				.GetRangeWithAbsoluteReference();
+		}
+		void ExpandOrderItemsAreaBelow(DefinedName invoiceItemsArea) {
+			Range range = invoiceItemsArea.Range;
+			invoiceItemsArea.Range = Invoice.Range.FromLTRB(range.LeftColumnIndex, range.TopRowIndex, range.RightColumnIndex, range.BottomRowIndex + 1)
+				.GetRangeWithAbsoluteReference();
+		}
+		void UpdateSelection(bool above) {
+			var selection = Invoice.Selection;
+			int bottomRowIndex = GetOrderItemsArea().Range.BottomRowIndex;
+			if(selection.RowCount == 1 && selection.BottomRowIndex == bottomRowIndex)
+				Invoice.Selection = selection.Offset(above ? - 1 : 1, 0);
 		}
 		#endregion
 	}

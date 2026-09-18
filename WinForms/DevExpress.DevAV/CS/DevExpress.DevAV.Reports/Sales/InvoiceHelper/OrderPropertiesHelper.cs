@@ -40,7 +40,6 @@ using DevExpress.Spreadsheet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Range = DevExpress.Spreadsheet.CellRange;
 namespace DevExpress.DevAV.Reports.Spreadsheet {
 	public static class OrderPropertiesHelper {
@@ -83,14 +82,18 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 			}
 		}
 		public static void InitializeOrderItem(Range itemRange, OrderItem orderItem) {
-			itemRange[CellsHelper.GetOffset(CellsKind.ProductDescription)].Value = orderItem.Product != null
-				? orderItem.Product.Name : CellValue.Empty;
-			itemRange[CellsHelper.GetOffset(CellsKind.Quantity)].Value = orderItem.ProductUnits > 0 ? orderItem.ProductUnits : 1;
-			itemRange[CellsHelper.GetOffset(CellsKind.UnitPrice)].Value = (double)orderItem.ProductPrice;
-			itemRange[CellsHelper.GetOffset(CellsKind.Discount)].Value = (double)orderItem.Discount;
+			CellsHelper.SetValueInCell(itemRange, CellsKind.ProductDescription, orderItem.Product != null ? orderItem.Product.Name : CellValue.Empty);
+			CellsHelper.SetValueInCell(itemRange, CellsKind.Quantity, orderItem.ProductUnits > 0 ? orderItem.ProductUnits : 1);
+			CellsHelper.SetValueInCell(itemRange, CellsKind.UnitPrice, orderItem.ProductPrice);
+			CellsHelper.SetValueInCell(itemRange, CellsKind.Discount, orderItem.Discount);
 		}
 		public static void UpdateProduct(OrderItem orderItem, CellValue productCell, OrderCollections source) {
-			var newProduct = source.Products.First(x => x.Name == productCell.TextValue);
+			string cellText = productCell.TextValue;
+			if(string.IsNullOrEmpty(cellText)) {
+				orderItem.Product = null;
+				return;
+			}
+			var newProduct = source.Products.First(x => x.Name == cellText);
 			orderItem.Product = newProduct;
 			orderItem.ProductId = newProduct.Id;
 		}
@@ -99,8 +102,9 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 		}
 		public static void UpdateProductPrice(Cell cell, OrderItem orderItem, Range orderItemRange) {
 			if(CellsHelper.IsOrderItemProductCell(cell, orderItemRange)) {
-				orderItemRange[CellsHelper.GetOffset(CellsKind.UnitPrice)].Value = (double)orderItem.Product.SalePrice;
-				orderItem.ProductPrice = orderItem.Product.SalePrice;
+				var newValue = orderItem.Product?.SalePrice ?? 0;
+				orderItem.ProductPrice = newValue;
+				CellsHelper.SetValueInCell(orderItemRange, CellsKind.UnitPrice, (CellValue)newValue);
 			}
 		}
 		static void SetIfNumericValue(CellValue value, Action<string> setValue) {

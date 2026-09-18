@@ -36,6 +36,14 @@ Namespace DevExpress.XtraTreeMap.Demos
 
         Public Property MenuManager As IDXMenuManager
 
+        Public Function ShouldSerializeMenuManager() As Boolean
+            Return MenuManager IsNot Nothing
+        End Function
+
+        Public Sub ResetMenuManager()
+            MenuManager = Nothing
+        End Sub
+
         Public Overridable ReadOnly Property ActiveDemoModule As Control
             Get
                 Return Nothing

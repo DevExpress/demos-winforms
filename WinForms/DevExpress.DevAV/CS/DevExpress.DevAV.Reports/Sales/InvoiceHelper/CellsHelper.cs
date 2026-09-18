@@ -82,7 +82,7 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 				&& cell.LeftColumnIndex > orderItemsRange.RightColumnIndex
 				&& cell.LeftColumnIndex < orderItemsRange.RightColumnIndex + 4
 				&& cell.TopRowIndex >= orderItemsRange.TopRowIndex
-				&& cell.TopRowIndex <= orderItemsRange.BottomRowIndex
+				&& cell.TopRowIndex < orderItemsRange.BottomRowIndex
 				&& orderItemsRange.RowCount > 1;
 		}
 		public static bool IsAddItemRange(Cell cell, Range orderItemsRange) {
@@ -104,35 +104,35 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 			return cellRange.Value;
 		}
 		public static void CopyOrderItemRange(Range itemRange) {
-			Range range = itemRange.Offset(-1, 0);
-			range.CopyFrom(itemRange, PasteSpecial.All, true);
+			Range range = itemRange.Offset(1, 0);
+			itemRange.CopyFrom(range, PasteSpecial.All, true);
 		}
 		public static void UpdateEditableCells(Worksheet invoice, Order order, OrderCollections source) {
-			invoice.Cells[FindLeftCell(CellsKind.Date)].Value = order.OrderDate.Millisecond != 0 ? order.OrderDate : DateTime.FromBinary(0);
-			invoice.Cells[FindLeftCell(CellsKind.InvoiceNumber)].Value = order.InvoiceNumber;
-			invoice.Cells[FindLeftCell(CellsKind.CustomerName)].Value = GetCustomer(order, source) != null ? GetCustomer(order, source).Name : string.Empty;
-			invoice.Cells[FindLeftCell(CellsKind.CustomerStoreName)].Value = GetStore(order, source) != null ? GetStore(order, source).City : string.Empty;
-			invoice.Cells[FindLeftCell(CellsKind.EmployeeName)].Value = GetEmployee(order, source) != null ? GetEmployee(order, source).FullName : string.Empty;
-			invoice.Cells[FindLeftCell(CellsKind.CustomerHomeOfficeName)].Value = "Home Office";
-			invoice.Cells[FindLeftCell(CellsKind.PONumber)].Value = order.PONumber;
-			invoice.Cells[FindLeftCell(CellsKind.ShipDate)].Value = order.ShipDate;
-			invoice.Cells[FindLeftCell(CellsKind.ShipVia)].Value = order.ShipmentCourier.ToString();
-			invoice.Cells[FindLeftCell(CellsKind.FOB)].Value = string.Empty;
-			invoice.Cells[FindLeftCell(CellsKind.Terms)].Value = order.OrderTerms != null ? int.Parse(new Regex(@"\d+").Match(order.OrderTerms).Value) : 5;
-			invoice.Cells[FindLeftCell(CellsKind.Shipping)].Value = (double)order.ShippingAmount;
-			invoice.Cells[FindLeftCell(CellsKind.Comments)].Value = order.Comments;
+			SetValueInCell(invoice, CellsKind.Date, order.OrderDate.Millisecond != 0 ? order.OrderDate : DateTime.FromBinary(0));
+			SetValueInCell(invoice, CellsKind.InvoiceNumber, order.InvoiceNumber);
+			SetValueInCell(invoice, CellsKind.CustomerName, GetCustomer(order, source) != null ? GetCustomer(order, source).Name : string.Empty);
+			SetValueInCell(invoice, CellsKind.CustomerStoreName, GetStore(order, source) != null ? GetStore(order, source).City : string.Empty);
+			SetValueInCell(invoice, CellsKind.EmployeeName, GetEmployee(order, source) != null ? GetEmployee(order, source).FullName : string.Empty);
+			SetValueInCell(invoice, CellsKind.CustomerHomeOfficeName, "Home Office");
+			SetValueInCell(invoice, CellsKind.PONumber, order.PONumber);
+			SetValueInCell(invoice, CellsKind.ShipDate, order.ShipDate);
+			SetValueInCell(invoice, CellsKind.ShipVia, order.ShipmentCourier.ToString());
+			SetValueInCell(invoice, CellsKind.FOB, string.Empty);
+			SetValueInCell(invoice, CellsKind.Terms, order.OrderTerms != null ? int.Parse(new Regex(@"\d+").Match(order.OrderTerms).Value) : 5);
+			SetValueInCell(invoice, CellsKind.Shipping, (double)order.ShippingAmount);
+			SetValueInCell(invoice, CellsKind.Comments, order.Comments);
 		}
 		public static void UpdateDependentCells(Worksheet invoice, Order order, OrderCollections source) {
 			var customer = GetCustomer(order, source);
 			var store = GetStore(order, source);
 			if(customer != null) {
-				invoice.Cells[FindLeftCell(CellsKind.ShippingCustomerName)].Value = customer.Name;
-				invoice.Cells[FindLeftCell(CellsKind.CustomerStreetLine)].Value = customer.HomeOffice.Line;
-				invoice.Cells[FindLeftCell(CellsKind.CustomerCityLine)].Value = customer.HomeOffice.CityLine;
+				SetValueInCell(invoice, CellsKind.ShippingCustomerName, customer.Name);
+				SetValueInCell(invoice, CellsKind.CustomerStreetLine, customer.HomeOffice.Line);
+				SetValueInCell(invoice, CellsKind.CustomerCityLine, customer.HomeOffice.CityLine);
 			}
 			if(store != null) {
-				invoice.Cells[FindLeftCell(CellsKind.CustomerStoreStreetLine)].Value = store.Address.Line;
-				invoice.Cells[FindLeftCell(CellsKind.CustomerStoreCityLine)].Value = store.Address.CityLine;
+				SetValueInCell(invoice, CellsKind.CustomerStoreStreetLine, store.Address.Line);
+				SetValueInCell(invoice, CellsKind.CustomerStoreCityLine, store.Address.CityLine);
 			}
 		}
 		public static OrderCellInfo FindCell(CellsKind cell) {
@@ -143,17 +143,30 @@ namespace DevExpress.DevAV.Reports.Spreadsheet {
 		}
 		public static string GetActualCellRange(string defaultRange, int shiftValue, int initialShiftIndex = 23) {
 			var defaultRow = int.Parse(new Regex(@"\d+").Match(defaultRange).Value);
-			var absShiftValue = Math.Abs(shiftValue);
-			var actualShiftValue = absShiftValue < 2 ? 0 : Math.Sign(shiftValue) * (absShiftValue - 1);
-			if(defaultRow < initialShiftIndex + (actualShiftValue < 0 ? Math.Abs(actualShiftValue) : 0))
+			if(defaultRow < initialShiftIndex + (shiftValue < 0 ? Math.Abs(shiftValue) : 0))
 				return defaultRange;
-			return string.Format("{0}{1}", defaultRange.First(), defaultRow + actualShiftValue);
+			return string.Format("{0}{1}", defaultRange.First(), defaultRow + shiftValue);
 		}
 		public static int GetOffset(CellsKind kind) {
 			return FindCell(kind).Offset.Value;
 		}
 		public static bool HasDependentCells(string range) {
 			return OrderCells.FirstOrDefault(x => FindLeftCell(x.Cell) == range).HasDependentCells;
+		}
+		public static void SetValueInCell(Range itemRange, CellsKind kind, CellValue value) {
+			var cell = itemRange[CellsHelper.GetOffset(kind)];
+			if(cell.Value != value)
+				cell.Value = value;
+		}
+		public static void SetValueInCell(Worksheet sheet, CellsKind kind, CellValue value) {
+			var cell = sheet.Cells[FindLeftCell(kind)];
+			if(cell.Value != value)
+				cell.Value = value;
+		}
+		public static void SetValueInCell(Worksheet sheet, CellsKind kind, string value) {
+			var cell = sheet.Cells[FindLeftCell(kind)];
+			if(!cell.Value.IsText ||string.Compare(cell.Value.TextValue, value, StringComparison.Ordinal) != 0)
+				cell.Value = value;
 		}
 		public static CustomEditorInfo FindEditor(string name) {
 			return CustomEditorsConfig.Values.SingleOrDefault(x => x.Name == name);
