@@ -23,7 +23,7 @@ using DevExpress.XtraEditors.Repository;
 
 namespace DevExpress.XtraMap.Demos {
     public class DemoUtils {
-        const string azureKey = "CDOhtwNBSsbmBiN3rUEjmBJGHW2tRMbp5XVwu4J55VBZg8PdRe9MJQQJ99BEACYeBjFllM6LAAAgAZMP1cA4";
+        const string azureKey = "";
         const string testKey = "TestKey";
         //
         public static string AzureKey {

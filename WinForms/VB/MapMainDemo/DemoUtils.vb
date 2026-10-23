@@ -25,7 +25,7 @@ Namespace DevExpress.XtraMap.Demos
 
     Public Class DemoUtils
 
-        Const azureKeyField As String = "CDOhtwNBSsbmBiN3rUEjmBJGHW2tRMbp5XVwu4J55VBZg8PdRe9MJQQJ99BEACYeBjFllM6LAAAgAZMP1cA4"
+        Const azureKeyField As String = ""
 
         Const testKey As String = "TestKey"
 

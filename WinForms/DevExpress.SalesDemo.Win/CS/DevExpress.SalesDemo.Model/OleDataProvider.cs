@@ -44,12 +44,12 @@ namespace DevExpress.SalesDemo.Model {
 		}
 		protected virtual DbCommand CreateQueryBySales(DateTime start, DateTime end, GroupingPeriod period) {
 			string query = BuildQueryBySales(start, end, period);
-#pragma warning disable DX0024 
+#pragma warning disable DX0024, CA2100 
 			OleDbCommand command = new OleDbCommand(query);
 			command.Parameters.Add(new OleDbParameter("@PeriodStart", OleDbType.Date)).Value = start;
 			command.Parameters.Add(new OleDbParameter("@PeriodEnd", OleDbType.Date)).Value = end;
 			command.Parameters.Add(new OleDbParameter("@DiffBase", OleDbType.BSTR)).Value = "0";
-#pragma warning restore DX0024 
+#pragma warning restore DX0024, CA2100 
 			return command;
 		}
 		protected virtual string Cstr(string value) {
@@ -89,11 +89,11 @@ namespace DevExpress.SalesDemo.Model {
 		}
 		protected virtual DbCommand CreateJoinQuery(DateTime start, DateTime end, GroupingPeriod period, GroupColumn column) {
 			string query = BuildJoinQuery(start, end, period, column);
-#pragma warning disable DX0024 
+#pragma warning disable DX0024, CA2100 
 			OleDbCommand command = new OleDbCommand(query);
 			command.Parameters.Add(new OleDbParameter("@PeriodStart", OleDbType.Date)).Value = start;
 			command.Parameters.Add(new OleDbParameter("@PeriodEnd", OleDbType.Date)).Value = end;
-#pragma warning restore DX0024 
+#pragma warning restore DX0024, CA2100 
 			return command;
 		}
 		static string GetGroupBy(GroupingPeriod period, string column) {

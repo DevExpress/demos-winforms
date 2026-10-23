@@ -243,7 +243,7 @@ Namespace DevExpress.ProductsDemo.Win
 		End Function
 	End Class
 	Public Class MapUtils
-        Private Shared key As String = "CDOhtwNBSsbmBiN3rUEjmBJGHW2tRMbp5XVwu4J55VBZg8PdRe9MJQQJ99BEACYeBjFllM6LAAAgAZMP1cA4"
+        Private Shared key As String = ""
         Public Shared ReadOnly Property DevExpressAzureKey() As String
             Get
                 Return key

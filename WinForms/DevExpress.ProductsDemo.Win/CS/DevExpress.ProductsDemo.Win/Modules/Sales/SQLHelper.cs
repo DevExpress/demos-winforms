@@ -7,7 +7,7 @@ namespace DevExpress.Demos.SalesDBGenerator {
         where T : DbConnection
         where Command : DbCommand, new() {
         public object ReadValue(T connection, string selectQuery, params DbParameter[] pars) {
-#pragma warning disable DX0024 // we only have a fixed set of queries here
+#pragma warning disable DX0024, CA2100 // we only have a fixed set of queries here
             using(var dbCommand = new Command() { Connection = connection }) {
                 dbCommand.CommandText = selectQuery;
                 dbCommand.CommandTimeout = 1000;
@@ -18,7 +18,7 @@ namespace DevExpress.Demos.SalesDBGenerator {
                 }
                 catch { return null; }
             }
-#pragma warning restore DX0024 // we only have a fixed set of queries here
+#pragma warning restore DX0024, CA2100 // we only have a fixed set of queries here
         }
         object CheckDbNull(object value) {
             if(value == null || value is DBNull)

@@ -248,7 +248,7 @@ namespace DevExpress.ProductsDemo.Win {
         }
     }
     public class MapUtils {
-        static string key = "CDOhtwNBSsbmBiN3rUEjmBJGHW2tRMbp5XVwu4J55VBZg8PdRe9MJQQJ99BEACYeBjFllM6LAAAgAZMP1cA4";
+        static string key = "";
         public static string DevExpressAzureKey { get { return key; } }
 
         public static AzureMapDataProvider CreateAzureDataProvider(AzureTileset tileset) {
